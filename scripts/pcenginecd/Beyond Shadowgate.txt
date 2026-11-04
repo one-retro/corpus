@@ -1,0 +1,24 @@
+# Beyond Shadowgate: through the opening into the first cell, RUN (pause) >
+# SAVE 1. Pausing again shows LOAD 1 available (no longer crossed out).
+# Button II skips the opening without pausing, so the cores' different CD
+# timing does not matter.
+wait 360
+press start 6         # System Card: RUN
+wait 200
+press start 6         # title
+repeat 14
+wait 200
+press b 6             # skip the opening; ends in the cell
+end
+wait 120
+shot cell
+press start 6         # pause: MUSIC SOUND / PAUSED / SAVE 1 2 3, LOAD 1 2 3
+wait 60
+press right 6         # SAVE 1
+wait 20
+press a 6
+wait 300
+shot saved
+press start 6         # pause again
+wait 60
+shot load             # LOAD 1 is now a disk, not an X

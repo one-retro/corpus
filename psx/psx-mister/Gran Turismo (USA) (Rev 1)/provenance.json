@@ -1,0 +1,33 @@
+{
+  "method": "played",
+  "system": "psx",
+  "core": "psx-mister",
+  "core_file": "PSX_20260807.rbf",
+  "core_name": "PSX_MiSTer",
+  "core_version": "20260807",
+  "frontend": "mister",
+  "device": "the owner's MiSTer (DE10-Nano), Main_MiSTer binary of 2026-10-19",
+  "loaded_with": "MGL via /dev/MiSTer_cmd load_core (_Console/PSX, file type s index 1)",
+  "save_folder": "saves/PSX",
+  "rom": {
+    "name": "Gran Turismo (USA) (Rev 1).cue",
+    "sha1": "ad114ef1312b81c7ee9995df1217cc1a089e381e",
+    "size": 92,
+    "on_device": "corpus-tmp/roms/psx/Gran Turismo (USA) (Rev 1)/Gran Turismo (USA) (Rev 1).cue"
+  },
+  "script": "scripts/psx/Gran Turismo.txt",
+  "mister_script": "scripts/mister/psx/Gran Turismo.psx.txt",
+  "frames": 6940,
+  "timing": "real time: script frames played as wall-clock 1/60 s by work/mister/mrun.py",
+  "options": null,
+  "save_trigger": "OSD opened (F12 from a uinput keyboard) with Autosave on: the core writes its backup RAM to the SD card",
+  "started_from": null,
+  "files": {
+    "Gran Turismo (USA) (Rev 1).sav": {
+      "size": 131072,
+      "sha1": "5d931e347369d8735fbdd11f6b7dd1e3be795f6c"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "Memory card 1 as a raw 128 KiB card image (MC header, directory frames, 'BASCUS-94194GT' in 5 blocks). Main names the card after the game's folder, not the .cue (support/psx/psx.cpp psx_mount_save), and creates it at mount as a formatted blank card, so no seed was needed; the PSX core's autosave (on by default) writes the card when the OSD opens. BIOS: SCPH-5501 as cd_bios.rom beside the disc (Main loads it from the game's folder). Proof: 'Save completed successfully'."
+}

@@ -1,0 +1,54 @@
+# Sangokushi III (Romance of the Three Kingdoms III, Japan): new game,
+# scenario 0 (184), one player as 公孫瓚 (Gongsun Zan), Easy, history mode.
+# On the first turn Start opens 中断 / 表示 / 戦争; 中断 offers 終了 / セーブ
+# / ロード; セーブ to slot 1 shows "データがセーブされました" (saved).
+# The game needs a backup RAM cartridge: it writes six files, 628 blocks,
+# more than the 125 the internal memory has, and the internal BRAM is left
+# alone. Genesis Plus GX plugs in a formatted 4 Mbit cart by default.
+# PicoDrive needs picodrive-ramcart.opt and its own script (it asks to
+# format the cart first); ClownMDEmu has no cart.
+wait 600
+press start 6       # BIOS
+wait 1200
+repeat 8            # logos, title, PUSH START
+press start 6
+wait 300
+end
+press a 6           # 1. 新しくゲームを始める
+wait 300
+press a 6           # scenario 0: 黄巾の乱 (184)
+wait 300
+press up 6          # players: 1
+wait 60
+press a 6
+wait 300
+press a 6           # player 1: 公孫瓚
+wait 300
+press a 6           # level: 初級
+wait 300
+press a 6           # watch other wars: 見る
+wait 300
+press a 6           # mode: 史実
+wait 300
+press a 6           # すべてよろしいですか? 可
+wait 3000           # opening scene
+repeat 3            # to 公孫瓚's first command prompt
+press a 6
+wait 400
+end
+wait 600
+press start 6       # 中断 / 表示 / 戦争
+wait 300
+press a 6           # 中断: 終了 / セーブ / ロード
+wait 300
+press down 6        # セーブ
+wait 60
+press a 6           # 1番:セーブできます / 2番 / 3番
+wait 300
+press a 6           # slot 1, "よろしいですか?" 可
+wait 300
+press a 6           # "セーブしますか?" 可
+wait 300
+press a 6
+wait 300
+shot saved          # データがセーブされました, slot S0 184年1月 公孫瓚:北平 初級

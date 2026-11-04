@@ -1,0 +1,31 @@
+{
+  "method": "played",
+  "system": "nds",
+  "core": "skyemu",
+  "core_file": "skyemu_libretro.dylib",
+  "core_name": "SkyEmu",
+  "core_version": "adacd0788964ed89f5c43dcbc1f3cc26deec996c",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Mario Kart DS (USA, Australia) (En,Fr,De,Es,It).nds",
+    "sha1": "691e00d9a5dd80b04f80cc7559503e8b06848785",
+    "size": 33554432
+  },
+  "script": "scripts/nds/Mario Kart DS.txt",
+  "frames": 4450,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Mario Kart DS (USA, Australia) (En,Fr,De,Es,It).rtc": {
+      "size": 40,
+      "sha1": "24c2fb80943f9fb5b2cd8bd8aa9a73bf787fc097"
+    },
+    "Mario Kart DS (USA, Australia) (En,Fr,De,Es,It).srm": {
+      "size": 8388608,
+      "sha1": "f9a997bdfe5dfe8713d965ed1d1a7b084a1f8364"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

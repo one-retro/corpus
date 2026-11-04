@@ -1,0 +1,30 @@
+# Zelda II - The Adventure of Link: register "LINK" in slot 1. The game writes
+# the file to battery RAM when END is chosen; the SELECT screen then lists
+# the name.
+wait 600
+press start 10      # title -> SELECT (cursor on REGISTER YOUR NAME)
+wait 300
+press start 10      # REGISTER YOUR NAME
+wait 300
+# letter grid, cursor on A: A..K is 0..10, L..V is 11..21
+repeat 11
+tap right 1 8
+end
+tap a 1 20          # L
+tap left 3 8
+tap a 1 20          # I
+tap right 5 8
+tap a 1 20          # N
+tap left 3 8
+tap a 1 20          # K
+shot name
+press select 6      # slot 2
+wait 20
+press select 6      # slot 3
+wait 20
+press select 6      # END
+wait 20
+press start 6       # register: the file is written
+wait 300
+shot select
+wait 60

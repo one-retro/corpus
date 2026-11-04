@@ -1,0 +1,35 @@
+{
+  "method": "played",
+  "system": "genesis",
+  "core": "megadrive-mister",
+  "core_file": "MegaDrive_20260603.rbf",
+  "core_name": "MegaDrive_MiSTer",
+  "core_version": "20260603",
+  "frontend": "mister",
+  "device": "the owner's MiSTer (DE10-Nano), Main_MiSTer binary of 2026-10-19",
+  "loaded_with": "MGL via /dev/MiSTer_cmd load_core (_Console/MegaDrive, file type f index 1)",
+  "save_folder": "saves/MegaDrive",
+  "rom": {
+    "name": "Might and Magic - Gates to Another World (USA, Europe).md",
+    "sha1": "52e7ade244d48bc282db003d87c408e96dcb3d85",
+    "size": 786432,
+    "on_device": "games/MegaDrive/Might and Magic - Gates to Another World (USA, Europe).md"
+  },
+  "script": "scripts/genesis/Might and Magic - Gates to Another World.txt",
+  "mister_script": "scripts/mister/genesis/Might and Magic - Gates to Another World.megadrive.txt",
+  "frames": 2730,
+  "timing": "real time: script frames played as wall-clock 1/60 s by work/mister/mrun.py",
+  "options": {
+    "config/MegaDrive.CFG": "Autosave On (status bit 13), every other option at its default; written for the run and removed after"
+  },
+  "save_trigger": "OSD opened (F12 from a uinput keyboard) with Autosave on: the core writes its backup RAM to the SD card",
+  "started_from": "a zero-filled 65536-byte .sav put in place before loading, so the backup RAM started cleared; the core then rewrote all of it",
+  "files": {
+    "Might and Magic - Gates to Another World (USA, Europe).sav": {
+      "size": 65536,
+      "sha1": "010ce61f87e8879bf06fd1e07bc9bfbe07d213f7"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "32 KiB byte-wide SRAM with no SRAM header, in a 64 KiB file (the MegaDrive core always writes 128 sectors). The character came out a Knight, not the script's Archer (a class press landed differently). Proof: after loading the game again, the Middlegate inn's roster lists A."
+}

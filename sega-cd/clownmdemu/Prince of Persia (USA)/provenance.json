@@ -1,0 +1,31 @@
+{
+  "method": "played",
+  "system": "sega-cd",
+  "core": "clownmdemu",
+  "core_file": "clownmdemu_libretro.dylib",
+  "core_name": "ClownMDEmu",
+  "core_version": "v1.6.12 d43c270",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Prince of Persia (USA).cue",
+    "sha1": "a9ef705c0a2bfb73dff30a783d8e0e0e66f877f4",
+    "size": 2930
+  },
+  "script": "scripts/sega-cd/Prince of Persia.clownmdemu.txt",
+  "frames": 3336,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "PRINCE_ARO_.wp.brm": {
+      "size": 576,
+      "sha1": "0cb107b1613a3d13708efce3917cd294a849b138"
+    },
+    "Prince of Persia (USA).srm": {
+      "size": 65536,
+      "sha1": "1adc95bebe9eea8c112d40cd04ab7a8d75c4f961"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "Disc from the Trimmed Redump set, unpacked here: the data track is the real one, the audio tracks are zero-filled stand-ins of the exact sizes (silent CD audio; the disk was too full for the real ones). The .cue is the original."
+}

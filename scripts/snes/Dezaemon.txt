@@ -1,0 +1,96 @@
+# Kaite Tsukutte Asoberu Dezaemon (128 KB SRAM): copy the sample game's
+# stage 1 into stage 2 of the user game (ETC. > STAGE COPY); the game
+# writes the copy into SRAM (about 3.4 KB change, all below $10000). On a
+# blank SRAM the game first runs its S-RAM CHECK and fills SRAM with the
+# sample game; that is initialisation, the copy is the save.
+# The menus use a free hand cursor (X/Y at $7E0110/$7E0112). Holding a
+# direction moves it 1 px a frame for the first 10 frames, so each move
+# goes to the top-left corner, where it clamps, then out in 10-frame
+# steps: exact positions on every core.
+wait 1500           # S-RAM CHECK on a blank cart, then the menu
+press left 200     # ETC.: hand to the top-left corner, then to 130,139
+press up 200
+wait 4
+repeat 13
+press right 10
+wait 2
+end
+repeat 13
+press down 10
+wait 2
+end
+press down 9
+wait 2
+wait 10
+press b 8
+wait 200
+press left 200     # STAGE COPY: hand to the top-left corner, then to 64,158
+press up 200
+wait 4
+repeat 6
+press right 10
+wait 2
+end
+press right 4
+wait 2
+repeat 15
+press down 10
+wait 2
+end
+press down 8
+wait 2
+wait 10
+press b 8
+wait 200
+press left 200     # TO: USER 2: hand to the top-left corner, then to 170,140
+press up 200
+wait 4
+repeat 17
+press right 10
+wait 2
+end
+repeat 14
+press down 10
+wait 2
+end
+wait 10
+press b 8
+wait 30
+press left 200     # OK: hand to the top-left corner, then to 192,164
+press up 200
+wait 4
+repeat 19
+press right 10
+wait 2
+end
+press right 2
+wait 2
+repeat 16
+press down 10
+wait 2
+end
+press down 4
+wait 2
+wait 10
+press b 8
+wait 90           # copy sample stage 1 to user stage 2?  YES / NO
+press left 200     # YES: hand to the top-left corner, then to 141,124
+press up 200
+wait 4
+repeat 14
+press right 10
+wait 2
+end
+press right 1
+wait 2
+repeat 12
+press down 10
+wait 2
+end
+press down 4
+wait 2
+wait 10
+press b 8
+wait 40
+shot copied         # コピーしました。 (copied)
+wait 300

@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "sega-gg",
+  "core": "genesis-plus-gx-wide",
+  "core_file": "genesis_plus_gx_wide_libretro.dylib",
+  "core_name": "Genesis Plus GX Wide",
+  "core_version": "v1.7.4 b7ad005",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Eternal Legend - Eien no Densetsu (Japan).gg",
+    "sha1": "717b4e33cf3956e4194b912533bf1b7bf9d20725",
+    "size": 262144
+  },
+  "script": "scripts/sega-gg/Eternal Legend.txt",
+  "frames": 4910,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Eternal Legend - Eien no Densetsu (Japan).srm": {
+      "size": 720,
+      "sha1": "4c23dfd1a9c35bd466f182ccca0c348d0abd767d"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "snes",
+  "core": "bsnes",
+  "core_file": "bsnes_libretro.dylib",
+  "core_name": "bsnes",
+  "core_version": "115",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Chrono Trigger (USA).sfc",
+    "sha1": "de5822f4f2f7a55acb8926d4c0eaa63d5d989312",
+    "size": 4194304
+  },
+  "script": "scripts/snes/Chrono Trigger.txt",
+  "frames": 9010,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Chrono Trigger (USA).srm": {
+      "size": 8192,
+      "sha1": "73d104b0d775533d1143203dddf54369d1c3c4d0"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "genesis",
+  "core": "blastem",
+  "core_file": "blastem_libretro.dylib",
+  "core_name": "BlastEm",
+  "core_version": "1.0.1-pre",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "World Series Baseball '95 (USA).md",
+    "sha1": "878e9fdbbc0b20b27f25d56e4087efbde1e8979a",
+    "size": 3145728
+  },
+  "script": "scripts/genesis/World Series Baseball '95.txt",
+  "frames": 4800,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "World Series Baseball '95 (USA).srm": {
+      "size": 32768,
+      "sha1": "abf6e3effd56aa32cc79b63c7ec99c5d29144ab7"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

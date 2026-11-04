@@ -1,0 +1,51 @@
+# Deep Dungeon II - Yuushi no Monshou: register "ABC" (なまえ とうろく, no
+# password), then start the game with it. The roster reaches the 8 KiB SRAM
+# only when the game starts: a reset straight after registering shows an
+# empty roster. Joystick only: fMSX runs with --device0 257.
+# The reset is the power cycle (blueMSX writes its .sram only then); after it
+# the roster shows ABC again.
+wait 900
+press a 8           # title -> roster
+wait 150
+repeat 5
+press down 6        # -> なまえ とうろく (register)
+wait 20
+end
+press a 8           # -> slot list
+wait 150
+press a 8           # slot 1 -> パスワードをいれますか? (enter a password?)
+wait 200
+press down 8        # いいえ (no)
+wait 60
+press a 8           # -> name grid, cursor on あ
+wait 200
+repeat 5
+press down 6
+wait 20
+end
+press right 6       # -> A
+wait 20
+press a 6
+wait 40
+press right 6
+wait 20
+press a 6           # B
+wait 40
+press right 6
+wait 20
+press a 6           # C
+wait 40
+press b 8           # -> おわり (done)
+wait 60
+press a 8
+wait 200
+press a 8           # start with ABC -> かみのことば (god's words)
+wait 300
+press a 8           # -> overworld
+wait 300
+shot started
+reset
+wait 900
+press a 8
+wait 200
+shot roster

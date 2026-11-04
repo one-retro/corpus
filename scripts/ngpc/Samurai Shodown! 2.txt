@@ -1,0 +1,38 @@
+# Samurai Shodown! 2: GAME OPTION, CPU LEVEL NORMAL -> HARD, EXIT, SAVE? YES. The game sets
+# up its save block on first boot and keeps a PLAYTIME counter in it; leaving
+# GAME OPTION with a save rewrites it. A reset and a second look at GAME OPTION shows HARD
+# kept.
+# NGP A is libretro b, NGP B is libretro a, Option is start.
+wait 900
+press b 6           # skip the intro
+wait 300
+repeat 4
+press down 10       # GAME OPTION
+wait 40
+end
+press b 10
+wait 300
+press right 10      # CPU LEVEL NORMAL -> HARD
+wait 40
+repeat 7
+press down 10
+wait 40
+end
+press b 10          # EXIT
+wait 200
+press b 10          # SAVE? YES: the options are written here
+wait 300
+shot exited
+reset
+wait 900
+press b 6
+wait 300
+repeat 4
+press down 10
+wait 40
+end
+press b 10          # GAME OPTION again
+wait 300
+press down 10       # off CPU LEVEL
+wait 40
+shot kept

@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "snes",
+  "core": "snes9x-2005-plus",
+  "core_file": "snes9x2005_plus_libretro.dylib",
+  "core_name": "Snes9x 2005 Plus",
+  "core_version": "v1.36 a79dfe9",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Daikaijuu Monogatari II (Japan).sfc",
+    "sha1": "673c48a373b7da7e0e934c55f7182587e07bb9ab",
+    "size": 5242880
+  },
+  "script": "scripts/snes/Daikaijuu Monogatari II.txt",
+  "frames": 23538,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Daikaijuu Monogatari II (Japan).srm": {
+      "size": 8192,
+      "sha1": "d4533e5c3a866b9a72756c41280c0e9e7c1d0179"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

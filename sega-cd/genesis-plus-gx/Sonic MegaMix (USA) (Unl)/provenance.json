@@ -1,0 +1,31 @@
+{
+  "method": "played",
+  "system": "sega-cd",
+  "core": "genesis-plus-gx",
+  "core_file": "genesis_plus_gx_libretro.dylib",
+  "core_name": "Genesis Plus GX",
+  "core_version": "v1.7.4 f27655b",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Sonic MegaMix (USA) (Unl).cue",
+    "sha1": "6ef9e97f1feeea0ef2f479acfefc81a94537de67",
+    "size": 91
+  },
+  "script": "scripts/sega-cd/Sonic MegaMix.txt",
+  "frames": 4324,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "4Mbit_cart.brm": {
+      "size": 524288,
+      "sha1": "2a170e18ca44a8bbaa8d36675cdae9e7203026d0"
+    },
+    "scd_U.brm": {
+      "size": 8192,
+      "sha1": "7e65a0c44217cb6284a3916478110840b4f481e0"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

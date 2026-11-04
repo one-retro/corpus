@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "n64",
+  "core": "parallel-n64",
+  "core_file": "parallel_n64_libretro.dylib",
+  "core_name": "ParaLLEl N64",
+  "core_version": "1.0 e8cbdbb",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Super Mario 64 (USA).z64",
+    "sha1": "9bef1128717f958171a4afac3ed78ee2bb4e86ce",
+    "size": 8388608
+  },
+  "script": "scripts/n64/Super Mario 64.txt",
+  "frames": 1926,
+  "options": "parallel-n64-gfxplugin = angrylion\nparallel-n64-pak1 = memory\n",
+  "started_from": null,
+  "files": {
+    "Super Mario 64 (USA).srm": {
+      "size": 296960,
+      "sha1": "64c61032286705f7f386dd9d605196aae3d6a370"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

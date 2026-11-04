@@ -1,0 +1,31 @@
+{
+  "method": "played",
+  "system": "gb",
+  "core": "gambatte",
+  "core_file": "gambatte_libretro.dylib",
+  "core_name": "Gambatte",
+  "core_version": "v0.5.0-netlink 77f2567",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Pocket Family GB (Japan) (SGB Enhanced).gb",
+    "sha1": "162b0ab1fcfcf9b7ac888f137fedc41264219cf9",
+    "size": 524288
+  },
+  "script": "scripts/gb/Pocket Family GB.txt",
+  "frames": 7246,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Pocket Family GB (Japan) (SGB Enhanced).rtc": {
+      "size": 8,
+      "sha1": "4037efb7114ffcb53491d5273d7889c8d1f617c8"
+    },
+    "Pocket Family GB (Japan) (SGB Enhanced).srm": {
+      "size": 32768,
+      "sha1": "725972d223de877db0045acd4b8bdafe71a324a9"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

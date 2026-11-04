@@ -1,0 +1,27 @@
+{
+  "method": "device-backup",
+  "device": "Nintendo 2DS",
+  "producer": "JKSV",
+  "backup_path": "JKSV/Saves/New Super Mario Bros  2/2034.02.05_14.21.56",
+  "system": "3ds",
+  "core": "_jksv",
+  "title": {
+    "jksv_folder": "New Super Mario Bros  2",
+    "name": "New Super Mario Bros. 2",
+    "product_code": "CTR-P-ABEE",
+    "title_id": "000400000007AE00"
+  },
+  "game_source": "No-Intro DAT 'Nintendo - Nintendo 3DS (Encrypted) (20260826-020750)', by product code; the backup does not say which revision of the game made it, so the folder is the unrevised entry",
+  "attribution": "JKSV save manager on the owner's 2DS, real hardware; JKSV's title cache (JKSV/titles) gives the product code and title ID for its folder name",
+  "confidence": "high",
+  "written": "2034.02.05_14.21.56 (JKSV's backup folder, the 2DS's clock, which was set to 2034)",
+  "files": {
+    "Saves/New Super Mario Bros  2/2034.02.05_14.21.56/BigRedSave.dat": {
+      "size": 10296,
+      "sha1": "bcaddfa8710dd08fef18644f1d73223d17d2b7c7",
+      "role": "primary"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

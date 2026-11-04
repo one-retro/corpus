@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "nes",
+  "core": "fixnes",
+  "core_file": "fixnes_libretro.dylib",
+  "core_name": "fixNES",
+  "core_version": "Alpha v1.3.1",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Crystalis (USA).nes",
+    "sha1": "c9144b473ac2a3b9bf3ea8054aff565460e5b2d4",
+    "size": 393232
+  },
+  "script": "scripts/nes/Crystalis.txt",
+  "frames": 8492,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Crystalis (USA).srm": {
+      "size": 8192,
+      "sha1": "2bc8d78c556c554b8c1a73f77d33dfb8bf67a65b"
+    }
+  },
+  "created": "2026-11-03",
+  "note": "runner: work/nes/runner/retro-run (tools/retro-run with RetroArch's init order and a disk control interface)"
+}

@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "fds",
+  "core": "nestopia",
+  "core_file": "nestopia_libretro.dylib",
+  "core_name": "Nestopia",
+  "core_version": "2.0.0 f1e02d1",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Golf - US Course (Japan) (DV 2) (Disk Writer).fds",
+    "sha1": "ba9acb65d9d009c08c0fdf521646fa84ebb4c69a",
+    "size": 131000
+  },
+  "script": "scripts/fds/Golf - US Course.txt",
+  "frames": 6754,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Golf - US Course (Japan) (DV 2) (Disk Writer).sav": {
+      "size": 69,
+      "sha1": "bb0595858cdb23e10c8a3f5eb8e1ea55a504e3f6"
+    }
+  },
+  "created": "2026-11-03",
+  "note": "runner: work/nes/runner/retro-run (tools/retro-run with RetroArch's init order and a disk control interface)"
+}

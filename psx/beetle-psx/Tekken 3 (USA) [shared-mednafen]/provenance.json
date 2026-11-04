@@ -1,0 +1,31 @@
+{
+  "method": "played",
+  "system": "psx",
+  "core": "beetle-psx",
+  "core_file": "mednafen_psx_libretro.dylib",
+  "core_name": "Beetle PSX",
+  "core_version": "0.9.44.1 71ee81e",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Tekken 3 (USA).cue",
+    "sha1": "69d1f34ff24096b9fb95b45232ba684872cd8de2",
+    "size": 306
+  },
+  "script": "scripts/psx/Tekken 3.txt",
+  "frames": 7302,
+  "options": "# Beetle PSX: Mednafen card method with shared cards (mednafen_psx_libretro_shared.N.mcr)\nbeetle_psx_use_mednafen_memcard0_method = mednafen\nbeetle_psx_enable_memcard1 = enabled\nbeetle_psx_shared_memory_cards = enabled\n",
+  "started_from": null,
+  "files": {
+    "mednafen_psx_libretro_shared.0.mcr": {
+      "size": 131072,
+      "sha1": "1e074fa1a019444d4ff109541c4d8d928a83fc0d"
+    },
+    "mednafen_psx_libretro_shared.1.mcr": {
+      "size": 131072,
+      "sha1": "1b3c99be55273085e14b30983b636529b6dd7f46"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "option variant: beetle_psx_use_mednafen_memcard0_method = mednafen;beetle_psx_enable_memcard1 = enabled;beetle_psx_shared_memory_cards = enabled"
+}

@@ -1,0 +1,42 @@
+# Davis Cup Tennis: ONE PLAYER, rename the player "SLAYER 1", SAVE him to
+# backup RAM, then reset and LOAD him back: the player screen shows SLAYER 1.
+repeat 6
+wait 120
+press start 6         # logos, title
+end
+wait 60
+press a 6             # ONE PLAYER
+wait 90
+press down 6          # NAME
+wait 30
+press a 6
+wait 30
+repeat 3
+press down 6          # P -> S
+wait 20
+end
+press a 6
+wait 30
+press up 6            # CONTINUE
+wait 30
+press up 6            # LOAD
+wait 30
+press right 6         # SAVE
+wait 30
+press a 6
+wait 120
+shot saved
+reset
+repeat 6
+wait 120
+press start 6
+end
+wait 60
+press a 6             # ONE PLAYER: PLAYER 1 again
+wait 90
+shot fresh
+press up 6            # LOAD
+wait 30
+press a 6
+wait 180
+shot loaded           # SLAYER 1

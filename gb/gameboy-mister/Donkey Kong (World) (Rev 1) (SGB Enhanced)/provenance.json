@@ -1,0 +1,19 @@
+{
+  "method": "downloaded",
+  "system": "gb",
+  "core": "gameboy-mister",
+  "url": "https://github.com/MiSTer-devel/Gameboy_MiSTer/files/7531223/Donkey.Kong.World.Rev.1.SGB.Enhanced.-.savegame.and.savestate.zip",
+  "source_page": "https://github.com/MiSTer-devel/Gameboy_MiSTer/issues/187",
+  "source": "GitHub",
+  "author": "Kopert",
+  "licence": null,
+  "fetched": "2026-11-03",
+  "what_it_is": "Donkey Kong '94 battery save from the MiSTer Gameboy core (Gameboy_20211107.rbf, No-Intro Rev 1 ROM md5 4859ec2b...); reporter says it is a few levels (4-5) before the final boss.",
+  "files": {
+    "Donkey Kong (World) (Rev 1) (SGB Enhanced).sav": {
+      "size": 8192,
+      "sha1": "df123d3f33e56cbd1b3c2fbee75ced716b65b925"
+    }
+  },
+  "note": "8192 bytes, no footer (MBC1+RAM, no clock). The zip also contained a MiSTer savestate 'Donkey Kong (World) (Rev 1) (SGB Enhanced)_1.ss' (181040 bytes, right after the final boss), not filed; it stays in .cache/downloads/gb/102-mister-dk94/."
+}

@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "ngp",
+  "core": "race",
+  "core_file": "race_libretro.dylib",
+  "core_name": "RACE",
+  "core_version": "v2.16 c7810dd",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "King of Fighters R-1 - Pocket Fighting Series (Japan, Europe) (En,Ja).ngp",
+    "sha1": "4a7adbcccb05b6047a38bb861523cbae7d956bfa",
+    "size": 2097152
+  },
+  "script": "scripts/ngp/King of Fighters R-1.txt",
+  "frames": 2122,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "King of Fighters R-1 - Pocket Fighting Series (Japan, Europe) (En,Ja).ngf": {
+      "size": 16408,
+      "sha1": "f581c47bd9a15ca15b3e793012cd5abf830c502c"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

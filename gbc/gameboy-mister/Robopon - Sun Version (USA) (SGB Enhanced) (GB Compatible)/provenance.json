@@ -1,0 +1,19 @@
+{
+  "method": "downloaded",
+  "system": "gbc",
+  "core": "gameboy-mister",
+  "url": "https://github.com/budude2/openfgpa-GBC/files/14317511/Robopon_MiSTer_SAVE.zip",
+  "source_page": "https://github.com/budude2/openfpga-GBC/issues/38",
+  "source": "GitHub",
+  "author": "llicor2030",
+  "licence": null,
+  "fetched": "2026-11-03",
+  "what_it_is": "Robopon Sun (USA) save made on the MiSTer Gameboy core, posted at the openFPGA-GBC dev's request in an issue about the HuC-3 RTC ('The original MiSTer works fine'); in-game state not described. Extracted from Robopon_MiSTer_SAVE.zip.",
+  "files": {
+    "Robopon - Sun Version (USA).sav": {
+      "size": 33280,
+      "sha1": "aff61cb43a73f8e00df4994e3ab91dcc43dbe486"
+    }
+  },
+  "note": "HuC-3. 33280 = 32768 SRAM + 512-byte footer. Footer: f798d065 (LE u32 1708169463 = 2024-02-17 11:31:03 UTC; zip mtime 11:36 local, issue comment 02:40 UTC, so likely local time JST stored as epoch) then 728e0040 0000, rest 0xFF to 512 bytes. Zip also had the Japanese save (filed under gb). Uploader said budude2's core rewrites data after 0x6000 differently."
+}

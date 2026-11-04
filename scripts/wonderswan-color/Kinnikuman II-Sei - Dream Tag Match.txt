@@ -1,0 +1,33 @@
+# Kinnikuman II-Sei - Dream Tag Match (EEPROM 128 B). オプション > オートセーブ:
+# switch auto-save from ON to OFF. The setting is written at once; after a
+# reset オートセーブ shows OFF selected.
+wait 900
+press start 8       # title -> ストーリー / タッグマッチ / 通信対戦 / オプション
+wait 150
+repeat 3
+press down 8
+wait 30
+end
+press a 8           # オプション: オートセーブ
+wait 150
+press a 8           # ON / OFF (cursor on ON)
+wait 150
+press right 8       # OFF
+wait 30
+press a 8
+wait 150
+press b 8           # back to オプション
+wait 150
+reset
+wait 900
+press start 8
+wait 150
+repeat 3
+press down 8
+wait 30
+end
+press a 8
+wait 150
+press a 8
+wait 150
+shot autosave       # オートセーブ: OFF selected, read back from EEPROM

@@ -1,0 +1,29 @@
+# A Ressha de Ikou MSX (Take the A-Train, Artdink/Pony Canyon, 2 KiB SRAM):
+# start a new game, then Q セーブ (save): "To be continued / SAVE THE MAP?
+# (Y/N)" Y, "OK? (Y-key)" Y. Keyboard only: fMSX runs with --device0 3.
+# The reset is the power cycle (blueMSX writes its .sram only then); after it
+# NEW GAME (Y/N)? N resumes the saved map.
+wait 900
+key space 8         # title
+wait 400
+key y 8             # NEW GAME (Y/N)? Y
+wait 600
+key n 8             # THEME MUSIC (Y/N)? N
+wait 1500
+shot playing
+key q 8             # Q セーブ
+wait 200
+key y 8             # SAVE THE MAP? (Y/N)
+wait 300
+key y 8             # OK? (Y-key)
+wait 300
+shot saved
+reset
+wait 900
+key space 8
+wait 600
+key n 8             # NEW GAME (Y/N)? N: continue the saved game
+wait 600
+key n 8             # THEME MUSIC (Y/N)? N
+wait 400
+shot resumed

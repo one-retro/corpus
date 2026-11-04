@@ -1,0 +1,32 @@
+{
+  "method": "played",
+  "system": "mastersystem",
+  "core": "mednafen",
+  "core_file": null,
+  "core_name": "Mednafen",
+  "core_version": "1.32.1",
+  "frontend": "Mednafen 1.32.1 (Homebrew), module 'sms', isolated MEDNAFEN_HOME, -sound 0 -video.glvsync 0",
+  "rom": {
+    "name": "Phantasy Star (USA, Europe) (Rev A).sms",
+    "size": 524288,
+    "sha1": "07fcf297be4f4c9d92cd3f119a7ac48467e06838"
+  },
+  "script": "scripts/mastersystem/Phantasy Star.txt",
+  "frames": 6066,
+  "options": null,
+  "input": "work/standalone/tools/sdlfeed.c (DYLD_INSERT_LIBRARIES into the ad-hoc-signed Homebrew binary): SDL key events synthesized inside the process on presented frames, from the retro-run script mapped to Mednafen's default keys (gen_sdlfeed.py); F9 snapshot for shot, F10 reset, F12 exit (Mednafen writes saves on exit)",
+  "started_from": null,
+  "files": {
+    "Phantasy Star (USA, Europe) (Rev A).1110938df80f4e44c8213d7f85cfb5e6.sav": {
+      "size": 32768,
+      "sha1": "fa111a9c426366d5e27d98292332d8f4a205cddd"
+    }
+  },
+  "layout": {
+    "save_dir": "$MEDNAFEN_HOME/sav (default .mednafen/sav in the home folder)",
+    "name": "<ROM file name without extension>.<game MD5 as Mednafen computes it>.<ext> (filesys.fname_sav %f.%M%x)",
+    "written": "on exit"
+  },
+  "created": "2026-11-04",
+  "note": "32768 bytes, byte-identical to picodrive and sms-plus-gx (genesis-plus-gx writes 8188, gearsystem 32768 with other bytes)."
+}

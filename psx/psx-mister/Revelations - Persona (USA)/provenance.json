@@ -1,0 +1,18 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "psx-mister",
+  "url": "https://github.com/user-attachments/files/18265762/PersonaSave.zip",
+  "source_page": "https://github.com/MiSTer-devel/PSX_MiSTer/issues/308",
+  "source": "GitHub (MiSTer-devel/PSX_MiSTer issues)",
+  "author": "SenanAsura",
+  "licence": null,
+  "fetched": "2026-11-04",
+  "what_it_is": "MiSTer PSX core .sav; three 2-block Persona files, about 30 hours in",
+  "files": {
+    "Persona.sav": {
+      "size": 131072,
+      "sha1": "e16ca9c1dceafc281e1af5087dba7ec777b24d0c"
+    }
+  }
+}

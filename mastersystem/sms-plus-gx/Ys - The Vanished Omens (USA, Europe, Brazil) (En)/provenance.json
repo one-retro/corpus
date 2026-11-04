@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "mastersystem",
+  "core": "sms-plus-gx",
+  "core_file": "smsplus_libretro.dylib",
+  "core_name": "SMS Plus GX",
+  "core_version": "1.8 3844b46",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Ys - The Vanished Omens (USA, Europe, Brazil) (En).sms",
+    "sha1": "e73e836c353543e9f48315410b0d72278899ff59",
+    "size": 262144
+  },
+  "script": "scripts/mastersystem/Ys.txt",
+  "frames": 2711,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Ys - The Vanished Omens (USA, Europe, Brazil) (En).srm": {
+      "size": 32768,
+      "sha1": "5a923a462bbde1fae66abe4bab2e78629d463edd"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

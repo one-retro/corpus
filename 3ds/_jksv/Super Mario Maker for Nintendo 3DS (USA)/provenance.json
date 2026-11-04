@@ -1,0 +1,1133 @@
+{
+  "method": "device-backup",
+  "device": "Nintendo 2DS",
+  "producer": "JKSV",
+  "backup_path": "JKSV/Saves/Super Mario Maker/2034.02.05_14.21.59",
+  "system": "3ds",
+  "core": "_jksv",
+  "title": {
+    "jksv_folder": "Super Mario Maker",
+    "name": "Super Mario Maker",
+    "product_code": "CTR-P-AJHE",
+    "title_id": "00040000001A0400"
+  },
+  "game_source": "No-Intro DAT 'Nintendo - Nintendo 3DS (Encrypted) (20260826-020750)', by product code; the backup does not say which revision of the game made it, so the folder is the unrevised entry",
+  "attribution": "JKSV save manager on the owner's 2DS, real hardware; JKSV's title cache (JKSV/titles) gives the product code and title ID for its folder name",
+  "confidence": "high",
+  "written": "2034.02.05_14.21.59 (JKSV's backup folder, the 2DS's clock, which was set to 2034)",
+  "files": {
+    "Saves/Super Mario Maker/2034.02.05_14.21.59/Progress": {
+      "size": 32792,
+      "sha1": "d838e24a2db370c27715dc902d3215d859577aa4",
+      "role": "primary"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course000": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course001": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course002": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course003": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course004": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course005": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course006": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course007": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course008": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course009": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course010": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course011": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course012": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course013": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course014": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course015": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course016": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course017": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course018": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course019": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course020": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course021": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course022": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course023": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course024": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course025": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course026": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course027": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course028": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course029": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course030": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course031": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course032": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course033": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course034": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course035": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course036": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course037": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course038": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course039": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course040": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course041": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course042": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course043": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course044": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course045": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course046": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course047": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course048": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course049": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course050": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course051": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course052": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course053": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course054": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course055": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course056": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course057": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course058": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course059": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course060": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course061": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course062": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course063": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course064": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course065": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course066": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course067": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course068": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course069": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course070": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course071": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course072": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course073": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course074": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course075": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course076": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course077": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course078": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course079": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course080": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course081": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course082": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course083": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course084": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course085": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course086": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course087": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course088": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course089": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course090": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course091": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course092": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course093": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course094": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course095": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course096": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course097": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course098": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course099": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course100": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course101": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course102": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course103": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course104": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course105": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course106": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course107": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course108": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course109": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course110": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course111": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course112": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course113": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course114": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course115": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course116": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course117": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course118": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course119": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course120": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course121": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course122": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course123": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course124": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course125": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course126": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course127": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course128": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course129": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course130": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course131": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course132": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course133": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course134": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course135": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course136": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course137": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course138": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course139": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course140": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course141": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course142": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course143": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course144": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course145": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course146": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course147": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course148": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course149": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course150": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course151": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course152": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course153": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course154": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course155": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course156": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course157": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course158": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course159": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course160": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course161": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course162": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course163": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course164": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course165": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course166": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course167": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course168": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course169": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course170": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course171": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course172": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course173": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course174": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course175": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course176": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course177": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course178": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course179": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course180": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course181": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course182": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course183": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course184": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course185": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course186": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course187": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course188": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course189": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course190": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course191": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course192": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course193": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course194": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course195": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course196": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course197": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course198": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course199": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course200": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course201": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course202": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course203": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course204": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course205": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course206": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course207": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course208": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course209": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course210": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course211": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course212": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course213": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course214": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course215": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course216": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course217": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course218": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course219": {
+      "size": 274460,
+      "sha1": "fdbaa1b8ed432d56bed4eae8d2fc66012bfc2c79",
+      "role": "extdata"
+    },
+    "ExtData/Super Mario Maker/2034.02.05_14.22.01/course220": {
+      "size": 7196,
+      "sha1": "f1cd6ba4341c17ca1a1b53a4a24b6f2b93f51f4c",
+      "role": "extdata"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null,
+  "extdata_backup_path": "JKSV/ExtData/Super Mario Maker/2034.02.05_14.22.01"
+}

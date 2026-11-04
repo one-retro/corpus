@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "snes",
+  "core": "snes9x",
+  "core_file": "snes9x_libretro.dylib",
+  "core_name": "Snes9x",
+  "core_version": "1.63 fae2fea",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Kaite Tsukutte Asoberu Dezaemon (Japan).sfc",
+    "sha1": "4b5725aeb7f770feadda6cfec5e609ff57fce363",
+    "size": 524288
+  },
+  "script": "scripts/snes/Dezaemon.txt",
+  "frames": 6184,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Kaite Tsukutte Asoberu Dezaemon (Japan).srm": {
+      "size": 131072,
+      "sha1": "fe972f66b155034783f3dbfa16d1aed2654cb951"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

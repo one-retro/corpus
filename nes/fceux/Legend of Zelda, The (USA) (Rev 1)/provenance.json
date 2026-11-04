@@ -1,0 +1,32 @@
+{
+  "method": "played",
+  "system": "nes",
+  "core": "fceux",
+  "core_file": null,
+  "core_name": "FCEUX",
+  "core_version": "2.6.6",
+  "frontend": "FCEUX 2.6.6 (Homebrew build, Qt GUI), input by its Lua engine (--loadlua)",
+  "rom": {
+    "name": "Legend of Zelda, The (USA) (Rev 1).nes",
+    "size": 131088,
+    "sha1": "4671517d72d09799403f6c672cd2b395933e926e"
+  },
+  "script": "scripts/nes/Legend of Zelda.txt",
+  "frames": 1116,
+  "options": null,
+  "input": "work/standalone/tools/gen_fceux_lua.py: the retro-run script replayed with joypad.set per frame, turbo speed; emu.exit at the end",
+  "started_from": null,
+  "files": {
+    "Legend of Zelda, The (USA) (Rev 1).sav": {
+      "size": 8192,
+      "sha1": "92ad8037aeb6cd09672dac7721a4795fe717021d"
+    }
+  },
+  "layout": {
+    "save_dir": "<base>/sav, base = $FCEUX_HOME/.fceux (default .fceux in the home folder)",
+    "name": "<ROM file name without extension>.sav",
+    "written": "when the game is closed (emu.exit here)"
+  },
+  "created": "2026-11-03",
+  "note": "FCEUX segfaulted (rc 139) after emu.exit, once the .sav was already written; every run did this. Byte-identical to the fceumm, mesen and nestopia .srm."
+}

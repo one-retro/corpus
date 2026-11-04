@@ -1,0 +1,50 @@
+# Shougi no Tatsujin: a game of honshougi at the first level; move the 5th
+# pawn one square, let the computer answer, then Option -> セーブ／ロード, A
+# saves the position. After a reset, a new game, Option, right to ロード and A
+# loads it back.
+# NGP A is libretro b, NGP B is libretro a, Option is start.
+wait 400
+press b 6           # skip the intro
+wait 200
+press b 10          # title
+wait 200
+press b 10          # 本将棋
+wait 200
+press b 10          # 初心者
+wait 200
+press b 10          # opponent
+wait 200
+tap b 2 40          # past the greeting
+press down 10       # cursor onto the 5th pawn
+wait 40
+press b 10
+wait 60
+press up 10
+wait 40
+press b 10          # pawn forward
+wait 600            # the computer answers
+press start 10      # セーブ／ロード
+wait 100
+press b 10          # A: save
+wait 200
+shot saved
+reset
+wait 400
+press b 6
+wait 200
+press b 10
+wait 200
+press b 10
+wait 200
+press b 10
+wait 200
+press b 10
+wait 200
+tap b 2 40
+press start 10      # セーブ／ロード
+wait 100
+press right 10      # ロード
+wait 40
+press b 10          # A: load
+wait 300
+shot loaded

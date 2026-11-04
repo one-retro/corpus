@@ -1,0 +1,35 @@
+{
+  "method": "played",
+  "system": "mame",
+  "core": "mame",
+  "core_file": "mame_libretro.dylib",
+  "core_name": "MAME",
+  "core_version": "0.289 (5f5a0774)",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "blazstar.zip",
+    "sha1": "e29ef4455e05d552f2b21875f212388fecb7a013",
+    "size": 21596277
+  },
+  "script": "scripts/mame/blazstar.txt",
+  "frames": 5592,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "mame/cfg/blazstar.cfg": {
+      "size": 972,
+      "sha1": "9b700719fbf81ac4ffa646b46e167a956a98c2ca"
+    },
+    "mame/cfg/default.cfg": {
+      "size": 485,
+      "sha1": "351453053c5ec53469dc92d8042bdbdfbf21f579"
+    },
+    "mame/nvram/blazstar/saveram": {
+      "size": 65536,
+      "sha1": "d51e52d73b86d8ca41f4aae6451f3ffacd3410f8"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

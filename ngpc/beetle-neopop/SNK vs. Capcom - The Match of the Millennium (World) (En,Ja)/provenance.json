@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "ngpc",
+  "core": "beetle-neopop",
+  "core_file": "mednafen_ngp_libretro.dylib",
+  "core_name": "Beetle NeoPop",
+  "core_version": "v1.29.0.0 a50d5ac",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "SNK vs. Capcom - The Match of the Millennium (World) (En,Ja).ngc",
+    "sha1": "0806e4a0cff55180e158c9af0060fac17ee9243a",
+    "size": 4194304
+  },
+  "script": "scripts/ngpc/SNK vs. Capcom - The Match of the Millennium.txt",
+  "frames": 3972,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "SNK vs. Capcom - The Match of the Millennium (World) (En,Ja).flash": {
+      "size": 3112,
+      "sha1": "4f474f0add1e98876237caf734dd878c23954c25"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

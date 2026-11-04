@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "mastersystem",
+  "core": "gearsystem",
+  "core_file": "gearsystem_libretro.dylib",
+  "core_name": "Gearsystem",
+  "core_version": "3.9.24-9-gf1202e8",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Penguin Land (USA, Europe).sms",
+    "sha1": "8762239c339a084dfb8443cc38515301476bde28",
+    "size": 131072
+  },
+  "script": "scripts/mastersystem/Penguin Land.txt",
+  "frames": 2934,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Penguin Land (USA, Europe).srm": {
+      "size": 32768,
+      "sha1": "243f689db9cfac68104bc65c4a5ca867cf5e0655"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

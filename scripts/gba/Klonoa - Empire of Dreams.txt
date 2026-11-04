@@ -1,0 +1,29 @@
+# Klonoa - Empire of Dreams: New Game, take the save file the cursor offers
+# (the middle one), YES; the game writes it before the opening. Mash through
+# the opening. Proof: "Select a Save file" showing the Prologue file after a
+# power cycle. The save is a 512-byte (4 Kbit) EEPROM.
+wait 900
+press start 6       # skip the logos
+wait 300
+press start 6       # title -> New Game -> Select a Save file
+wait 300
+press a 6           # the highlighted file
+wait 200
+press a 6           # Is this OK? YES
+wait 200
+press a 6
+wait 200
+tap a 20 30         # the opening text
+wait 300
+shot opening
+# Power cycle: keep battery RAM across the reset (SkyEmu's reset reloads
+# it from a file the frontend never wrote, and would lose the save).
+dump cycle.srm
+reset
+srm cycle.srm
+wait 900
+press start 6
+wait 300
+press start 6       # title -> Select a Save file
+wait 300
+shot files

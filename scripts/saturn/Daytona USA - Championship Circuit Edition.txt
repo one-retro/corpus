@@ -1,0 +1,17 @@
+# Daytona USA CCE (USA): the game writes its records file on first boot (and, when a
+# Backup RAM Cart is present, a second, 60 KB file to the cart). The proof is RECORDS.
+# The menu skips 2PLAYER BATTLE when no second pad is plugged in (Yabause), so go up
+# from ARCADE: up wraps to OPTIONS, up again is RECORDS in both cores.
+wait 2400
+press start          # attract -> title
+wait 300
+press start          # title -> menu
+wait 300
+press up
+wait 40
+press up
+wait 40
+shot menu
+press r              # C: open RECORDS
+wait 300
+shot records

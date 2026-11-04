@@ -1,0 +1,32 @@
+{
+  "method": "played",
+  "system": "snes",
+  "core": "mednafen",
+  "core_file": null,
+  "core_name": "Mednafen",
+  "core_version": "1.32.1",
+  "frontend": "Mednafen 1.32.1 (Homebrew), module 'snes', isolated MEDNAFEN_HOME, -sound 0 -video.glvsync 0",
+  "rom": {
+    "name": "Legend of Zelda, The - A Link to the Past (USA).sfc",
+    "size": 1048576,
+    "sha1": "6d4f10a8b10e10dbe624cb23cf03b88bb8252973"
+  },
+  "script": "scripts/snes/Legend of Zelda, The - A Link to the Past.txt",
+  "frames": 1830,
+  "options": null,
+  "input": "work/standalone/tools/sdlfeed.c (DYLD_INSERT_LIBRARIES into the ad-hoc-signed Homebrew binary): SDL key events synthesized inside the process on presented frames, from the retro-run script mapped to Mednafen's default keys (gen_sdlfeed.py); F9 snapshot for shot, F10 reset, F12 exit (Mednafen writes saves on exit)",
+  "started_from": null,
+  "files": {
+    "Legend of Zelda, The - A Link to the Past (USA).608c22b8ff930c62dc2de54bcd6eba72.srm": {
+      "size": 8192,
+      "sha1": "108c0d4acc0517f9697ba39a1632c5c1156c798e"
+    }
+  },
+  "layout": {
+    "save_dir": "$MEDNAFEN_HOME/sav (default .mednafen/sav in the home folder)",
+    "name": "<ROM file name without extension>.<game MD5 as Mednafen computes it>.<ext> (filesys.fname_sav %f.%M%x)",
+    "written": "on exit"
+  },
+  "created": "2026-11-04",
+  "note": "Module 'snes' (Mednafen's bsnes-based one, the default for .sfc here; not snes_faust). Mednafen names this one .srm, not .sav."
+}

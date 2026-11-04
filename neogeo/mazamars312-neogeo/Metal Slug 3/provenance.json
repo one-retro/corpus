@@ -1,0 +1,21 @@
+{
+  "method": "device-backup",
+  "device": "Analogue Pocket",
+  "backup_path": "Saves/ng/Mazamars312.NeoGeo_Analogizer/Metal Slug 3.sav",
+  "system": "neogeo",
+  "core": "mazamars312-neogeo",
+  "pocket_core": "Mazamars312.NeoGeo_Analogizer",
+  "pocket_platform": "ng",
+  "game_source": "the file's own name (no No-Intro entry applies)",
+  "attribution": "folder Saves/ng/Mazamars312.NeoGeo_Analogizer, named after the instance JSON in Assets/ng/Mazamars312.NeoGeo_Analogizer (the registry counts this build as mazamars312-neogeo)",
+  "confidence": "high",
+  "written": "2024-12-11 18:31 (file mtime as read here; the Pocket stamps its own clock)",
+  "files": {
+    "Metal Slug 3.sav": {
+      "size": 8192,
+      "sha1": "941512e86e47daae3e02a6f985042b4d12e0a27e"
+    }
+  },
+  "created": "2026-11-03",
+  "note": "the memory-card slot (id 0x101, size_maximum 8192): a 2 KiB formatted card, 0xFF to 8 KiB; the three Metal Slug files are byte-identical (empty cards); folder is the instance name (MAME set mslug3)"
+}

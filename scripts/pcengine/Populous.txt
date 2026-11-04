@@ -1,0 +1,16 @@
+# Populous (Japan): the only HuCard with RAM of its own (32 KiB, mapped like ROM
+# banks 0x40-0x43). On power-on the game writes a "POPULOUS." file to the
+# backup RAM; it also keeps the world being played in the card RAM. Conquest
+# mode, world GENESIS, start the game and let it run a while. (The SAVE/LOAD
+# buttons only appear between worlds.)
+wait 240
+press start 6         # Hudson logo
+wait 240
+press start 6         # title: CONQUEST
+wait 240
+press start 6         # WORLD TO CONQUER: GENESIS, START GAME: the game begins
+wait 240
+shot ingame
+press start 6
+wait 1800             # the world plays on its own
+shot playing

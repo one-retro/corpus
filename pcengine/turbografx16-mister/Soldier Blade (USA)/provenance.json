@@ -1,0 +1,19 @@
+{
+  "method": "downloaded",
+  "system": "pcengine",
+  "core": "turbografx16-mister",
+  "url": "https://github.com/euan-forrester/save-file-converter/files/8173565/saves.zip",
+  "source_page": "https://github.com/euan-forrester/save-file-converter/issues/80#issuecomment-1057487772",
+  "source": "GitHub (euan-forrester/save-file-converter issue #80)",
+  "author": "birdybro (GitHub; MiSTer contributor)",
+  "licence": null,
+  "fetched": "2026-11-03",
+  "what_it_is": "birdybro's own MiSTer TurboGrafx16 save of Soldier Blade, from a zip of their whole MiSTer saves folder (saves/TGFX16, file dated 2021-06-06). It holds the backup RAM with the game's own score file SOLDIBLADE (79 bytes, three default score tables), which the game writes at power-on.",
+  "files": {
+    "Soldier Blade (USA).sav": {
+      "size": 2048,
+      "sha1": "1dc8be62a69a4672ddea71e11ac5b7571090cddc"
+    }
+  },
+  "note": "Raw 2 KiB backup RAM, no padding and no MB128 part: HUBM, end pointer 0x8800, next free 0x805F, one entry, 0x00 to the end. Byte-identical to what beetle-pce-fast writes after booting the game to the title (checked 2026-11-04); differs from geargrafx only at offset 5 (0x88 vs 0xA0). The default scores show the game was not played to a new high score. The same zip's HuCard saves for Neutopia II, Bomberman, Devil's Crush and Dragon's Curse are all the empty formatted BRAM (sha1 21c54249ad98..., identical to the agg23 Pocket's Devil's Crush save) and are not filed."
+}

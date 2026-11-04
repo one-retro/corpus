@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "psx",
+  "core": "beetle-psx-hw",
+  "core_file": "mednafen_psx_hw_libretro.dylib",
+  "core_name": "Beetle PSX HW",
+  "core_version": "0.9.44.1 71ee81e",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "opengl",
+  "rom": {
+    "name": "Wipeout XL (USA).cue",
+    "sha1": "4865771eb7fce90a4bd1d67299f5ba6a1f08e7a8",
+    "size": 1314
+  },
+  "script": "scripts/psx/Wipeout XL.txt",
+  "frames": 9340,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Wipeout XL (USA).srm": {
+      "size": 131072,
+      "sha1": "2e5f39e8dcc58b738d0205dbb0549043b928bba8"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

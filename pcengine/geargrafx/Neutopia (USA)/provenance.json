@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "pcengine",
+  "core": "geargrafx",
+  "core_file": "geargrafx_libretro.dylib",
+  "core_name": "Geargrafx",
+  "core_version": "1.8.7",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Neutopia (USA).pce",
+    "sha1": "95d5fdbd6c9d6da2f288312309c2badd92f89cf4",
+    "size": 393216
+  },
+  "script": "scripts/pcengine/Neutopia.txt",
+  "frames": 9742,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Neutopia (USA).srm": {
+      "size": 2048,
+      "sha1": "038787cf27d5eecab81e5f4417fa17ec749d64e9"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

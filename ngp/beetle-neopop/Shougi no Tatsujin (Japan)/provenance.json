@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "ngp",
+  "core": "beetle-neopop",
+  "core_file": "mednafen_ngp_libretro.dylib",
+  "core_name": "Beetle NeoPop",
+  "core_version": "v1.29.0.0 a50d5ac",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Shougi no Tatsujin (Japan).ngp",
+    "sha1": "ab0c33236f72d2b317d91d034756b56cfca1b0b4",
+    "size": 524288
+  },
+  "script": "scripts/ngp/Shougi no Tatsujin.txt",
+  "frames": 4638,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Shougi no Tatsujin (Japan).flash": {
+      "size": 272,
+      "sha1": "acf4e98922067bd094b9ad1666c2347f669e34b3"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

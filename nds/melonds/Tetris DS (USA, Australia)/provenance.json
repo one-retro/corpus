@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "nds",
+  "core": "melonds",
+  "core_file": "melonds_libretro.dylib",
+  "core_name": "melonDS",
+  "core_version": "0.9.3 66b5d26",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Tetris DS (USA, Australia).nds",
+    "sha1": "13eb2e7e5357a6e31f94ea238826c111c965bc9b",
+    "size": 16777216
+  },
+  "script": "scripts/nds/Tetris DS.txt",
+  "frames": 7508,
+  "options": "melonds_touch_mode = Touch\n",
+  "started_from": null,
+  "files": {
+    "Tetris DS (USA, Australia).sav": {
+      "size": 8192,
+      "sha1": "ffb183b29a4f495851d631f56eae58fc76a48c5c"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

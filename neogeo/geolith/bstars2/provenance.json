@@ -1,0 +1,31 @@
+{
+  "method": "played",
+  "system": "neogeo",
+  "core": "geolith",
+  "core_file": "geolith_libretro.dylib",
+  "core_name": "Geolith",
+  "core_version": "0.5.0",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "bstars2.neo",
+    "sha1": "cb5e038327a95d2149b8497d1ab409b51d085408",
+    "size": 7606272
+  },
+  "script": "scripts/neogeo/bstars2.txt",
+  "frames": 17868,
+  "options": "geolith_system_type = mvs\ngeolith_memcard = on\n",
+  "started_from": null,
+  "files": {
+    "bstars2.mcr": {
+      "size": 2048,
+      "sha1": "f804bdd4f372209f6a75305370e791928a230c7e"
+    },
+    "bstars2.nv": {
+      "size": 65536,
+      "sha1": "3e95b1523c3c76e3b9f9b4a8272515c4521f172b"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

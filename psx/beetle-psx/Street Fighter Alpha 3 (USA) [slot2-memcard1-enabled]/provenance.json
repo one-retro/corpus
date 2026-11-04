@@ -1,0 +1,31 @@
+{
+  "method": "played",
+  "system": "psx",
+  "core": "beetle-psx",
+  "core_file": "mednafen_psx_libretro.dylib",
+  "core_name": "Beetle PSX",
+  "core_version": "0.9.44.1 71ee81e",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Street Fighter Alpha 3 (USA).cue",
+    "sha1": "5e640de7f4840a0dddbd6a575669ba649b8eb0c5",
+    "size": 231
+  },
+  "script": "scripts/psx/Street Fighter Alpha 3.slot2.txt",
+  "frames": 9294,
+  "options": "# Beetle PSX: libretro card 1 (.srm) plus a second card in slot 2 (<game>.1.mcr)\nbeetle_psx_enable_memcard1 = enabled\n",
+  "started_from": null,
+  "files": {
+    "Street Fighter Alpha 3 (USA).1.mcr": {
+      "size": 131072,
+      "sha1": "3f97b109991dd8db75ad4e5948856f840dea5932"
+    },
+    "Street Fighter Alpha 3 (USA).srm": {
+      "size": 131072,
+      "sha1": "ce51325adfe26fd6f96ddf1ab80347a95ec63bf0"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "option variant: beetle_psx_enable_memcard1 = enabled"
+}

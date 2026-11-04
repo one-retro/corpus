@@ -1,0 +1,25 @@
+# Mario Party DS: the first boot formats the EEPROM ("Creating data...",
+# "Data has been created."). Then pick save file 1, keep the name the game
+# fills in from the firmware user name, OK: "Creating Save File 1...",
+# "Save File 1 has been created." B from the main menu shows Select Data
+# with file 1 named.
+wait 1200
+press start 6      # title: "Creating data... Don't turn off power"
+wait 600
+press a 6          # "Data has been created." OK
+wait 150
+press a 6          # Select Data: file 1
+wait 200
+press a 6          # Enter Name (prefilled with the firmware user name)
+wait 200
+press start 6      # cursor to OK
+wait 60
+press a 6          # "Creating Save File 1..."
+wait 300
+shot created       # "Save File 1 has been created."
+press a 6          # OK: Main Menu
+wait 200
+press b 6          # back to Select Data
+wait 200
+shot selectdata    # file 1: the name, MP Points 0
+wait 2400          # melonDS writes its .sav 2 s (wall clock) after the game's last write

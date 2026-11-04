@@ -1,0 +1,19 @@
+# Ys - The Vanished Omens: a new game starts straight from the title when the
+# cart holds no data. Open the menu with button 2 (a), SAVE DATA, slot 1.
+# The game names the slot after the place: "1 MINEA", "Finished."
+wait 1900           # Falcom/Sega title sequence
+press start 6
+wait 150
+press b 6           # into Minea
+wait 200
+press a 6           # EXIT STATUS EQUIPMENT READ BOOK LOAD DATA SAVE DATA
+wait 60
+tap down 5 15       # -> SAVE DATA
+press a 6           # slot list, cursor on EXIT
+wait 90
+press down 6        # -> 1
+wait 30
+press a 6           # save: "Finished." and "1 MINEA"
+wait 120
+shot saved
+wait 30

@@ -1,0 +1,61 @@
+# Miracle Warriors - Seal of The Dark Lord: START, name the hero "ABC", then
+# from the field menu QUIT > SAVE > SAVE 1. The game polls the pad slowly, so
+# presses are held 10 frames. Button 1 (b) types/opens the menu, button 2 (a)
+# confirms menu choices.
+wait 900
+press start 6
+wait 150
+press b 6           # START -> YOUR NAME
+wait 150
+press b 10          # A
+wait 20
+press right 10
+wait 20
+press b 10          # B
+wait 20
+press right 10
+wait 20
+press b 10          # C
+wait 20
+press down 10
+wait 20
+press down 10
+wait 20
+press down 10       # -> BACK
+wait 20
+press right 10
+wait 20
+press right 10      # -> END
+wait 20
+press b 10          # END: the hero stands on the beach
+wait 150
+press b 10          # HEAL STATUS ITEMS QUIT
+wait 60
+press down 10
+wait 20
+press down 10
+wait 20
+press down 10       # -> QUIT
+wait 20
+press a 10          # SAVE / QUIT
+wait 90
+press a 10          # SAVE -> NO SAVE, SAVE 1..5
+wait 90
+press down 10       # -> SAVE 1
+wait 20
+press a 10          # written: the menu closes
+wait 120
+shot s1
+reset               # show it: title > CONTINUE lists the saves
+wait 900
+press start 6
+wait 150
+press right 10
+wait 30
+shot s2
+press b 10          # SELECT PLEASE. NO.1 .. NO.5
+wait 150
+press b 10          # NO.1: ABC is back on the beach
+wait 200
+shot saved
+wait 30

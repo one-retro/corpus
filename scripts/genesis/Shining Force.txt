@@ -1,0 +1,70 @@
+# Shining Force: through Simone's opening, New -> adventure 1, name the hero
+# "A", END. The game writes adventure 1 as Chapter 1 begins. Reset and go back
+# to Simone: she now offers to continue it, and adventure 1 reads Ch.1.
+# Genesis A/B/C are the RetroPad's y/b/a.
+wait 600
+press start 6       # skip the "In ages long forgotten..." intro
+wait 360
+press start 6       # PRESS START BUTTON
+wait 400
+repeat 12           # Simone reads the old book
+press a 6
+wait 60
+end
+repeat 7
+tap a 3 20
+end
+wait 30
+press a 4
+wait 120
+press a 4
+wait 120
+shot new            # "New" bubble
+press a 4           # New -> "Pick an adventure." 1 2 3
+wait 360
+press a 4           # adventure 1 -> "Say, what shall I call you?"
+wait 360
+press a 4           # name entry
+wait 120
+press a 4           # "A"
+wait 60
+press up 4
+wait 30
+press left 4        # cursor to END
+wait 30
+shot named
+press a 4           # END: "Nice to meet you, A! I'm Simone."
+wait 120
+repeat 6
+press a 4
+wait 90
+end
+wait 600
+shot chapter        # Chapter 1 begins; adventure 1 is written
+reset
+wait 600
+press start 6
+wait 360
+press start 6
+wait 400
+repeat 12
+press a 6
+wait 60
+end
+repeat 7
+tap a 3 20
+end
+wait 30
+press a 4
+wait 120
+press a 4
+wait 120
+shot menu           # now "Cont" and "New"
+press a 4           # Cont: "Let's get going! You're doing great so far!"
+wait 240
+press a 4           # "Which adventure would you like to continue?"
+wait 480
+press a 4           # the text is done: the adventure bubbles appear
+wait 120
+shot saved          # adventure 1's bubble reads "Ch.1 A"
+wait 30

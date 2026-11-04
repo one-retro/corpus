@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "ngpc",
+  "core": "beetle-neopop",
+  "core_file": "mednafen_ngp_libretro.dylib",
+  "core_name": "Beetle NeoPop",
+  "core_version": "v1.29.0.0 a50d5ac",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Bust-A-Move Pocket (USA).ngc",
+    "sha1": "3b102e32fccf8ff389c508be55517368d56b144f",
+    "size": 1048576
+  },
+  "script": "scripts/ngpc/Bust-A-Move Pocket.txt",
+  "frames": 3532,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Bust-A-Move Pocket (USA).flash": {
+      "size": 7192,
+      "sha1": "b4485c4186413a846f08bcc3547f59d8c3d4b243"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

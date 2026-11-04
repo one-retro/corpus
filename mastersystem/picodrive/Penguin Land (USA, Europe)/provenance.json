@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "mastersystem",
+  "core": "picodrive",
+  "core_file": "picodrive_libretro.dylib",
+  "core_name": "PicoDrive",
+  "core_version": "2.05-1890c29",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Penguin Land (USA, Europe).sms",
+    "sha1": "8762239c339a084dfb8443cc38515301476bde28",
+    "size": 131072
+  },
+  "script": "scripts/mastersystem/Penguin Land.txt",
+  "frames": 2934,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Penguin Land (USA, Europe).srm": {
+      "size": 32768,
+      "sha1": "817835bac7cebb386518ed824e2c54a6918c1542"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

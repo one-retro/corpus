@@ -1,0 +1,22 @@
+{
+  "method": "device-backup",
+  "device": "Analogue Pocket",
+  "backup_path": "Saves/jtshouse/common/wldcourt.sav",
+  "system": "mame",
+  "core": "_jotego.jtshouse",
+  "pocket_core": "jotego.jtshouse",
+  "pocket_platform": "jtshouse",
+  "game_source": "the file's own name (no No-Intro entry applies)",
+  "attribution": "NOT written on this device: byte-identical to jotego's distributed default for this set (github.com/jotego/jtbin pocket/raw/Saves/jtshouse/common/wldcourt.sav, 2025-03-21 install); all 13 files in Saves/jtshouse/common carry the same mtime, 2025-03-21 18:18, the minute the updater installed the jotego cores' assets (1282 files in Assets share it). Kept as an example of what a Pocket card holds after installing jotego cores; the format is the core's NVRAM/EEPROM image",
+  "confidence": "n/a (stock file)",
+  "written": "2025-03-21 18:18 (file mtime as read here; the Pocket stamps its own clock)",
+  "files": {
+    "wldcourt.sav": {
+      "size": 2048,
+      "sha1": "e04a618cc08509b3203918f0efbf4b913fe08449"
+    }
+  },
+  "created": "2026-11-03",
+  "note": "MAME set wldcourt; one representative of the 13 stock files in Saves/jtshouse/common, the rest are not filed (DEVICE-BACKUPS.md)",
+  "stock_default": true
+}

@@ -1,0 +1,11 @@
+# Dolphin TAS movie plan for work/standalone/tools/gen_dtm.py (one GC pad, input frames).
+# START then A once a second: skips the intro, PRESS START, and answers YES to
+# "Would you like to create data for MARIO KART: DOUBLE DASH!! on the Memory Card in Slot A?"
+wait 600
+repeat 70
+press START 6
+wait 54
+press A 6
+wait 54
+end
+wait 600

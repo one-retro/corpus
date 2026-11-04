@@ -1,0 +1,31 @@
+{
+  "method": "played",
+  "system": "gbc",
+  "core": "vba-m",
+  "core_file": "vbam_libretro.dylib",
+  "core_name": "VBA-M",
+  "core_version": " 115defb",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Pokemon - Gold Version (USA, Europe) (SGB Enhanced) (GB Compatible).gbc",
+    "sha1": "d8b8a3600a465308c9953dfa04f0081c05bdcb94",
+    "size": 2097152
+  },
+  "script": "scripts/gbc/Pokemon Gold.txt",
+  "frames": 8712,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Pokemon - Gold Version (USA, Europe) (SGB Enhanced) (GB Compatible).rtc": {
+      "size": 48,
+      "sha1": "862905d9f0284951f2c1635a9011c5d1f8448391"
+    },
+    "Pokemon - Gold Version (USA, Europe) (SGB Enhanced) (GB Compatible).srm": {
+      "size": 32768,
+      "sha1": "2392d605d530c3779a38190f3b847b833b3fa9ca"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

@@ -1,0 +1,3 @@
+# PCSX-ReARMed defaults spelled out: card 1 libretro (.srm), card 2 shared (pcsx-card2.mcd)
+pcsx_rearmed_memcard1 = libretro
+pcsx_rearmed_memcard2 = shared

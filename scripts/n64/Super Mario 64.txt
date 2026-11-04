@@ -1,0 +1,27 @@
+# Super Mario 64: on the file select, STEREO -> Sound Select -> MONO. The
+# game formats its 4 Kbit EEPROM on the first boot (four empty files, the
+# menu block twice) and rewrites the menu block when the sound mode
+# changes. The script then resets: the file select shows MONO again.
+# The hand cursor follows the analog stick; A clicks.
+# N64 buttons on the RetroPad: A = b, B = y, Z = l2, Start = start.
+wait 600
+press start 6       # title -> SELECT FILE
+wait 200
+stick max 0 35      # hand to the right...
+wait 5
+stick 0 max 19      # ...and down onto STEREO
+wait 5
+press b 6           # -> SOUND SELECT
+wait 100
+stick min 0 15
+wait 5
+stick 0 min 13      # onto MONO
+wait 5
+press b 6           # the menu block is written here
+wait 100
+shot mono
+reset
+wait 600
+press start 6       # back to SELECT FILE after the reset
+wait 200
+shot reloaded

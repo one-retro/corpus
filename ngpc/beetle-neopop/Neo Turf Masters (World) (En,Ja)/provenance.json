@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "ngpc",
+  "core": "beetle-neopop",
+  "core_file": "mednafen_ngp_libretro.dylib",
+  "core_name": "Beetle NeoPop",
+  "core_version": "v1.29.0.0 a50d5ac",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Neo Turf Masters (World) (En,Ja).ngc",
+    "sha1": "308361297bd28ebb8fb60713ae5e00cee514415c",
+    "size": 2097152
+  },
+  "script": "scripts/ngpc/Neo Turf Masters.txt",
+  "frames": 5234,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Neo Turf Masters (World) (En,Ja).flash": {
+      "size": 1560,
+      "sha1": "3fa4f5008d466452c533cd37a3adb753637399bf"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

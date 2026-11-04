@@ -1,0 +1,50 @@
+# Chrono Trigger: new game, keep the names Crono and Lucca, walk out of
+# Crono's house onto the world map and save to slot 1 from the menu.
+wait 2000
+press start 6       # title -> Battle Mode
+wait 200
+press a 6           # Active -> name entry
+wait 200
+press a 6           # dismiss "Enter a name, then push the Start Button."
+wait 200
+press start 6       # keep "Crono"
+wait 200
+repeat 32           # the opening: the fair, Mom wakes Crono
+tap a 3 30
+end
+wait 200            # Crono is up; walk to the stairs
+press left 40
+press down 30
+press left 30
+press down 60
+press up 15
+press right 40
+press down 40       # downstairs
+wait 120
+repeat 10
+tap a 2 30
+end
+press down 10       # face Mom and talk
+tap a 4 30
+tap a 2 40          # "I've forgotten her name!" -> name entry
+wait 100
+press start 6       # keep "Lucca"
+wait 100
+repeat 6
+tap a 1 40
+end
+wait 100            # walk out of the front door
+press down 80
+press left 25
+press down 40
+wait 200            # world map
+press x 6           # menu
+wait 90
+tap right 5 20      # the save icon
+wait 20
+press a 6           # save screen
+wait 90
+press a 6           # slot 1: "The Millennial Fair", Save # 1
+wait 120
+shot saved
+wait 60

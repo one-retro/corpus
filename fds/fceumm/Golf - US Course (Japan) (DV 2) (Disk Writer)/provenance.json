@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "fds",
+  "core": "fceumm",
+  "core_file": "fceumm_libretro.dylib",
+  "core_name": "FCEUmm",
+  "core_version": "(SVN) e0f3086",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Golf - US Course (Japan) (DV 2) (Disk Writer).fds",
+    "sha1": "ba9acb65d9d009c08c0fdf521646fa84ebb4c69a",
+    "size": 131000
+  },
+  "script": "scripts/fds/Golf - US Course.txt",
+  "frames": 6754,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Golf - US Course (Japan) (DV 2) (Disk Writer).srm": {
+      "size": 131000,
+      "sha1": "3de15a6dc2f29c456ff588cdb2a7964b23ba4eed"
+    }
+  },
+  "created": "2026-11-03",
+  "note": "runner: work/nes/runner/retro-run (tools/retro-run with RetroArch's init order and a disk control interface)"
+}

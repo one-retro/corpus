@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "saturn",
+  "core": "yabause",
+  "core_file": "yabause_libretro.dylib",
+  "core_name": "Yabause",
+  "core_version": "v0.9.15 8926b0c",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Fighters Megamix (USA).cue",
+    "sha1": "69c45e1a98abf23492e9ccf48ff0f6ca544f900e",
+    "size": 99
+  },
+  "script": "scripts/saturn/Fighters Megamix.txt",
+  "frames": 1708,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Fighters Megamix (USA).srm": {
+      "size": 65536,
+      "sha1": "7b7f4269445031819b2cd46cc75fa33254f765f8"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "Run from the data track alone: the cue lists only track 01 (the Redump cue's audio tracks were left out to save space); the BIOS and game do not need them to boot and save."
+}

@@ -1,0 +1,27 @@
+# Tony Hawk's Pro Skater 2: Options > Memory Card > Save Data into an empty
+# slot, keeping the offered name "CAREER A". A 1-block save whose icon has
+# 2 frames.
+wait 6000           # well into the intro movie
+press start 6       # skip it -> main menu wheel (scans the card first)
+wait 600
+press left 6        # Career Mode -> Options
+wait 60
+press b 6
+wait 240
+shot options
+tap up 6 15         # Memory Card, counted up from the bottom: Player 2 Controls
+                    # is greyed out (skipped) when no pad is in port 2, as in SwanStation
+wait 20
+press b 6
+wait 240            # Load Data / Save Data / Load Replay / Back
+press down 6        # Save Data
+wait 20
+press b 6
+wait 400            # "Select a file to save: --EMPTY SLOT--, blocks needed 1"
+shot slot
+press b 6
+wait 300            # Enter name: CAREER A, cursor on END
+press b 6           # END: "Saving CAREER A...", then "SAVE SUCCESSFUL" for about
+wait 320            # 100 frames, then back to the Memory Card menu
+shot saved
+wait 300

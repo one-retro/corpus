@@ -1,0 +1,66 @@
+# Final Fantasy: NEW GAME with the default party (Fighter AAAA, Thief BBBB,
+# Black Belt CCCC, Red Mage DDDD), walk into Coneria and stay at the inn,
+# which saves the game (30 G: 400 -> 370). The proof is the inn's
+# "Hold RESET while you turn POWER off!!" after the save.
+wait 600
+press start 20      # story -> CONTINUE / NEW GAME
+wait 120
+press down 10       # NEW GAME
+wait 20
+press a 10
+wait 120
+press a 10          # Fighter: name
+wait 60
+tap a 4 30          # AAAA
+tap a 1 60          # done
+press a 10          # Thief
+wait 60
+tap right 1 15
+tap a 4 30          # BBBB
+tap a 1 60
+press a 10          # Black Belt
+wait 60
+tap right 2 15
+tap a 4 30          # CCCC
+tap a 1 60
+press a 10          # Red Mage
+wait 60
+tap right 3 15
+tap a 4 30          # DDDD
+tap a 1 60
+wait 60
+press a 10          # the party is set: the world map
+wait 240
+shot party
+press up 16         # into Coneria's walls
+wait 20
+press up 16
+wait 20
+press up 16
+wait 120
+press right 16      # onto the town
+wait 150
+press up 16
+wait 4
+press up 16
+wait 4
+repeat 5
+press left 16
+wait 4
+end
+press up 16         # to the INN door
+wait 4
+press up 16
+wait 4
+press up 16
+wait 120
+shot inn
+press a 10          # Stay, to save your data: Yes
+wait 260
+press a 10          # 30 Gold OK?: Yes -- the game is saved
+wait 120
+press a 10
+wait 120
+shot saved          # "Hold RESET while you turn POWER off!!", 370 G
+press a 10
+wait 300

@@ -1,0 +1,20 @@
+{
+  "method": "downloaded",
+  "system": "sega-cd",
+  "core": "megacd-mister",
+  "url": "https://github.com/euan-forrester/save-file-converter/files/8173565/saves.zip",
+  "source_page": "https://github.com/euan-forrester/save-file-converter/issues/80#issuecomment-1057487772",
+  "source": "GitHub (euan-forrester/save-file-converter issue #80)",
+  "author": "birdybro (GitHub; MiSTer contributor)",
+  "licence": null,
+  "fetched": "2026-11-03",
+  "what_it_is": "birdybro's own MiSTer MegaCD save for Shining Force CD (alternate USA pressing), written with 'Backup RAM: Internal+Cart' on; zip entry dated 2021-02-26 18:41.",
+  "files": {
+    "Shining Force CD (USA) (5R, 6R).sav": {
+      "size": 532480,
+      "sha1": "8879e4fa52403f7fd385b589b2623f0e92282c1e"
+    }
+  },
+  "created": "2026-11-03",
+  "note": "Extracted unchanged from saves.zip (sha1 9ced6d6c8b2047fe8225aaf37201e15095da3ace, 2602364 bytes), entry MegaCD/Shining Force CD (USA) (5R, 6R).sav; the zip is birdybro's whole MiSTer saves/ folder, posted 2022-03-02 ('here's just a big zip of all my saves on my MiSTer'). Core attribution is by the folder: MiSTer Main writes MegaCD core saves to saves/MegaCD/<cue or chd stem>.sav (support/megacd/megacd.cpp mcd_mount_save). Directory name is the uploader's disc name, which matches the Redump-style set names. 532480 bytes = 8 KiB internal BRAM (sectors 0x00-0x0F) + 512 KiB RAM cart (sectors 0x10-0x40F), as MegaCD.sv writes when status[3] (CART_EN, RAM_ID 6 = 512 KiB) is set. Internal part: footer at 0x1FC0 ('___________', SEGA_CD_ROM at 0x1FE0, RAM_CARTRIDGE___ at 0x1FF0), 24 free blocks, 2 files. Cart part: formatted but empty (footer at 0x81FC0..0x81FFF, 0x1FFD = 8189 free blocks, 0 files; the only 48 non-zero bytes of the cart half are that footer). The cart's last 512-byte sector equals Main_MiSTer's ext_blank template (support/megacd/megacd.cpp mcd_fill_blanksave, served for LBA 0x40F when the file is shorter), so the cart was probably never formatted by a game, only blank-filled by Main. Plain byte order, not byte-doubled. birdybro's zip also has 'Shining Force CD (USA) (3R).sav' (532480, 2022-02-09) whose cart half is all zeros with no footer; not filed here."
+}

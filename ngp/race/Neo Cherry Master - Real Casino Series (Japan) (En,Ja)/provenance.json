@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "ngp",
+  "core": "race",
+  "core_file": "race_libretro.dylib",
+  "core_name": "RACE",
+  "core_version": "v2.16 c7810dd",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Neo Cherry Master - Real Casino Series (Japan) (En,Ja).ngp",
+    "sha1": "30e8a0264922a050d3d674df4043c7d67ebde62b",
+    "size": 1048576
+  },
+  "script": "scripts/ngp/Neo Cherry Master.txt",
+  "frames": 3388,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Neo Cherry Master - Real Casino Series (Japan) (En,Ja).ngf": {
+      "size": 16408,
+      "sha1": "0bc8c6e8c467154a83204afeba1e0dad50941d85"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

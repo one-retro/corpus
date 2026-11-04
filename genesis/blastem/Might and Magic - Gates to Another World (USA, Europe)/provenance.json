@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "genesis",
+  "core": "blastem",
+  "core_file": "blastem_libretro.dylib",
+  "core_name": "BlastEm",
+  "core_version": "1.0.1-pre",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Might and Magic - Gates to Another World (USA, Europe).md",
+    "sha1": "52e7ade244d48bc282db003d87c408e96dcb3d85",
+    "size": 786432
+  },
+  "script": "scripts/genesis/Might and Magic - Gates to Another World.blastem.txt",
+  "frames": 2628,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Might and Magic - Gates to Another World (USA, Europe).srm": {
+      "size": 32768,
+      "sha1": "4116046ba6920d7e6b18432c0cd8a5c98931415d"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

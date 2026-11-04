@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "pcenginecd",
+  "core": "beetle-pce",
+  "core_file": "mednafen_pce_libretro.dylib",
+  "core_name": "Beetle PCE",
+  "core_version": "v1.29.0 b96c11e",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Ys III - Wanderers from Ys (NA).chd",
+    "sha1": "20814fb0f0276a8460a6b19be1e7b35342c829db",
+    "size": 452772932
+  },
+  "script": "scripts/pcenginecd/Ys III - Wanderers from Ys.txt",
+  "frames": 11556,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Ys III - Wanderers from Ys (NA).srm": {
+      "size": 2048,
+      "sha1": "3fcff0efb60940ad914dfceef8944c94a92ee4c3"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

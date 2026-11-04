@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "n64",
+  "core": "mupen64plus-next",
+  "core_file": "mupen64plus_next_libretro.dylib",
+  "core_name": "Mupen64Plus-Next",
+  "core_version": "3.0-Vulkan 15bada8",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Pokemon Stadium (USA) (Rev 2).z64",
+    "sha1": "0d3b1d740c6ee6da6923550bf24ad827262fd8c0",
+    "size": 33554432
+  },
+  "script": "scripts/n64/Pokemon Stadium.txt",
+  "frames": 5284,
+  "options": "mupen64plus-rdp-plugin = angrylion\n",
+  "started_from": null,
+  "files": {
+    "Pokemon Stadium (USA) (Rev 2).srm": {
+      "size": 296960,
+      "sha1": "09379e9e80e1cdfb50633dbca3c2a0ca6a5e3833"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

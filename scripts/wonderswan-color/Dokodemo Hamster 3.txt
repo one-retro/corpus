@@ -1,0 +1,22 @@
+# Dokodemo Hamster 3 - Odekake Saffron (SRAM 32 KiB, RTC cart). はじめから, then
+# hold A through the setup: owner name (あ...), birthday, blood type, today's
+# date and time (left at 2000-01-01 0:00), hamster name (あ...). The game saves
+# when the hamster arrives in its room. After a reset the title adds つづきから,
+# which loads the room. Beetle keeps the cart clock itself; the .srm is SRAM only.
+wait 900
+press start 8       # title -> はじめから
+wait 150
+press a 8           # はじめから
+wait 150
+tap a 36 40         # owner name, birthday, blood type, date/time, hamster intro
+tap a 30 40         # hamster name, closing dialogue -> the room
+wait 600
+shot room
+reset
+wait 900
+press start 8       # title: はじめから / つづきから
+wait 150
+shot menu           # つづきから appears only with a save
+press a 8           # つづきから
+wait 150
+shot continued      # the hamster's room

@@ -1,0 +1,31 @@
+{
+  "method": "played",
+  "system": "gb",
+  "core": "tgb-dual",
+  "core_file": "tgbdual_libretro.dylib",
+  "core_name": "TGB Dual",
+  "core_version": "v0.8.3 0392c9c",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Pocket Family GB (Japan) (SGB Enhanced).gb",
+    "sha1": "162b0ab1fcfcf9b7ac888f137fedc41264219cf9",
+    "size": 524288
+  },
+  "script": "scripts/gb/Pocket Family GB.txt",
+  "frames": 7246,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Pocket Family GB (Japan) (SGB Enhanced).rtc": {
+      "size": 4,
+      "sha1": "d94b05bdd2323237ef223ec58fff9e888a96c929"
+    },
+    "Pocket Family GB (Japan) (SGB Enhanced).srm": {
+      "size": 32768,
+      "sha1": "fa9c0f111c98a89378da7bcba255540abb3f9962"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

@@ -1,0 +1,31 @@
+{
+  "method": "played",
+  "system": "gb",
+  "core": "gearboy",
+  "core_file": "gearboy_libretro.dylib",
+  "core_name": "Gearboy",
+  "core_version": "3.8.20-8-g37d0bf3",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Pocket Family GB (Japan) (SGB Enhanced).gb",
+    "sha1": "162b0ab1fcfcf9b7ac888f137fedc41264219cf9",
+    "size": 524288
+  },
+  "script": "scripts/gb/Pocket Family GB.txt",
+  "frames": 7246,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Pocket Family GB (Japan) (SGB Enhanced).rtc": {
+      "size": 20,
+      "sha1": "da3039d270c9b969e1a416b8cc0d372f48f11702"
+    },
+    "Pocket Family GB (Japan) (SGB Enhanced).srm": {
+      "size": 32768,
+      "sha1": "eec2d1d5f035f8dfe9c30c4a4179d4359c8881fb"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

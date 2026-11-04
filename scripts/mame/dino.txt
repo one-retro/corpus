@@ -1,0 +1,40 @@
+# Cadillacs and Dinosaurs (CPS1 with QSound; settings in a 93C46 EEPROM): enter the
+# service menu, SYSTEM CONFIGURATION: COIN becomes 1 COIN 2 CREDITS and CONTINUE
+# OFF, then EXIT, which writes the EEPROM. Power-cycle and open the menu again to
+# show the values read back. The service switch is F2 on the keyboard in the MAME
+# cores; FinalBurn Neo and FB Alpha open the menu when START is held (their
+# "Diagnostic Input" default), see dino.finalburn-neo.txt / dino.fb-alpha.txt.
+# Button 1 is RetroPad b.
+wait 900
+key f2 10              # TEST MENU
+wait 120
+tap down 4 30          # 5: SYSTEM CONFIGURATION
+press b 6
+wait 90
+press b 6              # 1 COIN: 1 COIN 2 CREDITS
+wait 60
+tap down 1 30          # 2 CONTINUE
+tap right 1 30         # OFF
+shot config
+repeat 10              # down to 12 EXIT
+tap down 1 30
+end
+press b 6              # EXIT: PRESS 1P START TO RETURN TO MAIN MENU
+wait 60
+press start 6           # back to the TEST MENU: the EEPROM is written
+wait 120
+shot menu
+repeat 6               # TEST MENU: 5 -> 11 EXIT
+tap down 1 30
+end
+press b 6
+wait 600
+# power cycle, back into SYSTEM CONFIGURATION
+reset
+wait 900
+key f2 10
+wait 120
+tap down 4 30
+press b 6
+wait 120
+shot saved             # 1 COIN 2 CREDITS, CONTINUE OFF

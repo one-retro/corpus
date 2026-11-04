@@ -1,0 +1,34 @@
+{
+  "method": "played",
+  "system": "gb",
+  "core": "gameboy-mister",
+  "core_file": "Gameboy_20260603.rbf",
+  "core_name": "Gameboy_MiSTer",
+  "core_version": "20260603",
+  "frontend": "mister",
+  "device": "the owner's MiSTer (DE10-Nano), Main_MiSTer binary of 2026-10-19",
+  "loaded_with": "MGL via /dev/MiSTer_cmd load_core (_Console/Gameboy, file type f index 1)",
+  "save_folder": "saves/GAMEBOY",
+  "rom": {
+    "name": "Pokemon - Red Version (USA, Europe) (SGB Enhanced).gb",
+    "sha1": "ea9bcae617fdf159b045185467ae58b2e4a48b9a",
+    "size": 1048576
+  },
+  "script": "scripts/gb/Pokemon Red.txt",
+  "mister_script": "scripts/mister/gb/Pokemon Red.gb.txt",
+  "frames": 7735,
+  "timing": "real time: script frames played as wall-clock 1/60 s by work/mister/mrun.py",
+  "options": {
+    "config/GAMEBOY.CFG": "Autosave On (status bit 13), every other option at its default; written for the run and removed after"
+  },
+  "save_trigger": "OSD opened (F12 from a uinput keyboard) with Autosave on: the core writes its backup RAM to the SD card",
+  "started_from": "a zero-filled 32768-byte .sav put in place before loading, so the backup RAM started cleared; the core then rewrote all of it",
+  "files": {
+    "Pokemon - Red Version (USA, Europe) (SGB Enhanced).sav": {
+      "size": 32768,
+      "sha1": "cdea68789a20c42300baec7fe9625fd06701c2d3"
+    }
+  },
+  "created": "2026-11-03",
+  "note": "MBC3 + 32 KiB battery RAM, no clock (no RTC sector). Proof: 'RED saved the game!'"
+}

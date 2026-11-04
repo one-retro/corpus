@@ -1,0 +1,31 @@
+{
+  "method": "played",
+  "system": "psx",
+  "core": "pcsx-rearmed",
+  "core_file": "pcsx_rearmed_libretro.dylib",
+  "core_name": "PCSX-ReARMed",
+  "core_version": "r26 7b0e8f8",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Tekken 3 (USA).cue",
+    "sha1": "69d1f34ff24096b9fb95b45232ba684872cd8de2",
+    "size": 306
+  },
+  "script": "scripts/psx/Tekken 3.txt",
+  "frames": 7302,
+  "options": "# PCSX-ReARMed: card 1 shared between games (pcsx-card1.mcd), card 2 per serial\npcsx_rearmed_memcard1 = shared\npcsx_rearmed_memcard2 = serial\n",
+  "started_from": null,
+  "files": {
+    "TEKKEN-3SL_2.mcd": {
+      "size": 131072,
+      "sha1": "1b3c99be55273085e14b30983b636529b6dd7f46"
+    },
+    "pcsx-card1.mcd": {
+      "size": 131072,
+      "sha1": "a81fce7208bf554c84e338c044c5cffa52dd033b"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "option variant: pcsx_rearmed_memcard1 = shared;pcsx_rearmed_memcard2 = serial"
+}

@@ -1,0 +1,19 @@
+{
+  "method": "downloaded",
+  "system": "n64",
+  "core": "mupen64plus",
+  "url": "https://github.com/user-attachments/files/24379468/Banjo-Tooie-U-40E98FAA.zip",
+  "source_page": "https://github.com/mupen64plus/mupen64plus-core/issues/1069",
+  "source": "GitHub (mupen64plus/mupen64plus-core issue #1069, 'Banjo-Tooie: Music goes silent in Jolly Roger Lagoon (ParaLLEl RDP)')",
+  "author": "Jj0YzL5nvJ (a mupen64plus-core contributor), comment of 2025-12-30: 'For those who want to try: Banjo-Tooie-U-40E98FAA.zip'",
+  "licence": "none stated (a file attached to a public GitHub issue)",
+  "fetched": "2026-11-04",
+  "what_it_is": "The commenter's own Banjo-Tooie (USA) game, offered to reproduce a bug: GAME 1, TIME 18:05:18, 32 JIGGIES. One 16 Kbit EEPROM image, 2048 bytes, zip entry dated 2025-12-30 00:35.",
+  "files": {
+    "Banjo-Tooie (U) [!]-40E98FAA.eep": {
+      "size": 2048,
+      "sha1": "28d6c2884ab614562525b02938b3e81cad3ac5f1"
+    }
+  },
+  "note": "Attributed to mupen64plus-core by its name: '<GoodName>-<first 8 hex digits of the ROM MD5>.eep' is the name mupen64plus-core gives its save files (the No-Intro ROM's MD5 is 40e98faa24ac...). The frontend is not stated (the commenter points users at RMG, a mupen64plus-core frontend); the core writes the file either way. The bytes are a plain EEPROM byte stream: copied unchanged into the EEPROM region (offset 0) of a Mupen64Plus-Next .srm, the game shows the file. proof.png is that check (Mupen64Plus-Next, angrylion), not a screenshot from the author."
+}

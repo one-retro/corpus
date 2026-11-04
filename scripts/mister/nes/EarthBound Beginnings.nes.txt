@@ -1,0 +1,36 @@
+load corpus-tmp/mgl/earthbound.mgl 8
+# EarthBound Beginnings (MMC3, 8 KiB): start GAME(1), take the default
+# names (each "A", Start ends a name), and let the prologue run into Ninten's
+# room: a new game saves itself to GAME(1) (0x1700) once play begins. The
+# console is then reset and the file menu, read from SRAM, lists GAME(1).
+wait 600
+repeat 16
+press start 10      # title, GAME(1), names and food, then the prologue
+wait 60
+press a 10
+wait 60
+end
+repeat 10
+wait 300            # the prologue, "80 years have passed", Ninten's room
+press a 6
+end
+press b 10
+wait 60
+press b 10
+wait 120
+shot room
+wait 30
+save
+wait 60
+shot final
+# power cycle: load the game again; the core reads the .sav back from the SD card
+load corpus-tmp/mgl/earthbound.mgl 8
+wait 300
+repeat 8
+press start 10      # the title takes Start only once its logo has settled
+wait 60
+end
+shot files0
+wait 60
+shot files
+wait 30

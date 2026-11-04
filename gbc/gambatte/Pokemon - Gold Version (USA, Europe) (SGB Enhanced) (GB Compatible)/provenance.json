@@ -1,0 +1,31 @@
+{
+  "method": "played",
+  "system": "gbc",
+  "core": "gambatte",
+  "core_file": "gambatte_libretro.dylib",
+  "core_name": "Gambatte",
+  "core_version": "v0.5.0-netlink 77f2567",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Pokemon - Gold Version (USA, Europe) (SGB Enhanced) (GB Compatible).gbc",
+    "sha1": "d8b8a3600a465308c9953dfa04f0081c05bdcb94",
+    "size": 2097152
+  },
+  "script": "scripts/gbc/Pokemon Gold.txt",
+  "frames": 8712,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Pokemon - Gold Version (USA, Europe) (SGB Enhanced) (GB Compatible).rtc": {
+      "size": 8,
+      "sha1": "9d32caaefa490ae295b176b6f5b992105aff09d2"
+    },
+    "Pokemon - Gold Version (USA, Europe) (SGB Enhanced) (GB Compatible).srm": {
+      "size": 32768,
+      "sha1": "920fdf1f3db8c9f502d83933e6d9b8385b1a2c6b"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

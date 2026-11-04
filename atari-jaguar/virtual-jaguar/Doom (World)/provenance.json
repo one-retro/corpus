@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "atari-jaguar",
+  "core": "virtual-jaguar",
+  "core_file": "virtualjaguar_libretro.dylib",
+  "core_name": "Virtual Jaguar",
+  "core_version": "v3.11.0 34696082",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Doom (World).j64",
+    "sha1": "20ddf412e42a50d526cbbb6411bf0ec4516db283",
+    "size": 4194304
+  },
+  "script": "scripts/atari-jaguar/Doom.txt",
+  "frames": 2530,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Doom (World).srm": {
+      "size": 128,
+      "sha1": "060b5b961fa4c1471a2d2e4dbc7e389e2d49c10a"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

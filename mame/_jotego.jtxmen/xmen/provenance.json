@@ -1,0 +1,22 @@
+{
+  "method": "device-backup",
+  "device": "Analogue Pocket",
+  "backup_path": "Saves/jtxmen/common/xmen.sav",
+  "system": "mame",
+  "core": "_jotego.jtxmen",
+  "pocket_core": "jotego.jtxmen",
+  "pocket_platform": "jtxmen",
+  "game_source": "the file's own name (no No-Intro entry applies)",
+  "attribution": "NOT written on this device: byte-identical to jotego's distributed default for this set (github.com/jotego/jtbin pocket/raw/Saves/jtxmen/common/xmen.sav, 2025-03-21 install); all 11 files in Saves/jtxmen/common carry the same mtime, 2025-03-21 18:18, the minute the updater installed the jotego cores' assets (1282 files in Assets share it). Kept as an example of what a Pocket card holds after installing jotego cores; the format is the core's NVRAM/EEPROM image",
+  "confidence": "n/a (stock file)",
+  "written": "2025-03-21 18:18 (file mtime as read here; the Pocket stamps its own clock)",
+  "files": {
+    "xmen.sav": {
+      "size": 128,
+      "sha1": "0b92caba33486c6fd104806aa96f735743bb2221"
+    }
+  },
+  "created": "2026-11-03",
+  "note": "MAME set xmen; one representative of the 11 stock files in Saves/jtxmen/common, the rest are not filed (DEVICE-BACKUPS.md)",
+  "stock_default": true
+}

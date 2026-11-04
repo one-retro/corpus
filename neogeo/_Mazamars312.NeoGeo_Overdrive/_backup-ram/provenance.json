@@ -1,0 +1,21 @@
+{
+  "method": "device-backup",
+  "device": "Analogue Pocket",
+  "backup_path": "Saves/ng/Mazamars312.NeoGeo_Overdrive/backup.bak",
+  "system": "neogeo",
+  "core": "_Mazamars312.NeoGeo_Overdrive",
+  "pocket_core": "Mazamars312.NeoGeo_Overdrive",
+  "pocket_platform": "ng",
+  "game_source": "the file's own name (no No-Intro entry applies)",
+  "attribution": "folder Saves/ng/Mazamars312.NeoGeo_Overdrive. The registry does not list this overclocked build (same author, same data slots as Mazamars312.NeoGeo), hence the _<producer> directory",
+  "confidence": "high",
+  "written": "2020-01-02 01:00 (file mtime as read here; the Pocket stamps its own clock)",
+  "files": {
+    "backup.bak": {
+      "size": 65536,
+      "sha1": "c816a20f1e54370ba341e3743cd8b9fb73959d41"
+    }
+  },
+  "created": "2026-11-03",
+  "note": "byte-identical to Mazamars312.NeoGeo's backup.bak; dated 2020-01-02 01:00, the Pocket's date before its clock is set"
+}

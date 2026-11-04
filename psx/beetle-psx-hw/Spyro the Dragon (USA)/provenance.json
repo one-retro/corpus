@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "psx",
+  "core": "beetle-psx-hw",
+  "core_file": "mednafen_psx_hw_libretro.dylib",
+  "core_name": "Beetle PSX HW",
+  "core_version": "0.9.44.1 71ee81e",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "opengl",
+  "rom": {
+    "name": "Spyro the Dragon (USA).cue",
+    "sha1": "6abdbc5a00bcb521528825fb7cb6bfebd99a7a91",
+    "size": 88
+  },
+  "script": "scripts/psx/Spyro the Dragon.txt",
+  "frames": 5572,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Spyro the Dragon (USA).srm": {
+      "size": 131072,
+      "sha1": "7f81b5cf8d4e5e9146a153083685159589902118"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

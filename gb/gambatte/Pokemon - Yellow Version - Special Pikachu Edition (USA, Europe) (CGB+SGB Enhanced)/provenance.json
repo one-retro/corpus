@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "gb",
+  "core": "gambatte",
+  "core_file": "gambatte_libretro.dylib",
+  "core_name": "Gambatte",
+  "core_version": "v0.5.0-netlink 77f2567",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Pokemon - Yellow Version - Special Pikachu Edition (USA, Europe) (CGB+SGB Enhanced).gb",
+    "sha1": "cc7d03262ebfaf2f06772c1a480c7d9d5f4a38e1",
+    "size": 1048576
+  },
+  "script": "scripts/gb/Pokemon Yellow.txt",
+  "frames": 8093,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Pokemon - Yellow Version - Special Pikachu Edition (USA, Europe) (CGB+SGB Enhanced).srm": {
+      "size": 32768,
+      "sha1": "9650b1d4098688b166b6a33fc84cd4d22e61583b"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

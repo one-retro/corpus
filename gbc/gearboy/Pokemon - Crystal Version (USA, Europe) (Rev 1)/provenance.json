@@ -1,0 +1,31 @@
+{
+  "method": "played",
+  "system": "gbc",
+  "core": "gearboy",
+  "core_file": "gearboy_libretro.dylib",
+  "core_name": "Gearboy",
+  "core_version": "3.8.20-8-g37d0bf3",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Pokemon - Crystal Version (USA, Europe) (Rev 1).gbc",
+    "sha1": "f2f52230b536214ef7c9924f483392993e226cfb",
+    "size": 2097152
+  },
+  "script": "scripts/gbc/Pokemon Crystal.txt",
+  "frames": 8968,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Pokemon - Crystal Version (USA, Europe) (Rev 1).rtc": {
+      "size": 48,
+      "sha1": "33f1fddd81fba2ffaecc9c945b8765a8f401f4e4"
+    },
+    "Pokemon - Crystal Version (USA, Europe) (Rev 1).srm": {
+      "size": 32768,
+      "sha1": "d7403e3a7375ba4fbb1d8cae256ec1ff8f36c8cc"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

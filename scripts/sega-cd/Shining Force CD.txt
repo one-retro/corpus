@@ -1,0 +1,66 @@
+# Shining Force CD: start Book 1, hero "AAAAAAA", difficulty Easy (the
+# cursor's default). The game creates its save file (99 blocks) as soon as
+# the difficulty is chosen, plus a 1-block file it writes at boot.
+# Where the save goes depends on the core: when a RAM cart is plugged in
+# (Genesis Plus GX by default) the game shows INNERBACKUP and CARTRIDGE side
+# by side, and the "right" press below picks CARTRIDGE. Without a cart
+# (PicoDrive by default) only INNERBACKUP is shown and "right" does nothing.
+# Then reset and reload: the book menu lists the saved game.
+wait 600
+press start 6       # BIOS: Press the START BUTTON
+wait 900
+press start 6       # skip the logos
+wait 400
+press start 6       # title
+wait 300
+press b 6           # narrator text
+wait 200
+press a 6
+wait 200
+press a 6           # -> NEW GAME
+wait 200
+press a 6           # NEW GAME
+wait 200
+press a 6           # INNERBACKUP [CARTRIDGE] windows: "Which Shining Force book..."
+wait 200
+press right 6       # CARTRIDGE, if there is one
+wait 60
+press a 6           # Book 1: TOWARDS THE ROOT OF EVIL
+wait 200
+press a 6
+wait 200
+press a 6
+wait 200
+press a 6
+wait 300            # name entry
+tap a 7 30          # AAAAAAA, the cursor then jumps to END
+wait 60
+press a 6           # END
+wait 200
+press a 6           # "...cool name!"
+wait 200
+press a 6           # -> difficulty menu
+wait 200
+press a 6           # EASY: the save file is created here
+wait 200
+press a 6           # "As usual. OK."
+wait 900
+reset
+wait 600
+press start 6       # BIOS: "Put a DISC on the CD tray" (this press makes it look)
+wait 600
+press start 6       # BIOS: boot the disc
+wait 900
+press start 6       # skip the logos
+wait 400
+press start 6       # title
+wait 300
+press b 6
+wait 200
+press a 6
+wait 200
+press a 6           # menu: NEW GAME / CONTINUE / COPY DATA / DELETE DATA
+wait 200
+press a 6           # CONTINUE: the device window lists AAAAAAA SDMN LV 1
+wait 200
+shot reloaded

@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "n64",
+  "core": "mupen64plus-next",
+  "core_file": "mupen64plus_next_libretro.dylib",
+  "core_name": "Mupen64Plus-Next",
+  "core_version": "3.0-Vulkan 15bada8",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Paper Mario (USA).z64",
+    "sha1": "3837f44cda784b466c9a2d99df70d77c322b97a0",
+    "size": 41943040
+  },
+  "script": "scripts/n64/Paper Mario.txt",
+  "frames": 3668,
+  "options": "mupen64plus-rdp-plugin = angrylion\n",
+  "started_from": null,
+  "files": {
+    "Paper Mario (USA).srm": {
+      "size": 296960,
+      "sha1": "2b1f45212053e3f3b90d01a20ec92e4b725d824c"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

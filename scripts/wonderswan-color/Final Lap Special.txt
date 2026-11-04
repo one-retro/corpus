@@ -1,0 +1,30 @@
+# Final Lap Special - GT & Formula Machine (EEPROM 2 KiB). The mode carousel
+# is FORMULA / GT / VS MODE / GARAGE / EXTRA GAME. EXTRA GAME > GAME 1 is a
+# driving mini-game: hold A to accelerate until it ends (HIGH SCORE 00723).
+# The high score is written to EEPROM; after a reset the EXTRA GAME menu shows
+# it again (boot leaves the EEPROM all zero; opening EXTRA GAME writes 6 bytes).
+wait 700
+press start 8       # title -> mode carousel (FORMULA)
+wait 120
+repeat 4
+press right 8       # GT, VS MODE, GARAGE, EXTRA GAME
+wait 60
+end
+press a 8           # EXTRA GAME: GAME 1 / GAME 2 / GAME 3
+wait 120
+press a 8           # GAME 1
+wait 120
+press a 3000        # hold the accelerator to the end
+wait 600
+shot result         # EXTRA GAME: GAME 1 HIGH SCORE 00723
+reset
+wait 700
+press start 8
+wait 120
+repeat 4
+press right 8
+wait 60
+end
+press a 8           # EXTRA GAME again
+wait 120
+shot menu           # GAME 1 HIGH SCORE 00723M, read back from EEPROM

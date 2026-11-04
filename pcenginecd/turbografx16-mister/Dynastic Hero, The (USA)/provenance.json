@@ -1,0 +1,19 @@
+{
+  "method": "downloaded",
+  "system": "pcenginecd",
+  "core": "turbografx16-mister",
+  "url": "https://github.com/euan-forrester/save-file-converter/files/8173565/saves.zip",
+  "source_page": "https://github.com/euan-forrester/save-file-converter/issues/80#issuecomment-1057487772",
+  "source": "GitHub (euan-forrester/save-file-converter issue #80)",
+  "author": "birdybro (GitHub; MiSTer contributor)",
+  "licence": null,
+  "fetched": "2026-11-03",
+  "what_it_is": "birdybro's own MiSTer TurboGrafx16 (CD) save, from a zip of their whole MiSTer saves folder (saves/TGFX16, file dated 2021-02-22): a BRAM whose header says empty (next free 0x8010) but whose bytes still hold a DYNASTIC01 entry: a file the game or the user deleted, the data left in place as the HUBM format does.",
+  "files": {
+    "Dynastic Hero, The (USA).sav": {
+      "size": 2048,
+      "sha1": "8307f151b7b5f0039a2c50e5e90753d0303779a2"
+    }
+  },
+  "note": "Raw 2 KiB backup RAM, no padding: HUBM, end pointer 0x8800, next free 0x8010, entries: none. Not booted here. The zip is the same one the pcengine worker downloaded (.cache/downloads/pcengine/birdybro-mister-saves/saves.zip, sha1 9ced6d6c8b2047fe8225aaf37201e15095da3ace); the file was copied from its extracted TGFX16/ folder."
+}

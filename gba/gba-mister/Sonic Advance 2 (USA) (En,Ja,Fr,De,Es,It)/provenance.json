@@ -1,0 +1,34 @@
+{
+  "method": "played",
+  "system": "gba",
+  "core": "gba-mister",
+  "core_file": "GBA_20260530.rbf",
+  "core_name": "GBA_MiSTer",
+  "core_version": "20260530",
+  "frontend": "mister",
+  "device": "the owner's MiSTer (DE10-Nano), Main_MiSTer binary of 2026-10-19",
+  "loaded_with": "MGL via /dev/MiSTer_cmd load_core (_Console/GBA, file type f index 0)",
+  "save_folder": "saves/GBA",
+  "rom": {
+    "name": "Sonic Advance 2 (USA) (En,Ja,Fr,De,Es,It).gba",
+    "sha1": "7bcd6a07af7c894746fa28073fe0c0e34408022d",
+    "size": 16777216
+  },
+  "script": "scripts/gba/Sonic Advance 2.txt",
+  "mister_script": "scripts/mister/gba/Sonic Advance 2.gba.txt",
+  "frames": 4540,
+  "timing": "real time: script frames played as wall-clock 1/60 s by work/mister/mrun.py",
+  "options": {
+    "config/GBA.CFG": "Autosave On (status bit 23), every other option at its default; written for the run and removed after"
+  },
+  "save_trigger": "OSD opened (F12 from a uinput keyboard) with Autosave on: the core writes its backup RAM to the SD card",
+  "started_from": "a zero-filled 65536-byte .sav put in place before loading, so the backup RAM started cleared; the core then rewrote all of it",
+  "files": {
+    "Sonic Advance 2 (USA) (En,Ja,Fr,De,Es,It).sav": {
+      "size": 65536,
+      "sha1": "ab237389b2ea773d24da0a5b5c4ed5474bacd1b6"
+    }
+  },
+  "created": "2026-11-03",
+  "note": "64 KiB flash; the core writes 128 sectors. Proof: OPTIONS showing PLAYER DATA 'v' after loading the game again."
+}

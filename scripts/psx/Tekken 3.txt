@@ -1,0 +1,21 @@
+# Tekken 3: Option Mode > Memory Card > Card Save. "[TEKKEN 3] THE BATTLE
+# BEGINS!!" is a 1-block save. The mode menu goes back to the attract loop
+# after about 450 idle frames, so the presses after Start are quick.
+wait 6000           # well into the intro movie
+press start 6       # -> mode menu, cursor on Arcade Mode
+wait 200
+press up 6          # Option Mode
+wait 20
+press b 6
+wait 200
+shot options
+tap down 4 15       # Memory Card
+wait 20
+press b 6
+wait 200
+press b 6           # Card Save -> "SAVE: PUSH START"
+wait 90
+press start 6       # save
+wait 400
+shot saved          # "SAVE OK!"
+wait 60

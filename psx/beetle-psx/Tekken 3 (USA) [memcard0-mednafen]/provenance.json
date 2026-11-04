@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "psx",
+  "core": "beetle-psx",
+  "core_file": "mednafen_psx_libretro.dylib",
+  "core_name": "Beetle PSX",
+  "core_version": "0.9.44.1 71ee81e",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Tekken 3 (USA).cue",
+    "sha1": "69d1f34ff24096b9fb95b45232ba684872cd8de2",
+    "size": 306
+  },
+  "script": "scripts/psx/Tekken 3.txt",
+  "frames": 7302,
+  "options": "# Beetle PSX: card 1 the Mednafen way (<game>.0.mcr) instead of libretro SRAM (.srm)\nbeetle_psx_use_mednafen_memcard0_method = mednafen\n",
+  "started_from": null,
+  "files": {
+    "Tekken 3 (USA).0.mcr": {
+      "size": 131072,
+      "sha1": "0178af1978943481982d07fd830d2e027ca8d004"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "option variant: beetle_psx_use_mednafen_memcard0_method = mednafen"
+}

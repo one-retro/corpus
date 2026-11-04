@@ -1,0 +1,31 @@
+{
+  "method": "played",
+  "system": "psx",
+  "core": "pcsx-rearmed",
+  "core_file": "pcsx_rearmed_libretro.dylib",
+  "core_name": "PCSX-ReARMed",
+  "core_version": "r26 7b0e8f8",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Street Fighter Alpha 3 (USA).cue",
+    "sha1": "5e640de7f4840a0dddbd6a575669ba649b8eb0c5",
+    "size": 231
+  },
+  "script": "scripts/psx/Street Fighter Alpha 3.txt",
+  "frames": 9268,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Street Fighter Alpha 3 (USA).srm": {
+      "size": 131072,
+      "sha1": "091e34c712a2c6c5d1f84fa328b2df59e42dfbc5"
+    },
+    "pcsx-card2.mcd": {
+      "size": 131072,
+      "sha1": "1b3c99be55273085e14b30983b636529b6dd7f46"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

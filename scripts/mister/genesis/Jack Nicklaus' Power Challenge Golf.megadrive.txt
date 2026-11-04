@@ -1,0 +1,37 @@
+load corpus-tmp/mgl/nicklaus.mgl 8
+# Jack Nicklaus' Power Challenge Golf (Accolade): Stroke Play, one player,
+# Create Club Member named "AB". The member list lives in the cart's 2 KB
+# byte-wide SRAM, which the header declares unusually ("RA" F8 40, 200001-
+# 2007FF: the 0x40 bit is set, as on EEPROM carts). The proof is the club's
+# "Welcome to the Nicklaus Club!" once the member is created.
+# Genesis A/B/C are the RetroPad's y/b/a.
+wait 1300
+press start 6    # title -> credits
+wait 300
+press start 6    # -> Skins / Stroke Play
+wait 240
+press start 6    # Stroke Play, One Player -> "Select Player 1"
+wait 120
+press down 6    # Create Club Member
+wait 30
+press b 6    # (B selects in these menus)
+wait 120
+press up 6    # Name: A
+wait 30
+press right 6
+wait 30
+press up 6
+wait 30
+press up 6    # Name: AB
+wait 30
+shot named
+press a 6    # A: done with the name
+wait 120
+press a 6    # A: done with the options: the member is written
+wait 120
+shot saved          # "Welcome to the Nicklaus Club!"
+wait 30
+wait 30
+save
+wait 60
+shot final

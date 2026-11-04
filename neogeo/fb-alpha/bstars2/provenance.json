@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "neogeo",
+  "core": "fb-alpha",
+  "core_file": "fbalpha2012_libretro.dylib",
+  "core_name": "FB Alpha 2012",
+  "core_version": "v0.2.97.29 0ce3153",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "bstars2.zip",
+    "sha1": "265512237eb7a58c5ac4d9c78e1eeebd43306b11",
+    "size": 3700580
+  },
+  "script": "scripts/neogeo/bstars2.txt",
+  "frames": 17868,
+  "options": "fbneo-neogeo-mode = MVS\n",
+  "started_from": null,
+  "files": {
+    "bstars2.fs": {
+      "size": 1384,
+      "sha1": "7f127491cb232b57b7dd615317f43131d39739da"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "No memory card in FB Alpha 2012's libretro core: no MEMORY CARD LOAD prompt. bstars2.fs is the MVS backup RAM only."
+}

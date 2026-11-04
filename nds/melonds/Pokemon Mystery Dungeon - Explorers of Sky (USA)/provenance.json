@@ -1,0 +1,28 @@
+{
+  "method": "played",
+  "system": "nds",
+  "core": "melonds",
+  "core_file": "melonds_libretro.dylib",
+  "core_name": "melonDS",
+  "core_version": "0.9.3 66b5d26",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Pokemon Mystery Dungeon - Explorers of Sky (USA).nds",
+    "sha1": "7efb50f925f0b483a66f2a266524173c8a25c4f0",
+    "size": 134217728
+  },
+  "device": null,
+  "script": "scripts/nds/Pokemon Mystery Dungeon - Explorers of Sky.txt",
+  "frames": 53359,
+  "options": "melonds_touch_mode = Touch\n",
+  "started_from": null,
+  "files": {
+    "Pokemon Mystery Dungeon - Explorers of Sky (USA).sav": {
+      "size": 131072,
+      "sha1": "270597d5760297b160be0ea6c6a5e8d2f64808aa"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

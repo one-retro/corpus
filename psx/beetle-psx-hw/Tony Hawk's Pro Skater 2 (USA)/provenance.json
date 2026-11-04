@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "psx",
+  "core": "beetle-psx-hw",
+  "core_file": "mednafen_psx_hw_libretro.dylib",
+  "core_name": "Beetle PSX HW",
+  "core_version": "0.9.44.1 71ee81e",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "opengl",
+  "rom": {
+    "name": "Tony Hawk's Pro Skater 2 (USA).cue",
+    "sha1": "ea5388de4fa83e3d3b5f37d752f1eb8d3bd5d88e",
+    "size": 96
+  },
+  "script": "scripts/psx/Tony Hawk's Pro Skater 2.txt",
+  "frames": 8662,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Tony Hawk's Pro Skater 2 (USA).srm": {
+      "size": 131072,
+      "sha1": "8e16df6d998216b92b802e2a2c81d87e5a3a5590"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

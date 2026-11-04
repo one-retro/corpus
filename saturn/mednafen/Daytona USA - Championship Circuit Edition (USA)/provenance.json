@@ -1,0 +1,19 @@
+{
+  "method": "downloaded",
+  "system": "saturn",
+  "core": "mednafen",
+  "url": "https://raw.githubusercontent.com/euan-forrester/save-file-converter/0a9786f6b43d4e06c725c0b07c97921a8e440d17/frontend/tests/data/save-formats/segasaturn/Daytona%20USA%20-%20Championship%20Circuit%20Edition%20(USA).bcr",
+  "source_page": "https://github.com/euan-forrester/save-file-converter/pull/337",
+  "source": "github.com (euan-forrester/save-file-converter test data, commit 0a9786f6b43d)",
+  "author": "Euan Forrester (save-file-converter) or a user of the site; not stated",
+  "licence": "GPL-3.0 (the save-file-converter repository's licence; the save data itself carries no stated licence)",
+  "fetched": "2026-11-04",
+  "what_it_is": "Standalone Mednafen's Backup RAM Cart file for Daytona USA CCE: a gzip member (4375 bytes, OS byte 0x13) inflating to the 512 KiB cart volume, holding DAYTONA96_0 (records, 4136 bytes) and DAYTONA96_1 (61814 bytes). Renamed: Mednafen itself names it '<stem>.<md5>.bcr'. Only the cart file was published; Daytona saves to the cart when one is present.",
+  "files": {
+    "Daytona USA - Championship Circuit Edition (USA).bcr": {
+      "size": 4375,
+      "sha1": "0ddc1de688b644d3ef8c0e6ca01ef7110a0433d1"
+    }
+  },
+  "note": "Attributed to Mednafen because PR #337 adds 'Emulator format (specifically mednafen)' with this file as test data and because only standalone Mednafen gzips the cart (Beetle Saturn writes it plain)."
+}

@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "neogeo",
+  "core": "fb-alpha",
+  "core_file": "fbalpha2012_libretro.dylib",
+  "core_name": "FB Alpha 2012",
+  "core_version": "v0.2.97.29 0ce3153",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "lbowling.zip",
+    "sha1": "046b88030fc8f9da4a4d677b105ba87fefae4608",
+    "size": 1618125
+  },
+  "script": "scripts/neogeo/lbowling.txt",
+  "frames": 8714,
+  "options": "fbneo-neogeo-mode = MVS\n",
+  "started_from": null,
+  "files": {
+    "lbowling.fs": {
+      "size": 440,
+      "sha1": "8bca4a9ebbd2f239c2cf04fb379a1e267df606a2"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "No memory card in FB Alpha 2012's libretro core: the game skips MEMORY CARD SAVE/LOAD. lbowling.fs is the MVS backup RAM only."
+}

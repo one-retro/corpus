@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "ngp",
+  "core": "race",
+  "core_file": "race_libretro.dylib",
+  "core_name": "RACE",
+  "core_version": "v2.16 c7810dd",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Baseball Stars - Pocket Sports Series (Japan, Europe) (En,Ja).ngp",
+    "sha1": "d5a53c1b18626909b58fc73740d8c566357a7812",
+    "size": 1048576
+  },
+  "script": "scripts/ngp/Baseball Stars.txt",
+  "frames": 2192,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Baseball Stars - Pocket Sports Series (Japan, Europe) (En,Ja).ngf": {
+      "size": 49184,
+      "sha1": "1b08add6d4b553b0634eb2c506777c088c9e64de"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

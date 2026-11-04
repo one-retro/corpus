@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "psx",
+  "core": "pcsx-rearmed",
+  "core_file": "pcsx_rearmed_libretro.dylib",
+  "core_name": "PCSX-ReARMed",
+  "core_version": "r26 7b0e8f8",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Spyro the Dragon (USA).cue",
+    "sha1": "6abdbc5a00bcb521528825fb7cb6bfebd99a7a91",
+    "size": 88
+  },
+  "script": "scripts/psx/Spyro the Dragon.txt",
+  "frames": 5572,
+  "options": "# PCSX-ReARMed: card 1 named after the serial (<SLUS-NNNNN>_1.mcd); no card 2\npcsx_rearmed_memcard1 = serial\npcsx_rearmed_memcard2 = none\n",
+  "started_from": null,
+  "files": {
+    "SCUS-94228_1.mcd": {
+      "size": 131072,
+      "sha1": "b22b8ed043e594a5ac1ea0ee51e6ba2b8186f4d0"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "option variant: pcsx_rearmed_memcard1 = serial;pcsx_rearmed_memcard2 = none"
+}

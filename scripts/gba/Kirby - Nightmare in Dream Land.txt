@@ -1,0 +1,28 @@
+# Kirby - Nightmare in Dream Land: pick FILE1, START GAME, ONE PLAYER, and
+# let the opening play into Vegetable Valley; the game writes FILE1 as the
+# adventure begins. Proof: FILE1 named "Water Drop" on FILE SELECT after a
+# power cycle.
+wait 900
+press start 6       # skip the intro
+wait 240
+press start 6       # title -> FILE SELECT
+wait 240
+press a 6           # FILE1
+wait 150
+press a 6           # START GAME
+wait 150
+press a 6           # ONE PLAYER
+wait 900            # the opening, then Level 1
+wait 600
+shot playing
+# Power cycle: keep battery RAM across the reset (SkyEmu's reset reloads
+# it from a file the frontend never wrote, and would lose the save).
+dump cycle.srm
+reset
+srm cycle.srm
+wait 900
+press start 6
+wait 240
+press start 6
+wait 300
+shot files

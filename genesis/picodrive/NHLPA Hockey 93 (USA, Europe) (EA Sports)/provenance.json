@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "genesis",
+  "core": "picodrive",
+  "core_file": "picodrive_libretro.dylib",
+  "core_name": "PicoDrive",
+  "core_version": "2.05-1890c29",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "NHLPA Hockey 93 (USA, Europe) (EA Sports).md",
+    "sha1": "76c0f3d4665ffcd53adfffaa27fc4dded694f8f7",
+    "size": 524288
+  },
+  "script": "scripts/genesis/NHLPA Hockey 93.txt",
+  "frames": 70464,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "NHLPA Hockey 93 (USA, Europe) (EA Sports).srm": {
+      "size": 8192,
+      "sha1": "4970c3c59ffd518ee4361a5e745837808befe010"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

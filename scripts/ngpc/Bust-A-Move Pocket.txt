@@ -1,0 +1,31 @@
+# Bust-A-Move Pocket: GAME OPTIONS, GAME-LEVEL LV 1 -> LV 2, EXIT. The game sets
+# up its save block (a whole 64 KiB sector) on first boot; leaving the options
+# rewrites it. A reset and a second look at GAME OPTIONS shows LV 2 kept.
+# NGP A is libretro b, NGP B is libretro a, Option is start.
+wait 900
+press b 6           # skip the intro: GAME MENU
+wait 300
+press up 10         # GAME OPTIONS (the cursor wraps)
+wait 60
+press b 10
+wait 200
+press right 10      # GAME-LEVEL LV 1 -> LV 2
+wait 40
+repeat 5
+press down 10
+wait 40
+end
+press b 10          # EXIT: the options are written here
+wait 200
+shot exited
+reset
+wait 900
+press b 6
+wait 300
+press up 10
+wait 60
+press b 10          # GAME OPTIONS again
+wait 200
+press down 10       # off GAME-LEVEL
+wait 40
+shot kept

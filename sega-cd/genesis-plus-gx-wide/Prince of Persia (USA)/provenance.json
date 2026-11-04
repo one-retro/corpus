@@ -1,0 +1,31 @@
+{
+  "method": "played",
+  "system": "sega-cd",
+  "core": "genesis-plus-gx-wide",
+  "core_file": "genesis_plus_gx_wide_libretro.dylib",
+  "core_name": "Genesis Plus GX Wide",
+  "core_version": "v1.7.4 b7ad005",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Prince of Persia (USA).cue",
+    "sha1": "a9ef705c0a2bfb73dff30a783d8e0e0e66f877f4",
+    "size": 2930
+  },
+  "script": "scripts/sega-cd/Prince of Persia.txt",
+  "frames": 8574,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "4Mbit_cart.brm": {
+      "size": 524288,
+      "sha1": "2a170e18ca44a8bbaa8d36675cdae9e7203026d0"
+    },
+    "scd_U.brm": {
+      "size": 8192,
+      "sha1": "9e91c0b12b7c868be4e536e5ce93c2e5b253052a"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "Disc from the Trimmed Redump set, unpacked here: the data track is the real one, the audio tracks are zero-filled stand-ins of the exact sizes (silent CD audio; the disk was too full for the real ones). The .cue is the original."
+}

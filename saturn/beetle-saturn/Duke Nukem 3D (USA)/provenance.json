@@ -1,0 +1,31 @@
+{
+  "method": "played",
+  "system": "saturn",
+  "core": "beetle-saturn",
+  "core_file": "mednafen_saturn_libretro.dylib",
+  "core_name": "Beetle Saturn",
+  "core_version": "v1.32.1",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Duke Nukem 3D (USA).cue",
+    "sha1": "9a1c3a4981f9a2169c3e7382c5a08793ec4e763d",
+    "size": 96
+  },
+  "script": "scripts/saturn/Duke Nukem 3D.txt",
+  "frames": 3808,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Duke Nukem 3D (USA).smpc": {
+      "size": 12,
+      "sha1": "3f89756e10e382cc33c0baac96751be781c9b3b3"
+    },
+    "Duke Nukem 3D (USA).srm": {
+      "size": 32768,
+      "sha1": "4ee0cd7c3730c3f69d4d842f6e2f960fccdb4829"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "Run from the data track alone: the cue lists only track 01 (the Redump cue's audio tracks were left out to save space); the BIOS and game do not need them to boot and save."
+}

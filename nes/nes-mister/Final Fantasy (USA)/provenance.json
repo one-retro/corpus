@@ -1,0 +1,19 @@
+{
+  "method": "downloaded",
+  "system": "nes",
+  "core": "nes-mister",
+  "url": "https://github.com/euan-forrester/save-file-converter/files/8173565/saves.zip",
+  "source_page": "https://github.com/euan-forrester/save-file-converter/issues/80#issuecomment-1057487772",
+  "source": "GitHub (euan-forrester/save-file-converter issue #80)",
+  "author": "birdybro (GitHub; MiSTer contributor)",
+  "licence": null,
+  "fetched": "2026-11-03",
+  "what_it_is": "birdybro's own MiSTer save of Final Fantasy, from a zip of their whole MiSTer saves folder (file dated 2022-01-12).",
+  "files": {
+    "Final Fantasy (USA).sav": {
+      "size": 32768,
+      "sha1": "e566fdee85a4d862a5ba329050b312b1c3de9459"
+    }
+  },
+  "note": "MiSTer NES core (2021-22 build). The core wrote 32 KiB (64 SD sectors): the game's 8 KiB of PRG-RAM, then 24 KiB of whatever was in that SDRAM region. birdybro's explanation in the thread: iNES 1.0-headered ROMs give 32 KiB files, NES 2.0-headered ROMs (which declare the PRG-RAM size) give 8 KiB; NES.sv agrees (save_sz, the last LBA written, is 63, i.e. 64 sectors, unless the NES 2.0 prg_nvram field says 8 KiB, then 15). Inside the zip of birdybro's whole MiSTer saves folder; path in the zip: NES/<name>. Here the last 24 KiB are all zero."
+}

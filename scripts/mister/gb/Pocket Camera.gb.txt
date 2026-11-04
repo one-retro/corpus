@@ -1,0 +1,21 @@
+load corpus-tmp/mgl/camera.mgl 8
+# Pocket Camera (Japan) (128 KiB battery RAM behind the camera mapper): take
+# one photo and keep it. Frontends here have no camera, so the picture is
+# whatever the core feeds the sensor; the album entry is real either way.
+wait 800
+press start 6       # title -> main menu (とる / みる / あそぶ)
+wait 150
+press a 6           # とる (shoot) -> the shoot menu, cursor on とる
+wait 150
+press a 6           # とる -> viewfinder, のこり30 (30 left)
+wait 150
+press a 6           # take the photo: "Ⓐきろく Ⓑやめる"
+wait 150
+press a 6           # きろく (keep it): のこり29
+wait 150
+shot saved          # viewfinder again, のこり29
+wait 30
+wait 30
+save
+wait 60
+shot final

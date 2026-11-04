@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "gba",
+  "core": "mgba",
+  "core_file": "mgba_libretro.dylib",
+  "core_name": "mGBA",
+  "core_version": "0.11-212-7a12d6d",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Kirby - Nightmare in Dream Land (USA).gba",
+    "sha1": "37a476567d133c146fee6b5e2eb0b07a215da6b0",
+    "size": 8388608
+  },
+  "script": "scripts/gba/Kirby - Nightmare in Dream Land.txt",
+  "frames": 4662,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Kirby - Nightmare in Dream Land (USA).srm": {
+      "size": 32768,
+      "sha1": "b543782854d14b494f864f5646812f896ce6d2a6"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

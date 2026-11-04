@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "sega-cd",
+  "core": "picodrive",
+  "core_file": "picodrive_libretro.dylib",
+  "core_name": "PicoDrive",
+  "core_version": "2.05-1890c29",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Lunar - The Silver Star (USA).cue",
+    "sha1": "c88041fd9d4ab4afc7aeeafa40d237768757ec6d",
+    "size": 6453
+  },
+  "script": "scripts/sega-cd/Lunar - The Silver Star.txt",
+  "frames": 9902,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Lunar - The Silver Star (USA).srm": {
+      "size": 8192,
+      "sha1": "2ed339797d2229ad90293f9ab81493dd9eb566dc"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "Disc from the Trimmed Redump set, unpacked here: the data track is the real one, the audio tracks are zero-filled stand-ins of the exact sizes (silent CD audio; the disk was too full for the real ones). The .cue is the original."
+}

@@ -1,0 +1,63 @@
+load corpus-tmp/mgl/sfhajya.mgl 8
+# Shining Force - The Sword of Hajya: the storyteller's START puts a new
+# adventure in book 1 and asks the hero's name ("ABC"); the game writes the
+# book right there. Reset, and her menu now offers CONT.; the book list shows
+# ABC in book 1. Button 2 (a) advances and confirms.
+wait 900
+press start 10    # intro -> title
+wait 150
+press start 10    # title -> the storyteller
+wait 300
+repeat 5            # her lines, then START (cursor on it)
+press b 10
+wait 120
+end
+press b 10    # START -> book list, book 1
+wait 120
+press b 10    # book 1 -> "What's the main character's name?"
+wait 120
+press b 10    # A
+wait 30
+press right 10
+wait 30
+press b 10    # B
+wait 30
+press right 10
+wait 30
+press b 10    # C
+wait 30
+repeat 4            # bottom row, on "/"
+press down 10
+wait 30
+end
+repeat 4            # ( ) DEL END
+press right 10
+wait 30
+end
+press b 10    # END: "ABC, what an interesting name." Book 1 is written
+wait 150
+press b 10
+wait 120
+press b 10
+wait 300
+wait 30
+save
+wait 60
+shot final
+# power cycle: load the game again; the core reads the .sav back from the SD card
+load corpus-tmp/mgl/sfhajya.mgl 8
+wait 900
+press start 10
+wait 150
+press start 10
+wait 300
+repeat 4            # her lines; the menu is START CONT. DEL. COPY, on CONT.
+press b 10
+wait 120
+end
+press b 10    # CONT.: "Will you continue from where you left off last?"
+wait 150
+press b 10    # the book list: 1 ABC
+wait 120
+shot saved
+wait 30

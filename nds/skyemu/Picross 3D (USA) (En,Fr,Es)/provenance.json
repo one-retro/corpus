@@ -1,0 +1,32 @@
+{
+  "method": "played",
+  "system": "nds",
+  "core": "skyemu",
+  "core_file": "skyemu_libretro.dylib",
+  "core_name": "SkyEmu",
+  "core_version": "adacd0788964ed89f5c43dcbc1f3cc26deec996c",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Picross 3D (USA) (En,Fr,Es).nds",
+    "sha1": "3be14c9bb264d8755c12f8e4bac82204eb8bddec",
+    "size": 67108864
+  },
+  "device": null,
+  "script": "scripts/nds/Picross 3D.txt",
+  "frames": 6432,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Picross 3D (USA) (En,Fr,Es).rtc": {
+      "size": 40,
+      "sha1": "ca975bd6fe96dc0f03f059839d8b8b39eab074fa"
+    },
+    "Picross 3D (USA) (En,Fr,Es).srm": {
+      "size": 8388608,
+      "sha1": "1b516b606d6e1dad520ba808e538e270e1fca38a"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

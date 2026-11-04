@@ -1,0 +1,31 @@
+{
+  "method": "played",
+  "system": "gba",
+  "core": "beetle-gba",
+  "core_file": "mednafen_gba_libretro.dylib",
+  "core_name": "Beetle GBA",
+  "core_version": "v0.9.36 b158166",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Boktai - The Sun Is in Your Hand (USA).gba",
+    "sha1": "7164326283df46a3941ec7b6ceca889cbc40e660",
+    "size": 16777216
+  },
+  "script": "scripts/gba/Boktai - The Sun Is in Your Hand.txt",
+  "frames": 7920,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Boktai - The Sun Is in Your Hand (USA).ff75c62ab690410cc8fca24204d783e9.eep": {
+      "size": 8192,
+      "sha1": "78af3342f3d42f91a97b3a8339689dac84fe5ad4"
+    },
+    "Boktai - The Sun Is in Your Hand (USA).ff75c62ab690410cc8fca24204d783e9.sav": {
+      "size": 65536,
+      "sha1": "472a55b0ba289b0f4e538bb4c8b826dede3a40bb"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

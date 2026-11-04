@@ -1,0 +1,19 @@
+{
+  "method": "downloaded",
+  "system": "pcenginecd",
+  "core": "turbografx16-mister",
+  "url": "https://github.com/euan-forrester/save-file-converter/files/8173565/saves.zip",
+  "source_page": "https://github.com/euan-forrester/save-file-converter/issues/80#issuecomment-1057487772",
+  "source": "GitHub (euan-forrester/save-file-converter issue #80)",
+  "author": "birdybro (GitHub; MiSTer contributor)",
+  "licence": null,
+  "fetched": "2026-11-03",
+  "what_it_is": "birdybro's own MiSTer TurboGrafx16 (CD) save, from a zip of their whole MiSTer saves folder (saves/TGFX16, file dated 2021-02-22): the game's own ranking file COTTON with the default table (BIG/GOT/TON/HUD/SON), which the game writes at power-on; its first 64 bytes equal what beetle-pce-fast writes at power-on here, so the game was not played to a new high score.",
+  "files": {
+    "Fantastic Night Dreams - Cotton (USA).sav": {
+      "size": 2048,
+      "sha1": "c41af6d37c46f0b21eec17cfd2f246d911a76ff8"
+    }
+  },
+  "note": "Raw 2 KiB backup RAM, no padding: HUBM, end pointer 0x8800, next free 0x8048, entries: COTTON (56 bytes). Not booted here. The zip is the same one the pcengine worker downloaded (.cache/downloads/pcengine/birdybro-mister-saves/saves.zip, sha1 9ced6d6c8b2047fe8225aaf37201e15095da3ace); the file was copied from its extracted TGFX16/ folder."
+}

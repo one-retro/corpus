@@ -1,0 +1,12 @@
+# Sonic MegaMix for ClownMDEmu: no BIOS screen, so the title comes earlier
+# (~1800 frames). Otherwise as Sonic MegaMix.txt.
+wait 2400
+press start 6       # title: PRESS START BUTTON -> START GAME / CONTINUE
+wait 200
+shot menu
+press start 6       # START GAME -> SAVE / NO SAVE
+wait 200
+shot save
+press start 6       # SAVE
+wait 900
+shot playing

@@ -1,0 +1,33 @@
+# Metroid (FDS): register a name (アイウ) in slot 1 and start that file.
+# Registering alone writes nothing; starting the file writes SAVEDATA on side
+# A (おまちください), and the game then asks for side B. The console is reset
+# there and the select screen, read back from the disk, lists the name.
+wait 1200
+press start 10      # title -> セレクトシテクダサイ (cursor on ナマエ トウロク)
+wait 300
+press start 10      # ナマエ トウロク
+wait 300
+tap a 1 20          # ア (cursor starts on ア)
+tap right 1 8
+tap a 1 20          # イ
+tap right 1 8
+tap a 1 20          # ウ
+shot name
+press select 6      # slot 2
+wait 20
+press select 6      # slot 3
+wait 20
+press select 6      # トウロク オワリ
+wait 20
+press start 6       # register
+wait 600
+shot registered
+press start 10      # start file 1 (the cursor is on it): SAVEDATA is written
+wait 1200           # Bメンヲ セットシテクダサイ
+shot setb
+reset
+wait 1200
+press start 10      # title -> select screen, read from the disk
+wait 400
+shot select
+wait 60

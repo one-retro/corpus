@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "neogeo",
+  "core": "fb-alpha",
+  "core_file": "fbalpha2012_libretro.dylib",
+  "core_name": "FB Alpha 2012",
+  "core_version": "v0.2.97.29 0ce3153",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "blazstar.zip",
+    "sha1": "e29ef4455e05d552f2b21875f212388fecb7a013",
+    "size": 21596277
+  },
+  "script": "scripts/neogeo/blazstar.txt",
+  "frames": 5832,
+  "options": "fbneo-neogeo-mode = MVS\n",
+  "started_from": null,
+  "files": {
+    "blazstar.fs": {
+      "size": 1836,
+      "sha1": "b1c82882d7861b2096d428041cf33ad0bda3d26a"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "No memory card in FB Alpha 2012's libretro core: no CARD SAVE prompt (the proof is the attract mode after GAME OVER). blazstar.fs holds the MVS backup RAM with the AAAAAAAAA high-score entry."
+}

@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "fds",
+  "core": "mesen",
+  "core_file": "mesen_libretro.dylib",
+  "core_name": "Mesen",
+  "core_version": "0.9.9",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Golf - Japan Course (Japan) (DV 2).fds",
+    "sha1": "532214dacbac874deb1c944f894c450feeffd2eb",
+    "size": 131000
+  },
+  "script": "scripts/fds/Golf - Japan Course.txt",
+  "frames": 6754,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Golf - Japan Course (Japan) (DV 2).ips": {
+      "size": 82,
+      "sha1": "2259e77643c693ce41e8bac8f054623a7c992280"
+    }
+  },
+  "created": "2026-11-03",
+  "note": "runner: work/nes/runner/retro-run (tools/retro-run with RetroArch's init order and a disk control interface)"
+}

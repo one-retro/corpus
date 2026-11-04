@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "genesis",
+  "core": "blastem",
+  "core_file": "blastem_libretro.dylib",
+  "core_name": "BlastEm",
+  "core_version": "1.0.1-pre",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Sonic & Knuckles + Sonic The Hedgehog 3 (USA) (Lock-on Combination).md",
+    "sha1": "cfbf98c36c776677290a872547ac47c53d2761d6",
+    "size": 4194304
+  },
+  "script": "scripts/genesis/Sonic & Knuckles + Sonic The Hedgehog 3.txt",
+  "frames": 2220,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Sonic & Knuckles + Sonic The Hedgehog 3 (USA) (Lock-on Combination).srm": {
+      "size": 512,
+      "sha1": "e8ef4a3543c8201ed5e89a5397b8b63be86e6863"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

@@ -1,0 +1,37 @@
+# The Minish Cap: create file 1 named "AABC" (or so: the first A may land on
+# the title in a slower core). The game writes the file when the name is
+# confirmed ("Saving file..."). Proof: CHOOSE A FILE showing it.
+wait 900
+press start 6       # skip the sword intro
+wait 300
+press start 6       # title -> CHOOSE A FILE
+wait 300
+press a 6           # file 1 -> ENTER A NAME
+wait 200
+press a 6           # A
+wait 200
+tap a 1 20          # A
+tap right 1 10
+tap a 1 20          # B
+tap right 1 10
+tap a 1 20          # C
+press start 6       # cursor to END
+wait 60
+press a 6           # END
+wait 120
+press a 6
+wait 120
+press a 6           # Saving file...
+wait 300
+shot chooser
+# Power cycle: keep battery RAM across the reset (SkyEmu's reset reloads
+# it from a file the frontend never wrote, and would lose the save).
+dump cycle.srm
+reset
+srm cycle.srm
+wait 900
+press start 6
+wait 300
+press start 6
+wait 300
+shot files

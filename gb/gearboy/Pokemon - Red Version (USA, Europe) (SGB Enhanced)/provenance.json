@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "gb",
+  "core": "gearboy",
+  "core_file": "gearboy_libretro.dylib",
+  "core_name": "Gearboy",
+  "core_version": "3.8.20-8-g37d0bf3",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Pokemon - Red Version (USA, Europe) (SGB Enhanced).gb",
+    "sha1": "ea9bcae617fdf159b045185467ae58b2e4a48b9a",
+    "size": 1048576
+  },
+  "script": "scripts/gb/Pokemon Red.txt",
+  "frames": 7633,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Pokemon - Red Version (USA, Europe) (SGB Enhanced).srm": {
+      "size": 32768,
+      "sha1": "76e0fbc5b7c3a02dfccda77a3afd27fdc0f7bfec"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

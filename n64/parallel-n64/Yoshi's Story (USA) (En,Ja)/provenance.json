@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "n64",
+  "core": "parallel-n64",
+  "core_file": "parallel_n64_libretro.dylib",
+  "core_name": "ParaLLEl N64",
+  "core_version": "1.0 e8cbdbb",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Yoshi's Story (USA) (En,Ja).z64",
+    "sha1": "b13072fef6c6df48c07d8822c01e5bc59036f6da",
+    "size": 16777216
+  },
+  "script": "scripts/n64/Yoshi's Story.txt",
+  "frames": 3252,
+  "options": "parallel-n64-gfxplugin = angrylion\nparallel-n64-pak1 = memory\n",
+  "started_from": null,
+  "files": {
+    "Yoshi's Story (USA) (En,Ja).srm": {
+      "size": 296960,
+      "sha1": "6ee2432dacc50b3ef0471a65d3c69fdffab32c93"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

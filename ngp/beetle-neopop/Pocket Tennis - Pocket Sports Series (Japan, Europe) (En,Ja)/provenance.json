@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "ngp",
+  "core": "beetle-neopop",
+  "core_file": "mednafen_ngp_libretro.dylib",
+  "core_name": "Beetle NeoPop",
+  "core_version": "v1.29.0.0 a50d5ac",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Pocket Tennis - Pocket Sports Series (Japan, Europe) (En,Ja).ngp",
+    "sha1": "67826f4c8e488938f7e1b26e331f79ebf0aa2565",
+    "size": 524288
+  },
+  "script": "scripts/ngp/Pocket Tennis.txt",
+  "frames": 20450,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Pocket Tennis - Pocket Sports Series (Japan, Europe) (En,Ja).flash": {
+      "size": 272,
+      "sha1": "f7941ae44aa4f9c217f56a39dbe578a232a3ca96"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

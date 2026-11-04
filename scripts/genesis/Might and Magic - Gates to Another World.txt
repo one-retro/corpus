@@ -1,0 +1,26 @@
+# Might and Magic: Gates to Another World (no SRAM header; cores find its
+# 32 KB byte-wide SRAM by database or default). Create Character: accept the
+# rolled stats as an Archer, Human, Good, Male, named "A". The roster is in
+# SRAM; Go to Towns shows "A" in the Middlegate inn's list.
+# Genesis A/B/C are the RetroPad's y/b/a.
+wait 1500
+press down 6        # main menu: Create Character
+wait 30
+press a 6
+wait 180
+shot rolled
+press a 6           # class: Archer
+wait 120
+press a 6           # race: Human
+wait 120
+press a 6           # alignment: Good
+wait 120
+press a 6           # sex: Male -> "Name your character:"
+wait 120
+shot naming
+press a 6           # "A", accepted: back to the main menu
+wait 120
+press a 6           # Go to Towns
+wait 240
+shot saved          # Inn in the Town of Middlegate: ... The Hermit, A
+wait 30

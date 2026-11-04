@@ -1,0 +1,26 @@
+# Puzzle Bobble (MVS: backup RAM, plus the memory card): insert a coin, start, and
+# fire every bubble straight up until the board fills. Let the continue count run
+# out; with a card in the slot the game asks "CARD SAVE" (cursor on NO): up, A.
+# A blank card makes the BIOS ask to format it first (A = yes).
+# The MVS clock seeds the game, so how long the round lasts varies from run to
+# run: the script keeps pressing up and A (fire, YES, confirm, format) for long
+# enough to cover every case. Neo Geo A is RetroPad b.
+wait 1200
+press select 6         # coin
+wait 60
+press start 6
+wait 300
+repeat 150             # about 9000 frames
+tap up 1 10
+press b 4
+wait 46
+end
+shot saved
+# power cycle; a new game offers to load the card
+reset
+wait 1200
+press select 6
+wait 60
+press start 6
+wait 180
+shot cardload          # CARD LOAD (FB Alpha, without a card, starts round 1)

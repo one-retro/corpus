@@ -1,0 +1,20 @@
+{
+  "method": "downloaded",
+  "system": "snes",
+  "core": "snes-mister",
+  "url": "https://github.com/MiSTer-devel/SNES_MiSTer/files/5976156/Shinseiki.Odysselya.sav.zip",
+  "source_page": "https://github.com/MiSTer-devel/SNES_MiSTer/issues/258",
+  "source": "github.com (MiSTer-devel/SNES_MiSTer issue #258)",
+  "author": "Left-Empty",
+  "licence": null,
+  "fetched": "2026-11-03",
+  "what_it_is": "The reporter's Shinseiki Odysselya save (Feb 2021) from playing on MiSTer; the top slot is at level 15.",
+  "files": {
+    "Shinseiki Odysselya.sav": {
+      "size": 8192,
+      "sha1": "8e981edc0f8473e13ae3e7f495b6d2ca8f76ef5d"
+    }
+  },
+  "created": "2026-11-03",
+  "note": "Name follows the reporter's ROM file name, not No-Intro."
+}

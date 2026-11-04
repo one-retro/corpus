@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "sega-gg",
+  "core": "genesis-plus-gx",
+  "core_file": "genesis_plus_gx_libretro.dylib",
+  "core_name": "Genesis Plus GX",
+  "core_version": "v1.7.4 f27655b",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Magic Knight Rayearth (Japan).gg",
+    "sha1": "6c13e3b9bb24eafc1186c5ffa322b1f40c676b3d",
+    "size": 524288
+  },
+  "script": "scripts/sega-gg/Magic Knight Rayearth.txt",
+  "frames": 2090,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Magic Knight Rayearth (Japan).srm": {
+      "size": 8192,
+      "sha1": "0aa698c62e26061077bc1034c4051fb8650078c8"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

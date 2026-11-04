@@ -1,0 +1,17 @@
+{
+  "method": "downloaded",
+  "system": "genesis",
+  "core": "megadrive-mister",
+  "url": "https://raw.githubusercontent.com/euan-forrester/save-file-converter/main/frontend/tests/data/save-formats/mister/genesis/Phantasy_Star_IV_USA-from-mister-zero-padded.sav",
+  "source_page": "https://github.com/euan-forrester/save-file-converter/blob/main/frontend/tests/unit/save-formats/Mister/Genesis.spec.js",
+  "source": "github.com/euan-forrester/save-file-converter (test data)",
+  "author": "a save-file-converter user's MiSTer (via issue #118 / PR #127, 2022-05-29); committed by euan-forrester",
+  "licence": "GPL-3.0 (repository licence)",
+  "fetched": "2026-11-03",
+  "what_it_is": "Phantasy Star IV (USA) battery save that came off a MiSTer Genesis/MegaDrive core, per its file name and the test ('a MiSTer Genesis padded with zeros save'); game progress unknown. Packed (one byte per SRAM byte, not byte-expanded), 64 KB, padded with 0x00 rather than the 0xFF MiSTer normally pads with; the test author guesses the core keeps whatever padding the file it was given had. Which MiSTer core version wrote it is not stated.",
+  "files": {
+    "Phantasy_Star_IV_USA-from-mister-zero-padded.sav": {"size": 65536, "sha1": "1c1129c1a8618dd552fc33daa8429c27157d98d0"}
+  },
+  "created": "2026-11-03",
+  "note": "File name kept as downloaded; MiSTer itself would name it after the ROM with a .sav extension."
+}

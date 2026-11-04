@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "gbc",
+  "core": "sameboy",
+  "core_file": "sameboy_libretro.dylib",
+  "core_name": "SameBoy",
+  "core_version": "1.0.5 90e2899",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Kirby - Tilt 'n' Tumble (USA).gbc",
+    "sha1": "6ab8d666e2bebbb3fee7796c8968aab2ea21b8f9",
+    "size": 1048576
+  },
+  "script": "scripts/gbc/Kirby Tilt 'n' Tumble.txt",
+  "frames": 1530,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Kirby - Tilt 'n' Tumble (USA).srm": {
+      "size": 256,
+      "sha1": "d22a1837d1361054bf6b2544e9080533e0cb5370"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

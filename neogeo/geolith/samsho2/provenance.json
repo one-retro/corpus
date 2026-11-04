@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "neogeo",
+  "core": "geolith",
+  "core_file": "geolith_libretro.dylib",
+  "core_name": "Geolith",
+  "core_version": "0.5.0",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "samsho2.neo",
+    "sha1": "75c4ed931a6fd9bc829940a7bca933ec9414d0d1",
+    "size": 26480640
+  },
+  "script": "scripts/neogeo/samsho2.txt",
+  "frames": 11408,
+  "options": "geolith_system_type = aes\ngeolith_memcard = on\n",
+  "started_from": null,
+  "files": {
+    "samsho2.mcr": {
+      "size": 2048,
+      "sha1": "a1c0b1493949b58fe95548eea82860391fc5eb6b"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

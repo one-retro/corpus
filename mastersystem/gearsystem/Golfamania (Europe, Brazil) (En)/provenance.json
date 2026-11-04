@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "mastersystem",
+  "core": "gearsystem",
+  "core_file": "gearsystem_libretro.dylib",
+  "core_name": "Gearsystem",
+  "core_version": "3.9.24-9-gf1202e8",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Golfamania (Europe, Brazil) (En).sms",
+    "sha1": "d0b964dd7cd8ccdd730de4d8e4bb2e87bea7686e",
+    "size": 262144
+  },
+  "script": "scripts/mastersystem/Golfamania.txt",
+  "frames": 6930,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Golfamania (Europe, Brazil) (En).srm": {
+      "size": 32768,
+      "sha1": "e303b8aa4d58e40add8558c8f3ce1f849445d882"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

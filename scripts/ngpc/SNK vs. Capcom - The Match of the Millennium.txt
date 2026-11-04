@@ -1,0 +1,32 @@
+# SNK vs. Capcom - The Match of the Millennium (32 Mbit, two flash chips; the
+# save lives in the first chip's boot sectors): SET UP, LEVEL NORMAL -> HARD,
+# EXIT. Leaving SET UP rewrites the save area. A reset and a second look at
+# SET UP shows LEVEL HARD kept.
+# NGP A is libretro b, NGP B is libretro a, Option is start.
+wait 1250           # the intro runs into the title, PRESS "A" BUTTON
+press b 6           # START / SET UP
+wait 200
+press down 10       # SET UP
+wait 60
+press b 10
+wait 250
+press right 10      # LEVEL NORMAL -> HARD
+wait 40
+repeat 6
+press down 10
+wait 30
+end
+press b 10          # EXIT: the settings are written here
+wait 150
+shot exited
+reset
+wait 1250
+press b 6
+wait 200
+press down 10
+wait 60
+press b 10          # SET UP again
+wait 150
+press down 10       # off LEVEL
+wait 40
+shot kept

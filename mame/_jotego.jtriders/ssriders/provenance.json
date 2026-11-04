@@ -1,0 +1,22 @@
+{
+  "method": "device-backup",
+  "device": "Analogue Pocket",
+  "backup_path": "Saves/jtriders/common/ssriders.sav",
+  "system": "mame",
+  "core": "_jotego.jtriders",
+  "pocket_core": "jotego.jtriders",
+  "pocket_platform": "jtriders",
+  "game_source": "the file's own name (no No-Intro entry applies)",
+  "attribution": "NOT written on this device: byte-identical to jotego's distributed default for this set (github.com/jotego/jtbin pocket/raw/Saves/jtriders/common/ssriders.sav, 2025-03-21 install); all 13 files in Saves/jtriders/common carry the same mtime, 2025-03-21 18:18, the minute the updater installed the jotego cores' assets (1282 files in Assets share it). Kept as an example of what a Pocket card holds after installing jotego cores; the format is the core's NVRAM/EEPROM image",
+  "confidence": "n/a (stock file)",
+  "written": "2025-03-21 18:18 (file mtime as read here; the Pocket stamps its own clock)",
+  "files": {
+    "ssriders.sav": {
+      "size": 128,
+      "sha1": "6c680d49e1b07a47b29ff263a6009d226bd120cf"
+    }
+  },
+  "created": "2026-11-03",
+  "note": "MAME set ssriders; one representative of the 13 stock files in Saves/jtriders/common, the rest are not filed (DEVICE-BACKUPS.md)",
+  "stock_default": true
+}

@@ -1,0 +1,34 @@
+{
+  "method": "played",
+  "system": "pcengine",
+  "core": "turbografx16-mister",
+  "core_file": "TurboGrafx16_20260603.rbf",
+  "core_name": "TurboGrafx16_MiSTer",
+  "core_version": "20260603",
+  "frontend": "mister",
+  "device": "the owner's MiSTer (DE10-Nano), Main_MiSTer binary of 2026-10-19",
+  "loaded_with": "MGL via /dev/MiSTer_cmd load_core (_Console/TurboGrafx16, file type f index 0)",
+  "save_folder": "saves/TGFX16",
+  "rom": {
+    "name": "Chew-Man-Fu (USA).pce",
+    "sha1": "5c742fe5d5af5628ba0e598cb88abd892dc87682",
+    "size": 262144
+  },
+  "script": "scripts/pcengine/Chew-Man-Fu.txt",
+  "mister_script": "scripts/mister/pcengine/Chew-Man-Fu.tgfx16.txt",
+  "frames": 1482,
+  "timing": "real time: script frames played as wall-clock 1/60 s by work/mister/mrun.py",
+  "options": {
+    "config/TGFX16.CFG": "Autosave On (status bit 23), every other option at its default; written for the run and removed after"
+  },
+  "save_trigger": "OSD opened (F12 from a uinput keyboard) with Autosave on: the core writes its backup RAM to the SD card",
+  "started_from": null,
+  "files": {
+    "Chew-Man-Fu (USA).sav": {
+      "size": 2048,
+      "sha1": "a551d75d8b0f9444ef289e6e40b2c219e1ab03b0"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "The TurboGrafx16 core gives HuCards the 2 KiB backup RAM of a CD-ROM2/Tennokoe system and writes it as 4 sectors (2048 bytes): HUBM header, the CHEW-SR and CHEW  -01 files. No seed was used: the core loads (and with no file, formats) its BRAM on every game load. Proof: FILE CABINET with ROOM 01 in use."
+}

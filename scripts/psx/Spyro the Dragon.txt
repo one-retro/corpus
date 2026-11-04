@@ -1,0 +1,12 @@
+# Spyro the Dragon: after Press Start the game finds no Spyro file on the card
+# and offers to create one. "SPYRO THE DRAGON" is a 1-block file that holds
+# the game's three save slots; it is written here, before any slot is used.
+wait 3600           # title, "PRESS START" (it takes no input before about 3000; the demo starts after 5000)
+press start 6       # "Accessing memory cards..."
+wait 1500           # "The memory card in slot 1 does not have a save file.
+                    # (PCSX-ReARMed asks for a card first: see the .pcsx-rearmed variant)
+shot ask            #  Create save file now?" Create File / Cancel
+press b 6           # Create File: "Creating save file..."
+wait 400
+shot saved          # the file's three slots, EMPTY EMPTY EMPTY, New Game / Load Game
+wait 60

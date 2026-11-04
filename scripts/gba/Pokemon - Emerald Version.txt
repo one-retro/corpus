@@ -1,0 +1,34 @@
+# Pokemon Emerald: start a new game, mash A through Professor Birch's talk
+# (boy, name AAAAAAA), then save in the moving truck from the start menu.
+# Proof: the CONTINUE screen after a reset. The game has the S-3511A clock.
+wait 900
+press start 6       # skip the intro
+wait 300
+press start 6       # title -> NEW GAME
+wait 300
+tap a 200 30        # Birch, gender, name (A types letters, then OK), truck
+wait 300
+tap b 8 30          # close any text the A presses left open
+wait 60
+press start 6       # menu: BAG, AAAAAAA, SAVE, OPTION, EXIT
+wait 60
+press down 6
+wait 20
+press down 6
+wait 20
+press a 6           # SAVE
+wait 240
+press a 6           # YES
+wait 600            # SAVING... AAAAAAA saved the game.
+shot saved
+# Power cycle: keep battery RAM across the reset (SkyEmu's reset reloads
+# it from a file the frontend never wrote, and would lose the save).
+dump cycle.srm
+reset
+srm cycle.srm
+wait 900
+press start 6       # skip the intro
+wait 900
+press start 6       # title -> CONTINUE / NEW GAME
+wait 600
+shot continue

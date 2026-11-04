@@ -1,0 +1,30 @@
+{
+  "method": "played",
+  "system": "msx",
+  "core": "bluemsx",
+  "core_file": "bluemsx_libretro.dylib",
+  "core_name": "blueMSX",
+  "core_version": "git e3086eb",
+  "frontend": "retro-run (writes saves as RetroArch does), via work/msx/make-save-x.py: content copied into the run directory",
+  "renderer": "software",
+  "rom": {
+    "name": "Hydlide II - Shine of Darkness (Japan).rom",
+    "sha1": "da4b44c734029f60388b7cea4ab97c3d5c6a09e9",
+    "size": 131072
+  },
+  "extra_content": null,
+  "script": "scripts/msx/Hydlide II.txt",
+  "frames": 3042,
+  "options": null,
+  "port0_device": null,
+  "started_from": null,
+  "files": {
+    "Hydlide II - Shine of Darkness (Japan).sram": {
+      "size": 2048,
+      "sha1": "0857449a767ccd28b843ad441d03411defcd92e6",
+      "location": "savedir"
+    }
+  },
+  "created": "2026-11-03",
+  "note": "blueMSX writes <ROM stem>.sram into the save directory, but only when the cartridge is re-inserted (retro_reset does this); retro_unload_game never writes it. The script's reset is what produced this file."
+}

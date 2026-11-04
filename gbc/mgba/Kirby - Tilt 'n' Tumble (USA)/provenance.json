@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "gbc",
+  "core": "mgba",
+  "core_file": "mgba_libretro.dylib",
+  "core_name": "mGBA",
+  "core_version": "0.11-212-7a12d6d",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Kirby - Tilt 'n' Tumble (USA).gbc",
+    "sha1": "6ab8d666e2bebbb3fee7796c8968aab2ea21b8f9",
+    "size": 1048576
+  },
+  "script": "scripts/gbc/Kirby Tilt 'n' Tumble.txt",
+  "frames": 1530,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Kirby - Tilt 'n' Tumble (USA).srm": {
+      "size": 256,
+      "sha1": "6a73826e0890b240eade9307e18fc661b358b291"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

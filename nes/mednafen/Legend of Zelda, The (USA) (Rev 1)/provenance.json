@@ -1,0 +1,32 @@
+{
+  "method": "played",
+  "system": "nes",
+  "core": "mednafen",
+  "core_file": null,
+  "core_name": "Mednafen",
+  "core_version": "1.32.1",
+  "frontend": "Mednafen 1.32.1 (Homebrew), module 'nes', isolated MEDNAFEN_HOME, -sound 0 -video.glvsync 0",
+  "rom": {
+    "name": "Legend of Zelda, The (USA) (Rev 1).nes",
+    "size": 131088,
+    "sha1": "4671517d72d09799403f6c672cd2b395933e926e"
+  },
+  "script": "scripts/nes/Legend of Zelda.txt",
+  "frames": 1116,
+  "options": null,
+  "input": "work/standalone/tools/sdlfeed.c (DYLD_INSERT_LIBRARIES into the ad-hoc-signed Homebrew binary): SDL key events synthesized inside the process on presented frames, from the retro-run script mapped to Mednafen's default keys (gen_sdlfeed.py); F9 snapshot for shot, F10 reset, F12 exit (Mednafen writes saves on exit)",
+  "started_from": null,
+  "files": {
+    "Legend of Zelda, The (USA) (Rev 1).d3f453931146e95b04a31647de80fdab.sav": {
+      "size": 8192,
+      "sha1": "92ad8037aeb6cd09672dac7721a4795fe717021d"
+    }
+  },
+  "layout": {
+    "save_dir": "$MEDNAFEN_HOME/sav (default .mednafen/sav in the home folder)",
+    "name": "<ROM file name without extension>.<game MD5 as Mednafen computes it>.<ext> (filesys.fname_sav %f.%M%x)",
+    "written": "on exit"
+  },
+  "created": "2026-11-04",
+  "note": "Byte-identical to the fceumm, mesen, nestopia and FCEUX files."
+}

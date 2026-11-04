@@ -1,0 +1,21 @@
+{
+  "method": "device-backup",
+  "device": "Analogue Pocket",
+  "backup_path": "Saves/nes/Spiritualized.NES/palram.bin",
+  "system": "nes",
+  "core": "spiritualized-nes",
+  "pocket_core": "Spiritualized.NES",
+  "pocket_platform": "nes",
+  "game_source": "the file's own name (no No-Intro entry applies)",
+  "attribution": "folder Saves/nes/Spiritualized.NES; its data.json declares slot 0x120 'Palette RAM', nonvolatile, filename palram.bin",
+  "confidence": "high",
+  "written": "2024-07-23 09:17 (file mtime as read here; the Pocket stamps its own clock)",
+  "files": {
+    "palram.bin": {
+      "size": 2048,
+      "sha1": "3bcb959cf6ad736dad7ea3d84f3c5dfc90fe3799"
+    }
+  },
+  "created": "2026-11-03",
+  "note": "not a game save: the core's own palette RAM, which the Pocket keeps in the core's folder of Saves. A sync tool will meet it beside the game saves"
+}

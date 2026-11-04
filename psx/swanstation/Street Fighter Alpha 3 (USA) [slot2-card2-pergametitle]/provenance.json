@@ -1,0 +1,31 @@
+{
+  "method": "played",
+  "system": "psx",
+  "core": "swanstation",
+  "core_file": "swanstation_libretro.dylib",
+  "core_name": "SwanStation",
+  "core_version": "1.0.0 631f0fb",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "opengl",
+  "rom": {
+    "name": "Street Fighter Alpha 3 (USA).cue",
+    "sha1": "5e640de7f4840a0dddbd6a575669ba649b8eb0c5",
+    "size": 231
+  },
+  "script": "scripts/psx/Street Fighter Alpha 3.slot2.txt",
+  "frames": 9294,
+  "options": "# SwanStation: card 1 libretro (.srm), card 2 per game title (<Title>_2.mcd)\nswanstation_MemoryCards_Card1Type = Libretro\nswanstation_MemoryCards_Card2Type = PerGameTitle\n",
+  "started_from": null,
+  "files": {
+    "Street Fighter Alpha 3 (USA).srm": {
+      "size": 131072,
+      "sha1": "313befb21bcb5e14f5fc345aa993bb3536ed0351"
+    },
+    "Street Fighter Alpha 3 (USA)_2.mcd": {
+      "size": 131072,
+      "sha1": "43a552cdb86e70e195adf9c2897d878360469cfa"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "option variant: swanstation_MemoryCards_Card1Type = Libretro;swanstation_MemoryCards_Card2Type = PerGameTitle"
+}

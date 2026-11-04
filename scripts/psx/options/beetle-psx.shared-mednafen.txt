@@ -1,0 +1,4 @@
+# Beetle PSX: Mednafen card method with shared cards (mednafen_psx_libretro_shared.N.mcr)
+beetle_psx_use_mednafen_memcard0_method = mednafen
+beetle_psx_enable_memcard1 = enabled
+beetle_psx_shared_memory_cards = enabled

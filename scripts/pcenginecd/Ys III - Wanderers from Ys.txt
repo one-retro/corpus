@@ -1,0 +1,33 @@
+# Ys III: Beginning, through the opening and Dogi's talk in Redmont, then
+# SELECT > SAVE > file 1, then SELECT > LOAD shows "1 : Sarina".
+wait 360
+press start 6         # System Card: RUN
+repeat 30
+wait 150
+press start 6         # logos, title, Beginning, opening
+end
+repeat 36
+wait 150
+press a 6             # Dogi and the townsfolk
+end
+wait 120
+shot redmont
+press select 6        # EQUIPMENT LOAD SAVE STATUS MESSAGE
+wait 60
+press down 6
+wait 20
+press down 6          # SAVE
+wait 20
+press a 6             # "Save to which file?"
+wait 90
+press a 6             # 1
+wait 300
+press select 6
+wait 60
+press up 6            # LOAD (the cursor stays on SAVE)
+wait 20
+press a 6
+wait 90
+shot saved            # "Which game to load?  1 : Sarina"
+press b 6
+wait 60

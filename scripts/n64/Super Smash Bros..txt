@@ -1,0 +1,34 @@
+# Super Smash Bros.: OPTION -> Sound Stereo/Mono set to Mono, then back to
+# the menu. The game keeps its settings in SRAM (it formats SRAM on the
+# first boot and rewrites it when an option changes). The script then
+# resets and opens OPTION again to show Mono was read back.
+# N64 buttons on the RetroPad: A = b, B = y, Z = l2, Start = start.
+wait 1200
+press start 6       # skip the intro
+wait 150
+press start 6       # title -> Mode Select
+wait 150
+press down 6
+wait 30
+press down 6        # OPTION
+wait 30
+press b 6
+wait 150
+press b 6           # Sound: Stereo -> Mono
+wait 100
+shot mono
+press y 6           # back to Mode Select
+wait 150
+reset
+wait 1200
+press start 6
+wait 150
+press start 6
+wait 150
+press down 6
+wait 30
+press down 6
+wait 30
+press b 6           # OPTION again after the reset
+wait 150
+shot reloaded

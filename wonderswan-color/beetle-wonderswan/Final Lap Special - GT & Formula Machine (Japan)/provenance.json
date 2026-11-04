@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "wonderswan-color",
+  "core": "beetle-wonderswan",
+  "core_file": "mednafen_wswan_libretro.dylib",
+  "core_name": "Beetle WonderSwan",
+  "core_version": "v0.9.35.1 4b01295",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Final Lap Special - GT & Formula Machine (Japan).wsc",
+    "sha1": "4c3f092b095bdb0afdaf8d32d4c54b4d6c209c96",
+    "size": 4194304
+  },
+  "script": "scripts/wonderswan-color/Final Lap Special.txt",
+  "frames": 6184,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Final Lap Special - GT & Formula Machine (Japan).srm": {
+      "size": 2048,
+      "sha1": "6a35f58c72d99e1942c8b91c33b5e28e628c1818"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

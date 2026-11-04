@@ -1,0 +1,31 @@
+{
+  "method": "played",
+  "system": "gba",
+  "core": "skyemu",
+  "core_file": "skyemu_libretro.dylib",
+  "core_name": "SkyEmu",
+  "core_version": "adacd0788964ed89f5c43dcbc1f3cc26deec996c",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Fire Emblem (USA, Australia).gba",
+    "sha1": "c735fdbb9e8abe19e0c6a44708df19acc962e204",
+    "size": 16777216
+  },
+  "script": "scripts/gba/Fire Emblem.txt",
+  "frames": 5600,
+  "options": "system_core_override = Automatic\nsystem_gb_bios_enable = disabled\nsystem_gba_bios_enable = disabled\nsystem_nds_bios_enable = disabled\n",
+  "started_from": null,
+  "files": {
+    "Fire Emblem (USA, Australia).rtc": {
+      "size": 48,
+      "sha1": "33a6ee87a683abf62618007c67f553218f4fd02e"
+    },
+    "Fire Emblem (USA, Australia).srm": {
+      "size": 131072,
+      "sha1": "be5126f8706b526b55809e57f3702bfff8682f0d"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

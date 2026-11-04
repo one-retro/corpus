@@ -1,0 +1,25 @@
+# Pocket Family GB (Japan) (HuC-3: clock + 32 KiB battery RAM): はじめから,
+# take every default through the move-in (rent すごくやすい, the family
+# arrives), then start menu -> おわる -> セーブして おわる (save and quit).
+wait 450
+press start 6       # PUSH START -> つづきから / はじめから / ... (cursor on はじめから)
+wait 120
+repeat 45           # はじめから, あたらしくはじめる, the landlord story, the rent,
+press a 6           # each member of the family moving in, until the house
+wait 120            # view with the clock (AM00:01) in the corner
+end
+wait 120
+press start 6       # でんわする ... おわる
+wait 60
+repeat 6
+press down 6
+wait 20
+end
+press a 6           # おわる -> セーブして おわる / つづける
+wait 90
+press a 6           # セーブして おわる: back to the title
+wait 400
+press start 6       # the title menu, cursor now on つづきから
+wait 120
+shot saved
+wait 30

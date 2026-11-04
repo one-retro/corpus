@@ -1,0 +1,23 @@
+# Super Tetris 3 (2 KB SRAM): register player 1 as "ABC". On a blank SRAM
+# the game formats it at boot (00 11 22 .. FF signature); registering the
+# name writes the player record (3 bytes at $0019 change), and the game
+# then shows GAME SELECT for PLAYER ABC.
+wait 1200
+press start 6       # title -> PLAYER SELECT
+wait 200
+press a 6           # slot 1 -> name entry
+wait 120
+tap a 1 30          # A
+tap right 1 20
+tap a 1 30          # B
+tap right 1 20
+tap a 1 30          # C
+tap down 2 20       # bottom row
+tap right 15 12     # END
+wait 30
+press a 6           # -> REGISTER YOUR NAME / ELIMINATE NAME
+wait 120
+press a 6           # REGISTER YOUR NAME: the record is written
+wait 200
+shot registered
+wait 30

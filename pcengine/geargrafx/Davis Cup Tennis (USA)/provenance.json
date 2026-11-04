@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "pcengine",
+  "core": "geargrafx",
+  "core_file": "geargrafx_libretro.dylib",
+  "core_name": "Geargrafx",
+  "core_version": "1.8.7",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Davis Cup Tennis (USA).pce",
+    "sha1": "7e3ad77375d9c62e060cd6f6e57493196a4a739d",
+    "size": 524288
+  },
+  "script": "scripts/pcengine/Davis Cup Tennis.txt",
+  "frames": 2466,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Davis Cup Tennis (USA).srm": {
+      "size": 2048,
+      "sha1": "a1c158c73354c23ad8993e15e4bca76d35d133a2"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

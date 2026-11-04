@@ -1,0 +1,30 @@
+{
+  "method": "played",
+  "system": "msx2",
+  "core": "bluemsx",
+  "core_file": "bluemsx_libretro.dylib",
+  "core_name": "blueMSX",
+  "core_version": "git e3086eb",
+  "frontend": "retro-run (writes saves as RetroArch does), via work/msx/make-save-x.py: content copied into the run directory",
+  "renderer": "software",
+  "rom": {
+    "name": "Wizardry (Japan).rom",
+    "sha1": "34635bf3518c7b33164f3d96da769c7a01102d28",
+    "size": 524288
+  },
+  "extra_content": null,
+  "script": "scripts/msx2/Wizardry.txt",
+  "frames": 13500,
+  "options": null,
+  "port0_device": null,
+  "started_from": null,
+  "files": {
+    "Wizardry (Japan).sram": {
+      "size": 8192,
+      "sha1": "a684663aef342e1e53866da6c0586bcb81249661",
+      "location": "savedir"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "blueMSX writes <ROM stem>.sram into the save directory, but only when the cartridge is re-inserted (retro_reset does this); retro_unload_game never writes it. The script's reset is what produced this file."
+}

@@ -1,0 +1,35 @@
+{
+  "method": "played",
+  "system": "saturn",
+  "core": "beetle-saturn",
+  "core_file": "mednafen_saturn_libretro.dylib",
+  "core_name": "Beetle Saturn",
+  "core_version": "v1.32.1",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Sega Rally Championship (USA).cue",
+    "sha1": "afc92dc1a95fe954caf0890a3dba24be9dae437b",
+    "size": 106
+  },
+  "script": "scripts/saturn/Sega Rally Championship.txt",
+  "frames": 3504,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Sega Rally Championship (USA).bcr": {
+      "size": 524288,
+      "sha1": "5c9cec592c47da919d34bdbe455756e77b6204ce"
+    },
+    "Sega Rally Championship (USA).smpc": {
+      "size": 12,
+      "sha1": "6de6cca36faf0306c982b11ccc57e304ee30b9b7"
+    },
+    "Sega Rally Championship (USA).srm": {
+      "size": 32768,
+      "sha1": "383246c4e5459700a5b62342f09da5b60cb9b1c9"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "Run from the data track alone: the cue lists only track 01 (the Redump cue's audio tracks were left out to save space); the BIOS and game do not need them to boot and save."
+}

@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "wonderswan-color",
+  "core": "beetle-wonderswan",
+  "core_file": "mednafen_wswan_libretro.dylib",
+  "core_name": "Beetle WonderSwan",
+  "core_version": "v0.9.35.1 4b01295",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Dokodemo Hamster 3 - Odekake Saffron (Japan) (Rev 2).wsc",
+    "sha1": "66b4bd15ef67dc324736a1cc78d6aca335f03389",
+    "size": 2097152
+  },
+  "script": "scripts/wonderswan-color/Dokodemo Hamster 3.txt",
+  "frames": 5936,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Dokodemo Hamster 3 - Odekake Saffron (Japan) (Rev 2).srm": {
+      "size": 32768,
+      "sha1": "82e539f86bcb9ae08c5ef43bc26dc0eef60543ae"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

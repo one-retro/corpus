@@ -1,0 +1,22 @@
+{
+  "method": "downloaded",
+  "system": "neogeo",
+  "core": "fb-alpha",
+  "url": "https://raw.githubusercontent.com/zwh8800/recalbox-saves/fc24fb854793260c45bb856d9c7f1ed3aeb6f011/rg40xxh/sdcard/saves_RA/Roms/NEOGEO/FB%20Alpha%202012%20Neo%20Geo/mslug.fs",
+  "source_page": "https://github.com/zwh8800/recalbox-saves/blob/fc24fb854793260c45bb856d9c7f1ed3aeb6f011/rg40xxh/sdcard/saves_RA/Roms/NEOGEO/FB%20Alpha%202012%20Neo%20Geo/mslug.fs",
+  "source": "GitHub (zwh8800/recalbox-saves, a personal backup of Recalbox and handheld RetroArch save folders)",
+  "author": "zwh8800 (commits signed wastecat / zzz)",
+  "licence": null,
+  "fetched": "2026-11-04",
+  "committed": "2024-07-22..2024-07-27",
+  "what_it_is": "Metal Slug NVRAM state (FB1 FS1) written by the libretro FB Alpha 2012 Neo Geo build on an Anbernic RG40XXH; game state unknown",
+  "attribution": "from the repo path only: 'rg40xxh/sdcard/saves_RA/Roms/NEOGEO/FB Alpha 2012 Neo Geo/mslug.fs'. The 'fba2012neogeo' folder is the save subdirectory that core creates; nothing else on the page names the core or the game state",
+  "files": {
+    "mslug.fs": {
+      "size": 476,
+      "sha1": "c0193e9cbfa01c144f225f043e8e2984a2da6f69"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "fbalpha2012_neogeo build"
+}

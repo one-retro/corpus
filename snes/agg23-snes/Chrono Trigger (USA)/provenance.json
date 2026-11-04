@@ -1,0 +1,28 @@
+{
+  "method": "downloaded",
+  "system": "snes",
+  "core": "agg23-snes",
+  "url": "https://github.com/agg23/openfpga-SNES/files/9592512/Issue.2.zip",
+  "source_page": "https://github.com/agg23/openfpga-SNES/issues/2#issuecomment-1250129704",
+  "source": "github.com (agg23/openfpga-SNES issue #2)",
+  "author": "MysticNTN",
+  "licence": null,
+  "fetched": "2026-11-03",
+  "what_it_is": "Saves the agg23 SNES core (Analogue Pocket, Sept 2022, v0.1.x) wrote while reproducing issue #2 (saves lost after 'Load SMC'): Reboot1/Reboot2 are the 8 KB Chrono Trigger save copied off the Pocket after each reboot (identical); End is the 64 KB file found after switching ROMs, which the core author describes as garbage (default memory state), attributed to a Pocket firmware bug.",
+  "files": {
+    "Chrono Trigger (U) [!] - Reboot1.sav": {
+      "size": 8192,
+      "sha1": "bd78cb7385292cac46d7d98e383e5237df7f7ad0"
+    },
+    "Chrono Trigger (U) [!] - Reboot2.sav": {
+      "size": 8192,
+      "sha1": "bd78cb7385292cac46d7d98e383e5237df7f7ad0"
+    },
+    "Chrono Trigger (U) [!] - End.sav": {
+      "size": 65536,
+      "sha1": "b73304befda7c5c9e8b6b8372e6f9e2a29a6da15"
+    }
+  },
+  "created": "2026-11-03",
+  "note": "Renamed by the uploader (' - Reboot1' etc. appended to the core's '<rom name>.sav'). End.sav is a corrupt save, kept because it is what the device wrote."
+}

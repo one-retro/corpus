@@ -1,0 +1,31 @@
+{
+  "method": "played",
+  "system": "gbc",
+  "core": "tgb-dual",
+  "core_file": "tgbdual_libretro.dylib",
+  "core_name": "TGB Dual",
+  "core_version": "v0.8.3 0392c9c",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Pokemon - Crystal Version (USA, Europe) (Rev 1).gbc",
+    "sha1": "f2f52230b536214ef7c9924f483392993e226cfb",
+    "size": 2097152
+  },
+  "script": "scripts/gbc/Pokemon Crystal.txt",
+  "frames": 8968,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Pokemon - Crystal Version (USA, Europe) (Rev 1).rtc": {
+      "size": 4,
+      "sha1": "07f54bfc6551c1dc60d6e6da16f1c5f6bce34bf8"
+    },
+    "Pokemon - Crystal Version (USA, Europe) (Rev 1).srm": {
+      "size": 32768,
+      "sha1": "40ec71ebe03a04b1517a0ca5ccb680a22e01085f"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

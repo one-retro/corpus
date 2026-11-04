@@ -1,0 +1,35 @@
+{
+  "method": "played",
+  "system": "msx2",
+  "core": "fmsx",
+  "core_file": "fmsx_libretro.dylib",
+  "core_name": "fMSX",
+  "core_version": "6.0 4de1175",
+  "frontend": "retro-run (writes saves as RetroArch does), via work/msx/make-save-x.py: content copied into the run directory",
+  "renderer": "software",
+  "rom": {
+    "name": "Ultima Exodus (Japan).rom",
+    "sha1": "18be429f8b5c7bc4775c99292110aa09341cd644",
+    "size": 262144
+  },
+  "extra_content": null,
+  "script": "scripts/msx2/Ultima Exodus.txt",
+  "frames": 3940,
+  "options": null,
+  "port0_device": 3,
+  "started_from": null,
+  "files": {
+    "Ultima Exodus (Japan).sav": {
+      "size": 8192,
+      "sha1": "f811bc7192c6014ca06c7f0109fe932eafb07a15",
+      "location": "content-dir"
+    },
+    "system/CMOS.ROM": {
+      "size": 52,
+      "sha1": "e8880ec014926ef52a724c4c4b5d011b8d66a0d7",
+      "location": "sysdir"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "fMSX writes cartridge SRAM to <ROM path without extension>.sav beside the ROM (location content-dir), not in the save directory, on unload; RETRO_MEMORY_SAVE_RAM is not used for it, so RetroArch writes no .srm. system/CMOS.ROM is the RTC/CMOS (fMSX default mode MSX2+), written into the system directory on unload. Port 0 device set to 3 (3 = Keyboard, 257 = Joystick + Emulated Keyboard) with work/msx/retro-run-x."
+}

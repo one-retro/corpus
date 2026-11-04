@@ -1,0 +1,35 @@
+{
+  "method": "played",
+  "system": "genesis",
+  "core": "megadrive-mister",
+  "core_file": "MegaDrive_20260603.rbf",
+  "core_name": "MegaDrive_MiSTer",
+  "core_version": "20260603",
+  "frontend": "mister",
+  "device": "the owner's MiSTer (DE10-Nano), Main_MiSTer binary of 2026-10-19",
+  "loaded_with": "MGL via /dev/MiSTer_cmd load_core (_Console/MegaDrive, file type f index 1)",
+  "save_folder": "saves/MegaDrive",
+  "rom": {
+    "name": "World Series Baseball '95 (USA).md",
+    "sha1": "878e9fdbbc0b20b27f25d56e4087efbde1e8979a",
+    "size": 3145728,
+    "on_device": "games/MegaDrive/World Series Baseball '95 (USA).md"
+  },
+  "script": "scripts/genesis/World Series Baseball '95.txt",
+  "mister_script": "scripts/mister/genesis/World Series Baseball '95.megadrive.txt",
+  "frames": 4902,
+  "timing": "real time: script frames played as wall-clock 1/60 s by work/mister/mrun.py",
+  "options": {
+    "config/MegaDrive.CFG": "Autosave On (status bit 13), every other option at its default; written for the run and removed after"
+  },
+  "save_trigger": "OSD opened (F12 from a uinput keyboard) with Autosave on: the core writes its backup RAM to the SD card",
+  "started_from": "a zero-filled 65536-byte .sav put in place before loading, so the backup RAM started cleared; the core then rewrote all of it",
+  "files": {
+    "World Series Baseball '95 (USA).sav": {
+      "size": 65536,
+      "sha1": "ed41a860861f6f19653f9a6804f57fd7b6cff383"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "32 KiB byte-wide SRAM (odd addresses 200001-20FFFF) in a 64 KiB file: the MegaDrive core always writes 128 sectors. Proof: after loading the game again, Game Select opens on GAME TYPE: CONTINUE LEAGUE."
+}

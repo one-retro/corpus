@@ -1,0 +1,20 @@
+{
+  "method": "downloaded",
+  "system": "snes",
+  "core": "snes-mister",
+  "url": "https://github.com/MiSTer-devel/SNES_MiSTer/files/2900744/Chrono.Trigger.U.zip",
+  "source_page": "https://github.com/MiSTer-devel/SNES_MiSTer/issues/38#issuecomment-467014601",
+  "source": "github.com (MiSTer-devel/SNES_MiSTer issue #38)",
+  "author": "James-F2",
+  "licence": null,
+  "fetched": "2026-11-03",
+  "what_it_is": "A Chrono Trigger save attached by a MiSTer SNES core user (Feb 2019) to reproduce an HDMI glitch; the party is near Truce Canyon.",
+  "files": {
+    "Chrono Trigger (U) [!].sav": {
+      "size": 8192,
+      "sha1": "5ecc1a8a8a32f370c43b52843dfbaadff86c6ca7"
+    }
+  },
+  "created": "2026-11-03",
+  "note": "Named as MiSTer names saves (<rom file name>.sav). The page does not say in so many words that MiSTer wrote it."
+}

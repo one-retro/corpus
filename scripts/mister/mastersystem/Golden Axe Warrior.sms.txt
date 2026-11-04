@@ -1,0 +1,56 @@
+load corpus-tmp/mgl/gaw.mgl 8
+# Golden Axe Warrior: NEW GAME, name "ABC", walk west into the village and
+# into the inn, where the elder offers "You can save your game data here."
+# YES, FILE NO. 1: "Your game data is saved."
+# The intro only skips on button 1 (b); start does nothing there.
+wait 600
+press a 10    # skip the intro -> title
+wait 150
+press a 10    # NEW GAME / LOAD DATA
+wait 150
+press b 10    # NEW GAME -> ENTER A NAME
+wait 90
+press b 10    # A
+wait 45
+press right 10
+wait 45
+press b 10    # B
+wait 45
+press right 10
+wait 45
+press b 10    # C
+wait 45
+repeat 3            # bottom row
+press down 10
+wait 45
+end
+repeat 5            # -> END (the cursor stops there)
+press right 10
+wait 45
+end
+press b 10    # END
+wait 200
+press b 10    # "ABC, Firewood's facing a crisis..."
+wait 200
+press b 10
+wait 200            # in the shrine field
+press up 20    # to the middle band
+wait 10
+press left 300    # west into the village, stops below the inn
+wait 30
+press right 8    # line up with the door
+wait 5
+press up 60    # into the inn
+wait 90
+press up 150    # up to the elder: "Do you want to save?" YES/NO
+wait 60
+press b 10    # YES -> "In which file?"
+wait 90
+press b 10    # FILE NO. 1 -> "Your game data is saved." ABC
+wait 120
+shot saved
+wait 30
+wait 30
+save
+wait 60
+shot final

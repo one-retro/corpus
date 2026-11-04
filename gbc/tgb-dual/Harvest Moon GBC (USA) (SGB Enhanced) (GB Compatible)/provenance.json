@@ -1,0 +1,31 @@
+{
+  "method": "played",
+  "system": "gbc",
+  "core": "tgb-dual",
+  "core_file": "tgbdual_libretro.dylib",
+  "core_name": "TGB Dual",
+  "core_version": "v0.8.3 0392c9c",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Harvest Moon GBC (USA) (SGB Enhanced) (GB Compatible).gbc",
+    "sha1": "d407b9c20c5381f46ec460858539a5b6f559e04f",
+    "size": 1048576
+  },
+  "script": "scripts/gbc/Harvest Moon GBC.txt",
+  "frames": 10968,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Harvest Moon GBC (USA) (SGB Enhanced) (GB Compatible).rtc": {
+      "size": 4,
+      "sha1": "87d2eb9193e04443ce09e32ec1c28f26b53aadfa"
+    },
+    "Harvest Moon GBC (USA) (SGB Enhanced) (GB Compatible).srm": {
+      "size": 8192,
+      "sha1": "e59a9d098140a49b09e9b5e6ac77c68b8f44947d"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

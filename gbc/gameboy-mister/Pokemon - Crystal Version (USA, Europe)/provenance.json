@@ -1,0 +1,19 @@
+{
+  "method": "downloaded",
+  "system": "gbc",
+  "core": "gameboy-mister",
+  "url": "https://projectpokemon.org/home/applications/core/interface/file/attachment.php?id=59063&key=71e4d4a67c332ec301fcbe63258aacf5",
+  "source_page": "https://projectpokemon.org/home/forums/topic/65688-crystal-save-via-mister-fpga-wont-open/",
+  "source": "Project Pokemon forums",
+  "author": "dav3yb",
+  "licence": null,
+  "fetched": "2026-11-03",
+  "what_it_is": "Pokemon Crystal (unhacked) save from a playthrough on the MiSTer FPGA Gameboy core, posted 2024-09-09 because PKHeX rejected its size; poster says it is 100% the FPGA core's output (re-saved on the core). Progress not described.",
+  "files": {
+    "Pokemon - Crystal Version (USA, Europe).sav": {
+      "size": 33280,
+      "sha1": "9b3ff2d2ea5a28a1ce8dfc87c37da85d6b101528"
+    }
+  },
+  "note": "33280 = 32768 SRAM + 512-byte footer. Footer starts with a 48-byte VBA/BGB-style MBC3 RTC block: 5 LE u32 live regs (26 1a 16 10 be), 5 LE u32 latched regs (same), then LE u64 timestamp 0x66de666a = 2024-09-09 03:07:22 UTC (matches post date); remaining 464 bytes 0xFF. Kaphotics in the thread confirms trimming 0x8200 -> 0x8020/0x8000. Uploader's filename has no (Rev 1); revision not stated. Served with content-disposition filename 'Pokemon - Crystal Version (USA, Europe).sav'."
+}

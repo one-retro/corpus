@@ -1,0 +1,40 @@
+# Pokemon Yellow (MBC5 + 32 KiB battery RAM): NEW GAME, take the
+# preset names YELLOW and BLUE, then SAVE from the start menu in the bedroom.
+# B advances Oak's text but never picks from the name menus, so it is mashed.
+wait 1900
+repeat 8            # START opens the title menu and START picks NEW GAME; extra
+tap start 1 50      # presses fall on the intro text, which only A and B advance
+end
+wait 60
+repeat 60           # Oak's speech, stops at the player's name menu
+tap b 1 30
+end
+press down 4        # YELLOW
+wait 20
+press a 4
+wait 60
+repeat 40           # stops at the rival's name menu
+tap b 1 30
+end
+press down 4        # BLUE
+wait 20
+press a 4
+wait 60
+repeat 40           # the rest of the speech; B does nothing in the bedroom
+tap b 1 30
+end
+wait 60
+press start 6       # POKEMON / ITEM / YELLOW / SAVE / OPTION / EXIT
+wait 60
+press down 4
+wait 15
+press down 4
+wait 15
+press down 4
+wait 15
+press a 6           # SAVE -> "Would you like to SAVE the game?"
+wait 180
+press a 6           # YES
+wait 270
+shot saved          # "YELLOW saved the game!"
+wait 120

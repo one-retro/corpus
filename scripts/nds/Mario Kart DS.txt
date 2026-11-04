@@ -1,0 +1,20 @@
+# Mario Kart DS: on the first SINGLE PLAYER the game asks to confirm the
+# nickname (the firmware user name), confirms how it shows in races, and
+# offers a custom emblem; answering writes the player profile to flash.
+# Then SINGLE PLAYER again goes straight to SELECT MODE.
+wait 700            # main menu, before the attract demo starts
+press a 6           # SINGLE PLAYER
+wait 240
+shot nickname       # "Is the nickname Player correct?"
+press a 6           # YES
+wait 240
+shot onscreen       # "During races, Player will appear on-screen. Is this OK?"
+press a 6           # YES
+wait 240
+shot emblem         # "Create a custom emblem?" (cursor on NO)
+press a 6           # NO: the profile is saved here
+wait 300
+press a 6           # SINGLE PLAYER again
+wait 300
+shot selectmode     # SELECT MODE, no questions this time
+wait 2400           # melonDS writes its .sav 2 s (wall clock) after the game's last write

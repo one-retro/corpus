@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "gba",
+  "core": "mgba",
+  "core_file": "mgba_libretro.dylib",
+  "core_name": "mGBA",
+  "core_version": "0.11-212-7a12d6d",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Pokemon - Ruby Version (USA, Europe) (Rev 2).gba",
+    "sha1": "5b64eacf892920518db4ec664e62a086dd5f5bc8",
+    "size": 16777216
+  },
+  "script": "scripts/gba/Pokemon - Ruby Version.txt",
+  "frames": 12326,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Pokemon - Ruby Version (USA, Europe) (Rev 2).srm": {
+      "size": 131072,
+      "sha1": "49ccf9273ae2f2258096931fbd33236fb384c74d"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

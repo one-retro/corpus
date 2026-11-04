@@ -1,0 +1,31 @@
+{
+  "method": "played",
+  "system": "snes",
+  "core": "mednafen-bsnes",
+  "core_file": "mednafen_snes_libretro.dylib",
+  "core_name": "Mednafen bSNES",
+  "core_version": "v0.9.26 5f05e4c",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Daikaijuu Monogatari II (Japan).sfc",
+    "sha1": "673c48a373b7da7e0e934c55f7182587e07bb9ab",
+    "size": 5242880
+  },
+  "script": "scripts/snes/Daikaijuu Monogatari II.txt",
+  "frames": 23538,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Daikaijuu Monogatari II (Japan).rtc": {
+      "size": 20,
+      "sha1": "d3d88c5d1216bd1c074a9bea7d4e5defe6816503"
+    },
+    "Daikaijuu Monogatari II (Japan).srm": {
+      "size": 8192,
+      "sha1": "040f2caf48954aa024dd34d89d317db49c4769eb"
+    }
+  },
+  "created": "2026-11-03",
+  "note": "mednafen_snes writes its own .srm (and an empty .rtc) into the save directory and exposes no save RAM through the libretro API; the core then aborts (SIGABRT) while unloading, after the files are written, so make-save.py did not file it. Filed from the run directory by work/snes/file_aborted.py."
+}

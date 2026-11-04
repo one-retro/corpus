@@ -1,0 +1,31 @@
+{
+  "method": "played",
+  "system": "gbc",
+  "core": "tgb-dual",
+  "core_file": "tgbdual_libretro.dylib",
+  "core_name": "TGB Dual",
+  "core_version": "v0.8.3 0392c9c",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Kirby - Tilt 'n' Tumble (USA).gbc",
+    "sha1": "6ab8d666e2bebbb3fee7796c8968aab2ea21b8f9",
+    "size": 1048576
+  },
+  "script": "scripts/gbc/Kirby Tilt 'n' Tumble.txt",
+  "frames": 1530,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Kirby - Tilt 'n' Tumble (USA).rtc": {
+      "size": 4,
+      "sha1": "c66f455ec1c14e38154f75baf37add2e728ee0c1"
+    },
+    "Kirby - Tilt 'n' Tumble (USA).srm": {
+      "size": 8192,
+      "sha1": "1709e314e0fd442683ebe735cb6067f1500800e0"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

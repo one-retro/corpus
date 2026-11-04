@@ -1,0 +1,31 @@
+{
+  "method": "played",
+  "system": "gba",
+  "core": "skyemu",
+  "core_file": "skyemu_libretro.dylib",
+  "core_name": "SkyEmu",
+  "core_version": "adacd0788964ed89f5c43dcbc1f3cc26deec996c",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Pokemon - Emerald Version (USA, Europe).gba",
+    "sha1": "f3ae088181bf583e55daf962a92bb46f4f1d07b7",
+    "size": 16777216
+  },
+  "script": "scripts/gba/Pokemon - Emerald Version.txt",
+  "frames": 12326,
+  "options": "system_core_override = Automatic\nsystem_gb_bios_enable = disabled\nsystem_gba_bios_enable = disabled\nsystem_nds_bios_enable = disabled\n",
+  "started_from": null,
+  "files": {
+    "Pokemon - Emerald Version (USA, Europe).rtc": {
+      "size": 48,
+      "sha1": "520f4443be154599c04e021d809b96fcd151bda5"
+    },
+    "Pokemon - Emerald Version (USA, Europe).srm": {
+      "size": 131072,
+      "sha1": "1ea1187e1cc11fb8ad378f179b6ae1785274019b"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

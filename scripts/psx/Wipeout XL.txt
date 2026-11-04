@@ -1,0 +1,42 @@
+# Wipeout XL: Options > Load and Save > Save, into the first block of card 1,
+# file name "A". "WOXL A" is a 1-block save. The final screen is the game's
+# own card manager: block 1 of card 1 holds the save and is labelled WOXL A.
+# This game drops short presses, so every press is held 10 frames.
+wait 4800           # logos and intro movie
+press start 10      # -> title
+wait 600
+press start 10      # -> Essential Options: Race Type / Team / Class and Track / Start / Options
+wait 600
+press down 10       # Start
+wait 40
+press down 10       # Options
+wait 40
+press b 10
+wait 450            # Options Menu
+shot options
+press down 10       # Controller Config
+wait 40
+press down 10       # Preferences
+wait 40
+press down 10       # Load and Save
+wait 40
+press b 10
+wait 600            # "Checking memory cards", then Load / Save / Delete
+press down 10       # Save
+wait 40
+press b 10
+wait 600            # "Select memory card block to save game to", block 1 marked
+press b 10
+wait 400            # Enter file name
+press b 10          # "A"
+wait 100
+press down 10       # row N..Z
+wait 40
+press down 10       # DEL / END
+wait 40
+press right 10      # END
+wait 40
+press b 10          # "Saving game data"
+wait 600
+shot saved          # block 1 shows the save's icon, labelled WOXL A
+wait 60

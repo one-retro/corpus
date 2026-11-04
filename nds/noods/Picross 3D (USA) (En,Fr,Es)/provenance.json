@@ -1,0 +1,28 @@
+{
+  "method": "played",
+  "system": "nds",
+  "core": "noods",
+  "core_file": "noods_libretro.dylib",
+  "core_name": "NooDS",
+  "core_version": "9a26653",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Picross 3D (USA) (En,Fr,Es).nds",
+    "sha1": "3be14c9bb264d8755c12f8e4bac82204eb8bddec",
+    "size": 67108864
+  },
+  "device": null,
+  "script": "scripts/nds/Picross 3D.txt",
+  "frames": 6432,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Picross 3D (USA) (En,Fr,Es).sav": {
+      "size": 1048576,
+      "sha1": "d9bce8d3ef773976b3b9334ca7ab9a475369fc37"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

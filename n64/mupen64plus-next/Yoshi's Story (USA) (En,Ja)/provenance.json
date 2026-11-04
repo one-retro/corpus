@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "n64",
+  "core": "mupen64plus-next",
+  "core_file": "mupen64plus_next_libretro.dylib",
+  "core_name": "Mupen64Plus-Next",
+  "core_version": "3.0-Vulkan 15bada8",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Yoshi's Story (USA) (En,Ja).z64",
+    "sha1": "b13072fef6c6df48c07d8822c01e5bc59036f6da",
+    "size": 16777216
+  },
+  "script": "scripts/n64/Yoshi's Story.txt",
+  "frames": 3252,
+  "options": "mupen64plus-rdp-plugin = angrylion\n",
+  "started_from": null,
+  "files": {
+    "Yoshi's Story (USA) (En,Ja).srm": {
+      "size": 296960,
+      "sha1": "bab95d941779398570ed54f352a061a5ebe05041"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

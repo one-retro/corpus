@@ -1,0 +1,44 @@
+# Kirby Super Star (SA-1): file 1, Gourmet Race, Course 1 as a solo time
+# trial. Finishing the course writes the best time into the save block at
+# $1F00 of BW-RAM (the default record is 99:99:99), and the Gourmet Race
+# menu then lists it.
+wait 600
+press start 6       # intro -> title
+wait 200
+press start 6       # title -> file select
+wait 200
+press a 6           # file 1 -> game select (cursor on Spring Breeze)
+wait 200
+press right 6       # Gourmet Race
+wait 40
+press a 6           # description card
+wait 300
+press a 6           # Gourmet Race menu
+wait 200
+press down 6        # COURSE 1 (time trial, no Dedede)
+wait 30
+press a 6
+wait 300
+# Run right, hop ledges, inhale and spit to clear star-block walls. The
+# course takes about a minute; if Kirby finishes early the course restarts
+# and the extra rounds just keep running it.
+repeat 24
+press right 60
+press right+b 25
+press right 40
+press y 50
+wait 10
+press y 6
+wait 15
+end
+# By now Kirby is a few seconds into a second run of the course.
+wait 60
+press start 10      # pause: Retire / Continue
+wait 60
+shot paused
+press left 6        # Retire
+wait 30
+press a 6           # -> Gourmet Race menu, which lists the record
+wait 240
+shot record
+wait 30

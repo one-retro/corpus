@@ -1,0 +1,21 @@
+{
+  "method": "device-backup",
+  "device": "Analogue Pocket",
+  "backup_path": "Saves/nes/common/games/1 US - G-Q/Legend of Zelda, The (USA) (Rev 1).sav",
+  "system": "nes",
+  "core": "spiritualized-nes",
+  "pocket_core": "Spiritualized.NES",
+  "pocket_platform": "nes",
+  "game_source": "No-Intro DAT 'Nintendo - Nintendo Entertainment System (Headered) (20260824-072308)'",
+  "attribution": "size matches Spiritualized.NES: 8 KiB, the cart's PRG-RAM; agg23.NES and its Analogizer builds always write 256 KiB (six such files on this card). Saves/nes/common is shared by every NES core, so the folder alone does not say",
+  "confidence": "high",
+  "written": "2024-07-19 20:21 (file mtime as read here; the Pocket stamps its own clock)",
+  "files": {
+    "Legend of Zelda, The (USA) (Rev 1).sav": {
+      "size": 8192,
+      "sha1": "9cf4a6b663fb7cc1610b074aff7c653f02d1e703"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

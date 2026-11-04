@@ -1,0 +1,53 @@
+# Neo Cherry Master Color: ORIGINAL MODE, NEW GAME, enter the name "AAA" (the
+# game files it in the first of five data slots: "COMPLETED"), put in notes,
+# then menu -> POWER OFF -> SAVE? YES -> SAVED. After a reset, ORIGINAL MODE ->
+# CONTINUE lists the slot.
+# NGP A is libretro b, NGP B is libretro a, Option is start.
+wait 1100           # the intro runs into the title
+press b 6           # CHOOSE GAME MODE
+wait 200
+press b 10          # ORIGINAL MODE
+wait 200
+press b 10          # NEW GAME
+wait 200
+press b 10          # ENTRY YOUR NAME: YES
+wait 200
+tap b 4 60          # AAA (the first press is taken by the screen opening)
+press down 8
+wait 30
+press down 8
+wait 30
+repeat 5
+press right 8       # to OK
+wait 30
+end
+press b 10          # OK: COMPLETED, slot 1
+wait 200
+press b 10
+wait 200
+press b 10
+wait 200
+tap b 4 40          # A = NOTE IN
+wait 200
+press start 10      # menu
+wait 100
+repeat 4
+press down 10
+wait 30
+end
+press b 10          # POWER OFF
+wait 100
+press b 10          # SAVE? YES
+wait 200
+shot saved
+reset
+wait 400            # with a save the intro is the attract demo; A skips it
+press b 6           # CHOOSE GAME MODE
+wait 300
+press b 10          # ORIGINAL MODE
+wait 300
+press down 10
+wait 100
+press b 10          # CONTINUE
+wait 300
+shot datas

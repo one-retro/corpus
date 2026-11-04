@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "psx",
+  "core": "swanstation",
+  "core_file": "swanstation_libretro.dylib",
+  "core_name": "SwanStation",
+  "core_version": "1.0.0 631f0fb",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "opengl",
+  "rom": {
+    "name": "Spyro the Dragon (USA).cue",
+    "sha1": "6abdbc5a00bcb521528825fb7cb6bfebd99a7a91",
+    "size": 88
+  },
+  "script": "scripts/psx/Spyro the Dragon.txt",
+  "frames": 5572,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Spyro the Dragon (USA).srm": {
+      "size": 131072,
+      "sha1": "782c7c35f6b651e523065f1ecab602157ca0e33e"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "gba",
+  "core": "beetle-gba",
+  "core_file": "mednafen_gba_libretro.dylib",
+  "core_name": "Beetle GBA",
+  "core_version": "v0.9.36 b158166",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Sonic Advance 2 (USA) (En,Ja,Fr,De,Es,It).gba",
+    "sha1": "7bcd6a07af7c894746fa28073fe0c0e34408022d",
+    "size": 16777216
+  },
+  "script": "scripts/gba/Sonic Advance 2.txt",
+  "frames": 4438,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Sonic Advance 2 (USA) (En,Ja,Fr,De,Es,It).3fb865c5f142a8fc1f82105bfc6b8935.sav": {
+      "size": 65536,
+      "sha1": "fc6b34b2a1edc291e38bee90cf20a3c61a836cbd"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

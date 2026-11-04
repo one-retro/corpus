@@ -1,0 +1,18 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "psx-mister",
+  "url": "https://github.com/user-attachments/files/32008278/Final.Fantasy.VII.USA.zip",
+  "source_page": "https://github.com/MiSTer-devel/PSX_MiSTer/issues/384",
+  "source": "GitHub (MiSTer-devel/PSX_MiSTer issues)",
+  "author": "inyu1",
+  "licence": null,
+  "fetched": "2026-11-04",
+  "what_it_is": "MiSTer PSX core .sav (SNAC MemCard: Virtual); FF7/SAVE01/08:45, before the Kalm flashback hang",
+  "files": {
+    "Final Fantasy VII (USA).sav": {
+      "size": 131072,
+      "sha1": "f0319d747ec0641b50373c3710672594f95be6f0"
+    }
+  }
+}

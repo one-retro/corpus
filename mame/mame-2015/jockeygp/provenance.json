@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "mame",
+  "core": "mame-2015",
+  "core_file": "mame2015_libretro.dylib",
+  "core_name": "MAME 2015",
+  "core_version": "0.160 7adbf44",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "jockeygp.zip",
+    "sha1": "04aa9208647988ee6ee73ca7de3c170efed6e63f",
+    "size": 17273406
+  },
+  "script": "scripts/mame/jockeygp.txt",
+  "frames": 5472,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "mame2015/nvram/jockeygp/saveram": {
+      "size": 65536,
+      "sha1": "99ead94cc29172eed1d66c5bcb7c76e3a5b569b2"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "MAME 2015 does not save the cartridge's 8 KiB RAM (where the game keeps the credits): only the MVS saveram is written. The credits survive the soft reset in the proof, not a real power cycle."
+}

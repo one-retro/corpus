@@ -1,0 +1,62 @@
+# Variant for cores that power the cartridge RAM on as zeros (picodrive,
+# sms-plus-gx): Monopoly takes an all-zero RAM for a valid saved game and asks
+# PLAY SAVED GAME / PLAY NEW GAME before the token screen. Restoring that
+# "game" shows GAME RESTORED over an empty board (picodrive then crashes);
+# this script picks PLAY NEW GAME, and skips the extra PLAY SAVED GAME line
+# in MORE OPTIONS; otherwise it is the same as Monopoly.txt.
+# Monopoly: two human players "A" and "B", no computer player, no time limit,
+# roll for first turn, then MAIN MENU > MORE OPTIONS > SAVE GAME:
+# "GAME SAVED. PRESS B1 TO CONTINUE". Button 2 (a) starts from the title and
+# begins the game; button 1 (b) enters everything else. Menu moves are spaced
+# 30 frames apart: closer presses skip a line.
+wait 400
+press a 10          # PRESS START BUTTON -> PLAY SAVED GAME / PLAY NEW GAME
+wait 150
+press down 6        # -> PLAY NEW GAME
+wait 30
+press b 6           # -> CHOOSE A TOKEN
+wait 150
+press b 6           # first token -> ENTER YOUR NAME
+wait 120
+press b 6           # A
+wait 60
+press a 6           # -> DONE
+wait 60
+press b 6           # DONE: player 1 "A"
+wait 150
+press right 6       # next token
+wait 60
+press b 6           # -> ENTER YOUR NAME
+wait 150
+press right 6       # -> B
+wait 60
+press b 6           # B
+wait 60
+press a 6           # -> DONE
+wait 60
+press b 6           # DONE: player 2 "B"
+wait 250
+press a 6           # B-2 begin: COMPUTER PLAYER? NO
+wait 150
+press b 6           # NO -> SET TIME LIMIT? NO
+wait 150
+press b 6           # NO -> ROLL DICE TO DECIDE WHO STARTS FIRST
+wait 250
+press b 6           # roll; the other player rolls, SUMMARY OF PLAYERS
+wait 800
+press b 6           # -> MAIN MENU, MENU OPEN TO (first player)
+wait 250
+repeat 6            # ROLL DICE ... DISPLAY DEEDS -> MORE OPTIONS
+press down 6
+wait 30
+end
+press b 6
+wait 150
+repeat 5            # SET SCROLL / TIMER / MUSIC / CONVERT PLAYER / PLAY SAVED GAME -> SAVE GAME
+press down 6
+wait 30
+end
+press b 6           # "GAME SAVED"
+wait 120
+shot saved
+wait 30

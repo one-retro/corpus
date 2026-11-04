@@ -1,0 +1,19 @@
+{
+  "method": "downloaded",
+  "system": "fds",
+  "core": "nes-mister",
+  "url": "https://github.com/euan-forrester/save-file-converter/files/15242232/Ginga.Denshou.-.Galaxy.Odyssey.Japan.Rev.1.zip",
+  "source_page": "https://github.com/euan-forrester/save-file-converter/issues/80#issuecomment-2099488989",
+  "source": "GitHub (euan-forrester/save-file-converter issue #80)",
+  "author": "birdybro (GitHub; MiSTer contributor)",
+  "licence": null,
+  "fetched": "2026-11-03",
+  "what_it_is": "birdybro's MiSTer FDS save of Ginga Denshou (2-sided disk), posted 2024-05-07; file dated 2024-05-07.",
+  "files": {
+    "Ginga Denshou - Galaxy Odyssey (Japan) (Rev 1).sav": {
+      "size": 131072,
+      "sha1": "85851f5a70a2affc8fce5ad6e16dd105bd411c10"
+    }
+  },
+  "note": "MiSTer NES core FDS save: 16 zero bytes, then the whole disk image as the core holds it (each side 65500 bytes, fwNES layout without the 16-byte 'FDS\\x1a' header), then padding to a 512-byte multiple (2 sides: 16 + 131000 + 56 = 131072). The disk sides start at offset 0x10. Matches NES.sv: save_sz = rom_sz[17:9] sectors read from SDRAM 0x3C0000, disk loaded at 0x3C0010. The local 1G1R set has only the original release, so the disk could not be diffed against Rev 1."
+}

@@ -1,0 +1,21 @@
+{
+  "method": "device-backup",
+  "device": "Analogue Pocket",
+  "backup_path": "Saves/gb/common/1 GB US - H-Q/Legend of Zelda, The - Link's Awakening (USA, Europe) (Rev 2).sav",
+  "system": "gb",
+  "core": "spiritualized-gb",
+  "pocket_core": "Spiritualized.GB",
+  "pocket_platform": "gb",
+  "game_source": "No-Intro DAT 'Nintendo - Game Boy (20260825-062646)'",
+  "attribution": "size and padding match Spiritualized.GB: 8 KiB = header RAM (MBC1), no footer. Written 2025-07-05 when both Spiritualized.GB and budude2.GB served Saves/gb/common; every budude2.GB save on this card from 2024-12 to 2026-02 (MBC1 and MBC5 carts alike) ends in a 16-byte clock footer, this one does not",
+  "confidence": "medium",
+  "written": "2025-07-05 03:31 (file mtime as read here; the Pocket stamps its own clock)",
+  "files": {
+    "Legend of Zelda, The - Link's Awakening (USA, Europe) (Rev 2).sav": {
+      "size": 8192,
+      "sha1": "b4f905a757213647cd39266055ca6378876c8607"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

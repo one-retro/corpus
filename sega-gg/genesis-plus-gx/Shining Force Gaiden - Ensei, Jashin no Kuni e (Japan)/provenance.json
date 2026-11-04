@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "sega-gg",
+  "core": "genesis-plus-gx",
+  "core_file": "genesis_plus_gx_libretro.dylib",
+  "core_name": "Genesis Plus GX",
+  "core_version": "v1.7.4 f27655b",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Shining Force Gaiden - Ensei, Jashin no Kuni e (Japan).gg",
+    "sha1": "bea1bea94ea745691ad944eaadc8a5576057ed53",
+    "size": 524288
+  },
+  "script": "scripts/sega-gg/Shining Force Gaiden.txt",
+  "frames": 5480,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Shining Force Gaiden - Ensei, Jashin no Kuni e (Japan).srm": {
+      "size": 16384,
+      "sha1": "0c5e51921961734fd99401221ef1f39f235fb749"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

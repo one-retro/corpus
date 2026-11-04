@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "gbc",
+  "core": "irogb",
+  "core_file": "irogb_libretro.dylib",
+  "core_name": "IroGB",
+  "core_version": "v1.0.0",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Tetris DX (World) (SGB Enhanced) (GB Compatible).gbc",
+    "sha1": "7183bcb54dd35f3a07d8fe63339b768f13b8168d",
+    "size": 524288
+  },
+  "script": "scripts/gbc/Tetris DX.txt",
+  "frames": 1548,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Tetris DX (World) (SGB Enhanced) (GB Compatible).srm": {
+      "size": 8192,
+      "sha1": "bb76d289a027d11729c7f62f785da6ecbbd1cde9"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "wonderswan",
+  "core": "beetle-wonderswan",
+  "core_file": "mednafen_wswan_libretro.dylib",
+  "core_name": "Beetle WonderSwan",
+  "core_version": "v0.9.35.1 4b01295",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Tekken Card Challenge (Japan).ws",
+    "sha1": "96a9ce5e56dc0c9648027ad4454e6f35e88d9a07",
+    "size": 1048576
+  },
+  "script": "scripts/wonderswan/Tekken Card Challenge.txt",
+  "frames": 3198,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Tekken Card Challenge (Japan).srm": {
+      "size": 8192,
+      "sha1": "f7411ed3478dcdd153927e201d1e21c3c707d853"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

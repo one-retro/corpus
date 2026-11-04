@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "ngp",
+  "core": "beetle-neopop",
+  "core_file": "mednafen_ngp_libretro.dylib",
+  "core_name": "Beetle NeoPop",
+  "core_version": "v1.29.0.0 a50d5ac",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "King of Fighters R-1 - Pocket Fighting Series (Japan, Europe) (En,Ja).ngp",
+    "sha1": "4a7adbcccb05b6047a38bb861523cbae7d956bfa",
+    "size": 2097152
+  },
+  "script": "scripts/ngp/King of Fighters R-1.txt",
+  "frames": 2122,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "King of Fighters R-1 - Pocket Fighting Series (Japan, Europe) (En,Ja).flash": {
+      "size": 536,
+      "sha1": "67e020df8487ce4c49971a276ff7709c257a9b40"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

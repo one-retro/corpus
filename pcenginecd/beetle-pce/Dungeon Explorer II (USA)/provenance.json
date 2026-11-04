@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "pcenginecd",
+  "core": "beetle-pce",
+  "core_file": "mednafen_pce_libretro.dylib",
+  "core_name": "Beetle PCE",
+  "core_version": "v1.29.0 b96c11e",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Dungeon Explorer II (NA).chd",
+    "sha1": "b64608a196103f341184c3ded398d8cf89155b71",
+    "size": 389046423
+  },
+  "script": "scripts/pcenginecd/Dungeon Explorer II.txt",
+  "frames": 5286,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Dungeon Explorer II (NA).srm": {
+      "size": 2048,
+      "sha1": "644c3dcb12200c2fde64d91ad4eddb5d6ea7d8f5"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

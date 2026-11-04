@@ -1,0 +1,18 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "psx-mister",
+  "url": "https://github.com/MiSTer-devel/PSX_MiSTer/files/8701644/ctr.hot.swap.test.cards.zip",
+  "source_page": "https://github.com/MiSTer-devel/PSX_MiSTer/issues/99",
+  "source": "GitHub (MiSTer-devel/PSX_MiSTer issues)",
+  "author": "CharlesLove",
+  "licence": null,
+  "fetched": "2026-11-04",
+  "what_it_is": "MiSTer PSX core .sav from a card hot-swap test; 'CTR:Saved Games and Scores' plus a deleted 2-block ghost (directory state A1)",
+  "files": {
+    "CTR - Crash Team Racing (USA).sav": {
+      "size": 131072,
+      "sha1": "32dfd28ced9b616489f9cbf0bec4a39776e62e1a"
+    }
+  }
+}

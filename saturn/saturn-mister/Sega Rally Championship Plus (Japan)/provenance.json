@@ -1,0 +1,19 @@
+{
+  "method": "downloaded",
+  "system": "saturn",
+  "core": "saturn-mister",
+  "url": "https://raw.githubusercontent.com/euan-forrester/save-file-converter/0a9786f6b43d4e06c725c0b07c97921a8e440d17/frontend/tests/data/save-formats/mister/segasaturn/Sega%20Rally%20Championship%20Plus%20(Japan).sav",
+  "source_page": "https://github.com/MiSTer-devel/Saturn_MiSTer/issues/283",
+  "source": "github.com (euan-forrester/save-file-converter test data, commit 0a9786f6b43d)",
+  "author": "a MiSTer user, via Euan Forrester (save-file-converter), who attached it to Saturn_MiSTer #283 on 2024-11-27",
+  "licence": "GPL-3.0 (the save-file-converter repository's licence; the save data itself carries no stated licence)",
+  "fetched": "2026-11-04",
+  "what_it_is": "A MiSTer Saturn core save (internal backup RAM, 64 KiB byte-expanded with 0x00) holding RALLYPLUS_0. The high (even) bytes of the first 0x40 bytes hold semi-random garbage; the core's author (srg320) replied that the high byte is ignored and reads as 0xFF on hardware.",
+  "files": {
+    "Sega Rally Championship Plus (Japan).sav": {
+      "size": 65536,
+      "sha1": "16c7dfe8fea2ca7ba35e67ac860ed65e0a3a44f5"
+    }
+  },
+  "note": "The same file is attached to the issue as 'Sega.Rally.Championship.Plus.Japan.sav.zip' (https://github.com/user-attachments/files/17938443/Sega.Rally.Championship.Plus.Japan.sav.zip); fetched here from the converter's test data, where it is used as 'MISTER_INTERNAL_ONLY_WITH_GARBAGE'."
+}

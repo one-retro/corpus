@@ -1,0 +1,35 @@
+{
+  "method": "played",
+  "system": "saturn",
+  "core": "beetle-saturn",
+  "core_file": "mednafen_saturn_libretro.dylib",
+  "core_name": "Beetle Saturn",
+  "core_version": "v1.32.1",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Croc - Legend of the Gobbos (USA).cue",
+    "sha1": "ef600994e6e274863a77196408dda1abf6dba771",
+    "size": 4590
+  },
+  "script": "scripts/saturn/Croc - Legend of the Gobbos.beetle-saturn.txt",
+  "frames": 5288,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Croc - Legend of the Gobbos (USA).bcr": {
+      "size": 524288,
+      "sha1": "7375f566c41cde0329e61131cd3565b6d2c275c0"
+    },
+    "Croc - Legend of the Gobbos (USA).smpc": {
+      "size": 12,
+      "sha1": "85f60caa0093631a2d02fea84c691f325ce50dac"
+    },
+    "Croc - Legend of the Gobbos (USA).srm": {
+      "size": 32768,
+      "sha1": "74624adebfc52dbe31b229ae3721a2b82da7a4a1"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

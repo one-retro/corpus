@@ -1,0 +1,51 @@
+# Pocket Monsters Midori (Japan) (MBC1 + 32 KiB battery RAM, banked): the same
+# play as Pokemon Red: さいしょからはじめる, the first preset names (グリーン and
+# the rival's), then レポート (save) from the start menu in the bedroom.
+# B advances Oak's text but never picks from the name menus, so it is mashed.
+wait 1500
+repeat 8            # START opens the title menu and START picks さいしょから; the
+tap start 1 50      # title ignores input while its Pokemon swap, and SGB-mode
+end                 # cores (mGBA, Gearboy) reach it ~300 frames later
+wait 60
+repeat 60           # Oak's speech, stops at the player's name menu
+tap b 1 30
+end
+press down 4        # the first preset name
+wait 20
+press a 4
+wait 60
+repeat 40           # stops at the rival's name menu
+tap b 1 30
+end
+press down 4        # the first preset rival name
+wait 20
+press a 4
+wait 60
+repeat 40           # the rest of the speech; B does nothing in the bedroom
+tap b 1 30
+end
+wait 60
+press start 6       # ポケモン / どうぐ / グリーン / レポート / せってい / とじる
+wait 60
+press down 4
+wait 15
+press down 4
+wait 15
+press down 4
+wait 15
+press a 6           # レポート -> write the report?
+wait 180
+press a 6           # はい
+wait 300            # A core whose battery RAM starts 0xFF (Gambatte) makes the
+press a 6           # game think a report exists: "overwrite it?" needs one A to
+wait 120            # scroll and one for はい. Elsewhere the report is already
+press a 6           # written by now and these A's land on an empty floor.
+wait 200
+reset               # proof: the title menu now offers つづきから; START takes it
+wait 1500           # and the game shows the report's summary
+repeat 4
+tap start 1 50
+end
+wait 120
+shot saved
+wait 30

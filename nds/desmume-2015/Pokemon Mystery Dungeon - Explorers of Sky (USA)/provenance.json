@@ -1,0 +1,28 @@
+{
+  "method": "played",
+  "system": "nds",
+  "core": "desmume-2015",
+  "core_file": "desmume2015_libretro.dylib",
+  "core_name": "DeSmuME 2015",
+  "core_version": "git a06da0c",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Pokemon Mystery Dungeon - Explorers of Sky (USA).nds",
+    "sha1": "7efb50f925f0b483a66f2a266524173c8a25c4f0",
+    "size": 134217728
+  },
+  "device": null,
+  "script": "scripts/nds/Pokemon Mystery Dungeon - Explorers of Sky.txt",
+  "frames": 53359,
+  "options": "desmume_pointer_type = touch\n",
+  "started_from": null,
+  "files": {
+    "Pokemon Mystery Dungeon - Explorers of Sky (USA).dsv": {
+      "size": 262266,
+      "sha1": "c4b1cf75c574f41d1db2d335f4331f85adc7b3fb"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

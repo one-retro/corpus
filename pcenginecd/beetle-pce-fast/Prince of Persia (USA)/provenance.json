@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "pcenginecd",
+  "core": "beetle-pce-fast",
+  "core_file": "mednafen_pce_fast_libretro.dylib",
+  "core_name": "Beetle PCE Fast",
+  "core_version": "v1.31.0.0",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Prince of Persia (NA).chd",
+    "sha1": "44de7a658c1365c6cc7a6ce10b607a80d34ba933",
+    "size": 256101917
+  },
+  "script": "scripts/pcenginecd/Prince of Persia.txt",
+  "frames": 5176,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Prince of Persia (NA).srm": {
+      "size": 2048,
+      "sha1": "0cdab67ec0b83771750ae07d033928197d276740"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

@@ -1,0 +1,20 @@
+# Sega Rally Championship (USA): open Options and leave by EXIT; the game then writes
+# SEGARALLY_0 (records and settings, 5 KB). It prefers a Backup RAM Cart when one is
+# present, so in Beetle Saturn the file lands in the cart (.bcr), not the console.
+# Saturn pad in libretro: A=b B=a C=r X=y Y=x Z=l L=l2 R=r2.
+wait 1800
+press start          # title
+wait 400
+press start          # menu: Arcade ... Options
+wait 400
+press up             # wraps to Options
+wait 40
+shot menu
+press r              # C: Options
+wait 400
+shot options
+press up             # wraps to EXIT
+wait 40
+press r              # C: EXIT, the game saves
+wait 400
+shot saved           # back on the menu

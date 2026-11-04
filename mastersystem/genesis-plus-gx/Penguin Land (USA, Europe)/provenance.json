@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "mastersystem",
+  "core": "genesis-plus-gx",
+  "core_file": "genesis_plus_gx_libretro.dylib",
+  "core_name": "Genesis Plus GX",
+  "core_version": "v1.7.4 f27655b",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Penguin Land (USA, Europe).sms",
+    "sha1": "8762239c339a084dfb8443cc38515301476bde28",
+    "size": 131072
+  },
+  "script": "scripts/mastersystem/Penguin Land.txt",
+  "frames": 2934,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Penguin Land (USA, Europe).srm": {
+      "size": 7201,
+      "sha1": "7257d6c79858014641354ec7bcaacfea3d16624f"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

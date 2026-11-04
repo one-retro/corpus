@@ -1,0 +1,49 @@
+# Nobunaga no Yabou for WonderSwan (SRAM 32 KiB). 1 PLAY, NEW GAME, scenario
+# 1 (桶狭間合戦 1560), pick 武田 (Takeda Shingen), then START > セーブ > slot 1
+# > はい. After a reset, 1 PLAY lists slot 1 as "1560". Inputs need ~12-frame
+# holds in this game.
+wait 1100
+press start 12      # title
+wait 60
+press start 12      # 1 PLAY / 2 PLAY / OPTION
+wait 200
+press a 12          # 1 PLAY
+wait 200
+press a 12          # NEW GAME
+wait 200
+press a 12          # scenario 1: 桶狭間合戦 (1560)
+wait 200
+press a 12          # game level: ふつう
+wait 200
+press a 12          # PLAY 1 / シナリオ 1 / つよさ 2
+wait 200
+press a 12          # だれをえらびますか? -> 武田
+wait 200
+press a 12          # profile, よろしいですか? はい
+wait 200
+press a 12          # first turn: command menu
+wait 200
+press start 12      # その他コマンド: 速度 戦争 アニメ セーブ ロード
+wait 120
+repeat 3
+press right 12
+wait 30
+end
+press a 12          # セーブ: どのデータにセーブしますか?
+wait 120
+press a 12          # slot 1
+wait 120
+press up 12         # セーブします: はい
+wait 30
+press a 12
+wait 200
+shot saved
+reset
+wait 1100
+press start 12
+wait 60
+press start 12
+wait 200
+press a 12          # 1 PLAY
+wait 200
+shot slots          # NEW GAME / 1. 1560 / 2. ---- / 3. ----

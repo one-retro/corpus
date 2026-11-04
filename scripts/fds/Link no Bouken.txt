@@ -1,0 +1,30 @@
+# Link no Bouken (FDS Zelda II): register "LINK" in slot 1. The file select
+# and the save file (SAVE-DAT, side A) need no disk change; the game writes
+# SAVE-DAT when END is chosen and the SELECT screen then lists the name.
+wait 1200
+press start 10      # title -> SELECT (cursor on NAMAE TOUROKU)
+wait 300
+press start 10      # NAMAE TOUROKU
+wait 300
+# letter grid, cursor on A: A..K is 0..10, L..V is 11..21
+repeat 11
+tap right 1 8
+end
+tap a 1 20          # L
+tap left 3 8
+tap a 1 20          # I
+tap right 5 8
+tap a 1 20          # N
+tap left 3 8
+tap a 1 20          # K
+shot name
+press select 6      # slot 2
+wait 20
+press select 6      # slot 3
+wait 20
+press select 6      # END
+wait 20
+press start 6       # register: SAVE-DAT is written
+wait 900
+shot select
+wait 60

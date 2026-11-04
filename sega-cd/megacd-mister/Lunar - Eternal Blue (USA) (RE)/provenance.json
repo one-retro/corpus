@@ -1,0 +1,20 @@
+{
+  "method": "downloaded",
+  "system": "sega-cd",
+  "core": "megacd-mister",
+  "url": "https://github.com/euan-forrester/save-file-converter/files/8173565/saves.zip",
+  "source_page": "https://github.com/euan-forrester/save-file-converter/issues/80#issuecomment-1057487772",
+  "source": "GitHub (euan-forrester/save-file-converter issue #80)",
+  "author": "birdybro (GitHub; MiSTer contributor)",
+  "licence": null,
+  "fetched": "2026-11-03",
+  "what_it_is": "birdybro's own MiSTer MegaCD save for Lunar - Eternal Blue; zip entry dated 1980-01-01 00:00 (a MiSTer without an RTC).",
+  "files": {
+    "Lunar - Eternal Blue (USA) (RE).sav": {
+      "size": 8192,
+      "sha1": "bd3205c0d92e2d835a17e294ef94434a2b22446f"
+    }
+  },
+  "created": "2026-11-03",
+  "note": "Extracted unchanged from saves.zip (sha1 9ced6d6c8b2047fe8225aaf37201e15095da3ace, 2602364 bytes), entry MegaCD/Lunar - Eternal Blue (USA) (RE).sav; the zip is birdybro's whole MiSTer saves/ folder, posted 2022-03-02 ('here's just a big zip of all my saves on my MiSTer'). Core attribution is by the folder: MiSTer Main writes MegaCD core saves to saves/MegaCD/<cue or chd stem>.sav (support/megacd/megacd.cpp mcd_mount_save). Directory name is the uploader's disc name, which matches the Redump-style set names. 8192 bytes, internal BRAM only (Backup RAM: Internal). Footer present (SEGA_CD_ROM at 0x1FE0, RAM_CARTRIDGE___ at 0x1FF0); 67 of 125 blocks free, 4 files. Plain byte order."
+}

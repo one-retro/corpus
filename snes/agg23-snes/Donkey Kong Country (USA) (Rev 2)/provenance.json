@@ -1,0 +1,28 @@
+{
+  "method": "downloaded",
+  "system": "snes",
+  "core": "agg23-snes",
+  "url": "https://github.com/agg23/openfpga-SNES/files/9592568/openfpga-SNES-Issue.2-DKC-Doom.zip",
+  "source_page": "https://github.com/agg23/openfpga-SNES/issues/2#issuecomment-1250135623",
+  "source": "github.com (agg23/openfpga-SNES issue #2)",
+  "author": "MysticNTN",
+  "licence": null,
+  "fetched": "2026-11-03",
+  "what_it_is": "Donkey Kong Country saves from the agg23 SNES core on the Analogue Pocket (Sept 2022) during the issue #2 reproduction: Reboot1/Reboot2 are the 2 KB save after reboots (identical), End is an 8 KB file left after 'Load SMC' switching (wrong size; corrupt).",
+  "files": {
+    "Donkey Kong Country (U) (V1.2) [!] - Reboot1.sav": {
+      "size": 2048,
+      "sha1": "0288c07f6d618ecb91eebbc9eb1332134e83b344"
+    },
+    "Donkey Kong Country (U) (V1.2) [!] - Reboot2.sav": {
+      "size": 2048,
+      "sha1": "0288c07f6d618ecb91eebbc9eb1332134e83b344"
+    },
+    "Donkey Kong Country (U) (V1.2) [!] - End.sav": {
+      "size": 8192,
+      "sha1": "a7b21150447885ef7acd59206fc44e837e76f03f"
+    }
+  },
+  "created": "2026-11-03",
+  "note": "Renamed by the uploader. The same zip holds 'Doom (U) [!] - End.sav' (2 KB) which is byte-identical to the DKC Reboot saves (the core author: 'the Doom save is actually your DKC save'); Doom has no battery, so it is not filed."
+}

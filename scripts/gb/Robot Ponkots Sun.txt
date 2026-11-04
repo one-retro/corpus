@@ -1,0 +1,27 @@
+# Robot Ponkots - Sun Version - Comic Bom Bom Special Version (Japan) (HuC-1 +
+# 32 KiB battery RAM, infrared port): the Japanese original of Robopon Sun,
+# and the same play as scripts/gbc/Robopon Sun.txt: mash A through the opening
+# to the grandfather's lab, walk right, away from him, then start menu ->
+# セーブ -> "セーブしました" (saved).
+wait 1200
+repeat 300          # title, New Game, the opening, name and birthday, the lab;
+tap a 1 40          # surplus presses only replay Grandpa's lines
+end
+repeat 16           # A ends his lines; RIGHT is ignored while he talks and
+tap a 1 40          # walks away from him once he stops, so the next A has
+press right 10      # no one to talk to
+wait 10
+end
+wait 30
+press start 6       # ロボポン / もちもの / そうこ / データ / せってい / セーブ
+wait 120            # (the menu fades in)
+repeat 5
+press down 6
+wait 20
+end
+press a 6           # セーブ: written
+wait 60
+press a 6           # (harmless if nothing asks)
+wait 120
+shot saved          # "セーブしました"
+wait 30

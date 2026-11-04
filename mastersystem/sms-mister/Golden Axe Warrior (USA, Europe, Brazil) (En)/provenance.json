@@ -1,0 +1,34 @@
+{
+  "method": "played",
+  "system": "mastersystem",
+  "core": "sms-mister",
+  "core_file": "SMS_20260823.rbf",
+  "core_name": "SMS_MiSTer",
+  "core_version": "20260823",
+  "frontend": "mister",
+  "device": "the owner's MiSTer (DE10-Nano), Main_MiSTer binary of 2026-10-19",
+  "loaded_with": "MGL via /dev/MiSTer_cmd load_core (_Console/SMS, file type f index 1)",
+  "save_folder": "saves/SMS",
+  "rom": {
+    "name": "Golden Axe Warrior (USA, Europe, Brazil) (En).sms",
+    "sha1": "fbda0486b393708a89756bb57d116ad6007484e4",
+    "size": 262144
+  },
+  "script": "scripts/mastersystem/Golden Axe Warrior.txt",
+  "mister_script": "scripts/mister/mastersystem/Golden Axe Warrior.sms.txt",
+  "frames": 3460,
+  "timing": "real time: script frames played as wall-clock 1/60 s by work/mister/mrun.py",
+  "options": {
+    "config/SMS.CFG": "Autosave On (status bit 25), every other option at its default; written for the run and removed after"
+  },
+  "save_trigger": "OSD opened (F12 from a uinput keyboard) with Autosave on: the core writes its backup RAM to the SD card",
+  "started_from": "a zero-filled 32768-byte .sav put in place before loading, so the backup RAM started cleared; the core then rewrote all of it",
+  "files": {
+    "Golden Axe Warrior (USA, Europe, Brazil) (En).sav": {
+      "size": 32768,
+      "sha1": "2c6438e6bd2fb289542419f3b1ce803d07eef59f"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "32 KiB file (64 sectors, always). Proof: 'Your game data is saved.' with FILE NO. 1 ABC."
+}

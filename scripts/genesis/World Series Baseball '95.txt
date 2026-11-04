@@ -1,0 +1,22 @@
+# World Series Baseball '95: Game Select -> NEW LEAGUE (162 games, all teams
+# CPU-managed), START. The league and its schedule are written to the cart's
+# 32 KB byte-wide SRAM (header 200001-20FFFF). Reset and step to the league
+# Game Select, which now opens on the saved league.
+# Genesis A/B/C are the RetroPad's y/b/a.
+wait 1500
+press start 6       # title -> GAME SELECT (Exhibition)
+wait 240
+press right 6       # NEW LEAGUE
+wait 60
+press start 6       # TEAM SELECT
+wait 600
+shot teams
+press start 6       # SCHEDULE, April 4: the league is written
+wait 600
+shot schedule
+reset
+wait 1500
+press start 6
+wait 240
+shot saved          # GAME SELECT now opens on the saved league
+wait 30

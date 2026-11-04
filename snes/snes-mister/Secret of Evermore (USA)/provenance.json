@@ -1,0 +1,20 @@
+{
+  "method": "downloaded",
+  "system": "snes",
+  "core": "snes-mister",
+  "url": "https://github.com/MiSTer-devel/SNES_MiSTer/files/7914429/Secret.of.Evermore.USA.sav.zip",
+  "source_page": "https://github.com/MiSTer-devel/SNES_MiSTer/issues/313#issuecomment-1018562696",
+  "source": "github.com (MiSTer-devel/SNES_MiSTer issue #313)",
+  "author": "bootsector",
+  "licence": null,
+  "fetched": "2026-11-03",
+  "what_it_is": "Secret of Evermore save (Jan 2022), third slot shows a charm-bag bug the poster triggered while playing on MiSTer.",
+  "files": {
+    "Secret of Evermore (USA).sav": {
+      "size": 8192,
+      "sha1": "60eb7e122dc361104a1c96f8df6a8e5374959ba2"
+    }
+  },
+  "created": "2026-11-03",
+  "note": "Named as MiSTer names saves. The issue body has a second save (SOE.zip, renamed SOE.sav) from another user, listed as a lead."
+}

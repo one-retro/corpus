@@ -1,0 +1,18 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "psx-mister",
+  "url": "https://github.com/user-attachments/files/30047014/Doraemon.2.Save.and.Savestate.zip",
+  "source_page": "https://github.com/MiSTer-devel/PSX_MiSTer/issues/370",
+  "source": "GitHub (MiSTer-devel/PSX_MiSTer issues)",
+  "author": "WhiteHat-94",
+  "licence": null,
+  "fetched": "2026-11-04",
+  "what_it_is": "MiSTer PSX core .sav near the final boss (shipped with a savestate)",
+  "files": {
+    "Doraemon 2 - SOS! Otogi no Kuni (Japan).sav": {
+      "size": 131072,
+      "sha1": "e26849222391737907118c745f125429f0ecba57"
+    }
+  }
+}

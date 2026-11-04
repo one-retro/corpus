@@ -1,0 +1,31 @@
+{
+  "method": "played",
+  "system": "psx",
+  "core": "pcsx-rearmed",
+  "core_file": "pcsx_rearmed_libretro.dylib",
+  "core_name": "PCSX-ReARMed",
+  "core_version": "r26 7b0e8f8",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Dance Dance Revolution Konamix (USA).cue",
+    "sha1": "7f8c432de9a9e8d7d8c995852cba571fafbe11ae",
+    "size": 117
+  },
+  "script": "scripts/psx/Dance Dance Revolution Konamix.txt",
+  "frames": 2862,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Dance Dance Revolution Konamix (USA).srm": {
+      "size": 131072,
+      "sha1": "6b9791d9bdf39183144d011ec490407cde702dfc"
+    },
+    "pcsx-card2.mcd": {
+      "size": 131072,
+      "sha1": "1b3c99be55273085e14b30983b636529b6dd7f46"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

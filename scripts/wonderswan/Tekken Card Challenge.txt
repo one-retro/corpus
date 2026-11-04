@@ -1,0 +1,29 @@
+# Tekken Card Challenge (SRAM 8 KiB). Start an ADVENTURE: the game shows the
+# owner profile from the console's internal EEPROM (Beetle synthesises it:
+# NAME = frontend user name, BIRTHDAY 19890623, FEMALE, blood O), then JIN,
+# STAGE 01. The game saves the adventure as soon as it starts. After a reset,
+# ADVENTURE lists the saved JIN Lv 1 STAGE01.
+wait 900
+press start 6       # title
+wait 120
+press a 6           # menu: アドベンチャー (adventure)
+wait 120
+press a 6           # owner profile screen
+wait 120
+press a 6           # CHARACTER SELECT: JIN
+wait 120
+press a 6           # JIN's story text
+wait 120
+tap a 6 40          # into STAGE 01
+shot stage1
+reset
+wait 900
+press start 6       # (the attract demo's VS screen)
+wait 120
+press a 6           # title
+wait 120
+press a 6           # menu
+wait 120
+press a 6           # アドベンチャー: the saved character
+wait 120
+shot continue       # CHARACTER SELECT shows JIN Lv 1 STAGE01

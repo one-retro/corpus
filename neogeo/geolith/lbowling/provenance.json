@@ -1,0 +1,31 @@
+{
+  "method": "played",
+  "system": "neogeo",
+  "core": "geolith",
+  "core_file": "geolith_libretro.dylib",
+  "core_name": "Geolith",
+  "core_version": "0.5.0",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "lbowling.neo",
+    "sha1": "5643f8ef101587d47698fd522e7cac81c404d7b1",
+    "size": 3411968
+  },
+  "script": "scripts/neogeo/lbowling.txt",
+  "frames": 8714,
+  "options": "geolith_system_type = mvs\ngeolith_memcard = on\n",
+  "started_from": null,
+  "files": {
+    "lbowling.mcr": {
+      "size": 2048,
+      "sha1": "46ed18d3ced657299968b46c8d1f64fa5250efa9"
+    },
+    "lbowling.nv": {
+      "size": 65536,
+      "sha1": "67d3cdc07fcf73b5b16684d558b6ea44210728c2"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "gba",
+  "core": "gpsp",
+  "core_file": "gpsp_libretro.dylib",
+  "core_name": "gpSP",
+  "core_version": "v1.1.0-5819380",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Pokemon - Emerald Version (USA, Europe).gba",
+    "sha1": "f3ae088181bf583e55daf962a92bb46f4f1d07b7",
+    "size": 16777216
+  },
+  "script": "scripts/gba/Pokemon - Emerald Version.gpsp.txt",
+  "frames": 12838,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Pokemon - Emerald Version (USA, Europe).srm": {
+      "size": 131072,
+      "sha1": "50e0b522d3b56cefc86f8efe7df997caf76a3b75"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

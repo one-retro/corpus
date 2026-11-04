@@ -1,0 +1,38 @@
+# Dragon Warrior: begin a new quest as "ABC". The game writes the new
+# Adventure Log (ten copies, flag 0xC8 at 0x035) to battery RAM as soon as the
+# name and message speed are chosen. After the King's opening speech the
+# console is reset, and CONTINUE A QUEST lists the log, read back from SRAM.
+wait 500
+press start 20      # title (the press lands once the title settles)
+wait 360
+press start 20
+wait 60
+press a 20          # BEGIN A NEW QUEST
+wait 90
+tap a 1 20          # A (cursor starts on A)
+tap right 1 10
+tap a 1 20          # B
+tap right 1 10
+tap a 1 20          # C
+tap down 5 10       # bottom row
+tap right 5 10      # END
+tap a 1 30
+wait 60
+tap up 1 10         # message speed: FAST
+tap a 1 30
+wait 120
+tap a 30 30         # the King's speech
+press b 6
+wait 60
+shot throne
+reset
+wait 500
+press start 20
+wait 360
+press start 20
+wait 90
+shot menu
+press a 6           # CONTINUE A QUEST
+wait 40
+shot continue       # the log list: ADVENTURE LOG 1 ABC
+wait 30

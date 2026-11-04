@@ -1,0 +1,21 @@
+{
+  "method": "device-backup",
+  "device": "Analogue Pocket",
+  "backup_path": "Saves/pce/common/games/Neutopia (USA).sav",
+  "system": "pcengine",
+  "core": "agg23-pc-engine",
+  "pocket_core": "agg23.PC Engine",
+  "pocket_platform": "pce",
+  "game_source": "No-Intro DAT 'NEC - PC Engine - TurboGrafx-16 (20260124-120557)'",
+  "attribution": "folder Saves/pce/common, only PC Engine core installed: agg23.PC Engine (Analogue backup Cores/ and Settings/); 2 KiB backup RAM as agg23.PC Engine writes; its Analogizer build (alias) would be indistinguishable. agg23.PC Engine's Settings file in the Analogue backup was written the same minute (after the backups' constant one-hour offset)",
+  "confidence": "high",
+  "written": "2023-05-21 19:40 (file mtime as read here; the Pocket stamps its own clock)",
+  "files": {
+    "Neutopia (USA).sav": {
+      "size": 2048,
+      "sha1": "c5a02cbd89e27888b0f918f687393945ecb1140b"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "fds",
+  "core": "nestopia",
+  "core_file": "nestopia_libretro.dylib",
+  "core_name": "Nestopia",
+  "core_version": "2.0.0 f1e02d1",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Famicom Grand Prix II - 3D Hot Rally (Japan) (DV 8) (Disk Writer) (Famicom 3D System).fds",
+    "sha1": "7ed5efd72d5783b2046a54bb9aa9d3edfaa0f17b",
+    "size": 131000
+  },
+  "script": "scripts/fds/Famicom Grand Prix II - 3D Hot Rally.txt",
+  "frames": 6754,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Famicom Grand Prix II - 3D Hot Rally (Japan) (DV 8) (Disk Writer) (Famicom 3D System).sav": {
+      "size": 81,
+      "sha1": "bdaf06d8a13350adec50309d848efff6d1ea06f1"
+    }
+  },
+  "created": "2026-11-03",
+  "note": "runner: work/nes/runner/retro-run (tools/retro-run with RetroArch's init order and a disk control interface)"
+}

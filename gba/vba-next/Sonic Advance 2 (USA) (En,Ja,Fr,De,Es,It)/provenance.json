@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "gba",
+  "core": "vba-next",
+  "core_file": "vba_next_libretro.dylib",
+  "core_name": "VBA Next",
+  "core_version": "v1.0.2",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Sonic Advance 2 (USA) (En,Ja,Fr,De,Es,It).gba",
+    "sha1": "7bcd6a07af7c894746fa28073fe0c0e34408022d",
+    "size": 16777216
+  },
+  "script": "scripts/gba/Sonic Advance 2.txt",
+  "frames": 4438,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Sonic Advance 2 (USA) (En,Ja,Fr,De,Es,It).srm": {
+      "size": 139264,
+      "sha1": "7f2a7c205734f9d899d80c50f0f3ccd12cb8e722"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

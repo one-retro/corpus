@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "gba",
+  "core": "vba-next",
+  "core_file": "vba_next_libretro.dylib",
+  "core_name": "VBA Next",
+  "core_version": "v1.0.2",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Fire Emblem (USA, Australia).gba",
+    "sha1": "c735fdbb9e8abe19e0c6a44708df19acc962e204",
+    "size": 16777216
+  },
+  "script": "scripts/gba/Fire Emblem.txt",
+  "frames": 5600,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Fire Emblem (USA, Australia).srm": {
+      "size": 139264,
+      "sha1": "01373081d2a5498f33c7ec84d8f127de8eb7f366"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

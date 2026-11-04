@@ -1,0 +1,16 @@
+# Sonic MegaMix (a homebrew Sonic 1 rebuild): on first boot the game creates
+# a 25-block backup RAM file (S1MEGAMIX, empty). START GAME asks SAVE / NO
+# SAVE; choosing SAVE writes the save slot into that file before Green Hill
+# Zone starts.
+wait 600
+press start 6       # BIOS
+wait 2400
+press start 6       # title: PRESS START BUTTON -> START GAME / CONTINUE
+wait 200
+shot menu
+press start 6       # START GAME -> SAVE / NO SAVE
+wait 200
+shot save
+press start 6       # SAVE
+wait 900
+shot playing

@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "nds",
+  "core": "desmume-2015",
+  "core_file": "desmume2015_libretro.dylib",
+  "core_name": "DeSmuME 2015",
+  "core_version": "git a06da0c",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Bomberman (USA).nds",
+    "sha1": "c88a441cf460a8a863fc31719ef0f56ee86b4e05",
+    "size": 8388608
+  },
+  "script": "scripts/nds/Bomberman.txt",
+  "frames": 9930,
+  "options": "desmume_pointer_type = touch\n",
+  "started_from": null,
+  "files": {
+    "Bomberman (USA).dsv": {
+      "size": 634,
+      "sha1": "9f2e4debebcdfb1114085861c8686b93da463382"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

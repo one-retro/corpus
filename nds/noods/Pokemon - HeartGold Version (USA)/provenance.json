@@ -1,0 +1,28 @@
+{
+  "method": "played",
+  "system": "nds",
+  "core": "noods",
+  "core_file": "noods_libretro.dylib",
+  "core_name": "NooDS",
+  "core_version": "9a26653",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Pokemon - HeartGold Version (USA).nds",
+    "sha1": "30793e274fb4c7ba070ae226edbdfe355504b1f5",
+    "size": 134217728
+  },
+  "device": null,
+  "script": "scripts/nds/Pokemon - HeartGold Version.txt",
+  "frames": 16014,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Pokemon - HeartGold Version (USA).sav": {
+      "size": 524288,
+      "sha1": "8599c083ee6e5a5aa37caeef83a7ab26c2726451"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

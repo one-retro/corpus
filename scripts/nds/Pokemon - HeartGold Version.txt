@@ -1,0 +1,36 @@
+# Pokemon HeartGold: Professor Oak's introduction (touch the panel and the
+# YES/NO buttons where the game asks for a touch), boy, name AAAAAAA (A types
+# A's, the keyboard confirms itself when full), into the bedroom. Walk
+# downstairs so Mom hands over the Bag and the menu; then touch SAVE on the
+# bottom screen, then YES: "Saving a lot of data... Don't turn off the power."
+# HeartGold's cartridge has an infrared port in front of its 512 KiB flash.
+wait 1200
+press start 6      # title
+wait 300
+press a 6
+wait 300
+repeat 16          # the controls tutorial: A, and a touch on the panel
+press a 6
+wait 40
+touch 131 344 6
+wait 40
+end
+tap a 77 60        # Oak, boy, name AAAAAAA, "Is this right?" ... the bedroom
+wait 300
+press left 40      # to the stairs
+wait 10
+press up 60
+wait 30
+press left 40
+wait 10
+press up 30        # downstairs: Mom
+wait 60
+tap a 45 50        # Mom, the Bag, the menu tutorial
+tap b 10 50        # the rest of the text (B cannot start another conversation)
+wait 300
+touch 124 268 8    # SAVE (touch menu)
+wait 250
+touch 232 289 8    # YES
+wait 1250          # "Saving a lot of data..."
+shot saved         # "AAAAAAA saved the game."
+wait 2400          # melonDS writes its .sav 2 s (wall clock) after the game's last write

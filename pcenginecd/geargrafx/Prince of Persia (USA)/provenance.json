@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "pcenginecd",
+  "core": "geargrafx",
+  "core_file": "geargrafx_libretro.dylib",
+  "core_name": "Geargrafx",
+  "core_version": "1.8.7",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Prince of Persia (NA).chd",
+    "sha1": "44de7a658c1365c6cc7a6ce10b607a80d34ba933",
+    "size": 256101917
+  },
+  "script": "scripts/pcenginecd/Prince of Persia.txt",
+  "frames": 5176,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Prince of Persia (NA).srm": {
+      "size": 2048,
+      "sha1": "0c9c2e43f2413a8d87384262fb02d66489df45a8"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

@@ -1,0 +1,31 @@
+{
+  "method": "played",
+  "system": "snes",
+  "core": "mednafen-bsnes",
+  "core_file": "mednafen_snes_libretro.dylib",
+  "core_name": "Mednafen bSNES",
+  "core_version": "v0.9.26 5f05e4c",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Chrono Trigger (USA).sfc",
+    "sha1": "de5822f4f2f7a55acb8926d4c0eaa63d5d989312",
+    "size": 4194304
+  },
+  "script": "scripts/snes/Chrono Trigger.txt",
+  "frames": 9010,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Chrono Trigger (USA).rtc": {
+      "size": 0,
+      "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+    },
+    "Chrono Trigger (USA).srm": {
+      "size": 8192,
+      "sha1": "49168d80dade44df86034e44f3424350caa85a4c"
+    }
+  },
+  "created": "2026-11-03",
+  "note": "mednafen_snes writes its own .srm (and an empty .rtc) into the save directory and exposes no save RAM through the libretro API; the core then aborts (SIGABRT) while unloading, after the files are written, so make-save.py did not file it. Filed from the run directory by work/snes/file_aborted.py."
+}

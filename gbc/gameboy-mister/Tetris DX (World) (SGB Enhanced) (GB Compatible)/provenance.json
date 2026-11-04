@@ -1,0 +1,34 @@
+{
+  "method": "played",
+  "system": "gbc",
+  "core": "gameboy-mister",
+  "core_file": "Gameboy_20260603.rbf",
+  "core_name": "Gameboy_MiSTer",
+  "core_version": "20260603",
+  "frontend": "mister",
+  "device": "the owner's MiSTer (DE10-Nano), Main_MiSTer binary of 2026-10-19",
+  "loaded_with": "MGL via /dev/MiSTer_cmd load_core (_Console/Gameboy, setname GBC, file type f index 1)",
+  "save_folder": "saves/GBC",
+  "rom": {
+    "name": "Tetris DX (World) (SGB Enhanced) (GB Compatible).gbc",
+    "sha1": "7183bcb54dd35f3a07d8fe63339b768f13b8168d",
+    "size": 524288
+  },
+  "script": "scripts/gbc/Tetris DX.txt",
+  "mister_script": "scripts/mister/gbc/Tetris DX.gbc.txt",
+  "frames": 1650,
+  "timing": "real time: script frames played as wall-clock 1/60 s by work/mister/mrun.py",
+  "options": {
+    "config/GBC.CFG": "Autosave On (status bit 13), every other option at its default; written for the run and removed after"
+  },
+  "save_trigger": "OSD opened (F12 from a uinput keyboard) with Autosave on: the core writes its backup RAM to the SD card",
+  "started_from": "a zero-filled 8192-byte .sav put in place before loading, so the backup RAM started cleared; the core then rewrote all of it",
+  "files": {
+    "Tetris DX (World) (SGB Enhanced) (GB Compatible).sav": {
+      "size": 8192,
+      "sha1": "bb76d289a027d11729c7f62f785da6ecbbd1cde9"
+    }
+  },
+  "created": "2026-11-03",
+  "note": "MBC1 + 8 KiB battery RAM; setname GBC. Proof: player 1 registered as AAA."
+}

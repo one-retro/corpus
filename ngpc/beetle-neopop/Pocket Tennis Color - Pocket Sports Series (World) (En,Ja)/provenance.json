@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "ngpc",
+  "core": "beetle-neopop",
+  "core_file": "mednafen_ngp_libretro.dylib",
+  "core_name": "Beetle NeoPop",
+  "core_version": "v1.29.0.0 a50d5ac",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Pocket Tennis Color - Pocket Sports Series (World) (En,Ja).ngc",
+    "sha1": "680a1631120ae3418db9f60b16206e65e4ec9b33",
+    "size": 524288
+  },
+  "script": "scripts/ngpc/Pocket Tennis Color.txt",
+  "frames": 24376,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Pocket Tennis Color - Pocket Sports Series (World) (En,Ja).flash": {
+      "size": 272,
+      "sha1": "1a0650bc1a7414c8cf78f1356a050651e85ab893"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

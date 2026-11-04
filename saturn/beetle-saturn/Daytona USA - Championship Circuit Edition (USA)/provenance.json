@@ -1,0 +1,35 @@
+{
+  "method": "played",
+  "system": "saturn",
+  "core": "beetle-saturn",
+  "core_file": "mednafen_saturn_libretro.dylib",
+  "core_name": "Beetle Saturn",
+  "core_version": "v1.32.1",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Daytona USA - Championship Circuit Edition (USA).cue",
+    "sha1": "50ba79bf92e4a9681b526f471657f13cb4d5a635",
+    "size": 125
+  },
+  "script": "scripts/saturn/Daytona USA - Championship Circuit Edition.txt",
+  "frames": 3400,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Daytona USA - Championship Circuit Edition (USA).bcr": {
+      "size": 524288,
+      "sha1": "d870ca9cea6bf53ea76117f4191487aeaad16ff6"
+    },
+    "Daytona USA - Championship Circuit Edition (USA).smpc": {
+      "size": 12,
+      "sha1": "2b75d675a19e9c4d5f86cd83f3b6851ef3245b97"
+    },
+    "Daytona USA - Championship Circuit Edition (USA).srm": {
+      "size": 32768,
+      "sha1": "383246c4e5459700a5b62342f09da5b60cb9b1c9"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "Run from the data track alone: the cue lists only track 01 (the Redump cue's audio tracks were left out to save space); the BIOS and game do not need them to boot and save."
+}

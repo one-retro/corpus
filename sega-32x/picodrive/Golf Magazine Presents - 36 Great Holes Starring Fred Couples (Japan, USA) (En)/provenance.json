@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "sega-32x",
+  "core": "picodrive",
+  "core_file": "picodrive_libretro.dylib",
+  "core_name": "PicoDrive",
+  "core_version": "2.05-1890c29",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Golf Magazine Presents - 36 Great Holes Starring Fred Couples (Japan, USA) (En).32x",
+    "sha1": "dc77b1e5c888c2c4284766915a5020bb14ee681d",
+    "size": 3145728
+  },
+  "script": "scripts/sega-32x/Golf Magazine 36 Great Holes Starring Fred Couples.txt",
+  "frames": 3296,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Golf Magazine Presents - 36 Great Holes Starring Fred Couples (Japan, USA) (En).srm": {
+      "size": 65536,
+      "sha1": "f729c371e6dcfb0407ed658b034e09dbebc68524"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

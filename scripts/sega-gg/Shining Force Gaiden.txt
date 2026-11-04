@@ -1,0 +1,49 @@
+# Shining Force Gaiden - Ensei, Jashin no Kuni e: the same storyteller as the
+# US Sword of Hajya. はじめから puts a new adventure in book 1 and asks the
+# hero's name ("あいうえお"; after five letters the cursor jumps to おわる);
+# the game writes the book there. Reset, and her menu offers つづきから; the
+# book list shows あいうえお in book 1. Button 2 (a) advances and confirms.
+wait 900
+press start 10      # intro -> title
+wait 150
+press start 10      # title -> the storyteller
+wait 300
+repeat 5            # her lines, then はじめから
+press a 10
+wait 120
+end
+press a 10          # はじめから -> book list, book 1
+wait 120
+press a 10          # book 1 -> name entry
+wait 120
+press a 10          # あ
+wait 30
+repeat 4            # い う え お
+press right 10
+wait 30
+press a 10
+wait 30
+end
+wait 30             # the cursor is on おわる now
+press a 10          # おわる: book 1 is written
+wait 150
+press a 10
+wait 120
+press a 10
+wait 300
+reset
+wait 900
+press start 10
+wait 150
+press start 10
+wait 300
+repeat 4            # her lines; the menu now opens on つづきから
+press a 10
+wait 120
+end
+press a 10          # つづきから
+wait 150
+press a 10          # the book list: 1 あいうえお
+wait 120
+shot saved
+wait 30

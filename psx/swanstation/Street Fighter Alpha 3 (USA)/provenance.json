@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "psx",
+  "core": "swanstation",
+  "core_file": "swanstation_libretro.dylib",
+  "core_name": "SwanStation",
+  "core_version": "1.0.0 631f0fb",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "opengl",
+  "rom": {
+    "name": "Street Fighter Alpha 3 (USA).cue",
+    "sha1": "5e640de7f4840a0dddbd6a575669ba649b8eb0c5",
+    "size": 231
+  },
+  "script": "scripts/psx/Street Fighter Alpha 3.txt",
+  "frames": 9268,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Street Fighter Alpha 3 (USA).srm": {
+      "size": 131072,
+      "sha1": "56cc71a72b9142c380aa6b692ba8dc744cb7acdf"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

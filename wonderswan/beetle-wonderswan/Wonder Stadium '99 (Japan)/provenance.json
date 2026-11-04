@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "wonderswan",
+  "core": "beetle-wonderswan",
+  "core_file": "mednafen_wswan_libretro.dylib",
+  "core_name": "Beetle WonderSwan",
+  "core_version": "v0.9.35.1 4b01295",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Wonder Stadium '99 (Japan).ws",
+    "sha1": "bb138765346d9f4d77615444d090b1328a59818a",
+    "size": 1048576
+  },
+  "script": "scripts/wonderswan/Wonder Stadium '99.txt",
+  "frames": 4452,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Wonder Stadium '99 (Japan).srm": {
+      "size": 8192,
+      "sha1": "5af24ed57c82c1e60eaec9a90ea247943bfc1643"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

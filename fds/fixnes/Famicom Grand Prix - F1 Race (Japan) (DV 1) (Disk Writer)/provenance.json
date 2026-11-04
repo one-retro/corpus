@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "fds",
+  "core": "fixnes",
+  "core_file": "fixnes_libretro.dylib",
+  "core_name": "fixNES",
+  "core_version": "Alpha v1.3.1",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Famicom Grand Prix - F1 Race (Japan) (DV 1) (Disk Writer).fds",
+    "sha1": "90e035c85b823c405d38cd9bb06e848285e1349b",
+    "size": 131000
+  },
+  "script": "scripts/fds/Famicom Grand Prix - F1 Race.txt",
+  "frames": 5526,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Famicom Grand Prix - F1 Race (Japan) (DV 1) (Disk Writer).srm": {
+      "size": 131072,
+      "sha1": "6d8e2d5722bed325258d5073806f0022148f4f32"
+    }
+  },
+  "created": "2026-11-03",
+  "note": "runner: work/nes/runner/retro-run (tools/retro-run with RetroArch's init order and a disk control interface)"
+}

@@ -1,0 +1,35 @@
+{
+  "method": "played",
+  "system": "saturn",
+  "core": "beetle-saturn",
+  "core_file": "mednafen_saturn_libretro.dylib",
+  "core_name": "Beetle Saturn",
+  "core_version": "v1.32.1",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Nights into Dreams... (USA, Brazil).cue",
+    "sha1": "504ae04753a01bf9eb538d9c2ff30d1818509940",
+    "size": 112
+  },
+  "script": "scripts/saturn/Nights into Dreams.txt",
+  "frames": 4814,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Nights into Dreams... (USA, Brazil).bcr": {
+      "size": 524288,
+      "sha1": "7375f566c41cde0329e61131cd3565b6d2c275c0"
+    },
+    "Nights into Dreams... (USA, Brazil).smpc": {
+      "size": 12,
+      "sha1": "808d5c8a085742bed58e33854a2db6521c3e7a7d"
+    },
+    "Nights into Dreams... (USA, Brazil).srm": {
+      "size": 32768,
+      "sha1": "771a96caf03aba163d23d6f451c6e93c8b242662"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "Run from the data track alone: the cue lists only track 01 (the Redump cue's audio tracks were left out to save space); the BIOS and game do not need them to boot and save."
+}

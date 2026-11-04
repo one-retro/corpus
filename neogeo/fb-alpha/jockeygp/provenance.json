@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "neogeo",
+  "core": "fb-alpha",
+  "core_file": "fbalpha2012_libretro.dylib",
+  "core_name": "FB Alpha 2012",
+  "core_version": "v0.2.97.29 0ce3153",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "jockeygp.zip",
+    "sha1": "04aa9208647988ee6ee73ca7de3c170efed6e63f",
+    "size": 17273406
+  },
+  "script": "scripts/neogeo/jockeygp.txt",
+  "frames": 5472,
+  "options": "fbneo-neogeo-mode = MVS\n",
+  "started_from": null,
+  "files": {
+    "jockeygp.fs": {
+      "size": 768,
+      "sha1": "6bc4d748bf2c4ca9abfc697c78630a511cde2d72"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "jockeygp.fs decompresses to 73728 bytes: the 64 KiB MVS backup RAM followed by the cartridge's 8 KiB RAM."
+}

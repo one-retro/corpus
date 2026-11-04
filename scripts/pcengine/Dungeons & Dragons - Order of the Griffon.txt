@@ -1,0 +1,58 @@
+# D&D Order of the Griffon: pick a party of four, start the adventure, then
+# Select > SAVE GAME > save to back-up RAM > GRIFFON 1. Re-opening the save menu
+# shows the file.
+repeat 4
+wait 120
+press start 6         # title, START A NEW GAME
+end
+wait 300
+tap a 4 120           # fighters
+wait 120
+press b 6             # back to the classes
+wait 90
+press right 6
+wait 30
+press right 6         # cleric
+wait 30
+press a 6
+wait 120
+press a 6
+wait 120
+tap a 8 120           # "satisfied with your party? YES", the story
+wait 120
+shot dungeon
+press select 6        # character screen
+wait 60
+press up 6
+wait 30
+press left 6          # REST
+wait 30
+press down 6          # MUSIC
+wait 30
+press down 6          # SAVE GAME
+wait 30
+press a 6             # "Save to back-up RAM or generate password?" SAVE
+wait 90
+shot save
+press a 6             # "Which game?" GRIFFON 1
+wait 90
+press a 6
+wait 180
+shot saved
+press select 6        # open the save menu again to show the file
+wait 60
+press up 6
+wait 30
+press left 6
+wait 30
+press down 6
+wait 30
+press down 6
+wait 30
+press a 6
+wait 90
+press a 6
+wait 90
+shot slots            # "Which game?  GRIFFON 1 ..."
+press b 6
+wait 60

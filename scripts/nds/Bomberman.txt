@@ -1,0 +1,28 @@
+# Bomberman (2005): NORMAL game, File A, confirm "Create save data to File A"
+# (touch Yes), then at the AREA 1-1 screen touch Quick Save and Yes ("Save the
+# game as checkpoint data! You will quit the game and go back to the Title
+# Screen"). Back at the title, the File Select shows File A.
+wait 1800
+press start 6      # title
+wait 150
+press a 6          # NORMAL
+wait 150
+press a 6          # FILE SELECT
+wait 150
+press a 6          # File A -> Warning: create save data?
+wait 300
+shot create
+touch 65 281 8     # Yes
+tap a 10 300       # through the intro to the AREA 1-1 screen
+shot area
+touch 55 346 8     # Quick Save
+wait 150
+shot quicksave     # "Save the game as checkpoint data!"
+touch 65 281 8     # Yes
+tap a 6 200        # saved; back to the title
+press start 6
+wait 200
+press a 6          # NORMAL -> FILE SELECT
+wait 300
+shot fileselect    # File A: AREA 1-1
+wait 2400          # melonDS writes its .sav 2 s (wall clock) after the game's last write

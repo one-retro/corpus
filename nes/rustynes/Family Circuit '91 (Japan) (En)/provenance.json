@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "nes",
+  "core": "rustynes",
+  "core_file": "rustynes_libretro.dylib",
+  "core_name": "RustyNES",
+  "core_version": "3.6.0",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Family Circuit '91 (Japan) (En).nes",
+    "sha1": "89a79a601b8e900378035cb54248843eee24aafc",
+    "size": 655376
+  },
+  "script": "scripts/nes/Family Circuit '91.txt",
+  "frames": 4440,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Family Circuit '91 (Japan) (En).srm": {
+      "size": 8192,
+      "sha1": "c3b09eeaf96a8490c4cdb89c03d92f279a5b2f78"
+    }
+  },
+  "created": "2026-11-03",
+  "note": "runner: work/nes/runner/retro-run (tools/retro-run with RetroArch's init order and a disk control interface); The 2 KiB of N175 RAM sit at 0x1800-0x1FFF of this 8 KiB file and are byte-identical to Mesen's 2 KiB .srm (slot A written), but in RustyNES the game's GARAGE > LOAD list showed slot A empty (proof.png), so RustyNES reads that RAM back wrong."
+}

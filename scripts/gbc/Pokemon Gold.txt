@@ -1,0 +1,36 @@
+# Pokemon Gold (MBC3 + clock + 32 KiB battery RAM): NEW GAME, set the clock
+# to the offered DAY 10:00, take the preset name GOLD, then SAVE from the
+# start menu in the bedroom. The game writes the clock it set and the save.
+wait 1800
+repeat 8            # START skips the intro, opens NEW GAME / OPTION; START
+tap start 1 50      # does nothing on that menu
+end
+wait 60
+press a 6           # NEW GAME
+wait 120
+repeat 14           # "Zzz... Will you check the clock?": DAY 10 o'clock, YES,
+tap a 1 60          # 0 min., "Whoa! 10:00?", into Oak's speech
+end
+repeat 80           # Oak's speech; B never picks from the name menu
+tap b 1 30
+end
+press down 4        # NEW NAME / GOLD / HIRO / TAYLOR / KARL
+wait 20
+press a 4           # GOLD
+wait 60
+repeat 56           # to the bedroom; B does nothing there
+tap b 1 30
+end
+wait 30
+press start 6       # PACK / GOLD / SAVE / OPTION / EXIT
+wait 60
+press down 4
+wait 15
+press down 4
+wait 15
+press a 6           # SAVE -> "Would you like to save the game?"
+wait 180
+press a 6           # YES
+wait 300
+shot saved          # "GOLD saved the game."
+wait 60

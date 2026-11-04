@@ -1,0 +1,21 @@
+# Magic Knight Rayearth: a new game opens at Mokona's tent in the forest.
+# Walk in: the three sleep ("おやすみなさーい"), then "セーブしますか?" はい,
+# セーブ1: "セーブしました。いつでも つづきを はじめられます。"
+# Button 2 (a) advances and confirms.
+wait 600
+repeat 3            # title and opening -> Hikaru by the tent
+press start 10
+wait 150
+end
+press up 30         # into the tent
+wait 90
+repeat 4            # good night, the night passes -> セーブしますか? はい いいえ
+press a 10
+wait 120
+end
+press a 10          # はい -> どちらにセーブしますか? セーブ1 セーブ2
+wait 120
+press a 10          # セーブ1
+wait 200
+shot saved
+wait 30

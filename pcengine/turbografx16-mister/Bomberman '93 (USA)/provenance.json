@@ -1,0 +1,34 @@
+{
+  "method": "played",
+  "system": "pcengine",
+  "core": "turbografx16-mister",
+  "core_file": "TurboGrafx16_20260603.rbf",
+  "core_name": "TurboGrafx16_MiSTer",
+  "core_version": "20260603",
+  "frontend": "mister",
+  "device": "the owner's MiSTer (DE10-Nano), Main_MiSTer binary of 2026-10-19",
+  "loaded_with": "MGL via /dev/MiSTer_cmd load_core (_Console/TurboGrafx16, file type f index 0)",
+  "save_folder": "saves/TGFX16",
+  "rom": {
+    "name": "Bomberman '93 (USA).pce",
+    "sha1": "709b47de6e0ebc18fb80c951d5cfaa6ce82d6ce0",
+    "size": 524288
+  },
+  "script": "scripts/pcengine/Bomberman '93.txt",
+  "mister_script": "scripts/mister/pcengine/Bomberman '93.tgfx16.txt",
+  "frames": 5236,
+  "timing": "real time: script frames played as wall-clock 1/60 s by work/mister/mrun.py",
+  "options": {
+    "config/TGFX16.CFG": "Autosave On (status bit 23), every other option at its default; written for the run and removed after"
+  },
+  "save_trigger": "OSD opened (F12 from a uinput keyboard) with Autosave on: the core writes its backup RAM to the SD card",
+  "started_from": null,
+  "files": {
+    "Bomberman '93 (USA).sav": {
+      "size": 2048,
+      "sha1": "956e7ba2ebd8f63152f8e2f58b581e55071931d7"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "2 KiB HuCard backup RAM (HUBM), written as 4 sectors. No seed. Proof: WHICH FILE TO SAVE TO? with file 1 BOMBER-93 A-1."
+}

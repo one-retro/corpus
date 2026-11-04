@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "wonderswan-color",
+  "core": "beetle-wonderswan",
+  "core_file": "mednafen_wswan_libretro.dylib",
+  "core_name": "Beetle WonderSwan",
+  "core_version": "v0.9.35.1 4b01295",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Makai Toushi Sa-Ga (Japan).wsc",
+    "sha1": "6b7a9b810c932974cbda4de7178cf0ea5a90e628",
+    "size": 4194304
+  },
+  "script": "scripts/wonderswan-color/Makai Toushi Sa-Ga.txt",
+  "frames": 3522,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Makai Toushi Sa-Ga (Japan).srm": {
+      "size": 32768,
+      "sha1": "37e4d580c47655e65d31a47fd08028464ee3ddb4"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

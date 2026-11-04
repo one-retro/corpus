@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "mame",
+  "core": "mame-2016",
+  "core_file": "mame2016_libretro.dylib",
+  "core_name": "MAME 2016",
+  "core_version": "0.174",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "jockeygp.zip",
+    "sha1": "04aa9208647988ee6ee73ca7de3c170efed6e63f",
+    "size": 17273406
+  },
+  "script": "scripts/mame/jockeygp.txt",
+  "frames": 5472,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "mame2016/nvram/jockeygp/saveram": {
+      "size": 65536,
+      "sha1": "7864396975482a70133a95b8cbbdd966202f5fb4"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "MAME 2016 does not save the cartridge's 8 KiB RAM: only the MVS saveram is written. After retro_reset the game came back to its title with INSERT COIN, i.e. the credits were cleared."
+}

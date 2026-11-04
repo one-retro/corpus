@@ -1,0 +1,26 @@
+# Baseball Stars 2 (MVS: backup RAM, plus the memory card): insert a coin, start a
+# 1P pennant race with the defaults (AUTO OPERATION, New York Monsters) and let the
+# CPU play until the MVS play timer runs out: TIME UP!, CONTINUE runs out, GAME OVER.
+# With a card in the slot the game then saves its pennant race to it
+# ("BASEBALL STARS 2 COM", 4 blocks; the MVS BIOS formats a blank card itself).
+# Then power-cycle and start again. Neo Geo A is RetroPad b.
+wait 1300
+press select 6         # coin
+wait 120
+press start 6
+repeat 4
+wait 120
+press b 6              # league, team, ...
+end
+wait 13600             # about four minutes of baseball, TIME UP!, CONTINUE 9..0
+shot gameover
+wait 600
+shot saved
+# power cycle and start again
+reset
+wait 1300
+press select 6
+wait 120
+press start 6
+wait 300
+shot cardload          # MEMORY CARD LOAD OK? (YES resumes the pennant race)

@@ -1,0 +1,19 @@
+{
+  "method": "downloaded",
+  "system": "n64",
+  "core": "n64-mister",
+  "url": "https://github.com/euan-forrester/save-file-converter/files/15098608/MiSTer.N64.saves.zip",
+  "source_page": "https://github.com/euan-forrester/save-file-converter/issues/297",
+  "source": "GitHub (euan-forrester/save-file-converter issue #297, 'Add ability to convert MiSTer N64 files'); the same five files are the converter's test data (frontend/tests/data/save-formats/mister/n64)",
+  "author": "Unknown MiSTer user; attached as 'Example files: MiSTer N64 saves.zip' by euan-forrester (save-file-converter's author) on 2024-04-24. The zip's macOS quarantine records say he downloaded them with Firefox on 2024-04-23.",
+  "licence": "none stated (a file attached to a public GitHub issue; the repository is GPL-3.0)",
+  "fetched": "2026-11-04",
+  "what_it_is": "Banjo-Kazooie, 4 Kbit EEPROM: GAME 1, TIME 0:09:26, 3 JIGSAWS, 15 NOTES. 512 bytes, file dated 2023-12-15 12:01.",
+  "files": {
+    "Banjo-Kazooie (USA).eep": {
+      "size": 512,
+      "sha1": "7d67c79594da1f2b238c1e3c21faf0d098c6f3a5"
+    }
+  },
+  "note": "Attributed to the MiSTer N64 core by the issue ('The new core has all the different possible file types split up') and by the names: '<ROM stem>.eep/.sra/.fla' and '<ROM stem>_1.cpk' are what MiSTer's Main (support/n64/n64.cpp) names N64 saves, and '_N.cpk' is MiSTer's alone. The file dates (Dec 2023 - Feb 2024) are after Main's December 2023 change that split the old single .sav into one file per chip and pak. Main of that time created new save files filled with 0x00 (0xFF since Main commit bc49794, 2026-01-13). Exactly 512 bytes, no 0xFF anywhere. Copied unchanged into the EEPROM region (offset 0) of a Mupen64Plus-Next .srm and booted with the (Rev 1) ROM, Banjo's bed shows the game: proof.png is that check."
+}

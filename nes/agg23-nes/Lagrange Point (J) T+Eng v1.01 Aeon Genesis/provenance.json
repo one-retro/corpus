@@ -1,0 +1,21 @@
+{
+  "method": "device-backup",
+  "device": "Analogue Pocket",
+  "backup_path": "Saves/nes/common/4 Translations/English L-Z/Lagrange Point (J) T+Eng v1.01 Aeon Genesis.sav",
+  "system": "nes",
+  "core": "agg23-nes",
+  "pocket_core": "agg23.NES",
+  "pocket_platform": "nes",
+  "game_source": "the file's own name (no No-Intro entry applies)",
+  "attribution": "size and padding match agg23.NES: 262144 bytes is exactly its save slot's size_maximum (0x40000) and it writes the whole slot for every battery cart; Spiritualized.NES's slot holds at most 64 KiB. Saves/nes/common is shared by every NES core, so the folder alone does not say. Its Analogizer builds (agg23.NES_Analogizer, RndMnkIII.NES_Analogizer, both installed per Assets/nes) would write the same",
+  "confidence": "high",
+  "written": "2024-01-24 18:53 (file mtime as read here; the Pocket stamps its own clock)",
+  "files": {
+    "Lagrange Point (J) T+Eng v1.01 Aeon Genesis.sav": {
+      "size": 262144,
+      "sha1": "79e132c25a1e5870b5767bef3aa68f87ffb2a212"
+    }
+  },
+  "created": "2026-11-03",
+  "note": "translation patch of Lagrange Point (Japan); folder is the ROM's file name; bytes past the first 8 KiB are not all zero (see DEVICE-BACKUPS.md)"
+}

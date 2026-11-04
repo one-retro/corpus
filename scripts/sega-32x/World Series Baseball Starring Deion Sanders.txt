@@ -1,0 +1,25 @@
+# World Series Baseball Starring Deion Sanders (32X): the WSB '95 flow. Game
+# Select -> NEW LEAGUE, all teams CPU-managed, START: the league and its
+# schedule go to the cart's byte-wide SRAM (header 200001-20FFFF). Reset and
+# open Game Select, which now opens on CONTINUE LEAGUE.
+wait 1500
+press start 6       # title
+wait 400
+press start 6       # -> GAME SELECT (Exhibition)
+wait 400
+press right 6       # NEW LEAGUE
+wait 90
+press start 6       # TEAM SELECT
+wait 600
+shot teams
+press start 6       # SCHEDULE, April 4: the league is written
+wait 900
+shot schedule
+reset
+wait 1500
+press start 6
+wait 400
+press start 6
+wait 400
+shot saved          # GAME SELECT: CONTINUE LEAGUE
+wait 30

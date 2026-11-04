@@ -1,0 +1,79 @@
+# Nobunaga no Yabou - Zenkoku Ban (Koei, 32 KiB SRAM): new 17-province game
+# as Oda (province 17), turn saving on (そのた -> 4 SAVE: "data is saved at
+# the change of season"), end the turn, and at the season change save to
+# 1: RAM (the cartridge SRAM). Keyboard only: fMSX runs with --device0 3.
+# Single-key prompts (Y/N, N/L) take the key alone; numbers need return.
+# The reset is the power cycle (blueMSX writes its .sram only then); after it
+# Load data -> 1: RAM resumes in 1560 summer.
+wait 500
+key space 8         # HIT ANY KEY
+wait 150
+type n              # New game or Load data (N/L)? -> N
+wait 150
+type 1              # 1: 17 provinces, 2: 50 provinces
+key return 8
+wait 150
+type n              # watch a computer battle (Y/N)? -> N
+key return 8
+wait 150
+type 1              # players (1-8)
+key return 8
+wait 150
+type 17             # player 1 rules province 17 (Owari, Oda)
+key return 8
+wait 150
+type y              # province 17, Oda? (Y/N)
+key return 8
+wait 200
+repeat 5
+key space 8         # stop the five ability rolls
+wait 60
+end
+type y              # OK? (Y/N)
+key return 8
+wait 300
+type 1              # computer strength (1-5)
+key return 8
+wait 300
+type y              # all OK? (Y/N)
+key return 8
+wait 2800           # the computer daimyos move (fMSX is slower)
+key return 8
+wait 300
+type 20             # command 20 そのた (other)
+key return 8
+wait 200
+key 4 8             # 4 SAVE: save at each change of season
+wait 30
+key return 8
+wait 200
+key 7 8             # 7 cancel
+wait 30
+key return 8
+wait 200
+key 2 8             # command 21 なにもしない (do nothing): ends the turn
+key 1 8
+wait 30
+key return 8
+wait 200
+shot saveprompt     # どちらにSAVEしますか 1:RAM 2:cassette
+key 1 8             # 1: RAM
+wait 30
+key return 8
+wait 300
+key 3 8             # 3: SAVEおわり (done)
+wait 30
+key return 8
+wait 300
+shot summer
+reset
+wait 500
+key space 8
+wait 300
+key l 8             # Load data
+wait 100
+key 1 8             # どちらからLOADしますか 1:RAM
+wait 30
+key return 8
+wait 1500
+shot loaded         # 1560年夏, Oda's commands

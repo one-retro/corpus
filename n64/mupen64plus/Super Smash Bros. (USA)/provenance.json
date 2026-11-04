@@ -1,0 +1,32 @@
+{
+  "method": "played",
+  "system": "n64",
+  "core": "mupen64plus",
+  "core_file": null,
+  "core_name": "Mupen64Plus",
+  "core_version": "2.6.0",
+  "frontend": "Mupen64Plus 2.6.0 (Homebrew: mupen64plus-ui-console + core 2.6.0), plugins glide64mk2 / rsp-hle / dummy audio / m64feed input",
+  "rom": {
+    "name": "Super Smash Bros. (USA).z64",
+    "size": 16777216,
+    "sha1": "e2929e10fccc0aa84e5776227e798abc07cedabf"
+  },
+  "script": "scripts/n64/Super Smash Bros..txt",
+  "frames": 3742,
+  "options": null,
+  "input": "work/standalone/tools/m64feed.c: an input plugin that replays the retro-run script by VI frame (core frame callback), RetroPad mapped as Mupen64Plus-Next does (b=A, y=B, l2=Z); controller 1 with a Controller Pak; M64CMD_STOP at the end. --nospeedlimit, isolated --configdir and Core[SaveSRAMPath].",
+  "started_from": null,
+  "files": {
+    "Super Smash Bros. (U) [!]-F7C52568.sra": {
+      "size": 32768,
+      "sha1": "c9df4905b6130c871d712d2e7881893933233c51"
+    }
+  },
+  "layout": {
+    "save_dir": "Core[SaveSRAMPath], default Library/Application Support/Mupen64Plus/save/ in the home folder on macOS",
+    "name": "Core[SaveFilenameFormat]=1 (default): first 32 characters of the ROM good name from mupen64plus.ini, a dash, the first 8 hex digits of the ROM MD5 in capitals, then .eep / .sra / .fla / .mpk",
+    "written": "when the game writes, and on stop"
+  },
+  "created": "2026-11-04",
+  "note": "After the reset OPTION shows Sound: Mono, read back from SRAM (proof.png)."
+}

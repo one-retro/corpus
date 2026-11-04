@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "pcengine",
+  "core": "beetle-supergrafx",
+  "core_file": "mednafen_supergrafx_libretro.dylib",
+  "core_name": "Beetle SuperGrafx",
+  "core_version": "v1.29.0 9c11dcd",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Bomberman '93 (USA).pce",
+    "sha1": "709b47de6e0ebc18fb80c951d5cfaa6ce82d6ce0",
+    "size": 524288
+  },
+  "script": "scripts/pcengine/Bomberman '93.txt",
+  "frames": 5134,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Bomberman '93 (USA).srm": {
+      "size": 2048,
+      "sha1": "956e7ba2ebd8f63152f8e2f58b581e55071931d7"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

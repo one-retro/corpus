@@ -1,0 +1,31 @@
+{
+  "method": "played",
+  "system": "psx",
+  "core": "pcsx-rearmed",
+  "core_file": "pcsx_rearmed_libretro.dylib",
+  "core_name": "PCSX-ReARMed",
+  "core_version": "r26 7b0e8f8",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Spyro the Dragon (USA).cue",
+    "sha1": "6abdbc5a00bcb521528825fb7cb6bfebd99a7a91",
+    "size": 88
+  },
+  "script": "scripts/psx/Spyro the Dragon.pcsx-rearmed.txt",
+  "frames": 6478,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Spyro the Dragon (USA).srm": {
+      "size": 131072,
+      "sha1": "3b40fdbebc4284a861b8068a8e34434af97ad86a"
+    },
+    "pcsx-card2.mcd": {
+      "size": 131072,
+      "sha1": "506988ab99c873499900919c168e2b5edb2f887e"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

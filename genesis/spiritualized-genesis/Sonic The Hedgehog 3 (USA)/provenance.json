@@ -1,0 +1,21 @@
+{
+  "method": "device-backup",
+  "device": "Analogue Pocket",
+  "backup_path": "Saves/genesis/common/1 US - Q-Z/Sonic The Hedgehog 3 (USA).sav",
+  "system": "genesis",
+  "core": "spiritualized-genesis",
+  "pocket_core": "Spiritualized.Genesis",
+  "pocket_platform": "genesis",
+  "game_source": "No-Intro DAT 'Sega - Mega Drive - Genesis (20260814-022326)'",
+  "attribution": "size matches Spiritualized.Genesis: 131072 bytes is its save slot's size_maximum (0x20000, Analogue backup Cores/Spiritualized.Genesis/data.json); ericlewis.Genesis always writes 65536; drizzt.MegaDrive did not exist until 2026-07",
+  "confidence": "high",
+  "written": "2025-01-18 19:26 (file mtime as read here; the Pocket stamps its own clock)",
+  "files": {
+    "Sonic The Hedgehog 3 (USA).sav": {
+      "size": 131072,
+      "sha1": "96ef4a1e7fe71cc9c4671ae912e1ad51dcea6434"
+    }
+  },
+  "created": "2026-11-03",
+  "note": "the game's 8-bit save RAM sits on the odd bytes, 0xFF on the even ones, 0xFF past it"
+}

@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "ngpc",
+  "core": "beetle-neopop",
+  "core_file": "mednafen_ngp_libretro.dylib",
+  "core_name": "Beetle NeoPop",
+  "core_version": "v1.29.0.0 a50d5ac",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Metal Slug - 1st Mission (World) (En,Ja).ngc",
+    "sha1": "df0ccb349c71d2032b02512a645a4fc760bb8834",
+    "size": 2097152
+  },
+  "script": "scripts/ngpc/Metal Slug - 1st Mission.txt",
+  "frames": 3494,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Metal Slug - 1st Mission (World) (En,Ja).flash": {
+      "size": 272,
+      "sha1": "e2e3ed44e9721ddefa8ccb7553423b0d9138a726"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

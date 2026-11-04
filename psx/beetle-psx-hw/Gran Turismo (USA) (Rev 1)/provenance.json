@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "psx",
+  "core": "beetle-psx-hw",
+  "core_file": "mednafen_psx_hw_libretro.dylib",
+  "core_name": "Beetle PSX HW",
+  "core_version": "0.9.44.1 71ee81e",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "opengl",
+  "rom": {
+    "name": "Gran Turismo (USA) (Rev 1).cue",
+    "sha1": "ad114ef1312b81c7ee9995df1217cc1a089e381e",
+    "size": 92
+  },
+  "script": "scripts/psx/Gran Turismo.txt",
+  "frames": 6838,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Gran Turismo (USA) (Rev 1).srm": {
+      "size": 131072,
+      "sha1": "5d931e347369d8735fbdd11f6b7dd1e3be795f6c"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

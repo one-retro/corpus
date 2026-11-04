@@ -1,0 +1,34 @@
+{
+  "method": "played",
+  "system": "gb",
+  "core": "gameboy-mister",
+  "core_file": "Gameboy_20260603.rbf",
+  "core_name": "Gameboy_MiSTer",
+  "core_version": "20260603",
+  "frontend": "mister",
+  "device": "the owner's MiSTer (DE10-Nano), Main_MiSTer binary of 2026-10-19",
+  "loaded_with": "MGL via /dev/MiSTer_cmd load_core (_Console/Gameboy, file type f index 1)",
+  "save_folder": "saves/GAMEBOY",
+  "rom": {
+    "name": "Super Mario Land 2 - 6 Golden Coins (USA, Europe) (Rev 2).gb",
+    "sha1": "d11d94fa3c36b9f72e925070b66bb4f16d31001e",
+    "size": 524288
+  },
+  "script": "scripts/gb/Super Mario Land 2.txt",
+  "mister_script": "scripts/mister/gb/Super Mario Land 2.gb.txt",
+  "frames": 1170,
+  "timing": "real time: script frames played as wall-clock 1/60 s by work/mister/mrun.py",
+  "options": {
+    "config/GAMEBOY.CFG": "Autosave On (status bit 13), every other option at its default; written for the run and removed after"
+  },
+  "save_trigger": "OSD opened (F12 from a uinput keyboard) with Autosave on: the core writes its backup RAM to the SD card",
+  "started_from": "a zero-filled 8192-byte .sav put in place before loading, so the backup RAM started cleared; the core then rewrote all of it",
+  "files": {
+    "Super Mario Land 2 - 6 Golden Coins (USA, Europe) (Rev 2).sav": {
+      "size": 8192,
+      "sha1": "609c495140520227e0460d89c9fb95cead63a97b"
+    }
+  },
+  "created": "2026-11-03",
+  "note": "MBC1 + 8 KiB battery RAM. The game writes the slot as the map opens. Proof: the first map with Mario at the start, before the OSD save."
+}

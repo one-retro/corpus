@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "mastersystem",
+  "core": "sms-plus-gx",
+  "core_file": "smsplus_libretro.dylib",
+  "core_name": "SMS Plus GX",
+  "core_version": "1.8 3844b46",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Monopoly (USA, Europe) (Rev A).sms",
+    "sha1": "6bad7176011dd4bbd007498d167399daacde173d",
+    "size": 131072
+  },
+  "script": "scripts/mastersystem/Monopoly.sms-plus-gx.txt",
+  "frames": 4180,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Monopoly (USA, Europe) (Rev A).srm": {
+      "size": 32768,
+      "sha1": "112004bd654c1921b7fe74e38b8d0bec1c623f19"
+    }
+  },
+  "created": "2026-11-03",
+  "note": "Per-core script: this core powers cart RAM on as zeros, which Monopoly takes for a saved game (PLAY SAVED GAME / PLAY NEW GAME, and an extra PLAY SAVED GAME line in MORE OPTIONS)."
+}

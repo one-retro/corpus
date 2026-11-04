@@ -1,0 +1,19 @@
+{
+  "method": "downloaded",
+  "system": "gba",
+  "core": "gba-mister",
+  "url": "https://github.com/MiSTer-devel/GBA_MiSTer/files/13461091/Pokemon.-.Smaragd-Edition.Germany.zip",
+  "source_page": "https://github.com/MiSTer-devel/GBA_MiSTer/issues/138#issuecomment-1825909550",
+  "source": "GitHub (MiSTer-devel/GBA_MiSTer issue #138, 'Question about converting save files containing RTC data')",
+  "author": "RobertPeip (author of the GBA_MiSTer core)",
+  "licence": "none stated (a file attached to a public GitHub issue)",
+  "fetched": "2026-11-03",
+  "what_it_is": "A German Pokemon Emerald save the core's author attached to show where GBA_MiSTer puts the clock: 128 KiB of flash followed by the core's 512-byte RTC block (0x20200 bytes in all). Game progress unknown; the zip entry is dated 2020-05-14.",
+  "files": {
+    "Pokemon - Smaragd-Edition (Germany).sav": {
+      "size": 131584,
+      "sha1": "cd645110f3fdfe3bc4eefd29fff54354e58a0d53"
+    }
+  },
+  "note": "Not in the 1G1R ROM set here (it carries the USA/Europe Emerald), so it was not booted. The 512 bytes after 0x20000 are 32 copies of one 16-byte record, as clocks.json's gba-mister entry (packed, reserved 512, timestamp 4) describes."
+}

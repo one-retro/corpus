@@ -1,0 +1,32 @@
+# Puzzle Bobble (EEPROM 128 B). Portrait game: in this core's default keymap the
+# Y pad is the d-pad, `l` = portrait down, `r` = up; A confirms.
+# Play 1P puzzle mode, firing straight up until round 1 is lost (score 420).
+# The game writes the result (round 1, score 420) to EEPROM; after a reset the
+# "past results" screen reads it back. Boot alone leaves the EEPROM all zero.
+wait 1000
+press start 6       # title -> MODE SELECT
+wait 120
+press a 6           # 1人で遊ぼうかな (1 player)
+wait 120
+press a 6           # さいしょから (from the start) -> ROUND 1
+wait 200
+repeat 30
+press a 6           # fire
+wait 54
+end
+shot lost
+reset
+wait 1000
+press start 6       # title -> MODE SELECT
+wait 300
+press l2 12         # the first input on this menu is dropped; l2 does nothing here
+wait 30
+repeat 3
+press l 12          # down to 過去をふりかえる (past results)
+wait 30
+end
+press a 6
+wait 120
+press a 6           # 1人で遊ぼうかな
+wait 120
+shot results        # これまでの結果: ラウンド 1, スコア 420

@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "pcengine",
+  "core": "beetle-supergrafx",
+  "core_file": "mednafen_supergrafx_libretro.dylib",
+  "core_name": "Beetle SuperGrafx",
+  "core_version": "v1.29.0 9c11dcd",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Jack Nicklaus' Turbo Golf (USA).pce",
+    "sha1": "49d240ec70e4f7cc98a14e4e4e5a0857bc1ee737",
+    "size": 262144
+  },
+  "script": "scripts/pcengine/Jack Nicklaus' Turbo Golf.txt",
+  "frames": 3062,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Jack Nicklaus' Turbo Golf (USA).srm": {
+      "size": 2048,
+      "sha1": "281a43c7a6022e33056e3d5615c432fec38406cf"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

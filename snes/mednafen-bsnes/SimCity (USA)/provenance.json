@@ -1,0 +1,31 @@
+{
+  "method": "played",
+  "system": "snes",
+  "core": "mednafen-bsnes",
+  "core_file": "mednafen_snes_libretro.dylib",
+  "core_name": "Mednafen bSNES",
+  "core_version": "v0.9.26 5f05e4c",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "SimCity (USA).sfc",
+    "sha1": "9140ae08d62a562ccb98576ba89f381f9f4f1439",
+    "size": 524288
+  },
+  "script": "scripts/snes/SimCity.txt",
+  "frames": 4472,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "SimCity (USA).rtc": {
+      "size": 0,
+      "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+    },
+    "SimCity (USA).srm": {
+      "size": 32768,
+      "sha1": "5a789829dae803260aa70ab74c62f35421b46ddb"
+    }
+  },
+  "created": "2026-11-03",
+  "note": "mednafen_snes writes its own .srm (and an empty .rtc) into the save directory and exposes no save RAM through the libretro API; the core then aborts (SIGABRT) while unloading, after the files are written, so make-save.py did not file it. Filed from the run directory by work/snes/file_aborted.py."
+}

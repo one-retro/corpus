@@ -1,0 +1,32 @@
+{
+  "method": "device-backup",
+  "device": "Nintendo 2DS",
+  "producer": "JKSV",
+  "backup_path": "JKSV/Saves/Ocarina of Time 3D/2034.02.05_14.21.57",
+  "system": "3ds",
+  "core": "_jksv",
+  "title": {
+    "jksv_folder": "Ocarina of Time 3D",
+    "name": "Ocarina of Time 3D",
+    "product_code": "CTR-P-AQEE",
+    "title_id": "0004000000033500"
+  },
+  "game_source": "No-Intro DAT 'Nintendo - Nintendo 3DS (Encrypted) (20260826-020750)', by product code; the backup does not say which revision of the game made it, so the folder is the unrevised entry",
+  "attribution": "JKSV save manager on the owner's 2DS, real hardware; JKSV's title cache (JKSV/titles) gives the product code and title ID for its folder name",
+  "confidence": "high",
+  "written": "2034.02.05_14.21.57 (JKSV's backup folder, the 2DS's clock, which was set to 2034)",
+  "files": {
+    "Saves/Ocarina of Time 3D/2034.02.05_14.21.57/save00.bin": {
+      "size": 5340,
+      "sha1": "2010a566382984dfd19c6dc24d3e0965ac7c9977",
+      "role": "primary"
+    },
+    "Saves/Ocarina of Time 3D/2034.02.05_14.21.57/system.dat": {
+      "size": 34,
+      "sha1": "a380263670bc9fb68b4607d82949ce101ad01005",
+      "role": "primary"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

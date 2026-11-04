@@ -1,0 +1,31 @@
+# King of Fighters R-2: SET UP, LEVEL NORMAL -> HARD, EXIT. The game sets up
+# its save area on first boot; leaving SET UP rewrites it with the new level.
+# A reset and a second look at SET UP shows LEVEL HARD kept.
+# NGP A is libretro b, NGP B is libretro a, Option is start.
+wait 1000
+press b 6           # skip the intro
+wait 200
+press down 10       # SET UP
+wait 60
+press b 10
+wait 150
+press right 10      # LEVEL NORMAL -> HARD
+wait 40
+repeat 6
+press down 10
+wait 30
+end
+press b 10          # EXIT: the settings are written here
+wait 150
+shot exited
+reset
+wait 1000
+press b 6
+wait 200
+press down 10
+wait 60
+press b 10          # SET UP again
+wait 150
+press down 10       # off LEVEL, so it stops blinking
+wait 40
+shot kept

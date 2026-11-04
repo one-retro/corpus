@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "nes",
+  "core": "fixnes",
+  "core_file": "fixnes_libretro.dylib",
+  "core_name": "fixNES",
+  "core_version": "Alpha v1.3.1",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "StarTropics (USA).nes",
+    "sha1": "0372a5a3e2c8c96a459f0fd83c05437bc3af44d1",
+    "size": 524304
+  },
+  "script": "scripts/nes/StarTropics.txt",
+  "frames": 1528,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "StarTropics (USA).srm": {
+      "size": 131072,
+      "sha1": "ec5df12401ef1a4ea916be60841838f2c4850a57"
+    }
+  },
+  "created": "2026-11-03",
+  "note": "runner: work/nes/runner/retro-run (tools/retro-run with RetroArch's init order and a disk control interface)"
+}

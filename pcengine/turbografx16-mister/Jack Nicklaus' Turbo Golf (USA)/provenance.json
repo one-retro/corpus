@@ -1,0 +1,34 @@
+{
+  "method": "played",
+  "system": "pcengine",
+  "core": "turbografx16-mister",
+  "core_file": "TurboGrafx16_20260603.rbf",
+  "core_name": "TurboGrafx16_MiSTer",
+  "core_version": "20260603",
+  "frontend": "mister",
+  "device": "the owner's MiSTer (DE10-Nano), Main_MiSTer binary of 2026-10-19",
+  "loaded_with": "MGL via /dev/MiSTer_cmd load_core (_Console/TurboGrafx16, file type f index 0)",
+  "save_folder": "saves/TGFX16",
+  "rom": {
+    "name": "Jack Nicklaus' Turbo Golf (USA).pce",
+    "sha1": "49d240ec70e4f7cc98a14e4e4e5a0857bc1ee737",
+    "size": 262144
+  },
+  "script": "scripts/pcengine/Jack Nicklaus' Turbo Golf.txt",
+  "mister_script": "scripts/mister/pcengine/Jack Nicklaus' Turbo Golf.tgfx16.txt",
+  "frames": 3164,
+  "timing": "real time: script frames played as wall-clock 1/60 s by work/mister/mrun.py",
+  "options": {
+    "config/TGFX16.CFG": "Autosave On (status bit 23), every other option at its default; written for the run and removed after"
+  },
+  "save_trigger": "OSD opened (F12 from a uinput keyboard) with Autosave on: the core writes its backup RAM to the SD card",
+  "started_from": null,
+  "files": {
+    "Jack Nicklaus' Turbo Golf (USA).sav": {
+      "size": 2048,
+      "sha1": "890d905d40e64350e03bb60927eda3c14c347e48"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "2 KiB HuCard backup RAM (HUBM, file JGF-SG.001), written as 4 sectors. No seed. Proof: after loading the game again the title asks 'Resume Saved Game?'."
+}

@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "ngpc",
+  "core": "race",
+  "core_file": "race_libretro.dylib",
+  "core_name": "RACE",
+  "core_version": "v2.16 c7810dd",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Baseball Stars Color - Pocket Sports Series (World) (En,Ja).ngc",
+    "sha1": "495199cd783e7cd962eece160dbc238a648c5e39",
+    "size": 1048576
+  },
+  "script": "scripts/ngpc/Baseball Stars Color.txt",
+  "frames": 3492,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Baseball Stars Color - Pocket Sports Series (World) (En,Ja).ngf": {
+      "size": 49184,
+      "sha1": "5b25b2f4bc62e54db70a96f132d8b7a616cefd67"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

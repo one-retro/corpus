@@ -1,0 +1,53 @@
+# Boktai: first-boot setup (solar sensor, clock), then create DATA.1
+# (name DjangoAAAA, Washington D.C., NORMAL 2) and let the game save it.
+# Proof: DATA.1 on the GAME START screen after a power cycle. The cartridge
+# has the S-3511A clock and a solar sensor; the save is EEPROM.
+wait 900
+press start 6       # skip the logos
+wait 300
+press start 6
+wait 300
+tap a 4 40          # solar sensor explanation and calibration
+wait 120
+press start 6       # TIME SETTING: keep the clock as read, END
+wait 900
+press start 6       # title: PUSH START
+wait 200
+press start 6       # GAME START
+wait 200
+press a 6           # DATA.1
+wait 200
+press a 6           # START
+wait 200
+press a 6           # CREATE DATA HERE? YES
+wait 200
+tap a 4 40          # PLAYER NAME: Django + AAAA, cursor jumps to END
+wait 60
+press a 6           # END
+wait 200
+press a 6           # REGION: Washington D.C.
+wait 120
+press a 6
+wait 200
+press a 6           # DIFFICULTY: NORMAL 2
+wait 120
+press a 6
+wait 120
+press a 6           # CONFIRM SETTING: YES -> SAVING
+wait 120
+press a 6
+wait 600            # the intro begins after the save
+shot saved
+# Power cycle: keep battery RAM across the reset (SkyEmu's reset reloads
+# it from a file the frontend never wrote, and would lose the save).
+dump cycle.srm
+reset
+srm cycle.srm
+wait 1500
+press start 6       # PUSH START
+wait 300
+press start 6       # GAME START
+wait 300
+press start 6       # the data screen
+wait 300
+shot data

@@ -1,0 +1,31 @@
+{
+  "method": "played",
+  "system": "gb",
+  "core": "skyemu",
+  "core_file": "skyemu_libretro.dylib",
+  "core_name": "SkyEmu",
+  "core_version": "adacd0788964ed89f5c43dcbc1f3cc26deec996c",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Pocket Monsters - Midori (Japan) (Rev 1) (SGB Enhanced).gb",
+    "sha1": "4b97cd44aa3f0dd290bfe7b3ac17b7bd8270897b",
+    "size": 524288
+  },
+  "script": "scripts/gb/Pocket Monsters Midori.skyemu.txt",
+  "frames": 7643,
+  "options": "system_core_override = Automatic\nsystem_gb_bios_enable = disabled\nsystem_gba_bios_enable = disabled\nsystem_nds_bios_enable = disabled\n",
+  "started_from": null,
+  "files": {
+    "Pocket Monsters - Midori (Japan) (Rev 1) (SGB Enhanced).rtc": {
+      "size": 14,
+      "sha1": "48bb3224e5389046be00e078bd4936200cd64ea0"
+    },
+    "Pocket Monsters - Midori (Japan) (Rev 1) (SGB Enhanced).srm": {
+      "size": 131072,
+      "sha1": "5341d4ea9de895515d26df2916bb15a59dbfe2cf"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

@@ -1,0 +1,19 @@
+{
+  "method": "downloaded",
+  "system": "saturn",
+  "core": "saturn-mister",
+  "url": "https://raw.githubusercontent.com/euan-forrester/save-file-converter/0a9786f6b43d4e06c725c0b07c97921a8e440d17/frontend/tests/data/save-formats/mister/segasaturn/Rayman%20(USA)%20(R2).sav",
+  "source_page": "https://github.com/euan-forrester/save-file-converter/pull/340",
+  "source": "github.com (euan-forrester/save-file-converter test data, commit 0a9786f6b43d)",
+  "author": "a MiSTer user, via Euan Forrester (save-file-converter); not named",
+  "licence": "GPL-3.0 (the save-file-converter repository's licence; the save data itself carries no stated licence)",
+  "fetched": "2026-11-04",
+  "what_it_is": "A MiSTer Saturn core save with the Backup RAM Cart appended: 1114112 bytes = 64 KiB internal + 1 MiB cart (512 KiB volume), both byte-expanded with 0xFF. PR #340 'Substituted in real mister internal + cart save': 'We were provided with a file containing internal + cart saves from a real MiSTer'. The cart volume was formatted by the BIOS, so its signature fills only 0x40 bytes of the 512-byte first block.",
+  "files": {
+    "Rayman (USA) (R2).sav": {
+      "size": 1114112,
+      "sha1": "22e53064fa413043c52dcb09e204eecb63c83b50"
+    }
+  },
+  "note": "one-saves (saturn-backup) reads the cart volume's block size from the signature's repeat count and so rejects this file ('the save in block 528 states 1190 bytes and its blocks hold 144'); the converter switched to sizing blocks by file length because of this file."
+}

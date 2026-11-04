@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "genesis",
+  "core": "genesis-plus-gx-wide",
+  "core_file": "genesis_plus_gx_wide_libretro.dylib",
+  "core_name": "Genesis Plus GX Wide",
+  "core_version": "v1.7.4 b7ad005",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "NBA Jam (USA, Europe) (Rev 1).md",
+    "sha1": "55f2b26a932c69b2c7cb4f24f56b43f24f113a7c",
+    "size": 2097152
+  },
+  "script": "scripts/genesis/NBA Jam.txt",
+  "frames": 39742,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "NBA Jam (USA, Europe) (Rev 1).srm": {
+      "size": 256,
+      "sha1": "add3d6281794a68e8f935bf6e6e792b29862d562"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

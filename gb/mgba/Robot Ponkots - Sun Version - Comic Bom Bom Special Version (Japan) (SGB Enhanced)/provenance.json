@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "gb",
+  "core": "mgba",
+  "core_file": "mgba_libretro.dylib",
+  "core_name": "mGBA",
+  "core_version": "0.11-212-7a12d6d",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Robot Ponkots - Sun Version - Comic Bom Bom Special Version (Japan) (SGB Enhanced).gb",
+    "sha1": "aa59c7852897fb612dd20fc65aba64d1785fe5d2",
+    "size": 1048576
+  },
+  "script": "scripts/gb/Robot Ponkots Sun.txt",
+  "frames": 15932,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Robot Ponkots - Sun Version - Comic Bom Bom Special Version (Japan) (SGB Enhanced).srm": {
+      "size": 32768,
+      "sha1": "05b0a245b112dfefcce772bd981473bc35d483ca"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

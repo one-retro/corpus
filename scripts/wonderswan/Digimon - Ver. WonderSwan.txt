@@ -1,0 +1,19 @@
+# Digimon - Ver. WonderSwan (HK, English; SRAM 32 KiB). A virtual-pet game.
+# REBOOT starts a new pet on the network map; SYSTEM > SAVE&EXIT writes the
+# save and returns to the title (264 bytes differ from the SRAM at that point;
+# the game also initialises ~1.6 KiB of SRAM on its first boot).
+wait 1000
+press start 6       # title menu: REBOOT
+wait 120
+press a 6           # REBOOT -> network map, cursor on SYSTEM
+wait 300
+press a 6           # SYSTEM: CANCEL / TIME JUMP / MAIL / CLOCK / SAVE&EXIT
+wait 200
+repeat 4
+press down 8
+wait 30
+end
+shot menu
+press a 6           # SAVE&EXIT
+wait 120
+shot saved          # back at the title after saving

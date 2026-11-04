@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "nds",
+  "core": "desmume-2015",
+  "core_file": "desmume2015_libretro.dylib",
+  "core_name": "DeSmuME 2015",
+  "core_version": "git a06da0c",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Tetris DS (USA, Australia).nds",
+    "sha1": "13eb2e7e5357a6e31f94ea238826c111c965bc9b",
+    "size": 16777216
+  },
+  "script": "scripts/nds/Tetris DS.txt",
+  "frames": 7508,
+  "options": "desmume_pointer_type = touch\n",
+  "started_from": null,
+  "files": {
+    "Tetris DS (USA, Australia).dsv": {
+      "size": 8314,
+      "sha1": "d4d27305479ca2f94da745fc8b7fdbd047aa62f4"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

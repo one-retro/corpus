@@ -1,0 +1,42 @@
+{
+  "method": "played",
+  "system": "c64",
+  "core": "vice-x64sc",
+  "core_file": "vice_x64sc_libretro.dylib",
+  "core_name": "VICE x64sc",
+  "core_version": "3.10 5ebe7d3",
+  "frontend": "retro-run (writes saves as RetroArch does), via work/c64/make-save-x.py: content copied into the run directory",
+  "renderer": "software",
+  "rom": {
+    "name": "Summer Games (USA, Europe).g64",
+    "sha1": "025714c88dc305e6f64237b66cc09c18d1e007a3",
+    "size": 286164
+  },
+  "extra_content": null,
+  "script": "scripts/c64/Summer Games.txt",
+  "frames": 21232,
+  "options": null,
+  "port0_device": null,
+  "started_from": null,
+  "files": {
+    "Summer Games (USA, Europe).g64.changes.json": {
+      "size": 11151,
+      "sha1": "c37a1791b63f6e1e3d020cb7b2a0d6bb2429d67b",
+      "location": "content-file-modified-in-place",
+      "modified_image": {
+        "size": 286164,
+        "sha1": "261e7ba8e34c63244389ed15612a1754eccb7605"
+      }
+    }
+  },
+  "created": "2026-11-04",
+  "note": "Content: the No-Intro PP Summer Games (USA, Europe).nib converted to .g64 by the VICE core itself (its nib_convert writes <savedir>/TEMP/<name>.g64; copied out before retro_deinit deletes it; identical sha1 from all four VICE cores). VICE writes disk changes in place into the attached image (vice_floppy_write_protection defaults to disabled). The .g64 is not filed (it is the whole game); <name>.g64.changes.json lists the changed 256-byte blocks of the image file with the sha1 of the original and modified image. Run with the .nib itself, the same write lands in TEMP/<name>.g64 and is deleted at unload.",
+  "rom_source": {
+    "set": "No-Intro Commodore - Commodore 64 (PP)",
+    "name": "Summer Games (USA, Europe).nib",
+    "sha1": "36e926f1d2f634f23dbf07111a06a5d96c7c4cbd",
+    "size": 327936,
+    "conversion": "VICE's own nib_convert (identical output from vice-x64, x64sc, x128, xscpu64), copied out of <savedir>/TEMP with work/msx/retro-run-x --keep-temp"
+  },
+  "logical_change": "decoded sectors 15/6 (the world-record table), 18/0 (BAM) and 18/1 (directory) changed; the decoded sector data is identical in all four VICE cores, the G64 bytes are not (write splice positions)"
+}

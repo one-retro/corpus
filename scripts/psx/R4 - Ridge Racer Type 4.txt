@@ -1,0 +1,21 @@
+# R4 - Ridge Racer Type 4: Save and Load > Save. "R4 Game Data" is a 1-block
+# save in a PocketStation-capable file (BASLUSP00797...). Circle is OK here.
+wait 6000           # intro movie
+press start 6       # -> title ("PRESS START BUTTON")
+wait 900
+press start 6       # -> main menu, cursor on Grand Prix
+wait 300
+tap down 5 20       # Save and Load
+wait 20
+press start 6
+wait 400            # Save / Load / PocketStation / Exit, cursor on Exit
+tap up 3 20         # Save
+shot menu
+press a 6           # "Save all R4 Game data to Slot 1 Memory Card?", cursor on No
+wait 150
+press up 6          # Yes
+wait 20
+press a 6
+wait 900
+shot saved          # "Save complete."
+wait 60

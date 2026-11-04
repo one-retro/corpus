@@ -1,0 +1,9 @@
+# The Legend of Oasis (USA): the game writes its OASIS2__SYS config file on first
+# boot; NEW GAME starts the story in Leon's house.
+wait 1300
+press start          # title -> menu
+wait 300
+shot title
+press start          # NEW GAME
+wait 900
+shot newgame

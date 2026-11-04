@@ -1,0 +1,19 @@
+{
+  "method": "downloaded",
+  "system": "gb",
+  "core": "gameboy-mister",
+  "url": "https://github.com/budude2/openfgpa-GBC/files/14317511/Robopon_MiSTer_SAVE.zip",
+  "source_page": "https://github.com/budude2/openfpga-GBC/issues/38",
+  "source": "GitHub",
+  "author": "llicor2030",
+  "licence": null,
+  "fetched": "2026-11-03",
+  "what_it_is": "Robot Poncots Sun (Japan) save made on the MiSTer Gameboy core, posted alongside the USA one in an openFPGA-GBC HuC-3 RTC issue; in-game state not described. Extracted from Robopon_MiSTer_SAVE.zip.",
+  "files": {
+    "Robot Poncots - Sun Version (Japan).sav": {
+      "size": 33280,
+      "sha1": "d9a6c405a3b0005c8e6239ba1e0926f9e0844572"
+    }
+  },
+  "note": "HuC-3 (has RTC footer, so the regular HuC-3 release, not the HuC-1 Comic Bom Bom edition; exact No-Intro name assumed). 33280 = 32768 + 512-byte footer: 8499d065 (LE u32 1708169604 = 2024-02-17 11:33:24 UTC) then 198f0040 0000, rest 0xFF."
+}

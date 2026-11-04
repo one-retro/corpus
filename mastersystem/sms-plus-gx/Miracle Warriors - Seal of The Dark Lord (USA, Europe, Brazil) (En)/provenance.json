@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "mastersystem",
+  "core": "sms-plus-gx",
+  "core_file": "smsplus_libretro.dylib",
+  "core_name": "SMS Plus GX",
+  "core_version": "1.8 3844b46",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Miracle Warriors - Seal of The Dark Lord (USA, Europe, Brazil) (En).sms",
+    "sha1": "f952406bca4918ee91a89b27e949e224eae96d85",
+    "size": 262144
+  },
+  "script": "scripts/mastersystem/Miracle Warriors.txt",
+  "frames": 3688,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Miracle Warriors - Seal of The Dark Lord (USA, Europe, Brazil) (En).srm": {
+      "size": 32768,
+      "sha1": "c2d5ed6101ffa1105fe1de2d44e25f9114764efc"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

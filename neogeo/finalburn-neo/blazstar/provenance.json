@@ -1,0 +1,31 @@
+{
+  "method": "played",
+  "system": "neogeo",
+  "core": "finalburn-neo",
+  "core_file": "fbneo_libretro.dylib",
+  "core_name": "FinalBurn Neo",
+  "core_version": "v1.0.0.03  GITda14132",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "blazstar.zip",
+    "sha1": "e29ef4455e05d552f2b21875f212388fecb7a013",
+    "size": 21596277
+  },
+  "script": "scripts/neogeo/blazstar.txt",
+  "frames": 5832,
+  "options": "fbneo-neogeo-mode = MVS_USA\nfbneo-memcard-mode = per-game\n",
+  "started_from": null,
+  "files": {
+    "fbneo/blazstar.fs": {
+      "size": 65536,
+      "sha1": "1a1f94f9f654a68dd242749a98ef3f2ed4dd8348"
+    },
+    "fbneo/blazstar.memcard": {
+      "size": 32800,
+      "sha1": "58ec60bacace919f79ead219dc1b147ffed2fa9e"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

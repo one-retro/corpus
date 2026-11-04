@@ -1,0 +1,40 @@
+# Chew-Man-Fu: EDIT MODE > FILE CABINET > SAVE ROOM > ROOM 01 saves the edit
+# room to backup RAM (the game also writes a small CHEW-SR file when the
+# cabinet is opened). Re-opening the cabinet shows ROOM 01 in use.
+wait 240
+press start 6         # title
+wait 180
+repeat 3
+press down 6          # EDIT MODE
+wait 20
+end
+press start 6
+wait 120
+repeat 3
+press down 6          # FILE CABINET
+wait 20
+end
+press a 6
+wait 90
+press down 6
+wait 20
+press down 6          # SAVE ROOM
+wait 20
+press a 6             # SELECT ROOM
+wait 60
+press a 6             # ROOM 01
+wait 60
+press a 6
+wait 120
+shot menu
+repeat 3
+press down 6          # FILE CABINET again
+wait 20
+end
+press a 6
+wait 90
+press down 6          # LOAD ROOM
+wait 20
+press a 6
+wait 60
+shot cabinet          # ROOM 01 lit

@@ -1,0 +1,18 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "duckstation",
+  "url": "https://github.com/duckstation-unoff-issue-tracker-admin/duckstation-unofficial-issue-tracker/files/10329758/Xenogears.USA.Disc.2._1.zip",
+  "source_page": "https://github.com/duckstation-unoff-issue-tracker-admin/duckstation-unofficial-issue-tracker/issues/83",
+  "source": "GitHub (unofficial DuckStation issue tracker)",
+  "author": "sigarettenstank",
+  "licence": null,
+  "fetched": "2026-11-04",
+  "what_it_is": "DuckStation 0.1-5437 per-disc card (Disc 2 title); save at the final boss",
+  "files": {
+    "Xenogears (USA) (Disc 2)_1.mcd": {
+      "size": 131072,
+      "sha1": "c5f6d3afb2183be147ac236b7319a59e15bf46d0"
+    }
+  }
+}

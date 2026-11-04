@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "wonderswan",
+  "core": "beetle-wonderswan",
+  "core_file": "mednafen_wswan_libretro.dylib",
+  "core_name": "Beetle WonderSwan",
+  "core_version": "v0.9.35.1 4b01295",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Final Lap 2000 (Japan).ws",
+    "sha1": "cfcb14be6d2f1dbffdfcefb8c8d83b4f39bc102b",
+    "size": 1048576
+  },
+  "script": "scripts/wonderswan/Final Lap 2000.txt",
+  "frames": 2594,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Final Lap 2000 (Japan).srm": {
+      "size": 2048,
+      "sha1": "535f16e3bc50726e9003aa9eb28473d4d152ddb0"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

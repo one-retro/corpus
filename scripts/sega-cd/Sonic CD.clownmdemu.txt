@@ -1,0 +1,11 @@
+# Sonic CD for ClownMDEmu, which has no BIOS intro (it boots the disc
+# directly with its own high-level BIOS), so everything comes ~600 frames
+# earlier. Same play as Sonic CD.txt.
+wait 900
+press start 6       # title -> NEW GAME
+wait 300
+shot title
+press start 6       # NEW GAME
+wait 900
+press right 300
+shot playing

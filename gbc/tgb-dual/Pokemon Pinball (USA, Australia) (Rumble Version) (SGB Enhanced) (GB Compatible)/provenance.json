@@ -1,0 +1,31 @@
+{
+  "method": "played",
+  "system": "gbc",
+  "core": "tgb-dual",
+  "core_file": "tgbdual_libretro.dylib",
+  "core_name": "TGB Dual",
+  "core_version": "v0.8.3 0392c9c",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Pokemon Pinball (USA, Australia) (Rumble Version) (SGB Enhanced) (GB Compatible).gbc",
+    "sha1": "9402014d14969432142abfde728c6f1a10ee4dac",
+    "size": 1048576
+  },
+  "script": "scripts/gbc/Pokemon Pinball.txt",
+  "frames": 2132,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Pokemon Pinball (USA, Australia) (Rumble Version) (SGB Enhanced) (GB Compatible).rtc": {
+      "size": 4,
+      "sha1": "65326655bd07125969d5c3005c2fcfa263a363e4"
+    },
+    "Pokemon Pinball (USA, Australia) (Rumble Version) (SGB Enhanced) (GB Compatible).srm": {
+      "size": 8192,
+      "sha1": "eda1fecffbbb720077b1a76d7ab75535950f66a5"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "sega-cd",
+  "core": "picodrive",
+  "core_file": "picodrive_libretro.dylib",
+  "core_name": "PicoDrive",
+  "core_version": "2.05-1890c29",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Shining Force CD (USA) (3R).cue",
+    "sha1": "a44e3210079c3bf25a854656f8b83f5227596a1c",
+    "size": 4275
+  },
+  "script": "scripts/sega-cd/Shining Force CD.txt",
+  "frames": 9914,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Shining Force CD (USA) (3R).srm": {
+      "size": 8192,
+      "sha1": "4e247cec57f627f8e37e0fb67be0f51e9cb27f89"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

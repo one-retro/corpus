@@ -1,0 +1,21 @@
+{
+  "method": "device-backup",
+  "device": "Analogue Pocket",
+  "backup_path": "Saves/pce/common/4 Game Series Collections/Best-Of Lists/Top 10 Games - Blockfort.com/03. Devil's Crush (USA).sav",
+  "system": "pcengine",
+  "core": "agg23-pc-engine",
+  "pocket_core": "agg23.PC Engine",
+  "pocket_platform": "pce",
+  "game_source": "No-Intro DAT 'NEC - PC Engine - TurboGrafx-16 (20260124-120557)'",
+  "attribution": "folder Saves/pce/common, only PC Engine core installed: agg23.PC Engine (Analogue backup Cores/ and Settings/); 2 KiB backup RAM as agg23.PC Engine writes; its Analogizer build (alias) would be indistinguishable",
+  "confidence": "high",
+  "written": "2026-02-14 21:42 (file mtime as read here; the Pocket stamps its own clock)",
+  "files": {
+    "03. Devil's Crush (USA).sav": {
+      "size": 2048,
+      "sha1": "21c54249ad987883819a177d8c7c4664c04f3beb"
+    }
+  },
+  "created": "2026-11-03",
+  "note": "the ROM file carried a list number, '03. '; a freshly formatted backup RAM"
+}

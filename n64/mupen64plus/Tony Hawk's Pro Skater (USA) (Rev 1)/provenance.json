@@ -1,0 +1,32 @@
+{
+  "method": "played",
+  "system": "n64",
+  "core": "mupen64plus",
+  "core_file": null,
+  "core_name": "Mupen64Plus",
+  "core_version": "2.6.0",
+  "frontend": "Mupen64Plus 2.6.0 (Homebrew: mupen64plus-ui-console + core 2.6.0), plugins glide64mk2 / rsp-hle / dummy audio / m64feed input",
+  "rom": {
+    "name": "Tony Hawk's Pro Skater (USA) (Rev 1).z64",
+    "size": 12582912,
+    "sha1": "4900b6c92fb8df1765e91e891dccc525bb102fe1"
+  },
+  "script": "scripts/n64/Tony Hawk's Pro Skater.txt",
+  "frames": 11736,
+  "options": null,
+  "input": "work/standalone/tools/m64feed.c: an input plugin that replays the retro-run script by VI frame (core frame callback), RetroPad mapped as Mupen64Plus-Next does (b=A, y=B, l2=Z); controller 1 with a Controller Pak; M64CMD_STOP at the end. --nospeedlimit, isolated --configdir and Core[SaveSRAMPath].",
+  "started_from": null,
+  "files": {
+    "Tony Hawk's Pro Skater (U) (V1.1-AFF424A1.mpk": {
+      "size": 131072,
+      "sha1": "08dfba51eac5e06da6c7beaf336527f454bc7a9a"
+    }
+  },
+  "layout": {
+    "save_dir": "Core[SaveSRAMPath], default Library/Application Support/Mupen64Plus/save/ in the home folder on macOS",
+    "name": "Core[SaveFilenameFormat]=1 (default): first 32 characters of the ROM good name from mupen64plus.ini, a dash, the first 8 hex digits of the ROM MD5 in capitals, then .eep / .sra / .fla / .mpk",
+    "written": "when the game writes, and on stop"
+  },
+  "created": "2026-11-04",
+  "note": "SAVE SUCCESSFUL to the Controller Pak; the whole 4-controller .mpk image is written (131072 bytes)."
+}

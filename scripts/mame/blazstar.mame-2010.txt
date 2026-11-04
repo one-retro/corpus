@@ -1,0 +1,20 @@
+# Blazing Star (MVS backup RAM), MAME cores: insert a coin, start, take the default
+# ship and let it be shot down while pressing Neo Geo A every 80 frames. A also
+# fills in the high-score name entry (ENTRY YOUR NAME, 30th, "AAAAAAAAA"), which
+# the game keeps in the cabinet's backup RAM. MAME has no memory card mounted, so
+# there is no card prompt; the run ends on GAME OVER after the name is entered.
+# Neo Geo A is RetroPad b (RetroPad a in MAME 2010, see blazstar.mame-2010.txt).
+wait 1300
+press select 6         # coin
+wait 120
+press start 6
+repeat 47
+press a 4
+wait 76
+end
+shot nameentry         # ENTRY YOUR NAME: AAAAAAAAA
+repeat 5
+press a 4
+wait 76
+end
+shot gameover

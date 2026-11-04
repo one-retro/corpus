@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "nds",
+  "core": "noods",
+  "core_file": "noods_libretro.dylib",
+  "core_name": "NooDS",
+  "core_version": "9a26653",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Mario Kart DS (USA, Australia) (En,Fr,De,Es,It).nds",
+    "sha1": "691e00d9a5dd80b04f80cc7559503e8b06848785",
+    "size": 33554432
+  },
+  "script": "scripts/nds/Mario Kart DS.txt",
+  "frames": 4450,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Mario Kart DS (USA, Australia) (En,Fr,De,Es,It).sav": {
+      "size": 262144,
+      "sha1": "ea19283c3fc39926254121f5b899816d8ab513a9"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

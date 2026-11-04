@@ -1,0 +1,31 @@
+{
+  "method": "played",
+  "system": "gbc",
+  "core": "gambatte",
+  "core_file": "gambatte_libretro.dylib",
+  "core_name": "Gambatte",
+  "core_version": "v0.5.0-netlink 77f2567",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Robopon - Sun Version (USA) (SGB Enhanced) (GB Compatible).gbc",
+    "sha1": "399c928a38a3901b7a1093bd61f5a4d8c05b9771",
+    "size": 1048576
+  },
+  "script": "scripts/gbc/Robopon Sun.txt",
+  "frames": 15932,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Robopon - Sun Version (USA) (SGB Enhanced) (GB Compatible).rtc": {
+      "size": 8,
+      "sha1": "a805ca4872078e8fa3532aeefd2e9145453f6716"
+    },
+    "Robopon - Sun Version (USA) (SGB Enhanced) (GB Compatible).srm": {
+      "size": 32768,
+      "sha1": "a879d2bacea3c9ccee25a36bee0dbce6238f5120"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

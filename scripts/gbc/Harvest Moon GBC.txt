@@ -1,0 +1,36 @@
+# Harvest Moon GBC (MBC3 + clock + 8 KiB battery RAM): START, name the farmer
+# and the dog (a few A's each), Male, Dog, then mash A through the spirit's
+# speech and the farm tour, which ends indoors facing the table, where A does
+# nothing. Walk left to the bed, "Go to sleep?" YES: the night is written.
+wait 900
+press a 6           # START -> Name?
+wait 180
+repeat 3            # the farmer: "A".."AAA" (the screen may drop the first)
+tap a 1 50
+end
+press start 6       # cursor to END
+wait 60
+press a 6           # END -> You are a Male? Female?
+wait 120
+press a 6           # Male -> Which do you like? Dog / Cat
+wait 120
+press a 6           # Dog -> the dog's Name?
+wait 120
+repeat 3
+tap a 1 50
+end
+press start 6
+wait 60
+press a 6           # END
+wait 120
+repeat 130          # the Harvest Sprite's speech, the tour of the farm, "I am a
+tap a 1 60          # little tired...", into the house
+end
+press left 90       # to the bed (on SameBoy the dog sits in the way: see NOTES)
+wait 10
+press a 6           # Go to sleep? YES / NO
+wait 60
+press a 6           # YES
+wait 400
+shot saved          # the next morning
+wait 30

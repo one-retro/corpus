@@ -1,0 +1,18 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "duckstation",
+  "url": "https://github.com/duckstation-unofficial/issue-tracker/files/13913176/Alundra.2.-.A.New.Legend.Begins.USA._1.zip",
+  "source_page": "https://github.com/duckstation-unofficial/issue-tracker/issues/128",
+  "source": "GitHub (unofficial DuckStation issue tracker)",
+  "author": "sigarettenstank",
+  "licence": null,
+  "fetched": "2026-11-04",
+  "what_it_is": "DuckStation 0.1-6292 per-game card; ALUNDRA2/FILE1/Cabin, early game near the first boss",
+  "files": {
+    "Alundra 2 - A New Legend Begins (USA)_1.mcd": {
+      "size": 131072,
+      "sha1": "648036f91a2cc92080032bde8e8079f823e176b7"
+    }
+  }
+}

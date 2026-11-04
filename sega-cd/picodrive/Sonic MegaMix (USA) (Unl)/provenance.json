@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "sega-cd",
+  "core": "picodrive",
+  "core_file": "picodrive_libretro.dylib",
+  "core_name": "PicoDrive",
+  "core_version": "2.05-1890c29",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Sonic MegaMix (USA) (Unl).cue",
+    "sha1": "6ef9e97f1feeea0ef2f479acfefc81a94537de67",
+    "size": 91
+  },
+  "script": "scripts/sega-cd/Sonic MegaMix.txt",
+  "frames": 4324,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Sonic MegaMix (USA) (Unl).srm": {
+      "size": 8192,
+      "sha1": "7e65a0c44217cb6284a3916478110840b4f481e0"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

@@ -1,0 +1,19 @@
+{
+  "method": "downloaded",
+  "system": "saturn",
+  "core": "mednafen",
+  "url": "https://raw.githubusercontent.com/euan-forrester/save-file-converter/0a9786f6b43d4e06c725c0b07c97921a8e440d17/frontend/tests/data/save-formats/segasaturn/Hyper%20Duel%20(Japan).bkr",
+  "source_page": "https://github.com/euan-forrester/save-file-converter/pull/337",
+  "source": "github.com (euan-forrester/save-file-converter test data, commit 0a9786f6b43d)",
+  "author": "Euan Forrester (save-file-converter) or a user of the site; not stated",
+  "licence": "GPL-3.0 (the save-file-converter repository's licence; the save data itself carries no stated licence)",
+  "fetched": "2026-11-04",
+  "what_it_is": "Mednafen's internal backup RAM file (.bkr, 32 KiB packed, not compressed) holding HYPERDUEL_0 (comment 'ﾊｲﾊﾟｰﾃﾞｭｴﾙ'). Renamed: Mednafen names it '<stem>.<md5>.bkr'.",
+  "files": {
+    "Hyper Duel (Japan).bkr": {
+      "size": 32768,
+      "sha1": "866dbdc42a3abce83102599caa5887c84968aac5"
+    }
+  },
+  "note": "Used as INTERNAL_MEMORY_FILE in tests/unit/save-formats/SegaSaturn/Emulators/mednafen.spec.js. A plain .bkr could also come from Beetle Saturn with save method 'mednafen'; the source calls it Mednafen's."
+}

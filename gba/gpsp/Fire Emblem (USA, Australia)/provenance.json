@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "gba",
+  "core": "gpsp",
+  "core_file": "gpsp_libretro.dylib",
+  "core_name": "gpSP",
+  "core_version": "v1.1.0-5819380",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Fire Emblem (USA, Australia).gba",
+    "sha1": "c735fdbb9e8abe19e0c6a44708df19acc962e204",
+    "size": 16777216
+  },
+  "script": "scripts/gba/Fire Emblem.txt",
+  "frames": 5600,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Fire Emblem (USA, Australia).srm": {
+      "size": 131072,
+      "sha1": "9e38f9a3733ae18ff18225daff778e4140e4cd58"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

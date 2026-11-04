@@ -1,0 +1,43 @@
+# Lunar - The Silver Star: start a new game, walk out of the opening
+# scenes to Dyne's Memorial, open the menu, switch to Nall (SAVE / LOAD /
+# ORDER / DROP) and save to slot 1. The game's file takes 40 blocks of
+# internal backup RAM. Genesis A is RetroPad y here; C (RetroPad a) opens the menu.
+wait 600
+press start 6       # BIOS
+wait 1500
+press start 6       # skip the logos
+wait 300
+press start 6
+wait 350
+press start 6       # skip the intro
+wait 300
+press a 6           # title, START / CONTINUE, the file list
+wait 200
+press a 6           # (C confirms; 0: RESTART GAME starts a new game)
+wait 300
+press a 6
+wait 300
+press a 6
+wait 600            # "North of the village of Burg..."
+repeat 7            # opening text and scenes
+tap a 10 40
+end
+wait 1200           # the Alex and Nall scene runs longer in Genesis Plus GX Wide
+press b 6
+wait 100
+shot field
+repeat 4            # Nall: "Alex, didn't you promise Luna..." (B pages text; spare
+press b 6           # presses do nothing in the field)
+wait 80
+end
+wait 100
+press a 6           # menu: MAGIC EQUIP ITEM STATUS AI
+wait 100
+press right 6       # Nall: SAVE LOAD ORDER DROP
+wait 100
+shot nall
+press y 6           # SAVE
+wait 150
+press y 6           # 1: NOT USED
+wait 200
+shot saved

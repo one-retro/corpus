@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "pcenginecd",
+  "core": "geargrafx",
+  "core_file": "geargrafx_libretro.dylib",
+  "core_name": "Geargrafx",
+  "core_version": "1.8.7",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Exile (NA).chd",
+    "sha1": "d65d6bf96eab6b6d9837752c2ec8deaea7bc5c24",
+    "size": 238749547
+  },
+  "script": "scripts/pcenginecd/Exile.txt",
+  "frames": 9406,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Exile (NA).srm": {
+      "size": 2048,
+      "sha1": "13308538a965a262b3518751c27250cd4f1a295e"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

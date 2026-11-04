@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "gb",
+  "core": "gearboy",
+  "core_file": "gearboy_libretro.dylib",
+  "core_name": "Gearboy",
+  "core_version": "3.8.20-8-g37d0bf3",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Pocket Monsters - Midori (Japan) (Rev 1) (SGB Enhanced).gb",
+    "sha1": "4b97cd44aa3f0dd290bfe7b3ac17b7bd8270897b",
+    "size": 524288
+  },
+  "script": "scripts/gb/Pocket Monsters Midori.txt",
+  "frames": 9801,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Pocket Monsters - Midori (Japan) (Rev 1) (SGB Enhanced).srm": {
+      "size": 32768,
+      "sha1": "68acb3b91a5ec9422642fca53ce0178707b18617"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

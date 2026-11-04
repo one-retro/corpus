@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "saturn",
+  "core": "yabause",
+  "core_file": "yabause_libretro.dylib",
+  "core_name": "Yabause",
+  "core_version": "v0.9.15 8926b0c",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Tetris Plus (USA).cue",
+    "sha1": "7ee4fc48df2546fde9e03d3fcbd344ff9852b265",
+    "size": 94
+  },
+  "script": "scripts/saturn/Tetris Plus.txt",
+  "frames": 4650,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Tetris Plus (USA).srm": {
+      "size": 65536,
+      "sha1": "94cb3026f954108fb40fcd7112215ce3656d5e51"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "Run from the data track alone: the cue lists only track 01 (the Redump cue's audio tracks were left out to save space); the BIOS and game do not need them to boot and save."
+}

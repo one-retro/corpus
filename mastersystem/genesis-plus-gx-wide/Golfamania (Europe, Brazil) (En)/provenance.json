@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "mastersystem",
+  "core": "genesis-plus-gx-wide",
+  "core_file": "genesis_plus_gx_wide_libretro.dylib",
+  "core_name": "Genesis Plus GX Wide",
+  "core_version": "v1.7.4 b7ad005",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Golfamania (Europe, Brazil) (En).sms",
+    "sha1": "d0b964dd7cd8ccdd730de4d8e4bb2e87bea7686e",
+    "size": 262144
+  },
+  "script": "scripts/mastersystem/Golfamania.txt",
+  "frames": 6930,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Golfamania (Europe, Brazil) (En).srm": {
+      "size": 8192,
+      "sha1": "a752f47825ef4cc394712116c10b97055fa6207e"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

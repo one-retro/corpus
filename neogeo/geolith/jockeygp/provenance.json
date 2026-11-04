@@ -1,0 +1,35 @@
+{
+  "method": "played",
+  "system": "neogeo",
+  "core": "geolith",
+  "core_file": "geolith_libretro.dylib",
+  "core_name": "Geolith",
+  "core_version": "0.5.0",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "jockeygp.neo",
+    "sha1": "69120b758759918206471a41854e4f14def9f16e",
+    "size": 20582400
+  },
+  "script": "scripts/neogeo/jockeygp.txt",
+  "frames": 5472,
+  "options": "geolith_system_type = mvs\ngeolith_memcard = on\n",
+  "started_from": null,
+  "files": {
+    "jockeygp.mcr": {
+      "size": 2048,
+      "sha1": "f29f1e346811550581312253ccb269fbdea54af8"
+    },
+    "jockeygp.nv": {
+      "size": 65536,
+      "sha1": "6c5cda28ed52f9d77ddc59bc8d9170adc6ef3904"
+    },
+    "jockeygp.srm": {
+      "size": 8192,
+      "sha1": "dff9735c57f433f2b1a57f48e77aec6790e18aed"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "jockeygp.srm is the cartridge's own 8 KiB RAM, written by Geolith itself (RETRO_MEMORY_SAVE_RAM is not exposed in cartridge mode). jockeygp.mcr is Geolith's blank pre-formatted 2 KiB card."
+}

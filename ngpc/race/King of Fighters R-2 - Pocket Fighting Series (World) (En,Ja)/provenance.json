@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "ngpc",
+  "core": "race",
+  "core_file": "race_libretro.dylib",
+  "core_name": "RACE",
+  "core_version": "v2.16 c7810dd",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "King of Fighters R-2 - Pocket Fighting Series (World) (En,Ja).ngc",
+    "sha1": "72d2b8f19f51b7cd5da18ebe7f3e2c90263c0a0c",
+    "size": 2097152
+  },
+  "script": "scripts/ngpc/King of Fighters R-2.txt",
+  "frames": 3372,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "King of Fighters R-2 - Pocket Fighting Series (World) (En,Ja).ngf": {
+      "size": 16408,
+      "sha1": "93c4752af0334d762ce3fae5d518c143bde41983"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

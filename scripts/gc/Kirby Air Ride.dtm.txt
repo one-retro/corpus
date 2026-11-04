@@ -1,0 +1,11 @@
+# Dolphin TAS movie plan for work/standalone/tools/gen_dtm.py (one GC pad, input frames).
+# Kirby Air Ride creates its data file by itself at boot ("Creating Kirby Air Ride data file");
+# the START/A presses only carry on into a race afterwards.
+wait 600
+repeat 70
+press START 6
+wait 54
+press A 6
+wait 54
+end
+wait 600

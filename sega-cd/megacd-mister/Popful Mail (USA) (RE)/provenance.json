@@ -1,0 +1,20 @@
+{
+  "method": "downloaded",
+  "system": "sega-cd",
+  "core": "megacd-mister",
+  "url": "https://github.com/euan-forrester/save-file-converter/files/8173565/saves.zip",
+  "source_page": "https://github.com/euan-forrester/save-file-converter/issues/80#issuecomment-1057487772",
+  "source": "GitHub (euan-forrester/save-file-converter issue #80)",
+  "author": "birdybro (GitHub; MiSTer contributor)",
+  "licence": null,
+  "fetched": "2026-11-03",
+  "what_it_is": "birdybro's own MiSTer MegaCD save for Popful Mail; zip entry dated 2021-12-24 16:56.",
+  "files": {
+    "Popful Mail (USA) (RE).sav": {
+      "size": 8192,
+      "sha1": "05bebf145159dd8dd059c56a1cc355396a74beba"
+    }
+  },
+  "created": "2026-11-03",
+  "note": "Extracted unchanged from saves.zip (sha1 9ced6d6c8b2047fe8225aaf37201e15095da3ace, 2602364 bytes), entry MegaCD/Popful Mail (USA) (RE).sav; the zip is birdybro's whole MiSTer saves/ folder, posted 2022-03-02 ('here's just a big zip of all my saves on my MiSTer'). Core attribution is by the folder: MiSTer Main writes MegaCD core saves to saves/MegaCD/<cue or chd stem>.sav (support/megacd/megacd.cpp mcd_mount_save). Directory name is the uploader's disc name, which matches the Redump-style set names. 8192 bytes, internal BRAM only. Footer present; 112 of 125 blocks free, 1 file. Byte-identical to save-file-converter's test file 'Popful Mail (USA) (RE)-mister-internal-only.sav' (same git blob 41ddc654), which was taken from this zip."
+}

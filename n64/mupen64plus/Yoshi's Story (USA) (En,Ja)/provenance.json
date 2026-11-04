@@ -1,0 +1,32 @@
+{
+  "method": "played",
+  "system": "n64",
+  "core": "mupen64plus",
+  "core_file": null,
+  "core_name": "Mupen64Plus",
+  "core_version": "2.6.0",
+  "frontend": "Mupen64Plus 2.6.0 (Homebrew: mupen64plus-ui-console + core 2.6.0), plugins glide64mk2 / rsp-hle / dummy audio / m64feed input",
+  "rom": {
+    "name": "Yoshi's Story (USA) (En,Ja).z64",
+    "size": 16777216,
+    "sha1": "b13072fef6c6df48c07d8822c01e5bc59036f6da"
+  },
+  "script": "scripts/n64/Yoshi's Story.txt",
+  "frames": 3252,
+  "options": null,
+  "input": "work/standalone/tools/m64feed.c: an input plugin that replays the retro-run script by VI frame (core frame callback), RetroPad mapped as Mupen64Plus-Next does (b=A, y=B, l2=Z); controller 1 with a Controller Pak; M64CMD_STOP at the end. --nospeedlimit, isolated --configdir and Core[SaveSRAMPath].",
+  "started_from": null,
+  "files": {
+    "Yoshi's Story (U) (M2) [!]-586A092E.eep": {
+      "size": 2048,
+      "sha1": "adf89891ff64c779a8f448901631b64d0b7d7522"
+    }
+  },
+  "layout": {
+    "save_dir": "Core[SaveSRAMPath], default Library/Application Support/Mupen64Plus/save/ in the home folder on macOS",
+    "name": "Core[SaveFilenameFormat]=1 (default): first 32 characters of the ROM good name from mupen64plus.ini, a dash, the first 8 hex digits of the ROM MD5 in capitals, then .eep / .sra / .fla / .mpk",
+    "written": "when the game writes, and on stop"
+  },
+  "created": "2026-11-04",
+  "note": "Partial: the game formatted its 16 Kbit EEPROM on first boot, but the Options -> Audio -> Mono change did not happen (menus follow the analog stick; the replayed stick did not navigate them). Freshly formatted EEPROM, written by the game."
+}

@@ -1,0 +1,35 @@
+{
+  "method": "played",
+  "system": "saturn",
+  "core": "beetle-saturn",
+  "core_file": "mednafen_saturn_libretro.dylib",
+  "core_name": "Beetle Saturn",
+  "core_version": "v1.32.1",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Virtua Fighter 2 (USA).cue",
+    "sha1": "3d8ca7b99a62235e3157c5a2e55774cef6ed4338",
+    "size": 3983
+  },
+  "script": "scripts/saturn/Virtua Fighter 2.txt",
+  "frames": 1250,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Virtua Fighter 2 (USA).bcr": {
+      "size": 524288,
+      "sha1": "7375f566c41cde0329e61131cd3565b6d2c275c0"
+    },
+    "Virtua Fighter 2 (USA).smpc": {
+      "size": 12,
+      "sha1": "bd682309b308c747ccace7ef42f179fca1697a10"
+    },
+    "Virtua Fighter 2 (USA).srm": {
+      "size": 32768,
+      "sha1": "76ad5e52e434a78e189818968bee1c69f7702b73"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

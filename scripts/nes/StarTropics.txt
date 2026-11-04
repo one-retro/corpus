@@ -1,0 +1,30 @@
+# StarTropics: register "MIKE" in slot 1 (MMC6, 1 KiB of battery RAM inside
+# the mapper). The game writes the file when END is chosen; the SELECT screen
+# then lists it, chapter #1.
+wait 600
+press start 20      # title -> SELECT (cursor on REGISTER YOUR NAME)
+wait 120
+press start 20      # REGISTER YOUR NAME
+wait 120
+# letter grid, cursor on A: A..K is 0..10, L..V is 11..21
+repeat 12
+tap right 1 8
+end
+tap a 1 20          # M
+tap left 4 8
+tap a 1 20          # I
+tap right 2 8
+tap a 1 20          # K
+tap left 6 8
+tap a 1 20          # E
+shot name
+press select 6      # heart: slot 2
+wait 20
+press select 6      # slot 3
+wait 20
+press select 6      # END
+wait 20
+press start 6       # register: the file is written
+wait 150
+shot select
+wait 30

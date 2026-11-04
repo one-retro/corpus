@@ -1,0 +1,31 @@
+{
+  "method": "played",
+  "system": "psx",
+  "core": "pcsx-rearmed",
+  "core_file": "pcsx_rearmed_libretro.dylib",
+  "core_name": "PCSX-ReARMed",
+  "core_version": "r26 7b0e8f8",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Gran Turismo (USA) (Rev 1).cue",
+    "sha1": "ad114ef1312b81c7ee9995df1217cc1a089e381e",
+    "size": 92
+  },
+  "script": "scripts/psx/Gran Turismo.txt",
+  "frames": 6838,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Gran Turismo (USA) (Rev 1).srm": {
+      "size": 131072,
+      "sha1": "5d931e347369d8735fbdd11f6b7dd1e3be795f6c"
+    },
+    "pcsx-card2.mcd": {
+      "size": 131072,
+      "sha1": "1b3c99be55273085e14b30983b636529b6dd7f46"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

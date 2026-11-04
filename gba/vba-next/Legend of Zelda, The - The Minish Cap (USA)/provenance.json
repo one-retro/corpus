@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "gba",
+  "core": "vba-next",
+  "core_file": "vba_next_libretro.dylib",
+  "core_name": "VBA Next",
+  "core_version": "v1.0.2",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Legend of Zelda, The - The Minish Cap (USA).gba",
+    "sha1": "b4bd50e4131b027c334547b4524e2dbbd4227130",
+    "size": 16777216
+  },
+  "script": "scripts/gba/Legend of Zelda, The - The Minish Cap.txt",
+  "frames": 4160,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Legend of Zelda, The - The Minish Cap (USA).srm": {
+      "size": 139264,
+      "sha1": "607a7fa271735483d867b46c56451ceba5c40b5c"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

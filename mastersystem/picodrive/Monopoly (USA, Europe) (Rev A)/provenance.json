@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "mastersystem",
+  "core": "picodrive",
+  "core_file": "picodrive_libretro.dylib",
+  "core_name": "PicoDrive",
+  "core_version": "2.05-1890c29",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Monopoly (USA, Europe) (Rev A).sms",
+    "sha1": "6bad7176011dd4bbd007498d167399daacde173d",
+    "size": 131072
+  },
+  "script": "scripts/mastersystem/Monopoly.picodrive.txt",
+  "frames": 4180,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Monopoly (USA, Europe) (Rev A).srm": {
+      "size": 32768,
+      "sha1": "aba3d31fd2b74769ad12b6fd5775a464a1e624f3"
+    }
+  },
+  "created": "2026-11-03",
+  "note": "Per-core script: this core powers cart RAM on as zeros, which Monopoly takes for a saved game (PLAY SAVED GAME / PLAY NEW GAME, and an extra PLAY SAVED GAME line in MORE OPTIONS)."
+}

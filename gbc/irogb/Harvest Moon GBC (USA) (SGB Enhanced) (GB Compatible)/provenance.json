@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "gbc",
+  "core": "irogb",
+  "core_file": "irogb_libretro.dylib",
+  "core_name": "IroGB",
+  "core_version": "v1.0.0",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Harvest Moon GBC (USA) (SGB Enhanced) (GB Compatible).gbc",
+    "sha1": "d407b9c20c5381f46ec460858539a5b6f559e04f",
+    "size": 1048576
+  },
+  "script": "scripts/gbc/Harvest Moon GBC.txt",
+  "frames": 10968,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Harvest Moon GBC (USA) (SGB Enhanced) (GB Compatible).srm": {
+      "size": 8192,
+      "sha1": "849afebd7ed5047a16d243c0d3cdca9ae1099f9f"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

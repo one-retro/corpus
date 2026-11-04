@@ -1,0 +1,31 @@
+{
+  "method": "played",
+  "system": "gba",
+  "core": "skyemu",
+  "core_file": "skyemu_libretro.dylib",
+  "core_name": "SkyEmu",
+  "core_version": "adacd0788964ed89f5c43dcbc1f3cc26deec996c",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Legend of Zelda, The - The Minish Cap (USA).gba",
+    "sha1": "b4bd50e4131b027c334547b4524e2dbbd4227130",
+    "size": 16777216
+  },
+  "script": "scripts/gba/Legend of Zelda, The - The Minish Cap.txt",
+  "frames": 4160,
+  "options": "system_core_override = Automatic\nsystem_gb_bios_enable = disabled\nsystem_gba_bios_enable = disabled\nsystem_nds_bios_enable = disabled\n",
+  "started_from": null,
+  "files": {
+    "Legend of Zelda, The - The Minish Cap (USA).rtc": {
+      "size": 48,
+      "sha1": "6e986255e5ddb29c180dc83be42f2f5cb3d152d2"
+    },
+    "Legend of Zelda, The - The Minish Cap (USA).srm": {
+      "size": 131072,
+      "sha1": "0f32074c3e8960a64fda447c6fe4203f87f19201"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "genesis",
+  "core": "genesis-plus-gx",
+  "core_file": "genesis_plus_gx_libretro.dylib",
+  "core_name": "Genesis Plus GX",
+  "core_version": "v1.7.4 f27655b",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Phantasy Star IV (USA).md",
+    "sha1": "bc7ff6d6a8408f38562bc610f24645cad6c42629",
+    "size": 3145728
+  },
+  "script": "scripts/genesis/Phantasy Star IV.txt",
+  "frames": 8226,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Phantasy Star IV (USA).srm": {
+      "size": 16384,
+      "sha1": "8568144d5a0e432bc8e6121fa95cc60446de3a54"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

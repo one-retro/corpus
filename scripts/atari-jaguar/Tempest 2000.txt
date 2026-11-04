@@ -1,0 +1,34 @@
+# Tempest 2000: change a display option, which the game keeps in the
+# cartridge EEPROM. Opening the options writes the whole EEPROM (settings,
+# the Top Guns table, a checksum); leaving them after switching FAT VECTORS
+# to SKINNY VECTORS writes it again with the new setting. Then reset and
+# open the display options again: they come back from the EEPROM.
+wait 900
+press start 6
+wait 300
+press b 6           # Top Guns -> SELECT GAME TYPE TO PLAY
+wait 300
+press start 6       # -> GAME OPTIONS (Option on the Jaguar pad)
+wait 300
+press b 6           # DISPLAY SETUP: the EEPROM is written here
+wait 300
+press down 6        # FAT VECTORS
+wait 60
+press b 6           # -> SKINNY VECTORS
+wait 120
+shot changed
+press down 6        # EXIT: saved again with the new setting
+wait 60
+press b 6
+wait 300
+reset
+wait 900
+press start 6
+wait 300
+press b 6
+wait 300
+press start 6
+wait 300
+press b 6
+wait 300
+shot reloaded

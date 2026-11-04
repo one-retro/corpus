@@ -1,0 +1,35 @@
+{
+  "method": "played",
+  "system": "msx2",
+  "core": "fmsx",
+  "core_file": "fmsx_libretro.dylib",
+  "core_name": "fMSX",
+  "core_version": "6.0 4de1175",
+  "frontend": "retro-run (writes saves as RetroArch does), via work/msx/make-save-x.py: content copied into the run directory",
+  "renderer": "software",
+  "rom": {
+    "name": "A Ressha de Ikou MSX (Japan).rom",
+    "sha1": "5fd07ed5b7c0492d42ed91a54a0fe80ce6e4e40d",
+    "size": 131072
+  },
+  "extra_content": null,
+  "script": "scripts/msx2/A Ressha de Ikou.txt",
+  "frames": 6790,
+  "options": "fmsx_mapper_type_mode = ASCII 16kB\n",
+  "port0_device": 3,
+  "started_from": null,
+  "files": {
+    "A Ressha de Ikou MSX (Japan).sav": {
+      "size": 2048,
+      "sha1": "eab36d48b6bdc295a7470fbb55199e5a2f6be74c",
+      "location": "content-dir"
+    },
+    "system/CMOS.ROM": {
+      "size": 52,
+      "sha1": "7fbe52d4dee29de73a135fa8803a8cd13583347f",
+      "location": "sysdir"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "fMSX writes cartridge SRAM to <ROM path without extension>.sav beside the ROM (location content-dir), not in the save directory, on unload; RETRO_MEMORY_SAVE_RAM is not used for it, so RetroArch writes no .srm. system/CMOS.ROM is the RTC/CMOS (fMSX default mode MSX2+), written into the system directory on unload. Port 0 device set to 3 (3 = Keyboard, 257 = Joystick + Emulated Keyboard) with work/msx/retro-run-x."
+}

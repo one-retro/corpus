@@ -1,0 +1,31 @@
+{
+  "method": "played",
+  "system": "sega-cd",
+  "core": "genesis-plus-gx-wide",
+  "core_file": "genesis_plus_gx_wide_libretro.dylib",
+  "core_name": "Genesis Plus GX Wide",
+  "core_version": "v1.7.4 b7ad005",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Sangokushi III (Japan).cue",
+    "sha1": "66e75f948be301a3c4be2f8dba6a9fba00414ae4",
+    "size": 5855
+  },
+  "script": "scripts/sega-cd/Sangokushi III.txt",
+  "frames": 13188,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "4Mbit_cart.brm": {
+      "size": 524288,
+      "sha1": "22e8d4538d6d0f94bd4dd364b8273db74c01a099"
+    },
+    "scd_J.brm": {
+      "size": 8192,
+      "sha1": "6e619b9a3131eff6bf6b8cfe3c29985e82ce28aa"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "Disc from the Trimmed Redump set, unpacked here: the data track is the real one, the audio tracks are zero-filled stand-ins of the exact sizes (silent CD audio; the disk was too full for the real ones). The .cue is the original."
+}

@@ -1,0 +1,32 @@
+{
+  "method": "played",
+  "system": "sega-gg",
+  "core": "mednafen",
+  "core_file": null,
+  "core_name": "Mednafen",
+  "core_version": "1.32.1",
+  "frontend": "Mednafen 1.32.1 (Homebrew), module 'gg', isolated MEDNAFEN_HOME, -sound 0 -video.glvsync 0",
+  "rom": {
+    "name": "Shining Force Gaiden - Ensei, Jashin no Kuni e (Japan).gg",
+    "size": 524288,
+    "sha1": "bea1bea94ea745691ad944eaadc8a5576057ed53"
+  },
+  "script": "scripts/sega-gg/Shining Force Gaiden.txt",
+  "frames": 5480,
+  "options": null,
+  "input": "work/standalone/tools/sdlfeed.c (DYLD_INSERT_LIBRARIES into the ad-hoc-signed Homebrew binary): SDL key events synthesized inside the process on presented frames, from the retro-run script mapped to Mednafen's default keys (gen_sdlfeed.py); F9 snapshot for shot, F10 reset, F12 exit (Mednafen writes saves on exit)",
+  "started_from": null,
+  "files": {
+    "Shining Force Gaiden - Ensei, Jashin no Kuni e (Japan).8eafd80d35251b5d3f07d5cae27241c1.sav": {
+      "size": 32768,
+      "sha1": "8aebc7e395988758e9877048c93f149049c1e1be"
+    }
+  },
+  "layout": {
+    "save_dir": "$MEDNAFEN_HOME/sav (default .mednafen/sav in the home folder)",
+    "name": "<ROM file name without extension>.<game MD5 as Mednafen computes it>.<ext> (filesys.fname_sav %f.%M%x)",
+    "written": "on exit"
+  },
+  "created": "2026-11-04",
+  "note": "32768 bytes (gearsystem and sms-plus-gx also 32768, genesis-plus-gx 16384); contents differ from each (play-dependent bytes). The game lists file 1 on the continue screen (proof.png)."
+}

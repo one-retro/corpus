@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "gba",
+  "core": "beetle-gba",
+  "core_file": "mednafen_gba_libretro.dylib",
+  "core_name": "Beetle GBA",
+  "core_version": "v0.9.36 b158166",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Fire Emblem (USA, Australia).gba",
+    "sha1": "c735fdbb9e8abe19e0c6a44708df19acc962e204",
+    "size": 16777216
+  },
+  "script": "scripts/gba/Fire Emblem.txt",
+  "frames": 5600,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Fire Emblem (USA, Australia).f1a1b9742fcd467a531dd4314c4e7d19.sav": {
+      "size": 65536,
+      "sha1": "2368b68c20b4c12e8c9e4e084fe0fd6a888fc107"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

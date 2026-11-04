@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "wonderswan-color",
+  "core": "beetle-wonderswan",
+  "core_file": "mednafen_wswan_libretro.dylib",
+  "core_name": "Beetle WonderSwan",
+  "core_version": "v0.9.35.1 4b01295",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Kinnikuman II-Sei - Dream Tag Match (Japan).wsc",
+    "sha1": "81dd3124cce8a1aafd423bfe0814187fb7c646cb",
+    "size": 2097152
+  },
+  "script": "scripts/wonderswan-color/Kinnikuman II-Sei - Dream Tag Match.txt",
+  "frames": 3330,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Kinnikuman II-Sei - Dream Tag Match (Japan).srm": {
+      "size": 128,
+      "sha1": "a10f6d1986fdd2c0818dabcfbc6298be2c0afbe4"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

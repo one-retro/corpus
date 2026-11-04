@@ -1,0 +1,38 @@
+# Nazo Puyo 2: QUEST MODE > START and solve QUEST 001 ("ぷよ すべて 消すべし"):
+# both pairs go in flat, red over the two reds and green over the two greens,
+# and everything pops. Clearing the quest records the progress in battery
+# RAM; after a reset the QUEST MODE screen offers CONTINUE 002.
+# Button 2 (a) turns the pair clockwise, button 1 (b) counter-clockwise.
+wait 600
+repeat 4            # title, なぞぷよ, QUEST MODE: START, QUEST 001
+press start 10
+wait 150
+end
+press a 10          # past the quest card
+wait 150
+press a 10
+wait 150
+press a 10          # the first pair falls: green over red, one column left
+wait 150
+press a 6           # turn: red left, green right
+wait 10
+press right 6       # over the red / green stacks
+wait 10
+press down 60       # drop
+wait 60
+press b 6           # second pair: red over green; turn the other way
+wait 10
+press down 60       # drop: four reds and four greens pop, the field is empty
+wait 120
+repeat 3            # the clear, then QUEST 002's card
+press a 10
+wait 150
+end
+reset
+wait 600
+press start 10      # title -> なぞぷよ / えでぃっと
+wait 150
+press start 10      # QUEST MODE: START / CONTINUE 002
+wait 150
+shot saved
+wait 30

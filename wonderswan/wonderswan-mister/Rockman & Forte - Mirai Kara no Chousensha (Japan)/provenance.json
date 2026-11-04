@@ -1,0 +1,19 @@
+{
+  "method": "downloaded",
+  "system": "wonderswan",
+  "core": "wonderswan-mister",
+  "url": "https://github.com/MiSTer-devel/WonderSwan_MiSTer/files/8426263/Rockman.Forte.-.Mirai.Kara.no.Chousen.Sha.J.M.zip",
+  "source_page": "https://github.com/MiSTer-devel/WonderSwan_MiSTer/issues/10#issuecomment-1090140245",
+  "source": "GitHub (MiSTer-devel/WonderSwan_MiSTer issue #10, 'How to convert saves for use in software emulators?', comment of 2022-04-06 11:04 UTC)",
+  "author": "RobertPeip (the core's author): 'Here is what is saved back from Mister after loading your savegame'. The game progress is euan-forrester's, made in Mednafen.",
+  "licence": "none stated (a file attached to a public GitHub issue)",
+  "fetched": "2026-11-03",
+  "what_it_is": "euan-forrester's Mednafen save (slot 1, first level cleared), padded with 0x200 zero bytes by savefileconverter, loaded in the MiSTer WonderSwan core and saved back by it (clock record time 2022-04-06 12:02:18 UTC, read as Unix time; the comment was posted at 11:04 UTC, so the MiSTer clock was not on UTC). 32 KiB SRAM + 512-byte clock sector = 33280 bytes, named after the GoodWSx ROM the core had loaded.",
+  "files": {
+    "Rockman & Forte - Mirai Kara no Chousen Sha (J) [M][!].sav": {
+      "size": 33280,
+      "sha1": "e9ad0f8e34caf1d9a13d13c09438f2c0794e99af"
+    }
+  },
+  "note": "Origin stated by the core author in the issue. The SRAM part differs from the Mednafen file it came from in 2 bytes (0x8A1 and 0x8A5, 0x08 -> 0x09), written by the game while running on the core. The last 512 bytes are the core's clock sector: one 16-byte record repeated 32 times, 'TR' (the constant \"RT\" written as a little-endian word), then 10 bytes holding the 42-bit RTC_savedtime and the 32-bit Unix time of the save (WonderSwan.sv time_din_h = {32'd0, time_din, \"RT\"}), then 4 zero bytes. The core appends this sector to every save, clock cartridge or not (has_rtc = 1'b1). The Mednafen original is filed as wonderswan/mednafen@openemu/ with the same game name. Zip entry dated 2022-04-06 13:02."
+}

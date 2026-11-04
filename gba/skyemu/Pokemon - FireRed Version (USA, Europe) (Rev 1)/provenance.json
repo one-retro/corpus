@@ -1,0 +1,31 @@
+{
+  "method": "played",
+  "system": "gba",
+  "core": "skyemu",
+  "core_file": "skyemu_libretro.dylib",
+  "core_name": "SkyEmu",
+  "core_version": "adacd0788964ed89f5c43dcbc1f3cc26deec996c",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Pokemon - FireRed Version (USA, Europe) (Rev 1).gba",
+    "sha1": "dd5945db9b930750cb39d00c84da8571feebf417",
+    "size": 16777216
+  },
+  "script": "scripts/gba/Pokemon - FireRed Version.txt",
+  "frames": 9966,
+  "options": "system_core_override = Automatic\nsystem_gb_bios_enable = disabled\nsystem_gba_bios_enable = disabled\nsystem_nds_bios_enable = disabled\n",
+  "started_from": null,
+  "files": {
+    "Pokemon - FireRed Version (USA, Europe) (Rev 1).rtc": {
+      "size": 48,
+      "sha1": "ec4601fc0ce33d9098fbc611adc7afb85f99e7cf"
+    },
+    "Pokemon - FireRed Version (USA, Europe) (Rev 1).srm": {
+      "size": 131072,
+      "sha1": "b38987aa3c45a12371b0bb011c9c2238535404e2"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

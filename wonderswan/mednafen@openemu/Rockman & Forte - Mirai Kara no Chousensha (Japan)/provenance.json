@@ -1,0 +1,20 @@
+{
+  "method": "downloaded",
+  "system": "wonderswan",
+  "core": "mednafen",
+  "frontend": "OpenEmu (inferred, see note)",
+  "url": "https://github.com/MiSTer-devel/WonderSwan_MiSTer/files/8373400/Rockman.Forte.-.Mirai.Kara.no.Chousensha.Japan.523004d48e9d606e1557c2c57af6790b.sav.zip",
+  "source_page": "https://github.com/MiSTer-devel/WonderSwan_MiSTer/issues/10#issuecomment-1082032301",
+  "source": "GitHub (MiSTer-devel/WonderSwan_MiSTer issue #10, 'How to convert saves for use in software emulators?', comment of 2022-03-29, attachment added in an edit)",
+  "author": "euan-forrester (savefileconverter.com author): 'I'm using the emulator mednafen, the default for OpenEmu' ... 'I made a save with mednafen for Rockman & Forte where the first slot has the first level passed'",
+  "licence": "none stated (a file attached to a public GitHub issue)",
+  "fetched": "2026-11-03",
+  "what_it_is": "euan-forrester's own save, slot 1 with the first level cleared. 32768 bytes of cartridge SRAM (the size Mednafen gives header RAM type 0x02), no header or footer; named the Mednafen way, <ROM name>.<game MD5>.sav (filesys.fname_sav default '%f.%M%x'). 523004d48e9d606e1557c2c57af6790b is the MD5 of the No-Intro ROM.",
+  "files": {
+    "Rockman & Forte - Mirai Kara no Chousensha (Japan).523004d48e9d606e1557c2c57af6790b.sav": {
+      "size": 32768,
+      "sha1": "c079681e4c392eec600c4c1c7113374d47750efb"
+    }
+  },
+  "note": "Emulator stated by the author; the frontend is inferred from 'the default for OpenEmu', and OpenEmu's Mednafen core keeps Mednafen's default fname_sav, so standalone Mednafen would write the same name and bytes. Caveat: the zip's __MACOSX AppleDouble entry records kMDItemWhereFroms http://localhost:8080/ and a Chrome quarantine stamp of 2022-03-29 16:18 UTC, so the attached copy was downloaded from the author's local savefileconverter dev server; for WonderSwan that tool only adds or strips 0x200 bytes at the end, so the 32 KiB are not expected to have changed. The zip also holds that __MACOSX/._ file (412 bytes), not copied here. Zip entry dated 2022-03-29 09:31."
+}

@@ -1,0 +1,29 @@
+# Alien vs Predator: start an Alien game and save it to slot GAME 1 from the
+# pause menu (Pause, then Option, GAME 1, B - SAVE). The game keeps three
+# saved games, high scores and settings in the cartridge EEPROM. Then reset
+# and open RESTORE GAME from the title menu.
+# Pad mapping (core default): B=B, A=A, Y=C, Select=Pause, Start=Option.
+wait 900
+press b 6           # SELECT CHARACTER -> character carousel
+wait 300
+press b 6           # pick the Alien (the carousel starts on it)
+wait 900
+press a 6           # LOADING SIMULATION... PRESS FIRE
+wait 400
+shot playing
+press select 6      # Pause
+wait 120
+press start 6       # Option: HUD / GAME 1 / GAME 2 / GAME 3
+wait 120
+press down 6        # GAME 1 (B - SAVE)
+wait 40
+press b 6           # the game is saved to the EEPROM here
+wait 300
+reset
+wait 900
+press down 6        # RESTORE GAME
+wait 60
+shot menu
+press b 6
+wait 300
+shot reloaded

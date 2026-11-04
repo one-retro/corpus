@@ -1,0 +1,35 @@
+# Metal Slug - 1st Mission: SET UP, LEVEL NORMAL -> HARD, EXIT. The game sets
+# up its save block (a whole 64 KiB sector, 0x3E0000) on first boot; leaving
+# SET UP rewrites it. A reset and a second look at SET UP shows LEVEL kept.
+# NGP A is libretro b, NGP B is libretro a, Option is start.
+wait 600
+press b 6           # skip the intro: PRESS A BUTTON
+wait 300
+press b 6           # START / SET UP
+wait 300
+press down 10       # SET UP
+wait 60
+press b 10
+wait 200
+press right 10      # LEVEL NORMAL -> HARD
+wait 40
+repeat 4
+press down 10
+wait 40
+end
+press b 10          # EXIT: the settings are written here
+wait 200
+shot exited
+reset
+wait 600
+press b 6
+wait 300
+press b 6
+wait 300
+press down 10
+wait 60
+press b 10          # SET UP again
+wait 200
+press down 10       # off LEVEL
+wait 40
+shot kept

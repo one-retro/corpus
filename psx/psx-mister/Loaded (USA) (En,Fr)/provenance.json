@@ -1,0 +1,18 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "psx-mister",
+  "url": "https://github.com/MiSTer-devel/PSX_MiSTer/files/8790535/Loaded.USA.En.Fr.zip",
+  "source_page": "https://github.com/MiSTer-devel/PSX_MiSTer/issues/122",
+  "source": "GitHub (MiSTer-devel/PSX_MiSTer issues)",
+  "author": "Count-Duckula-AU",
+  "licence": null,
+  "fetched": "2026-11-04",
+  "what_it_is": "MiSTer PSX core .sav; the reporter says the core 'successfully wrote it to microSD'; LOADED Save 1",
+  "files": {
+    "Loaded (USA) (En,Fr).sav": {
+      "size": 131072,
+      "sha1": "328dcda4260333c967408d9e90939412bab50bf5"
+    }
+  }
+}

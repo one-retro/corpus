@@ -1,0 +1,33 @@
+# Tetris (WSC, EEPROM 128 B). Portrait game. In this core's default keymap the
+# d-pad drives the X pad: `down` (X3) confirms or changes a value, `left` (X4)
+# goes back; `l`/`r` move the cursor down/up (Y pad). OPTION: set NEXT PIECE
+# and GHOST PIECE to OFF and leave through EXIT, which writes the options
+# (boot leaves the EEPROM all zero). After a reset OPTION shows them again.
+wait 900
+press l 12          # title: SINGLE PLAY / VS TETRIS / OPTION
+wait 60
+press l 12          # OPTION
+wait 60
+press down 12       # open OPTION
+wait 120
+press down 12       # NEXT PIECE 03 -> OFF
+wait 60
+press l 12
+wait 60
+press down 12       # GHOST PIECE ON -> OFF
+wait 60
+repeat 8
+press l 12          # down past HOLD, BGM, SE, the rankings, CREDITS to EXIT
+wait 40
+end
+press down 12       # EXIT: the options are written
+wait 120
+reset
+wait 900
+press l 12
+wait 60
+press l 12
+wait 60
+press down 12       # OPTION again
+wait 120
+shot options        # NEXT PIECE OFF, GHOST PIECE OFF, read back from EEPROM

@@ -1,0 +1,38 @@
+# Wizardry (ASCII, MSX2, 8 KiB SRAM): create the fighter ABC at the Training
+# Grounds and keep it; the roster is in the SRAM. English text (option 1 at
+# the display prompt). Keyboard only: fMSX runs with --device0 3. The game
+# drops keys pressed while it redraws, hence the long waits and holds.
+# The boot prompt's option 1 ("copy all data to the S-RAM cartridge") formats
+# the SRAM; it is not needed in blueMSX and is skipped here, because after a
+# format the prompt grows a third option and "2" would then mean "read data
+# from S-RAM". fMSX never writes this cartridge's SRAM (see NOTES.md).
+# The reset is the power cycle (blueMSX writes its .sram only then); after it
+# typing ABC at the Training Grounds finds the stored character.
+wait 1300
+include Wizardry.start.txt
+key y 10            # CREATE THIS CHARACTER (Y/N)? -> Y
+wait 400
+key return 10       # ENTER PASSWORD: (none)
+wait 400
+key return 10       # again
+wait 400
+key a 10            # race A) HUMAN
+wait 400
+key a 10            # alignment A) GOOD
+wait 400
+repeat 7
+key up 10           # all 7 bonus points into STRENGTH (8 -> 15)
+wait 60
+end
+key escape 10       # finished
+wait 400
+key a 10            # class A) FIGHTER
+wait 400
+shot keep           # KEEP THIS CHARACTER (Y/N) ?
+key y 10
+wait 400
+shot kept
+reset
+wait 1300
+include Wizardry.start.txt
+shot inspected      # ABC L 1 G-FIG HUMAN, I)NSPECT D)ELETE ...

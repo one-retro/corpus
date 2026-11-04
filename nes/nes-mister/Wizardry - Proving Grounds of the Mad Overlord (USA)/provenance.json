@@ -1,0 +1,19 @@
+{
+  "method": "downloaded",
+  "system": "nes",
+  "core": "nes-mister",
+  "url": "https://github.com/euan-forrester/save-file-converter/files/8182973/NES.zip",
+  "source_page": "https://github.com/euan-forrester/save-file-converter/issues/80#issuecomment-1058805995",
+  "source": "GitHub (euan-forrester/save-file-converter issue #80)",
+  "author": "birdybro (GitHub; MiSTer contributor)",
+  "licence": null,
+  "fetched": "2026-11-03",
+  "what_it_is": "Save made by birdybro on MiSTer on 2022-03-03 to show the file size with an NES 2.0-headered ROM ('I used NES 2.0 Headered roms and forced a save, and it created 8KB files this time').",
+  "files": {
+    "Wizardry - Proving Grounds of the Mad Overlord (USA).sav": {
+      "size": 8192,
+      "sha1": "7678ea9416530a8cc41cbc109470d6eeba45f41e"
+    }
+  },
+  "note": "MiSTer NES core (2022 build), ROM with an NES 2.0 header that declares 8 KiB of battery PRG-RAM, so the core wrote exactly 8 KiB. Zip held this and the Knight of Diamonds save."
+}

@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "gba",
+  "core": "gpsp",
+  "core_file": "gpsp_libretro.dylib",
+  "core_name": "gpSP",
+  "core_version": "v1.1.0-5819380",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Sonic Advance 2 (USA) (En,Ja,Fr,De,Es,It).gba",
+    "sha1": "7bcd6a07af7c894746fa28073fe0c0e34408022d",
+    "size": 16777216
+  },
+  "script": "scripts/gba/Sonic Advance 2.txt",
+  "frames": 4438,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Sonic Advance 2 (USA) (En,Ja,Fr,De,Es,It).srm": {
+      "size": 131072,
+      "sha1": "e5b1df1ca000365a79424c9fd24482ba32a02279"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

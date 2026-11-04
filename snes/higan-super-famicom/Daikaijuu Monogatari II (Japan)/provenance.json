@@ -1,0 +1,31 @@
+{
+  "method": "played",
+  "system": "snes",
+  "core": "higan-super-famicom",
+  "core_file": "higan_sfc_libretro.dylib",
+  "core_name": "higan (Super Famicom Accuracy)",
+  "core_version": "106",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Daikaijuu Monogatari II (Japan).sfc",
+    "sha1": "673c48a373b7da7e0e934c55f7182587e07bb9ab",
+    "size": 5242880
+  },
+  "script": "scripts/snes/Daikaijuu Monogatari II.txt",
+  "frames": 23538,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Daikaijuu Monogatari II (Japan).rtc.ram": {
+      "size": 16,
+      "sha1": "943d8e1468d7f38c88ee21a71a7ce6dddcc8989f"
+    },
+    "Daikaijuu Monogatari II (Japan).srm": {
+      "size": 8192,
+      "sha1": "b1d0ed3b1a12e42ba32331d3cbcdb8bbc2b82923"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

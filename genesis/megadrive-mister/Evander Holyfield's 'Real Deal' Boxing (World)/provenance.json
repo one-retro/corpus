@@ -1,0 +1,35 @@
+{
+  "method": "played",
+  "system": "genesis",
+  "core": "megadrive-mister",
+  "core_file": "MegaDrive_20260603.rbf",
+  "core_name": "MegaDrive_MiSTer",
+  "core_version": "20260603",
+  "frontend": "mister",
+  "device": "the owner's MiSTer (DE10-Nano), Main_MiSTer binary of 2026-10-19",
+  "loaded_with": "MGL via /dev/MiSTer_cmd load_core (_Console/MegaDrive, file type f index 1)",
+  "save_folder": "saves/MegaDrive",
+  "rom": {
+    "name": "Evander Holyfield's 'Real Deal' Boxing (World).md",
+    "sha1": "eb4aca22f8b5837a0a0b10491c46714948b09844",
+    "size": 524288,
+    "on_device": "games/MegaDrive/Evander Holyfield's 'Real Deal' Boxing (World).md"
+  },
+  "script": "scripts/genesis/Evander Holyfield's Real Deal Boxing.txt",
+  "mister_script": "scripts/mister/genesis/Evander Holyfield's Real Deal Boxing.megadrive.txt",
+  "frames": 5686,
+  "timing": "real time: script frames played as wall-clock 1/60 s by work/mister/mrun.py",
+  "options": {
+    "config/MegaDrive.CFG": "Autosave On (status bit 13), every other option at its default; written for the run and removed after"
+  },
+  "save_trigger": "OSD opened (F12 from a uinput keyboard) with Autosave on: the core writes its backup RAM to the SD card",
+  "started_from": "a zero-filled 65536-byte .sav put in place before loading, so the backup RAM started cleared; the core then rewrote all of it",
+  "files": {
+    "Evander Holyfield's 'Real Deal' Boxing (World).sav": {
+      "size": 65536,
+      "sha1": "eedda14a327e25300a642105c1f0e3a624908e2d"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "24C01 EEPROM (128 bytes) in a 64 KiB file: the MegaDrive core always writes 128 sectors (MegaDrive.sv: &sd_lba[6:0]); the EEPROM bytes are at 0x00-0x7F, everything after is the zero seed. Byte 0 is 00 where Genesis Plus GX and BlastEm have FC (PicoDrive also 00); bytes 76-77 and 122-127 differ from every libretro core (the boxer's random look and a checksum). Proof: after loading the game again the title menu offers RESUME OLD CAREER and RETIRE BOXER."
+}

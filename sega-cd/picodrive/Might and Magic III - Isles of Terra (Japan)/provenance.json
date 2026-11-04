@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "sega-cd",
+  "core": "picodrive",
+  "core_file": "picodrive_libretro.dylib",
+  "core_name": "PicoDrive",
+  "core_version": "2.05-1890c29",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Might and Magic III - Isles of Terra (Japan).cue",
+    "sha1": "d6a5575e9497298605ddf7c73d792b906a301380",
+    "size": 6399
+  },
+  "script": "scripts/sega-cd/Might and Magic III.txt",
+  "frames": 5168,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Might and Magic III - Isles of Terra (Japan).srm": {
+      "size": 8192,
+      "sha1": "ad5775b8d8de8a7218641765ec4a88f902d58e6e"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "Disc from the Trimmed Redump set, unpacked here: the data track is the real one, the audio tracks are zero-filled stand-ins of the exact sizes (silent CD audio; the disk was too full for the real ones). The .cue is the original."
+}

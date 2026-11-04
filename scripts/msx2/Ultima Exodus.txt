@@ -1,0 +1,42 @@
+# Ultima Exodus (Ultima III, Pony Canyon MSX2, 8 KiB SRAM): register the
+# name いう (なまえ とうろく) in roster slot 1 (the first press on あ is
+# taken while the grid opens, so the name is いう). Keyboard only: fMSX runs
+# with --device0 3.
+# The reset is the power cycle (blueMSX writes its .sram only then); after it
+# the roster shows the name again.
+wait 1100
+key space 8         # PUSH SPACE -> roster
+wait 200
+repeat 3
+key down 8          # -> なまえ とうろく (register)
+wait 30
+end
+key space 8         # -> name grid, cursor on あ
+wait 250
+key space 8         # あ
+wait 40
+key right 8
+wait 30
+key space 8         # い
+wait 40
+key right 8
+wait 30
+key space 8         # う
+wait 40
+repeat 5
+key down 8          # bottom row
+wait 30
+end
+repeat 5
+key right 8         # -> おわり (done)
+wait 30
+end
+shot named
+key space 8
+wait 250
+shot roster
+reset
+wait 1100
+key space 8
+wait 250
+shot reloaded

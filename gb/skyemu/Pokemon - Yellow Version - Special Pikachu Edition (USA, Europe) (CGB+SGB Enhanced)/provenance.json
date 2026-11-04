@@ -1,0 +1,31 @@
+{
+  "method": "played",
+  "system": "gb",
+  "core": "skyemu",
+  "core_file": "skyemu_libretro.dylib",
+  "core_name": "SkyEmu",
+  "core_version": "adacd0788964ed89f5c43dcbc1f3cc26deec996c",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Pokemon - Yellow Version - Special Pikachu Edition (USA, Europe) (CGB+SGB Enhanced).gb",
+    "sha1": "cc7d03262ebfaf2f06772c1a480c7d9d5f4a38e1",
+    "size": 1048576
+  },
+  "script": "scripts/gb/Pokemon Yellow.txt",
+  "frames": 8093,
+  "options": "system_core_override = Automatic\nsystem_gb_bios_enable = disabled\nsystem_gba_bios_enable = disabled\nsystem_nds_bios_enable = disabled\n",
+  "started_from": null,
+  "files": {
+    "Pokemon - Yellow Version - Special Pikachu Edition (USA, Europe) (CGB+SGB Enhanced).rtc": {
+      "size": 14,
+      "sha1": "740ff7dc7ba75c0493216866ef6c790b1147e3b8"
+    },
+    "Pokemon - Yellow Version - Special Pikachu Edition (USA, Europe) (CGB+SGB Enhanced).srm": {
+      "size": 131072,
+      "sha1": "cdeab85411e466f709ff6d47d3235253e0b0b075"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

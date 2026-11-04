@@ -1,0 +1,28 @@
+# Zelda no Densetsu (FDS): register a name (アイウ) in slot 1. The file
+# select screen and the save file live on side B; the game writes the save
+# file to side B when トウロク オワリ (registration end) is chosen.
+# `flip` turns the disk over (work/nes/make-save-alt.py, see work/fds/NOTES).
+wait 1300
+press start 6       # title (or attract mode) -> asks for side B
+wait 200
+flip                # side B
+wait 700
+shot select
+press start 6       # ナマエ トウロク (register a name)
+wait 400
+tap a 1 20          # ア (cursor starts on ア, moves on after each letter)
+tap right 1 8
+tap a 1 20          # イ
+tap right 1 8
+tap a 1 20          # ウ
+shot name
+press select 6      # heart: slot 2
+wait 20
+press select 6      # slot 3
+wait 20
+press select 6      # トウロク オワリ
+wait 20
+press start 6       # register: the save file is written to side B
+wait 1100
+shot registered
+wait 60

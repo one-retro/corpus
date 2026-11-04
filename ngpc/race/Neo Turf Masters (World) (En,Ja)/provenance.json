@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "ngpc",
+  "core": "race",
+  "core_file": "race_libretro.dylib",
+  "core_name": "RACE",
+  "core_version": "v2.16 c7810dd",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Neo Turf Masters (World) (En,Ja).ngc",
+    "sha1": "308361297bd28ebb8fb60713ae5e00cee514415c",
+    "size": 2097152
+  },
+  "script": "scripts/ngpc/Neo Turf Masters.txt",
+  "frames": 5234,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Neo Turf Masters (World) (En,Ja).ngf": {
+      "size": 65552,
+      "sha1": "45fb8da63b8e108f72f5015c296370f3442386e5"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

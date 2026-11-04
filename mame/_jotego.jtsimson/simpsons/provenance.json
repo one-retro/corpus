@@ -1,0 +1,22 @@
+{
+  "method": "device-backup",
+  "device": "Analogue Pocket",
+  "backup_path": "Saves/jtsimson/common/simpsons.sav",
+  "system": "mame",
+  "core": "_jotego.jtsimson",
+  "pocket_core": "jotego.jtsimson",
+  "pocket_platform": "jtsimson",
+  "game_source": "the file's own name (no No-Intro entry applies)",
+  "attribution": "NOT written on this device: byte-identical to jotego's distributed default for this set (github.com/jotego/jtbin pocket/raw/Saves/jtsimson/common/simpsons.sav, 2025-03-21 install); all 20 files in Saves/jtsimson/common carry the same mtime, 2025-03-21 18:18, the minute the updater installed the jotego cores' assets (1282 files in Assets share it). Kept as an example of what a Pocket card holds after installing jotego cores; the format is the core's NVRAM/EEPROM image",
+  "confidence": "n/a (stock file)",
+  "written": "2025-03-21 18:18 (file mtime as read here; the Pocket stamps its own clock)",
+  "files": {
+    "simpsons.sav": {
+      "size": 144,
+      "sha1": "6ca433348adcf1465b3516a7783fa28daa37ec95"
+    }
+  },
+  "created": "2026-11-03",
+  "note": "MAME set simpsons; one representative of the 20 stock files in Saves/jtsimson/common, the rest are not filed (DEVICE-BACKUPS.md)",
+  "stock_default": true
+}

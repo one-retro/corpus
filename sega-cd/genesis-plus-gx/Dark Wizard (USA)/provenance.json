@@ -1,0 +1,31 @@
+{
+  "method": "played",
+  "system": "sega-cd",
+  "core": "genesis-plus-gx",
+  "core_file": "genesis_plus_gx_libretro.dylib",
+  "core_name": "Genesis Plus GX",
+  "core_version": "v1.7.4 f27655b",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Dark Wizard (USA).cue",
+    "sha1": "1aa0be1b173edab2df386824042764a98e0da048",
+    "size": 1349
+  },
+  "script": "scripts/sega-cd/Dark Wizard.txt",
+  "frames": 13130,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "4Mbit_cart.brm": {
+      "size": 524288,
+      "sha1": "2a170e18ca44a8bbaa8d36675cdae9e7203026d0"
+    },
+    "scd_U.brm": {
+      "size": 8192,
+      "sha1": "33edc53acfb48f697449ab0cf25bdb477baf9c32"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "Disc from the Trimmed Redump set, unpacked here: the data track is the real one, the audio tracks are zero-filled stand-ins of the exact sizes (silent CD audio; the disk was too full for the real ones). The .cue is the original."
+}

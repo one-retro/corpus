@@ -1,0 +1,28 @@
+# Ys Book I & II: Beginning, sit through the intro and Sara's dialogue in
+# Minea, then SELECT > SAVE > slot 1 ("1: Minea Town  Saved").
+wait 360
+press start 6         # System Card: RUN
+wait 900
+repeat 70
+wait 150
+press start 6         # logos, title, "Beginning", opening (Beetle skips it on
+end                   # RUN; Geargrafx plays it all, about 7000 frames)
+repeat 25
+wait 90
+press a 6             # "Welcome to Esteria!", Sara's dialogue, walk to her shop
+end
+wait 400
+shot minea
+press select 6        # EQUIPMENT INVENTORY STATUS LOAD SAVE SPEED
+wait 60
+repeat 4
+press down 6
+wait 20
+end
+press a 6             # SAVE: "Which to save?"
+wait 90
+press a 6             # 1
+wait 90
+shot saved            # "1 : Minea Town   Saved"
+press a 6
+wait 120

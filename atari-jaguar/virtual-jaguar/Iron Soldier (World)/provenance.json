@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "atari-jaguar",
+  "core": "virtual-jaguar",
+  "core_file": "virtualjaguar_libretro.dylib",
+  "core_name": "Virtual Jaguar",
+  "core_version": "v3.11.0 34696082",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Iron Soldier (World).j64",
+    "sha1": "8bdefc60dd1734315e1c145e29abf41800f908cb",
+    "size": 2097152
+  },
+  "script": "scripts/atari-jaguar/Iron Soldier.txt",
+  "frames": 4636,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Iron Soldier (World).srm": {
+      "size": 128,
+      "sha1": "fc6f2cbf757bdcf4011be4bfb086af18f0679180"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

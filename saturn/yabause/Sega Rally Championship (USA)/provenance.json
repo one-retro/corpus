@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "saturn",
+  "core": "yabause",
+  "core_file": "yabause_libretro.dylib",
+  "core_name": "Yabause",
+  "core_version": "v0.9.15 8926b0c",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Sega Rally Championship (USA).cue",
+    "sha1": "afc92dc1a95fe954caf0890a3dba24be9dae437b",
+    "size": 106
+  },
+  "script": "scripts/saturn/Sega Rally Championship.txt",
+  "frames": 3504,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Sega Rally Championship (USA).srm": {
+      "size": 65536,
+      "sha1": "ce7231f1be14d6fe0f8c9d7e44b8538072dda83b"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "Run from the data track alone: the cue lists only track 01 (the Redump cue's audio tracks were left out to save space); the BIOS and game do not need them to boot and save."
+}

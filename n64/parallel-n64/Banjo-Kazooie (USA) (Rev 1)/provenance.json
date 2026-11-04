@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "n64",
+  "core": "parallel-n64",
+  "core_file": "parallel_n64_libretro.dylib",
+  "core_name": "ParaLLEl N64",
+  "core_version": "1.0 e8cbdbb",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Banjo-Kazooie (USA) (Rev 1).z64",
+    "sha1": "ded6ee166e740ad1bc810fd678a84b48e245ab80",
+    "size": 16777216
+  },
+  "script": "scripts/n64/Banjo-Kazooie.txt",
+  "frames": 24664,
+  "options": "parallel-n64-gfxplugin = angrylion\nparallel-n64-pak1 = memory\n",
+  "started_from": null,
+  "files": {
+    "Banjo-Kazooie (USA) (Rev 1).srm": {
+      "size": 296960,
+      "sha1": "335772ce525d3eca090ebc5aa8532661848b5262"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

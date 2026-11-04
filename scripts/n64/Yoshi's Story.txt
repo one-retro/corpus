@@ -1,0 +1,34 @@
+# Yoshi's Story: Options -> Audio -> Mono. The game formats its 16 Kbit
+# EEPROM on the first boot and writes the setting when it changes. The
+# script then resets and opens Options again to show Audio (MONO) was read
+# back. The menus follow the analog stick, not the D-pad.
+# N64 buttons on the RetroPad: A = b, B = y, Z = l2, Start = start.
+wait 900
+press start 6       # title -> Story Mode / Trial Mode / Options / Practice
+wait 300
+stick 0 max 8
+wait 40
+stick 0 max 8       # Options
+wait 40
+press b 6
+wait 200
+press b 6           # Audio -> Select Sound Mode
+wait 100
+stick 0 max 8       # Mono
+wait 60
+press b 6           # the setting is written here
+wait 100
+shot mono           # Options: Audio (MONO)
+press y 6           # exit
+wait 150
+reset
+wait 700           # after a reset the title comes sooner, and the attract story follows it
+press start 6
+wait 300
+stick 0 max 8
+wait 40
+stick 0 max 8
+wait 40
+press b 6           # Options again after the reset
+wait 200
+shot reloaded

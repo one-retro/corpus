@@ -1,0 +1,35 @@
+{
+  "method": "played",
+  "system": "saturn",
+  "core": "beetle-saturn",
+  "core_file": "mednafen_saturn_libretro.dylib",
+  "core_name": "Beetle Saturn",
+  "core_version": "v1.32.1",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Fighters Megamix (USA).cue",
+    "sha1": "69c45e1a98abf23492e9ccf48ff0f6ca544f900e",
+    "size": 99
+  },
+  "script": "scripts/saturn/Fighters Megamix.beetle-saturn.txt",
+  "frames": 3012,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Fighters Megamix (USA).bcr": {
+      "size": 524288,
+      "sha1": "7375f566c41cde0329e61131cd3565b6d2c275c0"
+    },
+    "Fighters Megamix (USA).smpc": {
+      "size": 12,
+      "sha1": "8842b25e819ae605e0c79f6c41eaf9fb26581f73"
+    },
+    "Fighters Megamix (USA).srm": {
+      "size": 32768,
+      "sha1": "6e3d60e04d8865f42418eddda46262cf57662cbe"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "Run from the data track alone: the cue lists only track 01 (the Redump cue's audio tracks were left out to save space); the BIOS and game do not need them to boot and save."
+}

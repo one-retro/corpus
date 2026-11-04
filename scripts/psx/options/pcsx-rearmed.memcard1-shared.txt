@@ -1,0 +1,3 @@
+# PCSX-ReARMed: card 1 shared between games (pcsx-card1.mcd), card 2 per serial
+pcsx_rearmed_memcard1 = shared
+pcsx_rearmed_memcard2 = serial

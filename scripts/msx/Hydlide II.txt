@@ -1,0 +1,30 @@
+# Hydlide II - Shine of Darkness: create character "ABC" (SET UP ->
+# CHARACTER をつくる). The game writes the character list to its 2 KiB SRAM.
+# Keyboard only: run fMSX with the port set to Keyboard (--device0 3) and
+# its mapper forced to ASCII16 (scripts/msx/fmsx-ascii16.opt).
+# The reset is the power cycle: blueMSX writes its .sram only when the
+# cartridge is re-inserted, which retro_reset does; after it the proof shows
+# the game reading the character back.
+wait 900
+key return 8        # title -> SET UP
+wait 150
+key down 8          # CHARACTER をつくる (create)
+wait 60
+key space 8
+wait 150
+type ABC
+wait 30
+key return 8        # name -> SET PARAM.
+wait 150
+key space 8         # accept the parameters -> これでいいですか (Y/N)?
+wait 150
+type y
+wait 150
+shot created
+reset
+wait 900
+key return 8        # title -> SET UP
+wait 150
+key space 8         # GAME START -> NAME LIST
+wait 150
+shot namelist

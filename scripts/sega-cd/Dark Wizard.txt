@@ -1,0 +1,43 @@
+# Dark Wizard: NEW GAME with Prince Armer IX (the first ruler), Normal,
+# START GAME, through the opening dialogue to the first turn on the map.
+# Genesis A (RetroPad y) opens the command menu; SAVE is right column, row
+# four; C (RetroPad a) saves at once, without a message. The game's file
+# takes 40 blocks of internal backup RAM. Reset: the title now offers
+# CONTINUE (a fresh title has only NEW GAME and OPTIONS).
+wait 600
+press start 6       # BIOS
+wait 1200
+repeat 12           # logos, title, NEW GAME, Armer IX, NORMAL, START GAME
+press start 6
+wait 300
+end
+repeat 10           # opening dialogue (B pages it; PicoDrive prints it more slowly,
+press b 6           # so there are spare presses, which do nothing on the map)
+wait 300
+end
+press y 6           # HOME END / PRTY DELE / STRE MAP / FILE SAVE / OPTS
+wait 200
+press right 6
+wait 30
+press down 6
+wait 30
+press down 6
+wait 30
+press down 6        # SAVE
+wait 30
+shot menu
+press a 6           # saved
+wait 300
+reset
+wait 600
+press start 6       # BIOS: "Put a DISC on the CD tray" (this press makes it look)
+wait 600
+press start 6       # BIOS: boot the disc
+wait 1500
+repeat 3
+press start 6
+wait 300
+end
+press start 6       # title: NEW GAME / CONTINUE / OPTIONS
+wait 300
+shot reloaded

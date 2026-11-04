@@ -1,0 +1,39 @@
+{
+  "method": "played",
+  "system": "mame",
+  "core": "mame",
+  "core_file": "mame_libretro.dylib",
+  "core_name": "MAME",
+  "core_version": "0.289 (5f5a0774)",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "jockeygp.zip",
+    "sha1": "04aa9208647988ee6ee73ca7de3c170efed6e63f",
+    "size": 17273406
+  },
+  "script": "scripts/mame/jockeygp.txt",
+  "frames": 5472,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "mame/cfg/default.cfg": {
+      "size": 485,
+      "sha1": "351453053c5ec53469dc92d8042bdbdfbf21f579"
+    },
+    "mame/cfg/jockeygp.cfg": {
+      "size": 972,
+      "sha1": "1353c3bd88f483ad73679f9af5661dad31065c54"
+    },
+    "mame/nvram/jockeygp/cslot1_cmc50_jockeygp_nvram": {
+      "size": 8192,
+      "sha1": "987c665136edb453dcf1c23e39cbf743a64b0e74"
+    },
+    "mame/nvram/jockeygp/saveram": {
+      "size": 65536,
+      "sha1": "9c06d66c7cfc78ec035a8dcedb2931d0291e1dc5"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "Current MAME writes the cartridge's 8 KiB RAM as nvram/jockeygp/cslot1_cmc50_jockeygp_nvram beside the MVS saveram."
+}

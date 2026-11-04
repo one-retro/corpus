@@ -1,0 +1,2 @@
+# Beetle PSX HW: card 1 the Mednafen way (<game>.0.mcr) instead of libretro SRAM (.srm)
+beetle_psx_hw_use_mednafen_memcard0_method = mednafen

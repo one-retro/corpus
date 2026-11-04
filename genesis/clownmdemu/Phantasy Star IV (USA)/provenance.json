@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "genesis",
+  "core": "clownmdemu",
+  "core_file": "clownmdemu_libretro.dylib",
+  "core_name": "ClownMDEmu",
+  "core_version": "v1.6.12 d43c270",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Phantasy Star IV (USA).md",
+    "sha1": "bc7ff6d6a8408f38562bc610f24645cad6c42629",
+    "size": 3145728
+  },
+  "script": "scripts/genesis/Phantasy Star IV.txt",
+  "frames": 8226,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Phantasy Star IV (USA).srm": {
+      "size": 65536,
+      "sha1": "d92e7fc44a80161e863b477c43274a6ea51a8002"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

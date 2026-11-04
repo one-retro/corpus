@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "neogeo",
+  "core": "finalburn-neo",
+  "core_file": "fbneo_libretro.dylib",
+  "core_name": "FinalBurn Neo",
+  "core_version": "v1.0.0.03  GITda14132",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "samsho.zip",
+    "sha1": "af5ad4b7f6fc3a6f2d70f533a481c60f8ec32e9f",
+    "size": 8347740
+  },
+  "script": "scripts/neogeo/samsho.txt",
+  "frames": 14124,
+  "options": "fbneo-neogeo-mode = AES_EUR\nfbneo-memcard-mode = per-game\n",
+  "started_from": null,
+  "files": {
+    "fbneo/samsho.memcard": {
+      "size": 32800,
+      "sha1": "7945b153b9b8dbb4fd5c1519e7eaabd98c25dcb0"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

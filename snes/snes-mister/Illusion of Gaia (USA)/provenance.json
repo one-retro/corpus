@@ -1,0 +1,20 @@
+{
+  "method": "downloaded",
+  "system": "snes",
+  "core": "snes-mister",
+  "url": "https://github.com/MiSTer-devel/SNES_MiSTer/files/4036857/Illusion.of.Gaia.USA.zip",
+  "source_page": "https://github.com/MiSTer-devel/SNES_MiSTer/issues/183#issuecomment-572215893",
+  "source": "github.com (MiSTer-devel/SNES_MiSTer issue #183)",
+  "author": "James-F2",
+  "licence": null,
+  "fetched": "2026-11-03",
+  "what_it_is": "Illusion of Gaia save made while confirming a Mode 7 bug on MiSTer (Jan 2020): 'Exit school and got up to castle (talk to guard before staircase)'.",
+  "files": {
+    "Illusion of Gaia (USA).sav": {
+      "size": 8192,
+      "sha1": "541f759d69377df4d001dfc732607082653295f4"
+    }
+  },
+  "created": "2026-11-03",
+  "note": "Untouched SRAM is filled FF 00 FF 00 ..., the pattern MiSTer builds of early 2020 left (SNES_MiSTer issue #189: 'the core only fills every other byte of save ram'), which points to MiSTer having written it."
+}

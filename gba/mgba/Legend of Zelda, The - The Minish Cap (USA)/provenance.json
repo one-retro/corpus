@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "gba",
+  "core": "mgba",
+  "core_file": "mgba_libretro.dylib",
+  "core_name": "mGBA",
+  "core_version": "0.11-212-7a12d6d",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Legend of Zelda, The - The Minish Cap (USA).gba",
+    "sha1": "b4bd50e4131b027c334547b4524e2dbbd4227130",
+    "size": 16777216
+  },
+  "script": "scripts/gba/Legend of Zelda, The - The Minish Cap.txt",
+  "frames": 4160,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Legend of Zelda, The - The Minish Cap (USA).srm": {
+      "size": 8192,
+      "sha1": "91bcde113594b13cbe07bc286616f433a91c4b2e"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

@@ -1,0 +1,31 @@
+{
+  "method": "played",
+  "system": "psx",
+  "core": "swanstation",
+  "core_file": "swanstation_libretro.dylib",
+  "core_name": "SwanStation",
+  "core_version": "1.0.0 631f0fb",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "opengl",
+  "rom": {
+    "name": "Tekken 3 (USA).cue",
+    "sha1": "69d1f34ff24096b9fb95b45232ba684872cd8de2",
+    "size": 306
+  },
+  "script": "scripts/psx/Tekken 3.txt",
+  "frames": 7302,
+  "options": "# SwanStation: card 1 per game title (<Title>_1.mcd), card 2 shared (duckstation_shared_card_2.mcd)\nswanstation_MemoryCards_Card1Type = PerGameTitle\nswanstation_MemoryCards_Card2Type = Shared\n",
+  "started_from": null,
+  "files": {
+    "Tekken 3 (USA)_1.mcd": {
+      "size": 131072,
+      "sha1": "ca60e4f907b186e8c784d4e0752884274c26a578"
+    },
+    "duckstation_shared_card_2.mcd": {
+      "size": 131072,
+      "sha1": "0371ac92474cca832e4a1f338b50c1ef7d1ac895"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "option variant: swanstation_MemoryCards_Card1Type = PerGameTitle;swanstation_MemoryCards_Card2Type = Shared"
+}

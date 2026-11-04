@@ -1,0 +1,28 @@
+{
+  "method": "played",
+  "system": "nds",
+  "core": "melonds-ds",
+  "core_file": "melondsds_libretro.dylib",
+  "core_name": "melonDS DS",
+  "core_version": "1.4.0",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Picross 3D (USA) (En,Fr,Es).nds",
+    "sha1": "3be14c9bb264d8755c12f8e4bac82204eb8bddec",
+    "size": 67108864
+  },
+  "device": null,
+  "script": "scripts/nds/Picross 3D.txt",
+  "frames": 6432,
+  "options": "melonds_touch_mode = touch\n",
+  "started_from": null,
+  "files": {
+    "Picross 3D (USA) (En,Fr,Es).srm": {
+      "size": 1048576,
+      "sha1": "cd82b6cc79a084f5adb60eed31fbadef0a58bcac"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

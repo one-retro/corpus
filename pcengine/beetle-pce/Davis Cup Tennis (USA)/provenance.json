@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "pcengine",
+  "core": "beetle-pce",
+  "core_file": "mednafen_pce_libretro.dylib",
+  "core_name": "Beetle PCE",
+  "core_version": "v1.29.0 b96c11e",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Davis Cup Tennis (USA).pce",
+    "sha1": "7e3ad77375d9c62e060cd6f6e57493196a4a739d",
+    "size": 524288
+  },
+  "script": "scripts/pcengine/Davis Cup Tennis.txt",
+  "frames": 2466,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Davis Cup Tennis (USA).srm": {
+      "size": 2048,
+      "sha1": "5dcfd81d4e8a4ec2069b967573ebb1665382aa40"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

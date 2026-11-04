@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "saturn",
+  "core": "yabause",
+  "core_file": "yabause_libretro.dylib",
+  "core_name": "Yabause",
+  "core_version": "v0.9.15 8926b0c",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Legend of Oasis, The (USA).cue",
+    "sha1": "367c62cc807d7f28580db653d7bb069f806b412d",
+    "size": 222
+  },
+  "script": "scripts/saturn/Legend of Oasis, The.txt",
+  "frames": 2508,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Legend of Oasis, The (USA).srm": {
+      "size": 65536,
+      "sha1": "278ddd8c4716dd32664d725adf576d75d0634e3c"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

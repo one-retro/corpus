@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "gb",
+  "core": "fixgb",
+  "core_file": "fixgb_libretro.dylib",
+  "core_name": "fixGB",
+  "core_version": "Alpha v0.8.2",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Super Mario Land 2 - 6 Golden Coins (USA, Europe) (Rev 2).gb",
+    "sha1": "d11d94fa3c36b9f72e925070b66bb4f16d31001e",
+    "size": 524288
+  },
+  "script": "scripts/gb/Super Mario Land 2.txt",
+  "frames": 1068,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Super Mario Land 2 - 6 Golden Coins (USA, Europe) (Rev 2).srm": {
+      "size": 8192,
+      "sha1": "ece38bda82b769e3394b27551f284bc3206b87f2"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

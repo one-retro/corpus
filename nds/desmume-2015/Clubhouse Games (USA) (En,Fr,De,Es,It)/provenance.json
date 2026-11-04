@@ -1,0 +1,28 @@
+{
+  "method": "played",
+  "system": "nds",
+  "core": "desmume-2015",
+  "core_file": "desmume2015_libretro.dylib",
+  "core_name": "DeSmuME 2015",
+  "core_version": "git a06da0c",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Clubhouse Games (USA) (En,Fr,De,Es,It).nds",
+    "sha1": "a8bd9c4894dd1c74abd4b5d27b692b464acadb9d",
+    "size": 16777216
+  },
+  "device": null,
+  "script": "scripts/nds/Clubhouse Games.txt",
+  "frames": 5796,
+  "options": "desmume_pointer_type = touch\n",
+  "started_from": null,
+  "files": {
+    "Clubhouse Games (USA) (En,Fr,De,Es,It).dsv": {
+      "size": 8314,
+      "sha1": "206be05c953df7c851595ebb66a24e7be3ce0832"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

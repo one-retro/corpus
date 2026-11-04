@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "psx",
+  "core": "swanstation",
+  "core_file": "swanstation_libretro.dylib",
+  "core_name": "SwanStation",
+  "core_version": "1.0.0 631f0fb",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "opengl",
+  "rom": {
+    "name": "Dance Dance Revolution Konamix (USA).cue",
+    "sha1": "7f8c432de9a9e8d7d8c995852cba571fafbe11ae",
+    "size": 117
+  },
+  "script": "scripts/psx/Dance Dance Revolution Konamix.txt",
+  "frames": 2862,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Dance Dance Revolution Konamix (USA).srm": {
+      "size": 131072,
+      "sha1": "8b7d81028e1b2743c0d3622d3f4f847d8ff4c0b4"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

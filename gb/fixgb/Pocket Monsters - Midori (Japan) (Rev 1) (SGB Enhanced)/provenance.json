@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "gb",
+  "core": "fixgb",
+  "core_file": "fixgb_libretro.dylib",
+  "core_name": "fixGB",
+  "core_version": "Alpha v0.8.2",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Pocket Monsters - Midori (Japan) (Rev 1) (SGB Enhanced).gb",
+    "sha1": "4b97cd44aa3f0dd290bfe7b3ac17b7bd8270897b",
+    "size": 524288
+  },
+  "script": "scripts/gb/Pocket Monsters Midori.fixgb.txt",
+  "frames": 7643,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Pocket Monsters - Midori (Japan) (Rev 1) (SGB Enhanced).srm": {
+      "size": 32768,
+      "sha1": "c8e0d47bc3c1c94ea6a6145dcddd75ec71bf907d"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "pcenginecd",
+  "core": "geargrafx",
+  "core_file": "geargrafx_libretro.dylib",
+  "core_name": "Geargrafx",
+  "core_version": "1.8.7",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Dungeon Explorer II (NA).chd",
+    "sha1": "b64608a196103f341184c3ded398d8cf89155b71",
+    "size": 389046423
+  },
+  "script": "scripts/pcenginecd/Dungeon Explorer II.txt",
+  "frames": 5286,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Dungeon Explorer II (NA).srm": {
+      "size": 2048,
+      "sha1": "13f3172d5da84f2f8b9f377c2a762cd572669679"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

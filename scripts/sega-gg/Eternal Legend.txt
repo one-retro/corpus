@@ -1,0 +1,27 @@
+# Eternal Legend - Eien no Densetsu: はじめから, the opening plays itself (the
+# ship, Hark town, Bas leaves Alvin at the Hark Inn). Then the field menu:
+# start > システム > セーブ > 1: "セーブ しました!!"
+# Button 2 (a) advances and confirms.
+wait 600
+repeat 3            # title, then つづきから / はじめから (on はじめから with no data)
+press start 10
+wait 150
+end
+repeat 20           # the opening scene and the inn dialogue
+press a 10
+wait 150
+end
+press start 10      # メニュー: さがす ステータス まほう そうび アイテム システム
+wait 90
+repeat 5            # -> システム
+press down 10
+wait 30
+end
+press a 10          # システム: セーブ ロード ならびじゅん テキストスピード
+wait 90
+press a 10          # セーブ: 1 2 3 やめる
+wait 90
+press a 10          # 1: "セーブ しました!!"
+wait 90
+shot saved
+wait 30

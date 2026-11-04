@@ -1,0 +1,12 @@
+# Darius Plus (SuperGrafx-enhanced HuCard): start a game and let the ship be
+# shot down three times. The game creates its score file DARIUS.SCR in backup
+# RAM (276 bytes, the ten-entry HISCORE RANKING); the attract loop then shows
+# the ranking.
+repeat 6
+wait 120
+press start 6         # title, PUSH RUN BUTTON, start
+end
+wait 1700             # three lives lost, GAME OVER
+shot gameover
+wait 350
+shot ranking          # HISCORE RANKING

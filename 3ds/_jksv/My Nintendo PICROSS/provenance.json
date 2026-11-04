@@ -1,0 +1,27 @@
+{
+  "method": "device-backup",
+  "device": "Nintendo 2DS",
+  "producer": "JKSV",
+  "backup_path": "JKSV/Saves/My Nintendo PICROSS/2034.02.05_14.21.55",
+  "system": "3ds",
+  "core": "_jksv",
+  "title": {
+    "jksv_folder": "My Nintendo PICROSS",
+    "name": "My Nintendo PICROSS",
+    "product_code": "CTR-N-JHXA",
+    "title_id": "0004000000186700"
+  },
+  "game_source": "JKSV's folder name (not in the No-Intro cartridge DAT)",
+  "attribution": "JKSV save manager on the owner's 2DS, real hardware; JKSV's title cache (JKSV/titles) gives the product code and title ID for its folder name",
+  "confidence": "high",
+  "written": "2034.02.05_14.21.55 (JKSV's backup folder, the 2DS's clock, which was set to 2034)",
+  "files": {
+    "Saves/My Nintendo PICROSS/2034.02.05_14.21.55/all.dat": {
+      "size": 920,
+      "sha1": "b4121cff4e635adeb78415755a9c8a664d922c0c",
+      "role": "primary"
+    }
+  },
+  "created": "2026-11-03",
+  "note": "a download-only title (My Nintendo Picross - The Legend of Zelda: Twilight Princess); the cartridge DAT has no entry, so the folder is JKSV's name"
+}

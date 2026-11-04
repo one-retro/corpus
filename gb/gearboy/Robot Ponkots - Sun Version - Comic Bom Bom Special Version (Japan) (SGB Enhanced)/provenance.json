@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "gb",
+  "core": "gearboy",
+  "core_file": "gearboy_libretro.dylib",
+  "core_name": "Gearboy",
+  "core_version": "3.8.20-8-g37d0bf3",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Robot Ponkots - Sun Version - Comic Bom Bom Special Version (Japan) (SGB Enhanced).gb",
+    "sha1": "aa59c7852897fb612dd20fc65aba64d1785fe5d2",
+    "size": 1048576
+  },
+  "script": "scripts/gb/Robot Ponkots Sun.txt",
+  "frames": 15932,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Robot Ponkots - Sun Version - Comic Bom Bom Special Version (Japan) (SGB Enhanced).srm": {
+      "size": 32768,
+      "sha1": "3f27ed837a435fecebd89c515a5945074218057b"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

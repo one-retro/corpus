@@ -1,0 +1,21 @@
+# A Link to the Past: register file 1 as "ABC". The game writes the file
+# (and its mirror copy) to SRAM when the name is registered.
+wait 900
+press start 6       # intro -> title
+wait 150
+press start 6       # title -> PLAYER SELECT
+wait 150
+press a 6           # slot 1 -> REGISTER YOUR NAME
+wait 120
+tap left 6 12       # cursor from G back to A
+wait 30
+tap a 1 24          # A
+tap right 1 14
+tap a 1 24          # B
+tap right 1 14
+tap a 1 24          # C
+wait 30
+press start 6       # register: the file is written here
+wait 180
+shot registered
+wait 30

@@ -1,0 +1,28 @@
+{
+  "method": "played",
+  "system": "nds",
+  "core": "desmume-2015",
+  "core_file": "desmume2015_libretro.dylib",
+  "core_name": "DeSmuME 2015",
+  "core_version": "git a06da0c",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Mario Party DS (USA).nds",
+    "sha1": "ef7947a543a3b2aa138576506474e6c4ac317141",
+    "size": 33554432
+  },
+  "device": null,
+  "script": "scripts/nds/Mario Party DS.txt",
+  "frames": 5558,
+  "options": "desmume_pointer_type = touch\n",
+  "started_from": null,
+  "files": {
+    "Mario Party DS (USA).dsv": {
+      "size": 8314,
+      "sha1": "96ec0f1a96f978b7099285abcd840d2e914c9d11"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

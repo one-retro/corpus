@@ -1,0 +1,44 @@
+# gpSP variant: after the power cycle gpSP's clock reads as stopped, so the
+# game says "The internal battery has run dry. The game can be played." before
+# the menu, then "However, clock-based events will no longer occur." Two A
+# presses dismiss them; everything else is the shared script.
+# Pokemon Ruby: start a new game, mash A through Professor Birch's talk
+# (boy, name AAAAAAA), then save in the moving truck from the start menu.
+# Proof: the CONTINUE screen after a reset. The game has the S-3511A clock.
+wait 900
+press start 6       # skip the intro
+wait 300
+press start 6       # title -> NEW GAME
+wait 300
+tap a 200 30        # Birch, gender, name (A types letters, then OK), truck
+wait 300
+tap b 8 30          # close any text the A presses left open
+wait 60
+press start 6       # menu: BAG, AAAAAAA, SAVE, OPTION, EXIT
+wait 60
+press down 6
+wait 20
+press down 6
+wait 20
+press a 6           # SAVE
+wait 240
+press a 6           # YES
+wait 600            # SAVING... AAAAAAA saved the game.
+shot saved
+# Power cycle: keep battery RAM across the reset (SkyEmu's reset reloads
+# it from a file the frontend never wrote, and would lose the save).
+dump cycle.srm
+reset
+srm cycle.srm
+wait 900
+press start 6       # skip the intro
+wait 900
+press start 6       # title -> CONTINUE / NEW GAME
+wait 600
+shot battery
+press a 6           # dismiss the battery message
+wait 200
+shot clock
+press a 6           # and the clock-events one
+wait 300
+shot continue

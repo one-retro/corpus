@@ -1,0 +1,32 @@
+{
+  "method": "played",
+  "system": "genesis",
+  "core": "mednafen",
+  "core_file": null,
+  "core_name": "Mednafen",
+  "core_version": "1.32.1",
+  "frontend": "Mednafen 1.32.1 (Homebrew), module 'md', isolated MEDNAFEN_HOME, -sound 0 -video.glvsync 0",
+  "rom": {
+    "name": "Phantasy Star IV (USA).md",
+    "size": 3145728,
+    "sha1": "bc7ff6d6a8408f38562bc610f24645cad6c42629"
+  },
+  "script": "scripts/genesis/Phantasy Star IV.txt",
+  "frames": 8226,
+  "options": null,
+  "input": "work/standalone/tools/sdlfeed.c (DYLD_INSERT_LIBRARIES into the ad-hoc-signed Homebrew binary): SDL key events synthesized inside the process on presented frames, from the retro-run script mapped to Mednafen's default keys (gen_sdlfeed.py); F9 snapshot for shot, F10 reset, F12 exit (Mednafen writes saves on exit)",
+  "started_from": null,
+  "files": {
+    "Phantasy Star IV (USA).84cbd0ff47f3c8e9d21d2c2fc39185fa.sav": {
+      "size": 16384,
+      "sha1": "8568144d5a0e432bc8e6121fa95cc60446de3a54"
+    }
+  },
+  "layout": {
+    "save_dir": "$MEDNAFEN_HOME/sav (default .mednafen/sav in the home folder)",
+    "name": "<ROM file name without extension>.<game MD5 as Mednafen computes it>.<ext> (filesys.fname_sav %f.%M%x)",
+    "written": "on exit"
+  },
+  "created": "2026-11-04",
+  "note": "16384 bytes: the 8 KiB odd-byte SRAM stored 16-bit wide (0xFF in every even byte), byte-identical to genesis-plus-gx's .srm (blastem stores 8192, clownmdemu 65536)."
+}

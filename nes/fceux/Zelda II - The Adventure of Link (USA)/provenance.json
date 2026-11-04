@@ -1,0 +1,32 @@
+{
+  "method": "played",
+  "system": "nes",
+  "core": "fceux",
+  "core_file": null,
+  "core_name": "FCEUX",
+  "core_version": "2.6.6",
+  "frontend": "FCEUX 2.6.6 (Homebrew build, Qt GUI), input by its Lua engine (--loadlua)",
+  "rom": {
+    "name": "Zelda II - The Adventure of Link (USA).nes",
+    "size": 262160,
+    "sha1": "08fa60f23e477752fdd850b1fd4171c6ca025127"
+  },
+  "script": "scripts/nes/Zelda II.txt",
+  "frames": 2024,
+  "options": null,
+  "input": "work/standalone/tools/gen_fceux_lua.py: the retro-run script replayed with joypad.set per frame, turbo speed; emu.exit at the end",
+  "started_from": null,
+  "files": {
+    "Zelda II - The Adventure of Link (USA).sav": {
+      "size": 8192,
+      "sha1": "67008f57c6dfd95c25c591bc0fcd70dad4412cae"
+    }
+  },
+  "layout": {
+    "save_dir": "<base>/sav, base = $FCEUX_HOME/.fceux (default .fceux in the home folder)",
+    "name": "<ROM file name without extension>.sav",
+    "written": "when the game is closed (emu.exit here)"
+  },
+  "created": "2026-11-03",
+  "note": "FCEUX segfaulted (rc 139) after emu.exit, once the .sav was already written; every run did this. Byte-identical to the fceumm, mesen and nestopia .srm."
+}

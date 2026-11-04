@@ -1,0 +1,21 @@
+{
+  "method": "device-backup",
+  "device": "Analogue Pocket",
+  "backup_path": "Saves/ng/common/backup.bak",
+  "system": "neogeo",
+  "core": "mazamars312-neogeo",
+  "pocket_core": "Mazamars312.NeoGeo_Analogizer",
+  "pocket_platform": "ng",
+  "game_source": "the file's own name (no No-Intro entry applies)",
+  "attribution": "mtime 2025-10-31 14:44 is the minute Mazamars312.NeoGeo_Analogizer wrote Metal Slug 2.sav in its own folder; the Analogizer build declares the same backup.bak slot as the others, yet this one sits in Saves/ng/common rather than the core's folder",
+  "confidence": "medium",
+  "written": "2025-10-31 14:44 (file mtime as read here; the Pocket stamps its own clock)",
+  "files": {
+    "backup.bak": {
+      "size": 65536,
+      "sha1": "472a55b0ba289b0f4e538bb4c8b826dede3a40bb"
+    }
+  },
+  "created": "2026-11-03",
+  "note": "every byte 0xFF: the MVS backup RAM unused (console mode keeps saves on the memory card)"
+}

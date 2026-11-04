@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "sega-gg",
+  "core": "sms-plus-gx",
+  "core_file": "smsplus_libretro.dylib",
+  "core_name": "SMS Plus GX",
+  "core_version": "1.8 3844b46",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Magic Knight Rayearth (Japan).gg",
+    "sha1": "6c13e3b9bb24eafc1186c5ffa322b1f40c676b3d",
+    "size": 524288
+  },
+  "script": "scripts/sega-gg/Magic Knight Rayearth.txt",
+  "frames": 2090,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Magic Knight Rayearth (Japan).srm": {
+      "size": 32768,
+      "sha1": "7fcd2959d53781f3c64d9d4cbe4e40b15b0694b9"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

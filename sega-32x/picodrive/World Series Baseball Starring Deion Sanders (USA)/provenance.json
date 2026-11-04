@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "sega-32x",
+  "core": "picodrive",
+  "core_file": "picodrive_libretro.dylib",
+  "core_name": "PicoDrive",
+  "core_version": "2.05-1890c29",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "World Series Baseball Starring Deion Sanders (USA).32x",
+    "sha1": "ab3026eae46a775adb7eaebc13702699557ddc41",
+    "size": 3145728
+  },
+  "script": "scripts/sega-32x/World Series Baseball Starring Deion Sanders.txt",
+  "frames": 6262,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "World Series Baseball Starring Deion Sanders (USA).srm": {
+      "size": 65536,
+      "sha1": "f2d6fa05ec7396eb8f11e49e25c90afacf7fad94"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "wonderswan-color",
+  "core": "beetle-wonderswan",
+  "core_file": "mednafen_wswan_libretro.dylib",
+  "core_name": "Beetle WonderSwan",
+  "core_version": "v0.9.35.1 4b01295",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Tetris (Japan).wsc",
+    "sha1": "1a86403d7896d60fcb7a4c09367f5a976c7ea5a5",
+    "size": 1048576
+  },
+  "script": "scripts/wonderswan-color/Tetris.txt",
+  "frames": 3116,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Tetris (Japan).srm": {
+      "size": 128,
+      "sha1": "49b7149bfa92f0adccd0b837255a86708a041104"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

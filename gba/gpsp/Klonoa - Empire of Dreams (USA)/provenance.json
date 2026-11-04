@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "gba",
+  "core": "gpsp",
+  "core_file": "gpsp_libretro.dylib",
+  "core_name": "gpSP",
+  "core_version": "v1.1.0-5819380",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Klonoa - Empire of Dreams (USA).gba",
+    "sha1": "a0a298d9dba1ba15d04a42fc2eb35893d1a9569b",
+    "size": 4194304
+  },
+  "script": "scripts/gba/Klonoa - Empire of Dreams.txt",
+  "frames": 4622,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Klonoa - Empire of Dreams (USA).srm": {
+      "size": 131072,
+      "sha1": "f7bfd60c16314c0dd7452acc43664965d89d73c5"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

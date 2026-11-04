@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "n64",
+  "core": "mupen64plus-next",
+  "core_file": "mupen64plus_next_libretro.dylib",
+  "core_name": "Mupen64Plus-Next",
+  "core_version": "3.0-Vulkan 15bada8",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Perfect Dark (USA) (Rev 1).z64",
+    "sha1": "af8788ac4d1a57260eae9c53ffe851fcf2a3319b",
+    "size": 33554432
+  },
+  "script": "scripts/n64/Perfect Dark.txt",
+  "frames": 4890,
+  "options": "mupen64plus-rdp-plugin = angrylion\n",
+  "started_from": null,
+  "files": {
+    "Perfect Dark (USA) (Rev 1).srm": {
+      "size": 296960,
+      "sha1": "4ed8158897aab5a61e654ce74db0889bcd4e839e"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

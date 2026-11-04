@@ -1,0 +1,42 @@
+# Moldorian - Hikari to Yami no Sister: on blank RAM the game first reports
+# each of its three save slots broken (セーブデータがこわれています), then
+# さいしょから. Keep the default hero name ナバル (the cursor wraps left from
+# the bottom row to おわる), はい, wake up at home, then the menu:
+# システム > セーブ > slot 1: "きろくを おわりました".
+# Button 2 (a) confirms, button 1 (b) opens the field menu.
+wait 900
+press start 10      # title
+wait 150
+press a 10          # "slot 1 data is broken"
+wait 120
+press a 10          # slot 2
+wait 120
+press a 10          # slot 3 -> さいしょから
+wait 120
+press a 10          # さいしょから -> name entry, default ナバル
+wait 120
+repeat 6            # down to the bottom row
+press down 10
+wait 30
+end
+press left 10       # wraps to おわる
+wait 30
+press a 10          # 「ナバル」でよろしいですか? はい
+wait 150
+repeat 5            # はい, then mother's wake-up lines
+press a 10
+wait 150
+end
+wait 60
+press b 10          # field menu: そうび もちもの データ まほう システム, on データ
+wait 90
+press down 10       # -> システム
+wait 60
+press a 10          # システム: セーブ / ひょうじ
+wait 90
+press a 10          # セーブ: どこにセーブしますか? slot 1
+wait 90
+press a 10          # slot 1: きろくを おわりました
+wait 90
+shot saved
+wait 30

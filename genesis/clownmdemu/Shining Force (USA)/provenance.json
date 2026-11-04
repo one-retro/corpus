@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "genesis",
+  "core": "clownmdemu",
+  "core_file": "clownmdemu_libretro.dylib",
+  "core_name": "ClownMDEmu",
+  "core_version": "v1.6.12 d43c270",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Shining Force (USA).md",
+    "sha1": "c23e81c89e4bf65a5be0152d5a1f35507255d119",
+    "size": 2097152
+  },
+  "script": "scripts/genesis/Shining Force.txt",
+  "frames": 9046,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Shining Force (USA).srm": {
+      "size": 65536,
+      "sha1": "dc0ace4204efb02e6fcc8ab82502b90db572b0c4"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

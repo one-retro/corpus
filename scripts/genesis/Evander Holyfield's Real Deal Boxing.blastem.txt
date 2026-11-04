@@ -1,0 +1,46 @@
+# Generated from Evander Holyfield's Real Deal Boxing.txt for BlastEm's RetroPad layout (b=A a=B r=C y=X x=Y l=Z);
+# the shared script uses y=A b=B a=C l=X x=Y r=Z. Same Genesis buttons, same timing.
+# Evander Holyfield's 'Real Deal' Boxing: Career Mode -> Start New Career,
+# name the boxer "ABC", accept the look, decline another boxer. The boxer is
+# written to the cart's 24C01 EEPROM; reset and open Career Mode to show it.
+# Genesis A/B/C are the RetroPad's y/b/a.
+wait 1200
+press start 6       # title -> main menu (CAREER MODE)
+wait 360
+press start 6       # CAREER MODE -> START NEW CAREER / MAIN MENU
+wait 360
+press start 6       # START NEW CAREER -> name entry
+wait 480
+press r 6           # A
+wait 30
+press right 6
+wait 30
+press r 6           # B
+wait 30
+press right 6
+wait 30
+press r 6           # C
+wait 30
+repeat 5
+press down 6
+wait 20
+end
+press right 6       # END
+wait 30
+press r 6
+wait 120
+shot named
+press start 6       # accept the boxer's look
+wait 360
+shot another        # "Do you want to create another boxer?" NO
+press start 6
+wait 360
+shot career         # ABC vs Alan Beast, rank 30
+reset
+wait 1200
+press start 6
+wait 360
+press start 6       # CAREER MODE
+wait 360
+shot saved
+wait 30

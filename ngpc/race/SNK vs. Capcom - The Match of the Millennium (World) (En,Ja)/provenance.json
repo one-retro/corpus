@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "ngpc",
+  "core": "race",
+  "core_file": "race_libretro.dylib",
+  "core_name": "RACE",
+  "core_version": "v2.16 c7810dd",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "SNK vs. Capcom - The Match of the Millennium (World) (En,Ja).ngc",
+    "sha1": "0806e4a0cff55180e158c9af0060fac17ee9243a",
+    "size": 4194304
+  },
+  "script": "scripts/ngpc/SNK vs. Capcom - The Match of the Millennium.txt",
+  "frames": 3972,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "SNK vs. Capcom - The Match of the Millennium (World) (En,Ja).ngf": {
+      "size": 16408,
+      "sha1": "bd0b77c0e3baf2666904b22644b65966187996a1"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

@@ -1,0 +1,20 @@
+{
+  "method": "downloaded",
+  "system": "snes",
+  "core": "snes-mister",
+  "url": "https://github.com/MiSTer-devel/SNES_MiSTer/files/4127647/Secret.of.Mana.USA.sav.zip",
+  "source_page": "https://github.com/MiSTer-devel/SNES_MiSTer/issues/202",
+  "source": "github.com (MiSTer-devel/SNES_MiSTer issue #202)",
+  "author": "bootsector",
+  "licence": null,
+  "fetched": "2026-11-03",
+  "what_it_is": "The reporter's own Secret of Mana save game (Jan 2020) from playing on the MiSTer SNES core ('I have attached my save game').",
+  "files": {
+    "Secret of Mana (USA).sav": {
+      "size": 8192,
+      "sha1": "c88e8d0344d6030558389530dd2dbc6c34966561"
+    }
+  },
+  "created": "2026-11-03",
+  "note": "The zip also held macOS __MACOSX metadata, not filed."
+}

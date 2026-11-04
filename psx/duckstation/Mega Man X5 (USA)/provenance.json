@@ -1,0 +1,18 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "duckstation",
+  "url": "https://archive.org/download/mega-man-x-5-usa-1/Mega%20Man%20X5%20%28USA%29_1.mcd",
+  "source_page": "https://archive.org/details/mega-man-x-5-usa-1",
+  "source": "archive.org (mirror: github.com/PhoenixStormJr/Megaman-X5-disable-time-limit-countdown-hours-save)",
+  "author": "PhoenixStormJr",
+  "licence": null,
+  "fetched": "2026-11-04",
+  "what_it_is": "'save file for Duckstation I created by manually playing', from DuckStation's memcards folder; intro stage beaten",
+  "files": {
+    "Mega Man X5 (USA)_1.mcd": {
+      "size": 131072,
+      "sha1": "e94d94089ad0955e667179851105140a84e5bdb0"
+    }
+  }
+}

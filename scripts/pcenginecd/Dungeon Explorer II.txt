@@ -1,0 +1,23 @@
+# Dungeon Explorer II: START > MAKE A SAVE FILE? YES > file 1 > OKAY? YES >
+# ONE PLAYER. The game writes the file (DUNGEON2) when it is made. Then reset,
+# START > YES: CHOOSE A FILE shows file 1 in use. (CONTINUE stays greyed until
+# the game has been saved at a save point.)
+wait 360
+press start 6         # System Card: RUN
+repeat 6
+wait 300
+press start 6         # title, START, make a save file YES, file 1, OKAY YES, ONE PLAYER
+end
+wait 1200
+shot map
+reset
+wait 360
+press start 6
+wait 600
+press start 6         # title
+wait 300
+press start 6         # START
+wait 300
+press start 6         # MAKE A SAVE FILE? YES
+wait 300
+shot files            # CHOOSE A FILE: 1 is taken

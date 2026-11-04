@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "genesis",
+  "core": "picodrive",
+  "core_file": "picodrive_libretro.dylib",
+  "core_name": "PicoDrive",
+  "core_version": "2.05-1890c29",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "World Series Baseball '95 (USA).md",
+    "sha1": "878e9fdbbc0b20b27f25d56e4087efbde1e8979a",
+    "size": 3145728
+  },
+  "script": "scripts/genesis/World Series Baseball '95.txt",
+  "frames": 4800,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "World Series Baseball '95 (USA).srm": {
+      "size": 65536,
+      "sha1": "85244fbf2b838edd220a0ac0c037660436d4eb3b"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

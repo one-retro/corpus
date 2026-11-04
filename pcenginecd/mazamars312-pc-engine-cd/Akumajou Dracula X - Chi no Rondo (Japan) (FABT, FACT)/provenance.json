@@ -1,0 +1,21 @@
+{
+  "method": "device-backup",
+  "device": "Analogue Pocket",
+  "backup_path": "Saves/pcecd/Mazamars312.PC Engine CD/Akumajou Dracula X - Chi no Rondo (Japan) (FABT, FACT).sav",
+  "system": "pcenginecd",
+  "core": "mazamars312-pc-engine-cd",
+  "pocket_core": "Mazamars312.PC Engine CD",
+  "pocket_platform": "pcecd",
+  "game_source": "the file's own name (no No-Intro entry applies)",
+  "attribution": "folder: Saves/pcecd/Mazamars312.PC Engine CD/, named after the instance JSON in Assets/pcecd/Mazamars312.PC Engine CD/",
+  "confidence": "high",
+  "written": "2024-08-11 17:06 (file mtime as read here; the Pocket stamps its own clock)",
+  "files": {
+    "Akumajou Dracula X - Chi no Rondo (Japan) (FABT, FACT).sav": {
+      "size": 2048,
+      "sha1": "ecc8612768ae5fd0d77ed85d6aa3314f5279d69b"
+    }
+  },
+  "created": "2026-11-03",
+  "note": "the 2 KiB backup RAM; folder is the instance JSON's name (a Redump name)"
+}

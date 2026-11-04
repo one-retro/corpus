@@ -1,0 +1,31 @@
+{
+  "method": "played",
+  "system": "gbc",
+  "core": "mgba",
+  "core_file": "mgba_libretro.dylib",
+  "core_name": "mGBA",
+  "core_version": "0.11-212-7a12d6d",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Harvest Moon GBC (USA) (SGB Enhanced) (GB Compatible).gbc",
+    "sha1": "d407b9c20c5381f46ec460858539a5b6f559e04f",
+    "size": 1048576
+  },
+  "script": "scripts/gbc/Harvest Moon GBC.txt",
+  "frames": 10968,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Harvest Moon GBC (USA) (SGB Enhanced) (GB Compatible).rtc": {
+      "size": 48,
+      "sha1": "af15dab0f0459f72bbfb840e4d7cafa8c03ba449"
+    },
+    "Harvest Moon GBC (USA) (SGB Enhanced) (GB Compatible).srm": {
+      "size": 8192,
+      "sha1": "33d1e199595ce5a87ee51c7568335cf72b09b8e8"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

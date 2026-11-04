@@ -1,0 +1,19 @@
+{
+  "method": "downloaded",
+  "system": "fds",
+  "core": "nes-mister",
+  "url": "https://github.com/euan-forrester/save-file-converter/files/15241972/Akumajou.Dracula.Japan.Rev.2.Disk.Writer.zip",
+  "source_page": "https://github.com/euan-forrester/save-file-converter/issues/80#issuecomment-2099488989",
+  "source": "GitHub (euan-forrester/save-file-converter issue #80)",
+  "author": "birdybro (GitHub; MiSTer contributor)",
+  "licence": null,
+  "fetched": "2026-11-03",
+  "what_it_is": "birdybro's MiSTer FDS save of Akumajou Dracula (2-sided disk), posted 2024-05-07; file dated 2024-05-07.",
+  "files": {
+    "Akumajou Dracula (Japan) (Rev 2) (Disk Writer).sav": {
+      "size": 131072,
+      "sha1": "289274d4f4c4452e94a88e0bf1114823a670b125"
+    }
+  },
+  "note": "MiSTer NES core FDS save: 16 zero bytes, then the whole disk image as the core holds it (each side 65500 bytes, fwNES layout without the 16-byte 'FDS\\x1a' header), then padding to a 512-byte multiple (2 sides: 16 + 131000 + 56 = 131072). The disk sides start at offset 0x10. Matches NES.sv: save_sz = rom_sz[17:9] sectors read from SDRAM 0x3C0000, disk loaded at 0x3C0010. Bytes 0x10.. equal the No-Intro image except 1 byte (side A offset 0x39). Checked against the No-Intro image (work/fds/fdscheck.py): every disk file is identical to the original, so this file holds no in-game save (the TOUROKU0 name file is untouched); it is kept as a sample of the MiSTer FDS container, not of a game save."
+}

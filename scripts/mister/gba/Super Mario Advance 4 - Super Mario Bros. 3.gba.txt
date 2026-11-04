@@ -1,0 +1,52 @@
+load corpus-tmp/mgl/sma4.mgl 8
+# Super Mario Advance 4: File 1, Mario, then on the World 1 map pause and
+# take "Save & Quit" ("You can continue this saved data once", Yes); the game
+# writes File 1 and returns to the title. Proof: "Select a File" showing
+# File 1 after a power cycle. The cartridge has 128K flash
+# (FLASH1M_V102), which the game also uses for e-Reader levels.
+wait 900
+press start 6       # skip the intro
+wait 300
+press start 6       # title -> Single Player
+wait 300
+press a 6           # the SMB3 / Mario Bros. menu: SMB3
+wait 200
+press a 6           # title: Select a File
+wait 200
+press a 6           # File 1 (New)
+wait 200
+press a 6           # Select a Mode: MARIO
+wait 300
+tap a 6 60          # the opening, then the World 1 map
+wait 300
+press start 6       # pause: Continue / Save & Quit / Sleep
+wait 120
+press down 6
+wait 30
+press a 6           # Save & Quit
+wait 120
+press left 6        # Is it OK to return to the title screen? Yes
+wait 30
+press a 6
+wait 600
+shot title
+# Power cycle: keep battery RAM across the reset (SkyEmu's reset reloads
+# it from a file the frontend never wrote, and would lose the save).
+wait 30
+save
+wait 60
+shot final
+# power cycle: load the game again; the core reads the .sav back from the SD card
+load corpus-tmp/mgl/sma4.mgl 8
+wait 900
+press start 6       # skip the intro
+wait 300
+press start 6       # title -> Single Player
+wait 300
+press a 6           # SMB3
+wait 300
+press a 6           # SMB3 title
+wait 300
+press a 6           # Select a File
+wait 300
+shot files

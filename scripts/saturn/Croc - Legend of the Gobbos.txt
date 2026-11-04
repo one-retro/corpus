@@ -1,0 +1,9 @@
+# Croc - Legend of the Gobbos (USA): SAVE GAME on the first map, slot 0.
+# With no Backup RAM Cart (Yabause) the game goes straight to the slot grid; Beetle
+# Saturn has a cart plugged in and asks first (see the .beetle-saturn variant).
+# Saturn pad in libretro: A=b B=a C=r X=y Y=x Z=l L=l2 R=r2.
+include _croc-to-save-menu.inc
+shot slots
+press b              # A: SAVE into slot 0
+wait 400
+shot saved           # slot 0 now shows the 1-1 icon and 0%

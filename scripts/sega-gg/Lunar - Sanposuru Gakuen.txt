@@ -1,0 +1,34 @@
+# Lunar - Sanposuru Gakuen: はじめから in book 1 and through the opening
+# (Ellie and Lena in the fields, then home); the menu has セーブ. Pick the
+# first book, はい to overwrite, "セーブしました"; reopening the save list
+# shows the book now holds a game. Button 2 (a) advances and confirms; menu
+# moves are short presses (a held direction repeats).
+wait 600
+press start 10      # title -> はじめから x3 / けす, on the first
+wait 200
+repeat 70           # はじめから, CHAPTER 1, the whole opening; the last
+press a 10          # presses only talk to whoever is near
+wait 100
+end
+press b 10          # close any message
+wait 90
+press b 10
+wait 90
+press start 10      # エリー / レナ / もちもの / おかね / セーブ
+wait 150
+repeat 4            # -> セーブ
+press down 4
+wait 40
+end
+press a 10          # どこにセーブしますか: book 1
+wait 120
+press a 10          # "いぜんの きろくは きえてしまいます よろしいですか?" はい いいえ
+wait 120
+press a 10          # はい: セーブしました
+wait 120
+press a 10          # back to the menu, still on セーブ
+wait 120
+press a 10          # the save list: book 1 now holds the game
+wait 120
+shot saved
+wait 30

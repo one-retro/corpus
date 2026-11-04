@@ -1,0 +1,2 @@
+# Beetle PSX: libretro card 1 (.srm) plus a second card in slot 2 (<game>.1.mcr)
+beetle_psx_enable_memcard1 = enabled

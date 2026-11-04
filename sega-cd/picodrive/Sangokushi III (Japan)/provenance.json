@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "sega-cd",
+  "core": "picodrive",
+  "core_file": "picodrive_libretro.dylib",
+  "core_name": "PicoDrive",
+  "core_version": "2.05-1890c29",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Sangokushi III (Japan).cue",
+    "sha1": "66e75f948be301a3c4be2f8dba6a9fba00414ae4",
+    "size": 5855
+  },
+  "script": "scripts/sega-cd/Sangokushi III.picodrive.txt",
+  "frames": 15006,
+  "options": "picodrive_ramcart = enabled\n",
+  "started_from": null,
+  "files": {
+    "Sangokushi III (Japan).srm": {
+      "size": 73728,
+      "sha1": "d329a298499b579499ba39269f16480dab798636"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "Disc from the Trimmed Redump set, unpacked here: the data track is the real one, the audio tracks are zero-filled stand-ins of the exact sizes (silent CD audio; the disk was too full for the real ones). The .cue is the original. Run with the RAM cart enabled (picodrive_ramcart = enabled): the game needs a backup RAM cartridge."
+}

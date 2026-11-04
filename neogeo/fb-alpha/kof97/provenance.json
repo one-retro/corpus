@@ -1,0 +1,22 @@
+{
+  "method": "downloaded",
+  "system": "neogeo",
+  "core": "fb-alpha",
+  "url": "https://raw.githubusercontent.com/zwh8800/recalbox-saves/fc24fb854793260c45bb856d9c7f1ed3aeb6f011/rg40xxh/sdcard/saves_RA/Roms/NEOGEO/FB%20Alpha%202012%20Neo%20Geo/kof97.fs",
+  "source_page": "https://github.com/zwh8800/recalbox-saves/blob/fc24fb854793260c45bb856d9c7f1ed3aeb6f011/rg40xxh/sdcard/saves_RA/Roms/NEOGEO/FB%20Alpha%202012%20Neo%20Geo/kof97.fs",
+  "source": "GitHub (zwh8800/recalbox-saves, a personal backup of Recalbox and handheld RetroArch save folders)",
+  "author": "zwh8800 (commits signed wastecat / zzz)",
+  "licence": null,
+  "fetched": "2026-11-04",
+  "committed": "2024-07-22..2024-07-27",
+  "what_it_is": "The King of Fighters '97 NVRAM state (FB1 FS1, compressed) written by the libretro FB Alpha 2012 Neo Geo build on an Anbernic RG40XXH; game state unknown",
+  "attribution": "from the repo path only: 'rg40xxh/sdcard/saves_RA/Roms/NEOGEO/FB Alpha 2012 Neo Geo/kof97.fs'. The 'fba2012neogeo' folder is the save subdirectory that core creates; nothing else on the page names the core or the game state",
+  "files": {
+    "kof97.fs": {
+      "size": 456,
+      "sha1": "0b1c4b8011a75da3e1ba9c266ee46eb00cd0f0b4"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "The Neo Geo-only build (fbalpha2012_neogeo) of the same FB Alpha 2012 core; RetroArch named the folder after its library name"
+}

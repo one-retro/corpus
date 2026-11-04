@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "nes",
+  "core": "fceumm",
+  "core_file": "fceumm_libretro.dylib",
+  "core_name": "FCEUmm",
+  "core_version": "(SVN) e0f3086",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Dragon Ball Z II - Gekishin Freeza!! (Japan) (Rev 1).nes",
+    "sha1": "661cd5892281ace89403a673e8657daef60fdf09",
+    "size": 524304
+  },
+  "script": "scripts/nes/Dragon Ball Z II.txt",
+  "frames": 1850,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Dragon Ball Z II - Gekishin Freeza!! (Japan) (Rev 1).srm": {
+      "size": 256,
+      "sha1": "c93d3a25850f612d09c8c3c27c52756033bb2f35"
+    }
+  },
+  "created": "2026-11-03",
+  "note": "runner: work/nes/runner/retro-run (tools/retro-run with RetroArch's init order and a disk control interface)"
+}

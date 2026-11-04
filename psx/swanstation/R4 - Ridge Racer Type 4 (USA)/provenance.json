@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "psx",
+  "core": "swanstation",
+  "core_file": "swanstation_libretro.dylib",
+  "core_name": "SwanStation",
+  "core_version": "1.0.0 631f0fb",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "opengl",
+  "rom": {
+    "name": "R4 - Ridge Racer Type 4 (USA).cue",
+    "sha1": "7fb365c31e0a1f315479ac9eef1d6fde1a84bd1d",
+    "size": 95
+  },
+  "script": "scripts/psx/R4 - Ridge Racer Type 4.txt",
+  "frames": 8978,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "R4 - Ridge Racer Type 4 (USA).srm": {
+      "size": 131072,
+      "sha1": "853c8dde9be3bfa9f160dc0707b5966ab4ad73d3"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

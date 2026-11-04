@@ -1,0 +1,89 @@
+# Etrian Odyssey: NEW GAME, found the guild "aaa" (touch keyboard), register
+# one Landsknecht "aaa", put it in the party (Formation), leave for Verda
+# Plaza, and save at the Rooster Inn (Save, YES).
+wait 1800
+press start 6
+wait 350
+touch 128 250 8     # New Game (the cursor starts on Load Game)
+wait 100
+tap a 38 100        # the prologue, the Guildmaster, "make a guild?" YES ...
+wait 100
+touch 42 297 6      # guild name keyboard: a
+wait 20
+touch 42 297 6      # a
+wait 20
+touch 42 297 6      # a
+wait 30
+touch 129 366 6     # Enter
+wait 100
+repeat 15           # "Is this guild name acceptable?" YES, talk, Register
+press a 6
+wait 100
+end
+# adventurer name keyboard
+touch 42 297 6
+wait 20
+touch 42 297 6
+wait 20
+touch 42 297 6
+wait 30
+touch 78 366 6      # Enter
+wait 100
+tap a 4 100
+press right 6
+wait 30
+press a 6
+wait 150
+press down 6
+wait 30
+press down 6
+wait 30
+press a 6
+wait 150
+press a 6
+wait 100
+press a 6
+wait 100
+press right 6
+wait 30
+press up 6
+wait 30
+press a 6
+wait 100
+press a 6
+wait 150
+press down 6
+wait 30
+press down 6
+wait 30
+press a 6
+wait 300
+tap a 4 120
+wait 200
+press up 6
+wait 30
+press up 6
+wait 30
+press up 6
+wait 30
+press up 6
+wait 30
+press a 6
+wait 300
+# the Rooster Inn: welcome, then Sleep/Nap/Talk/Save
+tap a 3 120
+wait 120
+press down 6
+wait 30
+press down 6
+wait 30
+press down 6
+wait 30
+press a 6
+wait 150
+press left 6        # "Would you like to save?" YES (the cursor starts on NO)
+wait 30
+press a 6
+wait 1200           # "Saving game data..."
+shot saved
+wait 2400           # melonDS writes its .sav 2 s (wall clock) after the game's last write

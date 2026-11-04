@@ -1,0 +1,21 @@
+{
+  "method": "device-backup",
+  "device": "Analogue Pocket",
+  "backup_path": "Saves/gba/common/1 USA - A-C/Castlevania - Aria of Sorrow (USA).sav",
+  "system": "gba",
+  "core": "spiritualized-gba",
+  "pocket_core": "Spiritualized.GBA",
+  "pocket_platform": "gba",
+  "game_source": "No-Intro DAT 'Nintendo - Game Boy Advance (20260825-070327)'",
+  "attribution": "folder Saves/gba/common, only GBA core installed when written: Spiritualized.GBA (Analogue backup Cores/, Settings/); mincer_ray.GBA, the registry's other GBA core, was first released 2026-03-13, after the file and after this backup. Size and padding match Spiritualized.GBA: exactly the save type's size (EEPROM 64 Kbit = 8 KiB, SRAM = 32 KiB), where mincer_ray pads every save to 64 KiB with 0xFF (one-saves data/saves/analogue-pocket/mincer-ray-gba)",
+  "confidence": "high",
+  "written": "2024-06-30 19:36 (file mtime as read here; the Pocket stamps its own clock)",
+  "files": {
+    "Castlevania - Aria of Sorrow (USA).sav": {
+      "size": 32768,
+      "sha1": "6870f889683c5543c06fccbf80149e9a6e7bbdc8"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

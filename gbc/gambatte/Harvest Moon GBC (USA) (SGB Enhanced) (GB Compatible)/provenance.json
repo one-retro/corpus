@@ -1,0 +1,31 @@
+{
+  "method": "played",
+  "system": "gbc",
+  "core": "gambatte",
+  "core_file": "gambatte_libretro.dylib",
+  "core_name": "Gambatte",
+  "core_version": "v0.5.0-netlink 77f2567",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Harvest Moon GBC (USA) (SGB Enhanced) (GB Compatible).gbc",
+    "sha1": "d407b9c20c5381f46ec460858539a5b6f559e04f",
+    "size": 1048576
+  },
+  "script": "scripts/gbc/Harvest Moon GBC.txt",
+  "frames": 10968,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Harvest Moon GBC (USA) (SGB Enhanced) (GB Compatible).rtc": {
+      "size": 8,
+      "sha1": "c3fcfbf0b8e5f7c372a0ffcb61026e09137a8ddb"
+    },
+    "Harvest Moon GBC (USA) (SGB Enhanced) (GB Compatible).srm": {
+      "size": 8192,
+      "sha1": "06d78df2eca47b47e7e580e29bf19a6a4dc476ea"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

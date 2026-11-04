@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "n64",
+  "core": "parallel-n64",
+  "core_file": "parallel_n64_libretro.dylib",
+  "core_name": "ParaLLEl N64",
+  "core_version": "1.0 e8cbdbb",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Pokemon Stadium (USA) (Rev 2).z64",
+    "sha1": "0d3b1d740c6ee6da6923550bf24ad827262fd8c0",
+    "size": 33554432
+  },
+  "script": "scripts/n64/Pokemon Stadium.txt",
+  "frames": 5284,
+  "options": "parallel-n64-gfxplugin = angrylion\nparallel-n64-pak1 = memory\n",
+  "started_from": null,
+  "files": {
+    "Pokemon Stadium (USA) (Rev 2).srm": {
+      "size": 296960,
+      "sha1": "375b42cee66853a1b4f81e237b645b105a1a418c"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

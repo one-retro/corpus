@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "pcenginecd",
+  "core": "beetle-pce-fast",
+  "core_file": "mednafen_pce_fast_libretro.dylib",
+  "core_name": "Beetle PCE Fast",
+  "core_version": "v1.31.0.0",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Ys Book I & II (NA).chd",
+    "sha1": "29edd397030cb8bad8dfcfe753f19c794c68d17b",
+    "size": 478437781
+  },
+  "script": "scripts/pcenginecd/Ys Book I & II.txt",
+  "frames": 15474,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Ys Book I & II (NA).srm": {
+      "size": 2048,
+      "sha1": "659ac11c6ffb553a57f15290a31da120f0ca1fee"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

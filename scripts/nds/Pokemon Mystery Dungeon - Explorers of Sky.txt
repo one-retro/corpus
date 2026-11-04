@@ -1,0 +1,49 @@
+# Pokemon Mystery Dungeon - Explorers of Sky: New Game, the personality quiz
+# (A picks the first answer every time), press the Bow (a long touch), name
+# the partner and the player (A types a's; START moves to End), through
+# chapter 1 into Beach Cave B1F, then menu > Rest > Quicksave > Yes:
+# "Your adventure has been saved." The game has 128 KiB (1 Mbit) EEPROM.
+wait 1800
+press start 6
+wait 200
+tap a 30 150        # New Game, the welcome, the quiz
+tap a 24 150
+wait 100
+touch 128 287 900   # "press your fingertip gently on the Bow" (held)
+wait 200
+tap a 17 150        # aura, nature, the partner, its nickname keyboard
+press start 6       # End
+wait 60
+press a 6
+wait 300
+press up 6          # "Is the name ... OK?" Yes
+wait 30
+press a 6
+wait 150
+tap a 210 100       # chapter 1 ... the player's name keyboard (A types a's)
+press start 6
+wait 60
+press a 6
+wait 300
+press up 6          # Yes
+wait 30
+press a 6
+wait 150
+tap a 120 100       # the beach, Zubat and Koffing, into Beach Cave B1F
+wait 200
+press x 20          # menu: Moves Items Team Others Ground Rest Exit
+wait 30
+repeat 5
+press down 6
+wait 15
+end
+press a 6           # Rest
+wait 60
+press a 6           # Quicksave
+wait 200
+press up 6          # "...saved in preparation for shutting down. Is this OK?" Yes
+wait 30
+press a 6
+wait 700            # "Quicksaving your adventure..." (NooDS takes longest)
+shot saved          # "Your adventure has been saved."
+wait 2400           # melonDS writes its .sav 2 s (wall clock) after the game's last write

@@ -1,0 +1,21 @@
+{
+  "method": "device-backup",
+  "device": "Analogue Pocket",
+  "backup_path": "Saves/snes/common/Super Mario RPG - Legend of the Seven Stars.sav",
+  "system": "snes",
+  "core": "agg23-snes",
+  "pocket_core": "agg23.SNES",
+  "pocket_platform": "snes",
+  "game_source": "the file's own name (no No-Intro entry applies)",
+  "attribution": "folder Saves/snes/common, only SNES core installed: agg23.SNES (Analogue backup Cores/ and Settings/; no other SNES core in the updater settings); no .mk3sav beside it, so not timboettiger's Pro Action Replay build; size is the header's SRAM size, as agg23.SNES writes. Its Analogizer build (alias agg23.SNES_Analogizer) would be indistinguishable",
+  "confidence": "high",
+  "written": "2022-09-26 22:32 (file mtime as read here; the Pocket stamps its own clock)",
+  "files": {
+    "Super Mario RPG - Legend of the Seven Stars.sav": {
+      "size": 32768,
+      "sha1": "da4256835f786392e7e00e5fe6769ce70c6d005f"
+    }
+  },
+  "created": "2026-11-03",
+  "note": "the ROM was named without a region; 32 KiB = header SRAM code 5"
+}

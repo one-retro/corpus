@@ -1,0 +1,21 @@
+{
+  "method": "device-backup",
+  "device": "Analogue Pocket",
+  "backup_path": "Saves/snes/common/games/4 Game Series Collections/Best-Of Lists/Top 100 List - GameFAQs.com/001 Legend of Zelda, The - A Link to the Past (USA).sav",
+  "system": "snes",
+  "core": "agg23-snes",
+  "pocket_core": "agg23.SNES",
+  "pocket_platform": "snes",
+  "game_source": "No-Intro DAT 'Nintendo - Super Nintendo Entertainment System (20260818-050713)'",
+  "attribution": "folder Saves/snes/common, only SNES core installed: agg23.SNES (Analogue backup Cores/ and Settings/; no other SNES core in the updater settings); no .mk3sav beside it, so not timboettiger's Pro Action Replay build; size is the header's SRAM size, as agg23.SNES writes. Its Analogizer build (alias agg23.SNES_Analogizer) would be indistinguishable",
+  "confidence": "high",
+  "written": "2022-12-20 20:47 (file mtime as read here; the Pocket stamps its own clock)",
+  "files": {
+    "001 Legend of Zelda, The - A Link to the Past (USA).sav": {
+      "size": 8192,
+      "sha1": "0a01d404da9cd98e9b79d3580ffc0cec8b337221"
+    }
+  },
+  "created": "2026-11-03",
+  "note": "the ROM file carried a list number"
+}

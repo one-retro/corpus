@@ -1,0 +1,38 @@
+load corpus-tmp/mgl/firered.mgl 8
+# Pokemon FireRed: start a new game, mash A through Professor Oak's talk
+# (boy, name AAAAAAA, rival AAAAAAA), then save in the bedroom from the
+# start menu. Proof: the CONTINUE screen after a reset.
+wait 900
+press start 6       # skip the intro
+wait 300
+press start 6       # title -> NEW GAME
+wait 300
+tap a 160 30        # controls, Oak, both names (A types letters, then OK)
+wait 300
+tap b 8 30          # close the NES text the A presses left open
+wait 60
+press start 6       # menu: BAG, AAAAAAA, SAVE, OPTION, EXIT
+wait 60
+press down 6
+wait 20
+press down 6
+wait 20
+press a 6           # SAVE
+wait 240
+press a 6           # YES
+wait 600            # SAVING... AAAAAAA saved the game.
+shot saved
+# Power cycle: keep battery RAM across the reset (SkyEmu's reset reloads
+# it from a file the frontend never wrote, and would lose the save).
+wait 30
+save
+wait 60
+shot final
+# power cycle: load the game again; the core reads the .sav back from the SD card
+load corpus-tmp/mgl/firered.mgl 8
+wait 900
+press start 6
+wait 300
+press start 6
+wait 200
+shot continue

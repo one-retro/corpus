@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "genesis",
+  "core": "genesis-plus-gx",
+  "core_file": "genesis_plus_gx_libretro.dylib",
+  "core_name": "Genesis Plus GX",
+  "core_version": "v1.7.4 f27655b",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Evander Holyfield's 'Real Deal' Boxing (World).md",
+    "sha1": "eb4aca22f8b5837a0a0b10491c46714948b09844",
+    "size": 524288
+  },
+  "script": "scripts/genesis/Evander Holyfield's Real Deal Boxing.txt",
+  "frames": 5584,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Evander Holyfield's 'Real Deal' Boxing (World).srm": {
+      "size": 128,
+      "sha1": "8bb1428350c0ac780d48bbd348cbfcb8ae36b018"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

@@ -1,0 +1,21 @@
+{
+  "method": "device-backup",
+  "device": "Analogue Pocket",
+  "backup_path": "Saves/gb/common/1 GBC US - M-Z/Pokemon Trading Card Game (USA, Australia) (SGB Enhanced) (GB Compatible).sav",
+  "system": "gbc",
+  "core": "budude2-gb",
+  "pocket_core": "budude2.GB",
+  "pocket_platform": "gb",
+  "game_source": "No-Intro DAT 'Nintendo - Game Boy Color (20260825-135204)'",
+  "attribution": "padding matches budude2: 32 KiB header RAM + 16-byte clock footer (timestamp 0x686022A7 = 2025-06-28 17:13:11, 23 hours after the file mtime) on an MBC5 cart with no clock; folder Saves/gb/common makes it budude2.GB (which loads .gbc), not budude2.GBC",
+  "confidence": "high",
+  "written": "2025-06-27 18:13 (file mtime as read here; the Pocket stamps its own clock)",
+  "files": {
+    "Pokemon Trading Card Game (USA, Australia) (SGB Enhanced) (GB Compatible).sav": {
+      "size": 32784,
+      "sha1": "a20703d2ab9c8b061a63a3cae6cfcb26ad9f63ea"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

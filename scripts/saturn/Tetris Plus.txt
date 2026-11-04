@@ -1,0 +1,6 @@
+# Tetris Plus (USA): with only the console's own memory the game creates TETRIS_PLUS
+# (2 KB, settings and records) there on boot without asking, then plays its intro.
+# No input: the title is up from about frame 4400 to 4900 in Yabause. Beetle Saturn
+# has a Backup RAM Cart plugged in, so the game asks first (.beetle-saturn variant).
+wait 4650
+shot title

@@ -1,0 +1,39 @@
+# Jam with the Band (Europe): Barbara the Bat makes out a member's card:
+# stage name "a" (touch keyboard), country (United Kingdom, the default),
+# strumming hand, a signature (a few touches), then the OK stamp. The game
+# then shows "Saving... Please do not turn off the power." (NAND save).
+# NOT FILED: no core produced a save the game reads back (corpus/nds/NOTES.md).
+wait 1800
+press start 6
+wait 500
+tap a 30 100        # the introduction, up to the stage name keyboard (A on the keyboard does no harm)
+wait 200
+touch 61 282 6      # a
+wait 30
+touch 61 282 6
+wait 30
+touch 61 282 6
+wait 30
+touch 128 363 6     # OK
+wait 800
+repeat 6            # country: OK (United Kingdom); later touches hit nothing
+touch 128 366 8
+wait 150
+end
+tap a 4 100         # strumming hand
+wait 300
+touch 100 280 10    # signature
+touch 110 282 10
+touch 120 284 10
+touch 130 282 10
+touch 140 280 10
+wait 30
+touch 128 362 8     # OK
+wait 150
+tap a 4 100         # "OK, how does this look?" and the OK stamp
+wait 60
+shot stamp
+press a 6           # (the stamp, if the text was still printing)
+wait 60
+shot saving         # "Saving... Please do not turn off the power." or the next line
+wait 3000           # melonDS writes its .sav 2 s (wall clock) after the game's last write

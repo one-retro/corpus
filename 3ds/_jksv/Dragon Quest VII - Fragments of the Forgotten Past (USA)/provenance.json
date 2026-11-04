@@ -1,0 +1,47 @@
+{
+  "method": "device-backup",
+  "device": "Nintendo 2DS",
+  "producer": "JKSV",
+  "backup_path": "JKSV/Saves/DRAGON QUEST VII/2034.02.05_14.21.48",
+  "system": "3ds",
+  "core": "_jksv",
+  "title": {
+    "jksv_folder": "DRAGON QUEST VII",
+    "name": "DRAGON QUEST VII",
+    "product_code": "CTR-P-AD7E",
+    "title_id": "000400000018EF00"
+  },
+  "game_source": "No-Intro DAT 'Nintendo - Nintendo 3DS (Encrypted) (20260826-020750)', by product code; the backup does not say which revision of the game made it, so the folder is the unrevised entry",
+  "attribution": "JKSV save manager on the owner's 2DS, real hardware; JKSV's title cache (JKSV/titles) gives the product code and title ID for its folder name",
+  "confidence": "high",
+  "written": "2034.02.05_14.21.48 (JKSV's backup folder, the 2DS's clock, which was set to 2034)",
+  "files": {
+    "Saves/DRAGON QUEST VII/2034.02.05_14.21.48/cardinfo.bin": {
+      "size": 8,
+      "sha1": "0912bec112d5e34e4a98afc1da7ad2a6028de46e",
+      "role": "primary"
+    },
+    "Saves/DRAGON QUEST VII/2034.02.05_14.21.48/save000.bin": {
+      "size": 20480,
+      "sha1": "d8f43f55f18aa8c60ef5a10185e0eccd7b2d5e40",
+      "role": "primary"
+    },
+    "Saves/DRAGON QUEST VII/2034.02.05_14.21.48/save001.bin": {
+      "size": 20480,
+      "sha1": "d7e7dbb8c29728a8d6dcc3bf3f12699a7ac62341",
+      "role": "primary"
+    },
+    "Saves/DRAGON QUEST VII/2034.02.05_14.21.48/save002.bin": {
+      "size": 20480,
+      "sha1": "b367019acc3ae30d421f0eeaaeef9e90a69b2a41",
+      "role": "primary"
+    },
+    "Saves/DRAGON QUEST VII/2034.02.05_14.21.48/system.bin": {
+      "size": 544,
+      "sha1": "1119fc0babbdfa99979e8942ce6244ebb9a5d55b",
+      "role": "primary"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

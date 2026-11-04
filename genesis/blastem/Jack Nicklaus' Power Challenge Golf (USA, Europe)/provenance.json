@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "genesis",
+  "core": "blastem",
+  "core_file": "blastem_libretro.dylib",
+  "core_name": "BlastEm",
+  "core_version": "1.0.1-pre",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Jack Nicklaus' Power Challenge Golf (USA, Europe).md",
+    "sha1": "8d7edfe87da732ecd9820a6afbb9c5700cce43b2",
+    "size": 1048576
+  },
+  "script": "scripts/genesis/Jack Nicklaus' Power Challenge Golf.blastem.txt",
+  "frames": 2566,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Jack Nicklaus' Power Challenge Golf (USA, Europe).srm": {
+      "size": 1024,
+      "sha1": "6ba9006902a9b2060369746d1dabc8a6161b1041"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "pcengine",
+  "core": "geargrafx",
+  "core_file": "geargrafx_libretro.dylib",
+  "core_name": "Geargrafx",
+  "core_version": "1.8.7",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Night Creatures (USA).pce",
+    "sha1": "16c4b43f92f5bc6c99fe84f71daff76cf1c0d0a6",
+    "size": 524288
+  },
+  "script": "scripts/pcengine/Night Creatures.txt",
+  "frames": 7114,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Night Creatures (USA).srm": {
+      "size": 2048,
+      "sha1": "eb82d3d54634ea53571999db1122a68681c10fc6"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

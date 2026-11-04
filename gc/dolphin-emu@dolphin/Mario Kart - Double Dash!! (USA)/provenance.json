@@ -1,0 +1,37 @@
+{
+  "method": "played",
+  "system": "gc",
+  "core": "dolphin-emu",
+  "app": "dolphin",
+  "core_file": null,
+  "core_name": "Dolphin",
+  "core_version": "2606a",
+  "frontend": "Dolphin 2606a (Dolphin.app), isolated user folder (-u), batch mode (-b), input from a TAS movie (-m)",
+  "rom": {
+    "name": "Mario Kart - Double Dash!! (USA).rvz",
+    "size": 396323584,
+    "sha1": "a110aa0c71c3b742879969b9f3ff0c67645d364f"
+  },
+  "script": "scripts/gc/Mario Kart - Double Dash!!.dtm.txt",
+  "frames": 9600,
+  "options": null,
+  "input": "work/standalone/tools/gen_dtm.py: a .dtm (header bSaveConfig=0, md5 zero, tickCount set) with one GC pad; Dolphin stopped with SIGINT ~80 s in (graceful stop)",
+  "started_from": null,
+  "files": {
+    "GC/USA/Card A/01-GM4E-MarioKart Double Dash!!.gci": {
+      "size": 24640,
+      "sha1": "5644aaf9d54d63441fb43b7d7c37ae924e4f283e"
+    },
+    "GC/SRAM.raw": {
+      "size": 68,
+      "sha1": "b3ba0a2ad9868106cc4d837cbefac4bfc8f078a1"
+    }
+  },
+  "layout": {
+    "save_dir": "<user>/GC/<region>/Card A/ (Dolphin default for slot A is now a GCI folder, EXI device type 8; a raw MemoryCardA.USA.raw is only used when slot A is set to Memory Card)",
+    "name": "<maker code>-<game code>-<card file name>.gci, here 01-GM4E-MarioKart Double Dash!!.gci: a 64-byte GCI header (the card directory entry) + the save blocks (3 x 8 KiB)",
+    "other": "GC/SRAM.raw (68 bytes): the emulated IPL SRAM (clock bias, language, slot flags), written on stop; not a game save"
+  },
+  "created": "2026-11-04",
+  "note": "The game asked 'Would you like to create data for MARIO KART: DOUBLE DASH!! on the Memory Card in Slot A?', the movie's A chose YES, then 'Data has been created.' (proof.png, a Dolphin frame dump, frame 1200). A placeholder.txt was put in the empty Card A folder beforehand: with an empty GCI folder Dolphin treats a movie as starting from a clear save and writes to GC/USA/Movie/Card A/ instead (seen in a first run). The GCI's modified-time field (0x327DAA76) comes from the emulated clock, which a movie sets from its recordingStartTime."
+}

@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "nes",
+  "core": "rustynes",
+  "core_file": "rustynes_libretro.dylib",
+  "core_name": "RustyNES",
+  "core_version": "3.6.0",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Crystalis (USA).nes",
+    "sha1": "c9144b473ac2a3b9bf3ea8054aff565460e5b2d4",
+    "size": 393232
+  },
+  "script": "scripts/nes/Crystalis.txt",
+  "frames": 8492,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Crystalis (USA).srm": {
+      "size": 8192,
+      "sha1": "744a82ca294e29b19c201c80140d6acaf83443b2"
+    }
+  },
+  "created": "2026-11-03",
+  "note": "runner: work/nes/runner/retro-run (tools/retro-run with RetroArch's init order and a disk control interface)"
+}

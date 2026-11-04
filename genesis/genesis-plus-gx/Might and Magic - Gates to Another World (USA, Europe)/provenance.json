@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "genesis",
+  "core": "genesis-plus-gx",
+  "core_file": "genesis_plus_gx_libretro.dylib",
+  "core_name": "Genesis Plus GX",
+  "core_version": "v1.7.4 f27655b",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Might and Magic - Gates to Another World (USA, Europe).md",
+    "sha1": "52e7ade244d48bc282db003d87c408e96dcb3d85",
+    "size": 786432
+  },
+  "script": "scripts/genesis/Might and Magic - Gates to Another World.txt",
+  "frames": 2628,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Might and Magic - Gates to Another World (USA, Europe).srm": {
+      "size": 16384,
+      "sha1": "c4b9987d6e9c58dc8ea9cf2a636c3093680d127c"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

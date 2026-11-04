@@ -1,0 +1,3 @@
+# SwanStation: card 1 libretro (.srm), card 2 per game title (<Title>_2.mcd)
+swanstation_MemoryCards_Card1Type = Libretro
+swanstation_MemoryCards_Card2Type = PerGameTitle

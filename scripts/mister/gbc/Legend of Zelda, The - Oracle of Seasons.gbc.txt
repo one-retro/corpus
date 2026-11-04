@@ -1,0 +1,29 @@
+load corpus-tmp/mgl/oos.mgl 8
+# Oracle of Seasons (MBC5 + 8 KiB battery RAM): NEW GAME in slot 1, named
+# "AAA". The game writes the file as the name is confirmed and shows it on
+# PICK A FILE. Only START works on the title.
+wait 700
+press start 6       # skip the intro to the title
+wait 60
+press start 6       # PRESS START -> PICK A FILE, cursor on slot 1
+wait 150
+press a 6           # slot 1 -> NEW GAME / SECRETS / GAME LINK
+wait 100
+press a 6           # NEW GAME -> NAME
+wait 120
+press a 6           # A
+wait 30
+press a 6           # A
+wait 30
+press a 6           # A
+wait 30
+press start 6       # cursor to OK
+wait 40
+press start 6       # OK: the file is written
+wait 150
+shot registered     # PICK A FILE: 1 AAA, three hearts
+wait 30
+wait 30
+save
+wait 60
+shot final

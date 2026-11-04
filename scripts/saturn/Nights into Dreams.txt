@@ -1,0 +1,32 @@
+# NiGHTS into Dreams... (USA): create a diary named AAB and show it in Select
+# Diary. The game writes its Score data and A-Life files on boot; naming the diary
+# rewrites the Score data with it. (No power cycle: Yabause's retro_reset reloads
+# backup RAM from its own file and would lose the diary.)
+# Saturn pad in libretro: A=b B=a C=r X=y Y=x Z=l L=l2 R=r2.
+wait 1500
+press start          # skip the intro to the title
+wait 600
+press start          # title -> Select Diary
+wait 600
+press start          # NEW GAME in slot 1 -> name entry ("NIGHTS" pre-filled)
+wait 300
+press b              # A: typing replaces the name
+wait 60
+press b              # A
+wait 60
+press right
+wait 30
+press b              # B
+wait 60
+shot name
+press a              # cursor to END
+wait 60
+press start          # confirm: the diary is written now
+wait 600
+shot dreams          # Dreams screen, diary AAB
+press l              # Z: back to Select Diary
+wait 600
+shot menu
+press b              # A on LOAD
+wait 300
+shot diary

@@ -1,0 +1,27 @@
+# Prince of Persia: START, then in level 1 SELECT > SAVE > slot 1 > OK? YES.
+# Opening SAVE again shows "L01 03 59:55" in slot 1.
+wait 360
+press start 6         # System Card: RUN
+wait 2000             # Jordan Mechner, the title (Geargrafx gets there later)
+press start 6
+wait 700              # the sunset: PUSH RUN BUTTON
+press start 6
+wait 700              # START CONTINUE NAME DEMO
+press start 6         # START
+wait 900              # level 1, "60 MINUTES LEFT"
+shot level1
+press select 6        # SAVE NAME SPEED BEST TIME GAME END
+wait 90
+press a 6             # SAVE: SELECT DATA
+wait 60
+press a 6             # slot 1: OK?
+wait 60
+press a 6             # YES
+wait 90
+press a 6             # SAVE again: the slot now holds the game
+wait 90
+shot saved            # SELECT DATA: L01 03 59:55
+press b 6
+wait 30
+press b 6
+wait 30

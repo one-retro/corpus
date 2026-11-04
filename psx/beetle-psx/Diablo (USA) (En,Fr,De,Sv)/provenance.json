@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "psx",
+  "core": "beetle-psx",
+  "core_file": "mednafen_psx_libretro.dylib",
+  "core_name": "Beetle PSX",
+  "core_version": "0.9.44.1 71ee81e",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Diablo (USA) (En,Fr,De,Sv).cue",
+    "sha1": "0789d354e661ae88facb3f22fc2cf39e0bc771e6",
+    "size": 92
+  },
+  "script": "scripts/psx/Diablo.txt",
+  "frames": 21708,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Diablo (USA) (En,Fr,De,Sv).srm": {
+      "size": 131072,
+      "sha1": "6d5298f39b309dfe4e34cbb6ecbb26cacb264071"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

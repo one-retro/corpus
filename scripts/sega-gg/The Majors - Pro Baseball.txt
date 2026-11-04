@@ -1,0 +1,35 @@
+# The Majors - Pro Baseball: 1P PLAY > PENNANT START, a 32-game season with
+# Toronto. The season is written to battery RAM as it begins (standings,
+# then the first game's PENNANT RACE screen). Reset: 1P PLAY now has
+# PENNANT CONTINUE lit, and it opens the saved AMERICAN EAST standings.
+# Start selects; menu moves are short presses.
+wait 600
+press start 10      # title -> 1P PLAY / VS PLAY / EDIT
+wait 150
+press start 10      # 1P PLAY -> PENNANT CONTINUE (dim) / EXHIBITION / PENNANT START
+wait 150
+press down 4
+wait 30
+press down 4        # -> PENNANT START
+wait 30
+press start 10      # SELECT GAME: 32 GAMES
+wait 150
+press start 10      # TEAM SELECTION: TORONTO
+wait 150
+press start 10      # AMERICAN EAST standings, 0-0
+wait 150
+press start 10      # PENNANT RACE: DETROIT vs TORONTO, INNING MODE
+wait 150
+press start 10      # 3 INNING -> PITCHER SELECTION
+wait 150
+wait 300
+reset
+wait 600
+press start 10
+wait 150
+press start 10      # 1P PLAY: PENNANT CONTINUE is lit now
+wait 150
+press start 10      # PENNANT CONTINUE: the saved standings
+wait 150
+shot saved
+wait 30

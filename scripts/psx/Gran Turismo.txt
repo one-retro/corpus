@@ -1,0 +1,25 @@
+# Gran Turismo (Simulation Mode): start a new career and save it from
+# My Home > Load & Save. "GT game data" is a 5-block save.
+wait 2400
+press start 6       # skip the intro movie
+wait 900            # memory card check, then the title menu
+shot title
+press down 6        # Arcade Mode -> Simulation Mode
+wait 30
+press b 6
+wait 900            # the city map, cursor on HOME
+shot map
+press b 6           # HOME
+wait 300
+press b 6           # LOAD&SAVE
+wait 300
+shot loadsave
+press b 6           # SAVE (the cursor starts on it)
+wait 300
+press b 6           # Memory card 1
+wait 400            # "Checking Memory Card...", then "Do you want to save?"
+shot confirm
+press b 6           # Yes
+wait 1200           # "Saving..." takes about 600 frames
+shot saved
+wait 60

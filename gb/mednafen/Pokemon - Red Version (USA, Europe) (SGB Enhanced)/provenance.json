@@ -1,0 +1,32 @@
+{
+  "method": "played",
+  "system": "gb",
+  "core": "mednafen",
+  "core_file": null,
+  "core_name": "Mednafen",
+  "core_version": "1.32.1",
+  "frontend": "Mednafen 1.32.1 (Homebrew), module 'gb', isolated MEDNAFEN_HOME, -sound 0 -video.glvsync 0",
+  "rom": {
+    "name": "Pokemon - Red Version (USA, Europe) (SGB Enhanced).gb",
+    "size": 1048576,
+    "sha1": "ea9bcae617fdf159b045185467ae58b2e4a48b9a"
+  },
+  "script": "scripts/gb/Pokemon Red.txt",
+  "frames": 7633,
+  "options": null,
+  "input": "work/standalone/tools/sdlfeed.c (DYLD_INSERT_LIBRARIES into the ad-hoc-signed Homebrew binary): SDL key events synthesized inside the process on presented frames, from the retro-run script mapped to Mednafen's default keys (gen_sdlfeed.py); F9 snapshot for shot, F10 reset, F12 exit (Mednafen writes saves on exit)",
+  "started_from": null,
+  "files": {
+    "Pokemon - Red Version (USA, Europe) (SGB Enhanced).3d45c1ee9abd5738df46d2bdda8b57dc.sav": {
+      "size": 32816,
+      "sha1": "fa75c7e4508c1e458b73d9f97419c7993a6dc36b"
+    }
+  },
+  "layout": {
+    "save_dir": "$MEDNAFEN_HOME/sav (default .mednafen/sav in the home folder)",
+    "name": "<ROM file name without extension>.<game MD5 as Mednafen computes it>.<ext> (filesys.fname_sav %f.%M%x)",
+    "written": "on exit"
+  },
+  "created": "2026-11-04",
+  "note": "32816 = 32 KiB + a 48-byte clock footer (VBA layout: 5 x u32 registers, 5 x u32 latched, u64 time) although this MBC3 cart has no clock: Mednafen's MBC3 always carries one."
+}

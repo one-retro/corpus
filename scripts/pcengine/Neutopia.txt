@@ -1,0 +1,75 @@
+# Neutopia: get the Book of Revival from the chest in the basement south of the
+# starting shrine, go back to the mother, take the password and save it to the
+# file cabinet (backup RAM), file NEUTOPIA 1. Then reset, CONTINUE > File Cabinet
+# shows the saved file.
+wait 600
+press start 6         # title
+wait 120
+press start 6         # START -> intro
+wait 1440
+tap a 26 90           # the mother's speech
+wait 60
+press down 90         # leave the shrine
+wait 60
+press down 100
+wait 60
+press down 60
+wait 60
+press down 60
+wait 60
+press down 60         # the field south of the shrine
+wait 60
+press right 10
+wait 10
+press down 60         # stairs to the basement
+wait 60
+tap a 12 90           # the old man's speech
+wait 60
+shot basement
+press left 26
+press up 40           # push into the chest: the Book of Revival
+wait 120
+shot book
+press a 6
+wait 90
+press down 10
+press right 22
+press down 150        # out of the basement
+wait 90
+press right 32
+press up 80
+press left 32
+press up 90           # back up to the shrine
+press up 20
+press left 10
+press up 300          # through the pillar room
+wait 30
+press up 60           # to the mother
+wait 30
+shot mother
+wait 90
+press a 6             # password? YES
+wait 90
+shot password
+press a 6             # file cabinet? YES
+wait 90
+press a 6             # NEUTOPIA 1
+wait 90
+shot saved
+press a 6             # continue the game? YES
+wait 90
+press a 6
+wait 300
+reset
+wait 600
+press start 6
+wait 120
+press down 6          # CONTINUE
+wait 30
+press start 6
+wait 120
+press down 6          # File Cabinet
+wait 30
+press a 6
+wait 120
+shot continue         # "Which file do you want to use?  NEUTOPIA 1"

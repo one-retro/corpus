@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "ngpc",
+  "core": "beetle-neopop",
+  "core_file": "mednafen_ngp_libretro.dylib",
+  "core_name": "Beetle NeoPop",
+  "core_version": "v1.29.0.0 a50d5ac",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "King of Fighters R-2 - Pocket Fighting Series (World) (En,Ja).ngc",
+    "sha1": "72d2b8f19f51b7cd5da18ebe7f3e2c90263c0a0c",
+    "size": 2097152
+  },
+  "script": "scripts/ngpc/King of Fighters R-2.txt",
+  "frames": 3372,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "King of Fighters R-2 - Pocket Fighting Series (World) (En,Ja).flash": {
+      "size": 2600,
+      "sha1": "7cb3ef6d9ea81f466f0b42fe40663e7d2ba1f9c5"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

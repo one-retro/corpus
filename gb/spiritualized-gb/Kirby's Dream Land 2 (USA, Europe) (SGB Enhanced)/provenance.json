@@ -1,0 +1,21 @@
+{
+  "method": "device-backup",
+  "device": "Analogue Pocket",
+  "backup_path": "Saves/gb/common/1 GB US - H-Q/Kirby's Dream Land 2 (USA, Europe) (SGB Enhanced).sav",
+  "system": "gb",
+  "core": "spiritualized-gb",
+  "pocket_core": "Spiritualized.GB",
+  "pocket_platform": "gb",
+  "game_source": "No-Intro DAT 'Nintendo - Game Boy (20260825-062646)'",
+  "attribution": "folder Saves/gb/common and only gb-platform core installed in 2023 (Spiritualized.GB; budude2.GB came in 2024); ROM .gb; 8 KiB = header RAM, no footer",
+  "confidence": "high",
+  "written": "2023-03-01 21:13 (file mtime as read here; the Pocket stamps its own clock)",
+  "files": {
+    "Kirby's Dream Land 2 (USA, Europe) (SGB Enhanced).sav": {
+      "size": 8192,
+      "sha1": "4a0c9e9d98d2ae7ed4d9f43d2a7d0b95b3e4594a"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

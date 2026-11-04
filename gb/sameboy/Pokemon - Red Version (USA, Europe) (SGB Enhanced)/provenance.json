@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "gb",
+  "core": "sameboy",
+  "core_file": "sameboy_libretro.dylib",
+  "core_name": "SameBoy",
+  "core_version": "1.0.5 90e2899",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Pokemon - Red Version (USA, Europe) (SGB Enhanced).gb",
+    "sha1": "ea9bcae617fdf159b045185467ae58b2e4a48b9a",
+    "size": 1048576
+  },
+  "script": "scripts/gb/Pokemon Red.txt",
+  "frames": 7633,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Pokemon - Red Version (USA, Europe) (SGB Enhanced).srm": {
+      "size": 32768,
+      "sha1": "c37446ba5f465b9cd4498150fef401e09f488df9"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

@@ -1,0 +1,31 @@
+{
+  "method": "played",
+  "system": "gba",
+  "core": "skyemu",
+  "core_file": "skyemu_libretro.dylib",
+  "core_name": "SkyEmu",
+  "core_version": "adacd0788964ed89f5c43dcbc1f3cc26deec996c",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Super Mario Advance 4 - Super Mario Bros. 3 (USA, Australia) (Rev 1).gba",
+    "sha1": "532f3307021637474b6dd37da059ca360f612337",
+    "size": 4194304
+  },
+  "script": "scripts/gba/Super Mario Advance 4 - Super Mario Bros. 3.txt",
+  "frames": 6480,
+  "options": "system_core_override = Automatic\nsystem_gb_bios_enable = disabled\nsystem_gba_bios_enable = disabled\nsystem_nds_bios_enable = disabled\n",
+  "started_from": null,
+  "files": {
+    "Super Mario Advance 4 - Super Mario Bros. 3 (USA, Australia) (Rev 1).rtc": {
+      "size": 48,
+      "sha1": "5d71e7de1d8615d7740e0a891a85ded084d9fe1b"
+    },
+    "Super Mario Advance 4 - Super Mario Bros. 3 (USA, Australia) (Rev 1).srm": {
+      "size": 131072,
+      "sha1": "368bba47f51be573db999fa2928041aad983014a"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

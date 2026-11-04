@@ -1,0 +1,18 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "psx-mister",
+  "url": "https://github.com/user-attachments/files/28436746/Tekken.3.USA.sav.zip",
+  "source_page": "https://github.com/MiSTer-devel/PSX_MiSTer/issues/358",
+  "source": "GitHub (MiSTer-devel/PSX_MiSTer issues)",
+  "author": "notimp",
+  "licence": null,
+  "fetched": "2026-11-04",
+  "what_it_is": "MiSTer PSX core .sav with Tekken Ball unlocked; the card also holds NTSC and PAL saves of other games and five deleted entries, so its contents were probably assembled elsewhere before the core rewrote it",
+  "files": {
+    "Tekken 3 (USA).sav": {
+      "size": 131072,
+      "sha1": "0f4f2eb08030ecec0b3c66790644a3346e3cf867"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+# Blazing Star (MVS: backup RAM, plus the memory card): insert a coin, start, take
+# the default ship and let it be shot down while pressing A every 80 frames. A also
+# fills in the high-score name entry ("AAAAAAAAA", 30th, kept in backup RAM). After
+# GAME OVER the game asks "CARD SAVE OK?" with the cursor on YES and saves on its
+# own; a blank card makes the BIOS ask to format it first (A = yes, the same
+# presses). Neo Geo A is RetroPad b. FinalBurn Neo and Geolith reach SAVE OK on the
+# same frame, about 5830.
+wait 1300
+press select 6         # coin
+wait 120
+press start 6
+repeat 55
+press b 4
+wait 76
+end
+shot saved             # CARD SAVE OK? > YES ... SAVE OK

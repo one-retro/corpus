@@ -1,0 +1,31 @@
+{
+  "method": "played",
+  "system": "gba",
+  "core": "skyemu",
+  "core_file": "skyemu_libretro.dylib",
+  "core_name": "SkyEmu",
+  "core_version": "adacd0788964ed89f5c43dcbc1f3cc26deec996c",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Kirby - Nightmare in Dream Land (USA).gba",
+    "sha1": "37a476567d133c146fee6b5e2eb0b07a215da6b0",
+    "size": 8388608
+  },
+  "script": "scripts/gba/Kirby - Nightmare in Dream Land.txt",
+  "frames": 4662,
+  "options": "system_core_override = Automatic\nsystem_gb_bios_enable = disabled\nsystem_gba_bios_enable = disabled\nsystem_nds_bios_enable = disabled\n",
+  "started_from": null,
+  "files": {
+    "Kirby - Nightmare in Dream Land (USA).rtc": {
+      "size": 48,
+      "sha1": "2c572ef13cf48d80f60d0003a7b9b7eda5a7386f"
+    },
+    "Kirby - Nightmare in Dream Land (USA).srm": {
+      "size": 131072,
+      "sha1": "1f7fed5a7a41bd8e6a30204814b2206ac345820d"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

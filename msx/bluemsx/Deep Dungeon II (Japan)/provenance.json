@@ -1,0 +1,30 @@
+{
+  "method": "played",
+  "system": "msx",
+  "core": "bluemsx",
+  "core_file": "bluemsx_libretro.dylib",
+  "core_name": "blueMSX",
+  "core_version": "git e3086eb",
+  "frontend": "retro-run (writes saves as RetroArch does), via work/msx/make-save-x.py: content copied into the run directory",
+  "renderer": "software",
+  "rom": {
+    "name": "Deep Dungeon II (Japan).rom",
+    "sha1": "d82135a5e28b750c44995af116db890a15f6428a",
+    "size": 131072
+  },
+  "extra_content": null,
+  "script": "scripts/msx/Deep Dungeon II.txt",
+  "frames": 4176,
+  "options": null,
+  "port0_device": null,
+  "started_from": null,
+  "files": {
+    "Deep Dungeon II (Japan).sram": {
+      "size": 8192,
+      "sha1": "34cf7e62f324c752a788d6f64bb1a6b4f84d5b58",
+      "location": "savedir"
+    }
+  },
+  "created": "2026-11-03",
+  "note": "blueMSX writes <ROM stem>.sram into the save directory, but only when the cartridge is re-inserted (retro_reset does this); retro_unload_game never writes it. The script's reset is what produced this file."
+}

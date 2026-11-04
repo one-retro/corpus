@@ -1,0 +1,21 @@
+{
+  "method": "device-backup",
+  "device": "Analogue Pocket",
+  "backup_path": "Saves/gbc/common/Dragon Warrior Monsters 2 - Tara's Adventure (USA) (SGB Enhanced).sav",
+  "system": "gbc",
+  "core": "spiritualized-gbc",
+  "pocket_core": "Spiritualized.GBC",
+  "pocket_platform": "gbc",
+  "game_source": "No-Intro DAT 'Nintendo - Game Boy Color (20260825-135204)'",
+  "attribution": "folder Saves/gbc/common: written by a gbc-platform core; Spiritualized.GBC was the only one installed (older card snapshots, Dec 2023: Cores/Spiritualized.GBC 1.3.0) and budude2.GBC (first release 2024-01-04) postdates the file; size is exactly the header's RAM size with no footer, which budude2 never writes",
+  "confidence": "high",
+  "written": "2022-07-20 15:58 (file mtime as read here; the Pocket stamps its own clock)",
+  "files": {
+    "Dragon Warrior Monsters 2 - Tara's Adventure (USA) (SGB Enhanced).sav": {
+      "size": 32768,
+      "sha1": "5eb421bdd99b10f050c237f9e4535b028e3815ca"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

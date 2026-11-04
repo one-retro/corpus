@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "gb",
+  "core": "mgba",
+  "core_file": "mgba_libretro.dylib",
+  "core_name": "mGBA",
+  "core_version": "0.11-212-7a12d6d",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Pocket Camera (Japan) (Rev 1) (SGB Enhanced).gb",
+    "sha1": "912205ea22e1dd735ed4f41d247039eebf39dddc",
+    "size": 1048576
+  },
+  "script": "scripts/gb/Pocket Camera.txt",
+  "frames": 1610,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Pocket Camera (Japan) (Rev 1) (SGB Enhanced).srm": {
+      "size": 131072,
+      "sha1": "e4025e77c483082899f5787ca8d8992d7dbc5c6c"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

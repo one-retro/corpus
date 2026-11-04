@@ -1,0 +1,45 @@
+# Banjo-Kazooie: start Game 1, sit through the intro (A advances the text),
+# then pause outside Banjo's house and SAVE AND QUIT. The game writes the
+# file to its 4 Kbit EEPROM ("GAME OVER" is how it says goodbye) and goes
+# back to the title; the file select then shows Game 1 with its play time.
+# The pause menu follows the analog stick, not the D-pad.
+# N64 buttons on the RetroPad: A = b, B = y, Z = l2, Start = start.
+wait 2400
+press start 6       # logos -> title
+wait 300
+press b 6           # (the title ignores A; these only pass time)
+wait 300
+press b 6
+wait 300
+press b 6
+wait 300
+press start 6       # title -> Banjo's bed: GAME 1: EMPTY
+wait 300
+press start 6       # "PRESS A TO PLAY THE GAME OR Z TO ERASE"
+wait 300
+press b 6           # Game 1: the intro starts
+wait 300
+repeat 48           # the intro, about four minutes: keep pressing A
+repeat 15
+press b 4
+wait 16
+end
+end
+wait 120
+press start 6       # pause outside the house
+wait 100
+stick 0 max 6
+wait 30
+stick 0 max 6       # SAVE AND QUIT
+wait 30
+press b 6           # -> ARE YOU SURE? A - YES, B - NO
+wait 200
+press b 6           # yes: the file is written here, then GAME OVER
+wait 300
+shot saved
+wait 3600           # back through the logos and the attract scene
+press start 6       # -> title
+wait 900
+press start 6       # Banjo's bed: GAME 1 now has a play time
+wait 400
+shot reloaded

@@ -1,0 +1,42 @@
+{
+  "method": "device-backup",
+  "device": "Nintendo 2DS",
+  "producer": "JKSV",
+  "backup_path": "JKSV/Saves/The Legend of Zelda/2034.02.05_14.23.33",
+  "system": "3ds",
+  "core": "_jksv",
+  "title": {
+    "jksv_folder": "The Legend of Zelda",
+    "name": "The Legend of Zelda",
+    "product_code": "CTR-P-BZLE",
+    "title_id": "00040000000EC300"
+  },
+  "game_source": "No-Intro DAT 'Nintendo - Nintendo 3DS (Encrypted) (20260826-020750)', by product code; the backup does not say which revision of the game made it, so the folder is the unrevised entry",
+  "attribution": "JKSV save manager on the owner's 2DS, real hardware; JKSV's title cache (JKSV/titles) gives the product code and title ID for its folder name",
+  "confidence": "high",
+  "written": "2034.02.05_14.23.33 (JKSV's backup folder, the 2DS's clock, which was set to 2034)",
+  "files": {
+    "Saves/The Legend of Zelda/2034.02.05_14.23.33/SaveCommon.bin": {
+      "size": 512,
+      "sha1": "0f4144bf8de9d01ddcdc638c9907f34cc27639ae",
+      "role": "primary"
+    },
+    "Saves/The Legend of Zelda/2034.02.05_14.23.33/Save_0.bin": {
+      "size": 5636,
+      "sha1": "0b6b257f998339b3d678833f0fa6655871afc2ad",
+      "role": "primary"
+    },
+    "Saves/The Legend of Zelda/2034.02.05_14.23.33/Save_1.bin": {
+      "size": 5636,
+      "sha1": "95e77931683c75039288e16ed7d963302fe888e2",
+      "role": "primary"
+    },
+    "Saves/The Legend of Zelda/2034.02.05_14.23.33/Save_2.bin": {
+      "size": 5636,
+      "sha1": "075b863cba1fc5fa7959928bc107b14dc814c795",
+      "role": "primary"
+    }
+  },
+  "created": "2026-11-03",
+  "note": "JKSV names it by the short title 'The Legend of Zelda'; its product code and title ID are A Link Between Worlds'"
+}

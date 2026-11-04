@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "wonderswan-color",
+  "core": "beetle-wonderswan",
+  "core_file": "mednafen_wswan_libretro.dylib",
+  "core_name": "Beetle WonderSwan",
+  "core_version": "v0.9.35.1 4b01295",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Romancing Sa-Ga (Japan).wsc",
+    "sha1": "06fcc9aad3ae478db6eed27621af4f56a6488a67",
+    "size": 4194304
+  },
+  "script": "scripts/wonderswan-color/Romancing Sa-Ga.txt",
+  "frames": 6078,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Romancing Sa-Ga (Japan).srm": {
+      "size": 32768,
+      "sha1": "2fea3530d90c3af86bb7a234c94cf5d662261282"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

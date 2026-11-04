@@ -1,0 +1,50 @@
+# The King of Fighters '98 (MVS, backup RAM), MAME cores: the test switch (F2 on the
+# keyboard) opens the MVS BIOS menu.
+# SETTING UP THE SOFT DIP: the cabinet's CONTINUE becomes 2 COINS = 1 CREDIT, and
+# K.O.F.'98's own PLAY TIME becomes LITTLE FAST and CONTINUE OFF. The BIOS keeps
+# these in backup RAM. A power cycle then shows them read back.
+# MAME 2010 maps Neo Geo A to RetroPad a; RetroPad x goes back.
+wait 1500
+key f2 10              # test switch: BIOS menu
+wait 300
+tap down 2 30          # SETTING UP THE SOFT DIP
+press a 6
+wait 60
+press a 6              # SETTING UP THE CABINET
+wait 60
+tap down 1 30
+press a 6              # CONTINUE 2COINS=1CREDIT
+wait 60
+shot cabinet
+press x 6              # back
+wait 60
+tap down 1 30
+press a 6              # SLOT1 K.O.F.'98
+wait 60
+press a 6              # PLAY TIME: LITTLE FAST
+wait 60
+tap down 1 30
+press a 6              # CONTINUE: OFF
+wait 60
+shot kof98
+press x 6              # back to the slot list
+wait 60
+press x 6              # back to the menu
+wait 120
+press x 6              # (and leave the menu)
+wait 120
+tap down 4 30          # EXIT
+press a 6
+wait 600
+# power cycle and look again
+reset
+wait 1500
+key f2 10
+wait 300
+tap down 2 30
+press a 6
+wait 60
+tap down 1 30
+press a 6              # SLOT1 K.O.F.'98
+wait 120
+shot saved             # PLAY TIME LITTLE FAST, CONTINUE OFF

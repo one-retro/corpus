@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "sega-gg",
+  "core": "sms-plus-gx",
+  "core_file": "smsplus_libretro.dylib",
+  "core_name": "SMS Plus GX",
+  "core_version": "1.8 3844b46",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Lunar - Sanposuru Gakuen (Japan).gg",
+    "sha1": "1b0cc847d31956d843cadab7d86a2f434220301e",
+    "size": 524288
+  },
+  "script": "scripts/sega-gg/Lunar - Sanposuru Gakuen.txt",
+  "frames": 9726,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Lunar - Sanposuru Gakuen (Japan).srm": {
+      "size": 32768,
+      "sha1": "87daa273748a3c99938bb5a514db8fadf8e877f8"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

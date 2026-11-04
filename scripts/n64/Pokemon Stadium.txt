@@ -1,0 +1,36 @@
+# Pokemon Stadium: OPTIONS -> SOUND set to MONO. The game formats its
+# FlashRAM on the first boot and writes the setting when the options close.
+# The script then resets and opens OPTIONS again to show MONO was read back.
+# No Transfer Pak is plugged in ("Game Pak None" on all four ports).
+# N64 buttons on the RetroPad: A = b, B = y, Z = l2, Start = start.
+wait 1600
+press start 6       # title -> Game Pak Check
+wait 200
+press b 6           # OK -> Please Select
+wait 250
+press down 6
+wait 30
+press right 6       # OPTIONS
+wait 30
+press b 6
+wait 250
+press b 6           # SOUND: STEREO -> MONO
+wait 150
+shot mono
+tap down 3 20       # QUIT
+wait 20
+press b 6           # close the options: the setting is written here
+wait 250
+reset
+wait 1600
+press start 6
+wait 200
+press b 6
+wait 250
+press down 6
+wait 30
+press right 6
+wait 30
+press b 6           # OPTIONS again after the reset
+wait 250
+shot reloaded

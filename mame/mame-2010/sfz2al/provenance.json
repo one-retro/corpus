@@ -1,0 +1,22 @@
+{
+  "method": "downloaded",
+  "system": "mame",
+  "core": "mame-2010",
+  "url": "https://raw.githubusercontent.com/zwh8800/recalbox-saves/fc24fb854793260c45bb856d9c7f1ed3aeb6f011/saves/mame/mame2010/nvram/sfz2al.nv",
+  "source_page": "https://github.com/zwh8800/recalbox-saves/blob/fc24fb854793260c45bb856d9c7f1ed3aeb6f011/saves/mame/mame2010/nvram/sfz2al.nv",
+  "source": "GitHub (zwh8800/recalbox-saves, a personal backup of Recalbox and handheld RetroArch save folders)",
+  "author": "zwh8800 (commits signed wastecat / zzz)",
+  "licence": null,
+  "fetched": "2026-11-04",
+  "committed": "2019-06-25..2021-04-27",
+  "what_it_is": "Street Fighter Zero 2 Alpha (CPS2) EEPROM written by libretro MAME 2010 on a Recalbox; settings state unknown",
+  "attribution": "from the repo path only: 'saves/mame/mame2010/nvram/sfz2al.nv'. The 'mame2010' folder is the save subdirectory that core creates; nothing else on the page names the core or the game state",
+  "files": {
+    "mame2010/nvram/sfz2al.nv": {
+      "size": 128,
+      "sha1": "70817c933ceeb44863fa90cda351f34a6179e326"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "128 bytes, a CPS2 93C46 EEPROM"
+}

@@ -1,0 +1,31 @@
+{
+  "method": "played",
+  "system": "sega-cd",
+  "core": "genesis-plus-gx",
+  "core_file": "genesis_plus_gx_libretro.dylib",
+  "core_name": "Genesis Plus GX",
+  "core_version": "v1.7.4 f27655b",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Shining Force CD (USA) (3R).cue",
+    "sha1": "a44e3210079c3bf25a854656f8b83f5227596a1c",
+    "size": 4275
+  },
+  "script": "scripts/sega-cd/Shining Force CD.txt",
+  "frames": 9914,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "4Mbit_cart.brm": {
+      "size": 524288,
+      "sha1": "d842da004ef9feaf9e74a6616347351a46cc5415"
+    },
+    "scd_U.brm": {
+      "size": 8192,
+      "sha1": "28445e81baf2bd01797ae58e81b75de7ebbd82fd"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

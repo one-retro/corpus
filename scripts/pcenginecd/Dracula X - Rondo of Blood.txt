@@ -1,0 +1,53 @@
+# Akumajou Dracula X - Chi no Rondo: NAME ENTRY for PLAYER1 ("AAA"), then
+# PLAYER1 > GAME START. Starting the game writes the player's record (the name
+# alone is not written). Reset: the file screen shows PLAYER1 AAA.
+wait 360
+press start 6         # System Card: RUN
+wait 4800             # the opening
+repeat 16
+wait 200
+press start 6         # title, file screen
+end
+wait 300
+shot files
+repeat 3
+press down 6
+wait 30
+end
+press a 6             # NAME ENTRY
+wait 90
+press a 6             # PLAYER1: the keyboard
+wait 60
+tap a 3 30            # A A A
+repeat 4
+press down 6
+wait 20
+end
+press a 6             # END
+wait 90
+repeat 3
+press down 6
+wait 20
+end
+press a 6             # END: back to the file screen
+wait 120
+repeat 3
+press up 6
+wait 30
+end
+press a 6             # PLAYER1: STAGE 0, GAME START
+wait 200
+shot player1
+press a 6             # GAME START: the record is written
+wait 1500
+shot prologue
+reset
+wait 360
+press start 6
+wait 4800
+repeat 16
+wait 200
+press start 6
+end
+wait 300
+shot saved            # PLAYER1 AAA

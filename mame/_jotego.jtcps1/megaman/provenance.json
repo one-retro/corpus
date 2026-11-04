@@ -1,0 +1,21 @@
+{
+  "method": "device-backup",
+  "device": "Analogue Pocket",
+  "backup_path": "Saves/jtcps1/common/megaman.sav",
+  "system": "mame",
+  "core": "_jotego.jtcps1",
+  "pocket_core": "jotego.jtcps1",
+  "pocket_platform": "jtcps1",
+  "game_source": "the file's own name (no No-Intro entry applies)",
+  "attribution": "folder Saves/jtcps1/common, which only jotego.jtcps1 uses; not one of jotego's distributed defaults (jtbin has never shipped a jtcps1 save); written 2024-01-04 11:20, 36 minutes after the core's assets were installed. The registry lists no jtcps1 core, hence mame/_jotego.jtcps1",
+  "confidence": "high",
+  "written": "2024-01-04 11:20 (file mtime as read here; the Pocket stamps its own clock)",
+  "files": {
+    "megaman.sav": {
+      "size": 128,
+      "sha1": "0ae4f711ef5d6e9d26c611fd2c8c8ac45ecbf9e7"
+    }
+  },
+  "created": "2026-11-03",
+  "note": "MAME set megaman (Mega Man - The Power Battle, CPS1); 128 bytes, all zero (the EEPROM image)"
+}

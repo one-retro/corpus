@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "neogeo",
+  "core": "fb-alpha",
+  "core_file": "fbalpha2012_libretro.dylib",
+  "core_name": "FB Alpha 2012",
+  "core_version": "v0.2.97.29 0ce3153",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "pbobblen.zip",
+    "sha1": "0e059a64ff45469c94d356c7b274dec8d251a121",
+    "size": 3671493
+  },
+  "script": "scripts/neogeo/pbobblen.txt",
+  "frames": 12624,
+  "options": "fbneo-neogeo-mode = MVS\n",
+  "started_from": null,
+  "files": {
+    "pbobblen.fs": {
+      "size": 408,
+      "sha1": "119916872aaedf447c1674d09b5df014af7f9082"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "FB Alpha 2012's libretro core has no memory card, so the game never offers CARD LOAD/SAVE; the proof shows round 1 starting after the power cycle. pbobblen.fs is the MVS backup RAM only (FB1 FS1 header, zlib)."
+}

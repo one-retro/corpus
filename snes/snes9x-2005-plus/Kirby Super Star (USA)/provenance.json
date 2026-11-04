@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "snes",
+  "core": "snes9x-2005-plus",
+  "core_file": "snes9x2005_plus_libretro.dylib",
+  "core_name": "Snes9x 2005 Plus",
+  "core_version": "v1.36 a79dfe9",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Kirby Super Star (USA).sfc",
+    "sha1": "cca1e67fa230bf4f60154f5ea55d06568229dc5d",
+    "size": 4194304
+  },
+  "script": "scripts/snes/Kirby Super Star.txt",
+  "frames": 7504,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Kirby Super Star (USA).srm": {
+      "size": 8192,
+      "sha1": "96ed4c042bebe00a1ceed62fd5ff65acd81f2634"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

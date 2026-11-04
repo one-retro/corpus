@@ -1,0 +1,31 @@
+{
+  "method": "played",
+  "system": "psx",
+  "core": "pcsx-rearmed",
+  "core_file": "pcsx_rearmed_libretro.dylib",
+  "core_name": "PCSX-ReARMed",
+  "core_version": "r26 7b0e8f8",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Street Fighter Alpha 3 (USA).cue",
+    "sha1": "5e640de7f4840a0dddbd6a575669ba649b8eb0c5",
+    "size": 231
+  },
+  "script": "scripts/psx/Street Fighter Alpha 3.slot2.txt",
+  "frames": 9294,
+  "options": "# PCSX-ReARMed defaults spelled out: card 1 libretro (.srm), card 2 shared (pcsx-card2.mcd)\npcsx_rearmed_memcard1 = libretro\npcsx_rearmed_memcard2 = shared\n",
+  "started_from": null,
+  "files": {
+    "Street Fighter Alpha 3 (USA).srm": {
+      "size": 131072,
+      "sha1": "ce51325adfe26fd6f96ddf1ab80347a95ec63bf0"
+    },
+    "pcsx-card2.mcd": {
+      "size": 131072,
+      "sha1": "9fb7c0de46fa40f530581be90b2c6ff4bf6b0955"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "option variant: pcsx_rearmed_memcard1 = libretro;pcsx_rearmed_memcard2 = shared"
+}

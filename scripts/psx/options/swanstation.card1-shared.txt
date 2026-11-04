@@ -1,0 +1,2 @@
+# SwanStation: card 1 shared between games (duckstation_shared_card_1.mcd)
+swanstation_MemoryCards_Card1Type = Shared

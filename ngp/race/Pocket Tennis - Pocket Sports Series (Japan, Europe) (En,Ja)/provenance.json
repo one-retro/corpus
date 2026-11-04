@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "ngp",
+  "core": "race",
+  "core_file": "race_libretro.dylib",
+  "core_name": "RACE",
+  "core_version": "v2.16 c7810dd",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Pocket Tennis - Pocket Sports Series (Japan, Europe) (En,Ja).ngp",
+    "sha1": "67826f4c8e488938f7e1b26e331f79ebf0aa2565",
+    "size": 524288
+  },
+  "script": "scripts/ngp/Pocket Tennis.txt",
+  "frames": 20450,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Pocket Tennis - Pocket Sports Series (Japan, Europe) (En,Ja).ngf": {
+      "size": 8208,
+      "sha1": "0b02df790228174502d29303599dfc74f6dcdde4"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

@@ -1,0 +1,21 @@
+{
+  "method": "device-backup",
+  "device": "Analogue Pocket",
+  "backup_path": "Saves/snes/common/games/2 Europe - A-Z/PAL - S-Z/Terranigma (Europe).sav",
+  "system": "snes",
+  "core": "agg23-snes",
+  "pocket_core": "agg23.SNES",
+  "pocket_platform": "snes",
+  "game_source": "No-Intro DAT 'Nintendo - Super Nintendo Entertainment System (20260818-050713)'",
+  "attribution": "folder Saves/snes/common, only SNES core installed: agg23.SNES (Analogue backup Cores/ and Settings/; no other SNES core in the updater settings); no .mk3sav beside it, so not timboettiger's Pro Action Replay build; size is the header's SRAM size, as agg23.SNES writes. Its Analogizer build (alias agg23.SNES_Analogizer) would be indistinguishable",
+  "confidence": "high",
+  "written": "2023-01-24 10:02 (file mtime as read here; the Pocket stamps its own clock)",
+  "files": {
+    "Terranigma (Europe).sav": {
+      "size": 8192,
+      "sha1": "45f4bec12b0fdf9e9dc459cdb079f51c6857b2d7"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

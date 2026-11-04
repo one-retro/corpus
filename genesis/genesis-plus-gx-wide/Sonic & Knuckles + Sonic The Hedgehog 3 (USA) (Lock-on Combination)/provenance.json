@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "genesis",
+  "core": "genesis-plus-gx-wide",
+  "core_file": "genesis_plus_gx_wide_libretro.dylib",
+  "core_name": "Genesis Plus GX Wide",
+  "core_version": "v1.7.4 b7ad005",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Sonic & Knuckles + Sonic The Hedgehog 3 (USA) (Lock-on Combination).md",
+    "sha1": "cfbf98c36c776677290a872547ac47c53d2761d6",
+    "size": 4194304
+  },
+  "script": "scripts/genesis/Sonic & Knuckles + Sonic The Hedgehog 3.txt",
+  "frames": 2220,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Sonic & Knuckles + Sonic The Hedgehog 3 (USA) (Lock-on Combination).srm": {
+      "size": 980,
+      "sha1": "fc8e33719c28323352b9b120940acb558a484463"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

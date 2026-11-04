@@ -1,0 +1,11 @@
+# Duke Nukem 3D (USA): at the title the game finds no save file and offers to create
+# one ("There was no save file. A save file will be created."); OK writes DUKENUKEM3D.
+# The Saturn version saves progress only between levels; this file is what it creates
+# first. Saturn pad in libretro: A=b B=a C=r X=y Y=x Z=l L=l2 R=r2.
+wait 3200
+press start          # title (both cores show it from ~3000 to ~3900)
+wait 300
+shot nosave          # "There was no save file. A save file will be created." OK
+press b              # A: OK
+wait 300
+shot menu            # main menu: NEW GAME / LOAD GAME ...

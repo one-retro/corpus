@@ -1,0 +1,32 @@
+load corpus-tmp/mgl/oasis.mgl 8
+# Defenders of Oasis: New Game, sit through the Prince's audience with the
+# King, then stand in the throne room. The game has no save command: it keeps
+# saving the position to battery RAM while you play (Game 1 here). Reset:
+# the title menu now opens on Continue, and the game list shows
+# "Game 1 LV 1 Chap. 1".
+wait 600
+repeat 5            # story -> city -> title -> New Game/Continue/Copy/Delete
+press start 10    # (start does nothing once the menu is up)
+wait 150
+end
+repeat 54           # New Game, Chapter 1, the wake-up and the audience;
+press b 10    # the last twenty or so presses just examine the floor
+wait 120            # ("You find nothing out of the ordinary.")
+end
+press a 10    # close the last message
+wait 120
+wait 30
+save
+wait 60
+shot final
+# power cycle: load the game again; the core reads the .sav back from the SD card
+load corpus-tmp/mgl/oasis.mgl 8
+wait 600
+repeat 5
+press start 10
+wait 150
+end
+press b 10    # Continue (the cursor starts there when a game exists)
+wait 150
+shot saved
+wait 30

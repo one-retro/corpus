@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "gb",
+  "core": "gearboy",
+  "core_file": "gearboy_libretro.dylib",
+  "core_name": "Gearboy",
+  "core_version": "3.8.20-8-g37d0bf3",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Pocket Camera (Japan) (Rev 1) (SGB Enhanced).gb",
+    "sha1": "912205ea22e1dd735ed4f41d247039eebf39dddc",
+    "size": 1048576
+  },
+  "script": "scripts/gb/Pocket Camera.txt",
+  "frames": 1610,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Pocket Camera (Japan) (Rev 1) (SGB Enhanced).srm": {
+      "size": 131072,
+      "sha1": "b2f10fdfbc0a7963b86e376f8fa6ce836335d5f8"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

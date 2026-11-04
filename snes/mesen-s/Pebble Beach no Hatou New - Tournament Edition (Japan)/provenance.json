@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "snes",
+  "core": "mesen-s",
+  "core_file": "mesen2_libretro.dylib",
+  "core_name": "Mesen2",
+  "core_version": "2.0.0",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Pebble Beach no Hatou New - Tournament Edition (Japan).sfc",
+    "sha1": "7c84674ce5bed9de224c07d0d99d19c92a39e942",
+    "size": 2097152
+  },
+  "script": "scripts/snes/Pebble Beach no Hatou New.txt",
+  "frames": 2552,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Pebble Beach no Hatou New - Tournament Edition (Japan).srm": {
+      "size": 65536,
+      "sha1": "c76cfffc1dfb5f6924230e5316979f3fceca002a"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

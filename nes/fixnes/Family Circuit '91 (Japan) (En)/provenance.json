@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "nes",
+  "core": "fixnes",
+  "core_file": "fixnes_libretro.dylib",
+  "core_name": "fixNES",
+  "core_version": "Alpha v1.3.1",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Family Circuit '91 (Japan) (En).nes",
+    "sha1": "89a79a601b8e900378035cb54248843eee24aafc",
+    "size": 655376
+  },
+  "script": "scripts/nes/Family Circuit '91.txt",
+  "frames": 4440,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Family Circuit '91 (Japan) (En).srm": {
+      "size": 131072,
+      "sha1": "404a83a9026a45afdd41b0a63fb83b6625f80c59"
+    }
+  },
+  "created": "2026-11-03",
+  "note": "runner: work/nes/runner/retro-run (tools/retro-run with RetroArch's init order and a disk control interface)"
+}

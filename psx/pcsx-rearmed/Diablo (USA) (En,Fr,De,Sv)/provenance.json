@@ -1,0 +1,31 @@
+{
+  "method": "played",
+  "system": "psx",
+  "core": "pcsx-rearmed",
+  "core_file": "pcsx_rearmed_libretro.dylib",
+  "core_name": "PCSX-ReARMed",
+  "core_version": "r26 7b0e8f8",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Diablo (USA) (En,Fr,De,Sv).cue",
+    "sha1": "0789d354e661ae88facb3f22fc2cf39e0bc771e6",
+    "size": 92
+  },
+  "script": "scripts/psx/Diablo.txt",
+  "frames": 21708,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Diablo (USA) (En,Fr,De,Sv).srm": {
+      "size": 131072,
+      "sha1": "3943805e950109783936e4723cacf8178cc63ad9"
+    },
+    "pcsx-card2.mcd": {
+      "size": 131072,
+      "sha1": "1b3c99be55273085e14b30983b636529b6dd7f46"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

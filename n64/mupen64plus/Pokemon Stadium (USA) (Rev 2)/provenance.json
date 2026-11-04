@@ -1,0 +1,32 @@
+{
+  "method": "played",
+  "system": "n64",
+  "core": "mupen64plus",
+  "core_file": null,
+  "core_name": "Mupen64Plus",
+  "core_version": "2.6.0",
+  "frontend": "Mupen64Plus 2.6.0 (Homebrew: mupen64plus-ui-console + core 2.6.0), plugins glide64mk2 / rsp-hle / dummy audio / m64feed input",
+  "rom": {
+    "name": "Pokemon Stadium (USA) (Rev 2).z64",
+    "size": 33554432,
+    "sha1": "0d3b1d740c6ee6da6923550bf24ad827262fd8c0"
+  },
+  "script": "scripts/n64/Pokemon Stadium.txt",
+  "frames": 5284,
+  "options": null,
+  "input": "work/standalone/tools/m64feed.c: an input plugin that replays the retro-run script by VI frame (core frame callback), RetroPad mapped as Mupen64Plus-Next does (b=A, y=B, l2=Z); controller 1 with a Controller Pak; M64CMD_STOP at the end. --nospeedlimit, isolated --configdir and Core[SaveSRAMPath].",
+  "started_from": null,
+  "files": {
+    "Pokemon Stadium (U) (V1.2) [!]-6DC6820C.fla": {
+      "size": 131072,
+      "sha1": "638fab49fe8e0016399a92018a46483b6853dbe0"
+    }
+  },
+  "layout": {
+    "save_dir": "Core[SaveSRAMPath], default Library/Application Support/Mupen64Plus/save/ in the home folder on macOS",
+    "name": "Core[SaveFilenameFormat]=1 (default): first 32 characters of the ROM good name from mupen64plus.ini, a dash, the first 8 hex digits of the ROM MD5 in capitals, then .eep / .sra / .fla / .mpk",
+    "written": "when the game writes, and on stop"
+  },
+  "created": "2026-11-04",
+  "note": "OPTIONS: SOUND MONO, read back after the reset (FlashRAM 128 KiB)."
+}

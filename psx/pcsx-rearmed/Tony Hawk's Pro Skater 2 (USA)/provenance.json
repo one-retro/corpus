@@ -1,0 +1,31 @@
+{
+  "method": "played",
+  "system": "psx",
+  "core": "pcsx-rearmed",
+  "core_file": "pcsx_rearmed_libretro.dylib",
+  "core_name": "PCSX-ReARMed",
+  "core_version": "r26 7b0e8f8",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Tony Hawk's Pro Skater 2 (USA).cue",
+    "sha1": "ea5388de4fa83e3d3b5f37d752f1eb8d3bd5d88e",
+    "size": 96
+  },
+  "script": "scripts/psx/Tony Hawk's Pro Skater 2.txt",
+  "frames": 8662,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Tony Hawk's Pro Skater 2 (USA).srm": {
+      "size": 131072,
+      "sha1": "b4fbfccca4c5fb27a41d0f3035c5c9dc2e51c725"
+    },
+    "pcsx-card2.mcd": {
+      "size": 131072,
+      "sha1": "1b3c99be55273085e14b30983b636529b6dd7f46"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

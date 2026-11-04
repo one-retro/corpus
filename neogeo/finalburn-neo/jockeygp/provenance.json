@@ -1,0 +1,31 @@
+{
+  "method": "played",
+  "system": "neogeo",
+  "core": "finalburn-neo",
+  "core_file": "fbneo_libretro.dylib",
+  "core_name": "FinalBurn Neo",
+  "core_version": "v1.0.0.03  GITda14132",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "jockeygp.zip",
+    "sha1": "04aa9208647988ee6ee73ca7de3c170efed6e63f",
+    "size": 17273406
+  },
+  "script": "scripts/neogeo/jockeygp.txt",
+  "frames": 5472,
+  "options": "fbneo-neogeo-mode = MVS_USA\nfbneo-memcard-mode = per-game\n",
+  "started_from": null,
+  "files": {
+    "fbneo/jockeygp.fs": {
+      "size": 73728,
+      "sha1": "969ead93433142d2b4a52361671fc7ee4a36046f"
+    },
+    "fbneo/jockeygp.memcard": {
+      "size": 131104,
+      "sha1": "ec7a6096e64939a6cbdaa48ee5f408aed6013840"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "jockeygp.fs is 73728 bytes: 64 KiB MVS backup RAM + the cartridge's 8 KiB RAM. The game does not use the card; jockeygp.memcard is the unformatted 128 KiB card region (all zero)."
+}

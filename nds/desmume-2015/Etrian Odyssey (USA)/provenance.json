@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "nds",
+  "core": "desmume-2015",
+  "core_file": "desmume2015_libretro.dylib",
+  "core_name": "DeSmuME 2015",
+  "core_version": "git a06da0c",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Etrian Odyssey (USA).nds",
+    "sha1": "94cd285184d3bafb10af186d478a2a0348ff0bf7",
+    "size": 16777216
+  },
+  "script": "scripts/nds/Etrian Odyssey.txt",
+  "frames": 15616,
+  "options": "desmume_pointer_type = touch\n",
+  "started_from": null,
+  "files": {
+    "Etrian Odyssey (USA).dsv": {
+      "size": 65658,
+      "sha1": "0f4f5ec92a31f025edb658dbda4519e30a985ee5"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

@@ -1,0 +1,35 @@
+{
+  "method": "played",
+  "system": "msx",
+  "core": "fmsx",
+  "core_file": "fmsx_libretro.dylib",
+  "core_name": "fMSX",
+  "core_version": "6.0 4de1175",
+  "frontend": "retro-run (writes saves as RetroArch does), via work/msx/make-save-x.py: content copied into the run directory",
+  "renderer": "software",
+  "rom": {
+    "name": "Nobunaga no Yabou - Zenkoku Ban (Japan).rom",
+    "sha1": "e6de8bbd60123444de2a90928853985ceb0b4cbf",
+    "size": 262144
+  },
+  "extra_content": null,
+  "script": "scripts/msx/Nobunaga no Yabou - Zenkoku Ban.txt",
+  "frames": 9986,
+  "options": null,
+  "port0_device": 3,
+  "started_from": null,
+  "files": {
+    "Nobunaga no Yabou - Zenkoku Ban (Japan).sav": {
+      "size": 8192,
+      "sha1": "98951a34342ab8ba79822a12512487d9a8ce5863",
+      "location": "content-dir"
+    },
+    "system/CMOS.ROM": {
+      "size": 52,
+      "sha1": "e8880ec014926ef52a724c4c4b5d011b8d66a0d7",
+      "location": "sysdir"
+    }
+  },
+  "created": "2026-11-03",
+  "note": "fMSX writes cartridge SRAM to <ROM path without extension>.sav beside the ROM (location content-dir), not in the save directory, on unload; RETRO_MEMORY_SAVE_RAM is not used for it, so RetroArch writes no .srm. system/CMOS.ROM is the RTC/CMOS (fMSX default mode MSX2+), written into the system directory on unload. Port 0 device set to 3 (3 = Keyboard, 257 = Joystick + Emulated Keyboard) with work/msx/retro-run-x."
+}

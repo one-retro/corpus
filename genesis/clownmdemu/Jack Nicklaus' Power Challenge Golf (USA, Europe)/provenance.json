@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "genesis",
+  "core": "clownmdemu",
+  "core_file": "clownmdemu_libretro.dylib",
+  "core_name": "ClownMDEmu",
+  "core_version": "v1.6.12 d43c270",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Jack Nicklaus' Power Challenge Golf (USA, Europe).md",
+    "sha1": "8d7edfe87da732ecd9820a6afbb9c5700cce43b2",
+    "size": 1048576
+  },
+  "script": "scripts/genesis/Jack Nicklaus' Power Challenge Golf.txt",
+  "frames": 2566,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Jack Nicklaus' Power Challenge Golf (USA, Europe).srm": {
+      "size": 65536,
+      "sha1": "f9694cff854beb2c97e351d761dd3e1e98778fb1"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

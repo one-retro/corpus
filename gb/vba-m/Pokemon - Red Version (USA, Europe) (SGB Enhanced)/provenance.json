@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "gb",
+  "core": "vba-m",
+  "core_file": "vbam_libretro.dylib",
+  "core_name": "VBA-M",
+  "core_version": " 115defb",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Pokemon - Red Version (USA, Europe) (SGB Enhanced).gb",
+    "sha1": "ea9bcae617fdf159b045185467ae58b2e4a48b9a",
+    "size": 1048576
+  },
+  "script": "scripts/gb/Pokemon Red.txt",
+  "frames": 7633,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Pokemon - Red Version (USA, Europe) (SGB Enhanced).srm": {
+      "size": 32768,
+      "sha1": "6133442a3e9289d13f93a833cdc32090a34d3bd8"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

@@ -1,0 +1,131 @@
+# Golfamania: STROKE PLAY for one player with a new character "ABCDEFGH"
+# (type FADE, without the 1W/2W/3W). Once the round starts the game keeps the
+# record of play in battery RAM; after a reset STROKE PLAY offers CONTINUE
+# ("MAY I DELETE YOUR CURRENT RECORD OF PLAY?" on NEW GAME), and CONTINUE puts
+# ABCD back on the first tee. Button 2 (a) selects, button 1 (b) cancels.
+wait 900
+press b 10          # title -> SELECT A GAME MODE
+wait 150
+press down 10
+wait 40
+press down 10       # -> STROKE PLAY
+wait 40
+press a 10          # HOW MANY PLAYERS? 1 PLAYER
+wait 150
+press a 10          # WITH COMPUTER PLAYER? YES (where the cursor starts)
+wait 150
+press a 10          # SELECT 1ST PLAYER'S TYPE: the first golfer
+wait 150
+press a 10          # CHARACTER DATA / INPUT YOUR NAME
+wait 150
+# eight letters: up raises the letter, a moves on
+press a 10          # letter 1
+wait 40
+press up 10
+wait 30
+press a 10          # letter 2
+wait 40
+press up 10
+wait 30
+press up 10
+wait 30
+press a 10          # letter 3
+wait 40
+press up 10
+wait 30
+press up 10
+wait 30
+press up 10
+wait 30
+press a 10          # letter 4
+wait 40
+press up 10
+wait 30
+press up 10
+wait 30
+press up 10
+wait 30
+press up 10
+wait 30
+press a 10          # letter 5
+wait 40
+press up 10
+wait 30
+press up 10
+wait 30
+press up 10
+wait 30
+press up 10
+wait 30
+press up 10
+wait 30
+press a 10          # letter 6
+wait 40
+press up 10
+wait 30
+press up 10
+wait 30
+press up 10
+wait 30
+press up 10
+wait 30
+press up 10
+wait 30
+press up 10
+wait 30
+press a 10          # letter 7
+wait 40
+press up 10
+wait 30
+press up 10
+wait 30
+press up 10
+wait 30
+press up 10
+wait 30
+press up 10
+wait 30
+press up 10
+wait 30
+press up 10
+wait 30
+press a 10          # letter 8
+wait 40
+wait 80            # SELECT TYPE OF SHOT
+press a 10          # FADE
+wait 120            # REMOVE 3 UNNECESSARY CLUBS, cursor on 1W
+press a 10          # 1W
+wait 60
+press right 10
+wait 40
+press a 10          # 2W
+wait 60
+press right 10
+wait 40
+press a 10          # 3W
+wait 120
+repeat 3            # down to the end mark under PW
+press down 10
+wait 40
+end
+press a 10          # ARE YOU OK? YES
+wait 150
+press a 10          # YES -> STROKE PLAY START, first tee
+wait 900            # the record of play is written as the round starts
+reset
+wait 900
+press b 10
+wait 150
+press down 10
+wait 40
+press down 10       # STROKE PLAY
+wait 40
+press a 10          # NEW GAME / CONTINUE
+wait 150
+press down 10       # -> CONTINUE
+wait 40
+shot record
+press a 10          # CONTINUE: back on the first tee
+wait 400
+shot saved
+wait 30

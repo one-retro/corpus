@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "n64",
+  "core": "parallel-n64",
+  "core_file": "parallel_n64_libretro.dylib",
+  "core_name": "ParaLLEl N64",
+  "core_version": "1.0 e8cbdbb",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Super Smash Bros. (USA).z64",
+    "sha1": "e2929e10fccc0aa84e5776227e798abc07cedabf",
+    "size": 16777216
+  },
+  "script": "scripts/n64/Super Smash Bros..txt",
+  "frames": 3742,
+  "options": "parallel-n64-gfxplugin = angrylion\nparallel-n64-pak1 = memory\n",
+  "started_from": null,
+  "files": {
+    "Super Smash Bros. (USA).srm": {
+      "size": 296960,
+      "sha1": "8ce79657780b569ac4cc44cdd51a1da5a66843ff"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

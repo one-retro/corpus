@@ -1,0 +1,18 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "duckstation",
+  "url": "https://github.com/user-attachments/files/20846380/Disney.s.The.Emperor.s.New.Groove.Europe._1.zip",
+  "source_page": "https://github.com/duckstation-unoff-issue-tracker-admin/duckstation-unofficial-issue-tracker/issues/221",
+  "source": "GitHub (unofficial DuckStation issue tracker)",
+  "author": "thelastangryman1907",
+  "licence": null,
+  "fetched": "2026-11-04",
+  "what_it_is": "DuckStation 0.1-9179 per-game card; PAL save (BESCES-03010) at stage 4",
+  "files": {
+    "Disney's The Emperor's New Groove (Europe)_1.mcd": {
+      "size": 131072,
+      "sha1": "4fee3b25af40675bad311d78e5b5949288157149"
+    }
+  }
+}

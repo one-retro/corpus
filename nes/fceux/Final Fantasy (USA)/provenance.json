@@ -1,0 +1,19 @@
+{
+  "method": "downloaded",
+  "system": "nes",
+  "core": "fceux",
+  "url": "https://fantasyanime.com/finalfantasy/ff/ff1save_10-TempleofFiends.zip",
+  "source_page": "https://fantasyanime.com/finalfantasy/ff/ffsaves.htm",
+  "source": "fantasyanime.com (Final Fantasy game saves page)",
+  "author": "webmistress of VideoGameSprites.net (collector; name not given)",
+  "licence": null,
+  "fetched": "2026-11-03",
+  "what_it_is": "Final Fantasy battery save at the Temple of Fiends (save #10 of a 13-save walkthrough set 'collected by the webmistress of VideoGameSprites.net'), file dated 2008-08-14.",
+  "files": {
+    "Final Fantasy10-TempleofFiends.sav": {
+      "size": 8192,
+      "sha1": "b782978fde0409cc53b9d7449b6a099f893f1717"
+    }
+  },
+  "note": "Written by FCE Ultra 0.98.12, the emulator FCEUX was forked from (same .sav code: raw battery RAM, 8 KiB, named <rom>.sav; this one renamed by the collector). Evidence: the zip pairs it with 'Final Fantasy10-TempleofFiends.fc0', an FCE Ultra state ('FCS\\xff' header, version field 9812 = 0.98.12) whose WRAM chunk is byte-identical to this .sav. Not FCEUX itself; drop it if the fceux slot must be FCEUX proper."
+}

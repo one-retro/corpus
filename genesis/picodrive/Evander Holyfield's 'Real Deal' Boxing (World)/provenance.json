@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "genesis",
+  "core": "picodrive",
+  "core_file": "picodrive_libretro.dylib",
+  "core_name": "PicoDrive",
+  "core_version": "2.05-1890c29",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Evander Holyfield's 'Real Deal' Boxing (World).md",
+    "sha1": "eb4aca22f8b5837a0a0b10491c46714948b09844",
+    "size": 524288
+  },
+  "script": "scripts/genesis/Evander Holyfield's Real Deal Boxing.txt",
+  "frames": 5584,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Evander Holyfield's 'Real Deal' Boxing (World).srm": {
+      "size": 8192,
+      "sha1": "9e8b126dbb5dc6c3e62193d4b904a5866d7cabb9"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

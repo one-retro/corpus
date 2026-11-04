@@ -1,0 +1,37 @@
+{
+  "method": "played",
+  "system": "gc",
+  "core": "dolphin-emu",
+  "app": "dolphin",
+  "core_file": null,
+  "core_name": "Dolphin",
+  "core_version": "2606a",
+  "frontend": "Dolphin 2606a (Dolphin.app), isolated user folder (-u), batch mode (-b), input from a TAS movie (-m)",
+  "rom": {
+    "name": "Kirby Air Ride (USA).rvz",
+    "size": 607951944,
+    "sha1": "b253bd1abd19ff2576c41bcc9c8a2b10b759945d"
+  },
+  "script": "scripts/gc/Kirby Air Ride.dtm.txt",
+  "frames": 9600,
+  "options": null,
+  "input": "work/standalone/tools/gen_dtm.py .dtm, one GC pad; Dolphin stopped with SIGINT ~100 s in",
+  "started_from": null,
+  "files": {
+    "GC/USA/Card A/01-GKYE-KA030621_0100_T030529_2154.gci": {
+      "size": 32832,
+      "sha1": "5e605fe0d227bab06f54bdfdcb20d8a65f491c0d"
+    },
+    "GC/SRAM.raw": {
+      "size": 68,
+      "sha1": "d694cf79722614ea4c8989f3282ca1bb0dd93f93"
+    }
+  },
+  "layout": {
+    "save_dir": "<user>/GC/<region>/Card A/ (GCI folder, the default for slot A)",
+    "name": "<maker>-<game code>-<card file name>.gci; this game names its card file KA030621_0100_T030529_2154 (a build stamp), so the .gci name carries no title",
+    "other": "GC/SRAM.raw: emulated IPL SRAM, not a game save"
+  },
+  "created": "2026-11-04",
+  "note": "The game created its file on its own at boot: 'Creating Kirby Air Ride data file (1 file and 4 blocks are required)' (proof.png, frame 120 of Dolphin's frame dump); the movie then carried on into an Air Ride race and paused it. 32832 bytes = 64-byte GCI header + 4 x 8 KiB blocks. Same placeholder.txt trick as Mario Kart DD so the normal Card A folder is used."
+}

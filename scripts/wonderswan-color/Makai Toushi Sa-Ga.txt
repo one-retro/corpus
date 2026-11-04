@@ -1,0 +1,40 @@
+# Makai Toushi Sa-Ga (SRAM 32 KiB). はじめから, skip the intro, take the first
+# character (にんげん おとこ), name it with あ presses, START to finish; then in
+# the town START > セーブ > file 1 > はい. After a reset, つづき lists file 1.
+wait 600
+press start 8       # title: PUSH ANY BUTTON -> はじめから / つづき / オリジナル
+wait 150
+press a 8           # はじめから
+wait 150
+tap a 6 40          # intro text, character select (にんげん おとこ)
+tap a 4 30          # name: あ...
+press start 8       # おわる (done) -> the town at the foot of the tower
+wait 200
+press start 8       # menu: アイテム のうりょく そうび ならびかえ ずかん コンフィグ セーブ
+wait 60
+repeat 6
+press down 8
+wait 20
+end
+press a 8           # セーブ: choose a file
+wait 90
+press a 8           # file 1: セーブしますか? はい
+wait 90
+press a 8           # はい
+wait 90
+shot saved          # セーブがしゅうりょうしました (save complete)
+press a 8
+wait 90
+reset
+wait 600            # with a save present the intro is a climb up the tower
+press start 8       # skip to the title
+wait 200
+press start 8       # PUSH ANY BUTTON
+wait 200
+press start 8       # はじめから / つづき / オリジナル
+wait 150
+press down 8        # つづき
+wait 30
+press a 8
+wait 150
+shot files          # file 1: ああ, HP 60, the tower's 1st floor

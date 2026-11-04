@@ -1,0 +1,31 @@
+# Metal Slug X (AES, memory card): set DIFF. to HARD in the title's OPTION menu.
+# Leaving the menu saves the options to the card ("METAL SLUG X OPTION", NGH 0250
+# sub 1). A blank card first makes the BIOS ask to format it: A = yes.
+# Neo Geo A is RetroPad b, Neo Geo B is RetroPad a.
+wait 1100
+press start 4          # title -> GAME START / HOW TO PLAY / OPTION
+wait 120
+tap down 2 20          # OPTION
+press b 4
+wait 60
+tap down 1 20          # DIFF.
+tap right 1 20         # open DIFFICULTY
+tap down 1 20          # HARD
+tap right 1 20         # pick it
+press a 4              # close DIFFICULTY
+wait 60
+shot options
+press a 4              # leave OPTION: the card is checked
+wait 240
+shot format
+press b 4              # MEMORY CARD NOT FORMATTED: A = YES
+wait 300
+# power cycle: the options come back from the card
+reset
+wait 1100
+press start 4
+wait 120
+tap down 2 20
+press b 4
+wait 60
+shot saved             # OPTION shows DIFF. HARD

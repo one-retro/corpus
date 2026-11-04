@@ -1,0 +1,34 @@
+# Magical Puzzle Popils: MAP EDIT round 1, put down two blocks, then
+# start > SAVE MAP > YES: the status line reads "SAVE OK". (The cartridge
+# formats its RAM on first boot: "BACKUP INITIALIZED".)
+wait 400
+press down 10       # NORMAL GAME -> MAP EDIT
+wait 30
+press start 10      # SELECT ROUND 1
+wait 150
+press a 10          # into the editor (puts the first block)
+wait 90
+press start 10      # editor menu ...
+wait 90
+press b 10          # ... and back out
+wait 90
+press down 10
+wait 30
+press right 10
+wait 30
+press a 10          # a block
+wait 30
+press right 10
+wait 30
+press a 10          # another
+wait 30
+press start 10      # TEST PLAY / SAVE MAP / LOAD MAP / COM IN/OUT / END EDIT
+wait 90
+press down 10       # SAVE MAP
+wait 30
+press a 10          # YES / NO
+wait 120
+press a 10          # YES: "SAVE OK"
+wait 120
+shot saved
+wait 30

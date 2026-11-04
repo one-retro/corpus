@@ -1,0 +1,32 @@
+{
+  "method": "played",
+  "system": "nes",
+  "core": "fceux",
+  "core_file": null,
+  "core_name": "FCEUX",
+  "core_version": "2.6.6",
+  "frontend": "FCEUX 2.6.6 (Homebrew build, Qt GUI), input by its Lua engine (--loadlua)",
+  "rom": {
+    "name": "StarTropics (USA).nes",
+    "size": 524304,
+    "sha1": "0372a5a3e2c8c96a459f0fd83c05437bc3af44d1"
+  },
+  "script": "scripts/nes/StarTropics.txt",
+  "frames": 1528,
+  "options": null,
+  "input": "work/standalone/tools/gen_fceux_lua.py: the retro-run script replayed with joypad.set per frame, turbo speed; emu.exit at the end",
+  "started_from": null,
+  "files": {
+    "StarTropics (USA).sav": {
+      "size": 8192,
+      "sha1": "2e527686736c2a25c1e37bcb9c245eca1ba9e992"
+    }
+  },
+  "layout": {
+    "save_dir": "<base>/sav, base = $FCEUX_HOME/.fceux (default .fceux in the home folder)",
+    "name": "<ROM file name without extension>.sav",
+    "written": "when the game is closed (emu.exit here)"
+  },
+  "created": "2026-11-03",
+  "note": "FCEUX segfaulted (rc 139) after emu.exit, once the .sav was already written; every run did this. MMC6: FCEUX writes 8192 bytes like fceumm (mesen and nestopia write the 1 KiB the MMC6 really has)."
+}

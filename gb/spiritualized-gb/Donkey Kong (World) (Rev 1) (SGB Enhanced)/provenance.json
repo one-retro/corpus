@@ -1,0 +1,21 @@
+{
+  "method": "device-backup",
+  "device": "Analogue Pocket",
+  "backup_path": "Saves/gb/common/1 GB US - A-G/Donkey Kong (World) (Rev 1) (SGB Enhanced).sav",
+  "system": "gb",
+  "core": "spiritualized-gb",
+  "pocket_core": "Spiritualized.GB",
+  "pocket_platform": "gb",
+  "game_source": "No-Intro DAT 'Nintendo - Game Boy (20260825-062646)'",
+  "attribution": "folder Saves/gb/common (a gb-platform core) and only core: written 2024-01-01, before budude2.GB existed, so Spiritualized.GB was the only gb-platform core installed; the ROM is .gb; size and padding match: 8 KiB, exactly the header's RAM size, no footer",
+  "confidence": "high",
+  "written": "2024-01-01 20:30 (file mtime as read here; the Pocket stamps its own clock)",
+  "files": {
+    "Donkey Kong (World) (Rev 1) (SGB Enhanced).sav": {
+      "size": 8192,
+      "sha1": "913793364aac81286a2cea9cf335d4a7e0f341dd"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

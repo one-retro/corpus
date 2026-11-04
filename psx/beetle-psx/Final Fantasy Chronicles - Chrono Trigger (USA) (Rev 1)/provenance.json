@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "psx",
+  "core": "beetle-psx",
+  "core_file": "mednafen_psx_libretro.dylib",
+  "core_name": "Beetle PSX",
+  "core_version": "0.9.44.1 71ee81e",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Final Fantasy Chronicles - Chrono Trigger (USA) (Rev 1).cue",
+    "sha1": "8958dc68e4ba6b5d8aaf2f101b00ea38fc3ecdc5",
+    "size": 121
+  },
+  "script": "scripts/psx/Chrono Trigger.txt",
+  "frames": 30300,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Final Fantasy Chronicles - Chrono Trigger (USA) (Rev 1).srm": {
+      "size": 131072,
+      "sha1": "7118fd2ffa6a81bbbba3fc5b8f42e2f2a7d6f195"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

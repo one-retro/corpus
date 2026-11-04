@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "n64",
+  "core": "parallel-n64",
+  "core_file": "parallel_n64_libretro.dylib",
+  "core_name": "ParaLLEl N64",
+  "core_version": "1.0 e8cbdbb",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Legend of Zelda, The - Ocarina of Time (USA) (Rev 2).z64",
+    "sha1": "41b3bdc48d98c48529219919015a1af22f5057c2",
+    "size": 33554432
+  },
+  "script": "scripts/n64/Legend of Zelda, The - Ocarina of Time.txt",
+  "frames": 3758,
+  "options": "parallel-n64-gfxplugin = angrylion\nparallel-n64-pak1 = memory\n",
+  "started_from": null,
+  "files": {
+    "Legend of Zelda, The - Ocarina of Time (USA) (Rev 2).srm": {
+      "size": 296960,
+      "sha1": "8eb5bf6975ff6f1b220f363d93e2210d95fa225f"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

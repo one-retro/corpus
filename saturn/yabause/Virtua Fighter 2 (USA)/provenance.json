@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "saturn",
+  "core": "yabause",
+  "core_file": "yabause_libretro.dylib",
+  "core_name": "Yabause",
+  "core_version": "v0.9.15 8926b0c",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Virtua Fighter 2 (USA).cue",
+    "sha1": "3d8ca7b99a62235e3157c5a2e55774cef6ed4338",
+    "size": 3983
+  },
+  "script": "scripts/saturn/Virtua Fighter 2.txt",
+  "frames": 1250,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Virtua Fighter 2 (USA).srm": {
+      "size": 65536,
+      "sha1": "1fb26ae5eddf1c94d69ec95ea144d649b3e1748d"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

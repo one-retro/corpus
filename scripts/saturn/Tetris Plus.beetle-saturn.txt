@@ -1,0 +1,10 @@
+# Tetris Plus (USA), Beetle Saturn: with a Backup RAM Cart present the game stops at
+# "SELECT SYSTEM OR CARTRIDGE MEMORY" before anything else. SYSTEM MEMORY is
+# highlighted; take it so the file lands where it does in the other cores. The intro
+# then runs to the title, which comes up at frame 5700 or so (this varied by a few
+# hundred frames between runs).
+wait 1500
+shot memory
+press b              # A: SYSTEM MEMORY
+wait 4196
+shot title

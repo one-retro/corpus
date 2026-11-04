@@ -1,0 +1,31 @@
+{
+  "method": "played",
+  "system": "gbc",
+  "core": "gearboy",
+  "core_file": "gearboy_libretro.dylib",
+  "core_name": "Gearboy",
+  "core_version": "3.8.20-8-g37d0bf3",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Harvest Moon GBC (USA) (SGB Enhanced) (GB Compatible).gbc",
+    "sha1": "d407b9c20c5381f46ec460858539a5b6f559e04f",
+    "size": 1048576
+  },
+  "script": "scripts/gbc/Harvest Moon GBC.txt",
+  "frames": 10968,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Harvest Moon GBC (USA) (SGB Enhanced) (GB Compatible).rtc": {
+      "size": 48,
+      "sha1": "2c893757eddadc27de15a7632e08bec5a6da19fd"
+    },
+    "Harvest Moon GBC (USA) (SGB Enhanced) (GB Compatible).srm": {
+      "size": 8192,
+      "sha1": "2fe9f299c6226f07f8de8e5c9df0c622f36dd70f"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

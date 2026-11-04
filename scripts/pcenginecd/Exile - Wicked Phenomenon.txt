@@ -1,0 +1,31 @@
+# Exile - Wicked Phenomenon: through the opening to the first street, then
+# SELECT > SAVE > slot 1 ("#1 ASSASSI"). Re-opening SAVE shows the slot.
+# The game creates its 1171-byte EXILE2DATA file at boot; the save fills it.
+wait 360
+press start 6         # System Card: RUN
+wait 600
+repeat 54
+wait 120
+press start 6         # opening, title, dialogue
+wait 120
+press a 6
+end
+wait 120
+shot street
+press select 6        # WEAPON TONIC ITEM STATUS SAVE
+wait 60
+repeat 4
+press down 6
+wait 20
+end
+press a 6             # SAVE: three slots
+wait 90
+press a 6             # slot 1
+wait 90
+press a 6             # SAVE again
+wait 90
+shot saved            # "#1 ASSASSI"
+press b 6
+wait 60
+press b 6
+wait 60

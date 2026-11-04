@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "neogeo",
+  "core": "geolith",
+  "core_file": "geolith_libretro.dylib",
+  "core_name": "Geolith",
+  "core_version": "0.5.0",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "mslugx.neo",
+    "sha1": "25382fde3c41504453e16f58956a4c51f4184584",
+    "size": 66326528
+  },
+  "script": "scripts/neogeo/mslugx.txt",
+  "frames": 3380,
+  "options": "geolith_system_type = aes\ngeolith_memcard = on\n",
+  "started_from": null,
+  "files": {
+    "mslugx.mcr": {
+      "size": 2048,
+      "sha1": "a1f3b778a9a843e10ed1ec0b956f4263411ef730"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

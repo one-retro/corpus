@@ -1,0 +1,4 @@
+system_core_override = Automatic
+system_gb_bios_enable = disabled
+system_gba_bios_enable = disabled
+system_nds_bios_enable = disabled

@@ -1,0 +1,31 @@
+{
+  "method": "played",
+  "system": "nds",
+  "core": "skyemu",
+  "core_file": "skyemu_libretro.dylib",
+  "core_name": "SkyEmu",
+  "core_version": "adacd0788964ed89f5c43dcbc1f3cc26deec996c",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Tetris DS (USA, Australia).nds",
+    "sha1": "13eb2e7e5357a6e31f94ea238826c111c965bc9b",
+    "size": 16777216
+  },
+  "script": "scripts/nds/Tetris DS.txt",
+  "frames": 7508,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Tetris DS (USA, Australia).rtc": {
+      "size": 40,
+      "sha1": "2a65b5d725dcea3c0f5b067ff7d5855b00ae02d6"
+    },
+    "Tetris DS (USA, Australia).srm": {
+      "size": 8388608,
+      "sha1": "49fc3ebde92c278758f154cee7737b9c888b8ffa"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

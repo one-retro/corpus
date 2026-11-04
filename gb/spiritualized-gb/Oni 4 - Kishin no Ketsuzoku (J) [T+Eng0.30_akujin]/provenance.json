@@ -1,0 +1,21 @@
+{
+  "method": "device-backup",
+  "device": "Analogue Pocket",
+  "backup_path": "Saves/gb/common/4 Translations/Oni 4 - Kishin no Ketsuzoku (J) [T+Eng0.30_akujin].sav",
+  "system": "gb",
+  "core": "spiritualized-gb",
+  "pocket_core": "Spiritualized.GB",
+  "pocket_platform": "gb",
+  "game_source": "the file's own name (no No-Intro entry applies)",
+  "attribution": "folder Saves/gb/common and only gb-platform core installed in 2023; ROM .gb, only under gb/common; 8 KiB = header RAM, no footer",
+  "confidence": "high",
+  "written": "2023-09-29 10:37 (file mtime as read here; the Pocket stamps its own clock)",
+  "files": {
+    "Oni 4 - Kishin no Ketsuzoku (J) [T+Eng0.30_akujin].sav": {
+      "size": 8192,
+      "sha1": "5e2b96c19c4f5c63a5afa2de504d29fe64a4c908"
+    }
+  },
+  "created": "2026-11-03",
+  "note": "translation patch; every byte is 0xFF (the game never wrote its RAM)"
+}

@@ -1,0 +1,27 @@
+{
+  "method": "device-backup",
+  "device": "Nintendo 2DS",
+  "producer": "JKSV",
+  "backup_path": "JKSV/Saves/SUPER MARIO 3D LAND/2034.02.05_14.21.59",
+  "system": "3ds",
+  "core": "_jksv",
+  "title": {
+    "jksv_folder": "SUPER MARIO 3D LAND",
+    "name": "SUPER MARIO 3D LAND",
+    "product_code": "CTR-P-AREE",
+    "title_id": "0004000000054000"
+  },
+  "game_source": "No-Intro DAT 'Nintendo - Nintendo 3DS (Encrypted) (20260826-020750)', by product code; the backup does not say which revision of the game made it, so the folder is the unrevised entry",
+  "attribution": "JKSV save manager on the owner's 2DS, real hardware; JKSV's title cache (JKSV/titles) gives the product code and title ID for its folder name",
+  "confidence": "high",
+  "written": "2034.02.05_14.21.59 (JKSV's backup folder, the 2DS's clock, which was set to 2034)",
+  "files": {
+    "Saves/SUPER MARIO 3D LAND/2034.02.05_14.21.59/GameData.bin": {
+      "size": 18444,
+      "sha1": "c754cd82f827196665f1baf2960fe8fe9c8f49ae",
+      "role": "primary"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

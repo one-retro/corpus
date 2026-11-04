@@ -1,0 +1,27 @@
+# Destiny of an Emperor (MMC1, 8 KiB): REGISTER HISTORY BOOK > 1, enter a
+# name (A types the letter under the cursor, "0"; Start ends the name): the game
+# registers history book 1 in SRAM (signature 35 53 at 0x808). The console is
+# then reset, and GAME START lists book 1 ("1 00 L00") from SRAM.
+wait 600
+press start 8       # REGISTER HISTORY BOOK
+wait 120
+press a 8           # book 1
+wait 120
+press a 8
+wait 40
+press a 8
+wait 40
+press a 8
+wait 40
+shot name
+press start 8       # end the name: book 1 is registered
+wait 300
+shot registered     # back on the title menu, GAME START now first
+reset
+wait 600
+press start 8       # title -> GAME START / REGISTER / ERASE / COPY
+wait 120
+press a 8           # GAME START: "Which history do you continue?" 1 00 L00
+wait 120
+shot books
+wait 30

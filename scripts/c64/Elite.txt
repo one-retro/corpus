@@ -1,0 +1,35 @@
+# Elite (Firebird, disk): save commander ABC to a VICE save disk. The game
+# disk has no free blocks, so the save goes to a separate disk, as on the
+# real machine: VICE's "Toggle Save Disk" hotkey (mapped to F12 in
+# scripts/c64/vice-elite.opt) creates <content>.save0.d64 in the save
+# directory and puts it in drive 8. The disk menu is on @, which in VICE's
+# default (positional) keymap is the host's [ key: `key kc91` needs the
+# patched runner (work/msx/retro-run-x), whose kcN sends a raw RETROK code.
+# Proof: loading commander ABC back from that disk.
+wait 1500
+key y 8             # DO YOU WANT TO USE THE FAST LOADER? (Y/N)
+wait 3000
+key n 8             # Load New Commander (Y/N)? -> N
+wait 900
+press b 8           # Press Space Or Fire, Commander (fire: RetroPad B)
+wait 900            # docked at Lave, COMMANDER JAMESON
+key f12 8           # VICE hotkey: create and insert the save disk
+wait 300
+key kc91 8          # @ (host [): TAPE ACCESS MENU
+wait 300
+key 3 8             # 3. Change To Disk
+wait 300
+key 2 8             # 2. Save Commander
+wait 300
+type abc            # Commander's Name? ABC
+wait 30
+key return 8
+wait 1200
+shot saved          # SAVING ABC
+key 1 8             # 1. Load New Commander
+wait 300
+type abc
+wait 30
+key return 8
+wait 1500
+shot loaded         # COMMANDER ABC, docked at Lave

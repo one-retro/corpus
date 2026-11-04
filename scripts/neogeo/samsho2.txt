@@ -1,0 +1,30 @@
+# Samurai Shodown II (AES, memory card): start a game as Haohmaru, lose without
+# touching the stick, let CONTINUE run out. The game asks "GAME DATA SAVE"
+# (cursor on NO): up, A. A blank card makes the BIOS ask to format it first
+# (A = yes). The prompt is up from about frame 9210 to 9790 in both FinalBurn Neo
+# and Geolith. Neo Geo A is RetroPad b.
+wait 1100
+press start 6          # title: GAME START
+wait 120
+press b 6
+repeat 4
+wait 120
+press b 6              # level select, player select (Haohmaru), ...
+end
+wait 7664              # two rounds lost, CONTINUE 9..0
+shot datasave
+tap up 1 30            # YES
+press b 6
+wait 150
+shot format
+press b 6              # MEMORY CARD NOT FORMATTED: A = YES (no-op if formatted)
+wait 400
+shot saved
+# power cycle and start again: the game offers the saved data
+reset
+wait 1100
+press start 6
+wait 120
+press b 6
+wait 180
+shot dataload          # GAME DATA LOAD: the game found its save on the card

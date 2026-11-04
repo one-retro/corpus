@@ -1,0 +1,31 @@
+{
+  "method": "played",
+  "system": "sega-cd",
+  "core": "clownmdemu",
+  "core_file": "clownmdemu_libretro.dylib",
+  "core_name": "ClownMDEmu",
+  "core_version": "v1.6.12 d43c270",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Sonic CD (USA).cue",
+    "sha1": "5b085f78a6904d275715dcfeb454ecc262e704e5",
+    "size": 3820
+  },
+  "script": "scripts/sega-cd/Sonic CD.clownmdemu.txt",
+  "frames": 2412,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "SONICCD____.brm": {
+      "size": 704,
+      "sha1": "c435e8706d272b586e5132707772345612a0cd01"
+    },
+    "Sonic CD (USA).srm": {
+      "size": 65536,
+      "sha1": "1adc95bebe9eea8c112d40cd04ab7a8d75c4f961"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

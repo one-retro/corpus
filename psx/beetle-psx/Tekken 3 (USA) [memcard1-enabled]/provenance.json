@@ -1,0 +1,31 @@
+{
+  "method": "played",
+  "system": "psx",
+  "core": "beetle-psx",
+  "core_file": "mednafen_psx_libretro.dylib",
+  "core_name": "Beetle PSX",
+  "core_version": "0.9.44.1 71ee81e",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Tekken 3 (USA).cue",
+    "sha1": "69d1f34ff24096b9fb95b45232ba684872cd8de2",
+    "size": 306
+  },
+  "script": "scripts/psx/Tekken 3.txt",
+  "frames": 7302,
+  "options": "# Beetle PSX: libretro card 1 (.srm) plus a second card in slot 2 (<game>.1.mcr)\nbeetle_psx_enable_memcard1 = enabled\n",
+  "started_from": null,
+  "files": {
+    "Tekken 3 (USA).1.mcr": {
+      "size": 131072,
+      "sha1": "1b3c99be55273085e14b30983b636529b6dd7f46"
+    },
+    "Tekken 3 (USA).srm": {
+      "size": 131072,
+      "sha1": "1e074fa1a019444d4ff109541c4d8d928a83fc0d"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "option variant: beetle_psx_enable_memcard1 = enabled"
+}

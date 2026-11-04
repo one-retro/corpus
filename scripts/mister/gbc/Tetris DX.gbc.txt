@@ -1,0 +1,26 @@
+load corpus-tmp/mgl/tetrisdx.mgl 8
+# Tetris DX (MBC1 + 8 KiB battery RAM): ENTRY -> NAME ENTRY, register player 1
+# as "AAA". The game writes the player file when the name is confirmed.
+wait 900
+press a 6           # title: ENTRY (the only choice with no players yet)
+wait 120
+press a 6           # NAME ENTRY
+wait 120
+press a 6           # A
+wait 30
+press a 6           # A
+wait 30
+press a 6           # A
+wait 30
+press start 6       # confirm "AAA": the file is written; cursor on EXIT
+wait 60
+press a 6           # EXIT -> title, now with 1PLAYER
+wait 90
+press a 6           # 1PLAYER -> player select
+wait 90
+shot registered     # card 1: AAA, POWER 0, TOTAL 0 LINES
+wait 30
+wait 30
+save
+wait 60
+shot final

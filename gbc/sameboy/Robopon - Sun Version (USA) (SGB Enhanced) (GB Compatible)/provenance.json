@@ -1,0 +1,31 @@
+{
+  "method": "played",
+  "system": "gbc",
+  "core": "sameboy",
+  "core_file": "sameboy_libretro.dylib",
+  "core_name": "SameBoy",
+  "core_version": "1.0.5 90e2899",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Robopon - Sun Version (USA) (SGB Enhanced) (GB Compatible).gbc",
+    "sha1": "399c928a38a3901b7a1093bd61f5a4d8c05b9771",
+    "size": 1048576
+  },
+  "script": "scripts/gbc/Robopon Sun.txt",
+  "frames": 15932,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Robopon - Sun Version (USA) (SGB Enhanced) (GB Compatible).rtc": {
+      "size": 32,
+      "sha1": "8e466f867784bc2fb3c7536acbb949c8d8a9b799"
+    },
+    "Robopon - Sun Version (USA) (SGB Enhanced) (GB Compatible).srm": {
+      "size": 32768,
+      "sha1": "477446b494916eb908e501413934b95e2c5a7a61"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

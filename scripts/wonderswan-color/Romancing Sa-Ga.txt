@@ -1,0 +1,50 @@
+# Romancing Sa-Ga (WSC, SRAM 32 KiB). NEW GAME: 男, きぞくのむすこ (Albert), the
+# parents' classes and the name (アルベルト + あ), START to finish. During the
+# opening in the castle, Y2 (`r`) opens the menu: アイテム セーブ ならびかえ
+# せってい. セーブ > セーブ1 > はい writes the save. After a reset, LOAD lists
+# セーブ1 with アルベルトあ.
+wait 900
+press start 8       # title: NEW GAME / LOAD
+wait 150
+press a 8           # NEW GAME: せいべつ 男
+wait 150
+press a 8           # きぞくのむすこ
+wait 150
+press a 8           # Albert
+wait 150
+press a 8           # name: アルベルト + あ
+wait 150
+press start 8       # おわる
+wait 150
+tap a 14 40         # parents' classes, これでいいですか? はい, the opening
+wait 1600
+press b 8
+wait 90
+press b 8
+wait 40
+press l 8           # Y4: status
+wait 90
+press b 8
+wait 40
+press r 8           # Y2: menu
+wait 90
+press right 8       # to the command row: アイテム
+wait 30
+press right 8       # セーブ
+wait 30
+press a 8           # セーブ1 / セーブ2
+wait 90
+press a 8           # セーブ1: セーブしますか? (cursor on いいえ)
+wait 90
+press up 8          # はい
+wait 30
+press a 8
+wait 90
+shot saved          # セーブしました
+reset
+wait 900
+press start 8       # title: with a save the cursor starts on LOAD
+wait 150
+press a 8
+wait 150
+shot slots          # セーブ1: アルベルトあ

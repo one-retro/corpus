@@ -1,0 +1,43 @@
+# NBA Jam: Head to Head with initials for record keeping, then play the whole
+# game (the CPU wins; B is pressed now and then to clear halftime). The game
+# writes the player's record to its 24C02 EEPROM when the final stats are
+# dismissed; the STATS panel that follows shows the new record.
+# Genesis A/B/C are the RetroPad's y/b/a.
+wait 1820
+press start 20      # title: the menu appears
+wait 60
+press start 10      # HEAD TO HEAD
+wait 120
+press start 10      # "Enter your initials for record keeping?" YES
+wait 90
+press a 6           # first letter
+wait 60
+press right 6
+wait 40
+press a 6           # second letter
+wait 90
+press right 6
+wait 40
+press right 6
+wait 40
+press a 6           # third letter (the grid enters "BDD" with these timings)
+wait 90
+repeat 3
+press a 6
+wait 60
+end
+shot initials
+press start 6       # team select (it also times out on its own)
+wait 120
+press start 6
+wait 120
+repeat 105          # four quarters; B clears the halftime report
+wait 300
+press b 6
+end
+wait 4000           # the game ends; FINAL GAME STATS waits for a button
+shot final
+press b 6           # dismiss: the record is written now
+wait 600
+shot saved          # STATS: the record for the initials
+wait 30

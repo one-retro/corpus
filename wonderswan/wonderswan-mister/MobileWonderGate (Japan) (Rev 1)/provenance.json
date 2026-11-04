@@ -1,0 +1,19 @@
+{
+  "method": "downloaded",
+  "system": "wonderswan",
+  "core": "wonderswan-mister",
+  "url": "https://github.com/euan-forrester/save-file-converter/files/8173565/saves.zip",
+  "source_page": "https://github.com/euan-forrester/save-file-converter/issues/80#issuecomment-1057487772",
+  "source": "GitHub (euan-forrester/save-file-converter issue #80, 'Idea: Genesis Everdrive <-> MiSTer save conversion', comment of 2022-03-02 23:18 UTC)",
+  "author": "birdybro (MiSTer documentation maintainer): 'here's just a big zip of all my saves on my MiSTer for you now so you can see'",
+  "licence": "none stated (a file attached to a public GitHub issue)",
+  "fetched": "2026-11-03",
+  "what_it_is": "birdybro's save from the MiSTer WonderSwan core, member WonderSwan/MobileWonderGate (Japan) (Rev 1).sav of saves.zip (MiSTer's saves/WonderSwan folder). 512 KiB SRAM (the size for header RAM type 0x05) + 512-byte clock sector = 524800 bytes. Clock record time 2021-06-05 21:28:04 UTC. ",
+  "files": {
+    "MobileWonderGate (Japan) (Rev 1).sav": {
+      "size": 524800,
+      "sha1": "522ce3bb3f3f836287e06b18d757306a00bbec2a"
+    }
+  },
+  "note": "Origin: the poster's description of the zip plus the core's own clock sector, which no other emulator writes. Most of the ~80 WonderSwan saves in the zip were written one to two minutes apart that evening, so the game was probably only booted far enough to create or initialise its save; nothing in the thread says how far each was played. The last 512 bytes are the core's clock sector: one 16-byte record repeated 32 times, 'TR' (the constant \"RT\" written as a little-endian word), then 10 bytes holding the 42-bit RTC_savedtime and the 32-bit Unix time of the save (WonderSwan.sv time_din_h = {32'd0, time_din, \"RT\"}), then 4 zero bytes. The core appends this sector to every save, clock cartridge or not (has_rtc = 1'b1). The zip also holds MiSTer saves for other systems (GBA, Genesis, SNES, PSX, TGFX16, Lynx, MegaCD, NEOGEO, ...), not used here."
+}

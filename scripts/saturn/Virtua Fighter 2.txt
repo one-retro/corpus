@@ -1,0 +1,6 @@
+# Virtua Fighter 2 (USA): the game writes VFIGHTER2_X ("VF2 data", 11.5 KB) on first
+# boot, before its title; no input is needed. The title is up from about frame 1100
+# to 1300 in Yabause and 1200 to 1500 in Beetle Saturn. (Yabause's attract demo later
+# hangs at LOADING...PLEASE WAIT, which does not matter here.)
+wait 1250
+shot title

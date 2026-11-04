@@ -1,0 +1,21 @@
+{
+  "method": "device-backup",
+  "device": "Analogue Pocket",
+  "backup_path": "Saves/gb/common/4 Translations/Kaeru no Tame ni Kane wa Naru (english translation).sav",
+  "system": "gb",
+  "core": "spiritualized-gb",
+  "pocket_core": "Spiritualized.GB",
+  "pocket_platform": "gb",
+  "game_source": "the file's own name (no No-Intro entry applies)",
+  "attribution": "folder Saves/gb/common and only gb-platform core installed in 2023; the .gb ROM sat only in Assets/gb/common/4 Translations (not under gbc) in the Dec 2023 backup; 8 KiB = header RAM, no footer. Caveat: Spiritualized.GBC's Settings file in the Analogue backup was written the same minute (after the constant one-hour offset between those backups' Settings and these saves), so the owner was in the GBC core then; if the ROM was under gbc/common at the time, the writer was Spiritualized.GBC (same layout)",
+  "confidence": "medium",
+  "written": "2023-10-11 21:48 (file mtime as read here; the Pocket stamps its own clock)",
+  "files": {
+    "Kaeru no Tame ni Kane wa Naru (english translation).sav": {
+      "size": 8192,
+      "sha1": "515f9673c9c1bf05b63976b90c5268d2fdd0828f"
+    }
+  },
+  "created": "2026-11-03",
+  "note": "English translation patch of Kaeru no Tame ni Kane wa Naru (Japan); no No-Intro name, folder is the ROM's file name"
+}

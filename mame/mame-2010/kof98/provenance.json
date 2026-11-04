@@ -1,0 +1,39 @@
+{
+  "method": "played",
+  "system": "mame",
+  "core": "mame-2010",
+  "core_file": "mame2010_libretro.dylib",
+  "core_name": "MAME 2010",
+  "core_version": "0.139 dff8aad",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "kof98.zip",
+    "sha1": "bde244b013e92dff8894d60e5fd21119aa4c5a59",
+    "size": 40445835
+  },
+  "script": "scripts/mame/kof98.mame-2010.txt",
+  "frames": 5610,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "mame2010/cfg/default.cfg": {
+      "size": 175,
+      "sha1": "4e398d654043793e0677cef4917b03478508673e"
+    },
+    "mame2010/cfg/kof98.cfg": {
+      "size": 173,
+      "sha1": "2eeda2511935a35d15925611d098b38540f446e6"
+    },
+    "mame2010/ini/mame.ini": {
+      "size": 2444,
+      "sha1": "b4f6ca84eae2b7b5388673446f616117b09794dd"
+    },
+    "mame2010/nvram/kof98.nv": {
+      "size": 8192,
+      "sha1": "c0f271b591896e8f989f1d7727884d794cd18baf"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

@@ -1,0 +1,31 @@
+{
+  "method": "played",
+  "system": "neogeo",
+  "core": "geolith",
+  "core_file": "geolith_libretro.dylib",
+  "core_name": "Geolith",
+  "core_version": "0.5.0",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "pbobblen.neo",
+    "sha1": "337d79d550b83cf353089f632874264aa025fb11",
+    "size": 9703424
+  },
+  "script": "scripts/neogeo/pbobblen.txt",
+  "frames": 12624,
+  "options": "geolith_system_type = mvs\ngeolith_memcard = on\n",
+  "started_from": null,
+  "files": {
+    "pbobblen.mcr": {
+      "size": 2048,
+      "sha1": "afdd78b46fa9169fd4d5e2966045207f82028137"
+    },
+    "pbobblen.nv": {
+      "size": 65536,
+      "sha1": "2358c440ebc8db7d4184bb961e701c069565bf05"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

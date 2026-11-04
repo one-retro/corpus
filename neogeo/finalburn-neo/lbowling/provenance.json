@@ -1,0 +1,31 @@
+{
+  "method": "played",
+  "system": "neogeo",
+  "core": "finalburn-neo",
+  "core_file": "fbneo_libretro.dylib",
+  "core_name": "FinalBurn Neo",
+  "core_version": "v1.0.0.03  GITda14132",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "lbowling.zip",
+    "sha1": "046b88030fc8f9da4a4d677b105ba87fefae4608",
+    "size": 1618125
+  },
+  "script": "scripts/neogeo/lbowling.txt",
+  "frames": 8714,
+  "options": "fbneo-neogeo-mode = MVS_USA\nfbneo-memcard-mode = per-game\n",
+  "started_from": null,
+  "files": {
+    "fbneo/lbowling.fs": {
+      "size": 65536,
+      "sha1": "03e747ea4afada5f29e9b5b1e7e9e3064cf1ccea"
+    },
+    "fbneo/lbowling.memcard": {
+      "size": 32800,
+      "sha1": "b5cc38f83ac273290aece93ffe118a15d1d8ae63"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

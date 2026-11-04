@@ -1,0 +1,34 @@
+{
+  "method": "played",
+  "system": "pcengine",
+  "core": "turbografx16-mister",
+  "core_file": "TurboGrafx16_20260603.rbf",
+  "core_name": "TurboGrafx16_MiSTer",
+  "core_version": "20260603",
+  "frontend": "mister",
+  "device": "the owner's MiSTer (DE10-Nano), Main_MiSTer binary of 2026-10-19",
+  "loaded_with": "MGL via /dev/MiSTer_cmd load_core (_Console/TurboGrafx16, file type f index 0)",
+  "save_folder": "saves/TGFX16",
+  "rom": {
+    "name": "Night Creatures (USA).pce",
+    "sha1": "16c4b43f92f5bc6c99fe84f71daff76cf1c0d0a6",
+    "size": 524288
+  },
+  "script": "scripts/pcengine/Night Creatures.txt",
+  "mister_script": "scripts/mister/pcengine/Night Creatures.tgfx16.txt",
+  "frames": 7216,
+  "timing": "real time: script frames played as wall-clock 1/60 s by work/mister/mrun.py",
+  "options": {
+    "config/TGFX16.CFG": "Autosave On (status bit 23), every other option at its default; written for the run and removed after"
+  },
+  "save_trigger": "OSD opened (F12 from a uinput keyboard) with Autosave on: the core writes its backup RAM to the SD card",
+  "started_from": null,
+  "files": {
+    "Night Creatures (USA).sav": {
+      "size": 2048,
+      "sha1": "ce2aeed231833c2943a4be57285307c9fc249308"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "2 KiB HuCard backup RAM (HUBM) with the game's NC3 and NC2 files, written as 4 sectors. No seed. Proof: after losing again, RESTORE GAME? YES (the game found its saved slot)."
+}

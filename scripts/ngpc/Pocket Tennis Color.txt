@@ -1,0 +1,31 @@
+# Pocket Tennis Color: TOURNAMENT, NEW GAME, ALICE, then lose the first match
+# by serving with B over and over. The game sets up its save sector on first
+# boot; starting the tournament and losing the match rewrite it, and the game
+# returns to the title, where B does nothing. TOURNAMENT -> CONTINUE then shows
+# the tournament.
+# NGP A is libretro b, NGP B is libretro a, Option is start.
+wait 1500
+press b 6           # skip the intro
+wait 200
+press down 10
+wait 60
+press b 10          # TOURNAMENT
+wait 200
+press b 10          # NEW GAME
+wait 200
+press b 10          # ALICE
+wait 200
+press b 10          # past the draw
+wait 600
+tap a 600 30        # serve and swing with B until the match is lost
+wait 300
+shot title
+press down 10
+wait 60
+press b 10          # TOURNAMENT
+wait 200
+press down 10
+wait 60
+press b 10          # CONTINUE
+wait 300
+shot continue

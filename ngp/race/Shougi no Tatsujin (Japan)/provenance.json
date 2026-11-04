@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "ngp",
+  "core": "race",
+  "core_file": "race_libretro.dylib",
+  "core_name": "RACE",
+  "core_version": "v2.16 c7810dd",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Shougi no Tatsujin (Japan).ngp",
+    "sha1": "ab0c33236f72d2b317d91d034756b56cfca1b0b4",
+    "size": 524288
+  },
+  "script": "scripts/ngp/Shougi no Tatsujin.txt",
+  "frames": 4638,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Shougi no Tatsujin (Japan).ngf": {
+      "size": 8208,
+      "sha1": "2a469fb51c2e3e734d238b288782bfa110dd2560"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

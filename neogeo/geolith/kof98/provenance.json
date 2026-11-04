@@ -1,0 +1,31 @@
+{
+  "method": "played",
+  "system": "neogeo",
+  "core": "geolith",
+  "core_file": "geolith_libretro.dylib",
+  "core_name": "Geolith",
+  "core_version": "0.5.0",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "kof98.neo",
+    "sha1": "0b8665ed59de19c6fb4a2a84f12ae53101349954",
+    "size": 90574848
+  },
+  "script": "scripts/neogeo/kof98.txt",
+  "frames": 2318,
+  "options": "geolith_system_type = mvs\ngeolith_memcard = on\ngeolith_settingmode = on\n",
+  "started_from": null,
+  "files": {
+    "kof98.mcr": {
+      "size": 2048,
+      "sha1": "f29f1e346811550581312253ccb269fbdea54af8"
+    },
+    "kof98.nv": {
+      "size": 65536,
+      "sha1": "9260d3d8f2d16ca3933e2c25d0a66f8776ab51a7"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "kof98.mcr is Geolith's blank pre-formatted 2 KiB card (no saves); the soft DIPs are in kof98.nv."
+}

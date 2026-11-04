@@ -1,0 +1,21 @@
+{
+  "method": "device-backup",
+  "device": "Analogue Pocket",
+  "backup_path": "Saves/gb/common/1 GBC US - A-L/Dragon Warrior III (USA).sav",
+  "system": "gbc",
+  "core": "spiritualized-gbc",
+  "pocket_core": "Spiritualized.GBC",
+  "pocket_platform": "gb",
+  "game_source": "No-Intro DAT 'Nintendo - Game Boy Color (20260825-135204)'",
+  "attribution": "written 2023-12-25, before budude2 existed, 32 KiB = header RAM, no footer, so a Spiritualized core; the ROM is .gbc, which Spiritualized.GB cannot load, so the writer is taken to be Spiritualized.GBC, which in 2023 loaded the same ROMs from Assets/gbc/common/1 GBC US - A-L (Analogue backup, Dec 2023) and would have written to Saves/gbc/common/1 GBC US - A-L; that folder is gone from Saves/gbc and the file sits in the identical subfolder of Saves/gb, consistent with the owner merging the GBC library into gb/common in July 2024 (Assets/gbc/common/games -> ../../gb/common, dated 2024-07-22) and moving the saves with it. If the Pocket let Spiritualized.GB pick a .gbc file the writer is Spiritualized.GB instead; both write the same layout",
+  "confidence": "medium",
+  "written": "2023-12-25 19:35 (file mtime as read here; the Pocket stamps its own clock)",
+  "files": {
+    "Dragon Warrior III (USA).sav": {
+      "size": 32768,
+      "sha1": "962ea868e173e8dc1f72433ab9f297013901495d"
+    }
+  },
+  "created": "2026-11-03",
+  "note": "only the first 35 bytes differ from 0xFF"
+}

@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "gba",
+  "core": "vba-next",
+  "core_file": "vba_next_libretro.dylib",
+  "core_name": "VBA Next",
+  "core_version": "v1.0.2",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Pokemon - Ruby Version (USA, Europe) (Rev 2).gba",
+    "sha1": "5b64eacf892920518db4ec664e62a086dd5f5bc8",
+    "size": 16777216
+  },
+  "script": "scripts/gba/Pokemon - Ruby Version.txt",
+  "frames": 12326,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Pokemon - Ruby Version (USA, Europe) (Rev 2).srm": {
+      "size": 139264,
+      "sha1": "a1dab954f91e5f6cc48ccae9d3c1b5467d05ed31"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

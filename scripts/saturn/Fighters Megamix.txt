@@ -1,0 +1,8 @@
+# Fighters Megamix (USA): the game creates FIGHTERS_MM (1.5 KB: unlocks, records,
+# options) on first boot. Yabause plays the TrueMotion intro movie slowly and black,
+# so skip it early; Beetle Saturn has its own timing (.beetle-saturn variant).
+wait 900
+press start          # skip the intro: title
+wait 400
+include _fighters-megamix.inc
+shot modes

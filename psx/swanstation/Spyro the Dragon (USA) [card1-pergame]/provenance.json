@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "psx",
+  "core": "swanstation",
+  "core_file": "swanstation_libretro.dylib",
+  "core_name": "SwanStation",
+  "core_version": "1.0.0 631f0fb",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "opengl",
+  "rom": {
+    "name": "Spyro the Dragon (USA).cue",
+    "sha1": "6abdbc5a00bcb521528825fb7cb6bfebd99a7a91",
+    "size": 88
+  },
+  "script": "scripts/psx/Spyro the Dragon.txt",
+  "frames": 5572,
+  "options": "# SwanStation: card 1 per game code (<SLUS-NNNNN>_1.mcd), no card 2\nswanstation_MemoryCards_Card1Type = PerGame\nswanstation_MemoryCards_Card2Type = None\n",
+  "started_from": null,
+  "files": {
+    "SCUS-94228_1.mcd": {
+      "size": 131072,
+      "sha1": "782c7c35f6b651e523065f1ecab602157ca0e33e"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "option variant: swanstation_MemoryCards_Card1Type = PerGame;swanstation_MemoryCards_Card2Type = None"
+}

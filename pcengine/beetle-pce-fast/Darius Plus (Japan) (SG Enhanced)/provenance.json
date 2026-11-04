@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "pcengine",
+  "core": "beetle-pce-fast",
+  "core_file": "mednafen_pce_fast_libretro.dylib",
+  "core_name": "Beetle PCE Fast",
+  "core_version": "v1.31.0.0",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Darius Plus (Japan) (SG Enhanced).pce",
+    "sha1": "a362c06e4466b2b3dc7a682f892988189117ef62",
+    "size": 786432
+  },
+  "script": "scripts/pcengine/Darius Plus.txt",
+  "frames": 2806,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Darius Plus (Japan) (SG Enhanced).srm": {
+      "size": 2048,
+      "sha1": "5e0b0cdeb154de6ba73d0217640bdcb9d8b3a068"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

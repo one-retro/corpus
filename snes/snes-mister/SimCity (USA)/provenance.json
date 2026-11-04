@@ -1,0 +1,35 @@
+{
+  "method": "played",
+  "system": "snes",
+  "core": "snes-mister",
+  "core_file": "SNES_20260823.rbf",
+  "core_name": "SNES_MiSTer",
+  "core_version": "20260823",
+  "frontend": "mister",
+  "device": "the owner's MiSTer (DE10-Nano), Main_MiSTer binary of 2026-10-19",
+  "loaded_with": "MGL via /dev/MiSTer_cmd load_core (_Console/SNES, file type f index 1)",
+  "save_folder": "saves/SNES",
+  "rom": {
+    "name": "SimCity (USA).sfc",
+    "sha1": "9140ae08d62a562ccb98576ba89f381f9f4f1439",
+    "size": 524288,
+    "on_device": "games/SNES/SimCity (USA).sfc"
+  },
+  "script": "scripts/snes/SimCity.txt",
+  "mister_script": "scripts/mister/snes/SimCity.snes.txt",
+  "frames": 4574,
+  "timing": "real time: script frames played as wall-clock 1/60 s by work/mister/mrun.py",
+  "options": {
+    "config/SNES.CFG": "Autosave On (status bit 23), every other option at its default; written for the run and removed after"
+  },
+  "save_trigger": "OSD opened (F12 from a uinput keyboard) with Autosave on: the core writes its backup RAM to the SD card",
+  "started_from": null,
+  "files": {
+    "SimCity (USA).sav": {
+      "size": 32768,
+      "sha1": "5a789829dae803260aa70ab74c62f35421b46ddb"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "32 KiB SRAM. No seed (the SNES core fills BSRAM with FF on load). Proof: 'Save completed.' with VILLAGE ASDF, 1900 JAN in slot 2."
+}

@@ -1,0 +1,31 @@
+{
+  "method": "played",
+  "system": "gb",
+  "core": "tgb-dual",
+  "core_file": "tgbdual_libretro.dylib",
+  "core_name": "TGB Dual",
+  "core_version": "v0.8.3 0392c9c",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Pokemon - Red Version (USA, Europe) (SGB Enhanced).gb",
+    "sha1": "ea9bcae617fdf159b045185467ae58b2e4a48b9a",
+    "size": 1048576
+  },
+  "script": "scripts/gb/Pokemon Red.txt",
+  "frames": 7633,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Pokemon - Red Version (USA, Europe) (SGB Enhanced).rtc": {
+      "size": 4,
+      "sha1": "f772bf082479af6b01427894edf66f0b1b907489"
+    },
+    "Pokemon - Red Version (USA, Europe) (SGB Enhanced).srm": {
+      "size": 32768,
+      "sha1": "5176c23439cac9065710108cab9f07329759c799"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

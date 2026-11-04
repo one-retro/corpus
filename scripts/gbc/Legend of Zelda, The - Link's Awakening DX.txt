@@ -1,0 +1,18 @@
+# Link's Awakening DX: name file 1 "ABC". The game writes the file on
+# registration, before play begins.
+wait 600
+press start 6       # skip the intro
+wait 120
+press start 6       # title -> PLAYER SELECT
+wait 120
+press a 6           # slot 1 -> YOUR NAME?
+wait 90
+tap a 1 20          # A
+tap right 1 8
+tap a 1 20          # B
+tap right 1 8
+tap a 1 20          # C
+press start 6       # register: the file is written here
+wait 120
+shot registered
+wait 30

@@ -1,0 +1,18 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "psx-mister",
+  "url": "https://github.com/MiSTer-devel/PSX_MiSTer/files/9114346/Suikoden.Files.zip",
+  "source_page": "https://github.com/MiSTer-devel/PSX_MiSTer/issues/164",
+  "source": "GitHub (MiSTer-devel/PSX_MiSTer issues)",
+  "author": "ghost (deleted GitHub user)",
+  "licence": null,
+  "fetched": "2026-11-04",
+  "what_it_is": "MiSTer PSX core .sav shipped beside a MiSTer .ss state; 2-block SUIKODEN LV32",
+  "files": {
+    "Suikoden (USA).sav": {
+      "size": 131072,
+      "sha1": "a442b02d956e0386a273611e124fe26f6835911f"
+    }
+  }
+}

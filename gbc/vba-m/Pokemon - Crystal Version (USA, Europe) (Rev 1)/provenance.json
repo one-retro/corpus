@@ -1,0 +1,31 @@
+{
+  "method": "played",
+  "system": "gbc",
+  "core": "vba-m",
+  "core_file": "vbam_libretro.dylib",
+  "core_name": "VBA-M",
+  "core_version": " 115defb",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Pokemon - Crystal Version (USA, Europe) (Rev 1).gbc",
+    "sha1": "f2f52230b536214ef7c9924f483392993e226cfb",
+    "size": 2097152
+  },
+  "script": "scripts/gbc/Pokemon Crystal.txt",
+  "frames": 8968,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Pokemon - Crystal Version (USA, Europe) (Rev 1).rtc": {
+      "size": 48,
+      "sha1": "999cbce0752d0d5c358de587ac42e2c2f8434220"
+    },
+    "Pokemon - Crystal Version (USA, Europe) (Rev 1).srm": {
+      "size": 32768,
+      "sha1": "4af77d88c0d2013580db966bb1e66a23057e64c0"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

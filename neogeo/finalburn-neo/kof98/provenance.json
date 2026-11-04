@@ -1,0 +1,31 @@
+{
+  "method": "played",
+  "system": "neogeo",
+  "core": "finalburn-neo",
+  "core_file": "fbneo_libretro.dylib",
+  "core_name": "FinalBurn Neo",
+  "core_version": "v1.0.0.03  GITda14132",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "kof98.zip",
+    "sha1": "bde244b013e92dff8894d60e5fd21119aa4c5a59",
+    "size": 40445835
+  },
+  "script": "scripts/neogeo/kof98.txt",
+  "frames": 2318,
+  "options": "fbneo-neogeo-mode = MVS_USA\nfbneo-memcard-mode = per-game\nfbneo-dipswitch-kof98-Setting_mode = On\n",
+  "started_from": null,
+  "files": {
+    "fbneo/kof98.fs": {
+      "size": 65536,
+      "sha1": "6c8be382e62819ed9fee405ce710f4bc7e4a4a63"
+    },
+    "fbneo/kof98.memcard": {
+      "size": 131104,
+      "sha1": "ec7a6096e64939a6cbdaa48ee5f408aed6013840"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "The game wrote nothing to the card in this run; kof98.memcard is the unformatted 128 KiB card region (all zero)."
+}

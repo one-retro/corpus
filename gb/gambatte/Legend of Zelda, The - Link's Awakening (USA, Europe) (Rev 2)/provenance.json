@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "gb",
+  "core": "gambatte",
+  "core_file": "gambatte_libretro.dylib",
+  "core_name": "Gambatte",
+  "core_version": "v0.5.0-netlink 77f2567",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Legend of Zelda, The - Link's Awakening (USA, Europe) (Rev 2).gb",
+    "sha1": "5ab63def958728933571c3b4f6af54db14f3f8b2",
+    "size": 524288
+  },
+  "script": "scripts/gb/Legend of Zelda, The - Link's Awakening.txt",
+  "frames": 1200,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Legend of Zelda, The - Link's Awakening (USA, Europe) (Rev 2).srm": {
+      "size": 8192,
+      "sha1": "3c12f2fab2dc8b5312cbcab158c335a5efb4b950"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

@@ -1,0 +1,35 @@
+{
+  "method": "played",
+  "system": "saturn",
+  "core": "beetle-saturn",
+  "core_file": "mednafen_saturn_libretro.dylib",
+  "core_name": "Beetle Saturn",
+  "core_version": "v1.32.1",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Tetris Plus (USA).cue",
+    "sha1": "7ee4fc48df2546fde9e03d3fcbd344ff9852b265",
+    "size": 94
+  },
+  "script": "scripts/saturn/Tetris Plus.beetle-saturn.txt",
+  "frames": 5700,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Tetris Plus (USA).bcr": {
+      "size": 524288,
+      "sha1": "7375f566c41cde0329e61131cd3565b6d2c275c0"
+    },
+    "Tetris Plus (USA).smpc": {
+      "size": 12,
+      "sha1": "736ea41bf3562335b6364133781fa8bf3e55b2dd"
+    },
+    "Tetris Plus (USA).srm": {
+      "size": 32768,
+      "sha1": "b35b48cb7fd1cb71ba97d7a91f9c3bad32162a90"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "Run from the data track alone: the cue lists only track 01 (the Redump cue's audio tracks were left out to save space); the BIOS and game do not need them to boot and save."
+}

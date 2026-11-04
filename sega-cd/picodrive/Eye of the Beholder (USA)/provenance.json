@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "sega-cd",
+  "core": "picodrive",
+  "core_file": "picodrive_libretro.dylib",
+  "core_name": "PicoDrive",
+  "core_version": "2.05-1890c29",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Eye of the Beholder (USA).cue",
+    "sha1": "ed3ae15a3ca73bf4ff996414c92e8e201cb1ba85",
+    "size": 6702
+  },
+  "script": "scripts/sega-cd/Eye of the Beholder.txt",
+  "frames": 10210,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Eye of the Beholder (USA).srm": {
+      "size": 8192,
+      "sha1": "815299c6a39567c0907ae8e96cde24de2add1494"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "Disc from the Trimmed Redump set, unpacked here: the data track is the real one, the audio tracks are zero-filled stand-ins of the exact sizes (silent CD audio; the disk was too full for the real ones). The .cue is the original."
+}

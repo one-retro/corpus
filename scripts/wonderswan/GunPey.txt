@@ -1,0 +1,16 @@
+# GunPey (EEPROM 2 KiB). Portrait game; START is the only button needed.
+# Play one ENDLESS game without touching the board: random panels still link
+# up (score 1200, 6 panels) until the rows reach the top. At game over the
+# game writes the result statistics to EEPROM (boot leaves only 01 51 at 0).
+wait 900            # intro
+press start 6       # skip to title
+wait 60
+press start 6       # title: 1 PLAYER
+wait 200
+press start 6       # MODE SELECT: ENDLESS
+wait 120
+press start 6       # GAME START
+wait 6000
+wait 300
+shot result         # RESULT: SCORE 1200, PANEL 6, CLASS D
+wait 600            # BEST SCORE table, back to MODE SELECT

@@ -1,0 +1,19 @@
+{
+  "method": "downloaded",
+  "system": "n64",
+  "core": "n64-mister",
+  "url": "https://github.com/euan-forrester/save-file-converter/files/15098608/MiSTer.N64.saves.zip",
+  "source_page": "https://github.com/euan-forrester/save-file-converter/issues/297",
+  "source": "GitHub (euan-forrester/save-file-converter issue #297, 'Add ability to convert MiSTer N64 files'); the same five files are the converter's test data (frontend/tests/data/save-formats/mister/n64)",
+  "author": "Unknown MiSTer user; attached as 'Example files: MiSTer N64 saves.zip' by euan-forrester (save-file-converter's author) on 2024-04-24. The zip's macOS quarantine records say he downloaded them with Firefox on 2024-04-23.",
+  "licence": "none stated (a file attached to a public GitHub issue; the repository is GPL-3.0)",
+  "fetched": "2026-11-04",
+  "what_it_is": "Ocarina of Time, 256 Kbit SRAM: two files, both named ABC (the file select reads 'File 1 ABC, File 2 ABC'). 32768 bytes, file dated 2024-02-26 18:03.",
+  "files": {
+    "Legend of Zelda, The - Ocarina of Time (USA).sra": {
+      "size": 32768,
+      "sha1": "7c0407e377c63717a09696594832423ed72af594"
+    }
+  },
+  "note": "Attributed to the MiSTer N64 core by the issue ('The new core has all the different possible file types split up') and by the names: '<ROM stem>.eep/.sra/.fla' and '<ROM stem>_1.cpk' are what MiSTer's Main (support/n64/n64.cpp) names N64 saves, and '_N.cpk' is MiSTer's alone. The file dates (Dec 2023 - Feb 2024) are after Main's December 2023 change that split the old single .sav into one file per chip and pak. Main of that time created new save files filled with 0x00 (0xFF since Main commit bc49794, 2026-01-13). SRAM in the same 32-bit word-swapped order as the libretro .srm ('ZELDAZ' reads 'DLEZ'/'..ZA'); unused bytes are 0x00, not 0xFF. Copied unchanged into the SRAM region (0x20800) of a Mupen64Plus-Next .srm and booted with the (Rev 2) ROM, the file select shows both files: proof.png is that check."
+}

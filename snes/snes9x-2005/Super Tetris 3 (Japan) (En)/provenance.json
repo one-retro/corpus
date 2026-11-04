@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "snes",
+  "core": "snes9x-2005",
+  "core_file": "snes9x2005_libretro.dylib",
+  "core_name": "Snes9x 2005",
+  "core_version": "v1.36 a79dfe9",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Super Tetris 3 (Japan) (En).sfc",
+    "sha1": "2f808a4f0db77a54895f5d2b68517331cd8e8855",
+    "size": 1048576
+  },
+  "script": "scripts/snes/Super Tetris 3.txt",
+  "frames": 2362,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Super Tetris 3 (Japan) (En).srm": {
+      "size": 2048,
+      "sha1": "af7270c9c1b103dc0e511372fab0c123f1356a63"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

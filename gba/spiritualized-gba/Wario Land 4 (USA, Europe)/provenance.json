@@ -1,0 +1,21 @@
+{
+  "method": "device-backup",
+  "device": "Analogue Pocket",
+  "backup_path": "Saves/gba/common/1 USA - T-Z/Wario Land 4 (USA, Europe).sav",
+  "system": "gba",
+  "core": "spiritualized-gba",
+  "pocket_core": "Spiritualized.GBA",
+  "pocket_platform": "gba",
+  "game_source": "No-Intro DAT 'Nintendo - Game Boy Advance (20260825-070327)'",
+  "attribution": "folder Saves/gba/common, only GBA core installed when written: Spiritualized.GBA (Analogue backup Cores/, Settings/); mincer_ray.GBA, the registry's other GBA core, was first released 2026-03-13, after the file and after this backup. Size and padding match Spiritualized.GBA: exactly the save type's size (EEPROM 64 Kbit = 8 KiB, SRAM = 32 KiB), where mincer_ray pads every save to 64 KiB with 0xFF (one-saves data/saves/analogue-pocket/mincer-ray-gba)",
+  "confidence": "high",
+  "written": "2023-02-13 22:40 (file mtime as read here; the Pocket stamps its own clock)",
+  "files": {
+    "Wario Land 4 (USA, Europe).sav": {
+      "size": 32768,
+      "sha1": "0d2fc19e7e9ad8267c5370450320f2c4c24735e9"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

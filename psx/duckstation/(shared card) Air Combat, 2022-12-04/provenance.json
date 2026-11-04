@@ -1,0 +1,18 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "duckstation",
+  "url": "https://archive.org/download/4.12.2022-air-combat-duck-station-saves-savestates/4.12.2022%20Air%20Combat%20DuckStation%20Saves%2BSavestates.rar/memcards%2Fshared_card_1.mcd",
+  "source_page": "https://archive.org/details/4.12.2022-air-combat-duck-station-saves-savestates",
+  "source": "archive.org",
+  "author": "Ladislav Svoboda",
+  "licence": "Public Domain Mark 1.0",
+  "fetched": "2026-11-04",
+  "what_it_is": "memcards/shared_card_1.mcd from a Windows 11 DuckStation folder; one PAL save (Air Combat); the earliest of the uploader's dated snapshots of this card",
+  "files": {
+    "shared_card_1.mcd": {
+      "size": 131072,
+      "sha1": "a88b820d83253d5d7f0a0cf31c996eb0b96d4bb5"
+    }
+  }
+}

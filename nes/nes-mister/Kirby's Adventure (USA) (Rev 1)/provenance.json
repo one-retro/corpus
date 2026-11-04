@@ -1,0 +1,19 @@
+{
+  "method": "downloaded",
+  "system": "nes",
+  "core": "nes-mister",
+  "url": "https://github.com/euan-forrester/save-file-converter/files/8173565/saves.zip",
+  "source_page": "https://github.com/euan-forrester/save-file-converter/issues/80#issuecomment-1057487772",
+  "source": "GitHub (euan-forrester/save-file-converter issue #80)",
+  "author": "birdybro (GitHub; MiSTer contributor)",
+  "licence": null,
+  "fetched": "2026-11-03",
+  "what_it_is": "birdybro's own MiSTer save of Kirby's Adventure, from a zip of their whole MiSTer saves folder (file dated 2021-08-28).",
+  "files": {
+    "Kirby's Adventure (USA) (Rev A).sav": {
+      "size": 32768,
+      "sha1": "7c648268acf34183ce25fd837ecb4ac0dcfb05a1"
+    }
+  },
+  "note": "MiSTer NES core (2021-22 build). The core wrote 32 KiB (64 SD sectors): the game's 8 KiB of PRG-RAM, then 24 KiB of whatever was in that SDRAM region. birdybro's explanation in the thread: iNES 1.0-headered ROMs give 32 KiB files, NES 2.0-headered ROMs (which declare the PRG-RAM size) give 8 KiB; NES.sv agrees (save_sz, the last LBA written, is 63, i.e. 64 sectors, unless the NES 2.0 prg_nvram field says 8 KiB, then 15). Inside the zip of birdybro's whole MiSTer saves folder; path in the zip: NES/<name>. ROM named with the older '(Rev A)' tag, No-Intro '(Rev 1)'. Here the last 24 KiB are not zero: leftover memory, not save data (23588 non-zero bytes)."
+}

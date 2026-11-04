@@ -1,0 +1,21 @@
+{
+  "method": "device-backup",
+  "device": "Analogue Pocket",
+  "backup_path": "Saves/gbc/common/Wario Land 3 (World) (En,Ja).sav",
+  "system": "gbc",
+  "core": "spiritualized-gbc",
+  "pocket_core": "Spiritualized.GBC",
+  "pocket_platform": "gbc",
+  "game_source": "No-Intro DAT 'Nintendo - Game Boy Color (20260825-135204)'",
+  "attribution": "folder Saves/gbc/common: written by a gbc-platform core; Spiritualized.GBC was the only one installed (older card snapshots, Dec 2023: Cores/Spiritualized.GBC 1.3.0) and budude2.GBC (first release 2024-01-04) postdates the file; size is exactly the header's RAM size with no footer, which budude2 never writes",
+  "confidence": "high",
+  "written": "2020-01-02 00:00 (file mtime as read here; the Pocket stamps its own clock)",
+  "files": {
+    "Wario Land 3 (World) (En,Ja).sav": {
+      "size": 32768,
+      "sha1": "6a0ed6d6bd70b6711ea99ab3939e22d8dada1477"
+    }
+  },
+  "created": "2026-11-03",
+  "note": "dated 2020-01-02, the Pocket's date before its clock is set"
+}

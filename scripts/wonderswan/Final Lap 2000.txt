@@ -1,0 +1,35 @@
+# Final Lap 2000 (EEPROM 2 KiB). The options are saved when OPTION is left
+# through EXIT: set HANDLING to QUICK and TRANSMISSION to AT, EXIT, reset, and
+# OPTION shows them again. Boot alone leaves the EEPROM all zero.
+wait 700
+press start 8       # title -> ARCADE / WORLD TOUR / TIME TRIAL / RANKING / COURSE EDIT / OPTION
+wait 60
+repeat 5
+press down 8
+wait 20
+end
+press a 8           # OPTION
+wait 120
+press right 8       # HANDLING: NORMAL -> QUICK
+wait 60
+press down 8
+wait 60
+press right 8       # TRANSMISSION: MT -> AT
+wait 60
+repeat 5
+press down 8        # down to EXIT
+wait 30
+end
+press a 8           # EXIT: the options are written
+wait 120
+reset
+wait 700
+press start 8
+wait 60
+repeat 5
+press down 8
+wait 20
+end
+press a 8           # OPTION again
+wait 120
+shot options        # HANDLING QUICK, TRANSMISSION AT, read back from EEPROM

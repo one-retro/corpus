@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "neogeo",
+  "core": "fb-alpha",
+  "core_file": "fbalpha2012_libretro.dylib",
+  "core_name": "FB Alpha 2012",
+  "core_version": "v0.2.97.29 0ce3153",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "kof98.zip",
+    "sha1": "bde244b013e92dff8894d60e5fd21119aa4c5a59",
+    "size": 40445835
+  },
+  "script": "scripts/neogeo/kof98.txt",
+  "frames": 2318,
+  "options": "fbneo-neogeo-mode = MVS\nfbalpha2012_dipswitch_kof98_Setting_mode = On\n",
+  "started_from": null,
+  "files": {
+    "kof98.fs": {
+      "size": 432,
+      "sha1": "0870dbba5c10d113362c9411b1c4a5dcdf5b9408"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

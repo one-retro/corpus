@@ -1,0 +1,33 @@
+{
+  "method": "device-backup",
+  "device": "Nintendo 2DS",
+  "producer": "JKSV",
+  "backup_path": "JKSV/Saves/Dragon Quest VIII/2034.02.05_14.21.48",
+  "system": "3ds",
+  "core": "_jksv",
+  "title": {
+    "jksv_folder": "Dragon Quest VIII",
+    "name": "Dragon Quest VIII",
+    "product_code": "CTR-P-BQ8E",
+    "title_id": "000400000018F100"
+  },
+  "game_source": "No-Intro DAT 'Nintendo - Nintendo 3DS (Encrypted) (20260826-020750)', by product code; the backup does not say which revision of the game made it, so the folder is the unrevised entry",
+  "attribution": "JKSV save manager on the owner's 2DS, real hardware; JKSV's title cache (JKSV/titles) gives the product code and title ID for its folder name",
+  "confidence": "high",
+  "written": "2034.02.05_14.21.48 (JKSV's backup folder, the 2DS's clock, which was set to 2034)",
+  "files": {
+    "Saves/Dragon Quest VIII/2034.02.05_14.21.48/honeySave.bin": {
+      "size": 212560,
+      "sha1": "6205a697f02692829e54a6ad1ccf8cf178f094eb",
+      "role": "primary"
+    },
+    "ExtData/Dragon Quest VIII/2034.02.05_14.21.48/linkage.bin": {
+      "size": 4,
+      "sha1": "ccdb337e3d80ca2d1ef9cfaf7b5b00e4a30c2230",
+      "role": "extdata"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null,
+  "extdata_backup_path": "JKSV/ExtData/Dragon Quest VIII/2034.02.05_14.21.48"
+}

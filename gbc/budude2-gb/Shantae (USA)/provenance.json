@@ -1,0 +1,21 @@
+{
+  "method": "device-backup",
+  "device": "Analogue Pocket",
+  "backup_path": "Saves/gb/common/1 GBC US - M-Z/Shantae (USA).sav",
+  "system": "gbc",
+  "core": "budude2-gb",
+  "pocket_core": "budude2.GB",
+  "pocket_platform": "gb",
+  "game_source": "No-Intro DAT 'Nintendo - Game Boy Color (20260825-135204)'",
+  "attribution": "padding matches budude2: 8 KiB header RAM + 16-byte clock footer (timestamp 0x676AF2AB = 2024-12-24 17:43:07, the write time) on an MBC5 cart with no clock; folder Saves/gb/common makes it budude2.GB",
+  "confidence": "high",
+  "written": "2024-12-24 17:43 (file mtime as read here; the Pocket stamps its own clock)",
+  "files": {
+    "Shantae (USA).sav": {
+      "size": 8208,
+      "sha1": "d5631e76208774e7e13015bc4e12cfddd4a9c214"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

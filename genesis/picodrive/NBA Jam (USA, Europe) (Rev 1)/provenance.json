@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "genesis",
+  "core": "picodrive",
+  "core_file": "picodrive_libretro.dylib",
+  "core_name": "PicoDrive",
+  "core_version": "2.05-1890c29",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "NBA Jam (USA, Europe) (Rev 1).md",
+    "sha1": "55f2b26a932c69b2c7cb4f24f56b43f24f113a7c",
+    "size": 2097152
+  },
+  "script": "scripts/genesis/NBA Jam.txt",
+  "frames": 39742,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "NBA Jam (USA, Europe) (Rev 1).srm": {
+      "size": 8192,
+      "sha1": "c1d1bc7be48b4c984393feaafed46eafc3f33809"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

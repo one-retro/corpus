@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "ngpc",
+  "core": "race",
+  "core_file": "race_libretro.dylib",
+  "core_name": "RACE",
+  "core_version": "v2.16 c7810dd",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Samurai Shodown! 2 - Pocket Fighting Series (World) (En,Ja).ngc",
+    "sha1": "5c87a9109bb2c7c99f7dd1b9b9a7b807776862b1",
+    "size": 2097152
+  },
+  "script": "scripts/ngpc/Samurai Shodown! 2.txt",
+  "frames": 4402,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Samurai Shodown! 2 - Pocket Fighting Series (World) (En,Ja).ngf": {
+      "size": 32784,
+      "sha1": "0273a3645c25fe185e1aebded77940425f33b247"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

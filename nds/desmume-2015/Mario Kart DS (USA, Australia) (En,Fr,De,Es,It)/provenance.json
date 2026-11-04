@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "nds",
+  "core": "desmume-2015",
+  "core_file": "desmume2015_libretro.dylib",
+  "core_name": "DeSmuME 2015",
+  "core_version": "git a06da0c",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Mario Kart DS (USA, Australia) (En,Fr,De,Es,It).nds",
+    "sha1": "691e00d9a5dd80b04f80cc7559503e8b06848785",
+    "size": 33554432
+  },
+  "script": "scripts/nds/Mario Kart DS.txt",
+  "frames": 4450,
+  "options": "desmume_pointer_type = touch\n",
+  "started_from": null,
+  "files": {
+    "Mario Kart DS (USA, Australia) (En,Fr,De,Es,It).dsv": {
+      "size": 262266,
+      "sha1": "9ea6dfab782055fd9e58dfcf301287e283fb4270"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

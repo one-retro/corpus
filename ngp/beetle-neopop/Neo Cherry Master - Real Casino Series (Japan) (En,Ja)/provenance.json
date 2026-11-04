@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "ngp",
+  "core": "beetle-neopop",
+  "core_file": "mednafen_ngp_libretro.dylib",
+  "core_name": "Beetle NeoPop",
+  "core_version": "v1.29.0.0 a50d5ac",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Neo Cherry Master - Real Casino Series (Japan) (En,Ja).ngp",
+    "sha1": "30e8a0264922a050d3d674df4043c7d67ebde62b",
+    "size": 1048576
+  },
+  "script": "scripts/ngp/Neo Cherry Master.txt",
+  "frames": 3388,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Neo Cherry Master - Real Casino Series (Japan) (En,Ja).flash": {
+      "size": 14880,
+      "sha1": "c154d9ea060ea6498cac5eef69fdf037054274a0"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

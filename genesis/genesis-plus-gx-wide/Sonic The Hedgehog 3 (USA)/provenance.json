@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "genesis",
+  "core": "genesis-plus-gx-wide",
+  "core_file": "genesis_plus_gx_wide_libretro.dylib",
+  "core_name": "Genesis Plus GX Wide",
+  "core_version": "v1.7.4 b7ad005",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Sonic The Hedgehog 3 (USA).md",
+    "sha1": "75e9c4705259d84112b3e697a6c00a0813d47d71",
+    "size": 2097152
+  },
+  "script": "scripts/genesis/Sonic The Hedgehog 3.txt",
+  "frames": 2220,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Sonic The Hedgehog 3 (USA).srm": {
+      "size": 604,
+      "sha1": "d1da9c52de9d6900f8c11e4d8280418d52aea5e2"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

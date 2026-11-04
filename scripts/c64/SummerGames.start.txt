@@ -1,0 +1,21 @@
+# Included by Summer Games.txt: boot to the menu, 2) COMPETE IN ONE EVENT,
+# register ABC for France, confirm. Ends at COMPETE IN WHICH EVENT?
+
+wait 3000
+press b 8
+wait 1800
+press b 8           # skip to the menu
+wait 600
+press down 8        # 2) COMPETE IN ONE EVENT
+wait 60
+press b 8
+wait 600
+type abc            # #1 ENTER YOUR NAME
+key return 8
+wait 600
+press b 8           # PICK YOUR COUNTRY (France is highlighted)
+wait 900
+key return 8        # #2 ENTER YOUR NAME: none
+wait 900
+press b 8           # IS THIS CORRECT? Y
+wait 900

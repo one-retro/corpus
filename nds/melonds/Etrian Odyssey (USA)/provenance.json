@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "nds",
+  "core": "melonds",
+  "core_file": "melonds_libretro.dylib",
+  "core_name": "melonDS",
+  "core_version": "0.9.3 66b5d26",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Etrian Odyssey (USA).nds",
+    "sha1": "94cd285184d3bafb10af186d478a2a0348ff0bf7",
+    "size": 16777216
+  },
+  "script": "scripts/nds/Etrian Odyssey.txt",
+  "frames": 15616,
+  "options": "melonds_touch_mode = Touch\n",
+  "started_from": null,
+  "files": {
+    "Etrian Odyssey (USA).sav": {
+      "size": 65536,
+      "sha1": "5a0724d828064fb37ef28e2bb1dddc00dc8448e2"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

@@ -1,0 +1,21 @@
+{
+  "method": "device-backup",
+  "device": "Analogue Pocket",
+  "backup_path": "Saves/gba/common/1 USA - A-C/Bomberman Max 2 - Blue Advance (USA).sav",
+  "system": "gba",
+  "core": "spiritualized-gba",
+  "pocket_core": "Spiritualized.GBA",
+  "pocket_platform": "gba",
+  "game_source": "No-Intro DAT 'Nintendo - Game Boy Advance (20260825-070327)'",
+  "attribution": "folder Saves/gba/common, only GBA core installed when written: Spiritualized.GBA (Analogue backup Cores/, Settings/); mincer_ray.GBA, the registry's other GBA core, was first released 2026-03-13, after the file and after this backup. Size and padding match Spiritualized.GBA: exactly the save type's size (EEPROM 64 Kbit = 8 KiB, SRAM = 32 KiB), where mincer_ray pads every save to 64 KiB with 0xFF (one-saves data/saves/analogue-pocket/mincer-ray-gba)",
+  "confidence": "high",
+  "written": "2023-09-22 18:43 (file mtime as read here; the Pocket stamps its own clock)",
+  "files": {
+    "Bomberman Max 2 - Blue Advance (USA).sav": {
+      "size": 8192,
+      "sha1": "ed52c5c9a90d0bee60323ad1e14d1b9e0fa8ebd4"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

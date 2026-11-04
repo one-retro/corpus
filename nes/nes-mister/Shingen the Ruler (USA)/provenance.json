@@ -1,0 +1,19 @@
+{
+  "method": "downloaded",
+  "system": "nes",
+  "core": "nes-mister",
+  "url": "https://github.com/euan-forrester/save-file-converter/files/8173565/saves.zip",
+  "source_page": "https://github.com/euan-forrester/save-file-converter/issues/80#issuecomment-1057487772",
+  "source": "GitHub (euan-forrester/save-file-converter issue #80)",
+  "author": "birdybro (GitHub; MiSTer contributor)",
+  "licence": null,
+  "fetched": "2026-11-03",
+  "what_it_is": "birdybro's own MiSTer save of Shingen the Ruler, from a zip of their whole MiSTer saves folder (file dated 2021-03-05); 8 KiB, so presumably an NES 2.0-headered ROM.",
+  "files": {
+    "Shingen the Ruler (USA).sav": {
+      "size": 8192,
+      "sha1": "7cb205b4c2cce03bebf6d6205c0ba7c980b647b5"
+    }
+  },
+  "note": "MiSTer NES core (2021 build). One of the few 8 KiB NES files in birdybro's zip; per the thread, 8 KiB files come from NES 2.0-headered ROMs. Path in the zip: NES/<name>."
+}

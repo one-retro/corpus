@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "gba",
+  "core": "beetle-gba",
+  "core_file": "mednafen_gba_libretro.dylib",
+  "core_name": "Beetle GBA",
+  "core_version": "v0.9.36 b158166",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Super Mario Advance 4 - Super Mario Bros. 3 (USA, Australia) (Rev 1).gba",
+    "sha1": "532f3307021637474b6dd37da059ca360f612337",
+    "size": 4194304
+  },
+  "script": "scripts/gba/Super Mario Advance 4 - Super Mario Bros. 3.txt",
+  "frames": 6480,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Super Mario Advance 4 - Super Mario Bros. 3 (USA, Australia) (Rev 1).605286b3aedeffba70bf46b834b120b1.sav": {
+      "size": 131072,
+      "sha1": "368bba47f51be573db999fa2928041aad983014a"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

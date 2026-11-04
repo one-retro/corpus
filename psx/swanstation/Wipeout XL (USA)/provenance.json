@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "psx",
+  "core": "swanstation",
+  "core_file": "swanstation_libretro.dylib",
+  "core_name": "SwanStation",
+  "core_version": "1.0.0 631f0fb",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "opengl",
+  "rom": {
+    "name": "Wipeout XL (USA).cue",
+    "sha1": "4865771eb7fce90a4bd1d67299f5ba6a1f08e7a8",
+    "size": 1314
+  },
+  "script": "scripts/psx/Wipeout XL.txt",
+  "frames": 9340,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Wipeout XL (USA).srm": {
+      "size": 131072,
+      "sha1": "84d84c8674f4a1f400d566231c8b5512f589eaea"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

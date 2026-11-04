@@ -1,0 +1,31 @@
+{
+  "method": "played",
+  "system": "gb",
+  "core": "vba-m",
+  "core_file": "vbam_libretro.dylib",
+  "core_name": "VBA-M",
+  "core_version": " 115defb",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Pocket Family GB (Japan) (SGB Enhanced).gb",
+    "sha1": "162b0ab1fcfcf9b7ac888f137fedc41264219cf9",
+    "size": 524288
+  },
+  "script": "scripts/gb/Pocket Family GB.txt",
+  "frames": 7246,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Pocket Family GB (Japan) (SGB Enhanced).rtc": {
+      "size": 8,
+      "sha1": "4037efb7114ffcb53491d5273d7889c8d1f617c8"
+    },
+    "Pocket Family GB (Japan) (SGB Enhanced).srm": {
+      "size": 32768,
+      "sha1": "99b1128073fca3a64dd43d99bedfe1e60444b9c2"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

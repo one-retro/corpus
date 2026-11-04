@@ -1,0 +1,32 @@
+{
+  "method": "played",
+  "system": "nds",
+  "core": "skyemu",
+  "core_file": "skyemu_libretro.dylib",
+  "core_name": "SkyEmu",
+  "core_version": "adacd0788964ed89f5c43dcbc1f3cc26deec996c",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Mario Party DS (USA).nds",
+    "sha1": "ef7947a543a3b2aa138576506474e6c4ac317141",
+    "size": 33554432
+  },
+  "device": null,
+  "script": "scripts/nds/Mario Party DS.txt",
+  "frames": 5558,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Mario Party DS (USA).rtc": {
+      "size": 40,
+      "sha1": "3d546c9fa05fab9c372013b054b89659b6458319"
+    },
+    "Mario Party DS (USA).srm": {
+      "size": 8388608,
+      "sha1": "2ca5a5c29b2a7bda9fd61950a12fd47db2b15b83"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

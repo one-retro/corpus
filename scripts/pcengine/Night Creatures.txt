@@ -1,0 +1,40 @@
+# Night Creatures: start, jump around until all lives are lost, then at
+# "DO YOU WANT TO" pick SAVE (RUN), "SAVE AS" NC 2. The game writes an NC3
+# file when SAVE AS opens and NC2 for the chosen slot, then play resumes. Lose
+# again and pick RESTORE: "RESTORE GAME? YES".
+wait 240
+press start 6         # NEC, PRESS RUN TO START
+wait 240
+press start 6
+wait 300
+repeat 22
+press a 6             # jump about until the vitality is gone
+wait 94
+end
+wait 600              # GAME OVER, then DO YOU WANT TO
+shot gameover
+press down 8          # QUIT
+wait 40
+press down 8          # SAVE
+wait 40
+press start 6         # SAVE AS
+wait 120
+press down 8          # NC 2
+wait 40
+shot saveas
+press start 8         # saved; play resumes
+repeat 22
+press a 6
+wait 94
+end
+wait 600
+repeat 4
+press down 8          # RESTORE
+wait 40
+end
+press start 6
+wait 120
+shot restore          # RESTORE GAME?  YES
+press start 6
+wait 120
+shot restore2

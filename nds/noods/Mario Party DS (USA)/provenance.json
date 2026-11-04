@@ -1,0 +1,28 @@
+{
+  "method": "played",
+  "system": "nds",
+  "core": "noods",
+  "core_file": "noods_libretro.dylib",
+  "core_name": "NooDS",
+  "core_version": "9a26653",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Mario Party DS (USA).nds",
+    "sha1": "ef7947a543a3b2aa138576506474e6c4ac317141",
+    "size": 33554432
+  },
+  "device": null,
+  "script": "scripts/nds/Mario Party DS.txt",
+  "frames": 5558,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Mario Party DS (USA).sav": {
+      "size": 8192,
+      "sha1": "9aec15f5888b43bde7d284a2e9658434ecd3a3c5"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

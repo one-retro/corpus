@@ -1,0 +1,30 @@
+# Golf - US Course: the menu's NAME opens the Disk Writer service form; type アイウ
+# and choose "save", which writes DATA.COM (side A). The console is then reset
+# and the form, read back from the disk, shows the name.
+wait 1200
+press start 10      # title -> menu
+wait 400
+press down 10       # (the menu pointer moves slowly)
+wait 90
+press down 10       # NAME
+wait 90
+press start 10
+wait 600
+include _service-form.inc
+tap right 12 12     # save
+shot name
+press a 6           # save: DATA.COM is written
+wait 1500
+shot written
+reset
+wait 1200
+press start 10
+wait 400
+press down 10
+wait 90
+press down 10
+wait 90
+press start 10      # the form as the disk holds it
+wait 600
+shot saved
+wait 30

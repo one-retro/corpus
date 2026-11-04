@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "nes",
+  "core": "mesen",
+  "core_file": "mesen_libretro.dylib",
+  "core_name": "Mesen",
+  "core_version": "0.9.9",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Zelda II - The Adventure of Link (USA).nes",
+    "sha1": "08fa60f23e477752fdd850b1fd4171c6ca025127",
+    "size": 262160
+  },
+  "script": "scripts/nes/Zelda II.txt",
+  "frames": 2024,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Zelda II - The Adventure of Link (USA).srm": {
+      "size": 8192,
+      "sha1": "67008f57c6dfd95c25c591bc0fcd70dad4412cae"
+    }
+  },
+  "created": "2026-11-03",
+  "note": "runner: work/nes/runner/retro-run (tools/retro-run with RetroArch's init order and a disk control interface)"
+}

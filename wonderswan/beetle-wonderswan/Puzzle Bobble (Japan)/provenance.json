@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "wonderswan",
+  "core": "beetle-wonderswan",
+  "core_file": "mednafen_wswan_libretro.dylib",
+  "core_name": "Beetle WonderSwan",
+  "core_version": "v0.9.35.1 4b01295",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Puzzle Bobble (Japan).ws",
+    "sha1": "fdb8e9f37a4b097350b7c5b1b8ee381ca51dc0b6",
+    "size": 1048576
+  },
+  "script": "scripts/wonderswan/Puzzle Bobble.txt",
+  "frames": 4984,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Puzzle Bobble (Japan).srm": {
+      "size": 128,
+      "sha1": "2d68a83cc4fdd50e1287dcd69809af9662d47239"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

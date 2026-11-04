@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "nds",
+  "core": "melonds-ds",
+  "core_file": "melondsds_libretro.dylib",
+  "core_name": "melonDS DS",
+  "core_version": "1.4.0",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Mario Kart DS (USA, Australia) (En,Fr,De,Es,It).nds",
+    "sha1": "691e00d9a5dd80b04f80cc7559503e8b06848785",
+    "size": 33554432
+  },
+  "script": "scripts/nds/Mario Kart DS.txt",
+  "frames": 4450,
+  "options": "melonds_touch_mode = touch\n",
+  "started_from": null,
+  "files": {
+    "Mario Kart DS (USA, Australia) (En,Fr,De,Es,It).srm": {
+      "size": 262144,
+      "sha1": "6ac1c22acf1a49f2f52848e8ed02e23e7b9184cc"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

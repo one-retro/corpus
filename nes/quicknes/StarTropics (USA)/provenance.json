@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "nes",
+  "core": "quicknes",
+  "core_file": "quicknes_libretro.dylib",
+  "core_name": "QuickNES",
+  "core_version": "1.0-WIP 26bb785",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "StarTropics (USA).nes",
+    "sha1": "0372a5a3e2c8c96a459f0fd83c05437bc3af44d1",
+    "size": 524304
+  },
+  "script": "scripts/nes/StarTropics.txt",
+  "frames": 1528,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "StarTropics (USA).srm": {
+      "size": 8192,
+      "sha1": "71ce09e071a975f83b93f588f30e8f5e048270f1"
+    }
+  },
+  "created": "2026-11-03",
+  "note": "runner: work/nes/runner/retro-run (tools/retro-run with RetroArch's init order and a disk control interface)"
+}

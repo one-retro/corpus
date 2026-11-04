@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "genesis",
+  "core": "genesis-plus-gx",
+  "core_file": "genesis_plus_gx_libretro.dylib",
+  "core_name": "Genesis Plus GX",
+  "core_version": "v1.7.4 f27655b",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Shining Force (USA).md",
+    "sha1": "c23e81c89e4bf65a5be0152d5a1f35507255d119",
+    "size": 2097152
+  },
+  "script": "scripts/genesis/Shining Force.txt",
+  "frames": 9046,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Shining Force (USA).srm": {
+      "size": 16382,
+      "sha1": "dddd6a703b4e663db19685bcc24c958df696e3d9"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

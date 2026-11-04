@@ -1,0 +1,32 @@
+{
+  "method": "played",
+  "system": "gba",
+  "core": "mednafen",
+  "core_file": null,
+  "core_name": "Mednafen",
+  "core_version": "1.32.1",
+  "frontend": "Mednafen 1.32.1 (Homebrew), module 'gba', isolated MEDNAFEN_HOME, -sound 0 -video.glvsync 0",
+  "rom": {
+    "name": "Pokemon - Emerald Version (USA, Europe).gba",
+    "size": 16777216,
+    "sha1": "f3ae088181bf583e55daf962a92bb46f4f1d07b7"
+  },
+  "script": "scripts/gba/Pokemon - Emerald Version.txt",
+  "frames": 12326,
+  "options": null,
+  "input": "work/standalone/tools/sdlfeed.c (DYLD_INSERT_LIBRARIES into the ad-hoc-signed Homebrew binary): SDL key events synthesized inside the process on presented frames, from the retro-run script mapped to Mednafen's default keys (gen_sdlfeed.py); F9 snapshot for shot, F10 reset, F12 exit (Mednafen writes saves on exit)",
+  "started_from": null,
+  "files": {
+    "Pokemon - Emerald Version (USA, Europe).605b89b67018abcea91e693a4dd25be3.sav": {
+      "size": 131072,
+      "sha1": "39506441dc91bbb72b3a729fda154fd5e9a9035b"
+    }
+  },
+  "layout": {
+    "save_dir": "$MEDNAFEN_HOME/sav (default .mednafen/sav in the home folder)",
+    "name": "<ROM file name without extension>.<game MD5 as Mednafen computes it>.<ext> (filesys.fname_sav %f.%M%x)",
+    "written": "on exit"
+  },
+  "created": "2026-11-04",
+  "note": "Needs a user-made override file: without it Mednafen 1.32 picks 64 KiB flash for Emerald, writes a 65536-byte .sav, logs 'SRAM emulation disabled by write to 0e005555' and the game hangs on a white screen at the save (first run, not filed). With sav/<name>.<md5>.type containing 'flash 128' and 'rtc' (made by hand before the run, not filed) the save works: 131072 bytes, and no clock data in the file (Mednafen GBA reads the host clock). beetle-gba gets 128 KiB without any override file."
+}

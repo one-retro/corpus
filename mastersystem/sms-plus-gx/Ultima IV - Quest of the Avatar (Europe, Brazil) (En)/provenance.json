@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "mastersystem",
+  "core": "sms-plus-gx",
+  "core_file": "smsplus_libretro.dylib",
+  "core_name": "SMS Plus GX",
+  "core_version": "1.8 3844b46",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Ultima IV - Quest of the Avatar (Europe, Brazil) (En).sms",
+    "sha1": "a90e21e5961bcf2e10b715a009c04e7c2017a3b1",
+    "size": 524288
+  },
+  "script": "scripts/mastersystem/Ultima IV.txt",
+  "frames": 11036,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Ultima IV - Quest of the Avatar (Europe, Brazil) (En).srm": {
+      "size": 32768,
+      "sha1": "5534ff5718e8c13bb2a6d4ad171328504e07aa89"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

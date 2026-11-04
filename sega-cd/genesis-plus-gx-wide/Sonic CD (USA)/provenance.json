@@ -1,0 +1,31 @@
+{
+  "method": "played",
+  "system": "sega-cd",
+  "core": "genesis-plus-gx-wide",
+  "core_file": "genesis_plus_gx_wide_libretro.dylib",
+  "core_name": "Genesis Plus GX Wide",
+  "core_version": "v1.7.4 b7ad005",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Sonic CD (USA).cue",
+    "sha1": "5b085f78a6904d275715dcfeb454ecc262e704e5",
+    "size": 3820
+  },
+  "script": "scripts/sega-cd/Sonic CD.txt",
+  "frames": 3618,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "4Mbit_cart.brm": {
+      "size": 524288,
+      "sha1": "2a170e18ca44a8bbaa8d36675cdae9e7203026d0"
+    },
+    "scd_U.brm": {
+      "size": 8192,
+      "sha1": "bdcccd43d6c9999ffb8977adb324c9ceb15fe1a3"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

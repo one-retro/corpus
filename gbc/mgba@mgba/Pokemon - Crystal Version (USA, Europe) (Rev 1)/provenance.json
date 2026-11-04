@@ -1,0 +1,34 @@
+{
+  "method": "handoff",
+  "system": "gbc",
+  "core": "mgba",
+  "app": "mgba",
+  "core_file": null,
+  "core_name": "mGBA",
+  "core_version": "0.10.5",
+  "frontend": "mGBA 0.10.5 (the macOS app, mGBA.app), isolated config (XDG_CONFIG_HOME)",
+  "rom": {
+    "name": "Pokemon - Crystal Version (USA, Europe) (Rev 1).gbc",
+    "size": 2097152,
+    "sha1": "f2f52230b536214ef7c9924f483392993e226cfb"
+  },
+  "script": "scripts/gbc/Pokemon Crystal.txt",
+  "frames": 8608,
+  "options": null,
+  "input": "none in the app: it was started with -t STATE and left running ~25 s, then sent SIGTERM. The game's own save routine ran inside the app and the app wrote the file.",
+  "started_from": "save state of the libretro mgba core (0.11-212-7a12d6d) under tools/retro-run, taken 2 frames after script line 34 (the press that starts the game's save), with battery RAM dumped at the same moment and placed beside the ROM as the app's .sav.",
+  "files": {
+    "Pokemon - Crystal Version (USA, Europe) (Rev 1).sav": {
+      "size": 32816,
+      "sha1": "7244eea7b4e9dfd43ce60f38e2f43b8a3a0df72a"
+    }
+  },
+  "layout": {
+    "save_dir": "beside the ROM (the app default: savegamePath unset)",
+    "name": "<ROM file name without extension>.sav",
+    "clock": "appended to the .sav, no sidecar: GBA 16 bytes (7 BCD time bytes YY MM DD WD hh mm ss, control, u64 lastLatch); GB MBC3 48 bytes (the VBA-M layout libretro mgba writes as .rtc)",
+    "written": "while the game runs (the .sav is a mapped file), not only on exit"
+  },
+  "created": "2026-11-04",
+  "note": "proof.png is the libretro mgba core booting with this file as its .srm (screen capture of the app is not permitted here): the game lists the save. 32816 bytes = 32 KiB + a 48-byte MBC3 clock footer, the same layout libretro mgba writes as a separate .rtc (5 x u32 registers, 5 x u32 latched, u64 LE Unix time). Booted without that clock, the game shows TIME ??? ; with the footer passed as .rtc it shows 0:00."
+}

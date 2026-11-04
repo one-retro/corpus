@@ -1,0 +1,22 @@
+#!/bin/sh
+# fetch-core.sh SLUG... -- download libretro cores for registry slugs into
+# .cache/cores/<arch>/, from the libretro buildbot's nightly macOS builds.
+# Prints the path of each core. A slug the map does not list is an error.
+set -eu
+here=$(cd "$(dirname "$0")" && pwd)
+cache="$here/../.cache/cores"
+for slug in "$@"; do
+  line=$(awk -F'\t' -v s="$slug" '$1==s {print $2"\t"$3}' "$here/cores.tsv")
+  if [ -z "$line" ]; then echo "no buildbot core for $slug" >&2; exit 1; fi
+  name=$(printf '%s' "$line" | cut -f1); arch=$(printf '%s' "$line" | cut -f2)
+  dir="$cache/$arch"; mkdir -p "$dir"
+  lib="$dir/${name}_libretro.dylib"
+  if [ ! -f "$lib" ]; then
+    tmp=$(mktemp -d)
+    curl -fsSL -o "$tmp/core.zip" "https://buildbot.libretro.com/nightly/apple/osx/$arch/latest/${name}_libretro.dylib.zip"
+    unzip -q -o "$tmp/core.zip" -d "$tmp/x"
+    mv "$tmp/x/${name}_libretro.dylib" "$lib"
+    rm -rf "$tmp"
+  fi
+  echo "$lib"
+done

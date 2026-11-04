@@ -1,0 +1,32 @@
+{
+  "method": "played",
+  "system": "nes",
+  "core": "fceux",
+  "core_file": null,
+  "core_name": "FCEUX",
+  "core_version": "2.6.6",
+  "frontend": "FCEUX 2.6.6 (Homebrew build, Qt GUI), input by its Lua engine (--loadlua)",
+  "rom": {
+    "name": "Crystalis (USA).nes",
+    "size": 393232,
+    "sha1": "c9144b473ac2a3b9bf3ea8054aff565460e5b2d4"
+  },
+  "script": "scripts/nes/Crystalis.txt",
+  "frames": 8492,
+  "options": null,
+  "input": "work/standalone/tools/gen_fceux_lua.py: the retro-run script replayed with joypad.set per frame, turbo speed; emu.exit at the end",
+  "started_from": null,
+  "files": {
+    "Crystalis (USA).sav": {
+      "size": 8192,
+      "sha1": "af765ac705f7af362718c70ea040c2a8c81f14f0"
+    }
+  },
+  "layout": {
+    "save_dir": "<base>/sav, base = $FCEUX_HOME/.fceux (default .fceux in the home folder)",
+    "name": "<ROM file name without extension>.sav",
+    "written": "when the game is closed (emu.exit here)"
+  },
+  "created": "2026-11-03",
+  "note": "FCEUX segfaulted (rc 139) after emu.exit, once the .sav was already written; every run did this. Differs from every libretro core's file (they differ from each other too: play-dependent bytes)."
+}

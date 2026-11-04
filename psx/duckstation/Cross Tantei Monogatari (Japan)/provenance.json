@@ -1,0 +1,18 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "duckstation",
+  "url": "https://github.com/user-attachments/files/31763109/memcards.zip",
+  "source_page": "https://github.com/snake7594/cross-tantei-monogatari-korean/issues/16",
+  "source": "GitHub",
+  "author": "hansolgun",
+  "licence": null,
+  "fetched": "2026-11-04",
+  "what_it_is": "card from a DuckStation memcards folder ('tested on the latest DuckStation'), five saves of a Korean-patched Japanese game; saves 1 and 5 are where it hangs",
+  "files": {
+    "Cross Tantei Monogatari (Japan)_1.mcd": {
+      "size": 131072,
+      "sha1": "74e735b6e1cb800cf03298b2e34341acb2c8ba34"
+    }
+  }
+}

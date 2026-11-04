@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "gbc",
+  "core": "mgba",
+  "core_file": "mgba_libretro.dylib",
+  "core_name": "mGBA",
+  "core_version": "0.11-212-7a12d6d",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Robopon - Sun Version (USA) (SGB Enhanced) (GB Compatible).gbc",
+    "sha1": "399c928a38a3901b7a1093bd61f5a4d8c05b9771",
+    "size": 1048576
+  },
+  "script": "scripts/gbc/Robopon Sun.txt",
+  "frames": 15932,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Robopon - Sun Version (USA) (SGB Enhanced) (GB Compatible).srm": {
+      "size": 32768,
+      "sha1": "ee211035664ded87f39ad6db10935e11d99a8cc5"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

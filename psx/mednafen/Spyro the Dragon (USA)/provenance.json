@@ -1,0 +1,36 @@
+{
+  "method": "played",
+  "system": "psx",
+  "core": "mednafen",
+  "core_file": null,
+  "core_name": "Mednafen",
+  "core_version": "1.32.1",
+  "frontend": "Mednafen 1.32.1 (Homebrew), module 'psx', isolated MEDNAFEN_HOME, -sound 0 -video.glvsync 0",
+  "rom": {
+    "name": "Spyro the Dragon (USA).cue",
+    "size": 88,
+    "sha1": "6abdbc5a00bcb521528825fb7cb6bfebd99a7a91"
+  },
+  "script": "work/standalone/mednafen/spyro-variant.txt (variant of scripts/psx/Spyro the Dragon.txt)",
+  "frames": 5818,
+  "options": null,
+  "input": "work/standalone/tools/sdlfeed.c (DYLD_INSERT_LIBRARIES into the ad-hoc-signed Homebrew binary): SDL key events synthesized inside the process on presented frames, from the retro-run script mapped to Mednafen's default keys (gen_sdlfeed.py); F9 snapshot for shot, F10 reset, F12 exit (Mednafen writes saves on exit)",
+  "started_from": null,
+  "files": {
+    "Spyro the Dragon (USA).c23d9f30b1fccb15c38d50f3d2dc1f62.0.mcr": {
+      "size": 131072,
+      "sha1": "49874266c08f3a47daa0e85c922830e815b11a45"
+    },
+    "Spyro the Dragon (USA).c23d9f30b1fccb15c38d50f3d2dc1f62.1.mcr": {
+      "size": 131072,
+      "sha1": "506988ab99c873499900919c168e2b5edb2f887e"
+    }
+  },
+  "layout": {
+    "save_dir": "$MEDNAFEN_HOME/sav (default .mednafen/sav in the home folder)",
+    "name": "<ROM file name without extension>.<game MD5 as Mednafen computes it>.<ext> (filesys.fname_sav %f.%M%x)",
+    "written": "on exit"
+  },
+  "created": "2026-11-04",
+  "note": "Card 1 holds the game's 1-block file BASCUS-94228SPYRO. Mednafen creates and formats a card for both slots at load, so .1.mcr is an empty formatted card. Script: a Mednafen variant of scripts/psx/Spyro the Dragon.txt (kept at work/standalone/mednafen/spyro-variant.txt): the single 6-frame Cross at the 'Create save file now?' prompt was not taken by Mednafen, three presses a second apart were. With the shared script (first run) the cards stayed empty."
+}

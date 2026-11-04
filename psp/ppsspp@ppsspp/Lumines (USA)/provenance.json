@@ -1,0 +1,45 @@
+{
+  "method": "played",
+  "system": "psp",
+  "core": "ppsspp",
+  "app": "ppsspp",
+  "core_file": null,
+  "core_name": "PPSSPP",
+  "core_version": "v1.20.4",
+  "frontend": "PPSSPP 1.20.4 (PPSSPPSDL.app, Homebrew cask ppsspp-emulator), isolated by HOME=work dir (memstick at .config/ppsspp under that HOME), driven over its debugger WebSocket (RemoteDebuggerOnStartup, port 45678)",
+  "rom": {
+    "name": "Lumines (USA).cso",
+    "size": 159428730,
+    "sha1": "ddb874eda7863a2ca8eaf76c6f4b6ab6f0650043"
+  },
+  "script": "scripts/psp/Lumines.ws.txt",
+  "frames": 1800,
+  "options": null,
+  "input": "none needed: the game saves at boot; the WebSocket session only polled game.status. Quit with SIGTERM (SDL quit, clean exit: 'Leaving main').",
+  "started_from": null,
+  "files": {
+    "PSP/SAVEDATA/ULUS10002LUMINES/DATA.BIN": {
+      "size": 18464,
+      "sha1": "dbf884fbdffd1b23cff88ec48c59babad50300b9"
+    },
+    "PSP/SAVEDATA/ULUS10002LUMINES/ICON0.PNG": {
+      "size": 16246,
+      "sha1": "9bc662b73118d36311ade4111445568142b5df41"
+    },
+    "PSP/SAVEDATA/ULUS10002LUMINES/PARAM.SFO": {
+      "size": 4912,
+      "sha1": "73d7de034975de494e7b792fda70e660f71dd173"
+    },
+    "PSP/SAVEDATA/ULUS10002LUMINES/PIC1.PNG": {
+      "size": 5562,
+      "sha1": "694daff6bf27bde3d4eed1db68e580e6938ffb5c"
+    }
+  },
+  "layout": {
+    "save_dir": "<memstick>/PSP/SAVEDATA/<GAMEID><save name>/ (memstick = .config/ppsspp in the home folder on the macOS SDL build)",
+    "name": "the folder the game asked for (ULUS10002LUMINES) holding PARAM.SFO, DATA.BIN (game-encrypted), ICON0.PNG, PIC1.PNG",
+    "written": "as the game saves, not on exit"
+  },
+  "created": "2026-11-04",
+  "note": "No proof.png: the debugger's gpu.buffer.screenshot answered 'Could not download output' on the Vulkan backend, and the OpenGL backend stalls with the window not visible (vsync). game.status confirmed ULUS10002 LUMINES v1.01 running. PPSSPP tried outbound HTTP at start (connections to 2606:4700:: addresses, failed); nothing else left the machine."
+}

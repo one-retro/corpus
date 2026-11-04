@@ -1,0 +1,10 @@
+# Sonic R (USA): LOAD DATA on the empty INT. DATA 1 makes the game create its file
+# (SONICR___01). With a Backup RAM Cart present (Beetle Saturn) the game writes the
+# same file to the cart as well. The proof is SELECT MODE, reached with INT. DATA 1 loaded.
+wait 1800
+press start          # title -> LOAD DATA, INT. DATA 1 and LOAD selected
+wait 400
+shot load
+press start          # LOAD -> SELECT MODE
+wait 400
+shot mode

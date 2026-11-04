@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "mastersystem",
+  "core": "picodrive",
+  "core_file": "picodrive_libretro.dylib",
+  "core_name": "PicoDrive",
+  "core_version": "2.05-1890c29",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Miracle Warriors - Seal of The Dark Lord (USA, Europe, Brazil) (En).sms",
+    "sha1": "f952406bca4918ee91a89b27e949e224eae96d85",
+    "size": 262144
+  },
+  "script": "scripts/mastersystem/Miracle Warriors.txt",
+  "frames": 3688,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Miracle Warriors - Seal of The Dark Lord (USA, Europe, Brazil) (En).srm": {
+      "size": 32768,
+      "sha1": "e8945357af924eddfd349d4ede50c805fb1d958f"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

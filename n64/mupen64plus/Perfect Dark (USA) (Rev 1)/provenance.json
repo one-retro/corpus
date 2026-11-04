@@ -1,0 +1,36 @@
+{
+  "method": "played",
+  "system": "n64",
+  "core": "mupen64plus",
+  "core_file": null,
+  "core_name": "Mupen64Plus",
+  "core_version": "2.6.0",
+  "frontend": "Mupen64Plus 2.6.0 (Homebrew: mupen64plus-ui-console + core 2.6.0), plugins glide64mk2 / rsp-hle / dummy audio / m64feed input",
+  "rom": {
+    "name": "Perfect Dark (USA) (Rev 1).z64",
+    "size": 33554432,
+    "sha1": "af8788ac4d1a57260eae9c53ffe851fcf2a3319b"
+  },
+  "script": "scripts/n64/Perfect Dark.txt",
+  "frames": 4890,
+  "options": null,
+  "input": "work/standalone/tools/m64feed.c: an input plugin that replays the retro-run script by VI frame (core frame callback), RetroPad mapped as Mupen64Plus-Next does (b=A, y=B, l2=Z); controller 1 with a Controller Pak; M64CMD_STOP at the end. --nospeedlimit, isolated --configdir and Core[SaveSRAMPath].",
+  "started_from": null,
+  "files": {
+    "Perfect Dark (U) (V1.1) [!]-E03B088B.eep": {
+      "size": 2048,
+      "sha1": "036fb50c62298f5bd3121c51d9792adad4b88555"
+    },
+    "Perfect Dark (U) (V1.1) [!]-E03B088B.mpk": {
+      "size": 131072,
+      "sha1": "1d4e1e81adc302d23164d53330055340feccd626"
+    }
+  },
+  "layout": {
+    "save_dir": "Core[SaveSRAMPath], default Library/Application Support/Mupen64Plus/save/ in the home folder on macOS",
+    "name": "Core[SaveFilenameFormat]=1 (default): first 32 characters of the ROM good name from mupen64plus.ini, a dash, the first 8 hex digits of the ROM MD5 in capitals, then .eep / .sra / .fla / .mpk",
+    "written": "when the game writes, and on stop"
+  },
+  "created": "2026-11-04",
+  "note": "Game Pak file 'Dark' (New Recruit) saved to EEPROM (16 Kbit, 2048 bytes). The .mpk (4 x 32 KiB Controller Pak images) is written because controller 1 has a Controller Pak inserted and the game reads/initialises it at boot."
+}

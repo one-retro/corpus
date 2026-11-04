@@ -1,0 +1,40 @@
+# Neo Turf Masters: GAME OPTIONS -> GAME LEVEL, NORMAL -> HARD, then back out
+# to the menu. The game keeps its save in a whole 64 KiB sector (0x3E0000),
+# set up on first boot and rewritten with the new level. A reset and a second
+# look at GAME LEVEL shows HARD kept.
+# NGP A is libretro b, NGP B is libretro a, Option is start.
+wait 1100
+press b 6           # skip the intro: PRESS BUTTON A
+wait 300
+press b 6           # 1 PLAYER / VS MODE PLAY / GAME OPTIONS
+wait 300
+press down 10
+wait 60
+press down 10
+wait 60
+press b 10          # GAME OPTIONS
+wait 300
+press b 10          # GAME LEVEL
+wait 200
+press down 10       # NORMAL -> HARD
+wait 60
+press b 10          # choose it: the options are written here
+wait 200
+press a 10          # back to the menu
+wait 200
+shot set
+reset
+wait 1100
+press b 6
+wait 300
+press b 6
+wait 300
+press down 10
+wait 60
+press down 10
+wait 60
+press b 10          # GAME OPTIONS
+wait 300
+press b 10          # GAME LEVEL again
+wait 200
+shot kept

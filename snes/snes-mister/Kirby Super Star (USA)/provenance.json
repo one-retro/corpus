@@ -1,0 +1,35 @@
+{
+  "method": "played",
+  "system": "snes",
+  "core": "snes-mister",
+  "core_file": "SNES_20260823.rbf",
+  "core_name": "SNES_MiSTer",
+  "core_version": "20260823",
+  "frontend": "mister",
+  "device": "the owner's MiSTer (DE10-Nano), Main_MiSTer binary of 2026-10-19",
+  "loaded_with": "MGL via /dev/MiSTer_cmd load_core (_Console/SNES, file type f index 1)",
+  "save_folder": "saves/SNES",
+  "rom": {
+    "name": "Kirby Super Star (USA).sfc",
+    "sha1": "cca1e67fa230bf4f60154f5ea55d06568229dc5d",
+    "size": 4194304,
+    "on_device": "games/SNES/Kirby Super Star (USA).sfc"
+  },
+  "script": "scripts/snes/Kirby Super Star.txt",
+  "mister_script": "scripts/mister/snes/Kirby Super Star.snes.txt",
+  "frames": 7606,
+  "timing": "real time: script frames played as wall-clock 1/60 s by work/mister/mrun.py",
+  "options": {
+    "config/SNES.CFG": "Autosave On (status bit 23), every other option at its default; written for the run and removed after"
+  },
+  "save_trigger": "OSD opened (F12 from a uinput keyboard) with Autosave on: the core writes its backup RAM to the SD card",
+  "started_from": null,
+  "files": {
+    "Kirby Super Star (USA).sav": {
+      "size": 8192,
+      "sha1": "938a522550864f38ad9e4b77f4d058378869893e"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "SA-1 BW-RAM, 8 KiB file. No seed: the SNES core fills BSRAM with FF on every ROM load. The course was finished once (TOP 01:01:02 is the new record, stored at 0x1F18 as 02 01 01 01); on MiSTer the script's Retire press landed on Continue, so the proof shows Kirby on his second run with the record on the HUD rather than the Gourmet Race menu."
+}

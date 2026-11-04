@@ -1,0 +1,14 @@
+# Sonic CD: the game creates its save file (SONICCD, 11 blocks: the time
+# attack table and progress) on first boot, before the title appears. Start
+# a NEW GAME and run into Palmtree Panic Zone 1. Clearing a zone, which
+# would update the file, is out of reach for a blind script.
+wait 600
+press start 6       # BIOS
+wait 1500
+press start 6       # title -> NEW GAME
+wait 300
+shot title
+press start 6       # NEW GAME
+wait 900
+press right 300
+shot playing

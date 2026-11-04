@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "genesis",
+  "core": "genesis-plus-gx",
+  "core_file": "genesis_plus_gx_libretro.dylib",
+  "core_name": "Genesis Plus GX",
+  "core_version": "v1.7.4 f27655b",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "World Series Baseball '95 (USA).md",
+    "sha1": "878e9fdbbc0b20b27f25d56e4087efbde1e8979a",
+    "size": 3145728
+  },
+  "script": "scripts/genesis/World Series Baseball '95.txt",
+  "frames": 4800,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "World Series Baseball '95 (USA).srm": {
+      "size": 63804,
+      "sha1": "05415a3e1868dc940c725d51c62188cee5c3e06b"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

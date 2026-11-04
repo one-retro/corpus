@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "ngpc",
+  "core": "beetle-neopop",
+  "core_file": "mednafen_ngp_libretro.dylib",
+  "core_name": "Beetle NeoPop",
+  "core_version": "v1.29.0.0 a50d5ac",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Baseball Stars Color - Pocket Sports Series (World) (En,Ja).ngc",
+    "sha1": "495199cd783e7cd962eece160dbc238a648c5e39",
+    "size": 1048576
+  },
+  "script": "scripts/ngpc/Baseball Stars Color.txt",
+  "frames": 3492,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Baseball Stars Color - Pocket Sports Series (World) (En,Ja).flash": {
+      "size": 7208,
+      "sha1": "353038067522a6be69b9be776c08cbc1b253207f"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "The game's option save does not survive in Beetle NeoPop: its HLE VECT_FLASHERS (block erase) is a no-op except for block 31 of a 2 MiB cart (mednafen/ngp/biosHLE.c @a50d5ac), so the old option sector at 0x2F8000 is never erased and the game reads it back (proof.png shows the defaults EXTRA INNINGS / CALLED ON after the reset). RACE's .ngf of the same play loads correctly in Beetle."
+}

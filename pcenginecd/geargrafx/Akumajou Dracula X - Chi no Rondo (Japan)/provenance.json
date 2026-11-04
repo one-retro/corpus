@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "pcenginecd",
+  "core": "geargrafx",
+  "core_file": "geargrafx_libretro.dylib",
+  "core_name": "Geargrafx",
+  "core_version": "1.8.7",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Akumajou Dracula X Chi no Rondo (JP) (US).cue",
+    "sha1": "b8df4dc97cbc3285b0e0e2862e636163469a36bb",
+    "size": 963
+  },
+  "script": "scripts/pcenginecd/Dracula X - Rondo of Blood.txt",
+  "frames": 20120,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Akumajou Dracula X Chi no Rondo (JP) (US).srm": {
+      "size": 2048,
+      "sha1": "cbc456fe176371ad68b98a5415578570cef5f1ca"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

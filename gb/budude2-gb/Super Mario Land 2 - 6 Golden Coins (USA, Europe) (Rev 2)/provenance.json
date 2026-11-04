@@ -1,0 +1,21 @@
+{
+  "method": "device-backup",
+  "device": "Analogue Pocket",
+  "backup_path": "Saves/gb/common/1 GB US - R-Z/Super Mario Land 2 - 6 Golden Coins (USA, Europe) (Rev 2).sav",
+  "system": "gb",
+  "core": "budude2-gb",
+  "pocket_core": "budude2.GB",
+  "pocket_platform": "gb",
+  "game_source": "No-Intro DAT 'Nintendo - Game Boy (20260825-062646)'",
+  "attribution": "padding matches budude2: 8 KiB header RAM + a 16-byte footer (u32 LE timestamp 0x6990EAC9 = 2026-02-14 21:36:09, the file's own write time, then six bytes of packed clock, then six 0xFF) on an MBC1 cart with no clock; only budude2's Game Boy cores write that footer, and the folder (Saves/gb/common) makes it budude2.GB rather than budude2.GBC",
+  "confidence": "high",
+  "written": "2026-02-14 21:36 (file mtime as read here; the Pocket stamps its own clock)",
+  "files": {
+    "Super Mario Land 2 - 6 Golden Coins (USA, Europe) (Rev 2).sav": {
+      "size": 8208,
+      "sha1": "85b70f1439160ef7ebfc0c2f9a90d2d52afb3b20"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

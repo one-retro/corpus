@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "snes",
+  "core": "bsnes",
+  "core_file": "bsnes_libretro.dylib",
+  "core_name": "bsnes",
+  "core_version": "115",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "SimCity (USA).sfc",
+    "sha1": "9140ae08d62a562ccb98576ba89f381f9f4f1439",
+    "size": 524288
+  },
+  "script": "scripts/snes/SimCity.txt",
+  "frames": 4472,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "SimCity (USA).srm": {
+      "size": 32768,
+      "sha1": "5a789829dae803260aa70ab74c62f35421b46ddb"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

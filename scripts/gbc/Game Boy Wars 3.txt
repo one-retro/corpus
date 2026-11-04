@@ -1,0 +1,20 @@
+# Game Boy Wars 3 (Japan) (MBC5 + 128 KiB battery RAM, the largest GBC
+# size): NEW GAME into DATA1, commander name "あ", OK: the game writes the
+# commander record and shows it on DATA1.
+wait 900
+press a 6           # PRESS START -> CONTINUE / NEW GAME (cursor on NEW GAME)
+wait 120
+press a 6           # NEW GAME -> DATA1 NO DATA
+wait 120
+press a 6           # DATA1 -> しれいかんのなまえ (commander's name)
+wait 120
+press a 6           # "あ"
+wait 60
+press start 6       # けってい -> これでいいですか? OK / NO (cursor on NO)
+wait 120
+press left 6        # OK
+wait 30
+press a 6           # the commander is written
+wait 150
+shot saved          # DATA1: あ 候補生, the beginner maps
+wait 30

@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "ngpc",
+  "core": "race",
+  "core_file": "race_libretro.dylib",
+  "core_name": "RACE",
+  "core_version": "v2.16 c7810dd",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Neo Cherry Master Color - Pocket Casino Series (World) (En,Ja).ngc",
+    "sha1": "745ced46bb5b7c911dd808a66d3b4fcfeffefa6c",
+    "size": 1048576
+  },
+  "script": "scripts/ngpc/Neo Cherry Master Color.txt",
+  "frames": 5490,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Neo Cherry Master Color - Pocket Casino Series (World) (En,Ja).ngf": {
+      "size": 16408,
+      "sha1": "1d0731005bfb8668cb2ecd24415e8ed2c5e3a1ca"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

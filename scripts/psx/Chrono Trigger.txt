@@ -1,0 +1,80 @@
+# Final Fantasy Chronicles - Chrono Trigger: start a new game, walk out of
+# Crono's house to the 1000 A.D. world map and save there from the menu
+# (Triangle > Save > Slot 1 > block 1). "Chrono FILE01 Crono LV01 00:04" is a
+# 1-block save.
+wait 6000           # intro movie
+press start 6       # skip it
+wait 480
+press start 6       # -> New Game / Slot 1 / Slot 2 / Extras, cursor on Slot 1
+wait 480
+press up 6          # New Game
+wait 20
+press b 6
+wait 1800           # Battle Mode: Active / Wait
+press b 6           # Active
+wait 1800           # name Crono
+press start 6       # (dismisses the help text)
+wait 1800
+press start 6       # keep "Crono"
+wait 1800           # map fly-over
+wait 3200           # "Crono..."
+repeat 32           # Mom wakes Crono and leaves the room
+tap b 1 60
+end
+shot room
+press left 40       # to the stairs
+press down 40
+press down 40
+press left 20
+press down 40
+wait 700
+press right 12
+press down 60
+wait 1000
+press right 16
+press down 40
+press right 16
+press down 40
+wait 800            # downstairs, Mom talks
+repeat 12
+tap b 1 60
+end
+press left 24
+press down 40
+press down 40
+press down 40
+wait 800            # "Finally! By the way, that inventor friend of yours..."
+tap b 2 90
+wait 900            # name Lucca
+press start 6       # keep "Lucca"
+wait 120
+press start 6
+wait 120
+repeat 7
+tap b 1 90
+end
+press down 30       # out of the front door
+press down 30
+press down 30
+press left 20
+press down 30
+press down 30
+wait 600            # the world map, 1000 A.D.
+shot map
+wait 60
+press x 6           # menu
+wait 600
+tap right 5 30      # the quill: Save
+wait 30
+press b 6
+wait 600            # Save Data: Slot 1 / Slot 2
+press b 6           # Slot 1 ("Checking MEMORY CARD!")
+wait 800
+press b 6           # block 1, "Free Block"
+wait 800            # "OK to save here?" Yes / No (cursor on No)
+press up 6
+wait 30
+press b 6
+wait 300
+shot saved          # "Finished saving data."
+wait 60

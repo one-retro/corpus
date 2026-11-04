@@ -1,0 +1,21 @@
+{
+  "method": "device-backup",
+  "device": "Analogue Pocket",
+  "backup_path": "Saves/ng/Mazamars312.NeoGeo/backup.bak",
+  "system": "neogeo",
+  "core": "mazamars312-neogeo",
+  "pocket_core": "Mazamars312.NeoGeo",
+  "pocket_platform": "ng",
+  "game_source": "the file's own name (no No-Intro entry applies)",
+  "attribution": "folder Saves/ng/Mazamars312.NeoGeo; slot 0x102 'Backup Ram', filename backup.bak",
+  "confidence": "high",
+  "written": "2024-07-23 08:52 (file mtime as read here; the Pocket stamps its own clock)",
+  "files": {
+    "backup.bak": {
+      "size": 65536,
+      "sha1": "c816a20f1e54370ba341e3743cd8b9fb73959d41"
+    }
+  },
+  "created": "2026-11-03",
+  "note": "the MVS backup RAM (registry role 'internal'), not one game's save; byte-identical to the Overdrive build's backup.bak"
+}

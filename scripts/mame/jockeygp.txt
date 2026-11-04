@@ -1,0 +1,14 @@
+# Jockey Grand Prix (MVS, a betting game with 8 KiB of battery RAM on the cartridge
+# besides the cabinet's backup RAM): insert two coins. The game keeps its credits
+# in that RAM, so after a power cycle the betting screen still shows CREDIT 000002.
+# Coin is RetroPad select.
+wait 1500
+press select 6         # coin
+wait 60
+press select 6         # coin
+wait 300
+shot credits           # CREDIT 000002
+wait 1200              # the betting board keeps cycling
+reset
+wait 2400
+shot kept              # after the power cycle: CREDIT 000002

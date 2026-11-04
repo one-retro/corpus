@@ -1,0 +1,18 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "psx-mister",
+  "url": "https://github.com/MiSTer-devel/PSX_MiSTer/files/8987295/Silent.Hill.zip",
+  "source_page": "https://github.com/MiSTer-devel/PSX_MiSTer/issues/149#issuecomment-1166615282",
+  "source": "GitHub (MiSTer-devel/PSX_MiSTer issues)",
+  "author": "AtomicShroom",
+  "licence": null,
+  "fetched": "2026-11-04",
+  "what_it_is": "MiSTer PSX core .sav; SILENT HILL FILE01 at the theme park, before the Sybil fight",
+  "files": {
+    "Silent Hill.sav": {
+      "size": 131072,
+      "sha1": "1822fe4d08f4021ebd414c27bbbbdcd24b980fb0"
+    }
+  }
+}

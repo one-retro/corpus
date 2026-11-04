@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "sega-gg",
+  "core": "genesis-plus-gx-wide",
+  "core_file": "genesis_plus_gx_wide_libretro.dylib",
+  "core_name": "Genesis Plus GX Wide",
+  "core_version": "v1.7.4 b7ad005",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Moldorian - Hikari to Yami no Sister (Japan).gg",
+    "sha1": "0dad260b5357b2f61d1452bb73d8321ca53d7262",
+    "size": 524288
+  },
+  "script": "scripts/sega-gg/Moldorian.txt",
+  "frames": 3380,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Moldorian - Hikari to Yami no Sister (Japan).srm": {
+      "size": 32768,
+      "sha1": "fa9351763e1393935cd3f9a65ed77147b35e3b26"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

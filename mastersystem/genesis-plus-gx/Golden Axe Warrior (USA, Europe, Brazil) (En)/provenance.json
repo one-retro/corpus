@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "mastersystem",
+  "core": "genesis-plus-gx",
+  "core_file": "genesis_plus_gx_libretro.dylib",
+  "core_name": "Genesis Plus GX",
+  "core_version": "v1.7.4 f27655b",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Golden Axe Warrior (USA, Europe, Brazil) (En).sms",
+    "sha1": "fbda0486b393708a89756bb57d116ad6007484e4",
+    "size": 262144
+  },
+  "script": "scripts/mastersystem/Golden Axe Warrior.txt",
+  "frames": 3358,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Golden Axe Warrior (USA, Europe, Brazil) (En).srm": {
+      "size": 8191,
+      "sha1": "39b6eb9aa07ee8d7be46aea172f832dbcc848bdd"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

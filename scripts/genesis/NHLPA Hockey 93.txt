@@ -1,0 +1,31 @@
+# NHLPA Hockey '93: New Playoffs with 5-minute periods, then let the CPU play
+# the first game of the series out (C is pressed every 5 s: it clears the
+# intermissions, overtime, and picks Exit Game on the FINAL board). Leaving the
+# game writes the playoff state to the X24C01 EEPROM (EA's wiring); the game
+# then sits on the PLAYOFF STATS screen, which C does not leave. The opponent
+# is random, so cores play different games of different lengths.
+# Genesis A/B/C are the RetroPad's y/b/a.
+wait 1350
+press start 6      # title -> game setup
+wait 300
+press right 6      # Play Mode: New Playoffs
+wait 60
+repeat 3
+press down 6
+wait 30
+end
+press right 6      # Per. Length: 20 Minutes
+wait 30
+press right 6      # Per. Length: 5 Minutes
+wait 30
+shot setup
+press start 6      # the playoff bracket
+wait 600
+press start 6      # Ron Barr's welcome
+wait 600
+repeat 220         # 66000 frames: three periods, any overtime, Exit Game
+wait 300
+press a 6
+end
+shot saved         # PLAYOFF STATS for the finished game
+wait 30

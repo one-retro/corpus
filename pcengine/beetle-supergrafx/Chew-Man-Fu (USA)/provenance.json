@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "pcengine",
+  "core": "beetle-supergrafx",
+  "core_file": "mednafen_supergrafx_libretro.dylib",
+  "core_name": "Beetle SuperGrafx",
+  "core_version": "v1.29.0 9c11dcd",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Chew-Man-Fu (USA).pce",
+    "sha1": "5c742fe5d5af5628ba0e598cb88abd892dc87682",
+    "size": 262144
+  },
+  "script": "scripts/pcengine/Chew-Man-Fu.txt",
+  "frames": 1380,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Chew-Man-Fu (USA).srm": {
+      "size": 2048,
+      "sha1": "a551d75d8b0f9444ef289e6e40b2c219e1ab03b0"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

@@ -1,0 +1,34 @@
+{
+  "method": "played",
+  "system": "sega-gg",
+  "core": "sms-mister",
+  "core_file": "SMS_20260823.rbf",
+  "core_name": "SMS_MiSTer",
+  "core_version": "20260823",
+  "frontend": "mister",
+  "device": "the owner's MiSTer (DE10-Nano), Main_MiSTer binary of 2026-10-19",
+  "loaded_with": "MGL via /dev/MiSTer_cmd load_core (_Console/SMS, setname GameGear, file type f index 2)",
+  "save_folder": "saves/GameGear",
+  "rom": {
+    "name": "Defenders of Oasis (USA, Europe).gg",
+    "sha1": "07c1167c3b6eea294a73272c256934406f48f9d5",
+    "size": 524288
+  },
+  "script": "scripts/sega-gg/Defenders of Oasis.txt",
+  "mister_script": "scripts/mister/sega-gg/Defenders of Oasis.gg.txt",
+  "frames": 10242,
+  "timing": "real time: script frames played as wall-clock 1/60 s by work/mister/mrun.py",
+  "options": {
+    "config/GameGear.CFG": "Autosave On (status bit 25), every other option at its default; written for the run and removed after"
+  },
+  "save_trigger": "OSD opened (F12 from a uinput keyboard) with Autosave on: the core writes its backup RAM to the SD card",
+  "started_from": "a zero-filled 32768-byte .sav put in place before loading, so the backup RAM started cleared; the core then rewrote all of it",
+  "files": {
+    "Defenders of Oasis (USA, Europe).sav": {
+      "size": 32768,
+      "sha1": "cefcee0433e3b589486b236f022076721d378113"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "setname GameGear, saves/GameGear; 32 KiB file (64 sectors, always). The game saves the position on its own while playing. Proof: after loading the game again, 'Which game will you continue from?' with Game 1 LV 1 Chap. 1."
+}

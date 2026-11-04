@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "snes",
+  "core": "higan-super-famicom",
+  "core_file": "higan_sfc_libretro.dylib",
+  "core_name": "higan (Super Famicom Accuracy)",
+  "core_version": "106",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Legend of Zelda, The - A Link to the Past (USA).sfc",
+    "sha1": "6d4f10a8b10e10dbe624cb23cf03b88bb8252973",
+    "size": 1048576
+  },
+  "script": "scripts/snes/Legend of Zelda, The - A Link to the Past.txt",
+  "frames": 1830,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Legend of Zelda, The - A Link to the Past (USA).srm": {
+      "size": 8192,
+      "sha1": "108c0d4acc0517f9697ba39a1632c5c1156c798e"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "nes",
+  "core": "fceumm",
+  "core_file": "fceumm_libretro.dylib",
+  "core_name": "FCEUmm",
+  "core_version": "(SVN) e0f3086",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Dragon Warrior (USA) (Rev 1).nes",
+    "sha1": "66809063b828197d1fe12232ebd08ec0a498aa04",
+    "size": 81936
+  },
+  "script": "scripts/nes/Dragon Warrior.txt",
+  "frames": 3724,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Dragon Warrior (USA) (Rev 1).srm": {
+      "size": 8192,
+      "sha1": "7921749e1b206581bea206801017e1422656ff62"
+    }
+  },
+  "created": "2026-11-03",
+  "note": "runner: work/nes/runner/retro-run (tools/retro-run with RetroArch's init order and a disk control interface)"
+}

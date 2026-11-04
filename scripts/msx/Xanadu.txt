@@ -1,0 +1,15 @@
+# Dragon Slayer II - Xanadu: Start a new game. The game sets up its world in
+# the 8 KiB SRAM as it starts (3.8 KB of it non-blank afterwards); Continue
+# resumes from it. Keyboard only: fMSX runs with --device0 3.
+# The reset is the power cycle (blueMSX writes its .sram only then). After it
+# the title menu comes up with Continue already selected, which it does only
+# when the SRAM holds a game.
+wait 1150
+key space 8         # title menu: Start
+wait 300
+key right 40        # walk a little
+wait 60
+shot started
+reset
+wait 1500
+shot menu           # Continue preselected

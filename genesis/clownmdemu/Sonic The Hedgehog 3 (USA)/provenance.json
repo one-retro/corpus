@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "genesis",
+  "core": "clownmdemu",
+  "core_file": "clownmdemu_libretro.dylib",
+  "core_name": "ClownMDEmu",
+  "core_version": "v1.6.12 d43c270",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Sonic The Hedgehog 3 (USA).md",
+    "sha1": "75e9c4705259d84112b3e697a6c00a0813d47d71",
+    "size": 2097152
+  },
+  "script": "scripts/genesis/Sonic The Hedgehog 3.txt",
+  "frames": 2220,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Sonic The Hedgehog 3 (USA).srm": {
+      "size": 65536,
+      "sha1": "2b40d6c133f05c600d65ff50db77ce919d20bac1"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

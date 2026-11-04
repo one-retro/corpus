@@ -1,0 +1,39 @@
+{
+  "method": "played",
+  "system": "mame",
+  "core": "mame-2010",
+  "core_file": "mame2010_libretro.dylib",
+  "core_name": "MAME 2010",
+  "core_version": "0.139 dff8aad",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "blazstar.zip",
+    "sha1": "e29ef4455e05d552f2b21875f212388fecb7a013",
+    "size": 21596277
+  },
+  "script": "scripts/mame/blazstar.mame-2010.txt",
+  "frames": 5592,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "mame2010/cfg/blazstar.cfg": {
+      "size": 176,
+      "sha1": "8345ed851b7b11922dade53d001cc9a547e064d9"
+    },
+    "mame2010/cfg/default.cfg": {
+      "size": 175,
+      "sha1": "4e398d654043793e0677cef4917b03478508673e"
+    },
+    "mame2010/ini/mame.ini": {
+      "size": 2444,
+      "sha1": "b4f6ca84eae2b7b5388673446f616117b09794dd"
+    },
+    "mame2010/nvram/blazstar.nv": {
+      "size": 8192,
+      "sha1": "d492a26c7971708c6a8a60ba2605ce7c8f9b0def"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

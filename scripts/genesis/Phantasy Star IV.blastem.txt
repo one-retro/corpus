@@ -1,0 +1,27 @@
+# Generated from Phantasy Star IV.txt for BlastEm's RetroPad layout (b=A a=B r=C y=X x=Y l=Z);
+# the shared script uses y=A b=B a=C l=X x=Y r=Z. Same Genesis buttons, same timing.
+# Phantasy Star IV: new game, through the opening to the first moment of
+# control (Chaz in the Motavian Academy), then Start -> SYS -> SAVE -> file 1.
+# Genesis A/B/C are the RetroPad's y/b/a.
+wait 450            # into the opening crawl ("The long, long struggle...")
+press start 6       # skip it to the title
+wait 240
+press start 6       # PRESS START BUTTON -> the START menu (no files yet)
+wait 240
+press r 6           # START: the game begins
+wait 200
+tap r 110 30        # Alys and Chaz's opening dialogue and walk to Piata
+wait 2700           # the "AW 2284" text crawl, then the Academy
+tap r 3 40          # "Oops! I wandered around..." 
+wait 60
+tap a 2 30
+wait 90
+shot control
+press start 6       # SYS menu: SAVE / MESSAGE / BTL SPD / BUTTONS
+wait 60
+press r 6           # SAVE -> "Save in number-?"
+wait 60
+press r 6           # slot 1
+wait 90
+shot saved          # "1-File has been saved." and the slot shows LV 1
+wait 60

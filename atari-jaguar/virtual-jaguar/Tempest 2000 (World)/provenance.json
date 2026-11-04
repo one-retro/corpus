@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "atari-jaguar",
+  "core": "virtual-jaguar",
+  "core_file": "virtualjaguar_libretro.dylib",
+  "core_name": "Virtual Jaguar",
+  "core_version": "v3.11.0 34696082",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Tempest 2000 (World).j64",
+    "sha1": "3828d2f953224d06b5fe7ab3644d6a75fdfe79e3",
+    "size": 2097152
+  },
+  "script": "scripts/atari-jaguar/Tempest 2000.txt",
+  "frames": 4812,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Tempest 2000 (World).srm": {
+      "size": 128,
+      "sha1": "4a2f6d51695d54524f3aa0ed75fb3bc6aabae443"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

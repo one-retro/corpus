@@ -1,0 +1,51 @@
+# Daikaijuu Monogatari II (S-RTC): set the clock, sit through the opening,
+# then save in the first cave on the save mark, as the game's own tutorial
+# asks ("on this mark you can save even in a dungeon: X, System, Save").
+# Saving writes file 1 (Bubu, LV 1, TIME 00:03); the S-RTC holds the date
+# set at the start (the defaults, 1996-03-02 00:00).
+wait 1700           # Hudson logo, intro flight -> PUSH START
+press start 6
+wait 200            # 日時を入力してください: year, month, day, hour, minute
+repeat 6
+press a 6           # accept each field, then はい
+wait 60
+end
+wait 800            # PLG system check ... OK!
+repeat 6
+press a 6
+wait 60
+end
+wait 600            # options screen (文字速度 ...)
+repeat 12
+press a 6
+wait 120
+end
+tap down 5 20       # おわり
+wait 20
+press a 6           # せっていを終了します
+wait 200
+# The opening: the villain's castle, the flight, the cave of trials, and
+# Bubu's lesson about the save mark. Mash through all of it.
+repeat 24
+tap a 5 24
+end
+repeat 60
+tap a 8 24
+end
+wait 60
+press up 16         # onto the mark (one tile above where the party lands)
+wait 30
+press x 6           # menu
+wait 60
+tap down 7 16       # システム
+wait 20
+press a 6
+wait 90
+press a 8           # セーブ
+wait 60
+press a 8           # file 1
+wait 60
+press a 8           # よろしいですか -> はい: セーブしました
+wait 150
+shot saved
+wait 60

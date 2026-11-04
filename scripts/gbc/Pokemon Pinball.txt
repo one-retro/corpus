@@ -1,0 +1,21 @@
+# Pokemon Pinball (MBC5 + rumble + 8 KiB battery RAM): Game Start on the Red
+# field, stop the start-location roulette, pause with START and SAVE: the
+# table is written and the game returns to the title, where Game Start now
+# offers CONTINUE.
+wait 900
+press a 6           # Game Start -> FIELD SELECT (RED)
+wait 120
+press a 6           # RED -> the start-location roulette
+wait 300
+press a 6           # stop it; the ball is in play
+wait 200
+press start 6       # pause: SAVE / CANCEL (cursor on CANCEL)
+wait 60
+press up 6
+wait 30
+press a 6           # SAVE: written, back to the title
+wait 300
+press a 6           # Game Start -> NEW GAME / CONTINUE
+wait 150
+shot saved          # CONTINUE offered
+wait 30

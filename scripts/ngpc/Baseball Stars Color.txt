@@ -1,0 +1,33 @@
+# Baseball Stars Color: GAME OPTION, change INNING and CALLED, EXIT. Leaving the
+# options writes them to flash (the game alternates between two 8 KiB
+# sectors). A reset and a second look at GAME OPTION shows them kept.
+# NGP A is libretro b, NGP B is libretro a, Option is start.
+wait 900
+press b 6           # skip the intro
+wait 400
+press down 10       # GAME OPTION (2P PLAY is skipped without a link cable)
+wait 40
+press b 10
+wait 150
+press right 10      # INNING
+wait 40
+press down 10
+wait 40
+press right 10      # CALLED ON -> OFF
+wait 40
+repeat 3
+press down 10
+wait 40
+end
+press b 10          # EXIT: the options are written here
+wait 150
+shot exited
+reset
+wait 900
+press b 6
+wait 400
+press down 10
+wait 40
+press b 10          # GAME OPTION again
+wait 150
+shot kept

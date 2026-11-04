@@ -1,0 +1,19 @@
+# Doom: pick Ultra-Violence in the start menu and begin a game. Doom keeps
+# its start menu (skill, area), volumes and controls in the cartridge
+# EEPROM and writes them when a game starts. Then reset: the menu comes
+# back with Ultra-Violence, read from the EEPROM.
+wait 900            # the attract demo is running by now
+press b 6           # -> start menu (Game Mode / Area / Difficulty)
+wait 120
+press down 6        # Difficulty
+wait 30
+press right 6       # Hurt me plenty -> Ultra-Violence
+wait 30
+press b 6           # start the game: the EEPROM is written here
+wait 400
+shot playing
+reset
+wait 900
+press b 6
+wait 120
+shot reloaded

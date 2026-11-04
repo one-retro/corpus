@@ -1,0 +1,28 @@
+# Exile: Beginning, through the opening and Rumi's scene, then
+# SELECT > BACKUP > SAVE ("Saved."), then BACKUP > LOAD shows the file.
+wait 360
+press start 6         # System Card: RUN
+wait 600
+repeat 30
+wait 120
+press start 6         # title BEGINNING, skip the opening
+wait 120
+press a 6             # dialogue
+end
+wait 300
+shot town
+press select 6        # WEAPON MAGIC STATUS TONIC ITEM BACKUP MAP
+wait 60
+repeat 5
+press down 6
+wait 20
+end
+press a 6             # BACKUP: SAVE / LOAD
+wait 90
+press a 6             # SAVE
+wait 90
+press a 6
+wait 90
+shot saved            # "Saved."
+press a 6
+wait 90

@@ -1,0 +1,35 @@
+{
+  "method": "played",
+  "system": "mame",
+  "core": "mame-2000",
+  "core_file": "mame2000_libretro.dylib",
+  "core_name": "MAME 2000",
+  "core_version": "0.37b5 181b42e",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "dino.zip",
+    "sha1": "71701182e23ab43bfe37b8082ed3b3c30b8e0e58",
+    "size": 4115041
+  },
+  "script": "scripts/mame/dino.txt",
+  "frames": 4034,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "mame2000/cfg/default.cfg": {
+      "size": 4104,
+      "sha1": "b1a7242c3f2ec368127021d9ca603fb688e9406f"
+    },
+    "mame2000/cfg/dino.cfg": {
+      "size": 1244,
+      "sha1": "d1f0ed9b0a4d5fcaa034e6367cddae5d68f549c5"
+    },
+    "mame2000/nvram/dino.nv": {
+      "size": 128,
+      "sha1": "c5cab3f881930e5ab12cfec1b525262b365ec8fc"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

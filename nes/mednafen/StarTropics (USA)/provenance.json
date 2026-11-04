@@ -1,0 +1,32 @@
+{
+  "method": "played",
+  "system": "nes",
+  "core": "mednafen",
+  "core_file": null,
+  "core_name": "Mednafen",
+  "core_version": "1.32.1",
+  "frontend": "Mednafen 1.32.1 (Homebrew), module 'nes', isolated MEDNAFEN_HOME, -sound 0 -video.glvsync 0",
+  "rom": {
+    "name": "StarTropics (USA).nes",
+    "size": 524304,
+    "sha1": "0372a5a3e2c8c96a459f0fd83c05437bc3af44d1"
+  },
+  "script": "scripts/nes/StarTropics.txt",
+  "frames": 1528,
+  "options": null,
+  "input": "work/standalone/tools/sdlfeed.c (DYLD_INSERT_LIBRARIES into the ad-hoc-signed Homebrew binary): SDL key events synthesized inside the process on presented frames, from the retro-run script mapped to Mednafen's default keys (gen_sdlfeed.py); F9 snapshot for shot, F10 reset, F12 exit (Mednafen writes saves on exit)",
+  "started_from": null,
+  "files": {
+    "StarTropics (USA).b1eddbb71994db079aa1dc16c05e7de5.sav": {
+      "size": 8192,
+      "sha1": "7653e241a25d6ff3fd844a5de55d66beb75537f8"
+    }
+  },
+  "layout": {
+    "save_dir": "$MEDNAFEN_HOME/sav (default .mednafen/sav in the home folder)",
+    "name": "<ROM file name without extension>.<game MD5 as Mednafen computes it>.<ext> (filesys.fname_sav %f.%M%x)",
+    "written": "on exit"
+  },
+  "created": "2026-11-04",
+  "note": "MMC6: 8192 bytes (fceumm and FCEUX also 8192; mesen and nestopia write the real 1 KiB)."
+}

@@ -1,0 +1,28 @@
+# Picross 3D: on first boot the game formats its flash ("Preparing to
+# play..."), then shows four NEW file slots. Touch the first, page through the
+# welcome, "write" a name (seven stylus dots) and touch OK: "Your save file is
+# ready." Back on the title the first slot is the new pink file.
+wait 2400
+touch 66 246 8      # NEW (top-left slot)
+wait 200
+repeat 3            # "Hello and welcome", "Before we get started...", the arrow
+touch 232 207 8
+wait 120
+end
+wait 100
+touch 60 270 4      # the name: dots in the rectangle
+touch 70 270 4
+touch 80 270 4
+touch 90 270 4
+touch 100 270 4
+touch 110 270 4
+touch 120 270 4
+wait 60
+touch 222 363 8     # OK
+wait 200
+touch 232 207 8     # "Your save file is ready."
+wait 300
+touch 232 207 8
+wait 300
+shot files          # title: slot 1 holds the new file
+wait 2400           # melonDS writes its .sav 2 s (wall clock) after the game's last write

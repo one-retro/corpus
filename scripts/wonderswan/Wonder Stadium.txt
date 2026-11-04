@@ -1,0 +1,42 @@
+# Wonder Stadium (SRAM 8 KiB). とことん育成 > チームエディット > チーム作成
+# re-creates the user team オリジナルズ: confirm はい, team type 打撃重視, then
+# hold A through 選手発掘 (the same players came up in every run) until
+# チームの作成が終了しました. After a reset, チーム編成 shows the new roster
+# (おりけけ, おりんじ, ...) instead of the default (オリオク, オリオ, ...).
+wait 900
+press start 8       # title -> モードセレクト (cursor on とことんやきゅう)
+wait 150
+press right 8       # とことん育成
+wait 30
+press a 8
+wait 150
+press a 8           # チームエディット: チーム編成 / チーム作成
+wait 150
+press right 8       # チーム作成
+wait 30
+press a 8           # チームデータ初期化: はい / いいえ
+wait 150
+press left 8        # はい
+wait 30
+press a 8
+wait 150
+press a 8           # チームタイプセレクト: 打撃重視
+wait 90
+repeat 10
+press a 8           # 選手発掘: take each player offered
+wait 90
+end
+shot created        # the new roster
+reset
+wait 900
+press start 8
+wait 150
+press right 8
+wait 30
+press a 8           # とことん育成
+wait 150
+press a 8           # チームエディット
+wait 150
+press a 8           # チーム編成
+wait 150
+shot roster         # オリジナルズ: おりけけ, おりんじ, おりざく, ...

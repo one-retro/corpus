@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "sega-gg",
+  "core": "genesis-plus-gx",
+  "core_file": "genesis_plus_gx_libretro.dylib",
+  "core_name": "Genesis Plus GX",
+  "core_version": "v1.7.4 f27655b",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Majors, The - Pro Baseball (USA).gg",
+    "sha1": "76f3c504d717067134a88f7f1d0ef38bd6698e50",
+    "size": 262144
+  },
+  "script": "scripts/sega-gg/The Majors - Pro Baseball.txt",
+  "frames": 3198,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Majors, The - Pro Baseball (USA).srm": {
+      "size": 49,
+      "sha1": "deb463c31bd3dc30d90592b2d38530bdf2b05822"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

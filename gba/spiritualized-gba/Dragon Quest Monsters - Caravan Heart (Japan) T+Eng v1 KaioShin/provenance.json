@@ -1,0 +1,21 @@
+{
+  "method": "device-backup",
+  "device": "Analogue Pocket",
+  "backup_path": "Saves/gba/common/4 Translations/Dragon Quest Monsters - Caravan Heart (Japan) T+Eng v1 KaioShin.sav",
+  "system": "gba",
+  "core": "spiritualized-gba",
+  "pocket_core": "Spiritualized.GBA",
+  "pocket_platform": "gba",
+  "game_source": "the file's own name (no No-Intro entry applies)",
+  "attribution": "folder Saves/gba/common, only GBA core installed when written: Spiritualized.GBA (Analogue backup Cores/, Settings/); mincer_ray.GBA, the registry's other GBA core, was first released 2026-03-13, after the file and after this backup. Size and padding match Spiritualized.GBA: exactly the save type's size (EEPROM 64 Kbit = 8 KiB, SRAM = 32 KiB), where mincer_ray pads every save to 64 KiB with 0xFF (one-saves data/saves/analogue-pocket/mincer-ray-gba)",
+  "confidence": "high",
+  "written": "2024-01-21 11:42 (file mtime as read here; the Pocket stamps its own clock)",
+  "files": {
+    "Dragon Quest Monsters - Caravan Heart (Japan) T+Eng v1 KaioShin.sav": {
+      "size": 8192,
+      "sha1": "a4ae63d0f8c52752b5983e57259099db8d33062f"
+    }
+  },
+  "created": "2026-11-03",
+  "note": "translation patch of Dragon Quest Monsters - Caravan Heart (Japan); folder is the ROM's file name"
+}

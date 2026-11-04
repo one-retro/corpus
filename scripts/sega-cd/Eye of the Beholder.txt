@@ -1,0 +1,44 @@
+# Eye of the Beholder: "Start a default party" (Fighter, Thief, Mage,
+# Cleric), sit through the intro to the sewers, then CAMP > Save Game >
+# slot 1: "Saved." The menus are driven by an on-screen pointer that the
+# d-pad moves (it speeds up while held); Genesis A (RetroPad y) clicks.
+# The game's file takes every free block of the internal backup RAM.
+wait 600
+press start 6       # BIOS
+wait 1200
+press start 6       # title credits
+wait 250
+press start 6       # menu: Load game in progress / Start a new party / Start a default party
+wait 250
+press right 40      # pointer from the top-left corner...
+press down 40
+press down 20
+press down 20
+press down 9
+wait 10
+press down 6        # ...to "Start a default party"
+wait 30
+shot menu
+press y 6
+wait 5600           # the Lords of Waterdeep intro
+press start 6
+wait 300
+press start 6
+wait 900            # the party in the sewers
+press right 100
+wait 10
+press right 10      # pointer on CAMP
+wait 10
+press y 6
+wait 120            # Camp Menu
+press left 120
+wait 10
+press up 57         # pointer on Save Game
+wait 10
+press y 6
+wait 120            # Select save area: 1-5 Empty region
+press up 4
+wait 10
+press y 6           # slot 1
+wait 300
+shot saved          # "Saved."

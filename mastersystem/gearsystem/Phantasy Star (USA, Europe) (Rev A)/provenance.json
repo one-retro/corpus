@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "mastersystem",
+  "core": "gearsystem",
+  "core_file": "gearsystem_libretro.dylib",
+  "core_name": "Gearsystem",
+  "core_version": "3.9.24-9-gf1202e8",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Phantasy Star (USA, Europe) (Rev A).sms",
+    "sha1": "07fcf297be4f4c9d92cd3f119a7ac48467e06838",
+    "size": 524288
+  },
+  "script": "scripts/mastersystem/Phantasy Star.txt",
+  "frames": 6066,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Phantasy Star (USA, Europe) (Rev A).srm": {
+      "size": 32768,
+      "sha1": "e8ae053f95cff13a44ebfca1c02c57ddddafdc3b"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

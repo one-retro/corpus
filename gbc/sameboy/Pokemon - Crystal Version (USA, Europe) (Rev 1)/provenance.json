@@ -1,0 +1,31 @@
+{
+  "method": "played",
+  "system": "gbc",
+  "core": "sameboy",
+  "core_file": "sameboy_libretro.dylib",
+  "core_name": "SameBoy",
+  "core_version": "1.0.5 90e2899",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Pokemon - Crystal Version (USA, Europe) (Rev 1).gbc",
+    "sha1": "f2f52230b536214ef7c9924f483392993e226cfb",
+    "size": 2097152
+  },
+  "script": "scripts/gbc/Pokemon Crystal.txt",
+  "frames": 8968,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Pokemon - Crystal Version (USA, Europe) (Rev 1).rtc": {
+      "size": 32,
+      "sha1": "5bd8e8e53537102775970800f05e860d61a80ab4"
+    },
+    "Pokemon - Crystal Version (USA, Europe) (Rev 1).srm": {
+      "size": 32768,
+      "sha1": "9062542523c957121d83312a4e00e7f439f71c39"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

@@ -1,0 +1,32 @@
+{
+  "method": "played",
+  "system": "nes",
+  "core": "nes-mister",
+  "core_file": "NES_20260823.rbf",
+  "core_name": "NES_MiSTer",
+  "core_version": "20260823",
+  "frontend": "mister",
+  "device": "the owner's MiSTer (DE10-Nano), Main_MiSTer binary of 2026-10-19",
+  "loaded_with": "MGL via /dev/MiSTer_cmd load_core (_Console/NES, file type f index 0)",
+  "save_folder": "saves/NES",
+  "rom": {
+    "name": "Family Circuit '91 (Japan) (En).nes",
+    "sha1": "89a79a601b8e900378035cb54248843eee24aafc",
+    "size": 655376
+  },
+  "script": "scripts/nes/Family Circuit '91.txt",
+  "mister_script": "scripts/mister/nes/Family Circuit '91.nes.txt",
+  "frames": 4542,
+  "timing": "real time: script frames played as wall-clock 1/60 s by work/mister/mrun.py",
+  "options": null,
+  "save_trigger": "OSD opened (F12 from a uinput keyboard) with Autosave on: the core writes its backup RAM to the SD card",
+  "started_from": "a zero-filled 32768-byte .sav put in place before loading, so the backup RAM started cleared; the core then rewrote all of it",
+  "files": {
+    "Family Circuit '91 (Japan) (En).sav": {
+      "size": 32768,
+      "sha1": "88c61eb086206e906c5cdfb2c13255925bb3a2c8"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "Namco 175 with 2 KiB of battery RAM (NES 2.0 header, PRG-NVRAM shift 5). The core writes 32 KiB (64 sectors) for anything but a declared 8 KiB (NES.sv save_sz: prg_nvram == 7 ? 15 : 63); the 2 KiB of the game sit at the start, the rest is the zero seed. Proof: GARAGE > LOAD lists slot A as ABBBBB."
+}

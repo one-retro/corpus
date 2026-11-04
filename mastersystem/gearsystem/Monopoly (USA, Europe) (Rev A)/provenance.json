@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "mastersystem",
+  "core": "gearsystem",
+  "core_file": "gearsystem_libretro.dylib",
+  "core_name": "Gearsystem",
+  "core_version": "3.9.24-9-gf1202e8",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Monopoly (USA, Europe) (Rev A).sms",
+    "sha1": "6bad7176011dd4bbd007498d167399daacde173d",
+    "size": 131072
+  },
+  "script": "scripts/mastersystem/Monopoly.txt",
+  "frames": 3952,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Monopoly (USA, Europe) (Rev A).srm": {
+      "size": 32768,
+      "sha1": "32cf273890d3ab5ba7f5fc4fc7c256eae9042557"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

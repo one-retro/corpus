@@ -1,0 +1,3 @@
+# SwanStation: card 1 per game title (<Title>_1.mcd), card 2 shared (duckstation_shared_card_2.mcd)
+swanstation_MemoryCards_Card1Type = PerGameTitle
+swanstation_MemoryCards_Card2Type = Shared

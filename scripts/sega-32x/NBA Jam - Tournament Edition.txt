@@ -1,0 +1,47 @@
+# NBA Jam Tournament Edition (32X): Head to Head with initials for record
+# keeping, then the whole game against the CPU. Start is pressed every 1500
+# frames: it toggles pause during play (so the game runs about half the time)
+# and confirms the SUBSTITUTION screens between quarters. The record goes to
+# the cart's EEPROM when the final stats are dismissed; the STATS panel that
+# follows shows it. Timed for PicoDrive, the only 32X core that runs here.
+# Genesis A/B/C are the RetroPad's y/b/a.
+wait 2100
+press start 20      # title: the menu appears
+wait 90
+press start 10      # HEAD TO HEAD
+wait 150
+press start 10      # "Enter initials for record keeping?" YES
+wait 150
+press a 6           # first letter
+wait 60
+press right 6
+wait 40
+press a 6           # second letter
+wait 90
+press right 6
+wait 40
+press right 6
+wait 40
+press a 6           # third letter (these timings give "ACC")
+wait 90
+repeat 3
+press a 6
+wait 60
+end
+shot initials
+press start 6       # team select
+wait 120
+press start 6
+wait 120
+repeat 46           # four quarters, paused half the time
+wait 1000
+press start 6
+wait 500
+press b 6
+end
+shot final          # FINAL GAME STATS
+wait 1000
+press start 6       # dismiss: the record is written
+wait 300
+shot saved          # STATS for ACC
+wait 30

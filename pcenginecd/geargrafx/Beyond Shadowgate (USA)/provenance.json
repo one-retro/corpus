@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "pcenginecd",
+  "core": "geargrafx",
+  "core_file": "geargrafx_libretro.dylib",
+  "core_name": "Geargrafx",
+  "core_version": "1.8.7",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Beyond Shadowgate (NA).chd",
+    "sha1": "273c4a95cdc8b3b7659af88050eaa099e0d3449c",
+    "size": 188553758
+  },
+  "script": "scripts/pcenginecd/Beyond Shadowgate.txt",
+  "frames": 4040,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Beyond Shadowgate (NA).srm": {
+      "size": 2048,
+      "sha1": "3e7fc6e21eeea4d125d6a1b76f9f77324de222e0"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "gba",
+  "core": "mgba",
+  "core_file": "mgba_libretro.dylib",
+  "core_name": "mGBA",
+  "core_version": "0.11-212-7a12d6d",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Sonic Advance 2 (USA) (En,Ja,Fr,De,Es,It).gba",
+    "sha1": "7bcd6a07af7c894746fa28073fe0c0e34408022d",
+    "size": 16777216
+  },
+  "script": "scripts/gba/Sonic Advance 2.txt",
+  "frames": 4438,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Sonic Advance 2 (USA) (En,Ja,Fr,De,Es,It).srm": {
+      "size": 65536,
+      "sha1": "21b43b82841c4f872a59d206a244a713a0d46c7d"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

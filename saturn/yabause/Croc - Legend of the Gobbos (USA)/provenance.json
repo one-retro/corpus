@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "saturn",
+  "core": "yabause",
+  "core_file": "yabause_libretro.dylib",
+  "core_name": "Yabause",
+  "core_version": "v0.9.15 8926b0c",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Croc - Legend of the Gobbos (USA).cue",
+    "sha1": "ef600994e6e274863a77196408dda1abf6dba771",
+    "size": 4590
+  },
+  "script": "scripts/saturn/Croc - Legend of the Gobbos.txt",
+  "frames": 4884,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Croc - Legend of the Gobbos (USA).srm": {
+      "size": 65536,
+      "sha1": "b53c18ac6b869b649895aa01f62a632ba43d0754"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

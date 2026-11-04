@@ -1,0 +1,28 @@
+{
+  "method": "played",
+  "system": "nds",
+  "core": "melonds-ds",
+  "core_file": "melondsds_libretro.dylib",
+  "core_name": "melonDS DS",
+  "core_version": "1.4.0",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Clubhouse Games (USA) (En,Fr,De,Es,It).nds",
+    "sha1": "a8bd9c4894dd1c74abd4b5d27b692b464acadb9d",
+    "size": 16777216
+  },
+  "device": null,
+  "script": "scripts/nds/Clubhouse Games.txt",
+  "frames": 5796,
+  "options": "melonds_touch_mode = touch\n",
+  "started_from": null,
+  "files": {
+    "Clubhouse Games (USA) (En,Fr,De,Es,It).srm": {
+      "size": 8192,
+      "sha1": "d076d1126795081ae5219705f447746d1574cb2d"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

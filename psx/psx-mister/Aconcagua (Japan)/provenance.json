@@ -1,0 +1,18 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "psx-mister",
+  "url": "https://github.com/MiSTer-devel/PSX_MiSTer/files/10203712/Aconcagua.Japan._Save.zip",
+  "source_page": "https://github.com/MiSTer-devel/PSX_MiSTer/issues/215",
+  "source": "GitHub (MiSTer-devel/PSX_MiSTer issues)",
+  "author": "mailcty",
+  "licence": null,
+  "fetched": "2026-11-04",
+  "what_it_is": "MiSTer PSX core .sav of a 2-disc game; one save per disc",
+  "files": {
+    "Aconcagua (Japan).sav": {
+      "size": 131072,
+      "sha1": "73573f3178edca1a703d4f066c66d619ccccc7eb"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "sega-gg",
+  "core": "gearsystem",
+  "core_file": "gearsystem_libretro.dylib",
+  "core_name": "Gearsystem",
+  "core_version": "3.9.24-9-gf1202e8",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Nazo Puyo 2 (Japan).gg",
+    "sha1": "dbd511aff622c618eac0c21de36965b869362dbd",
+    "size": 262144
+  },
+  "script": "scripts/sega-gg/Nazo Puyo 2.txt",
+  "frames": 3498,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Nazo Puyo 2 (Japan).srm": {
+      "size": 32768,
+      "sha1": "59004b4f8c8aec4276b40ef0057e845b4b97c366"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

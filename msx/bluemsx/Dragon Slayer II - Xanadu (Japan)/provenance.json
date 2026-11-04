@@ -1,0 +1,30 @@
+{
+  "method": "played",
+  "system": "msx",
+  "core": "bluemsx",
+  "core_file": "bluemsx_libretro.dylib",
+  "core_name": "blueMSX",
+  "core_version": "git e3086eb",
+  "frontend": "retro-run (writes saves as RetroArch does), via work/msx/make-save-x.py: content copied into the run directory",
+  "renderer": "software",
+  "rom": {
+    "name": "Dragon Slayer II - Xanadu (Japan).rom",
+    "sha1": "6c1814c70d69a50ec60e39ef281f0b8cd7bf8598",
+    "size": 262144
+  },
+  "extra_content": null,
+  "script": "scripts/msx/Xanadu.txt",
+  "frames": 3062,
+  "options": null,
+  "port0_device": null,
+  "started_from": null,
+  "files": {
+    "Dragon Slayer II - Xanadu (Japan).sram": {
+      "size": 8192,
+      "sha1": "09edefb7de6d2d5a2b1497dcf6b40e87108805d4",
+      "location": "savedir"
+    }
+  },
+  "created": "2026-11-03",
+  "note": "blueMSX writes <ROM stem>.sram into the save directory, but only when the cartridge is re-inserted (retro_reset does this); retro_unload_game never writes it. The script's reset is what produced this file."
+}

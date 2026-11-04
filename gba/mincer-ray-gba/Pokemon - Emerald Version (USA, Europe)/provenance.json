@@ -1,0 +1,19 @@
+{
+  "method": "downloaded",
+  "system": "gba",
+  "core": "mincer-ray-gba",
+  "url": "https://github.com/user-attachments/files/27115092/Pokemon.-.Emerald.Version.USA.Europe.zip",
+  "source_page": "https://github.com/mincer-ray/openfpga-GBA/issues/24",
+  "source": "GitHub (mincer-ray/openfpga-GBA issue #24, 'RTC stopped working for Pokemon Emerald')",
+  "author": "pmbento (issue reporter)",
+  "licence": "none stated (a file attached to a public GitHub issue)",
+  "fetched": "2026-11-03",
+  "what_it_is": "A long Emerald game (Patric, 27:07, 6 badges, 51 in the Pokedex) as the mincer_ray Analogue Pocket core last wrote it: 128 KiB flash plus 16 appended clock bytes, the layout the core's README calls LEGACY (0.7.1 and below). The reporter says the game was started in mGBA and continued on this core; the clock had stopped (the game reports a dry battery).",
+  "files": {
+    "Pokemon - Emerald Version (USA, Europe).sav": {
+      "size": 131088,
+      "sha1": "61df07c0ca6dde2080a692d0781496110fee1686"
+    }
+  },
+  "note": "The 16 trailing bytes are mincer_ray's record, not mGBA's footer: a little-endian u32 Unix time 0x69EE6B09 = 2026-04-26 19:44:09 UTC (the zip entry's own date) then the packed calendar; mGBA's would start with seven BCD bytes. Since 0.8.0 the core writes the same 16 bytes as a .rtc sidecar instead. With the 16 bytes cut, the save loads in mGBA (libretro) to CONTINUE."
+}

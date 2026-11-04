@@ -1,0 +1,31 @@
+{
+  "method": "played",
+  "system": "gbc",
+  "core": "gambatte",
+  "core_file": "gambatte_libretro.dylib",
+  "core_name": "Gambatte",
+  "core_version": "v0.5.0-netlink 77f2567",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Pokemon - Crystal Version (USA, Europe) (Rev 1).gbc",
+    "sha1": "f2f52230b536214ef7c9924f483392993e226cfb",
+    "size": 2097152
+  },
+  "script": "scripts/gbc/Pokemon Crystal.txt",
+  "frames": 8968,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Pokemon - Crystal Version (USA, Europe) (Rev 1).rtc": {
+      "size": 8,
+      "sha1": "7dcd1113e53249422b35fa09588ee826c3fb4dde"
+    },
+    "Pokemon - Crystal Version (USA, Europe) (Rev 1).srm": {
+      "size": 32768,
+      "sha1": "08aa3a635888137133aaf671bb79532fc257386d"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

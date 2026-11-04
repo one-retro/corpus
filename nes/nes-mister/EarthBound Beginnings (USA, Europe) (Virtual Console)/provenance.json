@@ -1,0 +1,32 @@
+{
+  "method": "played",
+  "system": "nes",
+  "core": "nes-mister",
+  "core_file": "NES_20260823.rbf",
+  "core_name": "NES_MiSTer",
+  "core_version": "20260823",
+  "frontend": "mister",
+  "device": "the owner's MiSTer (DE10-Nano), Main_MiSTer binary of 2026-10-19",
+  "loaded_with": "MGL via /dev/MiSTer_cmd load_core (_Console/NES, file type f index 0)",
+  "save_folder": "saves/NES",
+  "rom": {
+    "name": "EarthBound Beginnings (USA, Europe) (Virtual Console).nes",
+    "sha1": "f338af0af0058dc692d6003e04b4094bb324d2c5",
+    "size": 524304
+  },
+  "script": "scripts/nes/EarthBound Beginnings.txt",
+  "mister_script": "scripts/mister/nes/EarthBound Beginnings.nes.txt",
+  "frames": 7152,
+  "timing": "real time: script frames played as wall-clock 1/60 s by work/mister/mrun.py",
+  "options": null,
+  "save_trigger": "OSD opened (F12 from a uinput keyboard) with Autosave on: the core writes its backup RAM to the SD card",
+  "started_from": "a zero-filled 8192-byte .sav put in place before loading, so the backup RAM started cleared; the core then rewrote all of it",
+  "files": {
+    "EarthBound Beginnings (USA, Europe) (Virtual Console).sav": {
+      "size": 8192,
+      "sha1": "e9441fec8a5336beda17598c16fe7da360dba975"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "MMC3 + 8 KiB battery RAM. The NES 2.0 header declares 8 KiB of PRG-NVRAM (byte 10 = 0x70), so the core writes 16 sectors = 8192 bytes (an iNES 1.0 header would give 32 KiB). Autosave is on by default in the NES core, so no config file was written. Proof: after loading the game again, the file menu lists A Lvl 1."
+}

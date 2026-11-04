@@ -1,0 +1,53 @@
+# Pokemon Pearl: through Professor Rowan's introduction, name the player and
+# the rival AAAAAAA, then save in the bedroom from the X menu (SAVE, YES).
+# The first question needs a touch on YES; the Poke Ball button needs a touch.
+wait 600
+press start 6       # title
+wait 300
+press a 6
+wait 300
+press a 6
+wait 300
+tap a 50 30         # Rowan's opening lines, up to "Do you understand everything so far?"
+wait 240
+touch 120 274 8     # YES (touch screen)
+wait 150
+tap a 2 100         # "Would you like to know more about anything else?"
+press down 4
+wait 20
+press down 4        # NO INFO NEEDED
+wait 20
+press a 4
+wait 100
+tap a 6 90
+wait 200
+touch 128 290 8     # the button in the middle of the Poke Ball
+tap a 17 90
+tap a 20 60         # boy, then into the name keyboard (A types A's)
+wait 60
+press start 4       # cursor to OK
+wait 30
+press a 4
+wait 120
+tap a 24 60         # "Your name is AAAAAAA?" YES ... the rival's keyboard
+wait 60
+press start 4
+wait 30
+press a 4
+wait 120
+tap a 60 50         # to the bedroom and through the TV report
+wait 120
+press x 4           # menu: BAG, (card), SAVE
+wait 60
+press down 4
+wait 30
+press down 4
+wait 30
+press a 4           # SAVE
+wait 180
+press a 4
+wait 120
+press a 4           # YES
+wait 1000           # "Saving a lot of data... Don't turn off the power."
+shot saved          # "AAAAAAA saved the game." (the name has 3 to 7 A's)
+wait 2400           # melonDS writes its .sav 2 s (wall clock) after the game's last write

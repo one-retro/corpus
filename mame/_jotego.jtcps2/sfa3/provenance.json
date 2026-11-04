@@ -1,0 +1,22 @@
+{
+  "method": "device-backup",
+  "device": "Analogue Pocket",
+  "backup_path": "Saves/jtcps2/common/sfa3.sav",
+  "system": "mame",
+  "core": "_jotego.jtcps2",
+  "pocket_core": "jotego.jtcps2",
+  "pocket_platform": "jtcps2",
+  "game_source": "the file's own name (no No-Intro entry applies)",
+  "attribution": "NOT written on this device: byte-identical to jotego's distributed default for this set (github.com/jotego/jtbin pocket/raw/Saves/jtcps2/common/sfa3.sav, 2025-03-21 install; the jtbin blob is unchanged since 2024-07-27); all 312 files in Saves/jtcps2/common carry the same mtime, 2025-03-21 18:18, the minute the updater installed the jotego cores' assets (1282 files in Assets share it). Kept as an example of what a Pocket card holds after installing jotego cores; the format is the core's NVRAM/EEPROM image",
+  "confidence": "n/a (stock file)",
+  "written": "2025-03-21 18:18 (file mtime as read here; the Pocket stamps its own clock)",
+  "files": {
+    "sfa3.sav": {
+      "size": 128,
+      "sha1": "9c76e1fadd4147e10a70ee218e8051fbe762b7bd"
+    }
+  },
+  "created": "2026-11-03",
+  "note": "MAME set sfa3; one representative of the 312 stock files in Saves/jtcps2/common, the rest are not filed (DEVICE-BACKUPS.md)",
+  "stock_default": true
+}

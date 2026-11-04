@@ -1,0 +1,36 @@
+# Sonic Advance 2: first boot asks for a language and a name (REG. NAME);
+# enter "v" (right wraps the cursor to it), END, confirm; the game writes the
+# profile to flash. Proof: OPTIONS showing the profile after a power cycle.
+wait 900
+press start 6       # skip the logos
+wait 300
+press start 6       # language: English
+wait 300
+press right 10      # REG. NAME: the cursor wraps to 'v'
+wait 60
+press a 10          # v
+wait 60
+press start 10      # cursor to END
+wait 60
+press a 20          # END: saved
+wait 600
+shot saved
+# Power cycle: keep battery RAM across the reset (SkyEmu's reset reloads
+# it from a file the frontend never wrote, and would lose the save).
+dump cycle.srm
+reset
+srm cycle.srm
+wait 900
+press start 6       # PRESS START
+wait 300
+press start 6       # skip
+wait 300
+press a 6           # SINGLE PLAYER
+wait 200
+press down 6
+wait 30
+press down 6
+wait 30
+press a 6           # OPTIONS
+wait 300
+shot options

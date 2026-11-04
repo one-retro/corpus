@@ -1,0 +1,30 @@
+{
+  "method": "played",
+  "system": "c64",
+  "core": "vice-x128",
+  "core_file": "vice_x128_libretro.dylib",
+  "core_name": "VICE x128",
+  "core_version": "3.10 5ebe7d3",
+  "frontend": "retro-run (writes saves as RetroArch does), via work/c64/make-save-x.py: content copied into the run directory; runner work/msx/retro-run-x (retro-run plus raw keycodes and --keep-temp)",
+  "renderer": "software",
+  "rom": {
+    "name": "Elite (Europe).nib",
+    "sha1": "c39c2e56e54760c610535269f84bbcf568c36fc7",
+    "size": 327936
+  },
+  "extra_content": null,
+  "script": "scripts/c64/Elite.txt",
+  "frames": 10706,
+  "options": "vice_c128_go64 = enabled\nvice_mapper_save_disk_toggle = RETROK_F12\n",
+  "port0_device": null,
+  "started_from": null,
+  "files": {
+    "Elite (Europe).save0.d64.gz": {
+      "size": 569,
+      "sha1": "85c779bfdf1b332fc9515debee8a9c517580ba52",
+      "location": "savedir"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "VICE writes the save disk as <content stem>.save0.d64 in the save directory (the M3U #SAVEDISK mechanism, here through the Toggle Save Disk hotkey, which is unmapped by default and set to F12 here) and stores it gzip-compressed on unload, hence .save0.d64.gz. The game ran from the No-Intro PP .nib (VICE converts it to <savedir>/TEMP/<name>.g64 and deletes that at deinit). x128: vice_c128_go64 = enabled (C64 mode)."
+}

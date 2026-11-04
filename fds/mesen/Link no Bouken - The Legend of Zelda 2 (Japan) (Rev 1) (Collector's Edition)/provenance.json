@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "fds",
+  "core": "mesen",
+  "core_file": "mesen_libretro.dylib",
+  "core_name": "Mesen",
+  "core_version": "0.9.9",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Link no Bouken - The Legend of Zelda 2 (Japan) (Rev 1) (Collector's Edition).fds",
+    "sha1": "f4b5f7594be7625f568bfcb1650288c977a07051",
+    "size": 131000
+  },
+  "script": "scripts/fds/Link no Bouken.txt",
+  "frames": 3224,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Link no Bouken - The Legend of Zelda 2 (Japan) (Rev 1) (Collector's Edition).ips": {
+      "size": 17,
+      "sha1": "ba217dd869aa33f8e28a1cd2ae8f43da63a0fb82"
+    }
+  },
+  "created": "2026-11-03",
+  "note": "runner: work/nes/runner/retro-run (tools/retro-run with RetroArch's init order and a disk control interface)"
+}

@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "fds",
+  "core": "mesen",
+  "core_file": "mesen_libretro.dylib",
+  "core_name": "Mesen",
+  "core_version": "0.9.9",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Zelda no Densetsu - The Hyrule Fantasy (Japan) (Collector's Edition).fds",
+    "sha1": "eb72c80fef3f55395ad3fc9a0f845935593cfd61",
+    "size": 131000
+  },
+  "script": "scripts/fds/Zelda no Densetsu.txt",
+  "frames": 4018,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Zelda no Densetsu - The Hyrule Fantasy (Japan) (Collector's Edition).ips": {
+      "size": 35,
+      "sha1": "e255dc0565d7c40a476f87a4f432f09818b10793"
+    }
+  },
+  "created": "2026-11-03",
+  "note": "runner: work/nes/runner/retro-run (tools/retro-run with RetroArch's init order and a disk control interface)"
+}

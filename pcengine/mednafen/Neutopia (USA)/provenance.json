@@ -1,0 +1,32 @@
+{
+  "method": "played",
+  "system": "pcengine",
+  "core": "mednafen",
+  "core_file": null,
+  "core_name": "Mednafen",
+  "core_version": "1.32.1",
+  "frontend": "Mednafen 1.32.1 (Homebrew), module 'pce', isolated MEDNAFEN_HOME, -sound 0 -video.glvsync 0",
+  "rom": {
+    "name": "Neutopia (USA).pce",
+    "size": 393216,
+    "sha1": "95d5fdbd6c9d6da2f288312309c2badd92f89cf4"
+  },
+  "script": "scripts/pcengine/Neutopia.txt",
+  "frames": 9742,
+  "options": null,
+  "input": "work/standalone/tools/sdlfeed.c (DYLD_INSERT_LIBRARIES into the ad-hoc-signed Homebrew binary): SDL key events synthesized inside the process on presented frames, from the retro-run script mapped to Mednafen's default keys (gen_sdlfeed.py); F9 snapshot for shot, F10 reset, F12 exit (Mednafen writes saves on exit)",
+  "started_from": null,
+  "files": {
+    "Neutopia (USA).eb0789088fc70be42b2f994c1b66be21.sav": {
+      "size": 2048,
+      "sha1": "15acdeb3d1324e2bde6133369d4bcbfef12320ea"
+    }
+  },
+  "layout": {
+    "save_dir": "$MEDNAFEN_HOME/sav (default .mednafen/sav in the home folder)",
+    "name": "<ROM file name without extension>.<game MD5 as Mednafen computes it>.<ext> (filesys.fname_sav %f.%M%x)",
+    "written": "on exit"
+  },
+  "created": "2026-11-04",
+  "note": "PC Engine backup RAM (2 KiB). Libretro Beetle PCE names the same memory <stem>.srm."
+}

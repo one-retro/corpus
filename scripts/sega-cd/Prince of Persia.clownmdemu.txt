@@ -1,0 +1,24 @@
+# Prince of Persia for ClownMDEmu: no BIOS intro (its high-level BIOS boots
+# the disc at once), so the BIOS presses are dropped. Otherwise as
+# Prince of Persia.txt, but it ends after SAVE: after a reset ClownMDEmu's
+# title menu first shows CONTINUE blank, and the press meant for it lands on
+# FASTEST.
+# Prince of Persia: the game creates its 18-block backup RAM file on first
+# boot and writes it again when level 1 starts. Then pause (Start) and pick
+# SAVE (Start selects; SAVE leaves the menu once the game is saved). Reset
+# and CONTINUE to show the game reading its save back.
+wait 1200           # no BIOS screen in ClownMDEmu
+press start 6       # skip the intro
+wait 300
+press start 6       # title -> START / CONTINUE / FASTEST / NAME ENTRY / BACK TO DEMO
+wait 300
+press start 6       # START
+wait 600            # level 1, "59 MINUTES LEFT"
+press start 6       # pause menu: SAVE FASTEST NAME ENTRY ...
+wait 300
+shot menu
+press start 6       # SAVE
+wait 300
+press start 6       # the menu again, now without SAVE
+wait 300
+shot saved

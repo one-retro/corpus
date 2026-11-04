@@ -1,0 +1,30 @@
+load corpus-tmp/mgl/dbz2.mgl 8
+# Dragon Ball Z II - Gekishin Freeza!! (Bandai LZ93D50 with a 24C02 EEPROM,
+# 256 bytes): start the game, run through the opening story to the board,
+# and choose セーブ > データ1 from the command menu: "データ1「いざ!ナメック
+# せいへ!」セーブしています", which is the proof.
+wait 600
+repeat 10
+press a 6           # title, ゲームスタート, the opening story
+wait 24
+press start 6
+wait 24
+end
+wait 120
+press b 6           # the board, command menu open (いどう)
+wait 60
+press down 6
+wait 20
+press down 6        # セーブ
+wait 20
+press a 6
+wait 60
+shot where          # どちらに セーブしますか? データ1 / データ2
+press a 6           # データ1
+wait 40
+shot saving         # セーブしています
+wait 300
+wait 30
+save
+wait 60
+shot final

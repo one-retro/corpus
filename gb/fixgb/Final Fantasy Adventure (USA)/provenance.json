@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "gb",
+  "core": "fixgb",
+  "core_file": "fixgb_libretro.dylib",
+  "core_name": "fixGB",
+  "core_version": "Alpha v0.8.2",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Final Fantasy Adventure (USA).gb",
+    "sha1": "8b93c55ee2660c60cf86dd70058f96ace98782c8",
+    "size": 262144
+  },
+  "script": "scripts/gb/Final Fantasy Adventure.txt",
+  "frames": 2300,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Final Fantasy Adventure (USA).srm": {
+      "size": 512,
+      "sha1": "e098ed4317441dd2818c3e92ff52b7649ce316ba"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

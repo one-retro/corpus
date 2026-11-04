@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "atari-jaguar",
+  "core": "virtual-jaguar",
+  "core_file": "virtualjaguar_libretro.dylib",
+  "core_name": "Virtual Jaguar",
+  "core_version": "v3.11.0 34696082",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Alien vs Predator (World).j64",
+    "sha1": "fd8c89250ebc1e403838b2e589d1f69e3fe2fe02",
+    "size": 4194304
+  },
+  "script": "scripts/atari-jaguar/Alien vs Predator.txt",
+  "frames": 4394,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Alien vs Predator (World).srm": {
+      "size": 128,
+      "sha1": "a8472b989cd79283e84cd68a841b244d3b87e0e2"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

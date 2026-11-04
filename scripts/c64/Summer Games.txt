@@ -1,0 +1,40 @@
+# Summer Games (Epyx): set a new 100m dash world record as ABC (France). The
+# game writes the record table to the game disk ("WR" file area) right after
+# the NEW WORLD RECORD screen. Joystick in port 2: fire is RetroPad B in VICE.
+# Waggling left/right every 2 frames runs ~9.75 s (the record is 10.47).
+# Then a reset (VICE's default reset reruns the content) and 5) SEE WORLD
+# RECORDS shows the record read back from the disk.
+include SummerGames.start.txt
+repeat 3
+press down 8        # 4) 100m DASH
+wait 60
+end
+press b 8
+wait 1500           # NEXT EVENT: 100m DASH (loads from disk)
+press b 8
+wait 440            # PREPARE TO RACE, ON YOUR MARK, SET, gun at ~420
+repeat 300
+press left 2
+press right 2
+end
+wait 300
+shot record         # NEW WORLD RECORD FOR 100m DASH ... ABC 09.75
+press b 8
+wait 600
+press b 8
+wait 600
+press b 8
+wait 600            # back at the menu, pointer on 2)
+reset
+wait 3000
+press b 8
+wait 1800
+press b 8           # skip to the menu
+wait 600
+repeat 4
+press down 8        # 5) SEE WORLD RECORDS
+wait 60
+end
+press b 8
+wait 600
+shot records        # 100m DASH: FRANCE 9.75

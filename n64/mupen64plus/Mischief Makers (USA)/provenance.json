@@ -1,0 +1,19 @@
+{
+  "method": "downloaded",
+  "system": "n64",
+  "core": "mupen64plus",
+  "url": "https://github.com/mupen64plus/mupen64plus-core/files/1337199/Mischief.Makers.U.zip",
+  "source_page": "https://github.com/mupen64plus/mupen64plus-core/issues/409",
+  "source": "GitHub (mupen64plus/mupen64plus-core issue #409, 'Mischief Makers - Framerate halved')",
+  "author": "Krusher97 (issue reporter), comment of 2017-09-27: 'Contains a savestate and an ingame state.'",
+  "licence": "none stated (a file attached to a public GitHub issue)",
+  "fetched": "2026-11-04",
+  "what_it_is": "The reporter's own Mischief Makers game: file 1 'aaa', 01 hrs 18 min 36 sec, 291 gems, reaching level 2-3. A 4 Kbit EEPROM written as a 2048-byte .eep: the game's 512 bytes (data to 0x1DF), then 1536 bytes of 0xFF. Zip entry dated 2017-09-27 01:54.",
+  "files": {
+    "Mischief Makers (U) [!].eep": {
+      "size": 2048,
+      "sha1": "2172f7a2bfa1b2accb0d3ca0c2f155e0e8796064"
+    }
+  },
+  "note": "The reporter says they ran the m64p build from m64p.github.io (mupen64plus-gui on mupen64plus-core); the maintainer replies with mupen64plus-gui instructions. '<GoodName>.eep' is mupen64plus-core's naming of that time, and 2048 bytes for a 4 Kbit game is how mupen64plus-core wrote every EEPROM before 2017-2018 (one-saves' n64.rs mentions it). The zip's other file, mischief.state, a save state, was not kept. Which revision: the 2017 GoodName 'Mischief Makers (U) [!]' carries no version, so (USA) rather than (USA) (Rev 1) is a guess. Copied unchanged into the EEPROM region of a Mupen64Plus-Next .srm and booted with Mischief Makers (USA) (Rev 1), the game shows the file: proof.png is that check, not the author's screenshot."
+}

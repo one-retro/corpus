@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "pcenginecd",
+  "core": "geargrafx",
+  "core_file": "geargrafx_libretro.dylib",
+  "core_name": "Geargrafx",
+  "core_version": "1.8.7",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Ys Book I & II (NA).chd",
+    "sha1": "29edd397030cb8bad8dfcfe753f19c794c68d17b",
+    "size": 478437781
+  },
+  "script": "scripts/pcenginecd/Ys Book I & II.txt",
+  "frames": 15474,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Ys Book I & II (NA).srm": {
+      "size": 2048,
+      "sha1": "a0e860d9bcd1e5d5293ea6f1eef61fc213e90bcc"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

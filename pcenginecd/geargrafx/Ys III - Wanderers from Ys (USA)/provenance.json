@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "pcenginecd",
+  "core": "geargrafx",
+  "core_file": "geargrafx_libretro.dylib",
+  "core_name": "Geargrafx",
+  "core_version": "1.8.7",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Ys III - Wanderers from Ys (NA).chd",
+    "sha1": "20814fb0f0276a8460a6b19be1e7b35342c829db",
+    "size": 452772932
+  },
+  "script": "scripts/pcenginecd/Ys III - Wanderers from Ys.txt",
+  "frames": 11556,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Ys III - Wanderers from Ys (NA).srm": {
+      "size": 2048,
+      "sha1": "ed3f1858d638b98ff54527ef9bc6c8796d6b13b0"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

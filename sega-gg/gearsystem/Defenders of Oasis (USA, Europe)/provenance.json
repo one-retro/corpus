@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "sega-gg",
+  "core": "gearsystem",
+  "core_file": "gearsystem_libretro.dylib",
+  "core_name": "Gearsystem",
+  "core_version": "3.9.24-9-gf1202e8",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Defenders of Oasis (USA, Europe).gg",
+    "sha1": "07c1167c3b6eea294a73272c256934406f48f9d5",
+    "size": 524288
+  },
+  "script": "scripts/sega-gg/Defenders of Oasis.txt",
+  "frames": 10140,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Defenders of Oasis (USA, Europe).srm": {
+      "size": 32768,
+      "sha1": "cd0547776aa72f8db0927d77de999da3c324d7a3"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

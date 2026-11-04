@@ -1,0 +1,21 @@
+{
+  "method": "device-backup",
+  "device": "Analogue Pocket",
+  "backup_path": "Saves/gb/common/1 GBC US - A-L/Dragon Warrior Monsters 2 - Tara's Adventure (USA) (SGB Enhanced) (GB Compatible).sav",
+  "system": "gbc",
+  "core": "spiritualized-gbc",
+  "pocket_core": "Spiritualized.GBC",
+  "pocket_platform": "gb",
+  "game_source": "No-Intro DAT 'Nintendo - Game Boy Color (20260825-135204)'",
+  "attribution": "written 2024-01-07, three days after budude2.GB was installed (Assets/gb/common/gb_bios.bin, its BIOS, dated 2024-01-04), but budude2 v1.0.4/1.0.5 wrote 32777 bytes for every cart and this is 32768 with no footer, so a Spiritualized core; the ROM is .gbc, which Spiritualized.GB cannot load, so the writer is taken to be Spiritualized.GBC, which in 2023 loaded the same ROMs from Assets/gbc/common/1 GBC US - A-L (Analogue backup, Dec 2023) and would have written to Saves/gbc/common/1 GBC US - A-L; that folder is gone from Saves/gbc and the file sits in the identical subfolder of Saves/gb, consistent with the owner merging the GBC library into gb/common in July 2024 (Assets/gbc/common/games -> ../../gb/common, dated 2024-07-22) and moving the saves with it. If the Pocket let Spiritualized.GB pick a .gbc file the writer is Spiritualized.GB instead; both write the same layout",
+  "confidence": "medium",
+  "written": "2024-01-07 20:40 (file mtime as read here; the Pocket stamps its own clock)",
+  "files": {
+    "Dragon Warrior Monsters 2 - Tara's Adventure (USA) (SGB Enhanced) (GB Compatible).sav": {
+      "size": 32768,
+      "sha1": "102ed331d4bcf921ec3d3991e64a157afac6ea5e"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

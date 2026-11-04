@@ -1,0 +1,31 @@
+{
+  "method": "played",
+  "system": "sega-cd",
+  "core": "genesis-plus-gx",
+  "core_file": "genesis_plus_gx_libretro.dylib",
+  "core_name": "Genesis Plus GX",
+  "core_version": "v1.7.4 f27655b",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Eye of the Beholder (USA).cue",
+    "sha1": "ed3ae15a3ca73bf4ff996414c92e8e201cb1ba85",
+    "size": 6702
+  },
+  "script": "scripts/sega-cd/Eye of the Beholder.txt",
+  "frames": 10210,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "4Mbit_cart.brm": {
+      "size": 524288,
+      "sha1": "2a170e18ca44a8bbaa8d36675cdae9e7203026d0"
+    },
+    "scd_U.brm": {
+      "size": 8192,
+      "sha1": "b4e357e0c1cd676e38c2cd544c348e8b6ef5893b"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "Disc from the Trimmed Redump set, unpacked here: the data track is the real one, the audio tracks are zero-filled stand-ins of the exact sizes (silent CD audio; the disk was too full for the real ones). The .cue is the original."
+}

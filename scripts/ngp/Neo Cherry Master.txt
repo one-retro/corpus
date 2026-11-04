@@ -1,0 +1,40 @@
+# Neo Cherry Master: start a Simple Mode game, put in notes, then menu EXIT ->
+# SAVE? YES -> SAVED. After a reset, CONTINUE brings the credits back.
+# NGP A is libretro b, NGP B is libretro a, Option is start.
+wait 400
+press b 6           # skip the intro
+wait 200
+press b 10          # LANGUAGE: ENGLISH
+wait 150
+press b 10          # SIMPLE MODE
+wait 150
+press b 10          # NEW GAME
+wait 200
+tap b 4 40          # A = NOTE IN, four times
+wait 200
+shot play
+press start 10      # menu
+wait 60
+repeat 4
+press down 10
+wait 40
+end
+press b 10          # EXIT
+wait 120
+press b 10          # SAVE? YES
+wait 180
+shot saved
+reset
+wait 400
+press b 6
+wait 200
+press b 10          # ENGLISH
+wait 150
+press b 10          # SIMPLE MODE
+wait 150
+press down 10
+wait 40
+shot cont
+press b 10          # CONTINUE
+wait 300
+shot loaded

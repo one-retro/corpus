@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "genesis",
+  "core": "clownmdemu",
+  "core_file": "clownmdemu_libretro.dylib",
+  "core_name": "ClownMDEmu",
+  "core_version": "v1.6.12 d43c270",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Sonic & Knuckles + Sonic The Hedgehog 3 (USA) (Lock-on Combination).md",
+    "sha1": "cfbf98c36c776677290a872547ac47c53d2761d6",
+    "size": 4194304
+  },
+  "script": "scripts/genesis/Sonic & Knuckles + Sonic The Hedgehog 3.txt",
+  "frames": 2220,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Sonic & Knuckles + Sonic The Hedgehog 3 (USA) (Lock-on Combination).srm": {
+      "size": 65536,
+      "sha1": "e804a4f9aec0170d4ac7bf18488f5b8cb5502688"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

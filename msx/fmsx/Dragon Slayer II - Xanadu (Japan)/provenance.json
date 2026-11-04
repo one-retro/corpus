@@ -1,0 +1,35 @@
+{
+  "method": "played",
+  "system": "msx",
+  "core": "fmsx",
+  "core_file": "fmsx_libretro.dylib",
+  "core_name": "fMSX",
+  "core_version": "6.0 4de1175",
+  "frontend": "retro-run (writes saves as RetroArch does), via work/msx/make-save-x.py: content copied into the run directory",
+  "renderer": "software",
+  "rom": {
+    "name": "Dragon Slayer II - Xanadu (Japan).rom",
+    "sha1": "6c1814c70d69a50ec60e39ef281f0b8cd7bf8598",
+    "size": 262144
+  },
+  "extra_content": null,
+  "script": "scripts/msx/Xanadu.txt",
+  "frames": 3062,
+  "options": null,
+  "port0_device": 3,
+  "started_from": null,
+  "files": {
+    "Dragon Slayer II - Xanadu (Japan).sav": {
+      "size": 8192,
+      "sha1": "09edefb7de6d2d5a2b1497dcf6b40e87108805d4",
+      "location": "content-dir"
+    },
+    "system/CMOS.ROM": {
+      "size": 52,
+      "sha1": "e8880ec014926ef52a724c4c4b5d011b8d66a0d7",
+      "location": "sysdir"
+    }
+  },
+  "created": "2026-11-03",
+  "note": "fMSX writes cartridge SRAM to <ROM path without extension>.sav beside the ROM (location content-dir), not in the save directory, on unload; RETRO_MEMORY_SAVE_RAM is not used for it, so RetroArch writes no .srm. system/CMOS.ROM is the RTC/CMOS (fMSX default mode MSX2+), written into the system directory on unload. Port 0 device set to 3 (3 = Keyboard, 257 = Joystick + Emulated Keyboard) with work/msx/retro-run-x."
+}

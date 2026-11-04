@@ -1,0 +1,35 @@
+{
+  "method": "played",
+  "system": "saturn",
+  "core": "beetle-saturn",
+  "core_file": "mednafen_saturn_libretro.dylib",
+  "core_name": "Beetle Saturn",
+  "core_version": "v1.32.1",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Legend of Oasis, The (USA).cue",
+    "sha1": "367c62cc807d7f28580db653d7bb069f806b412d",
+    "size": 222
+  },
+  "script": "scripts/saturn/Legend of Oasis, The.txt",
+  "frames": 2508,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Legend of Oasis, The (USA).bcr": {
+      "size": 524288,
+      "sha1": "7375f566c41cde0329e61131cd3565b6d2c275c0"
+    },
+    "Legend of Oasis, The (USA).smpc": {
+      "size": 12,
+      "sha1": "f26bf6f5b6ba2da259e06b44d04802534e5db384"
+    },
+    "Legend of Oasis, The (USA).srm": {
+      "size": 32768,
+      "sha1": "3063d92823f8eb9a8c228e6ce50036b2ab4be9ae"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

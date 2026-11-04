@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "fds",
+  "core": "fceumm",
+  "core_file": "fceumm_libretro.dylib",
+  "core_name": "FCEUmm",
+  "core_version": "(SVN) e0f3086",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Golf - Japan Course (Japan) (DV 2).fds",
+    "sha1": "532214dacbac874deb1c944f894c450feeffd2eb",
+    "size": 131000
+  },
+  "script": "scripts/fds/Golf - Japan Course.txt",
+  "frames": 6754,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Golf - Japan Course (Japan) (DV 2).srm": {
+      "size": 131000,
+      "sha1": "911e8fb744d00cd0f8fade39d700215c03fe7962"
+    }
+  },
+  "created": "2026-11-03",
+  "note": "runner: work/nes/runner/retro-run (tools/retro-run with RetroArch's init order and a disk control interface)"
+}

@@ -1,0 +1,31 @@
+{
+  "method": "played",
+  "system": "gb",
+  "core": "skyemu",
+  "core_file": "skyemu_libretro.dylib",
+  "core_name": "SkyEmu",
+  "core_version": "adacd0788964ed89f5c43dcbc1f3cc26deec996c",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Itsudemo! Nyan to Wonderful (Japan) (SGB Enhanced).gb",
+    "sha1": "a48d6b68d82b98e775c00366da544402d7c7ac0e",
+    "size": 262144
+  },
+  "script": "scripts/gb/Itsudemo! Nyan to Wonderful.txt",
+  "frames": 2224,
+  "options": "system_core_override = Automatic\nsystem_gb_bios_enable = disabled\nsystem_gba_bios_enable = disabled\nsystem_nds_bios_enable = disabled\n",
+  "started_from": null,
+  "files": {
+    "Itsudemo! Nyan to Wonderful (Japan) (SGB Enhanced).rtc": {
+      "size": 14,
+      "sha1": "85be7fae36dac45504d3c1539b79386156df4343"
+    },
+    "Itsudemo! Nyan to Wonderful (Japan) (SGB Enhanced).srm": {
+      "size": 131072,
+      "sha1": "0727f58f4d51dbfa725c0bafd3f03153a0a58561"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

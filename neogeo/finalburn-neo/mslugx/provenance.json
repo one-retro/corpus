@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "neogeo",
+  "core": "finalburn-neo",
+  "core_file": "fbneo_libretro.dylib",
+  "core_name": "FinalBurn Neo",
+  "core_version": "v1.0.0.03  GITda14132",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "mslugx.zip",
+    "sha1": "73e02852f37b19e1db10d7eafe65c0d2047ff796",
+    "size": 28493658
+  },
+  "script": "scripts/neogeo/mslugx.txt",
+  "frames": 3380,
+  "options": "fbneo-neogeo-mode = AES_EUR\nfbneo-memcard-mode = per-game\n",
+  "started_from": null,
+  "files": {
+    "fbneo/mslugx.memcard": {
+      "size": 32800,
+      "sha1": "4cf0b0ce8532485e945fc1d1be5459ad2df31cea"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

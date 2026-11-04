@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "nes",
+  "core": "fceumm",
+  "core_file": "fceumm_libretro.dylib",
+  "core_name": "FCEUmm",
+  "core_version": "(SVN) e0f3086",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Final Fantasy (USA).nes",
+    "sha1": "e8f34d93576048528be4cb736f292edb431083e0",
+    "size": 262160
+  },
+  "script": "scripts/nes/Final Fantasy.txt",
+  "frames": 3934,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Final Fantasy (USA).srm": {
+      "size": 8192,
+      "sha1": "5396b2a145b4e6e4eb46913733cbfd7e1f0a4e10"
+    }
+  },
+  "created": "2026-11-03",
+  "note": "runner: work/nes/runner/retro-run (tools/retro-run with RetroArch's init order and a disk control interface)"
+}

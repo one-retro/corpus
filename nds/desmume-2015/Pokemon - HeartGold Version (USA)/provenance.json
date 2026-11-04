@@ -1,0 +1,28 @@
+{
+  "method": "played",
+  "system": "nds",
+  "core": "desmume-2015",
+  "core_file": "desmume2015_libretro.dylib",
+  "core_name": "DeSmuME 2015",
+  "core_version": "git a06da0c",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Pokemon - HeartGold Version (USA).nds",
+    "sha1": "30793e274fb4c7ba070ae226edbdfe355504b1f5",
+    "size": 134217728
+  },
+  "device": null,
+  "script": "scripts/nds/Pokemon - HeartGold Version.txt",
+  "frames": 16014,
+  "options": "desmume_pointer_type = touch\n",
+  "started_from": null,
+  "files": {
+    "Pokemon - HeartGold Version (USA).dsv": {
+      "size": 524410,
+      "sha1": "ba07fe147dee5ab21cfbd5b8b2978c64b18bbd11"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

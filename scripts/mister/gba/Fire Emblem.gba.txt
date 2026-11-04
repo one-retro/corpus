@@ -1,0 +1,38 @@
+load corpus-tmp/mgl/fe.mgl 8
+# Fire Emblem (the Blazing Sword): New Game in slot 1 with the default
+# tactician (Mark, January, Male); the game writes the slot as the prologue
+# begins. Mash through Lyn's first lines. Proof: "Prologue: A Girl from the
+# Plains" in slot 1 after a power cycle. The cartridge has FRAM (SRAM_F).
+wait 900
+press start 6       # skip the intro
+wait 300
+press start 6       # title -> New Game
+wait 300
+press a 6           # New Game
+wait 200
+press a 6           # slot 1
+wait 300
+press start 6       # Personal Information: Enter information?
+wait 200
+press right 6       # No: keep the defaults
+wait 60
+press a 6
+wait 300
+tap a 20 60         # Lyn's first lines
+shot prologue
+# Power cycle: keep battery RAM across the reset (SkyEmu's reset reloads
+# it from a file the frontend never wrote, and would lose the save).
+wait 30
+save
+wait 60
+shot final
+# power cycle: load the game again; the core reads the .sav back from the SD card
+load corpus-tmp/mgl/fe.mgl 8
+wait 900
+press start 6
+wait 300
+press start 6       # title -> Restart Chapter / Copy / Erase / New Game
+wait 300
+press a 6           # Restart Chapter: the slots
+wait 200
+shot slots

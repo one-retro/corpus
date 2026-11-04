@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "gb",
+  "core": "sameboy",
+  "core_file": "sameboy_libretro.dylib",
+  "core_name": "SameBoy",
+  "core_version": "1.0.5 90e2899",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Pocket Monsters - Midori (Japan) (Rev 1) (SGB Enhanced).gb",
+    "sha1": "4b97cd44aa3f0dd290bfe7b3ac17b7bd8270897b",
+    "size": 524288
+  },
+  "script": "scripts/gb/Pocket Monsters Midori.txt",
+  "frames": 9801,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Pocket Monsters - Midori (Japan) (Rev 1) (SGB Enhanced).srm": {
+      "size": 32768,
+      "sha1": "7e245b37074f8fc781e6c2c9838f340857f79f60"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

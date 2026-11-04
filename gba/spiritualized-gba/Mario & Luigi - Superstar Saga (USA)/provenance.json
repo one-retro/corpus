@@ -1,0 +1,21 @@
+{
+  "method": "device-backup",
+  "device": "Analogue Pocket",
+  "backup_path": "Saves/gba/common/Mario & Luigi - Superstar Saga (USA, Australia).sav",
+  "system": "gba",
+  "core": "spiritualized-gba",
+  "pocket_core": "Spiritualized.GBA",
+  "pocket_platform": "gba",
+  "game_source": "No-Intro DAT 'Nintendo - Game Boy Advance (20260825-070327)'",
+  "attribution": "folder Saves/gba/common, only GBA core installed when written: Spiritualized.GBA (Analogue backup Cores/, Settings/); mincer_ray.GBA, the registry's other GBA core, was first released 2026-03-13, after the file and after this backup. Size and padding match Spiritualized.GBA: exactly the save type's size (EEPROM 64 Kbit = 8 KiB, SRAM = 32 KiB), where mincer_ray pads every save to 64 KiB with 0xFF (one-saves data/saves/analogue-pocket/mincer-ray-gba)",
+  "confidence": "high",
+  "written": "2022-09-05 14:57 (file mtime as read here; the Pocket stamps its own clock)",
+  "files": {
+    "Mario & Luigi - Superstar Saga (USA, Australia).sav": {
+      "size": 8192,
+      "sha1": "d35a823edef8cb5b7cf829de60fca72125c1b5a9"
+    }
+  },
+  "created": "2026-11-03",
+  "note": "file named with No-Intro's older '(USA, Australia)'"
+}

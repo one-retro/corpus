@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "wonderswan",
+  "core": "beetle-wonderswan",
+  "core_file": "mednafen_wswan_libretro.dylib",
+  "core_name": "Beetle WonderSwan",
+  "core_version": "v0.9.35.1 4b01295",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Digimon - Ver. WonderSwan (Hong Kong) (En).ws",
+    "sha1": "5cc59ec1687fe83ec5fb048d3dfc37849747df34",
+    "size": 2097152
+  },
+  "script": "scripts/wonderswan/Digimon - Ver. WonderSwan.txt",
+  "frames": 1916,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Digimon - Ver. WonderSwan (Hong Kong) (En).srm": {
+      "size": 32768,
+      "sha1": "29ae4f1d389311db744c2333acff090c27312bab"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

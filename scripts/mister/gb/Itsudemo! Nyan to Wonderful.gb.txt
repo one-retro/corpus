@@ -1,0 +1,30 @@
+load corpus-tmp/mgl/nyan.mgl 8
+# Itsudemo! Nyan to Wonderful (Japan) (MBC3 + clock + 8 KiB battery RAM): a
+# virtual pet that runs on the cartridge clock. さいしょから (new game), keep
+# the clock at AM 00:00, 出会い (meet), take the first puppy, name it "ア",
+# confirm: the game writes the pet and the clock it set.
+wait 1200
+press start 6       # title: さいしょから
+wait 120
+press a 6           # 現在の時間は? AM 00:00 -> けってい
+wait 120
+press a 6           # main menu: 出会い
+wait 120
+press a 6           # どの子にしますか? -> the first puppy
+wait 120
+press a 8           # なまえは? "ア"
+wait 40
+press up 8          # wraps to the bottom row
+wait 30
+press left 8        # wraps to おわり
+wait 30
+press a 8           # おわり -> この子でよろしいですか? いいえ / はい
+wait 120
+press a 8           # はい (the default)
+wait 200
+shot registered     # back on the main menu with the puppy registered
+wait 60
+wait 30
+save
+wait 60
+shot final

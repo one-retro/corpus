@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "mastersystem",
+  "core": "gearsystem",
+  "core_file": "gearsystem_libretro.dylib",
+  "core_name": "Gearsystem",
+  "core_version": "3.9.24-9-gf1202e8",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Ultima IV - Quest of the Avatar (Europe, Brazil) (En).sms",
+    "sha1": "a90e21e5961bcf2e10b715a009c04e7c2017a3b1",
+    "size": 524288
+  },
+  "script": "scripts/mastersystem/Ultima IV.txt",
+  "frames": 11036,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Ultima IV - Quest of the Avatar (Europe, Brazil) (En).srm": {
+      "size": 32768,
+      "sha1": "45cbe22a6972b5e3c0f84bf28d3a2be91066c541"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

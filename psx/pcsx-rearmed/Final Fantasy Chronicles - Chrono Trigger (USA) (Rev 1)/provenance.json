@@ -1,0 +1,31 @@
+{
+  "method": "played",
+  "system": "psx",
+  "core": "pcsx-rearmed",
+  "core_file": "pcsx_rearmed_libretro.dylib",
+  "core_name": "PCSX-ReARMed",
+  "core_version": "r26 7b0e8f8",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Final Fantasy Chronicles - Chrono Trigger (USA) (Rev 1).cue",
+    "sha1": "8958dc68e4ba6b5d8aaf2f101b00ea38fc3ecdc5",
+    "size": 121
+  },
+  "script": "scripts/psx/Chrono Trigger.txt",
+  "frames": 30300,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Final Fantasy Chronicles - Chrono Trigger (USA) (Rev 1).srm": {
+      "size": 131072,
+      "sha1": "8f8a108cfcf08306377ac1b18bc9c99b488914d2"
+    },
+    "pcsx-card2.mcd": {
+      "size": 131072,
+      "sha1": "1b3c99be55273085e14b30983b636529b6dd7f46"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

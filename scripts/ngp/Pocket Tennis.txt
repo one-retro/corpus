@@ -1,0 +1,25 @@
+# Pocket Tennis: a TOURNAMENT match, lost by serving with B over and over. When
+# the match is lost the game writes the record to flash and returns to the
+# title, where B does nothing. RECORD then shows the tournament played.
+# NGP A is libretro b, NGP B is libretro a, Option is start.
+wait 1700           # the intro runs into the title menu
+press down 10
+wait 40
+press b 10          # TOURNAMENT
+wait 150
+press b 10          # NEW GAME
+wait 150
+press b 10          # player ROSE
+wait 150
+press b 10          # past the draw
+wait 600
+tap a 500 30        # serve and swing with B until the match is lost
+wait 300
+shot title
+press down 10
+wait 40
+press down 10
+wait 40
+press b 10          # RECORD
+wait 200
+shot record

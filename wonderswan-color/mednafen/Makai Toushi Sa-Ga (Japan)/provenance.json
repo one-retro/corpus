@@ -1,0 +1,32 @@
+{
+  "method": "played",
+  "system": "wonderswan-color",
+  "core": "mednafen",
+  "core_file": null,
+  "core_name": "Mednafen",
+  "core_version": "1.32.1",
+  "frontend": "Mednafen 1.32.1 (Homebrew), module 'wswan', isolated MEDNAFEN_HOME, -sound 0 -video.glvsync 0",
+  "rom": {
+    "name": "Makai Toushi Sa-Ga (Japan).wsc",
+    "size": 4194304,
+    "sha1": "6b7a9b810c932974cbda4de7178cf0ea5a90e628"
+  },
+  "script": "scripts/wonderswan-color/Makai Toushi Sa-Ga.txt",
+  "frames": 3522,
+  "options": null,
+  "input": "work/standalone/tools/sdlfeed.c (DYLD_INSERT_LIBRARIES into the ad-hoc-signed Homebrew binary): SDL key events synthesized inside the process on presented frames, from the retro-run script mapped to Mednafen's default keys (gen_sdlfeed.py); F9 snapshot for shot, F10 reset, F12 exit (Mednafen writes saves on exit)",
+  "started_from": null,
+  "files": {
+    "Makai Toushi Sa-Ga (Japan).957137e7d5249c02fecff063e0c86e87.sav": {
+      "size": 32768,
+      "sha1": "cff9648bb70a799bc7c70875e1af7758290e87c6"
+    }
+  },
+  "layout": {
+    "save_dir": "$MEDNAFEN_HOME/sav (default .mednafen/sav in the home folder)",
+    "name": "<ROM file name without extension>.<game MD5 as Mednafen computes it>.<ext> (filesys.fname_sav %f.%M%x)",
+    "written": "on exit"
+  },
+  "created": "2026-11-04",
+  "note": "32 KiB cartridge SRAM, the same size as beetle-wonderswan's .srm; contents differ (play-dependent: name, RNG). The load screen lists file 1 (HP 60) after the save."
+}

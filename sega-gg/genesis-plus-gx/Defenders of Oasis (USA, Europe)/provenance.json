@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "sega-gg",
+  "core": "genesis-plus-gx",
+  "core_file": "genesis_plus_gx_libretro.dylib",
+  "core_name": "Genesis Plus GX",
+  "core_version": "v1.7.4 f27655b",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Defenders of Oasis (USA, Europe).gg",
+    "sha1": "07c1167c3b6eea294a73272c256934406f48f9d5",
+    "size": 524288
+  },
+  "script": "scripts/sega-gg/Defenders of Oasis.txt",
+  "frames": 10140,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Defenders of Oasis (USA, Europe).srm": {
+      "size": 3840,
+      "sha1": "01128811d8e594140dfb2c6bdb1996fe289a46ad"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

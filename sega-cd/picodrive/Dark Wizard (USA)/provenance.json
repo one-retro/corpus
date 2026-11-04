@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "sega-cd",
+  "core": "picodrive",
+  "core_file": "picodrive_libretro.dylib",
+  "core_name": "PicoDrive",
+  "core_version": "2.05-1890c29",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Dark Wizard (USA).cue",
+    "sha1": "1aa0be1b173edab2df386824042764a98e0da048",
+    "size": 1349
+  },
+  "script": "scripts/sega-cd/Dark Wizard.txt",
+  "frames": 13130,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Dark Wizard (USA).srm": {
+      "size": 8192,
+      "sha1": "33edc53acfb48f697449ab0cf25bdb477baf9c32"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "Disc from the Trimmed Redump set, unpacked here: the data track is the real one, the audio tracks are zero-filled stand-ins of the exact sizes (silent CD audio; the disk was too full for the real ones). The .cue is the original."
+}

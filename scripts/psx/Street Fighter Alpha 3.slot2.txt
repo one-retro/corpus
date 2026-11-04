@@ -1,0 +1,32 @@
+# Street Fighter Alpha 3: Option Mode > Memory Card > Slot 1 > Save. "ALPHA3
+# SAVE DATA" is a 1-block save in a PocketStation-capable file
+# (BASLUSP00821-ZERO3D). The game tries to auto-load at boot and finds nothing.
+#
+# Slot 2 variant: the same save, written to the card in slot 2, for the cores'
+# second-card files (run with an options file that puts a card in slot 2).
+wait 6000           # attract demo
+press start 6       # -> title
+wait 600
+press start 6       # -> mode menu, cursor on Arcade Mode
+wait 600
+tap up 1 30         # wraps to Entry Mode (going down would count Versus Mode,
+                    # which is skipped when port 2 is empty, as in SwanStation)
+tap right 1 30      # Option Mode
+press b 6
+wait 300
+shot options
+tap down 3 20       # Memory Card
+press b 6
+wait 300            # Slot 1 / Slot 2
+press down 6        # Slot 2
+wait 20
+press b 6           # -> Load / Save
+wait 200
+press down 6        # Save
+wait 20
+press b 6
+wait 400            # "A save requires 1 block. Save data?" Yes
+press b 6
+wait 600
+shot saved          # "SAVE COMPLETE!"
+wait 60

@@ -1,0 +1,22 @@
+# Included by Wizardry.txt: from the S-RAM prompt to NAME >ABC at the
+# Training Grounds.
+key 2 30            # S-RAM カートリッジがあります: 2 start the game
+wait 60
+key return 30
+wait 400
+key s 20            # S> ウィザードリィをはじめる (start)
+wait 300
+key 1 20            # 1> ENGLISH
+wait 700
+key e 20            # castle: E)DGE OF TOWN
+wait 700
+key t 20            # T)RAINING
+wait 700
+key a 10            # NAME >ABC
+wait 30
+key b 10
+wait 30
+key c 10
+wait 30
+key return 10
+wait 400

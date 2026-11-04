@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "sega-32x",
+  "core": "picodrive",
+  "core_file": "picodrive_libretro.dylib",
+  "core_name": "PicoDrive",
+  "core_version": "2.05-1890c29",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "NBA Jam - Tournament Edition (World).32x",
+    "sha1": "c8af3e74c49514669ba6652ec0c81bccf77873b6",
+    "size": 4194304
+  },
+  "script": "scripts/sega-32x/NBA Jam - Tournament Edition.txt",
+  "frames": 74264,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "NBA Jam - Tournament Edition (World).srm": {
+      "size": 8192,
+      "sha1": "0e2f448bdf3ed711fce2620eed39e61e9175c941"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

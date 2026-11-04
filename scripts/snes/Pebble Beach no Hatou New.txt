@@ -1,0 +1,31 @@
+# Pebble Beach no Hatou New - Tournament Edition (SA-1, 64 KB BW-RAM):
+# MAIN MENU > メンバーデータ > Player-1 > 名前変更, rename Player-1 to "ABC".
+# The game writes the member record into BW-RAM ("Player-1" at $E010
+# becomes "ABC"). In this game B selects and A goes back; Start is END in
+# the name entry.
+wait 1200
+press start 6       # title
+wait 150
+press start 6       # -> MAIN MENU (cursor on クイックスタート)
+wait 210
+press right 10      # ゲーム選択
+wait 60
+press down 10       # メンバーデータ
+wait 60
+press b 6           # -> SELECT PLAYER (Player-1)
+wait 120
+press b 6           # -> MEMBER DATA for Player-1
+wait 120
+press b 6           # 名前変更 -> REGISTER PLAYERS
+wait 120
+tap b 1 30          # A
+tap right 1 20
+tap b 1 30          # B
+tap right 1 20
+tap b 1 30          # C
+press start 6       # END: the record is written
+wait 120
+press a 6           # back to SELECT PLAYER, which lists ABC
+wait 150
+shot registered
+wait 30

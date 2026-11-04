@@ -1,0 +1,35 @@
+# Fatal Fury 2 (AES, memory card): start a game, pick Terry, lose both rounds without
+# touching the stick, let the continue count run out. At GAME OVER the game asks
+# "CARD SAVE OK?" (cursor on NO): up, A. A blank card makes the BIOS ask to
+# format it first (A = yes); a card that is already formatted skips that.
+# Neo Geo A is RetroPad b. The prompt is up from about frame 7560 to 7840 in
+# both FinalBurn Neo and Geolith.
+wait 1300
+press start 6          # title
+wait 120
+press b 6              # LEVEL SELECT: NORMAL
+wait 120
+press start 6
+repeat 6
+wait 120
+press b 6              # through HOW TO PLAY, PLAYER SELECT (Terry)
+end
+wait 5336              # the CPU wins two rounds; CONTINUE? runs out; GAME OVER
+shot cardsave
+tap up 1 30            # YES
+press b 6
+wait 150
+shot format
+press b 6              # MEMORY CARD NOT FORMATTED: A = YES (no-op if formatted)
+wait 400
+shot saved
+# power cycle and start again: the game offers to load the card
+reset
+wait 1300
+press start 6
+wait 120
+press b 6
+wait 120
+press start 6
+wait 150
+shot cardload          # CARD LOAD OK? : the game found its save on the card

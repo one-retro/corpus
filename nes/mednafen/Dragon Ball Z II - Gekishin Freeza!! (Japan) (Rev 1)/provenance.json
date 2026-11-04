@@ -1,0 +1,32 @@
+{
+  "method": "played",
+  "system": "nes",
+  "core": "mednafen",
+  "core_file": null,
+  "core_name": "Mednafen",
+  "core_version": "1.32.1",
+  "frontend": "Mednafen 1.32.1 (Homebrew), module 'nes', isolated MEDNAFEN_HOME, -sound 0 -video.glvsync 0",
+  "rom": {
+    "name": "Dragon Ball Z II - Gekishin Freeza!! (Japan) (Rev 1).nes",
+    "size": 524304,
+    "sha1": "661cd5892281ace89403a673e8657daef60fdf09"
+  },
+  "script": "scripts/nes/Dragon Ball Z II.txt",
+  "frames": 1850,
+  "options": null,
+  "input": "work/standalone/tools/sdlfeed.c (DYLD_INSERT_LIBRARIES into the ad-hoc-signed Homebrew binary): SDL key events synthesized inside the process on presented frames, from the retro-run script mapped to Mednafen's default keys (gen_sdlfeed.py); F9 snapshot for shot, F10 reset, F12 exit (Mednafen writes saves on exit)",
+  "started_from": null,
+  "files": {
+    "Dragon Ball Z II - Gekishin Freeza!! (Japan) (Rev 1).59ce3cea96c3a41388a44eeed79b1c29.sav": {
+      "size": 256,
+      "sha1": "8757c5dd4541b0550feccfbcada9c86cb154a6b9"
+    }
+  },
+  "layout": {
+    "save_dir": "$MEDNAFEN_HOME/sav (default .mednafen/sav in the home folder)",
+    "name": "<ROM file name without extension>.<game MD5 as Mednafen computes it>.<ext> (filesys.fname_sav %f.%M%x)",
+    "written": "on exit"
+  },
+  "created": "2026-11-04",
+  "note": "24C02 EEPROM: 256 bytes (FCEUX 2.6.6 writes a 0-byte file for the same play)."
+}

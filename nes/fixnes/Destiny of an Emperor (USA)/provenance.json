@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "nes",
+  "core": "fixnes",
+  "core_file": "fixnes_libretro.dylib",
+  "core_name": "fixNES",
+  "core_version": "Alpha v1.3.1",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Destiny of an Emperor (USA).nes",
+    "sha1": "cc58ba9c622b0ee09ccef2ed9f9e2deef4b518d4",
+    "size": 262160
+  },
+  "script": "scripts/nes/Destiny of an Emperor.txt",
+  "frames": 2194,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Destiny of an Emperor (USA).srm": {
+      "size": 8192,
+      "sha1": "a131168bd566f5076f4a3538de5231b93db091c5"
+    }
+  },
+  "created": "2026-11-03",
+  "note": "runner: work/nes/runner/retro-run (tools/retro-run with RetroArch's init order and a disk control interface)"
+}

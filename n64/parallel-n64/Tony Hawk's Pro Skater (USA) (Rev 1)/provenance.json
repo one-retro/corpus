@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "n64",
+  "core": "parallel-n64",
+  "core_file": "parallel_n64_libretro.dylib",
+  "core_name": "ParaLLEl N64",
+  "core_version": "1.0 e8cbdbb",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Tony Hawk's Pro Skater (USA) (Rev 1).z64",
+    "sha1": "4900b6c92fb8df1765e91e891dccc525bb102fe1",
+    "size": 12582912
+  },
+  "script": "scripts/n64/Tony Hawk's Pro Skater.txt",
+  "frames": 11736,
+  "options": "parallel-n64-gfxplugin = angrylion\nparallel-n64-pak1 = memory\n",
+  "started_from": null,
+  "files": {
+    "Tony Hawk's Pro Skater (USA) (Rev 1).srm": {
+      "size": 296960,
+      "sha1": "6ab49bd601a35e1b0dbde8f70e5df026e4e5a0a3"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

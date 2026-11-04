@@ -1,0 +1,28 @@
+# Might and Magic III - Isles of Terra (Japan): NEW GAME starts in Fountain
+# Head with the default party. Start opens the Option Menu; the fourth item,
+# セーブ (save), lists MM3_SAVE_00..05; saving to slot 00 shows
+# "セーブしました" (saved). The game's file takes every free block of the
+# internal backup RAM (125 of 125). A Japanese disc, so Genesis Plus GX uses
+# the Japanese BIOS and writes scd_J.brm.
+wait 600
+press start 6       # BIOS
+wait 1200
+repeat 5            # logos, then the title menu: NEW GAME / OPTION
+press start 6
+wait 300
+end
+press start 6       # NEW GAME
+wait 900
+press start 6       # Option Menu
+wait 300
+press down 6
+wait 30
+press down 6
+wait 30
+press down 6        # セーブ
+wait 30
+press a 6           # SAVE: MM3_SAVE_00 ... 05
+wait 200
+press a 6           # slot 00
+wait 300
+shot saved          # "セーブしました"

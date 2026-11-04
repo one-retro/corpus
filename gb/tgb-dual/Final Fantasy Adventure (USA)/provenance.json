@@ -1,0 +1,31 @@
+{
+  "method": "played",
+  "system": "gb",
+  "core": "tgb-dual",
+  "core_file": "tgbdual_libretro.dylib",
+  "core_name": "TGB Dual",
+  "core_version": "v0.8.3 0392c9c",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Final Fantasy Adventure (USA).gb",
+    "sha1": "8b93c55ee2660c60cf86dd70058f96ace98782c8",
+    "size": 262144
+  },
+  "script": "scripts/gb/Final Fantasy Adventure.txt",
+  "frames": 2300,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Final Fantasy Adventure (USA).rtc": {
+      "size": 4,
+      "sha1": "5d76ff032ffa7d57280743af0d2e296d98170d27"
+    },
+    "Final Fantasy Adventure (USA).srm": {
+      "size": 8192,
+      "sha1": "235692c8bc8aa0476b040bfbbee6d1665527488e"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

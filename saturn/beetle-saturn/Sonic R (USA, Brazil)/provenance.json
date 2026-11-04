@@ -1,0 +1,35 @@
+{
+  "method": "played",
+  "system": "saturn",
+  "core": "beetle-saturn",
+  "core_file": "mednafen_saturn_libretro.dylib",
+  "core_name": "Beetle Saturn",
+  "core_version": "v1.32.1",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Sonic R (USA, Brazil).cue",
+    "sha1": "3b46cce154d915f6865ff0813e521434a79c99cb",
+    "size": 98
+  },
+  "script": "scripts/saturn/Sonic R.txt",
+  "frames": 2608,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Sonic R (USA, Brazil).bcr": {
+      "size": 524288,
+      "sha1": "1794c1fdc415b33b2eccb827a5f8bb13128b4aa3"
+    },
+    "Sonic R (USA, Brazil).smpc": {
+      "size": 12,
+      "sha1": "2b81b13fc40f171ab9b10687a892cafe3b70ffdd"
+    },
+    "Sonic R (USA, Brazil).srm": {
+      "size": 32768,
+      "sha1": "58e3c4897f7f736e192e4daf46236c254a6e5cd9"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "Run from the data track alone: the cue lists only track 01 (the Redump cue's audio tracks were left out to save space); the BIOS and game do not need them to boot and save."
+}

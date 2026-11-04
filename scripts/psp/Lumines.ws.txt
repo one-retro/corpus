@@ -1,0 +1,7 @@
+# PPSSPP debugger WebSocket plan for work/standalone/tools/ppsspp_ws.py (waits in 1/60 s).
+# Lumines writes its system save (ULUS10002LUMINES) by itself during boot: no input is needed.
+wait 600
+status
+wait 1200
+status
+shot t30

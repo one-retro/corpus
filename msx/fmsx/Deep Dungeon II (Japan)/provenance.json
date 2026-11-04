@@ -1,0 +1,35 @@
+{
+  "method": "played",
+  "system": "msx",
+  "core": "fmsx",
+  "core_file": "fmsx_libretro.dylib",
+  "core_name": "fMSX",
+  "core_version": "6.0 4de1175",
+  "frontend": "retro-run (writes saves as RetroArch does), via work/msx/make-save-x.py: content copied into the run directory",
+  "renderer": "software",
+  "rom": {
+    "name": "Deep Dungeon II (Japan).rom",
+    "sha1": "d82135a5e28b750c44995af116db890a15f6428a",
+    "size": 131072
+  },
+  "extra_content": null,
+  "script": "scripts/msx/Deep Dungeon II.txt",
+  "frames": 4176,
+  "options": null,
+  "port0_device": 257,
+  "started_from": null,
+  "files": {
+    "Deep Dungeon II (Japan).sav": {
+      "size": 8192,
+      "sha1": "58fcc2e3853210df55f6f152786ef011e508303a",
+      "location": "content-dir"
+    },
+    "system/CMOS.ROM": {
+      "size": 52,
+      "sha1": "e8880ec014926ef52a724c4c4b5d011b8d66a0d7",
+      "location": "sysdir"
+    }
+  },
+  "created": "2026-11-03",
+  "note": "fMSX writes cartridge SRAM to <ROM path without extension>.sav beside the ROM (location content-dir), not in the save directory, on unload; RETRO_MEMORY_SAVE_RAM is not used for it, so RetroArch writes no .srm. system/CMOS.ROM is the RTC/CMOS (fMSX default mode MSX2+), written into the system directory on unload. Port 0 device set to 257 (3 = Keyboard, 257 = Joystick + Emulated Keyboard) with work/msx/retro-run-x."
+}

@@ -1,0 +1,31 @@
+load corpus-tmp/mgl/bomberman93.mgl 8
+# Bomberman '93: NORMAL GAME, lose all three lives on A-1 by bombing yourself,
+# then SAVE at the continue menu into file 1 ("BOMBER-93 A-1").
+repeat 8
+wait 120
+press start 6         # logos, title, NORMAL GAME, story
+end
+wait 300
+tap a 3 150           # briefing
+wait 400
+repeat 31
+press a 4             # drop a bomb where you stand, every second: three deaths
+wait 56
+end
+wait 600              # CONTINUE 2 / END / SAVE
+shot gameover
+press down 8
+wait 40
+press down 8          # SAVE
+wait 40
+press a 6             # WHICH FILE TO SAVE TO?
+wait 150
+press a 6             # 1 BOMBER-93
+wait 120
+shot saved            # 1 BOMBER-93 A-1 ... OK
+press a 6
+wait 120
+wait 30
+save
+wait 60
+shot final

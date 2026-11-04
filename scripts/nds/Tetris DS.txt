@@ -1,0 +1,28 @@
+# Tetris DS: SINGLE PLAYER, STANDARD, MARATHON at level 1, then hard-drop
+# (Up) every piece until the stack tops out. The game writes the new high
+# score on GAME OVER. TRY AGAIN starts a new game whose HIGH SCORE shows it.
+wait 1200
+press start 6       # title -> SINGLE PLAYER
+wait 200
+press a 6           # SINGLE PLAYER
+wait 200
+press a 6           # STANDARD
+wait 200
+press a 6           # MARATHON -> level 1
+wait 200
+press a 6           # level
+wait 60
+press right 6       # OK
+wait 60
+press a 6
+wait 300
+repeat 60           # hard drops until the stack tops out
+press up 4
+wait 30
+end
+wait 300
+shot gameover       # GAME OVER, the score
+press a 6           # TRY AGAIN
+wait 300
+shot highscore      # new game: HIGH SCORE is the score just saved
+wait 2400           # melonDS writes its .sav 2 s (wall clock) after the game's last write

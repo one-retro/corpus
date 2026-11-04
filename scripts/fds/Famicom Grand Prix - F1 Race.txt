@@ -1,0 +1,30 @@
+# Famicom Grand Prix - F1 Race (Disk Writer): NAME, type a driver name
+# (アイウ) and choose "save": FC_SAVE (side A) is written (WAIT). The
+# console is then reset and the NAME form, read back from the disk, shows it.
+wait 1200
+press start 10      # PUSH START -> PLEASE SELECT
+wait 300
+press down 6
+wait 20
+press down 6        # NAME
+wait 20
+press start 10
+wait 200
+include _service-form.inc
+tap right 10 12     # save
+shot name
+press a 6           # save: FC_SAVE is written
+wait 1500
+shot written
+reset
+wait 1200
+press start 10
+wait 300
+press down 6
+wait 20
+press down 6
+wait 20
+press start 10      # NAME: the form as the disk holds it
+wait 300
+shot saved
+wait 30

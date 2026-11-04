@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "genesis",
+  "core": "blastem",
+  "core_file": "blastem_libretro.dylib",
+  "core_name": "BlastEm",
+  "core_version": "1.0.1-pre",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "NBA Jam (USA, Europe) (Rev 1).md",
+    "sha1": "55f2b26a932c69b2c7cb4f24f56b43f24f113a7c",
+    "size": 2097152
+  },
+  "script": "scripts/genesis/NBA Jam.blastem.txt",
+  "frames": 33928,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "NBA Jam (USA, Europe) (Rev 1).srm": {
+      "size": 256,
+      "sha1": "add3d6281794a68e8f935bf6e6e792b29862d562"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

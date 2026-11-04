@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "psx",
+  "core": "swanstation",
+  "core_file": "swanstation_libretro.dylib",
+  "core_name": "SwanStation",
+  "core_version": "1.0.0 631f0fb",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "opengl",
+  "rom": {
+    "name": "Diablo (USA) (En,Fr,De,Sv).cue",
+    "sha1": "0789d354e661ae88facb3f22fc2cf39e0bc771e6",
+    "size": 92
+  },
+  "script": "scripts/psx/Diablo.txt",
+  "frames": 21708,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Diablo (USA) (En,Fr,De,Sv).srm": {
+      "size": 131072,
+      "sha1": "75b2c89609a78cb0932d91e4d19e82d2170228cb"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

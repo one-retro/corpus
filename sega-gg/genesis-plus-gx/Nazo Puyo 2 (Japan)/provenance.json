@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "sega-gg",
+  "core": "genesis-plus-gx",
+  "core_file": "genesis_plus_gx_libretro.dylib",
+  "core_name": "Genesis Plus GX",
+  "core_version": "v1.7.4 f27655b",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Nazo Puyo 2 (Japan).gg",
+    "sha1": "dbd511aff622c618eac0c21de36965b869362dbd",
+    "size": 262144
+  },
+  "script": "scripts/sega-gg/Nazo Puyo 2.txt",
+  "frames": 3498,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Nazo Puyo 2 (Japan).srm": {
+      "size": 8192,
+      "sha1": "edb13eec964f50b3009e92968e739dda839386c8"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

@@ -1,0 +1,18 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "duckstation",
+  "url": "https://github.com/duckstation-unoff-issue-tracker-admin/duckstation-unofficial-issue-tracker/files/10717417/T.ai.Fu.-.Wrath.of.the.Tiger.Italy._1.zip",
+  "source_page": "https://github.com/duckstation-unoff-issue-tracker-admin/duckstation-unofficial-issue-tracker/issues/105",
+  "source": "GitHub (unofficial DuckStation issue tracker)",
+  "author": "sigarettenstank",
+  "licence": null,
+  "fetched": "2026-11-04",
+  "what_it_is": "DuckStation 0.1-5536 per-game card; PAL save just before level 5",
+  "files": {
+    "T'ai Fu - Wrath of the Tiger (Italy)_1.mcd": {
+      "size": 131072,
+      "sha1": "63d581a52510b0015ae71b920984abcc3faac356"
+    }
+  }
+}

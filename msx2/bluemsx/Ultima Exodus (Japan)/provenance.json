@@ -1,0 +1,30 @@
+{
+  "method": "played",
+  "system": "msx2",
+  "core": "bluemsx",
+  "core_file": "bluemsx_libretro.dylib",
+  "core_name": "blueMSX",
+  "core_version": "git e3086eb",
+  "frontend": "retro-run (writes saves as RetroArch does), via work/msx/make-save-x.py: content copied into the run directory",
+  "renderer": "software",
+  "rom": {
+    "name": "Ultima Exodus (Japan).rom",
+    "sha1": "18be429f8b5c7bc4775c99292110aa09341cd644",
+    "size": 262144
+  },
+  "extra_content": null,
+  "script": "scripts/msx2/Ultima Exodus.txt",
+  "frames": 3940,
+  "options": null,
+  "port0_device": null,
+  "started_from": null,
+  "files": {
+    "Ultima Exodus (Japan).sram": {
+      "size": 8192,
+      "sha1": "f811bc7192c6014ca06c7f0109fe932eafb07a15",
+      "location": "savedir"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "blueMSX writes <ROM stem>.sram into the save directory, but only when the cartridge is re-inserted (retro_reset does this); retro_unload_game never writes it. The script's reset is what produced this file."
+}

@@ -1,0 +1,19 @@
+{
+  "method": "downloaded",
+  "system": "nes",
+  "core": "nes-mister",
+  "url": "https://github.com/euan-forrester/save-file-converter/files/8182973/NES.zip",
+  "source_page": "https://github.com/euan-forrester/save-file-converter/issues/80#issuecomment-1058805995",
+  "source": "GitHub (euan-forrester/save-file-converter issue #80)",
+  "author": "birdybro (GitHub; MiSTer contributor)",
+  "licence": null,
+  "fetched": "2026-11-03",
+  "what_it_is": "Save made by birdybro on MiSTer on 2022-03-03 to show the file size with an NES 2.0-headered ROM ('forced a save, and it created 8KB files').",
+  "files": {
+    "Wizardry - Knight of Diamonds - The Second Scenario (USA).sav": {
+      "size": 8192,
+      "sha1": "f58d31fc50e7d32b6ce7eb6227b321318f856081"
+    }
+  },
+  "note": "MiSTer NES core (2022 build), ROM with an NES 2.0 header that declares 8 KiB of battery PRG-RAM, so the core wrote exactly 8 KiB. Zip held this and the Proving Grounds save."
+}

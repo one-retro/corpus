@@ -1,0 +1,27 @@
+{
+  "method": "device-backup",
+  "device": "Nintendo 2DS",
+  "producer": "JKSV",
+  "backup_path": "JKSV/Saves/Kirby  Triple Deluxe/2034.02.05_14.21.52",
+  "system": "3ds",
+  "core": "_jksv",
+  "title": {
+    "jksv_folder": "Kirby  Triple Deluxe",
+    "name": "Kirby: Triple Deluxe",
+    "product_code": "CTR-P-BALE",
+    "title_id": "000400000010BF00"
+  },
+  "game_source": "No-Intro DAT 'Nintendo - Nintendo 3DS (Encrypted) (20260826-020750)', by product code; the backup does not say which revision of the game made it, so the folder is the unrevised entry",
+  "attribution": "JKSV save manager on the owner's 2DS, real hardware; JKSV's title cache (JKSV/titles) gives the product code and title ID for its folder name",
+  "confidence": "high",
+  "written": "2034.02.05_14.21.52 (JKSV's backup folder, the 2DS's clock, which was set to 2034)",
+  "files": {
+    "Saves/Kirby  Triple Deluxe/2034.02.05_14.21.52/savedata.dat": {
+      "size": 14560,
+      "sha1": "3a419d20877dc9c59ff3653ef2db15aae54170ea",
+      "role": "primary"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

@@ -1,0 +1,18 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "duckstation",
+  "url": "https://archive.org/download/9.8.2026-4x-4-world-trophy-saves",
+  "source_page": "https://archive.org/details/9.8.2026-4x-4-world-trophy-saves",
+  "source": "archive.org",
+  "author": "Ladislav Svoboda",
+  "licence": "Public Domain Mark 1.0",
+  "fetched": "2026-11-04",
+  "what_it_is": "memcards/shared_card_1.mcd inside the item's .rar (Windows 11 DuckStation); the same card grown to 8 saves of 6 PAL games (multi-block Alien Resurrection and 4x4 World Trophy); the latest snapshot",
+  "files": {
+    "shared_card_1.mcd": {
+      "size": 131072,
+      "sha1": "68a7924321c54b550b2ad808969a25619bb48259"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "n64",
+  "core": "mupen64plus-next",
+  "core_file": "mupen64plus_next_libretro.dylib",
+  "core_name": "Mupen64Plus-Next",
+  "core_version": "3.0-Vulkan 15bada8",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Super Mario 64 (USA).z64",
+    "sha1": "9bef1128717f958171a4afac3ed78ee2bb4e86ce",
+    "size": 8388608
+  },
+  "script": "scripts/n64/Super Mario 64.txt",
+  "frames": 1926,
+  "options": "mupen64plus-rdp-plugin = angrylion\n",
+  "started_from": null,
+  "files": {
+    "Super Mario 64 (USA).srm": {
+      "size": 296960,
+      "sha1": "b29aa75ecab09b468f32730d41027bd56f5edbd4"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

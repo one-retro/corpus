@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "sega-gg",
+  "core": "genesis-plus-gx",
+  "core_file": "genesis_plus_gx_libretro.dylib",
+  "core_name": "Genesis Plus GX",
+  "core_version": "v1.7.4 f27655b",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Magical Puzzle Popils (World) (En,Ja).gg",
+    "sha1": "fb939f0810d0763b9abaeec1a2bfbabacaad5441",
+    "size": 131072
+  },
+  "script": "scripts/sega-gg/Magical Puzzle Popils.txt",
+  "frames": 1530,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Magical Puzzle Popils (World) (En,Ja).srm": {
+      "size": 8192,
+      "sha1": "5fb0a9127fc0657bbd4f1a47e0ada10d61175978"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

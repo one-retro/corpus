@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "wonderswan",
+  "core": "beetle-wonderswan",
+  "core_file": "mednafen_wswan_libretro.dylib",
+  "core_name": "Beetle WonderSwan",
+  "core_version": "v0.9.35.1 4b01295",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "GunPey (Japan).ws",
+    "sha1": "ee4b777f029bac9561e60c19407d08360e733822",
+    "size": 1048576
+  },
+  "script": "scripts/wonderswan/GunPey.txt",
+  "frames": 8204,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "GunPey (Japan).srm": {
+      "size": 2048,
+      "sha1": "710412c8705f8c39d0acf9861bcea5107b50d58c"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

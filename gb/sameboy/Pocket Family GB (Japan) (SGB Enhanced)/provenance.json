@@ -1,0 +1,31 @@
+{
+  "method": "played",
+  "system": "gb",
+  "core": "sameboy",
+  "core_file": "sameboy_libretro.dylib",
+  "core_name": "SameBoy",
+  "core_version": "1.0.5 90e2899",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Pocket Family GB (Japan) (SGB Enhanced).gb",
+    "sha1": "162b0ab1fcfcf9b7ac888f137fedc41264219cf9",
+    "size": 524288
+  },
+  "script": "scripts/gb/Pocket Family GB.txt",
+  "frames": 7246,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Pocket Family GB (Japan) (SGB Enhanced).rtc": {
+      "size": 32,
+      "sha1": "6d24edb3a4bd765447a7f3e25abe4e17585b6398"
+    },
+    "Pocket Family GB (Japan) (SGB Enhanced).srm": {
+      "size": 32768,
+      "sha1": "da55fbc8354dbb9da79813d25a256278cf236ccb"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

@@ -1,0 +1,45 @@
+# Ultima IV - Quest of the Avatar: create the Avatar "ABC" (male), answer
+# the gypsy's seven questions with A, then Camp > Save into record 1.
+# Button 2 (a) confirms and advances text; button 1 (b) advances text too and
+# on the map is "Pass", which is harmless, so the end of the intro is
+# finished with b presses to absorb a page more or less.
+wait 1470           # Lord British / Origin title
+press start 6
+wait 150
+press b 6           # Options: Journey Onward / Initiate New Game
+wait 150
+press b 6           # Journey Onward with no record -> name entry
+wait 150
+tap a 1 20          # A
+tap right 1 20
+tap a 1 20          # B
+tap right 1 20
+tap a 1 20          # C
+tap down 4 20       # bottom row
+tap right 9 20      # -> END
+press a 6           # END -> "Art thou Male or Female?"
+wait 120
+press a 6           # Male
+wait 120
+repeat 45           # the story, the fair, the gypsy's seven questions (A each)
+press a 6
+wait 150
+end
+repeat 5            # last pages, then "Pass" on the map
+press b 6
+wait 150
+end
+press a 6           # Command menu
+wait 60
+tap down 7 15       # Talk Attack Magic Get Chest Use Ready Search -> Camp
+wait 20
+press a 6           # Rest / New Order / Status / Save
+wait 60
+tap down 3 15       # -> Save
+wait 20
+press a 6           # "Save a game. Please select a number:" Records of Journey
+wait 120
+press a 6           # record 1: "Done." and ABC in record 1
+wait 90
+shot saved
+wait 30

@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "nds",
+  "core": "noods",
+  "core_file": "noods_libretro.dylib",
+  "core_name": "NooDS",
+  "core_version": "9a26653",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Bomberman (USA).nds",
+    "sha1": "c88a441cf460a8a863fc31719ef0f56ee86b4e05",
+    "size": 8388608
+  },
+  "script": "scripts/nds/Bomberman.txt",
+  "frames": 9930,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Bomberman (USA).sav": {
+      "size": 512,
+      "sha1": "958d3d873f09d96d7c6948e59520a61d2d85ab38"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

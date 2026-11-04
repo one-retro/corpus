@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "mastersystem",
+  "core": "genesis-plus-gx-wide",
+  "core_file": "genesis_plus_gx_wide_libretro.dylib",
+  "core_name": "Genesis Plus GX Wide",
+  "core_version": "v1.7.4 b7ad005",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Phantasy Star (USA, Europe) (Rev A).sms",
+    "sha1": "07fcf297be4f4c9d92cd3f119a7ac48467e06838",
+    "size": 524288
+  },
+  "script": "scripts/mastersystem/Phantasy Star.txt",
+  "frames": 6066,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Phantasy Star (USA, Europe) (Rev A).srm": {
+      "size": 8188,
+      "sha1": "39ebb6b1a0440d7a75945bee09e4974542fab252"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

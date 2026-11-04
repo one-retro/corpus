@@ -1,0 +1,27 @@
+{
+  "method": "device-backup",
+  "device": "Nintendo 2DS",
+  "producer": "JKSV",
+  "backup_path": "JKSV/Saves/Majora's Mask 3D/2034.02.05_14.21.53",
+  "system": "3ds",
+  "core": "_jksv",
+  "title": {
+    "jksv_folder": "Majora's Mask 3D",
+    "name": "Majora's Mask 3D",
+    "product_code": "CTR-P-AJRE",
+    "title_id": "0004000000125500"
+  },
+  "game_source": "No-Intro DAT 'Nintendo - Nintendo 3DS (Encrypted) (20260826-020750)', by product code; the backup does not say which revision of the game made it, so the folder is the unrevised entry",
+  "attribution": "JKSV save manager on the owner's 2DS, real hardware; JKSV's title cache (JKSV/titles) gives the product code and title ID for its folder name",
+  "confidence": "high",
+  "written": "2034.02.05_14.21.53 (JKSV's backup folder, the 2DS's clock, which was set to 2034)",
+  "files": {
+    "Saves/Majora's Mask 3D/2034.02.05_14.21.53/save0.bin": {
+      "size": 79384,
+      "sha1": "f26e195c933e3a01ce66dedc4c5d7a4043acb58f",
+      "role": "primary"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

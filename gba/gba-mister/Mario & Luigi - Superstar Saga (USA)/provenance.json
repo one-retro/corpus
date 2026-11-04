@@ -1,0 +1,19 @@
+{
+  "method": "downloaded",
+  "system": "gba",
+  "core": "gba-mister",
+  "url": "https://github.com/MiSTer-devel/GBA_MiSTer/files/7071002/Mario.Luigi.-.Superstar.Saga.USA.zip",
+  "source_page": "https://github.com/MiSTer-devel/GBA_MiSTer/issues/101",
+  "source": "GitHub (MiSTer-devel/GBA_MiSTer issue #101, 'Softlock Entering BeanBean Castle Town in Mario and Luigi')",
+  "author": "ashbachj (issue reporter); RobertPeip replied 'I used your savegame' in the MiSTer core",
+  "licence": "none stated (a file attached to a public GitHub issue)",
+  "fetched": "2026-11-03",
+  "what_it_is": "The reporter's own save from playing on MiSTer up to the Beanbean border (file 1, 2:39, Hoohoo Mountain Track's End); 8 KiB EEPROM image. The zip entry is dated 1980-01-01 00:00 UTC, the date a MiSTer without an RTC board stamps on files it writes.",
+  "files": {
+    "Mario & Luigi - Superstar Saga (USA).sav": {
+      "size": 8192,
+      "sha1": "618a4e6ea1cde1bc509142bed4bf9f2aeb942c37"
+    }
+  },
+  "note": "Origin inferred, not stated outright: the issue is a MiSTer bug report, the reporter played on MiSTer, and the file carries MiSTer's no-clock FAT date. Loads unchanged in mGBA (libretro): the EEPROM bytes are in the same order mGBA, VBA-M, gpSP and Beetle GBA write."
+}

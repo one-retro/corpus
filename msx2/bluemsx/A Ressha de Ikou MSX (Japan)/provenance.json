@@ -1,0 +1,30 @@
+{
+  "method": "played",
+  "system": "msx2",
+  "core": "bluemsx",
+  "core_file": "bluemsx_libretro.dylib",
+  "core_name": "blueMSX",
+  "core_version": "git e3086eb",
+  "frontend": "retro-run (writes saves as RetroArch does), via work/msx/make-save-x.py: content copied into the run directory",
+  "renderer": "software",
+  "rom": {
+    "name": "A Ressha de Ikou MSX (Japan).rom",
+    "sha1": "5fd07ed5b7c0492d42ed91a54a0fe80ce6e4e40d",
+    "size": 131072
+  },
+  "extra_content": null,
+  "script": "scripts/msx2/A Ressha de Ikou.txt",
+  "frames": 6790,
+  "options": null,
+  "port0_device": null,
+  "started_from": null,
+  "files": {
+    "A Ressha de Ikou MSX (Japan).sram": {
+      "size": 2048,
+      "sha1": "3b9304ce99cd95732ed9da4a7e1f221ed6823cac",
+      "location": "savedir"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "blueMSX writes <ROM stem>.sram into the save directory, but only when the cartridge is re-inserted (retro_reset does this); retro_unload_game never writes it. The script's reset is what produced this file."
+}

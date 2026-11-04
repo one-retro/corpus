@@ -1,0 +1,31 @@
+{
+  "method": "played",
+  "system": "gbc",
+  "core": "vba-m",
+  "core_file": "vbam_libretro.dylib",
+  "core_name": "VBA-M",
+  "core_version": " 115defb",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Robopon - Sun Version (USA) (SGB Enhanced) (GB Compatible).gbc",
+    "sha1": "399c928a38a3901b7a1093bd61f5a4d8c05b9771",
+    "size": 1048576
+  },
+  "script": "scripts/gbc/Robopon Sun.txt",
+  "frames": 15932,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Robopon - Sun Version (USA) (SGB Enhanced) (GB Compatible).rtc": {
+      "size": 8,
+      "sha1": "ed5291bc0a208e6fe8ae0fc22618110739ff725d"
+    },
+    "Robopon - Sun Version (USA) (SGB Enhanced) (GB Compatible).srm": {
+      "size": 32768,
+      "sha1": "98099b33b745d31c3550075b58e9d54b6fa40d27"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

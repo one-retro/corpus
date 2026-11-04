@@ -1,0 +1,21 @@
+{
+  "method": "device-backup",
+  "device": "Analogue Pocket",
+  "backup_path": "Saves/genesis/common/Sonic The Hedgehog (USA, Europe).sav",
+  "system": "genesis",
+  "core": "ericlewis-genesis",
+  "pocket_core": "ericlewis.Genesis",
+  "pocket_platform": "genesis",
+  "game_source": "No-Intro DAT 'Sega - Mega Drive - Genesis (20260814-022326)'",
+  "attribution": "size matches ericlewis.Genesis: its core_top writes 65536 to the save slot's size for every game (opengateware/openFPGA-Genesis src/fpga/core/core_top.sv); Spiritualized.Genesis, the other Genesis core installed, wrote 131072 for Sonic 3 here (its slot's size_maximum). Saves/genesis/common is shared, so the folder does not say. Spiritualized.Genesis's source is unpublished, so what it writes for a game without SRAM is not known",
+  "confidence": "medium",
+  "written": "2024-07-20 04:47 (file mtime as read here; the Pocket stamps its own clock)",
+  "files": {
+    "Sonic The Hedgehog (USA, Europe).sav": {
+      "size": 65536,
+      "sha1": "472a55b0ba289b0f4e538bb4c8b826dede3a40bb"
+    }
+  },
+  "created": "2026-11-03",
+  "note": "Sonic 1 has no save RAM; every byte 0xFF"
+}

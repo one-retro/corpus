@@ -1,0 +1,25 @@
+# Clubhouse Games: first boot. Touch START, page through the welcome (the
+# player name comes from the firmware), choose an icon (Animals, the
+# elephant), OK, Next: "Saving data. Do not turn the power off." The main
+# menu follows, with the icon in its corner.
+wait 1800
+touch 128 300 8     # START
+wait 250
+touch 225 209 6     # Next
+wait 150
+touch 225 209 6
+wait 150
+touch 225 209 6
+wait 200
+touch 80 210 6      # icon type: Animals
+wait 100
+touch 40 305 6      # the elephant
+wait 100
+touch 225 209 6     # OK: "You're all set!"
+wait 150
+touch 225 209 6     # Next: "Saving data."
+wait 30
+shot saving
+wait 400
+shot menu           # Main Menu, the elephant icon bottom left
+wait 2400           # melonDS writes its .sav 2 s (wall clock) after the game's last write

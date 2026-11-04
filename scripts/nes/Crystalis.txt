@@ -1,0 +1,60 @@
+# Crystalis: start a new game as "SIMEA", walk out of the cave into Leaf and
+# save to file 1 from the save menu (Select, then Start). The game refuses to
+# save inside the opening cave. The save menu then shows "1:SIMEA LV:01".
+# File 1 is the 0x300 block at 0x1100 (copy at 0x1400); see the 1Retro parser.
+wait 600
+press start 20      # attract intro -> title
+wait 120
+press start 20      # START
+wait 3900           # the opening story runs to INPUT CODE NAME
+shot name0
+# one row A..Z, cursor on A; the cursor stays where it is after a letter
+repeat 18
+tap right 1 6
+end
+tap a 1 20          # S
+tap left 10 6
+tap a 1 20          # I
+tap right 4 6
+tap a 1 20          # M
+tap left 8 6
+tap a 1 20          # E
+tap left 4 6
+tap a 1 20          # A
+shot name
+press start 10      # END
+wait 900            # the pod opens
+tap a 5 40
+wait 200
+press down 60       # out of the cave
+wait 10
+press down 60
+wait 10
+repeat 4
+press down 60
+wait 60
+end
+tap a 3 60          # "Hey!! There's a guy coming out of the cave!"
+wait 200
+press down 20
+press left 120      # into Leaf
+wait 10
+press left 120
+wait 30
+press select 10     # inventory
+wait 60
+press start 10      # save menu, cursor on 1
+wait 60
+press a 10          # "Save this game?"
+wait 60
+press left 10       # YES
+wait 20
+press a 10          # saved
+wait 200
+press select 10
+wait 60
+press start 10      # the save menu again: 1:SIMEA LV:01
+wait 60
+shot saved
+press b 10
+wait 30

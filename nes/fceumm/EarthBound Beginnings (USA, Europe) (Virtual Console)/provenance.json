@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "nes",
+  "core": "fceumm",
+  "core_file": "fceumm_libretro.dylib",
+  "core_name": "FCEUmm",
+  "core_version": "(SVN) e0f3086",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "EarthBound Beginnings (USA, Europe) (Virtual Console).nes",
+    "sha1": "f338af0af0058dc692d6003e04b4094bb324d2c5",
+    "size": 524304
+  },
+  "script": "scripts/nes/EarthBound Beginnings.txt",
+  "frames": 7050,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "EarthBound Beginnings (USA, Europe) (Virtual Console).srm": {
+      "size": 8192,
+      "sha1": "9633e688cd6bf3fe2f0c77518857e70939b485ec"
+    }
+  },
+  "created": "2026-11-03",
+  "note": "runner: work/nes/runner/retro-run (tools/retro-run with RetroArch's init order and a disk control interface)"
+}

@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "fds",
+  "core": "fixnes",
+  "core_file": "fixnes_libretro.dylib",
+  "core_name": "fixNES",
+  "core_version": "Alpha v1.3.1",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Metroid (Japan) (Rev 3).fds",
+    "sha1": "741e51b01c3d9d814ae9acdd4d1ab6d8c34ef446",
+    "size": 131000
+  },
+  "script": "scripts/fds/Metroid.txt",
+  "frames": 5480,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Metroid (Japan) (Rev 3).srm": {
+      "size": 131072,
+      "sha1": "610c4bd2132b7732d38d3f69bde1c074bab45012"
+    }
+  },
+  "created": "2026-11-03",
+  "note": "runner: work/nes/runner/retro-run (tools/retro-run with RetroArch's init order and a disk control interface)"
+}

@@ -1,0 +1,36 @@
+{
+  "method": "played",
+  "system": "n64",
+  "core": "mupen64plus",
+  "core_file": null,
+  "core_name": "Mupen64Plus",
+  "core_version": "2.6.0",
+  "frontend": "Mupen64Plus 2.6.0 (Homebrew: mupen64plus-ui-console + core 2.6.0), plugins glide64mk2 / rsp-hle / dummy audio / m64feed input",
+  "rom": {
+    "name": "Banjo-Kazooie (USA) (Rev 1).z64",
+    "size": 16777216,
+    "sha1": "ded6ee166e740ad1bc810fd678a84b48e245ab80"
+  },
+  "script": "scripts/n64/Banjo-Kazooie.txt",
+  "frames": 24664,
+  "options": null,
+  "input": "work/standalone/tools/m64feed.c: an input plugin that replays the retro-run script by VI frame (core frame callback), RetroPad mapped as Mupen64Plus-Next does (b=A, y=B, l2=Z); controller 1 with a Controller Pak; M64CMD_STOP at the end. --nospeedlimit, isolated --configdir and Core[SaveSRAMPath].",
+  "started_from": null,
+  "files": {
+    "Banjo-Kazooie (U) (V1.1) [!]-B11F476D.eep": {
+      "size": 512,
+      "sha1": "0327dffc79fc98eb990527a6bd1dbff353d2c972"
+    },
+    "Banjo-Kazooie (U) (V1.1) [!]-B11F476D.mpk": {
+      "size": 131072,
+      "sha1": "8adf27412700e96c4963716d58fff5a28ed23d48"
+    }
+  },
+  "layout": {
+    "save_dir": "Core[SaveSRAMPath], default Library/Application Support/Mupen64Plus/save/ in the home folder on macOS",
+    "name": "Core[SaveFilenameFormat]=1 (default): first 32 characters of the ROM good name from mupen64plus.ini, a dash, the first 8 hex digits of the ROM MD5 in capitals, then .eep / .sra / .fla / .mpk",
+    "written": "when the game writes, and on stop"
+  },
+  "created": "2026-11-04",
+  "note": "SAVE AND QUIT wrote Game 1 to the 4 Kbit EEPROM; after the reset the file select shows GAME 1: TIME 0:06:19. The .mpk is the inserted Controller Pak, initialised at boot."
+}

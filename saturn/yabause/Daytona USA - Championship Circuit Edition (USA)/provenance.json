@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "saturn",
+  "core": "yabause",
+  "core_file": "yabause_libretro.dylib",
+  "core_name": "Yabause",
+  "core_version": "v0.9.15 8926b0c",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Daytona USA - Championship Circuit Edition (USA).cue",
+    "sha1": "50ba79bf92e4a9681b526f471657f13cb4d5a635",
+    "size": 125
+  },
+  "script": "scripts/saturn/Daytona USA - Championship Circuit Edition.txt",
+  "frames": 3400,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Daytona USA - Championship Circuit Edition (USA).srm": {
+      "size": 65536,
+      "sha1": "1ef8f4015dfc1be98d4cc91c42383465236fa98f"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "Run from the data track alone: the cue lists only track 01 (the Redump cue's audio tracks were left out to save space); the BIOS and game do not need them to boot and save."
+}

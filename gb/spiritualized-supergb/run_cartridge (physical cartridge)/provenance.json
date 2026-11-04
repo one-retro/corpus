@@ -1,0 +1,21 @@
+{
+  "method": "device-backup",
+  "device": "Analogue Pocket",
+  "backup_path": "Saves/sgb/common/run_cartridge.sav",
+  "system": "gb",
+  "core": "spiritualized-supergb",
+  "pocket_core": "Spiritualized.SuperGB",
+  "pocket_platform": "sgb",
+  "game_source": "the file's own name (no No-Intro entry applies)",
+  "attribution": "folder Saves/sgb/common and only sgb-platform core installed (Analogue backup Cores/ and Settings/: Spiritualized.SuperGB 1.0.3; SuperGB2 is not in that backup). Assets/sgb/common held only run_cartridge.gb, a 4-byte stub that makes the core boot the cartridge in the Pocket's slot, so this is the file the core writes for a physical cart; which cart is not recorded",
+  "confidence": "high",
+  "written": "2023-03-01 21:17 (file mtime as read here; the Pocket stamps its own clock)",
+  "files": {
+    "run_cartridge.sav": {
+      "size": 8192,
+      "sha1": "5e2b96c19c4f5c63a5afa2de504d29fe64a4c908"
+    }
+  },
+  "created": "2026-11-03",
+  "note": "every byte 0xFF: the real cartridge keeps its own save, the Pocket still writes 8 KiB here"
+}

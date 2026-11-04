@@ -1,0 +1,31 @@
+{
+  "method": "played",
+  "system": "neogeo",
+  "core": "geolith",
+  "core_file": "geolith_libretro.dylib",
+  "core_name": "Geolith",
+  "core_version": "0.5.0",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "blazstar.neo",
+    "sha1": "4a7706aba7ede5acb4417d36d14c93940d61ad3a",
+    "size": 45355008
+  },
+  "script": "scripts/neogeo/blazstar.txt",
+  "frames": 5832,
+  "options": "geolith_system_type = mvs\ngeolith_memcard = on\n",
+  "started_from": null,
+  "files": {
+    "blazstar.mcr": {
+      "size": 2048,
+      "sha1": "461260d42a15869ce8856fb1d102906620a65a5d"
+    },
+    "blazstar.nv": {
+      "size": 65536,
+      "sha1": "6c3ecdc94b83816b11584d70e4778686ae31f906"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

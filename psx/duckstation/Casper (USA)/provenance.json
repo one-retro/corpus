@@ -1,0 +1,18 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "duckstation",
+  "url": "https://github.com/duckstation-unoff-issue-tracker-admin/duckstation-unofficial-issue-tracker/files/10360567/Casper.USA._1.zip",
+  "source_page": "https://github.com/duckstation-unoff-issue-tracker-admin/duckstation-unofficial-issue-tracker/issues/87",
+  "source": "GitHub (unofficial DuckStation issue tracker)",
+  "author": "sigarettenstank",
+  "licence": null,
+  "fetched": "2026-11-04",
+  "what_it_is": "DuckStation 0.1-5437 per-game card; 2-block 'Casper Game 1', right outside the maze",
+  "files": {
+    "Casper (USA)_1.mcd": {
+      "size": 131072,
+      "sha1": "027f21c545d4988f6a4e19bc70915a916dea1b3c"
+    }
+  }
+}

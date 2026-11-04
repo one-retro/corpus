@@ -1,0 +1,32 @@
+{
+  "method": "played",
+  "system": "nes",
+  "core": "fceux",
+  "core_file": null,
+  "core_name": "FCEUX",
+  "core_version": "2.6.6",
+  "frontend": "FCEUX 2.6.6 (Homebrew build, Qt GUI), input by its Lua engine (--loadlua)",
+  "rom": {
+    "name": "Dragon Ball Z II - Gekishin Freeza!! (Japan) (Rev 1).nes",
+    "size": 524304,
+    "sha1": "661cd5892281ace89403a673e8657daef60fdf09"
+  },
+  "script": "scripts/nes/Dragon Ball Z II.txt",
+  "frames": 1850,
+  "options": null,
+  "input": "work/standalone/tools/gen_fceux_lua.py: the retro-run script replayed with joypad.set per frame, turbo speed; emu.exit at the end",
+  "started_from": null,
+  "files": {
+    "Dragon Ball Z II - Gekishin Freeza!! (Japan) (Rev 1).sav": {
+      "size": 0,
+      "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+    }
+  },
+  "layout": {
+    "save_dir": "<base>/sav, base = $FCEUX_HOME/.fceux (default .fceux in the home folder)",
+    "name": "<ROM file name without extension>.sav",
+    "written": "when the game is closed (emu.exit here)"
+  },
+  "created": "2026-11-03",
+  "note": "FCEUX segfaulted (rc 139) after emu.exit, once the .sav was already written; every run did this. The game showed its save message (データ1 ... セーブしています) and returned to the menu, but FCEUX wrote a 0-byte .sav: its mapper 16 (LZ93D50 + 24C02 EEPROM) code does not persist the EEPROM for this NES 2.0 dump. fceumm and mesen write 256 bytes. Filed as the real (empty) file."
+}

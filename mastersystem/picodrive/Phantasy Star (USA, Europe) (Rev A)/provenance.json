@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "mastersystem",
+  "core": "picodrive",
+  "core_file": "picodrive_libretro.dylib",
+  "core_name": "PicoDrive",
+  "core_version": "2.05-1890c29",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Phantasy Star (USA, Europe) (Rev A).sms",
+    "sha1": "07fcf297be4f4c9d92cd3f119a7ac48467e06838",
+    "size": 524288
+  },
+  "script": "scripts/mastersystem/Phantasy Star.txt",
+  "frames": 6066,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Phantasy Star (USA, Europe) (Rev A).srm": {
+      "size": 32768,
+      "sha1": "fa111a9c426366d5e27d98292332d8f4a205cddd"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "nes",
+  "core": "fixnes",
+  "core_file": "fixnes_libretro.dylib",
+  "core_name": "fixNES",
+  "core_version": "Alpha v1.3.1",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Legend of Zelda, The (USA) (Rev 1).nes",
+    "sha1": "4671517d72d09799403f6c672cd2b395933e926e",
+    "size": 131088
+  },
+  "script": "scripts/nes/Legend of Zelda.txt",
+  "frames": 1116,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Legend of Zelda, The (USA) (Rev 1).srm": {
+      "size": 8192,
+      "sha1": "92ad8037aeb6cd09672dac7721a4795fe717021d"
+    }
+  },
+  "created": "2026-11-03",
+  "note": "runner: work/nes/runner/retro-run (tools/retro-run with RetroArch's init order and a disk control interface)"
+}

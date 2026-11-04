@@ -1,0 +1,11 @@
+# Dance Dance Revolution Konamix: at boot the game finds no system data and
+# offers to create it. Answering YES writes "KONAMIX SYSTEM", a 1-block save,
+# about 30 seconds after power-on.
+wait 2400           # "No system data. Do you wish to create system data?" (cursor on NO)
+press left 6        # YES
+wait 30
+shot ask
+press b 6           # "Saving... Do not remove MEMORY CARD."
+wait 360
+shot saved          # "Saved system data."
+wait 60

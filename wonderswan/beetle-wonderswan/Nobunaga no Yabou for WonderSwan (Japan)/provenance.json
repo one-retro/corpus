@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "wonderswan",
+  "core": "beetle-wonderswan",
+  "core_file": "mednafen_wswan_libretro.dylib",
+  "core_name": "Beetle WonderSwan",
+  "core_version": "v0.9.35.1 4b01295",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Nobunaga no Yabou for WonderSwan (Japan).ws",
+    "sha1": "785ebb7528f5268e1a1fc10dffbe95ccf6d39560",
+    "size": 1048576
+  },
+  "script": "scripts/wonderswan/Nobunaga no Yabou.txt",
+  "frames": 5452,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Nobunaga no Yabou for WonderSwan (Japan).srm": {
+      "size": 32768,
+      "sha1": "78ce41092192c705882c3138b91b3e6bb44e5a9a"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

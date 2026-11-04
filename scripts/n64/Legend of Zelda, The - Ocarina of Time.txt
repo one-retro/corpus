@@ -1,0 +1,25 @@
+# Ocarina of Time: name file 1 "AAAA". The game writes the file to SRAM
+# when the name is confirmed, then the script resets the console and goes
+# back to the file select to show it was read back.
+# N64 buttons on the RetroPad: A = b, B = y, Z = l2, Start = start.
+wait 1000
+press start 6       # skip the intro to the title
+wait 200
+press start 6       # title -> file select
+wait 260
+press b 6           # File 1 -> Name?
+wait 300
+tap b 4 20          # A A A A
+wait 30
+press start 6       # cursor to END
+wait 30
+press b 6           # END: the file is written here
+wait 300
+shot created
+reset
+wait 1000
+press start 6
+wait 200
+press start 6       # back to the file select after the reset
+wait 300
+shot reloaded

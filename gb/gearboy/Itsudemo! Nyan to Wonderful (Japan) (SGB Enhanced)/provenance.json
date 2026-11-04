@@ -1,0 +1,31 @@
+{
+  "method": "played",
+  "system": "gb",
+  "core": "gearboy",
+  "core_file": "gearboy_libretro.dylib",
+  "core_name": "Gearboy",
+  "core_version": "3.8.20-8-g37d0bf3",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Itsudemo! Nyan to Wonderful (Japan) (SGB Enhanced).gb",
+    "sha1": "a48d6b68d82b98e775c00366da544402d7c7ac0e",
+    "size": 262144
+  },
+  "script": "scripts/gb/Itsudemo! Nyan to Wonderful.txt",
+  "frames": 2224,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Itsudemo! Nyan to Wonderful (Japan) (SGB Enhanced).rtc": {
+      "size": 48,
+      "sha1": "019f2346df8c1a246ef3018875be05e7383e9926"
+    },
+    "Itsudemo! Nyan to Wonderful (Japan) (SGB Enhanced).srm": {
+      "size": 8192,
+      "sha1": "642cd6ba65630bbc7c2b0eee8126ce43fd3f56d2"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

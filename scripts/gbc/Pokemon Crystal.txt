@@ -1,0 +1,37 @@
+# Pokemon Crystal (MBC3 + clock + 32 KiB battery RAM, CGB only): NEW GAME,
+# Boy, set the clock to the offered DAY 10:00, take the preset name CHRIS,
+# then SAVE from the start menu in the bedroom. The game writes the clock it
+# set and the save.
+wait 1800
+repeat 8            # START skips the intro, opens NEW GAME / OPTION; START
+tap start 1 50      # does nothing on that menu
+end
+wait 60
+press a 6           # NEW GAME
+wait 120
+repeat 18           # Boy; "Zzz... Will you check the clock?": DAY 10 o'clock,
+tap a 1 60          # YES, 0 min., YES, "DAY 10:00! I overslept!", into Oak
+end
+repeat 80           # Oak's speech; B never picks from the name menu
+tap b 1 30
+end
+press down 4        # NEW NAME / CHRIS / ...
+wait 20
+press a 4           # CHRIS
+wait 60
+repeat 56           # to the bedroom; B does nothing there
+tap b 1 30
+end
+wait 30
+press start 6       # PACK / CHRIS / SAVE / OPTION / EXIT
+wait 60
+press down 4
+wait 15
+press down 4
+wait 15
+press a 6           # SAVE -> "Would you like to save the game?"
+wait 180
+press a 6           # YES
+wait 300
+shot saved          # "CHRIS saved the game."
+wait 60

@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "gba",
+  "core": "beetle-gba",
+  "core_file": "mednafen_gba_libretro.dylib",
+  "core_name": "Beetle GBA",
+  "core_version": "v0.9.36 b158166",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Pokemon - FireRed Version (USA, Europe) (Rev 1).gba",
+    "sha1": "dd5945db9b930750cb39d00c84da8571feebf417",
+    "size": 16777216
+  },
+  "script": "scripts/gba/Pokemon - FireRed Version.txt",
+  "frames": 9966,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Pokemon - FireRed Version (USA, Europe) (Rev 1).51901a6e40661b3914aa333c802e24e8.sav": {
+      "size": 131072,
+      "sha1": "3b2afa46ce8a8ca90173d193599e6423e5f704dc"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

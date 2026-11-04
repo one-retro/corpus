@@ -1,0 +1,11 @@
+# Croc - Legend of the Gobbos (USA), Beetle Saturn: the Backup RAM Cart is plugged
+# in, so SAVE GAME first asks CHOOSE BACKUP (INTERNAL BACKUP / CARTRIDGE). Keep
+# INTERNAL BACKUP, the default, so the save matches the other cores'.
+include _croc-to-save-menu.inc
+shot backup          # CHOOSE BACKUP
+press b              # A: INTERNAL BACKUP
+wait 400
+shot slots
+press b              # A: SAVE into slot 0
+wait 400
+shot saved           # slot 0 now shows the 1-1 icon and 0%

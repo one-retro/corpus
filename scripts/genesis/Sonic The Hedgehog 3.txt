@@ -1,0 +1,19 @@
+# Sonic 3: start a new game in data-select slot 1. The game writes the slot
+# to its FRAM when the game starts; reset and come back to Data Select to show it.
+wait 300
+press start 6       # skip the intro to the title
+wait 240
+press start 6       # 1 PLAYER -> Data Select
+wait 240
+shot select
+press start 6       # cursor rests on slot 1 (NEW): start Angel Island
+wait 600
+shot playing
+reset
+wait 300
+press start 6
+wait 240
+press start 6
+wait 240
+shot saved          # slot 1 now shows Angel Island
+wait 30

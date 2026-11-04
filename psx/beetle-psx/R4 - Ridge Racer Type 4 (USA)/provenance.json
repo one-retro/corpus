@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "psx",
+  "core": "beetle-psx",
+  "core_file": "mednafen_psx_libretro.dylib",
+  "core_name": "Beetle PSX",
+  "core_version": "0.9.44.1 71ee81e",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "R4 - Ridge Racer Type 4 (USA).cue",
+    "sha1": "7fb365c31e0a1f315479ac9eef1d6fde1a84bd1d",
+    "size": 95
+  },
+  "script": "scripts/psx/R4 - Ridge Racer Type 4.txt",
+  "frames": 8978,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "R4 - Ridge Racer Type 4 (USA).srm": {
+      "size": 131072,
+      "sha1": "19c90befc5e5f617ceb49bd17c8811765626a1cb"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

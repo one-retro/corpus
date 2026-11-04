@@ -1,0 +1,59 @@
+load corpus-tmp/mgl/simcity.mgl 8
+# SimCity: start a new city named "ASDF" on the first map, Easy, then save it
+# from the LOAD.SAVE menu into slot 2. The menus use a hand cursor that
+# moves freely while the pad is held, so the holds below are distances.
+wait 1200
+press start 6       # title -> PRACTICE / START NEW CITY / SELECT SCENARIO
+wait 200
+press down 6        # START NEW CITY
+wait 30
+press b 6
+wait 600            # MAP SELECT, map No. 000 is generated
+press b 6           # OK
+wait 240            # Enter name of the city (hand on "1")
+press down 6
+wait 20
+press down 6        # A
+wait 20
+tap b 1 30          # A
+press right 6
+wait 20
+tap b 1 30          # S
+press right 6
+wait 20
+tap b 1 30          # D
+press right 6
+wait 20
+tap b 1 30          # F
+tap left 3 20       # back to A
+press down 6        # Z
+wait 20
+tap right 9 16      # END
+press b 6
+wait 200            # Select game level
+press b 6           # 1 Easy
+wait 300            # Is this OK?
+press b 6           # Yes
+wait 400            # the city, January 1900
+press start 6       # hand to the icon bar
+wait 60
+press right 6       # LOAD.SAVE icon
+wait 30
+press b 6
+wait 90
+press down 20       # hand onto SAVE
+wait 20
+press left 12
+wait 20
+press b 6           # Where to save?  1 / 2 / CANCEL
+wait 120
+press left 44       # hand from CANCEL onto slot 2
+wait 20
+press b 6           # Save completed.
+wait 50
+shot saved
+wait 200
+wait 30
+save
+wait 60
+shot final

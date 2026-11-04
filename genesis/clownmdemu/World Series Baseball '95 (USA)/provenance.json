@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "genesis",
+  "core": "clownmdemu",
+  "core_file": "clownmdemu_libretro.dylib",
+  "core_name": "ClownMDEmu",
+  "core_version": "v1.6.12 d43c270",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "World Series Baseball '95 (USA).md",
+    "sha1": "878e9fdbbc0b20b27f25d56e4087efbde1e8979a",
+    "size": 3145728
+  },
+  "script": "scripts/genesis/World Series Baseball '95.txt",
+  "frames": 4800,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "World Series Baseball '95 (USA).srm": {
+      "size": 65536,
+      "sha1": "359c5a4fae05daf822407f41f0051c23f34ffcb8"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

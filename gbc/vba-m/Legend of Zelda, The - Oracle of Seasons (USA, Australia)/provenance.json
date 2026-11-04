@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "gbc",
+  "core": "vba-m",
+  "core_file": "vbam_libretro.dylib",
+  "core_name": "VBA-M",
+  "core_version": " 115defb",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Legend of Zelda, The - Oracle of Seasons (USA, Australia).gbc",
+    "sha1": "ba1268290fb2b1b70505d2d7b5825fc8a4816a4b",
+    "size": 1048576
+  },
+  "script": "scripts/gbc/Legend of Zelda, The - Oracle of Seasons.txt",
+  "frames": 1494,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Legend of Zelda, The - Oracle of Seasons (USA, Australia).srm": {
+      "size": 8192,
+      "sha1": "1a85983bc7313ee633a05e319d75b5daddf09390"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

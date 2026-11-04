@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "sega-gg",
+  "core": "genesis-plus-gx-wide",
+  "core_file": "genesis_plus_gx_wide_libretro.dylib",
+  "core_name": "Genesis Plus GX Wide",
+  "core_version": "v1.7.4 b7ad005",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Shining Force - The Sword of Hajya (USA).gg",
+    "sha1": "789734c4a837dffd2ad3e2c8de22cbd83836580d",
+    "size": 524288
+  },
+  "script": "scripts/sega-gg/Shining Force - The Sword of Hajya.txt",
+  "frames": 5610,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Shining Force - The Sword of Hajya (USA).srm": {
+      "size": 26752,
+      "sha1": "bd859c528d1f9075274c5b379ebc1c400feef415"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

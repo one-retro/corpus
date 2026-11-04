@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "gb",
+  "core": "sameboy",
+  "core_file": "sameboy_libretro.dylib",
+  "core_name": "SameBoy",
+  "core_version": "1.0.5 90e2899",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Final Fantasy Adventure (USA).gb",
+    "sha1": "8b93c55ee2660c60cf86dd70058f96ace98782c8",
+    "size": 262144
+  },
+  "script": "scripts/gb/Final Fantasy Adventure.txt",
+  "frames": 2300,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Final Fantasy Adventure (USA).srm": {
+      "size": 512,
+      "sha1": "44497963377a58bf0aab285ac061aac84294f951"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

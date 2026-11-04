@@ -1,0 +1,18 @@
+# Kirby Tilt 'n' Tumble (MBC7: accelerometer + 256-byte 93LC56 EEPROM). The
+# game formats the EEPROM ("TAMA") at power-on and writes the tilt calibration
+# when A is pressed on the BALANCE screen. Playing needs tilt, which this
+# frontend cannot give, so the save is the format plus the calibration; file
+# 1 is opened but holds nothing until a level is cleared.
+wait 900
+press a 6           # BALANCE: "hold your Game Boy flat, then press A"
+wait 120
+press a 6           # "Welcome to Pop Star..." -> sky
+wait 120
+press a 6           # title: GAME START
+wait 120
+press a 6           # SELECT FILE
+wait 120
+press a 6           # file 1 -> the LEVEL 1 map
+wait 90
+shot saved          # LEVEL 1
+wait 30

@@ -1,0 +1,20 @@
+{
+  "method": "downloaded",
+  "system": "snes",
+  "core": "snes-mister",
+  "url": "https://github.com/MiSTer-devel/SNES_MiSTer/files/2898699/Super.Mario.RPG.-.save.zip",
+  "source_page": "https://github.com/MiSTer-devel/SNES_MiSTer/issues/39",
+  "source": "github.com (MiSTer-devel/SNES_MiSTer issue #39)",
+  "author": "Hewhoisred",
+  "licence": null,
+  "fetched": "2026-11-03",
+  "what_it_is": "Super Mario RPG (SA-1) save from the first MiSTer builds with SA-1 support (Feb 2019), about 10 minutes into a new game, before the first level-up.",
+  "files": {
+    "Super Mario RPG - Legend of the Seven Stars (USA).sav": {
+      "size": 32768,
+      "sha1": "c61b371c8bd009ae48e20b5e932d22b79586a9fb"
+    }
+  },
+  "created": "2026-11-03",
+  "note": "32768 bytes: the core sized BW-RAM from the header (32 KB) rather than the game's 8 KB."
+}

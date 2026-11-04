@@ -1,0 +1,32 @@
+{
+  "method": "played",
+  "system": "n64",
+  "core": "mupen64plus",
+  "core_file": null,
+  "core_name": "Mupen64Plus",
+  "core_version": "2.6.0",
+  "frontend": "Mupen64Plus 2.6.0 (Homebrew: mupen64plus-ui-console + core 2.6.0), plugins glide64mk2 / rsp-hle / dummy audio / m64feed input",
+  "rom": {
+    "name": "Super Mario 64 (USA).z64",
+    "size": 8388608,
+    "sha1": "9bef1128717f958171a4afac3ed78ee2bb4e86ce"
+  },
+  "script": "scripts/n64/Super Mario 64.txt",
+  "frames": 1926,
+  "options": null,
+  "input": "work/standalone/tools/m64feed.c: an input plugin that replays the retro-run script by VI frame (core frame callback), RetroPad mapped as Mupen64Plus-Next does (b=A, y=B, l2=Z); controller 1 with a Controller Pak; M64CMD_STOP at the end. --nospeedlimit, isolated --configdir and Core[SaveSRAMPath].",
+  "started_from": null,
+  "files": {
+    "Super Mario 64 (U) [!]-20B854B2.eep": {
+      "size": 512,
+      "sha1": "671a5c9782a3307091a98c8fec0782ebe6eed7f8"
+    }
+  },
+  "layout": {
+    "save_dir": "Core[SaveSRAMPath], default Library/Application Support/Mupen64Plus/save/ in the home folder on macOS",
+    "name": "Core[SaveFilenameFormat]=1 (default): first 32 characters of the ROM good name from mupen64plus.ini, a dash, the first 8 hex digits of the ROM MD5 in capitals, then .eep / .sra / .fla / .mpk",
+    "written": "when the game writes, and on stop"
+  },
+  "created": "2026-11-04",
+  "note": "Partial: the game formatted its 4 Kbit EEPROM on first boot (four empty files), but the STEREO->MONO change did not happen here: the menu hand follows the analog stick, and the stick replay (scaled to +-80) moved it too little to reach STEREO. So this is the freshly formatted EEPROM, still a write by the game."
+}

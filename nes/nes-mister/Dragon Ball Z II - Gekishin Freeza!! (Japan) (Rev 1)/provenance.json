@@ -1,0 +1,32 @@
+{
+  "method": "played",
+  "system": "nes",
+  "core": "nes-mister",
+  "core_file": "NES_20260823.rbf",
+  "core_name": "NES_MiSTer",
+  "core_version": "20260823",
+  "frontend": "mister",
+  "device": "the owner's MiSTer (DE10-Nano), Main_MiSTer binary of 2026-10-19",
+  "loaded_with": "MGL via /dev/MiSTer_cmd load_core (_Console/NES, file type f index 0)",
+  "save_folder": "saves/NES",
+  "rom": {
+    "name": "Dragon Ball Z II - Gekishin Freeza!! (Japan) (Rev 1).nes",
+    "sha1": "661cd5892281ace89403a673e8657daef60fdf09",
+    "size": 524304
+  },
+  "script": "scripts/nes/Dragon Ball Z II.txt",
+  "mister_script": "scripts/mister/nes/Dragon Ball Z II.nes.txt",
+  "frames": 1952,
+  "timing": "real time: script frames played as wall-clock 1/60 s by work/mister/mrun.py",
+  "options": null,
+  "save_trigger": "OSD opened (F12 from a uinput keyboard) with Autosave on: the core writes its backup RAM to the SD card",
+  "started_from": null,
+  "files": {
+    "Dragon Ball Z II - Gekishin Freeza!! (Japan) (Rev 1).sav": {
+      "size": 2048,
+      "sha1": "21baf190bed5db650011935e5270417ff7dc0ff8"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "Bandai LZ93D50 with a 24C02 EEPROM (256 bytes). The core keeps the EEPROM in block RAM (bram_en) and writes 4 sectors: 2048 bytes, the 256 EEPROM bytes then 1792 zero bytes. No seed was used for this one: the zeros are the core's own. Proof: データ1 ... セーブしています."
+}

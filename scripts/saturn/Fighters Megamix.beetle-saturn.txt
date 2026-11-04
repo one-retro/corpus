@@ -1,0 +1,9 @@
+# Fighters Megamix (USA), Beetle Saturn: two presses skip the TrueMotion intro and
+# the AM2 logo; the title is up from about frame 2600.
+wait 1800
+press start
+wait 400
+press start
+wait 400
+include _fighters-megamix.inc
+shot modes

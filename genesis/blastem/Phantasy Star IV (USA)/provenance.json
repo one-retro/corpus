@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "genesis",
+  "core": "blastem",
+  "core_file": "blastem_libretro.dylib",
+  "core_name": "BlastEm",
+  "core_version": "1.0.1-pre",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Phantasy Star IV (USA).md",
+    "sha1": "bc7ff6d6a8408f38562bc610f24645cad6c42629",
+    "size": 3145728
+  },
+  "script": "scripts/genesis/Phantasy Star IV.blastem.txt",
+  "frames": 8226,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Phantasy Star IV (USA).srm": {
+      "size": 8192,
+      "sha1": "c7c06c48cc203edfe6a11703c1a32a9d58ef0fc6"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}

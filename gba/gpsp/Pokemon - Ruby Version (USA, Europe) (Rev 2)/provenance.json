@@ -1,0 +1,27 @@
+{
+  "method": "played",
+  "system": "gba",
+  "core": "gpsp",
+  "core_file": "gpsp_libretro.dylib",
+  "core_name": "gpSP",
+  "core_version": "v1.1.0-5819380",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Pokemon - Ruby Version (USA, Europe) (Rev 2).gba",
+    "sha1": "5b64eacf892920518db4ec664e62a086dd5f5bc8",
+    "size": 16777216
+  },
+  "script": "scripts/gba/Pokemon - Ruby Version.gpsp.txt",
+  "frames": 12838,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Pokemon - Ruby Version (USA, Europe) (Rev 2).srm": {
+      "size": 131072,
+      "sha1": "110cdd1f9643d17984173fab84ee3cdde961d4fa"
+    }
+  },
+  "created": "2026-11-03",
+  "note": null
+}
