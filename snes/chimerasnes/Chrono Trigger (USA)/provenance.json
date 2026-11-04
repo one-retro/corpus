@@ -1,0 +1,33 @@
+{
+  "method": "played",
+  "system": "snes",
+  "core": "chimerasnes",
+  "core_file": "chimerasnes_libretro.dylib",
+  "core_name": "ChimeraSNES",
+  "core_version": " 04c57c2",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Chrono Trigger (USA).sfc",
+    "sha1": "de5822f4f2f7a55acb8926d4c0eaa63d5d989312",
+    "size": 4194304
+  },
+  "device": null,
+  "script": "scripts/snes/Chrono Trigger.txt",
+  "frames": 9010,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Chrono Trigger (USA).srm": {
+      "size": 8192,
+      "sha1": "dc976ae78b1a0326d4f78e88a25f218e8c69e2de"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null,
+  "built_from": {
+    "repo": "https://github.com/jamsilva/chimerasnes",
+    "commit": "04c57c2902c25f36ae5a5d9c57aff851a772c868",
+    "build": "make -j8 (platform=osx, arm64), unmodified"
+  }
+}

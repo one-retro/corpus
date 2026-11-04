@@ -1,0 +1,32 @@
+{
+  "method": "played",
+  "system": "neogeo",
+  "core": "neogeo-mister",
+  "core_file": "NeoGeo_20260603.rbf",
+  "core_name": "NeoGeo_MiSTer",
+  "core_version": "20260603",
+  "frontend": "mister",
+  "device": "the owner's MiSTer (DE10-Nano), Main_MiSTer binary of 2026-10-19",
+  "loaded_with": "MGL via /dev/MiSTer_cmd load_core (_Console/NeoGeo, file type f index 1)",
+  "save_folder": "saves/NEOGEO",
+  "rom": {
+    "name": "jockeygp.neo"
+  },
+  "script": "scripts/neogeo/jockeygp.txt",
+  "mister_script": "scripts/mister/neogeo/jockeygp.neogeo.txt",
+  "frames": 6574,
+  "timing": "real time: script frames played as wall-clock 1/60 s by work/mister/mrun.py",
+  "options": {
+    "config/NEOGEO.CFG": "16 bytes, status bits 1 (System Type Arcade(MVS)) and 24 (Autosave On) set: BIOS UniBIOS (bit 22 = 0; the device's uni-bios.rom v4.0), every other option at its default. The owner's config/NEOGEO.CFG (MVS, Autosave off) was replaced for the run and restored byte-identical, with its mtime, after it"
+  },
+  "save_trigger": "OSD opened (F12 from a uinput keyboard) with Autosave on: the core writes its backup RAM to the SD card",
+  "started_from": null,
+  "files": {
+    "jockeygp.sav": {
+      "size": 73728,
+      "sha1": "fa39944384a9f265e9d369f6f47a05d6f936845a"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "MVS, backup RAM + the cartridge's 8 KiB RAM. ROM: the Geolith set's .neo (byte-identical to the device's own games/NeoGeo/Jockey Grandprix (jockeygp).neo), copied to corpus-tmp as jockeygp.neo so the save is jockeygp.sav. Script: scripts/neogeo/jockeygp.txt with boot waits +500 frames; two coins (L, the core's Coin button). The core draws this game's sprites wrong (vertical streaks in the race picture, blank bet cells; the fix-layer horse list is fine), so the proof cannot show CREDIT 000002; the save shows the coins instead: the BIOS credit byte at backup RAM 0x34 (0xD00034) is 02. Layout: 0x00000-0x0FFFF backup RAM, 16-bit words byte-swapped (unswapped: UniBIOS's 'V2' block at 0x00, 'BACKUP RAM OK !' at 0x10, as Geolith's .nv); 0x10000-0x11FFF the cartridge RAM in place of the memory card, word-swapped (unswapped: 'JOCKEY GRANDPRIX INIT KEY DATA04' at 0x14, as Geolith's .srm). No memory card is saved for this game. Writing is triggered by backup-RAM writes (the coins); the core does not mark cartridge-RAM writes as pending."
+}

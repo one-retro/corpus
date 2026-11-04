@@ -1,0 +1,28 @@
+{
+  "method": "played",
+  "system": "nes",
+  "core": "fceumm",
+  "core_file": "fceumm_libretro.dylib",
+  "core_name": "FCEUmm",
+  "core_version": "(SVN) e0f3086",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Uncharted Waters (USA).nes",
+    "sha1": "1e455c5bdce08b971e911f2211744b9e434ba94d",
+    "size": 655376
+  },
+  "device": null,
+  "script": "scripts/nes/Uncharted Waters.txt",
+  "frames": 27028,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Uncharted Waters (USA).srm": {
+      "size": 8192,
+      "sha1": "a82dd62ce65e22ccb275c29192fe798f9e01c4d3"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

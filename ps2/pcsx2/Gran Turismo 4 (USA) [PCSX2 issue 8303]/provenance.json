@@ -1,0 +1,21 @@
+{
+  "method": "downloaded",
+  "system": "ps2",
+  "core": "pcsx2",
+  "url": "https://github.com/PCSX2/pcsx2/files/10923386/Mcd001.ps2.zip",
+  "source_page": "https://github.com/PCSX2/pcsx2/issues/8303",
+  "source": "GitHub, PCSX2/pcsx2 issue tracker (an attachment to a bug report)",
+  "author": "DanielBielak",
+  "licence": null,
+  "emulator": "PCSX2 v1.7.4145-4169",
+  "posted": "2023-03-08",
+  "fetched": "2026-11-04",
+  "what_it_is": "A PCSX2 1.7 user's card holding only GT4 game data (BASCUS-97328GAMEDATA), attached to a GT4 bug report.",
+  "files": {
+    "Mcd001.ps2": {
+      "size": 8650752,
+      "sha1": "e836590c93aab81c229923a6b1fba60d55d82a71"
+    }
+  },
+  "note": "No licence stated on the page. "
+}

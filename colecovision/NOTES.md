@@ -39,7 +39,7 @@ Coleco's 1983 cart, not Opcode's).
 | Core | Status |
 | --- | --- |
 | colecovision-mister (MiSTer) | not runnable. README documents save states only, no cartridge SRAM/EEPROM. Nothing to find |
-| crabemu (standalone) | not runnable. Nothing found; no ColecoVision save support known |
+| crabemu (standalone) | runs (CrabEmu 0.2.0 under Rosetta, see STANDALONE.md), but no game in the library saves, so nothing to file |
 | spiritualized-coleco (openFPGA) | not runnable. No save support documented; nothing found |
 
 ## Leads

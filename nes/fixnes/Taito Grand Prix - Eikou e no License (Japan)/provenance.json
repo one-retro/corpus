@@ -1,0 +1,28 @@
+{
+  "method": "played",
+  "system": "nes",
+  "core": "fixnes",
+  "core_file": "fixnes_libretro.dylib",
+  "core_name": "fixNES",
+  "core_version": "Alpha v1.3.1",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Taito Grand Prix - Eikou e no License (Japan).nes",
+    "sha1": "d43088d09de229c6abdb34624f616edd6edfbf7b",
+    "size": 262160
+  },
+  "device": null,
+  "script": "scripts/nes/Taito Grand Prix.txt",
+  "frames": 4636,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Taito Grand Prix - Eikou e no License (Japan).srm": {
+      "size": 8192,
+      "sha1": "cf9ae1ae447280e3f79e7a55fef82b9c5e0b383f"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

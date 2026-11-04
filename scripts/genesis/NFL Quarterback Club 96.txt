@@ -1,0 +1,36 @@
+# NFL Quarterback Club 96: Play -> New Season, take the Cowboys and the 1996
+# schedule, and save the season to slot 1 ("COWBOYS 1996 W0-L0-T0"). Seasons
+# live in the cart's 24C16 EEPROM (2 KB, Acclaim wiring). Back out to the Play
+# menu and open Resume Season. (A reset instead leaves Genesis Plus GX
+# on blue and black stripes.) In this game B selects, C goes back.
+# Genesis A/B/C are the RetroPad's y/b/a.
+wait 1500
+press start 6       # title -> main menu (Play / Practice / Simulation)
+wait 300
+press b 6           # Play
+wait 300
+press down 6        # New Season
+wait 60
+press b 6
+wait 480            # TEAM SELECT, SEASON PLAY: Cowboys
+press b 6
+wait 480            # SEASON SCHEDULE 1996
+press b 6
+wait 480            # SAVE: 1. <EMPTY>
+shot slots
+press b 6           # save to slot 1
+wait 480
+shot saved1         # 1. COWBOYS 1996 W0-L0-T0
+press a 6           # C back: schedule, team select, Play menu
+wait 400
+press a 6
+wait 400
+press a 6
+wait 400
+press down 6        # New Season
+wait 60
+press right 6       # Resume Season
+wait 60
+press b 6
+wait 480
+shot saved          # RESTORE: 1. COWBOYS 1996 W0-L0-T0, read from the EEPROM

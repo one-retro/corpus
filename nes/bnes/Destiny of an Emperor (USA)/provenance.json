@@ -1,0 +1,33 @@
+{
+  "method": "played",
+  "system": "nes",
+  "core": "bnes",
+  "core_file": "bnes_libretro.dylib",
+  "core_name": "bnes",
+  "core_version": "v083 8e26e89",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Destiny of an Emperor (USA).nes",
+    "sha1": "cc58ba9c622b0ee09ccef2ed9f9e2deef4b518d4",
+    "size": 262160
+  },
+  "device": null,
+  "script": "scripts/nes/Destiny of an Emperor.txt",
+  "frames": 2194,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Destiny of an Emperor (USA).srm": {
+      "size": 8192,
+      "sha1": "a131168bd566f5076f4a3538de5231b93db091c5"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null,
+  "built_from": {
+    "repo": "https://github.com/libretro/bnes-libretro",
+    "commit": "8e26e89a93bef8eb8992d1921b539dce1792660a",
+    "build": "make platform=osx CC=\"cc -DIOS -DHAVE_POSIX_MEMALIGN=1\" CXX=\"c++ -DIOS\" -j12 (no source edits; the IOS define is the code's own switch for Apple arm64: no <malloc.h>, stat64 = stat)"
+  }
+}

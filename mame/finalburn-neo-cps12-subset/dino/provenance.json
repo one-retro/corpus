@@ -1,0 +1,33 @@
+{
+  "method": "played",
+  "system": "mame",
+  "core": "finalburn-neo-cps12-subset",
+  "core_file": "finalburn-neo-cps12-subset_libretro.dylib",
+  "core_name": "FinalBurn Neo (cps12 subset)",
+  "core_version": "v1.0.0.03  GIT384609f",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "dino.zip",
+    "sha1": "71701182e23ab43bfe37b8082ed3b3c30b8e0e58",
+    "size": 4115041
+  },
+  "device": null,
+  "script": "scripts/mame/dino.finalburn-neo.txt",
+  "frames": 4310,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "fbneo/dino.nv": {
+      "size": 128,
+      "sha1": "c5cab3f881930e5ab12cfec1b525262b365ec8fc"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null,
+  "built_from": {
+    "repo": "https://github.com/libretro/FBNeo",
+    "commit": "384609f72866dc00257c38a445d05cbb4f1c03a4",
+    "build": "make -C src/burner/libretro SUBSET=cps12 generate-files && make -C src/burner/libretro SUBSET=cps12 -j12 (the subset of the repo's .gitlab-ci.yml 3DS jobs, built for macOS arm64; generate-files (REGEN_HEADERS) rebuilds the driver list for the subset's drivers), unmodified source"
+  }
+}

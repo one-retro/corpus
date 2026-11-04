@@ -1,0 +1,33 @@
+{
+  "method": "played",
+  "system": "pcenginecd",
+  "core": "mednafen",
+  "core_file": null,
+  "core_name": "Mednafen",
+  "core_version": "1.32.1",
+  "frontend": "Mednafen 1.32.1 (Homebrew), module 'pce', isolated MEDNAFEN_HOME, -sound 0 -video.glvsync 0",
+  "rom": {
+    "name": "Prince of Persia (NA).chd",
+    "size": 256101917,
+    "sha1": "44de7a658c1365c6cc7a6ce10b607a80d34ba933"
+  },
+  "script": "scripts/pcenginecd/Prince of Persia.txt",
+  "frames": 5176,
+  "options": null,
+  "input": "work/standalone/tools/sdlfeed.c (DYLD_INSERT_LIBRARIES into the ad-hoc-signed Homebrew binary): SDL key events synthesized inside the process on presented frames, from the retro-run script mapped to Mednafen's default keys (gen_sdlfeed.py: a = I, b = II, start = RUN, select = SELECT); F9 snapshot for shot, F10 reset, F12 exit (Mednafen writes saves on exit)",
+  "started_from": null,
+  "files": {
+    "Prince of Persia (NA).456e3075fe104ee068b06532dc81a02f.sav": {
+      "size": 2048,
+      "sha1": "ad84db89f8b26896f66b8ae49b54ca951c906dcd"
+    }
+  },
+  "layout": {
+    "save_dir": "$MEDNAFEN_HOME/sav (default .mednafen/sav in the home folder)",
+    "name": "<cue file name without extension>.<the CD layout MD5 Mednafen logs at load>.sav (filesys.fname_sav %f.%M%x)",
+    "content": "the CD-ROM2 backup RAM (BRAM), 2048 bytes, raw",
+    "written": "on exit, if anything wrote to the BRAM: a run that sat 330 frames on the System Card screen left no file"
+  },
+  "created": "2026-11-04",
+  "note": "Mednafen 1.32.1 cannot open CHD. It loaded Prince of Persia (NA).cue/.bin, extracted from Prince of Persia (NA).chd (the dump the libretro entries used, sha1 above) with chdman extractcd, and named the save after the cue. Module pce, System Card 3.0 (Japan) as syscard3.pce (the pce.cdbios default, as in the libretro cores). The BRAM header is HUBM with end pointer 0x8800, as in beetle-pce/beetle-pce-fast. Differs from beetle-pce/beetle-pce-fast at 0x12 (the entry checksum) and 0x22 (time left: 59:49 here, 59:48 in Beetle, 59:50 in Geargrafx): CD timing, the game data is otherwise the same."
+}

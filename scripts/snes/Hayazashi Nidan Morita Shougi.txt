@@ -1,0 +1,59 @@
+# Hayazashi Nidan Morita Shougi (ST011): the battery RAM is the ST011's own
+# 4 KB of data RAM. 入門教室 -> 対局はじめ -> あなたが先手; play 7六歩 (the 7七
+# pawn up one), let the computer answer, resign (SELECT -> 投了), then セーブ
+# to slot 1 without a comment. The game will not save a game with no moves.
+# The ロード list then shows "1 棋譜1 .入門".
+# This is the flow for cores that run the ST011 program from its firmware
+# (st011.rom). snes9x's high-level ST011 resigns at once after your first
+# move ("あなたの勝ちです"): see the .snes9x.txt variant.
+wait 1200           # Seta logo, title
+press start 8
+wait 400
+press a 8           # 入門教室
+wait 300
+press a 8           # 対局はじめ
+wait 300
+press a 8           # あなたが先手
+wait 900
+press left 10
+wait 40
+press left 10
+wait 40
+press down 10
+wait 40
+press a 10          # pick up the 7七 pawn
+wait 60
+press up 10
+wait 40
+press a 10          # 7六歩
+wait 2400           # the computer answers
+shot g0
+press select 15     # 次の1手 / まった / 駒切替 / 投了
+wait 120
+press down 15
+wait 60
+press down 15
+wait 60
+press down 15
+wait 60
+press a 15          # 投了
+wait 900
+press b 15          # あなたの負けです stays until a button
+wait 300
+press down 15
+wait 60
+press down 15
+wait 60
+press a 15
+wait 200
+press a 15
+wait 300
+press down 15
+wait 60
+press a 15          # コメントしますか -> いいえ: saved to slot 1
+wait 600
+press up 15
+wait 60
+press a 15          # ロード: the slot list shows "1 棋譜1 .入門"
+wait 400
+shot saved

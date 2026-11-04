@@ -1,0 +1,37 @@
+{
+  "method": "played",
+  "system": "snes",
+  "core": "bsnes-jg",
+  "core_file": "bsnes-jg_libretro.dylib",
+  "core_name": "bsnes-jg",
+  "core_version": "2.1.0",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Daikaijuu Monogatari II (Japan).sfc",
+    "sha1": "673c48a373b7da7e0e934c55f7182587e07bb9ab",
+    "size": 5242880
+  },
+  "device": null,
+  "script": "scripts/snes/Daikaijuu Monogatari II.txt",
+  "frames": 23538,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Daikaijuu Monogatari II (Japan).rtc": {
+      "size": 16,
+      "sha1": "66836c1b97cab829c11a88fc0047c89c1e43b377"
+    },
+    "Daikaijuu Monogatari II (Japan).srm": {
+      "size": 8192,
+      "sha1": "d670a92bba2fa9c8fe2318abc43e14deb77c0cf2"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "Run with retro-run --pad2 (through .cache/build/make-save-pad2.py, otherwise tools/make-save.py): a joypad is plugged into port 2 as well, as RetroArch does. With port 2 never set, bsnes-jg dereferences a null controller in CPU::joypadEdge on the first frame.",
+  "built_from": {
+    "repo": "https://github.com/libretro/bsnes-jg",
+    "commit": "5a1ea18934fc08aeb67b8aa804bf2a5e4ec9c87b",
+    "build": "make -C libretro -j12 (libretro branch; the repo's .gitlab-ci.yml osx-arm64 job uses MAKEFILE_PATH=libretro), unmodified"
+  }
+}

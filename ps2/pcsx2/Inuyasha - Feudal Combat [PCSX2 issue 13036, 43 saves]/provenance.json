@@ -1,0 +1,21 @@
+{
+  "method": "downloaded",
+  "system": "ps2",
+  "core": "pcsx2",
+  "url": "https://github.com/user-attachments/files/21309941/Mcd001.zip",
+  "source_page": "https://github.com/PCSX2/pcsx2/issues/13036",
+  "source": "GitHub, PCSX2/pcsx2 issue tracker (an attachment to a bug report)",
+  "author": "thelastangryman1907",
+  "licence": null,
+  "emulator": "PCSX2 v2.5.68",
+  "posted": "2025-07-18",
+  "fetched": "2026-11-04",
+  "what_it_is": "A well-used PCSX2 card with 43 saves of mixed regions, attached to an Inuyasha bug report.",
+  "files": {
+    "Mcd001.ps2": {
+      "size": 8650752,
+      "sha1": "f4ea27094d653ed5213a383908fc132423ab933c"
+    }
+  },
+  "note": "No licence stated on the page. 43 saves, mixed regions"
+}

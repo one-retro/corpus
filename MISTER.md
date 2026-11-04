@@ -6,7 +6,34 @@ way `tools/retro-run` plays libretro cores. Entries sit beside the libretro ones
 Paths on the MiSTer are given relative to its SD card; `<sd>` stands for the card's mount point
 where a full path is needed.
 
-## What was made (2026-11-03/04)
+## What was made, second session (2026-11-04)
+
+The same rig, extended (see "Rig changes, second session"), for the cores the first session had
+not reached and for the special cartridges the other workers scripted meanwhile. Every filed entry
+was checked on its screenshots and compared byte for byte with the libretro entries of the game.
+
+| core (.rbf) | system | filed | not filed |
+| ----------- | ------ | ----- | --------- |
+| NeoGeo_MiSTer (NeoGeo_20260603) | neogeo | mslugx (AES, card), jockeygp (MVS, cartridge RAM), lbowling and blazstar (MVS, backup RAM + card), kof98 (MVS, original BIOS, soft DIPs) (5) | fatfury2, samsho, samsho2, pbobblen, bstars2 not attempted (the save kinds were covered) |
+| N64_MiSTer (N64_20260726) | n64 | Super Mario 64, Banjo-Kazooie (EEPROM 4K); Yoshi's Story (16K, only the game's first-boot format), Perfect Dark (16K); Ocarina of Time, Super Smash Bros. (SRAM); Majora's Mask (filed as `(USA) (played)`: a downloaded `(USA)` entry exists), Paper Mario (FlashRAM); Pokemon Stadium (FlashRAM + Transfer Pak with Pokemon Red); Tony Hawk's Pro Skater (Controller Paks); Dezaemon 3D (768 Kbit SRAM, first-boot set-up) (11) | |
+| S32X_MiSTer (S32X_20260603) | sega-32x | WSB Starring Deion Sanders, Golf Magazine 36 Great Holes (2) | NBA Jam TE (EEPROM): after the script's 74k frames the game was still in a quarter, so no record and no file; the script is timed for PicoDrive |
+| SGB_MiSTer (SGB_20260802) | gb | Link's Awakening, Pokemon Red, Super Mario Land 2, Final Fantasy Adventure (4) | |
+| MegaDrive_MiSTer, file line FS2,SMS | mastersystem | Penguin Land, Phantasy Star (2): the MegaDrive core does run Master System cartridges | |
+| MegaDrive_MiSTer | genesis | Frank Thomas Big Hurt Baseball (24C65), NFL Quarterback Club 96 (24C16), Micro Machines - Military (Codemasters 24C08, J-Cart) (3) | |
+| SNES_MiSTer (SNES_20260823) | snes | F1-ROC II (ST010), BS-X, SD Gundam Generation - Ichinen Sensouki (Sufami Turbo) (3) | Hayazashi Nidan Morita Shougi (ST011: the board never moved, no file written; the core's README lists only the ST010). SuperFX, SPC7110, S-DD1, OBC1: no corpus scripts exist for them, so nothing to replay |
+| Gameboy_MiSTer | gb, gbc | Tamagotchi (TAMA5), Net de Get (MBC6) (2) | MMM01: no script exists (the GB worker's Momotarou Collection 2 was attempted and dropped) |
+| NES_MiSTer (NES_20260823) | nes | Romance of the Three Kingdoms II (MMC5 32 KiB), Uncharted Waters (MMC5 8+8 KiB), Nobunaga's Ambition (SOROM), Taito Grand Prix (X1-005), Pac-Man Championship Edition (Namco 163) (5) | |
+| C64_MiSTer (C64_20260823) | c64 | | Summer Games: ran from the G64 (typed `LOAD"*",8,1` / `RUN`), but the 100m dash ended in FAULT twice, so no record was written to the disk (its sha1 unchanged); Elite not attempted (a disk swap needs the OSD). See `c64/NOTES.md` |
+| MSX1_MiSTer (MSX1_20250108) | msx | | Hydlide II: with the blueMSX `MSX.ROM` loaded as BIOS (file index 1) and the cartridge in slot A (index 2) the core gave no picture (1x1 screenshots) and created no `saves/MSX1/`; its CONF_STR has no save option at all (only a `.DSK` drive written in place). Not pursued |
+| MSX_MiSTer (MSX_20260603, OCM) | msx, msx2 | | not attempted: the core runs only from a VHD with OCM-BIOS and MSX-DOS (none on the device), its slots offer only MegaSCC+/MegaRAM, and nothing but the VHD is ever written: no cartridge SRAM exists to save |
+
+The N64 core had failed in the first session for a simple reason: it needs the N64 PIF ROM as
+`games/N64/boot.rom` (N64_MiSTer README), which the device lacked. The owner put their own dump
+there for this session (it stays; it is theirs). Details of every system are in its NOTES.md
+(`neogeo`, `n64`, `sega-32x`, `c64`, `msx`); the Game Boy, NES, SNES, Genesis and Master System
+findings are below, since those NOTES belong to other workers.
+
+## What was made (first session, 2026-11-03/04)
 
 Saves made by script on the MiSTer and filed with `"method": "played"`, `"frontend": "mister"`;
 each entry has the file(s) exactly as the core wrote them in `saves/<folder>/`, `provenance.json`
@@ -27,8 +54,8 @@ save as read back from the SD card.
 | SMS_MiSTer, setname GameGear | sega-gg | Shining Force - Sword of Hajya, Magical Puzzle Popils, Defenders of Oasis (3) | |
 | TurboGrafx16_MiSTer (TurboGrafx16_20260603) | pcengine | Chew-Man-Fu, Davis Cup Tennis, Bomberman '93, Jack Nicklaus' Turbo Golf, Night Creatures (5) | |
 | PSX_MiSTer (PSX_20260807) | psx | Gran Turismo (memory card) (1) | |
-| N64_MiSTer (N64_20260726) | n64 | | Super Mario 64, Yoshi's Story: loaded, Main created the `.eep`, but screenshots are black and the game never wrote its EEPROM; not pursued |
-| Saturn, MegaCD, NeoGeo | | | not attempted (time): no MegaCD/Saturn scripts yet; NeoGeo needs the owner's `NEOGEO.CFG` changed (MVS->AES, Autosave) |
+| N64_MiSTer (N64_20260726) | n64 | | Super Mario 64, Yoshi's Story: loaded, Main created the `.eep`, but screenshots are black and the game never wrote its EEPROM (no PIF ROM on the device; done in the second session) |
+| Saturn, MegaCD, NeoGeo | | | not attempted (time): no MegaCD/Saturn scripts yet; NeoGeo needed the owner's `NEOGEO.CFG` changed (done in the second session, with the owner's approval) |
 
 Not filed, with reasons:
 
@@ -43,7 +70,8 @@ Not filed, with reasons:
   same pad worked in four other MegaDrive games. Unexplained.
 * **Dezaemon**: the copy needs the hand cursor on exact pixels (1 px per held frame); held in
   real time it stopped beside the OK button. The SRAM was only the S-RAM CHECK fill.
-* **N64**: the scaler screenshot of the N64 core is black (640x240, all zero), so there was no
+* **N64** (explained in the second session: the device had no `games/N64/boot.rom`, the PIF ROM
+  the core needs): the scaler screenshot of the N64 core is black (640x240, all zero), so there was no
   way to see the game, and neither game wrote its EEPROM within 30 s (the files stayed all FF
   as Main created them). The N64 `.eep` naming was confirmed: Main 2026-10 writes
   `<rom>.eep`/`.sra`/`.fla`/`<rom>_N.cpk` (support/n64/n64.cpp), not one `.sav`.
@@ -106,6 +134,80 @@ blocks). Main names it after the game's folder, not the `.cue`, and creates it a
 formatted blank card (support/psx/psx.cpp), so it exists before the game saves. Gran Turismo's
 card is byte-identical to Beetle PSX's.
 
+**NeoGeo_MiSTer** (second session). One `.sav` per game, always 73728 bytes (0x90 sectors),
+named after the `.neo` file (or the romset folder): 64 KiB of MVS backup RAM, then an 8 KiB region
+holding the memory card (2 KiB used) or, for Jockey GP and V-Liner, the cartridge's own RAM in its
+place. Every 16-bit word byte-swapped: the backup RAM in exactly FinalBurn Neo's `.fs` order, so a
+Jockey GP `.sav` has the layout and size of FBNeo's 73728-byte `.fs`. AES leaves the backup RAM as
+loaded (FF). The card's saved blocks are byte-identical to Geolith's `.mcr`; only the 32-byte card
+header differs (UniBIOS formats it its own way). Details in `neogeo/NOTES.md`.
+
+**N64_MiSTer** (second session). One file per chip and per pak in `saves/N64/`, named after the ROM:
+`.eep` 512 or 2048, `.sra` 32768 (98304 for Dezaemon 3D's 768 Kbit SRAM), `.fla` 131072,
+`_1.cpk`-`_4.cpk` 32768 each, `_1.tpk` 32768. SRAM and FlashRAM files are in the libretro `.srm`
+order (each 32-bit word reversed, one-saves' "swapped"): Ocarina of Time's `.sra` is
+byte-identical to Mupen64Plus-Next's SRAM region. EEPROM and paks are in console order. Main
+creates the files at ROM load (chips FF, paks formatted by Main with a random serial and "MiSTer").
+The Transfer Pak works: its memory is the Game Boy game's own save in `saves/GAMEBOY/` (Pokemon
+Stadium wrote 32 bytes into Pokemon Red's), and Main leaves two copies of the original beside it,
+`<gb rom>_bak.sav` and `saves/N64/<n64 rom>_1.tpk`. Details in `n64/NOTES.md`.
+
+**S32X_MiSTer** (second session). Always 65536 bytes, `saves/S32X/<rom>.sav`. Byte-wide SRAM is
+stored *expanded*, the game's bytes at odd offsets, like PicoDrive but with FF (not 00) in the even
+bytes; every byte the games wrote matches PicoDrive's. That is the opposite of MegaDrive_MiSTer,
+which packs byte-wide SRAM. Details in `sega-32x/NOTES.md`.
+
+**SGB_MiSTer** (second session). `saves/SGB/<rom>.sav`, the Game Boy cartridge RAM at the size the
+Gameboy core writes (LA 8192, Pokemon Red 32768, SML2 8192, FFA's MBC2 1024 with the nibbles one
+per byte, high nibble 0). Unwritten bytes are FF: Link's Awakening's file is byte-identical to
+Gambatte's `.srm`; Red differs from Gambatte's in 5 bytes of game data, SML2 in 144. The core needs
+the Super Game Boy BIOS (the SNES cartridge, `.sfc`) through its `FC4` file line; the MGL loads it
+first, and Main stores its path in `config/SGB.f4` (a file the rig removed afterwards). The
+optional SGB boot ROM (`FC5`, `.bin`) was not needed.
+
+**MegaDrive_MiSTer with Master System cartridges** (second session). The 2026-06-03 core has a
+second file line, `FS2,SMS` (Power Base Converter mode). Saves go to `saves/MegaDrive/`, 65536
+bytes like every MegaDrive save: the first 32768 bytes are byte-identical to SMS_MiSTer's whole
+32768-byte file for the same game (Penguin Land, Phantasy Star), the rest is what the memory held
+(the zero seed here). SMS buttons 1/2 are the MD pad's B and C.
+
+**MegaDrive_MiSTer, serial EEPROMs** (second session). The core's EEPROM map covers Acclaim's
+24C65 (Frank Thomas) and 24C16 (NFL QB Club 96) boards and the Codemasters 24C08 on the J-Cart
+(Micro Machines - Military), all at the start of the 65536-byte file: Frank Thomas's first 8192
+bytes equal Genesis Plus GX's and BlastEm's 8192-byte files; NFL QB Club 96's and Micro Machines'
+first 8192 bytes equal PicoDrive's 8192-byte files (00 where never written).
+
+**SNES_MiSTer, special chips** (second session). ST010 (F1-ROC II): the core takes the chip's
+firmware appended to the ROM (`st010.rom`, 53248 bytes, program then data ROM), and saves 2048
+bytes: the *upper half* of the ST010's 4 KB data RAM, i.e. bytes 0x800-0xFFF of the libretro
+cores' 4096-byte file, identical to theirs where the game wrote (the player at 0x10 here, 0x810
+there); the chip's lower 2 KB work area is not saved, and never-written bytes are FF (00 in the
+libretro files). ST011 (Morita Shougi, firmware appended the same way): Main flags it, but the core's README
+lists only the ST010; the game showed its board and never moved (neither the script's move nor the
+computer's), and no save file was written. BS-X: the base cart loaded
+as the ROM gives a 32768-byte `.sav` byte-identical to bsnes's `.srm`, and no PSRAM file. Sufami
+Turbo: Main expects one image, the base cart padded to 1 MiB, then mini-cart A (and B) on 1 MiB
+boundaries, each starting `BANDAI SFC-ADX`; the save, named after that image (so here after the
+mini-cart), is cart A's 8192 bytes, like Mesen2's (snes9x writes 16384).
+
+**Gameboy_MiSTer, special mappers** (second session). TAMA5 (Tamagotchi): 1024 bytes, the TAMA5's
+32 bytes at 0x000 and repeated at 0x100, 0x200, 0x300, FF elsewhere, one file byte per TAMA5 byte
+like mGBA's and Gearboy's 32-byte `.srm`; no clock saved (mGBA saves none either; Gearboy adds a
+72-byte `.rtc`). MBC6 (Net de Get, as GBC): 32768 bytes, the SRAM only, no flash (like IroGB;
+Gearboy's file adds the 1 MiB flash).
+
+**NES_MiSTer, special boards** (second session). Uncharted Waters (MMC5, 8 KiB battery + 8 KiB
+volatile) and Nobunaga's Ambition (SOROM, the same split) get 8192-byte files, and both hold the
+*battery* chip (Nobunaga's has nothing at 0x000-0x3FF, the layout of fceumm's and Nestopia's files;
+fixNES, Mesen and QuickNES save the work chip there). Uncharted Waters differs from fceumm, Mesen
+and Nestopia in 4 bytes (the rolled stats); no MMC5 ExRAM is saved. Taito X1-005 (Taito Grand
+Prix): the mapper's 128 bytes at 0x00 of a 32768-byte file, byte-identical to Nestopia's 128-byte
+file. Namco 163 (Pac-Man CE): 8192 bytes, the N163's own 128 bytes not saved; the `sav` block
+matches every libretro core, but 0x000-0x6F1 (what looks like the recorded replay) is all 00 here,
+where the five libretro files agree on 1217 non-zero bytes; the game still offers and plays the
+replay after a reload. A run of Taito Grand Prix without a seed showed the leftover problem for
+real: past the 128 bytes the file held the previous game's battery and work RAM (Nobunaga's). Romance of the Three Kingdoms II (MMC5, 32 KiB): 32768 bytes like fceumm's, Nestopia's and RustyNES's; its title took START only when held 20 frames on this core.
+
 ### The seed, and what a user's file would hold
 
 Entries marked `started_from` began from a zero-filled file (see "Clean backup RAM" above).
@@ -115,6 +217,17 @@ the seed. On a user's MiSTer those bytes are whatever the memory held, which can
 game's save: a sync tool must not expect them to be FF or 00, and should not treat them as
 meaningful. GBA leftovers are real: a second Emerald run without a seed found the first run's
 save.
+
+A correction from the second session: some cores *do* reload the save after every ROM load, file
+or no file, and Main hands them FF blocks when the file does not exist (user_io.cpp: a save that
+"will be created upon write" reads as `memset(-1)`, except for the cores with their own blank
+format: MegaCD, PCE, PSX, Saturn, 3DO). For those cores a fresh user file has **FF** wherever the
+game never wrote, and no seed is needed: NeoGeo, S32X, SGB, Gameboy (its `new_load`), TurboGrafx16
+(no `img_size` check). The cores that load only an existing file (`|img_size & bk_ena`: NES, SMS,
+MegaDrive, SNES) keep whatever the memory held, and SNES then fills with FF itself. The first
+session's Gameboy entries were seeded with zeros, so their never-written bytes are 00 where a
+user's file has FF; the SGB entries of the second session, from the same Game Boy logic, show the
+FF.
 
 
 ## The rig
@@ -170,6 +283,13 @@ corpus-tmp saves exactly where one from `games/` would. Indexes used:
 | SMS | `_Console/SMS` | `H8FS1,SMSSG SC` | f 1 |
 | Game Gear | `_Console/SMS` + setname `GameGear` | `H8FS2,GG` | f 2 |
 | PSX | `_Console/PSX` | `H7S1,CUECHD` | s 1 |
+| NeoGeo | `_Console/NeoGeo` | `FS1,*` (`.neo` or a romset folder) | f 1 |
+| N64 | `_Console/N64` | `FS1,N64z64n64v64`; `F2,GBCGB` = the Transfer Pak's Game Boy game, loaded first | f 1 (f 2) |
+| 32X | `_Console/S32X` | `FS,32X` | f 0 |
+| MegaDrive, Master System cartridge | `_Console/MegaDrive` | `FS2,SMS` | f 2 |
+| SGB | `_Console/SGB` | `FC4,SFC` the SGB BIOS (loaded first), `FS1,GBCGB` the game | f 4, then f 1 |
+| C64 | `_Computer/C64` | `H7S0,D64G64T64D81` drive #8 | s 0 |
+| MSX1 | `_Computer/MSX1` | `P2F1,ROM` BIOS, `H3F2,ROM` slot A | f 1, then f 2 |
 
 ### Input: a uinput gamepad Main maps by default
 
@@ -232,7 +352,10 @@ PSX. Rather than walk the OSD blind, `mister.py` writes the core's config file b
 file with only the Autosave bit set means "every option default, Autosave on". The `save` step
 then presses F12 (open), waits 2-3 s, F12 (close). These CFG files did not exist on the device;
 they are removed afterwards. A config that already exists (the owner's `NEOGEO.CFG`) is never
-written.
+written, unless the owner allows it: in the second session they did, for `NEOGEO.CFG`, and the rig
+put it back byte-identical after every run (see "Rig changes, second session"). Second-session
+Autosave bits: S32X 13, SGB 23, NeoGeo 24; N64 has Autosave On by default (bit 42 = Off), so no
+N64 config was written; C64 has no backup RAM (disks are written in place).
 
 ### Clean backup RAM: the zero-filled seed
 
@@ -256,6 +379,37 @@ Evander's "accept", Kirby Super Star's Retire). Now `shot` restarts the schedule
 starts late still gets its full length. Runs made before the fix were redone or are noted in
 their provenance (Miracle Warriors' proof, Kirby Super Star's).
 
+### Rig changes, second session
+
+* **New cores** in `CORES`: `neogeo`, `n64` (now working), `s32x`, `mdsms` (MegaDrive core,
+  `FS2,SMS`), `sgb`, `c64`, `msx1`; button maps for Neo Geo (libretro b/a/y/x = Neo A/B/C/D, select
+  = Coin, which is the core's L), 32X (as MegaDrive), Master System on the MD core (b/a = MD B/C)
+  and C64 (fire = the pad's A).
+* **`--cfg-bits N,M,...`** sets status bits besides Autosave in the core config: NeoGeo System
+  Type (bit 1, MVS), BIOS (bit 22, Original), [DIP] Settings (bit 7); C64 Swap Joysticks (bit 3,
+  port 2).
+* **An owner's config, changed and restored.** `config/NEOGEO.CFG` existed (the owner's: MVS,
+  UniBIOS, Autosave off), and the owner allowed changing it for the runs. The rig copied the
+  device's whole `config/` to `work/mister/config-backup/` before any run; for a core marked
+  `cfg_restore` it writes its own 16 bytes, runs, and in a `finally` puts the owner's bytes back,
+  sets the mtime back to the one in `before-config.txt` (`python3` `os.utime` on the device) and
+  checks the sha1. Every NeoGeo run ended with "restored config/NEOGEO.CFG".
+* **`--pre-file TYPE,INDEX,FILE`** adds an MGL `<file>` before the game (the SGB BIOS, the Transfer
+  Pak's Game Boy game, the MSX BIOS); `%20` stands for a space, since `batch.sh` splits options on
+  spaces. Main processes MGL items in order, each `delay` seconds after the previous one.
+* **`--pre FILE`** lines now also follow the power-cycle reload (the SGB's 300-frame BIOS intro).
+* **`--view`** runs over our own existing save with `--no-save` (to read a save back).
+* `run` uploads `mrun.py` every time; `file --script S` names the corpus script a MiSTer variant
+  came from, `--cfgdesc TEXT` describes the config written. MiSTer variants of corpus scripts (only
+  where timing or the boot differs) were written in `work/mister/vscripts/`; the exact script that
+  ran is in `scripts/mister/<system>/` as before.
+* `mrun.py` knows `lbracket rbracket backslash grave rctrl ralt` (the C64's `*` is the key right of
+  `P`, i.e. `]`).
+* A fresh baseline: the first session's `before*.txt`, `after.txt`, `created.txt` and
+  `config-backup/` moved to `work/mister/session1/`.
+* Lesson: a `Monitor`/wait on `runs/<core>-<tag>-*/run.json` must not match an older run directory
+  with the same tag (a Yoshi run of the first session did).
+
 ### Leaving the device as found
 
 `mister.py cleanup --discard-unfiled` removes every save the rig made (filed or not), our
@@ -265,6 +419,18 @@ the menu core, then snapshots saves/, savestates/, screenshots/ and config/ agai
 2026-11-04 01:0x it printed "saves/, savestates/, screenshots/ match before.txt" and "config/
 matches before-config.txt" (sizes, mtimes and sha1s identical), with the menu core running, no
 uinput devices left and no 1Retro process at any point.
+
+Second session (2026-11-04): a fresh baseline was taken before the first run (`before.txt`,
+`before-config.txt`; the device's `config/` copied to `config-backup/`); the owner's
+`config/NEOGEO.CFG` was put back after every NeoGeo run (same sha1 and mtime, checked). At 14:2x
+`cleanup --discard-unfiled` removed every save, config (`C64`, `GAMEBOY`, `GBC`, `MegaDrive`,
+`S32X`, `SGB`, `SNES` `.CFG` and Main's `SGB.f4`), screenshot and folder the runs made (`saves/N64`,
+`S32X`, `SGB`, `MegaDrive`, `savestates/N64`, `SGB`), including the Pokemon Red save and its
+`_bak` that the Transfer Pak run used in `saves/GAMEBOY/`; `corpus-tmp/` was removed whole. It
+printed "saves/, savestates/, screenshots/ match before.txt" and "config/ matches
+before-config.txt", with the menu core loaded, no uinput devices left and no 1Retro process at any
+point. The one change left on purpose is the owner's: `games/N64/boot.rom`, their PIF ROM, put
+there for this session and kept.
 
 ### Safety
 

@@ -1,0 +1,38 @@
+load corpus-tmp/mgl/sgb-ffa.mgl 6
+# SGB: the Super Game Boy BIOS boots first (border, logo): 300 frames more than a Game Boy
+wait 300
+# Final Fantasy Adventure (MBC2: 512 x 4 bits of RAM inside the mapper):
+# New Game, name the hero and heroine (a few A's; the screen drops the first
+# presses while it fades in), then in the arena press SELECT for
+# Save / Map / Status and save to slot 1.
+wait 600
+press start 6       # New Game: the prologue crawl
+wait 120
+press a 6           # skip it
+wait 120
+repeat 4            # hero's name
+tap a 1 30
+end
+wait 30
+press start 6
+wait 120
+press start 6       # a second START is harmless on the empty heroine screen
+wait 120
+repeat 4            # heroine's name
+tap a 1 30
+end
+wait 30
+press start 6
+wait 600            # "Now fight!" -- the arena
+press select 6      # Save Map Status
+wait 60
+press a 6           # Save -> two slots
+wait 60
+press a 6           # slot 1
+wait 90
+shot saved          # slot 1 now shows the hero, HP 19/19, L 1
+wait 30
+wait 30
+save
+wait 60
+shot final

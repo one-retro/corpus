@@ -1,0 +1,33 @@
+{
+  "method": "played",
+  "system": "fds",
+  "core": "fceux",
+  "core_file": null,
+  "core_name": "FCEUX",
+  "core_version": "2.6.6",
+  "frontend": "FCEUX 2.6.6 (Homebrew build, Qt GUI), input from an FM2 movie played by its Lua engine (--loadlua, movie.play)",
+  "rom": {
+    "name": "Golf - Japan Course (Japan) (DV 2).fds",
+    "size": 131000,
+    "sha1": "532214dacbac874deb1c944f894c450feeffd2eb"
+  },
+  "script": "scripts/fds/Golf - Japan Course.txt",
+  "frames": 6754,
+  "options": null,
+  "input": "work/standalone/tools/gen_fceux_fds.py: the retro-run script as an FM2 movie (pad 1 per frame; reset = command 1; flip = command 4 eject, 8 select side, 4 insert, 30 frames apart), played read-only from Lua at turbo speed; screenshots and emu.exit from Lua. FCEUX's Lua has no disk-side call, its movies do",
+  "started_from": null,
+  "files": {
+    "Golf - Japan Course (Japan) (DV 2).fds": {
+      "size": 131000,
+      "sha1": "911e8fb744d00cd0f8fade39d700215c03fe7962"
+    }
+  },
+  "layout": {
+    "save_dir": "<base>/sav, base = $FCEUX_HOME/.fceux (default .fceux in the home folder)",
+    "name": "<ROM file name without extension>.fds",
+    "content": "the whole disk as the game left it: raw 65500-byte sides, no fwNES header (also when the ROM has one)",
+    "written": "when the game is closed (emu.exit here), and only if the game wrote to the disk; read back instead of the ROM on the next load"
+  },
+  "created": "2026-11-04",
+  "note": "FDS BIOS disksys.rom in the FCEUX base folder. Byte-identical to fceumm's .srm for this game (same container: whole headerless image). FCEUX segfaults (rc 139) on some exits, after the file is written."
+}

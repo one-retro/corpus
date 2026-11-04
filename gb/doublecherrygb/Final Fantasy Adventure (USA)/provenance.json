@@ -1,0 +1,37 @@
+{
+  "method": "played",
+  "system": "gb",
+  "core": "doublecherrygb",
+  "core_file": "doublecherrygb_libretro.dylib",
+  "core_name": "DoubleCherryGB",
+  "core_version": "v0.19.0 d432f97",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Final Fantasy Adventure (USA).gb",
+    "sha1": "8b93c55ee2660c60cf86dd70058f96ace98782c8",
+    "size": 262144
+  },
+  "device": null,
+  "script": "scripts/gb/Final Fantasy Adventure.txt",
+  "frames": 2300,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Final Fantasy Adventure (USA).rtc": {
+      "size": 8,
+      "sha1": "05fe405753166f125559e7c9ac558654f107c7e9"
+    },
+    "Final Fantasy Adventure (USA).srm": {
+      "size": 8192,
+      "sha1": "54387e70d65eea8e3c8b721e17f0adff5b608134"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null,
+  "built_from": {
+    "repo": "https://github.com/TimOelrichs/doublecherryGB-libretro",
+    "commit": "d432f97693670524f7f46bfca886b731134f4bb6",
+    "build": "make -j12 (platform=osx, arm64), unmodified"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "method": "played",
+  "system": "ps2",
+  "core": "play",
+  "core_file": "play_libretro.dylib",
+  "core_name": "Play!",
+  "core_version": "0.77-17-g1f27232",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "runner": "ps2-save.py: make-save.py with a fresh system directory and HOME per run (PS2 cores write their cards there); see ps2/NOTES.md",
+  "renderer": "opengl",
+  "rom": {
+    "name": "Marvel vs. Capcom 2 - New Age of Heroes (USA).cue",
+    "sha1": "9a7585c76c93718f652413e0d579296daf304fbd",
+    "size": 111,
+    "tracks": [
+      {
+        "name": "Marvel vs. Capcom 2 - New Age of Heroes (USA).bin",
+        "sha1": "3445ddf09b57bf5b2d493e75e21ff0cd9caa2759",
+        "size": 239673504
+      }
+    ]
+  },
+  "bios": null,
+  "device": null,
+  "script": "scripts/ps2/Marvel vs. Capcom 2 - New Age of Heroes (USA) [slot2].txt",
+  "frames": 3342,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "home/Documents/Play Data Files/vfs/mc1/BASLUS-20486SYS/BASLUS-20486SYS": {
+      "size": 1876,
+      "sha1": "33601d8e1f58b0a04fa82ca1709ed1c6b4805a1b"
+    },
+    "home/Documents/Play Data Files/vfs/mc1/BASLUS-20486SYS/icon.sys": {
+      "size": 964,
+      "sha1": "74cbac94ffddc1c7cdddf747a174c8cee23b3aac"
+    },
+    "home/Documents/Play Data Files/vfs/mc1/BASLUS-20486SYS/mvsc2.ico": {
+      "size": 50968,
+      "sha1": "5908fe16b14064506bdbf0fffa031ef46d282108"
+    }
+  },
+  "also_written_not_filed": [
+    "home/Documents/Play Data Files/config.xml"
+  ],
+  "created": "2026-11-04",
+  "note": null
+}

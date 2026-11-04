@@ -1,0 +1,32 @@
+{
+  "method": "played",
+  "system": "n64",
+  "core": "n64-mister",
+  "core_file": "N64_20260726.rbf",
+  "core_name": "N64_MiSTer",
+  "core_version": "20260726",
+  "frontend": "mister",
+  "device": "the owner's MiSTer (DE10-Nano), Main_MiSTer binary of 2026-10-19",
+  "loaded_with": "MGL via /dev/MiSTer_cmd load_core (_Console/N64, file type f index 1)",
+  "save_folder": "saves/N64",
+  "rom": {
+    "name": "Dezaemon 3D (Japan).z64",
+    "sha1": "1c10a85a2b6a782e6302b19c2387e2d58983a8d4",
+    "size": 16777216
+  },
+  "script": null,
+  "mister_script": "scripts/mister/n64/Dezaemon 3D.n64.txt",
+  "frames": 3726,
+  "timing": "real time: script frames played as wall-clock 1/60 s by work/mister/mrun.py",
+  "options": null,
+  "save_trigger": "OSD opened (F12 from a uinput keyboard) with Autosave on: the core writes its backup RAM to the SD card",
+  "started_from": null,
+  "files": {
+    "Dezaemon 3D (Japan).sra": {
+      "size": 98304,
+      "sha1": "2d4b9c6636183a3eddd411b5be91cb7f844e54c2"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "SRAM 768 Kbit, the chip no libretro core saves (n64/NOTES.md): Main's database line 'sram96k' gives <rom>.sra of 98304 bytes, the three 32 KiB banks one after another. What the game wrote is its first-boot set-up: bank 0 (0x00000-0x07FFF) all 00, banks 1 and 2 untouched (FF, Main's fill), exactly as far as the libretro dry runs saw it (they turned their one 32 KiB bank to 00). The script went START, A, A, A to GAME EDIT (proof); a second run aimed at the SAVE button, but the game's tutorial guide takes over the hand cursor there, and nothing more was written. So the file shows the size and bank layout, not the byte order (all bytes are 00 or FF). Written on OSD open (Autosave On, the N64 default). The exact script is in scripts/mister/n64/ (a MiSTer-only script; there is no corpus script for this game)."
+}

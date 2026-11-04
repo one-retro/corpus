@@ -2,7 +2,8 @@
 """Play a game in a libretro core from a script and file what it saved.
 
     make-save.py SYSTEM CORE ROM SCRIPT [--options FILE] [--keep-sysdir]
-                 [--bios FILE ...] [--dry] [--note TEXT]
+                 [--bios FILE ...] [--dry] [--note TEXT] [--home]
+                 [--subsystem ID --slot FILE ...] [--rom-source URL]
 
 SYSTEM and CORE are registry slugs. ROM is a path (tools/rom.py get prints one).
 SCRIPT is a retro-run script, normally scripts/SYSTEM/<game>.txt; its last
@@ -15,9 +16,16 @@ directory is filed, exactly as the core named it, under
 
     corpus/SYSTEM/CORE/<ROM stem>/
 
-beside provenance.json (what made it) and proof.png. With --keep-sysdir, files
-the core created in the system directory are filed too, under system/. Every
-run, filed or not, appends one line to .cache/status.jsonl.
+beside provenance.json (what made it) and proof.png. Files the core writes into
+its working directory are filed under cwd/ (Stella puts its SaveKey there). With
+--keep-sysdir, files the core created in the system directory are filed under
+system/; with --home the core runs with its own HOME and what it writes there is
+filed under home/ (Play! keeps its memory cards under Documents in the home folder). provenance's
+"files" lists every filed file by its path in the entry. Every run, filed or
+not, appends one line to .cache/status.jsonl.
+
+--subsystem loads ROM and the --slot files through retro_load_game_special, as
+RetroArch loads a subsystem (Sufami Turbo); saves are named after each slot.
 
 --dry runs and reports without filing anything, for developing a script.
 """
@@ -138,6 +146,12 @@ def main():
     ap.add_argument("--name", help="folder name for the game, default the ROM stem")
     ap.add_argument("--note", default="")
     ap.add_argument("--timeout", type=int, default=1800)
+    ap.add_argument("--home", action="store_true", help="run with HOME in the work directory, file what lands there")
+    ap.add_argument("--subsystem", help="libretro subsystem ident, e.g. multicart_addon")
+    ap.add_argument("--slot", action="append", default=[], help="a further subsystem slot file (- for empty)")
+    ap.add_argument("--ports", help="controller ports to plug a pad into (retro-run default 2)")
+    ap.add_argument("--pace", help="frames per wall-clock second (cores with their own real-time thread)")
+    ap.add_argument("--rom-source", help="URL a freely distributed homebrew ROM came from")
     a = ap.parse_args()
 
     rom = os.path.abspath(a.rom)
@@ -146,8 +160,8 @@ def main():
     exe = harness_for(core)
 
     work = tempfile.mkdtemp(prefix=f"{a.system}-{a.core}-", dir=os.path.join(ROOT, ".cache"))
-    saves, system, shots = (os.path.join(work, d) for d in ("saves", "system", "shots"))
-    for d in (saves, system, shots):
+    saves, system, shots, home = (os.path.join(work, d) for d in ("saves", "system", "shots", "home"))
+    for d in (saves, system, shots, home):
         os.makedirs(d)
     # Each entry of .cache/bios/SYSTEM/ (file or directory) is linked into the
     # system directory, so a core that wants dc/dc_boot.bin finds it.
@@ -170,8 +184,17 @@ def main():
         cmd += ["--device", a.device]
     if a.srm:
         cmd += ["--srm", os.path.abspath(a.srm)]
+    if a.subsystem:
+        cmd += ["--subsystem", a.subsystem]
+        for sl in a.slot:
+            cmd += ["--slot", sl if sl == "-" else os.path.abspath(sl)]
+    if a.ports:
+        cmd += ["--ports", a.ports]
+    if a.pace:
+        cmd += ["--pace", a.pace]
+    env = dict(os.environ, HOME=home, CFFIXED_USER_HOME=home) if a.home else None
     try:
-        run = subprocess.run(cmd, capture_output=True, text=True, timeout=a.timeout, cwd=work)
+        run = subprocess.run(cmd, capture_output=True, text=True, timeout=a.timeout, cwd=work, env=env)
         rc, err = run.returncode, run.stderr
     except subprocess.TimeoutExpired:
         rc, err = -1, "timed out"
@@ -179,7 +202,14 @@ def main():
 
     written = sorted(walk(saves))
     sys_new = sorted(walk(system)) if a.keep_sysdir else []
+    home_new = sorted(walk(home)) if a.home else []
+    # Anything else in the work directory was written by the core into its cwd.
+    ours = tuple(d + os.sep for d in ("saves", "system", "shots", "home"))
+    cwd_new = sorted(f for f in walk(work) if not f.startswith(ours) and f != "info.json")
     blanks = [f for f in written if blank(os.path.join(saves, f))]
+    extra = [os.path.join("cwd", f) for f in cwd_new] + [os.path.join("home", f) for f in home_new]
+    extra_ok = any(not blank(os.path.join(work, f.split(os.sep, 1)[1] if f.startswith("cwd" + os.sep) else f))
+                   for f in extra)
     shot = last_shot(script)
     proof = os.path.join(shots, f"{shot}.png") if shot else None
 
@@ -187,6 +217,7 @@ def main():
     status = {
         "system": a.system, "core": a.core, "game": game, "rc": rc,
         "files": written, "blank": blanks, "sysdir_files": sys_new,
+        "cwd_files": cwd_new, "home_files": home_new,
         "frames": info.get("frames"), "work": work,
         "time": datetime.datetime.now().isoformat(timespec="seconds"),
     }
@@ -194,7 +225,7 @@ def main():
     # (SkyEmu writes a .rtc for every game) saved nothing.
     clocks = (".rtc", ".smpc")
     data = [f for f in written if not f.lower().endswith(clocks)]
-    ok = rc == 0 and data and any(f not in blanks for f in data)
+    ok = rc == 0 and ((data and any(f not in blanks for f in data)) or extra_ok)
     status["ok"] = bool(ok)
     if rc != 0:
         status["error"] = err.strip().splitlines()[-5:]
@@ -217,10 +248,13 @@ def main():
         for f in written:
             os.makedirs(os.path.dirname(os.path.join(dest, f)), exist_ok=True)
             shutil.copy2(os.path.join(saves, f), os.path.join(dest, f))
-        for f in sys_new:
-            target = os.path.join(dest, "system", f)
-            os.makedirs(os.path.dirname(target), exist_ok=True)
-            shutil.copy2(os.path.join(system, f), target)
+        filed = list(written)
+        for sub, src, names in (("system", system, sys_new), ("cwd", work, cwd_new), ("home", home, home_new)):
+            for f in names:
+                target = os.path.join(dest, sub, f)
+                os.makedirs(os.path.dirname(target), exist_ok=True)
+                shutil.copy2(os.path.join(src, f), target)
+                filed.append(os.path.join(sub, f))
         if proof and os.path.exists(proof):
             shutil.copy2(proof, os.path.join(dest, "proof.png"))
         prov = {
@@ -233,16 +267,24 @@ def main():
             "frontend": "retro-run (writes saves as RetroArch does)",
             "renderer": info.get("renderer"),
             "rom": rom_record(rom),
+            "rom_source": a.rom_source,
+            "subsystem": ({"ident": a.subsystem,
+                           "slots": [rom_record(rom)] + [None if s == "-" else rom_record(os.path.abspath(s)) for s in a.slot],
+                           "loaded_with": "retro_load_game_special, as RetroArch loads a subsystem (retro-run --subsystem)"}
+                          if a.subsystem else None),
             "device": a.device,
             "script": os.path.relpath(script, ROOT),
             "frames": info.get("frames"),
             "options": open(a.options).read() if a.options else None,
             "started_from": os.path.relpath(os.path.abspath(a.srm), ROOT) if a.srm else None,
             "files": {f: {"size": os.path.getsize(os.path.join(dest, f)), "sha1": sha1(os.path.join(dest, f))}
-                      for f in written},
+                      for f in filed},
             "created": datetime.date.today().isoformat(),
             "note": a.note or None,
         }
+        # A core built from source carries <core>.json beside it: repo, commit, build command.
+        if os.path.exists(core + ".json"):
+            prov["built_from"] = json.load(open(core + ".json"))
         with open(os.path.join(dest, "provenance.json"), "w") as f:
             json.dump(prov, f, indent=2)
             f.write("\n")

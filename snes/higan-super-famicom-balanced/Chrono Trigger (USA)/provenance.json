@@ -1,0 +1,33 @@
+{
+  "method": "played",
+  "system": "snes",
+  "core": "higan-super-famicom-balanced",
+  "core_file": "higan-super-famicom-balanced_libretro.dylib",
+  "core_name": "higan (Super Famicom Balanced)",
+  "core_version": "106.25",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Chrono Trigger (USA).sfc",
+    "sha1": "de5822f4f2f7a55acb8926d4c0eaa63d5d989312",
+    "size": 4194304
+  },
+  "device": null,
+  "script": "scripts/snes/Chrono Trigger.txt",
+  "frames": 9010,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Chrono Trigger (USA).srm": {
+      "size": 8192,
+      "sha1": "73d104b0d775533d1143203dddf54369d1c3c4d0"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "The core stops with SIGTRAP in retro_deinit (Program::~Program), after the run, the save write and retro_unload_game; make-save.py counts the non-zero exit as a failure, so this entry was filed from the run directory by the same rules.",
+  "built_from": {
+    "repo": "https://github.com/libretro/nSide",
+    "commit": "5b2b5da3a9654d88b2e51fb7a1637808ac601a18",
+    "build": "make -C nSide target=libretro binary=library platform=macos compiler=clang++ -j12 (the repo's .gitlab-ci.yml osx-arm64 job), unmodified"
+  }
+}

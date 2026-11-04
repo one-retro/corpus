@@ -1,0 +1,48 @@
+{
+  "method": "played",
+  "system": "ps2",
+  "core": "play",
+  "core_file": "play_libretro.dylib",
+  "core_name": "Play!",
+  "core_version": "0.77-17-g1f27232",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "runner": "ps2-save.py: make-save.py with a fresh system directory and HOME per run (PS2 cores write their cards there); see ps2/NOTES.md",
+  "renderer": "opengl",
+  "rom": {
+    "name": "Gradius V (USA).cue",
+    "sha1": "2ef30018585d72e7d0b5f501f77f17301b818e3a",
+    "size": 81,
+    "tracks": [
+      {
+        "name": "Gradius V (USA).bin",
+        "sha1": "57a4a82fa3aa89d2fdd68c0d354aacca0fc82fd2",
+        "size": 465832416
+      }
+    ]
+  },
+  "bios": null,
+  "device": null,
+  "script": "scripts/ps2/Gradius V (USA).txt",
+  "frames": 5440,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "home/Documents/Play Data Files/vfs/mc0/BASLUS-20712/BASLUS-20712": {
+      "size": 1688,
+      "sha1": "65d8eb6ff9b166a137a5b1b8ff0f5150d08cfafe"
+    },
+    "home/Documents/Play Data Files/vfs/mc0/BASLUS-20712/icon.ico": {
+      "size": 33688,
+      "sha1": "1f9cb9d18cb43e29961bb12ce56d0216ca63bb58"
+    },
+    "home/Documents/Play Data Files/vfs/mc0/BASLUS-20712/icon.sys": {
+      "size": 964,
+      "sha1": "fc00cc3d7b82c6c457006addb03ff5ee491aa957"
+    }
+  },
+  "also_written_not_filed": [
+    "home/Documents/Play Data Files/config.xml"
+  ],
+  "created": "2026-11-04",
+  "note": null
+}

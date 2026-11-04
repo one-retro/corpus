@@ -1,0 +1,37 @@
+# Ecco the Dolphin - Defender of the Future (USA), SLUS-20394, DVD. LRPS2 variant: title wait 3300.
+# Player Menu > (no Ecco data) create > format the card > NEW GAME > initials "AAA":
+# the game writes its folder with a player file ECCO_AAA.
+# The intro (logos, title, attract demo) cycles without input; START only opens the menu while
+# the title shows, 1500-2400 frames after the language choice in PCEE2 and Play! but
+# 2400-4800 in LRPS2, hence the per-core variant .lrps2.txt (only that wait differs).
+wait 3000
+shot language
+press b 10           # LANGUAGE: ENGLISH
+wait 3300
+shot title
+press start 10       # title -> menu
+wait 400
+press down 10
+wait 40
+press down 10        # PLAYER MENU
+wait 40
+press b 10
+wait 300
+press b 10           # "does not contain Ecco data ... press X to create"
+wait 300
+shot format
+press a 10           # "unformatted. Format?" YES = Circle
+wait 800
+press b 10           # NEW GAME
+wait 300
+press b 10           # A
+wait 300
+press b 10           # A
+wait 300
+press start 10
+wait 300
+press b 10           # A -> AAA
+wait 300
+press b 10
+wait 300
+shot player          # main menu, "PLAYER: AAA"

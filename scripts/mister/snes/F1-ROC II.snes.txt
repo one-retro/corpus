@@ -1,0 +1,30 @@
+load corpus-tmp/mgl/f1roc2.mgl 6
+# F1-ROC II - Race of Champions (ST010): the battery RAM is the ST010's own
+# 4 KB of data RAM. GRAND PRIX -> PLAYER SELECT -> slot 1 -> enter "ABC" ->
+# START. The game writes the new player at once; PLAYER SELECT then lists
+# "1. ABC  GROUP C".
+wait 1500           # Seta/FOCA logos, title (GRAND PRIX selected)
+press start 8
+wait 600            # PLAYER SELECT fades in; an early A is ignored
+press a 10
+wait 240
+press a 10          # a second A: does nothing if the first one opened name entry
+wait 240
+press b 8           # A
+wait 60
+press right 8
+wait 40
+press b 8           # B
+wait 60
+press right 8
+wait 40
+press b 8           # C
+wait 60
+shot name
+press start 8       # done: back to PLAYER SELECT
+wait 400
+shot saved
+wait 30
+save
+wait 60
+shot final

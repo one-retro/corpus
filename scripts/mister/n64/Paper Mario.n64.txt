@@ -1,0 +1,32 @@
+load corpus-tmp/mgl/papermario.mgl 10
+# Paper Mario: create file 1, named "A". The game writes the file to
+# FlashRAM and says "File 1 has been created." before the prologue starts.
+# The script then resets and goes back to the file select.
+# N64 buttons on the RetroPad: A = b, B = y, Z = l2, Start = start.
+wait 900
+press start 6    # title (after the logos)
+wait 200
+press start 6    # -> Select file to start
+wait 200
+press a 6    # File 1 NEW -> Enter a file name
+wait 200
+press a 6    # type "A"
+wait 200
+press start 6    # END -> "File name is: A. OK?"
+wait 200
+press a 6    # Yes: "File 1 has been created."
+wait 120
+shot created
+wait 200
+wait 30
+save
+wait 60
+shot final
+# power cycle: load the game again; the core reads the .sav back from the SD card
+load corpus-tmp/mgl/papermario.mgl 10
+wait 900
+press start 6
+wait 200
+press start 6    # back to the file select after the reset
+wait 300
+shot reloaded

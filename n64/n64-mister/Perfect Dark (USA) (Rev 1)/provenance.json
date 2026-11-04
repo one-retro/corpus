@@ -1,0 +1,48 @@
+{
+  "method": "played",
+  "system": "n64",
+  "core": "n64-mister",
+  "core_file": "N64_20260726.rbf",
+  "core_name": "N64_MiSTer",
+  "core_version": "20260726",
+  "frontend": "mister",
+  "device": "the owner's MiSTer (DE10-Nano), Main_MiSTer binary of 2026-10-19",
+  "loaded_with": "MGL via /dev/MiSTer_cmd load_core (_Console/N64, file type f index 1)",
+  "save_folder": "saves/N64",
+  "rom": {
+    "name": "Perfect Dark (USA) (Rev 1).z64",
+    "sha1": "af8788ac4d1a57260eae9c53ffe851fcf2a3319b",
+    "size": 33554432
+  },
+  "script": "scripts/n64/Perfect Dark.txt",
+  "mister_script": "scripts/mister/n64/Perfect Dark.n64.txt",
+  "frames": 4992,
+  "timing": "real time: script frames played as wall-clock 1/60 s by work/mister/mrun.py",
+  "options": null,
+  "save_trigger": "OSD opened (F12 from a uinput keyboard) with Autosave on: the core writes its backup RAM to the SD card",
+  "started_from": null,
+  "files": {
+    "Perfect Dark (USA) (Rev 1).eep": {
+      "size": 2048,
+      "sha1": "036fb50c62298f5bd3121c51d9792adad4b88555"
+    },
+    "Perfect Dark (USA) (Rev 1)_1.tpk": {
+      "size": 32768,
+      "sha1": "ca711c69165e1fa5be72993b9a7870ef6d485249"
+    },
+    "Perfect Dark (USA) (Rev 1)_2.cpk": {
+      "size": 32768,
+      "sha1": "9b4792ece01dd659d35a575f7c8f0a7afec0121c"
+    },
+    "Perfect Dark (USA) (Rev 1)_3.cpk": {
+      "size": 32768,
+      "sha1": "933ddb88e27450cb22f2a0e7fc0d531ec19abe95"
+    },
+    "Perfect Dark (USA) (Rev 1)_4.cpk": {
+      "size": 32768,
+      "sha1": "8a91828e0dd2840cb1b18aa97a7c08992988145e"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "EEPROM 16 Kbit: <rom>.eep, 2048 bytes, console order, byte-identical to the EEPROM region of Mupen64Plus-Next's .srm (agent Dark). No pak note: the database line is eeprom2k|rpak|cpak|tpak, so Auto Detect gave pad 1 a Rumble Pak (the first pak tag) and Main mounted, besides the .eep, a Transfer Pak file <rom>_1.tpk (32768 bytes, all FF, no Game Boy game loaded) and Controller Pak files _2.cpk to _4.cpk (32768 each, formatted by Main: random serial, 'MiSTer', 0x81; no notes). The game's Select Location offered only Game Pak. In the libretro cores (pak 1 = memory) the game writes its NPDE note at boot. Written on OSD open (Autosave On, the N64 default). Script unchanged. Needs games/N64/boot.rom (the owner's PIF ROM)."
+}

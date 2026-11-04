@@ -1,0 +1,33 @@
+{
+  "method": "played",
+  "system": "snes",
+  "core": "bsnes-jg",
+  "core_file": "bsnes-jg_libretro.dylib",
+  "core_name": "bsnes-jg",
+  "core_version": "2.1.0",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Super Tetris 3 (Japan) (En).sfc",
+    "sha1": "2f808a4f0db77a54895f5d2b68517331cd8e8855",
+    "size": 1048576
+  },
+  "device": null,
+  "script": "scripts/snes/Super Tetris 3.txt",
+  "frames": 2362,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Super Tetris 3 (Japan) (En).srm": {
+      "size": 2048,
+      "sha1": "af7270c9c1b103dc0e511372fab0c123f1356a63"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "Run with retro-run --pad2 (through .cache/build/make-save-pad2.py, otherwise tools/make-save.py): a joypad is plugged into port 2 as well, as RetroArch does. With port 2 never set, bsnes-jg dereferences a null controller in CPU::joypadEdge on the first frame.",
+  "built_from": {
+    "repo": "https://github.com/libretro/bsnes-jg",
+    "commit": "5a1ea18934fc08aeb67b8aa804bf2a5e4ec9c87b",
+    "build": "make -C libretro -j12 (libretro branch; the repo's .gitlab-ci.yml osx-arm64 job uses MAKEFILE_PATH=libretro), unmodified"
+  }
+}

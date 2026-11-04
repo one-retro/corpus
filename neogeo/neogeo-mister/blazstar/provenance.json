@@ -1,0 +1,32 @@
+{
+  "method": "played",
+  "system": "neogeo",
+  "core": "neogeo-mister",
+  "core_file": "NeoGeo_20260603.rbf",
+  "core_name": "NeoGeo_MiSTer",
+  "core_version": "20260603",
+  "frontend": "mister",
+  "device": "the owner's MiSTer (DE10-Nano), Main_MiSTer binary of 2026-10-19",
+  "loaded_with": "MGL via /dev/MiSTer_cmd load_core (_Console/NeoGeo, file type f index 1)",
+  "save_folder": "saves/NEOGEO",
+  "rom": {
+    "name": "blazstar.neo"
+  },
+  "script": "scripts/neogeo/blazstar.txt",
+  "mister_script": "scripts/mister/neogeo/blazstar.neogeo.txt",
+  "frames": 8434,
+  "timing": "real time: script frames played as wall-clock 1/60 s by work/mister/mrun.py",
+  "options": {
+    "config/NEOGEO.CFG": "16 bytes, status bits 1 (System Type Arcade(MVS)) and 24 (Autosave On) set: BIOS UniBIOS (bit 22 = 0; the device's uni-bios.rom v4.0), every other option at its default. The owner's config/NEOGEO.CFG (MVS, Autosave off) was replaced for the run and restored byte-identical, with its mtime, after it"
+  },
+  "save_trigger": "OSD opened (F12 from a uinput keyboard) with Autosave on: the core writes its backup RAM to the SD card",
+  "started_from": null,
+  "files": {
+    "blazstar.sav": {
+      "size": 73728,
+      "sha1": "158677209c2e8c5934ba28ff2e59458cce9d4974"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "MVS, backup RAM (high-score name AAAAAAAA, 30th) + memory card (NGH 0239). ROM: the Geolith set's .neo, copied to corpus-tmp as blazstar.neo. Script: scripts/neogeo/blazstar.txt with boot wait +500 frames and A pressed 80 times instead of 55 (game over came later: the play is seeded by the clock); a shot every 10 presses. The proof is the shot of CARD SAVE OK? > YES ... SAVE OK, taken before the OSD write (the script has no power cycle). The streaked sprites in the screenshots are the device's missing games/NeoGeo/000-lo.lo (the sprite shrink table), not the save. First try (55 presses) ended before the game over; its save (card formatted, no game entry) was deleted unfiled."
+}

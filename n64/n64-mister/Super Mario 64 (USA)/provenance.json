@@ -1,0 +1,30 @@
+{
+  "method": "played",
+  "system": "n64",
+  "core": "n64-mister",
+  "core_file": "N64_20260726.rbf",
+  "core_name": "N64_MiSTer",
+  "core_version": "20260726",
+  "frontend": "mister",
+  "device": "the owner's MiSTer (DE10-Nano), Main_MiSTer binary of 2026-10-19",
+  "loaded_with": "MGL via /dev/MiSTer_cmd load_core (_Console/N64, file type f index 1)",
+  "save_folder": "saves/N64",
+  "rom": {
+    "name": "Super Mario 64 (USA).z64"
+  },
+  "script": "scripts/n64/Super Mario 64.txt",
+  "mister_script": "scripts/mister/n64/Super Mario 64.n64.txt",
+  "frames": 2035,
+  "timing": "real time: script frames played as wall-clock 1/60 s by work/mister/mrun.py",
+  "options": null,
+  "save_trigger": "OSD opened (F12 from a uinput keyboard) with Autosave on: the core writes its backup RAM to the SD card",
+  "started_from": null,
+  "files": {
+    "Super Mario 64 (USA).eep": {
+      "size": 512,
+      "sha1": "8bea2bf9de1e9faf663410c273cf4f58d54555f8"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "EEPROM 4 Kbit: <rom>.eep, 512 bytes, console order; byte-identical to the first 512 bytes of Mupen64Plus-Next's .srm. Main created the file filled with FF when the ROM loaded (N64 Auto Detect from games/N64/N64-database.txt: eeprom512); the core wrote it on OSD open (Autosave On is the N64 default, no config written). Script: scripts/n64/Super Mario 64.txt with the stick moves onto MONO shortened (left 17, up 8 frames instead of 15/13): Main's stick emulation moves the hand further. Needs games/N64/boot.rom (the owner's PIF ROM)."
+}

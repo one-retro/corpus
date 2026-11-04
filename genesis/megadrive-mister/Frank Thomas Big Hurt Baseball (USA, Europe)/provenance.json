@@ -1,0 +1,34 @@
+{
+  "method": "played",
+  "system": "genesis",
+  "core": "megadrive-mister",
+  "core_file": "MegaDrive_20260603.rbf",
+  "core_name": "MegaDrive_MiSTer",
+  "core_version": "20260603",
+  "frontend": "mister",
+  "device": "the owner's MiSTer (DE10-Nano), Main_MiSTer binary of 2026-10-19",
+  "loaded_with": "MGL via /dev/MiSTer_cmd load_core (_Console/MegaDrive, file type f index 1)",
+  "save_folder": "saves/MegaDrive",
+  "rom": {
+    "name": "Frank Thomas Big Hurt Baseball (USA, Europe).md",
+    "sha1": "9c978aaab10e16be59558561b07a0c610c74b43e",
+    "size": 4194304
+  },
+  "script": "scripts/genesis/Frank Thomas Big Hurt Baseball.txt",
+  "mister_script": "scripts/mister/genesis/Frank Thomas Big Hurt Baseball.megadrive.txt",
+  "frames": 7196,
+  "timing": "real time: script frames played as wall-clock 1/60 s by work/mister/mrun.py",
+  "options": {
+    "config/MegaDrive.CFG": "Autosave On (status bit 13), every other option at its default; written for the run and removed after"
+  },
+  "save_trigger": "OSD opened (F12 from a uinput keyboard) with Autosave on: the core writes its backup RAM to the SD card",
+  "started_from": "a zero-filled 65536-byte .sav put in place before loading, so the backup RAM started cleared; the core then rewrote all of it",
+  "files": {
+    "Frank Thomas Big Hurt Baseball (USA, Europe).sav": {
+      "size": 65536,
+      "sha1": "f19fb72b5e262087cf29365693a0f758d0007c1b"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "24C65 serial EEPROM (8 KiB, Acclaim wiring; the core's eeprom_map lists T-81476): saves/MegaDrive/<rom>.sav, 65536 bytes as for every MegaDrive cartridge; the first 8192 bytes are byte-identical to Genesis Plus GX's and BlastEm's 8192-byte .srm (the season: Baltimore), the rest is the zero seed (the MegaDrive core does not reload a missing save, so a zero-filled .sav went in first, as for the other megadrive-mister entries). Config: config/MegaDrive.CFG with only Autosave On (bit 13), written for the run and removed. Script unchanged; after the reload SEASON OPTIONS offers Resume."
+}

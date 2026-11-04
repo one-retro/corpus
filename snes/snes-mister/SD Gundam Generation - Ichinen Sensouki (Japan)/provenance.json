@@ -1,0 +1,34 @@
+{
+  "method": "played",
+  "system": "snes",
+  "core": "snes-mister",
+  "core_file": "SNES_20260823.rbf",
+  "core_name": "SNES_MiSTer",
+  "core_version": "20260823",
+  "frontend": "mister",
+  "device": "the owner's MiSTer (DE10-Nano), Main_MiSTer binary of 2026-10-19",
+  "loaded_with": "MGL via /dev/MiSTer_cmd load_core (_Console/SNES, file type f index 1)",
+  "save_folder": "saves/SNES",
+  "rom": {
+    "name": "SD Gundam Generation - Ichinen Sensouki (Japan).sfc",
+    "sha1": "11cc84ea4c8caffd0d52e33aa87ea3635ca3d737",
+    "size": 1572864
+  },
+  "script": "scripts/snes/SD Gundam Generation - Ichinen Sensouki.txt",
+  "mister_script": "scripts/mister/snes/SD Gundam Generation - Ichinen Sensouki.snes.txt",
+  "frames": 7527,
+  "timing": "real time: script frames played as wall-clock 1/60 s by work/mister/mrun.py",
+  "options": {
+    "config/SNES.CFG": "Autosave On (status bit 23), every other option at its default; written for the run and removed after"
+  },
+  "save_trigger": "OSD opened (F12 from a uinput keyboard) with Autosave on: the core writes its backup RAM to the SD card",
+  "started_from": null,
+  "files": {
+    "SD Gundam Generation - Ichinen Sensouki (Japan).sav": {
+      "size": 8192,
+      "sha1": "49b1efbe833f278ad94388a75f9d580f17e88752"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "Sufami Turbo mini-cart in slot A. ROM: one image, the Sufami Turbo base cart (Sufami Turbo (Japan).sfc, 256 KiB) padded with FF to 1 MiB, then the .st mini-cart: Main snes.cpp finds 'BANDAI SFC-ADX' every 1 MiB (base cart = 'SFC-ADX BACKUP', then cart A, then cart B) and sets the Sufami mapper. The image was named after the mini-cart, so the save is saves/SNES/<mini-cart stem>.sav: 8192 bytes, the cart A SRAM (the size from the .st header byte 0x37), like Mesen2's 8192 (snes9x writes 16384). 18 bytes differ from both Mesen2 and snes9x, at the same offsets where those two differ from each other (0x32-0x33, 0x1418-...: the game's own state); the rest is identical. Config: config/SNES.CFG with only Autosave On (bit 23), written for the run and removed. Script unchanged (its START at frame 1350 landed in the title's window on the MiSTer too); no power-cycle step, the proof is セーブ over the map."
+}

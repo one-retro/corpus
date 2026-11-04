@@ -1,0 +1,28 @@
+{
+  "method": "played",
+  "system": "snes",
+  "core": "snes9x-2010",
+  "core_file": "snes9x2010_libretro.dylib",
+  "core_name": "Snes9x 2010",
+  "core_version": "1.52.4 fe690dd",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Hayazashi Nidan Morita Shougi (Japan).sfc",
+    "sha1": "82b4bca58918a18707f932ec6afc0a12a3c4b872",
+    "size": 524288
+  },
+  "device": null,
+  "script": "scripts/snes/Hayazashi Nidan Morita Shougi.snes9x.txt",
+  "frames": 7987,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Hayazashi Nidan Morita Shougi (Japan).srm": {
+      "size": 4096,
+      "sha1": "ea79601d208539ea739142d30ebed3e92c1247d3"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "snes9x emulates the ST011 at high level, without firmware. The .srm is the ST011's 4 KB data RAM."
+}

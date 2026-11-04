@@ -1,0 +1,21 @@
+load corpus-tmp/mgl/jockeygp.mgl 5
+# MiSTer variant: boot waits +500 frames (UniBIOS splash and loading).
+# Jockey Grand Prix (MVS, a betting game with 8 KiB of battery RAM on the cartridge
+# besides the cabinet's backup RAM): insert two coins. The game keeps its credits
+# in that RAM, so after a power cycle the betting screen still shows CREDIT 000002.
+# Coin is RetroPad select.
+wait 2000
+press l 6    # coin
+wait 60
+press l 6    # coin
+wait 300
+shot credits           # CREDIT 000002
+wait 1200              # the betting board keeps cycling
+wait 30
+save
+wait 60
+shot final
+# power cycle: load the game again; the core reads the .sav back from the SD card
+load corpus-tmp/mgl/jockeygp.mgl 5
+wait 2900
+shot kept              # after the power cycle: CREDIT 000002

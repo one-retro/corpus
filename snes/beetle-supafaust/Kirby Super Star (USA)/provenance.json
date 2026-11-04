@@ -1,0 +1,33 @@
+{
+  "method": "played",
+  "system": "snes",
+  "core": "beetle-supafaust",
+  "core_file": "beetle-supafaust_libretro.dylib",
+  "core_name": "Beetle Supafaust",
+  "core_version": "1.29.0 642d1d1",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Kirby Super Star (USA).sfc",
+    "sha1": "cca1e67fa230bf4f60154f5ea55d06568229dc5d",
+    "size": 4194304
+  },
+  "device": null,
+  "script": "scripts/snes/Kirby Super Star.txt",
+  "frames": 7504,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Kirby Super Star (USA).srm": {
+      "size": 8192,
+      "sha1": "69266be8a5b5d6b54668fd33d181a3c1e7e97aed"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null,
+  "built_from": {
+    "repo": "https://github.com/libretro/supafaust",
+    "commit": "642d1d1b6684aa7e306a02a89885f3f5456a5157",
+    "build": "make -j12 (platform=osx, arm64), after one patch: mednafen/config.h does not define HAVE_SEM_TIMEDWAIT on __APPLE__, so the core uses its condition-variable semaphores (macOS has no sem_timedwait)"
+  }
+}

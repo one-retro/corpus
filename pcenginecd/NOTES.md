@@ -185,3 +185,46 @@ These are not mine. They are what makes them comparable with the played files:
 
 No harness problems. CHD and cue/img both load in all three cores. `--srm` worked for the
 unformatted-BRAM test. The helper scripts used during development are in `work/pcenginecd/`.
+
+## Standalone Mednafen (added after the libretro pass)
+
+All eight scripts were replayed in standalone Mednafen 1.32.1, with an isolated data folder.
+**8 entries filed out of 8 runs**, in `pcenginecd/mednafen/`. This replaces "mednafen (standalone):
+not runnable" above. How Mednafen was driven is in `STANDALONE.md`. The libretro script buttons
+map as: a = I, b = II, start = RUN.
+
+- **Module and BIOS.** Mednafen picks its `pce` module for CD games, not `pce_fast`. It loads
+  `pce.cdbios = syscard3.pce`, the Japanese System Card 3.0, by default, as the libretro cores do.
+- **No CHD.** Mednafen 1.32.1 cannot open CHD. Seven discs were loaded as cue/bin files, extracted
+  from the same CHDs with `chdman extractcd` into `.cache/roms/pcenginecd/`. Dracula X was loaded
+  from its cue/img in place. Each entry's `rom` names the CHD the libretro entries used.
+- **Where and what.** The file is `.mednafen/sav/<cue name>.<md5>.sav` in the home folder
+  (`$MEDNAFEN_HOME/sav/`), for example
+  `Ys Book I & II (NA).19afebaa65477f9de7d4d8c50a342358.sav`.
+  - The md5 is the **"CD Layout" hash** Mednafen logs at load. It is computed from the disc's
+    layout, not from the image file.
+  - The file is the 2048-byte BRAM, raw.
+  - The header is `HUBM` with end pointer **0x8800**, like Beetle, the MiSTer and the Pocket. It is
+    not Geargrafx's 0xA000.
+  - It is the same memory that the libretro cores write as `<image stem>.srm`. Only the name
+    differs: an md5 is inserted and the extension is `.sav`.
+- **Written on exit, and only if something wrote the BRAM.** A run that sat on the System Card
+  screen for 330 frames left **no file**. RetroArch-style frontends write a `.srm` on every exit.
+- **Same bytes as Beetle.** Seven of the eight files are byte-identical to the `beetle-pce` and
+  `beetle-pce-fast` entries. They differ from Geargrafx's only at offset 5.
+  - Prince of Persia differs at 0x12 (the entry checksum) and 0x22 (time left 59:49, against
+    59:48 in Beetle and 59:50 in Geargrafx). That is CD timing again.
+- **One weaker proof.** In Exile - Wicked Phenomenon, the proof frame shows the field menu a few
+  frames before the slot list opens. The BRAM is still byte-identical to Beetle's, which shows
+  `#1 ASSASSI`.
+
+| Game | mednafen |
+| --- | --- |
+| Ys Book I & II | filed, = beetle-pce |
+| Ys III | filed, = beetle-pce |
+| Dungeon Explorer II | filed, = beetle-pce |
+| Exile | filed, = beetle-pce |
+| Exile - Wicked Phenomenon | filed, = beetle-pce |
+| Prince of Persia | filed, time byte differs (59:49) |
+| Beyond Shadowgate | filed, = beetle-pce |
+| Akumajou Dracula X | filed, = beetle-pce |

@@ -1,0 +1,61 @@
+{
+  "method": "downloaded",
+  "system": "ps2",
+  "core": "pcsx2",
+  "url": "https://github.com/PCSX2/pcsx2/files/14200711/SpongeBob.ps2.zip",
+  "source_page": "https://github.com/PCSX2/pcsx2/issues/6708",
+  "source": "GitHub, PCSX2/pcsx2 issue tracker (an attachment to a bug report)",
+  "author": "TheTechnician27",
+  "licence": null,
+  "emulator": "PCSX2 1.7.x nightly (Feb 2024)",
+  "posted": "2024-02-07",
+  "fetched": "2026-11-04",
+  "what_it_is": "A PCSX2 1.7 nightly folder memory card (SpongeBob.ps2/) with _pcsx2_superblock, _pcsx2_index and _pcsx2_meta files; the report is that the game cannot re-read it.",
+  "files": {
+    "SpongeBob.ps2/_pcsx2_superblock": {
+      "size": 8192,
+      "sha1": "75d63bac3d815d9d941d63a10e9bf88a0305e87a"
+    },
+    "SpongeBob.ps2/BASLUS-20904SBMovie_/BASLUS-20904SBMovie_": {
+      "size": 992,
+      "sha1": "777e5b36e180b96d0c78d3e476f5d17bea04d075"
+    },
+    "SpongeBob.ps2/BASLUS-20904SBMovie_/SpongeBobMovie01": {
+      "size": 51572,
+      "sha1": "c5511f5be63a9d7e6bc29725e6f850a51a8e00ab"
+    },
+    "SpongeBob.ps2/BASLUS-20904SBMovie_/SpongeIcon01.ico": {
+      "size": 83544,
+      "sha1": "acf339f406af10e1cc9d87fa7b9d91090d552791"
+    },
+    "SpongeBob.ps2/BASLUS-20904SBMovie_/_pcsx2_index": {
+      "size": 386,
+      "sha1": "d6650cb2e0d90131e350db2014214237927edd6f"
+    },
+    "SpongeBob.ps2/BASLUS-20904SBMovie_/_pcsx2_meta_directory": {
+      "size": 512,
+      "sha1": "5d26ee2471e81a8d3a13a8d94f18b4aa48ef719f"
+    },
+    "SpongeBob.ps2/BASLUS-20904SBMovie_/icon.sys": {
+      "size": 964,
+      "sha1": "18b7b40ecfcadf88ad0be76bdd7c96a3b400439f"
+    },
+    "SpongeBob.ps2/BASLUS-20904SBMovie_/_pcsx2_meta/BASLUS-20904SBMovie_": {
+      "size": 512,
+      "sha1": "df27834dcad8973f10bed55640f0d01b4fbf439b"
+    },
+    "SpongeBob.ps2/BASLUS-20904SBMovie_/_pcsx2_meta/SpongeBobMovie01": {
+      "size": 512,
+      "sha1": "328e65388766f893f1ee36be1a86847a370830d0"
+    },
+    "SpongeBob.ps2/BASLUS-20904SBMovie_/_pcsx2_meta/SpongeIcon01.ico": {
+      "size": 512,
+      "sha1": "21317366b21c4376192276f496cac5b12ec65f9d"
+    },
+    "SpongeBob.ps2/BASLUS-20904SBMovie_/_pcsx2_meta/icon.sys": {
+      "size": 512,
+      "sha1": "2feebe4620aa5b7e0930581e605693a56550cf6b"
+    }
+  },
+  "note": "No licence stated on the page. folder card with _pcsx2_index and _pcsx2_meta dirs; game cannot reread it (the bug)"
+}

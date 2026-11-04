@@ -11,7 +11,8 @@ Link's Awakening DX.txt` names a save file in LADX and has been filed for eight 
 ## The job, per system you own
 
 1. **Pick 10 games** that keep a save (battery SRAM, EEPROM, flash, memory card, backup RAM)
-   and that the ROM library has (`tools/rom.py list` for cartridge systems; for
+   and that the ROM library has (`tools/rom.py list` for cartridge systems, with `ROMS` set to
+   the folder of No-Intro 1G1R zips; for
    disc systems search the drive). Prefer, in order: variety of save hardware (sizes, SRAM vs
    EEPROM vs flash, RTC where the system has clock carts), games people actually play,
    US/World releases, and games where a genuine save is reachable quickly (a name-entry
@@ -54,6 +55,11 @@ Link's Awakening DX.txt` names a save file in LADX and has been filed for eight 
 - **Nothing from 1Retro**, ever: not 1retro.com or any 1Retro service, and not a 1Retro
   sync folder or any backup of one.
   Users trust 1Retro with those saves.
+- **Nothing local or personal in anything you write into the corpus** (NOTES, scripts, options
+  files, provenance, file names): no absolute paths from this machine, the ROM drive or a device
+  (write a device's paths relative to its SD card), no user or host names, IP addresses, or the
+  owner's folder names. Describe sources generically: "the No-Intro 1G1R set", "a Redump image",
+  "a Pocket's `Assets/nes/common`". Player names inside saves are fine.
 - Never put a ROM or BIOS inside `corpus/<system>/`. ROMs go in `.cache/roms/`, BIOS in
   `.cache/bios/<system>/` (copy them there from your own dumps).
 - Do not edit anything in `tools/`; other workers use it at the same time. If the harness or
@@ -71,14 +77,14 @@ Link's Awakening DX.txt` names a save file in LADX and has been filed for eight 
 - `retro-run` calls the core in RetroArch's order (Mesen and RustyNES used to crash), and has
   disk control: `disk N` (0-based image), `flip`, `eject`, `insert`, for multi-disc games and
   FDS sides. Load a multi-disc game through an `.m3u` playlist so the core sees every disc.
-- The disk is nearly full (the volume is shared with the owner's data). Keep scratch under
-  about 100 MB: delete save states and `--dry` work directories (`.cache/<system>-<core>-*`)
-  you made as soon as you have read their screenshots. Never extract whole romsets or disc
-  collections; use images in place. Only ever delete files you created.
+- Keep scratch tidy: delete save states and `--dry` work directories (`.cache/<system>-<core>-*`)
+  you made once you have read their screenshots. Never extract whole romsets or disc
+  collections; use images in place or copy only what you run. Only ever delete files you created.
 - `retro-run` now negotiates core options v2 the way RetroArch does (SkyEmu used to crash
   without an options file). If a core misbehaves in a way that looks like the harness's fault,
   say so in the report.
-- Use `python3 -I` for any Python. No git commits (this is not a repository anyway).
+- Use `python3 -I` for any Python. The corpus is a git repository the owner commits: never run
+  git commands that change it (add, commit, checkout, reset, stash, clean).
 
 ## Your report
 

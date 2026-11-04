@@ -1,0 +1,34 @@
+{
+  "method": "played",
+  "system": "genesis",
+  "core": "megadrive-mister",
+  "core_file": "MegaDrive_20260603.rbf",
+  "core_name": "MegaDrive_MiSTer",
+  "core_version": "20260603",
+  "frontend": "mister",
+  "device": "the owner's MiSTer (DE10-Nano), Main_MiSTer binary of 2026-10-19",
+  "loaded_with": "MGL via /dev/MiSTer_cmd load_core (_Console/MegaDrive, file type f index 1)",
+  "save_folder": "saves/MegaDrive",
+  "rom": {
+    "name": "Micro Machines - Military (Europe) (J-Cart).md",
+    "sha1": "6d3df64ab8bb0b559f216adca62d1cdd74704a26",
+    "size": 1048576
+  },
+  "script": "scripts/genesis/Micro Machines - Military.txt",
+  "mister_script": "scripts/mister/genesis/Micro Machines - Military.megadrive.txt",
+  "frames": 5148,
+  "timing": "real time: script frames played as wall-clock 1/60 s by work/mister/mrun.py",
+  "options": {
+    "config/MegaDrive.CFG": "Autosave On (status bit 13), every other option at its default; written for the run and removed after"
+  },
+  "save_trigger": "OSD opened (F12 from a uinput keyboard) with Autosave on: the core writes its backup RAM to the SD card",
+  "started_from": "a zero-filled 65536-byte .sav put in place before loading, so the backup RAM started cleared; the core then rewrote all of it",
+  "files": {
+    "Micro Machines - Military (Europe) (J-Cart).sav": {
+      "size": 65536,
+      "sha1": "6e4f13ff89ca04efe3e5e8cc632595ec0812e6fb"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "Codemasters 24C08 serial EEPROM (1 KiB) on the J-Cart board: the MegaDrive core maps it (BlastEm's run reached nothing). saves/MegaDrive/<rom>.sav, 65536 bytes; the first 8192 bytes are byte-identical to PicoDrive's 8192-byte .srm and the first 673 to Genesis Plus GX's trimmed file ('hasreset', the drivers' names, Spider renamed AB at 0x176); the rest is the zero seed (put in place first: the MegaDrive core does not reload a missing save). Config: config/MegaDrive.CFG with only Autosave On (bit 13), written for the run and removed. Script unchanged; after the reload the Change Name? screen shows the portrait labelled AB."
+}

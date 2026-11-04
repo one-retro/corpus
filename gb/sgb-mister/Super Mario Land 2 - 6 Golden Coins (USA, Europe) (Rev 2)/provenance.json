@@ -1,0 +1,34 @@
+{
+  "method": "played",
+  "system": "gb",
+  "core": "sgb-mister",
+  "core_file": "SGB_20260802.rbf",
+  "core_name": "SGB_MiSTer",
+  "core_version": "20260802",
+  "frontend": "mister",
+  "device": "the owner's MiSTer (DE10-Nano), Main_MiSTer binary of 2026-10-19",
+  "loaded_with": "MGL via /dev/MiSTer_cmd load_core (_Console/SGB, file type f index 1)",
+  "save_folder": "saves/SGB",
+  "rom": {
+    "name": "Super Mario Land 2 - 6 Golden Coins (USA, Europe) (Rev 2).gb",
+    "sha1": "d11d94fa3c36b9f72e925070b66bb4f16d31001e",
+    "size": 524288
+  },
+  "script": "scripts/gb/Super Mario Land 2.txt",
+  "mister_script": "scripts/mister/gb/Super Mario Land 2.sgb.txt",
+  "frames": 1470,
+  "timing": "real time: script frames played as wall-clock 1/60 s by work/mister/mrun.py",
+  "options": {
+    "config/SGB.CFG": "Autosave On (status bit 23), every other option at its default; written for the run and removed after"
+  },
+  "save_trigger": "OSD opened (F12 from a uinput keyboard) with Autosave on: the core writes its backup RAM to the SD card",
+  "started_from": null,
+  "files": {
+    "Super Mario Land 2 - 6 Golden Coins (USA, Europe) (Rev 2).sav": {
+      "size": 8192,
+      "sha1": "0a258052a961a18ce03694d88aa119ac4c998141"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "Super Game Boy core (SGB BIOS 'Super Game Boy (World) (Rev 2).sfc' loaded first by the MGL, file index 4; config/SGB.f4 removed after). Save: saves/SGB/<rom>.sav, the 8 KiB MBC1 RAM, unwritten bytes FF (no seed needed: the core reloads the save after the game loads; Main gives FF when there is no file). 144 bytes differ from Gambatte's .srm, all inside the game's records (0x135-0x8FC); the Gameboy_MiSTer entry (zero seed) differs from this one in 179 bytes, 34 of them FF here and 00 there. Config: config/SGB.CFG with only Autosave On (status bit 23), written for the run and removed. Script scripts/gb/Super Mario Land 2.txt with 300 frames more after the load (SGB BIOS intro)."
+}

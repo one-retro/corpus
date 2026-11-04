@@ -1,0 +1,65 @@
+{
+  "method": "played",
+  "system": "ps2",
+  "core": "play",
+  "core_file": "play_libretro.dylib",
+  "core_name": "Play!",
+  "core_version": "0.77-17-g1f27232",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "runner": "ps2-save.py: make-save.py with a fresh system directory and HOME per run (PS2 cores write their cards there); see ps2/NOTES.md",
+  "renderer": "opengl",
+  "rom": {
+    "name": "Ecco the Dolphin - Defender of the Future (USA).iso",
+    "sha1": "38ceb0e7a0af144396023c8f20dc12cbfffbdd11",
+    "size": 2318499840
+  },
+  "bios": null,
+  "device": null,
+  "script": "scripts/ps2/Ecco the Dolphin - Defender of the Future (USA).txt",
+  "frames": 8810,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "home/Documents/Play Data Files/vfs/mc0/BASLUS-20394/BASLUS-20394": {
+      "size": 384,
+      "sha1": "6ee62d14d30bfc7c6b0eeeac25507c85441d8f1e"
+    },
+    "home/Documents/Play Data Files/vfs/mc0/BASLUS-20394/ECCO_AAA": {
+      "size": 384,
+      "sha1": "b9657ba3ea3ae3005be79ec123c99ff4255c80d1"
+    },
+    "home/Documents/Play Data Files/vfs/mc0/BASLUS-20394/TEMP_1": {
+      "size": 384,
+      "sha1": "ee4a5f1958d6cb33ac4ff617027347cb9ecabaac"
+    },
+    "home/Documents/Play Data Files/vfs/mc0/BASLUS-20394/TEMP_2": {
+      "size": 384,
+      "sha1": "ee4a5f1958d6cb33ac4ff617027347cb9ecabaac"
+    },
+    "home/Documents/Play Data Files/vfs/mc0/BASLUS-20394/TEMP_3": {
+      "size": 384,
+      "sha1": "ee4a5f1958d6cb33ac4ff617027347cb9ecabaac"
+    },
+    "home/Documents/Play Data Files/vfs/mc0/BASLUS-20394/TEMP_4": {
+      "size": 384,
+      "sha1": "ee4a5f1958d6cb33ac4ff617027347cb9ecabaac"
+    },
+    "home/Documents/Play Data Files/vfs/mc0/BASLUS-20394/TEMP_5": {
+      "size": 384,
+      "sha1": "ee4a5f1958d6cb33ac4ff617027347cb9ecabaac"
+    },
+    "home/Documents/Play Data Files/vfs/mc0/BASLUS-20394/ecco1.ico": {
+      "size": 76024,
+      "sha1": "99e8aedb779d77311fe6d3bedfea9eeac6fbf1b6"
+    },
+    "home/Documents/Play Data Files/vfs/mc0/BASLUS-20394/icon.sys": {
+      "size": 964,
+      "sha1": "e9eb016ddc9fc0bf09bb4e576abc27718de33e70"
+    }
+  },
+  "also_written_not_filed": [
+    "home/Documents/Play Data Files/config.xml"
+  ],
+  "created": "2026-11-04",
+  "note": null
+}

@@ -1,0 +1,21 @@
+{
+  "method": "downloaded",
+  "system": "ps2",
+  "core": "pcsx2",
+  "url": "https://github.com/user-attachments/files/20029634/PCSX2.zip",
+  "source_page": "https://github.com/PCSX2/pcsx2/issues/12599",
+  "source": "GitHub, PCSX2/pcsx2 issue tracker (an attachment to a bug report)",
+  "author": "spaceage64",
+  "licence": null,
+  "emulator": "PCSX2 2.3.319 macOS",
+  "posted": "2025-05-04",
+  "fetched": "2026-11-04",
+  "what_it_is": "A macOS PCSX2 2.3.319 user's file card named SLUS-20552.ps2 (the serial of GTA: Vice City, whose save BASLUS-20552GTA40000 it holds, with the console's BADATA-SYSTEM folder), attached to a Hitman: Blood Money report; the same zip also had a folder-card save directory, not filed.",
+  "files": {
+    "SLUS-20552.ps2": {
+      "size": 8650752,
+      "sha1": "5752f525117dcefd8a1cf02c5dd3353c01752ce5"
+    }
+  },
+  "note": "No licence stated on the page. raw card SLUS-20552.ps2 (per-game name) + one folder-card save dir"
+}

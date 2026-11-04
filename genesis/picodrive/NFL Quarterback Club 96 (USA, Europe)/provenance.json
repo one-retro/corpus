@@ -1,0 +1,28 @@
+{
+  "method": "played",
+  "system": "genesis",
+  "core": "picodrive",
+  "core_file": "picodrive_libretro.dylib",
+  "core_name": "PicoDrive",
+  "core_version": "2.05-1890c29",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "NFL Quarterback Club 96 (USA, Europe).md",
+    "sha1": "2948419532a6079404f05348bc4bbf2dd989622d",
+    "size": 4194304
+  },
+  "device": null,
+  "script": "scripts/genesis/NFL Quarterback Club 96.txt",
+  "frames": 5958,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "NFL Quarterback Club 96 (USA, Europe).srm": {
+      "size": 8192,
+      "sha1": "d692b138a394b20bdaf51c78b83344547b424bf4"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

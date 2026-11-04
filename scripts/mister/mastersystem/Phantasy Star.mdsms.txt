@@ -1,0 +1,56 @@
+load corpus-tmp/mgl/mdsms-ps1.mgl 6
+# Phantasy Star: start a new game, sit through Nero's death, then SAVE to
+# slot 1 from the field menu in Camineet, naming the file "ABC". Then reset
+# and pick CONTINUE so the proof shows the file. Button 1 (b) opens/cancels
+# the menu, button 2 (a) confirms.
+wait 300
+press start 6    # title
+wait 120
+press b 6    # START
+wait 1100           # intro fades in, first page prints
+repeat 8            # eight pages of intro text, one press each
+press b 4
+wait 240
+end
+wait 120            # Camineet map
+press b 6    # open the command menu
+wait 150
+tap down 4 15    # STAS MAGC ITEM SRCH -> SAVE
+wait 30
+press r 6    # SAVE: "WILL SAVE THE GAME IN PROGRESS."
+wait 120
+press r 6    # "PLEASE SELECT A NUMBER." slot 1 is highlighted
+wait 120
+press r 6    # "YOU SELECTED 1. IS THAT O.K.?" YES
+wait 120
+press r 6    # -> INPUT YOUR NAME.
+wait 240
+tap r 1 30    # A
+tap right 1 30
+tap r 1 30    # B
+tap right 1 30
+tap r 1 30    # C
+tap down 3 30    # -> ADV
+tap right 2 30    # -> END
+shot named
+press r 6    # END: the game is written to slot 1
+wait 180
+press b 6    # close the menu
+wait 120
+wait 30
+save
+wait 60
+shot final
+# power cycle: load the game again; the core reads the .sav back from the SD card
+load corpus-tmp/mgl/mdsms-ps1.mgl 6
+wait 300
+press start 6
+wait 120
+press down 6    # CONTINUE
+wait 30
+press b 6
+wait 300            # CONTINUE GAME / DELETE GAME
+press r 6    # YES: the file list
+wait 120
+shot continue
+wait 30

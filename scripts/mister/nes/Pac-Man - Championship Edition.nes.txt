@@ -1,0 +1,41 @@
+load corpus-tmp/mgl/pacmance.mgl 6
+# Pac-Man - Championship Edition (USA, Europe) (Namco Museum Archives Vol 1): Namco 163 (mapper 19.3)
+# with 8 KiB battery WRAM ("sav" block at 0x700).
+# One NORMAL game with no input: Pac-Man eats a few dots (40 points) and loses his three lives. The
+# game keeps the result and a replay of the play in battery RAM.
+# Proof: after a reset, OPTIONS -> REPLAY NORMAL plays that game back (REPLAY, 1UP 0000040).
+wait 900
+press start           # title -> NORMAL / EXTRA / OPTIONS
+wait 600
+press start           # NORMAL
+wait 6000             # three lives lost, RESULTS
+shot results
+press a
+wait 400
+press a
+wait 400
+press start           # back to the title
+wait 600
+wait 30
+save
+wait 60
+shot final
+# power cycle: load the game again; the core reads the .sav back from the SD card
+load corpus-tmp/mgl/pacmance.mgl 6
+wait 900
+press start
+wait 600
+press down
+wait 60
+press down
+wait 60
+press a               # OPTIONS
+wait 600
+press down
+wait 60
+press down
+wait 60
+shot options          # REPLAY NORMAL lit, REPLAY EXTRA dim
+press a               # REPLAY NORMAL
+wait 1200
+shot replay

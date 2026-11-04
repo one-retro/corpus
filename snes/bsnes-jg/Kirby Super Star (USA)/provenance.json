@@ -1,0 +1,33 @@
+{
+  "method": "played",
+  "system": "snes",
+  "core": "bsnes-jg",
+  "core_file": "bsnes-jg_libretro.dylib",
+  "core_name": "bsnes-jg",
+  "core_version": "2.1.0",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Kirby Super Star (USA).sfc",
+    "sha1": "cca1e67fa230bf4f60154f5ea55d06568229dc5d",
+    "size": 4194304
+  },
+  "device": null,
+  "script": "scripts/snes/Kirby Super Star.txt",
+  "frames": 7504,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Kirby Super Star (USA).srm": {
+      "size": 8192,
+      "sha1": "f590d6db3b1a8218147430a941b1212f98d403bb"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "Run with retro-run --pad2 (through .cache/build/make-save-pad2.py, otherwise tools/make-save.py): a joypad is plugged into port 2 as well, as RetroArch does. With port 2 never set, bsnes-jg dereferences a null controller in CPU::joypadEdge on the first frame.",
+  "built_from": {
+    "repo": "https://github.com/libretro/bsnes-jg",
+    "commit": "5a1ea18934fc08aeb67b8aa804bf2a5e4ec9c87b",
+    "build": "make -C libretro -j12 (libretro branch; the repo's .gitlab-ci.yml osx-arm64 job uses MAKEFILE_PATH=libretro), unmodified"
+  }
+}

@@ -53,3 +53,8 @@ S-RAM"), so the script skips the format to keep option 2 = start.
 | A Ressha de Ikou | 5 of 2048 bytes differ (at 0xEA-0x128; fMSX's game was saved at day 1, 3 h, blueMSX's at day 1, 1 h). Both start `55 AA` and are otherwise mostly 0x00 |
 
 fMSX also wrote `system/CMOS.ROM` (52 bytes) for both its entries, as on MSX1.
+
+## msx-mister on the owner's MiSTer (2026-11-04)
+
+Not run: see `msx/NOTES.md`, "msx-mister and msx1-mister on the owner's MiSTer". The core writes
+only its VHD; no cartridge SRAM save exists to make.

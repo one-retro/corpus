@@ -134,3 +134,64 @@ nothing was found online.
 
 A one-sided disk game is the main gap left. fceumm wrote 65500 bytes for one, and the other cores
 are untested there.
+
+## Standalone FCEUX and Mednafen (added after the libretro pass)
+
+Both standalone emulators were run on all seven scripts, with isolated data folders. **14 entries
+filed out of 14 runs**: `fds/fceux/` and `fds/mednafen/`. This replaces the "n/r" for fceux and
+mednafen in the table above and the "From the cores' sources" lines: both now come from runs.
+How the emulators were driven is in `STANDALONE.md`.
+
+- **FCEUX 2.6.6.** Input came from an FM2 movie, because FCEUX's Lua has no disk-side call and its
+  movies do. Each frame carries a command field: 4 ejects or inserts the disk, 8 selects the side.
+- **Mednafen 1.32.1.** Input was keyboard events made inside the process: F8 ejects or inserts the
+  disk, F6 selects the side.
+- Zelda's `flip` became eject, select the side, insert, 30 frames apart.
+- Both emulators load `disksys.rom`. FCEUX looks for it in its base folder, Mednafen in
+  `firmware/`.
+
+| Emulator | File | Size | What it is |
+| --- | --- | --- | --- |
+| FCEUX | `.fceux/sav/<ROM name>.fds` in the home folder (`$FCEUX_HOME/.fceux/sav/`) | 131000 | The **whole disk**: raw 65500-byte sides, no fwNES header. It is the same container as fceumm's `.srm`. |
+| Mednafen | `.mednafen/sav/<ROM name>.<md5>.fds` in the home folder (`$MEDNAFEN_HOME/sav/`) | 131000 | The **whole disk**, raw sides, no header. The md5 is of the disk sides without any header. For example, `Metroid (Japan) (Rev 3).bb765939f75bcf9234b4bf77ca04281b.fds`. |
+
+The FDS writes are kept as a modified whole image in the save folder: not an IPS patch (Mesen), not
+UPS in a `.sav` (Nestopia), and not the fixNES layout.
+
+What both emulators have in common:
+
+- **They write only when the disk was written.** F1 Race booted to its title for 930 frames left
+  no file in either emulator. fceumm, by contrast, writes its `.srm` on every run.
+- **They read the file back instead of the ROM.** A fresh session started with the saved Link no
+  Bouken file showed LINK on the SELECT screen, in both emulators.
+- **The header does not matter.** The 16-byte fwNES-headered Link no Bouken ROM (in
+  `.cache/roms/fds/hdr/`) gave a byte-identical 131000-byte file in both, with no header.
+  Mednafen's file name kept the same md5 (`ba67bb96…`), although the ROM file's md5 differs
+  (`e2938af1…`). FCEUX's name carries no hash. So unlike Mesen and Nestopia, the save does not
+  depend on how the ROM was dumped.
+
+**Against the other cores:**
+
+- **FCEUX's seven files are byte-identical to fceumm's `.srm`**, so they rebuild the same disk as
+  Mesen, Nestopia and fixNES.
+- **Mednafen's differ from FCEUX/fceumm in exactly one byte per game.** Mednafen leaves `0xFF` in
+  the byte right after the last block it wrote, where the original image has `0x00`.
+  - That position is the end of the used area of the side in all seven games. The saved file is
+    the last file on its side, so the next byte is unused.
+  - The game's file data is the same, and `fdscheck.py` reports the same changed file and bytes.
+  - A byte-exact comparison with other cores' images will still flag it.
+  - It is likely the disk drive emulation writing one byte past the block. A game whose save is
+    not the last file on its side would show whether Mednafen then overwrites the next block's
+    first byte. That was not tested.
+
+| Game | FCEUX `.fds` vs fceumm `.srm` | Mednafen: offset of the extra `0xFF` (side, offset in side) |
+| --- | --- | --- |
+| Zelda no Densetsu | identical | side B, 49059 |
+| Link no Bouken | identical | side A, 54485 |
+| Metroid | identical | side A, 51990 |
+| F1 Race | identical | side A, 47957 |
+| Golf - Japan Course | identical | side A, 47522 |
+| Golf - US Course | identical | side A, 47827 |
+| 3D Hot Rally | identical | side A, 42129 |
+
+`work/standalone/fds/fdsend.py IMAGE OFFSET` shows where an offset falls among a side's blocks.

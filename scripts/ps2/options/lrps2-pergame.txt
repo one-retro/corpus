@@ -1,0 +1,4 @@
+# LRPS2 with per-game cards: <content name>.ps2 in the save directory instead of the shared
+# system/pcsx2/memcards/Mcd001.ps2 and Mcd002.ps2.
+pcsx2_renderer = Software (SW)
+pcsx2_shared_memory_cards = disabled

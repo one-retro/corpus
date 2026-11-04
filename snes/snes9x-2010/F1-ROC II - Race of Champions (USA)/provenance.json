@@ -1,0 +1,28 @@
+{
+  "method": "played",
+  "system": "snes",
+  "core": "snes9x-2010",
+  "core_file": "snes9x2010_libretro.dylib",
+  "core_name": "Snes9x 2010",
+  "core_version": "1.52.4 fe690dd",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "F1-ROC II - Race of Champions (USA).sfc",
+    "sha1": "fb81dd15b8a9ddf8f5564d3d2fb934c6f8bfb392",
+    "size": 1048576
+  },
+  "device": null,
+  "script": "scripts/snes/F1-ROC II.txt",
+  "frames": 3316,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "F1-ROC II - Race of Champions (USA).srm": {
+      "size": 4096,
+      "sha1": "d0988f919eeada18d62e0431340f08e9c785e022"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "snes9x emulates the ST010 at high level, without firmware. The .srm is the ST010's 4 KB data RAM."
+}

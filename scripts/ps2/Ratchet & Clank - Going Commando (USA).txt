@@ -1,0 +1,18 @@
+# Ratchet & Clank - Going Commando (USA), SCUS-97268, DVD.
+# Played on the card the Ratchet & Clank (USA) script left (ps2-save.py --start-from that
+# entry), so the card is formatted and already holds BASCUS-97199RATCHET; Going Commando
+# reads Ratchet 1 data for a bonus, and the card ends with two games' folders.
+# Title > New Game > "No ... save data ... create a save file? Yes" (Circle) > four EMPTY
+# files > Cross picks file 1: BASCUS-97268RATCHET is written and the opening starts.
+wait 2600
+press start 10       # Press START -> New Game / Load / Options
+wait 300
+press b 10           # New Game
+wait 400
+shot create          # "No Ratchet and Clank: Going Commando save data ... create ...? Yes / No"
+press a 10           # Yes = Circle
+wait 800
+shot files           # Save Game: four EMPTY files
+press b 10           # select file 1
+wait 400
+shot started

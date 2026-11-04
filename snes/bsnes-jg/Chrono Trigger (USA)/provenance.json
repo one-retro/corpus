@@ -1,0 +1,33 @@
+{
+  "method": "played",
+  "system": "snes",
+  "core": "bsnes-jg",
+  "core_file": "bsnes-jg_libretro.dylib",
+  "core_name": "bsnes-jg",
+  "core_version": "2.1.0",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Chrono Trigger (USA).sfc",
+    "sha1": "de5822f4f2f7a55acb8926d4c0eaa63d5d989312",
+    "size": 4194304
+  },
+  "device": null,
+  "script": "scripts/snes/Chrono Trigger.txt",
+  "frames": 9010,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Chrono Trigger (USA).srm": {
+      "size": 8192,
+      "sha1": "73d104b0d775533d1143203dddf54369d1c3c4d0"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "Run with retro-run --pad2 (through .cache/build/make-save-pad2.py, otherwise tools/make-save.py): a joypad is plugged into port 2 as well, as RetroArch does. With port 2 never set, bsnes-jg dereferences a null controller in CPU::joypadEdge on the first frame.",
+  "built_from": {
+    "repo": "https://github.com/libretro/bsnes-jg",
+    "commit": "5a1ea18934fc08aeb67b8aa804bf2a5e4ec9c87b",
+    "build": "make -C libretro -j12 (libretro branch; the repo's .gitlab-ci.yml osx-arm64 job uses MAKEFILE_PATH=libretro), unmodified"
+  }
+}

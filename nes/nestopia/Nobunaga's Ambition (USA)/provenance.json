@@ -1,0 +1,28 @@
+{
+  "method": "played",
+  "system": "nes",
+  "core": "nestopia",
+  "core_file": "nestopia_libretro.dylib",
+  "core_name": "Nestopia",
+  "core_version": "2.0.0 f1e02d1",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Nobunaga's Ambition (USA).nes",
+    "sha1": "1f7d440085e9bc17fa22b23744d611e69b978c07",
+    "size": 262160
+  },
+  "device": null,
+  "script": "scripts/nes/Nobunaga's Ambition.nestopia.txt",
+  "frames": 53744,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Nobunaga's Ambition (USA).srm": {
+      "size": 8192,
+      "sha1": "b8ee0398ecf2db594e27dd411a7693319388029f"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

@@ -1,69 +1,81 @@
 # Atari 2600
 
-Nothing filed, and nothing to file from this library: no 2600 game released in the console's
-lifetime has save memory, and the library is the No-Intro retail set (482 games, no homebrew,
-no aftermarket titles). The only 2600 saves in practice are homebrew high scores on an
-**AtariVox/SaveKey** (a 32 KiB 24LC256 I2C EEPROM plugged into joystick port 2) and the flash
-of a few modern bankswitching carts. The libretro Stella builds emulate the SaveKey but, as built
-on the buildbot today, cannot persist it through the frontend.
+No retail 2600 game saves, and the library is the No-Intro retail set (482 games, no homebrew). The
+2600's save device is the **SaveKey/AtariVox**: a 32 KiB 24LC256 I2C EEPROM in joystick port 2,
+shared by every game, each using its own 64-byte pages (github.com/atariage-community/savekey-allocation-list).
+Homebrew uses it, so this system's entries are two homebrew games whose authors give them away,
+downloaded from their GitHub releases. 3 entries filed out of 8 attempts.
 
-## Evidence
+## The games
 
-All four runnable cores booted Pitfall! (USA) under retro-run, run from a fresh working directory,
-and reported **save RAM 0 bytes**; none created any file in the save directory, the system
-directory or the working directory.
+| Game | Author, source, licence | What it saves |
+| --- | --- | --- |
+| Paul's HappyBird v1.08 (NTSC, PlusROM build), `happybird-v1.08-NTSC-PLUSROM.bin`, 16 KiB F6 | Bruno Steux, 2023. github.com/steux/happybird release v1.08. GPL-3.0 | the high score, 2 bytes at SaveKey 0x1480, written at game over. Script: pass the first pipes (score 1) and crash |
+| Grizzards v1.1 (NTSC), `Grizzards.NTSC.a26`, 64 KiB EF | Bruce-Robert Pocock, 2022. github.com/brpocock/grizzards release v1.1. CC BY-NC-SA 4.0 (`COPYING`; the cart is commercially licensed to AtariAge, the ROM is on GitHub by the author) | three game slots; a new game writes slot 1 at once (0x1100-0x11E3, starting "GRIZ0"). Script: name BAAAAA, take Aquax, BEGIN; reset shows RESUME BAAAAA SLOT 1. The game refuses to start without a SaveKey |
 
-| Core | Build | Save RAM | SaveKey/AtariVox emulated | Where the EEPROM file would go |
-| --- | --- | --- | --- | --- |
-| stella | Stella 8.0_pre b52ccb02e (upstream commit of 2026-03-29) | 0 | yes | `./nvram/savekey_eeprom.dat` (or `atarivox_eeprom.dat`) relative to the **frontend's working directory**, and only if that `nvram` directory already exists |
-| stella-2023 | Stella 7.0_pre ba52c43 | 0 | yes | same as stella |
-| stella-2014 | Stella 3.9.3 7d1361e | 0 | yes | `./savekey_eeprom.dat` in the working directory |
-| tia | tia 20+6ae5bf9 | 0 | no (no EEPROM code at all) | none |
-
-How that was established, from the sources at those commits:
-- `retro_get_memory_data` in Stella's libretro port returns only `RETRO_MEMORY_SYSTEM_RAM`; there
-  is no `SAVE_RAM`, so RetroArch never writes a 2600 `.srm`.
-- The SaveKey is `MicroChip24LC<32_KB>`: 32768 bytes, initialised to 0xFF, written to its data
-  file in the destructor (when the game is unloaded) through `FSNode::write`. Stella 8 builds that
-  path as `nvramDir() / "savekey_eeprom.dat"` (`Console.cxx`).
-- In the libretro port at b52ccb02e, `OSystemLIBRETRO::getBaseDirectories` sets the base directory
-  to `"./"`; `FSNodeLIBRETRO::makeDir()` returns false and the node has no `write`, so
-  `FSNode::write` falls back to a plain `std::ofstream` on `./nvram/savekey_eeprom.dat`. The
-  `nvram` directory is never created, so in a normal RetroArch setup the SaveKey contents are lost
-  at unload. The test run here confirms no `nvram/` appears in the working directory.
-- Stella upstream fixed this on 2026-05-17 (commits 51994c0fe "Make FSNodeLIBRETRO a proper FSNode
-  implementation" and the base-directory change): the base directory is now
-  `<frontend save dir>/stella/`, so a newer build would write
-  **`<savedir>/stella/nvram/savekey_eeprom.dat`** (one file shared by every game, not
-  `<stem>.srm`). The buildbot `stella` core used here predates that.
-- stella2014 (`libretro/stella2014-libretro`): `MT24LC256` opens `myDataFile` with `ofstream`
-  and writes it at destruction if the file did not exist or the data changed; the path is
-  `myOSystem->nvramDir() + "savekey_eeprom.dat"`, and the port's `OSystem` never sets
-  `myNVRamDir`, so the file lands in the working directory. Its 2014 properties database only
-  enables the SaveKey for the homebrew it knew then.
-- Stella's newer properties database marks SaveKey games by name, e.g. "Amoeba Jump (2019)
-  (SaveKey)", "Bot & Tom (2023) (SaveKey)", "Lode Runner (2022) (SaveKey)"; Stella 6+ also
-  auto-detects SaveKey access in the ROM. Carts with their own flash use
-  `nvram/<cart name>_flash.dat` / `_eeprom.dat` the same way.
-
-Not tested in a played run: there is no SaveKey game in the library, and fetching one (the
-freeware Amoeba Jump from AtariAge) was not possible from here.
+Each `provenance.json` has `"rom_source"` with the download URL. The ROMs stay in `.cache/downloads/`;
+the folder name is the release's file name. Gate Racer II (Atarius Maximus, 2013; best time saved
+on any crash) was the third candidate, but its only source is an AtariAge forum attachment, and
+AtariAge answers non-browser requests with HTTP 403: blocked, not used.
 
 ## Games x cores
 
 | Game | stella | stella-2014 | stella-2023 | tia |
 | --- | --- | --- | --- | --- |
-| (none: no game in the library saves) | - | - | - | - |
+| HappyBird | `cwd/savekey_eeprom.dat`, 32768 | failed: runs, no SaveKey | `cwd/savekey_eeprom.dat`, 32768 | failed: runs, no SaveKey |
+| Grizzards | failed: "MEMORY DEVICE NEEDED 00F497" at BEGIN | failed: same message at boot | `cwd/savekey_eeprom.dat`, 32768 | failed: black screen |
+
+Builds: stella = Stella 8.0_pre b52ccb02e, stella-2023 = Stella 7.0_pre ba52c43, stella-2014 = Stella
+3.9.3 7d1361e, tia = tia 20+6ae5bf9. HappyBird's two files are byte-identical (sha1 ffcb649c...):
+0xFF everywhere except `00 01` at 0x1480. Grizzards' file is 0xFF except 210 bytes in 0x1100-0x11E3.
+
+## Where each core keeps the SaveKey
+
+None of them uses the libretro save RAM interface: no 2600 core here has a `.srm`.
+
+- **stella and stella-2023: `savekey_eeprom.dat` in the frontend's current working directory**, 32768
+  bytes, initialised to 0xFF, written when the game is unloaded, one file for every game. Both
+  detect the SaveKey on their own for these two ROMs (port 2 set to SaveKey/AtariVox). Their libretro
+  file layer (`FSNodeLIBRETRO`) maps Stella's `./nvram/` to `./`, so the file is `./savekey_eeprom.dat`,
+  not `./nvram/...` as these notes said before. `make-save.py` files what the core wrote into
+  its working directory under `cwd/` in the entry, and `--rom-source` records where the ROM came
+  from (`rom_source`). In RetroArch the file lands in whatever directory RetroArch was started from.
+- **The file is never read back.** `FSNodeLIBRETRO::read` returns the loaded ROM image whatever path
+  is asked for, and the EEPROM class accepts a data file only if it is exactly 32768 bytes. With a
+  16 or 64 KiB ROM the SaveKey therefore starts blank on every boot (and, flagged as changed, is
+  rewritten at every unload). Tested: with HappyBird's saved `savekey_eeprom.dat` copied into the
+  working directory, a fresh boot shows HIGH 000 in both cores. From the code, not tested: a 32 KiB
+  ROM would get its own ROM bytes as SaveKey contents.
+- **Reset differs.** After a libretro reset stella-2023 keeps the EEPROM in memory (HappyBird shows
+  HIGH 001, Grizzards RESUME BAAAAA); stella rebuilds the console, rereads the "file" and starts
+  blank (HIGH 000). So HappyBird's script proves the save on the game-over screen, before any reset.
+- **stella fails Grizzards' save.** Stella 8.0_pre finds the device at boot (SELECT SLOT appears), but
+  after BEGIN the game reports "MEMORY DEVICE NEEDED 00F497" and only 7 bytes (zeros, 0x1130-0x1136)
+  reach the file; Stella 7 (stella-2023) writes the whole slot. Stella 8 replaced the old `MT24LC256`
+  class with a templated `MicroChip24LC`; this looks like a regression in it. Not filed.
+- **stella-2014: only for the ROMs its 2014 database knows.** It sets the right port from
+  `Controller.Right` in its properties and has no detection and no device override. Its database
+  marks four titles, all `ATARIVOX` (file `atarivox_eeprom.dat`, working directory): AtariVox Test
+  ROM, Man Goes Down (2006 prototype), Strat-O-Gems Deluxe (2005), Juno First (2009, NTSC and
+  PAL60). HappyBird runs without a SaveKey; Grizzards stops at "MEMORY DEVICE NEEDED".
+- **tia: no SaveKey at all.** HappyBird runs; Grizzards (EF bankswitching) shows a black screen.
+- Upstream Stella fixed the libretro file layer on 2026-05-17 (commit 51994c0fe and the base
+  directory change): a newer build would write `<savedir>/stella/nvram/savekey_eeprom.dat`. The
+  buildbot `stella` used here predates it.
+
+## Cores not runnable here
 
 | Core | Status |
 | --- | --- |
-| atari7800-mister (MiSTer) | not runnable. Its 2600 mode has a SaveKey port option; saves would be the core's `.sav` (see `atari-7800/NOTES.md`). Nothing found online |
-| spiritualized-2600 (openFPGA) | not runnable. No save support documented; nothing found |
+| atari7800-mister (MiSTer) | its 2600 mode has a SaveKey port option; saves would be the core's `.sav` (see `atari-7800/NOTES.md`). Nothing found online |
+| spiritualized-2600 (openFPGA) | no save support documented; nothing found |
 
 ## Leads
 
-- A SaveKey file from standalone Stella (`.config/stella/nvram/savekey_eeprom.dat` or
-  `Library/Application Support/Stella/nvram/` in the home folder) would show the 32 KiB 0xFF-filled layout, but
-  it is not a registry core.
-- github.com/atariage-community/savekey-allocation-list: which homebrew uses which SaveKey pages
-  (64-byte blocks), useful to label a SaveKey file's contents.
+- Gate Racer II and its 2024 remake (Atarius Maximus, free ROMs attached to his AtariAge topics
+  209959 and 359422): fetchable only with a browser.
+- Grizzards' free 32 KiB demo (F4) is on the same GitHub releases page.
+- Amoeba Jump: reportedly only the cartridge version saves to a SaveKey, not the free forum ROMs.
+- Strat-O-Gems Deluxe (John Payson, 2005), if a free copy with the md5 in stella-2014's database
+  turns up, would give a stella-2014 AtariVox file.
+- Standalone Stella keeps `nvram/savekey_eeprom.dat` in its own settings folder; not a registry core.

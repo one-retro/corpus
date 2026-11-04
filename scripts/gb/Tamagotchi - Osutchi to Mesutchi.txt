@@ -1,0 +1,43 @@
+# Game de Hakken!! Tamagotchi - Osutchi to Mesutchi (Japan) (SGB Enhanced)
+# Bandai TAMA5 cartridge: the game keeps its Tamagotchi in the TAMA5's own RAM (no SRAM chip).
+# New game: Tamagotchi time, fast; clock 1997/1/1 0:00; first egg; name "ああ"; the egg hatches.
+# Proof: after a reset the menu offers つづきからはじめる and the hatched pet is in its room.
+# SGB-mode cores (mGBA, Gearboy) reach the title ~300 frames later, hence the long waits.
+wait 2400
+shot title
+press start          # title -> つづきから / さいしょから (cursor on さいしょから)
+wait 600
+press a              # さいしょからはじめる -> じかんのながれ
+wait 600
+shot time
+press a              # たまごっちタイム
+wait 400
+press a              # はやい
+wait 600
+shot date
+press a              # 1997/1/1 0:00
+wait 600
+press a              # せってい OK? はい
+wait 900
+shot egg
+press a              # the first egg
+wait 900
+shot name
+press a              # あ
+wait 300
+press a              # あ
+wait 300
+press start          # cursor to the end mark
+wait 300
+shot named
+press a              # name done; the egg is placed and hatches
+wait 2400
+shot hatched
+reset
+wait 2400
+press start
+wait 600
+shot continue        # ▶つづきからはじめる
+press a
+wait 900
+shot room

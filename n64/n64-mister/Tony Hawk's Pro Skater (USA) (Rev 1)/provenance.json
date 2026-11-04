@@ -1,0 +1,44 @@
+{
+  "method": "played",
+  "system": "n64",
+  "core": "n64-mister",
+  "core_file": "N64_20260726.rbf",
+  "core_name": "N64_MiSTer",
+  "core_version": "20260726",
+  "frontend": "mister",
+  "device": "the owner's MiSTer (DE10-Nano), Main_MiSTer binary of 2026-10-19",
+  "loaded_with": "MGL via /dev/MiSTer_cmd load_core (_Console/N64, file type f index 1)",
+  "save_folder": "saves/N64",
+  "rom": {
+    "name": "Tony Hawk's Pro Skater (USA) (Rev 1).z64",
+    "sha1": "4900b6c92fb8df1765e91e891dccc525bb102fe1",
+    "size": 12582912
+  },
+  "script": "scripts/n64/Tony Hawk's Pro Skater.txt",
+  "mister_script": "scripts/mister/n64/Tony Hawk's Pro Skater.n64.txt",
+  "frames": 11838,
+  "timing": "real time: script frames played as wall-clock 1/60 s by work/mister/mrun.py",
+  "options": null,
+  "save_trigger": "OSD opened (F12 from a uinput keyboard) with Autosave on: the core writes its backup RAM to the SD card",
+  "started_from": null,
+  "files": {
+    "Tony Hawk's Pro Skater (USA) (Rev 1)_1.cpk": {
+      "size": 32768,
+      "sha1": "72c102983f15c09499deae70ed33681e03fe7966"
+    },
+    "Tony Hawk's Pro Skater (USA) (Rev 1)_2.cpk": {
+      "size": 32768,
+      "sha1": "cd400301e78b297adf8eb00d29507c0944331f43"
+    },
+    "Tony Hawk's Pro Skater (USA) (Rev 1)_3.cpk": {
+      "size": 32768,
+      "sha1": "f154eb2ed8d7a2f977a4cde98006b430ef1380bb"
+    },
+    "Tony Hawk's Pro Skater (USA) (Rev 1)_4.cpk": {
+      "size": 32768,
+      "sha1": "94b898f106e78ba4f39eecb62cf0841daf1c1231"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "Controller Pak only (no cartridge save): four files <rom>_1.cpk to _4.cpk, 32768 bytes each, one per controller port, numbered from 1 because the game has no cartridge save (Auto Detect: cpak|rpak, so Pad 1 Type became ControllerPak and Main mounted four paks). Console order. Main formatted each pak when it created the file: page 0 holds the ID block at 0x20, 0x60, 0x80, 0xC0 with a random 16-byte serial (a different one per pak), the bytes 'MiSTer', device 0x81, 1 bank and its checksums; index tables 0x71 / 00 03. Pak 1 holds the note TH-AA (NTFE '52', ext 'G'); compared with Mupen64Plus-Next's pak 1, only the 108 bytes of the four ID blocks differ, the note is byte-identical; paks 2-4 differ from Mupen's in the same 108 bytes. Written on OSD open (Autosave On, the N64 default). Script unchanged; THPS has no power-cycle step, the proof is SAVE SUCCESSFUL. Needs games/N64/boot.rom (the owner's PIF ROM)."
+}

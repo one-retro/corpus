@@ -1,0 +1,32 @@
+{
+  "method": "played",
+  "system": "nes",
+  "core": "nes-mister",
+  "core_file": "NES_20260823.rbf",
+  "core_name": "NES_MiSTer",
+  "core_version": "20260823",
+  "frontend": "mister",
+  "device": "the owner's MiSTer (DE10-Nano), Main_MiSTer binary of 2026-10-19",
+  "loaded_with": "MGL via /dev/MiSTer_cmd load_core (_Console/NES, file type f index 0)",
+  "save_folder": "saves/NES",
+  "rom": {
+    "name": "Pac-Man - Championship Edition (USA, Europe) (Namco Museum Archives Vol 1).nes",
+    "sha1": "90ab4682c1cfbe78d9e32baff37600b0114f6e74",
+    "size": 262160
+  },
+  "script": "scripts/nes/Pac-Man - Championship Edition.txt",
+  "mister_script": "scripts/mister/nes/Pac-Man - Championship Edition.nes.txt",
+  "frames": 12590,
+  "timing": "real time: script frames played as wall-clock 1/60 s by work/mister/mrun.py",
+  "options": null,
+  "save_trigger": "OSD opened (F12 from a uinput keyboard) with Autosave on: the core writes its backup RAM to the SD card",
+  "started_from": "a zero-filled 8192-byte .sav put in place before loading, so the backup RAM started cleared; the core then rewrote all of it",
+  "files": {
+    "Pac-Man - Championship Edition (USA, Europe) (Namco Museum Archives Vol 1).sav": {
+      "size": 8192,
+      "sha1": "282deffa2351e9c68e11d85b2c98f01b584ba74c"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "Namco 163 (mapper 19.3) with 8 KiB battery WRAM (NES 2.0 NVRAM shift 7): saves/NES/<rom>.sav, 8192 bytes; the N163's own 128 bytes are not saved (as in every libretro core). Started from an 8192-byte zero seed (the NES core loads only an existing save). The 'sav' block from 0x700 on is identical to all five libretro cores' files (which agree with each other), but 0x000-0x6F1 is all 00 here, where they hold 1217 non-zero bytes (runs of 09, 0D, ...): the part that differs looks like the recorded replay; after the reload REPLAY NORMAL is lit and plays (proof), so the game accepts the file. Autosave on by default: no config written. Script unchanged."
+}

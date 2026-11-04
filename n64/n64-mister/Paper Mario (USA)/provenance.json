@@ -1,0 +1,32 @@
+{
+  "method": "played",
+  "system": "n64",
+  "core": "n64-mister",
+  "core_file": "N64_20260726.rbf",
+  "core_name": "N64_MiSTer",
+  "core_version": "20260726",
+  "frontend": "mister",
+  "device": "the owner's MiSTer (DE10-Nano), Main_MiSTer binary of 2026-10-19",
+  "loaded_with": "MGL via /dev/MiSTer_cmd load_core (_Console/N64, file type f index 1)",
+  "save_folder": "saves/N64",
+  "rom": {
+    "name": "Paper Mario (USA).z64",
+    "sha1": "3837f44cda784b466c9a2d99df70d77c322b97a0",
+    "size": 41943040
+  },
+  "script": "scripts/n64/Paper Mario.txt",
+  "mister_script": "scripts/mister/n64/Paper Mario.n64.txt",
+  "frames": 3770,
+  "timing": "real time: script frames played as wall-clock 1/60 s by work/mister/mrun.py",
+  "options": null,
+  "save_trigger": "OSD opened (F12 from a uinput keyboard) with Autosave on: the core writes its backup RAM to the SD card",
+  "started_from": null,
+  "files": {
+    "Paper Mario (USA).fla": {
+      "size": 131072,
+      "sha1": "319b7e302c3a9782d9200eca9a20c86f49171b82"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "FlashRAM 1 Mbit: <rom>.fla, 131072 bytes, each 32-bit word reversed like the FlashRAM region of the libretro .srm ('iraMtS o yro.600' at 0x00). 164 bytes differ from Mupen64Plus-Next's region (ParaLLEl's is identical to Mupen's): 160 of them are FF here where both libretro cores have 00 (0x10-0x31, 0x34-0x35, 0x46C-0x46D, 0x12E6-0x12E7, 0x1304-0x137F: bytes inside the game's written pages that it never filled), 4 are game data. Main created the file FF-filled at ROM load (Auto Detect: flash128k); written on OSD open (Autosave On, the N64 default). Script unchanged. Needs games/N64/boot.rom (the owner's PIF ROM)."
+}

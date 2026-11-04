@@ -1,0 +1,47 @@
+load corpus-tmp/mgl/sgb-red.mgl 6
+# SGB: the Super Game Boy BIOS boots first (border, logo): 300 frames more than a Game Boy
+wait 300
+# Pokemon Red (MBC3 + 32 KiB battery RAM, no clock): NEW GAME, take the
+# preset names RED and BLUE, then SAVE from the start menu in the bedroom.
+# B advances Oak's text but never picks from the name menus, so it is mashed.
+wait 1500
+repeat 8            # START opens the title menu and START picks NEW GAME; the
+tap start 1 50      # title ignores input while its Pokemon swap, and SGB-mode
+end                 # cores (mGBA, Gearboy) reach it ~300 frames later
+wait 60
+repeat 60           # Oak's speech, stops at the player's name menu
+tap b 1 30
+end
+press down 4        # RED
+wait 20
+press a 4
+wait 60
+repeat 40           # stops at the rival's name menu
+tap b 1 30
+end
+press down 4        # BLUE
+wait 20
+press a 4
+wait 60
+repeat 40           # the rest of the speech; B does nothing in the bedroom
+tap b 1 30
+end
+wait 60
+press start 6       # POKEMON / ITEM / RED / SAVE / OPTION / EXIT
+wait 60
+press down 4
+wait 15
+press down 4
+wait 15
+press down 4
+wait 15
+press a 6           # SAVE -> "Would you like to SAVE the game?"
+wait 180
+press a 6           # YES
+wait 210
+shot saved          # "RED saved the game!"
+wait 120
+wait 30
+save
+wait 60
+shot final

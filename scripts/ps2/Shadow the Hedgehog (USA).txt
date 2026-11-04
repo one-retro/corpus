@@ -1,0 +1,17 @@
+# Shadow the Hedgehog (USA), SLUS-21261, DVD.
+# At power-on: "No Game Data present ... Create new Game Data? Yes", then "unformatted.
+# Format memory card?" (No preselected): Yes; the game formats the card and creates
+# its game data (after "Format successful. OK") before the logos.
+wait 2400
+shot create          # "No Game Data present ... Create new Game Data?" (Yes selected)
+press b 10
+wait 300
+shot format          # "... is unformatted. Format memory card ...?" (No selected)
+press left 10        # Yes
+wait 60
+press b 10
+wait 600
+shot formatted       # "Format successful. OK"
+press b 10
+wait 600
+shot created         # "Game Data has been created. OK"

@@ -1,0 +1,3 @@
+# LRPS2: the OpenGL renderer needs GL_ARB_shading_language_420pack (macOS GL 4.1 lacks it);
+# the CPU-only software renderer needs no GPU context.
+pcsx2_renderer = Software (SW)

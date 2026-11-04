@@ -1,0 +1,82 @@
+# Nobunaga's Ambition (USA), variant for Nestopia: the shared script's 50-fief game as Kakizaki
+# meets a Tsugaru attack before Kakizaki's first turn in Nestopia (its random events differ), and a
+# battle waits for input. Here: the 17-fief game as Uesugi (fief 2), otherwise the same play:
+# 20 Other -> 4 Save -> Y, 17 Rest one season; the game is written at the end of Spring.
+# Proof: after a reset, New game? N loads 1560 Summer.
+wait 900
+press start           # KOEI screen -> title
+wait 900
+press left            # New game? Y
+wait 600
+press left            # 17 fiefs
+wait 600
+press right           # Watch other daimyos battle? N
+wait 600
+press up              # How many players: 1
+wait 60
+press a
+wait 600
+press up              # Which fief: 2
+wait 60
+press up
+wait 60
+press a
+wait 600
+press left            # Uesugi of fief 2 OK? Y
+wait 600
+repeat 6              # stop the five ability reels (a spare A does nothing at the Y/N)
+press a
+wait 150
+end
+wait 300
+shot abilities
+press left            # abilities OK? Y
+wait 600
+press up              # skill level 1
+wait 60
+press a
+wait 600
+press left            # everything OK so far? Y
+wait 15000            # revolts and other daimyos' moves play out before Uesugi's turn; it waits
+shot orders           # 1560 Spring, Lord Uesugi, your orders?
+press right           # commands 13-21
+wait 200
+repeat 7
+press down
+wait 40
+end
+press a               # 20 Other
+wait 600
+repeat 3
+press down
+wait 40
+end
+press a               # 4 Save
+wait 600
+press left            # Are you sure? Y
+wait 600
+press up              # 7 Menu
+wait 100
+press a
+wait 600
+press right
+wait 200
+repeat 4
+press down
+wait 40
+end
+shot rest
+press a               # 17 Rest: the computer plays (and defends) for the seasons given
+wait 600
+press up              # Seasons (1-10)? 1
+wait 60
+press a
+wait 24000            # Spring ends (the game is saved), Summer is played for Uesugi
+shot summer
+reset
+wait 900
+press start
+wait 900
+press right           # New game? N: continue the saved game
+wait 600
+shot loaded           # 1560 Summer

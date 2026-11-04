@@ -1,0 +1,21 @@
+{
+  "method": "downloaded",
+  "system": "ps2",
+  "core": "pcsx2",
+  "url": "https://github.com/PCSX2/pcsx2/files/2370814/MCD001.zip",
+  "source_page": "https://github.com/PCSX2/pcsx2/issues/2588",
+  "source": "GitHub, PCSX2/pcsx2 issue tracker (an attachment to a bug report)",
+  "author": "kokutoukiritsugu",
+  "licence": null,
+  "emulator": "PCSX2 v1.5.0-dev-2550-gd8e6ba427",
+  "posted": "2018-09-11",
+  "fetched": "2026-11-04",
+  "what_it_is": "A PCSX2 1.5.0-dev user's card, upper-case name MCD001.PS2, with 7 Japanese saves (Super Robot Taisen series).",
+  "files": {
+    "MCD001.PS2": {
+      "size": 8650752,
+      "sha1": "1f89bb09e83263997d0a869291654ef1f7079072"
+    }
+  },
+  "note": "No licence stated on the page. upper-case MCD001.PS2 name"
+}

@@ -1,0 +1,48 @@
+{
+  "method": "played",
+  "system": "ps2",
+  "core": "armsx2",
+  "core_file": "armsx2_libretro.dylib",
+  "core_name": "ARMSX2",
+  "core_version": "720f409f",
+  "frontend": "retro-run (writes saves as RetroArch does); patched with --pace 60 (frames paced to wall-clock: the core emulates on its own thread and retro_run returns at once)",
+  "runner": "ps2-save.py: make-save.py with a fresh system directory and HOME per run (PS2 cores write their cards there); see ps2/NOTES.md",
+  "renderer": "none (Vulkan only, no Vulkan here: the core falls back to its Null GS; proof.png is black)",
+  "rom": {
+    "name": "Ratchet & Clank - Going Commando (USA).iso",
+    "sha1": "f2cfaf0eb12b3c0d8fd6db7aa49ce032e8a6020b",
+    "size": 3828350976
+  },
+  "bios": {
+    "name": "ps2-0200a-20040614.bin",
+    "sha1": "7a62e5f48603582707e9898eb055ea3eaee50d4c",
+    "size": 4194304,
+    "what": "SCPH-70012 v2.00 USA (2004-06-14)"
+  },
+  "device": null,
+  "script": "scripts/ps2/Ratchet & Clank - Going Commando (USA).txt",
+  "frames": 4540,
+  "options": null,
+  "started_from": "ps2/armsx2/Ratchet & Clank (USA)",
+  "files": {
+    "system/pcsx2/bios/ps2-0200a-20040614.mec": {
+      "size": 4,
+      "sha1": "3f8affbe07024ccd2f5b8374072d0928c583a862"
+    },
+    "system/pcsx2/memcards/Mcd001.ps2": {
+      "size": 8650752,
+      "sha1": "0473206005fe922a119bfc3ae8107afbce401f03"
+    },
+    "system/pcsx2/memcards/Mcd002.ps2": {
+      "size": 8650752,
+      "sha1": "eac18874c24d1018b5244074b0a6d11468b390ad"
+    }
+  },
+  "also_written_not_filed": [
+    "system/pcsx2/cache/vu_jit/packs/SCUS-97268_38996035/vu0-b40e1297c963156ac7b14bc27c735fbb.pack",
+    "system/pcsx2/inis/armsx2-libretro.ini",
+    "system/pcsx2/logs/emulog.txt"
+  ],
+  "created": "2026-11-04",
+  "note": null
+}

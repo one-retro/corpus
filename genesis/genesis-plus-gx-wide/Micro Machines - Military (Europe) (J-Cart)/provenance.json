@@ -1,0 +1,28 @@
+{
+  "method": "played",
+  "system": "genesis",
+  "core": "genesis-plus-gx-wide",
+  "core_file": "genesis_plus_gx_wide_libretro.dylib",
+  "core_name": "Genesis Plus GX Wide",
+  "core_version": "v1.7.4 b7ad005",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Micro Machines - Military (Europe) (J-Cart).md",
+    "sha1": "6d3df64ab8bb0b559f216adca62d1cdd74704a26",
+    "size": 1048576
+  },
+  "device": null,
+  "script": "scripts/genesis/Micro Machines - Military.txt",
+  "frames": 5046,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Micro Machines - Military (Europe) (J-Cart).srm": {
+      "size": 673,
+      "sha1": "16483e73247be8026e389214f3676db6ed383c1d"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

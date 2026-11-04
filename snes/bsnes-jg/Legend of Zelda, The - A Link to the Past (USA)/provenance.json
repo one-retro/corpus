@@ -1,0 +1,33 @@
+{
+  "method": "played",
+  "system": "snes",
+  "core": "bsnes-jg",
+  "core_file": "bsnes-jg_libretro.dylib",
+  "core_name": "bsnes-jg",
+  "core_version": "2.1.0",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Legend of Zelda, The - A Link to the Past (USA).sfc",
+    "sha1": "6d4f10a8b10e10dbe624cb23cf03b88bb8252973",
+    "size": 1048576
+  },
+  "device": null,
+  "script": "scripts/snes/Legend of Zelda, The - A Link to the Past.txt",
+  "frames": 1830,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Legend of Zelda, The - A Link to the Past (USA).srm": {
+      "size": 8192,
+      "sha1": "108c0d4acc0517f9697ba39a1632c5c1156c798e"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "Run with retro-run --pad2 (through .cache/build/make-save-pad2.py, otherwise tools/make-save.py): a joypad is plugged into port 2 as well, as RetroArch does. With port 2 never set, bsnes-jg dereferences a null controller in CPU::joypadEdge on the first frame.",
+  "built_from": {
+    "repo": "https://github.com/libretro/bsnes-jg",
+    "commit": "5a1ea18934fc08aeb67b8aa804bf2a5e4ec9c87b",
+    "build": "make -C libretro -j12 (libretro branch; the repo's .gitlab-ci.yml osx-arm64 job uses MAKEFILE_PATH=libretro), unmodified"
+  }
+}

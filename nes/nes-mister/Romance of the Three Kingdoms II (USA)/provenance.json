@@ -1,0 +1,32 @@
+{
+  "method": "played",
+  "system": "nes",
+  "core": "nes-mister",
+  "core_file": "NES_20260823.rbf",
+  "core_name": "NES_MiSTer",
+  "core_version": "20260823",
+  "frontend": "mister",
+  "device": "the owner's MiSTer (DE10-Nano), Main_MiSTer binary of 2026-10-19",
+  "loaded_with": "MGL via /dev/MiSTer_cmd load_core (_Console/NES, file type f index 0)",
+  "save_folder": "saves/NES",
+  "rom": {
+    "name": "Romance of the Three Kingdoms II (USA).nes",
+    "sha1": "6dda2577ea9fd655156c8cf80c18f55e28fc65c7",
+    "size": 524304
+  },
+  "script": "scripts/nes/Romance of the Three Kingdoms II.txt",
+  "mister_script": "scripts/mister/nes/Romance of the Three Kingdoms II.nes.txt",
+  "frames": 27790,
+  "timing": "real time: script frames played as wall-clock 1/60 s by work/mister/mrun.py",
+  "options": null,
+  "save_trigger": "OSD opened (F12 from a uinput keyboard) with Autosave on: the core writes its backup RAM to the SD card",
+  "started_from": "a zero-filled 32768-byte .sav put in place before loading, so the backup RAM started cleared; the core then rewrote all of it",
+  "files": {
+    "Romance of the Three Kingdoms II (USA).sav": {
+      "size": 32768,
+      "sha1": "186bda222ef82de40cb351174905c376c82a904c"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "MMC5 with 32 KiB battery WRAM (NES 2.0 NVRAM shift 9): saves/NES/<rom>.sav, 32768 bytes, the same size and layout as fceumm's, Nestopia's and RustyNES's (no ExRAM, which Mesen appends). Started from a 32768-byte zero seed (the NES core loads only an existing save). The game's data runs from 0x2033 to 0x7A33 as in the libretro files; 799 bytes differ from Mesen's, Nestopia's and RustyNES's (which agree with each other): the game state after a different random start, as fceumm's 298 do. The exact script is a MiSTer variant: on this core the title took START only when it was held 20 frames (4-frame presses at frames 5400 and 6300 were ignored, in two runs). Autosave on by default: no config written. After the reload, 7.Load Saved Game brings back Yuan Shu's orders, Jan 189 (proof)."
+}

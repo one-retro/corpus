@@ -1,0 +1,37 @@
+{
+  "method": "played",
+  "system": "gb",
+  "core": "doublecherrygb",
+  "core_file": "doublecherrygb_libretro.dylib",
+  "core_name": "DoubleCherryGB",
+  "core_version": "v0.19.0 d432f97",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Super Mario Land 2 - 6 Golden Coins (USA, Europe) (Rev 2).gb",
+    "sha1": "d11d94fa3c36b9f72e925070b66bb4f16d31001e",
+    "size": 524288
+  },
+  "device": null,
+  "script": "scripts/gb/Super Mario Land 2.txt",
+  "frames": 1068,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Super Mario Land 2 - 6 Golden Coins (USA, Europe) (Rev 2).rtc": {
+      "size": 8,
+      "sha1": "05fe405753166f125559e7c9ac558654f107c7e9"
+    },
+    "Super Mario Land 2 - 6 Golden Coins (USA, Europe) (Rev 2).srm": {
+      "size": 8192,
+      "sha1": "f12f75e422a7f28e99240afd871b7c1bfacbe7d6"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null,
+  "built_from": {
+    "repo": "https://github.com/TimOelrichs/doublecherryGB-libretro",
+    "commit": "d432f97693670524f7f46bfca886b731134f4bb6",
+    "build": "make -j12 (platform=osx, arm64), unmodified"
+  }
+}

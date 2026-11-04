@@ -1,0 +1,28 @@
+{
+  "method": "played",
+  "system": "snes",
+  "core": "bsnes-mercury",
+  "core_file": "bsnes_mercury_accuracy_libretro.dylib",
+  "core_name": "bsnes-mercury",
+  "core_version": "v094 (Accuracy) 79d7f9d",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "F1-ROC II - Race of Champions (USA).sfc",
+    "sha1": "fb81dd15b8a9ddf8f5564d3d2fb934c6f8bfb392",
+    "size": 1048576
+  },
+  "device": null,
+  "script": "scripts/snes/F1-ROC II.txt",
+  "frames": 3316,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "F1-ROC II - Race of Champions (USA).srm": {
+      "size": 4096,
+      "sha1": "8c82e84292e55de8876462479848f9f767d60c78"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "The ST010 runs its own program here: the system directory held st010.program.rom and st010.data.rom (the No-Intro \"ST010 (Enhancement Chip)\" dump split at 0xC000) and the whole dump as st010.rom. The .srm is the ST010's 4 KB data RAM."
+}

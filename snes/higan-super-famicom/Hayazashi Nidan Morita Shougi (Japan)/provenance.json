@@ -1,0 +1,28 @@
+{
+  "method": "played",
+  "system": "snes",
+  "core": "higan-super-famicom",
+  "core_file": "higan_sfc_libretro.dylib",
+  "core_name": "higan (Super Famicom Accuracy)",
+  "core_version": "106",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Hayazashi Nidan Morita Shougi (Japan).sfc",
+    "sha1": "82b4bca58918a18707f932ec6afc0a12a3c4b872",
+    "size": 524288
+  },
+  "device": null,
+  "script": "scripts/snes/Hayazashi Nidan Morita Shougi.txt",
+  "frames": 9262,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Hayazashi Nidan Morita Shougi (Japan).srm": {
+      "size": 4096,
+      "sha1": "d20116dc3a95fd3d5c22c3c045473b706bf0c685"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "The ST011 runs its own program here: the system directory held st011.program.rom and st011.data.rom (the No-Intro \"ST011 (Enhancement Chip)\" dump split at 0xC000) and the whole dump as st011.rom. The .srm is the ST011's 4 KB data RAM."
+}

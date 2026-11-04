@@ -1,0 +1,37 @@
+{
+  "method": "played",
+  "system": "gbc",
+  "core": "doublecherrygb",
+  "core_file": "doublecherrygb_libretro.dylib",
+  "core_name": "DoubleCherryGB",
+  "core_version": "v0.19.0 d432f97",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Pokemon - Crystal Version (USA, Europe) (Rev 1).gbc",
+    "sha1": "f2f52230b536214ef7c9924f483392993e226cfb",
+    "size": 2097152
+  },
+  "device": null,
+  "script": "scripts/gbc/Pokemon Crystal.txt",
+  "frames": 8968,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Pokemon - Crystal Version (USA, Europe) (Rev 1).rtc": {
+      "size": 8,
+      "sha1": "05fe405753166f125559e7c9ac558654f107c7e9"
+    },
+    "Pokemon - Crystal Version (USA, Europe) (Rev 1).srm": {
+      "size": 32768,
+      "sha1": "aa5d811496fab6f1d2342343d8fd6d58c0704c9c"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null,
+  "built_from": {
+    "repo": "https://github.com/TimOelrichs/doublecherryGB-libretro",
+    "commit": "d432f97693670524f7f46bfca886b731134f4bb6",
+    "build": "make -j12 (platform=osx, arm64), unmodified"
+  }
+}

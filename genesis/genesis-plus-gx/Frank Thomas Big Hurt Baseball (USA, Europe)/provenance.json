@@ -1,0 +1,28 @@
+{
+  "method": "played",
+  "system": "genesis",
+  "core": "genesis-plus-gx",
+  "core_file": "genesis_plus_gx_libretro.dylib",
+  "core_name": "Genesis Plus GX",
+  "core_version": "v1.7.4 f27655b",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Frank Thomas Big Hurt Baseball (USA, Europe).md",
+    "sha1": "9c978aaab10e16be59558561b07a0c610c74b43e",
+    "size": 4194304
+  },
+  "device": null,
+  "script": "scripts/genesis/Frank Thomas Big Hurt Baseball.txt",
+  "frames": 7094,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Frank Thomas Big Hurt Baseball (USA, Europe).srm": {
+      "size": 8192,
+      "sha1": "8b1b597290cc2822337e4e6e60fd087ba9112a86"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

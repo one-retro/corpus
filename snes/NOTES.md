@@ -4,9 +4,25 @@ Nine games, 12 runnable libretro cores, 89 played entries (out of 96 attempted r
 downloaded entries (MiSTer, Analogue Pocket). The 21 `device-backup` entries under `agg23-snes/`
 were filed by someone else, not by this slice.
 
+A second pass added the special chips (see [Special chips](#special-chips)): ST010, ST011, BS-X
+and Sufami Turbo now have entries, 24 more in all (about 60 runs); ST018, SuperFX, SPC7110,
+S-DD1 and OBC1 still have none.
+
 Firmware: `.cache/bios/snes/` holds `dsp1b.rom` (the No-Intro "DSP1 B (World) (Enhancement
 Chip)" dump), plus `dsp1b.program.rom` (its first 6144 bytes) and `dsp1b.data.rom` (its last 2048
 bytes). With them the bsnes family boots Super Mario Kart. No filed game needs them.
+
+For the special chips it also holds:
+- `st010.rom`, `st011.rom` (53248 bytes) and `st018.rom` (163840): the No-Intro "ST010 (Japan,
+  USA)", "ST011 (Japan)" and "ST018 (Japan) (Enhancement Chip)" dumps, found among the library's
+  enhancement-chip dumps (they are not in the 1G1R set). Also split as `stNNN.program.rom` +
+  `stNNN.data.rom`: 0xC000 + 0x1000 for the ST010/ST011, 0x20000 + 0x8000 for the ST018. The
+  bsnes family reads the split names, Mesen2 either. No Cx4/DSP2-4 game was needed, so those dumps
+  were left out.
+- `STBIOS.bin` (snes9x) and `SufamiTurbo.sfc` (Mesen2): copies of "Sufami Turbo (Japan)", the base
+  cart, which these cores want in the system directory when a mini-cart is loaded on its own.
+- `BS-X.bin`: a copy of the BS-X cart, which bsnes, snes9x and Mesen2 look for when a `.bs` memory
+  pack is loaded on its own. No filed run used it.
 
 ## The games
 
@@ -42,7 +58,8 @@ Every script ends with a shot of the save: the slot or record on screen, or a "s
 | higan-super-famicom (x86_64) | ✔ | ✔ | ✔ | ✔ | ✘ (d) | ✔ | ✔ | ✔ `.rtc.ram` 16 |
 | mednafen-bsnes | ✔ (f) | ✔ (f) | ✔ (f) | ✔ (f) | ✔ (f) | ✔ (f) | ✔ (f) | ✔ (f) `.rtc` 20 |
 | mesen-s (Mesen2) | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ no `.rtc` (g) |
-| snes-mister, agg23-snes, timboettiger-pro-action-replay, mednafen, beetle-supafaust, bsnes-jg, chimerasnes, higan-super-famicom-balanced | not runnable here |
+| snes-mister, agg23-snes, timboettiger-pro-action-replay, mednafen | not runnable here |
+| beetle-supafaust, bsnes-jg, chimerasnes, higan-super-famicom-balanced (nSide) | built from source since, 8 of 8 each (BUILT-CORES.md) |
 
 Notes on the table:
 
@@ -96,12 +113,94 @@ Games that format all of SRAM themselves come out byte-identical across all core
   - Mesen2 fails the Mode 2 RTC backup check; its `.rtc` there is 24 bytes (16 one-digit registers, then an 8-byte big-endian time).
   - Momotarou Dentetsu Happy (SPC7110 without RTC) passes the check program on snes9x.
 - **128 KB LoROM SRAM:** see (d).
+- **ST010, ST011, ST018, BS-X, Sufami Turbo:** see [Special chips](#special-chips).
+
+## Special chips
+
+A second pass over the chips the corpus lacked, every game tried in all 12 runnable cores.
+
+| Chip | Game (script) | Save hardware | Save made |
+| --- | --- | --- | --- |
+| ST010 | F1-ROC II - Race of Champions (USA) (`F1-ROC II.txt`) | The ST010's own 4 KB data RAM, battery-backed; no cart SRAM (header SRAM size 0, type `F6`) | GRAND PRIX → PLAYER SELECT → slot 1 → name "ABC" → START. The player is written at once; PLAYER SELECT lists "1. ABC GROUP C". The player record lies in `$0810-$086F`. |
+| ST011 | Hayazashi Nidan Morita Shougi (Japan) (`Hayazashi Nidan Morita Shougi.txt`, `.snes9x.txt`) | The ST011's 4 KB data RAM, as above | 入門教室 → あなたが先手, play 7六歩, resign, セーブ to slot 1 without a comment. The ロード list then shows "1 棋譜1 .入門". The game refuses to save a game with no moves. |
+| ST018 | Hayazashi Nidan Morita Shougi 2 (Japan) | 8 KB cart SRAM (header `03`) | None: see (n). |
+| BS-X | BS-X - Sore wa Namae o Nusumareta Machi no Monogatari (Japan) (Rev 1) (`BS-X.txt`) | 32 KB SRAM, plus 512 KB PSRAM and a memory pack slot | Registers "ああ", boy; with no satellite the game drops you in the town. A `reset` then goes straight to the town: the registration was read back. The name is Shift-JIS `82A0 82A0` at `$0006`, behind an `SG` header and a checksum, mirrored at `$3006`. |
+| Sufami Turbo | SD Gundam Generation - Ichinen Sensouki (Japan), a mini-cart (`SD Gundam Generation - Ichinen Sensouki.txt`) | 8 KB SRAM in the mini-cart (`.st` header byte `$37` = 4) | Event mode → the STAGE 1 map → START → セーブ → YES. セーブ shows over the map for about a second. |
+
+The library has the No-Intro Sufami Turbo set: 13 mini-carts. Six SD Gundam Generation carts have 8
+KB of SRAM; SD Ultra Battle (Ultraman, Seven) and Poi Poi Ninja World have 2 KB; the other four
+have none. SD Ultra Battle formats its SRAM on first boot (Aカセットのバックアップをしょきかしました),
+and Poi Poi Ninja World's stage editor has a ファイル:セーブ that does nothing on an empty stage.
+SD Gundam was the quickest real save.
+
+### Games x cores
+
+✔ filed, ✘ failed (reason below).
+
+| core | F1-ROC II (ST010) | Morita Shougi (ST011) | Morita Shougi 2 (ST018) | BS-X | SD Gundam G., `.st` alone | SD Gundam G. + SD Ultra Battle, two slots |
+| --- | --- | --- | --- | --- | --- | --- |
+| snes9x | ✔ | ✔ (v) | ✘ hangs (o) | ✔ | ✔ 16384 (s) | ✔ two files (t) |
+| snes9x-2010 | ✔ | ✔ (v) | ✘ hangs (o) | ✔ | ✘ refuses the `.st` | ✘ refuses its own subsystem (u) |
+| snes9x-2005-plus | ✔ | ✔ (v) | ✘ hangs (o) | ✘ black screen, blank `.srm` | ✘ black screen | – no subsystem |
+| snes9x-2005 | ✔ | ✔ (v) | ✘ hangs (o) | ✘ black screen, blank `.srm` | ✘ black screen | – no subsystem |
+| snes9x-2002 | ✘ no ST010: skips to QUALIFY with garbled graphics, no save RAM | ✘ no ST011: the flow never reaches the save menu, and no save RAM | ✘ "TRANSMIT WAIT" | ✘ black screen, blank `.srm` | ✘ crashes (SIGBUS) | – no subsystem |
+| bsnes | ✘ plays, writes no file (i) | ✘ plays and saves in game, writes no file (i) | ✘ (n) | ✔ `.srm` + `.psr` | ✘ black screen, writes a 256 KB `.srm` | – no Sufami subsystem (bsx and sgb only) |
+| bsnes-hd-beta | ✘ plays, writes no file (i) | ✘ writes no file (i); ends in the same replay screen as the snes9x cores with this script, so its computer seems to resign at once too | ✘ black screen | ✔ `.srm` only | ✘ black screen, 256 KB `.srm` | – no Sufami subsystem |
+| bsnes-mercury | ✔ | ✔ | ✘ (n) | ✘ refuses the cart on its own (w) | ✘ black screen, no file | ✘ refuses the subsystem (u) |
+| bsnes2014 | ✔ | ✔ | ✘ (n) | ✘ refuses the cart on its own (w) | ✘ black screen, no file | ✘ refuses the subsystem (u) |
+| higan-super-famicom | ✔ | ✔ | ✘ (n) | ✘ refuses the cart | ✘ black screen, 8 KB `.srm` | – no subsystems |
+| mednafen-bsnes | ✘ plays, 0-byte `.srm` (x) | ✘ 0-byte `.srm` (x); neither script's flow fits | ✘ (n) | ✘ black screen, blank `.srm` | ✘ black screen, aborts | – no subsystems |
+| mesen-s (Mesen2) | ✔ | ✔ | ✘ (n) | ✔ `BsxBios.srm` + `BsxBios.bs` (y) | ✔ 8192 | – no Sufami subsystem (sgb only) |
+
+- **(i)** bsnes v115 and bsnes-hd-beta run the ST010 and ST011 from the firmware, and the games save in play (the player is listed, the 棋譜 is in the ロード list), but the cores write nothing: the chip's data RAM is not part of what they save. A real loss for a user of these cores.
+- **(n)** Morita Shougi 2 plays in every core that runs the ST018 (bsnes, bsnes-mercury, bsnes2014, higan, mednafen-bsnes, Mesen2): the ARM answers moves. But セーブ never takes, in 入門教室 or 対局室, with or without a comment: the slot stays なし and the 8 KB SRAM stays all `FF` in bsnes and mednafen-bsnes. The same flow saves in Morita Shougi 1, so this looks like a common emulation gap (or a step the game needs that was not found), not the script. Note the sizes anyway: bsnes, bsnes-hd-beta, Mesen2 and mednafen-bsnes write 8192 bytes; bsnes-mercury, bsnes2014 and higan expose 16384 bytes of the ARM's RAM as save RAM instead; the snes9x cores write 4096.
+- **(o)** snes9x's ST018 is not enough: the board comes up but there is no cursor and the game goes no further.
+- **(v)** The snes9x cores emulate the ST011 at high level, and its computer resigns right after your first move (あなたの勝ちです). The game then offers the same menu, so `Hayazashi Nidan Morita Shougi.snes9x.txt` dismisses the result with B instead of resigning. Their saves hold one move; the firmware cores' hold two.
+- **(s)** snes9x's `.srm` for a lone mini-cart is 16384 bytes: the 8 KB cart RAM, then 8 KB of `0x60`.
+- **(t)** Through snes9x's "Multi-Cart Link" subsystem (Cart A = SD Gundam, Cart B = SD Ultra Battle), RetroArch-style naming gives one file per slot, each named after that slot's file: `SD Gundam Generation - Ichinen Sensouki (Japan).srm` (memory `0x300`) and `SD Ultra Battle - Ultraman Densetsu (Japan).srm` (`0x400`), 16384 bytes each. A's first 8 KB equal the lone-cart file byte for byte; the second half is `00` here, not `0x60`. B's file is all `00`: slot B is never booted. The subsystem needs both carts; with only Cart A, snes9x says "Multirom loading failed". Filed under the folder name `SD Gundam Generation - Ichinen Sensouki (Japan) + SD Ultra Battle - Ultraman Densetsu (Japan)`.
+- **(u)** bsnes-mercury and bsnes2014 declare a "Sufami Turbo" subsystem (slots: Sufami A, Sufami B, Sufami BIOS; `.srm` for A and B, memory `0x300`/`0x400`) but refuse every load tried: A, (none), BIOS; A, B, BIOS; BIOS, A, B; with game type `0x1103`, `0x103` or `0x3`. snes9x-2010 declares "st" (two cart slots, no memory at all, so RetroArch would write no save even if it loaded) and refuses with one or two carts and every id tried.
+- **(w)** bsnes-mercury and bsnes2014 load the BS-X cart only through their "BSX" subsystem with a memory pack (`.srm` + `.psrm`, named after the pack); not tried.
+- **(x)** mednafen-bsnes writes a 0-byte `.srm` (and its usual 0-byte `.rtc`) for the ST010 and ST011 games, then aborts as usual.
+- **(y)** Mesen2 names the BS-X saves after the BIOS, not the ROM: `BsxBios.srm` (32768) and `BsxBios.bs` (1048576, all `FF`: the empty memory pack).
+
+Not runnable here, as before: snes-mister, agg23-snes and the other cores in the first table.
+
+### What differs
+
+**ST010 / ST011 data RAM (4096 bytes in every core that saved).** The game's record agrees everywhere (F1-ROC II's player in `$0810-$086F`). The rest is the chip's work area, `$0000-$00E1` in F1-ROC II, so files differ between cores: snes9x = snes9x-2010 byte for byte; snes9x-2005 and 2005-plus differ from them only in `$0000-$0015`, `$0040` and `$00C0-$00E1`; bsnes-mercury, bsnes2014, higan and Mesen2 differ in `$0000-$00E1` a little more. Untouched data RAM (`$0D00-$0FFF` in F1-ROC II, `$0700-$0FFF` in Morita) is `00` in every core except Mesen2, where it is random, as its other RAM is. Morita: the four snes9x cores' files are identical (sha1 `ea79601d…`); the firmware cores differ in the 棋譜 itself (the computer's answer varies, 8四歩 or 3四歩) and at `$0180-$0649`.
+
+**BS-X SRAM (32768).** `$0000-$5FFF` is the same in every core (the game formats it at boot); `$6000-$7FFF` is never touched and shows each core's fill: `FF` in bsnes and bsnes-hd-beta, `60` in snes9x and snes9x-2010, random in Mesen2. bsnes adds `<stem>.psr`, the 512 KB PSRAM, all `FF`; bsnes-hd-beta does not. bsnes and bsnes-hd-beta `.srm` are identical, as are snes9x and snes9x-2010.
+
+**Sufami Turbo.** Names follow how the cart was loaded: a lone `.st` gives `<mini-cart stem>.srm`; a two-slot subsystem gives one file per slot named after each mini-cart; nothing is named after the base cart. Sizes: 8192 in Mesen2 (the cart's size), 16384 in snes9x (both ways). snes9x and Mesen2 differ in 18 bytes of the save itself (`$0032-$1A5B`).
+
+**Cores that write their own files.** bsnes v115 and Mesen2 report 0 bytes of save RAM to the frontend (`retro_get_memory_size`), so a frontend's own save code writes nothing for them, and retro-run's `dump` cannot read it; they write `<stem>.srm` (and bsnes `.psr`, Mesen2 `BsxBios.*`) into the save directory themselves. That is why Mesen2's BS-X names ignore the ROM.
+
+### Scripts and the MiSTer replay
+
+- `F1-ROC II.txt`, `BS-X.txt`, `SD Gundam Generation - Ichinen Sensouki.txt` and `Hayazashi Nidan Morita Shougi.txt` are for every core; use `Hayazashi Nidan Morita Shougi.snes9x.txt` only where the computer resigns at once after the first move (v). The firmware flow resigns by hand after the computer's answer.
+- Waits are generous; Morita's menus drop presses shorter than about 15 frames, so its presses are long. `BS-X.txt` ends with a `reset`.
+- SD Gundam's title is up only from about frame 1200 to 1500 after power-on before the attract mode starts; the script presses START at 1350. A slower boot needs that wait adjusted.
+- The two-slot entry was made with `make-save.py --subsystem multicart_addon --slot FILE` (below); a lone mini-cart needs only the usual `make-save.py` with the `.st` as ROM.
+
+### Not done
+
+- **SuperFX (Yoshi's Island).** A new file writes nothing to the save area (`$7C00-$7E7F` of the 32 KB is unchanged after starting file 1); the game saves when 1-1 is cleared. 1-1 was played by segments in snes9x: past the first Shy Guys (a jump at frame 44), over the first slanted block (B held 50 at the wall), and over the pillar beyond it by jumping from the top of that block (right 6, then right+B 70, release, right+B 40). That lands on a row of blocks before a wall taller than a flutter; holding right on the blocks does not move Yoshi, and no way on was found in a few tries. Stunt Race FX and Winter Gold: as in the first pass.
+- **SPC7110 (Tengai Makyou Zero).** In bsnes the check-program dance, the birthday entry (the defaults, 1995-12-22) and about 26000 frames of prologue (A every 50 frames) reach Higan's village. The field menu (X) has まきもの, もちもの, そうび, つよさ, さくせん, せってい, こよみ, とけい; no save, and the clock reads 1995年12月22日 12:08. Saving is probably at a temple; none was found by walking north.
+- **S-DD1 (Star Ocean).** New Game → name entry (おわり at once keeps ラティクス) → about 13000 frames of opening (A every 60 frames) → Ratix's house in Kratus. The menu (X) has セーブ, but it does nothing in town; saving needs the world map or a save point, and leaving the house was not managed.
+- **OBC1 (Metal Combat).** Boots to the title in bsnes and snes9x, but the game is Super Scope only and retro-run has no light gun device.
+- **ST018 (Morita Shougi 2):** no save takes anywhere, see (n).
+
+### Harness notes for this pass
+
+- **Subsystems.** Sufami Turbo with two carts (and BS-X with a memory pack) need `retro_load_game_special`. `retro-run --subsystem IDENT --slot FILE` (repeatable, `-` for an empty slot; `--list-subsystems` prints what a core offers) loads them that way and names each slot's saves after that slot's file, as RetroArch does; `make-save.py` passes the same options through.
+- **`dump` and cores that save by themselves:** see "Cores that write their own files" above.
+- **Morita Shougi's AI** is not deterministic across runs (the reply to 7六歩 varied), so its files differ between runs of one core.
 
 ## Gaps and attempts
 
-**Not done**
+**Not done** (the special-chip pass adds to this list; see [Special chips](#special-chips))
 - **SuperFX: no entry.**
-  - *Yoshi's Island:* the run gets past the first pillar of 1-1, then hits a taller wall.
+  - *Yoshi's Island:* the run gets past the first pillar of 1-1, then hits a taller wall. The second pass got further; see below.
   - *Stunt Race FX:* Speed Trax Easy Ride is reachable, but blind throttle patterns either crash or finish too slowly. bsnes and snes9x also drift apart from the same inputs (GSU timing).
   - *Winter Gold:* the menu won't accept a selection in snes9x.
   - Note that the GSU RAM is work RAM, so snes9x writes 32 KB for Yoshi's Island and 64 KB for Stunt Race FX.

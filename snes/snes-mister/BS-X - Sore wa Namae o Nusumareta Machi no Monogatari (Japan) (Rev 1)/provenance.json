@@ -1,0 +1,34 @@
+{
+  "method": "played",
+  "system": "snes",
+  "core": "snes-mister",
+  "core_file": "SNES_20260823.rbf",
+  "core_name": "SNES_MiSTer",
+  "core_version": "20260823",
+  "frontend": "mister",
+  "device": "the owner's MiSTer (DE10-Nano), Main_MiSTer binary of 2026-10-19",
+  "loaded_with": "MGL via /dev/MiSTer_cmd load_core (_Console/SNES, file type f index 1)",
+  "save_folder": "saves/SNES",
+  "rom": {
+    "name": "BS-X - Sore wa Namae o Nusumareta Machi no Monogatari (Japan) (Rev 1).sfc",
+    "sha1": "604556b2e62860af18db5a77f2956ebc75450020",
+    "size": 1048576
+  },
+  "script": "scripts/snes/BS-X.txt",
+  "mister_script": "scripts/mister/snes/BS-X.snes.txt",
+  "frames": 7622,
+  "timing": "real time: script frames played as wall-clock 1/60 s by work/mister/mrun.py",
+  "options": {
+    "config/SNES.CFG": "Autosave On (status bit 23), every other option at its default; written for the run and removed after"
+  },
+  "save_trigger": "OSD opened (F12 from a uinput keyboard) with Autosave on: the core writes its backup RAM to the SD card",
+  "started_from": null,
+  "files": {
+    "BS-X - Sore wa Namae o Nusumareta Machi no Monogatari (Japan) (Rev 1).sav": {
+      "size": 32768,
+      "sha1": "9f8143556a730e97ae7914abad23876666b46704"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "Satellaview base cart, loaded as the ROM itself (Main snes.cpp recognises 'Satellaview BS-X' at 0x7FC0 and selects the BSX mapper; no bsx_bios.rom or memory pack needed for this). Save: saves/SNES/<rom>.sav, 32768 bytes, byte-identical to bsnes's and bsnes-hd-beta's .srm ('SG' header, the name ああ = 82A0 82A0 at 0x0006 and 0x3006; 0x6000-0x7FFF never written, FF). No PSRAM or memory-pack file is written. Config: config/SNES.CFG with only Autosave On (bit 23), written for the run and removed. Script unchanged; after the reload the game goes straight to the town (the registration was read back)."
+}

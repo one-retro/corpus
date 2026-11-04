@@ -1,0 +1,55 @@
+{
+  "method": "played",
+  "system": "ps2",
+  "core": "lrps2",
+  "core_file": "pcsx2_libretro.dylib",
+  "core_name": "ParaLLEl PS2",
+  "core_version": "v2.0.0-da5b07e",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "runner": "ps2-save.py: make-save.py with a fresh system directory and HOME per run (PS2 cores write their cards there); see ps2/NOTES.md",
+  "renderer": "software (pcsx2_renderer = Software (SW), CPU only)",
+  "rom": {
+    "name": "Marvel vs. Capcom 2 - New Age of Heroes (USA).cue",
+    "sha1": "9a7585c76c93718f652413e0d579296daf304fbd",
+    "size": 111,
+    "tracks": [
+      {
+        "name": "Marvel vs. Capcom 2 - New Age of Heroes (USA).bin",
+        "sha1": "3445ddf09b57bf5b2d493e75e21ff0cd9caa2759",
+        "size": 239673504
+      }
+    ]
+  },
+  "bios": {
+    "name": "ps2-0200a-20040614.bin",
+    "sha1": "7a62e5f48603582707e9898eb055ea3eaee50d4c",
+    "size": 4194304,
+    "what": "SCPH-70012 v2.00 USA (2004-06-14)"
+  },
+  "device": null,
+  "script": "scripts/ps2/Marvel vs. Capcom 2 - New Age of Heroes (USA) [slot2].txt",
+  "frames": 3342,
+  "options": "# LRPS2: the OpenGL renderer needs GL_ARB_shading_language_420pack (macOS GL 4.1 lacks it);\n# the CPU-only software renderer needs no GPU context.\npcsx2_renderer = Software (SW)\n",
+  "started_from": null,
+  "files": {
+    "system/pcsx2/bios/ps2-0200a-20040614.mec": {
+      "size": 4,
+      "sha1": "3f8affbe07024ccd2f5b8374072d0928c583a862"
+    },
+    "system/pcsx2/bios/ps2-0200a-20040614.nvm": {
+      "size": 1024,
+      "sha1": "f3c3c8a04d5e6e9e2302ecab2fb8ab279febf85d"
+    },
+    "system/pcsx2/memcards/Mcd001.ps2": {
+      "size": 8650752,
+      "sha1": "eac18874c24d1018b5244074b0a6d11468b390ad"
+    },
+    "system/pcsx2/memcards/Mcd002.ps2": {
+      "size": 8650752,
+      "sha1": "fa6e4fded5015beab4730cb71917ff05121891c4"
+    }
+  },
+  "also_written_not_filed": null,
+  "created": "2026-11-04",
+  "note": null
+}

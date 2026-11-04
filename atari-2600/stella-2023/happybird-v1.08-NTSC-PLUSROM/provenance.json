@@ -1,0 +1,29 @@
+{
+  "method": "played",
+  "system": "atari-2600",
+  "core": "stella-2023",
+  "core_file": "stella2023_libretro.dylib",
+  "core_name": "Stella 2023",
+  "core_version": "7.0_pre ba52c43",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "happybird-v1.08-NTSC-PLUSROM.bin",
+    "sha1": "388d53c9bbfd4e191cad8a027e3e28dd4c75c7cf",
+    "size": 16384
+  },
+  "rom_source": "https://github.com/steux/happybird/releases/download/v1.08/happybird-v1.08-NTSC-PLUSROM.bin",
+  "device": null,
+  "script": "scripts/atari-2600/Paul's HappyBird.txt",
+  "frames": 1592,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "cwd/savekey_eeprom.dat": {
+      "size": 32768,
+      "sha1": "ffcb649c8b71a31b91f70517d1c7d5a95e0078eb"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "Homebrew, freely distributed by its author. The SaveKey is filed under cwd/: this core writes savekey_eeprom.dat into the frontend's working directory when the game is unloaded, not into the save directory."
+}

@@ -1,0 +1,33 @@
+{
+  "method": "played",
+  "system": "snes",
+  "core": "chimerasnes",
+  "core_file": "chimerasnes_libretro.dylib",
+  "core_name": "ChimeraSNES",
+  "core_version": " 04c57c2",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Legend of Zelda, The - A Link to the Past (USA).sfc",
+    "sha1": "6d4f10a8b10e10dbe624cb23cf03b88bb8252973",
+    "size": 1048576
+  },
+  "device": null,
+  "script": "scripts/snes/Legend of Zelda, The - A Link to the Past.txt",
+  "frames": 1830,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Legend of Zelda, The - A Link to the Past (USA).srm": {
+      "size": 8192,
+      "sha1": "0177e92af40a7323985b7bf815f5935376d3e10d"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null,
+  "built_from": {
+    "repo": "https://github.com/jamsilva/chimerasnes",
+    "commit": "04c57c2902c25f36ae5a5d9c57aff851a772c868",
+    "build": "make -j8 (platform=osx, arm64), unmodified"
+  }
+}

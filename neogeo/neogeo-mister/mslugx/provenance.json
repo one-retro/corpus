@@ -1,0 +1,35 @@
+{
+  "method": "played",
+  "system": "neogeo",
+  "core": "neogeo-mister",
+  "core_file": "NeoGeo_20260603.rbf",
+  "core_name": "NeoGeo_MiSTer",
+  "core_version": "20260603",
+  "frontend": "mister",
+  "device": "the owner's MiSTer (DE10-Nano), Main_MiSTer binary of 2026-10-19",
+  "loaded_with": "MGL via /dev/MiSTer_cmd load_core (_Console/NeoGeo, file type f index 1)",
+  "save_folder": "saves/NEOGEO",
+  "rom": {
+    "name": "mslugx.neo",
+    "sha1": "b5730b6e8cfe0380e253ad45be56f81cac0841f8",
+    "size": 66326528,
+    "on_device": "corpus-tmp/roms/neogeo/mslugx.neo"
+  },
+  "script": "scripts/neogeo/mslugx.txt",
+  "mister_script": "scripts/mister/neogeo/mslugx.neogeo.txt",
+  "frames": 4482,
+  "timing": "real time: script frames played as wall-clock 1/60 s by work/mister/mrun.py",
+  "options": {
+    "config/NEOGEO.CFG": "16 bytes, only status bit 24 (Autosave On) set: System Type Console(AES) (bit 1 = 0), BIOS UniBIOS (bit 22 = 0; the device's games/NeoGeo/uni-bios.rom, v4.0, region Europe), every other option at its default. The owner's config/NEOGEO.CFG (Arcade(MVS)) was replaced for the run and restored byte-identical, with its mtime, after it"
+  },
+  "save_trigger": "OSD opened (F12 from a uinput keyboard) with Autosave on: the core writes its backup RAM to the SD card",
+  "started_from": null,
+  "files": {
+    "mslugx.sav": {
+      "size": 73728,
+      "sha1": "faedc7e14bf162512be2e4e385fbb6e37bfbe033"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "AES, memory card. ROM: the device's own games/NeoGeo/Metal Slug X (mslugx).neo (its P ROM carries a patch; the core has no Metal Slug X protection, and the unpatched Geolith .neo hangs on the WARNING screen), copied to corpus-tmp/roms/neogeo/mslugx.neo so the save is named mslugx.sav. Script: scripts/neogeo/mslugx.txt with the boot waits raised from 1100 to 1600 frames (UniBIOS splash and loading); UniBIOS in AES mode asked MEMORY CARD NOT FORMATTED, A = YES. No seed: NeoGeo_MiSTer always loads the save at ROM load and Main hands it FF blocks when the file does not exist. Layout: 0x00000-0x0FFFF backup RAM (all FF: AES has none), 0x10000-0x107FF the 2 KiB card, each 16-bit word byte-swapped, 0x10800-0x11FFF FF."
+}

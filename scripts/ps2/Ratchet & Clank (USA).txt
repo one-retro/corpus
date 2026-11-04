@@ -1,0 +1,19 @@
+# Ratchet & Clank (USA), SCUS-97199, DVD.
+# Title > New Game; the game offers to format the unformatted card (Yes = Circle), then
+# shows five EMPTY save files: Cross picks file 1 and the game creates its folder
+# BASCUS-97199RATCHET (five 58 KiB save*.bin slots, save0 holding the new game) and
+# starts the opening on Veldin.
+wait 3000
+press start 10       # skip the intro
+wait 400
+press start 10       # PRESS START -> New Game / Load Game / Options
+wait 400
+press b 10           # New Game
+wait 400
+shot format          # "Memory Card (PS2) in MEMORY CARD slot 1 is unformatted ... Format?"
+press a 10           # Yes = Circle
+wait 800
+shot files           # five EMPTY files
+press b 10           # select file 1
+wait 600
+shot started

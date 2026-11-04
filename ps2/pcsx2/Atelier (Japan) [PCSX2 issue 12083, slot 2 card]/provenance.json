@@ -1,0 +1,21 @@
+{
+  "method": "downloaded",
+  "system": "ps2",
+  "core": "pcsx2",
+  "url": "https://github.com/user-attachments/files/18279422/Memcard.zip",
+  "source_page": "https://github.com/PCSX2/pcsx2/issues/12083",
+  "source": "GitHub, PCSX2/pcsx2 issue tracker (an attachment to a bug report)",
+  "author": "Kaibayugi2002",
+  "licence": null,
+  "emulator": "PCSX2 v2.3.56",
+  "posted": "2024-12-31",
+  "fetched": "2026-11-04",
+  "what_it_is": "A user's slot-2 card Mcd002.ps2 (8 MiB) holding a Japanese Atelier save (BISLPM-66140ATL), attached to a PCSX2 bug report.",
+  "files": {
+    "Mcd002.ps2": {
+      "size": 8650752,
+      "sha1": "fa201c14b8f5f6db1ab909fae48a077a0c41041a"
+    }
+  },
+  "note": "No licence stated on the page. "
+}

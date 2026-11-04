@@ -1,0 +1,33 @@
+{
+  "method": "played",
+  "system": "snes",
+  "core": "bsnes-jg",
+  "core_file": "bsnes-jg_libretro.dylib",
+  "core_name": "bsnes-jg",
+  "core_version": "2.1.0",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Kaite Tsukutte Asoberu Dezaemon (Japan).sfc",
+    "sha1": "4b5725aeb7f770feadda6cfec5e609ff57fce363",
+    "size": 524288
+  },
+  "device": null,
+  "script": "scripts/snes/Dezaemon.txt",
+  "frames": 6184,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Kaite Tsukutte Asoberu Dezaemon (Japan).srm": {
+      "size": 131072,
+      "sha1": "fe972f66b155034783f3dbfa16d1aed2654cb951"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "Run with retro-run --pad2 (through .cache/build/make-save-pad2.py, otherwise tools/make-save.py): a joypad is plugged into port 2 as well, as RetroArch does. With port 2 never set, bsnes-jg dereferences a null controller in CPU::joypadEdge on the first frame.",
+  "built_from": {
+    "repo": "https://github.com/libretro/bsnes-jg",
+    "commit": "5a1ea18934fc08aeb67b8aa804bf2a5e4ec9c87b",
+    "build": "make -C libretro -j12 (libretro branch; the repo's .gitlab-ci.yml osx-arm64 job uses MAKEFILE_PATH=libretro), unmodified"
+  }
+}

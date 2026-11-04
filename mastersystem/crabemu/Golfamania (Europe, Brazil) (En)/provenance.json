@@ -1,0 +1,33 @@
+{
+  "method": "played",
+  "system": "mastersystem",
+  "core": "crabemu",
+  "core_file": null,
+  "core_name": "CrabEmu",
+  "core_version": "0.2.0",
+  "frontend": "CrabEmu 0.2.0 for Mac OS X (the official 2013 universal app, its x86_64 slice under Rosetta 2), isolated with CFFIXED_USER_HOME",
+  "rom": {
+    "name": "Golfamania (Europe, Brazil) (En).sms",
+    "size": 262144,
+    "sha1": "d0b964dd7cd8ccdd730de4d8e4bb2e87bea7686e"
+  },
+  "script": "scripts/mastersystem/Golfamania.txt",
+  "frames": 6930,
+  "options": "-SMSDomestic NO on the command line (export console; the app's default is the Japanese one)",
+  "input": "work/standalone/crabemu/crabfeed.c, loaded with DYLD_INSERT_LIBRARIES (the binary is unsigned): one frame per call of the emulation thread's semaphore_wait on the app's sound semaphore; the retro-run script's buttons written into sms_pad (b = button 1, a = button 2), start = Pause via sms_z80_nmi(), reset = sms_soft_reset() (what the app's Reset menu item calls); the ROM opened through the app delegate's application:openFiles:; [NSApp terminate:] at the end. NSUserDefaults writes and the recent-documents list were stubbed out so nothing reached the owner's preferences. proof.png is the app's own framebuffer (ARGB1555), dumped at the script's last shot",
+  "started_from": null,
+  "files": {
+    "Golfamania (Europe, Brazil) (En).sms.ces": {
+      "size": 32768,
+      "sha1": "7f14845f029e9da3d3a752c348baba9471c51f2c"
+    }
+  },
+  "layout": {
+    "save_dir": "Library/Application Support/ljsdcdev/CrabEmu/SRAM Saves in the home folder (preference SaveDirectory)",
+    "name": "<ROM file name, extension included>.ces",
+    "content": "the cartridge RAM buffer, always 32768 bytes, 0x00 past what the game uses (a 93C46 EEPROM game would get 128 bytes)",
+    "written": "when the app quits or closes the ROM, only if the game enabled cartridge RAM"
+  },
+  "created": "2026-11-04",
+  "note": "Byte-identical to the picodrive and sms-plus-gx entries."
+}

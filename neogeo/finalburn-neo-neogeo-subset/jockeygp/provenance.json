@@ -1,0 +1,37 @@
+{
+  "method": "played",
+  "system": "neogeo",
+  "core": "finalburn-neo-neogeo-subset",
+  "core_file": "finalburn-neo-neogeo-subset_libretro.dylib",
+  "core_name": "FinalBurn Neo (neogeo subset)",
+  "core_version": "v1.0.0.03  GIT384609f",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "jockeygp.zip",
+    "sha1": "04aa9208647988ee6ee73ca7de3c170efed6e63f",
+    "size": 17273406
+  },
+  "device": null,
+  "script": "scripts/neogeo/jockeygp.txt",
+  "frames": 5472,
+  "options": "fbneo-neogeo-mode = MVS_USA\nfbneo-memcard-mode = per-game\n",
+  "started_from": null,
+  "files": {
+    "fbneo/jockeygp.fs": {
+      "size": 73728,
+      "sha1": "d8f549cb737c45506f05383344fe06cbbc56d66c"
+    },
+    "fbneo/jockeygp.memcard": {
+      "size": 131104,
+      "sha1": "ec7a6096e64939a6cbdaa48ee5f408aed6013840"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null,
+  "built_from": {
+    "repo": "https://github.com/libretro/FBNeo",
+    "commit": "384609f72866dc00257c38a445d05cbb4f1c03a4",
+    "build": "make -C src/burner/libretro SUBSET=neogeo generate-files && make -C src/burner/libretro SUBSET=neogeo -j12 (the subset of the repo's .gitlab-ci.yml 3DS jobs, built for macOS arm64; generate-files (REGEN_HEADERS) rebuilds the driver list for the subset's drivers), unmodified source"
+  }
+}

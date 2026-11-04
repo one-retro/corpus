@@ -1,0 +1,58 @@
+load corpus-tmp/mgl/mdsms-penguin.mgl 6
+# Penguin Land: the battery keeps rounds made in the EDITOR. Enter the
+# editor, lay three bricks, then SAVE-01 from the palette (button 2 on it);
+# the game stores the round and starts a test play of it. Reset, enter the
+# editor again and LOAD-01: the three bricks come back from the cartridge.
+# In the editor button 1 (b) places, button 2 (a) opens/closes the palette;
+# moving the palette arrow right past the last item reaches SAVE-01, LOAD-01
+# and EXIT.
+wait 400
+press down 6    # GAME START -> EDITOR
+wait 40
+press b 6    # into the editor
+wait 150
+press r 6    # palette
+wait 60
+press right 6    # -> brick
+wait 30
+press r 6    # close the palette
+wait 60
+repeat 4            # cursor down a few rows
+press down 6
+wait 20
+end
+repeat 3            # three bricks in a row
+press right 6
+wait 20
+press b 6
+wait 20
+end
+press r 6    # palette, arrow on the brick
+wait 60
+repeat 8            # ... -> SAVE-01
+press right 6
+wait 30
+end
+press r 6    # SAVE-01: written; a test play of the round starts
+wait 360
+wait 30
+save
+wait 60
+shot final
+# power cycle: load the game again; the core reads the .sav back from the SD card
+load corpus-tmp/mgl/mdsms-penguin.mgl 6
+wait 400
+press down 6    # EDITOR again: an empty field
+wait 40
+press b 6
+wait 150
+press r 6    # palette, arrow on the first item
+wait 60
+repeat 10           # -> LOAD-01
+press right 6
+wait 30
+end
+press r 6    # LOAD-01: the three bricks are back
+wait 120
+shot loaded
+wait 30

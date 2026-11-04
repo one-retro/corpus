@@ -1,0 +1,48 @@
+{
+  "method": "played",
+  "system": "snes",
+  "core": "snes9x",
+  "core_file": "snes9x_libretro.dylib",
+  "core_name": "Snes9x",
+  "core_version": "1.63 fae2fea",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "SD Gundam Generation - Ichinen Sensouki (Japan).st",
+    "sha1": "adc7716a4b081aba5cde3525881c51ee6d600396",
+    "size": 524288
+  },
+  "subsystem": {
+    "ident": "multicart_addon",
+    "slots": [
+      {
+        "name": "SD Gundam Generation - Ichinen Sensouki (Japan).st",
+        "sha1": "adc7716a4b081aba5cde3525881c51ee6d600396",
+        "size": 524288
+      },
+      {
+        "name": "SD Ultra Battle - Ultraman Densetsu (Japan).st",
+        "sha1": "5527fcc136ff0c0ef53a1c9c2756d4a27afa1526",
+        "size": 524288
+      }
+    ],
+    "loaded_with": "retro_load_game_special, as RetroArch loads a subsystem (retro-run --subsystem)"
+  },
+  "device": null,
+  "script": "scripts/snes/SD Gundam Generation - Ichinen Sensouki.txt",
+  "frames": 7425,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "SD Gundam Generation - Ichinen Sensouki (Japan).srm": {
+      "size": 16384,
+      "sha1": "78f8be446d0a954259450fe35c87fd31a5942a3f"
+    },
+    "SD Ultra Battle - Ultraman Densetsu (Japan).srm": {
+      "size": 16384,
+      "sha1": "897256b6709e1a4da9daba92b6bde39ccfccd8c1"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "Two mini-carts through snes9x's Multi-Cart Link subsystem: SD Gundam Generation in slot A (played), SD Ultra Battle in slot B (inserted, never booted). STBIOS.bin (the Sufami Turbo base cart) in the system directory."
+}

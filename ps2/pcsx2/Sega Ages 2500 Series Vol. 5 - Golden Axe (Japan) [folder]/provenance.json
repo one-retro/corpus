@@ -1,0 +1,62 @@
+{
+  "method": "played",
+  "system": "ps2",
+  "core": "pcsx2",
+  "app": "PCSX2",
+  "app_version": "v2.9.63 (macOS, x86_64 under Rosetta)",
+  "frontend": "PCSX2 standalone, isolated -datapath; input from an SDL3 virtual gamepad (sdlpad.dylib)",
+  "how": "ad-hoc re-signed copy of the app (no hardened runtime) so DYLD_INSERT_LIBRARIES works; the retro-run script is expanded per frame and stepped once per PCSX2 input poll (per vsync) from VM start; shots via the Screenshot hotkey; 5 s after the script PCSX2 gets SIGINT, its clean exit (VM shut down, cards closed, NVRAM saved)",
+  "rom": {
+    "name": "Sega Ages 2500 Series Vol. 5 - Golden Axe (Japan).bin",
+    "sha1": "feee7bcfc73a81ae9bcb0f36cdfc62ada3639004",
+    "size": 156622032
+  },
+  "bios": {
+    "name": "ps2-0200a-20040614.bin",
+    "sha1": "7a62e5f48603582707e9898eb055ea3eaee50d4c",
+    "what": "SCPH-70012 v2.00 USA (2004-06-14)"
+  },
+  "script": "scripts/ps2/Sega Ages 2500 Series Vol. 5 - Golden Axe (Japan).txt",
+  "frames": 3042,
+  "data_root": "the -datapath folder's PCSX2/ (memcards/, bios/); paths below are relative to it",
+  "files": {
+    "memcards/Mcd002.ps2": {
+      "size": 8650752,
+      "sha1": "eac18874c24d1018b5244074b0a6d11468b390ad"
+    },
+    "memcards/Mcd001.ps2/_pcsx2_superblock": {
+      "size": 8192,
+      "sha1": "75d63bac3d815d9d941d63a10e9bf88a0305e87a"
+    },
+    "memcards/Mcd001.ps2/BISLPM-62385GA/BISLPM-62385GA": {
+      "size": 276,
+      "sha1": "54fa298447e56ae89b80a569c868985cd7503544"
+    },
+    "memcards/Mcd001.ps2/BISLPM-62385GA/_pcsx2_index": {
+      "size": 276,
+      "sha1": "9d6e1eac2c54bda688ee6d755db71e64782b494b"
+    },
+    "memcards/Mcd001.ps2/BISLPM-62385GA/g_axe.ico": {
+      "size": 54280,
+      "sha1": "05a29dae0f618c3642846a3cad9237a92a514927"
+    },
+    "memcards/Mcd001.ps2/BISLPM-62385GA/icon.sys": {
+      "size": 964,
+      "sha1": "3e76dc0c59f5e44e3ffa0666fd503325903c3723"
+    },
+    "bios/ps2-0200a-20040614.mec": {
+      "size": 4,
+      "sha1": "3f8affbe07024ccd2f5b8374072d0928c583a862"
+    },
+    "bios/ps2-0200a-20040614.nvm": {
+      "size": 1024,
+      "sha1": "f3c3c8a04d5e6e9e2302ecab2fb8ab279febf85d"
+    }
+  },
+  "proof": "PCSX2's own screenshot (last `shot`), RGBA 1280x960 converted to RGB 640x480",
+  "created": "2026-11-04",
+  "started_from": null,
+  "memory_card_type": "folder (slot 1)",
+  "ended_with": "SIGINT",
+  "note": null
+}

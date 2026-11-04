@@ -1,0 +1,48 @@
+{
+  "method": "played",
+  "system": "ps2",
+  "core": "armsx2",
+  "core_file": "armsx2_libretro.dylib",
+  "core_name": "ARMSX2",
+  "core_version": "720f409f",
+  "frontend": "retro-run (writes saves as RetroArch does); patched with --pace 60 (frames paced to wall-clock: the core emulates on its own thread and retro_run returns at once)",
+  "runner": "ps2-save.py: make-save.py with a fresh system directory and HOME per run (PS2 cores write their cards there); see ps2/NOTES.md",
+  "renderer": "none (Vulkan only, no Vulkan here: the core falls back to its Null GS; proof.png is black)",
+  "rom": {
+    "name": "Gran Turismo 4 (USA).iso",
+    "sha1": "5b1dbf056f45f8023e8e4958e6d7deb31fc64a47",
+    "size": 5314478080
+  },
+  "bios": {
+    "name": "ps2-0200a-20040614.bin",
+    "sha1": "7a62e5f48603582707e9898eb055ea3eaee50d4c",
+    "size": 4194304,
+    "what": "SCPH-70012 v2.00 USA (2004-06-14)"
+  },
+  "device": null,
+  "script": "scripts/ps2/Gran Turismo 4 (USA).txt",
+  "frames": 6080,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "system/pcsx2/bios/ps2-0200a-20040614.mec": {
+      "size": 4,
+      "sha1": "3f8affbe07024ccd2f5b8374072d0928c583a862"
+    },
+    "system/pcsx2/memcards/Mcd001.ps2": {
+      "size": 8650752,
+      "sha1": "fc681be942a7624cab2316fd74080b2594d44cda"
+    },
+    "system/pcsx2/memcards/Mcd002.ps2": {
+      "size": 8650752,
+      "sha1": "eac18874c24d1018b5244074b0a6d11468b390ad"
+    }
+  },
+  "also_written_not_filed": [
+    "system/pcsx2/cache/vu_jit/packs/SCUS-97328_77E61C8A/vu0-bb2b3e3dc8958a42a94b2562595dd3b8.pack",
+    "system/pcsx2/inis/armsx2-libretro.ini",
+    "system/pcsx2/logs/emulog.txt"
+  ],
+  "created": "2026-11-04",
+  "note": null
+}

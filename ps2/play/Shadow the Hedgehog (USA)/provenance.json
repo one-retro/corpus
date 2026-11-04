@@ -1,0 +1,49 @@
+{
+  "method": "played",
+  "system": "ps2",
+  "core": "play",
+  "core_file": "play_libretro.dylib",
+  "core_name": "Play!",
+  "core_version": "0.77-17-g1f27232",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "runner": "ps2-save.py: make-save.py with a fresh system directory and HOME per run (PS2 cores write their cards there); see ps2/NOTES.md",
+  "renderer": "opengl",
+  "rom": {
+    "name": "Shadow the Hedgehog (USA).iso",
+    "sha1": "4b10891453f72732a04dedc08252f5e53fbd088c",
+    "size": 4493967360
+  },
+  "bios": null,
+  "device": null,
+  "script": "scripts/ps2/Shadow the Hedgehog (USA).txt",
+  "frames": 4000,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "home/Documents/Play Data Files/vfs/mc0/BASLUS-21261/BASLUS-21261": {
+      "size": 8192,
+      "sha1": "e95e56f41ad1336d5631fcaedc314982c23f8792"
+    },
+    "home/Documents/Play Data Files/vfs/mc0/BASLUS-21261/COPY.ICO": {
+      "size": 47800,
+      "sha1": "8657b8abbe2099d345ee3b57cc111ef97ceec4fc"
+    },
+    "home/Documents/Play Data Files/vfs/mc0/BASLUS-21261/DEL.ICO": {
+      "size": 47800,
+      "sha1": "8657b8abbe2099d345ee3b57cc111ef97ceec4fc"
+    },
+    "home/Documents/Play Data Files/vfs/mc0/BASLUS-21261/LIST.ICO": {
+      "size": 47800,
+      "sha1": "8657b8abbe2099d345ee3b57cc111ef97ceec4fc"
+    },
+    "home/Documents/Play Data Files/vfs/mc0/BASLUS-21261/icon.sys": {
+      "size": 964,
+      "sha1": "6b5c86b31e6eb1dd663fdbb26715eb641184158d"
+    }
+  },
+  "also_written_not_filed": [
+    "home/Documents/Play Data Files/config.xml"
+  ],
+  "created": "2026-11-04",
+  "note": null
+}

@@ -57,8 +57,9 @@ speed Normal).
 
 | Core | Status |
 | --- | --- |
-| c64-mister (MiSTer), markus-zzz-myc64 (openFPGA) | not runnable; see "Downloaded entries and leads" |
-| vice-x64dtv (libretro, no macOS build) | not runnable |
+| c64-mister (MiSTer) | played on the owner's MiSTer since: nothing filed, see the last section |
+| markus-zzz-myc64 (openFPGA) | not runnable; see "Downloaded entries and leads" |
+| vice-x64dtv | built from source since (BUILT-CORES.md); Elite hangs while loading, so no save |
 
 Core builds: VICE 3.10 `5ebe7d3` (x64, x64sc, x128, xscpu64; libretro buildbot, arm64), Frodo
 `V4_2`. No BIOS files are needed (both cores carry the ROMs).
@@ -162,3 +163,26 @@ Nothing filed. Searched the cores' GitHub repos, issues and comments, Main_MiSTe
   slot: it saves nothing.
 - **vice-x64dtv**: no SRAM; the floppy write-protection and work-disk options are compiled out
   for DTV (`#if !defined(__X64DTV__)`), the M3U `#SAVEDISK:` support is not. Nothing found.
+
+## c64-mister, played on the owner's MiSTer (2026-11-04)
+
+C64_MiSTer (C64_20260823.rbf) mounts a disk image in drive #8 (`S0`, MGL `type="s" index="0"`) and
+writes it **in place**: Main converts D64 to GCR for the core and back on write, and keeps G64
+tracks as raw GCR (support/c64/c64.cpp `c64_writeGCR`). Nothing goes to `saves/`. The core does not
+autostart a disk, and its default system ROM on this device prints DOLPHINDOS 2.0 (the C64 core's
+loadable-ROM default; nothing in `games/C64/` was selected): the script types `LOAD"*",8,1` and
+`RUN` (`"` is shift+2, `*` the key right of P), and the title and opening ceremony then run into
+the menu by themselves. Joystick in port 2 via `config/C64.CFG` with only Swap Joysticks (status
+bit 3), written for the run and removed; fire is the pad's A.
+
+**Not filed.** Summer Games (the G64 that VICE writes in place, `Summer Games (USA, Europe).g64`)
+loaded and ran from the image (the Epyx loader works on the core's GCR drive), took the joystick in
+port 2, registered ABC for France and loaded the 100m dash; but both runs (a MiSTer
+variant of the script, with 1500 and 3000 frames for the event to load) ended the race in **FAULT**: the
+waggle the VICE script starts 440 frames after the confirming press lands before the gun on the
+MiSTer, and the record, the only thing the game writes, needs a start within about 40 frames of
+the gun. The disk image's sha1 was unchanged after both runs: nothing was written. Elite was not
+attempted: its save goes to a second disk, which on the MiSTer means swapping the image in drive
+#8 through the OSD (an MGL load restarts the core). Leads for a later attempt: a timeline of the
+race start with screenshots every few frames, then the waggle aligned to the gun.
+

@@ -1,0 +1,32 @@
+{
+  "method": "played",
+  "system": "n64",
+  "core": "n64-mister",
+  "core_file": "N64_20260726.rbf",
+  "core_name": "N64_MiSTer",
+  "core_version": "20260726",
+  "frontend": "mister",
+  "device": "the owner's MiSTer (DE10-Nano), Main_MiSTer binary of 2026-10-19",
+  "loaded_with": "MGL via /dev/MiSTer_cmd load_core (_Console/N64, file type f index 1)",
+  "save_folder": "saves/N64",
+  "rom": {
+    "name": "Legend of Zelda, The - Ocarina of Time (USA) (Rev 2).z64",
+    "sha1": "41b3bdc48d98c48529219919015a1af22f5057c2",
+    "size": 33554432
+  },
+  "script": "scripts/n64/Legend of Zelda, The - Ocarina of Time.txt",
+  "mister_script": "scripts/mister/n64/Legend of Zelda, The - Ocarina of Time.n64.txt",
+  "frames": 3860,
+  "timing": "real time: script frames played as wall-clock 1/60 s by work/mister/mrun.py",
+  "options": null,
+  "save_trigger": "OSD opened (F12 from a uinput keyboard) with Autosave on: the core writes its backup RAM to the SD card",
+  "started_from": null,
+  "files": {
+    "Legend of Zelda, The - Ocarina of Time (USA) (Rev 2).sra": {
+      "size": 32768,
+      "sha1": "75af15eb733bfaf982facf13bd32802c8c0c8415"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "SRAM 256 Kbit: <rom>.sra, 32768 bytes, byte-identical to the SRAM region (0x20800) of Mupen64Plus-Next's .srm, i.e. each 32-bit word reversed ('ADLE' at 0x08 for ZELDA); one-saves calls this order swapped. Main created the file filled with FF at ROM load (Auto Detect: sram32k); the core wrote it on OSD open (Autosave On, the N64 default). Script unchanged. Needs games/N64/boot.rom (the owner's PIF ROM)."
+}

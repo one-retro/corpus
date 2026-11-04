@@ -1,0 +1,37 @@
+{
+  "method": "played",
+  "system": "gb",
+  "core": "doublecherrygb",
+  "core_file": "doublecherrygb_libretro.dylib",
+  "core_name": "DoubleCherryGB",
+  "core_version": "v0.19.0 d432f97",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Itsudemo! Nyan to Wonderful (Japan) (SGB Enhanced).gb",
+    "sha1": "a48d6b68d82b98e775c00366da544402d7c7ac0e",
+    "size": 262144
+  },
+  "device": null,
+  "script": "scripts/gb/Itsudemo! Nyan to Wonderful.txt",
+  "frames": 2224,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Itsudemo! Nyan to Wonderful (Japan) (SGB Enhanced).rtc": {
+      "size": 8,
+      "sha1": "05fe405753166f125559e7c9ac558654f107c7e9"
+    },
+    "Itsudemo! Nyan to Wonderful (Japan) (SGB Enhanced).srm": {
+      "size": 8192,
+      "sha1": "520c1f354a9f481a447720ecc6d13bc2148be012"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null,
+  "built_from": {
+    "repo": "https://github.com/TimOelrichs/doublecherryGB-libretro",
+    "commit": "d432f97693670524f7f46bfca886b731134f4bb6",
+    "build": "make -j12 (platform=osx, arm64), unmodified"
+  }
+}

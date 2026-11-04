@@ -1,0 +1,34 @@
+{
+  "method": "played",
+  "system": "gb",
+  "core": "gameboy-mister",
+  "core_file": "Gameboy_20260603.rbf",
+  "core_name": "Gameboy_MiSTer",
+  "core_version": "20260603",
+  "frontend": "mister",
+  "device": "the owner's MiSTer (DE10-Nano), Main_MiSTer binary of 2026-10-19",
+  "loaded_with": "MGL via /dev/MiSTer_cmd load_core (_Console/Gameboy, file type f index 1)",
+  "save_folder": "saves/GAMEBOY",
+  "rom": {
+    "name": "Game de Hakken!! Tamagotchi - Osutchi to Mesutchi (Japan) (SGB Enhanced).gb",
+    "sha1": "e61f7faad888e5a1c56ffe66fa3c0330b5ee459b",
+    "size": 524288
+  },
+  "script": "scripts/gb/Tamagotchi - Osutchi to Mesutchi.txt",
+  "mister_script": "scripts/mister/gb/Tamagotchi - Osutchi to Mesutchi.gb.txt",
+  "frames": 14354,
+  "timing": "real time: script frames played as wall-clock 1/60 s by work/mister/mrun.py",
+  "options": {
+    "config/GAMEBOY.CFG": "Autosave On (status bit 13), every other option at its default; written for the run and removed after"
+  },
+  "save_trigger": "OSD opened (F12 from a uinput keyboard) with Autosave on: the core writes its backup RAM to the SD card",
+  "started_from": null,
+  "files": {
+    "Game de Hakken!! Tamagotchi - Osutchi to Mesutchi (Japan) (SGB Enhanced).sav": {
+      "size": 1024,
+      "sha1": "9b74b612250de09ad40a6ed4a93f0006b1aba75a"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "TAMA5 (cart type 0xFD): Gameboy_MiSTer keeps the TAMA5's 32 bytes in block RAM and writes 2 sectors, 1024 bytes: the 32 bytes at 0x000 and again at 0x100, 0x200 and 0x300, FF everywhere else. One file byte per TAMA5 byte, the layout of mGBA's and Gearboy's 32-byte .srm (7 of the 32 bytes differ from mGBA's: the pet's age and timers). No clock is saved (no RTC sector, no .rtc): like mGBA, unlike Gearboy's 72-byte .rtc. No seed: the core loads the (missing) save when the game loads and Main hands it FF blocks, hence the FF. Config: config/GAMEBOY.CFG with only Autosave On (bit 13), written for the run and removed. Script unchanged; after the reload つづきからはじめる brings the pet back in its room (the proof)."
+}

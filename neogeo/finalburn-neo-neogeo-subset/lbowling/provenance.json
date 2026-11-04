@@ -1,0 +1,37 @@
+{
+  "method": "played",
+  "system": "neogeo",
+  "core": "finalburn-neo-neogeo-subset",
+  "core_file": "finalburn-neo-neogeo-subset_libretro.dylib",
+  "core_name": "FinalBurn Neo (neogeo subset)",
+  "core_version": "v1.0.0.03  GIT384609f",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "lbowling.zip",
+    "sha1": "046b88030fc8f9da4a4d677b105ba87fefae4608",
+    "size": 1618125
+  },
+  "device": null,
+  "script": "scripts/neogeo/lbowling.txt",
+  "frames": 8714,
+  "options": "fbneo-neogeo-mode = MVS_USA\nfbneo-memcard-mode = per-game\n",
+  "started_from": null,
+  "files": {
+    "fbneo/lbowling.fs": {
+      "size": 65536,
+      "sha1": "0b70b0829c38016be4b93cd0d045b89a202290c6"
+    },
+    "fbneo/lbowling.memcard": {
+      "size": 32800,
+      "sha1": "b5cc38f83ac273290aece93ffe118a15d1d8ae63"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null,
+  "built_from": {
+    "repo": "https://github.com/libretro/FBNeo",
+    "commit": "384609f72866dc00257c38a445d05cbb4f1c03a4",
+    "build": "make -C src/burner/libretro SUBSET=neogeo generate-files && make -C src/burner/libretro SUBSET=neogeo -j12 (the subset of the repo's .gitlab-ci.yml 3DS jobs, built for macOS arm64; generate-files (REGEN_HEADERS) rebuilds the driver list for the subset's drivers), unmodified source"
+  }
+}

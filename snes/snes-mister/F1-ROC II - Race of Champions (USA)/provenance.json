@@ -1,0 +1,34 @@
+{
+  "method": "played",
+  "system": "snes",
+  "core": "snes-mister",
+  "core_file": "SNES_20260823.rbf",
+  "core_name": "SNES_MiSTer",
+  "core_version": "20260823",
+  "frontend": "mister",
+  "device": "the owner's MiSTer (DE10-Nano), Main_MiSTer binary of 2026-10-19",
+  "loaded_with": "MGL via /dev/MiSTer_cmd load_core (_Console/SNES, file type f index 1)",
+  "save_folder": "saves/SNES",
+  "rom": {
+    "name": "F1-ROC II - Race of Champions (USA).sfc",
+    "sha1": "9fd86179710f97c667a228bb71b10c72c97a6f70",
+    "size": 1101824
+  },
+  "script": "scripts/snes/F1-ROC II.txt",
+  "mister_script": "scripts/mister/snes/F1-ROC II.snes.txt",
+  "frames": 3418,
+  "timing": "real time: script frames played as wall-clock 1/60 s by work/mister/mrun.py",
+  "options": {
+    "config/SNES.CFG": "Autosave On (status bit 23), every other option at its default; written for the run and removed after"
+  },
+  "save_trigger": "OSD opened (F12 from a uinput keyboard) with Autosave on: the core writes its backup RAM to the SD card",
+  "started_from": null,
+  "files": {
+    "F1-ROC II - Race of Champions (USA).sav": {
+      "size": 2048,
+      "sha1": "a12c70a9300901dfcc58a57fa14000b586a214d9"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "ST010. ROM: the No-Intro .sfc with the ST010 firmware (st010.rom, 53248 bytes: program then data ROM) appended, as the core expects for its DSP-family chips (Main snes.cpp detects the ST010 from the header, map 0x30 / type 0xF6, and gives it ramsz 1). Save: saves/SNES/<rom>.sav, 2048 bytes: the upper half of the ST010's 4 KB data RAM, i.e. bytes 0x800-0xFFF of the libretro cores' 4096-byte .srm ('EXHAUST HEAT2-n' at 0x00, the player ABC at 0x10, = 0x810 there). 0x000-0x4FF equals snes9x's, bsnes-mercury's, higan's and Mesen2's 0x800-0xCFF byte for byte; 0x500-0x7FF, never written, is FF here (the core fills save RAM with FF at load) and 00 there. The chip's lower 2 KB work area is not saved. Config: config/SNES.CFG with only Autosave On (bit 23), written for the run and removed. Script unchanged (no power-cycle step; the proof is PLAYER SELECT listing 1. ABC GROUP C)."
+}

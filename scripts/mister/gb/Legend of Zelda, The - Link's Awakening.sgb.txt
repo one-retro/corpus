@@ -1,0 +1,25 @@
+load corpus-tmp/mgl/sgb-la.mgl 6
+# SGB: the Super Game Boy BIOS boots first (border, logo): 300 frames more than a Game Boy
+wait 300
+# Link's Awakening (GB, MBC1 + 8 KiB battery RAM): name file 1 "ABC". The
+# game writes the file on registration, before play begins.
+wait 600
+press start 6       # skip the intro
+wait 120
+press start 6       # title -> PLAYER SELECT
+wait 120
+press a 6           # slot 1 -> YOUR NAME?
+wait 90
+tap a 1 20          # A
+tap right 1 8
+tap a 1 20          # B
+tap right 1 8
+tap a 1 20          # C
+press start 6       # register: the file is written here
+wait 120
+shot registered
+wait 30
+wait 30
+save
+wait 60
+shot final

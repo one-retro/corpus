@@ -139,9 +139,13 @@ footer to every save, even without a clock (Super Mario Land 2: 8208 = 8192 + `c
 
 ## Not runnable here
 
-boytacean, doublecherrygb, emux-gb, higan-super-famicom-balanced (libretro, no macOS build);
-gameboy-mister, sgb-mister (MiSTer); budude2-gb, spiritualized-gb, spiritualized-supergb (openFPGA);
-mednafen (standalone). higan-super-famicom (x86_64, optional) was skipped: it plays GB only
+higan-super-famicom-balanced (needs the Super Game Boy ROM, not in the library); budude2-gb,
+spiritualized-gb, spiritualized-supergb (openFPGA: device backups only). Built from source since
+(see BUILT-CORES.md): doublecherrygb, 7 of 10 filed; boytacean and emux-gb build but never hand the
+frontend their save memory, so nothing is written. Played on the owner's MiSTer since: gameboy-mister
+and sgb-mister (MISTER.md). mednafen (standalone) has nothing filed.
+
+higan-super-famicom (x86_64, optional) was skipped: it plays GB only
 through the Super Game Boy and needs `SGB1.sfc/program.rom` plus `sgb1.boot.rom` in its system
 directory, and neither the SGB cartridge nor its boot ROM is in the ROM library.
 
@@ -155,3 +159,75 @@ directory, and neither the SGB cartridge nor its boot ROM is in the ROM library.
 - retro-run has no sensor interface (no tilt) and no subsystem loading (no SGB pairing).
 - Titles that ignore input during animations (Pokemon's Pokemon swap, FFA's crawl) are entered by
   mashing START a few times rather than one timed press.
+
+## Special save hardware (second pass)
+
+A sweep of the cartridge header of every game in the GB and GBC 1G1R sets (1051 + 928 ROMs, read
+inside the zips: type byte 0x147, RAM-size byte 0x149, plus the header of the last 32 KiB bank,
+where an MMM01 multicart keeps its menu's header) against the games the corpus already has. The
+battery-backed kinds in the two sets, and whether the corpus has one (any core):
+
+| Cartridge type (0x147) | RAM (0x149) | Games in the sets | In the corpus |
+| --- | --- | --- | --- |
+| 03 MBC1+RAM+BATT | 8 KiB / 32 KiB | 115 / 14 | yes (LA, SML2, Tetris DX / Midori) |
+| 06 MBC2+BATT | 512 x 4 bit in the mapper | 63 | yes (FFA) |
+| 0D MMM01+RAM+BATT (last-bank header only; bank 0 says MBC1) | 8 KiB | 1: Momotarou Collection 2 | **attempted, nothing filed** (below) |
+| 10 MBC3+TIMER+RAM+BATT | 8 KiB / 32 KiB | 8 / 8 | yes (Nyan, Harvest Moon / Gold, Crystal) |
+| 13 MBC3+RAM+BATT | 8 KiB / 32 KiB | 1 / 4 | 32 KiB only (Red); the 8 KiB one (Shin Keiba Kizoku Pocket Jockey) is just a size combination, not added |
+| 1B MBC5+RAM+BATT | 8 / 32 / 128 KiB | 384 / 97 / 3 | yes (Oracle / Yellow, LADX / GB Wars 3) |
+| 1E MBC5+RUMBLE+RAM+BATT | 8 KiB / 32 KiB | 10 / 1 | 8 KiB (Pinball); the 32 KiB one (Chee-Chai Alien, also an IR sensor) not added |
+| 20 MBC6 (+ 1 MiB flash) | 32 KiB | 1: Net de Get (GBC set) | **added, see `gbc/NOTES.md`** |
+| 22 MBC7 (EEPROM) | none declared | 2 | yes (Kirby Tilt 'n' Tumble) |
+| FC Pocket Camera | 128 KiB | 1 | yes |
+| FD Bandai TAMA5 | none declared (32 bytes in the chip) | 1: Game de Hakken!! Tamagotchi | **added** |
+| FE HuC-3 | 32 KiB | 6 | yes |
+| FF HuC-1 | 32 KiB | 7 | yes |
+
+No game in either set declares 2 KiB (0x01) or 64 KiB (0x05) of RAM, or MBC3+TIMER without RAM
+(0x0F). 13 other ROMs have a last bank whose "type byte" reads 0x0B-0x0D, but only
+Momotarou Collection 2 carries a real header there (title `MOMOCOL2`); the rest are code or graphics.
+
+### Game de Hakken!! Tamagotchi - Osutchi to Mesutchi (Japan) (SGB Enhanced): TAMA5
+
+Script `Tamagotchi - Osutchi to Mesutchi.txt`: さいしょから, Tamagotchi time (fast), clock 1997/1/1
+0:00, the first egg, name "ああ"; the egg hatches; reset; つづきから brings the pet back in its room
+(the proof). The TAMA5 has no SRAM chip: the game keeps its pet in 32 bytes inside the TAMA5
+(read and written a nibble at a time through the mapper), beside the chip's own clock.
+
+| gambatte | mgba | sameboy | vba-m | gearboy | tgb-dual | fixgb | irogb | skyemu |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| refuses ("Bandai TAMA5 ROM not supported") | **F** | white screen, 0 bytes of save RAM | plays, but the pet is not kept (1) | **F** | white screen | segfault at load | plays, pet not kept (2) | white screen |
+
+1. VBA-M runs the whole script, and after a soft reset the game continues (the TAMA5 state lives
+   in the core's memory), but its `.srm` is 32768 bytes of zeros apart from `00 01` at the start:
+   the 32 TAMA5 bytes are not in it. A fresh run started from those files offers only
+   さいしょから. Its `.rtc` (64 bytes) does hold the TAMA5 clock: u32 LE registers (seconds `3a`,
+   ...) and a u64 LE Unix time at 0x38.
+2. IroGB writes an 85-byte `.srm`: 32 bytes of `01`, then what looks like its register state, then
+   0xFF. Reloaded, the game finds no pet.
+
+The two filed files: mGBA and Gearboy write the same 32-byte `.srm`, byte for byte (one file byte per
+byte of TAMA5 RAM, full bytes such as `0c`, `40`, `42`, `62`, `8c`). The clock differs: **mGBA
+writes no clock at all** for TAMA5 (no `.rtc`), **Gearboy writes a 72-byte `.rtc`**: 64 bytes of
+TAMA5 clock registers (mostly 0x00-0x0F nibbles) then a u64 LE Unix time. Both reload their own
+files (checked: a fresh run from the filed files reaches つづきから and the room). Neither TAMA5
+layout is in one-saves-registry's `clocks.json`.
+
+### Momotarou Collection 2 (Japan) (SGB Enhanced): MMM01, attempted, not filed
+
+Momotarou Dengeki 2 (no save) and Momotarou Densetsu Gaiden (MBC2+BATT in its own header, saves to
+the MMM01's 8 KiB) on one MMM01 cart. Only **mGBA, SameBoy and IroGB** run the MMM01 menu (each
+then reports 8 KiB of save RAM). Gambatte, VBA-M, Gearboy, TGB Dual and fixGB boot straight into
+the first game, Momotarou Dengeki 2, as a plain MBC1 cart (TGB Dual still writes an 8 KiB `.srm`,
+the others none); SkyEmu shows a black screen and writes its usual 128 KiB.
+
+In SameBoy, Gaiden's びんぼうがみ story was played for several minutes (the house, the overworld,
+the first hut, talking to the people there) and the openings of やしゃひめ and うらしま were
+played through; the 8 KiB stayed 0xFF throughout. In the ROM, Gaiden's routine that copies its save buffer to SRAM is reached only
+through one entry of an event table, so the save is tied to some story event, which was not found
+within the timebox. Nothing filed; the probe frames are the finding: MMM01 support is mGBA,
+SameBoy and IroGB only.
+
+### Net de Get (MBC6)
+
+Filed under `gbc/`, see `gbc/NOTES.md`.

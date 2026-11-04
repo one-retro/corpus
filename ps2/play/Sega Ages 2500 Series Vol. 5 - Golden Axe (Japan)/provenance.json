@@ -1,0 +1,48 @@
+{
+  "method": "played",
+  "system": "ps2",
+  "core": "play",
+  "core_file": "play_libretro.dylib",
+  "core_name": "Play!",
+  "core_version": "0.77-17-g1f27232",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "runner": "ps2-save.py: make-save.py with a fresh system directory and HOME per run (PS2 cores write their cards there); see ps2/NOTES.md",
+  "renderer": "opengl",
+  "rom": {
+    "name": "Sega Ages 2500 Series Vol. 5 - Golden Axe (Japan).cue",
+    "sha1": "e9bdba6639c36e42c1f5abd02d8e977e38e64f78",
+    "size": 115,
+    "tracks": [
+      {
+        "name": "Sega Ages 2500 Series Vol. 5 - Golden Axe (Japan).bin",
+        "sha1": "feee7bcfc73a81ae9bcb0f36cdfc62ada3639004",
+        "size": 156622032
+      }
+    ]
+  },
+  "bios": null,
+  "device": null,
+  "script": "scripts/ps2/Sega Ages 2500 Series Vol. 5 - Golden Axe (Japan).txt",
+  "frames": 3042,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "home/Documents/Play Data Files/vfs/mc0/BISLPM-62385GA/BISLPM-62385GA": {
+      "size": 276,
+      "sha1": "54fa298447e56ae89b80a569c868985cd7503544"
+    },
+    "home/Documents/Play Data Files/vfs/mc0/BISLPM-62385GA/g_axe.ico": {
+      "size": 54280,
+      "sha1": "05a29dae0f618c3642846a3cad9237a92a514927"
+    },
+    "home/Documents/Play Data Files/vfs/mc0/BISLPM-62385GA/icon.sys": {
+      "size": 964,
+      "sha1": "3e76dc0c59f5e44e3ffa0666fd503325903c3723"
+    }
+  },
+  "also_written_not_filed": [
+    "home/Documents/Play Data Files/config.xml"
+  ],
+  "created": "2026-11-04",
+  "note": null
+}

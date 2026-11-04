@@ -1,0 +1,34 @@
+{
+  "method": "played",
+  "system": "gb",
+  "core": "sgb-mister",
+  "core_file": "SGB_20260802.rbf",
+  "core_name": "SGB_MiSTer",
+  "core_version": "20260802",
+  "frontend": "mister",
+  "device": "the owner's MiSTer (DE10-Nano), Main_MiSTer binary of 2026-10-19",
+  "loaded_with": "MGL via /dev/MiSTer_cmd load_core (_Console/SGB, file type f index 1)",
+  "save_folder": "saves/SGB",
+  "rom": {
+    "name": "Pokemon - Red Version (USA, Europe) (SGB Enhanced).gb",
+    "sha1": "ea9bcae617fdf159b045185467ae58b2e4a48b9a",
+    "size": 1048576
+  },
+  "script": "scripts/gb/Pokemon Red.txt",
+  "mister_script": "scripts/mister/gb/Pokemon Red.sgb.txt",
+  "frames": 8035,
+  "timing": "real time: script frames played as wall-clock 1/60 s by work/mister/mrun.py",
+  "options": {
+    "config/SGB.CFG": "Autosave On (status bit 23), every other option at its default; written for the run and removed after"
+  },
+  "save_trigger": "OSD opened (F12 from a uinput keyboard) with Autosave on: the core writes its backup RAM to the SD card",
+  "started_from": null,
+  "files": {
+    "Pokemon - Red Version (USA, Europe) (SGB Enhanced).sav": {
+      "size": 32768,
+      "sha1": "6a1782fe5623e980082a7a5ac04234b4468caa10"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "Super Game Boy core (SGB BIOS 'Super Game Boy (World) (Rev 2).sfc' loaded first by the MGL, file index 4; config/SGB.f4 that Main writes for it removed after). Save: saves/SGB/<rom>.sav, the 32 KiB MBC3 RAM; 5 bytes differ from Gambatte's .srm (0x2605-0x2606, 0x2CF0-0x2CF1, 0x3523: the game's random bytes and checksum), unwritten bytes FF (no seed needed: the core reloads the save after the game loads, Main gives FF when there is no file). The Gameboy_MiSTer entry, from a zero seed, differs in 27612 unwritten bytes (00 there). Config: config/SGB.CFG with only Autosave On (status bit 23), written for the run and removed. Script scripts/gb/Pokemon Red.txt with 300 frames more after the load (SGB BIOS intro). The game runs in SGB mode (border, palettes)."
+}

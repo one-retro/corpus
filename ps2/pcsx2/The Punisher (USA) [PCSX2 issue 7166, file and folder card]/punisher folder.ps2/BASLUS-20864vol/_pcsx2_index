@@ -1,0 +1,47 @@
+$ROOT:
+  timeCreated: 1666857837
+  timeModified: 1666857866
+icon.sys:
+  order: 1
+  timeCreated: 1666857838
+  timeModified: 1666857838
+'BASLUS-20864vol':
+  order: 2
+  timeCreated: 1666857838
+  timeModified: 1666857838
+rf_psx2_icon.ico:
+  order: 3
+  timeCreated: 1666857838
+  timeModified: 1666857841
+_0.del:
+  order: 4
+  timeCreated: 1666857841
+  timeModified: 1666857841
+_1.del:
+  order: 5
+  timeCreated: 1666857841
+  timeModified: 1666857842
+_2.del:
+  order: 6
+  timeCreated: 1666857842
+  timeModified: 1666857842
+_3.del:
+  order: 7
+  timeCreated: 1666857843
+  timeModified: 1666857843
+_4.del:
+  order: 8
+  timeCreated: 1666857843
+  timeModified: 1666857844
+_5.del:
+  order: 9
+  timeCreated: 1666857844
+  timeModified: 1666857844
+_6.del:
+  order: 10
+  timeCreated: 1666857845
+  timeModified: 1666857845
+BIZ.pun:
+  order: 12
+  timeCreated: 1666857845
+  timeModified: 1666857866

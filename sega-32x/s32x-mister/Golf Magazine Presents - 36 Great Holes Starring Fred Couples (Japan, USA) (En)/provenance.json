@@ -1,0 +1,34 @@
+{
+  "method": "played",
+  "system": "sega-32x",
+  "core": "s32x-mister",
+  "core_file": "S32X_20260603.rbf",
+  "core_name": "S32X_MiSTer",
+  "core_version": "20260603",
+  "frontend": "mister",
+  "device": "the owner's MiSTer (DE10-Nano), Main_MiSTer binary of 2026-10-19",
+  "loaded_with": "MGL via /dev/MiSTer_cmd load_core (_Console/S32X, file type f index 0)",
+  "save_folder": "saves/S32X",
+  "rom": {
+    "name": "Golf Magazine Presents - 36 Great Holes Starring Fred Couples (Japan, USA) (En).32x",
+    "sha1": "dc77b1e5c888c2c4284766915a5020bb14ee681d",
+    "size": 3145728
+  },
+  "script": "scripts/sega-32x/Golf Magazine 36 Great Holes Starring Fred Couples.txt",
+  "mister_script": "scripts/mister/sega-32x/Golf Magazine 36 Great Holes Starring Fred Couples.s32x.txt",
+  "frames": 3398,
+  "timing": "real time: script frames played as wall-clock 1/60 s by work/mister/mrun.py",
+  "options": {
+    "config/S32X.CFG": "Autosave On (status bit 13), every other option at its default; written for the run and removed after"
+  },
+  "save_trigger": "OSD opened (F12 from a uinput keyboard) with Autosave on: the core writes its backup RAM to the SD card",
+  "started_from": null,
+  "files": {
+    "Golf Magazine Presents - 36 Great Holes Starring Fred Couples (Japan, USA) (En).sav": {
+      "size": 65536,
+      "sha1": "5b77d381d719f7d683cc9c064c2b43b80ed8b97f"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "Byte-wide SRAM (RA F8 20): <rom>.sav, 65536 bytes, byte-expanded like PicoDrive's .srm; all 32768 odd bytes are identical to PicoDrive's file, the even bytes are FF here (00 in PicoDrive). No seed (the core reloads the save after every ROM load; Main gives FF when there is no file). Config: config/S32X.CFG with only Autosave On (status bit 13), written for the run and removed. Script unchanged; it has no power-cycle step, the proof is Choose a player to edit with NEW PLAYER, FRED COUPLES, NEW PLAYER."
+}

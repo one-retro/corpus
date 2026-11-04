@@ -1,0 +1,21 @@
+{
+  "method": "downloaded",
+  "system": "ps2",
+  "core": "pcsx2",
+  "url": "https://github.com/user-attachments/files/27857468/Mcd001.zip",
+  "source_page": "https://github.com/PCSX2/pcsx2/issues/14459",
+  "source": "GitHub, PCSX2/pcsx2 issue tracker (an attachment to a bug report)",
+  "author": "lextra2",
+  "licence": null,
+  "emulator": "PCSX2 v2.7.346 (regression vs 2.7.283)",
+  "posted": "2026-05-16",
+  "fetched": "2026-11-04",
+  "what_it_is": "A PCSX2 2.7.346 user's card with one save, Ratchet: Deadlocked (BASCUS-97465RATCHET).",
+  "files": {
+    "Mcd001.ps2": {
+      "size": 8650752,
+      "sha1": "3c26d60a11f905a91d4334fead5f9f6a45768980"
+    }
+  },
+  "note": "No licence stated on the page. "
+}

@@ -1,0 +1,34 @@
+{
+  "method": "played",
+  "system": "gb",
+  "core": "sgb-mister",
+  "core_file": "SGB_20260802.rbf",
+  "core_name": "SGB_MiSTer",
+  "core_version": "20260802",
+  "frontend": "mister",
+  "device": "the owner's MiSTer (DE10-Nano), Main_MiSTer binary of 2026-10-19",
+  "loaded_with": "MGL via /dev/MiSTer_cmd load_core (_Console/SGB, file type f index 1)",
+  "save_folder": "saves/SGB",
+  "rom": {
+    "name": "Legend of Zelda, The - Link's Awakening (USA, Europe) (Rev 2).gb",
+    "sha1": "5ab63def958728933571c3b4f6af54db14f3f8b2",
+    "size": 524288
+  },
+  "script": "scripts/gb/Legend of Zelda, The - Link's Awakening.txt",
+  "mister_script": "scripts/mister/gb/Legend of Zelda, The - Link's Awakening.sgb.txt",
+  "frames": 1602,
+  "timing": "real time: script frames played as wall-clock 1/60 s by work/mister/mrun.py",
+  "options": {
+    "config/SGB.CFG": "Autosave On (status bit 23), every other option at its default; written for the run and removed after"
+  },
+  "save_trigger": "OSD opened (F12 from a uinput keyboard) with Autosave on: the core writes its backup RAM to the SD card",
+  "started_from": null,
+  "files": {
+    "Legend of Zelda, The - Link's Awakening (USA, Europe) (Rev 2).sav": {
+      "size": 8192,
+      "sha1": "3c12f2fab2dc8b5312cbcab158c335a5efb4b950"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "Super Game Boy core: the MGL loads the SGB BIOS first (the No-Intro 'Super Game Boy (World) (Rev 2).sfc', file index 4, the core's FC4 line; Main stores its path in config/SGB.f4, removed after), then the Game Boy game (FS1). No SGB boot ROM (the optional FC5 BIN) was given; the core ran without it. Save: saves/SGB/<rom>.sav, the 8 KiB MBC1 RAM, byte-identical to Gambatte's .srm (unwritten bytes FF: the core reloads the save after the game loads and Main hands it FF when there is no file, so no seed); the Gameboy_MiSTer entry, made from a zero seed, differs only in those unwritten bytes. Config: config/SGB.CFG with only Autosave On (status bit 23), written for the run and removed. Script scripts/gb/Legend of Zelda, The - Link's Awakening.txt with 300 frames more after each load for the SGB BIOS intro (--pre)."
+}

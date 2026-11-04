@@ -1,0 +1,34 @@
+{
+  "method": "played",
+  "system": "sega-32x",
+  "core": "s32x-mister",
+  "core_file": "S32X_20260603.rbf",
+  "core_name": "S32X_MiSTer",
+  "core_version": "20260603",
+  "frontend": "mister",
+  "device": "the owner's MiSTer (DE10-Nano), Main_MiSTer binary of 2026-10-19",
+  "loaded_with": "MGL via /dev/MiSTer_cmd load_core (_Console/S32X, file type f index 0)",
+  "save_folder": "saves/S32X",
+  "rom": {
+    "name": "World Series Baseball Starring Deion Sanders (USA).32x",
+    "sha1": "ab3026eae46a775adb7eaebc13702699557ddc41",
+    "size": 3145728
+  },
+  "script": "scripts/sega-32x/World Series Baseball Starring Deion Sanders.txt",
+  "mister_script": "scripts/mister/sega-32x/World Series Baseball Starring Deion Sanders.s32x.txt",
+  "frames": 6364,
+  "timing": "real time: script frames played as wall-clock 1/60 s by work/mister/mrun.py",
+  "options": {
+    "config/S32X.CFG": "Autosave On (status bit 13), every other option at its default; written for the run and removed after"
+  },
+  "save_trigger": "OSD opened (F12 from a uinput keyboard) with Autosave on: the core writes its backup RAM to the SD card",
+  "started_from": null,
+  "files": {
+    "World Series Baseball Starring Deion Sanders (USA).sav": {
+      "size": 65536,
+      "sha1": "cc36c10d73582c9d27f0083530c7f1249650ffa2"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "Byte-wide SRAM (header RA F8 20, odd addresses): <rom>.sav, 65536 bytes (the core always reads and writes 128 sectors), byte-expanded like PicoDrive's .srm: the game's bytes at odd offsets. Even bytes are FF here, not 00, and the 1406 odd bytes the game never wrote are FF too; every byte the game wrote is identical to PicoDrive's (league data from 0x7FD to 0xFD3B). No seed: the core reloads the save after every ROM load and Main hands it FF blocks when there is no file. Config: config/S32X.CFG with only Autosave On (status bit 13), written for the run and removed. Script unchanged; after the reload GAME SELECT shows CONTINUE LEAGUE."
+}

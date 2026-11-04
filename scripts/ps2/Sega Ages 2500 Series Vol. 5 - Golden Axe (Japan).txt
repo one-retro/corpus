@@ -1,0 +1,12 @@
+# Sega Ages 2500 Series Vol. 5 - Golden Axe (Japan), SLPM-62385, CD.
+# At power-on the game asks to format an unformatted card (YES = Circle here) and then
+# creates its system file BISLPM-62385GA by itself, before the logos.
+wait 1200
+shot prompt          # メモリーカード(PS2)がフォーマットされていません。フォーマットしますか? YES/NO
+press left 6         # YES
+wait 30
+press a 6            # Circle confirms on a Japanese disc
+wait 1200
+shot logos
+wait 600
+shot title           # title screen after the save was written

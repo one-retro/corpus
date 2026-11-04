@@ -1,0 +1,26 @@
+load corpus-tmp/mgl/dezaemon2.mgl 10
+# Dezaemon 3D (Japan), 768 Kbit (96 KiB) SRAM. No libretro core saves this chip (n64/NOTES.md):
+# they have room for one 32 KiB bank. A first boot to the attract mode cleared bank 0 only;
+# here START and A three times go to GAME EDIT (as the libretro dry run did), where the game
+# sets up its edit data. N64 A is RetroPad b.
+wait 1800
+press start 6
+wait 200
+shot menu1
+press a 6
+wait 200
+shot menu2
+press a 6
+wait 200
+shot menu3
+press a 6
+wait 300
+shot edit
+repeat 3
+wait 300
+shot
+end
+wait 30
+save
+wait 60
+shot final

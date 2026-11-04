@@ -1,0 +1,41 @@
+load corpus-tmp/mgl/mmmil.mgl 6
+# Micro Machines - Military: 1 Player -> Challenge -> Spider, "Change Name?"
+# Yes, and rename him "AB". The game keeps its drivers' names in the cart's
+# 24C08 EEPROM (1 KB, Codemasters J-Cart wiring) and writes the new name there
+# (it formats the chip at first boot: "hasreset" and the default names, which is
+# not a save). Reset and pick a driver again: Spider's portrait is now AB.
+# Any of A/B/C enters a letter here and Start ends the name.
+wait 1200
+press start 6    # title -> Please Select Option: 1 Player
+wait 240
+press start 6    # Please Select Game Type: Challenge
+wait 240
+press start 6    # Please Select Your Driver: Spider
+wait 360
+press start 6    # Change Name? Yes
+wait 270            # Choose New Name, cursor on A
+press r 6    # A
+wait 60
+press right 6
+wait 30
+press r 6    # B
+wait 60
+shot named
+press start 6    # done: the name is written
+wait 360
+shot race           # "ABS BEST CHALLENGE: NONE"
+wait 120
+wait 30
+save
+wait 60
+shot final
+# power cycle: load the game again; the core reads the .sav back from the SD card
+load corpus-tmp/mgl/mmmil.mgl 6
+wait 1200
+press start 6
+wait 240
+press start 6
+wait 240
+press start 6
+wait 360
+shot saved          # Change Name? over the portrait labelled AB

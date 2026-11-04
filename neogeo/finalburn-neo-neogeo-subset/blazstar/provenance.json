@@ -1,0 +1,37 @@
+{
+  "method": "played",
+  "system": "neogeo",
+  "core": "finalburn-neo-neogeo-subset",
+  "core_file": "finalburn-neo-neogeo-subset_libretro.dylib",
+  "core_name": "FinalBurn Neo (neogeo subset)",
+  "core_version": "v1.0.0.03  GIT384609f",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "blazstar.zip",
+    "sha1": "e29ef4455e05d552f2b21875f212388fecb7a013",
+    "size": 21596277
+  },
+  "device": null,
+  "script": "scripts/neogeo/blazstar.txt",
+  "frames": 5832,
+  "options": "fbneo-neogeo-mode = MVS_USA\nfbneo-memcard-mode = per-game\n",
+  "started_from": null,
+  "files": {
+    "fbneo/blazstar.fs": {
+      "size": 65536,
+      "sha1": "305caa4dedf472532758ff10f3d4a871968735e5"
+    },
+    "fbneo/blazstar.memcard": {
+      "size": 32800,
+      "sha1": "58ec60bacace919f79ead219dc1b147ffed2fa9e"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null,
+  "built_from": {
+    "repo": "https://github.com/libretro/FBNeo",
+    "commit": "384609f72866dc00257c38a445d05cbb4f1c03a4",
+    "build": "make -C src/burner/libretro SUBSET=neogeo generate-files && make -C src/burner/libretro SUBSET=neogeo -j12 (the subset of the repo's .gitlab-ci.yml 3DS jobs, built for macOS arm64; generate-files (REGEN_HEADERS) rebuilds the driver list for the subset's drivers), unmodified source"
+  }
+}

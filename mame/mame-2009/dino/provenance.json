@@ -1,0 +1,41 @@
+{
+  "method": "played",
+  "system": "mame",
+  "core": "mame-2009",
+  "core_file": "mame-2009_libretro.dylib",
+  "core_name": "MAME 2009",
+  "core_version": "0.135 29b38f5",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "dino.zip",
+    "sha1": "71701182e23ab43bfe37b8082ed3b3c30b8e0e58",
+    "size": 4115041
+  },
+  "device": null,
+  "script": "scripts/mame/dino.mame-2009.txt",
+  "frames": 4034,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "mame2009/cfg/default.cfg": {
+      "size": 175,
+      "sha1": "4e398d654043793e0677cef4917b03478508673e"
+    },
+    "mame2009/cfg/dino.cfg": {
+      "size": 172,
+      "sha1": "1f9f3bd23e757cd43eaedccb7d7c3b29daee153b"
+    },
+    "mame2009/nvram/dino.nv": {
+      "size": 128,
+      "sha1": "c5cab3f881930e5ab12cfec1b525262b365ec8fc"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "Script variant dino.mame-2009.txt: MAME 2009 takes CPS1 button 1 from RetroPad a, where the shared dino.txt presses b (which does nothing here). Neo Geo A is RetroPad b in this core, so the Neo Geo scripts run unchanged.",
+  "built_from": {
+    "repo": "https://github.com/libretro/mame2009-libretro",
+    "commit": "29b38f53013e02af7840fdca9bdaba9710e8b232",
+    "build": "git show HEAD:Makefile > libretro-Makefile.mk (the repo holds both Makefile and makefile, which collide on a case-insensitive disk; the libretro build file is Makefile); make -f libretro-Makefile.mk platform=osx PTR64=1 FORCE_DRC_C_BACKEND=1 ARM_ENABLED=1 ARFLAGS=-crs AR=<sh wrapper that writes an empty archive when given no members, as GNU ar does> CC=\"cc -DSDLMAME_NO64BITIO -Wno-error=implicit-function-declaration -Wno-error=int-conversion -Wno-error=incompatible-function-pointer-types -Wno-error=incompatible-pointer-types\" NATIVECC=cc -j14. No source edits; the osx section of the Makefile (CC = c++ for C sources, x64 DRC, no ARFLAGS) cannot build on arm64 with current clang, so these variables are overridden on the command line."
+  }
+}

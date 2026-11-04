@@ -27,6 +27,8 @@ So every save here came from input the emulator accepts from inside its own proc
 | A plugin the emulator loads | Mupen64Plus input plugin API | `work/standalone/tools/m64feed.c` |
 | SDL events synthesized in-process | Mednafen (Homebrew, ad-hoc signed, so `DYLD_INSERT_LIBRARIES` works) | `work/standalone/tools/sdlfeed.c`, `gen_sdlfeed.py` |
 | State handoff | mGBA.app 0.10.5 (no `--script` in 0.10; hardened runtime) | `work/standalone/mgba/handoff.py` |
+| An FM2 movie played from Lua | FCEUX for FDS (movies have disk-side commands, Lua has none) | `work/standalone/tools/gen_fceux_fds.py` |
+| Memory pokes from an injected x86_64 dylib | CrabEmu 0.2.0 Cocoa app under Rosetta (unsigned, so `DYLD_INSERT_LIBRARIES` works) | `work/standalone/crabemu/crabfeed.c`, `gen_crabfeed.py` |
 
 All of them replay the same `scripts/<system>/*.txt` the libretro entries use (via
 `work/standalone/tools/timeline.py`, which expands a retro-run script exactly as `retro-run.c`
@@ -53,7 +55,28 @@ never `downloaded`. Every app ran with an isolated data directory; see "Safety" 
   StarTropics (MMC6): **8192 bytes**, like fceumm (mesen/nestopia write the real 1 KiB).
   **Dragon Ball Z II (24C02 EEPROM): a 0-byte `.sav`** although the game showed its save
   message; fceumm/mesen write 256 bytes. Family Circuit '91 (Namco 175): **no file at all**, as in
-  fceumm. FDS not attempted (FCEUX Lua has no disk-side control).
+  fceumm.
+
+### FCEUX and FDS (`fds/fceux/`, added 2026-11-04)
+
+- **Input.** FCEUX's Lua has no disk-side call, so `gen_fceux_fds.py` writes the retro-run script
+  as an **FM2 movie**. Each frame line carries pad 1 and a command field:
+  - `reset` becomes command 1 (soft reset);
+  - `flip` becomes command 4 (eject), then 8 (select side) 30 frames later, then 4 (insert) 30
+    frames after that. FCEUX will not select a side while a disk is in.
+
+  A Lua driver starts the movie read-only (`movie.play`) at turbo speed, takes the screenshots, and
+  calls `emu.exit()`. The movie's `romChecksum` is the base64 MD5 of the `.fds` file.
+- **Setup.** `disksys.rom` goes in the FCEUX base folder (`$FCEUX_HOME/.fceux/`). FCEUX
+  auto-inserts side A at power-on. The ROM was copied into each work folder.
+- **Where / name.** `.fceux/sav/<ROM file name without extension>.fds` in the home folder.
+  - It holds the **whole disk, raw 65500-byte sides, 131000 bytes, with no fwNES header** (also
+    from a headered ROM).
+  - It is written when the game closes, **only if the disk was written**: booting to a title
+    leaves no file.
+  - On the next load it is read instead of the ROM.
+- **Results.** Filed all seven FDS scripts. All seven files are byte-identical to fceumm's `.srm`.
+  Details are in `fds/NOTES.md`.
 
 ## mGBA.app 0.10.5 (`gba|gb|gbc/mgba@mgba/`)
 
@@ -147,7 +170,7 @@ never `downloaded`. Every app ran with an isolated data directory; see "Safety" 
   native button each Beetle core maps the RetroPad button to (`gen_sdlfeed.py`). `shot` taps F9
   (snapshot), `reset` F10, and the run ends with F12 (exit: Mednafen writes saves on exit).
   The launcher must not pass through a SIP-protected binary (`perl`, `timeout` wrappers strip
-  `DYLD_*`).
+  `DYLD_*`). `flip` (FDS) taps F8, F6, F8 (eject, select disk side, insert), 30 frames apart.
 - **Where / name:** `.mednafen/sav/<ROM file name without extension>.<MD5>.<ext>` in the home folder
   (`filesys.fname_sav = %f.%M%x`; the MD5 is Mednafen's game hash, e.g. of the NES ROM without its
   iNES header). `.sav` for battery RAM, **`.srm` for the `snes` module**, PSX cards
@@ -172,10 +195,122 @@ never `downloaded`. Every app ran with an isolated data directory; see "Safety" 
 | wonderswan-color | Makai Toushi Sa-Ga | `.sav` 32768 | same size as beetle-wonderswan |
 | ngp | Baseball Stars | `.flash` 7208 | NeoPop block format, same size as beetle-neopop |
 | ngpc | King of Fighters R-2 | `.flash` 2600 | byte-identical to beetle-neopop |
+| fds | all 7 scripts (Zelda no Densetsu, Link no Bouken, Metroid, F1 Race, both Golfs, 3D Hot Rally) | **`.fds` 131000**: the whole disk | same disk as fceumm/FCEUX except **one byte**: `0xFF` right after the last block written |
+| pcenginecd | all 8 scripts (Ys I & II, Ys III, Dungeon Explorer II, Exile, Exile 2, Prince of Persia, Beyond Shadowgate, Dracula X) | `.sav` 2048 (BRAM) | 7 byte-identical to beetle-pce/beetle-pce-fast; Prince of Persia's time-left byte differs (CD timing) |
 
 Not done in Mednafen: saturn (no corpus Saturn entries to compare yet and no BIOS run here),
-virtualboy, lynx, pcfx, supergrafx, pcenginecd, fds (no scripts, or not attempted for time).
+virtualboy, lynx, pcfx, supergrafx (no scripts, or not attempted for time).
 
+### Mednafen: FDS and PC Engine CD (added 2026-11-04)
+
+**FDS (`fds/mednafen/`, 7 of 7 filed).**
+
+- **Setup.** `disksys.rom` goes in `firmware/`. The disk starts inserted, side A.
+- **Input.** `gen_sdlfeed.py` now maps `flip` to F8 (`command.insert_eject_disk`), then F6
+  (`command.select_disk`) and F8 again, 30 frames apart.
+- **Where / name.** `.mednafen/sav/<ROM name>.<md5>.fds` in the home folder.
+  - The md5 is of the disk sides without any fwNES header. A headered and a headerless dump give
+    the same name.
+  - The file is the **whole disk, raw sides, 131000 bytes, no header**.
+  - It is written on exit **only if the disk was written**, and read back instead of the ROM next
+    time.
+- **Against fceumm and FCEUX.** Each file differs in exactly one byte, the one right after the last
+  block the game wrote: `0xFF` here, `0x00` in the ROM and in fceumm/FCEUX. Details are in
+  `fds/NOTES.md`.
+
+**PC Engine CD (`pcenginecd/mednafen/`, 8 of 8 filed).**
+
+- **Module and BIOS.** Mednafen uses module `pce` and the Japanese System Card 3.0 by default
+  (`pce.cdbios = syscard3.pce`, linked into `firmware/`).
+- **No CHD.** Mednafen 1.32.1 has no CHD support. Seven discs were loaded as cue/bin extracted
+  with `chdman extractcd`; Dracula X was loaded from its cue/img in place.
+- **Where / name.** `.mednafen/sav/<cue name>.<CD layout md5>.sav` in the home folder.
+  - The md5 is the one Mednafen logs as "CD Layout" at load.
+  - The file is the raw 2 KiB BRAM, header `HUBM` with end pointer 0x8800.
+  - It is written on exit, but **not at all if nothing wrote the BRAM**: a run idle on the System
+    Card screen left no file.
+- More in `pcenginecd/NOTES.md`.
+
+
+## CrabEmu 0.2.0 (`mastersystem/crabemu/`, standalone; added 2026-11-04)
+
+**The build.** There is no macOS release newer than 0.2.0 (2013). Development stopped and its SMS
+core lives on in OpenEmu. The official `CrabEmu-0.2.0.dmg` from SourceForge (sha1 f454f00c…,
+downloaded into `.cache/downloads/mastersystem/crabemu-0.2.0-dmg/`) holds a universal app with
+**ppc, i386 and x86_64** slices.
+
+- The x86_64 slice **runs under Rosetta 2**, started straight from its `Contents/MacOS/CrabEmu`.
+- It is unsigned and not hardened, and its symbols are not stripped.
+- The 0.2.0 source (`.cache/build/crabemu/CrabEmu-0.2.0/`) has Qt4 and SDL 1.2 clients and was
+  only read, not built. Neither builds against what is installed here.
+
+**Input and setup** (`work/standalone/crabemu/`):
+
+- `crabfeed.dylib` is an x86_64 library loaded with `DYLD_INSERT_LIBRARIES`.
+  - **Frames.** The emulation thread waits once per frame on the app's sound semaphore
+    (`sound_wait`, which calls `semaphore_wait(sem)`). That call is interposed and counted.
+  - **Pad.** On each frame the retro-run buttons are written into `sms_pad` (active low): b is
+    button 1 and a is button 2, as in the libretro SMS cores.
+  - **Pause and reset.** `start` calls `sms_z80_nmi()` (Pause). `reset` calls `sms_soft_reset()`,
+    which is what the app's Reset menu item does.
+  - **ROM.** It is opened with the app delegate's `application:openFiles:`.
+  - **Screenshots.** The framebuffer pointer is taken from the app's own `glTexSubImage2D` upload
+    and dumped (ARGB1555) at each `shot`.
+  - **End.** `[NSApp terminate:]`, after which the app writes the save.
+  - Addresses are the binary's symbols plus the ASLR slide.
+- **Isolation.**
+  - `CFFIXED_USER_HOME=<work>/home` moves `~` (the app's Application Support folders). The work
+    home needs `Library/Application Support` created beforehand: the 2013 code uses
+    `createDirectoryAtPath:attributes:`, which does not create parents.
+  - Preferences still go through cfprefsd to the real home, whatever the environment says (tested
+    on a throwaway domain, then deleted). So the dylib turns `NSUserDefaults` setters and
+    `synchronize` and the recent-documents list into no-ops.
+  - `-ApplePersistenceIgnoreState YES` is passed.
+  - Afterwards there was no CrabEmu file in the owner's Preferences, Application Support or Saved
+    Application State.
+- **Region.** `-SMSDomestic NO` is passed on the command line. The app's default is the Japanese
+  console.
+
+**Where / name.** `Library/Application Support/ljsdcdev/CrabEmu/SRAM Saves/` in the home folder
+(preference `SaveDirectory`).
+
+- The file is named `<ROM file name *with* its extension>.ces`, for example
+  `Phantasy Star (USA, Europe) (Rev A).sms.ces`. The Qt and SDL clients use the same `<rom>.ces`,
+  beside the ROM by default.
+- It is always **32768 bytes**: the whole cart-RAM buffer, `0x00` past what the game uses. A
+  93C46 EEPROM game would get 128 bytes.
+- It is written when the app quits or closes the ROM, and only if the game enabled cartridge RAM.
+
+| Game | Filed | Against the other cores |
+| --- | --- | --- |
+| Phantasy Star | yes | byte-identical to mednafen, picodrive, sms-plus-gx, sms-mister |
+| Ys | yes | same layout, play-state bytes differ (as every core here differs) |
+| Ultima IV | yes | 9-10 bytes of play state differ from picodrive/sms-plus-gx |
+| Miracle Warriors | yes | 2 bytes differ from picodrive/sms-plus-gx |
+| Golden Axe Warrior | yes | byte-identical to picodrive, sms-plus-gx, sms-mister |
+| Golfamania | yes | byte-identical to picodrive, sms-plus-gx |
+| Penguin Land | yes | byte-identical to picodrive, sms-plus-gx, sms-mister |
+| Monopoly | yes, with `Monopoly.sms-plus-gx.txt` | see below |
+
+**Monopoly.**
+
+- The shared script reached "GAME RESTORED" and was not filed. CrabEmu powers cart RAM on as zeros,
+  which Monopoly takes for a saved game, as in picodrive and sms-plus-gx. So the zero-RAM variant
+  script was used.
+- Its file differs from every other core in about 5400 of the first 8192 bytes: `0xF0` where the
+  others have `0x00`.
+- CrabEmu fills the console's 8 KiB work RAM with `0xF0` at power-on (`smsmem.c`), and Monopoly
+  copies uninitialised work RAM into its save. **The emulator's power-on RAM pattern ends up in the
+  save file.**
+
+**ColecoVision and SG-1000.** Nothing to file in either: no game in the library saves.
+
+- CrabEmu has no ColecoVision save code at all.
+- Its SG-1000 mapper never enables cart-RAM saving. An idle run of The Castle (8 KiB of cart RAM)
+  wrote no `.ces`.
+- The ColecoVision smoke test was stopped: a wrong BIOS path made the app show an error dialog on
+  the owner's screen, and the instance was killed. Neither test was repeated, per the
+  coordinator's instruction.
 
 ## RetroArch.app 1.22.2 versus tools/retro-run (fidelity)
 
@@ -223,7 +358,7 @@ core options file and creates `states/<core>/` and `cheats/<core>/` folders; no 
 | Snes9x for macOS (`snes9x@snes9x`) | not run | Cask exists, but the app has no scripting or CLI input, no isolated data folder (it uses `Library/Application Support/Snes9x` in the home folder), and quitting cleanly needs a menu/Apple Event; needs Accessibility. |
 | Flycast.app 2.7 (`flycast@flycast`) | not run | The macOS build has no Lua (only the translation strings), SDL is linked statically (no interposition), and no data-dir override was found; needs Accessibility. VMU files are `vmu_save_A1.bin` style under `Library/Application Support/Flycast/` in the home folder. |
 | PCSX2 2.9.63 (`pcsx2`, ps2) | booted, nothing filed | Isolation works (`-datapath <dir> -nogui -batch -fastboot`). Booting Ratchet & Clank made `memcards/Mcd001.ps2` and `Mcd002.ps2`, **8650752 bytes each, UNFORMATTED (all 0xFF)**; no game data without input (no scripting; PINE is memory-only). Not filed: a blank card is not a save. |
-| crabemu, bliss, 4do, emuthreeds | no macOS builds worth chasing | — |
+| bliss, 4do, emuthreeds | no macOS builds worth chasing | — |
 
 ## Safety
 
@@ -234,3 +369,11 @@ core options file and creates `states/<core>/` and `cheats/<core>/` folders; no 
 - New installs: PPSSPPSDL.app (89 MB, cask), mupen64plus (4 MB, formula; upgraded the shared
   sdl2-compat bottle). Scratch kept under `work/standalone/` (ROM copies, states, frame dumps and
   memory cards deleted).
+- 2026-11-04 session (FDS, PC Engine CD, CrabEmu): Mednafen and FCEUX ran with `MEDNAFEN_HOME` /
+  `FCEUX_HOME` in `work/standalone/`, each ROM copied into its work folder.
+  - The owner's `.mednafen` and `.fceux` (and any matching preferences) were hashed and listed
+    before and after (`work/standalone/snap2.sh`, `baseline/t4/`): **unchanged**.
+  - CrabEmu: see its section above. No file in the owner's Library.
+  - Nothing new was installed.
+  - The PC Engine CD cue/bin extracted from CHDs were deleted after the runs. Re-extract with
+    `chdman extractcd` to repeat a run.

@@ -1,0 +1,29 @@
+{
+  "method": "played",
+  "system": "atari-lynx",
+  "core": "gearlynx",
+  "core_file": "gearlynx_libretro.dylib",
+  "core_name": "Gearlynx",
+  "core_version": "1.2.37-8-gd5c3b23",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "4ttude.lnx",
+    "sha1": "88650b2eec3ae8820966ff713cd586cb7c426f87",
+    "size": 123916
+  },
+  "rom_source": "https://github.com/nop90-atari-lynx/4Ttude/raw/master/4ttude.lnx",
+  "device": null,
+  "script": "scripts/atari-lynx/4Ttude.txt",
+  "frames": 3308,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "4ttude.srm": {
+      "size": 128,
+      "sha1": "f7e3cadeb69fb339635b706064ab55d0f88f2317"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "Homebrew, freely distributed by its authors."
+}

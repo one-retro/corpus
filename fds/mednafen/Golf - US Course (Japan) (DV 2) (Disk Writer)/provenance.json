@@ -1,0 +1,33 @@
+{
+  "method": "played",
+  "system": "fds",
+  "core": "mednafen",
+  "core_file": null,
+  "core_name": "Mednafen",
+  "core_version": "1.32.1",
+  "frontend": "Mednafen 1.32.1 (Homebrew), module 'nes', isolated MEDNAFEN_HOME, -sound 0 -video.glvsync 0",
+  "rom": {
+    "name": "Golf - US Course (Japan) (DV 2) (Disk Writer).fds",
+    "size": 131000,
+    "sha1": "ba9acb65d9d009c08c0fdf521646fa84ebb4c69a"
+  },
+  "script": "scripts/fds/Golf - US Course.txt",
+  "frames": 6754,
+  "options": null,
+  "input": "work/standalone/tools/sdlfeed.c (DYLD_INSERT_LIBRARIES into the ad-hoc-signed Homebrew binary): SDL key events synthesized inside the process on presented frames, from the retro-run script mapped to Mednafen's default keys (gen_sdlfeed.py); flip = F8 eject, F6 select disk side, F8 insert, 30 frames apart; F9 snapshot for shot, F10 reset, F12 exit (Mednafen writes saves on exit)",
+  "started_from": null,
+  "files": {
+    "Golf - US Course (Japan) (DV 2) (Disk Writer).9942a61cfd95af14c2c66dba4cc979ca.fds": {
+      "size": 131000,
+      "sha1": "e89d724e856d0f2ca0565678619d4e4f1b9584e0"
+    }
+  },
+  "layout": {
+    "save_dir": "$MEDNAFEN_HOME/sav (default .mednafen/sav in the home folder)",
+    "name": "<ROM file name without extension>.<MD5 of the disk sides, without any fwNES header>.fds (filesys.fname_sav %f.%M%x)",
+    "content": "the whole disk as the game left it: raw 65500-byte sides, no fwNES header (also when the ROM has one)",
+    "written": "on exit, and only if the game wrote to the disk; read back instead of the ROM on the next load"
+  },
+  "created": "2026-11-04",
+  "note": "FDS BIOS disksys.rom in firmware/. Same disk as fceumm's .srm and FCEUX's .fds except one byte: Mednafen leaves 0xFF in the byte right after the last block it wrote (here the end of the side's used area, which is 0x00 in the ROM)."
+}

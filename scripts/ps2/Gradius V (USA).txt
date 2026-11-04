@@ -1,0 +1,24 @@
+# Gradius V (USA), SLUS-20712, CD.
+# Title > SAVE/LOAD > SAVE; the game offers to format the unformatted card, then writes
+# BASLUS-20712 (high scores and settings).
+wait 3700
+press start 10       # skip the intro
+wait 300
+press start 10       # title -> menu (GAME START)
+wait 300
+repeat 5
+press down 10        # ... SAVE/LOAD
+wait 40
+end
+press b 10
+wait 200
+press down 10        # LOAD -> SAVE
+wait 60
+press b 10
+wait 200
+shot format          # "unformatted. Do you wish to format? Yes / No"
+press left 10        # Yes
+wait 60
+press b 10
+wait 300
+shot saved           # "Save completed."

@@ -1,0 +1,21 @@
+load corpus-tmp/mgl/pd.mgl 10
+# Perfect Dark: create agent "Dark" and save it to the Game Pak (EEPROM).
+# On boot the game also puts its own "PERFECT DARK" note on the
+# Controller Pak in port 1. The title ignores input until the attract
+# sequence starts; Start there loads the menu, which takes ~1000 frames.
+# N64 buttons on the RetroPad: A = b, B = y, Z = l2, Start = start.
+wait 2900
+press start 10    # attract sequence -> Choose Your Reality (loads)
+wait 1300
+press a 10    # New Agent... -> Enter Agent Name ("Dark")
+wait 150
+press start 10    # OK -> Select Location
+wait 200
+shot location
+press a 10    # Game Pak: the profile is written to EEPROM here
+wait 300
+shot created
+wait 30
+save
+wait 60
+shot final

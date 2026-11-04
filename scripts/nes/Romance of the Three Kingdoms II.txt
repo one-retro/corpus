@@ -1,0 +1,65 @@
+# Romance of the Three Kingdoms II (USA): MMC5, 32 KiB battery WRAM.
+# Koei's prompts: numbers change with up/down, (Y/N) answers with LEFT = Y, RIGHT = N; A does not answer them.
+# Scenario 1, one player as Yuan Shu (province 19), level 1; on his first turn SELECT -> 3.SAVE -> Y.
+# Random events differ between cores, hence the B/A pairs below.
+# Proof: after a reset, 7.Load Saved Game brings back Yuan Shu's turn in Jan 189.
+wait 5400             # the intro runs into the title; PUSH START stays up
+press start
+wait 600
+shot scenarios
+press a               # 1. Dong Zhuo Seizes Loyang
+wait 600
+press right           # players: 00 -> 01 (the cursor starts on the tens digit)
+wait 60
+press up
+wait 60
+shot players
+press a
+wait 600
+press a               # the cursor starts on province 19: Yuan Shu
+wait 600
+press left            # Yuan Shu OK? Y
+wait 600
+press up              # game level 0 -> 1
+wait 60
+press a
+wait 600
+press right           # View other wars? N
+wait 600
+shot ok
+press left            # Everything OK? Y
+wait 4000             # events and the other rulers' turns, then Yuan Shu's orders
+shot turn
+repeat 2              # a random event may ask first (e.g. an alliance letter: 1.Accept): B leaves it
+press b               # alone and A accepts; at the orders menu B shows the map and A brings the menu
+wait 400              # back. Either way the orders menu is up afterwards.
+press a
+wait 400
+end
+press select          # Now: 1.WAIT 2.HEX 3.SAVE
+wait 300
+press down
+wait 60
+press down
+wait 60
+press a               # 3.SAVE
+wait 400
+shot save
+press left            # Save game? Y
+wait 900
+shot quit
+press right           # Quit game? N
+wait 600
+shot saved
+reset
+wait 5400
+press start
+wait 600
+repeat 6
+press down
+wait 40
+end
+shot load
+press a               # 7. Load Saved Game
+wait 1800
+shot loaded

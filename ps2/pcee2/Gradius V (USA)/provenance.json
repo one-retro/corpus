@@ -1,0 +1,58 @@
+{
+  "method": "played",
+  "system": "ps2",
+  "core": "pcee2",
+  "core_file": "pcee2_libretro.dylib",
+  "core_name": "PCEE2",
+  "core_version": "v2.9.138",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "runner": "ps2-save.py: make-save.py with a fresh system directory and HOME per run (PS2 cores write their cards there); see ps2/NOTES.md",
+  "renderer": "metal (pcsx2_renderer = metal: the core's own Metal device; frames read back and passed to the frontend)",
+  "rom": {
+    "name": "Gradius V (USA).cue",
+    "sha1": "2ef30018585d72e7d0b5f501f77f17301b818e3a",
+    "size": 81,
+    "tracks": [
+      {
+        "name": "Gradius V (USA).bin",
+        "sha1": "57a4a82fa3aa89d2fdd68c0d354aacca0fc82fd2",
+        "size": 465832416
+      }
+    ]
+  },
+  "bios": {
+    "name": "ps2-0200a-20040614.bin",
+    "sha1": "7a62e5f48603582707e9898eb055ea3eaee50d4c",
+    "size": 4194304,
+    "what": "SCPH-70012 v2.00 USA (2004-06-14)"
+  },
+  "device": null,
+  "script": "scripts/ps2/Gradius V (USA).txt",
+  "frames": 5440,
+  "options": "# PCEE2: its software renderer still presents through Vulkan (no MoltenVK here); Metal works headless.\npcsx2_renderer = metal\n",
+  "started_from": null,
+  "files": {
+    "system/pcsx2/bios/ps2-0200a-20040614.mec": {
+      "size": 4,
+      "sha1": "3f8affbe07024ccd2f5b8374072d0928c583a862"
+    },
+    "system/pcsx2/bios/ps2-0200a-20040614.nvm": {
+      "size": 1024,
+      "sha1": "f3c3c8a04d5e6e9e2302ecab2fb8ab279febf85d"
+    },
+    "system/pcsx2/memcards/Mcd001.ps2": {
+      "size": 8650752,
+      "sha1": "c2c3942cc4f98f990c604cc2f7da08680aae1ad3"
+    },
+    "system/pcsx2/memcards/Mcd002.ps2": {
+      "size": 8650752,
+      "sha1": "eac18874c24d1018b5244074b0a6d11468b390ad"
+    }
+  },
+  "also_written_not_filed": [
+    "system/pcsx2/inis/playtime.dat",
+    "system/pcsx2/logs/emulog.txt"
+  ],
+  "created": "2026-11-04",
+  "note": null
+}

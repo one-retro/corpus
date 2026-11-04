@@ -1,0 +1,33 @@
+{
+  "method": "played",
+  "system": "neogeo",
+  "core": "finalburn-neo-neogeo-subset",
+  "core_file": "finalburn-neo-neogeo-subset_libretro.dylib",
+  "core_name": "FinalBurn Neo (neogeo subset)",
+  "core_version": "v1.0.0.03  GIT384609f",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "fatfury2.zip",
+    "sha1": "32494f9933fdb1ca3c9682367058b23bdbd7b471",
+    "size": 7980986
+  },
+  "device": null,
+  "script": "scripts/neogeo/fatfury2.txt",
+  "frames": 9954,
+  "options": "fbneo-neogeo-mode = AES_EUR\nfbneo-memcard-mode = per-game\n",
+  "started_from": null,
+  "files": {
+    "fbneo/fatfury2.memcard": {
+      "size": 32800,
+      "sha1": "8176c10e67f8122663b54d5f6d3cd8266cb104a6"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null,
+  "built_from": {
+    "repo": "https://github.com/libretro/FBNeo",
+    "commit": "384609f72866dc00257c38a445d05cbb4f1c03a4",
+    "build": "make -C src/burner/libretro SUBSET=neogeo generate-files && make -C src/burner/libretro SUBSET=neogeo -j12 (the subset of the repo's .gitlab-ci.yml 3DS jobs, built for macOS arm64; generate-files (REGEN_HEADERS) rebuilds the driver list for the subset's drivers), unmodified source"
+  }
+}

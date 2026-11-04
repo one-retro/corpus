@@ -1,0 +1,21 @@
+{
+  "method": "downloaded",
+  "system": "ps2",
+  "core": "pcsx2",
+  "url": "https://github.com/user-attachments/files/20539924/memcard.zip",
+  "source_page": "https://github.com/PCSX2/pcsx2/issues/12764",
+  "source": "GitHub, PCSX2/pcsx2 issue tracker (an attachment to a bug report)",
+  "author": "thelastangryman1907",
+  "licence": null,
+  "emulator": "PCSX2 v2.3.387",
+  "posted": "2025-06-01",
+  "fetched": "2026-11-04",
+  "what_it_is": "A user's 32 MiB (34603008-byte) PCSX2 file card named jizzle.ps2, attached to a Largo Winch bug report; 7 saves of different games, among them Rune (SLUS-20109).",
+  "files": {
+    "jizzle.ps2": {
+      "size": 34603008,
+      "sha1": "077494895922d6348b57115fdecab55cc4cf9484"
+    }
+  },
+  "note": "No licence stated on the page. 32 MiB card jizzle.ps2; holds Rune SLUS-20109"
+}

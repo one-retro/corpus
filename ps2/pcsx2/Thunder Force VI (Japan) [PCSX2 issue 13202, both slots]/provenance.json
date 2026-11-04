@@ -1,0 +1,25 @@
+{
+  "method": "downloaded",
+  "system": "ps2",
+  "core": "pcsx2",
+  "url": "https://github.com/user-attachments/files/22052332/Thunder.Force.VI.memory.card.%2B.save.state.zip",
+  "source_page": "https://github.com/PCSX2/pcsx2/issues/13202",
+  "source": "GitHub, PCSX2/pcsx2 issue tracker (an attachment to a bug report)",
+  "author": "BSORION",
+  "licence": null,
+  "emulator": "PCSX2 v2.5.139",
+  "posted": "2025-08-29",
+  "fetched": "2026-11-04",
+  "what_it_is": "A user's two PCSX2 cards (memcards/ folder): Mcd001 with 12 saves including Gradius V (SLUS-20712), Mcd002 with 2; both slots in use.",
+  "files": {
+    "Mcd001.ps2": {
+      "size": 8650752,
+      "sha1": "e95eaec0fe1eacb0cfb4a8cedc11d7b9c6970f14"
+    },
+    "Mcd002.ps2": {
+      "size": 8650752,
+      "sha1": "a237c65590a5ae0b77d982a6ecc96303efe8e2c7"
+    }
+  },
+  "note": "No licence stated on the page. only memcards/ extracted (zip also has .p2s states); Mcd001 holds SLUS-20712"
+}

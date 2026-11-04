@@ -1,0 +1,36 @@
+load corpus-tmp/mgl/sm64.mgl 10
+# MiSTer variant: shorter stick moves onto MONO.
+# Super Mario 64: on the file select, STEREO -> Sound Select -> MONO. The
+# game formats its 4 Kbit EEPROM on the first boot (four empty files, the
+# menu block twice) and rewrites the menu block when the sound mode
+# changes. The script then resets: the file select shows MONO again.
+# The hand cursor follows the analog stick; A clicks.
+# N64 buttons on the RetroPad: A = b, B = y, Z = l2, Start = start.
+wait 600
+press start 6    # title -> SELECT FILE
+wait 200
+stick max 0 35      # hand to the right...
+wait 5
+stick 0 max 19      # ...and down onto STEREO
+wait 5
+press a 6    # -> SOUND SELECT
+wait 100
+stick min 0 17
+wait 5
+stick 0 min 8       # onto MONO (MiSTer: the stick moves the hand further)
+wait 10
+shot onmono
+wait 5
+press a 6    # the menu block is written here
+wait 100
+shot mono
+wait 30
+save
+wait 60
+shot final
+# power cycle: load the game again; the core reads the .sav back from the SD card
+load corpus-tmp/mgl/sm64.mgl 10
+wait 600
+press start 6    # back to SELECT FILE after the reset
+wait 200
+shot reloaded

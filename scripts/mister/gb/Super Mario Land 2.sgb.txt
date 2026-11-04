@@ -1,0 +1,19 @@
+load corpus-tmp/mgl/sgb-sml2.mgl 6
+# SGB: the Super Game Boy BIOS boots first (border, logo): 300 frames more than a Game Boy
+wait 300
+# Super Mario Land 2 (MBC1 + 8 KiB battery RAM): the file-select room
+# initialises all three slots; walking Mario into pipe B starts file B, and
+# the game writes that slot as it opens the map.
+wait 400
+press start 6       # title -> the room with pipes A B C
+wait 150
+press right 12      # walk over pipe B
+wait 30
+press down 10       # down the pipe: file B starts
+wait 400
+shot map            # the first map, Mario at the start
+wait 60
+wait 30
+save
+wait 60
+shot final

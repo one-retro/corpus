@@ -1,0 +1,77 @@
+{
+  "method": "downloaded",
+  "system": "ps2",
+  "core": "pcsx2",
+  "url": "https://github.com/PCSX2/pcsx2/files/9874385/punisher_memcards.zip",
+  "source_page": "https://github.com/PCSX2/pcsx2/issues/7166",
+  "source": "GitHub, PCSX2/pcsx2 issue tracker (an attachment to a bug report)",
+  "author": "bizarf",
+  "licence": null,
+  "emulator": "PCSX2 1.7.3398",
+  "posted": "2022-10-26",
+  "fetched": "2026-11-04",
+  "what_it_is": "Two PCSX2 1.7.3398 cards from a Punisher bug report: the 8 MB file card punisher.ps2 (\"has the working save file\") and the folder card punisher folder.ps2/ that the reporter calls corrupted (_pcsx2_superblock, _pcsx2_index, BIZ.pun and deleted-file _N.del entries).",
+  "files": {
+    "punisher.ps2": {
+      "size": 8650752,
+      "sha1": "f96c9a5c08c48572b6126143bbd811fb10fe8043"
+    },
+    "punisher folder.ps2/_pcsx2_superblock": {
+      "size": 8192,
+      "sha1": "75d63bac3d815d9d941d63a10e9bf88a0305e87a"
+    },
+    "punisher folder.ps2/BASLUS-20864vol/BASLUS-20864vol": {
+      "size": 128,
+      "sha1": "3ae2fdc2bf09c44079634f69cc40ceaa8bf91561"
+    },
+    "punisher folder.ps2/BASLUS-20864vol/BIZ.pun": {
+      "size": 29936,
+      "sha1": "e9a2df4db24e83472d7395f4f241ba72a3493bd1"
+    },
+    "punisher folder.ps2/BASLUS-20864vol/_0.del": {
+      "size": 29936,
+      "sha1": "adf63613c273ecdbe8e90bd39364eab98df28528"
+    },
+    "punisher folder.ps2/BASLUS-20864vol/_1.del": {
+      "size": 29936,
+      "sha1": "adf63613c273ecdbe8e90bd39364eab98df28528"
+    },
+    "punisher folder.ps2/BASLUS-20864vol/_2.del": {
+      "size": 29936,
+      "sha1": "adf63613c273ecdbe8e90bd39364eab98df28528"
+    },
+    "punisher folder.ps2/BASLUS-20864vol/_3.del": {
+      "size": 29936,
+      "sha1": "adf63613c273ecdbe8e90bd39364eab98df28528"
+    },
+    "punisher folder.ps2/BASLUS-20864vol/_4.del": {
+      "size": 29936,
+      "sha1": "adf63613c273ecdbe8e90bd39364eab98df28528"
+    },
+    "punisher folder.ps2/BASLUS-20864vol/_5.del": {
+      "size": 29936,
+      "sha1": "adf63613c273ecdbe8e90bd39364eab98df28528"
+    },
+    "punisher folder.ps2/BASLUS-20864vol/_6.del": {
+      "size": 29936,
+      "sha1": "adf63613c273ecdbe8e90bd39364eab98df28528"
+    },
+    "punisher folder.ps2/BASLUS-20864vol/_7.del": {
+      "size": 29936,
+      "sha1": "adf63613c273ecdbe8e90bd39364eab98df28528"
+    },
+    "punisher folder.ps2/BASLUS-20864vol/_pcsx2_index": {
+      "size": 925,
+      "sha1": "31e4948f22654e425b9292debac939d07af6eeb2"
+    },
+    "punisher folder.ps2/BASLUS-20864vol/icon.sys": {
+      "size": 964,
+      "sha1": "9397ecb64aa61b9ce265d10f47c2e0c21c3c7ab5"
+    },
+    "punisher folder.ps2/BASLUS-20864vol/rf_psx2_icon.ico": {
+      "size": 112728,
+      "sha1": "760575929c57d7f2357b0ee793468bea31490753"
+    }
+  },
+  "note": "No licence stated on the page. file card + folder card (_N.del files)"
+}

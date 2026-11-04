@@ -1,0 +1,32 @@
+# BS-X - Sore wa Namae o Nusumareta Machi no Monogatari (the Satellaview base
+# cartridge, 32 KB battery SRAM). Registers the player: name "ああ" (Shift-JIS
+# 82A0 82A0 at $0006, mirrored at $3006, behind an "SG" header and checksum),
+# boy, then the town. Without the satellite the game says ただいま受信して
+# おりません and drops you in the town. A reset then goes straight to the town
+# with no name prompt: the registration was read back from SRAM.
+wait 1500           # Nintendo / BS-X logos
+press start 8
+wait 500            # はじめまして! あなたの名前を教えてください。
+press a 8           # -> the kana grid
+wait 240
+press a 8           # あ
+wait 200
+press a 8           # あ
+wait 200
+press start 8       # cursor to 終了
+wait 200
+press a 8           # done: ああ さんの性別を教えてください
+wait 400
+shot name
+press a 8           # 男の子
+wait 400
+press a 8           # ただいま受信しておりません -> the town
+wait 900
+shot town
+reset
+wait 1500
+press start 8
+wait 500
+press a 8
+wait 900
+shot saved

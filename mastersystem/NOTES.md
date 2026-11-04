@@ -45,9 +45,15 @@ b7ad005, Gearsystem 3.9.24-9-gf1202e8, PicoDrive 2.05-1890c29, SMS Plus GX 1.8 3
 
 (file sizes in bytes; every entry is one `<ROM stem>.srm`, no other files)
 
-Not runnable here, nothing filed: crabemu (standalone), drizzt-sms (openFPGA), emux-sms
-(libretro, no macOS build), mednafen (standalone), megadrive-mister and sms-mister (MiSTer),
-spiritualized-sms (openFPGA). See "Downloads and leads".
+**crabemu** (standalone CrabEmu 0.2.0, under Rosetta, driven by an injected library): 8 entries,
+see STANDALONE.md. Saves are `<rom>.ces`, always 32768 bytes, in its own Application Support
+folder (`ljsdcdev/CrabEmu/SRAM Saves`). CrabEmu fills work RAM with 0xF0 at power-on, and that
+pattern shows up in Monopoly's save; the shared Monopoly script ended on "GAME RESTORED" there,
+so its entry comes from the zero-RAM variant script.
+
+Not runnable here, nothing filed: drizzt-sms and spiritualized-sms (openFPGA), mednafen
+(standalone), sms-mister (MiSTer). emux-sms was built from source since but writes no save
+(BUILT-CORES.md); megadrive-mister plays SMS games on the owner's MiSTer (MISTER.md). See "Downloads and leads".
 
 ## How the cores' files differ
 

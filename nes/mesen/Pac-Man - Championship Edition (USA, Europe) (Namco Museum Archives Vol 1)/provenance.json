@@ -1,0 +1,28 @@
+{
+  "method": "played",
+  "system": "nes",
+  "core": "mesen",
+  "core_file": "mesen_libretro.dylib",
+  "core_name": "Mesen",
+  "core_version": "0.9.9",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Pac-Man - Championship Edition (USA, Europe) (Namco Museum Archives Vol 1).nes",
+    "sha1": "90ab4682c1cfbe78d9e32baff37600b0114f6e74",
+    "size": 262160
+  },
+  "device": null,
+  "script": "scripts/nes/Pac-Man - Championship Edition.txt",
+  "frames": 12488,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Pac-Man - Championship Edition (USA, Europe) (Namco Museum Archives Vol 1).srm": {
+      "size": 8192,
+      "sha1": "b6a4d3911d1857e7bb522602cf685cc903f3c7d5"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

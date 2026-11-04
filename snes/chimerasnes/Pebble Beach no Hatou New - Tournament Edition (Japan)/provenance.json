@@ -1,0 +1,33 @@
+{
+  "method": "played",
+  "system": "snes",
+  "core": "chimerasnes",
+  "core_file": "chimerasnes_libretro.dylib",
+  "core_name": "ChimeraSNES",
+  "core_version": " 04c57c2",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Pebble Beach no Hatou New - Tournament Edition (Japan).sfc",
+    "sha1": "7c84674ce5bed9de224c07d0d99d19c92a39e942",
+    "size": 2097152
+  },
+  "device": null,
+  "script": "scripts/snes/Pebble Beach no Hatou New.txt",
+  "frames": 2552,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Pebble Beach no Hatou New - Tournament Edition (Japan).srm": {
+      "size": 65536,
+      "sha1": "c5ce06cc0fa0b6ae519e22d42dcacea607ff7fdc"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null,
+  "built_from": {
+    "repo": "https://github.com/jamsilva/chimerasnes",
+    "commit": "04c57c2902c25f36ae5a5d9c57aff851a772c868",
+    "build": "make -j8 (platform=osx, arm64), unmodified"
+  }
+}

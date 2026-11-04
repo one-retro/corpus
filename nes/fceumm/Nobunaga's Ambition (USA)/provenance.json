@@ -1,0 +1,28 @@
+{
+  "method": "played",
+  "system": "nes",
+  "core": "fceumm",
+  "core_file": "fceumm_libretro.dylib",
+  "core_name": "FCEUmm",
+  "core_version": "(SVN) e0f3086",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Nobunaga's Ambition (USA).nes",
+    "sha1": "1f7d440085e9bc17fa22b23744d611e69b978c07",
+    "size": 262160
+  },
+  "device": null,
+  "script": "scripts/nes/Nobunaga's Ambition.txt",
+  "frames": 53680,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Nobunaga's Ambition (USA).srm": {
+      "size": 8192,
+      "sha1": "783ec9b580df16e161d67ef88db572fc3b3ae8c3"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

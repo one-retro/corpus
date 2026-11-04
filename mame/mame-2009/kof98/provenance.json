@@ -1,0 +1,41 @@
+{
+  "method": "played",
+  "system": "mame",
+  "core": "mame-2009",
+  "core_file": "mame-2009_libretro.dylib",
+  "core_name": "MAME 2009",
+  "core_version": "0.135 29b38f5",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "kof98.zip",
+    "sha1": "bde244b013e92dff8894d60e5fd21119aa4c5a59",
+    "size": 40445835
+  },
+  "device": null,
+  "script": "scripts/mame/kof98.txt",
+  "frames": 5610,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "mame2009/cfg/default.cfg": {
+      "size": 175,
+      "sha1": "4e398d654043793e0677cef4917b03478508673e"
+    },
+    "mame2009/cfg/kof98.cfg": {
+      "size": 173,
+      "sha1": "2eeda2511935a35d15925611d098b38540f446e6"
+    },
+    "mame2009/nvram/kof98.nv": {
+      "size": 8192,
+      "sha1": "48dc7a77932c358bf864af9f849b2793d4e169dc"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "MAME 2009's MVS BIOS lists COIN1, COIN2, ... under SETTING UP THE CABINET, so the script's cabinet change set COIN2 to 2 COINS = 2 CREDITS rather than CONTINUE; K.O.F.'98's own soft DIPs (PLAY TIME LITTLE FAST, CONTINUE OFF) are as intended and read back after the reset.",
+  "built_from": {
+    "repo": "https://github.com/libretro/mame2009-libretro",
+    "commit": "29b38f53013e02af7840fdca9bdaba9710e8b232",
+    "build": "git show HEAD:Makefile > libretro-Makefile.mk (the repo holds both Makefile and makefile, which collide on a case-insensitive disk; the libretro build file is Makefile); make -f libretro-Makefile.mk platform=osx PTR64=1 FORCE_DRC_C_BACKEND=1 ARM_ENABLED=1 ARFLAGS=-crs AR=<sh wrapper that writes an empty archive when given no members, as GNU ar does> CC=\"cc -DSDLMAME_NO64BITIO -Wno-error=implicit-function-declaration -Wno-error=int-conversion -Wno-error=incompatible-function-pointer-types -Wno-error=incompatible-pointer-types\" NATIVECC=cc -j14. No source edits; the osx section of the Makefile (CC = c++ for C sources, x64 DRC, no ARFLAGS) cannot build on arm64 with current clang, so these variables are overridden on the command line."
+  }
+}

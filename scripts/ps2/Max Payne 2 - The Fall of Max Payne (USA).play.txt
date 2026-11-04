@@ -1,0 +1,17 @@
+# Max Payne 2 - The Fall of Max Payne (USA), SLUS-20814, DVD. Play! variant.
+# Play!'s card is a host directory that is always "formatted", so the game asks instead
+# "No Max Payne 2 savegame folder found ... create a Max Payne 2 savegame folder? Yes/No"
+# (the same presses). That prompt shows 1800-4500 frames after power-on in Play! and then
+# times out back into the intro, so the shared wait of 5000 misses it.
+# At power-on the game asks to format the unformatted card, then creates its whole
+# save folder by itself ("Creating savegame folder"): options plus six empty 150 KiB
+# save slots and three icons, about 1.1 MiB.
+wait 3000
+shot prompt          # "... is unformatted. Do you wish to format ...? Yes / No"
+press up 10          # Yes
+wait 60
+press b 10
+wait 300
+shot creating        # "Creating savegame folder."
+wait 900
+shot menu            # main menu, Load now enabled

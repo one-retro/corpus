@@ -1,0 +1,27 @@
+load corpus-tmp/mgl/lbowling.mgl 5
+# MiSTer variant: boot waits +500 frames (UniBIOS splash and loading).
+# League Bowling (MVS: backup RAM, plus the memory card): insert a coin and start a
+# REGULATION game. Before the first frame the game asks "MEMORY CARD SAVE" with
+# YES picked; when its timer runs out it saves "BOWLING 1P" to the card (the MVS
+# BIOS formats a blank card itself). Bowl a few frames untouched, then power-cycle
+# and start again to see the game offer the card. Neo Geo A is RetroPad b.
+wait 1800
+press l 6    # coin
+wait 120
+press start 6
+wait 4700              # SELECT GAME, PLAYER 1, MEMORY CARD SAVE runs out (saved),
+                       # then the game bowls on its own
+shot bowled
+# power cycle; a new game offers to load the card
+wait 30
+save
+wait 60
+shot final
+# power cycle: load the game again; the core reads the .sav back from the SD card
+load corpus-tmp/mgl/lbowling.mgl 5
+wait 1800
+press l 6
+wait 120
+press start 6
+wait 1150
+shot cardload          # MEMORY CARD LOAD: YES

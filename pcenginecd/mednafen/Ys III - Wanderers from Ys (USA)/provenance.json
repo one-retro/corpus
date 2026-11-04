@@ -1,0 +1,33 @@
+{
+  "method": "played",
+  "system": "pcenginecd",
+  "core": "mednafen",
+  "core_file": null,
+  "core_name": "Mednafen",
+  "core_version": "1.32.1",
+  "frontend": "Mednafen 1.32.1 (Homebrew), module 'pce', isolated MEDNAFEN_HOME, -sound 0 -video.glvsync 0",
+  "rom": {
+    "name": "Ys III - Wanderers from Ys (NA).chd",
+    "size": 452772932,
+    "sha1": "20814fb0f0276a8460a6b19be1e7b35342c829db"
+  },
+  "script": "scripts/pcenginecd/Ys III - Wanderers from Ys.txt",
+  "frames": 11556,
+  "options": null,
+  "input": "work/standalone/tools/sdlfeed.c (DYLD_INSERT_LIBRARIES into the ad-hoc-signed Homebrew binary): SDL key events synthesized inside the process on presented frames, from the retro-run script mapped to Mednafen's default keys (gen_sdlfeed.py: a = I, b = II, start = RUN, select = SELECT); F9 snapshot for shot, F10 reset, F12 exit (Mednafen writes saves on exit)",
+  "started_from": null,
+  "files": {
+    "Ys III - Wanderers from Ys (NA).96b74de28511c5996db737f0c986306b.sav": {
+      "size": 2048,
+      "sha1": "3fcff0efb60940ad914dfceef8944c94a92ee4c3"
+    }
+  },
+  "layout": {
+    "save_dir": "$MEDNAFEN_HOME/sav (default .mednafen/sav in the home folder)",
+    "name": "<cue file name without extension>.<the CD layout MD5 Mednafen logs at load>.sav (filesys.fname_sav %f.%M%x)",
+    "content": "the CD-ROM2 backup RAM (BRAM), 2048 bytes, raw",
+    "written": "on exit, if anything wrote to the BRAM: a run that sat 330 frames on the System Card screen left no file"
+  },
+  "created": "2026-11-04",
+  "note": "Mednafen 1.32.1 cannot open CHD. It loaded Ys III - Wanderers from Ys (NA).cue/.bin, extracted from Ys III - Wanderers from Ys (NA).chd (the dump the libretro entries used, sha1 above) with chdman extractcd, and named the save after the cue. Module pce, System Card 3.0 (Japan) as syscard3.pce (the pce.cdbios default, as in the libretro cores). The BRAM header is HUBM with end pointer 0x8800, as in beetle-pce/beetle-pce-fast. Byte-identical to the beetle-pce and beetle-pce-fast entries; differs from geargrafx only at offset 5 (its end pointer 0xA0)."
+}

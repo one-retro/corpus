@@ -135,3 +135,19 @@ data. What the sources say:
   Master 2 to a DSK).
 - **boogermann-msx** (opengateware/computer-msx 0.9.2, Pocket): no nonvolatile slot in
   `data.json`, `sleep_supported: false`, disk and cassette not implemented: it saves nothing.
+
+## msx-mister and msx1-mister on the owner's MiSTer (2026-11-04)
+
+Checked on the device (MSX_20260603.rbf, MSX1_20250108.rbf), nothing filed:
+
+- **msx1-mister** (MSX1_20250108, `main` branch): its CONF_STR has no backup-RAM option and only
+  one SD image, the `.DSK` drive (written in place). Loaded by MGL with the blueMSX `MSX.ROM` as
+  BIOS (file index 1, `P2F1,ROM,Load BIOS`) and Hydlide II in slot A (index 2), the core gave no
+  picture (the scaler screenshots were 1x1) and no `saves/MSX1/` folder was created. The device has
+  no MSX1 BIOS set up (`games/MSX1/` is empty), so the core may simply not have started; not
+  pursued, since the build has no save path for cartridge SRAM anyway (Game Master 2's SRAM lives
+  in FPGA memory only, as the source says).
+- **msx-mister** (the OCM/1chipMSX port) was not run: it boots only from a FAT16 VHD with
+  OCM-BIOS and MSX-DOS (none on the device; `games/MSX/` is empty), and the VHD is the only thing
+  it ever writes. Cartridge ROMs run from the VHD through loaders, into MegaSCC+/MegaRAM, which are
+  RAM without a battery: there is no cartridge-SRAM save to make. The same holds for MSX2.

@@ -30,6 +30,7 @@
 #include <strings.h>
 #include <sys/stat.h>
 #include <sys/time.h>
+#include <time.h>
 #include <zlib.h>
 
 #ifdef __APPLE__
@@ -47,6 +48,46 @@ struct retro_game_info {
     size_t size;
     const char *meta;
 };
+struct retro_subsystem_memory_info { const char *extension; unsigned type; };
+struct retro_subsystem_rom_info {
+    const char *desc, *valid_extensions;
+    bool need_fullpath, block_extract, required;
+    const struct retro_subsystem_memory_info *memory;
+    unsigned num_memory;
+};
+struct retro_subsystem_info {
+    const char *desc, *ident;
+    const struct retro_subsystem_rom_info *roms;
+    unsigned num_roms, id;
+};
+#define MAX_SUBSYS 16
+#define MAX_SLOTS 8
+static struct retro_subsystem_info subsys[MAX_SUBSYS];
+static struct retro_subsystem_rom_info subsys_roms[MAX_SUBSYS][MAX_SLOTS];
+static unsigned n_subsys = 0;
+static const struct retro_subsystem_info *subsys_used = NULL;
+static const char *slot_paths[MAX_SLOTS];
+static unsigned n_slots = 0;
+static unsigned subsys_id_override = 0;
+static void keep_subsystems(const struct retro_subsystem_info *s) {
+    n_subsys = 0;
+    for (; s && s->ident && n_subsys < MAX_SUBSYS; s++, n_subsys++) {
+        subsys[n_subsys] = *s;
+        subsys[n_subsys].desc = s->desc ? strdup(s->desc) : NULL;
+        subsys[n_subsys].ident = strdup(s->ident);
+        for (unsigned r = 0; r < s->num_roms && r < MAX_SLOTS; r++) {
+            subsys_roms[n_subsys][r] = s->roms[r];
+            struct retro_subsystem_memory_info *m = calloc(s->roms[r].num_memory + 1, sizeof *m);
+            for (unsigned j = 0; j < s->roms[r].num_memory; j++) {
+                m[j].type = s->roms[r].memory[j].type;
+                m[j].extension = strdup(s->roms[r].memory[j].extension);
+            }
+            subsys_roms[n_subsys][r].memory = m;
+            subsys_roms[n_subsys][r].desc = s->roms[r].desc ? strdup(s->roms[r].desc) : "";
+        }
+        subsys[n_subsys].roms = subsys_roms[n_subsys];
+    }
+}
 struct retro_system_info {
     const char *library_name, *library_version, *valid_extensions;
     bool need_fullpath, block_extract;
@@ -524,11 +565,13 @@ static bool cb_env(unsigned cmd, void *data) {
     case ENV_SHUTDOWN:
         shutdown_requested = true;
         return true;
+    case ENV_SET_SUBSYSTEM_INFO:
+        keep_subsystems(data);
+        return true;
     case ENV_SET_ROTATION:
     case ENV_SET_PERFORMANCE_LEVEL:
     case ENV_SET_INPUT_DESCRIPTORS:
     case ENV_SET_SUPPORT_NO_GAME:
-    case ENV_SET_SUBSYSTEM_INFO:
     case ENV_SET_CONTROLLER_INFO:
     case ENV_SET_MEMORY_MAPS:
     case ENV_SET_SUPPORT_ACHIEVEMENTS:
@@ -827,6 +870,7 @@ done:
     X(void, retro_get_system_info, (struct retro_system_info *))                         \
     X(bool, retro_load_game, (const struct retro_game_info *))                           \
     X(void, retro_unload_game, (void))                                                   \
+    X(bool, retro_load_game_special, (unsigned, const struct retro_game_info *, size_t))   \
     X(void, retro_get_system_av_info, (struct retro_system_av_info *))                   \
     X(void, retro_run, (void))                                                           \
     X(void, retro_reset, (void))                                                         \
@@ -858,8 +902,26 @@ static void bind_core(const char *path) {
 
 // --- running ------------------------------------------------------------
 
+// --pace FPS: run at most FPS frames per wall-clock second. For cores whose
+// emulation runs on its own thread at real-time speed and whose retro_run returns at once
+// (ARMSX2 with its Null GS), so that script frames map to the emulator's frames.
+static double pace_fps = 0;
+static double pace_t0 = -1;
+static double wall(void) { struct timeval tv; gettimeofday(&tv, NULL); return tv.tv_sec + tv.tv_usec / 1e6; }
+
+static void pace(void) {
+    if (pace_fps <= 0) return;
+    if (pace_t0 < 0) pace_t0 = wall() - frame_no / pace_fps;
+    double due = pace_t0 + frame_no / pace_fps, now = wall();
+    if (due > now) {
+        struct timespec ts = {(time_t)(due - now), (long)((due - now - (time_t)(due - now)) * 1e9)};
+        nanosleep(&ts, NULL);
+    }
+}
+
 static void run_frames(long n) {
     for (long i = 0; i < n && !shutdown_requested; i++) {
+        pace();
         if (have_frame_time_cb) frame_time_cb.callback(frame_time_cb.reference);
         if (have_audio_cb) audio_cb.callback();
 #ifdef HAVE_CGL
@@ -1217,8 +1279,36 @@ static void run_lines(int from, int to) {
 
 static char stem[1024];
 
+static void slot_stem(const char *p, char *out, size_t n) {
+    const char *b = strrchr(p, '/');
+    b = b ? b + 1 : p;
+    snprintf(out, n, "%s", b);
+    char *dot = strrchr(out, '.');
+    if (dot && dot != out) *dot = 0;
+}
+
 static void write_saves(void) {
     char path[2048];
+    if (subsys_used) {
+        // RetroArch (runloop_path_init_subsystem): one file per memory of each
+        // loaded slot, named after that slot's file; no .srm/.rtc of its own.
+        for (unsigned i = 0; i < n_slots && i < subsys_used->num_roms; i++) {
+            const struct retro_subsystem_rom_info *r = &subsys_used->roms[i];
+            char st[1024];
+            slot_stem(slot_paths[i], st, sizeof st);
+            for (unsigned j = 0; j < r->num_memory; j++) {
+                void *d = retro_get_memory_data(r->memory[j].type);
+                size_t n = retro_get_memory_size(r->memory[j].type);
+                if (!d || !n) {
+                    note("  slot %u memory 0x%x (%s): none\n", i, r->memory[j].type, r->memory[j].extension);
+                    continue;
+                }
+                snprintf(path, sizeof path, "%s/%s.%s", savedir, st, r->memory[j].extension);
+                if (write_file(path, d, n)) note("  wrote %s (%zu bytes, memory 0x%x)\n", path, n, r->memory[j].type);
+            }
+        }
+        return;
+    }
     struct {
         unsigned id;
         const char *ext;
@@ -1249,7 +1339,15 @@ static void usage(const char *argv0) {
             "  --script FILE    commands to run, or - for stdin\n"
             "  --no-write       do not write .srm/.rtc on exit\n"
             "  --no-hw          refuse a hardware-rendered context\n"
-            "  --pad2           plug the same device into port 2 as well\n"
+            "  --pad2           plug the --device pad into port 2 as well (default: a joypad)\n"
+            "  --ports N        ports to plug a pad into (default 2; RetroArch plugs one into\n"
+            "                   every port; 1 is the old behaviour of port 1 only)\n"
+            "  --pace FPS       run at most FPS frames per wall-clock second (cores that\n"
+            "                   emulate on their own real-time thread, e.g. ARMSX2)\n"
+            "  --subsystem ID   load ROM plus --slot FILE... through retro_load_game_special\n"
+            "                   (Sufami Turbo, ...); saves are named after each slot's file\n"
+            "  --slot FILE      a further subsystem slot, in order (- leaves it empty)\n"
+            "  --list-subsystems  print the core's subsystems and exit\n"
             "  --device ID      libretro device for the pads (default 1, joypad; a\n"
             "                   DualShock is usually 0x305, analog subclass 2)\n"
             "  --quiet          only report errors\n"
@@ -1289,7 +1387,11 @@ static void usage(const char *argv0) {
 int main(int argc, char **argv) {
     const char *rom = NULL, *srm = NULL, *rtc = NULL, *state = NULL, *script = NULL;
     const char *options = NULL, *info = NULL;
+    const char *subsystem = NULL, *slot_extra[MAX_SLOTS];
+    unsigned n_extra = 0;
+    bool list_subsystems = false;
     bool no_write = false, pad2 = false;
+    unsigned ports = 2;
     unsigned device = DEV_JOYPAD;
     for (int i = 1; i < argc; i++) {
         if (!strcmp(argv[i], "--core") && i + 1 < argc) core_path = argv[++i];
@@ -1306,9 +1408,15 @@ int main(int argc, char **argv) {
         else if (!strcmp(argv[i], "--script") && i + 1 < argc) script = argv[++i];
         else if (!strcmp(argv[i], "--no-write")) no_write = true;
         else if (!strcmp(argv[i], "--no-hw")) want_hw = false;
+        else if (!strcmp(argv[i], "--pace") && i + 1 < argc) pace_fps = atof(argv[++i]);
         else if (!strcmp(argv[i], "--pad2")) pad2 = true;
+        else if (!strcmp(argv[i], "--ports") && i + 1 < argc) ports = (unsigned)strtoul(argv[++i], NULL, 0);
         else if (!strcmp(argv[i], "--device") && i + 1 < argc) device = (unsigned)strtoul(argv[++i], NULL, 0);
         else if (!strcmp(argv[i], "--quiet")) quiet = true;
+        else if (!strcmp(argv[i], "--subsystem") && i + 1 < argc) subsystem = argv[++i];
+        else if (!strcmp(argv[i], "--slot") && i + 1 < argc && n_slots + 1 < MAX_SLOTS) slot_extra[n_extra++] = argv[++i];
+        else if (!strcmp(argv[i], "--list-subsystems")) list_subsystems = true;
+        else if (!strcmp(argv[i], "--subsystem-id") && i + 1 < argc) subsys_id_override = (unsigned)strtoul(argv[++i], NULL, 0);
         else if (!strcmp(argv[i], "-h") || !strcmp(argv[i], "--help")) {
             usage(argv[0]);
             return 0;
@@ -1346,8 +1454,54 @@ int main(int argc, char **argv) {
     retro_set_input_poll(cb_input_poll);
     retro_set_input_state(cb_input_state);
 
-    struct retro_game_info gi = {.path = rom, .data = NULL, .size = 0, .meta = NULL};
     void *rd = NULL;
+    if (list_subsystems) {
+        for (unsigned s = 0; s < n_subsys; s++) {
+            printf("subsystem %s (\"%s\", id 0x%x)\n", subsys[s].ident, subsys[s].desc ? subsys[s].desc : "", subsys[s].id);
+            for (unsigned r = 0; r < subsys[s].num_roms; r++) {
+                const struct retro_subsystem_rom_info *ri = &subsys[s].roms[r];
+                printf("  slot %u: %s [%s]%s%s\n", r, ri->desc, ri->valid_extensions ? ri->valid_extensions : "",
+                       ri->required ? " required" : "", ri->need_fullpath ? " fullpath" : "");
+                for (unsigned j = 0; j < ri->num_memory; j++)
+                    printf("    memory .%s type 0x%x\n", ri->memory[j].extension, ri->memory[j].type);
+            }
+        }
+        if (!n_subsys) printf("no subsystems\n");
+        return 0;
+    }
+    if (subsystem) {
+        for (unsigned s = 0; s < n_subsys; s++)
+            if (!strcmp(subsys[s].ident, subsystem) || (subsys[s].desc && !strcmp(subsys[s].desc, subsystem)))
+                subsys_used = &subsys[s];
+        if (!subsys_used) {
+            fprintf(stderr, "the core has no subsystem %s\n", subsystem);
+            return 1;
+        }
+        slot_paths[n_slots++] = rom;
+        for (unsigned k = 0; k < n_extra; k++) slot_paths[n_slots++] = slot_extra[k];
+        struct retro_game_info sgi[MAX_SLOTS];
+        void *sdata[MAX_SLOTS] = {0};
+        for (unsigned k = 0; k < n_slots; k++) {
+            sgi[k] = (struct retro_game_info){.path = slot_paths[k], .data = NULL, .size = 0, .meta = NULL};
+            if (!strcmp(slot_paths[k], "-")) { sgi[k].path = NULL; continue; }
+            if (!subsys_used->roms[k].need_fullpath) {
+                size_t rn = 0;
+                sdata[k] = read_file(slot_paths[k], &rn);
+                if (!sdata[k]) { perror(slot_paths[k]); return 1; }
+                sgi[k].data = sdata[k];
+                sgi[k].size = rn;
+            }
+        }
+        unsigned gtype = subsys_id_override ? subsys_id_override : subsys_used->id;
+        note("  retro_load_game_special(0x%x, %u files)\n", gtype, n_slots);
+        if (!retro_load_game_special(gtype, sgi, n_slots)) {
+            fprintf(stderr, "the core refused subsystem %s\n", subsystem);
+            return 1;
+        }
+        note("  loaded subsystem %s with %u files\n", subsys_used->ident, n_slots);
+        goto loaded;
+    }
+    struct retro_game_info gi = {.path = rom, .data = NULL, .size = 0, .meta = NULL};
     if (!si.need_fullpath) {
         size_t rn = 0;
         rd = read_file(rom, &rn);
@@ -1362,8 +1516,13 @@ int main(int argc, char **argv) {
         fprintf(stderr, "the core refused %s\n", rom);
         return 1;
     }
-    retro_set_controller_port_device(0, device);
-    if (pad2) retro_set_controller_port_device(1, device);
+loaded:
+    // RetroArch plugs a pad into every port up to its user count; some cores (bsnes-jg)
+    // crash when port 2 has nothing. Port 1 gets --device; the others a joypad, or
+    // --device too with --pad2.
+    if (pad2 && ports < 2) ports = 2;
+    for (unsigned p = 0; p < ports && p < 8; p++)
+        retro_set_controller_port_device(p, p == 0 || pad2 ? device : 1);
 
     retro_get_system_av_info(&av);
 #ifdef HAVE_CGL

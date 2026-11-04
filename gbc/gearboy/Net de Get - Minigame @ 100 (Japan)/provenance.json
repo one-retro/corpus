@@ -1,0 +1,28 @@
+{
+  "method": "played",
+  "system": "gbc",
+  "core": "gearboy",
+  "core_file": "gearboy_libretro.dylib",
+  "core_name": "Gearboy",
+  "core_version": "3.8.20-8-g37d0bf3",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Net de Get - Minigame @ 100 (Japan).gbc",
+    "sha1": "819efde3ebd0f52b080a8307979803914d029035",
+    "size": 1048576
+  },
+  "device": null,
+  "script": "scripts/gbc/Net de Get - Minigame @ 100.txt",
+  "frames": 8734,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Net de Get - Minigame @ 100 (Japan).srm": {
+      "size": 1081601,
+      "sha1": "e47c27ef3e3b184b39dd7cfd76278b190e9d0d4e"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

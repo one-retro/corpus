@@ -1,0 +1,28 @@
+{
+  "method": "played",
+  "system": "snes",
+  "core": "mesen-s",
+  "core_file": "mesen2_libretro.dylib",
+  "core_name": "Mesen2",
+  "core_version": "2.0.0",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Hayazashi Nidan Morita Shougi (Japan).sfc",
+    "sha1": "82b4bca58918a18707f932ec6afc0a12a3c4b872",
+    "size": 524288
+  },
+  "device": null,
+  "script": "scripts/snes/Hayazashi Nidan Morita Shougi.txt",
+  "frames": 9262,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Hayazashi Nidan Morita Shougi (Japan).srm": {
+      "size": 4096,
+      "sha1": "db432c46113c1252da6b7cd7f820a52e9c44e34e"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "The ST011 runs its own program here: the system directory held st011.program.rom and st011.data.rom (the No-Intro \"ST011 (Enhancement Chip)\" dump split at 0xC000) and the whole dump as st011.rom. The .srm is the ST011's 4 KB data RAM."
+}

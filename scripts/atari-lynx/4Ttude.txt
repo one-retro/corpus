@@ -1,0 +1,26 @@
+# 4Ttude (Nop90 and MARSS, 2019, freeware): a 3D four-in-a-row game that keeps
+# three ranked slots and its options in a 93C46 cart EEPROM (128 bytes; the LNX
+# header says so). It formats a blank chip at boot ("TTTT" and the default
+# options), which is not a save. Here: Play vs CPU in save slot 1 at CPU
+# strength 0 and drop four pieces in a row to win: the result goes into slot 1's
+# record in the EEPROM, and the game shows the slot's chart. Lynx A selects.
+wait 1200
+press a 6           # PLAY VS CPU
+wait 200            # SELECT A SAVE SLOT: Slot 1
+press a 6
+wait 200            # SELECT THE CPU STRENGTH: 1
+press left 6        # 0 (weak)
+wait 30
+press a 6           # start the game
+wait 300
+repeat 4            # drop a piece, let the CPU answer, move one column right
+press a 6
+wait 200
+press right 6
+wait 20
+end
+wait 120
+shot win            # You win
+press a 6           # the ranked result is written; slot 1's chart follows
+wait 300
+shot saved          # Slot 1, Rank 0, Games 1

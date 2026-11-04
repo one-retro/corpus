@@ -1,0 +1,34 @@
+{
+  "method": "played",
+  "system": "gb",
+  "core": "sgb-mister",
+  "core_file": "SGB_20260802.rbf",
+  "core_name": "SGB_MiSTer",
+  "core_version": "20260802",
+  "frontend": "mister",
+  "device": "the owner's MiSTer (DE10-Nano), Main_MiSTer binary of 2026-10-19",
+  "loaded_with": "MGL via /dev/MiSTer_cmd load_core (_Console/SGB, file type f index 1)",
+  "save_folder": "saves/SGB",
+  "rom": {
+    "name": "Final Fantasy Adventure (USA).gb",
+    "sha1": "8b93c55ee2660c60cf86dd70058f96ace98782c8",
+    "size": 262144
+  },
+  "script": "scripts/gb/Final Fantasy Adventure.txt",
+  "mister_script": "scripts/mister/gb/Final Fantasy Adventure.sgb.txt",
+  "frames": 2702,
+  "timing": "real time: script frames played as wall-clock 1/60 s by work/mister/mrun.py",
+  "options": {
+    "config/SGB.CFG": "Autosave On (status bit 23), every other option at its default; written for the run and removed after"
+  },
+  "save_trigger": "OSD opened (F12 from a uinput keyboard) with Autosave on: the core writes its backup RAM to the SD card",
+  "started_from": null,
+  "files": {
+    "Final Fantasy Adventure (USA).sav": {
+      "size": 1024,
+      "sha1": "326a0d7b5859c1021290985c6b13d7947eab213d"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "Super Game Boy core (SGB BIOS 'Super Game Boy (World) (Rev 2).sfc' loaded first by the MGL, file index 4; config/SGB.f4 removed after). MBC2: saves/SGB/<rom>.sav, 1024 bytes: the 512 nibbles one per byte, written ones with the high nibble 0 (their low nibbles equal Gambatte's), the 264 never-written ones FF, then 512 bytes of FF (Main's fill: the core reloads the save after the game loads, so no seed). The Gameboy_MiSTer entry, from a zero seed, has 00 in those 776 bytes. Config: config/SGB.CFG with only Autosave On (status bit 23), written for the run and removed. Script scripts/gb/Final Fantasy Adventure.txt with 300 frames more after the load (SGB BIOS intro)."
+}

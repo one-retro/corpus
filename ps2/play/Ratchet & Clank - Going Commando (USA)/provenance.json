@@ -1,0 +1,57 @@
+{
+  "method": "played",
+  "system": "ps2",
+  "core": "play",
+  "core_file": "play_libretro.dylib",
+  "core_name": "Play!",
+  "core_version": "0.77-17-g1f27232",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "runner": "ps2-save.py: make-save.py with a fresh system directory and HOME per run (PS2 cores write their cards there); see ps2/NOTES.md",
+  "renderer": "opengl",
+  "rom": {
+    "name": "Ratchet & Clank - Going Commando (USA).iso",
+    "sha1": "f2cfaf0eb12b3c0d8fd6db7aa49ce032e8a6020b",
+    "size": 3828350976
+  },
+  "bios": null,
+  "device": null,
+  "script": "scripts/ps2/Ratchet & Clank - Going Commando (USA).txt",
+  "frames": 4540,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "home/Documents/Play Data Files/vfs/mc0/BASCUS-97268RATCHET/BASCUS-97268RATCHET": {
+      "size": 55300,
+      "sha1": "1b51d4492b8b0ef81ef072371c7b944a460c465d"
+    },
+    "home/Documents/Play Data Files/vfs/mc0/BASCUS-97268RATCHET/icon.sys": {
+      "size": 964,
+      "sha1": "f48a7a991b3d2783a6d825c7e4ec0da3cae660c7"
+    },
+    "home/Documents/Play Data Files/vfs/mc0/BASCUS-97268RATCHET/save0.bin": {
+      "size": 99264,
+      "sha1": "90f4593bc92ae783d8cd7e95cbebe30b26aa891a"
+    },
+    "home/Documents/Play Data Files/vfs/mc0/BASCUS-97268RATCHET/save1.bin": {
+      "size": 99264,
+      "sha1": "6de30277c7713cb0ab12ded0298423f68efbb05b"
+    },
+    "home/Documents/Play Data Files/vfs/mc0/BASCUS-97268RATCHET/save2.bin": {
+      "size": 99264,
+      "sha1": "6de30277c7713cb0ab12ded0298423f68efbb05b"
+    },
+    "home/Documents/Play Data Files/vfs/mc0/BASCUS-97268RATCHET/save3.bin": {
+      "size": 99264,
+      "sha1": "6de30277c7713cb0ab12ded0298423f68efbb05b"
+    },
+    "home/Documents/Play Data Files/vfs/mc0/BASCUS-97268RATCHET/static.ico": {
+      "size": 26134,
+      "sha1": "cd719bc12d7fa82aae767c0b5b7b0d5b9900170a"
+    }
+  },
+  "also_written_not_filed": [
+    "home/Documents/Play Data Files/config.xml"
+  ],
+  "created": "2026-11-04",
+  "note": "Ratchet & Clank (USA) hangs in Play! at the end of its intro, so this card starts empty."
+}

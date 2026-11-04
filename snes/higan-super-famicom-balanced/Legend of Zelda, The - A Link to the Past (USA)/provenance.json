@@ -1,0 +1,33 @@
+{
+  "method": "played",
+  "system": "snes",
+  "core": "higan-super-famicom-balanced",
+  "core_file": "higan-super-famicom-balanced_libretro.dylib",
+  "core_name": "higan (Super Famicom Balanced)",
+  "core_version": "106.25",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Legend of Zelda, The - A Link to the Past (USA).sfc",
+    "sha1": "6d4f10a8b10e10dbe624cb23cf03b88bb8252973",
+    "size": 1048576
+  },
+  "device": null,
+  "script": "scripts/snes/Legend of Zelda, The - A Link to the Past.txt",
+  "frames": 1830,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Legend of Zelda, The - A Link to the Past (USA).srm": {
+      "size": 8192,
+      "sha1": "108c0d4acc0517f9697ba39a1632c5c1156c798e"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "The core stops with SIGTRAP in retro_deinit (Program::~Program), after the run, the save write and retro_unload_game; make-save.py counts the non-zero exit as a failure, so this entry was filed from the run directory by the same rules.",
+  "built_from": {
+    "repo": "https://github.com/libretro/nSide",
+    "commit": "5b2b5da3a9654d88b2e51fb7a1637808ac601a18",
+    "build": "make -C nSide target=libretro binary=library platform=macos compiler=clang++ -j12 (the repo's .gitlab-ci.yml osx-arm64 job), unmodified"
+  }
+}

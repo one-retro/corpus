@@ -1,0 +1,29 @@
+{
+  "method": "played",
+  "system": "atari-2600",
+  "core": "stella-2023",
+  "core_file": "stella2023_libretro.dylib",
+  "core_name": "Stella 2023",
+  "core_version": "7.0_pre ba52c43",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Grizzards.NTSC.a26",
+    "sha1": "9da6bb4f96ca147835a34377e2d6d8a55142828c",
+    "size": 65536
+  },
+  "rom_source": "https://github.com/brpocock/grizzards/releases/download/v1.1/Grizzards.NTSC.a26",
+  "device": null,
+  "script": "scripts/atari-2600/Grizzards.txt",
+  "frames": 4968,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "cwd/savekey_eeprom.dat": {
+      "size": 32768,
+      "sha1": "6c7cb6a03c4cad6726295f4c84ae3d8d9a5c13a6"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "Homebrew, freely distributed by its author. The SaveKey is filed under cwd/: this core writes savekey_eeprom.dat into the frontend's working directory when the game is unloaded, not into the save directory."
+}

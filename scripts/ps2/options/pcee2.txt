@@ -1,0 +1,2 @@
+# PCEE2: its software renderer still presents through Vulkan (no MoltenVK here); Metal works headless.
+pcsx2_renderer = metal

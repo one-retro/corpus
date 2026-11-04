@@ -1,0 +1,32 @@
+{
+  "method": "played",
+  "system": "neogeo",
+  "core": "neogeo-mister",
+  "core_file": "NeoGeo_20260603.rbf",
+  "core_name": "NeoGeo_MiSTer",
+  "core_version": "20260603",
+  "frontend": "mister",
+  "device": "the owner's MiSTer (DE10-Nano), Main_MiSTer binary of 2026-10-19",
+  "loaded_with": "MGL via /dev/MiSTer_cmd load_core (_Console/NeoGeo, file type f index 1)",
+  "save_folder": "saves/NEOGEO",
+  "rom": {
+    "name": "kof98.neo"
+  },
+  "script": "scripts/neogeo/kof98.txt",
+  "mister_script": "scripts/mister/neogeo/kof98.neogeo.txt",
+  "frames": 3020,
+  "timing": "real time: script frames played as wall-clock 1/60 s by work/mister/mrun.py",
+  "options": {
+    "config/NEOGEO.CFG": "16 bytes, status bits 1 (System Type Arcade(MVS)), 7 ([DIP] Settings ON), 22 (BIOS Original) and 24 (Autosave On) set, every other option at its default. Original BIOS in MVS mode is games/NeoGeo/sp-s2.sp1 (NEO-GEO MVS SYSTEM (ASIA/S3) Ver. 6). The owner's config/NEOGEO.CFG (MVS, UniBIOS, Autosave off) was replaced for the run and restored byte-identical, with its mtime, after it"
+  },
+  "save_trigger": "OSD opened (F12 from a uinput keyboard) with Autosave on: the core writes its backup RAM to the SD card",
+  "started_from": null,
+  "files": {
+    "kof98.sav": {
+      "size": 73728,
+      "sha1": "ecd570ff5ab9ee11ea0d818a4640b88eccd0236e"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "MVS setting mode with the original MVS BIOS (not UniBIOS), backup RAM: soft DIPs. ROM: the Geolith set's .neo, copied to corpus-tmp as kof98.neo. Script: scripts/neogeo/kof98.txt with boot waits +300 frames. This BIOS's SETTING UP THE CABINET lists COIN1, COIN2, GAME SELECT...: the script's second line changed COIN2 to 2COINS=2CREDITS (FBNeo's MVS USA BIOS has CONTINUE there); the K.O.F.'98 slot: PLAY TIME LITTLE FAST, CONTINUE OFF, read back after the reload (proof). The card region holds no formatted card: every 16-bit word of the 2 KiB card reads back its own address (00 00 00 04 00 08 ... unswapped), the BIOS's card probe; the rest of the 8 KiB region is FF."
+}

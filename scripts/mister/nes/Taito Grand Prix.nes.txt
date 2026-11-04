@@ -1,0 +1,31 @@
+load corpus-tmp/mgl/taitogp2.mgl 6
+# Taito Grand Prix - Eikou e no License (Japan): Taito X1-005 (mapper 80), the save is the mapper's
+# own 128 bytes of battery-backed RAM.
+# NORMAL -> なまえ とうろく: racer "ああああ", SELECT moves the arrow to とうろく, A registers.
+# Proof: after a reset, PLAY SELECT lists レーサー ああああ, NORMAL RACE RANK D, 10万円.
+wait 900
+press start           # title: NORMAL
+wait 600
+shot select
+press a               # なまえ とうろく
+wait 400
+repeat 4              # ああああ
+press a
+wait 120
+end
+shot name
+press select          # the arrow to とうろく
+wait 120
+press a               # register
+wait 600
+shot registered
+wait 30
+save
+wait 60
+shot final
+# power cycle: load the game again; the core reads the .sav back from the SD card
+load corpus-tmp/mgl/taitogp2.mgl 6
+wait 900
+press start
+wait 600
+shot racer

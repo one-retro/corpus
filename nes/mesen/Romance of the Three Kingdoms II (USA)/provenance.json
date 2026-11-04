@@ -1,0 +1,28 @@
+{
+  "method": "played",
+  "system": "nes",
+  "core": "mesen",
+  "core_file": "mesen_libretro.dylib",
+  "core_name": "Mesen",
+  "core_version": "0.9.9",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Romance of the Three Kingdoms II (USA).nes",
+    "sha1": "6dda2577ea9fd655156c8cf80c18f55e28fc65c7",
+    "size": 524304
+  },
+  "device": null,
+  "script": "scripts/nes/Romance of the Three Kingdoms II.txt",
+  "frames": 25856,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Romance of the Three Kingdoms II (USA).srm": {
+      "size": 33792,
+      "sha1": "bfc8202459110586d86051d818accbf8c28d177c"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

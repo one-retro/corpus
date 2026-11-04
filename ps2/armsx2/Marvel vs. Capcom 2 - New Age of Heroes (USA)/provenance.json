@@ -1,0 +1,48 @@
+{
+  "method": "played",
+  "system": "ps2",
+  "core": "armsx2",
+  "core_file": "armsx2_libretro.dylib",
+  "core_name": "ARMSX2",
+  "core_version": "720f409f",
+  "frontend": "retro-run (writes saves as RetroArch does); patched with --pace 60 (frames paced to wall-clock: the core emulates on its own thread and retro_run returns at once)",
+  "runner": "ps2-save.py: make-save.py with a fresh system directory and HOME per run (PS2 cores write their cards there); see ps2/NOTES.md",
+  "renderer": "none (Vulkan only, no Vulkan here: the core falls back to its Null GS; proof.png is black)",
+  "rom": {
+    "name": "Marvel vs. Capcom 2 - New Age of Heroes (USA).bin",
+    "sha1": "3445ddf09b57bf5b2d493e75e21ff0cd9caa2759",
+    "size": 239673504
+  },
+  "bios": {
+    "name": "ps2-0200a-20040614.bin",
+    "sha1": "7a62e5f48603582707e9898eb055ea3eaee50d4c",
+    "size": 4194304,
+    "what": "SCPH-70012 v2.00 USA (2004-06-14)"
+  },
+  "device": null,
+  "script": "scripts/ps2/Marvel vs. Capcom 2 - New Age of Heroes (USA).txt",
+  "frames": 3306,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "system/pcsx2/bios/ps2-0200a-20040614.mec": {
+      "size": 4,
+      "sha1": "3f8affbe07024ccd2f5b8374072d0928c583a862"
+    },
+    "system/pcsx2/memcards/Mcd001.ps2": {
+      "size": 8650752,
+      "sha1": "b54f6a189973af7d5f050cbea6d8bb53255645b2"
+    },
+    "system/pcsx2/memcards/Mcd002.ps2": {
+      "size": 8650752,
+      "sha1": "eac18874c24d1018b5244074b0a6d11468b390ad"
+    }
+  },
+  "also_written_not_filed": [
+    "system/pcsx2/cache/vu_jit/packs/SLUS-20486_4D228733/vu1-be694993b224d993e8042e6cdef9c5f0.pack",
+    "system/pcsx2/inis/armsx2-libretro.ini",
+    "system/pcsx2/logs/emulog.txt"
+  ],
+  "created": "2026-11-04",
+  "note": null
+}

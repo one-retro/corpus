@@ -52,3 +52,28 @@ Nothing filed. S32X_MiSTer issue #32 (Chaotix) says the core did not support bac
 source of 32X saves written by a known emulator turned up. save-file-converter's test data has
 32X saves from MegaSD and Mega EverDrive Pro flash carts (Chaotix, 36 Great Holes); those are
 cartridge dumps, not core output.
+
+## s32x-mister, played on the owner's MiSTer (2026-11-04)
+
+S32X_MiSTer (S32X_20260603.rbf) does save now: its README still says saves are not implemented,
+but the core has had Load/Save Backup RAM and Autosave since 2023-04 ("for SRAM/FRAM for now") and
+an EEPROM map with this library's NBA Jam TE and NFL Quarterback Club (T-8104B, T-8102B). Played by
+script as described in `MISTER.md`, with `config/S32X.CFG` holding only Autosave On (status bit 13),
+written for each run and removed.
+
+| Game | s32x-mister |
+| ---- | ---- |
+| WSB Starring Deion Sanders | filed: 65536 |
+| Golf Magazine 36 Great Holes | filed: 65536 |
+| NBA Jam TE | not filed: the PicoDrive-timed script (74k frames) ended with the game still in a quarter (PAUSED, 2:14 left), so the initials record was never written and the core wrote no file at all (the initials entry also came out as CCC, not ACC) |
+
+- **One file, `saves/S32X/<rom>.sav`, always 65536 bytes** (the core reads and writes 128 sectors).
+- **Byte-wide SRAM is stored expanded, like PicoDrive's**: the game's bytes at odd offsets. The
+  even bytes are **FF** (PicoDrive: 00), and so is every odd byte the game never wrote. Every byte
+  the game did write is identical to PicoDrive's file: Golf Magazine's 32768 odd bytes all match;
+  WSB's match except 1406 never-written odd bytes (FF here, 00 there).
+- **Fill:** no seed was used or needed. The core reloads the save after every ROM load, and Main
+  hands it FF blocks when no file exists.
+- The same expanded layout is what MegaDrive_MiSTer does *not* do: it packs byte-wide SRAM one byte
+  per byte (`MISTER.md`). So a 32X save and a Genesis save from the same owner's MiSTer have
+  different layouts.

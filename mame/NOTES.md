@@ -65,8 +65,8 @@ How the service menu is reached:
 | jockeygp | filed | filed (see note) | filed | filed | refused | refused | refused | (neogeo/) | (neogeo/) | — |
 | blazstar | filed | filed | filed | filed (variant) | refused | refused | refused | (neogeo/) | (neogeo/) | — |
 
-All 17 proofs were checked on one sheet. mame-2009 (no builds) and finalburn-neo-cps12-subset
-(no macOS build) are not runnable; nothing attributable to either was found.
+All 17 proofs were checked on one sheet. mame-2009 and finalburn-neo-cps12-subset were built from
+source since and filed (BUILT-CORES.md).
 
 ## What each core writes into its save directory
 

@@ -1,0 +1,29 @@
+# Grizzards v1.1 (Bruce-Robert Pocock, 2022, CC BY-NC-SA 4.0): an RPG that
+# needs a SaveKey/AtariVox and keeps three game slots on it (slot 1 at EEPROM
+# 0x1100, "GRIZ0"). Begin slot 1, name the player BAAAAA, take Aquax and BEGIN:
+# the new game is written to the SaveKey at once. Reset: Select Slot now offers
+# "RESUME BAAAAA SLOT 1". Up/down change a letter, fire moves on.
+wait 1200
+press b 6           # title -> SELECT SLOT: BEGIN SLOT 1
+wait 450
+press b 6           # ENTER YOUR NAME
+wait 300
+press up 6          # A -> B
+wait 30
+repeat 6            # six letters: BAAAAA
+press b 6
+wait 60
+end
+wait 120            # SELECT AQUAX
+press b 6
+wait 150            # BAAAAA AQUAX: CHANGE / BEGIN
+press down 6        # BEGIN
+wait 30
+press b 6           # the slot is written now
+wait 600
+shot begun          # the first room
+reset
+wait 1200
+press b 6           # title -> SELECT SLOT
+wait 450
+shot saved          # RESUME BAAAAA SLOT 1

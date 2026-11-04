@@ -1,0 +1,38 @@
+load corpus-tmp/mgl/mm3.mgl 10
+# MiSTer variant of scripts/n64/Legend of Zelda, The - Majora's Mask.txt. On the MiSTer the title
+# comes by itself at about frame 1600 (a timeline run), but the ROM load time varies by seconds,
+# so START is pressed twice, 300 frames apart, after 1700 frames. If the first START already
+# reached the file select, the second one opens File 1's name entry, and the next A types one more
+# letter: either way File 1 gets a name of A's. Slower name entry (40 frames between presses).
+wait 1700
+press start 6
+wait 300
+press start 6
+wait 300
+shot fileselect
+press a 6    # File 1 -> Name?
+wait 500
+shot name
+tap a 1 40
+tap a 1 40
+tap a 1 40
+tap a 1 40    # A A A A
+wait 30
+press start 6    # cursor to END
+wait 60
+press a 6    # END: the file is written here
+wait 300
+shot created
+wait 30
+save
+wait 60
+shot final
+# power cycle: load the game again; the core reads the .sav back from the SD card
+load corpus-tmp/mgl/mm3.mgl 10
+wait 1700
+press start 6
+wait 400
+shot reloaded1
+press start 6
+wait 400
+shot reloaded

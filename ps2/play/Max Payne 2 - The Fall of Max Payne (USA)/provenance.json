@@ -1,0 +1,89 @@
+{
+  "method": "played",
+  "system": "ps2",
+  "core": "play",
+  "core_file": "play_libretro.dylib",
+  "core_name": "Play!",
+  "core_version": "0.77-17-g1f27232",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "runner": "ps2-save.py: make-save.py with a fresh system directory and HOME per run (PS2 cores write their cards there); see ps2/NOTES.md",
+  "renderer": "opengl",
+  "rom": {
+    "name": "Max Payne 2 - The Fall of Max Payne (USA).iso",
+    "sha1": "d0b049e29459be920668ee17d12231ed2822a1a5",
+    "size": 2602237952
+  },
+  "bios": null,
+  "device": null,
+  "script": "scripts/ps2/Max Payne 2 - The Fall of Max Payne (USA).play.txt",
+  "frames": 4280,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "home/Documents/Play Data Files/vfs/mc0/BASLUS-20814MaxPay2/BASLUS-20814MaxPay2": {
+      "size": 4,
+      "sha1": "2f086fc767a0dac59a38c67f409b4f74a1eab39f"
+    },
+    "home/Documents/Play Data Files/vfs/mc0/BASLUS-20814MaxPay2/copy.ico": {
+      "size": 75664,
+      "sha1": "b9da8e672ec368f446357e9cfa0e6dfe85092921"
+    },
+    "home/Documents/Play Data Files/vfs/mc0/BASLUS-20814MaxPay2/del.ico": {
+      "size": 75664,
+      "sha1": "b9da8e672ec368f446357e9cfa0e6dfe85092921"
+    },
+    "home/Documents/Play Data Files/vfs/mc0/BASLUS-20814MaxPay2/icon.sys": {
+      "size": 964,
+      "sha1": "fbdb4043b731deb49a12e526b0910a3d36aa9b63"
+    },
+    "home/Documents/Play Data Files/vfs/mc0/BASLUS-20814MaxPay2/infoFile.crc": {
+      "size": 4,
+      "sha1": "67c25dd36355636c4bb1f0883fe8837db2a66412"
+    },
+    "home/Documents/Play Data Files/vfs/mc0/BASLUS-20814MaxPay2/infoFile.txt": {
+      "size": 1972,
+      "sha1": "f9fd04e31190245b9e7ddd89e2112e57525767f5"
+    },
+    "home/Documents/Play Data Files/vfs/mc0/BASLUS-20814MaxPay2/list.ico": {
+      "size": 75664,
+      "sha1": "b9da8e672ec368f446357e9cfa0e6dfe85092921"
+    },
+    "home/Documents/Play Data Files/vfs/mc0/BASLUS-20814MaxPay2/options.crc": {
+      "size": 4,
+      "sha1": "442641b1da17becfd3d25a57b0b163c58a3324d0"
+    },
+    "home/Documents/Play Data Files/vfs/mc0/BASLUS-20814MaxPay2/options.sav": {
+      "size": 488,
+      "sha1": "6f80aae8618327711f42c55376584a3f20f04583"
+    },
+    "home/Documents/Play Data Files/vfs/mc0/BASLUS-20814MaxPay2/savegame0.sav": {
+      "size": 153600,
+      "sha1": "96d47fed9d187b5a1d75e78f37972172379c1d0a"
+    },
+    "home/Documents/Play Data Files/vfs/mc0/BASLUS-20814MaxPay2/savegame1.sav": {
+      "size": 153600,
+      "sha1": "96d47fed9d187b5a1d75e78f37972172379c1d0a"
+    },
+    "home/Documents/Play Data Files/vfs/mc0/BASLUS-20814MaxPay2/savegame2.sav": {
+      "size": 153600,
+      "sha1": "96d47fed9d187b5a1d75e78f37972172379c1d0a"
+    },
+    "home/Documents/Play Data Files/vfs/mc0/BASLUS-20814MaxPay2/savegame3.sav": {
+      "size": 153600,
+      "sha1": "96d47fed9d187b5a1d75e78f37972172379c1d0a"
+    },
+    "home/Documents/Play Data Files/vfs/mc0/BASLUS-20814MaxPay2/savegame4.sav": {
+      "size": 153600,
+      "sha1": "96d47fed9d187b5a1d75e78f37972172379c1d0a"
+    },
+    "home/Documents/Play Data Files/vfs/mc0/BASLUS-20814MaxPay2/savegame5.sav": {
+      "size": 153600,
+      "sha1": "96d47fed9d187b5a1d75e78f37972172379c1d0a"
+    }
+  },
+  "also_written_not_filed": [
+    "home/Documents/Play Data Files/config.xml"
+  ],
+  "created": "2026-11-04",
+  "note": null
+}

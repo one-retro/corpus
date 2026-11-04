@@ -1,0 +1,32 @@
+{
+  "method": "played",
+  "system": "n64",
+  "core": "n64-mister",
+  "core_file": "N64_20260726.rbf",
+  "core_name": "N64_MiSTer",
+  "core_version": "20260726",
+  "frontend": "mister",
+  "device": "the owner's MiSTer (DE10-Nano), Main_MiSTer binary of 2026-10-19",
+  "loaded_with": "MGL via /dev/MiSTer_cmd load_core (_Console/N64, file type f index 1)",
+  "save_folder": "saves/N64",
+  "rom": {
+    "name": "Super Smash Bros. (USA).z64",
+    "sha1": "e2929e10fccc0aa84e5776227e798abc07cedabf",
+    "size": 16777216
+  },
+  "script": "scripts/n64/Super Smash Bros..txt",
+  "mister_script": "scripts/mister/n64/Super Smash Bros..n64.txt",
+  "frames": 3844,
+  "timing": "real time: script frames played as wall-clock 1/60 s by work/mister/mrun.py",
+  "options": null,
+  "save_trigger": "OSD opened (F12 from a uinput keyboard) with Autosave on: the core writes its backup RAM to the SD card",
+  "started_from": null,
+  "files": {
+    "Super Smash Bros. (USA).sra": {
+      "size": 32768,
+      "sha1": "49de911aa44cbf0b63abed88a81f907fd8dad554"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "SRAM 256 Kbit: <rom>.sra, 32768 bytes, in the order of Mupen64Plus-Next's .srm SRAM region (32-bit words reversed, 'swapped'); 6 bytes differ from it (0x5E0, 0x5E8-9 and the copy at 0xBD0, 0xBD8-9: the game's counters and checksum), the rest is identical; written only up to 0xBDB, FF after. Main created the file FF-filled at ROM load (Auto Detect: sram32k); written on OSD open (Autosave On, the N64 default). Script unchanged. Needs games/N64/boot.rom (the owner's PIF ROM)."
+}

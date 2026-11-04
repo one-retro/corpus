@@ -1,0 +1,34 @@
+# SD Gundam Generation - Ichinen Sensouki: a Sufami Turbo mini-cart with 8 KB
+# of SRAM, played in the Sufami Turbo base cart (slot A). Event mode, through
+# the opening text to the STAGE 1 map; START -> セーブ -> "SAVEしますが
+# よろしいですか?" YES. The game shows セーブ over the map for about a second.
+# (After a reset, イベントモード then offers ロード.)
+wait 1350           # Sufami Turbo / Bandai logos, title (on screen ~1200-1500)
+press start 8
+wait 400
+press a 8           # イベントモード
+wait 400
+press a 8
+wait 400
+repeat 20           # 宇宙世紀0079 ... (the opening text)
+press a 6
+wait 60
+end
+wait 300
+press a 8           # STAGE 1 card (ignored if it is not up yet)
+wait 900
+press a 8           # -> the map
+wait 900
+press b 8           # cancel, in case an A landed on a unit
+wait 120
+press start 8       # パス / セーブ
+wait 240
+press down 8
+wait 60
+press a 8           # セーブ: SAVEしますが よろしいですか?
+wait 300
+shot confirm
+press a 8           # YES
+wait 55
+shot saved          # セーブ over the dimmed map, for about a second
+wait 600

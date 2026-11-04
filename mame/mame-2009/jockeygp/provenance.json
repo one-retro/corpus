@@ -1,0 +1,41 @@
+{
+  "method": "played",
+  "system": "mame",
+  "core": "mame-2009",
+  "core_file": "mame-2009_libretro.dylib",
+  "core_name": "MAME 2009",
+  "core_version": "0.135 29b38f5",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "jockeygp.zip",
+    "sha1": "04aa9208647988ee6ee73ca7de3c170efed6e63f",
+    "size": 17273406
+  },
+  "device": null,
+  "script": "scripts/mame/jockeygp.txt",
+  "frames": 5472,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "mame2009/cfg/default.cfg": {
+      "size": 175,
+      "sha1": "4e398d654043793e0677cef4917b03478508673e"
+    },
+    "mame2009/cfg/jockeygp.cfg": {
+      "size": 176,
+      "sha1": "0e19b2cc6d0a1e01da66490227354be079f78ea3"
+    },
+    "mame2009/nvram/jockeygp.nv": {
+      "size": 8192,
+      "sha1": "b84867f96b791e5a485f58ab6e21c6e2daac2673"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "As MAME 2010: MAME 2009 saves only the first 8 KiB of the MVS backup RAM (byte-swapped words) and no file for the cartridge's 8 KiB RAM. The credits survive the soft reset in the proof, not a real power cycle.",
+  "built_from": {
+    "repo": "https://github.com/libretro/mame2009-libretro",
+    "commit": "29b38f53013e02af7840fdca9bdaba9710e8b232",
+    "build": "git show HEAD:Makefile > libretro-Makefile.mk (the repo holds both Makefile and makefile, which collide on a case-insensitive disk; the libretro build file is Makefile); make -f libretro-Makefile.mk platform=osx PTR64=1 FORCE_DRC_C_BACKEND=1 ARM_ENABLED=1 ARFLAGS=-crs AR=<sh wrapper that writes an empty archive when given no members, as GNU ar does> CC=\"cc -DSDLMAME_NO64BITIO -Wno-error=implicit-function-declaration -Wno-error=int-conversion -Wno-error=incompatible-function-pointer-types -Wno-error=incompatible-pointer-types\" NATIVECC=cc -j14. No source edits; the osx section of the Makefile (CC = c++ for C sources, x64 DRC, no ARFLAGS) cannot build on arm64 with current clang, so these variables are overridden on the command line."
+  }
+}

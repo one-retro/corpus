@@ -1,0 +1,45 @@
+load corpus-tmp/mgl/yoshi3.mgl 10
+# MiSTer variant: the title comes 0-10 s later than in the libretro cores (the ROM load time varies),
+# so START waits 1500 frames after each load; 100 more frames before the menu and 60 (not 40)
+# between the stick moves (one run's two moves stopped on Trial Mode).
+# Yoshi's Story: Options -> Audio -> Mono. The game formats its 16 Kbit
+# EEPROM on the first boot and writes the setting when it changes. The
+# script then resets and opens Options again to show Audio (MONO) was read
+# back. The menus follow the analog stick, not the D-pad.
+# N64 buttons on the RetroPad: A = b, B = y, Z = l2, Start = start.
+wait 1500
+shot title
+press start 6    # title -> Story Mode / Trial Mode / Options / Practice
+wait 400
+stick 0 max 8
+wait 60
+stick 0 max 8       # Options
+wait 60
+shot options
+press a 6
+wait 200
+press a 6    # Audio -> Select Sound Mode
+wait 100
+stick 0 max 8       # Mono
+wait 60
+press a 6    # the setting is written here
+wait 100
+shot mono           # Options: Audio (MONO)
+press b 6    # exit
+wait 150
+wait 30
+save
+wait 60
+shot final
+# power cycle: load the game again; the core reads the .sav back from the SD card
+load corpus-tmp/mgl/yoshi3.mgl 10
+wait 1500           # after a reset the title comes sooner, and the attract story follows it
+press start 6
+wait 400
+stick 0 max 8
+wait 60
+stick 0 max 8
+wait 60
+press a 6    # Options again after the reset
+wait 200
+shot reloaded

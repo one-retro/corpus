@@ -1,0 +1,31 @@
+# Marvel vs. Capcom 2 - New Age of Heroes (USA), SLUS-20486, CD. Slot 2 variant: the same
+# save, made on the card in MEMORY CARD slot 2 (filed as "<game> [slot2]").
+# Main menu > SAVE/LOAD > SAVE > slot 2; the game offers to format an unformatted card
+# (the PCSX2-based cores create cards unformatted), then writes BASLUS-20486SYS.
+wait 1800
+press start 6        # skip the intro to the title
+wait 300
+press start 6        # title -> main menu (ARCADE MODE selected)
+wait 300
+press down 6         # SCORE RANKING
+wait 30
+press right 6        # SCORE ATTACK
+wait 30
+press right 6        # SECRET FACTOR
+wait 30
+press right 6        # SAVE/LOAD
+wait 60
+press b 6            # open SAVE/LOAD
+wait 120
+press b 6            # SAVE
+wait 120
+press down 6         # SLOT 2
+wait 30
+press b 6            # SLOT 2
+wait 120
+shot format
+press left 6         # "unformatted. Will you format it?" -> Yes
+wait 30
+press b 6
+wait 300
+shot saved           # "Save successful. Autosaved data will be saved to ... slot2."

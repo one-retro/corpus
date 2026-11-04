@@ -1,0 +1,37 @@
+{
+  "method": "played",
+  "system": "gbc",
+  "core": "doublecherrygb",
+  "core_file": "doublecherrygb_libretro.dylib",
+  "core_name": "DoubleCherryGB",
+  "core_version": "v0.19.0 d432f97",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Legend of Zelda, The - Link's Awakening DX (USA, Europe) (Rev 2) (SGB Enhanced) (GB Compatible).gbc",
+    "sha1": "1c091225688d966928cc74336dbef2e07d12a47c",
+    "size": 1048576
+  },
+  "device": null,
+  "script": "scripts/gbc/Legend of Zelda, The - Link's Awakening DX.txt",
+  "frames": 1200,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Legend of Zelda, The - Link's Awakening DX (USA, Europe) (Rev 2) (SGB Enhanced) (GB Compatible).rtc": {
+      "size": 8,
+      "sha1": "05fe405753166f125559e7c9ac558654f107c7e9"
+    },
+    "Legend of Zelda, The - Link's Awakening DX (USA, Europe) (Rev 2) (SGB Enhanced) (GB Compatible).srm": {
+      "size": 32768,
+      "sha1": "1b3a1926d0a5d3f50bfa9ee070492dde5fc3ed30"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null,
+  "built_from": {
+    "repo": "https://github.com/TimOelrichs/doublecherryGB-libretro",
+    "commit": "d432f97693670524f7f46bfca886b731134f4bb6",
+    "build": "make -j12 (platform=osx, arm64), unmodified"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "method": "played",
+  "system": "n64",
+  "core": "n64-mister",
+  "core_file": "N64_20260726.rbf",
+  "core_name": "N64_MiSTer",
+  "core_version": "20260726",
+  "frontend": "mister",
+  "device": "the owner's MiSTer (DE10-Nano), Main_MiSTer binary of 2026-10-19",
+  "loaded_with": "MGL via /dev/MiSTer_cmd load_core (_Console/N64, file type f index 1)",
+  "save_folder": "saves/N64",
+  "rom": {
+    "name": "Banjo-Kazooie (USA) (Rev 1).z64",
+    "sha1": "ded6ee166e740ad1bc810fd678a84b48e245ab80",
+    "size": 16777216
+  },
+  "script": "scripts/n64/Banjo-Kazooie.txt",
+  "mister_script": "scripts/mister/n64/Banjo-Kazooie.n64.txt",
+  "frames": 24766,
+  "timing": "real time: script frames played as wall-clock 1/60 s by work/mister/mrun.py",
+  "options": null,
+  "save_trigger": "OSD opened (F12 from a uinput keyboard) with Autosave on: the core writes its backup RAM to the SD card",
+  "started_from": null,
+  "files": {
+    "Banjo-Kazooie (USA) (Rev 1).eep": {
+      "size": 512,
+      "sha1": "5522b43ce11e79ca36812d18867c090d13607002"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "EEPROM 4 Kbit: <rom>.eep, 512 bytes, console order; 10 bytes differ from the EEPROM region of Mupen64Plus-Next's .srm (0x12F, 0x164-0x167 and the second copy at 0x1A7, 0x1DC-0x1DF: the play time, 0:00:31 here against 0:00:28, and its checksum). Main created the file FF-filled at ROM load (Auto Detect: eeprom512); written on OSD open (Autosave On, the N64 default) after SAVE AND QUIT; the game itself restarts, and Banjo's bed shows GAME 1: TIME 0:00:31 (proof). Script unchanged (24664 frames, about 7 minutes). Needs games/N64/boot.rom (the owner's PIF ROM)."
+}

@@ -1,0 +1,32 @@
+{
+  "method": "played",
+  "system": "neogeo",
+  "core": "neogeo-mister",
+  "core_file": "NeoGeo_20260603.rbf",
+  "core_name": "NeoGeo_MiSTer",
+  "core_version": "20260603",
+  "frontend": "mister",
+  "device": "the owner's MiSTer (DE10-Nano), Main_MiSTer binary of 2026-10-19",
+  "loaded_with": "MGL via /dev/MiSTer_cmd load_core (_Console/NeoGeo, file type f index 1)",
+  "save_folder": "saves/NEOGEO",
+  "rom": {
+    "name": "lbowling.neo"
+  },
+  "script": "scripts/neogeo/lbowling.txt",
+  "mister_script": "scripts/mister/neogeo/lbowling.neogeo.txt",
+  "frames": 9816,
+  "timing": "real time: script frames played as wall-clock 1/60 s by work/mister/mrun.py",
+  "options": {
+    "config/NEOGEO.CFG": "16 bytes, status bits 1 (System Type Arcade(MVS)) and 24 (Autosave On) set: BIOS UniBIOS (bit 22 = 0; the device's uni-bios.rom v4.0), every other option at its default. The owner's config/NEOGEO.CFG (MVS, Autosave off) was replaced for the run and restored byte-identical, with its mtime, after it"
+  },
+  "save_trigger": "OSD opened (F12 from a uinput keyboard) with Autosave on: the core writes its backup RAM to the SD card",
+  "started_from": null,
+  "files": {
+    "lbowling.sav": {
+      "size": 73728,
+      "sha1": "0e42ecbeae9f1596292ba915109b8100d815374a"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "MVS, backup RAM + memory card ('BOWLING 1P', 2 blocks). ROM: the Geolith set's .neo, copied to corpus-tmp as lbowling.neo. Script: scripts/neogeo/lbowling.txt with boot waits +500 frames; coin = L. UniBIOS formatted the blank card without asking (MVS mode). Layout: 0x00000-0x0FFFF backup RAM, words byte-swapped; 0x10000-0x107FF the 2 KiB card, words byte-swapped; 0x10800-0x11FFF FF (never loaded from a file, so Main's FF fill)."
+}

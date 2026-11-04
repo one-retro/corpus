@@ -1,0 +1,32 @@
+{
+  "method": "played",
+  "system": "gb",
+  "core": "gearboy",
+  "core_file": "gearboy_libretro.dylib",
+  "core_name": "Gearboy",
+  "core_version": "3.8.20-8-g37d0bf3",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Game de Hakken!! Tamagotchi - Osutchi to Mesutchi (Japan) (SGB Enhanced).gb",
+    "sha1": "e61f7faad888e5a1c56ffe66fa3c0330b5ee459b",
+    "size": 524288
+  },
+  "device": null,
+  "script": "scripts/gb/Tamagotchi - Osutchi to Mesutchi.txt",
+  "frames": 14252,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Game de Hakken!! Tamagotchi - Osutchi to Mesutchi (Japan) (SGB Enhanced).rtc": {
+      "size": 72,
+      "sha1": "f1d68aa13b34a846e9b85478034d423de1fe430a"
+    },
+    "Game de Hakken!! Tamagotchi - Osutchi to Mesutchi (Japan) (SGB Enhanced).srm": {
+      "size": 32,
+      "sha1": "2d373ee3af63fcb4a53b05087197f8d3ec8e9b32"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

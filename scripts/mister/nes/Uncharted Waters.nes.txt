@@ -1,0 +1,68 @@
+load corpus-tmp/mgl/uwaters.mgl 6
+# Uncharted Waters (USA): MMC5 with 8 KiB + 8 KiB battery WRAM.
+# New Adventure: hero "AAA", the rolled stats accepted, every bonus point spent (the roll is random
+# and differs between cores, so each stat gets more presses than it can take: once the bonus is 0 the
+# game asks "Is this OK?", the next A says yes and the rest type into the flagship's name). The story,
+# then Lisbon: SELECT -> Save -> Y, Quit game? -> N (RIGHT).
+# Proof: after a reset, Saved Game brings back Lisbon, Feb 21 1502.
+wait 1500             # into the scrolling intro
+press start           # skip it to the title
+wait 900
+press start           # New Adventure / Saved Game
+wait 600
+shot menu
+press a               # New Adventure
+wait 600
+tap a 3 30            # hero "AAA"
+press start
+wait 300
+press a               # name OK? Y
+wait 600
+press a               # stats OK? Y (RIGHT would reroll)
+wait 600
+shot bonus
+repeat 5              # Charisma, Wisdom, Intel, Courage, Strength
+tap a 70 16
+press down
+wait 30
+end
+press start           # flagship name done
+wait 400
+press a               # name OK? Y
+wait 600
+shot summary
+press a               # summary OK? Y
+wait 600
+repeat 32             # the story; the last presses land in Lisbon and do nothing
+press a
+wait 200
+end
+shot lisbon
+press select          # Save / Speed / Music
+wait 300
+press a               # Save
+wait 400
+shot save
+press a               # Save game? Y
+wait 900
+shot quit
+press right           # Quit game? N
+wait 600
+shot saved
+wait 30
+save
+wait 60
+shot final
+# power cycle: load the game again; the core reads the .sav back from the SD card
+load corpus-tmp/mgl/uwaters.mgl 6
+wait 1500
+press start
+wait 900
+press start
+wait 600
+press down            # Saved Game
+wait 60
+shot load
+press a
+wait 1200
+shot loaded

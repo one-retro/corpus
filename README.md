@@ -78,11 +78,12 @@ All Python runs with `-I`.
 
 | Tool | What it does |
 | ---- | ------------ |
-| `tools/fetch-core.sh SLUG...` | Downloads registry cores from the libretro buildbot into `.cache/cores/`, prints paths. `tools/cores.tsv` is the slug map; a slug it lacks has no macOS build. |
+| `tools/fetch-core.sh SLUG...` | Downloads registry cores from the libretro buildbot into `.cache/cores/`, prints paths. `tools/cores.tsv` is the slug map; a slug it lacks has no macOS build. A core built from source (`BUILT-CORES.md`) at `.cache/cores/built/<arch>/<slug>_libretro.dylib` is used first, and a `.json` beside it (repo, commit, build) lands in provenance as `built_from`. |
 | `tools/rom.py list SYSTEM [FILTER]` | Games a No-Intro 1G1R set has for a cartridge system. `$ROMS` names the folder of its zips. |
 | `tools/rom.py get SYSTEM "NAME"` | Extracts one into `.cache/roms/SYSTEM/`, prints its path. |
 | `tools/retro-run/retro-run` | The harness. `--help` lists the script commands. `retro-run-x86_64` is the same for Intel-only cores (Rosetta). |
-| `tools/make-save.py SYSTEM CORE ROM SCRIPT` | Runs a script in a core in a fresh directory and files what it saved, with provenance and proof. `--dry` to develop a script without filing. |
+| `tools/make-save.py SYSTEM CORE ROM SCRIPT` | Runs a script in a core in a fresh directory and files what it saved, with provenance and proof. `--dry` to develop a script without filing. Also files what the core wrote into its working directory (`cwd/`), its system directory with `--keep-sysdir` (`system/`), or its own HOME with `--home` (`home/`); `--subsystem ID --slot FILE` loads a subsystem (Sufami Turbo); `--rom-source URL` records a homebrew ROM's origin. |
+| `tools/ps2-save.py CORE ROM SCRIPT` | make-save for PS2: a real system directory and HOME per run, filing the memory cards the cores keep there (`ps2/NOTES.md`). |
 | `tools/retro-run/crop.py` | `crop` magnifies part of a frame, `tile` puts many frames on one sheet. |
 
 ### Script commands, briefly
@@ -122,6 +123,9 @@ PlayStation pad `b` is Cross, `a` Circle, `y` Square, `x` Triangle.
   not depend on the renderer.
 - OpenGL cores (Flycast, Dolphin, PPSSPP, Beetle PSX HW, Citra) get an offscreen OpenGL 4.1 core
   context. Vulkan-only cores cannot run.
+- `retro-run` plugs a joypad into ports 1 and 2 (RetroArch plugs one into every port; bsnes-jg
+  crashes without port 2). `--ports 1` gives the old port-1-only behaviour; replays of existing
+  entries with the change wrote byte-identical saves.
 - BIOS files go in `.cache/bios/<system>/`; each entry there (file or directory) is linked into
   the core's system directory, so `dc/dc_boot.bin` works.
 

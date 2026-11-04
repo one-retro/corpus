@@ -1,0 +1,47 @@
+# Net de Get - Minigame @ 100 (Japan): MBC6, 32 KiB SRAM + 1 MiB flash (the flash holds downloaded minigames).
+# The game sets up its save at first boot; then OPTION: text speed おそい -> はやい, sound モノラル -> ステレオ.
+# Proof: after a reset, OPTION shows はやい / ステレオ, read back from the save.
+wait 1500
+press start          # skip the intro to the title (Press Start)
+wait 400
+repeat 9             # title -> room; the rabbit's six pages; she leaves; the last A opens the room menu
+press a
+wait 200
+end
+shot menu
+press down
+wait 60
+press down
+wait 60
+press a              # オプション
+wait 400
+shot options-before
+press right          # ひょうじそくど おそい -> ふつう
+wait 90
+press right          # -> はやい
+wait 90
+press down
+wait 60
+press down
+wait 60
+press right          # サウンド モノラル -> ステレオ
+wait 90
+shot options-set
+press b              # back to the room: the options are written
+wait 1000
+reset
+wait 1500
+press start
+wait 400
+repeat 3             # title -> room; no introduction on a later boot; the last A opens the menu
+press a
+wait 200
+end
+shot menu-again
+press down
+wait 60
+press down
+wait 60
+press a
+wait 400
+shot options

@@ -1,0 +1,26 @@
+load corpus-tmp/mgl/blazstar.mgl 5
+# MiSTer variant: boot waits +500 frames (UniBIOS splash and loading); A pressed 80 times, not 55,
+# with a shot every 10, since the game over comes later here.
+# Blazing Star (MVS: backup RAM, plus the memory card): insert a coin, start, take
+# the default ship and let it be shot down while pressing A every 80 frames. A also
+# fills in the high-score name entry ("AAAAAAAAA", 30th, kept in backup RAM). After
+# GAME OVER the game asks "CARD SAVE OK?" with the cursor on YES and saves on its
+# own; a blank card makes the BIOS ask to format it first (A = yes, the same
+# presses). Neo Geo A is RetroPad b. FinalBurn Neo and Geolith reach SAVE OK on the
+# same frame, about 5830.
+wait 1800
+press l 6    # coin
+wait 120
+press start 6
+repeat 8
+repeat 10
+press a 4
+wait 76
+end
+shot
+end
+shot saved             # CARD SAVE OK? > YES ... SAVE OK
+wait 30
+save
+wait 60
+shot final

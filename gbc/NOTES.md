@@ -108,8 +108,9 @@ on clockless games (Wario Land II: 32784 = 32768 + `a46e6168 47392b00 0000` + 0x
 
 ## Not runnable here
 
-boytacean, doublecherrygb, emux-gb, higan-super-famicom-balanced (libretro, no macOS build);
-gameboy-mister (MiSTer); budude2-gbc, spiritualized-gbc (openFPGA); mednafen (standalone).
+Built from source since (BUILT-CORES.md): doublecherrygb, 9 of 10 filed; boytacean and emux-gb write no save.
+higan-super-famicom-balanced needs the Super Game Boy ROM. gameboy-mister was played on the owner's
+MiSTer since (MISTER.md). Still nothing: budude2-gbc, spiritualized-gbc (openFPGA); mednafen (standalone).
 higan-super-famicom is not a gbc core.
 
 ## Harness notes
@@ -119,3 +120,34 @@ higan-super-famicom is not a gbc core.
   their `.rtc` (see above); a real session would differ.
 - Oracle of Seasons' title takes only START (A is ignored); Pokemon Gold/Crystal's title menu
   ignores START, so START is mashed to get there.
+
+## Special save hardware (second pass)
+
+The header sweep of both sets is in `gb/NOTES.md`. The only GBC-set battery type the corpus lacked
+was MBC6, and the GBC set has exactly one MBC6 game.
+
+### Net de Get - Minigame @ 100 (Japan): MBC6, 32 KiB SRAM + 1 MiB flash
+
+Script `Net de Get - Minigame @ 100.txt`: past the intro and the rabbit's six pages to the room menu,
+オプション: text speed おそい -> はやい, sound モノラル -> ステレオ, back out (the game writes its
+settings block to SRAM). Reset; the proof is オプション read back as はやい / ステレオ. The flash
+holds minigames downloaded through the Mobile Adapter, so it stays erased here (all 0xFF); the
+game itself uses only the first 8 KiB of SRAM (it zeroes it on first boot and keeps ~80 bytes of
+settings and state there).
+
+| gambatte | mgba | sameboy | vba-m | gearboy | tgb-dual | fixgb | irogb |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| refuses ("MBC6 ROM not supported") | segfault (1) | white screen, 0 bytes of save RAM | refuses ("Unknown cartridge type 20") | **F** | black screen, 32 KiB of 0xFF | segfault at load | **F** |
+
+1. mGBA reports 1081344 bytes of save RAM (32 KiB + 1 MiB) and then crashes in its first
+   `retro_run`: EXC_BAD_ACCESS in `memset` under `GBResizeSram` <- `GBLoadSave`, so it never shows a
+   frame. The crash is in the core's own save sizing, so RetroArch likely crashes the same way.
+
+Both filed cores reload their own file (checked from a fresh run). The files:
+
+- **Gearboy: 1081601 bytes** = 32768 SRAM + 1048576 flash + 257 bytes (256 x 0xFF, then one 0x00:
+  apparently the core's flash-controller state). One file holds both memories.
+- **IroGB: 32768 bytes**, the SRAM only; IroGB has no MBC6 flash in its save at all.
+- The first 8 KiB are byte-identical between the two. The untouched 24 KiB after it are 0xFF in
+  Gearboy and 0x00 in IroGB (the usual fill difference). So a converter between the two must cut or
+  add the 1 MiB + 257-byte tail.

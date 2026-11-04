@@ -1,0 +1,32 @@
+{
+  "method": "played",
+  "system": "nes",
+  "core": "nes-mister",
+  "core_file": "NES_20260823.rbf",
+  "core_name": "NES_MiSTer",
+  "core_version": "20260823",
+  "frontend": "mister",
+  "device": "the owner's MiSTer (DE10-Nano), Main_MiSTer binary of 2026-10-19",
+  "loaded_with": "MGL via /dev/MiSTer_cmd load_core (_Console/NES, file type f index 0)",
+  "save_folder": "saves/NES",
+  "rom": {
+    "name": "Taito Grand Prix - Eikou e no License (Japan).nes",
+    "sha1": "d43088d09de229c6abdb34624f616edd6edfbf7b",
+    "size": 262160
+  },
+  "script": "scripts/nes/Taito Grand Prix.txt",
+  "mister_script": "scripts/mister/nes/Taito Grand Prix.nes.txt",
+  "frames": 4738,
+  "timing": "real time: script frames played as wall-clock 1/60 s by work/mister/mrun.py",
+  "options": null,
+  "save_trigger": "OSD opened (F12 from a uinput keyboard) with Autosave on: the core writes its backup RAM to the SD card",
+  "started_from": "a zero-filled 32768-byte .sav put in place before loading, so the backup RAM started cleared; the core then rewrote all of it",
+  "files": {
+    "Taito Grand Prix - Eikou e no License (Japan).sav": {
+      "size": 32768,
+      "sha1": "d9f7e296b1a1d3f6eef3eb1173501cbba1a5690b"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "Taito X1-005 (mapper 80), the save is the mapper's own 128 bytes (NES 2.0 NVRAM shift 1): NES_MiSTer still writes 64 sectors, 32768 bytes, with the 128 bytes at 0x00 (byte-identical to Nestopia's 128-byte file, at the offset fixNES uses; fceumm puts them at 0x80, Mesen at both). The rest is the zero seed. A first run without a seed showed what a user's file holds there: 0x80-0x1FFF was the previous game's battery RAM (Nobunaga's Ambition, played just before) and 0x2000-0x3FFF its work RAM, i.e. whatever the core's memory held; that file was deleted, not filed. Autosave on by default: no config written. Script unchanged; after the reload PLAY SELECT shows the racer ああああ."
+}

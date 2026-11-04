@@ -1,0 +1,12 @@
+# Rune - Viking Warlord (USA), SLUS-20109, CD.
+# At power-on the game asks to format an unformatted card, then writes its 64 KiB
+# BASLUS-20109 file (settings) on its own and shows the main menu.
+wait 4500
+shot prompt          # "Format? Yes / No" (No selected)
+press up 6           # Yes
+wait 30
+press b 6            # Cross
+wait 600
+shot warning
+wait 600
+shot menu            # main menu after the save

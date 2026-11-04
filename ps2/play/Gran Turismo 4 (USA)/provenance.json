@@ -1,0 +1,45 @@
+{
+  "method": "played",
+  "system": "ps2",
+  "core": "play",
+  "core_file": "play_libretro.dylib",
+  "core_name": "Play!",
+  "core_version": "0.77-17-g1f27232",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "runner": "ps2-save.py: make-save.py with a fresh system directory and HOME per run (PS2 cores write their cards there); see ps2/NOTES.md",
+  "renderer": "opengl",
+  "rom": {
+    "name": "Gran Turismo 4 (USA).iso",
+    "sha1": "5b1dbf056f45f8023e8e4958e6d7deb31fc64a47",
+    "size": 5314478080
+  },
+  "bios": null,
+  "device": null,
+  "script": "scripts/ps2/Gran Turismo 4 (USA).txt",
+  "frames": 6080,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "home/Documents/Play Data Files/vfs/mc0/BASCUS-97328GAMEDATA/BASCUS-97328GAMEDATA": {
+      "size": 237760,
+      "sha1": "3a5c045e13bccb8601a05945ffc02daac611b07e"
+    },
+    "home/Documents/Play Data Files/vfs/mc0/BASCUS-97328GAMEDATA/garage": {
+      "size": 1280064,
+      "sha1": "5f95772cbe74382b1137cc6e4180545253d1592a"
+    },
+    "home/Documents/Play Data Files/vfs/mc0/BASCUS-97328GAMEDATA/icon.sys": {
+      "size": 964,
+      "sha1": "cce82f67a0f89c70731af7b0fb0b9c752fd05e5e"
+    },
+    "home/Documents/Play Data Files/vfs/mc0/BASCUS-97328GAMEDATA/icon0.ico": {
+      "size": 9796,
+      "sha1": "5c55e0ea3f302b6ce15d03fb247039d41b83f032"
+    }
+  },
+  "also_written_not_filed": [
+    "home/Documents/Play Data Files/config.xml"
+  ],
+  "created": "2026-11-04",
+  "note": null
+}

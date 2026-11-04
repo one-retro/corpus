@@ -1,0 +1,37 @@
+# Gran Turismo 4 (USA), SCUS-97328, DVD.
+# At power-on: "No GT4 game data found ... create game data? OK" > NAME ENTRY (the
+# cursor starts on Enter; Left reaches L; after the first capital the keyboard turns
+# lower case, so three presses type "Lll") > Enter > "proceed with this name? OK" >
+# "Game data will now be created. OK" > "1498KB of free space is required. OK" >
+# "unformatted. Format? Cancel/OK" (Cancel preselected: Right, then OK). The game
+# formats the card and writes its 1.5 MB game data: the largest save here.
+wait 1500
+shot create          # "No GT4 game data found ... Do you wish to create game data?" (OK)
+press b 10
+wait 400
+press left 10        # Enter -> L
+wait 40
+press b 10           # L
+wait 40
+press b 10           # l
+wait 40
+press b 10           # l
+wait 40
+press right 10       # -> Enter
+wait 40
+press b 10
+wait 400
+shot name            # "The name entered is: Lll. Proceed?" (OK)
+press b 10
+wait 400
+press b 10           # "Game data will now be created." OK
+wait 600
+shot space           # "1498KB of free space is required" (OK)
+press b 10
+wait 600
+shot format          # "currently unformatted. Format?" (Cancel selected)
+press right 10       # OK
+wait 60
+press b 10
+wait 1800
+shot saved           # "Save successful"

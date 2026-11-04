@@ -1,0 +1,26 @@
+load corpus-tmp/mgl/golf32x.mgl 6
+# Golf Magazine Presents 36 Great Holes Starring Fred Couples (32X): Player
+# Edit -> NEW PLAYER, keep the defaults, back out with B. The new golfer is
+# written to the cart's byte-wide SRAM (header 200001-20FFFF) and shows up as
+# a third entry, "NEW PLAYER", under Fred Couples.
+# Genesis A/B/C are the RetroPad's y/b/a.
+wait 2100
+press r 6    # title ("Press Start" also takes C) -> main menu
+wait 150
+press down 6
+wait 40
+press down 6    # Player Edit
+wait 40
+press r 6    # "Choose a player to edit..."
+wait 300
+press r 6    # NEW PLAYER -> Player Attributes
+wait 300
+shot attributes
+press b 6    # back: the player is created and saved
+wait 300
+shot saved          # NEW PLAYER, FRED COUPLES, NEW PLAYER
+wait 30
+wait 30
+save
+wait 60
+shot final

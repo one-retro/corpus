@@ -1,0 +1,32 @@
+{
+  "method": "played",
+  "system": "n64",
+  "core": "n64-mister",
+  "core_file": "N64_20260726.rbf",
+  "core_name": "N64_MiSTer",
+  "core_version": "20260726",
+  "frontend": "mister",
+  "device": "the owner's MiSTer (DE10-Nano), Main_MiSTer binary of 2026-10-19",
+  "loaded_with": "MGL via /dev/MiSTer_cmd load_core (_Console/N64, file type f index 1)",
+  "save_folder": "saves/N64",
+  "rom": {
+    "name": "Yoshi's Story (USA) (En,Ja).z64",
+    "sha1": "b13072fef6c6df48c07d8822c01e5bc59036f6da",
+    "size": 16777216
+  },
+  "script": "scripts/n64/Yoshi's Story.txt",
+  "mister_script": "scripts/mister/n64/Yoshi's Story.n64.txt",
+  "frames": 5034,
+  "timing": "real time: script frames played as wall-clock 1/60 s by work/mister/mrun.py",
+  "options": null,
+  "save_trigger": "OSD opened (F12 from a uinput keyboard) with Autosave on: the core writes its backup RAM to the SD card",
+  "started_from": null,
+  "files": {
+    "Yoshi's Story (USA) (En,Ja).eep": {
+      "size": 2048,
+      "sha1": "adf89891ff64c779a8f448901631b64d0b7d7522"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "EEPROM 16 Kbit: <rom>.eep, 2048 bytes, console order. The game formats all 2 KiB at its first boot, and that is what this file holds: the script's Options -> MONO step did not land (three runs: the title and its attract story come at different times on the MiSTer, so the stick moves met the wrong screen; the proof shows the main menu after the reload, not Options). Against Mupen64Plus-Next's EEPROM region only 4 bytes differ, 0x000 and 0x400 (00 here, 0x40 there) and 0x3FB and 0x7FB (00 here, 01 there): the same two bytes in the game's two copies of its data, where Mupen's file records MONO. Main created the file FF-filled at ROM load (Auto Detect: eeprom2k); written on OSD open (Autosave On, the N64 default). The exact script is the MiSTer variant in scripts/mister/n64/ (START after 1500 frames)."
+}

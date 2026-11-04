@@ -38,6 +38,6 @@ folders are in the system directory; with them (as another worker placed them in
 `.cache/bios/msx/`, which has `Machines/SEGA - SG-1000`) it runs The Castle and Othello.
 A future SG-1000 run on blueMSX needs those folders in `.cache/bios/sg-1000/`.
 
-Not runnable here: colecovision-mister and sms-mister (MiSTer), crabemu (standalone),
+Not runnable here: colecovision-mister and sms-mister (MiSTer), crabemu (standalone, runs but has nothing to save here),
 drizzt-sg-1000 and spiritualized-sg-1000 (openFPGA). Nothing to look for online either,
 since there is no battery save for any of them to have written.

@@ -1,0 +1,52 @@
+{
+  "method": "played",
+  "system": "n64",
+  "core": "n64-mister",
+  "core_file": "N64_20260726.rbf",
+  "core_name": "N64_MiSTer",
+  "core_version": "20260726",
+  "frontend": "mister",
+  "device": "the owner's MiSTer (DE10-Nano), Main_MiSTer binary of 2026-10-19",
+  "loaded_with": "MGL via /dev/MiSTer_cmd load_core (_Console/N64, file type f index 1)",
+  "save_folder": "saves/N64",
+  "rom": {
+    "name": "Pokemon Stadium (USA) (Rev 2).z64",
+    "sha1": "0d3b1d740c6ee6da6923550bf24ad827262fd8c0",
+    "size": 33554432
+  },
+  "script": "scripts/n64/Pokemon Stadium.txt",
+  "mister_script": "scripts/mister/n64/Pokemon Stadium.n64.txt",
+  "frames": 6186,
+  "timing": "real time: script frames played as wall-clock 1/60 s by work/mister/mrun.py",
+  "options": null,
+  "save_trigger": "OSD opened (F12 from a uinput keyboard) with Autosave on: the core writes its backup RAM to the SD card",
+  "started_from": "saves/GAMEBOY/Pokemon - Red Version (USA, Europe) (SGB Enhanced).sav put in place first: the gb/gameboy-mister entry's 32768-byte save (sha1 cdea6878...), the Transfer Pak's cartridge",
+  "files": {
+    "Pokemon - Red Version (USA, Europe) (SGB Enhanced).sav": {
+      "size": 32768,
+      "sha1": "14c784874011199ed39b8c8c25e9cfeafd9d66a1",
+      "location": "saves/GAMEBOY"
+    },
+    "Pokemon - Red Version (USA, Europe) (SGB Enhanced)_bak.sav": {
+      "size": 32768,
+      "sha1": "cdea68789a20c42300baec7fe9625fd06701c2d3",
+      "location": "saves/GAMEBOY"
+    },
+    "Pokemon Stadium (USA) (Rev 2).fla": {
+      "size": 131072,
+      "sha1": "638fab49fe8e0016399a92018a46483b6853dbe0",
+      "location": "saves/N64"
+    },
+    "Pokemon Stadium (USA) (Rev 2)_1.tpk": {
+      "size": 32768,
+      "sha1": "cdea68789a20c42300baec7fe9625fd06701c2d3",
+      "location": "saves/N64"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "FlashRAM 1 Mbit plus a Transfer Pak with Pokemon Red. The MGL loaded the Game Boy game first (N64 core line F2,GBCGB, file index 2: the No-Intro Pokemon Red ROM), then Stadium; Main's Auto Detect (database: flash128k|tpak) put a Transfer Pak on pad 1. Files: saves/N64/<rom>.fla, 131072 bytes, byte-identical to Mupen64Plus-Next's FlashRAM region (32-bit words reversed; OPTIONS: SOUND MONO). The Transfer Pak data is the Game Boy game's own save: Main mounts saves/GAMEBOY/<gb rom>.sav (the folder named after the Game Boy core, since the GB ROM was not under games/) and, because that file existed, first copied it to saves/GAMEBOY/<gb rom>_bak.sav and to saves/N64/<rom>_1.tpk (both byte-identical to the Red save we put there: the gameboy-mister entry's, player RED, saved in the bedroom). Stadium's Game Pak Check read it (RED, ID 59173, 'This Game Pak wasn't saved at a POKEMON CENTER') and wrote 32 bytes into the cartridge RAM at 0x0000-0x001F (56 6C 71 77 7C 82 ...; zeros before): so the Game Boy save itself is the file the N64 game changes, in Game Boy order, and the .tpk is only a copy. Without a Game Boy game (an earlier run) the game stopped at 'There is a problem with the GB Game Pak's connector' and the .tpk was 32768 bytes of FF. Written on OSD open (Autosave On, the N64 default). The exact script is the MiSTer variant (START after 2000 frames, a shot of the Game Pak Check).",
+  "transfer_pak_game": {
+    "name": "Pokemon - Red Version (USA, Europe) (SGB Enhanced).gb",
+    "loaded_with": "MGL file index 2 (F2,GBCGB) before the N64 ROM"
+  }
+}

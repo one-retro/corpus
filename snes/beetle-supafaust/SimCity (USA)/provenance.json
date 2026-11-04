@@ -1,0 +1,33 @@
+{
+  "method": "played",
+  "system": "snes",
+  "core": "beetle-supafaust",
+  "core_file": "beetle-supafaust_libretro.dylib",
+  "core_name": "Beetle Supafaust",
+  "core_version": "1.29.0 642d1d1",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "SimCity (USA).sfc",
+    "sha1": "9140ae08d62a562ccb98576ba89f381f9f4f1439",
+    "size": 524288
+  },
+  "device": null,
+  "script": "scripts/snes/SimCity.txt",
+  "frames": 4472,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "SimCity (USA).srm": {
+      "size": 32768,
+      "sha1": "5fbf08b6b92d82c13ba82066e671f5faeefc4111"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null,
+  "built_from": {
+    "repo": "https://github.com/libretro/supafaust",
+    "commit": "642d1d1b6684aa7e306a02a89885f3f5456a5157",
+    "build": "make -j12 (platform=osx, arm64), after one patch: mednafen/config.h does not define HAVE_SEM_TIMEDWAIT on __APPLE__, so the core uses its condition-variable semaphores (macOS has no sem_timedwait)"
+  }
+}

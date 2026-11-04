@@ -1,0 +1,31 @@
+load corpus-tmp/mgl/oot.mgl 10
+# Ocarina of Time: name file 1 "AAAA". The game writes the file to SRAM
+# when the name is confirmed, then the script resets the console and goes
+# back to the file select to show it was read back.
+# N64 buttons on the RetroPad: A = b, B = y, Z = l2, Start = start.
+wait 1000
+press start 6    # skip the intro to the title
+wait 200
+press start 6    # title -> file select
+wait 260
+press a 6    # File 1 -> Name?
+wait 300
+tap a 4 20    # A A A A
+wait 30
+press start 6    # cursor to END
+wait 30
+press a 6    # END: the file is written here
+wait 300
+shot created
+wait 30
+save
+wait 60
+shot final
+# power cycle: load the game again; the core reads the .sav back from the SD card
+load corpus-tmp/mgl/oot.mgl 10
+wait 1000
+press start 6
+wait 200
+press start 6    # back to the file select after the reset
+wait 300
+shot reloaded

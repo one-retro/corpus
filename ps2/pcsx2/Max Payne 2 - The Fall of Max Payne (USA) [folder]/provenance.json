@@ -1,0 +1,110 @@
+{
+  "method": "played",
+  "system": "ps2",
+  "core": "pcsx2",
+  "app": "PCSX2",
+  "app_version": "v2.9.63 (macOS, x86_64 under Rosetta)",
+  "frontend": "PCSX2 standalone, isolated -datapath; input from an SDL3 virtual gamepad (sdlpad.dylib)",
+  "how": "ad-hoc re-signed copy of the app (no hardened runtime) so DYLD_INSERT_LIBRARIES works; the retro-run script is expanded per frame and stepped once per PCSX2 input poll (per vsync) from VM start; shots via the Screenshot hotkey; 5 s after the script PCSX2 gets SIGINT, its clean exit (VM shut down, cards closed, NVRAM saved)",
+  "rom": {
+    "name": "Max Payne 2 - The Fall of Max Payne (USA).iso",
+    "sha1": "d0b049e29459be920668ee17d12231ed2822a1a5",
+    "size": 2602237952
+  },
+  "bios": {
+    "name": "ps2-0200a-20040614.bin",
+    "sha1": "7a62e5f48603582707e9898eb055ea3eaee50d4c",
+    "what": "SCPH-70012 v2.00 USA (2004-06-14)"
+  },
+  "script": "scripts/ps2/Max Payne 2 - The Fall of Max Payne (USA).txt",
+  "frames": 6280,
+  "data_root": "the -datapath folder's PCSX2/ (memcards/, bios/); paths below are relative to it",
+  "files": {
+    "memcards/Mcd002.ps2": {
+      "size": 8650752,
+      "sha1": "eac18874c24d1018b5244074b0a6d11468b390ad"
+    },
+    "memcards/Mcd001.ps2/_pcsx2_superblock": {
+      "size": 8192,
+      "sha1": "c791336b2882a331f4bcbefeeb45a9b38f01467d"
+    },
+    "memcards/Mcd001.ps2/BASLUS-20814MaxPay2/BASLUS-20814MaxPay2": {
+      "size": 4,
+      "sha1": "2f086fc767a0dac59a38c67f409b4f74a1eab39f"
+    },
+    "memcards/Mcd001.ps2/BASLUS-20814MaxPay2/_pcsx2_index": {
+      "size": 1169,
+      "sha1": "ad0231e8133db812f73d79ddacd6813b6a88ab9f"
+    },
+    "memcards/Mcd001.ps2/BASLUS-20814MaxPay2/copy.ico": {
+      "size": 75664,
+      "sha1": "b9da8e672ec368f446357e9cfa0e6dfe85092921"
+    },
+    "memcards/Mcd001.ps2/BASLUS-20814MaxPay2/del.ico": {
+      "size": 75664,
+      "sha1": "b9da8e672ec368f446357e9cfa0e6dfe85092921"
+    },
+    "memcards/Mcd001.ps2/BASLUS-20814MaxPay2/icon.sys": {
+      "size": 964,
+      "sha1": "fbdb4043b731deb49a12e526b0910a3d36aa9b63"
+    },
+    "memcards/Mcd001.ps2/BASLUS-20814MaxPay2/infoFile.crc": {
+      "size": 4,
+      "sha1": "67c25dd36355636c4bb1f0883fe8837db2a66412"
+    },
+    "memcards/Mcd001.ps2/BASLUS-20814MaxPay2/infoFile.txt": {
+      "size": 1972,
+      "sha1": "f9fd04e31190245b9e7ddd89e2112e57525767f5"
+    },
+    "memcards/Mcd001.ps2/BASLUS-20814MaxPay2/list.ico": {
+      "size": 75664,
+      "sha1": "b9da8e672ec368f446357e9cfa0e6dfe85092921"
+    },
+    "memcards/Mcd001.ps2/BASLUS-20814MaxPay2/options.crc": {
+      "size": 4,
+      "sha1": "42ee499d9e358523319ea39fd0e17cd712627218"
+    },
+    "memcards/Mcd001.ps2/BASLUS-20814MaxPay2/options.sav": {
+      "size": 488,
+      "sha1": "7f1cd52aef288fdd74d74477fb7bb235e7349b60"
+    },
+    "memcards/Mcd001.ps2/BASLUS-20814MaxPay2/savegame0.sav": {
+      "size": 153600,
+      "sha1": "2c5457c0dcca7e256ef33c28ae77d92d37cc9183"
+    },
+    "memcards/Mcd001.ps2/BASLUS-20814MaxPay2/savegame1.sav": {
+      "size": 153600,
+      "sha1": "2c5457c0dcca7e256ef33c28ae77d92d37cc9183"
+    },
+    "memcards/Mcd001.ps2/BASLUS-20814MaxPay2/savegame2.sav": {
+      "size": 153600,
+      "sha1": "2c5457c0dcca7e256ef33c28ae77d92d37cc9183"
+    },
+    "memcards/Mcd001.ps2/BASLUS-20814MaxPay2/savegame3.sav": {
+      "size": 153600,
+      "sha1": "2c5457c0dcca7e256ef33c28ae77d92d37cc9183"
+    },
+    "memcards/Mcd001.ps2/BASLUS-20814MaxPay2/savegame4.sav": {
+      "size": 153600,
+      "sha1": "2c5457c0dcca7e256ef33c28ae77d92d37cc9183"
+    },
+    "memcards/Mcd001.ps2/BASLUS-20814MaxPay2/savegame5.sav": {
+      "size": 153600,
+      "sha1": "2c5457c0dcca7e256ef33c28ae77d92d37cc9183"
+    },
+    "bios/ps2-0200a-20040614.mec": {
+      "size": 4,
+      "sha1": "3f8affbe07024ccd2f5b8374072d0928c583a862"
+    },
+    "bios/ps2-0200a-20040614.nvm": {
+      "size": 1024,
+      "sha1": "f3c3c8a04d5e6e9e2302ecab2fb8ab279febf85d"
+    }
+  },
+  "proof": "PCSX2's own screenshot (last `shot`), RGBA 1280x960 converted to RGB 640x480",
+  "created": "2026-11-04",
+  "started_from": null,
+  "memory_card_type": "folder (slot 1)",
+  "ended_with": "SIGINT",
+  "note": null
+}

@@ -1,8 +1,10 @@
 # Genesis / Mega Drive
 
-Ten games, played from power-on in every runnable core: Genesis Plus GX (v1.7.4 f27655b), Genesis
-Plus GX Wide (v1.7.4 b7ad005), PicoDrive (2.05-1890c29), clownmdemu (v1.6.12 d43c270) and BlastEm
-(1.0.1-pre). 45 entries filed out of 50 attempts; the 5 misses are core findings, below.
+Thirteen games, played from power-on in every runnable core: Genesis Plus GX (v1.7.4 f27655b),
+Genesis Plus GX Wide (v1.7.4 b7ad005), PicoDrive (2.05-1890c29), clownmdemu (v1.6.12 d43c270) and
+BlastEm (1.0.1-pre). The first ten were the original pass (45 entries filed out of 50 attempts); a
+second pass added three EEPROM types the corpus lacked (11 filed out of 15). 56 of 65 in all; the 9
+misses are core findings, below.
 
 ## The games
 
@@ -18,17 +20,45 @@ Plus GX Wide (v1.7.4 b7ad005), PicoDrive (2.05-1890c29), clownmdemu (v1.6.12 d43
 | Evander Holyfield's 'Real Deal' Boxing (World) | Sega serial EEPROM 24C01, 128 bytes, `RA E8 40` | EEPROM (Sega wiring); career boxer "ABC", RESUME OLD CAREER after reset |
 | NBA Jam (USA, Europe) (Rev 1) | Acclaim serial EEPROM 24C02, 256 bytes | EEPROM (Acclaim wiring); initials record after a full CPU game |
 | NHLPA Hockey 93 (USA, Europe) (EA Sports) | EA serial EEPROM X24C01, 128 bytes | EEPROM (EA wiring); first playoff game played out |
+| Frank Thomas Big Hurt Baseball (USA, Europe) | Acclaim serial EEPROM **24C65, 8 KB**, 16-bit word addresses; Acclaim's 32 Mbit board wiring (SCL and SDA on 0x200000/0x200001); header `RA E8 40` 200001-200001 | the largest EEPROM; Season with Baltimore, Resume after reset |
+| NFL Quarterback Club 96 (USA, Europe) | Acclaim serial EEPROM **24C16, 2 KB** (device-address paging), same 32 Mbit wiring, same header | five season slots; COWBOYS 1996 saved to slot 1, listed by Resume Season |
+| Micro Machines - Military (Europe) (J-Cart) | Codemasters serial EEPROM **24C08, 1 KB** on the J-Cart board (write lines at 0x300000, SDA read at 0x380001 bit 7); **no `RA` header** and a blank product code, found by checksum 0x168B and the "DNLD" stack pointer | the Codemasters wiring; driver Spider renamed "AB" |
 
 No 16-bit (word-wide) SRAM title exists in the library: a scan of the `RA` headers of all 933
 Genesis ROMs (`work/genesis/scan_headers.py`) found 201 carts declaring backup RAM, with type bytes
 `F8 20` (odd-byte SRAM, 157), `E8 40` (serial EEPROM, 38) and `F8 40` (6, Accolade/EA sports games),
 and no `E0`/`F0` (both bytes, or even bytes). The only start address on an even byte is Rent a Hero's
-(200000-203FFF, still typed `F8`). So the corpus has byte-wide SRAM on odd addresses, FRAM, three
-EEPROM wirings, and nothing word-wide.
+(200000-203FFF, still typed `F8`). So the corpus has byte-wide SRAM on odd addresses, FRAM, five
+EEPROM wirings (Sega, EA, Acclaim's 16 and 32 Mbit boards, Codemasters' J-Cart) in five sizes
+(X24C01 128 bytes, 24C02 256, 24C08 1 KB, 24C16 2 KB, 24C65 8 KB), and nothing word-wide.
+
+Genesis Plus GX's database (`core/cart_hw/eeprom_i2c.c`) lists every EEPROM board by product code.
+Types still missing here: 24C02 in device-address mode (NFL Quarterback Club) and 24C04 (NBA Jam
+Tournament Edition), see below.
 
 Swapped out after a few attempts: Wonder Boy in Monster World (no save point found in the timebox),
-Mega Man - The Wily Wars (the EEPROM is only formatted, "CAPCOM" at 0x2C, at first boot; a real save
-needs a stage cleared), College Slam (24C65, 8 KB; its menus ignored our input in Genesis Plus GX).
+College Slam (24C65, 8 KB; its menus ignored our input in Genesis Plus GX; Frank Thomas took its
+place as the 24C65).
+
+Tried again in the second pass and still not filed:
+
+- **Mega Man - The Wily Wars (Europe)** (X24C01, Sega wiring, product T-12046, `RA E8 40`
+  200001-200001). The EEPROM is formatted at first boot ("CAPCOM" at 0x2C) and written again only
+  when a stage is cleared; option mode (key config, sound test) saves nothing. Controls are B shoot,
+  C jump, A weapon window. Cut Man's stage (Mega Man 1, file 1) was scripted from save states in
+  Genesis Plus GX through the opening run of platforms and Bunby Helis, the pipe steps and the
+  first Blaster shaft, about half the stage, before the timebox ran out. Blind play from
+  screenshots costs several runs per screen, and the boss and five cores' timing were still to come.
+  It is still the only Sega-wired EEPROM game besides Evander, so it would add a second file of the
+  same type, not a new type.
+- **NFL Quarterback Club (World)** (24C02 in device-address mode, the one board of that type). Like
+  College Slam (same developer, same engine) it ignores 4-6 frame presses: its title only gives way
+  to presses of about 30 frames, and then its main menu (QB Challenge / Play NFL / Simulation)
+  moved its highlight but never took B, in Genesis Plus GX and PicoDrive, with a 3- or 6-button pad.
+  A lead for both games: hold every button much longer.
+- **NBA Jam - Tournament Edition (World)** (24C04, the one board of that type). It writes 16 bytes at
+  boot; like NBA Jam it records initials only after a whole game, about 40k frames. Not attempted
+  for time.
 
 ## Games x cores
 
@@ -44,6 +74,9 @@ needs a stage cleared), College Slam (24C65, 8 KB; its menus ignored our input i
 | Evander Holyfield | 128 | 128 | 8192 | failed: no EEPROM | 128 |
 | NBA Jam | 256 | 256 | 8192 | failed: no EEPROM | 256 |
 | NHLPA 93 | 128 | 128 | 8192 | failed: no EEPROM | 128 |
+| Frank Thomas | 8192 | 8192 | 8192 | failed: never boots (blue and black stripes) | 8192 |
+| NFL QB Club 96 | **253** | 253 | 8192 | failed: never boots (stripes) | 2048 |
+| Micro Machines Military | **673** | 673 | 8192 | failed: no EEPROM (65536 zeros) | failed: 1024 bytes of 0xFF, nothing written |
 
 Sizes in bytes, every file `<ROM stem>.srm`. BlastEm runs the `<title>.blastem.txt` variants (see
 Scripts). Not runnable here: drizzt-megadrive, ericlewis-genesis, spiritualized-genesis (openFPGA),
@@ -84,6 +117,28 @@ GPGX against 0x00 elsewhere (bytes the game never writes), and Evander's PicoDri
 NHLPA 93 also differ in game data (random draws, CPU opponents, and the hockey game's result), not
 just layout.
 
+The bigger EEPROMs of the second pass:
+
+- **Frank Thomas (24C65): one file in four cores.** All four write 8192 bytes, byte-identical (sha1
+  8b1b5972...). The game fills the whole chip at first boot (team names, schedules; only 2 of 8192
+  bytes stay 0xFF), so neither GPGX's trimming nor PicoDrive's zero fill can show, and PicoDrive's
+  fixed 8192-byte EEPROM file happens to be the chip's size. The season itself changes 16 bytes.
+- **NFL Quarterback Club 96 (24C16): three sizes.** GPGX writes **253 bytes**, the 2 KB chip cut after
+  its last byte that is not 0xFF; BlastEm writes the chip, 2048 bytes, 0xFF past the data; PicoDrive
+  8192 bytes, 0x00 wherever the game never wrote (bytes 0-4 and 253-2047, then its own zero tail).
+  Bytes 5-252 are the same in all three. So a 24C16 save can arrive as 253, 2048 or 8192 bytes.
+- **Micro Machines - Military (24C08, J-Cart).** GPGX 673 bytes (trimmed), PicoDrive 8192, identical
+  over the first 673. The game formats the chip at first boot: "hasreset", then `00 FF` pairs, then
+  the drivers' six-letter names from 0x14C; the save rewrites Spider's, at 0x176, as "AB". BlastEm maps
+  this cart's EEPROM in rom.db (by sha1, with a "TODO: J-Cart" note) but nothing reached the chip:
+  its file is 1024 bytes of 0xFF and the run is not filed. In BlastEm and clownmdemu the proof screen
+  still shows "AB" after the reset, because the game keeps the names in work RAM across a reset; the
+  files show nothing was saved.
+- **clownmdemu and the Acclaim 32 Mbit boards.** Frank Thomas and NFL QB Club 96 never get past a
+  screen of blue and black vertical stripes (the files stay 65536 zeros). Genesis Plus GX shows the
+  same stripes if NFL QB Club 96 is soft-reset after saving, so that script proves the save by
+  backing out to Resume Season instead of resetting; Frank Thomas survives the reset.
+
 Other surprises:
 
 - **PicoDrive and the `F8 40` header.** PicoDrive treats bit 0x40 of header byte 0x1B3 as "this is
@@ -98,8 +153,9 @@ Other surprises:
   its final stats after about 96 rounds of 306 frames instead of about 117 in GPGX (5/6 of the
   frames), so its variant plays 86 rounds of B, not 105. The other carts needed no timing change.
 - Sonic 3, Phantasy Star IV, Might and Magic, WSB '95, NBA Jam ("Snake 1993" at 0x08) and NHLPA 93
-  format their save RAM at first boot, as do Wily Wars ("CAPCOM" at 0x2C) and College Slam (4688
-  bytes in GPGX). A boot-only file is not a save, so every script goes on to a real one.
+  format their save RAM at first boot, as do Wily Wars ("CAPCOM" at 0x2C), College Slam (4688
+  bytes in GPGX), Frank Thomas (team names), Micro Machines Military ("hasreset", names) and NBA Jam
+  TE (16 bytes). A boot-only file is not a save, so every script goes on to a real one.
 
 ## Scripts
 
@@ -107,7 +163,10 @@ Other surprises:
 `<game>.blastem.txt` beside each one that presses A/B/C (generated from the shared script by
 `work/genesis/blastemize.py`; NBA Jam's also has the shorter loop). Sonic 3, S&K + Sonic 3 and WSB
 '95 press only Start and the D-pad and have no variant. NBA Jam and NHLPA 93 play whole CPU games
-(about 40k and 70k frames); the other scripts are under 10k frames.
+(about 40k and 70k frames); the other scripts are under 10k frames. Second pass: `Frank Thomas Big
+Hurt Baseball.txt`, `NFL Quarterback Club 96.txt` and `Micro Machines - Military.txt`, each with a
+generated `.blastem.txt`. Development scripts for them, for Wily Wars (with `gen.py`, which expands
+a compact input list with mashed fire) and for NFL Quarterback Club are in `work/genesis/eep/`.
 
 ## Downloaded
 

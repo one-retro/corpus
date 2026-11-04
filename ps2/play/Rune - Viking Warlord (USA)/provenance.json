@@ -1,0 +1,48 @@
+{
+  "method": "played",
+  "system": "ps2",
+  "core": "play",
+  "core_file": "play_libretro.dylib",
+  "core_name": "Play!",
+  "core_version": "0.77-17-g1f27232",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "runner": "ps2-save.py: make-save.py with a fresh system directory and HOME per run (PS2 cores write their cards there); see ps2/NOTES.md",
+  "renderer": "opengl",
+  "rom": {
+    "name": "Rune - Viking Warlord (USA).cue",
+    "sha1": "cc9a316ef52c65cc06868b8b58b5114d0f537174",
+    "size": 93,
+    "tracks": [
+      {
+        "name": "Rune - Viking Warlord (USA).bin",
+        "sha1": "4204e6bd525b50af9f9ad254dc77cd2a5ae65f4b",
+        "size": 682364592
+      }
+    ]
+  },
+  "bios": null,
+  "device": null,
+  "script": "scripts/ps2/Rune - Viking Warlord (USA).txt",
+  "frames": 5742,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "home/Documents/Play Data Files/vfs/mc0/BASLUS-20109/BASLUS-20109": {
+      "size": 65536,
+      "sha1": "fe14793745084f4f3b1ae564d2690e9936be2267"
+    },
+    "home/Documents/Play Data Files/vfs/mc0/BASLUS-20109/icon.sys": {
+      "size": 964,
+      "sha1": "3dbe1458463e0bec4005a0e913d69bb17e2932f2"
+    },
+    "home/Documents/Play Data Files/vfs/mc0/BASLUS-20109/rune.ico": {
+      "size": 50968,
+      "sha1": "b06993b3aa6d50eb8953742979ae2f306425cb66"
+    }
+  },
+  "also_written_not_filed": [
+    "home/Documents/Play Data Files/config.xml"
+  ],
+  "created": "2026-11-04",
+  "note": null
+}

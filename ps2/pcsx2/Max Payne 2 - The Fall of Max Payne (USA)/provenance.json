@@ -1,0 +1,46 @@
+{
+  "method": "played",
+  "system": "ps2",
+  "core": "pcsx2",
+  "app": "PCSX2",
+  "app_version": "v2.9.63 (macOS, x86_64 under Rosetta)",
+  "frontend": "PCSX2 standalone, isolated -datapath; input from an SDL3 virtual gamepad (sdlpad.dylib)",
+  "how": "ad-hoc re-signed copy of the app (no hardened runtime) so DYLD_INSERT_LIBRARIES works; the retro-run script is expanded per frame and stepped once per PCSX2 input poll (per vsync) from VM start; shots via the Screenshot hotkey; 5 s after the script PCSX2 gets SIGINT, its clean exit (VM shut down, cards closed, NVRAM saved)",
+  "rom": {
+    "name": "Max Payne 2 - The Fall of Max Payne (USA).iso",
+    "sha1": "d0b049e29459be920668ee17d12231ed2822a1a5",
+    "size": 2602237952
+  },
+  "bios": {
+    "name": "ps2-0200a-20040614.bin",
+    "sha1": "7a62e5f48603582707e9898eb055ea3eaee50d4c",
+    "what": "SCPH-70012 v2.00 USA (2004-06-14)"
+  },
+  "script": "scripts/ps2/Max Payne 2 - The Fall of Max Payne (USA).txt",
+  "frames": 6280,
+  "data_root": "the -datapath folder's PCSX2/ (memcards/, bios/); paths below are relative to it",
+  "files": {
+    "memcards/Mcd001.ps2": {
+      "size": 8650752,
+      "sha1": "d3b763aa67e03c994cc00bc843d636a229a5df8e"
+    },
+    "memcards/Mcd002.ps2": {
+      "size": 8650752,
+      "sha1": "eac18874c24d1018b5244074b0a6d11468b390ad"
+    },
+    "bios/ps2-0200a-20040614.mec": {
+      "size": 4,
+      "sha1": "3f8affbe07024ccd2f5b8374072d0928c583a862"
+    },
+    "bios/ps2-0200a-20040614.nvm": {
+      "size": 1024,
+      "sha1": "f3c3c8a04d5e6e9e2302ecab2fb8ab279febf85d"
+    }
+  },
+  "proof": "PCSX2's own screenshot (last `shot`), RGBA 1280x960 converted to RGB 640x480",
+  "created": "2026-11-04",
+  "started_from": null,
+  "memory_card_type": "file",
+  "ended_with": "SIGINT",
+  "note": null
+}

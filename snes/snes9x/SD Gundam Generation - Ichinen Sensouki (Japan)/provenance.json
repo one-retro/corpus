@@ -1,0 +1,28 @@
+{
+  "method": "played",
+  "system": "snes",
+  "core": "snes9x",
+  "core_file": "snes9x_libretro.dylib",
+  "core_name": "Snes9x",
+  "core_version": "1.63 fae2fea",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "SD Gundam Generation - Ichinen Sensouki (Japan).st",
+    "sha1": "adc7716a4b081aba5cde3525881c51ee6d600396",
+    "size": 524288
+  },
+  "device": null,
+  "script": "scripts/snes/SD Gundam Generation - Ichinen Sensouki.txt",
+  "frames": 7425,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "SD Gundam Generation - Ichinen Sensouki (Japan).srm": {
+      "size": 16384,
+      "sha1": "b8e3330c0a83fbb302709566cafec5f229bd16d4"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "The .st mini-cart loaded on its own (retro_load_game); snes9x took the Sufami Turbo base cart from STBIOS.bin in the system directory (a copy of \"Sufami Turbo (Japan)\")."
+}

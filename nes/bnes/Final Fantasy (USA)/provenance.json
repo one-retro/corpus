@@ -1,0 +1,33 @@
+{
+  "method": "played",
+  "system": "nes",
+  "core": "bnes",
+  "core_file": "bnes_libretro.dylib",
+  "core_name": "bnes",
+  "core_version": "v083 8e26e89",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Final Fantasy (USA).nes",
+    "sha1": "e8f34d93576048528be4cb736f292edb431083e0",
+    "size": 262160
+  },
+  "device": null,
+  "script": "scripts/nes/Final Fantasy.txt",
+  "frames": 3934,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Final Fantasy (USA).srm": {
+      "size": 8192,
+      "sha1": "8b932d209d1af7285613ad882e2915c12ec3128f"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null,
+  "built_from": {
+    "repo": "https://github.com/libretro/bnes-libretro",
+    "commit": "8e26e89a93bef8eb8992d1921b539dce1792660a",
+    "build": "make platform=osx CC=\"cc -DIOS -DHAVE_POSIX_MEMALIGN=1\" CXX=\"c++ -DIOS\" -j12 (no source edits; the IOS define is the code's own switch for Apple arm64: no <malloc.h>, stat64 = stat)"
+  }
+}

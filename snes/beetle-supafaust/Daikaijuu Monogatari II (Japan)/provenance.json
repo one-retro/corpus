@@ -1,0 +1,33 @@
+{
+  "method": "played",
+  "system": "snes",
+  "core": "beetle-supafaust",
+  "core_file": "beetle-supafaust_libretro.dylib",
+  "core_name": "Beetle Supafaust",
+  "core_version": "1.29.0 642d1d1",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Daikaijuu Monogatari II (Japan).sfc",
+    "sha1": "673c48a373b7da7e0e934c55f7182587e07bb9ab",
+    "size": 5242880
+  },
+  "device": null,
+  "script": "scripts/snes/Daikaijuu Monogatari II.txt",
+  "frames": 23538,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Daikaijuu Monogatari II (Japan).srm": {
+      "size": 8192,
+      "sha1": "6f188ae86a95d82db08e962bb3f863441638967f"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null,
+  "built_from": {
+    "repo": "https://github.com/libretro/supafaust",
+    "commit": "642d1d1b6684aa7e306a02a89885f3f5456a5157",
+    "build": "make -j12 (platform=osx, arm64), after one patch: mednafen/config.h does not define HAVE_SEM_TIMEDWAIT on __APPLE__, so the core uses its condition-variable semaphores (macOS has no sem_timedwait)"
+  }
+}

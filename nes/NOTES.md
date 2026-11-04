@@ -82,7 +82,8 @@ The remaining cores cannot run here:
 - **nes-mister** (MiSTer): D for Zelda, Dragon Warrior, Final Fantasy, Zelda II, Crystalis,
   StarTropics, Kirby's Adventure, Shingen the Ruler and both Wizardry games.
 - **fceux** (standalone): D for Final Fantasy (an FCE Ultra 0.98.12 file; see below).
-- **mednafen** (standalone), **bnes** and **emux-nes** (libretro, no macOS build): nothing found.
+- **mednafen** (standalone): nothing found. **bnes** and **emux-nes** were built from source since
+  (BUILT-CORES.md): bnes filed 7 of 10 (not StarTropics, Family Circuit '91 or DBZ II); emux-nes writes no save.
 
 ## What differs between the cores' files
 
@@ -165,7 +166,136 @@ Leads not filed:
 
 - **Kirby's Adventure.** The first save needs stage 1-1 cleared (completion count > 0).
 - **Romance of the Three Kingdoms II and Nobunaga's Ambition.** Koei's Y/N prompts answer to the
-  d-pad, not A/Start, and the title timing differed between cores.
+  d-pad, not A/Start, and the title timing differed between cores. Done in the second pass (below):
+  LEFT answers Y, RIGHT answers N.
 - **SD Gundam Gaiden, Magical Taruruuto-kun, DBZ Kyoushuu (24C01) and Minelvaton Saga, Kyonshiizu 2
   (X1-005).** No save was reached in about 3000 frames of play, or the name entry would not close.
-  The X1-005 and 24C01 boards are still uncovered.
+  X1-005 is covered by Taito Grand Prix in the second pass; 24C01 is still uncovered.
+
+## Second pass: Koei boards and the board sweep
+
+Five more games, each played to a genuine in-game save by one script in `scripts/nes/` and replayed
+in all six runnable cores. Every proof.png was checked by eye, and every filed save was also
+reloaded from its file in a fresh run of the same core. These runs used `tools/retro-run` directly (it now
+calls the core in RetroArch's order), not the patched copy in `work/nes/`. 21 entries filed out of
+30 runs.
+
+### The sweep
+
+All 1392 ROMs in the headered 1G1R set carry NES 2.0 headers, so mapper, submapper and PRG-NVRAM
+size are declared. The battery-backed boards (mapper.submapper, PRG-RAM + PRG-NVRAM as declared):
+
+| Board | NVRAM | Games | Corpus |
+| --- | --- | --- | --- |
+| 1 MMC1 (SxROM) | 8 KiB | 114 | yes (Zelda, DW, FF, Zelda II, Destiny) |
+| 1 MMC1 SOROM | 8 KiB + 8 KiB volatile | 4 | **Nobunaga's Ambition** |
+| 1 MMC1 SXROM | 32 KiB | 2 (Dezaemon, Best Play Pro Yakyuu Special) | attempted (below) |
+| 4 MMC3 / 4.1 MMC6 | 8 KiB / 1 KiB | 73 / 2 | yes (Crystalis, EarthBound / StarTropics) |
+| 5 MMC5 | 8 KiB | 3 (Gemfire, Just Breed, ...) | no (size already covered) |
+| 5 MMC5 | 32 KiB | 3 | **Romance of the Three Kingdoms II** |
+| 5 MMC5 | 8 KiB + 8 KiB volatile | 5 | **Uncharted Waters** |
+| 10 MMC4 | 8 KiB | 3 (Fire Emblem x2, Famicom Wars) | no |
+| 16.5 Bandai 24C02 | 256 B EEPROM | 6 | yes (DBZ II) |
+| 159 Bandai 24C01 / 157 Datach | 128 B EEPROM | 4 / 1 | attempted (below) |
+| 18, 21.2, 25.3, 26, 68, 69, 85.2, 118, 153, 155 | 8 KiB | 1-3 each | no (Jaleco SS88006, Konami VRC2/4/6/7, Sunsoft-4, FME-7, TxSROM, Bandai 153, 155) |
+| 19.2 Namco 163, battery, no NVRAM declared (the save is the N163's internal 128 bytes) | (128 B in the mapper) | 6 (Hydlide 3, Famista '90, Battle Fleet, ...) | attempted (below) |
+| 19.2/19.3/19.5 Namco 163 | 8 KiB | 6 | **Pac-Man - Championship Edition** |
+| 80 Taito X1-005 | 128 B in the mapper | 5 | **Taito Grand Prix** |
+| 82 Taito X1-017 | 8 KiB declared (5 KiB in the mapper) | 4 | attempted (below) |
+| 210.1 Namco 175 | 2 KiB | 1 | yes (Family Circuit '91) |
+| 547 | 8 KiB + 8 KiB | 4 (NHK Gakuen etc.) | no |
+
+### The five games
+
+| Game (script) | Board, save | Save | Why |
+| --- | --- | --- | --- |
+| Romance of the Three Kingdoms II (USA) (`Romance of the Three Kingdoms II.txt`) | MMC5, 32 KiB | scenario 1, one player as Yuan Shu, level 1; first turn SELECT -> 3.SAVE -> Y. Proof: after a reset, 7.Load Saved Game, Yuan Shu's orders, Jan 189 | the largest MMC5 RAM |
+| Uncharted Waters (USA) (`Uncharted Waters.txt`) | MMC5, 8 KiB battery + 8 KiB volatile | hero "AAA", every bonus point spent, flagship named; Lisbon: SELECT -> Save -> Y, Quit? N. Proof: after a reset, Saved Game -> Lisbon, Feb 21 1502 | two RAM chips, one kept |
+| Nobunaga's Ambition (USA) (`Nobunaga's Ambition.txt`, variant `.nestopia.txt`) | MMC1 SOROM, 8 KiB battery + 8 KiB volatile | 50 fiefs, Kakizaki of Ezo, skill 1; 20 Other -> 4 Save -> Y, then 17 Rest one season (the game writes at the end of the season). Proof: after a reset, New game? N loads 1560 Summer | the board where RustyNES writes 16 KiB |
+| Taito Grand Prix - Eikou e no License (Japan) (`Taito Grand Prix.txt`) | Taito X1-005, 128 B inside the mapper | NORMAL -> なまえ とうろく "ああああ", SELECT, A. Proof: after a reset, PLAY SELECT shows レーサー ああああ, RANK D, 10万円 | X1-005 internal RAM; the previous pass's X1-005 games never reached a save |
+| Pac-Man - Championship Edition (USA, Europe) (Namco Museum Archives Vol 1) (`Pac-Man - Championship Edition.txt`) | Namco 163 (19.3), 8 KiB | one NORMAL game with no input (40 points, three lives lost); the game keeps the result and a replay. Proof: after a reset, OPTIONS -> REPLAY NORMAL plays it back | Namco 163 with WRAM; a modern (2020) NES release |
+
+Koei input: numbers go up/down (RIGHT moves to the next digit), every (Y/N) is answered by the
+d-pad, LEFT = Y and RIGHT = N; A and START do nothing there. Random events (an alliance letter in
+RoTK II; revolts, wars and the rolled abilities in Nobunaga) differ between cores, so the scripts
+wait long and handle an event either way: RoTK II presses B then A twice (B
+skips the letter's prompt, A reopens the orders menu), Nobunaga rests rather than passes (a
+neighbour's attack in the first season waits for input after Pass, but the computer fights it for a
+resting daimyo). In Nestopia Tsugaru attacked Ezo before Kakizaki's first turn anyway, so its
+variant plays the 17-fief game as Uesugi with the same save steps.
+
+| Game | fceumm | fixnes | mesen | nestopia | quicknes | rustynes |
+| --- | --- | --- | --- | --- | --- | --- |
+| Romance of the Three Kingdoms II | F | F | F | F | x: garbage screen after the player count (1) | F |
+| Uncharted Waters | F | F | F | F | x: corrupt screen, stuck at "Save game?" | x: writes 8 KiB of 00 (2) |
+| Nobunaga's Ambition | F | x: wrong chip (3) | x: wrong chip (3) | F (variant) | x: wrong chip (3) | F |
+| Taito Grand Prix | F | F | F | F | x: mapper 80, black screen, 8 KiB of FF | x: 128 bytes of 00 (4) |
+| Pac-Man Championship Edition | F | F | F | F | x: mapper 19, black screen, 8 KiB of FF | F |
+
+1. QuickNES reports 8 KiB for this 32 KiB MMC5 board and the screen turns to tile garbage at the
+   game-level prompt.
+2. RustyNES runs Uncharted Waters and saves in session (a soft reset continues), but its `.srm` is
+   8192 zero bytes, not the chip the game saved to. A fresh run from the file starts a New
+   Adventure. Its RoTK II (one 32 KiB chip) is fine.
+3. fixNES, Mesen and QuickNES write one 8 KiB file whose layout is that of RustyNES's *first*
+   8 KiB, the volatile work chip (work data at 0x0000-0x03FF). fceumm and Nestopia write the battery
+   chip (nothing at 0x0000-0x03FF, the layout of RustyNES's *second* 8 KiB). fixNES and QuickNES
+   fail even within the session: after the soft reset the game says "Data can't be used / Hit any
+   key", so they do not bank SOROM's two chips. Mesen does: in session the save loads (1560 Summer),
+   but its `.srm` is the wrong chip, and a fresh run from it ignores "New game? N".
+4. RustyNES shows the registered racer in session but its 128-byte file is all zeros; reloaded, the
+   racer list is empty. The X1-005 RAM is not persisted.
+
+### What differs between the files (second pass)
+
+| Game / board | fceumm | fixnes | mesen | nestopia | rustynes |
+| --- | --- | --- | --- | --- | --- |
+| RoTK II, MMC5 32 KiB | 32768 | **65536**: 32 KiB of 00, then the 32 KiB | **33792** = 32 KiB + 1 KiB ExRAM | 32768 | 32768 |
+| Uncharted Waters, MMC5 8+8 | 8192 | **65536**: the 8 KiB at 0x2000, other RAM at 0xA000 | **9216** = 8 KiB + 1 KiB ExRAM | 8192 | (8192 of 00) |
+| Nobunaga, SOROM 8+8 | 8192 (battery chip) | (8192, work chip) | (8192, work chip) | 8192 (battery chip) | **16384**: work chip, then battery chip |
+| Taito Grand Prix, X1-005 128 B | **256: 128 of 00, then the 128** | **8192: the 128 at 0, then 00** | **256: the 128, mirrored twice** | 128 | (128 of 00) |
+| Pac-Man CE, N163 + 8 KiB | 8192 | **393216**: the 8 KiB, then 00 | 8192 | 8192 | 8192 |
+
+- RoTK II: Mesen (first 32 KiB), fixNES (second 32 KiB), Nestopia and RustyNES are byte-identical;
+  fceumm differs in 298 bytes: a different random event at the start changed the game state (the
+  province figures in its proof differ). The data runs from 0x2006 to 0x7D82; the first 8 KiB stay
+  zero. Mesen appends the MMC5's 1 KiB ExRAM (416 non-zero bytes); no other core saves it.
+- Uncharted Waters: fceumm, Mesen (first 8 KiB) and Nestopia identical; fixNES's 0x2000-0x3FFF is
+  the same 8 KiB and 0xA000-0xBFFF holds 2108 more non-zero bytes (the volatile chip). Mesen's ExRAM
+  tail: 488 non-zero bytes.
+- Taito Grand Prix: the 128 bytes agree in every core that kept them, but sit at different
+  offsets: at 0x00 in Nestopia (the whole file) and fixNES, at 0x80 in fceumm (0x00-0x7F zero), and
+  at both 0x00 and 0x80 in Mesen. A reader has to know each core's offset. Nestopia, which reported 0 bytes
+  for the X1-005 games Kyonshiizu 2 and Minelvaton Saga in the first pass, keeps 128 here, so its
+  X1-005 support depends on the game, not only the board.
+- Pac-Man CE: the 8 KiB is byte-identical in all five; no core saves the Namco 163's own 128 bytes
+  for this board. fixNES's 393216 is the size it also reports for Megami Tensei II (another N163).
+- No core here wrote any file besides `<stem>.srm` for these five.
+
+### Attempted, not filed (timeboxed)
+
+Boot probes (900 frames; save RAM bytes each core reports):
+
+| Board (game) | fceumm | fixnes | mesen | nestopia | quicknes | rustynes |
+| --- | --- | --- | --- | --- | --- | --- |
+| MMC1 SXROM 32 KiB (Dezaemon) | 32768 | **8192** | 32768 | **0** | 8192 | 32768 |
+| Namco 163, internal 128 B only (Hydlide 3) | 8192 | 262144 | **0** | **0** | 8192 | 8192 |
+| Taito X1-017 (SD Keiji Blader) | 8192 | 8192 | 8192 | **0** | 8192 | 8192 |
+| Bandai 24C01 (Magical Taruruuto-kun 2) | 128 | load fails (rc 1) | 128 + `.eeprom128` | **0** | 8192 | 128 |
+
+So for the N163-internal-RAM games no core offers a 128-byte save: Mesen and Nestopia report none
+and the others report an 8 KiB (or larger) WRAM the board does not have. Nestopia's 0 for SXROM and
+X1-017 means RetroArch would write no `.srm` at all for a Dezaemon or SD Keiji save in Nestopia.
+
+- **Dezaemon (SXROM).** Battery RAM stayed zero after painting attempts in the player editor. Its
+  COMMAND panel has LOAD/SAVE icons worked by a blinking, accelerating pointer, and placing it was
+  not worked out in the timebox.
+- **Magical Taruruuto-kun 2 (24C01).** A file is named and started, but the EEPROM stays blank: the
+  game is an action board game that saves at some later point.
+- **SD Keiji Blader (X1-017).** A new file is named and play reaches police HQ, but no save point was
+  found there (the doctor heals, the commander repeats his order); CONTINUE still lists three empty
+  files.
+- **Kyuukyoku Harikiri Stadium III (X1-017).** Changing a setting changed one byte of the 8 KiB; the
+  team editor (さくせい) opens a 30000-point roster screen, and no save was reached in the timebox.
+- **Hydlide 3 (N163 internal).** Its menu has no save; the 8 KiB fceumm exposes stays zero.
+- **Famista '90 (N163 internal).** Only the attract loop was seen.

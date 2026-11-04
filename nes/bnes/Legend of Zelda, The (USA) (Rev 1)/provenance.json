@@ -1,0 +1,33 @@
+{
+  "method": "played",
+  "system": "nes",
+  "core": "bnes",
+  "core_file": "bnes_libretro.dylib",
+  "core_name": "bnes",
+  "core_version": "v083 8e26e89",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Legend of Zelda, The (USA) (Rev 1).nes",
+    "sha1": "4671517d72d09799403f6c672cd2b395933e926e",
+    "size": 131088
+  },
+  "device": null,
+  "script": "scripts/nes/Legend of Zelda.txt",
+  "frames": 1116,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Legend of Zelda, The (USA) (Rev 1).srm": {
+      "size": 8192,
+      "sha1": "92ad8037aeb6cd09672dac7721a4795fe717021d"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null,
+  "built_from": {
+    "repo": "https://github.com/libretro/bnes-libretro",
+    "commit": "8e26e89a93bef8eb8992d1921b539dce1792660a",
+    "build": "make platform=osx CC=\"cc -DIOS -DHAVE_POSIX_MEMALIGN=1\" CXX=\"c++ -DIOS\" -j12 (no source edits; the IOS define is the code's own switch for Apple arm64: no <malloc.h>, stat64 = stat)"
+  }
+}

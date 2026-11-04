@@ -1,0 +1,51 @@
+{
+  "method": "played",
+  "system": "ps2",
+  "core": "lrps2",
+  "core_file": "pcsx2_libretro.dylib",
+  "core_name": "ParaLLEl PS2",
+  "core_version": "v2.0.0-da5b07e",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "runner": "ps2-save.py: make-save.py with a fresh system directory and HOME per run (PS2 cores write their cards there); see ps2/NOTES.md",
+  "renderer": "software (pcsx2_renderer = Software (SW), CPU only)",
+  "rom": {
+    "name": "Sega Ages 2500 Series Vol. 5 - Golden Axe (Japan).cue",
+    "sha1": "e9bdba6639c36e42c1f5abd02d8e977e38e64f78",
+    "size": 115,
+    "tracks": [
+      {
+        "name": "Sega Ages 2500 Series Vol. 5 - Golden Axe (Japan).bin",
+        "sha1": "feee7bcfc73a81ae9bcb0f36cdfc62ada3639004",
+        "size": 156622032
+      }
+    ]
+  },
+  "bios": {
+    "name": "ps2-0200a-20040614.bin",
+    "sha1": "7a62e5f48603582707e9898eb055ea3eaee50d4c",
+    "size": 4194304,
+    "what": "SCPH-70012 v2.00 USA (2004-06-14)"
+  },
+  "device": null,
+  "script": "scripts/ps2/Sega Ages 2500 Series Vol. 5 - Golden Axe (Japan).txt",
+  "frames": 3042,
+  "options": "# LRPS2 with per-game cards: <content name>.ps2 in the save directory instead of the shared\n# system/pcsx2/memcards/Mcd001.ps2 and Mcd002.ps2.\npcsx2_renderer = Software (SW)\npcsx2_shared_memory_cards = disabled\n",
+  "started_from": null,
+  "files": {
+    "saves/Sega Ages 2500 Series Vol. 5 - Golden Axe (Japan).ps2": {
+      "size": 8650752,
+      "sha1": "8db3a0da649f88183d2f416341dd1e04e15a86cf"
+    },
+    "system/pcsx2/bios/ps2-0200a-20040614.mec": {
+      "size": 4,
+      "sha1": "3f8affbe07024ccd2f5b8374072d0928c583a862"
+    },
+    "system/pcsx2/bios/ps2-0200a-20040614.nvm": {
+      "size": 1024,
+      "sha1": "f3c3c8a04d5e6e9e2302ecab2fb8ab279febf85d"
+    }
+  },
+  "also_written_not_filed": null,
+  "created": "2026-11-04",
+  "note": null
+}

@@ -1,0 +1,28 @@
+{
+  "method": "played",
+  "system": "snes",
+  "core": "snes9x-2010",
+  "core_file": "snes9x2010_libretro.dylib",
+  "core_name": "Snes9x 2010",
+  "core_version": "1.52.4 fe690dd",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "BS-X - Sore wa Namae o Nusumareta Machi no Monogatari (Japan) (Rev 1).sfc",
+    "sha1": "604556b2e62860af18db5a77f2956ebc75450020",
+    "size": 1048576
+  },
+  "device": null,
+  "script": "scripts/snes/BS-X.txt",
+  "frames": 7520,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "BS-X - Sore wa Namae o Nusumareta Machi no Monogatari (Japan) (Rev 1).srm": {
+      "size": 32768,
+      "sha1": "f2ad6f82eab5f769bf2fb1bb1b8fb59554d85cd0"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null
+}

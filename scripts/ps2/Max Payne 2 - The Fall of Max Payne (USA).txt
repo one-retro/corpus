@@ -1,0 +1,13 @@
+# Max Payne 2 - The Fall of Max Payne (USA), SLUS-20814, DVD.
+# At power-on the game asks to format the unformatted card, then creates its whole
+# save folder by itself ("Creating savegame folder"): options plus six empty 150 KiB
+# save slots and three icons, about 1.1 MiB.
+wait 5000
+shot prompt          # "... is unformatted. Do you wish to format ...? Yes / No"
+press up 10          # Yes
+wait 60
+press b 10
+wait 300
+shot creating        # "Creating savegame folder."
+wait 900
+shot menu            # main menu, Load now enabled

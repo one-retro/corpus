@@ -79,7 +79,7 @@ unchanged, on the same frame counts: no per-core variants were needed.
 | Core | Status |
 | --- | --- |
 | mupen64plus (standalone) | Not runnable here. 2 downloaded: Banjo-Tooie (USA), Mischief Makers (USA) |
-| n64-mister (MiSTer) | Not runnable here. 5 downloaded: Ocarina of Time (USA), Majora's Mask (USA), Banjo-Kazooie (USA), Donkey Kong 64 (USA), 007 - The World Is Not Enough (USA) (a `.cpk`) |
+| n64-mister (MiSTer) | Not runnable here. 5 downloaded: Ocarina of Time (USA), Majora's Mask (USA), Banjo-Kazooie (USA), Donkey Kong 64 (USA), 007 - The World Is Not Enough (USA) (a `.cpk`). 11 played on the owner's MiSTer: see "n64-mister, played on the owner's MiSTer" below |
 
 ## The libretro `.srm`
 
@@ -241,3 +241,80 @@ chip.
 - **No harness problems.** retro-run ran both cores with default options plus the two option files.
 - **Disk:** once, commands could not start because the disk was full (ENOSPC). I deleted my
   dry-run directories and the work continued. All scratch has since been deleted.
+
+## n64-mister, played on the owner's MiSTer (2026-11-04)
+
+The scripts above, replayed on the owner's MiSTer (N64_20260726.rbf, Main of 2026-10-19) as
+described in `MISTER.md`; entries `"method": "played"`, `"frontend": "mister"`. The first session's
+black screens had a simple cause: the core needs the N64 PIF ROM as `games/N64/boot.rom`
+(N64_MiSTer README), and the device had none. The owner put their own dump there; nothing else was
+needed. Autosave is On by default in this core, so no config file was written. Main's Auto Detect
+(`games/N64/N64-database.txt`) picks the save type and the controller accessory per game.
+
+| Game | n64-mister | Files (sizes) |
+| --- | --- | --- |
+| Super Mario 64 | filed (stick moves onto MONO shortened: Main's stick emulation moves the hand further) | `.eep` 512 |
+| Banjo-Kazooie | filed | `.eep` 512 |
+| Yoshi's Story | filed, but only the game's first-boot format: the MONO step never landed in three runs (the title and its attract story come at a different frame every run) | `.eep` 2048 |
+| Perfect Dark | filed, but no pak note (below) | `.eep` 2048, `_1.tpk`, `_2.cpk`-`_4.cpk` 32768 each |
+| Ocarina of Time | filed | `.sra` 32768 |
+| Super Smash Bros. | filed | `.sra` 32768 |
+| Majora's Mask | filed as `Legend of Zelda, The - Majora's Mask (USA) (played)`, since the `(USA)` folder holds the downloaded entry; MiSTer variant (START twice after 1700 frames) | `.fla` 131072 |
+| Paper Mario | filed | `.fla` 131072 |
+| Pokemon Stadium | filed, with a Transfer Pak holding Pokemon Red (below) | `.fla` 131072, `_1.tpk` 32768, and the Game Boy save and its `_bak` in `saves/GAMEBOY/` |
+| Tony Hawk's Pro Skater | filed | `_1.cpk`-`_4.cpk` 32768 each |
+| Dezaemon 3D (Japan) | filed: the 768 Kbit SRAM as the game sets it up at first boot (GAME EDIT reached; the SAVE button was not, the tutorial takes the cursor) | `.sra` 98304 |
+
+Several scripts needed MiSTer variants for timing (`scripts/mister/n64/`): the N64 core's ROM
+load time varies by several seconds from run to run, so a title that the libretro scripts reach at
+a fixed frame can come up to ~10 s later; the variants wait longer before START.
+
+### What Main writes
+
+One file per chip and per pak, in `saves/N64/`, named after the ROM (Main `support/n64/n64.cpp`):
+
+| Save | File | Size | Byte order | Compared with Mupen64Plus-Next's `.srm` region |
+| --- | --- | --- | --- | --- |
+| EEPROM 4 Kbit | `<rom>.eep` | 512 | console order | SM64 identical; Banjo-Kazooie 10 bytes (play time and checksum) |
+| EEPROM 16 Kbit | `<rom>.eep` | 2048 | console order | Perfect Dark identical; Yoshi's Story 4 bytes (the sound setting the script did not change) |
+| SRAM 256 Kbit | `<rom>.sra` | 32768 | 32-bit words reversed | Ocarina of Time identical; Smash Bros. 6 bytes (counters) |
+| SRAM 768 Kbit | `<rom>.sra` | 98304 | not shown (only 00 and FF were written) | none: no libretro core keeps it |
+| FlashRAM 1 Mbit | `<rom>.fla` | 131072 | 32-bit words reversed | Paper Mario: 160 bytes FF here, 00 in both libretro cores (bytes inside written pages the game never filled), 4 bytes of game data; Majora's Mask 34 bytes (the digits rolled at file creation, as between the libretro cores); Pokemon Stadium identical |
+| Controller Pak | `<rom>_N.cpk`, N = 1-4 | 32768 each | console order | THPS: the note identical; the four ID blocks (108 bytes) differ |
+| Transfer Pak | `<rom>_1.tpk`, or the Game Boy game's own save (below) | 32768 | Game Boy order | the copy is byte-identical to the Game Boy save it was made from |
+
+- **Byte order, verified:** the `.sra` and `.fla` files are in the libretro `.srm` order, each
+  32-bit word reversed (one-saves' "swapped"): Ocarina of Time's `.sra` is byte-identical to
+  Mupen64Plus-Next's SRAM region, `ADLE` at 0x08. The `.eep` files and the paks are in console
+  order. Main itself byte-swaps only the Controller and Transfer Pak data (`needs_byteswap`); chip
+  data reaches the file as the core hands it over.
+- **Fill:** Main creates each file when the ROM loads, before the game runs: chips filled with FF
+  (since Main bc49794, 2026-01; the downloaded entries from 2023-24 have 00), Controller Paks
+  formatted by Main, Transfer Pak files FF.
+- **Controller Paks:** four files `_1.cpk` to `_4.cpk`, numbered from 1 after the cartridge file;
+  the number counts mounted files, so a game with no cartridge save still starts at `_1`. Main
+  formats each new pak itself: ID block at 0x20/0x60/0x80/0xC0 with a random 16-byte serial (a
+  different one per pak and per run), then `MiSTer`, device 0x81, 1 bank, checksums; index tables
+  as in the libretro paks. A sync tool comparing paks across devices will always see the ID blocks
+  differ.
+- **Database pak choice:** Pad 1 gets the first pak tag of the game's line. Perfect Dark's line is
+  `eeprom2k|rpak|cpak|tpak`: pad 1 got a Rumble Pak, so no note was written, while Main still
+  mounted a Transfer Pak file `_1.tpk` (the `tpak` tag) and three Controller Pak files.
+- **Transfer Pak** (N64_MiSTer supports it: core line `F2,GBCGB,Load GB-Transfer`, Pad 1 type
+  TransferPak). Pokemon Stadium with Pokemon Red: the MGL loads the Game Boy ROM first (file index
+  2), then the N64 ROM, and Auto Detect (`flash128k|tpak`) puts the Transfer Pak on pad 1. The
+  Transfer Pak's memory *is the Game Boy game's own save*: Main mounts `saves/GAMEBOY/<gb rom>.sav`
+  (the folder of the Game Boy core, or of the folder under `games/` the GB ROM came from), and when
+  that file exists it first copies it to `saves/GAMEBOY/<gb rom>_bak.sav` and to
+  `saves/N64/<n64 rom>_1.tpk` (padded to 32 KiB). With no Game Boy game loaded, `_1.tpk` itself is
+  mounted (32768 bytes of FF) and Stadium stops at "There is a problem with the GB Game Pak's
+  connector". Stadium's Game Pak Check read Red's save (RED, ID 59173) and wrote 32 bytes at
+  0x0000-0x001F of the cartridge RAM: the Game Boy save changed, in plain Game Boy order, while the
+  `.tpk` and `_bak` stayed copies of the original. A sync tool sees an N64 game modify a Game Boy
+  save, plus two extra files.
+- **Dezaemon 3D's 768 Kbit SRAM** is saved whole: `.sra` of 98304 bytes, the three 32 KiB banks in
+  order. The game's first boot clears bank 0 to 00 and leaves banks 1-2 alone (FF from Main), the
+  same as the libretro cores did in the one bank they have.
+- **Timing:** the N64 core's ROM load takes a different time on every run (a timeline of Majora's
+  Mask put the title at frame ~1600 after the script started; another run reached the file select
+  with the libretro script's frame 1200), so START presses at fixed frames are fragile here.

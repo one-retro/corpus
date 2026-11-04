@@ -1,0 +1,32 @@
+{
+  "method": "played",
+  "system": "n64",
+  "core": "n64-mister",
+  "core_file": "N64_20260726.rbf",
+  "core_name": "N64_MiSTer",
+  "core_version": "20260726",
+  "frontend": "mister",
+  "device": "the owner's MiSTer (DE10-Nano), Main_MiSTer binary of 2026-10-19",
+  "loaded_with": "MGL via /dev/MiSTer_cmd load_core (_Console/N64, file type f index 1)",
+  "save_folder": "saves/N64",
+  "rom": {
+    "name": "Legend of Zelda, The - Majora's Mask (USA).z64",
+    "sha1": "d6133ace5afaa0882cf214cf88daba39e266c078",
+    "size": 33554432
+  },
+  "script": "scripts/n64/Legend of Zelda, The - Majora's Mask.txt",
+  "mister_script": "scripts/mister/n64/Legend of Zelda, The - Majora's Mask.n64.txt",
+  "frames": 6010,
+  "timing": "real time: script frames played as wall-clock 1/60 s by work/mister/mrun.py",
+  "options": null,
+  "save_trigger": "OSD opened (F12 from a uinput keyboard) with Autosave on: the core writes its backup RAM to the SD card",
+  "started_from": null,
+  "files": {
+    "Legend of Zelda, The - Majora's Mask (USA).fla": {
+      "size": 131072,
+      "sha1": "a371c397df51b52d297bfa91eaacebbb245f58a3"
+    }
+  },
+  "created": "2026-11-04",
+  "note": "Folder named '(played)' because n64-mister/Legend of Zelda, The - Majora's Mask (USA)/ holds a downloaded entry (never overwritten); the ROM is the same No-Intro (USA) dump. FlashRAM 1 Mbit: <rom>.fla, 131072 bytes, each 32-bit word reversed like the FlashRAM region of the libretro .srm; 34 bytes differ from Mupen64Plus-Next's, all in the two copies of the digits the game rolls when a file is created (0xFED-0x1008, 0x2FED-0x3008), as between the two libretro cores. Written up to 0x17FFF, FF after (Main created the file FF-filled; the downloaded 2023-24 file has 00 there). Written on OSD open (Autosave On, the N64 default). The exact script is the MiSTer variant (START twice after 1700 frames, slower name entry): the title comes at a different frame in every run, because the ROM load time varies. After the reload the file select shows File 1 AAAA."
+}

@@ -1,0 +1,21 @@
+# Paul's HappyBird v1.08 (Bruno Steux, 2023, GPL-3.0): a Flappy Bird game that
+# keeps its high score on a SaveKey/AtariVox (2 bytes at EEPROM 0x1480). Start
+# a game, flap through the first pair of pipes (score 1), crash: at game over
+# the high score is written to the SaveKey (the Stella cores put it in
+# savekey_eeprom.dat when the game is unloaded). Fire flaps; the pipes are the
+# same from power-on because every press is at a fixed frame. No reset-and-
+# reload proof: these Stella builds never read the SaveKey file back (see NOTES).
+wait 600
+press b 6           # title -> Get Ready!
+wait 120
+press b 4           # first flap starts the game
+repeat 6            # climb: a flap every 36 frames
+wait 32
+press b 4
+end
+repeat 6            # hold altitude: a flap every 41 frames, through the first pipes
+wait 37
+press b 4
+end
+wait 400            # crash into the next pipe and wait out GAME OVER
+shot saved          # HIGH 001, Game Over: the score just written

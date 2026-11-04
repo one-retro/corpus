@@ -1,0 +1,47 @@
+load corpus-tmp/mgl/thps.mgl 10
+# Tony Hawk's Pro Skater: a Career Mode run in the Warehouse (the skater
+# just rolls for the two minutes), then SAVE CAREER, named "AA". The game
+# has no cartridge save: it writes a note "TH-AA" to the Controller Pak in
+# port 1 and says "SAVE SUCCESSFUL.".
+# N64 buttons on the RetroPad: A = b, B = y, Z = l2, Start = start.
+wait 1200
+press start 6    # skip the logos
+wait 150
+press start 6    # PRESS START -> main menu (Career Mode)
+wait 150
+press a 6    # Career Mode -> Continue / New Game / Load Game
+wait 150
+press a 6    # New Game -> the Rumble Pak notice
+wait 150
+press a 6    # OK -> Select Player (Tony Hawk)
+wait 200
+press a 6    # -> Select Board
+wait 200
+press a 6    # -> Select Course (Warehouse)
+wait 200
+press a 6    # -> Warehouse Tape Challenges
+wait 200
+press a 6    # start the two-minute run
+wait 7900
+shot stats          # STATISTICS
+press a 6    # continue -> Retry ... Save Career, Quit
+wait 200
+tap down 5 20    # SAVE CAREER
+wait 30
+press a 6    # -> SAVE GAME? YES
+wait 200
+press a 6    # YES -> ENTER NAME
+wait 200
+press up 6    # A
+wait 30
+press right 6
+wait 30
+press up 6    # A
+wait 30
+press a 6    # accept the name: the note is written here
+wait 300
+shot saved          # SAVE SUCCESSFUL.
+wait 30
+save
+wait 60
+shot final
