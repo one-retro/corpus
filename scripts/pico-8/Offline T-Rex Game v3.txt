@@ -1,0 +1,10 @@
+# Offline T-Rex Game, Pico-8 Edition, version 3 (Pordrack), cartdata("dinorunnerpico8-3").
+# The run starts by itself; up (or X) jumps. Jump a few times, then run into the cacti.
+# Each death with a better score saves it: dset(0, bestscore).
+wait 120
+repeat 8
+press up 6
+wait 50
+end
+wait 600
+shot bestscore

@@ -1,0 +1,11 @@
+# Pico Racer (kometbomb), cartdata("kb_picoracer").
+# Up starts and accelerates. Drive until the clock runs out, then confirm on the course map:
+# updatebestscore() saves the score, dset(0, score) and dset(1, score / 10000).
+wait 200
+press up 6
+wait 60
+press up 2400
+wait 900
+press a+b 20
+wait 120
+shot bestscore

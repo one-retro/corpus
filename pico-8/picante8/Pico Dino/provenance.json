@@ -1,0 +1,35 @@
+{
+  "method": "played",
+  "system": "pico-8",
+  "core": "picante8",
+  "core_file": "picante8_libretro.dylib",
+  "core_name": "Picante8",
+  "core_version": "1.0.0 080de0f",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "picodino-2.p8.png",
+    "sha1": "9fffce80b9e6623fe228788385baaf205104319a",
+    "size": 21086
+  },
+  "rom_source": "https://www.lexaloffle.com/bbs/cposts/pi/picodino-2.p8.png",
+  "subsystem": null,
+  "device": null,
+  "script": "scripts/pico-8/Pico Dino.txt",
+  "frames": 1106,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "picante8/yolwoocle_picodino_1.p8d.txt": {
+      "size": 520,
+      "sha1": "f8abbb723726bc298bb0a5f5e8c22903612ebf3b"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null,
+  "built_from": {
+    "repo": "https://github.com/MustardOS/picante8",
+    "commit": "080de0f66acdc2ca66dbe0b63ddd24a5526d60d2",
+    "build": "make -j10 (platform=osx, arm64), unmodified"
+  }
+}

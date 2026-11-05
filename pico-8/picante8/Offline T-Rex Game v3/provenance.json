@@ -1,0 +1,35 @@
+{
+  "method": "played",
+  "system": "pico-8",
+  "core": "picante8",
+  "core_file": "picante8_libretro.dylib",
+  "core_name": "Picante8",
+  "core_version": "1.0.0 080de0f",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "trexofflinegame-3.p8.png",
+    "sha1": "1406d927d3dbef38c0b2dc6fc640b44a47742420",
+    "size": 8115
+  },
+  "rom_source": "https://www.lexaloffle.com/bbs/cposts/tr/trexofflinegame-3.p8.png",
+  "subsystem": null,
+  "device": null,
+  "script": "scripts/pico-8/Offline T-Rex Game v3.txt",
+  "frames": 1168,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "picante8/dinorunnerpico8_3.p8d.txt": {
+      "size": 520,
+      "sha1": "6e0194d1506882dffb451f94abd11f752709b513"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null,
+  "built_from": {
+    "repo": "https://github.com/MustardOS/picante8",
+    "commit": "080de0f66acdc2ca66dbe0b63ddd24a5526d60d2",
+    "build": "make -j10 (platform=osx, arm64), unmodified"
+  }
+}

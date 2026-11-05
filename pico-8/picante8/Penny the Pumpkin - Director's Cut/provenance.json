@@ -1,0 +1,35 @@
+{
+  "method": "played",
+  "system": "pico-8",
+  "core": "picante8",
+  "core_file": "picante8_libretro.dylib",
+  "core_name": "Picante8",
+  "core_version": "1.0.0 080de0f",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "penny_the_pumpkin-37.p8.png",
+    "sha1": "f13a75648678261430c0abf6497992364241b8e0",
+    "size": 46521
+  },
+  "rom_source": "https://www.lexaloffle.com/bbs/cposts/pe/penny_the_pumpkin-37.p8.png",
+  "subsystem": null,
+  "device": null,
+  "script": "scripts/pico-8/Penny the Pumpkin.txt",
+  "frames": 868,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "picante8/kai_pumpkin_2_v1_1.p8d.txt": {
+      "size": 520,
+      "sha1": "5c5caf22c8d50770290aa5596c38eb38607740db"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null,
+  "built_from": {
+    "repo": "https://github.com/MustardOS/picante8",
+    "commit": "080de0f66acdc2ca66dbe0b63ddd24a5526d60d2",
+    "build": "make -j10 (platform=osx, arm64), unmodified"
+  }
+}

@@ -1,0 +1,17 @@
+# Mot's Grand Prix (Mot), menu cart, cartdata("mot_gpp").
+# The menu keeps its settings in slots 10-13 (race type, difficulty, track, laps) and writes
+# them as they change. Set difficulty to Hard and the track to Monza.
+wait 400
+press down 6
+wait 30
+press right 6
+wait 60
+press down 6
+wait 30
+press down 6
+wait 30
+press right 6
+wait 60
+press right 6
+wait 120
+shot settings

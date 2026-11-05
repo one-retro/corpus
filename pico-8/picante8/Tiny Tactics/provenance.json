@@ -1,0 +1,35 @@
+{
+  "method": "played",
+  "system": "pico-8",
+  "core": "picante8",
+  "core_file": "picante8_libretro.dylib",
+  "core_name": "Picante8",
+  "core_version": "1.0.0 080de0f",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "tiny_tactics-5.p8.png",
+    "sha1": "fafd1a1c15731e4a116142b228c44b4608b13385",
+    "size": 48132
+  },
+  "rom_source": "https://www.lexaloffle.com/bbs/cposts/ti/tiny_tactics-5.p8.png",
+  "subsystem": null,
+  "device": null,
+  "script": "scripts/pico-8/Tiny Tactics.picante8.txt",
+  "frames": 1780,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "picante8/ajt_tinytactics_1.p8d.txt": {
+      "size": 520,
+      "sha1": "23c9c2a019a2d21839954eb69bb191d486592c6c"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null,
+  "built_from": {
+    "repo": "https://github.com/MustardOS/picante8",
+    "commit": "080de0f66acdc2ca66dbe0b63ddd24a5526d60d2",
+    "build": "make -j10 (platform=osx, arm64), unmodified"
+  }
+}

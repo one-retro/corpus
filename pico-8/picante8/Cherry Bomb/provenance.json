@@ -1,0 +1,35 @@
+{
+  "method": "played",
+  "system": "pico-8",
+  "core": "picante8",
+  "core_file": "picante8_libretro.dylib",
+  "core_name": "Picante8",
+  "core_version": "1.0.0 080de0f",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "cherrybomb-0.p8.png",
+    "sha1": "7b609b9c53afeaafcf5ac2becb3bc46e4fc3bf41",
+    "size": 34652
+  },
+  "rom_source": "https://www.lexaloffle.com/bbs/cposts/ch/cherrybomb-0.p8.png",
+  "subsystem": null,
+  "device": null,
+  "script": "scripts/pico-8/Cherry Bomb.txt",
+  "frames": 6396,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "picante8/cherrybomb.p8d.txt": {
+      "size": 520,
+      "sha1": "2319a3d8ff70fb45cf4fdd1bed640688d678efe3"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null,
+  "built_from": {
+    "repo": "https://github.com/MustardOS/picante8",
+    "commit": "080de0f66acdc2ca66dbe0b63ddd24a5526d60d2",
+    "build": "make -j10 (platform=osx, arm64), unmodified"
+  }
+}

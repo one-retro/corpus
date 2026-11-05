@@ -1,0 +1,27 @@
+# Tiny Tactics (andrejtrindade), cartdata("ajt_tinytactics_1").
+# Buttons for picante8 and retro8 (O = a, X = b); Tiny Tactics.txt is the fake-08 version.
+# Answer "no" to "are you using a keyboard?", play level 1-1: skip a turn (O) so the guard
+# steps into the corridor, shoot it (X), walk to the exit. "NEW RECORD! RECORD SAVED":
+# the turn count goes into slot 0, packed 10 bits per level.
+wait 200
+press b 8
+wait 120
+press b 8
+wait 120
+press b 8
+wait 120
+press b 8
+wait 200
+press a 8
+wait 120
+press b 8
+wait 240
+repeat 7
+press right 8
+wait 60
+end
+press down 8
+wait 60
+press down 8
+wait 60
+shot record

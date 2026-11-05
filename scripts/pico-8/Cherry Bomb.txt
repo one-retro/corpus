@@ -1,0 +1,12 @@
+# Cherry Bomb (Krystman), cartdata("cherrybomb").
+# Start, fire (X; O drops the cherry bomb) for a while, then stop and let the enemies win.
+# "NEW HIGHSCORE!": pressing a button on the game-over screen saves it, dset(0, score).
+wait 200
+press a+b 8
+wait 60
+press a+b 600
+wait 5400
+shot gameover
+press a+b 8
+wait 120
+shot title

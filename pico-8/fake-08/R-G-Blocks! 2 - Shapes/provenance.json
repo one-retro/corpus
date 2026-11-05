@@ -1,0 +1,35 @@
+{
+  "method": "played",
+  "system": "pico-8",
+  "core": "fake-08",
+  "core_file": "fake-08_libretro.dylib",
+  "core_name": "fake-08",
+  "core_version": "0.0.2.20a",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "rgblocks_2_shapes-4.p8.png",
+    "sha1": "398bd5a4532cea0997461a9edcb580d31270aee9",
+    "size": 18577
+  },
+  "rom_source": "https://www.lexaloffle.com/bbs/cposts/rg/rgblocks_2_shapes-4.p8.png",
+  "subsystem": null,
+  "device": null,
+  "script": "scripts/pico-8/R-G-Blocks 2.txt",
+  "frames": 4168,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "cdata/r-g-blocks_2.p8d.txt": {
+      "size": 520,
+      "sha1": "f63c00e24eef9c45244f44e8224a786c0c0be152"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null,
+  "built_from": {
+    "repo": "https://github.com/jtothebell/fake-08",
+    "commit": "814991a2571ad3970e386cef48f3b148aa1c27b9",
+    "build": "git submodule update --init (libs/z8lua at e6928578d46b61fd5ea30cfcf547e855a30a0553); make -C platform/libretro -j10 (platform=osx, -arch arm64), unmodified; the library is platform/libretro/fake08_libretro.dylib"
+  }
+}

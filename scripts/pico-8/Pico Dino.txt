@@ -1,0 +1,7 @@
+# Pico Dino (Yolwoocle), cartdata("yolwoocle_picodino_1").
+# Any button starts the run; with no more input the dino hits the first cactus.
+# The death screen sets a new high score: dset(0, score) (score 52).
+wait 200
+press a+b 6
+wait 900
+shot highscore

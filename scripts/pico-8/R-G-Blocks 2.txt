@@ -1,0 +1,10 @@
+# R-G-Blocks! 2: Shapes (MoonShine), cartdata("r-g-blocks_2").
+# Start, then hold down so every piece drops in the middle column until the well is full.
+# Pieces that land on a block of the same shape merge colours (5 points each); at game over
+# the cart saves the high score, dset(0, hi_score).
+wait 200
+press a+b 8
+wait 60
+press down 3600
+wait 300
+shot gameover

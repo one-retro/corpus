@@ -277,3 +277,22 @@ CPS1 set (with its PLD stubs) and the modern Neo Geo sets. Its pad mapping:
   `mkjobs.py`, `compare.py`, `file_aborted.py` and `make-save-pad2.py`.
 - The three rejected DoubleCherryGB entries (Pocket Camera, Robot Ponkots, Robopon) are under
   `.cache/build/rejected/`.
+
+## PICO-8: fake-08 and picante8
+
+Built in a later pass, for `pico-8/` (not a registry system yet; see `pico-8/NOTES.md`). Neither
+core has a macOS build on the buildbot. Both build unmodified with the system clang and make,
+in seconds, as native arm64. The sources are under `work/pico-8/src/`.
+
+| Slug | Upstream (commit) | Build | Result |
+| --- | --- | --- | --- |
+| fake-08 | github.com/jtothebell/fake-08 (`814991a2`, submodule `libs/z8lua` at `e6928578`) | `git submodule update --init`, then `make -C platform/libretro` | 6/8 pico-8 (Lua errors in two carts) |
+| picante8 | github.com/MustardOS/picante8, muOS's Retro8 fork (`080de0f6`) | `make` | 8/8 pico-8 |
+
+- **Names.** fake-08's makefile names its library `fake08_libretro.dylib`. It was installed as
+  `fake-08_libretro.dylib` to match the slug.
+- **Versions.**
+  - fake-08 reports itself as "fake-08" `0.0.2.20a`, a version hard-coded in `libretro.cpp`.
+  - picante8 reports "Picante8" `1.0.0 080de0f`.
+- **retro8** comes from the buildbot (`tools/fetch-core.sh retro8`, "0.1b ddc06a1") and was not
+  rebuilt.

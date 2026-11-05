@@ -107,3 +107,4 @@ vice-xscpu64	vice_xscpu64	arm64
 virtual-jaguar	virtualjaguar	arm64
 yabasanshiro	yabasanshiro	arm64
 yabause	yabause	arm64
+retro8	retro8	arm64	not in the registry: pico-8 (cloud backlog pico8.md)

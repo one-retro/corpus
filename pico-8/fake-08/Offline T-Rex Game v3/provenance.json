@@ -1,0 +1,35 @@
+{
+  "method": "played",
+  "system": "pico-8",
+  "core": "fake-08",
+  "core_file": "fake-08_libretro.dylib",
+  "core_name": "fake-08",
+  "core_version": "0.0.2.20a",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "trexofflinegame-3.p8.png",
+    "sha1": "1406d927d3dbef38c0b2dc6fc640b44a47742420",
+    "size": 8115
+  },
+  "rom_source": "https://www.lexaloffle.com/bbs/cposts/tr/trexofflinegame-3.p8.png",
+  "subsystem": null,
+  "device": null,
+  "script": "scripts/pico-8/Offline T-Rex Game v3.txt",
+  "frames": 1168,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "cdata/dinorunnerpico8-3.p8d.txt": {
+      "size": 520,
+      "sha1": "99747a462ef42aa1e9505f1551d2121cbf993394"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null,
+  "built_from": {
+    "repo": "https://github.com/jtothebell/fake-08",
+    "commit": "814991a2571ad3970e386cef48f3b148aa1c27b9",
+    "build": "git submodule update --init (libs/z8lua at e6928578d46b61fd5ea30cfcf547e855a30a0553); make -C platform/libretro -j10 (platform=osx, -arch arm64), unmodified; the library is platform/libretro/fake08_libretro.dylib"
+  }
+}

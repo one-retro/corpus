@@ -1,0 +1,9 @@
+# Penny the Pumpkin: Director's Cut (kaimonkey), cartdata("kai-pumpkin-2-v1-1").
+# Walk right off the first screen: entering the next room sets a checkpoint, which the
+# cart saves at once (dset 58-63: level, x, y, dx, dy, height).
+wait 300
+press a+b 8
+wait 200
+press right 300
+wait 60
+shot checkpoint

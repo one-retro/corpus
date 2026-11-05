@@ -1,0 +1,35 @@
+{
+  "method": "played",
+  "system": "pico-8",
+  "core": "picante8",
+  "core_file": "picante8_libretro.dylib",
+  "core_name": "Picante8",
+  "core_version": "1.0.0 080de0f",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "20068.p8.png",
+    "sha1": "1584b56046e80763df25743a58bfb4c331e47edc",
+    "size": 33277
+  },
+  "rom_source": "https://www.lexaloffle.com/bbs/cposts/2/20068.p8.png",
+  "subsystem": null,
+  "device": null,
+  "script": "scripts/pico-8/Pico Racer.txt",
+  "frames": 3706,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "picante8/kb_picoracer.p8d.txt": {
+      "size": 520,
+      "sha1": "3e01d7af13e3c05fa2651bedaa4753e721dcfc01"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null,
+  "built_from": {
+    "repo": "https://github.com/MustardOS/picante8",
+    "commit": "080de0f66acdc2ca66dbe0b63ddd24a5526d60d2",
+    "build": "make -j10 (platform=osx, arm64), unmodified"
+  }
+}

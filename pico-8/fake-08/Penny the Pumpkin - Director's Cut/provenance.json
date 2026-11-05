@@ -1,0 +1,35 @@
+{
+  "method": "played",
+  "system": "pico-8",
+  "core": "fake-08",
+  "core_file": "fake-08_libretro.dylib",
+  "core_name": "fake-08",
+  "core_version": "0.0.2.20a",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "penny_the_pumpkin-37.p8.png",
+    "sha1": "f13a75648678261430c0abf6497992364241b8e0",
+    "size": 46521
+  },
+  "rom_source": "https://www.lexaloffle.com/bbs/cposts/pe/penny_the_pumpkin-37.p8.png",
+  "subsystem": null,
+  "device": null,
+  "script": "scripts/pico-8/Penny the Pumpkin.txt",
+  "frames": 868,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "cdata/kai-pumpkin-2-v1-1.p8d.txt": {
+      "size": 520,
+      "sha1": "5c5caf22c8d50770290aa5596c38eb38607740db"
+    }
+  },
+  "created": "2026-11-04",
+  "note": null,
+  "built_from": {
+    "repo": "https://github.com/jtothebell/fake-08",
+    "commit": "814991a2571ad3970e386cef48f3b148aa1c27b9",
+    "build": "git submodule update --init (libs/z8lua at e6928578d46b61fd5ea30cfcf547e855a30a0553); make -C platform/libretro -j10 (platform=osx, -arch arm64), unmodified; the library is platform/libretro/fake08_libretro.dylib"
+  }
+}
