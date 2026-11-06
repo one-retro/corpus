@@ -1,0 +1,84 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_dexdrive",
+  "url": "https://gamefaqs.gamespot.com/ps/198843-suikoden/saves/1062",
+  "source_page": "https://gamefaqs.gamespot.com/ps/198843-suikoden/saves",
+  "source": "GameFAQs (section 'PlayStation DexDrive Save (North America)')",
+  "author": "SGreenwell",
+  "licence": null,
+  "posted": "2001-08-24",
+  "fetched": "2026-11-05",
+  "what_it_is": "Characters at the end of the game. Many have maxed out stats. Gremio alive, best ending possible. Works with Suikoden 2.",
+  "gamefaqs": {
+    "id": 1062,
+    "product": "Suikoden",
+    "section": "PlayStation DexDrive Save (North America)",
+    "region": "North America",
+    "served_as": "suikoden.1062.gme",
+    "listed_size": "27KB"
+  },
+  "format": "DexDrive .gme cut short: '123-456-STD' 3904-byte header + only the first 24576 bytes of the card (3 of 16 blocks); the card holds 1 save(s), 1 for this game (BASLUS-00292GENSOU02)",
+  "release": "Suikoden (USA) (Rev 1)",
+  "game_saves": [
+    {
+      "name": "BASLUS-00292GENSOU02",
+      "blocks": 2,
+      "title": "SUIKODEN LV64"
+    }
+  ],
+  "files": {
+    "suikoden.1062.gme": {
+      "size": 28480,
+      "sha1": "dd90383587ef9a5b1b1ab5781c719ffd09b884f4"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Suikoden (USA) (Rev 1).cue",
+      "sha1": "7ec895dbc9d1f23aab3bde7ccd35e003ab2fb25d",
+      "size": 88
+    },
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr suikoden.1062.gme: unwraps the card (DexDrive .gme: 3904-byte header + card (only 24576 card bytes, zero-padded to 131072))",
+    "converted": {
+      "size": 131072,
+      "sha1": "79e716ce2561a2e834774db62aabe9a281a79771"
+    },
+    "script": "scripts/psx/Suikoden.load.txt",
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "loads",
+        "detail": "Continue game lists the file: Steve, Lv. 64 (no card: \"No data on Memory card\")"
+      },
+      "beetle-psx-hw": {
+        "result": "loads",
+        "detail": "Continue game lists the file: Steve, Lv. 64 (no card: \"No data on Memory card\") (the same screen as on beetle-psx)"
+      },
+      "pcsx-rearmed": {
+        "result": "loads",
+        "detail": "Continue game lists the file: Steve, Lv. 64 (no card: \"No data on Memory card\") (the same screen as on beetle-psx)"
+      },
+      "swanstation": {
+        "result": "loads",
+        "detail": "Continue game lists the file: Steve, Lv. 64 (no card: \"No data on Memory card\") (the same screen as on beetle-psx)"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": [
+      "beetle-psx",
+      "beetle-psx-hw",
+      "pcsx-rearmed",
+      "swanstation"
+    ]
+  },
+  "note": "The converter pads the missing blocks with zeroes, as DuckStation's ImportCardGME does; the saves on the card all lie in the blocks present. one-saves (1saves convert) does not read this file: a PS1 memory card is 131072 bytes, or that behind a DexDrive, VGS or PSP header, but this file is 28480 bytes"
+}

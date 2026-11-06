@@ -1,0 +1,119 @@
+{
+  "method": "downloaded",
+  "system": "gba",
+  "core": "_gameshark",
+  "url": "https://gamefaqs.gamespot.com/gba/918915-pokemon-firered-version/saves/6939",
+  "source_page": "https://gamefaqs.gamespot.com/gba/918915-pokemon-firered-version/saves",
+  "source": "GameFAQs (section 'GameBoy Advance GameShark Save (North America)')",
+  "author": "Wachon",
+  "licence": null,
+  "posted": "2005-03-30",
+  "fetched": "2026-11-05",
+  "what_it_is": "Some 100 level pokemon's beat the elite and islands with all legendaries pokemon Mewtwo, Lugia, Ho Oh, enjoy!!",
+  "gamefaqs": {
+    "id": 6939,
+    "product": "Pokemon FireRed / LeafGreen Version",
+    "section": "GameBoy Advance GameShark Save (North America)",
+    "region": "North America",
+    "served_as": "pokemon-firered-leafgreen-version.6939.sps",
+    "listed_size": "128KB"
+  },
+  "format": "SharkPort save (\"SharkPortSave\", kind 0x000F0000): title \"POKEMON LEAF GREEN\", date \"30/03/2005 12:00:04\", notes \"\"; cart header \"POKEMON LEAF\" / 'BPGE' (complement 0x81); payload 131072 bytes; checksum: signed",
+  "files": {
+    "pokemon-firered-leafgreen-version.6939.sps": {
+      "size": 131178,
+      "sha1": "32305c63da765f974fdcbe9df63ddc9522e1a6cc"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Pokemon - LeafGreen Version (USA).gba",
+      "sha1": "574fa542ffebb14be69902d1d36f1ec0a4afd71e",
+      "size": 16777216
+    },
+    "converted_with": "tools/gamefaqs/gba-sharkport.py pokemon-firered-leafgreen-version.6939.sps --rom ROM --core CORE --outdir DIR: reads the SharkPort container as mGBA does and imports the payload as mGBA's _importSavedata does (cut to the chip, EEPROM 8-byte blocks reversed, the rest of the chip erased), then lays the chip out as the core keeps it",
+    "converted": {
+      "size": 131072,
+      "sha1": "2ded94fe75d2010171fa7c101186b11abdfe78cc"
+    },
+    "script": "scripts/gba/Pokemon - FireRed Version.load.txt",
+    "cores": {
+      "mgba": {
+        "result": "loads",
+        "detail": "CONTINUE: ALEX, 18:20",
+        "core_version": "mGBA 0.11-212-7a12d6d",
+        "file": {
+          "name": "Pokemon - LeafGreen Version (USA).srm",
+          "size": 131072,
+          "sha1": "2ded94fe75d2010171fa7c101186b11abdfe78cc"
+        },
+        "frame": "menu"
+      },
+      "vba-m": {
+        "result": "loads",
+        "detail": "CONTINUE: ALEX, 18:20",
+        "core_version": "VBA-M 115defb",
+        "file": {
+          "name": "Pokemon - LeafGreen Version (USA).srm",
+          "size": 131072,
+          "sha1": "2ded94fe75d2010171fa7c101186b11abdfe78cc"
+        },
+        "frame": "menu"
+      },
+      "gpsp": {
+        "result": "loads",
+        "detail": "CONTINUE: ALEX, 18:20",
+        "core_version": "gpSP v1.1.0-5819380",
+        "file": {
+          "name": "Pokemon - LeafGreen Version (USA).srm",
+          "size": 131072,
+          "sha1": "2ded94fe75d2010171fa7c101186b11abdfe78cc"
+        },
+        "frame": "menu"
+      },
+      "vba-next": {
+        "result": "loads",
+        "detail": "CONTINUE: ALEX, 18:20",
+        "core_version": "VBA Next v1.0.2",
+        "file": {
+          "name": "Pokemon - LeafGreen Version (USA).srm",
+          "size": 139264,
+          "sha1": "a98081b9ec43a87981b6e60abc859af2e2499b39"
+        },
+        "frame": "menu"
+      },
+      "beetle-gba": {
+        "result": "loads",
+        "detail": "CONTINUE: ALEX, 18:20",
+        "core_version": "Beetle GBA v0.9.36 b158166",
+        "file": {
+          "name": "Pokemon - LeafGreen Version (USA).612ca9473451fa42b51d1711031ed5f6.sav",
+          "size": 131072,
+          "sha1": "2ded94fe75d2010171fa7c101186b11abdfe78cc"
+        },
+        "frame": "menu"
+      },
+      "skyemu": {
+        "result": "loads",
+        "detail": "CONTINUE: ALEX, 18:20",
+        "core_version": "SkyEmu adacd0788964ed89f5c43dcbc1f3cc26deec996c",
+        "file": {
+          "name": "Pokemon - LeafGreen Version (USA).srm",
+          "size": 131072,
+          "sha1": "2ded94fe75d2010171fa7c101186b11abdfe78cc"
+        },
+        "frame": "menu"
+      }
+    },
+    "proof_order": [
+      "mgba",
+      "vba-m",
+      "gpsp",
+      "vba-next",
+      "beetle-gba",
+      "skyemu"
+    ]
+  },
+  "note": null
+}

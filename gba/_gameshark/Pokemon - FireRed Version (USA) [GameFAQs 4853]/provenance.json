@@ -1,0 +1,119 @@
+{
+  "method": "downloaded",
+  "system": "gba",
+  "core": "_gameshark",
+  "url": "https://gamefaqs.gamespot.com/gba/918915-pokemon-firered-version/saves/4853",
+  "source_page": "https://gamefaqs.gamespot.com/gba/918915-pokemon-firered-version/saves",
+  "source": "GameFAQs (section 'GameBoy Advance GameShark Save (North America)')",
+  "author": "Mykas0",
+  "licence": null,
+  "posted": "2004-08-31",
+  "fetched": "2026-11-05",
+  "what_it_is": "Every important quest done, game saved on entrance of Trainer Tower. You have Mewtwo l100, Moltres l75, aerodactyl l25, articuno l76, gyarados l55, Zapdos l76 plus a shiny Golduck on box 2.",
+  "gamefaqs": {
+    "id": 4853,
+    "product": "Pokemon FireRed / LeafGreen Version",
+    "section": "GameBoy Advance GameShark Save (North America)",
+    "region": "North America",
+    "served_as": "pokemon-firered-leafgreen-version.4853.sps",
+    "listed_size": "64KB"
+  },
+  "format": "SharkPort save (\"SharkPortSave\", kind 0x000F0000): title \"\", date \"\", notes \"Every important quest done, game saved on entrance of Tra...\"; cart header \"POKEMON FIRE\" / 'BPRE' (complement 0x68); payload 65536 bytes; checksum: signed",
+  "files": {
+    "pokemon-firered-leafgreen-version.4853.sps": {
+      "size": 65794,
+      "sha1": "d1b3cd01b80a08b77357055a1b4a555a7b8fdf1b"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Pokemon - FireRed Version (USA).gba",
+      "sha1": "41cb23d8dccc8ebd7c649cd8fbb58eeace6e2fdc",
+      "size": 16777216
+    },
+    "converted_with": "tools/gamefaqs/gba-sharkport.py pokemon-firered-leafgreen-version.4853.sps --rom ROM --core CORE --outdir DIR: reads the SharkPort container as mGBA does and imports the payload as mGBA's _importSavedata does (cut to the chip, EEPROM 8-byte blocks reversed, the rest of the chip erased), then lays the chip out as the core keeps it",
+    "converted": {
+      "size": 131072,
+      "sha1": "ff9d1383e8b4a3259109bfe8d833c9b721330bf7"
+    },
+    "script": "scripts/gba/Pokemon - FireRed Version.load.txt",
+    "cores": {
+      "mgba": {
+        "result": "rejected",
+        "detail": "\"The save file has been deleted\" / \"erased due to corruption\": neither copy in the file is whole, then a new game",
+        "core_version": "mGBA 0.11-212-7a12d6d",
+        "file": {
+          "name": "Pokemon - FireRed Version (USA).srm",
+          "size": 131072,
+          "sha1": "ff9d1383e8b4a3259109bfe8d833c9b721330bf7"
+        },
+        "frame": "menu"
+      },
+      "vba-m": {
+        "result": "rejected",
+        "detail": "\"The save file has been deleted\" / \"erased due to corruption\": neither copy in the file is whole, then a new game",
+        "core_version": "VBA-M 115defb",
+        "file": {
+          "name": "Pokemon - FireRed Version (USA).srm",
+          "size": 131072,
+          "sha1": "ff9d1383e8b4a3259109bfe8d833c9b721330bf7"
+        },
+        "frame": "menu"
+      },
+      "gpsp": {
+        "result": "rejected",
+        "detail": "\"The save file has been deleted\" / \"erased due to corruption\": neither copy in the file is whole, then a new game",
+        "core_version": "gpSP v1.1.0-5819380",
+        "file": {
+          "name": "Pokemon - FireRed Version (USA).srm",
+          "size": 131072,
+          "sha1": "ff9d1383e8b4a3259109bfe8d833c9b721330bf7"
+        },
+        "frame": "menu"
+      },
+      "vba-next": {
+        "result": "rejected",
+        "detail": "\"The save file has been deleted\" / \"erased due to corruption\": neither copy in the file is whole, then a new game",
+        "core_version": "VBA Next v1.0.2",
+        "file": {
+          "name": "Pokemon - FireRed Version (USA).srm",
+          "size": 139264,
+          "sha1": "85e9a7deda3d1d6123a2c9d60d7851d31b2e66f4"
+        },
+        "frame": "menu"
+      },
+      "beetle-gba": {
+        "result": "rejected",
+        "detail": "\"The save file has been deleted\" / \"erased due to corruption\": neither copy in the file is whole, then a new game",
+        "core_version": "Beetle GBA v0.9.36 b158166",
+        "file": {
+          "name": "Pokemon - FireRed Version (USA).e26ee0d44e809351c8ce2d73c7400cdd.sav",
+          "size": 131072,
+          "sha1": "ff9d1383e8b4a3259109bfe8d833c9b721330bf7"
+        },
+        "frame": "menu"
+      },
+      "skyemu": {
+        "result": "rejected",
+        "detail": "\"The save file has been deleted\" / \"erased due to corruption\": neither copy in the file is whole, then a new game",
+        "core_version": "SkyEmu adacd0788964ed89f5c43dcbc1f3cc26deec996c",
+        "file": {
+          "name": "Pokemon - FireRed Version (USA).srm",
+          "size": 131072,
+          "sha1": "ff9d1383e8b4a3259109bfe8d833c9b721330bf7"
+        },
+        "frame": "menu"
+      }
+    },
+    "proof_order": [
+      "mgba",
+      "vba-m",
+      "gpsp",
+      "vba-next",
+      "beetle-gba",
+      "skyemu"
+    ]
+  },
+  "note": "This 64 KiB dump is not a straight copy of the first flash bank: its first 48 KiB are flash sectors 16-27 (the newest copy's sectors 2-13, from the second bank) and its last 16 KiB are sectors 12-15, so neither copy is whole after the import and every core reports the save as deleted. Put back where they belong (0x0000-0xBFFF to 0x10000-0x1BFFF), the newest copy is complete again (checked in mGBA: the corrupt-save message, then CONTINUE Mykas0 59:59); the converter does not do this, it follows mGBA."
+}

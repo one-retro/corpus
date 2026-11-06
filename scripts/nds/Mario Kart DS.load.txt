@@ -1,0 +1,11 @@
+# Mario Kart DS, loading a save: SINGLE PLAYER, GRAND PRIX, 50cc, the first
+# character and kart, to SELECT CUP, which shows the cups unlocked, their
+# trophies and the rank. Without a save SINGLE PLAYER asks for the nickname.
+wait 600
+press start 6       # title -> main menu
+wait 300
+repeat 5            # SINGLE PLAYER, GRAND PRIX, 50cc, character, kart
+press a 6
+wait 300
+end
+shot cups

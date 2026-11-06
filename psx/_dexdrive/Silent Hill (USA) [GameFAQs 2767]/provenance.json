@@ -1,0 +1,87 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_dexdrive",
+  "url": "https://gamefaqs.gamespot.com/ps/198641-silent-hill/saves/2767",
+  "source_page": "https://gamefaqs.gamespot.com/ps/198641-silent-hill/saves",
+  "source": "GameFAQs (section 'PlayStation DexDrive Save (North America)')",
+  "author": "wrorm6779",
+  "licence": null,
+  "posted": "2003-06-15",
+  "fetched": "2026-11-05",
+  "what_it_is": "Three different sets of saves on the one file. Each Game level has two saves. The first two are the regular game and the other two sets are next fear game saves.",
+  "gamefaqs": {
+    "id": 2767,
+    "product": "Silent Hill (1999)",
+    "section": "PlayStation DexDrive Save (North America)",
+    "region": "North America",
+    "served_as": "silent-hill-1999.2767.gme",
+    "listed_size": "131KB"
+  },
+  "format": "DexDrive .gme: '123-456-STD' 3904-byte header (per-block comments) + 131072-byte raw card; the card holds 1 save(s), 1 for this game (BASLUS-00707SILENT00)",
+  "release": "Silent Hill (USA)",
+  "game_saves": [
+    {
+      "name": "BASLUS-00707SILENT00",
+      "blocks": 1,
+      "title": "SILENT HILL FILE01"
+    }
+  ],
+  "files": {
+    "silent-hill-1999.2767.gme": {
+      "size": 134976,
+      "sha1": "2fc81f3c84c55d267ae6fe090277206e5eac70c0"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Silent Hill (USA).cue",
+      "sha1": "e7bf6999a1b06337efa9ccbd6d528406811d982f",
+      "size": 83
+    },
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr silent-hill-1999.2767.gme: unwraps the card (DexDrive .gme: 3904-byte header + card)",
+    "converted": {
+      "size": 131072,
+      "sha1": "dff0109cc7a6f0156d36ce7d81b9ef65047a1df4"
+    },
+    "script": "scripts/psx/Silent Hill.load.txt",
+    "script_variants": {
+      "pcsx-rearmed": "scripts/psx/Silent Hill.pcsx-rearmed.load.txt",
+      "swanstation": "scripts/psx/Silent Hill.swanstation.load.txt"
+    },
+    "cores": {
+      "beetle-psx": {
+        "result": "loads",
+        "detail": "Load, slot 1 lists File 1 (Nowhere, Next fear, Bus, Doghouse, Infirmary); Data 9, Save 1"
+      },
+      "beetle-psx-hw": {
+        "result": "loads",
+        "detail": "Load, slot 1 lists File 1 (Nowhere, Next fear, Bus, Doghouse, Infirmary); Data 9, Save 1 (the same screen as on beetle-psx)"
+      },
+      "pcsx-rearmed": {
+        "result": "loads",
+        "detail": "Load, slot 1 lists File 1 (Nowhere, Next fear, Bus, Doghouse, Infirmary); Data 9, Save 1 (the same screen as on beetle-psx)"
+      },
+      "swanstation": {
+        "result": "loads",
+        "detail": "Load, slot 1 lists File 1 (Nowhere, Next fear, Bus, Doghouse, Infirmary); Data 9, Save 1 (the same screen as on beetle-psx)"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": [
+      "beetle-psx",
+      "beetle-psx-hw",
+      "pcsx-rearmed",
+      "swanstation"
+    ]
+  },
+  "note": null
+}

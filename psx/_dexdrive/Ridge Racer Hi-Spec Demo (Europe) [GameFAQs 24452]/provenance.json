@@ -1,0 +1,75 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_dexdrive",
+  "url": "https://gamefaqs.gamespot.com/ps/198477-r4-ridge-racer-type-4/saves/24452",
+  "source_page": "https://gamefaqs.gamespot.com/ps/198477-r4-ridge-racer-type-4/saves",
+  "source": "GameFAQs (section 'PlayStation DexDrive Save (Europe)')",
+  "author": "Ace3000",
+  "licence": null,
+  "posted": "2015-10-31",
+  "fetched": "2026-11-05",
+  "what_it_is": "100% completion for Ridge Racer Turbo (Hi-Spec Demo). Extra mode unlocked and completed, and all cars unlocked, including the #0 White Angel.",
+  "gamefaqs": {
+    "id": 24452,
+    "product": "R4: Ridge Racer Type 4",
+    "section": "PlayStation DexDrive Save (Europe)",
+    "region": "Europe",
+    "served_as": "r4-ridge-racer-type-4.24452.gme",
+    "listed_size": "131KB"
+  },
+  "format": "DexDrive .gme layout (134976 bytes: 3904-byte header + 131072-byte card) with the header zeroed, no '123-456-STD'; the card holds 1 save(s), 1 for this game (BESCES-01832 RIDGE60)",
+  "release": "Ridge Racer Hi-Spec Demo (Europe)",
+  "game_saves": [
+    {
+      "name": "BESCES-01832 RIDGE60",
+      "blocks": 1,
+      "title": "Ridge Racer Turbo Mode Data"
+    }
+  ],
+  "files": {
+    "r4-ridge-racer-type-4.24452.gme": {
+      "size": 134976,
+      "sha1": "76563af2da4c8d5a2b6883bf1c5e615c6b31a473"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": null,
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr r4-ridge-racer-type-4.24452.gme: unwraps the card (DexDrive .gme layout with a blank header (no 123-456-STD))",
+    "converted": {
+      "size": 131072,
+      "sha1": "d5fa37bf2def63c598238763481d2c8fab4d2303"
+    },
+    "script": null,
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "not-run",
+        "detail": "no image of Ridge Racer Hi-Spec Demo (Europe) in the library"
+      },
+      "beetle-psx-hw": {
+        "result": "not-run",
+        "detail": "no image of Ridge Racer Hi-Spec Demo (Europe) in the library"
+      },
+      "pcsx-rearmed": {
+        "result": "not-run",
+        "detail": "no image of Ridge Racer Hi-Spec Demo (Europe) in the library"
+      },
+      "swanstation": {
+        "result": "not-run",
+        "detail": "no image of Ridge Racer Hi-Spec Demo (Europe) in the library"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": []
+  },
+  "note": "one-saves (1saves convert) does not read this file: a PS1 memory card is 131072 bytes, or that behind a DexDrive, VGS or PSP header, but this file is 134976 bytes"
+}

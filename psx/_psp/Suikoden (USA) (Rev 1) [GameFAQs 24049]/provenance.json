@@ -1,0 +1,104 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_psp",
+  "url": "https://gamefaqs.gamespot.com/ps/198843-suikoden/saves/24049",
+  "source_page": "https://gamefaqs.gamespot.com/ps/198843-suikoden/saves",
+  "source": "GameFAQs (section 'PlayStation PS3 Virtual Memory Card Save (ZIP) (North America)')",
+  "author": "Doomerang",
+  "licence": null,
+  "posted": "2014-12-13",
+  "fetched": "2026-11-05",
+  "what_it_is": "For Suikoden 2 Import - Main character = Meirich (so will import as Mcdohl), all transferable characters at level 60 with level 16 weapons, Humphrey has Windspun Armor",
+  "gamefaqs": {
+    "id": 24049,
+    "product": "Suikoden",
+    "section": "PlayStation PS3 Virtual Memory Card Save (ZIP) (North America)",
+    "region": "North America",
+    "served_as": "suikoden.24049.zip",
+    "listed_size": "17KB",
+    "served_zip": {
+      "size": 17758,
+      "sha1": "280e8d6bff5ce5b39ee3707d2b277eb82904d407"
+    }
+  },
+  "format": "zip of a PSP save folder for a PSone Classic (PARAM.SFO, ICON0.PNG, CONFIG.BIN, SCEVMC0.VMP and SCEVMC1.VMP): each .VMP is '\\0PMV' 128-byte header + 131072-byte card, slot 1 and slot 2; the card holds 1 save(s), 1 for this game (BASLUS-00292GENSOU00)",
+  "release": "Suikoden (USA) (Rev 1)",
+  "game_saves": [
+    {
+      "name": "BASLUS-00292GENSOU00",
+      "blocks": 2,
+      "title": "SUIKODEN LV64"
+    }
+  ],
+  "files": {
+    "SLUS00292/CONFIG.BIN": {
+      "size": 1040,
+      "sha1": "7450a59b125d4e5a0c31eb38b543e67ee143c5df"
+    },
+    "SLUS00292/ICON0.PNG": {
+      "size": 11206,
+      "sha1": "8653e1aadcfd1863546047a9e2375e183d63a9b5"
+    },
+    "SLUS00292/PARAM.SFO": {
+      "size": 4912,
+      "sha1": "cb3eb76df0011bf27158cbf1c8f18bb11ae6205d"
+    },
+    "SLUS00292/SCEVMC0.VMP": {
+      "size": 131200,
+      "sha1": "4ba2aa9569f266771c453e2fd9252bbe9cecf3ee"
+    },
+    "SLUS00292/SCEVMC1.VMP": {
+      "size": 131200,
+      "sha1": "99a3f7f6853db0288dfa544730514b6a8a87f55e"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Suikoden (USA) (Rev 1).cue",
+      "sha1": "7ec895dbc9d1f23aab3bde7ccd35e003ab2fb25d",
+      "size": 88
+    },
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr SLUS00292/SCEVMC0.VMP: unwraps the card (VMP (PSP/PS3 virtual card): 128-byte header + card)",
+    "converted": {
+      "size": 131072,
+      "sha1": "2eac50e434d44b5673d7734015d983fd7011d68b"
+    },
+    "script": "scripts/psx/Suikoden.load.txt",
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "loads",
+        "detail": "Continue game lists the file: Meirich, Lv. 64 (no card: \"No data on Memory card\")"
+      },
+      "beetle-psx-hw": {
+        "result": "loads",
+        "detail": "Continue game lists the file: Meirich, Lv. 64 (no card: \"No data on Memory card\") (the same screen as on beetle-psx)"
+      },
+      "pcsx-rearmed": {
+        "result": "loads",
+        "detail": "Continue game lists the file: Meirich, Lv. 64 (no card: \"No data on Memory card\") (the same screen as on beetle-psx)"
+      },
+      "swanstation": {
+        "result": "loads",
+        "detail": "Continue game lists the file: Meirich, Lv. 64 (no card: \"No data on Memory card\") (the same screen as on beetle-psx)"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": [
+      "beetle-psx",
+      "beetle-psx-hw",
+      "pcsx-rearmed",
+      "swanstation"
+    ]
+  },
+  "note": "Filed under GameFAQs' 'PlayStation PS3 Virtual Memory Card Save (ZIP) (North America)' section, but it is not a PS3 export (.psv): zip of a PSP save folder for a PSone Classic (PARAM.SFO, ICON0.PNG, CONFIG.BIN, SCEVMC0.VMP and SCEVMC1.VMP): each .VMP is '\\0PMV' 128-byte header + 131072-byte card, slot 1 and slot 2. Only SCEVMC0.VMP (memory card slot 1) is converted and loaded; SCEVMC1.VMP is slot 2 and holds no saves. one-saves (1saves convert) does not read this file: this archive holds 2 cards: SLUS00292/SCEVMC0.VMP, SLUS00292/SCEVMC1.VMP"
+}

@@ -1,0 +1,139 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_dexdrive",
+  "url": "https://gamefaqs.gamespot.com/ps/199365-xenogears/saves/12349",
+  "source_page": "https://gamefaqs.gamespot.com/ps/199365-xenogears/saves",
+  "source": "GameFAQs (section 'PlayStation DexDrive Save (North America)')",
+  "author": "Duke_Darkwood",
+  "licence": null,
+  "posted": "2006-07-11",
+  "fetched": "2026-11-05",
+  "what_it_is": "Collection of Disc One saves for people with lost/corrupted data to easily resume at or near where they left off. Check DexDrive annotations for details on each file.",
+  "gamefaqs": {
+    "id": 12349,
+    "product": "Xenogears",
+    "section": "PlayStation DexDrive Save (North America)",
+    "region": "North America",
+    "served_as": "xenogears.12349.gme",
+    "listed_size": "131KB"
+  },
+  "format": "DexDrive .gme: '123-456-STD' 3904-byte header (per-block comments) + 131072-byte raw card; the card holds 12 save(s), 12 for this game (BASLUS-006640, BASLUS-006641, BASLUS-006642, BASLUS-006643, ...)",
+  "release": "Xenogears (USA) (Disc 1)",
+  "game_saves": [
+    {
+      "name": "BASLUS-006640",
+      "blocks": 1,
+      "title": "XENOGEARS/No.01 Stalactite Cave"
+    },
+    {
+      "name": "BASLUS-006641",
+      "blocks": 1,
+      "title": "XENOGEARS/No.02 Operation Aveh"
+    },
+    {
+      "name": "BASLUS-006642",
+      "blocks": 1,
+      "title": "XENOGEARS/No.03 Recapture Aveh"
+    },
+    {
+      "name": "BASLUS-006643",
+      "blocks": 1,
+      "title": "XENOGEARS/No.04 Desert Despair"
+    },
+    {
+      "name": "BASLUS-006644",
+      "blocks": 1,
+      "title": "XENOGEARS/No.05 Kislev Capital"
+    },
+    {
+      "name": "BASLUS-006645",
+      "blocks": 1,
+      "title": "XENOGEARS/No.06 Sewer Horror"
+    },
+    {
+      "name": "BASLUS-006646",
+      "blocks": 1,
+      "title": "XENOGEARS/No.07 Gear Dock Raid"
+    },
+    {
+      "name": "BASLUS-006647",
+      "blocks": 1,
+      "title": "XENOGEARS/No.08 Secret Weapon"
+    },
+    {
+      "name": "BASLUS-006648",
+      "blocks": 1,
+      "title": "XENOGEARS/No.09 A Young Priest"
+    },
+    {
+      "name": "BASLUS-006649",
+      "blocks": 1,
+      "title": "XENOGEARS/No.10 Babel Tower"
+    },
+    {
+      "name": "BASLUS-00664:",
+      "blocks": 1,
+      "title": "XENOGEARS/No.11 Protect Nisan!"
+    },
+    {
+      "name": "BASLUS-00664;",
+      "blocks": 1,
+      "title": "XENOGEARS/No.12 Into Solaris"
+    }
+  ],
+  "files": {
+    "xenogears.12349.gme": {
+      "size": 134976,
+      "sha1": "89fd1d3edc73acfb885e156cd15fbdbc686311e8"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Xenogears (USA) (Disc 1).cue",
+      "sha1": "90ba9637f68f839fde92ca18b0346ae349ba0be2",
+      "size": 90
+    },
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr xenogears.12349.gme: unwraps the card (DexDrive .gme: 3904-byte header + card)",
+    "converted": {
+      "size": 131072,
+      "sha1": "da4cb736e91739532e24c2b13660b1adca3e2504"
+    },
+    "script": "scripts/psx/Xenogears.load.txt",
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "loads",
+        "detail": "Continue > Load shows save No. 01: Fei Lv 18, 009:34:31, Stalactite Cave"
+      },
+      "beetle-psx-hw": {
+        "result": "loads",
+        "detail": "Continue > Load shows save No. 01: Fei Lv 18, 009:34:31, Stalactite Cave (the same screen as on beetle-psx)"
+      },
+      "pcsx-rearmed": {
+        "result": "loads",
+        "detail": "Continue > Load shows save No. 01: Fei Lv 18, 009:34:31, Stalactite Cave (the same screen as on beetle-psx)"
+      },
+      "swanstation": {
+        "result": "loads",
+        "detail": "Continue > Load shows save No. 01: Fei Lv 18, 009:34:31, Stalactite Cave (the same screen as on beetle-psx)"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": [
+      "beetle-psx",
+      "beetle-psx-hw",
+      "pcsx-rearmed",
+      "swanstation"
+    ]
+  },
+  "note": null
+}

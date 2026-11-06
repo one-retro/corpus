@@ -1,0 +1,63 @@
+{
+  "method": "downloaded",
+  "system": "psp",
+  "core": "_psp",
+  "url": "https://gamefaqs.gamespot.com/psp/924594-lumines/saves/10693",
+  "source_page": "https://gamefaqs.gamespot.com/psp/924594-lumines/saves",
+  "source": "GameFAQs (section 'PSP Game Save Directory (ZIP) (Europe)')",
+  "author": "Falcon9x5",
+  "licence": null,
+  "posted": "2006-01-25",
+  "fetched": "2026-11-05",
+  "what_it_is": "Lumines EU Save. Puzzle Mode complete, 32 skins unlocked.",
+  "gamefaqs": {
+    "id": 10693,
+    "product": "Lumines",
+    "section": "PSP Game Save Directory (ZIP) (Europe)",
+    "region": "Europe",
+    "served_as": "lumines.10693.zip",
+    "listed_size": "37KB"
+  },
+  "format": "PSP save folder, 4 files at the zip's root, with no folder: PARAM.SFO (SAVEDATA_DIRECTORY ULES00043LUMINES, TITLE LUMINES, SAVEDATA_FILE_LIST names DATA.BIN with its hash), DATA.BIN 18464 bytes (encrypted by the system's savedata call), ICON0.PNG, PIC1.PNG",
+  "files": {
+    "DATA.BIN": {
+      "size": 18464,
+      "sha1": "259d97cf070c1505d14fd19852a3dc8b7e308044"
+    },
+    "ICON0.PNG": {
+      "size": 16246,
+      "sha1": "9bc662b73118d36311ade4111445568142b5df41"
+    },
+    "PARAM.SFO": {
+      "size": 4912,
+      "sha1": "247a108c29b742f0a83b7cf864248f292eeab5af"
+    },
+    "PIC1.PNG": {
+      "size": 4285,
+      "sha1": "3e28ab06d010719cbc34cc92f63b87f962d8b146"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": null,
+    "converted_with": "tools/gamefaqs/psp-savedata.py memstick <zip> <memory stick>: writes the zip's files, unchanged, to PSP/SAVEDATA/<SAVEDATA_DIRECTORY>/ (the name read from PARAM.SFO)",
+    "converted": {
+      "path": "PSP/SAVEDATA/ULES00043LUMINES/",
+      "files": 4,
+      "bytes_changed": 0
+    },
+    "script": null,
+    "cores": {
+      "ppsspp": {
+        "result": "not-run",
+        "detail": "no Lumines (Europe) (En,Fr,De,Es,It) image in the library (it has Lumines (USA) only)"
+      },
+      "ppsspp@ppsspp": {
+        "result": "not-run",
+        "detail": "no Lumines (Europe) (En,Fr,De,Es,It) image in the library (it has Lumines (USA) only)"
+      }
+    },
+    "proof_order": []
+  },
+  "note": "The zip holds the four files without their folder; the folder name comes from PARAM.SFO."
+}

@@ -1,0 +1,88 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_ps3",
+  "url": "https://gamefaqs.gamespot.com/ps/199365-xenogears/saves/20958",
+  "source_page": "https://gamefaqs.gamespot.com/ps/199365-xenogears/saves",
+  "source": "GameFAQs (section 'PlayStation PS3 Virtual Memory Card Save (ZIP) (North America)')",
+  "author": "Mars",
+  "licence": null,
+  "posted": "2010-08-08",
+  "fetched": "2026-11-05",
+  "what_it_is": "Save in the Debug Room (Disc 1)",
+  "gamefaqs": {
+    "id": 20958,
+    "product": "Xenogears",
+    "section": "PlayStation PS3 Virtual Memory Card Save (ZIP) (North America)",
+    "region": "North America",
+    "served_as": "xenogears.20958.zip",
+    "listed_size": "1KB",
+    "served_zip": {
+      "size": 1646,
+      "sha1": "3bc899446b980944bcffb59cf9423e583a11d6b6"
+    }
+  },
+  "format": "zip of 1 PS3 export(s) (.PSV): '\\0VSP' header (signature, save name at 0x64), the save's blocks from 0x84 (8324 bytes); it holds 1 save(s), 1 for this game (BASLUS-006640)",
+  "release": "Xenogears (USA) (Disc 1)",
+  "game_saves": [
+    {
+      "name": "BASLUS-006640",
+      "blocks": 1,
+      "title": "XENOGEARS/No.01 Lahan Village"
+    }
+  ],
+  "files": {
+    "BASLUS-0066430.PSV": {
+      "size": 8324,
+      "sha1": "b42f3511a6c75cd92d973afc78b16bba4bed9df6"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Xenogears (USA) (Disc 1).cue",
+      "sha1": "90ba9637f68f839fde92ca18b0346ae349ba0be2",
+      "size": 90
+    },
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr BASLUS-0066430.PSV: puts the save(s) on a freshly formatted card, as MemcardRex imports a single save",
+    "converted": {
+      "size": 131072,
+      "sha1": "59585ac7582d0efaa69f64412c470d0aac269a0d"
+    },
+    "script": "scripts/psx/Xenogears.load.txt",
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "loads",
+        "detail": "Continue > Load shows save No. 01: Fei Lv 1, 000:01:13, Lahan Village"
+      },
+      "beetle-psx-hw": {
+        "result": "loads",
+        "detail": "Continue > Load shows save No. 01: Fei Lv 1, 000:01:13, Lahan Village (the same screen as on beetle-psx)"
+      },
+      "pcsx-rearmed": {
+        "result": "loads",
+        "detail": "Continue > Load shows save No. 01: Fei Lv 1, 000:01:13, Lahan Village (the same screen as on beetle-psx)"
+      },
+      "swanstation": {
+        "result": "loads",
+        "detail": "Continue > Load shows save No. 01: Fei Lv 1, 000:01:13, Lahan Village (the same screen as on beetle-psx)"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": [
+      "beetle-psx",
+      "beetle-psx-hw",
+      "pcsx-rearmed",
+      "swanstation"
+    ]
+  },
+  "note": null
+}

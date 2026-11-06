@@ -1,0 +1,110 @@
+{
+  "method": "downloaded",
+  "system": "nds",
+  "core": "_raw",
+  "url": "https://gamefaqs.gamespot.com/ds/925601-pokemon-diamond-version/saves/29928",
+  "source_page": "https://gamefaqs.gamespot.com/ds/925601-pokemon-diamond-version/saves",
+  "source": "GameFAQs (section 'Action Replay Max DS (.dst) Game Save (North America)')",
+  "author": "R3-identfan",
+  "licence": null,
+  "posted": "2024-06-18",
+  "fetched": "2026-11-05",
+  "what_it_is": "Start of the post game after defeating the champion.",
+  "gamefaqs": {
+    "id": 29928,
+    "product": "Pokemon Diamond / Pearl / Platinum Version",
+    "section": "Action Replay Max DS (.dst) Game Save (North America)",
+    "region": "North America",
+    "served_as": "pokemon-diamond-pearl-platinum-version.29928.dst",
+    "listed_size": "512KB"
+  },
+  "format": "raw 512 KiB chip image with no header (exact size)",
+  "files": {
+    "pokemon-diamond-pearl-platinum-version.29928.dst": {
+      "size": 524288,
+      "sha1": "191748804bb25beccd07fe93ec99b0f289a7b9bd"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Pokemon - Platinum Version (USA).nds",
+      "sha1": "c5072bf51a5ecc51ade99d3506c023f5bac3eeb3",
+      "size": 134217728,
+      "note": "a dump of this game code whose sha1 is not in the No-Intro DAT (the area after the used ROM size is blank); the region in the name is a guess"
+    },
+    "converted_with": "tools/gamefaqs/nds-cores.py IN --chip 524288 --stem 'Pokemon - Platinum Version (USA)' --out DIR: fits it to the 524288-byte chip (exact size) and writes each core's file",
+    "converted": {
+      "size": 524288,
+      "sha1": "191748804bb25beccd07fe93ec99b0f289a7b9bd"
+    },
+    "core_files": {
+      "desmume": {
+        "name": "Pokemon - Platinum Version (USA).dsv",
+        "size": 524410,
+        "sha1": "33a861a5538bcae242d13141c8733d2095cf9eb9"
+      },
+      "desmume-2015": {
+        "name": "Pokemon - Platinum Version (USA).dsv",
+        "size": 524410,
+        "sha1": "33a861a5538bcae242d13141c8733d2095cf9eb9"
+      },
+      "melonds": {
+        "name": "Pokemon - Platinum Version (USA).sav",
+        "size": 524288,
+        "sha1": "191748804bb25beccd07fe93ec99b0f289a7b9bd"
+      },
+      "melonds-ds": {
+        "name": "Pokemon - Platinum Version (USA).srm",
+        "size": 524288,
+        "sha1": "191748804bb25beccd07fe93ec99b0f289a7b9bd"
+      },
+      "noods": {
+        "name": "Pokemon - Platinum Version (USA).sav",
+        "size": 524288,
+        "sha1": "191748804bb25beccd07fe93ec99b0f289a7b9bd"
+      },
+      "skyemu": {
+        "name": "Pokemon - Platinum Version (USA).srm",
+        "size": 8388608,
+        "sha1": "59ebd9d2f45ef2f8235503114eaceb8ae5e68aec"
+      }
+    },
+    "script": "scripts/nds/Pokemon - Platinum Version.load.txt",
+    "cores": {
+      "desmume": {
+        "result": "loads",
+        "detail": "CONTINUE: PLAYER Storm, TIME 25:25, BADGES 8, POKéDEX 200"
+      },
+      "desmume-2015": {
+        "result": "loads",
+        "detail": "CONTINUE: PLAYER Storm, TIME 25:25, BADGES 8, POKéDEX 200"
+      },
+      "melonds": {
+        "result": "core-error",
+        "detail": "\"A communication error has occurred\" (\"... you will be returned to wherever you last saved\") instead of the CONTINUE panel, then a white screen; melonDS 0.9.3 does the same with its own Pearl save from this corpus, so it is the core (no BIOS or firmware here, FreeBIOS), not this save"
+      },
+      "melonds-ds": {
+        "result": "loads",
+        "detail": "CONTINUE: PLAYER Storm, TIME 25:25, BADGES 8, POKéDEX 200"
+      },
+      "noods": {
+        "result": "loads",
+        "detail": "CONTINUE: PLAYER Storm, TIME 25:25, BADGES 8, POKéDEX 200"
+      },
+      "skyemu": {
+        "result": "loads",
+        "detail": "CONTINUE: PLAYER Storm, TIME 25:25, BADGES 8, POKéDEX 200"
+      }
+    },
+    "proof_order": [
+      "desmume",
+      "desmume-2015",
+      "melonds",
+      "melonds-ds",
+      "noods",
+      "skyemu"
+    ]
+  },
+  "note": "Release: Platinum layout, English, the version that caught the player's own Pokemon (origin game in the decrypted Pokemon data, OT matching the trainer) is Platinum. A raw 512 KiB file with no header; nothing in it says what wrote it."
+}

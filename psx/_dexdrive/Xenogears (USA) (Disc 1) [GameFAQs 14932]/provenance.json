@@ -1,0 +1,154 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_dexdrive",
+  "url": "https://gamefaqs.gamespot.com/ps/199365-xenogears/saves/14932",
+  "source_page": "https://gamefaqs.gamespot.com/ps/199365-xenogears/saves",
+  "source": "GameFAQs (section 'PlayStation DexDrive Save (North America)')",
+  "author": "Unos_Hambalos",
+  "licence": null,
+  "posted": "2007-05-13",
+  "fetched": "2026-11-05",
+  "what_it_is": "Save Collection II: Operation Aveh, The Tournament, Margie's Rescue, City of Peace, Recapture Aveh, Desert Despair, Kislev Capital, Brave Battlers, Sewer Horror, Battling Champ, Gear Dock Raid, Night Purge",
+  "gamefaqs": {
+    "id": 14932,
+    "product": "Xenogears",
+    "section": "PlayStation DexDrive Save (North America)",
+    "region": "North America",
+    "served_as": "xenogears.14932.gme",
+    "listed_size": "131KB"
+  },
+  "format": "DexDrive .gme: '123-456-STD' 3904-byte header (per-block comments) + 131072-byte raw card; the card holds 15 save(s), 15 for this game (BASLUS-006640, BASLUS-006641, BASLUS-006642, BASLUS-006643, ...)",
+  "release": "Xenogears (USA) (Disc 1)",
+  "game_saves": [
+    {
+      "name": "BASLUS-006640",
+      "blocks": 1,
+      "title": "XENOGEARS/No.01 Operation Aveh"
+    },
+    {
+      "name": "BASLUS-006641",
+      "blocks": 1,
+      "title": "XENOGEARS/No.02 The Tournament"
+    },
+    {
+      "name": "BASLUS-006642",
+      "blocks": 1,
+      "title": "XENOGEARS/No.03 Margie’s Rescue"
+    },
+    {
+      "name": "BASLUS-006643",
+      "blocks": 1,
+      "title": "XENOGEARS/No.04 City of Peace"
+    },
+    {
+      "name": "BASLUS-006644",
+      "blocks": 1,
+      "title": "XENOGEARS/No.05 Recapture Aveh"
+    },
+    {
+      "name": "BASLUS-006645",
+      "blocks": 1,
+      "title": "XENOGEARS/No.06 Recapture Aveh"
+    },
+    {
+      "name": "BASLUS-006646",
+      "blocks": 1,
+      "title": "XENOGEARS/No.07 Recapture Aveh"
+    },
+    {
+      "name": "BASLUS-006647",
+      "blocks": 1,
+      "title": "XENOGEARS/No.08 Desert Despair"
+    },
+    {
+      "name": "BASLUS-006648",
+      "blocks": 1,
+      "title": "XENOGEARS/No.09 Kislev Capital"
+    },
+    {
+      "name": "BASLUS-006649",
+      "blocks": 1,
+      "title": "XENOGEARS/No.10 Brave Battlers"
+    },
+    {
+      "name": "BASLUS-00664:",
+      "blocks": 1,
+      "title": "XENOGEARS/No.11 Sewer Horror"
+    },
+    {
+      "name": "BASLUS-00664;",
+      "blocks": 1,
+      "title": "XENOGEARS/No.12 Battling Champ"
+    },
+    {
+      "name": "BASLUS-00664<",
+      "blocks": 1,
+      "title": "XENOGEARS/No.13 Gear Dock Raid"
+    },
+    {
+      "name": "BASLUS-00664=",
+      "blocks": 1,
+      "title": "XENOGEARS/No.14 Gear Dock Raid"
+    },
+    {
+      "name": "BASLUS-00664>",
+      "blocks": 1,
+      "title": "XENOGEARS/No.15 Night Purge"
+    }
+  ],
+  "files": {
+    "xenogears.14932.gme": {
+      "size": 134976,
+      "sha1": "1b18b84fb95418e698da6cf8b1c9be1b1e402498"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Xenogears (USA) (Disc 1).cue",
+      "sha1": "90ba9637f68f839fde92ca18b0346ae349ba0be2",
+      "size": 90
+    },
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr xenogears.14932.gme: unwraps the card (DexDrive .gme: 3904-byte header + card)",
+    "converted": {
+      "size": 131072,
+      "sha1": "1fe66cd8900ebbb43704d115f72e49614b9d9b5e"
+    },
+    "script": "scripts/psx/Xenogears.load.txt",
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "loads",
+        "detail": "Continue > Load shows save No. 01: Fei Lv 25, 009:28:55, Operation Aveh"
+      },
+      "beetle-psx-hw": {
+        "result": "loads",
+        "detail": "Continue > Load shows save No. 01: Fei Lv 25, 009:28:55, Operation Aveh (the same screen as on beetle-psx)"
+      },
+      "pcsx-rearmed": {
+        "result": "loads",
+        "detail": "Continue > Load shows save No. 01: Fei Lv 25, 009:28:55, Operation Aveh (the same screen as on beetle-psx)"
+      },
+      "swanstation": {
+        "result": "loads",
+        "detail": "Continue > Load shows save No. 01: Fei Lv 25, 009:28:55, Operation Aveh (the same screen as on beetle-psx)"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": [
+      "beetle-psx",
+      "beetle-psx-hw",
+      "pcsx-rearmed",
+      "swanstation"
+    ]
+  },
+  "note": null
+}

@@ -1,0 +1,84 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_dexdrive",
+  "url": "https://gamefaqs.gamespot.com/ps/199061-tony-hawks-pro-skater-2/saves/559",
+  "source_page": "https://gamefaqs.gamespot.com/ps/199061-tony-hawks-pro-skater-2/saves",
+  "source": "GameFAQs (section 'PlayStation DexDrive Save (North America)')",
+  "author": "DMatthews",
+  "licence": null,
+  "posted": "2000-12-17",
+  "fetched": "2026-11-05",
+  "what_it_is": "Game 100% complete, ALL gaps including Skate Heaven & Hawaii Drop-In, Private Carrera, ALL cheats unlocked, COMPLETELY EARNED, NO CODES USED.",
+  "gamefaqs": {
+    "id": 559,
+    "product": "Tony Hawk's Pro Skater 2",
+    "section": "PlayStation DexDrive Save (North America)",
+    "region": "North America",
+    "served_as": "tony-hawks-pro-skater-2.559.gme",
+    "listed_size": "19KB"
+  },
+  "format": "DexDrive .gme cut short: '123-456-STD' 3904-byte header + only the first 16384 bytes of the card (2 of 16 blocks); the card holds 1 save(s), 1 for this game (BASLUS-01066DIOHGAH)",
+  "release": "Tony Hawk's Pro Skater 2 (USA)",
+  "game_saves": [
+    {
+      "name": "BASLUS-01066DIOHGAH",
+      "blocks": 1,
+      "title": "THPS2 CAREERー DION CASH"
+    }
+  ],
+  "files": {
+    "tony-hawks-pro-skater-2.559.gme": {
+      "size": 20288,
+      "sha1": "d5fbd52ce6c02056203946f860c32a6caf2f29ed"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Tony Hawk's Pro Skater 2 (USA).cue",
+      "sha1": "ea5388de4fa83e3d3b5f37d752f1eb8d3bd5d88e",
+      "size": 96
+    },
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr tony-hawks-pro-skater-2.559.gme: unwraps the card (DexDrive .gme: 3904-byte header + card (only 16384 card bytes, zero-padded to 131072))",
+    "converted": {
+      "size": 131072,
+      "sha1": "13efbdbddaf03f28a8e327f1cab0df27d7c1df85"
+    },
+    "script": "scripts/psx/Tony Hawk's Pro Skater 2.load.txt",
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "loads",
+        "detail": "Options > Memory Card > Load Data lists the career DION CASH"
+      },
+      "beetle-psx-hw": {
+        "result": "loads",
+        "detail": "Options > Memory Card > Load Data lists the career DION CASH (the same screen as on beetle-psx)"
+      },
+      "pcsx-rearmed": {
+        "result": "loads",
+        "detail": "Options > Memory Card > Load Data lists the career DION CASH (the same screen as on beetle-psx)"
+      },
+      "swanstation": {
+        "result": "loads",
+        "detail": "Options > Memory Card > Load Data lists the career DION CASH (the same screen as on beetle-psx)"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": [
+      "beetle-psx",
+      "beetle-psx-hw",
+      "pcsx-rearmed",
+      "swanstation"
+    ]
+  },
+  "note": "The converter pads the missing blocks with zeroes, as DuckStation's ImportCardGME does; the saves on the card all lie in the blocks present. one-saves (1saves convert) does not read this file: a PS1 memory card is 131072 bytes, or that behind a DexDrive, VGS or PSP header, but this file is 20288 bytes"
+}

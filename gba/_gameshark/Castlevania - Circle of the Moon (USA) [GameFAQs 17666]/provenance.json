@@ -1,0 +1,119 @@
+{
+  "method": "downloaded",
+  "system": "gba",
+  "core": "_gameshark",
+  "url": "https://gamefaqs.gamespot.com/gba/449471-castlevania-circle-of-the-moon/saves/17666",
+  "source_page": "https://gamefaqs.gamespot.com/gba/449471-castlevania-circle-of-the-moon/saves",
+  "source": "GameFAQs (section 'GameBoy Advance GameShark Save (North America)')",
+  "author": "Aether_Knight",
+  "licence": null,
+  "posted": "2008-08-09",
+  "fetched": "2026-11-05",
+  "what_it_is": "Sv4-Start game at Audience Room w/max. map,(100.0%) level, & gold. ALL DSS & Equip/Items.(x99). Sv5-Like Sv4,but Magician. Sv6-Like Sv4,but Fighter. Sv7-Like Sv4,but Shooter. Sv8-Like Sv4,but Thief.",
+  "gamefaqs": {
+    "id": 17666,
+    "product": "Castlevania: Circle of the Moon",
+    "section": "GameBoy Advance GameShark Save (North America)",
+    "region": "North America",
+    "served_as": "castlevania-circle-of-the-moon.17666.sps",
+    "listed_size": "64KB"
+  },
+  "format": "SharkPort save (\"SharkPortSave\", kind 0x000F0000): title \"DRACULA AGB1\", date \"8/8/2008 8:14:10 AM\", notes \"Sv4-Start game at Audience Room w/max. map,\r\n(100.0%) lev...\"; cart header \"DRACULA AGB1\" / 'AAME' (complement 0xb1); payload 65536 bytes; checksum: signed",
+  "files": {
+    "castlevania-circle-of-the-moon.17666.sps": {
+      "size": 65877,
+      "sha1": "ab5aecd6f38c3901091dca5629e01e9f929710e8"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Castlevania - Circle of the Moon (USA).gba",
+      "sha1": "d661b01eb94186435723ac03344792c11c20c522",
+      "size": 8388608
+    },
+    "converted_with": "tools/gamefaqs/gba-sharkport.py castlevania-circle-of-the-moon.17666.sps --rom ROM --core CORE --outdir DIR: reads the SharkPort container as mGBA does and imports the payload as mGBA's _importSavedata does (cut to the chip, EEPROM 8-byte blocks reversed, the rest of the chip erased), then lays the chip out as the core keeps it",
+    "converted": {
+      "size": 32768,
+      "sha1": "5ad93555d2f95f698fbfd9a7ff993b6c30cb4136"
+    },
+    "script": "scripts/gba/Castlevania - Circle of the Moon.load.txt",
+    "cores": {
+      "mgba": {
+        "result": "loads",
+        "detail": "DATA SELECT: the bonus modes listed and files IV-VIII present (file I empty)",
+        "core_version": "mGBA 0.11-212-7a12d6d",
+        "file": {
+          "name": "Castlevania - Circle of the Moon (USA).srm",
+          "size": 32768,
+          "sha1": "5ad93555d2f95f698fbfd9a7ff993b6c30cb4136"
+        },
+        "frame": "files"
+      },
+      "vba-m": {
+        "result": "loads",
+        "detail": "DATA SELECT: the bonus modes listed and files IV-VIII present (file I empty)",
+        "core_version": "VBA-M 115defb",
+        "file": {
+          "name": "Castlevania - Circle of the Moon (USA).srm",
+          "size": 32768,
+          "sha1": "5ad93555d2f95f698fbfd9a7ff993b6c30cb4136"
+        },
+        "frame": "files"
+      },
+      "gpsp": {
+        "result": "loads",
+        "detail": "DATA SELECT: the bonus modes listed and files IV-VIII present (file I empty)",
+        "core_version": "gpSP v1.1.0-5819380",
+        "file": {
+          "name": "Castlevania - Circle of the Moon (USA).srm",
+          "size": 131072,
+          "sha1": "83c21d0194b319bd77675f1dff5d710c6380d19f"
+        },
+        "frame": "files"
+      },
+      "vba-next": {
+        "result": "loads",
+        "detail": "DATA SELECT: the bonus modes listed and files IV-VIII present (file I empty)",
+        "core_version": "VBA Next v1.0.2",
+        "file": {
+          "name": "Castlevania - Circle of the Moon (USA).srm",
+          "size": 139264,
+          "sha1": "5072a4e6bd7bddcb50f213a8b6a0b070716feb24"
+        },
+        "frame": "files"
+      },
+      "beetle-gba": {
+        "result": "loads",
+        "detail": "DATA SELECT: the bonus modes listed and files IV-VIII present (file I empty)",
+        "core_version": "Beetle GBA v0.9.36 b158166",
+        "file": {
+          "name": "Castlevania - Circle of the Moon (USA).50a1089600603a94e15ecf287f8d5a1f.sav",
+          "size": 65536,
+          "sha1": "f8231a6b66a64278250eb93bc30d7c61d6845551"
+        },
+        "frame": "files"
+      },
+      "skyemu": {
+        "result": "loads",
+        "detail": "DATA SELECT: the bonus modes listed and files IV-VIII present (file I empty)",
+        "core_version": "SkyEmu adacd0788964ed89f5c43dcbc1f3cc26deec996c",
+        "file": {
+          "name": "Castlevania - Circle of the Moon (USA).srm",
+          "size": 131072,
+          "sha1": "83c21d0194b319bd77675f1dff5d710c6380d19f"
+        },
+        "frame": "files"
+      }
+    },
+    "proof_order": [
+      "mgba",
+      "vba-m",
+      "gpsp",
+      "vba-next",
+      "beetle-gba",
+      "skyemu"
+    ]
+  },
+  "note": null
+}

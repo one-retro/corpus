@@ -1,0 +1,75 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_dexdrive",
+  "url": "https://gamefaqs.gamespot.com/ps/197341-final-fantasy-vii/saves/15085",
+  "source_page": "https://gamefaqs.gamespot.com/ps/197341-final-fantasy-vii/saves",
+  "source": "GameFAQs (section 'PlayStation DexDrive Save (Europe)')",
+  "author": "ChandooG",
+  "licence": null,
+  "posted": "2007-06-16",
+  "fetched": "2026-11-05",
+  "what_it_is": "Save set to make beating emerald and ruby a snap for the player, just start the fight and cast KOTR then keep miming it.",
+  "gamefaqs": {
+    "id": 15085,
+    "product": "Final Fantasy VII",
+    "section": "PlayStation DexDrive Save (Europe)",
+    "region": "Europe",
+    "served_as": "final-fantasy-vii.15085.gme",
+    "listed_size": "131KB"
+  },
+  "format": "DexDrive .gme: '123-456-STD' 3904-byte header (per-block comments) + 131072-byte raw card; the card holds 1 save(s), 1 for this game (BESCES-00867FF7-S01)",
+  "release": "Final Fantasy VII (Europe) (Disc 1)",
+  "game_saves": [
+    {
+      "name": "BESCES-00867FF7-S01",
+      "blocks": 1,
+      "title": "FF7/SAVE01/28:28"
+    }
+  ],
+  "files": {
+    "final-fantasy-vii.15085.gme": {
+      "size": 134976,
+      "sha1": "01d9b39bf91384b101ebd13f1435e30ebf25091e"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": null,
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr final-fantasy-vii.15085.gme: unwraps the card (DexDrive .gme: 3904-byte header + card)",
+    "converted": {
+      "size": 131072,
+      "sha1": "9d1dca6d71df6d71c283622e8002bc0614393af3"
+    },
+    "script": null,
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "not-run",
+        "detail": "no image of Final Fantasy VII (Europe) (Disc 1) in the library"
+      },
+      "beetle-psx-hw": {
+        "result": "not-run",
+        "detail": "no image of Final Fantasy VII (Europe) (Disc 1) in the library"
+      },
+      "pcsx-rearmed": {
+        "result": "not-run",
+        "detail": "no image of Final Fantasy VII (Europe) (Disc 1) in the library"
+      },
+      "swanstation": {
+        "result": "not-run",
+        "detail": "no image of Final Fantasy VII (Europe) (Disc 1) in the library"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": []
+  },
+  "note": null
+}

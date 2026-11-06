@@ -1,0 +1,98 @@
+{
+  "method": "downloaded",
+  "system": "nds",
+  "core": "_action-replay-ds",
+  "url": "https://gamefaqs.gamespot.com/ds/920788-mario-kart-ds/saves/33446",
+  "source_page": "https://gamefaqs.gamespot.com/ds/920788-mario-kart-ds/saves",
+  "source": "GameFAQs (section 'Action Replay Max DS (.duc) Game Save (Europe)')",
+  "author": "Elky",
+  "licence": null,
+  "posted": "2025-08-19",
+  "fetched": "2026-11-05",
+  "what_it_is": "100% completado, todos los personajes desbloqueados. Las misiones completas. Todo con copa de oro y 3 estrellas.",
+  "gamefaqs": {
+    "id": 33446,
+    "product": "Mario Kart DS",
+    "section": "Action Replay Max DS (.duc) Game Save (Europe)",
+    "region": "Europe",
+    "served_as": "mario-kart-ds.33446.duc",
+    "listed_size": "256KB"
+  },
+  "format": "Action Replay DS save: the 500-byte 'ARDS000000000001' header written by a converter ('Converted Savegame' / 'Savegame', ASCII 'shuny conv'), then 256 KiB raw for the 256 KiB flash (exact size)",
+  "files": {
+    "mario-kart-ds.33446.duc": {
+      "size": 262644,
+      "sha1": "ef1ba14902dc65d8f2640dce294435ae3838afb1"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": null,
+    "converted_with": "tools/gamefaqs/nds-ards.py IN step0.bin, then tools/gamefaqs/nds-cores.py step0.bin --chip 262144 --stem 'Mario Kart DS (Europe) (En,Fr,De,Es,It)' --out DIR: drops the Action Replay header; fits it to the 262144-byte chip (exact size) and writes each core's file",
+    "converted": {
+      "size": 262144,
+      "sha1": "66e4aa220a61ec824254b2e0ac725c322e4632cf"
+    },
+    "core_files": {
+      "desmume": {
+        "name": "Mario Kart DS (Europe) (En,Fr,De,Es,It).dsv",
+        "size": 262266,
+        "sha1": "88b171da54f38dfdc9ba077bd5d24fbb42f06b9f"
+      },
+      "desmume-2015": {
+        "name": "Mario Kart DS (Europe) (En,Fr,De,Es,It).dsv",
+        "size": 262266,
+        "sha1": "88b171da54f38dfdc9ba077bd5d24fbb42f06b9f"
+      },
+      "melonds": {
+        "name": "Mario Kart DS (Europe) (En,Fr,De,Es,It).sav",
+        "size": 262144,
+        "sha1": "66e4aa220a61ec824254b2e0ac725c322e4632cf"
+      },
+      "melonds-ds": {
+        "name": "Mario Kart DS (Europe) (En,Fr,De,Es,It).srm",
+        "size": 262144,
+        "sha1": "66e4aa220a61ec824254b2e0ac725c322e4632cf"
+      },
+      "noods": {
+        "name": "Mario Kart DS (Europe) (En,Fr,De,Es,It).sav",
+        "size": 262144,
+        "sha1": "66e4aa220a61ec824254b2e0ac725c322e4632cf"
+      },
+      "skyemu": {
+        "name": "Mario Kart DS (Europe) (En,Fr,De,Es,It).srm",
+        "size": 8388608,
+        "sha1": "52a55e5298c2e8d82c8c2b29a6e9b57bc452dc73"
+      }
+    },
+    "script": null,
+    "cores": {
+      "desmume": {
+        "result": "not-run",
+        "detail": "no image of Mario Kart DS (Europe) (En,Fr,De,Es,It) in the library"
+      },
+      "desmume-2015": {
+        "result": "not-run",
+        "detail": "no image of Mario Kart DS (Europe) (En,Fr,De,Es,It) in the library"
+      },
+      "melonds": {
+        "result": "not-run",
+        "detail": "no image of Mario Kart DS (Europe) (En,Fr,De,Es,It) in the library"
+      },
+      "melonds-ds": {
+        "result": "not-run",
+        "detail": "no image of Mario Kart DS (Europe) (En,Fr,De,Es,It) in the library"
+      },
+      "noods": {
+        "result": "not-run",
+        "detail": "no image of Mario Kart DS (Europe) (En,Fr,De,Es,It) in the library"
+      },
+      "skyemu": {
+        "result": "not-run",
+        "detail": "no image of Mario Kart DS (Europe) (En,Fr,De,Es,It) in the library"
+      }
+    },
+    "proof_order": []
+  },
+  "note": null
+}

@@ -1,0 +1,84 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_dexdrive",
+  "url": "https://gamefaqs.gamespot.com/ps/197468-gran-turismo/saves/26536",
+  "source_page": "https://gamefaqs.gamespot.com/ps/197468-gran-turismo/saves",
+  "source": "GameFAQs (section 'PlayStation DexDrive Save (North America)')",
+  "author": "PabsysAsphalt",
+  "licence": null,
+  "posted": "2019-09-06",
+  "fetched": "2026-11-05",
+  "what_it_is": "Day #35- All obtainable Prize Cars (in every available colour), 100 Million Credits",
+  "gamefaqs": {
+    "id": 26536,
+    "product": "Gran Turismo",
+    "section": "PlayStation DexDrive Save (North America)",
+    "region": "North America",
+    "served_as": "gran-turismo.26536.gme",
+    "listed_size": "131KB"
+  },
+  "format": "DexDrive .gme: '123-456-STD' 3904-byte header (per-block comments) + 131072-byte raw card; the card holds 1 save(s), 1 for this game (BASCUS-94194GT)",
+  "release": "Gran Turismo (USA) (Rev 1)",
+  "game_saves": [
+    {
+      "name": "BASCUS-94194GT",
+      "blocks": 5,
+      "title": "GT game data"
+    }
+  ],
+  "files": {
+    "gran-turismo.26536.gme": {
+      "size": 134976,
+      "sha1": "f43ff892bc6d3e21716cb91869362983af755eb2"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Gran Turismo (USA) (Rev 1).cue",
+      "sha1": "ad114ef1312b81c7ee9995df1217cc1a089e381e",
+      "size": 92
+    },
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr gran-turismo.26536.gme: unwraps the card (DexDrive .gme: 3904-byte header + card)",
+    "converted": {
+      "size": 131072,
+      "sha1": "4c06e30c2444003dbd113986a321f9ccbb02d2b5"
+    },
+    "script": "scripts/psx/Gran Turismo.load.txt",
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "loads",
+        "detail": "the game loads the card at boot; Simulation Mode > My Home shows Day 32, Cr 98,324,750, car ConceptCar"
+      },
+      "beetle-psx-hw": {
+        "result": "loads",
+        "detail": "the game loads the card at boot; Simulation Mode > My Home shows Day 32, Cr 98,324,750, car ConceptCar (the same screen as on beetle-psx)"
+      },
+      "pcsx-rearmed": {
+        "result": "loads",
+        "detail": "the game loads the card at boot; Simulation Mode > My Home shows Day 32, Cr 98,324,750, car ConceptCar (the same screen as on beetle-psx)"
+      },
+      "swanstation": {
+        "result": "loads",
+        "detail": "the game loads the card at boot; Simulation Mode > My Home shows Day 32, Cr 98,324,750, car ConceptCar (the same screen as on beetle-psx)"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": [
+      "beetle-psx",
+      "beetle-psx-hw",
+      "pcsx-rearmed",
+      "swanstation"
+    ]
+  },
+  "note": null
+}

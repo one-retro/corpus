@@ -1,0 +1,11 @@
+# Pokemon Red / Blue: the load screen. With a save, the first accepted START leaves the title,
+# the next picks CONTINUE, and the file's box stays up (START does not confirm it): PLAYER,
+# BADGES, POKeDEX, TIME. Without one, the second picks NEW GAME and Oak starts talking. The
+# title ignores input while its Pokemon swap, and SGB-mode cores reach it later, hence the taps;
+# FixGB and IroGB need the last few.
+wait 1500
+repeat 10
+tap start 1 50
+end
+wait 120
+shot status

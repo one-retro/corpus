@@ -1,0 +1,84 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_dexdrive",
+  "url": "https://gamefaqs.gamespot.com/ps/199365-xenogears/saves/3496",
+  "source_page": "https://gamefaqs.gamespot.com/ps/199365-xenogears/saves",
+  "source": "GameFAQs (section 'PlayStation DexDrive Save (North America)')",
+  "author": "Mykas0",
+  "licence": null,
+  "posted": "2004-02-20",
+  "fetched": "2026-11-05",
+  "what_it_is": "Game saved before the Babel Tower Chapter, on Cd 1.",
+  "gamefaqs": {
+    "id": 3496,
+    "product": "Xenogears",
+    "section": "PlayStation DexDrive Save (North America)",
+    "region": "North America",
+    "served_as": "xenogears.3496.gme",
+    "listed_size": "131KB"
+  },
+  "format": "DexDrive .gme: '123-456-STD' 3904-byte header (per-block comments) + 131072-byte raw card; the card holds 1 save(s), 1 for this game (BASLUS-006640)",
+  "release": "Xenogears (USA) (Disc 1)",
+  "game_saves": [
+    {
+      "name": "BASLUS-006640",
+      "blocks": 1,
+      "title": "XENOGEARS/No.01 Babel Tower"
+    }
+  ],
+  "files": {
+    "xenogears.3496.gme": {
+      "size": 134976,
+      "sha1": "a4ceb38718dbdf2575a290ee66c250939fc06ec2"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Xenogears (USA) (Disc 1).cue",
+      "sha1": "90ba9637f68f839fde92ca18b0346ae349ba0be2",
+      "size": 90
+    },
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr xenogears.3496.gme: unwraps the card (DexDrive .gme: 3904-byte header + card)",
+    "converted": {
+      "size": 131072,
+      "sha1": "b45c8ba992bd5919ef49550a7b1dbba93f0ee71e"
+    },
+    "script": "scripts/psx/Xenogears.load.txt",
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "loads",
+        "detail": "Continue > Load shows save No. 01: Fei Lv 45, 024:38:05, Babel Tower"
+      },
+      "beetle-psx-hw": {
+        "result": "loads",
+        "detail": "Continue > Load shows save No. 01: Fei Lv 45, 024:38:05, Babel Tower (the same screen as on beetle-psx)"
+      },
+      "pcsx-rearmed": {
+        "result": "loads",
+        "detail": "Continue > Load shows save No. 01: Fei Lv 45, 024:38:05, Babel Tower (the same screen as on beetle-psx)"
+      },
+      "swanstation": {
+        "result": "loads",
+        "detail": "Continue > Load shows save No. 01: Fei Lv 45, 024:38:05, Babel Tower (the same screen as on beetle-psx)"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": [
+      "beetle-psx",
+      "beetle-psx-hw",
+      "pcsx-rearmed",
+      "swanstation"
+    ]
+  },
+  "note": null
+}

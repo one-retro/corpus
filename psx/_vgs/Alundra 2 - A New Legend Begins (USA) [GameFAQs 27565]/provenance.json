@@ -1,0 +1,78 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_vgs",
+  "url": "https://gamefaqs.gamespot.com/ps/250564-alundra-2/saves/27565",
+  "source_page": "https://gamefaqs.gamespot.com/ps/250564-alundra-2/saves",
+  "source": "GameFAQs (section 'PlayStation DexDrive Save (North America)')",
+  "author": "winolivas",
+  "licence": null,
+  "posted": "2021-05-26",
+  "fetched": "2026-11-05",
+  "what_it_is": "finished the game",
+  "gamefaqs": {
+    "id": 27565,
+    "product": "Alundra 2",
+    "section": "PlayStation DexDrive Save (North America)",
+    "region": "North America",
+    "served_as": "alundra-2.27565.gme",
+    "listed_size": "128KB"
+  },
+  "format": "Connectix Virtual Game Station card: 'VgsM' 64-byte header + 131072-byte raw card, served as .gme; the card holds no saves",
+  "release": "Alundra 2 - A New Legend Begins (USA)",
+  "game_saves": [],
+  "files": {
+    "alundra-2.27565.gme": {
+      "size": 131136,
+      "sha1": "52ffad1770150f04c1c6444527054de1aa481047"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Alundra 2 - A New Legend Begins (USA).cue",
+      "sha1": "de4ee6d678b424168bc64409a9b0d82d94a335e1",
+      "size": 103
+    },
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr alundra-2.27565.gme: unwraps the card (VGS (Connectix): 64-byte header + card)",
+    "converted": {
+      "size": 131072,
+      "sha1": "96821cbcff4642d14f79be858c29f0d359022c64"
+    },
+    "script": "scripts/psx/Alundra 2.load.txt",
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "rejected",
+        "detail": "Load, Slot 1 says \"Alundra 2 data not found.\" (the card is blank)"
+      },
+      "beetle-psx-hw": {
+        "result": "rejected",
+        "detail": "Load, Slot 1 says \"Alundra 2 data not found.\" (the card is blank)"
+      },
+      "pcsx-rearmed": {
+        "result": "rejected",
+        "detail": "Load, Slot 1 says \"Alundra 2 data not found.\" (the card is blank)"
+      },
+      "swanstation": {
+        "result": "rejected",
+        "detail": "Load, Slot 1 says \"Alundra 2 data not found.\" (the card is blank)"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": [
+      "beetle-psx",
+      "beetle-psx-hw",
+      "pcsx-rearmed",
+      "swanstation"
+    ]
+  },
+  "note": "The card holds no saves: every directory frame is free. Filed under GameFAQs' 'PlayStation DexDrive Save (North America)' section, but it is not a DexDrive .gme: Connectix Virtual Game Station card: 'VgsM' 64-byte header + 131072-byte raw card, served as .gme."
+}

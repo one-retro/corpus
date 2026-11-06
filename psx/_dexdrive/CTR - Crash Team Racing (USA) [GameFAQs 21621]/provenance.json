@@ -1,0 +1,84 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_dexdrive",
+  "url": "https://gamefaqs.gamespot.com/ps/196989-ctr-crash-team-racing/saves/21621",
+  "source_page": "https://gamefaqs.gamespot.com/ps/196989-ctr-crash-team-racing/saves",
+  "source": "GameFAQs (section 'PlayStation DexDrive Save (North America)')",
+  "author": "DJ_Shang_Tsung",
+  "licence": null,
+  "posted": "2011-03-08",
+  "fetched": "2026-11-05",
+  "what_it_is": "All hidden characters are unlocked in Arcade and Battle modes (except N. Oxide), also all level difficulties are unlocked. You can race with your friends without any problems.",
+  "gamefaqs": {
+    "id": 21621,
+    "product": "CTR: Crash Team Racing",
+    "section": "PlayStation DexDrive Save (North America)",
+    "region": "North America",
+    "served_as": "ctr-crash-team-racing.21621.gme",
+    "listed_size": "131KB"
+  },
+  "format": "DexDrive .gme: '123-456-STD' 3904-byte header (per-block comments) + 131072-byte raw card; the card holds 1 save(s), 1 for this game (BASCUS-94426-SLOTS)",
+  "release": "CTR - Crash Team Racing (USA)",
+  "game_saves": [
+    {
+      "name": "BASCUS-94426-SLOTS",
+      "blocks": 1,
+      "title": "CTR:Saved Games and Scores"
+    }
+  ],
+  "files": {
+    "ctr-crash-team-racing.21621.gme": {
+      "size": 134976,
+      "sha1": "0455fc0a7c001e123dbf4d5f4b6ad1668b8c5f3d"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "CTR - Crash Team Racing (USA).cue",
+      "sha1": "2ff60f30b7f068b9c79adb5311004a940d72de07",
+      "size": 95
+    },
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr ctr-crash-team-racing.21621.gme: unwraps the card (DexDrive .gme: 3904-byte header + card)",
+    "converted": {
+      "size": 131072,
+      "sha1": "fef1383dbfb15c4ead84d82e2db6ee3047c8faa8"
+    },
+    "script": "scripts/psx/CTR - Crash Team Racing.load.txt",
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "loads",
+        "detail": "Choose a Game to Load shows DNHFO: 8 trophies, 44%, 2 keys, 8 relics"
+      },
+      "beetle-psx-hw": {
+        "result": "loads",
+        "detail": "Choose a Game to Load shows DNHFO: 8 trophies, 44%, 2 keys, 8 relics (the same screen as on beetle-psx)"
+      },
+      "pcsx-rearmed": {
+        "result": "loads",
+        "detail": "Choose a Game to Load shows DNHFO: 8 trophies, 44%, 2 keys, 8 relics (the same screen as on beetle-psx)"
+      },
+      "swanstation": {
+        "result": "loads",
+        "detail": "Choose a Game to Load shows DNHFO: 8 trophies, 44%, 2 keys, 8 relics (the same screen as on beetle-psx)"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": [
+      "beetle-psx",
+      "beetle-psx-hw",
+      "pcsx-rearmed",
+      "swanstation"
+    ]
+  },
+  "note": null
+}

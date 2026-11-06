@@ -1,0 +1,84 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_dexdrive",
+  "url": "https://gamefaqs.gamespot.com/ps/198754-spyro-the-dragon/saves/1040",
+  "source_page": "https://gamefaqs.gamespot.com/ps/198754-spyro-the-dragon/saves",
+  "source": "GameFAQs (section 'PlayStation DexDrive Save (North America)')",
+  "author": "SMD",
+  "licence": null,
+  "posted": "2001-08-06",
+  "fetched": "2026-11-05",
+  "what_it_is": "100% Complete",
+  "gamefaqs": {
+    "id": 1040,
+    "product": "Spyro the Dragon",
+    "section": "PlayStation DexDrive Save (North America)",
+    "region": "North America",
+    "served_as": "spyro-the-dragon.1040.gme",
+    "listed_size": "19KB"
+  },
+  "format": "DexDrive .gme cut short: '123-456-STD' 3904-byte header + only the first 16384 bytes of the card (2 of 16 blocks); the card holds 1 save(s), 1 for this game (BASCUS-94228SPYRO)",
+  "release": "Spyro the Dragon (USA)",
+  "game_saves": [
+    {
+      "name": "BASCUS-94228SPYRO",
+      "blocks": 1,
+      "title": "SPYRO THE DRAGON"
+    }
+  ],
+  "files": {
+    "spyro-the-dragon.1040.gme": {
+      "size": 20288,
+      "sha1": "602dde8b91f1d2be05c4924ebe97e7bee5d7b64e"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Spyro the Dragon (USA).cue",
+      "sha1": "6abdbc5a00bcb521528825fb7cb6bfebd99a7a91",
+      "size": 88
+    },
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr spyro-the-dragon.1040.gme: unwraps the card (DexDrive .gme: 3904-byte header + card (only 16384 card bytes, zero-padded to 131072))",
+    "converted": {
+      "size": 131072,
+      "sha1": "185ac4db1a4317c05d293ec6b5b5d204dce4833e"
+    },
+    "script": "scripts/psx/Spyro the Dragon.load.txt",
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "loads",
+        "detail": "the three save slots show 79, 80 and 80 dragons (no card: \"does not have a save file. Create save file now?\")"
+      },
+      "beetle-psx-hw": {
+        "result": "loads",
+        "detail": "the three save slots show 79, 80 and 80 dragons (no card: \"does not have a save file. Create save file now?\") (the same screen as on beetle-psx)"
+      },
+      "pcsx-rearmed": {
+        "result": "loads",
+        "detail": "the three save slots show 79, 80 and 80 dragons (no card: \"does not have a save file. Create save file now?\") (the same screen as on beetle-psx)"
+      },
+      "swanstation": {
+        "result": "loads",
+        "detail": "the three save slots show 79, 80 and 80 dragons (no card: \"does not have a save file. Create save file now?\") (the same screen as on beetle-psx)"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": [
+      "beetle-psx",
+      "beetle-psx-hw",
+      "pcsx-rearmed",
+      "swanstation"
+    ]
+  },
+  "note": "The converter pads the missing blocks with zeroes, as DuckStation's ImportCardGME does; the saves on the card all lie in the blocks present. one-saves (1saves convert) does not read this file: a PS1 memory card is 131072 bytes, or that behind a DexDrive, VGS or PSP header, but this file is 20288 bytes"
+}

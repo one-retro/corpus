@@ -1,0 +1,77 @@
+{
+  "method": "downloaded",
+  "system": "n64",
+  "core": "_wii-vc",
+  "url": "https://gamefaqs.gamespot.com/n64/198854-super-smash-bros/saves/26527",
+  "source_page": "https://gamefaqs.gamespot.com/n64/198854-super-smash-bros/saves",
+  "source": "GameFAQs (section 'Wii VC Game Save File (Europe)')",
+  "author": "yoshivdk",
+  "licence": null,
+  "posted": "2019-09-03",
+  "fetched": "2026-11-05",
+  "what_it_is": "All characters unlocked.",
+  "gamefaqs": {
+    "id": 26527,
+    "product": "Super Smash Bros.",
+    "section": "Wii VC Game Save File (Europe)",
+    "region": "Europe",
+    "served_as": "super-smash-bros.26527.bin",
+    "listed_size": "93KB"
+  },
+  "format": "Wii data.bin (an SD-card export; header AES-128-CBC with the SD key, header MD5 valid): title 00010001-NALP \"Super Smash Bros.\", 1 file: RAM_NALP 32768 bytes - RAM_NALP is the N64 cartridge save in console byte order",
+  "files": {
+    "super-smash-bros.26527.bin": {
+      "size": 95488,
+      "sha1": "d561a584c3e07d04f98f8b505f81ca9241cc1ab9"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "converted_with": "tools/gamefaqs/wiivc-convert.py convert super-smash-bros.26527.bin OUT: decrypts the data.bin (AES-128-CBC, SD key, per-file IVs) and takes RAM_NALP (32768 bytes, SRAM): first 0x8000 bytes, 32-bit words reversed, at 0x20800",
+    "converted": {
+      "size": 296960,
+      "sha1": "7f62fbbc405a342bcf3cf5f77b9c13b0747320c4"
+    },
+    "converted_standalone": {
+      "files": {
+        "save.sra": {
+          "size": 32768,
+          "sha1": "3eb0f0dee1ce7b518d10253b85b0957e508826c8"
+        }
+      },
+      "how": "the same bytes as the .srm regions, as standalone Mupen64Plus keeps them: <GoodName (32 chars)>-<MD5 8>.eep/.sra/.fla/.mpk in its save folder"
+    },
+    "rom": {
+      "name": "Super Smash Bros. (Europe) (En,Fr,De).z64",
+      "sha1": "6ee8a41fef66280ce3e3f0984d00b96079442fb9",
+      "size": 33554432
+    },
+    "script": "scripts/n64/Super Smash Bros..load.txt",
+    "baseline": "with no save: 8 fighters and four ? on the character select",
+    "cores": {
+      "mupen64plus-next": {
+        "result": "loads",
+        "detail": "VS character select shows all 12 fighters (Luigi, Captain Falcon, Ness, Jigglypuff unlocked; 8 and four ? with no save)"
+      },
+      "parallel-n64": {
+        "result": "loads",
+        "detail": "VS character select shows all 12 fighters (Luigi, Captain Falcon, Ness, Jigglypuff unlocked; 8 and four ? with no save)"
+      },
+      "mupen64plus": {
+        "result": "loads",
+        "detail": "VS character select shows all 12 fighters (Luigi, Captain Falcon, Ness, Jigglypuff unlocked; 8 and four ? with no save)"
+      }
+    },
+    "core_versions": {
+      "mupen64plus": "Mupen64Plus 2.6.0 (Homebrew), glide64mk2 video, rsp-hle",
+      "mupen64plus-next": "Mupen64Plus-Next 3.0-Vulkan 15bada8",
+      "parallel-n64": "ParaLLEl N64 1.0 e8cbdbb"
+    },
+    "proof_order": [
+      "mupen64plus-next",
+      "parallel-n64",
+      "mupen64plus"
+    ]
+  },
+  "note": "RAM_NALP: the SRAM in console order; untouched bytes AA."
+}

@@ -1,0 +1,110 @@
+{
+  "method": "downloaded",
+  "system": "nds",
+  "core": "_action-replay-ds",
+  "url": "https://gamefaqs.gamespot.com/ds/938930-pokemon-mystery-dungeon-explorers-of-darkness/saves/29093",
+  "source_page": "https://gamefaqs.gamespot.com/ds/938930-pokemon-mystery-dungeon-explorers-of-darkness/saves",
+  "source": "GameFAQs (section 'Action Replay Max DS (.duc) Game Save (North America)')",
+  "author": "Docile_Pillow",
+  "licence": null,
+  "posted": "2023-11-20",
+  "fetched": "2026-11-05",
+  "what_it_is": "100% save file with a capped-stats leader Blissey. Most legendary treasure items looted,Blissey has a setup with the Lucky Scarf that lets it live forever in most dungeons once you start to starve. 100% adventure log and living dex . 300h~",
+  "gamefaqs": {
+    "id": 29093,
+    "product": "Pokemon Mystery Dungeon: Explorers",
+    "section": "Action Replay Max DS (.duc) Game Save (North America)",
+    "region": "North America",
+    "served_as": "pokemon-mystery-dungeon-explorers.29093.duc",
+    "listed_size": "256KB"
+  },
+  "format": "Action Replay DS save: the 500-byte 'ARDS000000000001' header written by a converter ('Converted Savegame' / 'Savegame', ASCII 'shuny conv'), then 256 KiB raw for the 128 KiB EEPROM (cut 262144 -> 131072; the rest was all 0xFF)",
+  "files": {
+    "pokemon-mystery-dungeon-explorers.29093.duc": {
+      "size": 262644,
+      "sha1": "22d35111ab8b877e33fd7e54e8e236984c5ac0d0"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Pokemon Mystery Dungeon - Explorers of Sky (USA).nds",
+      "sha1": "7efb50f925f0b483a66f2a266524173c8a25c4f0",
+      "size": 134217728,
+      "note": "a dump of this game code whose sha1 is not in the No-Intro DAT (the area after the used ROM size is blank); the region in the name is a guess"
+    },
+    "converted_with": "tools/gamefaqs/nds-ards.py IN step0.bin, then tools/gamefaqs/nds-cores.py step0.bin --chip 131072 --stem 'Pokemon Mystery Dungeon - Explorers of Sky (USA)' --out DIR: drops the Action Replay header; fits it to the 131072-byte chip (cut 262144 -> 131072; the rest was all 0xFF) and writes each core's file",
+    "converted": {
+      "size": 131072,
+      "sha1": "969c21eb93d3613e2bafcc7ef037cf6ba72b49a4"
+    },
+    "core_files": {
+      "desmume": {
+        "name": "Pokemon Mystery Dungeon - Explorers of Sky (USA).dsv",
+        "size": 262266,
+        "sha1": "fdd6867a8cca6ac5586e213e8c05835699ff6d20"
+      },
+      "desmume-2015": {
+        "name": "Pokemon Mystery Dungeon - Explorers of Sky (USA).dsv",
+        "size": 262266,
+        "sha1": "fdd6867a8cca6ac5586e213e8c05835699ff6d20"
+      },
+      "melonds": {
+        "name": "Pokemon Mystery Dungeon - Explorers of Sky (USA).sav",
+        "size": 131072,
+        "sha1": "969c21eb93d3613e2bafcc7ef037cf6ba72b49a4"
+      },
+      "melonds-ds": {
+        "name": "Pokemon Mystery Dungeon - Explorers of Sky (USA).srm",
+        "size": 131072,
+        "sha1": "969c21eb93d3613e2bafcc7ef037cf6ba72b49a4"
+      },
+      "noods": {
+        "name": "Pokemon Mystery Dungeon - Explorers of Sky (USA).sav",
+        "size": 131072,
+        "sha1": "969c21eb93d3613e2bafcc7ef037cf6ba72b49a4"
+      },
+      "skyemu": {
+        "name": "Pokemon Mystery Dungeon - Explorers of Sky (USA).srm",
+        "size": 8388608,
+        "sha1": "e78639daebdd380becbf60f2b5b184f400eb3e7b"
+      }
+    },
+    "script": "scripts/nds/Pokemon Mystery Dungeon - Explorers of Sky.load.txt",
+    "cores": {
+      "desmume": {
+        "result": "loads",
+        "detail": "Continue offers Main Story / Special Episodes; Main Story: Adventure Record: Trent, team Firefly, Crossroads, play time 398:14:58, 666 adventures"
+      },
+      "desmume-2015": {
+        "result": "loads",
+        "detail": "Continue offers Main Story / Special Episodes; Main Story: Adventure Record: Trent, team Firefly, Crossroads, play time 398:14:58, 666 adventures"
+      },
+      "melonds": {
+        "result": "loads",
+        "detail": "Continue offers Main Story / Special Episodes; Main Story: Adventure Record: Trent, team Firefly, Crossroads, play time 398:14:58, 666 adventures"
+      },
+      "melonds-ds": {
+        "result": "loads",
+        "detail": "Continue offers Main Story / Special Episodes; Main Story: Adventure Record: Trent, team Firefly, Crossroads, play time 398:14:58, 666 adventures"
+      },
+      "noods": {
+        "result": "loads",
+        "detail": "Continue offers Main Story / Special Episodes; Main Story: Adventure Record: Trent, team Firefly, Crossroads, play time 398:14:58, 666 adventures"
+      },
+      "skyemu": {
+        "result": "loads",
+        "detail": "Continue offers Main Story / Special Episodes; Main Story: Adventure Record: Trent, team Firefly, Crossroads, play time 398:14:58, 666 adventures"
+      }
+    },
+    "proof_order": [
+      "desmume",
+      "desmume-2015",
+      "melonds",
+      "melonds-ds",
+      "noods",
+      "skyemu"
+    ]
+  },
+  "note": "Release: save id POKE_DUN_SORA (Explorers of Sky)."
+}

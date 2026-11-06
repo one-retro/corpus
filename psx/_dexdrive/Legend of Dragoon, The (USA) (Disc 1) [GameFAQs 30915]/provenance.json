@@ -1,0 +1,84 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_dexdrive",
+  "url": "https://gamefaqs.gamespot.com/ps/197765-the-legend-of-dragoon/saves/30915",
+  "source_page": "https://gamefaqs.gamespot.com/ps/197765-the-legend-of-dragoon/saves",
+  "source": "GameFAQs (section 'PlayStation DexDrive Save (North America)')",
+  "author": "estrauss_01",
+  "licence": null,
+  "posted": "2024-11-13",
+  "fetched": "2026-11-05",
+  "what_it_is": "Save file at Final Boss with:Dart: All Mastered Additions, Lv40 D'Lv5Rose: All Mastered Additions, Lv39 D'Lv5Albert: All Mastered Additions, Lv39 D'Lv5",
+  "gamefaqs": {
+    "id": 30915,
+    "product": "The Legend of Dragoon",
+    "section": "PlayStation DexDrive Save (North America)",
+    "region": "North America",
+    "served_as": "the-legend-of-dragoon.30915.gme",
+    "listed_size": "131KB"
+  },
+  "format": "DexDrive .gme layout (134976 bytes: 3904-byte header + 131072-byte card) with the header zeroed, no '123-456-STD'; the card holds 1 save(s), 1 for this game (BASCUS-94491drgn0000)",
+  "release": "Legend of Dragoon, The (USA) (Disc 1)",
+  "game_saves": [
+    {
+      "name": "BASCUS-94491drgn0000",
+      "blocks": 1,
+      "title": "LOD FILE01 LV40 TIME 050:20:03"
+    }
+  ],
+  "files": {
+    "the-legend-of-dragoon.30915.gme": {
+      "size": 134976,
+      "sha1": "468d6f3ea50d52c010635658d3a4def3d2406da5"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Legend of Dragoon, The (USA) (Disc 1).cue",
+      "sha1": "ae7c4642ff995bd5762937cd1fc2ac9c4474db18",
+      "size": 103
+    },
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr the-legend-of-dragoon.30915.gme: unwraps the card (DexDrive .gme layout with a blank header (no 123-456-STD))",
+    "converted": {
+      "size": 131072,
+      "sha1": "8fccf9005a9ba42e009bbe59a170a04bb2a15357"
+    },
+    "script": "scripts/psx/Legend of Dragoon.load.txt",
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "loads",
+        "detail": "Continue lists file 1: LV 40, 050:20:03, Moon"
+      },
+      "beetle-psx-hw": {
+        "result": "loads",
+        "detail": "Continue lists file 1: LV 40, 050:20:03, Moon (the same screen as on beetle-psx)"
+      },
+      "pcsx-rearmed": {
+        "result": "loads",
+        "detail": "Continue lists file 1: LV 40, 050:20:03, Moon (the same screen as on beetle-psx)"
+      },
+      "swanstation": {
+        "result": "loads",
+        "detail": "Continue lists file 1: LV 40, 050:20:03, Moon (the same screen as on beetle-psx)"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": [
+      "beetle-psx",
+      "beetle-psx-hw",
+      "pcsx-rearmed",
+      "swanstation"
+    ]
+  },
+  "note": "one-saves (1saves convert) does not read this file: a PS1 memory card is 131072 bytes, or that behind a DexDrive, VGS or PSP header, but this file is 134976 bytes"
+}

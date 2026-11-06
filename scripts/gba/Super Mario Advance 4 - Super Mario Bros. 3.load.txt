@@ -1,0 +1,25 @@
+# Load check for a save made elsewhere (tools/GAMEFAQS.md): power on and go to
+# SMB3's Select a File: each file's world, and the e-Reader level count.
+# shots read, check, check2: the game reads its save at power-on
+#   ("Reading...", or "Formatting saved data..." when it finds none) and
+#   then goes on to the intro or reports "Saved data is corrupted." with
+#   OK or reset per part. How long it reads depends on the save: the
+#   report shows at about frame 1100 for most, 1650 for some.
+wait 600
+shot read
+wait 550
+shot check
+wait 550
+shot check2
+wait 400
+press start 6       # intro -> title
+wait 400
+press start 6       # title -> SMB3 / Mario Bros.
+wait 400
+press a 6           # SMB3: the curtain rises, the title comes up
+wait 1000
+press a 6           # the first press on the SMB3 title only stops its animation
+wait 200
+press a 6           # SMB3 title -> Select a File
+wait 300
+shot files

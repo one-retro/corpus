@@ -1,0 +1,84 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_dexdrive",
+  "url": "https://gamefaqs.gamespot.com/ps/477343-final-fantasy-chronicles/saves/956",
+  "source_page": "https://gamefaqs.gamespot.com/ps/477343-final-fantasy-chronicles/saves",
+  "source": "GameFAQs (section 'PlayStation DexDrive Save (North America)')",
+  "author": "OmegaCKN",
+  "licence": null,
+  "posted": "2001-07-21",
+  "fetched": "2026-11-05",
+  "what_it_is": "Chrono Trigger: Everything unlocked for the Extra Features mode",
+  "gamefaqs": {
+    "id": 956,
+    "product": "Final Fantasy Chronicles",
+    "section": "PlayStation DexDrive Save (North America)",
+    "region": "North America",
+    "served_as": "final-fantasy-chronicles.956.gme",
+    "listed_size": "19KB"
+  },
+  "format": "DexDrive .gme cut short: '123-456-STD' 3904-byte header + only the first 16384 bytes of the card (2 of 16 blocks); the card holds 1 save(s), 1 for this game (BASLUS-01363SYSTEM)",
+  "release": "Final Fantasy Chronicles - Chrono Trigger (USA) (Rev 1)",
+  "game_saves": [
+    {
+      "name": "BASLUS-01363SYSTEM",
+      "blocks": 1,
+      "title": "Chrono System File"
+    }
+  ],
+  "files": {
+    "final-fantasy-chronicles.956.gme": {
+      "size": 20288,
+      "sha1": "4c687dd62b82fbcdc6a7ac43e795ffa53627bcde"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Final Fantasy Chronicles - Chrono Trigger (USA) (Rev 1).cue",
+      "sha1": "8958dc68e4ba6b5d8aaf2f101b00ea38fc3ecdc5",
+      "size": 121
+    },
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr final-fantasy-chronicles.956.gme: unwraps the card (DexDrive .gme: 3904-byte header + card (only 16384 card bytes, zero-padded to 131072))",
+    "converted": {
+      "size": 131072,
+      "sha1": "84cbbac671ecfd333e69527014d2e6d6bfe1c04a"
+    },
+    "script": "scripts/psx/Chrono Trigger.load.txt",
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "loads",
+        "detail": "Slot 1's header reads NEW GAME + (the system file's unlocks); all three blocks free, as the card holds only the system file"
+      },
+      "beetle-psx-hw": {
+        "result": "loads",
+        "detail": "Slot 1's header reads NEW GAME + (the system file's unlocks); all three blocks free, as the card holds only the system file (the same screen as on beetle-psx)"
+      },
+      "pcsx-rearmed": {
+        "result": "loads",
+        "detail": "Slot 1's header reads NEW GAME + (the system file's unlocks); all three blocks free, as the card holds only the system file (the same screen as on beetle-psx)"
+      },
+      "swanstation": {
+        "result": "loads",
+        "detail": "Slot 1's header reads NEW GAME + (the system file's unlocks); all three blocks free, as the card holds only the system file (the same screen as on beetle-psx)"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": [
+      "beetle-psx",
+      "beetle-psx-hw",
+      "pcsx-rearmed",
+      "swanstation"
+    ]
+  },
+  "note": "The converter pads the missing blocks with zeroes, as DuckStation's ImportCardGME does; the saves on the card all lie in the blocks present. one-saves (1saves convert) does not read this file: a PS1 memory card is 131072 bytes, or that behind a DexDrive, VGS or PSP header, but this file is 20288 bytes"
+}

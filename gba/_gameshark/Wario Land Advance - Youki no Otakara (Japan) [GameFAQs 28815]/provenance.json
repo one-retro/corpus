@@ -1,0 +1,119 @@
+{
+  "method": "downloaded",
+  "system": "gba",
+  "core": "_gameshark",
+  "url": "https://gamefaqs.gamespot.com/gba/524513-wario-land-4/saves/28815",
+  "source_page": "https://gamefaqs.gamespot.com/gba/524513-wario-land-4/saves",
+  "source": "GameFAQs (section 'GameBoy Advance GameShark Save (Japan)')",
+  "author": "MrShiruba",
+  "licence": null,
+  "posted": "2023-08-25",
+  "fetched": "2026-11-05",
+  "what_it_is": "File 1 : Hard Mode: All Levels Completed, All Treasures Collected, All Discs Found, Bosses can be fought.File 2 : Super hard Mode: All Levels Completed, All Treasures Collected, All Discs Found, Last level unlocked.",
+  "gamefaqs": {
+    "id": 28815,
+    "product": "Wario Land 4",
+    "section": "GameBoy Advance GameShark Save (Japan)",
+    "region": "Japan",
+    "served_as": "wario-land-4.28815.sps",
+    "listed_size": "32KB"
+  },
+  "format": "SharkPort save (\"SharkPortSave\", kind 0x000F0000): title \"WARIOLAND\u0000\u0000\u0000\", date \"08/24/2023 07:36:11 PM\", notes \"\"; cart header \"WARIOLAND\" / 'AWAJ' (complement 0x2c); payload 32768 bytes; checksum: signed",
+  "files": {
+    "wario-land-4.28815.sps": {
+      "size": 32871,
+      "sha1": "d43599bf819e204648efc6e78fd928505322e5fc"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Wario Land Advance - Youki no Otakara (Japan).gba",
+      "sha1": "a01de1f2e69ec8aa9715ed0d0fbb263372b71e12",
+      "size": 8388608
+    },
+    "converted_with": "tools/gamefaqs/gba-sharkport.py wario-land-4.28815.sps --rom ROM --core CORE --outdir DIR: reads the SharkPort container as mGBA does and imports the payload as mGBA's _importSavedata does (cut to the chip, EEPROM 8-byte blocks reversed, the rest of the chip erased), then lays the chip out as the core keeps it",
+    "converted": {
+      "size": 32768,
+      "sha1": "bb32fb047dc1958b55aeaf45e34eb8544f767dc5"
+    },
+    "script": "scripts/gba/Wario Land 4.load.txt",
+    "cores": {
+      "mgba": {
+        "result": "loads",
+        "detail": "save select: A あやしいこうじょう 252040; B さいごのつうろ 277970",
+        "core_version": "mGBA 0.11-212-7a12d6d",
+        "file": {
+          "name": "Wario Land Advance - Youki no Otakara (Japan).srm",
+          "size": 32768,
+          "sha1": "bb32fb047dc1958b55aeaf45e34eb8544f767dc5"
+        },
+        "frame": "files"
+      },
+      "vba-m": {
+        "result": "loads",
+        "detail": "save select: A あやしいこうじょう 252040; B さいごのつうろ 277970",
+        "core_version": "VBA-M 115defb",
+        "file": {
+          "name": "Wario Land Advance - Youki no Otakara (Japan).srm",
+          "size": 32768,
+          "sha1": "bb32fb047dc1958b55aeaf45e34eb8544f767dc5"
+        },
+        "frame": "files"
+      },
+      "gpsp": {
+        "result": "loads",
+        "detail": "save select: A あやしいこうじょう 252040; B さいごのつうろ 277970",
+        "core_version": "gpSP v1.1.0-5819380",
+        "file": {
+          "name": "Wario Land Advance - Youki no Otakara (Japan).srm",
+          "size": 131072,
+          "sha1": "6ad74af4ff6d985bbf484f2e387c7dd6f205ff56"
+        },
+        "frame": "files"
+      },
+      "vba-next": {
+        "result": "loads",
+        "detail": "save select: A あやしいこうじょう 252040; B さいごのつうろ 277970",
+        "core_version": "VBA Next v1.0.2",
+        "file": {
+          "name": "Wario Land Advance - Youki no Otakara (Japan).srm",
+          "size": 139264,
+          "sha1": "af9a4eb07be333387235a137b66f9dcd0ae21123"
+        },
+        "frame": "files"
+      },
+      "beetle-gba": {
+        "result": "loads",
+        "detail": "save select: A あやしいこうじょう 252040; B さいごのつうろ 277970",
+        "core_version": "Beetle GBA v0.9.36 b158166",
+        "file": {
+          "name": "Wario Land Advance - Youki no Otakara (Japan).99c8ad779a16be513a9fdff502b6f5c2.sav",
+          "size": 65536,
+          "sha1": "87278669f6702b8e3a59910cb1fa1d2946237cc4"
+        },
+        "frame": "files"
+      },
+      "skyemu": {
+        "result": "loads",
+        "detail": "save select: A あやしいこうじょう 252040; B さいごのつうろ 277970",
+        "core_version": "SkyEmu adacd0788964ed89f5c43dcbc1f3cc26deec996c",
+        "file": {
+          "name": "Wario Land Advance - Youki no Otakara (Japan).srm",
+          "size": 131072,
+          "sha1": "6ad74af4ff6d985bbf484f2e387c7dd6f205ff56"
+        },
+        "frame": "files"
+      }
+    },
+    "proof_order": [
+      "mgba",
+      "vba-m",
+      "gpsp",
+      "vba-next",
+      "beetle-gba",
+      "skyemu"
+    ]
+  },
+  "note": null
+}

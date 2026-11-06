@@ -1,0 +1,128 @@
+{
+  "method": "downloaded",
+  "system": "ps2",
+  "core": "_x-port",
+  "url": "https://gamefaqs.gamespot.com/ps2/589460-gradius-v/saves/19314",
+  "source_page": "https://gamefaqs.gamespot.com/ps2/589460-gradius-v/saves",
+  "source": "GameFAQs (section 'PlayStation2 X-Port Save (North America)')",
+  "author": "Aether_Knight",
+  "licence": null,
+  "posted": "2009-06-16",
+  "fetched": "2026-11-05",
+  "what_it_is": "Start new game with Free Play & Weapon Edit unlocked. Stage Select has 256 Loops accessible. BONUS ; Can play game with 99 lives! (DO NOT CHANGE LIVES IN OPTION MENU AND/OR SET OPTIONS TO DEFAULT!)",
+  "gamefaqs": {
+    "id": 19314,
+    "product": "Gradius V",
+    "section": "PlayStation2 X-Port Save (North America)",
+    "region": "North America",
+    "served_as": "gradius-v.19314.xps",
+    "listed_size": "36KB"
+  },
+  "format": "SharkPort / X-Port save: 'SharkPortSave' header (title 'GRADIUS VSAVE DATA', date 'Save6/16/2009 12:17:18 PM 41', comment 'Start new game with Free Play & Weapon Edit unlocked. Stage Select has 256 Loops accessible. BONUS ; Can play game with 99 lives! (DO NOT CHANGE LIVES IN OPTION MENU AND/OR SET OPTIONS TO DEFAULT!) 2009 Aether Knight (Aether-K)'), folder BASLUS-20712, 3 files, 36340 bytes of file data, 4-byte checksum at the end",
+  "files": {
+    "gradius-v.19314.xps": {
+      "size": 37654,
+      "sha1": "5fc58d8bda89825326cdfae239105f289e18113a"
+    }
+  },
+  "save": {
+    "folder": "BASLUS-20712",
+    "title": [
+      "GRADIUS V",
+      "SAVE DATA"
+    ],
+    "times": "as the file stores them (PS2 card times, JST)",
+    "files": [
+      {
+        "name": "BASLUS-20712",
+        "size": 1688,
+        "sha1": "6ee9ce53e75d9386d0bf9a96a04635224a345f37",
+        "created": "2009-06-17 02:00:47",
+        "modified": "2009-06-17 02:05:58"
+      },
+      {
+        "name": "icon.ico",
+        "size": 33688,
+        "sha1": "1f9cb9d18cb43e29961bb12ce56d0216ca63bb58",
+        "created": "2009-06-16 02:26:55",
+        "modified": "2009-06-16 02:26:55"
+      },
+      {
+        "name": "icon.sys",
+        "size": 964,
+        "sha1": "fc00cc3d7b82c6c457006addb03ff5ee491aa957",
+        "created": "2009-06-17 02:00:48",
+        "modified": "2009-06-17 02:00:48"
+      }
+    ]
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Gradius V (USA).cue",
+      "sha1": "2ef30018585d72e7d0b5f501f77f17301b818e3a",
+      "size": 81,
+      "tracks": [
+        {
+          "name": "Gradius V (USA).bin",
+          "sha1": "57a4a82fa3aa89d2fdd68c0d354aacca0fc82fd2",
+          "size": 465832416
+        }
+      ]
+    },
+    "converted_with": "tools/gamefaqs/ps2-card.py 'gradius-v.19314.xps' -o OUT: reads the save with mymcplus 3.0.5 and writes OUT/Mcd001.ps2 (an 8 MiB card with ECC, formatted and filled by mymcplus) for lrps2/pcee2/pcsx2, and OUT/mc0/<folder>/ for Play!",
+    "converted": {
+      "Mcd001.ps2": {
+        "size": 8650752,
+        "sha1": "2946b7a7e7ba7e8afd6fa200c57e121fed93c345"
+      },
+      "mc0/BASLUS-20712/": {
+        "BASLUS-20712": {
+          "size": 1688,
+          "sha1": "6ee9ce53e75d9386d0bf9a96a04635224a345f37"
+        },
+        "icon.ico": {
+          "size": 33688,
+          "sha1": "1f9cb9d18cb43e29961bb12ce56d0216ca63bb58"
+        },
+        "icon.sys": {
+          "size": 964,
+          "sha1": "fc00cc3d7b82c6c457006addb03ff5ee491aa957"
+        }
+      },
+      "read_back": "work/ps2/tools/mcfs.py lists every file with the size and SHA-1 put on the card; one-saves (1saves convert + inspect) reads the card and finds BASLUS-20712",
+      "timestamps": "what the save does not date is 2000-01-01 00:00:00 (JST, as a card stores it); the card's own root entries too"
+    },
+    "script": "scripts/ps2/Gradius V (USA).load.txt",
+    "cores": {
+      "pcee2": {
+        "detail": "menu reads FREE PLAY (no save: CREDIT 3); STAGE SELECT offers stages 1-8 (no save: stage 1); RANKING (NORMAL) AKX 9999999 8-1 (Edit), AET 500000 7-2, HER 250000, KNI 125000, GHT 62500",
+        "result": "loads"
+      },
+      "lrps2": {
+        "detail": "menu reads FREE PLAY (no save: CREDIT 3); STAGE SELECT offers stages 1-8 (no save: stage 1); RANKING (NORMAL) AKX 9999999 8-1 (Edit), AET 500000 7-2, HER 250000, KNI 125000, GHT 62500",
+        "result": "loads"
+      },
+      "play": {
+        "detail": "menu reads FREE PLAY (no save: CREDIT 3); STAGE SELECT offers stages 1-8 (no save: stage 1); RANKING (NORMAL) AKX 9999999 8-1 (Edit), AET 500000 7-2, HER 250000, KNI 125000, GHT 62500",
+        "result": "loads"
+      },
+      "pcsx2": {
+        "detail": "menu reads FREE PLAY (no save: CREDIT 3); STAGE SELECT offers stages 1-8 (no save: stage 1); RANKING (NORMAL) AKX 9999999 8-1 (Edit), AET 500000 7-2, HER 250000, KNI 125000, GHT 62500",
+        "result": "loads",
+        "image": "Gradius V (USA).bin (the track itself, as the played pcsx2 entries ran it)"
+      },
+      "armsx2": {
+        "result": "not-run",
+        "detail": "ARMSX2 renders only through Vulkan here and falls back to a null GS (no picture), so nothing shows what the game read (ps2/NOTES.md)"
+      }
+    },
+    "proof_order": [
+      "pcee2",
+      "lrps2",
+      "play",
+      "pcsx2"
+    ]
+  },
+  "note": null
+}

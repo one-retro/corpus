@@ -1,0 +1,105 @@
+{
+  "method": "downloaded",
+  "system": "ps2",
+  "core": "_max-drive",
+  "url": "https://gamefaqs.gamespot.com/dreamcast/914427-marvel-vs-capcom-2/saves/4914",
+  "source_page": "https://gamefaqs.gamespot.com/dreamcast/914427-marvel-vs-capcom-2/saves",
+  "source": "GameFAQs (section 'PlayStation2 Max Drive Save (Japan)')",
+  "author": "eldesiempre",
+  "licence": null,
+  "posted": "2004-09-09",
+  "fetched": "2026-11-05",
+  "what_it_is": "100%",
+  "gamefaqs": {
+    "id": 4914,
+    "product": "Marvel vs. Capcom 2",
+    "section": "PlayStation2 Max Drive Save (Japan)",
+    "region": "Japan",
+    "served_as": "marvel-vs-capcom-2.4914.max",
+    "listed_size": "10KB"
+  },
+  "format": "Max Drive / PowerSave save: 'Ps2PowerSave' header (CRC32 32abb9ec, matches), folder BISLPM-62227SYS, 3 files, LZARI stream 10337 bytes unpacking to 54504 bytes (54384 bytes of file data)",
+  "files": {
+    "marvel-vs-capcom-2.4914.max": {
+      "size": 10429,
+      "sha1": "4bcd6c66f90e61c72dacfcf1014283861405e34b"
+    }
+  },
+  "save": {
+    "folder": "BISLPM-62227SYS",
+    "title": [
+      "MARVEL VS CAPCOM",
+      "2 システムデータ"
+    ],
+    "times": "none: a max file stores no file times",
+    "files": [
+      {
+        "name": "icon.sys",
+        "size": 964,
+        "sha1": "8b251546393a15b2ad2b7d0ba9b4d9f5eacc19f0"
+      },
+      {
+        "name": "mvsc2.ico",
+        "size": 51544,
+        "sha1": "6622d424d8e19ad8a1f9d3f8c80e3719cac757ad"
+      },
+      {
+        "name": "BISLPM-62227SYS",
+        "size": 1876,
+        "sha1": "473995e225f46a0f584f90dda83b7604fb0223f0"
+      }
+    ]
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": null,
+    "converted_with": "tools/gamefaqs/ps2-card.py 'marvel-vs-capcom-2.4914.max' -o OUT: reads the save with mymcplus 3.0.5 and writes OUT/Mcd001.ps2 (an 8 MiB card with ECC, formatted and filled by mymcplus) for lrps2/pcee2/pcsx2, and OUT/mc0/<folder>/ for Play!",
+    "converted": {
+      "Mcd001.ps2": {
+        "size": 8650752,
+        "sha1": "66db1325f1a53c8ccab8f6f80c0fbf2a60930134"
+      },
+      "mc0/BISLPM-62227SYS/": {
+        "icon.sys": {
+          "size": 964,
+          "sha1": "8b251546393a15b2ad2b7d0ba9b4d9f5eacc19f0"
+        },
+        "mvsc2.ico": {
+          "size": 51544,
+          "sha1": "6622d424d8e19ad8a1f9d3f8c80e3719cac757ad"
+        },
+        "BISLPM-62227SYS": {
+          "size": 1876,
+          "sha1": "473995e225f46a0f584f90dda83b7604fb0223f0"
+        }
+      },
+      "read_back": "work/ps2/tools/mcfs.py lists every file with the size and SHA-1 put on the card; one-saves (1saves convert + inspect) reads the card and finds BISLPM-62227SYS",
+      "timestamps": "what the save does not date is 2000-01-01 00:00:00 (JST, as a card stores it); the card's own root entries too"
+    },
+    "script": null,
+    "cores": {
+      "pcee2": {
+        "result": "not-run",
+        "detail": "no image of Marvel vs. Capcom 2 - New Age of Heroes (Japan) in the library"
+      },
+      "lrps2": {
+        "result": "not-run",
+        "detail": "no image of Marvel vs. Capcom 2 - New Age of Heroes (Japan) in the library"
+      },
+      "play": {
+        "result": "not-run",
+        "detail": "no image of Marvel vs. Capcom 2 - New Age of Heroes (Japan) in the library"
+      },
+      "pcsx2": {
+        "result": "not-run",
+        "detail": "no image of Marvel vs. Capcom 2 - New Age of Heroes (Japan) in the library"
+      },
+      "armsx2": {
+        "result": "not-run",
+        "detail": "ARMSX2 renders only through Vulkan here and falls back to a null GS (no picture), so nothing shows what the game read (ps2/NOTES.md)"
+      }
+    },
+    "proof_order": []
+  },
+  "note": null
+}

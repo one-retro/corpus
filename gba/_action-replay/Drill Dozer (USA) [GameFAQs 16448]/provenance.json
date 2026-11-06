@@ -1,0 +1,119 @@
+{
+  "method": "downloaded",
+  "system": "gba",
+  "core": "_action-replay",
+  "url": "https://gamefaqs.gamespot.com/gba/928398-drill-dozer/saves/16448",
+  "source_page": "https://gamefaqs.gamespot.com/gba/928398-drill-dozer/saves",
+  "source": "GameFAQs (section 'GameBoy Advance Pro Action Replay Save (North America)')",
+  "author": "TeknoBlade",
+  "licence": null,
+  "posted": "2008-01-07",
+  "fetched": "2026-11-05",
+  "what_it_is": "Game beaten, additional areas unlocked, codes inputted",
+  "gamefaqs": {
+    "id": 16448,
+    "product": "Drill Dozer",
+    "section": "GameBoy Advance Pro Action Replay Save (North America)",
+    "region": "North America",
+    "served_as": "drill-dozer.16448.xps",
+    "listed_size": "64KB"
+  },
+  "format": "SharkPort save (\"SharkPortSave\", kind 0x000F0000): title \"DRILL DOZER\", date \"Save1/7/2008 2:12:36 PM 41\", notes \"\"; cart header \"DRILL DOZER\" / 'V49E' (complement 0xcd); payload 65536 bytes; checksum: unsigned",
+  "files": {
+    "drill-dozer.16448.xps": {
+      "size": 65642,
+      "sha1": "40ca1b66f1d1ab0e1b285aa77b0e453f2093a445"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Drill Dozer (USA).gba",
+      "sha1": "c1058cc2482b91204100cc8515da99aeb06773f5",
+      "size": 8388608
+    },
+    "converted_with": "tools/gamefaqs/gba-sharkport.py drill-dozer.16448.xps --rom ROM --core CORE --outdir DIR: reads the SharkPort container as mGBA does and imports the payload as mGBA's _importSavedata does (cut to the chip, EEPROM 8-byte blocks reversed, the rest of the chip erased), then lays the chip out as the core keeps it",
+    "converted": {
+      "size": 32768,
+      "sha1": "4976e64d4f111d987ff5d141ae2c32ea3121d8f6"
+    },
+    "script": "scripts/gba/Drill Dozer.load.txt",
+    "cores": {
+      "mgba": {
+        "result": "loads",
+        "detail": "file select: File 1 Trailer",
+        "core_version": "mGBA 0.11-212-7a12d6d",
+        "file": {
+          "name": "Drill Dozer (USA).srm",
+          "size": 32768,
+          "sha1": "4976e64d4f111d987ff5d141ae2c32ea3121d8f6"
+        },
+        "frame": "files"
+      },
+      "vba-m": {
+        "result": "loads",
+        "detail": "file select: File 1 Trailer",
+        "core_version": "VBA-M 115defb",
+        "file": {
+          "name": "Drill Dozer (USA).srm",
+          "size": 32768,
+          "sha1": "4976e64d4f111d987ff5d141ae2c32ea3121d8f6"
+        },
+        "frame": "files"
+      },
+      "gpsp": {
+        "result": "loads",
+        "detail": "file select: File 1 Trailer",
+        "core_version": "gpSP v1.1.0-5819380",
+        "file": {
+          "name": "Drill Dozer (USA).srm",
+          "size": 131072,
+          "sha1": "63eff84897d5d787665d8e4cc053a0abb179715b"
+        },
+        "frame": "files"
+      },
+      "vba-next": {
+        "result": "loads",
+        "detail": "file select: File 1 Trailer",
+        "core_version": "VBA Next v1.0.2",
+        "file": {
+          "name": "Drill Dozer (USA).srm",
+          "size": 139264,
+          "sha1": "535ced95d99bbaeccf48855c0016e7406a949a4e"
+        },
+        "frame": "files"
+      },
+      "beetle-gba": {
+        "result": "loads",
+        "detail": "file select: File 1 Trailer",
+        "core_version": "Beetle GBA v0.9.36 b158166",
+        "file": {
+          "name": "Drill Dozer (USA).14dab12e795098988d46b96885170538.sav",
+          "size": 65536,
+          "sha1": "2ca153d6fbc5eb6a83e91fc032688420c8c80b67"
+        },
+        "frame": "files"
+      },
+      "skyemu": {
+        "result": "core-error",
+        "detail": "the game never starts in SkyEmu: a white screen from power-on to the end of the script, with or without a save (the baseline too)",
+        "core_version": "SkyEmu adacd0788964ed89f5c43dcbc1f3cc26deec996c",
+        "file": {
+          "name": "Drill Dozer (USA).srm",
+          "size": 131072,
+          "sha1": "63eff84897d5d787665d8e4cc053a0abb179715b"
+        },
+        "frame": "files"
+      }
+    },
+    "proof_order": [
+      "mgba",
+      "vba-m",
+      "gpsp",
+      "vba-next",
+      "beetle-gba",
+      "skyemu"
+    ]
+  },
+  "note": null
+}

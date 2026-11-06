@@ -1,0 +1,122 @@
+{
+  "method": "downloaded",
+  "system": "ps2",
+  "core": "_codebreaker",
+  "url": "https://gamefaqs.gamespot.com/ps2/561066-gran-turismo-4/saves/28456",
+  "source_page": "https://gamefaqs.gamespot.com/ps2/561066-gran-turismo-4/saves",
+  "source": "GameFAQs (section 'PlayStation2 CodeBreaker Save (Japan)')",
+  "author": "logane1102",
+  "licence": null,
+  "posted": "2023-03-27",
+  "fetched": "2026-11-05",
+  "what_it_is": "Gran Turismo 4 Japanese Version loaded save.100 billion credits, B-IA passed, only S-1 and S-16 unpassed, all cars in garage, progressed past 25% to access endurance and extreme events",
+  "gamefaqs": {
+    "id": 28456,
+    "product": "Gran Turismo 4",
+    "section": "PlayStation2 CodeBreaker Save (Japan)",
+    "region": "Japan",
+    "served_as": "gran-turismo-4.28456.cbs",
+    "listed_size": "1486KB"
+  },
+  "format": "CodeBreaker save: 'CFU\\0' header of 296 bytes (folder field 'NO_ROOT_NAME', title 'NEW_FILE'), RC4-encrypted zlib body of 1522210 bytes unpacking to 1528840 bytes: 4 files, 1528584 bytes of file data",
+  "files": {
+    "gran-turismo-4.28456.cbs": {
+      "size": 1522506,
+      "sha1": "537b11b8b97af276d916e9f380dcbc5adc1fb289"
+    }
+  },
+  "save": {
+    "folder": "NO_ROOT_NAME",
+    "title": [
+      "GRAN TURISMO 4",
+      "ゲームデータ"
+    ],
+    "times": "as the file stores them (PS2 card times, JST)",
+    "files": [
+      {
+        "name": "icon.sys",
+        "size": 964,
+        "sha1": "35f21b4ba8678a83ec0dfc965cfcf3083ef66500",
+        "created": "2023-03-22 10:59:34",
+        "modified": "2023-03-22 10:59:34"
+      },
+      {
+        "name": "icon0.ico",
+        "size": 9796,
+        "sha1": "5c55e0ea3f302b6ce15d03fb247039d41b83f032",
+        "created": "2023-03-22 10:59:37",
+        "modified": "2023-03-22 10:59:37"
+      },
+      {
+        "name": "garage",
+        "size": 1280064,
+        "sha1": "6fa88bba05f556f1688dc2cccdc8d2cb54d32511",
+        "created": "2023-03-22 10:59:31",
+        "modified": "2023-03-22 10:59:31"
+      },
+      {
+        "name": "BISCPS-17001GAMEDATA",
+        "size": 237760,
+        "sha1": "322ae5c305e2cf60c8f517db86b16b2ec17bbbc3",
+        "created": "2023-03-22 10:59:28",
+        "modified": "2023-03-22 10:59:28"
+      }
+    ]
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": null,
+    "converted_with": "tools/gamefaqs/ps2-card.py 'gran-turismo-4.28456.cbs' -o OUT: reads the save with mymcplus 3.0.5 and writes OUT/Mcd001.ps2 (an 8 MiB card with ECC, formatted and filled by mymcplus) for lrps2/pcee2/pcsx2, and OUT/mc0/<folder>/ for Play!",
+    "converted": {
+      "Mcd001.ps2": {
+        "size": 8650752,
+        "sha1": "d96a3ee3264d3dc7c24c4f3ac5448b59e8a36284"
+      },
+      "mc0/NO_ROOT_NAME/": {
+        "icon.sys": {
+          "size": 964,
+          "sha1": "35f21b4ba8678a83ec0dfc965cfcf3083ef66500"
+        },
+        "icon0.ico": {
+          "size": 9796,
+          "sha1": "5c55e0ea3f302b6ce15d03fb247039d41b83f032"
+        },
+        "garage": {
+          "size": 1280064,
+          "sha1": "6fa88bba05f556f1688dc2cccdc8d2cb54d32511"
+        },
+        "BISCPS-17001GAMEDATA": {
+          "size": 237760,
+          "sha1": "322ae5c305e2cf60c8f517db86b16b2ec17bbbc3"
+        }
+      },
+      "read_back": "work/ps2/tools/mcfs.py lists every file with the size and SHA-1 put on the card; one-saves refuses the card: 1saves: parts[0]: carries kind `bundle` but its payload is not one: header.game: is empty, and absence is the only empty",
+      "timestamps": "what the save does not date is 2000-01-01 00:00:00 (JST, as a card stores it); the card's own root entries too"
+    },
+    "script": null,
+    "cores": {
+      "pcee2": {
+        "result": "not-run",
+        "detail": "no image of Gran Turismo 4 (Japan, Asia) in the library"
+      },
+      "lrps2": {
+        "result": "not-run",
+        "detail": "no image of Gran Turismo 4 (Japan, Asia) in the library"
+      },
+      "play": {
+        "result": "not-run",
+        "detail": "no image of Gran Turismo 4 (Japan, Asia) in the library"
+      },
+      "pcsx2": {
+        "result": "not-run",
+        "detail": "no image of Gran Turismo 4 (Japan, Asia) in the library"
+      },
+      "armsx2": {
+        "result": "not-run",
+        "detail": "ARMSX2 renders only through Vulkan here and falls back to a null GS (no picture), so nothing shows what the game read (ps2/NOTES.md)"
+      }
+    },
+    "proof_order": []
+  },
+  "note": "The CodeBreaker file names no save folder (mymcplus calls it 'NO_ROOT_NAME'); its icon.sys title is Japanese ('GRAN TURISMO 4 / ゲームデータ'), GameFAQs files it under Japan, and its files are byte-identical to GameFAQs 28454, a BISCPS-17001GAMEDATA folder."
+}

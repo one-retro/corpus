@@ -1,0 +1,22 @@
+# Chrono Trigger, load check: Start at the title. With a save in SRAM this
+# opens the load screen (New Game / New Game + and slots 1-3, each with its
+# location; the panel shows the highlighted slot's party, levels, HP, time
+# and save count). The cursor starts on the slot saved last; four Downs
+# cycle it through New Game and every slot. With no save Start begins a new
+# game instead.
+wait 1300
+press start 6       # title -> load screen
+wait 200
+shot load0
+press down 6
+wait 60
+shot load1
+press down 6
+wait 60
+shot load2
+press down 6
+wait 60
+shot load3
+press down 6
+wait 60
+shot load4

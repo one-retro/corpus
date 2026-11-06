@@ -1,0 +1,119 @@
+{
+  "method": "downloaded",
+  "system": "gba",
+  "core": "_gameshark",
+  "url": "https://gamefaqs.gamespot.com/gba/920670-the-legend-of-zelda-the-minish-cap/saves/34871",
+  "source_page": "https://gamefaqs.gamespot.com/gba/920670-the-legend-of-zelda-the-minish-cap/saves",
+  "source": "GameFAQs (section 'GameBoy Advance GameShark Save (North America)')",
+  "author": "Memory-",
+  "licence": null,
+  "posted": "2026-05-29",
+  "fetched": "2026-11-05",
+  "what_it_is": "(100% Complete) All 20 hearts, Tingle Trophy (all kinstone fusions), Carlov Medal (all figurines), Din/Nayru charms, mirror shield, magical boomerang, remote bombs, light arrows, all 8 tiger scrolls+the 3 faster/longer butterflies/techs.",
+  "gamefaqs": {
+    "id": 34871,
+    "product": "The Legend of Zelda: The Minish Cap",
+    "section": "GameBoy Advance GameShark Save (North America)",
+    "region": "North America",
+    "served_as": "the-legend-of-zelda-the-minish-cap.34871.sps",
+    "listed_size": "8KB"
+  },
+  "format": "SharkPort save (\"SharkPortSave\", kind 0x000F0000): title \"GBAZELDA MC\u0000\", date \"05/19/2026 11:32:20 AM\", notes \"\"; cart header \"GBAZELDA MC\" / 'BZME' (complement 0xd8); payload 8192 bytes; checksum: signed",
+  "files": {
+    "the-legend-of-zelda-the-minish-cap.34871.sps": {
+      "size": 8295,
+      "sha1": "44718c4f4ace7603bb5893d8dffece2256dd1fdd"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Legend of Zelda, The - The Minish Cap (USA).gba",
+      "sha1": "b4bd50e4131b027c334547b4524e2dbbd4227130",
+      "size": 16777216
+    },
+    "converted_with": "tools/gamefaqs/gba-sharkport.py the-legend-of-zelda-the-minish-cap.34871.sps --rom ROM --core CORE --outdir DIR: reads the SharkPort container as mGBA does and imports the payload as mGBA's _importSavedata does (cut to the chip, EEPROM 8-byte blocks reversed, the rest of the chip erased), then lays the chip out as the core keeps it",
+    "converted": {
+      "size": 8192,
+      "sha1": "67b54fe8215cdec1e7fa06b2c4e068b306308d47"
+    },
+    "script": "scripts/gba/Legend of Zelda, The - The Minish Cap.load.txt",
+    "cores": {
+      "mgba": {
+        "result": "loads",
+        "detail": "CHOOSE A FILE: file 1 \"Memory\" with its hearts and items",
+        "core_version": "mGBA 0.11-212-7a12d6d",
+        "file": {
+          "name": "Legend of Zelda, The - The Minish Cap (USA).srm",
+          "size": 8192,
+          "sha1": "67b54fe8215cdec1e7fa06b2c4e068b306308d47"
+        },
+        "frame": "files"
+      },
+      "vba-m": {
+        "result": "loads",
+        "detail": "CHOOSE A FILE: file 1 \"Memory\" with its hearts and items (same files; the water background animates, and here a press landed in the file list (file 1 highlighted, or the name entry of an empty file))",
+        "core_version": "VBA-M 115defb",
+        "file": {
+          "name": "Legend of Zelda, The - The Minish Cap (USA).srm",
+          "size": 8192,
+          "sha1": "67b54fe8215cdec1e7fa06b2c4e068b306308d47"
+        },
+        "frame": "files"
+      },
+      "gpsp": {
+        "result": "loads",
+        "detail": "CHOOSE A FILE: file 1 \"Memory\" with its hearts and items (same files; the water background animates, and here a press landed in the file list (file 1 highlighted, or the name entry of an empty file))",
+        "core_version": "gpSP v1.1.0-5819380",
+        "file": {
+          "name": "Legend of Zelda, The - The Minish Cap (USA).srm",
+          "size": 131072,
+          "sha1": "18fd3000ffc4912d2ece6bffaedc982f3ba79f2c"
+        },
+        "frame": "files"
+      },
+      "vba-next": {
+        "result": "loads",
+        "detail": "CHOOSE A FILE: file 1 \"Memory\" with its hearts and items",
+        "core_version": "VBA Next v1.0.2",
+        "file": {
+          "name": "Legend of Zelda, The - The Minish Cap (USA).srm",
+          "size": 139264,
+          "sha1": "de1d9db5745a3ddfbe1e0fe4d96e44f0cf645368"
+        },
+        "frame": "files"
+      },
+      "beetle-gba": {
+        "result": "loads",
+        "detail": "CHOOSE A FILE: file 1 \"Memory\" with its hearts and items (same files; the water background animates, and here a press landed in the file list (file 1 highlighted, or the name entry of an empty file))",
+        "core_version": "Beetle GBA v0.9.36 b158166",
+        "file": {
+          "name": "Legend of Zelda, The - The Minish Cap (USA).a104896da0047abe8bee2a6e3f4c7290.eep",
+          "size": 8192,
+          "sha1": "67b54fe8215cdec1e7fa06b2c4e068b306308d47"
+        },
+        "frame": "files"
+      },
+      "skyemu": {
+        "result": "loads",
+        "detail": "CHOOSE A FILE: file 1 \"Memory\" with its hearts and items (same files; the water background animates, and here a press landed in the file list (file 1 highlighted, or the name entry of an empty file))",
+        "core_version": "SkyEmu adacd0788964ed89f5c43dcbc1f3cc26deec996c",
+        "file": {
+          "name": "Legend of Zelda, The - The Minish Cap (USA).srm",
+          "size": 131072,
+          "sha1": "fd18a795a285b1c432be5d217f04546236b4b89d"
+        },
+        "frame": "files"
+      }
+    },
+    "proof_order": [
+      "mgba",
+      "vba-m",
+      "gpsp",
+      "vba-next",
+      "beetle-gba",
+      "skyemu"
+    ]
+  },
+  "note": null
+}

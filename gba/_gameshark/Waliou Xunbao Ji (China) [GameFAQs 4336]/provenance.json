@@ -1,0 +1,119 @@
+{
+  "method": "downloaded",
+  "system": "gba",
+  "core": "_gameshark",
+  "url": "https://gamefaqs.gamespot.com/gba/524513-wario-land-4/saves/4336",
+  "source_page": "https://gamefaqs.gamespot.com/gba/524513-wario-land-4/saves",
+  "source": "GameFAQs (section 'GameBoy Advance GameShark Save (Japan)')",
+  "author": "Mykas0",
+  "licence": null,
+  "posted": "2004-06-15",
+  "fetched": "2026-11-05",
+  "what_it_is": "First section completed, some other levels completed.",
+  "gamefaqs": {
+    "id": 4336,
+    "product": "Wario Land 4",
+    "section": "GameBoy Advance GameShark Save (Japan)",
+    "region": "Japan",
+    "served_as": "wario-land-4.4336.sps",
+    "listed_size": "64KB"
+  },
+  "format": "SharkPort save (\"SharkPortSave\", kind 0x000F0000): title \"WARIOLANDE\", date \"15-06-2004 16:52:41\", notes \"First section completed, some other levels completed.\"; cart header \"WARIOLANDE\" / 'AWAC' (complement 0xb8); payload 65536 bytes; checksum: signed",
+  "files": {
+    "wario-land-4.4336.sps": {
+      "size": 65687,
+      "sha1": "98e1c582cade03d4a629a9c93a3a293bd0644328"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Waliou Xunbao Ji (China).gba",
+      "sha1": "229dde72ad6b4282f2e85bea49e3d877c473d4a9",
+      "size": 8388608
+    },
+    "converted_with": "tools/gamefaqs/gba-sharkport.py wario-land-4.4336.sps --rom ROM --core CORE --outdir DIR: reads the SharkPort container as mGBA does and imports the payload as mGBA's _importSavedata does (cut to the chip, EEPROM 8-byte blocks reversed, the rest of the chip erased), then lays the chip out as the core keeps it",
+    "converted": {
+      "size": 32768,
+      "sha1": "5779b0ebf77dc97fcaabed331d2facd0f5724735"
+    },
+    "script": "scripts/gba/Wario Land 4.load.txt",
+    "cores": {
+      "mgba": {
+        "result": "loads",
+        "detail": "save select: A 积木城堡 27540",
+        "core_version": "mGBA 0.11-212-7a12d6d",
+        "file": {
+          "name": "Waliou Xunbao Ji (China).srm",
+          "size": 32768,
+          "sha1": "5779b0ebf77dc97fcaabed331d2facd0f5724735"
+        },
+        "frame": "files"
+      },
+      "vba-m": {
+        "result": "loads",
+        "detail": "save select: A 积木城堡 27540",
+        "core_version": "VBA-M 115defb",
+        "file": {
+          "name": "Waliou Xunbao Ji (China).srm",
+          "size": 32768,
+          "sha1": "5779b0ebf77dc97fcaabed331d2facd0f5724735"
+        },
+        "frame": "files"
+      },
+      "gpsp": {
+        "result": "loads",
+        "detail": "save select: A 积木城堡 27540",
+        "core_version": "gpSP v1.1.0-5819380",
+        "file": {
+          "name": "Waliou Xunbao Ji (China).srm",
+          "size": 131072,
+          "sha1": "82a7462f88ab23d5449b1279265c72dba6177234"
+        },
+        "frame": "files"
+      },
+      "vba-next": {
+        "result": "loads",
+        "detail": "save select: A 积木城堡 27540",
+        "core_version": "VBA Next v1.0.2",
+        "file": {
+          "name": "Waliou Xunbao Ji (China).srm",
+          "size": 139264,
+          "sha1": "97deb60f911a4fcaaff909ceae1a2b12fa494345"
+        },
+        "frame": "files"
+      },
+      "beetle-gba": {
+        "result": "loads",
+        "detail": "save select: A 积木城堡 27540",
+        "core_version": "Beetle GBA v0.9.36 b158166",
+        "file": {
+          "name": "Waliou Xunbao Ji (China).3d8fcfa27f2a659ab5f3ab0d70b9c99d.sav",
+          "size": 65536,
+          "sha1": "29ed632176a7154ac3674fff83f6d3f294293b99"
+        },
+        "frame": "files"
+      },
+      "skyemu": {
+        "result": "loads",
+        "detail": "save select: A 积木城堡 27540",
+        "core_version": "SkyEmu adacd0788964ed89f5c43dcbc1f3cc26deec996c",
+        "file": {
+          "name": "Waliou Xunbao Ji (China).srm",
+          "size": 131072,
+          "sha1": "82a7462f88ab23d5449b1279265c72dba6177234"
+        },
+        "frame": "files"
+      }
+    },
+    "proof_order": [
+      "mgba",
+      "vba-m",
+      "gpsp",
+      "vba-next",
+      "beetle-gba",
+      "skyemu"
+    ]
+  },
+  "note": null
+}

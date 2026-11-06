@@ -1,0 +1,110 @@
+{
+  "method": "downloaded",
+  "system": "nds",
+  "core": "_action-replay-ds",
+  "url": "https://gamefaqs.gamespot.com/ds/925601-pokemon-diamond-version/saves/19144",
+  "source_page": "https://gamefaqs.gamespot.com/ds/925601-pokemon-diamond-version/saves",
+  "source": "GameFAQs (section 'Action Replay Max DS (.duc) Game Save (North America)')",
+  "author": "pp2105",
+  "licence": null,
+  "posted": "2009-05-20",
+  "fetched": "2026-11-05",
+  "what_it_is": "Game complete, no cheats, full money and lots and lots of items. saved at twinleaf town",
+  "gamefaqs": {
+    "id": 19144,
+    "product": "Pokemon Diamond / Pearl / Platinum Version",
+    "section": "Action Replay Max DS (.duc) Game Save (North America)",
+    "region": "North America",
+    "served_as": "pokemon-diamond-pearl-platinum-version.19144.duc",
+    "listed_size": "256KB"
+  },
+  "format": "Action Replay DS save: the 500-byte 'ARDS000000000001' header written by a converter ('Converted Savegame' / 'Savegame', ASCII 'shuny conv'), then 256 KiB: a no$gba backup file (method 1, packed, unpacking to 512 KiB) padded with 0xFF",
+  "files": {
+    "pokemon-diamond-pearl-platinum-version.19144.duc": {
+      "size": 262644,
+      "sha1": "126e817e07cf47bafcc0867d349f8ce0bd4fc42e"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Pokemon - Platinum Version (USA).nds",
+      "sha1": "c5072bf51a5ecc51ade99d3506c023f5bac3eeb3",
+      "size": 134217728,
+      "note": "a dump of this game code whose sha1 is not in the No-Intro DAT (the area after the used ROM size is blank); the region in the name is a guess"
+    },
+    "converted_with": "tools/gamefaqs/nds-ards.py IN step0.bin, then tools/gamefaqs/nds-nocash.py step0.bin step1.bin, then tools/gamefaqs/nds-cores.py step1.bin --chip 524288 --stem 'Pokemon - Platinum Version (USA)' --out DIR: drops the Action Replay header; unpacks the no$gba file; fits it to the 524288-byte chip (exact size) and writes each core's file",
+    "converted": {
+      "size": 524288,
+      "sha1": "7296cd86c52b2113c9050f4637dbf5646c226a64"
+    },
+    "core_files": {
+      "desmume": {
+        "name": "Pokemon - Platinum Version (USA).dsv",
+        "size": 524410,
+        "sha1": "a0b690d3dd4dfaf47d105649bb4cedadf0ef3abf"
+      },
+      "desmume-2015": {
+        "name": "Pokemon - Platinum Version (USA).dsv",
+        "size": 524410,
+        "sha1": "a0b690d3dd4dfaf47d105649bb4cedadf0ef3abf"
+      },
+      "melonds": {
+        "name": "Pokemon - Platinum Version (USA).sav",
+        "size": 524288,
+        "sha1": "7296cd86c52b2113c9050f4637dbf5646c226a64"
+      },
+      "melonds-ds": {
+        "name": "Pokemon - Platinum Version (USA).srm",
+        "size": 524288,
+        "sha1": "7296cd86c52b2113c9050f4637dbf5646c226a64"
+      },
+      "noods": {
+        "name": "Pokemon - Platinum Version (USA).sav",
+        "size": 524288,
+        "sha1": "7296cd86c52b2113c9050f4637dbf5646c226a64"
+      },
+      "skyemu": {
+        "name": "Pokemon - Platinum Version (USA).srm",
+        "size": 8388608,
+        "sha1": "6df1c7988c1a692648bd60977a58e7721648f5b3"
+      }
+    },
+    "script": "scripts/nds/Pokemon - Platinum Version.load.txt",
+    "cores": {
+      "desmume": {
+        "result": "loads",
+        "detail": "\"The most recent Battle Video is corrupted.\", \"The previously saved Battle Video will be loaded instead.\", then CONTINUE: PLAYER PRADYOT, TIME 64:29, BADGES 8, POKéDEX 311"
+      },
+      "desmume-2015": {
+        "result": "loads",
+        "detail": "\"The most recent Battle Video is corrupted.\", \"The previously saved Battle Video will be loaded instead.\", then CONTINUE: PLAYER PRADYOT, TIME 64:29, BADGES 8, POKéDEX 311"
+      },
+      "melonds": {
+        "result": "core-error",
+        "detail": "\"A communication error has occurred\" (\"... you will be returned to wherever you last saved\") instead of the CONTINUE panel, then a white screen; melonDS 0.9.3 does the same with its own Pearl save from this corpus, so it is the core (no BIOS or firmware here, FreeBIOS), not this save"
+      },
+      "melonds-ds": {
+        "result": "loads",
+        "detail": "\"The most recent Battle Video is corrupted.\", \"The previously saved Battle Video will be loaded instead.\", then CONTINUE: PLAYER PRADYOT, TIME 64:29, BADGES 8, POKéDEX 311"
+      },
+      "noods": {
+        "result": "loads",
+        "detail": "\"The most recent Battle Video is corrupted.\", \"The previously saved Battle Video will be loaded instead.\", then CONTINUE: PLAYER PRADYOT, TIME 64:29, BADGES 8, POKéDEX 311"
+      },
+      "skyemu": {
+        "result": "loads",
+        "detail": "\"The most recent Battle Video is corrupted.\", \"The previously saved Battle Video will be loaded instead.\", then CONTINUE: PLAYER PRADYOT, TIME 64:29, BADGES 8, POKéDEX 311"
+      }
+    },
+    "proof_order": [
+      "desmume",
+      "desmume-2015",
+      "melonds",
+      "melonds-ds",
+      "noods",
+      "skyemu"
+    ]
+  },
+  "note": "Release: Platinum layout, English, the version that caught the player's own Pokemon (origin game in the decrypted Pokemon data, OT matching the trainer) is Platinum. A converter wrapped a whole no$gba backup file in an Action Replay header and padded it to 256 KiB; DeSmuME's import would load the no$gba bytes as the save. The game first says \"The most recent Battle Video is corrupted.\" and \"The previously saved Battle Video will be loaded instead.\" (that block is not valid in this file), then shows the CONTINUE panel."
+}

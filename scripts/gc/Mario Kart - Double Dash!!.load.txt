@@ -1,0 +1,17 @@
+# Load script for downloaded saves (GameFAQs): show what a Mario Kart: Double Dash!! save holds.
+# libretro Dolphin under retro-run, single-core (scripts/gc/dolphin-single-core.opt). The save sits
+# in the GCI folder (User/GC/USA/Card A/).
+# Title menu > RECORDS > GRAND PRIX: Mushroom Cup trophies, times, points and initials per class.
+# With no save the game asks "Would you like to create data for MARIO KART: DOUBLE DASH!!...".
+wait 1200
+press start 6      # skip the intro to the title
+wait 300
+press start 6      # open the title menu (START GAME / RECORDS / OPTIONS)
+wait 300
+stick 0 max 8      # down to RECORDS (this menu takes the stick, not the d-pad)
+wait 60
+press a 6
+wait 300
+press a 6          # GRAND PRIX records
+wait 300
+shot records

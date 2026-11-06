@@ -1,0 +1,119 @@
+{
+  "method": "downloaded",
+  "system": "gba",
+  "core": "_action-replay",
+  "url": "https://gamefaqs.gamespot.com/gba/563596-pokemon-sapphire-version/saves/7496",
+  "source_page": "https://gamefaqs.gamespot.com/gba/563596-pokemon-sapphire-version/saves",
+  "source": "GameFAQs (section 'GameBoy Advance Pro Action Replay Save (Japan)')",
+  "author": "EleMira",
+  "licence": null,
+  "posted": "2005-04-18",
+  "fetched": "2026-11-05",
+  "what_it_is": "Name: COSMO, Hoenn Dex Complete, 10 national pokemon, saved on Mirage Island",
+  "gamefaqs": {
+    "id": 7496,
+    "product": "Pokemon Ruby / Sapphire / Emerald Version",
+    "section": "GameBoy Advance Pro Action Replay Save (Japan)",
+    "region": "Japan",
+    "served_as": "pokemon-ruby-sapphire-emerald-version.7496.xps",
+    "listed_size": "64KB"
+  },
+  "format": "SharkPort save (\"SharkPortSave\", kind 0x000F0000): title \"P#K\u0003M{\", date \"Save18/04/05 7:12:44 PM 41\", notes \"\"; cart header \"P#K\u0003M{\u0000 EC\u0000R\" / 'BPEJ' (complement 0x20); payload 65536 bytes; checksum: unsigned",
+  "files": {
+    "pokemon-ruby-sapphire-emerald-version.7496.xps": {
+      "size": 65637,
+      "sha1": "e37c4929c489cd7f80bf719d2b874c88809fa09a"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Pocket Monsters - Emerald (Japan).gba",
+      "sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+      "size": 16777216
+    },
+    "converted_with": "tools/gamefaqs/gba-sharkport.py pokemon-ruby-sapphire-emerald-version.7496.xps --rom ROM --core CORE --outdir DIR: reads the SharkPort container as mGBA does and imports the payload as mGBA's _importSavedata does (cut to the chip, EEPROM 8-byte blocks reversed, the rest of the chip erased), then lays the chip out as the core keeps it",
+    "converted": {
+      "size": 131072,
+      "sha1": "51d540d44e3179e98d824fa8d0f014a500f3e095"
+    },
+    "script": "scripts/gba/Pokemon - Ruby Version.load.txt",
+    "cores": {
+      "mgba": {
+        "result": "rejected",
+        "detail": "\"The save file has been deleted\" / \"erased due to corruption\": neither copy in the file is whole, then NEW GAME only",
+        "core_version": "mGBA 0.11-212-7a12d6d",
+        "file": {
+          "name": "Pocket Monsters - Emerald (Japan).srm",
+          "size": 131072,
+          "sha1": "51d540d44e3179e98d824fa8d0f014a500f3e095"
+        },
+        "frame": "menu"
+      },
+      "vba-m": {
+        "result": "rejected",
+        "detail": "\"The save file has been deleted\" / \"erased due to corruption\": neither copy in the file is whole, then NEW GAME only",
+        "core_version": "VBA-M 115defb",
+        "file": {
+          "name": "Pocket Monsters - Emerald (Japan).srm",
+          "size": 131072,
+          "sha1": "51d540d44e3179e98d824fa8d0f014a500f3e095"
+        },
+        "frame": "menu"
+      },
+      "gpsp": {
+        "result": "rejected",
+        "detail": "\"The save file has been deleted\" / \"erased due to corruption\": neither copy in the file is whole, then NEW GAME only",
+        "core_version": "gpSP v1.1.0-5819380",
+        "file": {
+          "name": "Pocket Monsters - Emerald (Japan).srm",
+          "size": 131072,
+          "sha1": "51d540d44e3179e98d824fa8d0f014a500f3e095"
+        },
+        "frame": "menu"
+      },
+      "vba-next": {
+        "result": "rejected",
+        "detail": "\"The save file has been deleted\" / \"erased due to corruption\": neither copy in the file is whole, then NEW GAME only",
+        "core_version": "VBA Next v1.0.2",
+        "file": {
+          "name": "Pocket Monsters - Emerald (Japan).srm",
+          "size": 139264,
+          "sha1": "c5d7de681605e81115b4c7c3dbd9fc08509a16dd"
+        },
+        "frame": "menu"
+      },
+      "beetle-gba": {
+        "result": "rejected",
+        "detail": "\"The save file has been deleted\" / \"erased due to corruption\": neither copy in the file is whole, then NEW GAME only",
+        "core_version": "Beetle GBA v0.9.36 b158166",
+        "file": {
+          "name": "Pocket Monsters - Emerald (Japan).92eecf93f1ab828bdf2a83daddacf3e5.sav",
+          "size": 131072,
+          "sha1": "51d540d44e3179e98d824fa8d0f014a500f3e095"
+        },
+        "frame": "menu"
+      },
+      "skyemu": {
+        "result": "rejected",
+        "detail": "\"The save file has been deleted\" / \"erased due to corruption\": neither copy in the file is whole, then NEW GAME only",
+        "core_version": "SkyEmu adacd0788964ed89f5c43dcbc1f3cc26deec996c",
+        "file": {
+          "name": "Pocket Monsters - Emerald (Japan).srm",
+          "size": 131072,
+          "sha1": "51d540d44e3179e98d824fa8d0f014a500f3e095"
+        },
+        "frame": "menu"
+      }
+    },
+    "proof_order": [
+      "mgba",
+      "vba-m",
+      "gpsp",
+      "vba-next",
+      "beetle-gba",
+      "skyemu"
+    ]
+  },
+  "note": "The header complement byte 0x20 matches no release; the nearest by bits is 0x6d, so that revision was used. The GameShark copied only the first 64 KiB of the 128 KiB flash; imported as mGBA does, the second half of the chip stays erased. The cart header in the file has bit errors (\"P#K\\x03M{\" / \"BPEJ\"), as a GameShark reading through a poor cartridge contact gives; the release was taken from the readable part. With header bytes this damaged, the payload is damaged too: only 8 of the 14 sectors of the first copy pass their checksums, so the game reports the save erased."
+}

@@ -1,0 +1,11 @@
+# T'ai Fu - Wrath of the Tiger, PCSX-ReARMed variant: title > Load Game > the saved level, lives and styles.
+wait 1500           # BIOS logos
+repeat 1            # PCSX-ReARMed shows the title menu after one press; a second starts a game
+press start 6
+wait 250
+end
+press up 6          # LOAD GAME
+wait 30
+press b 6
+wait 400
+shot load

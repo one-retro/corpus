@@ -1,0 +1,2 @@
+# Pokemon SoulSilver: the same game as HeartGold.
+include Pokemon - HeartGold Version.load.txt

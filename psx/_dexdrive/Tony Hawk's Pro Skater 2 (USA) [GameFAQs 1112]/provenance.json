@@ -1,0 +1,84 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_dexdrive",
+  "url": "https://gamefaqs.gamespot.com/ps/199061-tony-hawks-pro-skater-2/saves/1112",
+  "source_page": "https://gamefaqs.gamespot.com/ps/199061-tony-hawks-pro-skater-2/saves",
+  "source": "GameFAQs (section 'PlayStation DexDrive Save (North America)')",
+  "author": "ohnoitschris",
+  "licence": null,
+  "posted": "2001-09-15",
+  "fetched": "2026-11-05",
+  "what_it_is": "Custom Park: \"High Flyin\", my skate park that has quite a few halfpipes and ramps, and even a glitched faux rail!",
+  "gamefaqs": {
+    "id": 1112,
+    "product": "Tony Hawk's Pro Skater 2",
+    "section": "PlayStation DexDrive Save (North America)",
+    "region": "North America",
+    "served_as": "tony-hawks-pro-skater-2.1112.gme",
+    "listed_size": "131KB"
+  },
+  "format": "DexDrive .gme: '123-456-STD' 3904-byte header (per-block comments) + 131072-byte raw card; the card holds 1 save(s), 1 for this game (BASLUS-01066HCANPAE)",
+  "release": "Tony Hawk's Pro Skater 2 (USA)",
+  "game_saves": [
+    {
+      "name": "BASLUS-01066HCANPAE",
+      "blocks": 1,
+      "title": "THPS2 PARKー HIGH FLYIN"
+    }
+  ],
+  "files": {
+    "tony-hawks-pro-skater-2.1112.gme": {
+      "size": 134976,
+      "sha1": "6f2012fb0a708932e32e25a5cd3c5a581557b5c9"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Tony Hawk's Pro Skater 2 (USA).cue",
+      "sha1": "ea5388de4fa83e3d3b5f37d752f1eb8d3bd5d88e",
+      "size": 96
+    },
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr tony-hawks-pro-skater-2.1112.gme: unwraps the card (DexDrive .gme: 3904-byte header + card)",
+    "converted": {
+      "size": 131072,
+      "sha1": "51f7d316f682e8e66b2aef27a9b706e51c262838"
+    },
+    "script": "scripts/psx/Tony Hawk's Pro Skater 2.load.txt",
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "loads",
+        "detail": "Park Editor > Load lists the park HIGH FLYIN"
+      },
+      "beetle-psx-hw": {
+        "result": "loads",
+        "detail": "Park Editor > Load lists the park HIGH FLYIN (the same screen as on beetle-psx)"
+      },
+      "pcsx-rearmed": {
+        "result": "loads",
+        "detail": "Park Editor > Load lists the park HIGH FLYIN (the same screen as on beetle-psx)"
+      },
+      "swanstation": {
+        "result": "loads",
+        "detail": "Park Editor > Load lists the park HIGH FLYIN (the same screen as on beetle-psx)"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": [
+      "beetle-psx",
+      "beetle-psx-hw",
+      "pcsx-rearmed",
+      "swanstation"
+    ]
+  },
+  "note": null
+}

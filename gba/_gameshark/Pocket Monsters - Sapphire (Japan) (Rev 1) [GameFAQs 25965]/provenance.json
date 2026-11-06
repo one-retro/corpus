@@ -1,0 +1,119 @@
+{
+  "method": "downloaded",
+  "system": "gba",
+  "core": "_gameshark",
+  "url": "https://gamefaqs.gamespot.com/gba/563596-pokemon-sapphire-version/saves/25965",
+  "source_page": "https://gamefaqs.gamespot.com/gba/563596-pokemon-sapphire-version/saves",
+  "source": "GameFAQs (section 'GameBoy Advance GameShark Save (Japan)')",
+  "author": "Eevee-Trainer",
+  "licence": null,
+  "posted": "2018-08-17",
+  "fetched": "2026-11-05",
+  "what_it_is": "Start of game. Max money, 99 of all items, Shiny Living Pokedex (all 31 IVs/0 EVs), and competitive movesets on all.",
+  "gamefaqs": {
+    "id": 25965,
+    "product": "Pokemon Ruby / Sapphire / Emerald Version",
+    "section": "GameBoy Advance GameShark Save (Japan)",
+    "region": "Japan",
+    "served_as": "pokemon-ruby-sapphire-emerald-version.25965.sps",
+    "listed_size": "128KB"
+  },
+  "format": "SharkPort save (\"SharkPortSave\", kind 0x000F0000): title \"POKEMON SAPP\", date \"5/5/2018 7:49:44 PM\", notes \"\"; cart header \"POKEMON SAPP\" / 'AXPJ' (complement 0x4f); payload 131072 bytes; checksum: signed",
+  "files": {
+    "pokemon-ruby-sapphire-emerald-version.25965.sps": {
+      "size": 131172,
+      "sha1": "8a75903044cf2ebae2f170cb0c65bc7801158d4c"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Pocket Monsters - Sapphire (Japan) (Rev 1).gba",
+      "sha1": "01f509671445965236ac4c6b5a354fe2f1e69f13",
+      "size": 8388608
+    },
+    "converted_with": "tools/gamefaqs/gba-sharkport.py pokemon-ruby-sapphire-emerald-version.25965.sps --rom ROM --core CORE --outdir DIR: reads the SharkPort container as mGBA does and imports the payload as mGBA's _importSavedata does (cut to the chip, EEPROM 8-byte blocks reversed, the rest of the chip erased), then lays the chip out as the core keeps it",
+    "converted": {
+      "size": 131072,
+      "sha1": "3d8383551da7ab8637b2565601645e02fae0d037"
+    },
+    "script": "scripts/gba/Pokemon - Ruby Version.load.txt",
+    "cores": {
+      "mgba": {
+        "result": "loads",
+        "detail": "CONTINUE: RUBY, 999:59",
+        "core_version": "mGBA 0.11-212-7a12d6d",
+        "file": {
+          "name": "Pocket Monsters - Sapphire (Japan) (Rev 1).srm",
+          "size": 131072,
+          "sha1": "3d8383551da7ab8637b2565601645e02fae0d037"
+        },
+        "frame": "menu"
+      },
+      "vba-m": {
+        "result": "loads",
+        "detail": "CONTINUE: RUBY, 999:59",
+        "core_version": "VBA-M 115defb",
+        "file": {
+          "name": "Pocket Monsters - Sapphire (Japan) (Rev 1).srm",
+          "size": 131072,
+          "sha1": "3d8383551da7ab8637b2565601645e02fae0d037"
+        },
+        "frame": "menu"
+      },
+      "gpsp": {
+        "result": "loads",
+        "detail": "CONTINUE: RUBY, 999:59",
+        "core_version": "gpSP v1.1.0-5819380",
+        "file": {
+          "name": "Pocket Monsters - Sapphire (Japan) (Rev 1).srm",
+          "size": 131072,
+          "sha1": "3d8383551da7ab8637b2565601645e02fae0d037"
+        },
+        "frame": "menu"
+      },
+      "vba-next": {
+        "result": "loads",
+        "detail": "CONTINUE: RUBY, 999:59",
+        "core_version": "VBA Next v1.0.2",
+        "file": {
+          "name": "Pocket Monsters - Sapphire (Japan) (Rev 1).srm",
+          "size": 139264,
+          "sha1": "e677d2d09984dfc5a58c504bc38ff502ab29b62a"
+        },
+        "frame": "menu"
+      },
+      "beetle-gba": {
+        "result": "loads",
+        "detail": "CONTINUE: RUBY, 999:59",
+        "core_version": "Beetle GBA v0.9.36 b158166",
+        "file": {
+          "name": "Pocket Monsters - Sapphire (Japan) (Rev 1).abf042be32e2aeab1b926efe6d4b8b8b.sav",
+          "size": 131072,
+          "sha1": "3d8383551da7ab8637b2565601645e02fae0d037"
+        },
+        "frame": "menu"
+      },
+      "skyemu": {
+        "result": "loads",
+        "detail": "CONTINUE: RUBY, 999:59",
+        "core_version": "SkyEmu adacd0788964ed89f5c43dcbc1f3cc26deec996c",
+        "file": {
+          "name": "Pocket Monsters - Sapphire (Japan) (Rev 1).srm",
+          "size": 131072,
+          "sha1": "3d8383551da7ab8637b2565601645e02fae0d037"
+        },
+        "frame": "menu"
+      }
+    },
+    "proof_order": [
+      "mgba",
+      "vba-m",
+      "gpsp",
+      "vba-next",
+      "beetle-gba",
+      "skyemu"
+    ]
+  },
+  "note": null
+}

@@ -1,0 +1,119 @@
+{
+  "method": "downloaded",
+  "system": "gba",
+  "core": "_gameshark",
+  "url": "https://gamefaqs.gamespot.com/gba/563596-pokemon-sapphire-version/saves/28235",
+  "source_page": "https://gamefaqs.gamespot.com/gba/563596-pokemon-sapphire-version/saves",
+  "source": "GameFAQs (section 'GameBoy Advance GameShark Save (North America)')",
+  "author": "TripAway",
+  "licence": null,
+  "posted": "2022-09-19",
+  "fetched": "2026-11-05",
+  "what_it_is": "Trainer name: TripThis save had a genuine obtained EON TICKET obtained from a EON TICKET e-card. You can use it to transfer EON TICKET to your Ruby/Sapphire/Emerald save between mixing records.",
+  "gamefaqs": {
+    "id": 28235,
+    "product": "Pokemon Ruby / Sapphire / Emerald Version",
+    "section": "GameBoy Advance GameShark Save (North America)",
+    "region": "North America",
+    "served_as": "pokemon-ruby-sapphire-emerald-version.28235.sps",
+    "listed_size": "128KB"
+  },
+  "format": "SharkPort save (\"SharkPortSave\", kind 0x000F0000): title \"POKEMON RUBY\", date \"09/10/2022 03:32:28 PM\", notes \"\"; cart header \"POKEMON RUBY\" / 'AXVE' (complement 0x3f); payload 131072 bytes; checksum: signed",
+  "files": {
+    "pokemon-ruby-sapphire-emerald-version.28235.sps": {
+      "size": 131175,
+      "sha1": "35a92ed678e932587558355de20375f28013d518"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Pokemon - Ruby Version (USA, Europe) (Rev 2).gba",
+      "sha1": "5b64eacf892920518db4ec664e62a086dd5f5bc8",
+      "size": 16777216
+    },
+    "converted_with": "tools/gamefaqs/gba-sharkport.py pokemon-ruby-sapphire-emerald-version.28235.sps --rom ROM --core CORE --outdir DIR: reads the SharkPort container as mGBA does and imports the payload as mGBA's _importSavedata does (cut to the chip, EEPROM 8-byte blocks reversed, the rest of the chip erased), then lays the chip out as the core keeps it",
+    "converted": {
+      "size": 131072,
+      "sha1": "5df138e6d3969eecb58cd408ef35bf46dc569121"
+    },
+    "script": "scripts/gba/Pokemon - Ruby Version.load.txt",
+    "cores": {
+      "mgba": {
+        "result": "loads",
+        "detail": "CONTINUE: Trip, 30:49",
+        "core_version": "mGBA 0.11-212-7a12d6d",
+        "file": {
+          "name": "Pokemon - Ruby Version (USA, Europe) (Rev 2).srm",
+          "size": 131072,
+          "sha1": "5df138e6d3969eecb58cd408ef35bf46dc569121"
+        },
+        "frame": "menu"
+      },
+      "vba-m": {
+        "result": "loads",
+        "detail": "CONTINUE: Trip, 30:49",
+        "core_version": "VBA-M 115defb",
+        "file": {
+          "name": "Pokemon - Ruby Version (USA, Europe) (Rev 2).srm",
+          "size": 131072,
+          "sha1": "5df138e6d3969eecb58cd408ef35bf46dc569121"
+        },
+        "frame": "menu"
+      },
+      "gpsp": {
+        "result": "loads",
+        "detail": "CONTINUE: Trip, 30:49",
+        "core_version": "gpSP v1.1.0-5819380",
+        "file": {
+          "name": "Pokemon - Ruby Version (USA, Europe) (Rev 2).srm",
+          "size": 131072,
+          "sha1": "5df138e6d3969eecb58cd408ef35bf46dc569121"
+        },
+        "frame": "menu"
+      },
+      "vba-next": {
+        "result": "loads",
+        "detail": "CONTINUE: Trip, 30:49",
+        "core_version": "VBA Next v1.0.2",
+        "file": {
+          "name": "Pokemon - Ruby Version (USA, Europe) (Rev 2).srm",
+          "size": 139264,
+          "sha1": "c1a143487b6e58db6776332ea199e2dec6974949"
+        },
+        "frame": "menu"
+      },
+      "beetle-gba": {
+        "result": "loads",
+        "detail": "CONTINUE: Trip, 30:49",
+        "core_version": "Beetle GBA v0.9.36 b158166",
+        "file": {
+          "name": "Pokemon - Ruby Version (USA, Europe) (Rev 2).3e1b2065b3837c14ffbd03fe205fdfd7.sav",
+          "size": 131072,
+          "sha1": "5df138e6d3969eecb58cd408ef35bf46dc569121"
+        },
+        "frame": "menu"
+      },
+      "skyemu": {
+        "result": "loads",
+        "detail": "CONTINUE: Trip, 30:49",
+        "core_version": "SkyEmu adacd0788964ed89f5c43dcbc1f3cc26deec996c",
+        "file": {
+          "name": "Pokemon - Ruby Version (USA, Europe) (Rev 2).srm",
+          "size": 131072,
+          "sha1": "5df138e6d3969eecb58cd408ef35bf46dc569121"
+        },
+        "frame": "menu"
+      }
+    },
+    "proof_order": [
+      "mgba",
+      "vba-m",
+      "gpsp",
+      "vba-next",
+      "beetle-gba",
+      "skyemu"
+    ]
+  },
+  "note": null
+}

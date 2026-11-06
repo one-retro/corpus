@@ -1,0 +1,111 @@
+{
+  "method": "downloaded",
+  "system": "ps2",
+  "core": "_x-port",
+  "url": "https://gamefaqs.gamespot.com/dreamcast/914427-marvel-vs-capcom-2/saves/4356",
+  "source_page": "https://gamefaqs.gamespot.com/dreamcast/914427-marvel-vs-capcom-2/saves",
+  "source": "GameFAQs (section 'PlayStation2 X-Port Save (Japan)')",
+  "author": "Cirio",
+  "licence": null,
+  "posted": "2004-06-17",
+  "fetched": "2026-11-05",
+  "what_it_is": "All characters, All galleries, All stages, All alternate colors unlocked.",
+  "gamefaqs": {
+    "id": 4356,
+    "product": "Marvel vs. Capcom 2",
+    "section": "PlayStation2 X-Port Save (Japan)",
+    "region": "Japan",
+    "served_as": "marvel-vs-capcom-2.4356.xps",
+    "listed_size": "54KB"
+  },
+  "format": "SharkPort / X-Port save: 'SharkPortSave' header (title 'MARVEL VS CAPCOM2 8:GaH-@', date 'Save04/06/18 7:05:05 91', comment ''), folder BISLPM-62227SYS, 3 files, 54384 bytes of file data, 4-byte checksum at the end",
+  "files": {
+    "marvel-vs-capcom-2.4356.xps": {
+      "size": 55473,
+      "sha1": "931fb9410abe875c60ff883bca7604b8b7bff4f9"
+    }
+  },
+  "save": {
+    "folder": "BISLPM-62227SYS",
+    "title": [
+      "MARVEL VS CAPCOM",
+      "2 システムデータ"
+    ],
+    "times": "as the file stores them (PS2 card times, JST)",
+    "files": [
+      {
+        "name": "icon.sys",
+        "size": 964,
+        "sha1": "8b251546393a15b2ad2b7d0ba9b4d9f5eacc19f0",
+        "created": "2004-02-26 10:27:48",
+        "modified": "2004-02-26 10:27:48"
+      },
+      {
+        "name": "mvsc2.ico",
+        "size": 51544,
+        "sha1": "6622d424d8e19ad8a1f9d3f8c80e3719cac757ad",
+        "created": "2004-02-26 10:27:49",
+        "modified": "2004-02-26 10:27:49"
+      },
+      {
+        "name": "BISLPM-62227SYS",
+        "size": 1876,
+        "sha1": "c7f56e95a0bf1d3f64607649edae0914946cecbc",
+        "created": "2004-02-26 10:27:49",
+        "modified": "2004-02-26 10:27:49"
+      }
+    ]
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": null,
+    "converted_with": "tools/gamefaqs/ps2-card.py 'marvel-vs-capcom-2.4356.xps' -o OUT: reads the save with mymcplus 3.0.5 and writes OUT/Mcd001.ps2 (an 8 MiB card with ECC, formatted and filled by mymcplus) for lrps2/pcee2/pcsx2, and OUT/mc0/<folder>/ for Play!",
+    "converted": {
+      "Mcd001.ps2": {
+        "size": 8650752,
+        "sha1": "7453bbc20d45356f9fd4aa9d40e77fa9a702f521"
+      },
+      "mc0/BISLPM-62227SYS/": {
+        "icon.sys": {
+          "size": 964,
+          "sha1": "8b251546393a15b2ad2b7d0ba9b4d9f5eacc19f0"
+        },
+        "mvsc2.ico": {
+          "size": 51544,
+          "sha1": "6622d424d8e19ad8a1f9d3f8c80e3719cac757ad"
+        },
+        "BISLPM-62227SYS": {
+          "size": 1876,
+          "sha1": "c7f56e95a0bf1d3f64607649edae0914946cecbc"
+        }
+      },
+      "read_back": "work/ps2/tools/mcfs.py lists every file with the size and SHA-1 put on the card; one-saves (1saves convert + inspect) reads the card and finds BISLPM-62227SYS",
+      "timestamps": "what the save does not date is 2000-01-01 00:00:00 (JST, as a card stores it); the card's own root entries too"
+    },
+    "script": null,
+    "cores": {
+      "pcee2": {
+        "result": "not-run",
+        "detail": "no image of Marvel vs. Capcom 2 - New Age of Heroes (Japan) in the library"
+      },
+      "lrps2": {
+        "result": "not-run",
+        "detail": "no image of Marvel vs. Capcom 2 - New Age of Heroes (Japan) in the library"
+      },
+      "play": {
+        "result": "not-run",
+        "detail": "no image of Marvel vs. Capcom 2 - New Age of Heroes (Japan) in the library"
+      },
+      "pcsx2": {
+        "result": "not-run",
+        "detail": "no image of Marvel vs. Capcom 2 - New Age of Heroes (Japan) in the library"
+      },
+      "armsx2": {
+        "result": "not-run",
+        "detail": "ARMSX2 renders only through Vulkan here and falls back to a null GS (no picture), so nothing shows what the game read (ps2/NOTES.md)"
+      }
+    },
+    "proof_order": []
+  },
+  "note": null
+}

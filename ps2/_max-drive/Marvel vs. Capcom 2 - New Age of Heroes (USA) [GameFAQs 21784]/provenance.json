@@ -1,0 +1,131 @@
+{
+  "method": "downloaded",
+  "system": "ps2",
+  "core": "_max-drive",
+  "url": "https://gamefaqs.gamespot.com/dreamcast/914427-marvel-vs-capcom-2/saves/21784",
+  "source_page": "https://gamefaqs.gamespot.com/dreamcast/914427-marvel-vs-capcom-2/saves",
+  "source": "GameFAQs (section 'PlayStation2 Max Drive Save (North America)')",
+  "author": "MaxLancer",
+  "licence": null,
+  "posted": "2011-05-03",
+  "fetched": "2026-11-05",
+  "what_it_is": "Complete save, all things bought in shop",
+  "gamefaqs": {
+    "id": 21784,
+    "product": "Marvel vs. Capcom 2",
+    "section": "PlayStation2 Max Drive Save (North America)",
+    "region": "North America",
+    "served_as": "marvel-vs-capcom-2.21784.max",
+    "listed_size": "10KB"
+  },
+  "format": "Max Drive / PowerSave save: 'Ps2PowerSave' header (CRC32 f10666b5, matches), folder BASLUS-20486SYS, 4 files, LZARI stream 11162 bytes unpacking to 54232 bytes (54064 bytes of file data)",
+  "files": {
+    "marvel-vs-capcom-2.21784.max": {
+      "size": 11254,
+      "sha1": "3103eea85adb48dbef7fce176e5cb430d1d688d6"
+    }
+  },
+  "save": {
+    "folder": "BASLUS-20486SYS",
+    "title": [
+      "MARVEL VS CAPCOM",
+      "2 SYSTEM"
+    ],
+    "times": "none: a max file stores no file times",
+    "files": [
+      {
+        "name": "icon.sys",
+        "size": 964,
+        "sha1": "74cbac94ffddc1c7cdddf747a174c8cee23b3aac"
+      },
+      {
+        "name": "mvsc2.ico",
+        "size": 50968,
+        "sha1": "5908fe16b14064506bdbf0fffa031ef46d282108"
+      },
+      {
+        "name": "PS2_MC_Backup_Attributes.BUP.bi",
+        "size": 256,
+        "sha1": "f3673e076aeb75d56bbc3a5a6d9006e6b167b638"
+      },
+      {
+        "name": "BASLUS-20486SYS",
+        "size": 1876,
+        "sha1": "5c3eab4d2e127ecdad8635401dbbddac4a3d9e2f"
+      }
+    ]
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Marvel vs. Capcom 2 - New Age of Heroes (USA).cue",
+      "sha1": "9a7585c76c93718f652413e0d579296daf304fbd",
+      "size": 111,
+      "tracks": [
+        {
+          "name": "Marvel vs. Capcom 2 - New Age of Heroes (USA).bin",
+          "sha1": "3445ddf09b57bf5b2d493e75e21ff0cd9caa2759",
+          "size": 239673504
+        }
+      ]
+    },
+    "converted_with": "tools/gamefaqs/ps2-card.py 'marvel-vs-capcom-2.21784.max' -o OUT: reads the save with mymcplus 3.0.5 and writes OUT/Mcd001.ps2 (an 8 MiB card with ECC, formatted and filled by mymcplus) for lrps2/pcee2/pcsx2, and OUT/mc0/<folder>/ for Play!",
+    "converted": {
+      "Mcd001.ps2": {
+        "size": 8650752,
+        "sha1": "5a05f5681027fcf06e435bd5fb7303b2880cfa81"
+      },
+      "mc0/BASLUS-20486SYS/": {
+        "icon.sys": {
+          "size": 964,
+          "sha1": "74cbac94ffddc1c7cdddf747a174c8cee23b3aac"
+        },
+        "mvsc2.ico": {
+          "size": 50968,
+          "sha1": "5908fe16b14064506bdbf0fffa031ef46d282108"
+        },
+        "PS2_MC_Backup_Attributes.BUP.bi": {
+          "size": 256,
+          "sha1": "f3673e076aeb75d56bbc3a5a6d9006e6b167b638"
+        },
+        "BASLUS-20486SYS": {
+          "size": 1876,
+          "sha1": "5c3eab4d2e127ecdad8635401dbbddac4a3d9e2f"
+        }
+      },
+      "read_back": "work/ps2/tools/mcfs.py lists every file with the size and SHA-1 put on the card; one-saves (1saves convert + inspect) reads the card and finds BASLUS-20486SYS",
+      "timestamps": "what the save does not date is 2000-01-01 00:00:00 (JST, as a card stores it); the card's own root entries too"
+    },
+    "script": "scripts/ps2/Marvel vs. Capcom 2 - New Age of Heroes (USA).load.txt",
+    "cores": {
+      "pcee2": {
+        "detail": "'Load successful' (no save: 'No MARVEL VS. CAPCOM 2 save data found'); SECRET FACTOR: YOUR POINTS 2329",
+        "result": "loads"
+      },
+      "lrps2": {
+        "detail": "'Load successful' (no save: 'No MARVEL VS. CAPCOM 2 save data found'); SECRET FACTOR: YOUR POINTS 2329",
+        "result": "loads"
+      },
+      "play": {
+        "detail": "'Load successful' (no save: 'No MARVEL VS. CAPCOM 2 save data found'); SECRET FACTOR: YOUR POINTS 2329",
+        "result": "loads"
+      },
+      "pcsx2": {
+        "detail": "'Load successful' (no save: 'No MARVEL VS. CAPCOM 2 save data found'); SECRET FACTOR: YOUR POINTS 2329",
+        "result": "loads",
+        "image": "Marvel vs. Capcom 2 - New Age of Heroes (USA).bin (the track itself, as the played pcsx2 entries ran it)"
+      },
+      "armsx2": {
+        "result": "not-run",
+        "detail": "ARMSX2 renders only through Vulkan here and falls back to a null GS (no picture), so nothing shows what the game read (ps2/NOTES.md)"
+      }
+    },
+    "proof_order": [
+      "pcee2",
+      "lrps2",
+      "play",
+      "pcsx2"
+    ]
+  },
+  "note": null
+}

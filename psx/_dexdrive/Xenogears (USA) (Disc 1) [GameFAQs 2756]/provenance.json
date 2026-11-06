@@ -1,0 +1,109 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_dexdrive",
+  "url": "https://gamefaqs.gamespot.com/ps/199365-xenogears/saves/2756",
+  "source_page": "https://gamefaqs.gamespot.com/ps/199365-xenogears/saves",
+  "source": "GameFAQs (section 'PlayStation DexDrive Save (North America)')",
+  "author": "_carlos2003",
+  "licence": null,
+  "posted": "2003-06-09",
+  "fetched": "2026-11-05",
+  "what_it_is": "Start of game, level 2, all items and Rps badge won.",
+  "gamefaqs": {
+    "id": 2756,
+    "product": "Xenogears",
+    "section": "PlayStation DexDrive Save (North America)",
+    "region": "North America",
+    "served_as": "xenogears.2756.gme",
+    "listed_size": "131KB"
+  },
+  "format": "DexDrive .gme: '123-456-STD' 3904-byte header (per-block comments) + 131072-byte raw card; the card holds 8 save(s), 6 for this game (BASLUS-006640, BASLUS-006641, BASLUS-006643, BASLUS-006644, ...)",
+  "release": "Xenogears (USA) (Disc 1)",
+  "game_saves": [
+    {
+      "name": "BASLUS-006640",
+      "blocks": 1,
+      "title": "XENOGEARS/No.01 Mountain Path"
+    },
+    {
+      "name": "BASLUS-006641",
+      "blocks": 1,
+      "title": "XENOGEARS/No.02 Krelian’s lab"
+    },
+    {
+      "name": "BASLUS-006643",
+      "blocks": 1,
+      "title": "XENOGEARS/No.04 Tears for Fears"
+    },
+    {
+      "name": "BASLUS-006644",
+      "blocks": 1,
+      "title": "XENOGEARS/No.05 Paradise"
+    },
+    {
+      "name": "BASLUS-006645",
+      "blocks": 1,
+      "title": "XENOGEARS/No.06 Dreams..."
+    },
+    {
+      "name": "BASLUS-006642",
+      "blocks": 1,
+      "title": "XENOGEARS/No.03 Desert Attack!"
+    }
+  ],
+  "files": {
+    "xenogears.2756.gme": {
+      "size": 134976,
+      "sha1": "aa6b36b9e2d05cd16378e9b1f48ebaba1b6cb812"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Xenogears (USA) (Disc 1).cue",
+      "sha1": "90ba9637f68f839fde92ca18b0346ae349ba0be2",
+      "size": 90
+    },
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr xenogears.2756.gme: unwraps the card (DexDrive .gme: 3904-byte header + card)",
+    "converted": {
+      "size": 131072,
+      "sha1": "2919d2df4f82c2d59195b4c118bc20a722d4d4e2"
+    },
+    "script": "scripts/psx/Xenogears.load.txt",
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "loads",
+        "detail": "Continue > Load shows save No. 01: Fei Lv 22, 001:22:03, Mountain Path"
+      },
+      "beetle-psx-hw": {
+        "result": "loads",
+        "detail": "Continue > Load shows save No. 01: Fei Lv 22, 001:22:03, Mountain Path (the same screen as on beetle-psx)"
+      },
+      "pcsx-rearmed": {
+        "result": "loads",
+        "detail": "Continue > Load shows save No. 01: Fei Lv 22, 001:22:03, Mountain Path (the same screen as on beetle-psx)"
+      },
+      "swanstation": {
+        "result": "loads",
+        "detail": "Continue > Load shows save No. 01: Fei Lv 22, 001:22:03, Mountain Path (the same screen as on beetle-psx)"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": [
+      "beetle-psx",
+      "beetle-psx-hw",
+      "pcsx-rearmed",
+      "swanstation"
+    ]
+  },
+  "note": null
+}

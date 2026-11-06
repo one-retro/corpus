@@ -1,0 +1,29 @@
+# Majora's Mask, load check: power on, skip to the title, the file
+# select (each file's name), then A on each file in turn: its hearts,
+# masks and rupees, and B back. (On an empty file A opens the name entry,
+# and B leaves it again. The game has two files, so the third step lands
+# on Copy.)
+# N64 buttons on the RetroPad: A = b, B = y, Z = l2, Start = start.
+wait 1000
+press start 6       # skip the intro to the title
+wait 200
+press start 6       # title -> file select
+wait 260
+shot select
+press b 6           # File 1
+wait 120
+shot file1
+press y 10          # back
+wait 120
+stick 0 max 8       # File 2 (the cursor follows the stick)
+wait 30
+press b 6
+wait 120
+shot file2
+press y 10
+wait 120
+stick 0 max 8       # Copy (there is no File 3)
+wait 30
+press b 6
+wait 120
+shot step3

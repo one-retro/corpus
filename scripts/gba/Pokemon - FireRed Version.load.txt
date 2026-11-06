@@ -1,0 +1,22 @@
+# Load check for a save made elsewhere (tools/GAMEFAQS.md): power on with the
+# save in place and go to the main menu, whose CONTINUE box shows the
+# player's name, play time, Pokedex count and badges. Also used for
+# LeafGreen and the other releases of both.
+# shot menu: the main menu; or the game's message about the save first
+#   ("The save file is corrupted." / "The previous save file will be
+#   loaded.", two pages; "The save file has been deleted..."); or, with no
+#   save at all, the new game's CONTROLS screen.
+# shots next, next2: after one and two more A presses: the rest of the
+#   message and then the main menu; or, with no message, the game resumed.
+wait 900
+press start 6       # skip the intro
+wait 600
+press start 6       # title -> main menu
+wait 600
+shot menu
+press a 6
+wait 400
+shot next
+press a 6
+wait 400
+shot next2

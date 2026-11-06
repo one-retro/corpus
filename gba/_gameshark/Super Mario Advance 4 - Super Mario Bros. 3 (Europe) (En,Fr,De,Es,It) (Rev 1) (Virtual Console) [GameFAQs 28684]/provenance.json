@@ -1,0 +1,119 @@
+{
+  "method": "downloaded",
+  "system": "gba",
+  "core": "_gameshark",
+  "url": "https://gamefaqs.gamespot.com/gba/589393-super-mario-advance-4-super-mario-bros-3/saves/28684",
+  "source_page": "https://gamefaqs.gamespot.com/gba/589393-super-mario-advance-4-super-mario-bros-3/saves",
+  "source": "GameFAQs (section 'GameBoy Advance GameShark Save (Europe)')",
+  "author": "LtLynx",
+  "licence": null,
+  "posted": "2023-07-17",
+  "fetched": "2026-11-05",
+  "what_it_is": "100% save file for both SMB3 (including e-Reader levels) and MB.",
+  "gamefaqs": {
+    "id": 28684,
+    "product": "Super Mario Advance 4: Super Mario Bros. 3",
+    "section": "GameBoy Advance GameShark Save (Europe)",
+    "region": "Europe",
+    "served_as": "super-mario-advance-4-super-mario-bros-3.28684.sps",
+    "listed_size": "128KB"
+  },
+  "format": "SharkPort save (\"SharkPortSave\", kind 0x000F0000): title \"Super Mario Advance 4 Super Mario Bros 3 (Wii U VC ver)\", date \"11/07/2023 01:38:10 am\", notes \"Created with savefileconverter.com\"; cart header \"SUPER MARIOD\" / 'AX4P' (complement 0x67); payload 131072 bytes; checksum: neither; written by savefileconverter.com (notes field), whose checksum matches neither variant",
+  "files": {
+    "super-mario-advance-4-super-mario-bros-3.28684.sps": {
+      "size": 131252,
+      "sha1": "ae47fd75734c7376bf6fdbaa00d171d0744fd7b2"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Super Mario Advance 4 - Super Mario Bros. 3 (Europe) (En,Fr,De,Es,It) (Rev 1) (Virtual Console).gba",
+      "sha1": "00667ce3da4bfee3182c4445ac2f5483870be97c",
+      "size": 8388608
+    },
+    "converted_with": "tools/gamefaqs/gba-sharkport.py super-mario-advance-4-super-mario-bros-3.28684.sps --rom ROM --core CORE --outdir DIR: reads the SharkPort container as mGBA does and imports the payload as mGBA's _importSavedata does (cut to the chip, EEPROM 8-byte blocks reversed, the rest of the chip erased), then lays the chip out as the core keeps it",
+    "converted": {
+      "size": 131072,
+      "sha1": "52d5c64493152fd63f3d7d6390973ef239d9c3b5"
+    },
+    "script": "scripts/gba/Super Mario Advance 4 - Super Mario Bros. 3.load.txt",
+    "cores": {
+      "mgba": {
+        "result": "loads",
+        "detail": "Elige una partida: Partida 1 MUNDO 1, Niveles (38)",
+        "core_version": "mGBA 0.11-212-7a12d6d",
+        "file": {
+          "name": "Super Mario Advance 4 - Super Mario Bros. 3 (Europe) (En,Fr,De,Es,It) (Rev 1) (Virtual Console).srm",
+          "size": 131072,
+          "sha1": "52d5c64493152fd63f3d7d6390973ef239d9c3b5"
+        },
+        "frame": "files"
+      },
+      "vba-m": {
+        "result": "loads",
+        "detail": "Elige una partida: Partida 1 MUNDO 1, Niveles (38)",
+        "core_version": "VBA-M 115defb",
+        "file": {
+          "name": "Super Mario Advance 4 - Super Mario Bros. 3 (Europe) (En,Fr,De,Es,It) (Rev 1) (Virtual Console).srm",
+          "size": 131072,
+          "sha1": "52d5c64493152fd63f3d7d6390973ef239d9c3b5"
+        },
+        "frame": "files"
+      },
+      "gpsp": {
+        "result": "loads",
+        "detail": "Elige una partida: Partida 1 MUNDO 1, Niveles (38)",
+        "core_version": "gpSP v1.1.0-5819380",
+        "file": {
+          "name": "Super Mario Advance 4 - Super Mario Bros. 3 (Europe) (En,Fr,De,Es,It) (Rev 1) (Virtual Console).srm",
+          "size": 131072,
+          "sha1": "52d5c64493152fd63f3d7d6390973ef239d9c3b5"
+        },
+        "frame": "files"
+      },
+      "vba-next": {
+        "result": "loads",
+        "detail": "Elige una partida: Partida 1 MUNDO 1, Niveles (38)",
+        "core_version": "VBA Next v1.0.2",
+        "file": {
+          "name": "Super Mario Advance 4 - Super Mario Bros. 3 (Europe) (En,Fr,De,Es,It) (Rev 1) (Virtual Console).srm",
+          "size": 139264,
+          "sha1": "382f8ae4dc858eb098b9d129a05d2313a8f339fd"
+        },
+        "frame": "files"
+      },
+      "beetle-gba": {
+        "result": "loads",
+        "detail": "Elige una partida: Partida 1 MUNDO 1, Niveles (38)",
+        "core_version": "Beetle GBA v0.9.36 b158166",
+        "file": {
+          "name": "Super Mario Advance 4 - Super Mario Bros. 3 (Europe) (En,Fr,De,Es,It) (Rev 1) (Virtual Console).733e976fd06d65e9f5635b836a14a81b.sav",
+          "size": 131072,
+          "sha1": "52d5c64493152fd63f3d7d6390973ef239d9c3b5"
+        },
+        "frame": "files"
+      },
+      "skyemu": {
+        "result": "loads",
+        "detail": "Elige una partida: Partida 1 MUNDO 1, Niveles (38)",
+        "core_version": "SkyEmu adacd0788964ed89f5c43dcbc1f3cc26deec996c",
+        "file": {
+          "name": "Super Mario Advance 4 - Super Mario Bros. 3 (Europe) (En,Fr,De,Es,It) (Rev 1) (Virtual Console).srm",
+          "size": 131072,
+          "sha1": "52d5c64493152fd63f3d7d6390973ef239d9c3b5"
+        },
+        "frame": "files"
+      }
+    },
+    "proof_order": [
+      "mgba",
+      "vba-m",
+      "gpsp",
+      "vba-next",
+      "beetle-gba",
+      "skyemu"
+    ]
+  },
+  "note": "The title field (or the description) names the Virtual Console release, so it was booted in that ROM."
+}

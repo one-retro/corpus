@@ -1,0 +1,119 @@
+{
+  "method": "downloaded",
+  "system": "gba",
+  "core": "_gameshark",
+  "url": "https://gamefaqs.gamespot.com/gba/524513-wario-land-4/saves/8543",
+  "source_page": "https://gamefaqs.gamespot.com/gba/524513-wario-land-4/saves",
+  "source": "GameFAQs (section 'GameBoy Advance GameShark Save (North America)')",
+  "author": "ConkerMurderer",
+  "licence": null,
+  "posted": "2005-07-20",
+  "fetched": "2026-11-05",
+  "what_it_is": "Every difficulty mode,999 coins,at golden diva in both saves",
+  "gamefaqs": {
+    "id": 8543,
+    "product": "Wario Land 4",
+    "section": "GameBoy Advance GameShark Save (North America)",
+    "region": "North America",
+    "served_as": "wario-land-4.8543.sps",
+    "listed_size": "64KB"
+  },
+  "format": "SharkPort save (\"SharkPortSave\", kind 0x000F0000): title \"WARIOLANDE\", date \"20/07/2005 11:33:35 a.m.\", notes \"\"; cart header \"WARIOLANDE\" / 'AWAE' (complement 0xec); payload 65536 bytes; checksum: signed",
+  "files": {
+    "wario-land-4.8543.sps": {
+      "size": 65639,
+      "sha1": "e4c15124c14da9116b26eeaeae2b58e789c052b1"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Wario Land 4 (USA, Europe).gba",
+      "sha1": "b9fe05a8080e124b67bce6a623234ee3b518a2c1",
+      "size": 8388608
+    },
+    "converted_with": "tools/gamefaqs/gba-sharkport.py wario-land-4.8543.sps --rom ROM --core CORE --outdir DIR: reads the SharkPort container as mGBA does and imports the payload as mGBA's _importSavedata does (cut to the chip, EEPROM 8-byte blocks reversed, the rest of the chip erased), then lays the chip out as the core keeps it",
+    "converted": {
+      "size": 32768,
+      "sha1": "fbe003052795fb4d21a855a62a707e14dac99a36"
+    },
+    "script": "scripts/gba/Wario Land 4.load.txt",
+    "cores": {
+      "mgba": {
+        "result": "loads",
+        "detail": "save select: A Sound Room, Hard; B Golden Diva, S-Hard",
+        "core_version": "mGBA 0.11-212-7a12d6d",
+        "file": {
+          "name": "Wario Land 4 (USA, Europe).srm",
+          "size": 32768,
+          "sha1": "fbe003052795fb4d21a855a62a707e14dac99a36"
+        },
+        "frame": "files"
+      },
+      "vba-m": {
+        "result": "loads",
+        "detail": "save select: A Sound Room, Hard; B Golden Diva, S-Hard",
+        "core_version": "VBA-M 115defb",
+        "file": {
+          "name": "Wario Land 4 (USA, Europe).srm",
+          "size": 32768,
+          "sha1": "fbe003052795fb4d21a855a62a707e14dac99a36"
+        },
+        "frame": "files"
+      },
+      "gpsp": {
+        "result": "loads",
+        "detail": "save select: A Sound Room, Hard; B Golden Diva, S-Hard",
+        "core_version": "gpSP v1.1.0-5819380",
+        "file": {
+          "name": "Wario Land 4 (USA, Europe).srm",
+          "size": 131072,
+          "sha1": "54d847ee2efd91c53686d2bd7df42830c71a16f8"
+        },
+        "frame": "files"
+      },
+      "vba-next": {
+        "result": "loads",
+        "detail": "save select: A Sound Room, Hard; B Golden Diva, S-Hard",
+        "core_version": "VBA Next v1.0.2",
+        "file": {
+          "name": "Wario Land 4 (USA, Europe).srm",
+          "size": 139264,
+          "sha1": "8ac375a5cd435bfb97af063afb61ca36dcac35fb"
+        },
+        "frame": "files"
+      },
+      "beetle-gba": {
+        "result": "loads",
+        "detail": "save select: A Sound Room, Hard; B Golden Diva, S-Hard",
+        "core_version": "Beetle GBA v0.9.36 b158166",
+        "file": {
+          "name": "Wario Land 4 (USA, Europe).5fe47355a33e3fabec2a1607af88a404.sav",
+          "size": 65536,
+          "sha1": "75410984d5cbe3170c0c92ec87a483cb0b504873"
+        },
+        "frame": "files"
+      },
+      "skyemu": {
+        "result": "loads",
+        "detail": "save select: A Sound Room, Hard; B Golden Diva, S-Hard",
+        "core_version": "SkyEmu adacd0788964ed89f5c43dcbc1f3cc26deec996c",
+        "file": {
+          "name": "Wario Land 4 (USA, Europe).srm",
+          "size": 131072,
+          "sha1": "54d847ee2efd91c53686d2bd7df42830c71a16f8"
+        },
+        "frame": "files"
+      }
+    },
+    "proof_order": [
+      "mgba",
+      "vba-m",
+      "gpsp",
+      "vba-next",
+      "beetle-gba",
+      "skyemu"
+    ]
+  },
+  "note": null
+}

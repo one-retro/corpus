@@ -1,0 +1,119 @@
+{
+  "method": "downloaded",
+  "system": "gba",
+  "core": "_gameshark",
+  "url": "https://gamefaqs.gamespot.com/gba/589456-castlevania-aria-of-sorrow/saves/2725",
+  "source_page": "https://gamefaqs.gamespot.com/gba/589456-castlevania-aria-of-sorrow/saves",
+  "source": "GameFAQs (section 'GameBoy Advance GameShark Save (North America)')",
+  "author": "howellgames",
+  "licence": null,
+  "posted": "2003-06-06",
+  "fetched": "2026-11-05",
+  "what_it_is": "In the save room after the Balore Fight at level 38",
+  "gamefaqs": {
+    "id": 2725,
+    "product": "Castlevania: Aria of Sorrow",
+    "section": "GameBoy Advance GameShark Save (North America)",
+    "region": "North America",
+    "served_as": "castlevania-aria-of-sorrow.2725.sps",
+    "listed_size": "64KB"
+  },
+  "format": "SharkPort save (\"SharkPortSave\", kind 0x000F0000): title \"CASTLEVANIA2\", date \"Save6/4/2003 12:05:27 PM 41\", notes \"\"; cart header \"CASTLEVANIA2\" / 'A2CE' (complement 0x84); payload 65536 bytes; checksum: unsigned",
+  "files": {
+    "castlevania-aria-of-sorrow.2725.sps": {
+      "size": 65644,
+      "sha1": "8dcb50c54f6508b6e57bb1a255d26f83152a0ef8"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Castlevania - Aria of Sorrow (USA).gba",
+      "sha1": "abd71fe01ebb201bcc133074db1dd8c5253776c7",
+      "size": 8388608
+    },
+    "converted_with": "tools/gamefaqs/gba-sharkport.py castlevania-aria-of-sorrow.2725.sps --rom ROM --core CORE --outdir DIR: reads the SharkPort container as mGBA does and imports the payload as mGBA's _importSavedata does (cut to the chip, EEPROM 8-byte blocks reversed, the rest of the chip erased), then lays the chip out as the core keeps it",
+    "converted": {
+      "size": 32768,
+      "sha1": "14996e78d419ef6beee46e9272f703ecc5479597"
+    },
+    "script": "scripts/gba/Castlevania - Aria of Sorrow.load.txt",
+    "cores": {
+      "mgba": {
+        "result": "loads",
+        "detail": "Select Data: JASON, Clock Tower, Lv.39, 63.2%",
+        "core_version": "mGBA 0.11-212-7a12d6d",
+        "file": {
+          "name": "Castlevania - Aria of Sorrow (USA).srm",
+          "size": 32768,
+          "sha1": "14996e78d419ef6beee46e9272f703ecc5479597"
+        },
+        "frame": "files"
+      },
+      "vba-m": {
+        "result": "loads",
+        "detail": "Select Data: JASON, Clock Tower, Lv.39, 63.2%",
+        "core_version": "VBA-M 115defb",
+        "file": {
+          "name": "Castlevania - Aria of Sorrow (USA).srm",
+          "size": 32768,
+          "sha1": "14996e78d419ef6beee46e9272f703ecc5479597"
+        },
+        "frame": "files"
+      },
+      "gpsp": {
+        "result": "loads",
+        "detail": "Select Data: JASON, Clock Tower, Lv.39, 63.2%",
+        "core_version": "gpSP v1.1.0-5819380",
+        "file": {
+          "name": "Castlevania - Aria of Sorrow (USA).srm",
+          "size": 131072,
+          "sha1": "60bd2b819e4a69071a646e1d921f04f69f1266e1"
+        },
+        "frame": "files"
+      },
+      "vba-next": {
+        "result": "loads",
+        "detail": "Select Data: JASON, Clock Tower, Lv.39, 63.2%",
+        "core_version": "VBA Next v1.0.2",
+        "file": {
+          "name": "Castlevania - Aria of Sorrow (USA).srm",
+          "size": 139264,
+          "sha1": "1278750378be7da21158584b4bc5ce722d175828"
+        },
+        "frame": "files"
+      },
+      "beetle-gba": {
+        "result": "loads",
+        "detail": "Select Data: JASON, Clock Tower, Lv.39, 63.2%",
+        "core_version": "Beetle GBA v0.9.36 b158166",
+        "file": {
+          "name": "Castlevania - Aria of Sorrow (USA).e7470df4d241f73060d14437011b90ce.sav",
+          "size": 65536,
+          "sha1": "df483c3f6c7a54aa7c5dcedfb44e8199d82f3d99"
+        },
+        "frame": "files"
+      },
+      "skyemu": {
+        "result": "loads",
+        "detail": "Select Data: JASON, Clock Tower, Lv.39, 63.2%",
+        "core_version": "SkyEmu adacd0788964ed89f5c43dcbc1f3cc26deec996c",
+        "file": {
+          "name": "Castlevania - Aria of Sorrow (USA).srm",
+          "size": 131072,
+          "sha1": "60bd2b819e4a69071a646e1d921f04f69f1266e1"
+        },
+        "frame": "files"
+      }
+    },
+    "proof_order": [
+      "mgba",
+      "vba-m",
+      "gpsp",
+      "vba-next",
+      "beetle-gba",
+      "skyemu"
+    ]
+  },
+  "note": null
+}

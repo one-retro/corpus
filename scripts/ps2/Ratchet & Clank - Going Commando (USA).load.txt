@@ -1,0 +1,11 @@
+# Ratchet & Clank - Going Commando (USA), SCUS-97268, DVD: show a loaded save.
+# Press START > New Game / Load / Options > Load: the Load Game screen lists the save's files,
+# each with play time, challenge-mode level, bolts and date, and the selected file's planet.
+wait 2600
+press start 10       # Press START -> New Game / Load / Options
+wait 600
+press down 10        # Load
+wait 60
+press b 10
+wait 900
+shot files           # Load Game: time, bolts, date, planet per file

@@ -1,0 +1,17 @@
+# Load check for a save made elsewhere (tools/GAMEFAQS.md), European releases:
+# the language screen comes first at every power-on, with the save's
+# language already selected; then the title menu as in Fire Emblem.load.txt
+# (the chapter options when there is a file; New Game and Extras when the
+# game finds no file).
+wait 900
+press start 6
+wait 300
+press start 6
+wait 300
+press a 6           # language
+wait 300
+press start 6       # intro -> title
+wait 300
+press start 6       # title -> menu
+wait 300
+shot menu

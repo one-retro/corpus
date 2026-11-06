@@ -1,0 +1,76 @@
+{
+  "method": "downloaded",
+  "system": "psp",
+  "core": "_psp",
+  "url": "https://gamefaqs.gamespot.com/psp/924594-lumines/saves/7123",
+  "source_page": "https://gamefaqs.gamespot.com/psp/924594-lumines/saves",
+  "source": "GameFAQs (section 'PSP Game Save Directory (ZIP) (North America)')",
+  "author": "Th3_r0cK",
+  "licence": null,
+  "posted": "2005-04-07",
+  "fetched": "2026-11-05",
+  "what_it_is": "All Skins Unlocked, All Characters Unlocked, Time Attack Completed, VS CPU Completed, Puzzle Mode Completed",
+  "gamefaqs": {
+    "id": 7123,
+    "product": "Lumines",
+    "section": "PSP Game Save Directory (ZIP) (North America)",
+    "region": "North America",
+    "served_as": "lumines.7123.zip",
+    "listed_size": "39KB"
+  },
+  "format": "PSP save folder, 4 files in the folder ULUS10002LUMINES/: PARAM.SFO (SAVEDATA_DIRECTORY ULUS10002LUMINES, TITLE LUMINES, SAVEDATA_FILE_LIST names no file (4 bytes 98986a08, then zeros)), DATA.BIN 18464 bytes (encrypted by the system's savedata call), ICON0.PNG, PIC1.PNG",
+  "files": {
+    "ULUS10002LUMINES/DATA.BIN": {
+      "size": 18464,
+      "sha1": "2a52bd8f1c977047db25fb59815b96f3be65b9e3"
+    },
+    "ULUS10002LUMINES/ICON0.PNG": {
+      "size": 16246,
+      "sha1": "9bc662b73118d36311ade4111445568142b5df41"
+    },
+    "ULUS10002LUMINES/PARAM.SFO": {
+      "size": 4912,
+      "sha1": "ff2ef38cd344a1712353c501f43469538ab5427b"
+    },
+    "ULUS10002LUMINES/PIC1.PNG": {
+      "size": 5562,
+      "sha1": "694daff6bf27bde3d4eed1db68e580e6938ffb5c"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Lumines (USA).cso",
+      "sha1": "ddb874eda7863a2ca8eaf76c6f4b6ab6f0650043",
+      "size": 159428730
+    },
+    "converted_with": "tools/gamefaqs/psp-savedata.py memstick <zip> <memory stick>: writes the zip's files, unchanged, to PSP/SAVEDATA/<SAVEDATA_DIRECTORY>/ (the name read from PARAM.SFO)",
+    "converted": {
+      "path": "PSP/SAVEDATA/ULUS10002LUMINES/",
+      "files": 4,
+      "bytes_changed": 0
+    },
+    "script": "scripts/psp/Lumines.load.txt",
+    "cores": {
+      "ppsspp": {
+        "core_version": "fd81cf7e (libretro buildbot, ppsspp_libretro.dylib)",
+        "frontend": "tools/retro-run --pace 60 (PPSSPP emulates in real time on its own thread), OpenGL 4.1 core context, options scripts/psp/ppsspp-auto.opt; memory stick = the save directory (PSP/SAVEDATA/), PPSSPP assets in <system>/PPSSPP; image read from a local copy",
+        "result": "loads",
+        "detail": "main menu after title: the log-in character 'USER' with its avatar in the top right corner; baseline (no save): the second START opens 'LOG-IN: Create log-in character' (and the game writes a fresh ULUS10002LUMINES)",
+        "script": "scripts/psp/Lumines.load.txt"
+      },
+      "ppsspp@ppsspp": {
+        "core_version": "v1.20.4 (PPSSPPSDL.app)",
+        "frontend": "PPSSPPSDL.app with HOME in the work folder (memory stick .config/ppsspp), software renderer (Vulkan output), driven over the debugger WebSocket; the frame is the PSP framebuffer read from VRAM (memory.read 0x04000000, 480x272, stride 512, 8888) because gpu.buffer.screenshot fails here",
+        "result": "loads",
+        "detail": "main menu after title: the log-in character 'USER' with its avatar in the top right corner; baseline (no save): the second START opens 'LOG-IN: Create log-in character' (and the game writes a fresh ULUS10002LUMINES); PSP RAM at the menu holds 'USER' as well",
+        "script": "scripts/psp/Lumines.load.ws.txt"
+      }
+    },
+    "proof_order": [
+      "ppsspp",
+      "ppsspp@ppsspp"
+    ]
+  },
+  "note": null
+}

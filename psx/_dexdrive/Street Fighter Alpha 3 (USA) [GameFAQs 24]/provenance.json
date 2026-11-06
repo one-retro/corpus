@@ -1,0 +1,86 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_dexdrive",
+  "url": "https://gamefaqs.gamespot.com/arcade/564869-street-fighter-alpha-3/saves/24",
+  "source_page": "https://gamefaqs.gamespot.com/arcade/564869-street-fighter-alpha-3/saves",
+  "source": "GameFAQs (section 'PlayStation DexDrive Save (North America)')",
+  "author": "WLau",
+  "licence": null,
+  "posted": "2000-06-02",
+  "fetched": "2026-11-05",
+  "what_it_is": "All modes unlocked, Guile, Evil Ryu, Shin Akuma. World Tour created Ryu, Ken, 2 Evil Ryus, Akuma, Shin Akuma, Juni all at lvl 32 except Ryu (at lvl 31).",
+  "gamefaqs": {
+    "id": 24,
+    "product": "Street Fighter Alpha 3",
+    "section": "PlayStation DexDrive Save (North America)",
+    "region": "North America",
+    "served_as": "street-fighter-alpha-3.24.gme",
+    "listed_size": "131KB"
+  },
+  "format": "DexDrive .gme: '123-456-STD' 3904-byte header (per-block comments) + 131072-byte raw card; the card holds 1 save(s), 1 for this game (BASLUSP00821-ZERO3D)",
+  "release": "Street Fighter Alpha 3 (USA)",
+  "game_saves": [
+    {
+      "name": "BASLUSP00821-ZERO3D",
+      "blocks": 1,
+      "title": "ALPHA3 SAVE DATA"
+    }
+  ],
+  "files": {
+    "street-fighter-alpha-3.24.gme": {
+      "size": 134976,
+      "sha1": "9f489c99683bd2695998061d028f3fdca72bfddf"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Street Fighter Alpha 3 (USA).cue",
+      "sha1": "5e640de7f4840a0dddbd6a575669ba649b8eb0c5",
+      "size": 231
+    },
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr street-fighter-alpha-3.24.gme: unwraps the card (DexDrive .gme: 3904-byte header + card)",
+    "converted": {
+      "size": 131072,
+      "sha1": "01e564666d619755d1d3032761cea25d35eb9155"
+    },
+    "script": "scripts/psx/Street Fighter Alpha 3.load.txt",
+    "script_variants": {
+      "pcsx-rearmed": "scripts/psx/Street Fighter Alpha 3.pcsx-rearmed.load.txt"
+    },
+    "cores": {
+      "beetle-psx": {
+        "result": "loads",
+        "detail": "the game reports \"AUTO LOAD COMPLETE!\" at boot (no card: \"AUTO LOAD CANCELED.\")"
+      },
+      "beetle-psx-hw": {
+        "result": "loads",
+        "detail": "the game reports \"AUTO LOAD COMPLETE!\" at boot (no card: \"AUTO LOAD CANCELED.\") (the same screen as on beetle-psx)"
+      },
+      "pcsx-rearmed": {
+        "result": "loads",
+        "detail": "the game reports \"AUTO LOAD COMPLETE!\" at boot (no card: \"AUTO LOAD CANCELED.\") (the same screen as on beetle-psx)"
+      },
+      "swanstation": {
+        "result": "loads",
+        "detail": "the game reports \"AUTO LOAD COMPLETE!\" at boot (no card: \"AUTO LOAD CANCELED.\") (the same screen as on beetle-psx)"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": [
+      "beetle-psx",
+      "beetle-psx-hw",
+      "pcsx-rearmed",
+      "swanstation"
+    ]
+  },
+  "note": null
+}

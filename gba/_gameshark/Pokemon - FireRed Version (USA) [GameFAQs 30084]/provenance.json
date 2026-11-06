@@ -1,0 +1,119 @@
+{
+  "method": "downloaded",
+  "system": "gba",
+  "core": "_gameshark",
+  "url": "https://gamefaqs.gamespot.com/gba/918915-pokemon-firered-version/saves/30084",
+  "source_page": "https://gamefaqs.gamespot.com/gba/918915-pokemon-firered-version/saves",
+  "source": "GameFAQs (section 'GameBoy Advance GameShark Save (North America)')",
+  "author": "manocirino",
+  "licence": null,
+  "posted": "2024-07-12",
+  "fetched": "2026-11-05",
+  "what_it_is": "LVL 70 team : Vaporeon Zapdos Snorlax Arcanine Venosaur andMR mineElite 4 finished",
+  "gamefaqs": {
+    "id": 30084,
+    "product": "Pokemon FireRed / LeafGreen Version",
+    "section": "GameBoy Advance GameShark Save (North America)",
+    "region": "North America",
+    "served_as": "pokemon-firered-leafgreen-version.30084.sps",
+    "listed_size": "128KB"
+  },
+  "format": "SharkPort save (\"SharkPortSave\", kind 0x000F0000): title \"POKEMON FIRE\", date \"06/07/2024 14:24:00\", notes \"Exported from Visual Boy Advance-M\"; cart header \"POKEMON FIRE\" / 'BPRE' (complement 0x68); payload 131072 bytes; checksum: signed; exported by VisualBoyAdvance-M (notes field \"Exported from Visual Boy Advance-M\")",
+  "files": {
+    "pokemon-firered-leafgreen-version.30084.sps": {
+      "size": 131206,
+      "sha1": "13309b578e54dc6d3fc44bd85becf1823ade7ab9"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Pokemon - FireRed Version (USA).gba",
+      "sha1": "41cb23d8dccc8ebd7c649cd8fbb58eeace6e2fdc",
+      "size": 16777216
+    },
+    "converted_with": "tools/gamefaqs/gba-sharkport.py pokemon-firered-leafgreen-version.30084.sps --rom ROM --core CORE --outdir DIR: reads the SharkPort container as mGBA does and imports the payload as mGBA's _importSavedata does (cut to the chip, EEPROM 8-byte blocks reversed, the rest of the chip erased), then lays the chip out as the core keeps it",
+    "converted": {
+      "size": 131072,
+      "sha1": "5dcf83a89ad821a8b7dd36a0ba88eebc68cb5a07"
+    },
+    "script": "scripts/gba/Pokemon - FireRed Version.load.txt",
+    "cores": {
+      "mgba": {
+        "result": "loads",
+        "detail": "CONTINUE: MANO, 28:13",
+        "core_version": "mGBA 0.11-212-7a12d6d",
+        "file": {
+          "name": "Pokemon - FireRed Version (USA).srm",
+          "size": 131072,
+          "sha1": "5dcf83a89ad821a8b7dd36a0ba88eebc68cb5a07"
+        },
+        "frame": "menu"
+      },
+      "vba-m": {
+        "result": "loads",
+        "detail": "CONTINUE: MANO, 28:13",
+        "core_version": "VBA-M 115defb",
+        "file": {
+          "name": "Pokemon - FireRed Version (USA).srm",
+          "size": 131072,
+          "sha1": "5dcf83a89ad821a8b7dd36a0ba88eebc68cb5a07"
+        },
+        "frame": "menu"
+      },
+      "gpsp": {
+        "result": "loads",
+        "detail": "CONTINUE: MANO, 28:13",
+        "core_version": "gpSP v1.1.0-5819380",
+        "file": {
+          "name": "Pokemon - FireRed Version (USA).srm",
+          "size": 131072,
+          "sha1": "5dcf83a89ad821a8b7dd36a0ba88eebc68cb5a07"
+        },
+        "frame": "menu"
+      },
+      "vba-next": {
+        "result": "loads",
+        "detail": "CONTINUE: MANO, 28:13",
+        "core_version": "VBA Next v1.0.2",
+        "file": {
+          "name": "Pokemon - FireRed Version (USA).srm",
+          "size": 139264,
+          "sha1": "56345d7094413a4c72fa39757d9a56183f0b08c9"
+        },
+        "frame": "menu"
+      },
+      "beetle-gba": {
+        "result": "loads",
+        "detail": "CONTINUE: MANO, 28:13",
+        "core_version": "Beetle GBA v0.9.36 b158166",
+        "file": {
+          "name": "Pokemon - FireRed Version (USA).e26ee0d44e809351c8ce2d73c7400cdd.sav",
+          "size": 131072,
+          "sha1": "5dcf83a89ad821a8b7dd36a0ba88eebc68cb5a07"
+        },
+        "frame": "menu"
+      },
+      "skyemu": {
+        "result": "loads",
+        "detail": "CONTINUE: MANO, 28:13",
+        "core_version": "SkyEmu adacd0788964ed89f5c43dcbc1f3cc26deec996c",
+        "file": {
+          "name": "Pokemon - FireRed Version (USA).srm",
+          "size": 131072,
+          "sha1": "5dcf83a89ad821a8b7dd36a0ba88eebc68cb5a07"
+        },
+        "frame": "menu"
+      }
+    },
+    "proof_order": [
+      "mgba",
+      "vba-m",
+      "gpsp",
+      "vba-next",
+      "beetle-gba",
+      "skyemu"
+    ]
+  },
+  "note": null
+}

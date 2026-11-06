@@ -1,0 +1,119 @@
+{
+  "method": "downloaded",
+  "system": "gba",
+  "core": "_gameshark",
+  "url": "https://gamefaqs.gamespot.com/snes/588436-the-legend-of-zelda-a-link-to-the-past/saves/28332",
+  "source_page": "https://gamefaqs.gamespot.com/snes/588436-the-legend-of-zelda-a-link-to-the-past/saves",
+  "source": "GameFAQs (section 'GameBoy Advance GameShark Save (North America)')",
+  "author": "diegoadx",
+  "licence": null,
+  "posted": "2022-12-16",
+  "fetched": "2026-11-05",
+  "what_it_is": "A Link to the Past beaten 100% with zero deaths, four swords beaten on all three save files. Hurricane spin and four swords palace available on save 1. Riddle quest available on save 2 and 3.",
+  "gamefaqs": {
+    "id": 28332,
+    "product": "The Legend of Zelda: A Link to the Past",
+    "section": "GameBoy Advance GameShark Save (North America)",
+    "region": "North America",
+    "served_as": "the-legend-of-zelda-a-link-to-the-past.28332.sps",
+    "listed_size": "8KB"
+  },
+  "format": "SharkPort save (\"SharkPortSave\", kind 0x000F0000): title \"GBAZELDA\u0000\u0000\u0000\u0000\", date \"12/13/2022 12:23:39 PM\", notes \"\"; cart header \"GBAZELDA\" / 'AZLE' (complement 0x8a); payload 8192 bytes; checksum: signed",
+  "files": {
+    "the-legend-of-zelda-a-link-to-the-past.28332.sps": {
+      "size": 8295,
+      "sha1": "b0c518c9860035057a3f9156ae8e0d6d72c1b398"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Legend of Zelda, The - A Link to the Past & Four Swords (USA).gba",
+      "sha1": "a272055abbbf6c26b0cd54c87395d01699589161",
+      "size": 8388608
+    },
+    "converted_with": "tools/gamefaqs/gba-sharkport.py the-legend-of-zelda-a-link-to-the-past.28332.sps --rom ROM --core CORE --outdir DIR: reads the SharkPort container as mGBA does and imports the payload as mGBA's _importSavedata does (cut to the chip, EEPROM 8-byte blocks reversed, the rest of the chip erased), then lays the chip out as the core keeps it",
+    "converted": {
+      "size": 8192,
+      "sha1": "5b070c59208007f032291f8e572607127c219a4d"
+    },
+    "script": "scripts/gba/Legend of Zelda, The - A Link to the Past & Four Swords.load.txt",
+    "cores": {
+      "mgba": {
+        "result": "loads",
+        "detail": "CHOOSE A FILE: Link, full hearts, 999 rupees",
+        "core_version": "mGBA 0.11-212-7a12d6d",
+        "file": {
+          "name": "Legend of Zelda, The - A Link to the Past & Four Swords (USA).srm",
+          "size": 8192,
+          "sha1": "5b070c59208007f032291f8e572607127c219a4d"
+        },
+        "frame": "files"
+      },
+      "vba-m": {
+        "result": "loads",
+        "detail": "CHOOSE A FILE: Link, full hearts, 999 rupees (same file list; the background animates)",
+        "core_version": "VBA-M 115defb",
+        "file": {
+          "name": "Legend of Zelda, The - A Link to the Past & Four Swords (USA).srm",
+          "size": 8192,
+          "sha1": "5b070c59208007f032291f8e572607127c219a4d"
+        },
+        "frame": "files"
+      },
+      "gpsp": {
+        "result": "loads",
+        "detail": "CHOOSE A FILE: Link, full hearts, 999 rupees (same file list; the background animates)",
+        "core_version": "gpSP v1.1.0-5819380",
+        "file": {
+          "name": "Legend of Zelda, The - A Link to the Past & Four Swords (USA).srm",
+          "size": 131072,
+          "sha1": "ecdc2e7ef75b86d0badbdd40b04c73ea09ce8e3a"
+        },
+        "frame": "files"
+      },
+      "vba-next": {
+        "result": "loads",
+        "detail": "CHOOSE A FILE: Link, full hearts, 999 rupees",
+        "core_version": "VBA Next v1.0.2",
+        "file": {
+          "name": "Legend of Zelda, The - A Link to the Past & Four Swords (USA).srm",
+          "size": 139264,
+          "sha1": "eef8350b0970101d26ee6e66b0713c436501aa5e"
+        },
+        "frame": "files"
+      },
+      "beetle-gba": {
+        "result": "loads",
+        "detail": "CHOOSE A FILE: Link, full hearts, 999 rupees (same file list; the background animates)",
+        "core_version": "Beetle GBA v0.9.36 b158166",
+        "file": {
+          "name": "Legend of Zelda, The - A Link to the Past & Four Swords (USA).3287ca66e5cc285a9fe3a922051e84c6.eep",
+          "size": 8192,
+          "sha1": "5b070c59208007f032291f8e572607127c219a4d"
+        },
+        "frame": "files"
+      },
+      "skyemu": {
+        "result": "loads",
+        "detail": "CHOOSE A FILE: Link, full hearts, 999 rupees (same file list; the background animates)",
+        "core_version": "SkyEmu adacd0788964ed89f5c43dcbc1f3cc26deec996c",
+        "file": {
+          "name": "Legend of Zelda, The - A Link to the Past & Four Swords (USA).srm",
+          "size": 131072,
+          "sha1": "740c0159226c676de77d77c190c6c59b4d2001b3"
+        },
+        "frame": "files"
+      }
+    },
+    "proof_order": [
+      "mgba",
+      "vba-m",
+      "gpsp",
+      "vba-next",
+      "beetle-gba",
+      "skyemu"
+    ]
+  },
+  "note": null
+}

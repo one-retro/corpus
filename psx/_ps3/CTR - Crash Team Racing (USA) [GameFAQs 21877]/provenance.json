@@ -1,0 +1,88 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_ps3",
+  "url": "https://gamefaqs.gamespot.com/ps/196989-ctr-crash-team-racing/saves/21877",
+  "source_page": "https://gamefaqs.gamespot.com/ps/196989-ctr-crash-team-racing/saves",
+  "source": "GameFAQs (section 'PlayStation PS3 Virtual Memory Card Save (ZIP) (North America)')",
+  "author": "wwflinkscentral",
+  "licence": null,
+  "posted": "2011-06-22",
+  "fetched": "2026-11-05",
+  "what_it_is": "101% in Adventure Mode with Polar (including all platinum relics). All Cups beaten and all playable characters unlocked. All of N. Trophy and Nitros Oxide's ghosts defeated. Scrapbook unlocked.",
+  "gamefaqs": {
+    "id": 21877,
+    "product": "CTR: Crash Team Racing",
+    "section": "PlayStation PS3 Virtual Memory Card Save (ZIP) (North America)",
+    "region": "North America",
+    "served_as": "ctr-crash-team-racing.21877.zip",
+    "listed_size": "8KB",
+    "served_zip": {
+      "size": 8796,
+      "sha1": "1900adc6510fc9d8c11586243464e6fe3b9a6ab4"
+    }
+  },
+  "format": "zip of 1 PS3 export(s) (.PSV): '\\0VSP' header (signature, save name at 0x64), the save's blocks from 0x84 (8324 bytes); it holds 1 save(s), 1 for this game (BASCUS-94426-SLOTS)",
+  "release": "CTR - Crash Team Racing (USA)",
+  "game_saves": [
+    {
+      "name": "BASCUS-94426-SLOTS",
+      "blocks": 1,
+      "title": "CTR:Saved Games and Scores"
+    }
+  ],
+  "files": {
+    "PS3/EXPORT/PSV/BASCUS-944262D534C4F5453.PSV": {
+      "size": 8324,
+      "sha1": "d7ec65a77bf2c0bc1cd742dbc879cf34fc4478fe"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "CTR - Crash Team Racing (USA).cue",
+      "sha1": "2ff60f30b7f068b9c79adb5311004a940d72de07",
+      "size": 95
+    },
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr PS3/EXPORT/PSV/BASCUS-944262D534C4F5453.PSV: puts the save(s) on a freshly formatted card, as MemcardRex imports a single save",
+    "converted": {
+      "size": 131072,
+      "sha1": "16c851a4ec0a0d876f01f730565bb4266d5b278e"
+    },
+    "script": "scripts/psx/CTR - Crash Team Racing.load.txt",
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "loads",
+        "detail": "Choose a Game to Load shows NICK: 16 trophies, 101%, 4 keys, 18 relics"
+      },
+      "beetle-psx-hw": {
+        "result": "loads",
+        "detail": "Choose a Game to Load shows NICK: 16 trophies, 101%, 4 keys, 18 relics (the same screen as on beetle-psx)"
+      },
+      "pcsx-rearmed": {
+        "result": "loads",
+        "detail": "Choose a Game to Load shows NICK: 16 trophies, 101%, 4 keys, 18 relics (the same screen as on beetle-psx)"
+      },
+      "swanstation": {
+        "result": "loads",
+        "detail": "Choose a Game to Load shows NICK: 16 trophies, 101%, 4 keys, 18 relics (the same screen as on beetle-psx)"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": [
+      "beetle-psx",
+      "beetle-psx-hw",
+      "pcsx-rearmed",
+      "swanstation"
+    ]
+  },
+  "note": null
+}

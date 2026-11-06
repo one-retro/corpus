@@ -1,0 +1,188 @@
+{
+  "method": "downloaded",
+  "system": "ps2",
+  "core": "_x-port",
+  "url": "https://gamefaqs.gamespot.com/ps2/927167-ratchet-deadlocked/saves/14111",
+  "source_page": "https://gamefaqs.gamespot.com/ps2/927167-ratchet-deadlocked/saves",
+  "source": "GameFAQs (section 'PlayStation2 X-Port Save (North America)')",
+  "author": "BC144601",
+  "licence": null,
+  "posted": "2007-01-05",
+  "fetched": "2026-11-05",
+  "what_it_is": "Start a New Game with All Weapons at v128,All Skill Points,All difficulty Levels,Exterminator Cards,Cheats,Skins,Ninja Ratchet,Alpha/Omega Mods Unlocked & 20 Million Bolts",
+  "gamefaqs": {
+    "id": 14111,
+    "product": "Ratchet: Deadlocked",
+    "section": "PlayStation2 X-Port Save (North America)",
+    "region": "North America",
+    "served_as": "ratchet-deadlocked.14111.xps",
+    "listed_size": "395KB"
+  },
+  "format": "SharkPort / X-Port save: 'SharkPortSave' header (title 'Ratchet :          Deadlocked', date '  Deadlocked', comment ''), folder BASCUS-97465RATCHET, 10 files, 401710 bytes of file data, 4-byte checksum at the end",
+  "files": {
+    "ratchet-deadlocked.14111.xps": {
+      "size": 404542,
+      "sha1": "88c6944a235379ee2946d851fb10df3c8032a682"
+    }
+  },
+  "save": {
+    "folder": "BASCUS-97465RATCHET",
+    "title": [
+      "Ratchet :",
+      "Deadlocked"
+    ],
+    "times": "as the file stores them (PS2 card times, JST)",
+    "files": [
+      {
+        "name": "icon.sys",
+        "size": 964,
+        "sha1": "dd6bd65dcb3984c05427576a58a73b26d24efc0b",
+        "created": "2006-09-14 06:32:50",
+        "modified": "2006-09-14 06:32:51"
+      },
+      {
+        "name": "static.ico",
+        "size": 56214,
+        "sha1": "f1a517340a0243debc87ff48a03b16c5cfbbc08d",
+        "created": "2006-09-14 06:32:51",
+        "modified": "2006-09-14 06:32:52"
+      },
+      {
+        "name": "BASCUS-97465RATCHET",
+        "size": 29696,
+        "sha1": "52187339b5911f696addfe9bba2a24c4fa2f0ef1",
+        "created": "2006-09-14 06:33:03",
+        "modified": "2006-09-14 06:33:04"
+      },
+      {
+        "name": "save4.bin",
+        "size": 49080,
+        "sha1": "f4167df2cca5f072f9add7ea7cb0113bf6053fff",
+        "created": "2006-09-14 06:33:01",
+        "modified": "2006-09-14 06:33:03"
+      },
+      {
+        "name": "save3.bin",
+        "size": 49080,
+        "sha1": "f4167df2cca5f072f9add7ea7cb0113bf6053fff",
+        "created": "2006-09-14 06:33:00",
+        "modified": "2006-09-14 06:33:01"
+      },
+      {
+        "name": "save2.bin",
+        "size": 49080,
+        "sha1": "f4167df2cca5f072f9add7ea7cb0113bf6053fff",
+        "created": "2006-09-14 06:32:58",
+        "modified": "2006-09-14 06:33:00"
+      },
+      {
+        "name": "save1.bin",
+        "size": 49080,
+        "sha1": "f4167df2cca5f072f9add7ea7cb0113bf6053fff",
+        "created": "2006-09-14 06:32:57",
+        "modified": "2006-09-14 06:32:58"
+      },
+      {
+        "name": "save0.bin",
+        "size": 49080,
+        "sha1": "a6a9b2abd9a8c4f312cad10bc38ad2f93e7122b1",
+        "created": "2006-09-14 06:32:55",
+        "modified": "2006-09-14 07:35:50"
+      },
+      {
+        "name": "patch.bin",
+        "size": 65536,
+        "sha1": "86a56528b3c577e1f82d91c5c827a7367da80475",
+        "created": "2006-09-14 06:32:54",
+        "modified": "2006-09-14 06:32:55"
+      },
+      {
+        "name": "net.bin",
+        "size": 3900,
+        "sha1": "6649f03dfc886b9a528f8e85329a0be3b90dc4ee",
+        "created": "2006-09-14 06:32:53",
+        "modified": "2006-09-14 06:32:53"
+      }
+    ]
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": null,
+    "converted_with": "tools/gamefaqs/ps2-card.py 'ratchet-deadlocked.14111.xps' -o OUT: reads the save with mymcplus 3.0.5 and writes OUT/Mcd001.ps2 (an 8 MiB card with ECC, formatted and filled by mymcplus) for lrps2/pcee2/pcsx2, and OUT/mc0/<folder>/ for Play!",
+    "converted": {
+      "Mcd001.ps2": {
+        "size": 8650752,
+        "sha1": "3aa3468f2ff3813a3ec862d550e8c5f8749e2f01"
+      },
+      "mc0/BASCUS-97465RATCHET/": {
+        "icon.sys": {
+          "size": 964,
+          "sha1": "dd6bd65dcb3984c05427576a58a73b26d24efc0b"
+        },
+        "static.ico": {
+          "size": 56214,
+          "sha1": "f1a517340a0243debc87ff48a03b16c5cfbbc08d"
+        },
+        "BASCUS-97465RATCHET": {
+          "size": 29696,
+          "sha1": "52187339b5911f696addfe9bba2a24c4fa2f0ef1"
+        },
+        "save4.bin": {
+          "size": 49080,
+          "sha1": "f4167df2cca5f072f9add7ea7cb0113bf6053fff"
+        },
+        "save3.bin": {
+          "size": 49080,
+          "sha1": "f4167df2cca5f072f9add7ea7cb0113bf6053fff"
+        },
+        "save2.bin": {
+          "size": 49080,
+          "sha1": "f4167df2cca5f072f9add7ea7cb0113bf6053fff"
+        },
+        "save1.bin": {
+          "size": 49080,
+          "sha1": "f4167df2cca5f072f9add7ea7cb0113bf6053fff"
+        },
+        "save0.bin": {
+          "size": 49080,
+          "sha1": "a6a9b2abd9a8c4f312cad10bc38ad2f93e7122b1"
+        },
+        "patch.bin": {
+          "size": 65536,
+          "sha1": "86a56528b3c577e1f82d91c5c827a7367da80475"
+        },
+        "net.bin": {
+          "size": 3900,
+          "sha1": "6649f03dfc886b9a528f8e85329a0be3b90dc4ee"
+        }
+      },
+      "read_back": "work/ps2/tools/mcfs.py lists every file with the size and SHA-1 put on the card; one-saves (1saves convert + inspect) reads the card and finds BASCUS-97465RATCHET",
+      "timestamps": "what the save does not date is 2000-01-01 00:00:00 (JST, as a card stores it); the card's own root entries too"
+    },
+    "script": null,
+    "cores": {
+      "pcee2": {
+        "result": "not-run",
+        "detail": "the library's image of this release is an unfinished download (its sampled 8 MiB blocks are almost all zeros: 506 of 520); it does not boot"
+      },
+      "lrps2": {
+        "result": "not-run",
+        "detail": "the library's image of this release is an unfinished download (its sampled 8 MiB blocks are almost all zeros: 506 of 520); it does not boot"
+      },
+      "play": {
+        "result": "not-run",
+        "detail": "the library's image of this release is an unfinished download (its sampled 8 MiB blocks are almost all zeros: 506 of 520); it does not boot"
+      },
+      "pcsx2": {
+        "result": "not-run",
+        "detail": "the library's image of this release is an unfinished download (its sampled 8 MiB blocks are almost all zeros: 506 of 520); it does not boot"
+      },
+      "armsx2": {
+        "result": "not-run",
+        "detail": "ARMSX2 renders only through Vulkan here and falls back to a null GS (no picture), so nothing shows what the game read (ps2/NOTES.md)"
+      }
+    },
+    "proof_order": []
+  },
+  "note": "Byte-identical to GameFAQs 14109 (uploaded again)."
+}

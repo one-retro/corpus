@@ -1,0 +1,14 @@
+# Ratchet & Clank (USA), SCUS-97199, DVD: show a loaded save.
+# Title > PRESS START > New Game / Load Game / Options > Load Game: the save's files, each with
+# play time, bolts, date and the planet it was saved on (the selected file's picture and
+# planet name on the right). With no save the game says there is none.
+wait 3000
+press start 10       # skip the intro
+wait 400
+press start 10       # PRESS START -> New Game / Load Game / Options
+wait 400
+press down 10        # Load Game
+wait 60
+press b 10
+wait 900
+shot files           # Load Game: time, bolts, date, planet per file

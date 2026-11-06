@@ -1,0 +1,21 @@
+# Dolphin TAS movie plan for work/standalone/tools/gen_dtm.py (one GC pad), for Dolphin.app (dolphin-emu@dolphin):
+# Kirby Air Ride.load.txt press for press with every count doubled, because Kirby Air Ride reads the
+# pad twice per video frame and a movie advances one input frame per read.
+wait 2400
+press START 12
+wait 360
+press START 12
+wait 360
+press A 12
+wait 360
+press DOWN 12
+wait 120
+press DOWN 12
+wait 120
+press DOWN 12
+wait 120
+press A 12
+wait 360
+press A 12
+wait 480
+wait 1200

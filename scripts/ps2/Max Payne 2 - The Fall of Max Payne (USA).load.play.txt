@@ -1,0 +1,26 @@
+# Max Payne 2 - The Fall of Max Payne (USA), SLUS-20814, DVD: show a loaded save. Play! variant.
+# With BASLUS-20814MaxPay2 on the card the game says "Autoload successful." at power-on (with
+# none it asks to create the folder). Continue > main menu (How to Play ...). Load lists the
+# card's savegames (date, part, chapter); New Game > SELECT GAME MODE greys out the modes the
+# save has not unlocked (with no save only Detective is white).
+wait 8000            # Play!: the first "Autoload successful." (~4000) times out back into the intro; the
+                     # second one, from ~7000, is still up at 9500
+shot autoload        # "Autoload successful."
+press b 10           # Continue
+wait 600
+press down 10        # Resume Game
+wait 40
+press down 10        # New Game
+wait 40
+press down 10        # Load
+wait 40
+press b 10
+wait 600
+shot load            # LOAD MENU: savegames
+press x 10           # back
+wait 400
+press up 10          # New Game
+wait 40
+press b 10
+wait 600
+shot modes           # SELECT GAME MODE: unlocked modes in white

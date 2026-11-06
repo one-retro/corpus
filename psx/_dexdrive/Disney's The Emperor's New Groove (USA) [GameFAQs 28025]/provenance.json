@@ -1,0 +1,84 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_dexdrive",
+  "url": "https://gamefaqs.gamespot.com/ps/374992-disneys-the-emperors-new-groove/saves/28025",
+  "source_page": "https://gamefaqs.gamespot.com/ps/374992-disneys-the-emperors-new-groove/saves",
+  "source": "GameFAQs (section 'PlayStation DexDrive Save (North America)')",
+  "author": "ayabay",
+  "licence": null,
+  "posted": "2022-05-23",
+  "fetched": "2026-11-05",
+  "what_it_is": "Game completed 100%.",
+  "gamefaqs": {
+    "id": 28025,
+    "product": "Disney's The Emperor's New Groove",
+    "section": "PlayStation DexDrive Save (North America)",
+    "region": "North America",
+    "served_as": "disneys-the-emperors-new-groove.28025.gme",
+    "listed_size": "131KB"
+  },
+  "format": "DexDrive .gme: '123-456-STD' 3904-byte header (per-block comments) + 131072-byte raw card; the card holds 1 save(s), 1 for this game (BASCUS-94571)",
+  "release": "Disney's The Emperor's New Groove (USA)",
+  "game_saves": [
+    {
+      "name": "BASCUS-94571",
+      "blocks": 1,
+      "title": "E.N.G."
+    }
+  ],
+  "files": {
+    "disneys-the-emperors-new-groove.28025.gme": {
+      "size": 134976,
+      "sha1": "1cac9edb5c40e0a550a5257bf93fbb8eac0a85ef"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Disney's The Emperor's New Groove (USA).cue",
+      "sha1": "db43b63ede4fcca5545e111a2b6218a3b10d5b10",
+      "size": 105
+    },
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr disneys-the-emperors-new-groove.28025.gme: unwraps the card (DexDrive .gme: 3904-byte header + card)",
+    "converted": {
+      "size": 131072,
+      "sha1": "270ce1f0dbc44dfd3f53387c34f5b5c3c12cc497"
+    },
+    "script": "scripts/psx/Emperor's New Groove.load.txt",
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "loads",
+        "detail": "Start Game lists Game Save 1: Catacombs, Chapter 4, Gold Coins 22"
+      },
+      "beetle-psx-hw": {
+        "result": "loads",
+        "detail": "Start Game lists Game Save 1: Catacombs, Chapter 4, Gold Coins 22 (the same screen as on beetle-psx)"
+      },
+      "pcsx-rearmed": {
+        "result": "loads",
+        "detail": "Start Game lists Game Save 1: Catacombs, Chapter 4, Gold Coins 22 (the same screen as on beetle-psx)"
+      },
+      "swanstation": {
+        "result": "loads",
+        "detail": "Start Game lists Game Save 1: Catacombs, Chapter 4, Gold Coins 22 (the same screen as on beetle-psx)"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": [
+      "beetle-psx",
+      "beetle-psx-hw",
+      "pcsx-rearmed",
+      "swanstation"
+    ]
+  },
+  "note": null
+}

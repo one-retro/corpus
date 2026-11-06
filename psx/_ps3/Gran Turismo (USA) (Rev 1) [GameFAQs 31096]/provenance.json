@@ -1,0 +1,88 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_ps3",
+  "url": "https://gamefaqs.gamespot.com/ps/197468-gran-turismo/saves/31096",
+  "source_page": "https://gamefaqs.gamespot.com/ps/197468-gran-turismo/saves",
+  "source": "GameFAQs (section 'PlayStation PS3 Virtual Memory Card Save (ZIP) (North America)')",
+  "author": "JEMCIV",
+  "licence": null,
+  "posted": "2025-01-02",
+  "fetched": "2026-11-05",
+  "what_it_is": "'Perfect' starter save. Arcade mode cleared Difficult, All gold licenses, unmodified prize cars, 10k credits, 0 races complete.",
+  "gamefaqs": {
+    "id": 31096,
+    "product": "Gran Turismo",
+    "section": "PlayStation PS3 Virtual Memory Card Save (ZIP) (North America)",
+    "region": "North America",
+    "served_as": "gran-turismo.31096.zip",
+    "listed_size": "1KB",
+    "served_zip": {
+      "size": 1649,
+      "sha1": "25a1a928b576c05be9159b9be765babb8c7a5839"
+    }
+  },
+  "format": "zip of 1 PS3 export(s) (.PSV): '\\0VSP' header (signature, save name at 0x64), the save's blocks from 0x84 (41092 bytes); it holds 1 save(s), 1 for this game (BASCUS-94194GT)",
+  "release": "Gran Turismo (USA) (Rev 1)",
+  "game_saves": [
+    {
+      "name": "BASCUS-94194GT",
+      "blocks": 5,
+      "title": "GT game data"
+    }
+  ],
+  "files": {
+    "BASCUS-941944754.PSV": {
+      "size": 41092,
+      "sha1": "9f4e606f524b2b8f708867e72ea2e4c7e81afcab"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Gran Turismo (USA) (Rev 1).cue",
+      "sha1": "ad114ef1312b81c7ee9995df1217cc1a089e381e",
+      "size": 92
+    },
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr BASCUS-941944754.PSV: puts the save(s) on a freshly formatted card, as MemcardRex imports a single save",
+    "converted": {
+      "size": 131072,
+      "sha1": "ef0387ba69d45ce1bcbfea888f0d71a968f09d36"
+    },
+    "script": "scripts/psx/Gran Turismo.load.txt",
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "loads",
+        "detail": "the game loads the card at boot; Simulation Mode > My Home shows Day 518, Cr 10,000"
+      },
+      "beetle-psx-hw": {
+        "result": "loads",
+        "detail": "the game loads the card at boot; Simulation Mode > My Home shows Day 518, Cr 10,000 (the same screen as on beetle-psx)"
+      },
+      "pcsx-rearmed": {
+        "result": "loads",
+        "detail": "the game loads the card at boot; Simulation Mode > My Home shows Day 518, Cr 10,000 (the same screen as on beetle-psx)"
+      },
+      "swanstation": {
+        "result": "loads",
+        "detail": "the game loads the card at boot; Simulation Mode > My Home shows Day 518, Cr 10,000 (the same screen as on beetle-psx)"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": [
+      "beetle-psx",
+      "beetle-psx-hw",
+      "pcsx-rearmed",
+      "swanstation"
+    ]
+  },
+  "note": null
+}

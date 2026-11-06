@@ -1,0 +1,119 @@
+{
+  "method": "downloaded",
+  "system": "gba",
+  "core": "_gameshark",
+  "url": "https://gamefaqs.gamespot.com/gba/524513-wario-land-4/saves/35380",
+  "source_page": "https://gamefaqs.gamespot.com/gba/524513-wario-land-4/saves",
+  "source": "GameFAQs (section 'GameBoy Advance GameShark Save (North America)')",
+  "author": "Memory-",
+  "licence": null,
+  "posted": "2026-08-17",
+  "fetched": "2026-11-05",
+  "what_it_is": "(100% Complete) S-Hard mode unlocked. Current file: S-Hard, all levels cleared w/ very good high scores, sound room complete with karaoke, max medals/score.",
+  "gamefaqs": {
+    "id": 35380,
+    "product": "Wario Land 4",
+    "section": "GameBoy Advance GameShark Save (North America)",
+    "region": "North America",
+    "served_as": "wario-land-4.35380.sps",
+    "listed_size": "64KB"
+  },
+  "format": "SharkPort save (\"SharkPortSave\", kind 0x000F0000): title \"WARIOLANDE\", date \"7/23/2026 8:59:28 PM\", notes \"\"; cart header \"WARIOLANDE\" / 'AWAE' (complement 0xec); payload 65536 bytes; checksum: signed",
+  "files": {
+    "wario-land-4.35380.sps": {
+      "size": 65635,
+      "sha1": "55483d237af3707e709d1f4256a7c8126fce3f1b"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Wario Land 4 (USA, Europe).gba",
+      "sha1": "b9fe05a8080e124b67bce6a623234ee3b518a2c1",
+      "size": 8388608
+    },
+    "converted_with": "tools/gamefaqs/gba-sharkport.py wario-land-4.35380.sps --rom ROM --core CORE --outdir DIR: reads the SharkPort container as mGBA does and imports the payload as mGBA's _importSavedata does (cut to the chip, EEPROM 8-byte blocks reversed, the rest of the chip erased), then lays the chip out as the core keeps it",
+    "converted": {
+      "size": 32768,
+      "sha1": "2ff4f57d957fc9681f5adcdca8466ce63ff2708e"
+    },
+    "script": "scripts/gba/Wario Land 4.load.txt",
+    "cores": {
+      "mgba": {
+        "result": "loads",
+        "detail": "save select: B Golden Pyramid, S-Hard, 999990, 16/16",
+        "core_version": "mGBA 0.11-212-7a12d6d",
+        "file": {
+          "name": "Wario Land 4 (USA, Europe).srm",
+          "size": 32768,
+          "sha1": "2ff4f57d957fc9681f5adcdca8466ce63ff2708e"
+        },
+        "frame": "files"
+      },
+      "vba-m": {
+        "result": "loads",
+        "detail": "save select: B Golden Pyramid, S-Hard, 999990, 16/16",
+        "core_version": "VBA-M 115defb",
+        "file": {
+          "name": "Wario Land 4 (USA, Europe).srm",
+          "size": 32768,
+          "sha1": "2ff4f57d957fc9681f5adcdca8466ce63ff2708e"
+        },
+        "frame": "files"
+      },
+      "gpsp": {
+        "result": "loads",
+        "detail": "save select: B Golden Pyramid, S-Hard, 999990, 16/16",
+        "core_version": "gpSP v1.1.0-5819380",
+        "file": {
+          "name": "Wario Land 4 (USA, Europe).srm",
+          "size": 131072,
+          "sha1": "0f1848bc1979615b777ff43d9c2682e7a72e931c"
+        },
+        "frame": "files"
+      },
+      "vba-next": {
+        "result": "loads",
+        "detail": "save select: B Golden Pyramid, S-Hard, 999990, 16/16",
+        "core_version": "VBA Next v1.0.2",
+        "file": {
+          "name": "Wario Land 4 (USA, Europe).srm",
+          "size": 139264,
+          "sha1": "510862a94f9b8eada2a41f0b4f5b4981203fb29b"
+        },
+        "frame": "files"
+      },
+      "beetle-gba": {
+        "result": "loads",
+        "detail": "save select: B Golden Pyramid, S-Hard, 999990, 16/16",
+        "core_version": "Beetle GBA v0.9.36 b158166",
+        "file": {
+          "name": "Wario Land 4 (USA, Europe).5fe47355a33e3fabec2a1607af88a404.sav",
+          "size": 65536,
+          "sha1": "52dfc4e581d0611186136fed4b6920a0e84a5314"
+        },
+        "frame": "files"
+      },
+      "skyemu": {
+        "result": "loads",
+        "detail": "save select: B Golden Pyramid, S-Hard, 999990, 16/16",
+        "core_version": "SkyEmu adacd0788964ed89f5c43dcbc1f3cc26deec996c",
+        "file": {
+          "name": "Wario Land 4 (USA, Europe).srm",
+          "size": 131072,
+          "sha1": "0f1848bc1979615b777ff43d9c2682e7a72e931c"
+        },
+        "frame": "files"
+      }
+    },
+    "proof_order": [
+      "mgba",
+      "vba-m",
+      "gpsp",
+      "vba-next",
+      "beetle-gba",
+      "skyemu"
+    ]
+  },
+  "note": null
+}

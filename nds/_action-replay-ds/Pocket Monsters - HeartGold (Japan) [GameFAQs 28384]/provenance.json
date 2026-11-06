@@ -1,0 +1,98 @@
+{
+  "method": "downloaded",
+  "system": "nds",
+  "core": "_action-replay-ds",
+  "url": "https://gamefaqs.gamespot.com/ds/960099-pokemon-heartgold-version/saves/28384",
+  "source_page": "https://gamefaqs.gamespot.com/ds/960099-pokemon-heartgold-version/saves",
+  "source": "GameFAQs (section 'Action Replay Max DS (.duc) Game Save (Japan)')",
+  "author": "arjunsk",
+  "licence": null,
+  "posted": "2023-02-13",
+  "fetched": "2026-11-05",
+  "what_it_is": "Main story,all sub quests and pokedex are completed with 5 star trainer card.Lot of shiny and event pokemons from older gen and traded from other games are obtained legitely.Pokeathelon with insane records and battle frointer are completed",
+  "gamefaqs": {
+    "id": 28384,
+    "product": "Pokemon HeartGold / SoulSilver Version",
+    "section": "Action Replay Max DS (.duc) Game Save (Japan)",
+    "region": "Japan",
+    "served_as": "pokemon-heartgold-soulsilver-version.28384.duc",
+    "listed_size": "256KB"
+  },
+  "format": "Action Replay DS save: the 500-byte 'ARDS000000000001' header written by a converter ('Converted Savegame' / 'Savegame', ASCII 'shuny conv'), then 256 KiB raw for the 512 KiB flash (padded 262144 -> 524288 with 0xFF)",
+  "files": {
+    "pokemon-heartgold-soulsilver-version.28384.duc": {
+      "size": 262644,
+      "sha1": "fb19cb28420b1971be4720d68e03b1a8d233a4f0"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": null,
+    "converted_with": "tools/gamefaqs/nds-ards.py IN step0.bin, then tools/gamefaqs/nds-cores.py step0.bin --chip 524288 --stem 'Pocket Monsters - HeartGold (Japan)' --out DIR: drops the Action Replay header; fits it to the 524288-byte chip (padded 262144 -> 524288 with 0xFF) and writes each core's file",
+    "converted": {
+      "size": 524288,
+      "sha1": "48753b38c101eda2bfc613f8c65756648786e50e"
+    },
+    "core_files": {
+      "desmume": {
+        "name": "Pocket Monsters - HeartGold (Japan).dsv",
+        "size": 524410,
+        "sha1": "0cd2e1f10bb845b2cbc756b45071aac0569703d7"
+      },
+      "desmume-2015": {
+        "name": "Pocket Monsters - HeartGold (Japan).dsv",
+        "size": 524410,
+        "sha1": "0cd2e1f10bb845b2cbc756b45071aac0569703d7"
+      },
+      "melonds": {
+        "name": "Pocket Monsters - HeartGold (Japan).sav",
+        "size": 524288,
+        "sha1": "48753b38c101eda2bfc613f8c65756648786e50e"
+      },
+      "melonds-ds": {
+        "name": "Pocket Monsters - HeartGold (Japan).srm",
+        "size": 524288,
+        "sha1": "48753b38c101eda2bfc613f8c65756648786e50e"
+      },
+      "noods": {
+        "name": "Pocket Monsters - HeartGold (Japan).sav",
+        "size": 524288,
+        "sha1": "48753b38c101eda2bfc613f8c65756648786e50e"
+      },
+      "skyemu": {
+        "name": "Pocket Monsters - HeartGold (Japan).srm",
+        "size": 8388608,
+        "sha1": "8daf022f72e1d01476e0f88d8fd9cc358071ea59"
+      }
+    },
+    "script": null,
+    "cores": {
+      "desmume": {
+        "result": "not-run",
+        "detail": "no image of Pocket Monsters - HeartGold (Japan) in the library"
+      },
+      "desmume-2015": {
+        "result": "not-run",
+        "detail": "no image of Pocket Monsters - HeartGold (Japan) in the library"
+      },
+      "melonds": {
+        "result": "not-run",
+        "detail": "no image of Pocket Monsters - HeartGold (Japan) in the library"
+      },
+      "melonds-ds": {
+        "result": "not-run",
+        "detail": "no image of Pocket Monsters - HeartGold (Japan) in the library"
+      },
+      "noods": {
+        "result": "not-run",
+        "detail": "no image of Pocket Monsters - HeartGold (Japan) in the library"
+      },
+      "skyemu": {
+        "result": "not-run",
+        "detail": "no image of Pocket Monsters - HeartGold (Japan) in the library"
+      }
+    },
+    "proof_order": []
+  },
+  "note": "Release: Japanese (language 1); HeartGold from the version that caught the player's own Pokemon (origin game in the decrypted Pokemon data, OT matching the trainer)."
+}

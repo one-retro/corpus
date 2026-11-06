@@ -209,3 +209,203 @@ rustation (no sign it persists cards at all).
 | Spyro the Dragon (USA) | `Spyro the Dragon (USA).bin` | 661547040 | `cf3ce6bedeb89dfbc40990336180f3b9b0f40d9f` |
 | Diablo (USA) (En,Fr,De,Sv) | `Diablo (USA) (En,Fr,De,Sv).bin` | 653239776 | `5e3669fd2920b953f9a164426e044c21e109fd26` |
 | Wipeout XL (USA) | `Wipeout XL (USA) (Track 01).bin` | 86045568 | `5694008c30fa9896d17afdd6281e4bebb9f63953` |
+
+## GameFAQs saves
+
+Every save on GameFAQs' PlayStation pages for the games here (and their sibling releases) in a
+format of the console's own devices: 297 files from the "PlayStation DexDrive Save" sections and
+70 zips from "PlayStation PS3 Virtual Memory Card Save (ZIP)", downloaded 2026-11-05 and filed as
+367 downloaded entries, `psx/_<device>/<release> [GameFAQs <id>]/`, each with the file(s) exactly
+as served (a zip replaced by what is in it, inner paths kept), `provenance.json` and a `proof.png`
+tiling every core's frame (order in `verified.proof_order`).
+
+### What the files really are
+
+| Device (folder) | Files | What the bytes are | GameFAQs section |
+| --- | ---: | --- | --- |
+| `_dexdrive` | 285 | DexDrive `.gme`: `123-456-STD`, a 3904-byte (0xF40) header with the per-block comments, then the 131072-byte card. 254 are whole; **22 are cut short** to the blocks in use (20288, 28480, 102208 or 126784 bytes: 2, 3, 12 or 15 of the card's 16 blocks); **8 have the header zeroed** (134976 bytes, `MC` at 3904, no `123-456-STD`); one has 345 extra bytes (below) | DexDrive |
+| `_raw-card` | 9 | a raw 131072-byte card served as `.gme` | DexDrive (mislabelled) |
+| `_vgs` | 2 | Connectix Virtual Game Station card: `VgsM`, 64-byte header, the card | DexDrive (mislabelled) |
+| `_raw-save` | 3 | one raw 8192-byte save block, starting with the save's `SC` title frame and no directory frame: one served as `.gme` (no name anywhere), two in zips named `BESLES-01514SILENT00.PSV` / `BESCES-01237TEKKEN-3.PSV` (the name is the file name) | DexDrive / PS3 (mislabelled) |
+| `_ps3` | 63 | zips of PS3 exports (`.PSV`): `\0VSP`, a 0x84-byte header (signature, byte 0x3C = 1 for a PS1 save, the 20-byte save name at 0x64), then the save's blocks; 8324 bytes for a 1-block save, 16516 for 2, 41092 for 5. Four zips hold two `.PSV`s, one a stray `__MACOSX/._` file, one a `desktop.ini` | PS3 |
+| `_psp` | 3 | zips of a PSP save folder for a PSone Classic (`SCUS94491/`, `SLUS00292/`: `PARAM.SFO`, `ICON0.PNG`, `CONFIG.BIN`, `SCEVMC0.VMP`, `SCEVMC1.VMP`); a `.VMP` is `\0PMV`, a 128-byte header, the card; `SCEVMC0` is slot 1 | PS3 (mislabelled) |
+| `_epsxe` | 2 | zips of ePSXe's `epsxe000.mcr`, a raw card | PS3 (mislabelled) |
+
+So 19 files sit in the wrong section. Three are filed under a region other than their saves': two
+"Europe" FF7 zips hold the US save `BASCUS-94163FF7-S01` (one also the European `S03`), and a
+"Europe" Tekken 3 raw card holds the Japanese `BISLPS-01300TEKKEN-3`. The European Star Ocean
+saves are named `BASCES-02159...` (region letter A, a PAL serial). 11 cards hold no save at all,
+though their descriptions promise one: 10 DexDrive cards (FF4, FF7, R4, Tekken 3 x2, THPS2 x5)
+whose directory is all free and whose 15 data blocks each repeat one 8 KiB pattern, `MC`
+followed by what looks like PC memory (a failed DexDrive read), and one all-zero VGS card
+(Alundra 2). One European FF7 card holds only a deleted save. A card often holds other games'
+saves; the entry is the whole card and is verified for the game its page is for.
+
+`<release>` comes from the serial in the game's save name (`BASLUS-00422...` is SLUS-00422):
+the library's Redump name for US discs, a redump.org lookup by serial for the others. For the
+games whose serial is shared by two revisions in the library (Gran Turismo, Suikoden, FF
+Chronicles) the entry names, and is verified on, the `(Rev 1)` disc the corpus already uses; the
+save fits both. Multi-disc games are named for the disc whose serial the save carries (all of
+these are Disc 1 serials). The R4 page also carries saves of the bonus discs packed with it
+(`Ridge Racer Bonus Turbo Mode Disc (USA)`, `Ridge Racer Hi-Spec Demo (Europe)`,
+`Ridge Racer - High Spec Ver. & Namco Catalogue '98 (Japan, Asia)`).
+
+### Converting
+
+`tools/gamefaqs/psx-card.py OUT.mcr INPUT...` writes the raw 131072-byte card that every
+runnable core loads as card 1 (`<content>.srm`, loaded with `retro-run --srm`, never written
+back). A whole card is unwrapped with its bytes unchanged, following DuckStation's
+`ImportCardGME` / `ImportCardVGS` (skip 0xF40 or 64 bytes; a short `.gme` padded with zeroes; a
+131072-byte `.gme` taken as raw) and MemcardRex's `OpenMemoryCard` (`PMV` 128-byte header; a
+134976-byte file with `MC` at 3904 is a "GME with corrupted header"). Single saves (`.psv`, raw
+blocks, `.mcs`) go onto a freshly formatted card as MemcardRex's `OpenSingleSave` +
+`SetSaveBytes` do: name from 0x64 of a `.psv`; a raw block is named after its file, which for
+`final-fantasy-vii.34525.gme` gives `final-fantasy-vii.34`, a name no game looks for (that block
+is a European FF7 save, so it was not run anyway). `--ls` lists a card's saves. Converted cards
+are in `.cache/gamefaqs-conv/psx/<id>/card1.mcr` (not filed); provenance records their sha1.
+
+### Load scripts and runs
+
+One `scripts/psx/<game>.load.txt` per game (27), from power-on to the screen that lists a save's
+content: a Load/Continue file list for the RPGs and most others, the auto-load message for
+Street Fighter Alpha 3 and DDR Konamix (frames every 40 from 1000 to 3000; the closest to the
+message is kept), Simulation Mode > My Home for Gran Turismo (day, credits, car), Player Select
+for Tekken 3 (unlocked fighters), the career / replay / park lists for THPS2 (Options > Memory
+Card > Load Data and Load Replay, Park Editor > Load), Load Character for Diablo's
+"saved characters" files. FF7 pages its 15-file list so the frame shows the save's slot. Each
+script was run once per core with no card (baseline, `.cache/gamefaqs-conv/psx/_baseline/`) and
+once per save per core.
+
+The cores reach a title menu at very different times: PCSX-ReARMed reaches most titles after
+fewer Start presses than Beetle, SwanStation sometimes after more (its intros run longer), and
+an extra press picks the first menu item. Where the shared press count missed, a per-core
+variant `<game>.<core>.load.txt` uses the core's own count (Air Combat, Diablo, Silent Hill on
+PCSX-ReARMed and SwanStation; Mega Man X5, R4, T'ai Fu on PCSX-ReARMed) or, for SFA3 and DDR on
+PCSX-ReARMed, an earlier frame window; provenance names it under `verified.script_variants`. SwanStation's Silent Hill title gives way to the intro movie
+within a few seconds if left alone. Beetle PSX HW ran the same scripts as Beetle PSX with
+identical timing.
+
+### Results
+
+Per core, over all 367 entries (`not-run` for 78 saves of releases the library lacks; DuckStation
+and the MiSTer core cannot run here):
+
+| Core | loads | rejected | core-error | not-run |
+| --- | ---: | ---: | ---: | ---: |
+| beetle-psx | 275 | 14 | 0 | 78 |
+| beetle-psx-hw | 275 | 14 | 0 | 78 |
+| pcsx-rearmed | 275 | 14 | 0 | 78 |
+| swanstation | 275 | 14 | 0 | 78 |
+| duckstation | 0 | 0 | 0 | 367 |
+| psx-mister | 0 | 0 | 0 | 367 |
+
+Per game (saves of the US releases the library has):
+
+| Game (script) | saves | beetle-psx | beetle-psx-hw | pcsx-rearmed | swanstation |
+| --- | ---: | --- | --- | --- | --- |
+| Air Combat | 3 | 2 loads, 1 rejected | 2 loads, 1 rejected | 2 loads, 1 rejected | 2 loads, 1 rejected |
+| Alundra 2 | 2 | 1 loads, 1 rejected | 1 loads, 1 rejected | 1 loads, 1 rejected | 1 loads, 1 rejected |
+| Breath of Fire III | 12 | 12 loads | 12 loads | 12 loads | 12 loads |
+| CTR - Crash Team Racing | 9 | 9 loads | 9 loads | 9 loads | 9 loads |
+| Casper | 2 | 2 loads | 2 loads | 2 loads | 2 loads |
+| Chrono Trigger | 4 | 4 loads | 4 loads | 4 loads | 4 loads |
+| Dance Dance Revolution Konamix | 4 | 4 loads | 4 loads | 4 loads | 4 loads |
+| Diablo | 4 | 4 loads | 4 loads | 4 loads | 4 loads |
+| Emperor's New Groove | 1 | 1 loads | 1 loads | 1 loads | 1 loads |
+| Final Fantasy IV | 5 | 4 loads, 1 rejected | 4 loads, 1 rejected | 4 loads, 1 rejected | 4 loads, 1 rejected |
+| Final Fantasy VII | 47 | 46 loads, 1 rejected | 46 loads, 1 rejected | 46 loads, 1 rejected | 46 loads, 1 rejected |
+| Gran Turismo | 14 | 14 loads | 14 loads | 14 loads | 14 loads |
+| Legend of Dragoon | 19 | 19 loads | 19 loads | 19 loads | 19 loads |
+| Loaded | 6 | 6 loads | 6 loads | 6 loads | 6 loads |
+| Mega Man X5 | 6 | 6 loads | 6 loads | 6 loads | 6 loads |
+| Persona | 4 | 4 loads | 4 loads | 4 loads | 4 loads |
+| R4 - Ridge Racer Type 4 | 3 | 2 loads, 1 rejected | 2 loads, 1 rejected | 2 loads, 1 rejected | 2 loads, 1 rejected |
+| Silent Hill | 12 | 12 loads | 12 loads | 12 loads | 12 loads |
+| Spyro the Dragon | 8 | 8 loads | 8 loads | 8 loads | 8 loads |
+| Star Ocean - The Second Story | 17 | 17 loads | 17 loads | 17 loads | 17 loads |
+| Street Fighter Alpha 3 | 2 | 2 loads | 2 loads | 2 loads | 2 loads |
+| Suikoden | 19 | 18 loads, 1 rejected | 18 loads, 1 rejected | 18 loads, 1 rejected | 18 loads, 1 rejected |
+| T'ai Fu - Wrath of the Tiger | 1 | 1 loads | 1 loads | 1 loads | 1 loads |
+| Tekken 3 | 6 | 4 loads, 2 rejected | 4 loads, 2 rejected | 4 loads, 2 rejected | 4 loads, 2 rejected |
+| Tony Hawk's Pro Skater 2 | 55 | 50 loads, 5 rejected | 50 loads, 5 rejected | 50 loads, 5 rejected | 50 loads, 5 rejected |
+| Warhammer - Shadow of the Horned Rat | 1 | 1 loads | 1 loads | 1 loads | 1 loads |
+| Xenogears | 23 | 22 loads, 1 rejected | 22 loads, 1 rejected | 22 loads, 1 rejected | 22 loads, 1 rejected |
+
+Releases the library lacks (every core `not-run`; the cards were still converted):
+
+| Release | Saves |
+| --- | ---: |
+| Air Combat (Europe) | 1 |
+| Breath of Fire III (Europe) | 1 |
+| CTR - Crash Team Racing (Europe) (En,Fr,De,Es,It,Nl) | 5 |
+| Crash Bandicoot Racing (Japan, Asia) | 1 |
+| Diablo (Europe) (En,Fr,De,Sv) | 1 |
+| Final Fantasy VII (Europe) (Disc 1) | 10 |
+| Final Fantasy VII (Japan) (Disc 1) | 2 |
+| Final Fantasy VII International (Japan) (Disc 1) | 2 |
+| Gran Turismo (Europe) (En,Fr,De,Es,It) | 4 |
+| Gran Turismo (Japan, Asia) | 8 |
+| Legend of Dragoon, The (Europe) (Disc 1) | 4 |
+| Loaded (Europe) (En,Fr,De) | 1 |
+| Megami Ibunroku - Persona - Be Your True Mind (Japan) | 1 |
+| Ridge Racer - High Spec Ver. & Namco Catalogue '98 (Japan, Asia) | 1 |
+| Ridge Racer Hi-Spec Demo (Europe) | 1 |
+| Rockman X5 (Japan) | 4 |
+| Silent Hill (Europe) (En,Fr,De,Es,It) | 5 |
+| Silent Hill (Japan) | 2 |
+| Spyro the Dragon (Europe, Australia) (En,Fr,De,Es,It) | 2 |
+| Spyro the Dragon (Japan, Asia) (Shokai Genteiban) | 1 |
+| Star Ocean - The Second Story (Europe) (Disc 1) | 2 |
+| Street Fighter Alpha 3 (Europe) | 1 |
+| Street Fighter Zero 3 (Japan) | 5 |
+| Suikoden (Europe) | 2 |
+| T'ai Fu - Wrath of the Tiger (Europe) | 1 |
+| Tekken 3 (Europe, Australia) | 4 |
+| Tekken 3 (Japan, Asia) | 6 |
+
+### Findings
+
+- **No core rejects a valid card.** All four cores agree on every one of the 289 runnable saves:
+  the same 275 load and the same 14 do not, and their frames show the same content, each core at
+  its own resolution. The differences between cores are all timing: PCSX-ReARMed skips the BIOS
+  start-up logo (SFA3 says "AUTO LOAD COMPLETE!" before frame 1000 there, around frame 1750 on
+  Beetle PSX), and SwanStation plays some intros longer. The one visible difference: PCSX-ReARMed
+  always has a card in slot 2 (`pcsx-card2.mcd`, above), so games that show both slots say slot 2
+  holds no data (Silent Hill "No data file", Diablo "EMPTY", Xenogears' second block grid) where
+  the other cores say no card is inserted.
+- **The 14 that no core loads**, by cause: 11 cards hold no save at all (above); Air Combat 10841
+  is a `.gme` damaged in transit: every 0x0A byte has a 0x0D before it (345 each, exactly the
+  file's excess over 134976), the mark of a text-mode LF to CRLF transfer, so the card the
+  references unwrap has its save block shifted. Removing those 0x0D bytes by hand gives a card
+  that Beetle PSX loads (eight squadrons, F-22s, as described). Suikoden 1954's save has a
+  wrong directory checksum (0x12, should be 0x1B); with it corrected by hand Suikoden lists the
+  save (Marth, Lv. 60). The converter keeps the card's bytes as DuckStation does; MemcardRex
+  recomputes directory checksums on open, so a card exported from it would load. Xenogears 223
+  holds one live save, `BASLUS-006640` ("XENOGEARS/No.01 First and Last"), with a valid directory
+  frame, which Xenogears does not mark; cause not found.
+- **Cut-short `.gme`s load.** All 22 hold their saves in the blocks present, and zero padding
+  (DuckStation's behaviour) gives a card the cores and games accept: of the 21 runnable, all
+  load but Suikoden 1954 (its checksum, above). The 8 `.gme`s with a blank header load too
+  (those runnable).
+- **Silent Hill 6847** loads its save without being asked: with that card the game shows
+  "Finished loading" (File 1, Child's room) before the title and drops Harry into the room the
+  file was saved in, on every core, so its proof shows the room rather than the file list.
+- Saves for Japanese and European releases cannot be checked here: the library holds US discs
+  only. A US disc does not list them (FF7 19350 holds a US and a European save; the US disc
+  lists only the US one).
+
+### one-saves
+
+`1saves convert --system psx` + `inspect` + `extract` were run on every original. It reads 330
+of the 367; for those, its card lists the same live saves as `psx-card.py`'s in every case, and
+every live save's blocks are byte-identical. It does not read: the 22 cut-short `.gme`s, the 8
+`.gme`s with a blank header and the one with 345 extra bytes ("a PS1 memory card is 131072
+bytes, or that behind a DexDrive, VGS or PSP header"), the three raw save blocks (an 8192-byte
+`.gme`, and the two zips of a raw block named `.PSV`: "holds no card and no save this reads"),
+and the three PSP save folders ("this archive holds 2 cards"). DuckStation's importer reads the
+first three kinds. The cards it extracts differ from the converter's for 193 inputs, never in a live save:
+it drops deleted directory entries (49 cards had some), zeroes the free blocks (a DexDrive card
+keeps whatever was in them, often `MC` pages) and writes free directory frames with a `FFFF`
+next pointer. 34 saves with PocketStation-style serials (`BISLPSP01777`, `BESCESP03043`,
+`BASLUSP00797`, `BASLUSP00821`, `BASLUSP00896`, `BESLESP01863`, `BASLUSP01060`) are left
+"unidentified" while `BASLUS-00422...` resolves to SLUS-00422, as already seen for R4 and SFA3.

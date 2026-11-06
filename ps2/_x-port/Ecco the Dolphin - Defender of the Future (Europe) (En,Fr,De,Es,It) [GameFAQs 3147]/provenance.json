@@ -1,0 +1,177 @@
+{
+  "method": "downloaded",
+  "system": "ps2",
+  "core": "_x-port",
+  "url": "https://gamefaqs.gamespot.com/dreamcast/197205-ecco-the-dolphin-defender-of-the-future/saves/3147",
+  "source_page": "https://gamefaqs.gamespot.com/dreamcast/197205-ecco-the-dolphin-defender-of-the-future/saves",
+  "source": "GameFAQs (section 'PlayStation2 X-Port Save (Europe)')",
+  "author": "Xythar",
+  "licence": null,
+  "posted": "2003-11-16",
+  "fetched": "2026-11-05",
+  "what_it_is": "All levels up to Mutaclone (including the famous Hanging Waters) unlocked.",
+  "gamefaqs": {
+    "id": 3147,
+    "product": "Ecco the Dolphin: Defender of the Future",
+    "section": "PlayStation2 X-Port Save (Europe)",
+    "region": "Europe",
+    "served_as": "ecco-the-dolphin-defender-of-the-future.3147.xps",
+    "listed_size": "80KB"
+  },
+  "format": "SharkPort / X-Port save: 'SharkPortSave' header (title 'Ecco the Dolphin', date 'Save15/08/2003 3:52:19 PM 09', comment ''), folder BESCES-50499, 9 files, 79676 bytes of file data, 4-byte checksum at the end",
+  "files": {
+    "ecco-the-dolphin-defender-of-the-future.3147.xps": {
+      "size": 82261,
+      "sha1": "de6e505b60cdd5d367a764fb67ac3a1aa4c0fdc7"
+    }
+  },
+  "save": {
+    "folder": "BESCES-50499",
+    "title": [
+      "Ecco the Dolphin",
+      ""
+    ],
+    "times": "as the file stores them (PS2 card times, JST)",
+    "files": [
+      {
+        "name": "ecco1.ico",
+        "size": 76024,
+        "sha1": "99e8aedb779d77311fe6d3bedfea9eeac6fbf1b6",
+        "created": "2003-02-06 19:52:23",
+        "modified": "2003-02-06 19:52:24"
+      },
+      {
+        "name": "icon.sys",
+        "size": 964,
+        "sha1": "e9eb016ddc9fc0bf09bb4e576abc27718de33e70",
+        "created": "2003-02-06 19:52:24",
+        "modified": "2003-02-06 19:52:25"
+      },
+      {
+        "name": "ECCO_GEF",
+        "size": 384,
+        "sha1": "5b5fdfabeba5dddea846b89292a69bbe6a70dae0",
+        "created": "2003-02-17 21:30:39",
+        "modified": "2003-02-17 21:30:40"
+      },
+      {
+        "name": "ECCO_CVM",
+        "size": 384,
+        "sha1": "9a2f40fd7c805a7f28efe8d083b0b1b1a1e62992",
+        "created": "2003-03-16 23:39:45",
+        "modified": "2003-03-16 23:39:46"
+      },
+      {
+        "name": "TEMP_2",
+        "size": 384,
+        "sha1": "6e7d9b6a7fe478627b2f502d566c1d5420978a96",
+        "created": "2003-02-06 19:52:28",
+        "modified": "2003-02-06 19:52:29"
+      },
+      {
+        "name": "TEMP_3",
+        "size": 384,
+        "sha1": "6e7d9b6a7fe478627b2f502d566c1d5420978a96",
+        "created": "2003-02-06 19:52:30",
+        "modified": "2003-02-06 19:52:31"
+      },
+      {
+        "name": "TEMP_4",
+        "size": 384,
+        "sha1": "6e7d9b6a7fe478627b2f502d566c1d5420978a96",
+        "created": "2003-02-06 19:52:32",
+        "modified": "2003-02-06 19:52:32"
+      },
+      {
+        "name": "TEMP_5",
+        "size": 384,
+        "sha1": "6e7d9b6a7fe478627b2f502d566c1d5420978a96",
+        "created": "2003-02-06 19:52:34",
+        "modified": "2003-02-06 19:52:34"
+      },
+      {
+        "name": "BESCES-50499",
+        "size": 384,
+        "sha1": "9c9f679e284773cd707aef53cca1228be68f940c",
+        "created": "2003-03-16 23:39:46",
+        "modified": "2003-03-16 23:39:47"
+      }
+    ]
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": null,
+    "converted_with": "tools/gamefaqs/ps2-card.py 'ecco-the-dolphin-defender-of-the-future.3147.xps' -o OUT: reads the save with mymcplus 3.0.5 and writes OUT/Mcd001.ps2 (an 8 MiB card with ECC, formatted and filled by mymcplus) for lrps2/pcee2/pcsx2, and OUT/mc0/<folder>/ for Play!",
+    "converted": {
+      "Mcd001.ps2": {
+        "size": 8650752,
+        "sha1": "00216da6b3111efb62c00b2cc03e10eb70961828"
+      },
+      "mc0/BESCES-50499/": {
+        "ecco1.ico": {
+          "size": 76024,
+          "sha1": "99e8aedb779d77311fe6d3bedfea9eeac6fbf1b6"
+        },
+        "icon.sys": {
+          "size": 964,
+          "sha1": "e9eb016ddc9fc0bf09bb4e576abc27718de33e70"
+        },
+        "ECCO_GEF": {
+          "size": 384,
+          "sha1": "5b5fdfabeba5dddea846b89292a69bbe6a70dae0"
+        },
+        "ECCO_CVM": {
+          "size": 384,
+          "sha1": "9a2f40fd7c805a7f28efe8d083b0b1b1a1e62992"
+        },
+        "TEMP_2": {
+          "size": 384,
+          "sha1": "6e7d9b6a7fe478627b2f502d566c1d5420978a96"
+        },
+        "TEMP_3": {
+          "size": 384,
+          "sha1": "6e7d9b6a7fe478627b2f502d566c1d5420978a96"
+        },
+        "TEMP_4": {
+          "size": 384,
+          "sha1": "6e7d9b6a7fe478627b2f502d566c1d5420978a96"
+        },
+        "TEMP_5": {
+          "size": 384,
+          "sha1": "6e7d9b6a7fe478627b2f502d566c1d5420978a96"
+        },
+        "BESCES-50499": {
+          "size": 384,
+          "sha1": "9c9f679e284773cd707aef53cca1228be68f940c"
+        }
+      },
+      "read_back": "work/ps2/tools/mcfs.py lists every file with the size and SHA-1 put on the card; one-saves (1saves convert + inspect) reads the card and finds BESCES-50499",
+      "timestamps": "what the save does not date is 2000-01-01 00:00:00 (JST, as a card stores it); the card's own root entries too"
+    },
+    "script": null,
+    "cores": {
+      "pcee2": {
+        "result": "not-run",
+        "detail": "no image of Ecco the Dolphin - Defender of the Future (Europe) (En,Fr,De,Es,It) in the library"
+      },
+      "lrps2": {
+        "result": "not-run",
+        "detail": "no image of Ecco the Dolphin - Defender of the Future (Europe) (En,Fr,De,Es,It) in the library"
+      },
+      "play": {
+        "result": "not-run",
+        "detail": "no image of Ecco the Dolphin - Defender of the Future (Europe) (En,Fr,De,Es,It) in the library"
+      },
+      "pcsx2": {
+        "result": "not-run",
+        "detail": "no image of Ecco the Dolphin - Defender of the Future (Europe) (En,Fr,De,Es,It) in the library"
+      },
+      "armsx2": {
+        "result": "not-run",
+        "detail": "ARMSX2 renders only through Vulkan here and falls back to a null GS (no picture), so nothing shows what the game read (ps2/NOTES.md)"
+      }
+    },
+    "proof_order": []
+  },
+  "note": "Converter: SharkPort directory says 10 files, the file holds 9 (then its 4-byte checksum): read as 9."
+}

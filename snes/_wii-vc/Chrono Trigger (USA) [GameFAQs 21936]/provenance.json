@@ -1,0 +1,146 @@
+{
+  "method": "downloaded",
+  "system": "snes",
+  "core": "_wii-vc",
+  "url": "https://gamefaqs.gamespot.com/snes/563538-chrono-trigger/saves/21936",
+  "source_page": "https://gamefaqs.gamespot.com/snes/563538-chrono-trigger/saves",
+  "source": "GameFAQs (section 'Wii VC Game Save File (North America)')",
+  "author": "ConsummateGamer",
+  "licence": null,
+  "posted": "2011-08-09",
+  "fetched": "2026-11-05",
+  "what_it_is": "JECE--slots 1, 2, and 3 are saved at a convenient point for viewing endings 7, 8, and 9 respectively (The Unknown Past, People of the Times, and The Oath).",
+  "gamefaqs": {
+    "id": 21936,
+    "product": "Chrono Trigger",
+    "section": "Wii VC Game Save File (North America)",
+    "region": "North America",
+    "served_as": "chrono-trigger.21936.bin",
+    "listed_size": "69KB"
+  },
+  "format": "Wii data.bin (an SD-card export; header AES-128-CBC with the SD key, header MD5 valid): title 00010001-JECE \"CHRONO TRIGGER\", 1 file: savedata.bin 8192 bytes - savedata.bin is the SNES SRAM",
+  "files": {
+    "chrono-trigger.21936.bin": {
+      "size": 70912,
+      "sha1": "97242a426884905b908b654c442c5662a18336ab"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "converted_with": "tools/gamefaqs/wiivc-convert.py convert chrono-trigger.21936.bin OUT: decrypts the data.bin (AES-128-CBC, SD key, per-file IVs) and takes savedata.bin (8192 bytes): the SRAM, as is",
+    "converted": {
+      "size": 8192,
+      "sha1": "ce50d1b9d387d201f431a6003a23dc292744d474"
+    },
+    "rom": {
+      "name": "Chrono Trigger (USA).sfc",
+      "sha1": "de5822f4f2f7a55acb8926d4c0eaa63d5d989312",
+      "size": 4194304
+    },
+    "script": "scripts/snes/Chrono Trigger.load.txt",
+    "baseline": "with no save: Start at the title begins a new game (Battle Mode screen)",
+    "cores": {
+      "snes9x": {
+        "result": "loads",
+        "detail": "load screen: 1 \"Tata and the Frog\", 2 \"The Masamune!\", 3 \"The Masamune!\" (End of Time, 02:51, Crono/Frog/Lucca LV 99, 13720G, save 8)"
+      },
+      "snes9x-2010": {
+        "result": "loads",
+        "detail": "load screen: 1 \"Tata and the Frog\", 2 \"The Masamune!\", 3 \"The Masamune!\" (End of Time, 02:51, Crono/Frog/Lucca LV 99, 13720G, save 8)"
+      },
+      "snes9x-2005-plus": {
+        "result": "loads",
+        "detail": "load screen: 1 \"Tata and the Frog\", 2 \"The Masamune!\", 3 \"The Masamune!\" (End of Time, 02:51, Crono/Frog/Lucca LV 99, 13720G, save 8)"
+      },
+      "snes9x-2005": {
+        "result": "loads",
+        "detail": "load screen: 1 \"Tata and the Frog\", 2 \"The Masamune!\", 3 \"The Masamune!\" (End of Time, 02:51, Crono/Frog/Lucca LV 99, 13720G, save 8)"
+      },
+      "snes9x-2002": {
+        "result": "loads",
+        "detail": "load screen: 1 \"Tata and the Frog\", 2 \"The Masamune!\", 3 \"The Masamune!\" (End of Time, 02:51, Crono/Frog/Lucca LV 99, 13720G, save 8)"
+      },
+      "bsnes": {
+        "result": "loads",
+        "detail": "load screen: 1 \"Tata and the Frog\", 2 \"The Masamune!\", 3 \"The Masamune!\" (End of Time, 02:51, Crono/Frog/Lucca LV 99, 13720G, save 8)"
+      },
+      "bsnes-hd-beta": {
+        "result": "loads",
+        "detail": "load screen: 1 \"Tata and the Frog\", 2 \"The Masamune!\", 3 \"The Masamune!\" (End of Time, 02:51, Crono/Frog/Lucca LV 99, 13720G, save 8)"
+      },
+      "bsnes-mercury": {
+        "result": "loads",
+        "detail": "load screen: 1 \"Tata and the Frog\", 2 \"The Masamune!\", 3 \"The Masamune!\" (End of Time, 02:51, Crono/Frog/Lucca LV 99, 13720G, save 8)"
+      },
+      "bsnes2014": {
+        "result": "loads",
+        "detail": "load screen: 1 \"Tata and the Frog\", 2 \"The Masamune!\", 3 \"The Masamune!\" (End of Time, 02:51, Crono/Frog/Lucca LV 99, 13720G, save 8)"
+      },
+      "higan-super-famicom": {
+        "result": "loads",
+        "detail": "load screen: 1 \"Tata and the Frog\", 2 \"The Masamune!\", 3 \"The Masamune!\" (End of Time, 02:51, Crono/Frog/Lucca LV 99, 13720G, save 8)"
+      },
+      "mednafen-bsnes": {
+        "result": "loads",
+        "detail": "load screen: 1 \"Tata and the Frog\", 2 \"The Masamune!\", 3 \"The Masamune!\" (End of Time, 02:51, Crono/Frog/Lucca LV 99, 13720G, save 8) (the core reads its own <stem>.srm from the save folder, and aborts with SIGABRT when unloaded, after the run, as in snes/NOTES.md)"
+      },
+      "mesen-s": {
+        "result": "loads",
+        "detail": "load screen: 1 \"Tata and the Frog\", 2 \"The Masamune!\", 3 \"The Masamune!\" (End of Time, 02:51, Crono/Frog/Lucca LV 99, 13720G, save 8)"
+      },
+      "beetle-supafaust": {
+        "result": "loads",
+        "detail": "load screen: 1 \"Tata and the Frog\", 2 \"The Masamune!\", 3 \"The Masamune!\" (End of Time, 02:51, Crono/Frog/Lucca LV 99, 13720G, save 8)"
+      },
+      "bsnes-jg": {
+        "result": "loads",
+        "detail": "load screen: 1 \"Tata and the Frog\", 2 \"The Masamune!\", 3 \"The Masamune!\" (End of Time, 02:51, Crono/Frog/Lucca LV 99, 13720G, save 8)"
+      },
+      "chimerasnes": {
+        "result": "loads",
+        "detail": "load screen: 1 \"Tata and the Frog\", 2 \"The Masamune!\", 3 \"The Masamune!\" (End of Time, 02:51, Crono/Frog/Lucca LV 99, 13720G, save 8)"
+      },
+      "higan-super-famicom-balanced": {
+        "result": "loads",
+        "detail": "load screen: 1 \"Tata and the Frog\", 2 \"The Masamune!\", 3 \"The Masamune!\" (End of Time, 02:51, Crono/Frog/Lucca LV 99, 13720G, save 8) (exits with SIGTRAP in retro_deinit after the run, as in BUILT-CORES.md)"
+      }
+    },
+    "core_versions": {
+      "beetle-supafaust": "Beetle Supafaust 1.29.0 642d1d1",
+      "bsnes": "bsnes 115",
+      "bsnes-hd-beta": "bsnes-hd beta 10.6",
+      "bsnes-jg": "bsnes-jg 2.1.0",
+      "bsnes-mercury": "bsnes-mercury v094 (Accuracy) 79d7f9d",
+      "bsnes2014": "bsnes2014 v094 (Accuracy) 3c1394e",
+      "chimerasnes": "ChimeraSNES  04c57c2",
+      "higan-super-famicom": "higan (Super Famicom Accuracy) 106",
+      "higan-super-famicom-balanced": "higan (Super Famicom Balanced) 106.25",
+      "mednafen-bsnes": "Mednafen bSNES v0.9.26 5f05e4c",
+      "mesen-s": "Mesen2 2.0.0",
+      "snes9x": "Snes9x 1.63 fae2fea",
+      "snes9x-2002": "Snes9x 2002 7.2.0",
+      "snes9x-2005": "Snes9x 2005 v1.36 a79dfe9",
+      "snes9x-2005-plus": "Snes9x 2005 Plus v1.36 a79dfe9",
+      "snes9x-2010": "Snes9x 2010 1.52.4 fe690dd"
+    },
+    "proof_order": [
+      "snes9x",
+      "snes9x-2010",
+      "snes9x-2005-plus",
+      "snes9x-2005",
+      "snes9x-2002",
+      "bsnes",
+      "bsnes-hd-beta",
+      "bsnes-mercury",
+      "bsnes2014",
+      "higan-super-famicom",
+      "mednafen-bsnes",
+      "mesen-s",
+      "beetle-supafaust",
+      "bsnes-jg",
+      "chimerasnes",
+      "higan-super-famicom-balanced"
+    ]
+  },
+  "note": "One of four uploads by the same user (21934-21937), three slots each, saved before the endings."
+}

@@ -1,0 +1,119 @@
+{
+  "method": "downloaded",
+  "system": "gba",
+  "core": "_gameshark",
+  "url": "https://gamefaqs.gamespot.com/gba/472541-klonoa-empire-of-dreams/saves/3076",
+  "source_page": "https://gamefaqs.gamespot.com/gba/472541-klonoa-empire-of-dreams/saves",
+  "source": "GameFAQs (section 'GameBoy Advance GameShark Save (North America)')",
+  "author": "Relle",
+  "licence": null,
+  "posted": "2003-11-16",
+  "fetched": "2026-11-05",
+  "what_it_is": "All levels beaten. All crystals collected. All three EX stages unlocked.",
+  "gamefaqs": {
+    "id": 3076,
+    "product": "Klonoa: Empire of Dreams",
+    "section": "GameBoy Advance GameShark Save (North America)",
+    "region": "North America",
+    "served_as": "klonoa-empire-of-dreams.3076.sps",
+    "listed_size": "64KB"
+  },
+  "format": "SharkPort save (\"SharkPortSave\", kind 0x000F0000): title \"KLONOA\", date \"11/15/2003 7:52:46 PM\", notes \"\"; cart header \"KLONOA\" / 'AKLE' (complement 0xe9); payload 65536 bytes; checksum: signed",
+  "files": {
+    "klonoa-empire-of-dreams.3076.sps": {
+      "size": 65632,
+      "sha1": "0058bcb56f1cbc3b38f2a04cda71dead933e789f"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Klonoa - Empire of Dreams (USA).gba",
+      "sha1": "a0a298d9dba1ba15d04a42fc2eb35893d1a9569b",
+      "size": 4194304
+    },
+    "converted_with": "tools/gamefaqs/gba-sharkport.py klonoa-empire-of-dreams.3076.sps --rom ROM --core CORE --outdir DIR: reads the SharkPort container as mGBA does and imports the payload as mGBA's _importSavedata does (cut to the chip, EEPROM 8-byte blocks reversed, the rest of the chip erased), then lays the chip out as the core keeps it",
+    "converted": {
+      "size": 512,
+      "sha1": "5c3eb80066420002bc3dcc7ca4ab6efad7ed4ae5"
+    },
+    "script": "scripts/gba/Klonoa - Empire of Dreams.load.txt",
+    "cores": {
+      "mgba": {
+        "result": "rejected",
+        "detail": "Select a Save file: NO DATA x3: the payload is all zero",
+        "core_version": "mGBA 0.11-212-7a12d6d",
+        "file": {
+          "name": "Klonoa - Empire of Dreams (USA).srm",
+          "size": 512,
+          "sha1": "5c3eb80066420002bc3dcc7ca4ab6efad7ed4ae5"
+        },
+        "frame": "files"
+      },
+      "vba-m": {
+        "result": "rejected",
+        "detail": "Select a Save file: NO DATA x3: the payload is all zero",
+        "core_version": "VBA-M 115defb",
+        "file": {
+          "name": "Klonoa - Empire of Dreams (USA).srm",
+          "size": 512,
+          "sha1": "5c3eb80066420002bc3dcc7ca4ab6efad7ed4ae5"
+        },
+        "frame": "files"
+      },
+      "gpsp": {
+        "result": "rejected",
+        "detail": "Select a Save file: NO DATA x3: the payload is all zero",
+        "core_version": "gpSP v1.1.0-5819380",
+        "file": {
+          "name": "Klonoa - Empire of Dreams (USA).srm",
+          "size": 131072,
+          "sha1": "80e02e63159aa17c3bea3eef6e3113719daf517e"
+        },
+        "frame": "files"
+      },
+      "vba-next": {
+        "result": "rejected",
+        "detail": "Select a Save file: NO DATA x3: the payload is all zero",
+        "core_version": "VBA Next v1.0.2",
+        "file": {
+          "name": "Klonoa - Empire of Dreams (USA).srm",
+          "size": 139264,
+          "sha1": "d5feb469b97bb140023dbabb5cc3167a09c9862e"
+        },
+        "frame": "files"
+      },
+      "beetle-gba": {
+        "result": "rejected",
+        "detail": "Select a Save file: NO DATA x3: the payload is all zero",
+        "core_version": "Beetle GBA v0.9.36 b158166",
+        "file": {
+          "name": "Klonoa - Empire of Dreams (USA).f4f23f40e29451150b46d4bbdef63f13.eep",
+          "size": 512,
+          "sha1": "5c3eb80066420002bc3dcc7ca4ab6efad7ed4ae5"
+        },
+        "frame": "files"
+      },
+      "skyemu": {
+        "result": "rejected",
+        "detail": "Select a Save file: NO DATA x3: the payload is all zero",
+        "core_version": "SkyEmu adacd0788964ed89f5c43dcbc1f3cc26deec996c",
+        "file": {
+          "name": "Klonoa - Empire of Dreams (USA).srm",
+          "size": 131072,
+          "sha1": "80e02e63159aa17c3bea3eef6e3113719daf517e"
+        },
+        "frame": "files"
+      }
+    },
+    "proof_order": [
+      "mgba",
+      "vba-m",
+      "gpsp",
+      "vba-next",
+      "beetle-gba",
+      "skyemu"
+    ]
+  },
+  "note": "The 64 KiB payload is all zero: there is no save in it."
+}

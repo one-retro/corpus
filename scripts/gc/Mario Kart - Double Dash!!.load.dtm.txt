@@ -1,0 +1,15 @@
+# Dolphin TAS movie plan for work/standalone/tools/gen_dtm.py (one GC pad), for Dolphin.app (dolphin-emu@dolphin):
+# Mario Kart - Double Dash!!.load.txt press for press with every count doubled (the game reads the pad twice per video
+# frame and a movie advances one input frame per read). Stick: 0..255, 128 centre, Y up.
+wait 2400
+press START 12
+wait 600
+press START 12
+wait 600
+stick 128 0 16
+wait 120
+press A 12
+wait 600
+press A 12
+wait 600
+wait 1200

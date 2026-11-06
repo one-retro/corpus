@@ -1,0 +1,111 @@
+{
+  "method": "downloaded",
+  "system": "ps2",
+  "core": "_ps3",
+  "url": "https://gamefaqs.gamespot.com/ps2/914659-ratchet-and-clank-going-commando/saves/16842",
+  "source_page": "https://gamefaqs.gamespot.com/ps2/914659-ratchet-and-clank-going-commando/saves",
+  "source": "GameFAQs (section 'PlayStation 2 PS3 Virtual Memory Card Save (ZIP) (North America)')",
+  "author": "The_Volcano",
+  "licence": null,
+  "posted": "2008-03-20",
+  "fetched": "2026-11-05",
+  "what_it_is": "game completed most weapons unlocked",
+  "gamefaqs": {
+    "id": 16842,
+    "product": "Ratchet & Clank: Going Commando",
+    "section": "PlayStation 2 PS3 Virtual Memory Card Save (ZIP) (North America)",
+    "region": "North America",
+    "served_as": "ratchet-and-clank-going-commando.16842.zip",
+    "listed_size": "7KB"
+  },
+  "format": "PS3 Virtual Memory Card export (.PSV): '\\0VSP' header, PS2 save type 2, 117380 bytes, folder BASLUS-20836savedata, 3 files, 117040 bytes of file data",
+  "files": {
+    "going commando/BASLUS-208367361766564617461.PSV": {
+      "size": 117380,
+      "sha1": "019f9eaa8703897d11eae8d4fb08a02dde7ab947"
+    }
+  },
+  "save": {
+    "folder": "BASLUS-20836savedata",
+    "title": [
+      "DigimonWorld4",
+      "SaveData"
+    ],
+    "times": "as the file stores them (PS2 card times, JST)",
+    "files": [
+      {
+        "name": "icon.sys",
+        "size": 964,
+        "sha1": "a0ca1a575ca41af683209e2baa7551c25f93b67a",
+        "created": "2008-01-17 15:00:55",
+        "modified": "2008-01-17 15:00:55"
+      },
+      {
+        "name": "icon1.ico",
+        "size": 34156,
+        "sha1": "3943713d51ff687aad636822cf3b28eff94974c8",
+        "created": "2008-01-17 15:00:55",
+        "modified": "2008-01-17 15:00:55"
+      },
+      {
+        "name": "BASLUS-20836savedata",
+        "size": 81920,
+        "sha1": "42d265d2b8b670cf6ee4c2d7022b2f953efd7c60",
+        "created": "2008-01-17 15:00:55",
+        "modified": "2008-02-16 17:07:59"
+      }
+    ]
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": null,
+    "converted_with": "tools/gamefaqs/ps2-card.py 'going commando/BASLUS-208367361766564617461.PSV' -o OUT: reads the save with mymcplus 3.0.5 and writes OUT/Mcd001.ps2 (an 8 MiB card with ECC, formatted and filled by mymcplus) for lrps2/pcee2/pcsx2, and OUT/mc0/<folder>/ for Play!",
+    "converted": {
+      "Mcd001.ps2": {
+        "size": 8650752,
+        "sha1": "f8664f00a2aa1bf6bde230738400572251d6348f"
+      },
+      "mc0/BASLUS-20836savedata/": {
+        "icon.sys": {
+          "size": 964,
+          "sha1": "a0ca1a575ca41af683209e2baa7551c25f93b67a"
+        },
+        "icon1.ico": {
+          "size": 34156,
+          "sha1": "3943713d51ff687aad636822cf3b28eff94974c8"
+        },
+        "BASLUS-20836savedata": {
+          "size": 81920,
+          "sha1": "42d265d2b8b670cf6ee4c2d7022b2f953efd7c60"
+        }
+      },
+      "read_back": "work/ps2/tools/mcfs.py lists every file with the size and SHA-1 put on the card; one-saves (1saves convert + inspect) reads the card and finds BASLUS-20836savedata",
+      "timestamps": "what the save does not date is 2000-01-01 00:00:00 (JST, as a card stores it); the card's own root entries too"
+    },
+    "script": null,
+    "cores": {
+      "pcee2": {
+        "result": "not-run",
+        "detail": "the library's image of this release is an unfinished download (172 of 173 sampled 8 MiB blocks are zeros)"
+      },
+      "lrps2": {
+        "result": "not-run",
+        "detail": "the library's image of this release is an unfinished download (172 of 173 sampled 8 MiB blocks are zeros)"
+      },
+      "play": {
+        "result": "not-run",
+        "detail": "the library's image of this release is an unfinished download (172 of 173 sampled 8 MiB blocks are zeros)"
+      },
+      "pcsx2": {
+        "result": "not-run",
+        "detail": "the library's image of this release is an unfinished download (172 of 173 sampled 8 MiB blocks are zeros)"
+      },
+      "armsx2": {
+        "result": "not-run",
+        "detail": "ARMSX2 renders only through Vulkan here and falls back to a null GS (no picture), so nothing shows what the game read (ps2/NOTES.md)"
+      }
+    },
+    "proof_order": []
+  },
+  "note": "Uploaded on the Ratchet & Clank: Going Commando page, but the save is BASLUS-20836savedata, icon.sys title 'DigimonWorld4 / SaveData': a Digimon World 4 (USA) save."
+}

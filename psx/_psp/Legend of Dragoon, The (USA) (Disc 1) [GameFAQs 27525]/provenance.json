@@ -1,0 +1,149 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_psp",
+  "url": "https://gamefaqs.gamespot.com/ps/197765-the-legend-of-dragoon/saves/27525",
+  "source_page": "https://gamefaqs.gamespot.com/ps/197765-the-legend-of-dragoon/saves",
+  "source": "GameFAQs (section 'PlayStation PS3 Virtual Memory Card Save (ZIP) (North America)')",
+  "author": "iResist",
+  "licence": null,
+  "posted": "2021-04-19",
+  "fetched": "2026-11-05",
+  "what_it_is": "PSP save: NG+ Begin the game with Divine Dragoon and Max everything. Includes Saves at start of every disk.",
+  "gamefaqs": {
+    "id": 27525,
+    "product": "The Legend of Dragoon",
+    "section": "PlayStation PS3 Virtual Memory Card Save (ZIP) (North America)",
+    "region": "North America",
+    "served_as": "the-legend-of-dragoon.27525.zip",
+    "listed_size": "35KB",
+    "served_zip": {
+      "size": 35970,
+      "sha1": "bfe1074b7673474aca2eeca7e0e11d0a0469358e"
+    }
+  },
+  "format": "zip of a PSP save folder for a PSone Classic (PARAM.SFO, ICON0.PNG, CONFIG.BIN, SCEVMC0.VMP and SCEVMC1.VMP): each .VMP is '\\0PMV' 128-byte header + 131072-byte card, slot 1 and slot 2; the card holds 10 save(s), 10 for this game (BASCUS-94491drgn0000, BASCUS-94491drgn0001, BASCUS-94491drgn0002, BASCUS-94491drgn0003, ...)",
+  "release": "Legend of Dragoon, The (USA) (Disc 1)",
+  "game_saves": [
+    {
+      "name": "BASCUS-94491drgn0000",
+      "blocks": 1,
+      "title": "LOD FILE01 LV57 TIME 015:18:52"
+    },
+    {
+      "name": "BASCUS-94491drgn0001",
+      "blocks": 1,
+      "title": "LOD FILE02 LV56 TIME 013:29:30"
+    },
+    {
+      "name": "BASCUS-94491drgn0002",
+      "blocks": 1,
+      "title": "LOD FILE03 LV53 TIME 008:25:31"
+    },
+    {
+      "name": "BASCUS-94491drgn0003",
+      "blocks": 1,
+      "title": "LOD FILE04 LV55 TIME 012:08:49"
+    },
+    {
+      "name": "BASCUS-94491drgn0004",
+      "blocks": 1,
+      "title": "LOD FILE05 LV51 TIME 002:32:07"
+    },
+    {
+      "name": "BASCUS-94491drgn0010",
+      "blocks": 1,
+      "title": "LOD FILE11 LV57 TIME 015:20:24"
+    },
+    {
+      "name": "BASCUS-94491drgn0011",
+      "blocks": 1,
+      "title": "LOD FILE12 LV54 TIME 009:28:06"
+    },
+    {
+      "name": "BASCUS-94491drgn0012",
+      "blocks": 1,
+      "title": "LOD FILE13 LV52 TIME 005:55:46"
+    },
+    {
+      "name": "BASCUS-94491drgn0013",
+      "blocks": 1,
+      "title": "LOD FILE14 LV51 TIME 003:15:52"
+    },
+    {
+      "name": "BASCUS-94491drgn0014",
+      "blocks": 1,
+      "title": "LOD FILE15 LV01 TIME 000:05:23"
+    }
+  ],
+  "files": {
+    "SCUS94491/CONFIG.BIN": {
+      "size": 1040,
+      "sha1": "ffd1ade9d57d879834808178e24c65b6f12cd8cd"
+    },
+    "SCUS94491/ICON0.PNG": {
+      "size": 17239,
+      "sha1": "a2cc995541e239909b60dc49283e3d6ebb8dc00c"
+    },
+    "SCUS94491/PARAM.SFO": {
+      "size": 4912,
+      "sha1": "981abae498bc7655b28711774336ed7ee73e8b67"
+    },
+    "SCUS94491/SCEVMC0.VMP": {
+      "size": 131200,
+      "sha1": "c3357f2b715111e6e0b8ea83f4d9b214564cca9d"
+    },
+    "SCUS94491/SCEVMC1.VMP": {
+      "size": 131200,
+      "sha1": "d0e7e1a009274ea995590b5f3855972f6b9e6566"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Legend of Dragoon, The (USA) (Disc 1).cue",
+      "sha1": "ae7c4642ff995bd5762937cd1fc2ac9c4474db18",
+      "size": 103
+    },
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr SCUS94491/SCEVMC0.VMP: unwraps the card (VMP (PSP/PS3 virtual card): 128-byte header + card)",
+    "converted": {
+      "size": 131072,
+      "sha1": "b12d635b4e674a0b24bc0dcdf96f1758b749ce33"
+    },
+    "script": "scripts/psx/Legend of Dragoon.load.txt",
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "loads",
+        "detail": "Continue lists files 11-13: LV 57 015:20:24 Moon, LV 54 009:28:06 Ch.4 Moon & Fate, LV 52 005:55:46 Ch.3 Fate & Soul"
+      },
+      "beetle-psx-hw": {
+        "result": "loads",
+        "detail": "Continue lists files 11-13: LV 57 015:20:24 Moon, LV 54 009:28:06 Ch.4 Moon & Fate, LV 52 005:55:46 Ch.3 Fate & Soul (the same screen as on beetle-psx)"
+      },
+      "pcsx-rearmed": {
+        "result": "loads",
+        "detail": "Continue lists files 11-13: LV 57 015:20:24 Moon, LV 54 009:28:06 Ch.4 Moon & Fate, LV 52 005:55:46 Ch.3 Fate & Soul (the same screen as on beetle-psx)"
+      },
+      "swanstation": {
+        "result": "loads",
+        "detail": "Continue lists files 11-13: LV 57 015:20:24 Moon, LV 54 009:28:06 Ch.4 Moon & Fate, LV 52 005:55:46 Ch.3 Fate & Soul (the same screen as on beetle-psx)"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": [
+      "beetle-psx",
+      "beetle-psx-hw",
+      "pcsx-rearmed",
+      "swanstation"
+    ]
+  },
+  "note": "Filed under GameFAQs' 'PlayStation PS3 Virtual Memory Card Save (ZIP) (North America)' section, but it is not a PS3 export (.psv): zip of a PSP save folder for a PSone Classic (PARAM.SFO, ICON0.PNG, CONFIG.BIN, SCEVMC0.VMP and SCEVMC1.VMP): each .VMP is '\\0PMV' 128-byte header + 131072-byte card, slot 1 and slot 2. Only SCEVMC0.VMP (memory card slot 1) is converted and loaded; SCEVMC1.VMP is slot 2 and holds 10 more save(s). one-saves (1saves convert) does not read this file: this archive holds 2 cards: SCUS94491/SCEVMC0.VMP, SCUS94491/SCEVMC1.VMP"
+}

@@ -1,0 +1,63 @@
+{
+  "method": "downloaded",
+  "system": "gba",
+  "core": "_visualboyadvance",
+  "url": "https://gamefaqs.gamespot.com/gba/563596-pokemon-sapphire-version/saves/7320",
+  "source_page": "https://gamefaqs.gamespot.com/gba/563596-pokemon-sapphire-version/saves",
+  "source": "GameFAQs (section 'GameBoy Advance GameShark SP Save File (North America)')",
+  "author": "lplainkid",
+  "licence": null,
+  "posted": "2005-04-13",
+  "fetched": "2026-11-05",
+  "what_it_is": "SAFARI ZONE POKEMON LV 90 GOT ALL POKMON MOST",
+  "gamefaqs": {
+    "id": 7320,
+    "product": "Pokemon Ruby / Sapphire / Emerald Version",
+    "section": "GameBoy Advance GameShark SP Save File (North America)",
+    "region": "North America",
+    "served_as": "pokemon-ruby-sapphire-emerald-version.7320.gsv",
+    "listed_size": "44KB"
+  },
+  "format": "gzip-compressed VisualBoyAdvance save state (.sgm), state version 6, ROM header \"POKEMON SAPP\" / 'AXPE', 739786 bytes inflated; not a battery save",
+  "files": {
+    "pokemon-ruby-sapphire-emerald-version.7320.gsv": {
+      "size": 45837,
+      "sha1": "49e8e6fe977f4760e38193abd14fb0183369425b"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": null,
+    "converted_with": null,
+    "converted": null,
+    "script": null,
+    "cores": {
+      "mgba": {
+        "result": "not-run",
+        "detail": "not a battery save: a VisualBoyAdvance save state, which no core here loads"
+      },
+      "vba-m": {
+        "result": "not-run",
+        "detail": "not a battery save: a VisualBoyAdvance save state, which no core here loads"
+      },
+      "gpsp": {
+        "result": "not-run",
+        "detail": "not a battery save: a VisualBoyAdvance save state, which no core here loads"
+      },
+      "vba-next": {
+        "result": "not-run",
+        "detail": "not a battery save: a VisualBoyAdvance save state, which no core here loads"
+      },
+      "beetle-gba": {
+        "result": "not-run",
+        "detail": "not a battery save: a VisualBoyAdvance save state, which no core here loads"
+      },
+      "skyemu": {
+        "result": "not-run",
+        "detail": "not a battery save: a VisualBoyAdvance save state, which no core here loads"
+      }
+    },
+    "proof_order": []
+  },
+  "note": "A VisualBoyAdvance desktop save state, not a save: VBA keeps the battery memory inside it, but getting it out means following VBA-M's whole state reader (CPUReadState), which was not done here. No libretro core loads VBA's desktop states."
+}

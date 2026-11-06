@@ -1,0 +1,98 @@
+{
+  "method": "downloaded",
+  "system": "nds",
+  "core": "_action-replay-ds",
+  "url": "https://gamefaqs.gamespot.com/ds/942028-mario-party-ds/saves/31611",
+  "source_page": "https://gamefaqs.gamespot.com/ds/942028-mario-party-ds/saves",
+  "source": "GameFAQs (section 'Action Replay Max DS (.duc) Game Save (Japan)')",
+  "author": "MrShiruba",
+  "licence": null,
+  "posted": "2025-02-25",
+  "fetched": "2026-11-05",
+  "what_it_is": "File 1 : 100% complete save : Name is AAAAA, 54233 Mario Party Points, Collection is complete (every figurine and emblem obtained), Story mode completed with every character, every minigame / mode unlocked.",
+  "gamefaqs": {
+    "id": 31611,
+    "product": "Mario Party DS",
+    "section": "Action Replay Max DS (.duc) Game Save (Japan)",
+    "region": "Japan",
+    "served_as": "mario-party-ds.31611.duc",
+    "listed_size": "256KB"
+  },
+  "format": "Action Replay DS save: the 500-byte 'ARDS000000000001' header written by a converter ('Converted Savegame' / 'Savegame', ASCII 'shuny conv'), then 256 KiB raw for the 8 KiB EEPROM (cut 262144 -> 8192; the rest was all 0xFF)",
+  "files": {
+    "mario-party-ds.31611.duc": {
+      "size": 262644,
+      "sha1": "2221258dfddea09b2beff8531220a1259bdf4387"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": null,
+    "converted_with": "tools/gamefaqs/nds-ards.py IN step0.bin, then tools/gamefaqs/nds-cores.py step0.bin --chip 8192 --stem 'Mario Party DS (Japan)' --out DIR: drops the Action Replay header; fits it to the 8192-byte chip (cut 262144 -> 8192; the rest was all 0xFF) and writes each core's file",
+    "converted": {
+      "size": 8192,
+      "sha1": "67cf54f7971942e5bac5a2f4234539ab8332e495"
+    },
+    "core_files": {
+      "desmume": {
+        "name": "Mario Party DS (Japan).dsv",
+        "size": 8314,
+        "sha1": "930fcf756ba56ce274fa4da18b78701ea8175166"
+      },
+      "desmume-2015": {
+        "name": "Mario Party DS (Japan).dsv",
+        "size": 8314,
+        "sha1": "930fcf756ba56ce274fa4da18b78701ea8175166"
+      },
+      "melonds": {
+        "name": "Mario Party DS (Japan).sav",
+        "size": 8192,
+        "sha1": "67cf54f7971942e5bac5a2f4234539ab8332e495"
+      },
+      "melonds-ds": {
+        "name": "Mario Party DS (Japan).srm",
+        "size": 8192,
+        "sha1": "67cf54f7971942e5bac5a2f4234539ab8332e495"
+      },
+      "noods": {
+        "name": "Mario Party DS (Japan).sav",
+        "size": 8192,
+        "sha1": "67cf54f7971942e5bac5a2f4234539ab8332e495"
+      },
+      "skyemu": {
+        "name": "Mario Party DS (Japan).srm",
+        "size": 8388608,
+        "sha1": "17218c39b598195ce2828c7f3eb7ede2e429a672"
+      }
+    },
+    "script": null,
+    "cores": {
+      "desmume": {
+        "result": "not-run",
+        "detail": "no image of Mario Party DS (Japan) in the library"
+      },
+      "desmume-2015": {
+        "result": "not-run",
+        "detail": "no image of Mario Party DS (Japan) in the library"
+      },
+      "melonds": {
+        "result": "not-run",
+        "detail": "no image of Mario Party DS (Japan) in the library"
+      },
+      "melonds-ds": {
+        "result": "not-run",
+        "detail": "no image of Mario Party DS (Japan) in the library"
+      },
+      "noods": {
+        "result": "not-run",
+        "detail": "no image of Mario Party DS (Japan) in the library"
+      },
+      "skyemu": {
+        "result": "not-run",
+        "detail": "no image of Mario Party DS (Japan) in the library"
+      }
+    },
+    "proof_order": []
+  },
+  "note": "Release: the save starts \"NTR-P-A8TJ\" (Mario Party DS, Japan)."
+}

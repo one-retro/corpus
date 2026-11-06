@@ -1,0 +1,98 @@
+{
+  "method": "downloaded",
+  "system": "nds",
+  "core": "_action-replay-ds",
+  "url": "https://gamefaqs.gamespot.com/ds/960099-pokemon-heartgold-version/saves/20976",
+  "source_page": "https://gamefaqs.gamespot.com/ds/960099-pokemon-heartgold-version/saves",
+  "source": "GameFAQs (section 'Action Replay Max DS (.duc) Game Save (Europe)')",
+  "author": "omarrrio",
+  "licence": null,
+  "posted": "2010-08-17",
+  "fetched": "2026-11-05",
+  "what_it_is": "this is a french release version, for the ones who want to do kanto's story, it's saved after the credits right away.",
+  "gamefaqs": {
+    "id": 20976,
+    "product": "Pokemon HeartGold / SoulSilver Version",
+    "section": "Action Replay Max DS (.duc) Game Save (Europe)",
+    "region": "Europe",
+    "served_as": "pokemon-heartgold-soulsilver-version.20976.duc",
+    "listed_size": "256KB"
+  },
+  "format": "Action Replay DS save: the 500-byte 'ARDS000000000001' header written by a converter ('Converted Savegame' / 'Savegame', ASCII 'shuny conv'), then 256 KiB raw for the 512 KiB flash (padded 262144 -> 524288 with 0xFF)",
+  "files": {
+    "pokemon-heartgold-soulsilver-version.20976.duc": {
+      "size": 262644,
+      "sha1": "3b9ee9f837928f0d16c6ceb33859bf4fc890a01c"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": null,
+    "converted_with": "tools/gamefaqs/nds-ards.py IN step0.bin, then tools/gamefaqs/nds-cores.py step0.bin --chip 524288 --stem 'Pokemon - Version Argent SoulSilver (France)' --out DIR: drops the Action Replay header; fits it to the 524288-byte chip (padded 262144 -> 524288 with 0xFF) and writes each core's file",
+    "converted": {
+      "size": 524288,
+      "sha1": "0c43cde6d9102dd18b0878aedf9180216d1a3c9e"
+    },
+    "core_files": {
+      "desmume": {
+        "name": "Pokemon - Version Argent SoulSilver (France).dsv",
+        "size": 524410,
+        "sha1": "5bcafdf17c444cad208fd2a15818932f27d3faf4"
+      },
+      "desmume-2015": {
+        "name": "Pokemon - Version Argent SoulSilver (France).dsv",
+        "size": 524410,
+        "sha1": "5bcafdf17c444cad208fd2a15818932f27d3faf4"
+      },
+      "melonds": {
+        "name": "Pokemon - Version Argent SoulSilver (France).sav",
+        "size": 524288,
+        "sha1": "0c43cde6d9102dd18b0878aedf9180216d1a3c9e"
+      },
+      "melonds-ds": {
+        "name": "Pokemon - Version Argent SoulSilver (France).srm",
+        "size": 524288,
+        "sha1": "0c43cde6d9102dd18b0878aedf9180216d1a3c9e"
+      },
+      "noods": {
+        "name": "Pokemon - Version Argent SoulSilver (France).sav",
+        "size": 524288,
+        "sha1": "0c43cde6d9102dd18b0878aedf9180216d1a3c9e"
+      },
+      "skyemu": {
+        "name": "Pokemon - Version Argent SoulSilver (France).srm",
+        "size": 8388608,
+        "sha1": "a9747318cda1c45253e5ee14cfb972e0202a8a8f"
+      }
+    },
+    "script": null,
+    "cores": {
+      "desmume": {
+        "result": "not-run",
+        "detail": "no image of Pokemon - Version Argent SoulSilver (France) in the library"
+      },
+      "desmume-2015": {
+        "result": "not-run",
+        "detail": "no image of Pokemon - Version Argent SoulSilver (France) in the library"
+      },
+      "melonds": {
+        "result": "not-run",
+        "detail": "no image of Pokemon - Version Argent SoulSilver (France) in the library"
+      },
+      "melonds-ds": {
+        "result": "not-run",
+        "detail": "no image of Pokemon - Version Argent SoulSilver (France) in the library"
+      },
+      "noods": {
+        "result": "not-run",
+        "detail": "no image of Pokemon - Version Argent SoulSilver (France) in the library"
+      },
+      "skyemu": {
+        "result": "not-run",
+        "detail": "no image of Pokemon - Version Argent SoulSilver (France) in the library"
+      }
+    },
+    "proof_order": []
+  },
+  "note": "Release: French (language 3); SoulSilver from the version that caught the player's own Pokemon (origin game in the decrypted Pokemon data, OT matching the trainer), although the description does not say."
+}

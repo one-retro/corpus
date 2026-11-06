@@ -1,0 +1,119 @@
+{
+  "method": "downloaded",
+  "system": "gba",
+  "core": "_gameshark",
+  "url": "https://gamefaqs.gamespot.com/gba/918915-pokemon-firered-version/saves/25957",
+  "source_page": "https://gamefaqs.gamespot.com/gba/918915-pokemon-firered-version/saves",
+  "source": "GameFAQs (section 'GameBoy Advance GameShark Save (Japan)')",
+  "author": "Eevee-Trainer",
+  "licence": null,
+  "posted": "2018-08-17",
+  "fetched": "2026-11-05",
+  "what_it_is": "Start of game. Max money, 999 of all items, Living Pokedex (all 31 IVs/0 EVs), and competitive movesets on all.",
+  "gamefaqs": {
+    "id": 25957,
+    "product": "Pokemon FireRed / LeafGreen Version",
+    "section": "GameBoy Advance GameShark Save (Japan)",
+    "region": "Japan",
+    "served_as": "pokemon-firered-leafgreen-version.25957.sps",
+    "listed_size": "128KB"
+  },
+  "format": "SharkPort save (\"SharkPortSave\", kind 0x000F0000): title \"POKEMON LEAF\", date \"5/3/2018 8:52:25 PM\", notes \"\"; cart header \"POKEMON LEAF\" / 'BPGJ' (complement 0x7c); payload 131072 bytes; checksum: signed",
+  "files": {
+    "pokemon-firered-leafgreen-version.25957.sps": {
+      "size": 131172,
+      "sha1": "83d3e00baf7b0c4e20e9d1b4e4f466e754f68592"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Pocket Monsters - LeafGreen (Japan).gba",
+      "sha1": "5946f1b59e8d71cc61249661464d864185c92a5f",
+      "size": 16777216
+    },
+    "converted_with": "tools/gamefaqs/gba-sharkport.py pokemon-firered-leafgreen-version.25957.sps --rom ROM --core CORE --outdir DIR: reads the SharkPort container as mGBA does and imports the payload as mGBA's _importSavedata does (cut to the chip, EEPROM 8-byte blocks reversed, the rest of the chip erased), then lays the chip out as the core keeps it",
+    "converted": {
+      "size": 131072,
+      "sha1": "ec107ee891e4b441dd03e5fec7dc9c4d5266468b"
+    },
+    "script": "scripts/gba/Pokemon - FireRed Version.load.txt",
+    "cores": {
+      "mgba": {
+        "result": "loads",
+        "detail": "CONTINUE: FIRE, 999:59",
+        "core_version": "mGBA 0.11-212-7a12d6d",
+        "file": {
+          "name": "Pocket Monsters - LeafGreen (Japan).srm",
+          "size": 131072,
+          "sha1": "ec107ee891e4b441dd03e5fec7dc9c4d5266468b"
+        },
+        "frame": "menu"
+      },
+      "vba-m": {
+        "result": "loads",
+        "detail": "CONTINUE: FIRE, 999:59",
+        "core_version": "VBA-M 115defb",
+        "file": {
+          "name": "Pocket Monsters - LeafGreen (Japan).srm",
+          "size": 131072,
+          "sha1": "ec107ee891e4b441dd03e5fec7dc9c4d5266468b"
+        },
+        "frame": "menu"
+      },
+      "gpsp": {
+        "result": "loads",
+        "detail": "CONTINUE: FIRE, 999:59",
+        "core_version": "gpSP v1.1.0-5819380",
+        "file": {
+          "name": "Pocket Monsters - LeafGreen (Japan).srm",
+          "size": 131072,
+          "sha1": "ec107ee891e4b441dd03e5fec7dc9c4d5266468b"
+        },
+        "frame": "menu"
+      },
+      "vba-next": {
+        "result": "loads",
+        "detail": "CONTINUE: FIRE, 999:59",
+        "core_version": "VBA Next v1.0.2",
+        "file": {
+          "name": "Pocket Monsters - LeafGreen (Japan).srm",
+          "size": 139264,
+          "sha1": "7585af617c77e616d994d15148b5f0bb8caa9655"
+        },
+        "frame": "menu"
+      },
+      "beetle-gba": {
+        "result": "loads",
+        "detail": "CONTINUE: FIRE, 999:59",
+        "core_version": "Beetle GBA v0.9.36 b158166",
+        "file": {
+          "name": "Pocket Monsters - LeafGreen (Japan).138a71a5be83f3f3d7af3d31916a5fc7.sav",
+          "size": 131072,
+          "sha1": "ec107ee891e4b441dd03e5fec7dc9c4d5266468b"
+        },
+        "frame": "menu"
+      },
+      "skyemu": {
+        "result": "loads",
+        "detail": "CONTINUE: FIRE, 999:59",
+        "core_version": "SkyEmu adacd0788964ed89f5c43dcbc1f3cc26deec996c",
+        "file": {
+          "name": "Pocket Monsters - LeafGreen (Japan).srm",
+          "size": 131072,
+          "sha1": "ec107ee891e4b441dd03e5fec7dc9c4d5266468b"
+        },
+        "frame": "menu"
+      }
+    },
+    "proof_order": [
+      "mgba",
+      "vba-m",
+      "gpsp",
+      "vba-next",
+      "beetle-gba",
+      "skyemu"
+    ]
+  },
+  "note": null
+}

@@ -1,0 +1,75 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_dexdrive",
+  "url": "https://gamefaqs.gamespot.com/ps/258931-mega-man-x5/saves/526",
+  "source_page": "https://gamefaqs.gamespot.com/ps/258931-mega-man-x5/saves",
+  "source": "GameFAQs (section 'PlayStation DexDrive Save (Japan)')",
+  "author": "hikarutilmitt",
+  "licence": null,
+  "posted": "2000-12-02",
+  "fetched": "2026-11-05",
+  "what_it_is": "All 8 bosses defeated, 8 heart tanks, all 8 pieces of special armor collected, various other enhancements",
+  "gamefaqs": {
+    "id": 526,
+    "product": "Mega Man X5",
+    "section": "PlayStation DexDrive Save (Japan)",
+    "region": "Japan",
+    "served_as": "mega-man-x5.526.gme",
+    "listed_size": "131KB"
+  },
+  "format": "DexDrive .gme: '123-456-STD' 3904-byte header (per-block comments) + 131072-byte raw card; the card holds 1 save(s), 1 for this game (BISLPM-86666)",
+  "release": "Rockman X5 (Japan)",
+  "game_saves": [
+    {
+      "name": "BISLPM-86666",
+      "blocks": 1,
+      "title": "ロックマンX5のセーブデータです。"
+    }
+  ],
+  "files": {
+    "mega-man-x5.526.gme": {
+      "size": 134976,
+      "sha1": "c30175262f9e7b5dd9c272e9753a70253d8e0dcf"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": null,
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr mega-man-x5.526.gme: unwraps the card (DexDrive .gme: 3904-byte header + card)",
+    "converted": {
+      "size": 131072,
+      "sha1": "140d3ad4a414781730977c13b63a48a12abd933f"
+    },
+    "script": null,
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "not-run",
+        "detail": "no image of Rockman X5 (Japan) in the library"
+      },
+      "beetle-psx-hw": {
+        "result": "not-run",
+        "detail": "no image of Rockman X5 (Japan) in the library"
+      },
+      "pcsx-rearmed": {
+        "result": "not-run",
+        "detail": "no image of Rockman X5 (Japan) in the library"
+      },
+      "swanstation": {
+        "result": "not-run",
+        "detail": "no image of Rockman X5 (Japan) in the library"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": []
+  },
+  "note": null
+}

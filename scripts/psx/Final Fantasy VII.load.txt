@@ -1,0 +1,44 @@
+# Final Fantasy VII: title > Continue? (Circle confirms) > Slot 1 > the file list. The list shows
+# three of the slot's 15 files at a time: `load` shows files 1-3, then the cursor pages down to
+# show 4-6 (`p2`), 7-9 (`p3`), 10-12 (`p4`) and 13-15 (`p5`).
+wait 1500           # BIOS logos
+repeat 4            # skip the intros to the title menu
+press start 6
+wait 250
+end
+wait 200
+press down 60       # the title cursor ignores the first presses; this wakes it
+wait 30
+press up 10         # Continue?
+wait 30
+shot title
+press a 4
+wait 200
+shot slot
+press a 4           # SLOT 1
+wait 400
+shot load
+repeat 5            # cursor to file 6: files 4-6 on screen
+press down 4
+wait 20
+end
+wait 30
+shot p2
+repeat 3            # files 7-9
+press down 4
+wait 20
+end
+wait 30
+shot p3
+repeat 3            # files 10-12
+press down 4
+wait 20
+end
+wait 30
+shot p4
+repeat 3            # files 13-15
+press down 4
+wait 20
+end
+wait 30
+shot p5

@@ -1,0 +1,7 @@
+# Super Mario 64, load check: power on, Start at the title, SELECT FILE.
+# Each file shows its star count, or NEW when it is empty.
+# N64 buttons on the RetroPad: A = b, B = y, Z = l2, Start = start.
+wait 600
+press start 6       # title -> SELECT FILE
+wait 200
+shot select

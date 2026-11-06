@@ -1,0 +1,119 @@
+{
+  "method": "downloaded",
+  "system": "gba",
+  "core": "_gameshark",
+  "url": "https://gamefaqs.gamespot.com/gba/589393-super-mario-advance-4-super-mario-bros-3/saves/2897",
+  "source_page": "https://gamefaqs.gamespot.com/gba/589393-super-mario-advance-4-super-mario-bros-3/saves",
+  "source": "GameFAQs (section 'GameBoy Advance GameShark Save (Japan)')",
+  "author": "Mirby",
+  "licence": null,
+  "posted": "2003-07-15",
+  "fetched": "2026-11-05",
+  "what_it_is": "All worlds complete except for World E+ in save 1",
+  "gamefaqs": {
+    "id": 2897,
+    "product": "Super Mario Advance 4: Super Mario Bros. 3",
+    "section": "GameBoy Advance GameShark Save (Japan)",
+    "region": "Japan",
+    "served_as": "super-mario-advance-4-super-mario-bros-3.2897.sps",
+    "listed_size": "64KB"
+  },
+  "format": "SharkPort save (\"SharkPortSave\", kind 0x000F0000): title \"SMA4\", date \"7/15/2003 1:43:55 PM\", notes \"100% complete except 4 world e+\"; cart header \"SUPER MARIOD\" / 'AX4J' (complement 0x6e); payload 65536 bytes; checksum: signed",
+  "files": {
+    "super-mario-advance-4-super-mario-bros-3.2897.sps": {
+      "size": 65660,
+      "sha1": "5a30a4c1c797423232a0b2c3a59be20f7bb407fc"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Super Mario Advance 4 - Super Mario 3 + Mario Brothers (Japan).gba",
+      "sha1": "19f7928bc4ffd733d71884dae9ad9b7f4007d38d",
+      "size": 4194304
+    },
+    "converted_with": "tools/gamefaqs/gba-sharkport.py super-mario-advance-4-super-mario-bros-3.2897.sps --rom ROM --core CORE --outdir DIR: reads the SharkPort container as mGBA does and imports the payload as mGBA's _importSavedata does (cut to the chip, EEPROM 8-byte blocks reversed, the rest of the chip erased), then lays the chip out as the core keeps it",
+    "converted": {
+      "size": 131072,
+      "sha1": "7355e2efba57d011e99a3aa5c6786a1c93ea8461"
+    },
+    "script": "scripts/gba/Super Mario Advance 4 - Super Mario Bros. 3.load.txt",
+    "cores": {
+      "mgba": {
+        "result": "loads",
+        "detail": "\"バックアップメモリに いじょうが ありました\" (backup memory abnormal: replay and course data NG, the rest OK), then データ1 ワールド4",
+        "core_version": "mGBA 0.11-212-7a12d6d",
+        "file": {
+          "name": "Super Mario Advance 4 - Super Mario 3 + Mario Brothers (Japan).srm",
+          "size": 131072,
+          "sha1": "7355e2efba57d011e99a3aa5c6786a1c93ea8461"
+        },
+        "frame": "files"
+      },
+      "vba-m": {
+        "result": "loads",
+        "detail": "\"バックアップメモリに いじょうが ありました\" (backup memory abnormal: replay and course data NG, the rest OK), then データ1 ワールド4",
+        "core_version": "VBA-M 115defb",
+        "file": {
+          "name": "Super Mario Advance 4 - Super Mario 3 + Mario Brothers (Japan).srm",
+          "size": 131072,
+          "sha1": "7355e2efba57d011e99a3aa5c6786a1c93ea8461"
+        },
+        "frame": "files"
+      },
+      "gpsp": {
+        "result": "loads",
+        "detail": "\"バックアップメモリに いじょうが ありました\" (backup memory abnormal: replay and course data NG, the rest OK), then データ1 ワールド4",
+        "core_version": "gpSP v1.1.0-5819380",
+        "file": {
+          "name": "Super Mario Advance 4 - Super Mario 3 + Mario Brothers (Japan).srm",
+          "size": 131072,
+          "sha1": "7355e2efba57d011e99a3aa5c6786a1c93ea8461"
+        },
+        "frame": "files"
+      },
+      "vba-next": {
+        "result": "loads",
+        "detail": "\"バックアップメモリに いじょうが ありました\" (backup memory abnormal: replay and course data NG, the rest OK), then データ1 ワールド4",
+        "core_version": "VBA Next v1.0.2",
+        "file": {
+          "name": "Super Mario Advance 4 - Super Mario 3 + Mario Brothers (Japan).srm",
+          "size": 139264,
+          "sha1": "a6f25798524a91af7b174d774730b371033c15b9"
+        },
+        "frame": "files"
+      },
+      "beetle-gba": {
+        "result": "loads",
+        "detail": "\"バックアップメモリに いじょうが ありました\" (backup memory abnormal: replay and course data NG, the rest OK), then データ1 ワールド4",
+        "core_version": "Beetle GBA v0.9.36 b158166",
+        "file": {
+          "name": "Super Mario Advance 4 - Super Mario 3 + Mario Brothers (Japan).e559e292aa9d44287b052342d6469967.sav",
+          "size": 131072,
+          "sha1": "7355e2efba57d011e99a3aa5c6786a1c93ea8461"
+        },
+        "frame": "files"
+      },
+      "skyemu": {
+        "result": "loads",
+        "detail": "\"バックアップメモリに いじょうが ありました\" (backup memory abnormal: replay and course data NG, the rest OK), then データ1 ワールド4",
+        "core_version": "SkyEmu adacd0788964ed89f5c43dcbc1f3cc26deec996c",
+        "file": {
+          "name": "Super Mario Advance 4 - Super Mario 3 + Mario Brothers (Japan).srm",
+          "size": 131072,
+          "sha1": "7355e2efba57d011e99a3aa5c6786a1c93ea8461"
+        },
+        "frame": "files"
+      }
+    },
+    "proof_order": [
+      "mgba",
+      "vba-m",
+      "gpsp",
+      "vba-next",
+      "beetle-gba",
+      "skyemu"
+    ]
+  },
+  "note": "The GameShark copied only the first 64 KiB of the 128 KiB flash; imported as mGBA does, the second half of the chip stays erased."
+}

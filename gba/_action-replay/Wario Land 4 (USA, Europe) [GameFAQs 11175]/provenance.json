@@ -1,0 +1,119 @@
+{
+  "method": "downloaded",
+  "system": "gba",
+  "core": "_action-replay",
+  "url": "https://gamefaqs.gamespot.com/gba/524513-wario-land-4/saves/11175",
+  "source_page": "https://gamefaqs.gamespot.com/gba/524513-wario-land-4/saves",
+  "source": "GameFAQs (section 'GameBoy Advance Pro Action Replay Save (North America)')",
+  "author": "MasterUni",
+  "licence": null,
+  "posted": "2006-03-18",
+  "fetched": "2026-11-05",
+  "what_it_is": "Normal Mode: All levels completed, all 16 records found, has $202,360",
+  "gamefaqs": {
+    "id": 11175,
+    "product": "Wario Land 4",
+    "section": "GameBoy Advance Pro Action Replay Save (North America)",
+    "region": "North America",
+    "served_as": "wario-land-4.11175.xps",
+    "listed_size": "64KB"
+  },
+  "format": "SharkPort save (\"SharkPortSave\", kind 0x000F0000): title \"WARIOLANDE\", date \"Save3/18/2006 10:46:52 PM 41\", notes \"\"; cart header \"WARIOLANDE\" / 'AWAE' (complement 0xec); payload 65536 bytes; checksum: unsigned",
+  "files": {
+    "wario-land-4.11175.xps": {
+      "size": 65643,
+      "sha1": "5800fb3cb759a063e15416b75cf5e3ea5818ecfc"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Wario Land 4 (USA, Europe).gba",
+      "sha1": "b9fe05a8080e124b67bce6a623234ee3b518a2c1",
+      "size": 8388608
+    },
+    "converted_with": "tools/gamefaqs/gba-sharkport.py wario-land-4.11175.xps --rom ROM --core CORE --outdir DIR: reads the SharkPort container as mGBA does and imports the payload as mGBA's _importSavedata does (cut to the chip, EEPROM 8-byte blocks reversed, the rest of the chip erased), then lays the chip out as the core keeps it",
+    "converted": {
+      "size": 32768,
+      "sha1": "9eb4937b82493b715d2457e88009fe473553f85f"
+    },
+    "script": "scripts/gba/Wario Land 4.load.txt",
+    "cores": {
+      "mgba": {
+        "result": "loads",
+        "detail": "save select: A Sound Room, Normal, 202360; B Entry Passage, Hard",
+        "core_version": "mGBA 0.11-212-7a12d6d",
+        "file": {
+          "name": "Wario Land 4 (USA, Europe).srm",
+          "size": 32768,
+          "sha1": "9eb4937b82493b715d2457e88009fe473553f85f"
+        },
+        "frame": "files"
+      },
+      "vba-m": {
+        "result": "loads",
+        "detail": "save select: A Sound Room, Normal, 202360; B Entry Passage, Hard",
+        "core_version": "VBA-M 115defb",
+        "file": {
+          "name": "Wario Land 4 (USA, Europe).srm",
+          "size": 32768,
+          "sha1": "9eb4937b82493b715d2457e88009fe473553f85f"
+        },
+        "frame": "files"
+      },
+      "gpsp": {
+        "result": "loads",
+        "detail": "save select: A Sound Room, Normal, 202360; B Entry Passage, Hard",
+        "core_version": "gpSP v1.1.0-5819380",
+        "file": {
+          "name": "Wario Land 4 (USA, Europe).srm",
+          "size": 131072,
+          "sha1": "5a5725078f99aa80b1257c0b55413ff27e786997"
+        },
+        "frame": "files"
+      },
+      "vba-next": {
+        "result": "loads",
+        "detail": "save select: A Sound Room, Normal, 202360; B Entry Passage, Hard",
+        "core_version": "VBA Next v1.0.2",
+        "file": {
+          "name": "Wario Land 4 (USA, Europe).srm",
+          "size": 139264,
+          "sha1": "d09394ad183a8da02fde3a5b916be41f2835cf8f"
+        },
+        "frame": "files"
+      },
+      "beetle-gba": {
+        "result": "loads",
+        "detail": "save select: A Sound Room, Normal, 202360; B Entry Passage, Hard",
+        "core_version": "Beetle GBA v0.9.36 b158166",
+        "file": {
+          "name": "Wario Land 4 (USA, Europe).5fe47355a33e3fabec2a1607af88a404.sav",
+          "size": 65536,
+          "sha1": "885c34a8055d1ed2c1b5e8c3166100b4dfc03a94"
+        },
+        "frame": "files"
+      },
+      "skyemu": {
+        "result": "loads",
+        "detail": "save select: A Sound Room, Normal, 202360; B Entry Passage, Hard",
+        "core_version": "SkyEmu adacd0788964ed89f5c43dcbc1f3cc26deec996c",
+        "file": {
+          "name": "Wario Land 4 (USA, Europe).srm",
+          "size": 131072,
+          "sha1": "5a5725078f99aa80b1257c0b55413ff27e786997"
+        },
+        "frame": "files"
+      }
+    },
+    "proof_order": [
+      "mgba",
+      "vba-m",
+      "gpsp",
+      "vba-next",
+      "beetle-gba",
+      "skyemu"
+    ]
+  },
+  "note": null
+}

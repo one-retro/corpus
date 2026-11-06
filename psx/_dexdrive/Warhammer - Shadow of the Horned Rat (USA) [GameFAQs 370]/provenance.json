@@ -1,0 +1,84 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_dexdrive",
+  "url": "https://gamefaqs.gamespot.com/pc/199268-warhammer-shadow-of-the-horned-rat/saves/370",
+  "source_page": "https://gamefaqs.gamespot.com/pc/199268-warhammer-shadow-of-the-horned-rat/saves",
+  "source": "GameFAQs (section 'PlayStation DexDrive Save (North America)')",
+  "author": "Kasket_Darkfyre",
+  "licence": null,
+  "posted": "2000-10-07",
+  "fetched": "2026-11-05",
+  "what_it_is": "Half way through the game, most special characters with you.",
+  "gamefaqs": {
+    "id": 370,
+    "product": "Warhammer: Shadow of the Horned Rat",
+    "section": "PlayStation DexDrive Save (North America)",
+    "region": "North America",
+    "served_as": "warhammer-shadow-of-the-horned-rat.370.gme",
+    "listed_size": "131KB"
+  },
+  "format": "DexDrive .gme: '123-456-STD' 3904-byte header (per-block comments) + 131072-byte raw card; the card holds 1 save(s), 1 for this game (BASLUS-00117-SOTHR-1)",
+  "release": "Warhammer - Shadow of the Horned Rat (USA)",
+  "game_saves": [
+    {
+      "name": "BASLUS-00117-SOTHR-1",
+      "blocks": 1,
+      "title": "WARHAMMER 1"
+    }
+  ],
+  "files": {
+    "warhammer-shadow-of-the-horned-rat.370.gme": {
+      "size": 134976,
+      "sha1": "e426201d23feb2c0d03418d635e91e2820d800a2"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Warhammer - Shadow of the Horned Rat (USA).cue",
+      "sha1": "382e0d28ed879cf8a0f0e806374cbbc5706caafb",
+      "size": 798
+    },
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr warhammer-shadow-of-the-horned-rat.370.gme: unwraps the card (DexDrive .gme: 3904-byte header + card)",
+    "converted": {
+      "size": 131072,
+      "sha1": "0ea74d86d113a4196d52d116fe82cbac1a5e8c3b"
+    },
+    "script": "scripts/psx/Warhammer - Shadow of the Horned Rat.load.txt",
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "loads",
+        "detail": "Load Campaign lists the saved game \"Sven Carlsson (9999)\" (no card: \"No Game Files\")"
+      },
+      "beetle-psx-hw": {
+        "result": "loads",
+        "detail": "Load Campaign lists the saved game \"Sven Carlsson (9999)\" (no card: \"No Game Files\") (the same screen as on beetle-psx)"
+      },
+      "pcsx-rearmed": {
+        "result": "loads",
+        "detail": "Load Campaign lists the saved game \"Sven Carlsson (9999)\" (no card: \"No Game Files\") (the same screen as on beetle-psx)"
+      },
+      "swanstation": {
+        "result": "loads",
+        "detail": "Load Campaign lists the saved game \"Sven Carlsson (9999)\" (no card: \"No Game Files\") (the same screen as on beetle-psx)"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": [
+      "beetle-psx",
+      "beetle-psx-hw",
+      "pcsx-rearmed",
+      "swanstation"
+    ]
+  },
+  "note": null
+}

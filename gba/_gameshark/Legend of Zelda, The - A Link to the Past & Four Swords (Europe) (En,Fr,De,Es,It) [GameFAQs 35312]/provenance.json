@@ -1,0 +1,119 @@
+{
+  "method": "downloaded",
+  "system": "gba",
+  "core": "_gameshark",
+  "url": "https://gamefaqs.gamespot.com/snes/588436-the-legend-of-zelda-a-link-to-the-past/saves/35312",
+  "source_page": "https://gamefaqs.gamespot.com/snes/588436-the-legend-of-zelda-a-link-to-the-past/saves",
+  "source": "GameFAQs (section 'GameBoy Advance GameShark Save (North America)')",
+  "author": "LEGO_Vince",
+  "licence": null,
+  "posted": "2026-08-04",
+  "fetched": "2026-11-05",
+  "what_it_is": "All three savegames are fully complete on Link to the Past. Silver keys gained on Four Swords.File 3 in particular has been reset to the beginning, with all the achievements still present.",
+  "gamefaqs": {
+    "id": 35312,
+    "product": "The Legend of Zelda: A Link to the Past",
+    "section": "GameBoy Advance GameShark Save (North America)",
+    "region": "North America",
+    "served_as": "the-legend-of-zelda-a-link-to-the-past.35312.sps",
+    "listed_size": "32KB"
+  },
+  "format": "SharkPort save (\"SharkPortSave\", kind 0x000F0000): title \"GBAZELDA\u0000\u0000\u0000\u0000\", date \"08/01/2026 04:06:22 AM\", notes \"\"; cart header \"GBAZELDA\" / 'AZLP' (complement 0x7f); payload 32768 bytes; checksum: signed",
+  "files": {
+    "the-legend-of-zelda-a-link-to-the-past.35312.sps": {
+      "size": 32871,
+      "sha1": "86081bd913df2c201e4ef525b29e9961154b2daf"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Legend of Zelda, The - A Link to the Past & Four Swords (Europe) (En,Fr,De,Es,It).gba",
+      "sha1": "3bb7f97ada7d60d8d334b271084effd1db853b32",
+      "size": 8388608
+    },
+    "converted_with": "tools/gamefaqs/gba-sharkport.py the-legend-of-zelda-a-link-to-the-past.35312.sps --rom ROM --core CORE --outdir DIR: reads the SharkPort container as mGBA does and imports the payload as mGBA's _importSavedata does (cut to the chip, EEPROM 8-byte blocks reversed, the rest of the chip erased), then lays the chip out as the core keeps it",
+    "converted": {
+      "size": 8192,
+      "sha1": "2345fd6229bb56b0cf9e6b3985ac9c92ec2f7f6d"
+    },
+    "script": "scripts/gba/Legend of Zelda, The - A Link to the Past & Four Swords (Europe).load.txt",
+    "cores": {
+      "mgba": {
+        "result": "rejected",
+        "detail": "language prompt, then CHOOSE A FILE with no files: payload in emulator byte order, scrambled by the GameShark reversal",
+        "core_version": "mGBA 0.11-212-7a12d6d",
+        "file": {
+          "name": "Legend of Zelda, The - A Link to the Past & Four Swords (Europe) (En,Fr,De,Es,It).srm",
+          "size": 8192,
+          "sha1": "2345fd6229bb56b0cf9e6b3985ac9c92ec2f7f6d"
+        },
+        "frame": "files"
+      },
+      "vba-m": {
+        "result": "rejected",
+        "detail": "language prompt, then CHOOSE A FILE with no files: payload in emulator byte order, scrambled by the GameShark reversal",
+        "core_version": "VBA-M 115defb",
+        "file": {
+          "name": "Legend of Zelda, The - A Link to the Past & Four Swords (Europe) (En,Fr,De,Es,It).srm",
+          "size": 8192,
+          "sha1": "2345fd6229bb56b0cf9e6b3985ac9c92ec2f7f6d"
+        },
+        "frame": "files"
+      },
+      "gpsp": {
+        "result": "rejected",
+        "detail": "language prompt, then CHOOSE A FILE with no files: payload in emulator byte order, scrambled by the GameShark reversal",
+        "core_version": "gpSP v1.1.0-5819380",
+        "file": {
+          "name": "Legend of Zelda, The - A Link to the Past & Four Swords (Europe) (En,Fr,De,Es,It).srm",
+          "size": 131072,
+          "sha1": "3dd715a35c8cd57fcb1021885c8213911722b92b"
+        },
+        "frame": "files"
+      },
+      "vba-next": {
+        "result": "rejected",
+        "detail": "language prompt, then CHOOSE A FILE with no files: payload in emulator byte order, scrambled by the GameShark reversal",
+        "core_version": "VBA Next v1.0.2",
+        "file": {
+          "name": "Legend of Zelda, The - A Link to the Past & Four Swords (Europe) (En,Fr,De,Es,It).srm",
+          "size": 139264,
+          "sha1": "ea4bc7ca48f6bf1616af0488ef4b29a0046c2fac"
+        },
+        "frame": "files"
+      },
+      "beetle-gba": {
+        "result": "rejected",
+        "detail": "language prompt, then CHOOSE A FILE with no files: payload in emulator byte order, scrambled by the GameShark reversal",
+        "core_version": "Beetle GBA v0.9.36 b158166",
+        "file": {
+          "name": "Legend of Zelda, The - A Link to the Past & Four Swords (Europe) (En,Fr,De,Es,It).9edf4f6e19d901d470aa1117cb0372b3.eep",
+          "size": 8192,
+          "sha1": "2345fd6229bb56b0cf9e6b3985ac9c92ec2f7f6d"
+        },
+        "frame": "files"
+      },
+      "skyemu": {
+        "result": "rejected",
+        "detail": "language prompt, then CHOOSE A FILE with no files: payload in emulator byte order, scrambled by the GameShark reversal",
+        "core_version": "SkyEmu adacd0788964ed89f5c43dcbc1f3cc26deec996c",
+        "file": {
+          "name": "Legend of Zelda, The - A Link to the Past & Four Swords (Europe) (En,Fr,De,Es,It).srm",
+          "size": 131072,
+          "sha1": "e339da9301059144e7ddc3b8cfee61221e82b78a"
+        },
+        "frame": "files"
+      }
+    },
+    "proof_order": [
+      "mgba",
+      "vba-m",
+      "gpsp",
+      "vba-next",
+      "beetle-gba",
+      "skyemu"
+    ]
+  },
+  "note": "The EEPROM payload is in emulator byte order (the order mGBA, VBA-M and a raw .sav use; text such as \"ADLEZBGA\" reads backwards per 8 bytes), not the GameShark order, so mGBA's import (which reverses each 8-byte block) scrambles it; taken as is instead, mGBA reads it: no language prompt, and the press at the file select goes on to CHOOSE A GAME."
+}

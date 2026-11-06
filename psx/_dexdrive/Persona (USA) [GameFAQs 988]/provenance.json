@@ -1,0 +1,84 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_dexdrive",
+  "url": "https://gamefaqs.gamespot.com/ps/198277-persona-revelations-series/saves/988",
+  "source_page": "https://gamefaqs.gamespot.com/ps/198277-persona-revelations-series/saves",
+  "source": "GameFAQs (section 'PlayStation DexDrive Save (North America)')",
+  "author": "carlde21",
+  "licence": null,
+  "posted": "2001-07-20",
+  "fetched": "2026-11-05",
+  "what_it_is": "After the lost forest, you are headed to the good ending, so you have a long ways to go! Level 37",
+  "gamefaqs": {
+    "id": 988,
+    "product": "Persona: Revelations Series",
+    "section": "PlayStation DexDrive Save (North America)",
+    "region": "North America",
+    "served_as": "persona-revelations-series.988.gme",
+    "listed_size": "131KB"
+  },
+  "format": "DexDrive .gme: '123-456-STD' 3904-byte header (per-block comments) + 131072-byte raw card; the card holds 1 save(s), 1 for this game (BASLUS-00339S0)",
+  "release": "Persona (USA)",
+  "game_saves": [
+    {
+      "name": "BASLUS-00339S0",
+      "blocks": 2,
+      "title": "PERSONA FILE #1 LV37 19:31:50"
+    }
+  ],
+  "files": {
+    "persona-revelations-series.988.gme": {
+      "size": 134976,
+      "sha1": "1d14f311fcee06d5530eb12e248bfe617605b5a7"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Persona (USA).cue",
+      "sha1": "2715c8946237358a03e31d2d85d39b4fe33df641",
+      "size": 79
+    },
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr persona-revelations-series.988.gme: unwraps the card (DexDrive .gme: 3904-byte header + card)",
+    "converted": {
+      "size": 131072,
+      "sha1": "0718864599ee5007e5edcf9179e822de6466d0a5"
+    },
+    "script": "scripts/psx/Persona.load.txt",
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "loads",
+        "detail": "Load Game, Slot 1 lists Carl, Lv 37, time 19:31"
+      },
+      "beetle-psx-hw": {
+        "result": "loads",
+        "detail": "Load Game, Slot 1 lists Carl, Lv 37, time 19:31 (the same screen as on beetle-psx)"
+      },
+      "pcsx-rearmed": {
+        "result": "loads",
+        "detail": "Load Game, Slot 1 lists Carl, Lv 37, time 19:31 (the same screen as on beetle-psx)"
+      },
+      "swanstation": {
+        "result": "loads",
+        "detail": "Load Game, Slot 1 lists Carl, Lv 37, time 19:31 (the same screen as on beetle-psx)"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": [
+      "beetle-psx",
+      "beetle-psx-hw",
+      "pcsx-rearmed",
+      "swanstation"
+    ]
+  },
+  "note": null
+}

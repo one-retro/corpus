@@ -1,0 +1,90 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_ps3",
+  "url": "https://gamefaqs.gamespot.com/ps/258931-mega-man-x5/saves/21501",
+  "source_page": "https://gamefaqs.gamespot.com/ps/258931-mega-man-x5/saves",
+  "source": "GameFAQs (section 'PlayStation PS3 Virtual Memory Card Save (ZIP) (North America)')",
+  "author": "Nigoli",
+  "licence": null,
+  "posted": "2011-01-27",
+  "fetched": "2026-11-05",
+  "what_it_is": "Normal X, Force, Falcon, Gaea, Ultimate X, Black Zero Selections; All Heart Tanks; All weapons; All parts; All E, W, EX-Tanks.",
+  "gamefaqs": {
+    "id": 21501,
+    "product": "Mega Man X5",
+    "section": "PlayStation PS3 Virtual Memory Card Save (ZIP) (North America)",
+    "region": "North America",
+    "served_as": "mega-man-x5.21501.zip",
+    "listed_size": "0KB",
+    "served_zip": {
+      "size": 519,
+      "sha1": "6f9a559577d67155600e59897489b94bd23d29e0"
+    }
+  },
+  "format": "zip of 1 PS3 export(s) (.PSV): '\\0VSP' header (signature, save name at 0x64), the save's blocks from 0x84 (8324 bytes); it holds 1 save(s), 1 for this game (BASLUS-01334)",
+  "release": "Mega Man X5 (USA)",
+  "game_saves": [
+    {
+      "name": "BASLUS-01334",
+      "blocks": 1,
+      "title": "MegamanX5"
+    }
+  ],
+  "files": {
+    "BASLUS-01334.PSV": {
+      "size": 8324,
+      "sha1": "06a077c4c995a89f69d8048f2086ec2de67266ee"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Mega Man X5 (USA).cue",
+      "sha1": "4e77f47c71641f6016a5fc49cc5f5d372ae71745",
+      "size": 83
+    },
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr BASLUS-01334.PSV: puts the save(s) on a freshly formatted card, as MemcardRex imports a single save",
+    "converted": {
+      "size": 131072,
+      "sha1": "ace21a4241c18882b783576801d75f082e135e6b"
+    },
+    "script": "scripts/psx/Mega Man X5.load.txt",
+    "script_variants": {
+      "pcsx-rearmed": "scripts/psx/Mega Man X5.pcsx-rearmed.load.txt"
+    },
+    "cores": {
+      "beetle-psx": {
+        "result": "loads",
+        "detail": "File Select shows DATA 1 with its weapons, armor, parts and rank"
+      },
+      "beetle-psx-hw": {
+        "result": "loads",
+        "detail": "File Select shows DATA 1 with its weapons, armor, parts and rank (the same screen as on beetle-psx)"
+      },
+      "pcsx-rearmed": {
+        "result": "loads",
+        "detail": "File Select shows DATA 1 with its weapons, armor, parts and rank (the same screen as on beetle-psx)"
+      },
+      "swanstation": {
+        "result": "loads",
+        "detail": "File Select shows DATA 1 with its weapons, armor, parts and rank (the same screen as on beetle-psx)"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": [
+      "beetle-psx",
+      "beetle-psx-hw",
+      "pcsx-rearmed",
+      "swanstation"
+    ]
+  },
+  "note": null
+}

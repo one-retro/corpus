@@ -1,0 +1,94 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_dexdrive",
+  "url": "https://gamefaqs.gamespot.com/ps/198763-star-ocean-the-second-story/saves/10754",
+  "source_page": "https://gamefaqs.gamespot.com/ps/198763-star-ocean-the-second-story/saves",
+  "source": "GameFAQs (section 'PlayStation DexDrive Save (North America)')",
+  "author": "QShafQ",
+  "licence": null,
+  "posted": "2006-01-31",
+  "fetched": "2026-11-05",
+  "what_it_is": "Claude Story, lV 255 best weapon and moves 4 all characters, basic items all 99. saves at secret dungeon phoenix boss floor. where you can train with 2 people to gain faster levels. Played by me.",
+  "gamefaqs": {
+    "id": 10754,
+    "product": "Star Ocean: The Second Story",
+    "section": "PlayStation DexDrive Save (North America)",
+    "region": "North America",
+    "served_as": "star-ocean-the-second-story.10754.gme",
+    "listed_size": "131KB"
+  },
+  "format": "DexDrive .gme: '123-456-STD' 3904-byte header (per-block comments) + 131072-byte raw card; the card holds 3 save(s), 3 for this game (BASCUS-94421S02-S01, BASCUS-94421S02-S02, BASCUS-94421S02-S03)",
+  "release": "Star Ocean - The Second Story (USA) (Disc 1)",
+  "game_saves": [
+    {
+      "name": "BASCUS-94421S02-S01",
+      "blocks": 1,
+      "title": "SO2 01 15:33 Shaf LV61"
+    },
+    {
+      "name": "BASCUS-94421S02-S02",
+      "blocks": 1,
+      "title": "SO2 02 28:12 Shaf LV94"
+    },
+    {
+      "name": "BASCUS-94421S02-S03",
+      "blocks": 1,
+      "title": "SO2 03 44:30 Shaf LV255"
+    }
+  ],
+  "files": {
+    "star-ocean-the-second-story.10754.gme": {
+      "size": 134976,
+      "sha1": "93f44b4b472c173f5bbcbb4f51a0648c64309935"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Star Ocean - The Second Story (USA) (Disc 1).cue",
+      "sha1": "c13756292cbf2a27d2be247c5576e584552ce40f",
+      "size": 110
+    },
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr star-ocean-the-second-story.10754.gme: unwraps the card (DexDrive .gme: 3904-byte header + card)",
+    "converted": {
+      "size": 131072,
+      "sha1": "98f5cf665e993f8c33a0dc7e8e783023bebc8e82"
+    },
+    "script": "scripts/psx/Star Ocean - The Second Story.load.txt",
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "loads",
+        "detail": "Load, Slot 1 shows #2: 28:12, 680 battles and #3: 44:30, 1313 battles"
+      },
+      "beetle-psx-hw": {
+        "result": "loads",
+        "detail": "Load, Slot 1 shows #2: 28:12, 680 battles and #3: 44:30, 1313 battles (the same screen as on beetle-psx)"
+      },
+      "pcsx-rearmed": {
+        "result": "loads",
+        "detail": "Load, Slot 1 shows #2: 28:12, 680 battles and #3: 44:30, 1313 battles (the same screen as on beetle-psx)"
+      },
+      "swanstation": {
+        "result": "loads",
+        "detail": "Load, Slot 1 shows #2: 28:12, 680 battles and #3: 44:30, 1313 battles (the same screen as on beetle-psx)"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": [
+      "beetle-psx",
+      "beetle-psx-hw",
+      "pcsx-rearmed",
+      "swanstation"
+    ]
+  },
+  "note": null
+}

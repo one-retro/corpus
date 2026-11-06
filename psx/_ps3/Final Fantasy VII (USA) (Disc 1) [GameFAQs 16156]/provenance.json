@@ -1,0 +1,88 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_ps3",
+  "url": "https://gamefaqs.gamespot.com/ps/197341-final-fantasy-vii/saves/16156",
+  "source_page": "https://gamefaqs.gamespot.com/ps/197341-final-fantasy-vii/saves",
+  "source": "GameFAQs (section 'PlayStation PS3 Virtual Memory Card Save (ZIP) (North America)')",
+  "author": "AschTheHated",
+  "licence": null,
+  "posted": "2007-11-17",
+  "fetched": "2026-11-05",
+  "what_it_is": "1-Start at the Crater for the final fight against Jenova-SYNTHESIS, Bizarro-Sephiroth and Safer-Sephiroth.",
+  "gamefaqs": {
+    "id": 16156,
+    "product": "Final Fantasy VII",
+    "section": "PlayStation PS3 Virtual Memory Card Save (ZIP) (North America)",
+    "region": "North America",
+    "served_as": "final-fantasy-vii.16156.zip",
+    "listed_size": "2KB",
+    "served_zip": {
+      "size": 2244,
+      "sha1": "f92b7aa9ca41f1b1be5825b8847e295e41b68ada"
+    }
+  },
+  "format": "zip of 1 PS3 export(s) (.PSV): '\\0VSP' header (signature, save name at 0x64), the save's blocks from 0x84 (8324 bytes); it holds 1 save(s), 1 for this game (BASCUS-94163FF7-S01)",
+  "release": "Final Fantasy VII (USA) (Disc 1)",
+  "game_saves": [
+    {
+      "name": "BASCUS-94163FF7-S01",
+      "blocks": 1,
+      "title": "FF7/SAVE01/23:20"
+    }
+  ],
+  "files": {
+    "FINAL FANTASY VII/BASCUS-941634646372D533031.PSV": {
+      "size": 8324,
+      "sha1": "e052d7ad4745e2a3be9fa06401625e0fe6fc0ccf"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Final Fantasy VII (USA) (Disc 1).cue",
+      "sha1": "c8df949f13d990d325ac3b8d6eb835c440380e52",
+      "size": 98
+    },
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr FINAL FANTASY VII/BASCUS-941634646372D533031.PSV: puts the save(s) on a freshly formatted card, as MemcardRex imports a single save",
+    "converted": {
+      "size": 131072,
+      "sha1": "3139067ac578ef384267762ee0d37f99072101a5"
+    },
+    "script": "scripts/psx/Final Fantasy VII.load.txt",
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "loads",
+        "detail": "Slot 1 lists file 1: Cloud, Level 99, 23:20, Bottom of Nothern Cave"
+      },
+      "beetle-psx-hw": {
+        "result": "loads",
+        "detail": "Slot 1 lists file 1: Cloud, Level 99, 23:20, Bottom of Nothern Cave (the same screen as on beetle-psx)"
+      },
+      "pcsx-rearmed": {
+        "result": "loads",
+        "detail": "Slot 1 lists file 1: Cloud, Level 99, 23:20, Bottom of Nothern Cave (the same screen as on beetle-psx)"
+      },
+      "swanstation": {
+        "result": "loads",
+        "detail": "Slot 1 lists file 1: Cloud, Level 99, 23:20, Bottom of Nothern Cave (the same screen as on beetle-psx)"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": [
+      "beetle-psx",
+      "beetle-psx-hw",
+      "pcsx-rearmed",
+      "swanstation"
+    ]
+  },
+  "note": null
+}

@@ -1,0 +1,52 @@
+{
+  "method": "downloaded",
+  "system": "n64",
+  "core": "_unknown",
+  "url": "https://gamefaqs.gamespot.com/n64/199386-yoshis-story/saves/32751",
+  "source_page": "https://gamefaqs.gamespot.com/n64/199386-yoshis-story/saves",
+  "source": "GameFAQs (section 'Nintendo 64 DexDrive Save (North America)')",
+  "author": "GokaiWhite",
+  "licence": null,
+  "posted": "2025-07-09",
+  "fetched": "2026-11-05",
+  "what_it_is": "All Stages Available in Trial Mode",
+  "gamefaqs": {
+    "id": 32751,
+    "product": "Yoshi's Story",
+    "section": "Nintendo 64 DexDrive Save (North America)",
+    "region": "North America",
+    "served_as": "yoshis-story.32751.n64",
+    "listed_size": "132KB"
+  },
+  "format": "135232 bytes (0x1040 + 4 x 32 KiB, the size of a DexDrive header on a four-pak .mpk), every byte 00",
+  "files": {
+    "yoshis-story.32751.n64": {
+      "size": 135232,
+      "sha1": "b7b9bd789caefe7a0eda0988e8d2f06be6d556b1"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "converted_with": null,
+    "converted": null,
+    "rom": null,
+    "script": null,
+    "cores": {
+      "mupen64plus-next": {
+        "result": "not-run",
+        "detail": "nothing to load: the file is all zeros"
+      },
+      "parallel-n64": {
+        "result": "not-run",
+        "detail": "nothing to load: the file is all zeros"
+      },
+      "mupen64plus": {
+        "result": "not-run",
+        "detail": "nothing to load: the file is all zeros"
+      }
+    },
+    "core_versions": {},
+    "proof_order": []
+  },
+  "note": "Posted as a DexDrive save (\"All Stages Available in Trial Mode\"); every byte of the file is 00, so there is no save to convert or load."
+}

@@ -1,0 +1,79 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_ps3",
+  "url": "https://gamefaqs.gamespot.com/ps/197468-gran-turismo/saves/34185",
+  "source_page": "https://gamefaqs.gamespot.com/ps/197468-gran-turismo/saves",
+  "source": "GameFAQs (section 'PlayStation PS3 Virtual Memory Card Save (ZIP) (Japan)')",
+  "author": "SolvalouGT417",
+  "licence": null,
+  "posted": "2026-01-05",
+  "fetched": "2026-11-05",
+  "what_it_is": "Starter save (All gold licenses, Arcade Mode completed, License prize car only garage with all color variants)",
+  "gamefaqs": {
+    "id": 34185,
+    "product": "Gran Turismo",
+    "section": "PlayStation PS3 Virtual Memory Card Save (ZIP) (Japan)",
+    "region": "Japan",
+    "served_as": "gran-turismo.34185.zip",
+    "listed_size": "1KB",
+    "served_zip": {
+      "size": 1346,
+      "sha1": "87aba14e3f12eca91c751c4aeac4b8ed8071219d"
+    }
+  },
+  "format": "zip of 1 PS3 export(s) (.PSV): '\\0VSP' header (signature, save name at 0x64), the save's blocks from 0x84 (41092 bytes); it holds 1 save(s), 1 for this game (BISCPS-10045GT)",
+  "release": "Gran Turismo (Japan, Asia)",
+  "game_saves": [
+    {
+      "name": "BISCPS-10045GT",
+      "blocks": 5,
+      "title": "GTゲームデータ"
+    }
+  ],
+  "files": {
+    "BISCPS-100454754_starter.PSV": {
+      "size": 41092,
+      "sha1": "3586760b8a032d25410411ed2a9093c085b41199"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": null,
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr BISCPS-100454754_starter.PSV: puts the save(s) on a freshly formatted card, as MemcardRex imports a single save",
+    "converted": {
+      "size": 131072,
+      "sha1": "28bf2f8878b8d290807117d4c5b8e285bd358310"
+    },
+    "script": null,
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "not-run",
+        "detail": "no image of Gran Turismo (Japan, Asia) in the library"
+      },
+      "beetle-psx-hw": {
+        "result": "not-run",
+        "detail": "no image of Gran Turismo (Japan, Asia) in the library"
+      },
+      "pcsx-rearmed": {
+        "result": "not-run",
+        "detail": "no image of Gran Turismo (Japan, Asia) in the library"
+      },
+      "swanstation": {
+        "result": "not-run",
+        "detail": "no image of Gran Turismo (Japan, Asia) in the library"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": []
+  },
+  "note": null
+}

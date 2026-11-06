@@ -1,0 +1,164 @@
+{
+  "method": "downloaded",
+  "system": "ps2",
+  "core": "_ps3",
+  "url": "https://gamefaqs.gamespot.com/ps2/914659-ratchet-and-clank-going-commando/saves/17136",
+  "source_page": "https://gamefaqs.gamespot.com/ps2/914659-ratchet-and-clank-going-commando/saves",
+  "source": "GameFAQs (section 'PlayStation 2 PS3 Virtual Memory Card Save (ZIP) (North America)')",
+  "author": "McGingerchops",
+  "licence": null,
+  "posted": "2008-05-14",
+  "fetched": "2026-11-05",
+  "what_it_is": "All Weapons Fully Upgraded, All Skill Points",
+  "gamefaqs": {
+    "id": 17136,
+    "product": "Ratchet & Clank: Going Commando",
+    "section": "PlayStation 2 PS3 Virtual Memory Card Save (ZIP) (North America)",
+    "region": "North America",
+    "served_as": "ratchet-and-clank-going-commando.17136.zip",
+    "listed_size": "56KB"
+  },
+  "format": "PS3 Virtual Memory Card export (.PSV): '\\0VSP' header, PS2 save type 2, 480036 bytes, folder BASCUS-97268RATCHET, 7 files, 479454 bytes of file data",
+  "files": {
+    "BASCUS-9726852415443484554.PSV": {
+      "size": 480036,
+      "sha1": "31ac8866a1cbd92a6662c9940c63228b3ab95048"
+    }
+  },
+  "save": {
+    "folder": "BASCUS-97268RATCHET",
+    "title": [
+      "Ratchet & Clank",
+      "Going Commando"
+    ],
+    "times": "as the file stores them (PS2 card times, JST)",
+    "files": [
+      {
+        "name": "icon.sys",
+        "size": 964,
+        "sha1": "f48a7a991b3d2783a6d825c7e4ec0da3cae660c7",
+        "created": "2008-05-01 12:08:56",
+        "modified": "2008-05-01 12:08:57"
+      },
+      {
+        "name": "static.ico",
+        "size": 26134,
+        "sha1": "cd719bc12d7fa82aae767c0b5b7b0d5b9900170a",
+        "created": "2008-05-01 12:08:57",
+        "modified": "2008-05-01 12:08:57"
+      },
+      {
+        "name": "save0.bin",
+        "size": 99264,
+        "sha1": "fc73f4147d2ba163f814e27acdb290be0bc14627",
+        "created": "2008-05-01 12:08:58",
+        "modified": "2008-05-08 14:35:14"
+      },
+      {
+        "name": "save1.bin",
+        "size": 99264,
+        "sha1": "ca1a972c963386637c013bc7f48fc02ac4d902fb",
+        "created": "2008-05-01 12:08:59",
+        "modified": "2008-05-08 03:49:58"
+      },
+      {
+        "name": "save2.bin",
+        "size": 99264,
+        "sha1": "6de30277c7713cb0ab12ded0298423f68efbb05b",
+        "created": "2008-05-01 12:09:00",
+        "modified": "2008-05-01 12:09:01"
+      },
+      {
+        "name": "save3.bin",
+        "size": 99264,
+        "sha1": "6de30277c7713cb0ab12ded0298423f68efbb05b",
+        "created": "2008-05-01 12:09:01",
+        "modified": "2008-05-01 12:09:02"
+      },
+      {
+        "name": "BASCUS-97268RATCHET",
+        "size": 55300,
+        "sha1": "b63545cd3cda3374929b827bed7b8035263edee8",
+        "created": "2008-05-01 12:09:02",
+        "modified": "2008-05-01 12:09:03"
+      }
+    ]
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Ratchet & Clank - Going Commando (USA).iso",
+      "sha1": "f2cfaf0eb12b3c0d8fd6db7aa49ce032e8a6020b",
+      "size": 3828350976
+    },
+    "converted_with": "tools/gamefaqs/ps2-card.py 'BASCUS-9726852415443484554.PSV' -o OUT: reads the save with mymcplus 3.0.5 and writes OUT/Mcd001.ps2 (an 8 MiB card with ECC, formatted and filled by mymcplus) for lrps2/pcee2/pcsx2, and OUT/mc0/<folder>/ for Play!",
+    "converted": {
+      "Mcd001.ps2": {
+        "size": 8650752,
+        "sha1": "fad660141766bd31ab0a243a069e956ac73cc393"
+      },
+      "mc0/BASCUS-97268RATCHET/": {
+        "icon.sys": {
+          "size": 964,
+          "sha1": "f48a7a991b3d2783a6d825c7e4ec0da3cae660c7"
+        },
+        "static.ico": {
+          "size": 26134,
+          "sha1": "cd719bc12d7fa82aae767c0b5b7b0d5b9900170a"
+        },
+        "save0.bin": {
+          "size": 99264,
+          "sha1": "fc73f4147d2ba163f814e27acdb290be0bc14627"
+        },
+        "save1.bin": {
+          "size": 99264,
+          "sha1": "ca1a972c963386637c013bc7f48fc02ac4d902fb"
+        },
+        "save2.bin": {
+          "size": 99264,
+          "sha1": "6de30277c7713cb0ab12ded0298423f68efbb05b"
+        },
+        "save3.bin": {
+          "size": 99264,
+          "sha1": "6de30277c7713cb0ab12ded0298423f68efbb05b"
+        },
+        "BASCUS-97268RATCHET": {
+          "size": 55300,
+          "sha1": "b63545cd3cda3374929b827bed7b8035263edee8"
+        }
+      },
+      "read_back": "work/ps2/tools/mcfs.py lists every file with the size and SHA-1 put on the card; one-saves (1saves convert + inspect) reads the card and finds BASCUS-97268RATCHET",
+      "timestamps": "what the save does not date is 2000-01-01 00:00:00 (JST, as a card stores it); the card's own root entries too"
+    },
+    "script": "scripts/ps2/Ratchet & Clank - Going Commando (USA).load.txt",
+    "cores": {
+      "pcee2": {
+        "detail": "Load Game: 03:07 (challenge 2) 3,662,853 bolts 05/08/08 and 12:03 (challenge 1) 1,927,132 05/07/08; Planet Boldan, Silver City (no save: 'Please insert a Memory Card ... that contains Ratchet and Clank: Going Commando game data')",
+        "result": "loads"
+      },
+      "lrps2": {
+        "detail": "Load Game: 03:07 (challenge 2) 3,662,853 bolts 05/08/08 and 12:03 (challenge 1) 1,927,132 05/07/08; Planet Boldan, Silver City (no save: 'Please insert a Memory Card ... that contains Ratchet and Clank: Going Commando game data')",
+        "result": "loads"
+      },
+      "play": {
+        "detail": "Load Game: 03:07 (challenge 2) 3,662,853 bolts 05/08/08 and 12:03 (challenge 1) 1,927,132 05/07/08; Planet Boldan, Silver City (no save: 'Please insert a Memory Card ... that contains Ratchet and Clank: Going Commando game data')",
+        "result": "loads"
+      },
+      "pcsx2": {
+        "detail": "Load Game: 03:07 (challenge 2) 3,662,853 bolts 05/08/08 and 12:03 (challenge 1) 1,927,132 05/07/08; Planet Boldan, Silver City (no save: 'Please insert a Memory Card ... that contains Ratchet and Clank: Going Commando game data')",
+        "result": "loads"
+      },
+      "armsx2": {
+        "result": "not-run",
+        "detail": "ARMSX2 renders only through Vulkan here and falls back to a null GS (no picture), so nothing shows what the game read (ps2/NOTES.md)"
+      }
+    },
+    "proof_order": [
+      "pcee2",
+      "lrps2",
+      "play",
+      "pcsx2"
+    ]
+  },
+  "note": null
+}

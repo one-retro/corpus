@@ -1,0 +1,119 @@
+{
+  "method": "downloaded",
+  "system": "gba",
+  "core": "_raw",
+  "url": "https://gamefaqs.gamespot.com/gba/563596-pokemon-sapphire-version/saves/35703",
+  "source_page": "https://gamefaqs.gamespot.com/gba/563596-pokemon-sapphire-version/saves",
+  "source": "GameFAQs (section 'GameBoy Advance GameShark SP Save File (North America)')",
+  "author": "LadiesMan712",
+  "licence": null,
+  "posted": "2026-10-19",
+  "fetched": "2026-11-05",
+  "what_it_is": "100 % complete All Pokémon from Generations 1–3 stored in the box.",
+  "gamefaqs": {
+    "id": 35703,
+    "product": "Pokemon Ruby / Sapphire / Emerald Version",
+    "section": "GameBoy Advance GameShark SP Save File (North America)",
+    "region": "North America",
+    "served_as": "pokemon-ruby-sapphire-emerald-version.35703.gsv",
+    "listed_size": "128KB"
+  },
+  "format": "raw 131072-byte save image, no header",
+  "files": {
+    "pokemon-ruby-sapphire-emerald-version.35703.gsv": {
+      "size": 131072,
+      "sha1": "c4f359d2d2263337f175d29d9fd0420d9f676980"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Pokemon - Emerald Version (USA, Europe).gba",
+      "sha1": "f3ae088181bf583e55daf962a92bb46f4f1d07b7",
+      "size": 16777216
+    },
+    "converted_with": "tools/gamefaqs/gba-layout.py pokemon-ruby-sapphire-emerald-version.35703.gsv --rom ROM --core CORE --outdir DIR: takes the raw image as the chip (cut or padded with 0xFF to the chip size, as mGBA maps a .sav) and lays it out as the core keeps it",
+    "converted": {
+      "size": 131072,
+      "sha1": "c4f359d2d2263337f175d29d9fd0420d9f676980"
+    },
+    "script": "scripts/gba/Pokemon - Ruby Version.load.txt",
+    "cores": {
+      "mgba": {
+        "result": "loads",
+        "detail": "CONTINUE: Rick, 107:47",
+        "core_version": "mGBA 0.11-212-7a12d6d",
+        "file": {
+          "name": "Pokemon - Emerald Version (USA, Europe).srm",
+          "size": 131072,
+          "sha1": "c4f359d2d2263337f175d29d9fd0420d9f676980"
+        },
+        "frame": "menu"
+      },
+      "vba-m": {
+        "result": "loads",
+        "detail": "CONTINUE: Rick, 107:47",
+        "core_version": "VBA-M 115defb",
+        "file": {
+          "name": "Pokemon - Emerald Version (USA, Europe).srm",
+          "size": 131072,
+          "sha1": "c4f359d2d2263337f175d29d9fd0420d9f676980"
+        },
+        "frame": "menu"
+      },
+      "gpsp": {
+        "result": "loads",
+        "detail": "CONTINUE: Rick, 107:47",
+        "core_version": "gpSP v1.1.0-5819380",
+        "file": {
+          "name": "Pokemon - Emerald Version (USA, Europe).srm",
+          "size": 131072,
+          "sha1": "c4f359d2d2263337f175d29d9fd0420d9f676980"
+        },
+        "frame": "menu"
+      },
+      "vba-next": {
+        "result": "loads",
+        "detail": "CONTINUE: Rick, 107:47",
+        "core_version": "VBA Next v1.0.2",
+        "file": {
+          "name": "Pokemon - Emerald Version (USA, Europe).srm",
+          "size": 139264,
+          "sha1": "40fc9c44dd52c6db9f0137068b4eecbdb27d4a07"
+        },
+        "frame": "menu"
+      },
+      "beetle-gba": {
+        "result": "loads",
+        "detail": "CONTINUE: Rick, 107:47",
+        "core_version": "Beetle GBA v0.9.36 b158166",
+        "file": {
+          "name": "Pokemon - Emerald Version (USA, Europe).605b89b67018abcea91e693a4dd25be3.sav",
+          "size": 131072,
+          "sha1": "c4f359d2d2263337f175d29d9fd0420d9f676980"
+        },
+        "frame": "menu"
+      },
+      "skyemu": {
+        "result": "loads",
+        "detail": "CONTINUE: Rick, 107:47",
+        "core_version": "SkyEmu adacd0788964ed89f5c43dcbc1f3cc26deec996c",
+        "file": {
+          "name": "Pokemon - Emerald Version (USA, Europe).srm",
+          "size": 131072,
+          "sha1": "c4f359d2d2263337f175d29d9fd0420d9f676980"
+        },
+        "frame": "menu"
+      }
+    },
+    "proof_order": [
+      "mgba",
+      "vba-m",
+      "gpsp",
+      "vba-next",
+      "beetle-gba",
+      "skyemu"
+    ]
+  },
+  "note": "No container: a bare save image uploaded as .gsv, so the writer (an emulator, a flash cart, the GameShark software) cannot be told from the bytes. Uploaded as .gsv in the 'GameBoy Advance GameShark SP Save File (North America)' section, but it has no ADVSAVEG header."
+}

@@ -1,0 +1,84 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_dexdrive",
+  "url": "https://gamefaqs.gamespot.com/ps/197341-final-fantasy-vii/saves/1827",
+  "source_page": "https://gamefaqs.gamespot.com/ps/197341-final-fantasy-vii/saves",
+  "source": "GameFAQs (section 'PlayStation DexDrive Save (North America)')",
+  "author": "_madhatter256",
+  "licence": null,
+  "posted": "2002-08-30",
+  "fetched": "2026-11-05",
+  "what_it_is": "Right before you battle Sephiroth in the final dungeon. Gold Chocobo, Knights of the Round Materia. Ruby and Emrald Weapon haven't been defeated.",
+  "gamefaqs": {
+    "id": 1827,
+    "product": "Final Fantasy VII",
+    "section": "PlayStation DexDrive Save (North America)",
+    "region": "North America",
+    "served_as": "final-fantasy-vii.1827.gme",
+    "listed_size": "131KB"
+  },
+  "format": "DexDrive .gme: '123-456-STD' 3904-byte header (per-block comments) + 131072-byte raw card; the card holds 1 save(s), 1 for this game (BASCUS-94163FF7-S01)",
+  "release": "Final Fantasy VII (USA) (Disc 1)",
+  "game_saves": [
+    {
+      "name": "BASCUS-94163FF7-S01",
+      "blocks": 1,
+      "title": "FF7/SAVE01/70:18"
+    }
+  ],
+  "files": {
+    "final-fantasy-vii.1827.gme": {
+      "size": 134976,
+      "sha1": "b208d291bd8fc2dde99c872dd19d7052ab021297"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Final Fantasy VII (USA) (Disc 1).cue",
+      "sha1": "c8df949f13d990d325ac3b8d6eb835c440380e52",
+      "size": 98
+    },
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr final-fantasy-vii.1827.gme: unwraps the card (DexDrive .gme: 3904-byte header + card)",
+    "converted": {
+      "size": 131072,
+      "sha1": "c8b3071deb291d471ffc66b119b69eb3eae7c1a7"
+    },
+    "script": "scripts/psx/Final Fantasy VII.load.txt",
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "loads",
+        "detail": "Slot 1 lists file 1: Anthony, Level 70, 70:18, Bottom of Nothern Cave"
+      },
+      "beetle-psx-hw": {
+        "result": "loads",
+        "detail": "Slot 1 lists file 1: Anthony, Level 70, 70:18, Bottom of Nothern Cave (the same screen as on beetle-psx)"
+      },
+      "pcsx-rearmed": {
+        "result": "loads",
+        "detail": "Slot 1 lists file 1: Anthony, Level 70, 70:18, Bottom of Nothern Cave (the same screen as on beetle-psx)"
+      },
+      "swanstation": {
+        "result": "loads",
+        "detail": "Slot 1 lists file 1: Anthony, Level 70, 70:18, Bottom of Nothern Cave (the same screen as on beetle-psx)"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": [
+      "beetle-psx",
+      "beetle-psx-hw",
+      "pcsx-rearmed",
+      "swanstation"
+    ]
+  },
+  "note": null
+}

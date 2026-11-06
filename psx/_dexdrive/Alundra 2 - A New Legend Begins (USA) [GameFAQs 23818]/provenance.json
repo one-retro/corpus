@@ -1,0 +1,84 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_dexdrive",
+  "url": "https://gamefaqs.gamespot.com/ps/250564-alundra-2/saves/23818",
+  "source_page": "https://gamefaqs.gamespot.com/ps/250564-alundra-2/saves",
+  "source": "GameFAQs (section 'PlayStation DexDrive Save (North America)')",
+  "author": "RPGer800",
+  "licence": null,
+  "posted": "2014-06-14",
+  "fetched": "2026-11-05",
+  "what_it_is": "All Items Obtained, Saved at Star Key.",
+  "gamefaqs": {
+    "id": 23818,
+    "product": "Alundra 2",
+    "section": "PlayStation DexDrive Save (North America)",
+    "region": "North America",
+    "served_as": "alundra-2.23818.gme",
+    "listed_size": "131KB"
+  },
+  "format": "DexDrive .gme: '123-456-STD' 3904-byte header (per-block comments) + 131072-byte raw card; the card holds 1 save(s), 1 for this game (BASLUS-0101700)",
+  "release": "Alundra 2 - A New Legend Begins (USA)",
+  "game_saves": [
+    {
+      "name": "BASLUS-0101700",
+      "blocks": 1,
+      "title": "ALUNDRA2/FILE1/Star Key 2"
+    }
+  ],
+  "files": {
+    "alundra-2.23818.gme": {
+      "size": 134976,
+      "sha1": "7d16ff45e84b32ab72e2a40c58f25123e36db268"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Alundra 2 - A New Legend Begins (USA).cue",
+      "sha1": "de4ee6d678b424168bc64409a9b0d82d94a335e1",
+      "size": 103
+    },
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr alundra-2.23818.gme: unwraps the card (DexDrive .gme: 3904-byte header + card)",
+    "converted": {
+      "size": 131072,
+      "sha1": "ed154b935b5401ee39355e4b7f533f6330a6d268"
+    },
+    "script": "scripts/psx/Alundra 2.load.txt",
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "loads",
+        "detail": "Load, Slot 1 lists No. 1: Star Key 2, Normal, 52:48"
+      },
+      "beetle-psx-hw": {
+        "result": "loads",
+        "detail": "Load, Slot 1 lists No. 1: Star Key 2, Normal, 52:48 (the same screen as on beetle-psx)"
+      },
+      "pcsx-rearmed": {
+        "result": "loads",
+        "detail": "Load, Slot 1 lists No. 1: Star Key 2, Normal, 52:48 (the same screen as on beetle-psx)"
+      },
+      "swanstation": {
+        "result": "loads",
+        "detail": "Load, Slot 1 lists No. 1: Star Key 2, Normal, 52:48 (the same screen as on beetle-psx)"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": [
+      "beetle-psx",
+      "beetle-psx-hw",
+      "pcsx-rearmed",
+      "swanstation"
+    ]
+  },
+  "note": null
+}

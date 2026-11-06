@@ -1,0 +1,168 @@
+{
+  "method": "downloaded",
+  "system": "ps2",
+  "core": "_max-drive",
+  "url": "https://gamefaqs.gamespot.com/ps2/927167-ratchet-deadlocked/saves/27234",
+  "source_page": "https://gamefaqs.gamespot.com/ps2/927167-ratchet-deadlocked/saves",
+  "source": "GameFAQs (section 'PlayStation2 Max Drive Save (Europe)')",
+  "author": "Sal_89",
+  "licence": null,
+  "posted": "2020-10-21",
+  "fetched": "2026-11-05",
+  "what_it_is": "Contain three saves. The first have all weapons at LV99 (just skill points are needed to 100%). The second have everything unlocked and maxed and the last have all unlocked and all weapons at LV128",
+  "gamefaqs": {
+    "id": 27234,
+    "product": "Ratchet: Deadlocked",
+    "section": "PlayStation2 Max Drive Save (Europe)",
+    "region": "Europe",
+    "served_as": "ratchet-deadlocked.27234.max",
+    "listed_size": "43KB"
+  },
+  "format": "Max Drive / PowerSave save: 'Ps2PowerSave' header (CRC32 3700f07a, matches), folder BESCES-53285RATCHET, 10 files, LZARI stream 44452 bytes unpacking to 402168 bytes (401746 bytes of file data)",
+  "files": {
+    "ratchet-deadlocked.27234.max": {
+      "size": 44544,
+      "sha1": "4fb1628451511f00a3c2832a30be213d399a0144"
+    }
+  },
+  "save": {
+    "folder": "BESCES-53285RATCHET",
+    "title": [
+      "Ratchet :",
+      "Deadlocked"
+    ],
+    "times": "none: a max file stores no file times",
+    "files": [
+      {
+        "name": "icon.sys",
+        "size": 964,
+        "sha1": "dd6bd65dcb3984c05427576a58a73b26d24efc0b"
+      },
+      {
+        "name": "static.ico",
+        "size": 56214,
+        "sha1": "f1a517340a0243debc87ff48a03b16c5cfbbc08d"
+      },
+      {
+        "name": "save2.bin",
+        "size": 49092,
+        "sha1": "064fba9308bb418090ee149cf4870c9b2e575869"
+      },
+      {
+        "name": "save0.bin",
+        "size": 49092,
+        "sha1": "51fe763c917dd7e47b7446b6dfab2cffdcfc94f4"
+      },
+      {
+        "name": "BESCES-53285RATCHET",
+        "size": 29696,
+        "sha1": "499e05447a8fd90eeb36b3c4e4a975d7325d954c"
+      },
+      {
+        "name": "save4.bin",
+        "size": 49080,
+        "sha1": "f4167df2cca5f072f9add7ea7cb0113bf6053fff"
+      },
+      {
+        "name": "save3.bin",
+        "size": 49080,
+        "sha1": "f4167df2cca5f072f9add7ea7cb0113bf6053fff"
+      },
+      {
+        "name": "save1.bin",
+        "size": 49092,
+        "sha1": "9c9f19ba4b45b900e99b9fc990bf0c352c6ea7c1"
+      },
+      {
+        "name": "patch.bin",
+        "size": 65536,
+        "sha1": "86a56528b3c577e1f82d91c5c827a7367da80475"
+      },
+      {
+        "name": "net.bin",
+        "size": 3900,
+        "sha1": "6649f03dfc886b9a528f8e85329a0be3b90dc4ee"
+      }
+    ]
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": null,
+    "converted_with": "tools/gamefaqs/ps2-card.py 'ratchet-deadlocked.27234.max' -o OUT: reads the save with mymcplus 3.0.5 and writes OUT/Mcd001.ps2 (an 8 MiB card with ECC, formatted and filled by mymcplus) for lrps2/pcee2/pcsx2, and OUT/mc0/<folder>/ for Play!",
+    "converted": {
+      "Mcd001.ps2": {
+        "size": 8650752,
+        "sha1": "740461e694f84456207e0035eefec540b9264afc"
+      },
+      "mc0/BESCES-53285RATCHET/": {
+        "icon.sys": {
+          "size": 964,
+          "sha1": "dd6bd65dcb3984c05427576a58a73b26d24efc0b"
+        },
+        "static.ico": {
+          "size": 56214,
+          "sha1": "f1a517340a0243debc87ff48a03b16c5cfbbc08d"
+        },
+        "save2.bin": {
+          "size": 49092,
+          "sha1": "064fba9308bb418090ee149cf4870c9b2e575869"
+        },
+        "save0.bin": {
+          "size": 49092,
+          "sha1": "51fe763c917dd7e47b7446b6dfab2cffdcfc94f4"
+        },
+        "BESCES-53285RATCHET": {
+          "size": 29696,
+          "sha1": "499e05447a8fd90eeb36b3c4e4a975d7325d954c"
+        },
+        "save4.bin": {
+          "size": 49080,
+          "sha1": "f4167df2cca5f072f9add7ea7cb0113bf6053fff"
+        },
+        "save3.bin": {
+          "size": 49080,
+          "sha1": "f4167df2cca5f072f9add7ea7cb0113bf6053fff"
+        },
+        "save1.bin": {
+          "size": 49092,
+          "sha1": "9c9f19ba4b45b900e99b9fc990bf0c352c6ea7c1"
+        },
+        "patch.bin": {
+          "size": 65536,
+          "sha1": "86a56528b3c577e1f82d91c5c827a7367da80475"
+        },
+        "net.bin": {
+          "size": 3900,
+          "sha1": "6649f03dfc886b9a528f8e85329a0be3b90dc4ee"
+        }
+      },
+      "read_back": "work/ps2/tools/mcfs.py lists every file with the size and SHA-1 put on the card; one-saves (1saves convert + inspect) reads the card and finds BESCES-53285RATCHET",
+      "timestamps": "what the save does not date is 2000-01-01 00:00:00 (JST, as a card stores it); the card's own root entries too"
+    },
+    "script": null,
+    "cores": {
+      "pcee2": {
+        "result": "not-run",
+        "detail": "no image of Ratchet - Gladiator (Europe, Australia) (En,Fr,De,Es,It) in the library"
+      },
+      "lrps2": {
+        "result": "not-run",
+        "detail": "no image of Ratchet - Gladiator (Europe, Australia) (En,Fr,De,Es,It) in the library"
+      },
+      "play": {
+        "result": "not-run",
+        "detail": "no image of Ratchet - Gladiator (Europe, Australia) (En,Fr,De,Es,It) in the library"
+      },
+      "pcsx2": {
+        "result": "not-run",
+        "detail": "no image of Ratchet - Gladiator (Europe, Australia) (En,Fr,De,Es,It) in the library"
+      },
+      "armsx2": {
+        "result": "not-run",
+        "detail": "ARMSX2 renders only through Vulkan here and falls back to a null GS (no picture), so nothing shows what the game read (ps2/NOTES.md)"
+      }
+    },
+    "proof_order": []
+  },
+  "note": null
+}

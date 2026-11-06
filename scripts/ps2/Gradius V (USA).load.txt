@@ -1,0 +1,25 @@
+# Gradius V (USA), SLUS-20712, CD: show a loaded save.
+# The game loads BASLUS-20712 by itself at power-on. Title > menu: the line under it reads
+# FREE PLAY when the save has unlocked it (else CREDIT 3); STAGE SELECT lists the loops and
+# stages the save has reached (with no save: STAGE 1 only); RANKING shows its top scores and
+# names (with no save: KNM 57300, AAA 9000, ...).
+wait 3700
+press start 10       # skip the intro
+wait 300
+press start 10       # title -> menu (GAME START)
+wait 200
+shot menu            # FREE PLAY or CREDIT 3 under the menu
+press down 10        # STAGE SELECT
+wait 40
+press b 10
+wait 200
+shot stages          # loops and stages reached
+press a 10           # back
+wait 200
+press down 10        # SCORE ATTACK
+wait 40
+press down 10        # RANKING
+wait 40
+press b 10
+wait 500
+shot ranking         # top scores and names

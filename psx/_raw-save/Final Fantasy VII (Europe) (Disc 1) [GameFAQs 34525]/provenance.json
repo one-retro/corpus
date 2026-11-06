@@ -1,0 +1,69 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_raw-save",
+  "url": "https://gamefaqs.gamespot.com/ps/197341-final-fantasy-vii/saves/34525",
+  "source_page": "https://gamefaqs.gamespot.com/ps/197341-final-fantasy-vii/saves",
+  "source": "GameFAQs (section 'PlayStation DexDrive Save (Europe)')",
+  "author": "Millionaire451",
+  "licence": null,
+  "posted": "2026-03-16",
+  "fetched": "2026-11-05",
+  "what_it_is": "Disk 3 mideel everything all materia and equipment for everyone Party cloud cid and vincent",
+  "gamefaqs": {
+    "id": 34525,
+    "product": "Final Fantasy VII",
+    "section": "PlayStation DexDrive Save (Europe)",
+    "region": "Europe",
+    "served_as": "final-fantasy-vii.34525.gme",
+    "listed_size": "8KB"
+  },
+  "format": "one raw 8192-byte save block, served as .gme: the 'SC' title frame reads 'FF7/SAVE01/99:00' (a Final Fantasy VII save), but there is no directory frame, so no save name",
+  "release": "Final Fantasy VII (Europe) (Disc 1)",
+  "game_saves": [],
+  "files": {
+    "final-fantasy-vii.34525.gme": {
+      "size": 8192,
+      "sha1": "03711f82c96d2244361c27b8fc4fac871577782f"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": null,
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr final-fantasy-vii.34525.gme: puts the save(s) on a freshly formatted card, as MemcardRex imports a single save",
+    "converted": {
+      "size": 131072,
+      "sha1": "9b27adae6a247e4616e37c7de02e86e8ab5dc4f1"
+    },
+    "script": null,
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "not-run",
+        "detail": "no image of Final Fantasy VII (Europe) (Disc 1) in the library"
+      },
+      "beetle-psx-hw": {
+        "result": "not-run",
+        "detail": "no image of Final Fantasy VII (Europe) (Disc 1) in the library"
+      },
+      "pcsx-rearmed": {
+        "result": "not-run",
+        "detail": "no image of Final Fantasy VII (Europe) (Disc 1) in the library"
+      },
+      "swanstation": {
+        "result": "not-run",
+        "detail": "no image of Final Fantasy VII (Europe) (Disc 1) in the library"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": []
+  },
+  "note": "Filed under GameFAQs' 'PlayStation DexDrive Save (Europe)' section, but it is not a DexDrive .gme: one raw 8192-byte save block, served as .gme: the 'SC' title frame reads 'FF7/SAVE01/99:00' (a Final Fantasy VII save), but there is no directory frame, so no save name. The block carries no directory name; following MemcardRex the converter names the save after the file (its first 20 bytes, 'final-fantasy-vii.34'), which no game looks for. The release is taken from the section (Europe) and the title frame; a PAL save would be named BESCES-00867FF7-S01..S15. one-saves (1saves convert) does not read this file: a PS1 memory card is 131072 bytes, or that behind a DexDrive, VGS or PSP header, but this file is 8192 bytes"
+}

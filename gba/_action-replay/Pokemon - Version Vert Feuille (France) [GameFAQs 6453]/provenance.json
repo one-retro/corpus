@@ -1,0 +1,119 @@
+{
+  "method": "downloaded",
+  "system": "gba",
+  "core": "_action-replay",
+  "url": "https://gamefaqs.gamespot.com/gba/918915-pokemon-firered-version/saves/6453",
+  "source_page": "https://gamefaqs.gamespot.com/gba/918915-pokemon-firered-version/saves",
+  "source": "GameFAQs (section 'GameBoy Advance Pro Action Replay Save (Europe)')",
+  "author": "Nicosuper",
+  "licence": null,
+  "posted": "2005-02-24",
+  "fetched": "2026-11-05",
+  "what_it_is": "french save , all pokemons at pokedex , 3 stars , good pokemons at box (including deoxys) , all tickets , all pokeballs",
+  "gamefaqs": {
+    "id": 6453,
+    "product": "Pokemon FireRed / LeafGreen Version",
+    "section": "GameBoy Advance Pro Action Replay Save (Europe)",
+    "region": "Europe",
+    "served_as": "pokemon-firered-leafgreen-version.6453.xps",
+    "listed_size": "64KB"
+  },
+  "format": "SharkPort save (\"SharkPortSave\", kind 0x000F0000): title \"POKEMON LEAF\", date \"Sauvegarder 24/02/2005 9:52:27 41\", notes \"\"; cart header \"POKEMON LEAF\" / 'BPGF' (complement 0x80); payload 65536 bytes; checksum: unsigned",
+  "files": {
+    "pokemon-firered-leafgreen-version.6453.xps": {
+      "size": 65650,
+      "sha1": "1bce8c2fdfa24a7c134cf0458e4eecb1f3cdc436"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Pokemon - Version Vert Feuille (France).gba",
+      "sha1": "4b5758c14d0a07b70ef3ef0bd7fa5e7ce6978672",
+      "size": 16777216
+    },
+    "converted_with": "tools/gamefaqs/gba-sharkport.py pokemon-firered-leafgreen-version.6453.xps --rom ROM --core CORE --outdir DIR: reads the SharkPort container as mGBA does and imports the payload as mGBA's _importSavedata does (cut to the chip, EEPROM 8-byte blocks reversed, the rest of the chip erased), then lays the chip out as the core keeps it",
+    "converted": {
+      "size": 131072,
+      "sha1": "d763ff4853e9a020557e1e83f539114fb379d9e7"
+    },
+    "script": "scripts/gba/Pokemon - FireRed Version.load.txt",
+    "cores": {
+      "mgba": {
+        "result": "loads",
+        "detail": "\"The save file is corrupt(ed). The previous save file will be loaded.\", then CONTINUE: Nicolas, 16:44 (the older of the two copies)",
+        "core_version": "mGBA 0.11-212-7a12d6d",
+        "file": {
+          "name": "Pokemon - Version Vert Feuille (France).srm",
+          "size": 131072,
+          "sha1": "d763ff4853e9a020557e1e83f539114fb379d9e7"
+        },
+        "frame": "next"
+      },
+      "vba-m": {
+        "result": "loads",
+        "detail": "\"The save file is corrupt(ed). The previous save file will be loaded.\", then CONTINUE: Nicolas, 16:44 (the older of the two copies)",
+        "core_version": "VBA-M 115defb",
+        "file": {
+          "name": "Pokemon - Version Vert Feuille (France).srm",
+          "size": 131072,
+          "sha1": "d763ff4853e9a020557e1e83f539114fb379d9e7"
+        },
+        "frame": "next"
+      },
+      "gpsp": {
+        "result": "loads",
+        "detail": "\"The save file is corrupt(ed). The previous save file will be loaded.\", then CONTINUE: Nicolas, 16:44 (the older of the two copies)",
+        "core_version": "gpSP v1.1.0-5819380",
+        "file": {
+          "name": "Pokemon - Version Vert Feuille (France).srm",
+          "size": 131072,
+          "sha1": "d763ff4853e9a020557e1e83f539114fb379d9e7"
+        },
+        "frame": "next"
+      },
+      "vba-next": {
+        "result": "loads",
+        "detail": "\"The save file is corrupt(ed). The previous save file will be loaded.\", then CONTINUE: Nicolas, 16:44 (the older of the two copies)",
+        "core_version": "VBA Next v1.0.2",
+        "file": {
+          "name": "Pokemon - Version Vert Feuille (France).srm",
+          "size": 139264,
+          "sha1": "45043c8eb44a2764e6c35d79c9a1349453b5ae9b"
+        },
+        "frame": "next"
+      },
+      "beetle-gba": {
+        "result": "loads",
+        "detail": "\"The save file is corrupt(ed). The previous save file will be loaded.\", then CONTINUE: Nicolas, 16:44 (the older of the two copies)",
+        "core_version": "Beetle GBA v0.9.36 b158166",
+        "file": {
+          "name": "Pokemon - Version Vert Feuille (France).c5bc831107f459816508b45d9392afc9.sav",
+          "size": 131072,
+          "sha1": "d763ff4853e9a020557e1e83f539114fb379d9e7"
+        },
+        "frame": "next"
+      },
+      "skyemu": {
+        "result": "loads",
+        "detail": "\"The save file is corrupt(ed). The previous save file will be loaded.\", then CONTINUE: Nicolas, 16:44 (the older of the two copies)",
+        "core_version": "SkyEmu adacd0788964ed89f5c43dcbc1f3cc26deec996c",
+        "file": {
+          "name": "Pokemon - Version Vert Feuille (France).srm",
+          "size": 131072,
+          "sha1": "d763ff4853e9a020557e1e83f539114fb379d9e7"
+        },
+        "frame": "next"
+      }
+    },
+    "proof_order": [
+      "mgba",
+      "vba-m",
+      "gpsp",
+      "vba-next",
+      "beetle-gba",
+      "skyemu"
+    ]
+  },
+  "note": "The GameShark copied only the first 64 KiB of the 128 KiB flash; imported as mGBA does, the second half of the chip stays erased."
+}

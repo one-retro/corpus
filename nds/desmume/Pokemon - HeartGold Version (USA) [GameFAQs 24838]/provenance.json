@@ -1,0 +1,110 @@
+{
+  "method": "downloaded",
+  "system": "nds",
+  "core": "desmume",
+  "url": "https://gamefaqs.gamespot.com/ds/960099-pokemon-heartgold-version/saves/24838",
+  "source_page": "https://gamefaqs.gamespot.com/ds/960099-pokemon-heartgold-version/saves",
+  "source": "GameFAQs (section 'Action Replay Max DS (.dst) Game Save (North America)')",
+  "author": "CosmoLegion",
+  "licence": null,
+  "posted": "2016-11-30",
+  "fetched": "2026-11-05",
+  "what_it_is": "Have all Legendaries except Groudon and Raikou , Beat Elite 4 Twice , Beat Red Mt.Silver",
+  "gamefaqs": {
+    "id": 24838,
+    "product": "Pokemon HeartGold / SoulSilver Version",
+    "section": "Action Replay Max DS (.dst) Game Save (North America)",
+    "region": "North America",
+    "served_as": "pokemon-heartgold-soulsilver-version.24838.dst",
+    "listed_size": "2019KB"
+  },
+  "format": "DeSmuME save state: DeSmuME state version 12, DeSmuME 0x163dc; ROM POKEMON HG IPKE rev 0; MMU chunk version 8, backup device version 5, addr_size 3, 524288 bytes; the save is 512 KiB",
+  "files": {
+    "pokemon-heartgold-soulsilver-version.24838.dst": {
+      "size": 2068054,
+      "sha1": "873ed3d75a5b8c0263973c0343af41135d0bf5d3"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Pokemon - HeartGold Version (USA).nds",
+      "sha1": "30793e274fb4c7ba070ae226edbdfe355504b1f5",
+      "size": 134217728,
+      "note": "a dump of this game code whose sha1 is not in the No-Intro DAT (the area after the used ROM size is blank); the region in the name is a guess"
+    },
+    "converted_with": "tools/gamefaqs/nds-desmume-state.py IN step0.bin, then tools/gamefaqs/nds-cores.py step0.bin --chip 524288 --stem 'Pokemon - HeartGold Version (USA)' --out DIR: takes the battery save out of the DeSmuME state; fits it to the 524288-byte chip (exact size) and writes each core's file",
+    "converted": {
+      "size": 524288,
+      "sha1": "37505490e3fb1b5b271c871d434497f5340ed50e"
+    },
+    "core_files": {
+      "desmume": {
+        "name": "Pokemon - HeartGold Version (USA).dsv",
+        "size": 524410,
+        "sha1": "eedc92ce56798c2a569806309095359f3657032e"
+      },
+      "desmume-2015": {
+        "name": "Pokemon - HeartGold Version (USA).dsv",
+        "size": 524410,
+        "sha1": "eedc92ce56798c2a569806309095359f3657032e"
+      },
+      "melonds": {
+        "name": "Pokemon - HeartGold Version (USA).sav",
+        "size": 524288,
+        "sha1": "37505490e3fb1b5b271c871d434497f5340ed50e"
+      },
+      "melonds-ds": {
+        "name": "Pokemon - HeartGold Version (USA).srm",
+        "size": 524288,
+        "sha1": "37505490e3fb1b5b271c871d434497f5340ed50e"
+      },
+      "noods": {
+        "name": "Pokemon - HeartGold Version (USA).sav",
+        "size": 524288,
+        "sha1": "37505490e3fb1b5b271c871d434497f5340ed50e"
+      },
+      "skyemu": {
+        "name": "Pokemon - HeartGold Version (USA).srm",
+        "size": 8388608,
+        "sha1": "5ab57a1b297254f63c65a21005eeb1bcf33a7460"
+      }
+    },
+    "script": "scripts/nds/Pokemon - HeartGold Version.load.txt",
+    "cores": {
+      "desmume": {
+        "result": "loads",
+        "detail": "CONTINUE: PLAYER Faiz, TIME 20:01, BADGES 16, POKéDEX 36"
+      },
+      "desmume-2015": {
+        "result": "loads",
+        "detail": "CONTINUE: PLAYER Faiz, TIME 20:01, BADGES 16, POKéDEX 36"
+      },
+      "melonds": {
+        "result": "core-error",
+        "detail": "\"A communication error has occurred. You will be returned to the title screen.\" instead of the CONTINUE panel; the same happens with every HeartGold/SoulSilver save in this core (no BIOS or firmware here, FreeBIOS), so it is the core, not this save"
+      },
+      "melonds-ds": {
+        "result": "loads",
+        "detail": "CONTINUE: PLAYER Faiz, TIME 20:01, BADGES 16, POKéDEX 36"
+      },
+      "noods": {
+        "result": "loads",
+        "detail": "CONTINUE: PLAYER Faiz, TIME 20:01, BADGES 16, POKéDEX 36"
+      },
+      "skyemu": {
+        "result": "loads",
+        "detail": "CONTINUE: PLAYER Faiz, TIME 20:01, BADGES 16, POKéDEX 36"
+      }
+    },
+    "proof_order": [
+      "desmume",
+      "desmume-2015",
+      "melonds",
+      "melonds-ds",
+      "noods",
+      "skyemu"
+    ]
+  },
+  "note": "Release: the state records the ROM: IPKE (HeartGold), rev 0."
+}

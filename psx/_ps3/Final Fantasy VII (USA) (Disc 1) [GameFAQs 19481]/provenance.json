@@ -1,0 +1,88 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_ps3",
+  "url": "https://gamefaqs.gamespot.com/ps/197341-final-fantasy-vii/saves/19481",
+  "source_page": "https://gamefaqs.gamespot.com/ps/197341-final-fantasy-vii/saves",
+  "source": "GameFAQs (section 'PlayStation PS3 Virtual Memory Card Save (ZIP) (North America)')",
+  "author": "Darkwolf7777",
+  "licence": null,
+  "posted": "2009-07-15",
+  "fetched": "2026-11-05",
+  "what_it_is": "NTSC Debug Room",
+  "gamefaqs": {
+    "id": 19481,
+    "product": "Final Fantasy VII",
+    "section": "PlayStation PS3 Virtual Memory Card Save (ZIP) (North America)",
+    "region": "North America",
+    "served_as": "final-fantasy-vii.19481.zip",
+    "listed_size": "0KB",
+    "served_zip": {
+      "size": 993,
+      "sha1": "51a9cca5acba137055ea00995462eadf1113d375"
+    }
+  },
+  "format": "zip of 1 PS3 export(s) (.PSV): '\\0VSP' header (signature, save name at 0x64), the save's blocks from 0x84 (8324 bytes); it holds 1 save(s), 1 for this game (BASCUS-94163FF7-S01)",
+  "release": "Final Fantasy VII (USA) (Disc 1)",
+  "game_saves": [
+    {
+      "name": "BASCUS-94163FF7-S01",
+      "blocks": 1,
+      "title": "FF7/SAVE01/00:00"
+    }
+  ],
+  "files": {
+    "BASCUS-941634646372D533031.PSV": {
+      "size": 8324,
+      "sha1": "fb6bf4f0c3c18581816d4162fe3c9baf0b38e326"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Final Fantasy VII (USA) (Disc 1).cue",
+      "sha1": "c8df949f13d990d325ac3b8d6eb835c440380e52",
+      "size": 98
+    },
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr BASCUS-941634646372D533031.PSV: puts the save(s) on a freshly formatted card, as MemcardRex imports a single save",
+    "converted": {
+      "size": 131072,
+      "sha1": "8b6743a1b1dce350c44dd93df85869e588361033"
+    },
+    "script": "scripts/psx/Final Fantasy VII.load.txt",
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "loads",
+        "detail": "Slot 1 lists file 1: Ex-SOLDIER, Level 6, 00:00"
+      },
+      "beetle-psx-hw": {
+        "result": "loads",
+        "detail": "Slot 1 lists file 1: Ex-SOLDIER, Level 6, 00:00 (the same screen as on beetle-psx)"
+      },
+      "pcsx-rearmed": {
+        "result": "loads",
+        "detail": "Slot 1 lists file 1: Ex-SOLDIER, Level 6, 00:00 (the same screen as on beetle-psx)"
+      },
+      "swanstation": {
+        "result": "loads",
+        "detail": "Slot 1 lists file 1: Ex-SOLDIER, Level 6, 00:00 (the same screen as on beetle-psx)"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": [
+      "beetle-psx",
+      "beetle-psx-hw",
+      "pcsx-rearmed",
+      "swanstation"
+    ]
+  },
+  "note": null
+}

@@ -1,0 +1,98 @@
+{
+  "method": "downloaded",
+  "system": "nds",
+  "core": "desmume",
+  "url": "https://gamefaqs.gamespot.com/ds/925601-pokemon-diamond-version/saves/29195",
+  "source_page": "https://gamefaqs.gamespot.com/ds/925601-pokemon-diamond-version/saves",
+  "source": "GameFAQs (section 'Action Replay Max DS (.dst) Game Save (Europe)')",
+  "author": "sherlickho",
+  "licence": null,
+  "posted": "2024-01-17",
+  "fetched": "2026-11-05",
+  "what_it_is": "All Pokemon level 100 in boxsome shinybeginning of the game",
+  "gamefaqs": {
+    "id": 29195,
+    "product": "Pokemon Diamond / Pearl / Platinum Version",
+    "section": "Action Replay Max DS (.dst) Game Save (Europe)",
+    "region": "Europe",
+    "served_as": "pokemon-diamond-pearl-platinum-version.29195.dst",
+    "listed_size": "2014KB"
+  },
+  "format": "DeSmuME save state: DeSmuME state version 12, DeSmuME 0x164a4; ROM POKEMON D ADAD rev 5; MMU chunk version 8, backup device version 5, addr_size 3, 524288 bytes; the save is 512 KiB",
+  "files": {
+    "pokemon-diamond-pearl-platinum-version.29195.dst": {
+      "size": 2062567,
+      "sha1": "d260a6a1d6edd2b5b9ab3816b5cc7afe49b3bda9"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": null,
+    "converted_with": "tools/gamefaqs/nds-desmume-state.py IN step0.bin, then tools/gamefaqs/nds-cores.py step0.bin --chip 524288 --stem 'Pokemon - Diamant-Edition (Germany) (Rev 5)' --out DIR: takes the battery save out of the DeSmuME state; fits it to the 524288-byte chip (exact size) and writes each core's file",
+    "converted": {
+      "size": 524288,
+      "sha1": "e05c444093c7a2e204df38065f3824488b1b9c97"
+    },
+    "core_files": {
+      "desmume": {
+        "name": "Pokemon - Diamant-Edition (Germany) (Rev 5).dsv",
+        "size": 524410,
+        "sha1": "019ec73d853f18947be135486a2982e2dd3b4e49"
+      },
+      "desmume-2015": {
+        "name": "Pokemon - Diamant-Edition (Germany) (Rev 5).dsv",
+        "size": 524410,
+        "sha1": "019ec73d853f18947be135486a2982e2dd3b4e49"
+      },
+      "melonds": {
+        "name": "Pokemon - Diamant-Edition (Germany) (Rev 5).sav",
+        "size": 524288,
+        "sha1": "e05c444093c7a2e204df38065f3824488b1b9c97"
+      },
+      "melonds-ds": {
+        "name": "Pokemon - Diamant-Edition (Germany) (Rev 5).srm",
+        "size": 524288,
+        "sha1": "e05c444093c7a2e204df38065f3824488b1b9c97"
+      },
+      "noods": {
+        "name": "Pokemon - Diamant-Edition (Germany) (Rev 5).sav",
+        "size": 524288,
+        "sha1": "e05c444093c7a2e204df38065f3824488b1b9c97"
+      },
+      "skyemu": {
+        "name": "Pokemon - Diamant-Edition (Germany) (Rev 5).srm",
+        "size": 8388608,
+        "sha1": "1d863e70bab093d494df1907afa24f05eeb70283"
+      }
+    },
+    "script": null,
+    "cores": {
+      "desmume": {
+        "result": "not-run",
+        "detail": "no image of Pokemon - Diamant-Edition (Germany) (Rev 5) in the library"
+      },
+      "desmume-2015": {
+        "result": "not-run",
+        "detail": "no image of Pokemon - Diamant-Edition (Germany) (Rev 5) in the library"
+      },
+      "melonds": {
+        "result": "not-run",
+        "detail": "no image of Pokemon - Diamant-Edition (Germany) (Rev 5) in the library"
+      },
+      "melonds-ds": {
+        "result": "not-run",
+        "detail": "no image of Pokemon - Diamant-Edition (Germany) (Rev 5) in the library"
+      },
+      "noods": {
+        "result": "not-run",
+        "detail": "no image of Pokemon - Diamant-Edition (Germany) (Rev 5) in the library"
+      },
+      "skyemu": {
+        "result": "not-run",
+        "detail": "no image of Pokemon - Diamant-Edition (Germany) (Rev 5) in the library"
+      }
+    },
+    "proof_order": []
+  },
+  "note": "Release: the state records the ROM: ADAD (Pokemon Diamant-Edition, German), rev 5; language 5."
+}

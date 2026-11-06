@@ -1,0 +1,119 @@
+{
+  "method": "downloaded",
+  "system": "gba",
+  "core": "_gameshark",
+  "url": "https://gamefaqs.gamespot.com/gba/563596-pokemon-sapphire-version/saves/7625",
+  "source_page": "https://gamefaqs.gamespot.com/gba/563596-pokemon-sapphire-version/saves",
+  "source": "GameFAQs (section 'GameBoy Advance GameShark Save (North America)')",
+  "author": "SecureGamer",
+  "licence": null,
+  "posted": "2005-05-01",
+  "fetched": "2026-11-05",
+  "what_it_is": "Trainer Name: Emerald, Gender: Girl, Pokemon: Treecko, Potion in Bag. Saved after rescuing Professor Birch.",
+  "gamefaqs": {
+    "id": 7625,
+    "product": "Pokemon Ruby / Sapphire / Emerald Version",
+    "section": "GameBoy Advance GameShark Save (North America)",
+    "region": "North America",
+    "served_as": "pokemon-ruby-sapphire-emerald-version.7625.sps",
+    "listed_size": "128KB"
+  },
+  "format": "SharkPort save (\"SharkPortSave\", kind 0x000F0000): title \"POKEMON EMER\", date \"5/1/2005 5:16:12 PM\", notes \"\"; cart header \"POKEMON EMER\" / 'BPEE' (complement 0x72); payload 131072 bytes; checksum: signed",
+  "files": {
+    "pokemon-ruby-sapphire-emerald-version.7625.sps": {
+      "size": 131172,
+      "sha1": "8d6b48c4fa35abee9bc68dd50a0c823d6666a436"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Pokemon - Emerald Version (USA, Europe).gba",
+      "sha1": "f3ae088181bf583e55daf962a92bb46f4f1d07b7",
+      "size": 16777216
+    },
+    "converted_with": "tools/gamefaqs/gba-sharkport.py pokemon-ruby-sapphire-emerald-version.7625.sps --rom ROM --core CORE --outdir DIR: reads the SharkPort container as mGBA does and imports the payload as mGBA's _importSavedata does (cut to the chip, EEPROM 8-byte blocks reversed, the rest of the chip erased), then lays the chip out as the core keeps it",
+    "converted": {
+      "size": 131072,
+      "sha1": "b112b63306c3ba2a272bba5627a7e056521db433"
+    },
+    "script": "scripts/gba/Pokemon - Ruby Version.load.txt",
+    "cores": {
+      "mgba": {
+        "result": "loads",
+        "detail": "CONTINUE: EMERALD, 0:06",
+        "core_version": "mGBA 0.11-212-7a12d6d",
+        "file": {
+          "name": "Pokemon - Emerald Version (USA, Europe).srm",
+          "size": 131072,
+          "sha1": "b112b63306c3ba2a272bba5627a7e056521db433"
+        },
+        "frame": "menu"
+      },
+      "vba-m": {
+        "result": "loads",
+        "detail": "CONTINUE: EMERALD, 0:06",
+        "core_version": "VBA-M 115defb",
+        "file": {
+          "name": "Pokemon - Emerald Version (USA, Europe).srm",
+          "size": 131072,
+          "sha1": "b112b63306c3ba2a272bba5627a7e056521db433"
+        },
+        "frame": "menu"
+      },
+      "gpsp": {
+        "result": "loads",
+        "detail": "CONTINUE: EMERALD, 0:06",
+        "core_version": "gpSP v1.1.0-5819380",
+        "file": {
+          "name": "Pokemon - Emerald Version (USA, Europe).srm",
+          "size": 131072,
+          "sha1": "b112b63306c3ba2a272bba5627a7e056521db433"
+        },
+        "frame": "menu"
+      },
+      "vba-next": {
+        "result": "loads",
+        "detail": "CONTINUE: EMERALD, 0:06",
+        "core_version": "VBA Next v1.0.2",
+        "file": {
+          "name": "Pokemon - Emerald Version (USA, Europe).srm",
+          "size": 139264,
+          "sha1": "9834f5de8197aac0dfa0925c465d6183a467c34b"
+        },
+        "frame": "menu"
+      },
+      "beetle-gba": {
+        "result": "loads",
+        "detail": "CONTINUE: EMERALD, 0:06",
+        "core_version": "Beetle GBA v0.9.36 b158166",
+        "file": {
+          "name": "Pokemon - Emerald Version (USA, Europe).605b89b67018abcea91e693a4dd25be3.sav",
+          "size": 131072,
+          "sha1": "b112b63306c3ba2a272bba5627a7e056521db433"
+        },
+        "frame": "menu"
+      },
+      "skyemu": {
+        "result": "loads",
+        "detail": "CONTINUE: EMERALD, 0:06",
+        "core_version": "SkyEmu adacd0788964ed89f5c43dcbc1f3cc26deec996c",
+        "file": {
+          "name": "Pokemon - Emerald Version (USA, Europe).srm",
+          "size": 131072,
+          "sha1": "b112b63306c3ba2a272bba5627a7e056521db433"
+        },
+        "frame": "menu"
+      }
+    },
+    "proof_order": [
+      "mgba",
+      "vba-m",
+      "gpsp",
+      "vba-next",
+      "beetle-gba",
+      "skyemu"
+    ]
+  },
+  "note": null
+}

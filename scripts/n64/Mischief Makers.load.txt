@@ -1,0 +1,13 @@
+# Mischief Makers, load check: power on, Start skips the intro to the
+# title, Start again: "Which?", each file's name, gems and play time; Start
+# on file 1 opens its stage map.
+# N64 buttons on the RetroPad: A = b, B = y, Z = l2, Start = start.
+wait 1200
+press start 6       # skip the intro -> title
+wait 400
+press start 6       # title -> Which?
+wait 300
+shot which
+press start 6       # file 1
+wait 400
+shot stages

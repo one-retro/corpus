@@ -1,0 +1,168 @@
+{
+  "method": "downloaded",
+  "system": "ps2",
+  "core": "_max-drive",
+  "url": "https://gamefaqs.gamespot.com/ps2/927167-ratchet-deadlocked/saves/10378",
+  "source_page": "https://gamefaqs.gamespot.com/ps2/927167-ratchet-deadlocked/saves",
+  "source": "GameFAQs (section 'PlayStation2 Max Drive Save (North America)')",
+  "author": "ManiacleCheater",
+  "licence": null,
+  "posted": "2005-12-28",
+  "fetched": "2026-11-05",
+  "what_it_is": "Max-out Alphas,Game Completed,All Skill Points, 99999999 bolts, all Cheats, Skins,Weapons,and all bot upgrades,314 nanotech no cheat used",
+  "gamefaqs": {
+    "id": 10378,
+    "product": "Ratchet: Deadlocked",
+    "section": "PlayStation2 Max Drive Save (North America)",
+    "region": "North America",
+    "served_as": "ratchet-deadlocked.10378.max",
+    "listed_size": "52KB"
+  },
+  "format": "Max Drive / PowerSave save: 'Ps2PowerSave' header (CRC32 f04539d7, matches), folder BASCUS-97465RATCHET, 10 files, LZARI stream 53722 bytes unpacking to 402136 bytes (401718 bytes of file data)",
+  "files": {
+    "ratchet-deadlocked.10378.max": {
+      "size": 53814,
+      "sha1": "bcf8db105c478aec5ea9d0dafce264050285d0d3"
+    }
+  },
+  "save": {
+    "folder": "BASCUS-97465RATCHET",
+    "title": [
+      "Ratchet :",
+      "Deadlocked"
+    ],
+    "times": "none: a max file stores no file times",
+    "files": [
+      {
+        "name": "icon.sys",
+        "size": 964,
+        "sha1": "dd6bd65dcb3984c05427576a58a73b26d24efc0b"
+      },
+      {
+        "name": "static.ico",
+        "size": 56214,
+        "sha1": "f1a517340a0243debc87ff48a03b16c5cfbbc08d"
+      },
+      {
+        "name": "net.bin",
+        "size": 3908,
+        "sha1": "ab4dcc3d842768f2e17bd0597c6cdb98b3969cd6"
+      },
+      {
+        "name": "patch.bin",
+        "size": 65536,
+        "sha1": "86a56528b3c577e1f82d91c5c827a7367da80475"
+      },
+      {
+        "name": "save0.bin",
+        "size": 49080,
+        "sha1": "e6f05fb9dbf23c32e76d3f31297c7a21c7f6d144"
+      },
+      {
+        "name": "save1.bin",
+        "size": 49080,
+        "sha1": "174166e153a5f699e3a49ac289a4096da583c9f8"
+      },
+      {
+        "name": "save2.bin",
+        "size": 49080,
+        "sha1": "0327ed5f945782c6fd3d019919c14c68f3b16209"
+      },
+      {
+        "name": "save3.bin",
+        "size": 49080,
+        "sha1": "251a57c9304d06d96f2a5f99f935b6fc00d12eaa"
+      },
+      {
+        "name": "save4.bin",
+        "size": 49080,
+        "sha1": "f4167df2cca5f072f9add7ea7cb0113bf6053fff"
+      },
+      {
+        "name": "BASCUS-97465RATCHET",
+        "size": 29696,
+        "sha1": "9e52eb573c958fdc47309421a5ee5d5c6db11693"
+      }
+    ]
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": null,
+    "converted_with": "tools/gamefaqs/ps2-card.py 'ratchet-deadlocked.10378.max' -o OUT: reads the save with mymcplus 3.0.5 and writes OUT/Mcd001.ps2 (an 8 MiB card with ECC, formatted and filled by mymcplus) for lrps2/pcee2/pcsx2, and OUT/mc0/<folder>/ for Play!",
+    "converted": {
+      "Mcd001.ps2": {
+        "size": 8650752,
+        "sha1": "3967713625eab245f98bb098bf4236370f8579b4"
+      },
+      "mc0/BASCUS-97465RATCHET/": {
+        "icon.sys": {
+          "size": 964,
+          "sha1": "dd6bd65dcb3984c05427576a58a73b26d24efc0b"
+        },
+        "static.ico": {
+          "size": 56214,
+          "sha1": "f1a517340a0243debc87ff48a03b16c5cfbbc08d"
+        },
+        "net.bin": {
+          "size": 3908,
+          "sha1": "ab4dcc3d842768f2e17bd0597c6cdb98b3969cd6"
+        },
+        "patch.bin": {
+          "size": 65536,
+          "sha1": "86a56528b3c577e1f82d91c5c827a7367da80475"
+        },
+        "save0.bin": {
+          "size": 49080,
+          "sha1": "e6f05fb9dbf23c32e76d3f31297c7a21c7f6d144"
+        },
+        "save1.bin": {
+          "size": 49080,
+          "sha1": "174166e153a5f699e3a49ac289a4096da583c9f8"
+        },
+        "save2.bin": {
+          "size": 49080,
+          "sha1": "0327ed5f945782c6fd3d019919c14c68f3b16209"
+        },
+        "save3.bin": {
+          "size": 49080,
+          "sha1": "251a57c9304d06d96f2a5f99f935b6fc00d12eaa"
+        },
+        "save4.bin": {
+          "size": 49080,
+          "sha1": "f4167df2cca5f072f9add7ea7cb0113bf6053fff"
+        },
+        "BASCUS-97465RATCHET": {
+          "size": 29696,
+          "sha1": "9e52eb573c958fdc47309421a5ee5d5c6db11693"
+        }
+      },
+      "read_back": "work/ps2/tools/mcfs.py lists every file with the size and SHA-1 put on the card; one-saves (1saves convert + inspect) reads the card and finds BASCUS-97465RATCHET",
+      "timestamps": "what the save does not date is 2000-01-01 00:00:00 (JST, as a card stores it); the card's own root entries too"
+    },
+    "script": null,
+    "cores": {
+      "pcee2": {
+        "result": "not-run",
+        "detail": "the library's image of this release is an unfinished download (its sampled 8 MiB blocks are almost all zeros: 506 of 520); it does not boot"
+      },
+      "lrps2": {
+        "result": "not-run",
+        "detail": "the library's image of this release is an unfinished download (its sampled 8 MiB blocks are almost all zeros: 506 of 520); it does not boot"
+      },
+      "play": {
+        "result": "not-run",
+        "detail": "the library's image of this release is an unfinished download (its sampled 8 MiB blocks are almost all zeros: 506 of 520); it does not boot"
+      },
+      "pcsx2": {
+        "result": "not-run",
+        "detail": "the library's image of this release is an unfinished download (its sampled 8 MiB blocks are almost all zeros: 506 of 520); it does not boot"
+      },
+      "armsx2": {
+        "result": "not-run",
+        "detail": "ARMSX2 renders only through Vulkan here and falls back to a null GS (no picture), so nothing shows what the game read (ps2/NOTES.md)"
+      }
+    },
+    "proof_order": []
+  },
+  "note": null
+}

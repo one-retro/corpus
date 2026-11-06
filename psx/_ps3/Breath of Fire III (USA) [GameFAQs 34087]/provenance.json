@@ -1,0 +1,88 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_ps3",
+  "url": "https://gamefaqs.gamespot.com/ps/196817-breath-of-fire-iii/saves/34087",
+  "source_page": "https://gamefaqs.gamespot.com/ps/196817-breath-of-fire-iii/saves",
+  "source": "GameFAQs (section 'PlayStation PS3 Virtual Memory Card Save (ZIP) (North America)')",
+  "author": "danusty",
+  "licence": null,
+  "posted": "2025-12-05",
+  "fetched": "2026-11-05",
+  "what_it_is": "Saved at the end of the game.",
+  "gamefaqs": {
+    "id": 34087,
+    "product": "Breath of Fire III",
+    "section": "PlayStation PS3 Virtual Memory Card Save (ZIP) (North America)",
+    "region": "North America",
+    "served_as": "breath-of-fire-iii.34087.zip",
+    "listed_size": "2KB",
+    "served_zip": {
+      "size": 2549,
+      "sha1": "c078ee3c228e62c96441178c6d9ad0161cf93d17"
+    }
+  },
+  "format": "zip of 1 PS3 export(s) (.PSV): '\\0VSP' header (signature, save name at 0x64), the save's blocks from 0x84 (8324 bytes); it holds 1 save(s), 1 for this game (BASLUS-00422BOF300)",
+  "release": "Breath of Fire III (USA)",
+  "game_saves": [
+    {
+      "name": "BASLUS-00422BOF300",
+      "blocks": 1,
+      "title": "Breath of Fire 3(1) 79h52m Lv.47"
+    }
+  ],
+  "files": {
+    "BASLUS-00422424F46333030.PSV": {
+      "size": 8324,
+      "sha1": "658dc1d7cbcd3445fb960c91b14ee14666df0563"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Breath of Fire III (USA).cue",
+      "sha1": "046ea122a7720d758492ddc2545eb9e78d788461",
+      "size": 218
+    },
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr BASLUS-00422424F46333030.PSV: puts the save(s) on a freshly formatted card, as MemcardRex imports a single save",
+    "converted": {
+      "size": 131072,
+      "sha1": "acf06e20768cebd10f1a0d126d480c398fc55775"
+    },
+    "script": "scripts/psx/Breath of Fire III.load.txt",
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "loads",
+        "detail": "Load Which File? shows file 1: Ryu, LV 47, CLEAR, 79:52"
+      },
+      "beetle-psx-hw": {
+        "result": "loads",
+        "detail": "Load Which File? shows file 1: Ryu, LV 47, CLEAR, 79:52 (the same screen as on beetle-psx)"
+      },
+      "pcsx-rearmed": {
+        "result": "loads",
+        "detail": "Load Which File? shows file 1: Ryu, LV 47, CLEAR, 79:52 (the same screen as on beetle-psx)"
+      },
+      "swanstation": {
+        "result": "loads",
+        "detail": "Load Which File? shows file 1: Ryu, LV 47, CLEAR, 79:52 (the same screen as on beetle-psx)"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": [
+      "beetle-psx",
+      "beetle-psx-hw",
+      "pcsx-rearmed",
+      "swanstation"
+    ]
+  },
+  "note": null
+}

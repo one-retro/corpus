@@ -1,0 +1,88 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_ps3",
+  "url": "https://gamefaqs.gamespot.com/ps/197765-the-legend-of-dragoon/saves/19490",
+  "source_page": "https://gamefaqs.gamespot.com/ps/197765-the-legend-of-dragoon/saves",
+  "source": "GameFAQs (section 'PlayStation PS3 Virtual Memory Card Save (ZIP) (North America)')",
+  "author": "Mookiethebold",
+  "licence": null,
+  "posted": "2009-07-20",
+  "fetched": "2026-11-05",
+  "what_it_is": "Disc 1, 1st save at Seles; Dart, Rose, Haschel, Meru, Kongol lvl 60 / max additions & dragoon lvl / best weapons & armor; Lavitz/Albert (lvl 18 & max add's) & Shana/Miranda (lvl 26) max dragoon lvl",
+  "gamefaqs": {
+    "id": 19490,
+    "product": "The Legend of Dragoon",
+    "section": "PlayStation PS3 Virtual Memory Card Save (ZIP) (North America)",
+    "region": "North America",
+    "served_as": "the-legend-of-dragoon.19490.zip",
+    "listed_size": "1KB",
+    "served_zip": {
+      "size": 1028,
+      "sha1": "c3e836e806b1523614281387d5cf075f075dfba6"
+    }
+  },
+  "format": "zip of 1 PS3 export(s) (.PSV): '\\0VSP' header (signature, save name at 0x64), the save's blocks from 0x84 (8324 bytes); it holds 1 save(s), 1 for this game (BASCUS-94491drgn0010)",
+  "release": "Legend of Dragoon, The (USA) (Disc 1)",
+  "game_saves": [
+    {
+      "name": "BASCUS-94491drgn0010",
+      "blocks": 1,
+      "title": "LOD FILE11 LV60 TIME 000:08:35"
+    }
+  ],
+  "files": {
+    "BASCUS-944916472676E30303130.PSV": {
+      "size": 8324,
+      "sha1": "9a14a32f3a1cfbae9e7c05ba5e2a00dba788d6c0"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Legend of Dragoon, The (USA) (Disc 1).cue",
+      "sha1": "ae7c4642ff995bd5762937cd1fc2ac9c4474db18",
+      "size": 103
+    },
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr BASCUS-944916472676E30303130.PSV: puts the save(s) on a freshly formatted card, as MemcardRex imports a single save",
+    "converted": {
+      "size": 131072,
+      "sha1": "5acaafa42a9c9f5726b47760c3f246b28e02ffc7"
+    },
+    "script": "scripts/psx/Legend of Dragoon.load.txt",
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "loads",
+        "detail": "Continue lists file 11: LV 60, 000:08:35, Seles"
+      },
+      "beetle-psx-hw": {
+        "result": "loads",
+        "detail": "Continue lists file 11: LV 60, 000:08:35, Seles (the same screen as on beetle-psx)"
+      },
+      "pcsx-rearmed": {
+        "result": "loads",
+        "detail": "Continue lists file 11: LV 60, 000:08:35, Seles (the same screen as on beetle-psx)"
+      },
+      "swanstation": {
+        "result": "loads",
+        "detail": "Continue lists file 11: LV 60, 000:08:35, Seles (the same screen as on beetle-psx)"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": [
+      "beetle-psx",
+      "beetle-psx-hw",
+      "pcsx-rearmed",
+      "swanstation"
+    ]
+  },
+  "note": null
+}

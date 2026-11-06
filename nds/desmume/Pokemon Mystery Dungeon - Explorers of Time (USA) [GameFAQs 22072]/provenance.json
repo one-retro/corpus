@@ -1,0 +1,109 @@
+{
+  "method": "downloaded",
+  "system": "nds",
+  "core": "desmume",
+  "url": "https://gamefaqs.gamespot.com/ds/938930-pokemon-mystery-dungeon-explorers-of-darkness/saves/22072",
+  "source_page": "https://gamefaqs.gamespot.com/ds/938930-pokemon-mystery-dungeon-explorers-of-darkness/saves",
+  "source": "GameFAQs (section 'Action Replay Max DS (.dst) Game Save (North America)')",
+  "author": "Falcon_freak",
+  "licence": null,
+  "posted": "2011-10-20",
+  "fetched": "2026-11-05",
+  "what_it_is": "The main line cleared",
+  "gamefaqs": {
+    "id": 22072,
+    "product": "Pokemon Mystery Dungeon: Explorers",
+    "section": "Action Replay Max DS (.dst) Game Save (North America)",
+    "region": "North America",
+    "served_as": "pokemon-mystery-dungeon-explorers.22072.dst",
+    "listed_size": "1403KB"
+  },
+  "format": "DeSmuME save state: DeSmuME state version 12, DeSmuME 0x1624c; ROM not recorded; MMU chunk version 5, backup device version 2, addr_size 3, 188672 bytes; the save is 188672 bytes (padded 188672 -> 262144 with 0xFF)",
+  "files": {
+    "pokemon-mystery-dungeon-explorers.22072.dst": {
+      "size": 1437556,
+      "sha1": "6e58eccc5e38a8cce650fad95f720a27bc80e0a8"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Pokemon Mystery Dungeon - Explorers of Time (USA).nds",
+      "sha1": "19763f0065a6b32f7b5c2a936404a65eafb0238a",
+      "size": 67108864
+    },
+    "converted_with": "tools/gamefaqs/nds-desmume-state.py IN step0.bin, then tools/gamefaqs/nds-cores.py step0.bin --chip 262144 --stem 'Pokemon Mystery Dungeon - Explorers of Time (USA)' --out DIR: takes the battery save out of the DeSmuME state; fits it to the 262144-byte chip (padded 188672 -> 262144 with 0xFF) and writes each core's file",
+    "converted": {
+      "size": 262144,
+      "sha1": "2f984811a6135268e498af4fa95b9e71995def57"
+    },
+    "core_files": {
+      "desmume": {
+        "name": "Pokemon Mystery Dungeon - Explorers of Time (USA).dsv",
+        "size": 262266,
+        "sha1": "d9b04f8567ec9422b07e3033214a02743319687e"
+      },
+      "desmume-2015": {
+        "name": "Pokemon Mystery Dungeon - Explorers of Time (USA).dsv",
+        "size": 262266,
+        "sha1": "d9b04f8567ec9422b07e3033214a02743319687e"
+      },
+      "melonds": {
+        "name": "Pokemon Mystery Dungeon - Explorers of Time (USA).sav",
+        "size": 262144,
+        "sha1": "2f984811a6135268e498af4fa95b9e71995def57"
+      },
+      "melonds-ds": {
+        "name": "Pokemon Mystery Dungeon - Explorers of Time (USA).srm",
+        "size": 262144,
+        "sha1": "2f984811a6135268e498af4fa95b9e71995def57"
+      },
+      "noods": {
+        "name": "Pokemon Mystery Dungeon - Explorers of Time (USA).sav",
+        "size": 262144,
+        "sha1": "2f984811a6135268e498af4fa95b9e71995def57"
+      },
+      "skyemu": {
+        "name": "Pokemon Mystery Dungeon - Explorers of Time (USA).srm",
+        "size": 8388608,
+        "sha1": "92ed72a0446cae511bb07deb2b32844604ad0e91"
+      }
+    },
+    "script": "scripts/nds/Pokemon Mystery Dungeon - Explorers of Time.load.txt",
+    "cores": {
+      "desmume": {
+        "result": "loads",
+        "detail": "Adventure Record: Emplin, team Nelratens, Sharpedo Bluff, play time 28:12:36, 103 adventures"
+      },
+      "desmume-2015": {
+        "result": "loads",
+        "detail": "Adventure Record: Emplin, team Nelratens, Sharpedo Bluff, play time 28:12:36, 103 adventures"
+      },
+      "melonds": {
+        "result": "loads",
+        "detail": "Adventure Record: Emplin, team Nelratens, Sharpedo Bluff, play time 28:12:36, 103 adventures"
+      },
+      "melonds-ds": {
+        "result": "loads",
+        "detail": "Adventure Record: Emplin, team Nelratens, Sharpedo Bluff, play time 28:12:36, 103 adventures"
+      },
+      "noods": {
+        "result": "loads",
+        "detail": "Adventure Record: Emplin, team Nelratens, Sharpedo Bluff, play time 28:12:36, 103 adventures"
+      },
+      "skyemu": {
+        "result": "loads",
+        "detail": "Adventure Record: Emplin, team Nelratens, Sharpedo Bluff, play time 28:12:36, 103 adventures"
+      }
+    },
+    "proof_order": [
+      "desmume",
+      "desmume-2015",
+      "melonds",
+      "melonds-ds",
+      "noods",
+      "skyemu"
+    ]
+  },
+  "note": "Release: save id POKE_DUN_TOKI_YA, which Explorers of Time and of Darkness share: Time assumed (the save loads in both: in desmume, GameFAQs 17564, 22072 and 25597 show the same Adventure Record in Explorers of Darkness (USA) as in Explorers of Time (USA)). An older DeSmuME state (MMU chunk version 5) that records no ROM header; it holds 188,672 bytes of the 256 KiB flash, padded with 0xFF as DeSmuME does when it loads the state."
+}

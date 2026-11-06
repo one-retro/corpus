@@ -1,0 +1,15 @@
+# Load script for downloaded saves (GameFAQs): show what a Lumines save holds.
+# libretro PPSSPP under retro-run with --pace 60 and scripts/psp/ppsspp-auto.opt. PPSSPP emulates on
+# its own thread in real time, so script frames are 1/60 s of wall-clock time; boot length varies
+# with how fast the image is read (run it from a local copy).
+# The save is a memory stick folder, <savedir>/PSP/SAVEDATA/ULUS10002LUMINES/.
+# The logos and title run by themselves into the attract demo; by frame 3000 the demo is playing.
+# START leaves the demo for the title, START on the title opens the main menu, whose top right
+# corner shows the log-in character (avatar and name) the save holds. With no save the second
+# START opens "LOG-IN: Create log-in character" instead.
+wait 3000
+press start 6      # demo -> title
+wait 240
+press start 6      # title -> main menu
+wait 240
+shot menu

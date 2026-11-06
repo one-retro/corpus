@@ -1,0 +1,104 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_dexdrive",
+  "url": "https://gamefaqs.gamespot.com/ps/197765-the-legend-of-dragoon/saves/15054",
+  "source_page": "https://gamefaqs.gamespot.com/ps/197765-the-legend-of-dragoon/saves",
+  "source": "GameFAQs (section 'PlayStation DexDrive Save (North America)')",
+  "author": "ChandooG",
+  "licence": null,
+  "posted": "2007-06-11",
+  "fetched": "2026-11-05",
+  "what_it_is": "Mem card contains saves from starts and ends of all 4 discs, with a final boss save file with all your characters at maximum stats.",
+  "gamefaqs": {
+    "id": 15054,
+    "product": "The Legend of Dragoon",
+    "section": "PlayStation DexDrive Save (North America)",
+    "region": "North America",
+    "served_as": "the-legend-of-dragoon.15054.gme",
+    "listed_size": "131KB"
+  },
+  "format": "DexDrive .gme layout (134976 bytes: 3904-byte header + 131072-byte card) with the header zeroed, no '123-456-STD'; the card holds 5 save(s), 5 for this game (BASCUS-94491drgn0000, BASCUS-94491drgn0001, BASCUS-94491drgn0002, BASCUS-94491drgn0003, ...)",
+  "release": "Legend of Dragoon, The (USA) (Disc 1)",
+  "game_saves": [
+    {
+      "name": "BASCUS-94491drgn0000",
+      "blocks": 1,
+      "title": "LOD FILE01 LV60 TIME 004:13:36"
+    },
+    {
+      "name": "BASCUS-94491drgn0001",
+      "blocks": 1,
+      "title": "LOD FILE02 LV60 TIME 004:34:16"
+    },
+    {
+      "name": "BASCUS-94491drgn0002",
+      "blocks": 1,
+      "title": "LOD FILE03 LV60 TIME 008:32:08"
+    },
+    {
+      "name": "BASCUS-94491drgn0003",
+      "blocks": 1,
+      "title": "LOD FILE04 LV60 TIME 013:07:04"
+    },
+    {
+      "name": "BASCUS-94491drgn0004",
+      "blocks": 1,
+      "title": "LOD FILE05 LV60 TIME 018:41:47"
+    }
+  ],
+  "files": {
+    "the-legend-of-dragoon.15054.gme": {
+      "size": 134976,
+      "sha1": "5c68a769133871d376d959a3f27dc28a893c4066"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Legend of Dragoon, The (USA) (Disc 1).cue",
+      "sha1": "ae7c4642ff995bd5762937cd1fc2ac9c4474db18",
+      "size": 103
+    },
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr the-legend-of-dragoon.15054.gme: unwraps the card (DexDrive .gme layout with a blank header (no 123-456-STD))",
+    "converted": {
+      "size": 131072,
+      "sha1": "1b758f279b4c175b612e44ad46e73239ac680802"
+    },
+    "script": "scripts/psx/Legend of Dragoon.load.txt",
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "loads",
+        "detail": "Continue lists file 5: LV 60, 018:41:47, Moon"
+      },
+      "beetle-psx-hw": {
+        "result": "loads",
+        "detail": "Continue lists file 5: LV 60, 018:41:47, Moon (the same screen as on beetle-psx)"
+      },
+      "pcsx-rearmed": {
+        "result": "loads",
+        "detail": "Continue lists file 5: LV 60, 018:41:47, Moon (the same screen as on beetle-psx)"
+      },
+      "swanstation": {
+        "result": "loads",
+        "detail": "Continue lists file 5: LV 60, 018:41:47, Moon (the same screen as on beetle-psx)"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": [
+      "beetle-psx",
+      "beetle-psx-hw",
+      "pcsx-rearmed",
+      "swanstation"
+    ]
+  },
+  "note": "one-saves (1saves convert) does not read this file: a PS1 memory card is 131072 bytes, or that behind a DexDrive, VGS or PSP header, but this file is 134976 bytes"
+}

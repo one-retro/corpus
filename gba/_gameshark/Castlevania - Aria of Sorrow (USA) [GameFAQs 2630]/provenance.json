@@ -1,0 +1,119 @@
+{
+  "method": "downloaded",
+  "system": "gba",
+  "core": "_gameshark",
+  "url": "https://gamefaqs.gamespot.com/gba/589456-castlevania-aria-of-sorrow/saves/2630",
+  "source_page": "https://gamefaqs.gamespot.com/gba/589456-castlevania-aria-of-sorrow/saves",
+  "source": "GameFAQs (section 'GameBoy Advance GameShark Save (North America)')",
+  "author": "howellgames",
+  "licence": null,
+  "posted": "2003-05-12",
+  "fetched": "2026-11-05",
+  "what_it_is": "In Dance Hall. 4th Boss defeated",
+  "gamefaqs": {
+    "id": 2630,
+    "product": "Castlevania: Aria of Sorrow",
+    "section": "GameBoy Advance GameShark Save (North America)",
+    "region": "North America",
+    "served_as": "castlevania-aria-of-sorrow.2630.sps",
+    "listed_size": "64KB"
+  },
+  "format": "SharkPort save (\"SharkPortSave\", kind 0x000F0000): title \"CASTLEVANIA2\", date \"Save5/10/2003 5:12:22 PM 41\", notes \"\"; cart header \"CASTLEVANIA2\" / 'A2CE' (complement 0x84); payload 65536 bytes; checksum: unsigned",
+  "files": {
+    "castlevania-aria-of-sorrow.2630.sps": {
+      "size": 65644,
+      "sha1": "8c0224b08ce7b30af40b8817cef5326252aa182e"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Castlevania - Aria of Sorrow (USA).gba",
+      "sha1": "abd71fe01ebb201bcc133074db1dd8c5253776c7",
+      "size": 8388608
+    },
+    "converted_with": "tools/gamefaqs/gba-sharkport.py castlevania-aria-of-sorrow.2630.sps --rom ROM --core CORE --outdir DIR: reads the SharkPort container as mGBA does and imports the payload as mGBA's _importSavedata does (cut to the chip, EEPROM 8-byte blocks reversed, the rest of the chip erased), then lays the chip out as the core keeps it",
+    "converted": {
+      "size": 32768,
+      "sha1": "29bf0dd0157b4d416cba5e0a240a854f482454c6"
+    },
+    "script": "scripts/gba/Castlevania - Aria of Sorrow.load.txt",
+    "cores": {
+      "mgba": {
+        "result": "loads",
+        "detail": "Select Data: JASON, Dance Hall, Lv.11, 25.1%",
+        "core_version": "mGBA 0.11-212-7a12d6d",
+        "file": {
+          "name": "Castlevania - Aria of Sorrow (USA).srm",
+          "size": 32768,
+          "sha1": "29bf0dd0157b4d416cba5e0a240a854f482454c6"
+        },
+        "frame": "files"
+      },
+      "vba-m": {
+        "result": "loads",
+        "detail": "Select Data: JASON, Dance Hall, Lv.11, 25.1%",
+        "core_version": "VBA-M 115defb",
+        "file": {
+          "name": "Castlevania - Aria of Sorrow (USA).srm",
+          "size": 32768,
+          "sha1": "29bf0dd0157b4d416cba5e0a240a854f482454c6"
+        },
+        "frame": "files"
+      },
+      "gpsp": {
+        "result": "loads",
+        "detail": "Select Data: JASON, Dance Hall, Lv.11, 25.1%",
+        "core_version": "gpSP v1.1.0-5819380",
+        "file": {
+          "name": "Castlevania - Aria of Sorrow (USA).srm",
+          "size": 131072,
+          "sha1": "66e08819c34740481f575d4c5b1f78d1a25ce715"
+        },
+        "frame": "files"
+      },
+      "vba-next": {
+        "result": "loads",
+        "detail": "Select Data: JASON, Dance Hall, Lv.11, 25.1%",
+        "core_version": "VBA Next v1.0.2",
+        "file": {
+          "name": "Castlevania - Aria of Sorrow (USA).srm",
+          "size": 139264,
+          "sha1": "db0b6dfda6eeabd5d664ff0b726d4f8b88095676"
+        },
+        "frame": "files"
+      },
+      "beetle-gba": {
+        "result": "loads",
+        "detail": "Select Data: JASON, Dance Hall, Lv.11, 25.1%",
+        "core_version": "Beetle GBA v0.9.36 b158166",
+        "file": {
+          "name": "Castlevania - Aria of Sorrow (USA).e7470df4d241f73060d14437011b90ce.sav",
+          "size": 65536,
+          "sha1": "c7be66e0e3e1e72c233819d60ddc8a832c2857ae"
+        },
+        "frame": "files"
+      },
+      "skyemu": {
+        "result": "loads",
+        "detail": "Select Data: JASON, Dance Hall, Lv.11, 25.1%",
+        "core_version": "SkyEmu adacd0788964ed89f5c43dcbc1f3cc26deec996c",
+        "file": {
+          "name": "Castlevania - Aria of Sorrow (USA).srm",
+          "size": 131072,
+          "sha1": "66e08819c34740481f575d4c5b1f78d1a25ce715"
+        },
+        "frame": "files"
+      }
+    },
+    "proof_order": [
+      "mgba",
+      "vba-m",
+      "gpsp",
+      "vba-next",
+      "beetle-gba",
+      "skyemu"
+    ]
+  },
+  "note": null
+}

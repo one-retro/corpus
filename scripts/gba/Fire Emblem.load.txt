@@ -1,0 +1,10 @@
+# Load check for a save made elsewhere (tools/GAMEFAQS.md): power on and go to
+# the title menu (Resume / Restart Chapter, Copy, Erase, New Game, Extras;
+# New Game and Extras alone when the game finds no save), then Restart
+# Chapter's slots: each file's chapter and lord.
+wait 900
+press start 6
+wait 300
+press start 6       # title -> menu
+wait 300
+shot menu

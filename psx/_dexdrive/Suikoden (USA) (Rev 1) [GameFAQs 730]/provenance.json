@@ -1,0 +1,84 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_dexdrive",
+  "url": "https://gamefaqs.gamespot.com/ps/198843-suikoden/saves/730",
+  "source_page": "https://gamefaqs.gamespot.com/ps/198843-suikoden/saves",
+  "source": "GameFAQs (section 'PlayStation DexDrive Save (North America)')",
+  "author": "Rolo",
+  "licence": null,
+  "posted": "2001-02-21",
+  "fetched": "2026-11-05",
+  "what_it_is": "Saved before going to the eleve's village, max bits, vault is filled with: excellent armors, earth shields, elemental rune pieces, stat rune pieces, extra level crystals (mother earth, rage, etc.,)",
+  "gamefaqs": {
+    "id": 730,
+    "product": "Suikoden",
+    "section": "PlayStation DexDrive Save (North America)",
+    "region": "North America",
+    "served_as": "suikoden.730.gme",
+    "listed_size": "131KB"
+  },
+  "format": "DexDrive .gme: '123-456-STD' 3904-byte header (per-block comments) + 131072-byte raw card; the card holds 1 save(s), 1 for this game (BASLUS-00292GENSOU02)",
+  "release": "Suikoden (USA) (Rev 1)",
+  "game_saves": [
+    {
+      "name": "BASLUS-00292GENSOU02",
+      "blocks": 2,
+      "title": "SUIKODEN LV24"
+    }
+  ],
+  "files": {
+    "suikoden.730.gme": {
+      "size": 134976,
+      "sha1": "2450ae3dcb6f15411b2c96e0933818022dadc269"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Suikoden (USA) (Rev 1).cue",
+      "sha1": "7ec895dbc9d1f23aab3bde7ccd35e003ab2fb25d",
+      "size": 88
+    },
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr suikoden.730.gme: unwraps the card (DexDrive .gme: 3904-byte header + card)",
+    "converted": {
+      "size": 131072,
+      "sha1": "de28caf45f62f84903cf94d149b1b5237939f6a2"
+    },
+    "script": "scripts/psx/Suikoden.load.txt",
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "loads",
+        "detail": "Continue game lists the file: Rolo, Lv. 24 (no card: \"No data on Memory card\")"
+      },
+      "beetle-psx-hw": {
+        "result": "loads",
+        "detail": "Continue game lists the file: Rolo, Lv. 24 (no card: \"No data on Memory card\") (the same screen as on beetle-psx)"
+      },
+      "pcsx-rearmed": {
+        "result": "loads",
+        "detail": "Continue game lists the file: Rolo, Lv. 24 (no card: \"No data on Memory card\") (the same screen as on beetle-psx)"
+      },
+      "swanstation": {
+        "result": "loads",
+        "detail": "Continue game lists the file: Rolo, Lv. 24 (no card: \"No data on Memory card\") (the same screen as on beetle-psx)"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": [
+      "beetle-psx",
+      "beetle-psx-hw",
+      "pcsx-rearmed",
+      "swanstation"
+    ]
+  },
+  "note": null
+}

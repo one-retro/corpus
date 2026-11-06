@@ -1,0 +1,119 @@
+{
+  "method": "downloaded",
+  "system": "gba",
+  "core": "_gameshark",
+  "url": "https://gamefaqs.gamespot.com/gba/914980-mario-and-luigi-superstar-saga/saves/34967",
+  "source_page": "https://gamefaqs.gamespot.com/gba/914980-mario-and-luigi-superstar-saga/saves",
+  "source": "GameFAQs (section 'GameBoy Advance GameShark Save (North America)')",
+  "author": "fepnascimento",
+  "licence": null,
+  "posted": "2026-06-09",
+  "fetched": "2026-11-05",
+  "what_it_is": "Level 38 just before Bowser room",
+  "gamefaqs": {
+    "id": 34967,
+    "product": "Mario & Luigi: Superstar Saga",
+    "section": "GameBoy Advance GameShark Save (North America)",
+    "region": "North America",
+    "served_as": "mario-and-luigi-superstar-saga.34967.sps",
+    "listed_size": "8KB"
+  },
+  "format": "SharkPort save (\"SharkPortSave\", kind 0x000F0000): title \"MARIO&LUIGIU\", date \"06/03/2026 11:31:18 PM\", notes \"\"; cart header \"MARIO&LUIGIU\" / 'A88E' (complement 0x8d); payload 8192 bytes; checksum: signed",
+  "files": {
+    "mario-and-luigi-superstar-saga.34967.sps": {
+      "size": 8295,
+      "sha1": "031515a763c33b7bbb452b03d5a9fbd5538a905e"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Mario & Luigi - Superstar Saga (USA).gba",
+      "sha1": "7c303cdde5061ee329296948060b875cb50ba410",
+      "size": 16777216
+    },
+    "converted_with": "tools/gamefaqs/gba-sharkport.py mario-and-luigi-superstar-saga.34967.sps --rom ROM --core CORE --outdir DIR: reads the SharkPort container as mGBA does and imports the payload as mGBA's _importSavedata does (cut to the chip, EEPROM 8-byte blocks reversed, the rest of the chip erased), then lays the chip out as the core keeps it",
+    "converted": {
+      "size": 8192,
+      "sha1": "710fdeda9b6211870be1b6f699b64ae002ca29ee"
+    },
+    "script": "scripts/gba/Mario & Luigi - Superstar Saga.load.txt",
+    "cores": {
+      "mgba": {
+        "result": "loads",
+        "detail": "file: 6638 coins, 12:32, levels 38/38, Bowser's Castle Great Door",
+        "core_version": "mGBA 0.11-212-7a12d6d",
+        "file": {
+          "name": "Mario & Luigi - Superstar Saga (USA).srm",
+          "size": 8192,
+          "sha1": "710fdeda9b6211870be1b6f699b64ae002ca29ee"
+        },
+        "frame": "files"
+      },
+      "vba-m": {
+        "result": "loads",
+        "detail": "file: 6638 coins, 12:32, levels 38/38, Bowser's Castle Great Door",
+        "core_version": "VBA-M 115defb",
+        "file": {
+          "name": "Mario & Luigi - Superstar Saga (USA).srm",
+          "size": 8192,
+          "sha1": "710fdeda9b6211870be1b6f699b64ae002ca29ee"
+        },
+        "frame": "files"
+      },
+      "gpsp": {
+        "result": "loads",
+        "detail": "file: 6638 coins, 12:32, levels 38/38, Bowser's Castle Great Door",
+        "core_version": "gpSP v1.1.0-5819380",
+        "file": {
+          "name": "Mario & Luigi - Superstar Saga (USA).srm",
+          "size": 131072,
+          "sha1": "1286196f41e9c27adae3a9cf71013dcb1245d8e3"
+        },
+        "frame": "files"
+      },
+      "vba-next": {
+        "result": "loads",
+        "detail": "file: 6638 coins, 12:32, levels 38/38, Bowser's Castle Great Door",
+        "core_version": "VBA Next v1.0.2",
+        "file": {
+          "name": "Mario & Luigi - Superstar Saga (USA).srm",
+          "size": 139264,
+          "sha1": "c50008c756c7271ac2c65ebdc73ec2b1a1bfa4cb"
+        },
+        "frame": "files"
+      },
+      "beetle-gba": {
+        "result": "loads",
+        "detail": "file: 6638 coins, 12:32, levels 38/38, Bowser's Castle Great Door",
+        "core_version": "Beetle GBA v0.9.36 b158166",
+        "file": {
+          "name": "Mario & Luigi - Superstar Saga (USA).4b1a5897d89d9e74ec7f630eefdfd435.eep",
+          "size": 8192,
+          "sha1": "710fdeda9b6211870be1b6f699b64ae002ca29ee"
+        },
+        "frame": "files"
+      },
+      "skyemu": {
+        "result": "loads",
+        "detail": "file: 6638 coins, 12:32, levels 38/38, Bowser's Castle Great Door",
+        "core_version": "SkyEmu adacd0788964ed89f5c43dcbc1f3cc26deec996c",
+        "file": {
+          "name": "Mario & Luigi - Superstar Saga (USA).srm",
+          "size": 131072,
+          "sha1": "5f1717a3e8ee57000d8b277034abd21a4f3e0a73"
+        },
+        "frame": "files"
+      }
+    },
+    "proof_order": [
+      "mgba",
+      "vba-m",
+      "gpsp",
+      "vba-next",
+      "beetle-gba",
+      "skyemu"
+    ]
+  },
+  "note": null
+}

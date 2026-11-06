@@ -1,0 +1,90 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_ps3",
+  "url": "https://gamefaqs.gamespot.com/arcade/564869-street-fighter-alpha-3/saves/19099",
+  "source_page": "https://gamefaqs.gamespot.com/arcade/564869-street-fighter-alpha-3/saves",
+  "source": "GameFAQs (section 'PlayStation PS3 Virtual Memory Card Save (ZIP) (North America)')",
+  "author": "SaturnHST",
+  "licence": null,
+  "posted": "2009-05-14",
+  "fetched": "2026-11-05",
+  "what_it_is": "everything unlocked",
+  "gamefaqs": {
+    "id": 19099,
+    "product": "Street Fighter Alpha 3",
+    "section": "PlayStation PS3 Virtual Memory Card Save (ZIP) (North America)",
+    "region": "North America",
+    "served_as": "street-fighter-alpha-3.19099.zip",
+    "listed_size": "1KB",
+    "served_zip": {
+      "size": 1822,
+      "sha1": "72d5a173a5322edd5a1bc4008a0779c673b2eb57"
+    }
+  },
+  "format": "zip of 1 PS3 export(s) (.PSV): '\\0VSP' header (signature, save name at 0x64), the save's blocks from 0x84 (8324 bytes); it holds 1 save(s), 1 for this game (BASLUSP00821-ZERO3D)",
+  "release": "Street Fighter Alpha 3 (USA)",
+  "game_saves": [
+    {
+      "name": "BASLUSP00821-ZERO3D",
+      "blocks": 1,
+      "title": "ALPHA3 SAVE DATA"
+    }
+  ],
+  "files": {
+    "sfa3/BASLUSP008212D5A45524F3344.PSV": {
+      "size": 8324,
+      "sha1": "bf88b8e97d0bbf0f70fa2e9807024168301884d6"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Street Fighter Alpha 3 (USA).cue",
+      "sha1": "5e640de7f4840a0dddbd6a575669ba649b8eb0c5",
+      "size": 231
+    },
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr sfa3/BASLUSP008212D5A45524F3344.PSV: puts the save(s) on a freshly formatted card, as MemcardRex imports a single save",
+    "converted": {
+      "size": 131072,
+      "sha1": "e8c5cd45e1dbb9e4ee353da31096a24a078be1e8"
+    },
+    "script": "scripts/psx/Street Fighter Alpha 3.load.txt",
+    "script_variants": {
+      "pcsx-rearmed": "scripts/psx/Street Fighter Alpha 3.pcsx-rearmed.load.txt"
+    },
+    "cores": {
+      "beetle-psx": {
+        "result": "loads",
+        "detail": "the game reports \"AUTO LOAD COMPLETE!\" at boot (no card: \"AUTO LOAD CANCELED.\")"
+      },
+      "beetle-psx-hw": {
+        "result": "loads",
+        "detail": "the game reports \"AUTO LOAD COMPLETE!\" at boot (no card: \"AUTO LOAD CANCELED.\") (the same screen as on beetle-psx)"
+      },
+      "pcsx-rearmed": {
+        "result": "loads",
+        "detail": "the game reports \"AUTO LOAD COMPLETE!\" at boot (no card: \"AUTO LOAD CANCELED.\") (the same screen as on beetle-psx)"
+      },
+      "swanstation": {
+        "result": "loads",
+        "detail": "the game reports \"AUTO LOAD COMPLETE!\" at boot (no card: \"AUTO LOAD CANCELED.\") (the same screen as on beetle-psx)"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": [
+      "beetle-psx",
+      "beetle-psx-hw",
+      "pcsx-rearmed",
+      "swanstation"
+    ]
+  },
+  "note": null
+}

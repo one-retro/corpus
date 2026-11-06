@@ -1,0 +1,12 @@
+# Alundra 2: title > Continue > Slot 1 > the save list.
+wait 1500           # BIOS logos
+repeat 7            # skip the intros to the title menu
+press start 6
+wait 250
+end
+press b 6           # Continue (the cursor starts on it when a save is found)
+wait 300
+shot slot
+press b 6           # SLOT 1
+wait 400
+shot load

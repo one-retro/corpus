@@ -1,0 +1,88 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_ps3",
+  "url": "https://gamefaqs.gamespot.com/ps/198754-spyro-the-dragon/saves/18458",
+  "source_page": "https://gamefaqs.gamespot.com/ps/198754-spyro-the-dragon/saves",
+  "source": "GameFAQs (section 'PlayStation PS3 Virtual Memory Card Save (ZIP) (North America)')",
+  "author": "IAmNinja2",
+  "licence": null,
+  "posted": "2009-01-07",
+  "fetched": "2026-11-05",
+  "what_it_is": "120%, Whole game completed, start with 99 lives in Artisan Homeworld",
+  "gamefaqs": {
+    "id": 18458,
+    "product": "Spyro the Dragon",
+    "section": "PlayStation PS3 Virtual Memory Card Save (ZIP) (North America)",
+    "region": "North America",
+    "served_as": "spyro-the-dragon.18458.zip",
+    "listed_size": "1KB",
+    "served_zip": {
+      "size": 1114,
+      "sha1": "127c2a6c6a42ef1e100dba20afd824ea7c6b863f"
+    }
+  },
+  "format": "zip of 1 PS3 export(s) (.PSV): '\\0VSP' header (signature, save name at 0x64), the save's blocks from 0x84 (8324 bytes); it holds 1 save(s), 1 for this game (BASCUS-94228SPYRO)",
+  "release": "Spyro the Dragon (USA)",
+  "game_saves": [
+    {
+      "name": "BASCUS-94228SPYRO",
+      "blocks": 1,
+      "title": "SPYRO THE DRAGON"
+    }
+  ],
+  "files": {
+    "BASCUS-94228535059524F.PSV": {
+      "size": 8324,
+      "sha1": "a6cd1b25421f8785462083c0098052b85a3bb78b"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Spyro the Dragon (USA).cue",
+      "sha1": "6abdbc5a00bcb521528825fb7cb6bfebd99a7a91",
+      "size": 88
+    },
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr BASCUS-94228535059524F.PSV: puts the save(s) on a freshly formatted card, as MemcardRex imports a single save",
+    "converted": {
+      "size": 131072,
+      "sha1": "c3e9fbcc5d1f4d08343e20ccb29efd948cc02ed1"
+    },
+    "script": "scripts/psx/Spyro the Dragon.load.txt",
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "loads",
+        "detail": "the first save slot shows 80 dragons, the other two EMPTY"
+      },
+      "beetle-psx-hw": {
+        "result": "loads",
+        "detail": "the first save slot shows 80 dragons, the other two EMPTY (the same screen as on beetle-psx)"
+      },
+      "pcsx-rearmed": {
+        "result": "loads",
+        "detail": "the first save slot shows 80 dragons, the other two EMPTY (the same screen as on beetle-psx)"
+      },
+      "swanstation": {
+        "result": "loads",
+        "detail": "the first save slot shows 80 dragons, the other two EMPTY (the same screen as on beetle-psx)"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": [
+      "beetle-psx",
+      "beetle-psx-hw",
+      "pcsx-rearmed",
+      "swanstation"
+    ]
+  },
+  "note": null
+}

@@ -1,0 +1,119 @@
+{
+  "method": "downloaded",
+  "system": "gba",
+  "core": "_action-replay",
+  "url": "https://gamefaqs.gamespot.com/gba/563596-pokemon-sapphire-version/saves/4739",
+  "source_page": "https://gamefaqs.gamespot.com/gba/563596-pokemon-sapphire-version/saves",
+  "source": "GameFAQs (section 'GameBoy Advance Pro Action Replay Save (North America)')",
+  "author": "PhantomtheChao",
+  "licence": null,
+  "posted": "2004-08-13",
+  "fetched": "2026-11-05",
+  "what_it_is": "A Team of Pokemon With Dm Desire and 3 Elemental Hyper Beams with a girl trainer but haven't fought first trainer",
+  "gamefaqs": {
+    "id": 4739,
+    "product": "Pokemon Ruby / Sapphire / Emerald Version",
+    "section": "GameBoy Advance Pro Action Replay Save (North America)",
+    "region": "North America",
+    "served_as": "pokemon-ruby-sapphire-emerald-version.4739.xps",
+    "listed_size": "64KB"
+  },
+  "format": "SharkPort save (\"SharkPortSave\", kind 0x000F0000): title \"POKEMON SAPP\", date \"Save8/13/2004 12:32:56 AM 41\", notes \"\"; cart header \"POKEMON SAPP\" / 'AXPE' (complement 0x54); payload 65536 bytes; checksum: unsigned",
+  "files": {
+    "pokemon-ruby-sapphire-emerald-version.4739.xps": {
+      "size": 65645,
+      "sha1": "0055f2bb0a14bd3a28c9678f26152c5d740cfa68"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Pokemon - Sapphire Version (USA, Europe) (Rev 1).gba",
+      "sha1": "4722efb8cd45772ca32555b98fd3b9719f8e60a9",
+      "size": 16777216
+    },
+    "converted_with": "tools/gamefaqs/gba-sharkport.py pokemon-ruby-sapphire-emerald-version.4739.xps --rom ROM --core CORE --outdir DIR: reads the SharkPort container as mGBA does and imports the payload as mGBA's _importSavedata does (cut to the chip, EEPROM 8-byte blocks reversed, the rest of the chip erased), then lays the chip out as the core keeps it",
+    "converted": {
+      "size": 131072,
+      "sha1": "4ffdfb041410e817a5dce7f3997210631efd9dba"
+    },
+    "script": "scripts/gba/Pokemon - Ruby Version.load.txt",
+    "cores": {
+      "mgba": {
+        "result": "loads",
+        "detail": "\"The save file is corrupt(ed). The previous save file will be loaded.\", then CONTINUE: May, 0:27 (the older of the two copies)",
+        "core_version": "mGBA 0.11-212-7a12d6d",
+        "file": {
+          "name": "Pokemon - Sapphire Version (USA, Europe) (Rev 1).srm",
+          "size": 131072,
+          "sha1": "4ffdfb041410e817a5dce7f3997210631efd9dba"
+        },
+        "frame": "next"
+      },
+      "vba-m": {
+        "result": "loads",
+        "detail": "\"The save file is corrupt(ed). The previous save file will be loaded.\", then CONTINUE: May, 0:27 (the older of the two copies)",
+        "core_version": "VBA-M 115defb",
+        "file": {
+          "name": "Pokemon - Sapphire Version (USA, Europe) (Rev 1).srm",
+          "size": 131072,
+          "sha1": "4ffdfb041410e817a5dce7f3997210631efd9dba"
+        },
+        "frame": "next"
+      },
+      "gpsp": {
+        "result": "loads",
+        "detail": "\"The save file is corrupt(ed). The previous save file will be loaded.\", then CONTINUE: May, 0:27 (the older of the two copies)",
+        "core_version": "gpSP v1.1.0-5819380",
+        "file": {
+          "name": "Pokemon - Sapphire Version (USA, Europe) (Rev 1).srm",
+          "size": 131072,
+          "sha1": "4ffdfb041410e817a5dce7f3997210631efd9dba"
+        },
+        "frame": "next"
+      },
+      "vba-next": {
+        "result": "loads",
+        "detail": "\"The save file is corrupt(ed). The previous save file will be loaded.\", then CONTINUE: May, 0:27 (the older of the two copies)",
+        "core_version": "VBA Next v1.0.2",
+        "file": {
+          "name": "Pokemon - Sapphire Version (USA, Europe) (Rev 1).srm",
+          "size": 139264,
+          "sha1": "d4b0063ca0ea1c506a5286c4401d326c3114482d"
+        },
+        "frame": "next"
+      },
+      "beetle-gba": {
+        "result": "loads",
+        "detail": "\"The save file is corrupt(ed). The previous save file will be loaded.\", then CONTINUE: May, 0:27 (the older of the two copies)",
+        "core_version": "Beetle GBA v0.9.36 b158166",
+        "file": {
+          "name": "Pokemon - Sapphire Version (USA, Europe) (Rev 1).3a32fd98b065283d09eeba1ce0542888.sav",
+          "size": 131072,
+          "sha1": "4ffdfb041410e817a5dce7f3997210631efd9dba"
+        },
+        "frame": "next"
+      },
+      "skyemu": {
+        "result": "loads",
+        "detail": "\"The save file is corrupt(ed). The previous save file will be loaded.\", then CONTINUE: May, 0:27 (the older of the two copies)",
+        "core_version": "SkyEmu adacd0788964ed89f5c43dcbc1f3cc26deec996c",
+        "file": {
+          "name": "Pokemon - Sapphire Version (USA, Europe) (Rev 1).srm",
+          "size": 131072,
+          "sha1": "4ffdfb041410e817a5dce7f3997210631efd9dba"
+        },
+        "frame": "next"
+      }
+    },
+    "proof_order": [
+      "mgba",
+      "vba-m",
+      "gpsp",
+      "vba-next",
+      "beetle-gba",
+      "skyemu"
+    ]
+  },
+  "note": "The GameShark copied only the first 64 KiB of the 128 KiB flash; imported as mGBA does, the second half of the chip stays erased."
+}

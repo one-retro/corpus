@@ -1,0 +1,84 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_dexdrive",
+  "url": "https://gamefaqs.gamespot.com/ps/477343-final-fantasy-chronicles/saves/1707",
+  "source_page": "https://gamefaqs.gamespot.com/ps/477343-final-fantasy-chronicles/saves",
+  "source": "GameFAQs (section 'PlayStation DexDrive Save (North America)')",
+  "author": "Aether_Knight",
+  "licence": null,
+  "posted": "2002-05-15",
+  "fetched": "2026-11-05",
+  "what_it_is": "Final Fantasy IV Save at the last save point in Lunar Subterrain w/ all characters at level 99. Each of the 4 \"save\" files contains custom party arrangements.",
+  "gamefaqs": {
+    "id": 1707,
+    "product": "Final Fantasy Chronicles",
+    "section": "PlayStation DexDrive Save (North America)",
+    "region": "North America",
+    "served_as": "final-fantasy-chronicles.1707.gme",
+    "listed_size": "131KB"
+  },
+  "format": "DexDrive .gme: '123-456-STD' 3904-byte header (per-block comments) + 131072-byte raw card; the card holds 1 save(s), 1 for this game (BASLUS-01360FF4)",
+  "release": "Final Fantasy Chronicles - Final Fantasy IV (USA) (Rev 1)",
+  "game_saves": [
+    {
+      "name": "BASLUS-01360FF4",
+      "blocks": 2,
+      "title": "FF4 9999/9999 0:00"
+    }
+  ],
+  "files": {
+    "final-fantasy-chronicles.1707.gme": {
+      "size": 134976,
+      "sha1": "a281822e2c1cac2269143332fe5f3893233d3a48"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Final Fantasy Chronicles - Final Fantasy IV (USA) (Rev 1).cue",
+      "sha1": "476c9de3868d155c5c315461938fb94bd725860a",
+      "size": 123
+    },
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr final-fantasy-chronicles.1707.gme: unwraps the card (DexDrive .gme: 3904-byte header + card)",
+    "converted": {
+      "size": 131072,
+      "sha1": "b549c9f2afdb3614ee40710299d9928fc79ff644"
+    },
+    "script": "scripts/psx/Final Fantasy IV.load.txt",
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "loads",
+        "detail": "Slot 1 lists four saves, each 0:00, HP 9999/9999"
+      },
+      "beetle-psx-hw": {
+        "result": "loads",
+        "detail": "Slot 1 lists four saves, each 0:00, HP 9999/9999 (the same screen as on beetle-psx)"
+      },
+      "pcsx-rearmed": {
+        "result": "loads",
+        "detail": "Slot 1 lists four saves, each 0:00, HP 9999/9999 (the same screen as on beetle-psx)"
+      },
+      "swanstation": {
+        "result": "loads",
+        "detail": "Slot 1 lists four saves, each 0:00, HP 9999/9999 (the same screen as on beetle-psx)"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": [
+      "beetle-psx",
+      "beetle-psx-hw",
+      "pcsx-rearmed",
+      "swanstation"
+    ]
+  },
+  "note": null
+}

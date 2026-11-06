@@ -1,0 +1,110 @@
+{
+  "method": "downloaded",
+  "system": "nds",
+  "core": "desmume",
+  "url": "https://gamefaqs.gamespot.com/ds/960099-pokemon-heartgold-version/saves/21611",
+  "source_page": "https://gamefaqs.gamespot.com/ds/960099-pokemon-heartgold-version/saves",
+  "source": "GameFAQs (section 'Action Replay Max DS (.duc) Game Save (North America)')",
+  "author": "Railand",
+  "licence": null,
+  "posted": "2011-03-06",
+  "fetched": "2026-11-05",
+  "what_it_is": "Has beaten E4, Strong Pokemon, Has Beat RED at Mt. Silver, Complete 16 Badge, No POKEDEX",
+  "gamefaqs": {
+    "id": 21611,
+    "product": "Pokemon HeartGold / SoulSilver Version",
+    "section": "Action Replay Max DS (.duc) Game Save (North America)",
+    "region": "North America",
+    "served_as": "pokemon-heartgold-soulsilver-version.21611.duc",
+    "listed_size": "512KB"
+  },
+  "format": "DeSmuME .dsv: 512 KiB raw and the 122-byte footer (size 524288, padSize 524288, type 0 (Autodetect), addr_size 3, mem_size 0)",
+  "files": {
+    "pokemon-heartgold-soulsilver-version.21611.duc": {
+      "size": 524410,
+      "sha1": "22f9a05da2581385c587ea1051e28a37d780187c"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Pokemon - HeartGold Version (USA).nds",
+      "sha1": "30793e274fb4c7ba070ae226edbdfe355504b1f5",
+      "size": 134217728,
+      "note": "a dump of this game code whose sha1 is not in the No-Intro DAT (the area after the used ROM size is blank); the region in the name is a guess"
+    },
+    "converted_with": "tools/gamefaqs/nds-dsv.py IN step0.bin, then tools/gamefaqs/nds-cores.py step0.bin --chip 524288 --stem 'Pokemon - HeartGold Version (USA)' --out DIR: cuts the DeSmuME footer; fits it to the 524288-byte chip (exact size) and writes each core's file",
+    "converted": {
+      "size": 524288,
+      "sha1": "37bcc18162851df6f85cbd23f01e1ef4eac6189c"
+    },
+    "core_files": {
+      "desmume": {
+        "name": "Pokemon - HeartGold Version (USA).dsv",
+        "size": 524410,
+        "sha1": "483d6839cf7493562e47a42b51b149f4eeafd234"
+      },
+      "desmume-2015": {
+        "name": "Pokemon - HeartGold Version (USA).dsv",
+        "size": 524410,
+        "sha1": "483d6839cf7493562e47a42b51b149f4eeafd234"
+      },
+      "melonds": {
+        "name": "Pokemon - HeartGold Version (USA).sav",
+        "size": 524288,
+        "sha1": "37bcc18162851df6f85cbd23f01e1ef4eac6189c"
+      },
+      "melonds-ds": {
+        "name": "Pokemon - HeartGold Version (USA).srm",
+        "size": 524288,
+        "sha1": "37bcc18162851df6f85cbd23f01e1ef4eac6189c"
+      },
+      "noods": {
+        "name": "Pokemon - HeartGold Version (USA).sav",
+        "size": 524288,
+        "sha1": "37bcc18162851df6f85cbd23f01e1ef4eac6189c"
+      },
+      "skyemu": {
+        "name": "Pokemon - HeartGold Version (USA).srm",
+        "size": 8388608,
+        "sha1": "d9a7fb60945f4f21056d0e027e61dc94ca907d64"
+      }
+    },
+    "script": "scripts/nds/Pokemon - HeartGold Version.load.txt",
+    "cores": {
+      "desmume": {
+        "result": "loads",
+        "detail": "CONTINUE: PLAYER GARY, TIME 14:38, BADGES 16 (no POKéDEX line: the save has no Pokédex)"
+      },
+      "desmume-2015": {
+        "result": "loads",
+        "detail": "CONTINUE: PLAYER GARY, TIME 14:38, BADGES 16 (no POKéDEX line: the save has no Pokédex)"
+      },
+      "melonds": {
+        "result": "core-error",
+        "detail": "\"A communication error has occurred. You will be returned to the title screen.\" instead of the CONTINUE panel; the same happens with every HeartGold/SoulSilver save in this core (no BIOS or firmware here, FreeBIOS), so it is the core, not this save"
+      },
+      "melonds-ds": {
+        "result": "loads",
+        "detail": "CONTINUE: PLAYER GARY, TIME 14:38, BADGES 16 (no POKéDEX line: the save has no Pokédex)"
+      },
+      "noods": {
+        "result": "loads",
+        "detail": "CONTINUE: PLAYER GARY, TIME 14:38, BADGES 16 (no POKéDEX line: the save has no Pokédex)"
+      },
+      "skyemu": {
+        "result": "loads",
+        "detail": "CONTINUE: PLAYER GARY, TIME 14:38, BADGES 16 (no POKéDEX line: the save has no Pokédex)"
+      }
+    },
+    "proof_order": [
+      "desmume",
+      "desmume-2015",
+      "melonds",
+      "melonds-ds",
+      "noods",
+      "skyemu"
+    ]
+  },
+  "note": "Release: English; HeartGold from the version that caught the player's own Pokemon (origin game in the decrypted Pokemon data, OT matching the trainer)."
+}

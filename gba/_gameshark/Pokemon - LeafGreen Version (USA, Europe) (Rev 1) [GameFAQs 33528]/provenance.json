@@ -1,0 +1,119 @@
+{
+  "method": "downloaded",
+  "system": "gba",
+  "core": "_gameshark",
+  "url": "https://gamefaqs.gamespot.com/gba/918915-pokemon-firered-version/saves/33528",
+  "source_page": "https://gamefaqs.gamespot.com/gba/918915-pokemon-firered-version/saves",
+  "source": "GameFAQs (section 'GameBoy Advance GameShark Save (North America)')",
+  "author": "duskk",
+  "licence": null,
+  "posted": "2025-08-26",
+  "fetched": "2026-11-05",
+  "what_it_is": "my legit leafgreen living dex, got mew with trade from deoxyz event save file.",
+  "gamefaqs": {
+    "id": 33528,
+    "product": "Pokemon FireRed / LeafGreen Version",
+    "section": "GameBoy Advance GameShark Save (North America)",
+    "region": "North America",
+    "served_as": "pokemon-firered-leafgreen-version.33528.sps",
+    "listed_size": "128KB"
+  },
+  "format": "SharkPort save (\"SharkPortSave\", kind 0x000F0000): title \"Pokemon - Leaf Green Version (living dex first 151)\", date \"23/08/2025 02:20:31 pm\", notes \"Created with savefileconverter.com\"; cart header \"POKEMON LEAF\" / 'BPGE' (complement 0x80); payload 131072 bytes; checksum: neither; written by savefileconverter.com (notes field), whose checksum matches neither variant",
+  "files": {
+    "pokemon-firered-leafgreen-version.33528.sps": {
+      "size": 131248,
+      "sha1": "f3d9f14fc04d084897838905b652c41138dccccf"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Pokemon - LeafGreen Version (USA, Europe) (Rev 1).gba",
+      "sha1": "7862c67bdecbe21d1d69ce082ce34327e1c6ed5e",
+      "size": 16777216
+    },
+    "converted_with": "tools/gamefaqs/gba-sharkport.py pokemon-firered-leafgreen-version.33528.sps --rom ROM --core CORE --outdir DIR: reads the SharkPort container as mGBA does and imports the payload as mGBA's _importSavedata does (cut to the chip, EEPROM 8-byte blocks reversed, the rest of the chip erased), then lays the chip out as the core keeps it",
+    "converted": {
+      "size": 131072,
+      "sha1": "7f2340a86989f5e2dd746be04c92ffedc0c34c56"
+    },
+    "script": "scripts/gba/Pokemon - FireRed Version.load.txt",
+    "cores": {
+      "mgba": {
+        "result": "loads",
+        "detail": "CONTINUE: Dusky, 79:08",
+        "core_version": "mGBA 0.11-212-7a12d6d",
+        "file": {
+          "name": "Pokemon - LeafGreen Version (USA, Europe) (Rev 1).srm",
+          "size": 131072,
+          "sha1": "7f2340a86989f5e2dd746be04c92ffedc0c34c56"
+        },
+        "frame": "menu"
+      },
+      "vba-m": {
+        "result": "loads",
+        "detail": "CONTINUE: Dusky, 79:08",
+        "core_version": "VBA-M 115defb",
+        "file": {
+          "name": "Pokemon - LeafGreen Version (USA, Europe) (Rev 1).srm",
+          "size": 131072,
+          "sha1": "7f2340a86989f5e2dd746be04c92ffedc0c34c56"
+        },
+        "frame": "menu"
+      },
+      "gpsp": {
+        "result": "loads",
+        "detail": "CONTINUE: Dusky, 79:08",
+        "core_version": "gpSP v1.1.0-5819380",
+        "file": {
+          "name": "Pokemon - LeafGreen Version (USA, Europe) (Rev 1).srm",
+          "size": 131072,
+          "sha1": "7f2340a86989f5e2dd746be04c92ffedc0c34c56"
+        },
+        "frame": "menu"
+      },
+      "vba-next": {
+        "result": "loads",
+        "detail": "CONTINUE: Dusky, 79:08",
+        "core_version": "VBA Next v1.0.2",
+        "file": {
+          "name": "Pokemon - LeafGreen Version (USA, Europe) (Rev 1).srm",
+          "size": 139264,
+          "sha1": "cbc43417fa02b07c176e9cc73a7e751b59dfbfb5"
+        },
+        "frame": "menu"
+      },
+      "beetle-gba": {
+        "result": "loads",
+        "detail": "CONTINUE: Dusky, 79:08",
+        "core_version": "Beetle GBA v0.9.36 b158166",
+        "file": {
+          "name": "Pokemon - LeafGreen Version (USA, Europe) (Rev 1).9d33a02159e018d09073e700e1fd10fd.sav",
+          "size": 131072,
+          "sha1": "7f2340a86989f5e2dd746be04c92ffedc0c34c56"
+        },
+        "frame": "menu"
+      },
+      "skyemu": {
+        "result": "loads",
+        "detail": "CONTINUE: Dusky, 79:08",
+        "core_version": "SkyEmu adacd0788964ed89f5c43dcbc1f3cc26deec996c",
+        "file": {
+          "name": "Pokemon - LeafGreen Version (USA, Europe) (Rev 1).srm",
+          "size": 131072,
+          "sha1": "7f2340a86989f5e2dd746be04c92ffedc0c34c56"
+        },
+        "frame": "menu"
+      }
+    },
+    "proof_order": [
+      "mgba",
+      "vba-m",
+      "gpsp",
+      "vba-next",
+      "beetle-gba",
+      "skyemu"
+    ]
+  },
+  "note": null
+}

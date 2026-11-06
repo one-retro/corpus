@@ -1,0 +1,133 @@
+{
+  "method": "downloaded",
+  "system": "ps2",
+  "core": "_ps3",
+  "url": "https://gamefaqs.gamespot.com/gamecube/926672-shadow-the-hedgehog/saves/32156",
+  "source_page": "https://gamefaqs.gamespot.com/gamecube/926672-shadow-the-hedgehog/saves",
+  "source": "GameFAQs (section 'PlayStation 2 PS3 Virtual Memory Card Save (ZIP) (Japan)')",
+  "author": "GokaiWhite",
+  "licence": null,
+  "posted": "2025-05-15",
+  "fetched": "2026-11-05",
+  "what_it_is": "All endings unlocked, All stages available with all Keys found, 30/71 A Ranks",
+  "gamefaqs": {
+    "id": 32156,
+    "product": "Shadow the Hedgehog",
+    "section": "PlayStation 2 PS3 Virtual Memory Card Save (ZIP) (Japan)",
+    "region": "Japan",
+    "served_as": "shadow-the-hedgehog.32156.zip",
+    "listed_size": "21KB"
+  },
+  "format": "PS3 Virtual Memory Card export (.PSV): '\\0VSP' header, PS2 save type 2, 153016 bytes, folder BISLPM-66166, 5 files, 152556 bytes of file data",
+  "files": {
+    "Shadow-the-hedgehog_jpps2/BISLPM-66166.PSV": {
+      "size": 153016,
+      "sha1": "1bdafe56792ab6c6701c37d38d79b0c04856a186"
+    }
+  },
+  "save": {
+    "folder": "BISLPM-66166",
+    "title": [
+      "シャドウ・ザ・ヘッジホッグ",
+      ""
+    ],
+    "times": "as the file stores them (PS2 card times, JST)",
+    "files": [
+      {
+        "name": "BISLPM-66166",
+        "size": 8192,
+        "sha1": "3f24927c9025fa38fde7d5f89e4312b48794a21c",
+        "created": "2025-05-05 09:18:26",
+        "modified": "2025-05-05 09:18:26"
+      },
+      {
+        "name": "LIST.ICO",
+        "size": 47800,
+        "sha1": "8657b8abbe2099d345ee3b57cc111ef97ceec4fc",
+        "created": "2025-05-05 09:18:26",
+        "modified": "2025-05-05 09:18:27"
+      },
+      {
+        "name": "COPY.ICO",
+        "size": 47800,
+        "sha1": "8657b8abbe2099d345ee3b57cc111ef97ceec4fc",
+        "created": "2025-05-05 09:18:27",
+        "modified": "2025-05-05 09:18:27"
+      },
+      {
+        "name": "DEL.ICO",
+        "size": 47800,
+        "sha1": "8657b8abbe2099d345ee3b57cc111ef97ceec4fc",
+        "created": "2025-05-05 09:18:27",
+        "modified": "2025-05-05 09:18:28"
+      },
+      {
+        "name": "icon.sys",
+        "size": 964,
+        "sha1": "7ef80add5426ec9080d306d287cd6164c7aa7094",
+        "created": "2025-05-05 09:18:28",
+        "modified": "2025-05-05 09:18:28"
+      }
+    ]
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": null,
+    "converted_with": "tools/gamefaqs/ps2-card.py 'Shadow-the-hedgehog_jpps2/BISLPM-66166.PSV' -o OUT: reads the save with mymcplus 3.0.5 and writes OUT/Mcd001.ps2 (an 8 MiB card with ECC, formatted and filled by mymcplus) for lrps2/pcee2/pcsx2, and OUT/mc0/<folder>/ for Play!",
+    "converted": {
+      "Mcd001.ps2": {
+        "size": 8650752,
+        "sha1": "20707df91ec682401f530920ad08d8953a41a412"
+      },
+      "mc0/BISLPM-66166/": {
+        "BISLPM-66166": {
+          "size": 8192,
+          "sha1": "3f24927c9025fa38fde7d5f89e4312b48794a21c"
+        },
+        "LIST.ICO": {
+          "size": 47800,
+          "sha1": "8657b8abbe2099d345ee3b57cc111ef97ceec4fc"
+        },
+        "COPY.ICO": {
+          "size": 47800,
+          "sha1": "8657b8abbe2099d345ee3b57cc111ef97ceec4fc"
+        },
+        "DEL.ICO": {
+          "size": 47800,
+          "sha1": "8657b8abbe2099d345ee3b57cc111ef97ceec4fc"
+        },
+        "icon.sys": {
+          "size": 964,
+          "sha1": "7ef80add5426ec9080d306d287cd6164c7aa7094"
+        }
+      },
+      "read_back": "work/ps2/tools/mcfs.py lists every file with the size and SHA-1 put on the card; one-saves (1saves convert + inspect) reads the card and finds BISLPM-66166",
+      "timestamps": "what the save does not date is 2000-01-01 00:00:00 (JST, as a card stores it); the card's own root entries too"
+    },
+    "script": null,
+    "cores": {
+      "pcee2": {
+        "result": "not-run",
+        "detail": "no image of Shadow the Hedgehog (Japan) (En,Ja,Fr,De,Es,It) in the library"
+      },
+      "lrps2": {
+        "result": "not-run",
+        "detail": "no image of Shadow the Hedgehog (Japan) (En,Ja,Fr,De,Es,It) in the library"
+      },
+      "play": {
+        "result": "not-run",
+        "detail": "no image of Shadow the Hedgehog (Japan) (En,Ja,Fr,De,Es,It) in the library"
+      },
+      "pcsx2": {
+        "result": "not-run",
+        "detail": "no image of Shadow the Hedgehog (Japan) (En,Ja,Fr,De,Es,It) in the library"
+      },
+      "armsx2": {
+        "result": "not-run",
+        "detail": "ARMSX2 renders only through Vulkan here and falls back to a null GS (no picture), so nothing shows what the game read (ps2/NOTES.md)"
+      }
+    },
+    "proof_order": []
+  },
+  "note": null
+}

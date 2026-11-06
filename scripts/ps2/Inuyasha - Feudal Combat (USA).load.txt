@@ -1,0 +1,21 @@
+# Inuyasha - Feudal Combat (USA), SLUS-21193, DVD: show a loaded save.
+# The game reads BASLUS-21193game at power-on (with none it stops at "There is no Inuyasha
+# Feudal Combat game data ... start the game anyway?"). Intro (START) > title (START) > Select
+# Mode, which ignores input for a while (1200 frames was enough in PCEE2, not in LRPS2) >
+# Battle Mode > Select Battle Type (1P vs 2P) > Select Character: the roster, with the
+# characters the save has unlocked.
+wait 3000
+press start 10       # skip the intro
+wait 500
+press start 10       # PRESS START -> Select Mode (Story Mode)
+wait 2400            # LRPS2 takes the menu's first input later than PCEE2
+press down 6         # Mission Mode (a long hold repeats once the menu takes input)
+wait 120
+press down 6         # Battle Mode
+wait 120
+shot mode
+press b 6
+wait 900
+press b 6            # the first battle type: 1P vs 2P (in standalone PCSX2, with one pad bound: 1P vs COM)
+wait 900
+shot characters      # Select Character: the roster

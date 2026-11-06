@@ -1,0 +1,65 @@
+{
+  "method": "downloaded",
+  "system": "gc",
+  "core": "_usb-memory-adapter",
+  "url": "https://gamefaqs.gamespot.com/gamecube/516710-mario-kart-double-dash/saves/29622",
+  "source_page": "https://gamefaqs.gamespot.com/gamecube/516710-mario-kart-double-dash/saves",
+  "source": "GameFAQs (section 'GameCube USB Memory Adapter Save (North America)')",
+  "author": "manuelvil1132",
+  "licence": null,
+  "posted": "2024-05-26",
+  "fetched": "2026-11-05",
+  "what_it_is": "Yoshi Circuit TT Ghost. Beats Staff Ghost.",
+  "gamefaqs": {
+    "id": 29622,
+    "product": "Mario Kart: Double Dash!!",
+    "section": "GameCube USB Memory Adapter Save (North America)",
+    "region": "North America",
+    "served_as": "mario-kart-double-dash.29622.gci",
+    "listed_size": "40KB"
+  },
+  "format": "GCI: the 64-byte card directory entry (GM4E01, file '5#R%#*EV*31!!!ECS^`3>GE>*2\"5!aa', 5 blocks, modified 2023-09-17 21:23:35, comment 'Mario Kart: Double Dash!! / Ghost Data 2:29:682') then 5 x 8 KiB blocks = 41024 bytes",
+  "files": {
+    "mario-kart-double-dash.29622.gci": {
+      "size": 41024,
+      "sha1": "50f0960213a01c5b31026c296c77ec7ec0dc00ad"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Mario Kart - Double Dash!! (USA).rvz",
+      "sha1": "a110aa0c71c3b742879969b9f3ff0c67645d364f",
+      "size": 396323584
+    },
+    "converted_with": "tools/gamefaqs/gc-gci.py place <file> <GC/USA/Card A>: copies the GCI unchanged into the GCI folder under Dolphin's own name for it",
+    "converted": {
+      "size": 41024,
+      "sha1": "50f0960213a01c5b31026c296c77ec7ec0dc00ad",
+      "name": "01-GM4E-5#R%#__2a__EV__2a__31!!!ECS^`3__3e__GE__3e____2a__2__22__5!aa.gci"
+    },
+    "script": "scripts/gc/Mario Kart - Double Dash!!.ghost.load.txt",
+    "cores": {
+      "dolphin-emu": {
+        "core_version": "2609.0.169+32c61f9d0e (libretro buildbot, dolphin_libretro.dylib)",
+        "frontend": "tools/retro-run, OpenGL 4.1 core context, options scripts/gc/dolphin-single-core.opt (CPU thread off, OSD off); save in <savedir>/User/GC/USA/Card A/ (the core's GCI folder)",
+        "result": "loads",
+        "detail": "Time Trials > Star Cup > Yoshi Circuit opens LOAD GHOST DATA: Slot A, Yoshi Circuit ghost data 1; Slot A lists '1 Yoshi Circuit 2:29:682 MII', Yoshi and Toad, 09/17/23 (the file's own comment: Ghost Data 2:29:682); baseline (no save): no LOAD GHOST DATA screen, the Time Trial on Yoshi Circuit starts",
+        "script": "scripts/gc/Mario Kart - Double Dash!!.ghost.load.txt"
+      },
+      "dolphin-emu@dolphin": {
+        "core_version": "2606a (Dolphin.app)",
+        "frontend": "Dolphin.app, isolated user folder (-u), batch mode (-b), input from a TAS movie (-m) made with work/standalone/tools/gen_dtm.py, frame dump; save in <user>/GC/USA/Card A/ (GCI folder)",
+        "result": "loads",
+        "detail": "Time Trials > Star Cup > Yoshi Circuit opens LOAD GHOST DATA: Slot A, Yoshi Circuit ghost data 1; Slot A lists '1 Yoshi Circuit 2:29:682 MII', Yoshi and Toad, 09/17/23 (the file's own comment: Ghost Data 2:29:682); baseline (no save): no LOAD GHOST DATA screen, the Time Trial on Yoshi Circuit starts",
+        "script": "scripts/gc/Mario Kart - Double Dash!!.ghost.load.dtm.txt",
+        "proof_frame": "Dolphin frame dump framedump_8119.png"
+      }
+    },
+    "proof_order": [
+      "dolphin-emu",
+      "dolphin-emu@dolphin"
+    ]
+  },
+  "note": "A Time Trial ghost is a card file of its own (5 blocks, file name of encoded characters); with no main data on the card the game first asks to create it (YES), so both cores also wrote a new 'MarioKart Double Dash!!' file beside it in the work folder."
+}

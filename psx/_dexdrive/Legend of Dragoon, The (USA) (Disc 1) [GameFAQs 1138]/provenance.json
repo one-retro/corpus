@@ -1,0 +1,84 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_dexdrive",
+  "url": "https://gamefaqs.gamespot.com/ps/197765-the-legend-of-dragoon/saves/1138",
+  "source_page": "https://gamefaqs.gamespot.com/ps/197765-the-legend-of-dragoon/saves",
+  "source": "GameFAQs (section 'PlayStation DexDrive Save (North America)')",
+  "author": "MegaSSjGoku",
+  "licence": null,
+  "posted": "2001-10-02",
+  "fetched": "2026-11-05",
+  "what_it_is": "Saved at Switch over from Disk 1 to 2",
+  "gamefaqs": {
+    "id": 1138,
+    "product": "The Legend of Dragoon",
+    "section": "PlayStation DexDrive Save (North America)",
+    "region": "North America",
+    "served_as": "the-legend-of-dragoon.1138.gme",
+    "listed_size": "131KB"
+  },
+  "format": "DexDrive .gme: '123-456-STD' 3904-byte header (per-block comments) + 131072-byte raw card; the card holds 1 save(s), 1 for this game (BASCUS-94491drgn0000)",
+  "release": "Legend of Dragoon, The (USA) (Disc 1)",
+  "game_saves": [
+    {
+      "name": "BASCUS-94491drgn0000",
+      "blocks": 1,
+      "title": "LOD FILE01 LV18 TIME 012:54:41"
+    }
+  ],
+  "files": {
+    "the-legend-of-dragoon.1138.gme": {
+      "size": 134976,
+      "sha1": "5f29be755a4c0aedec3b9bd38d3ac515d3168cfa"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Legend of Dragoon, The (USA) (Disc 1).cue",
+      "sha1": "ae7c4642ff995bd5762937cd1fc2ac9c4474db18",
+      "size": 103
+    },
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr the-legend-of-dragoon.1138.gme: unwraps the card (DexDrive .gme: 3904-byte header + card)",
+    "converted": {
+      "size": 131072,
+      "sha1": "7fbc39c07b1be1a67e8deb323601487614adc312"
+    },
+    "script": "scripts/psx/Legend of Dragoon.load.txt",
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "loads",
+        "detail": "Continue lists file 1: LV 18, 012:54:41, Ch.2 Platinum Shadow"
+      },
+      "beetle-psx-hw": {
+        "result": "loads",
+        "detail": "Continue lists file 1: LV 18, 012:54:41, Ch.2 Platinum Shadow (the same screen as on beetle-psx)"
+      },
+      "pcsx-rearmed": {
+        "result": "loads",
+        "detail": "Continue lists file 1: LV 18, 012:54:41, Ch.2 Platinum Shadow (the same screen as on beetle-psx)"
+      },
+      "swanstation": {
+        "result": "loads",
+        "detail": "Continue lists file 1: LV 18, 012:54:41, Ch.2 Platinum Shadow (the same screen as on beetle-psx)"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": [
+      "beetle-psx",
+      "beetle-psx-hw",
+      "pcsx-rearmed",
+      "swanstation"
+    ]
+  },
+  "note": null
+}

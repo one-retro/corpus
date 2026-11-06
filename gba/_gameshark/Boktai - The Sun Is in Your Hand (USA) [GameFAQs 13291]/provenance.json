@@ -1,0 +1,119 @@
+{
+  "method": "downloaded",
+  "system": "gba",
+  "core": "_gameshark",
+  "url": "https://gamefaqs.gamespot.com/gba/589655-boktai-the-sun-is-in-your-hand/saves/13291",
+  "source_page": "https://gamefaqs.gamespot.com/gba/589655-boktai-the-sun-is-in-your-hand/saves",
+  "source": "GameFAQs (section 'GameBoy Advance GameShark Save (North America)')",
+  "author": "Dark_Forte",
+  "licence": null,
+  "posted": "2006-10-13",
+  "fetched": "2026-11-05",
+  "what_it_is": "Django named Hatikan, 1 slot left. Hard mode, after the Delusion Forest, all frames,lenses and batteries(except for Astro, but including Infinite), a good health bar.",
+  "gamefaqs": {
+    "id": 13291,
+    "product": "Boktai: The Sun Is in Your Hand",
+    "section": "GameBoy Advance GameShark Save (North America)",
+    "region": "North America",
+    "served_as": "boktai-the-sun-is-in-your-hand.13291.sps",
+    "listed_size": "64KB"
+  },
+  "format": "SharkPort save (\"SharkPortSave\", kind 0x000F0000): title \"BOKTAI\", date \"13/10/2006 13:39:02\", notes \"\"; cart header \"BOKTAI\" / 'U3IE' (complement 0x0c); payload 65536 bytes; checksum: signed",
+  "files": {
+    "boktai-the-sun-is-in-your-hand.13291.sps": {
+      "size": 65630,
+      "sha1": "a4922481f134808ac44ad151c44c1a9f4cae3a32"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Boktai - The Sun Is in Your Hand (USA).gba",
+      "sha1": "7164326283df46a3941ec7b6ceca889cbc40e660",
+      "size": 16777216
+    },
+    "converted_with": "tools/gamefaqs/gba-sharkport.py boktai-the-sun-is-in-your-hand.13291.sps --rom ROM --core CORE --outdir DIR: reads the SharkPort container as mGBA does and imports the payload as mGBA's _importSavedata does (cut to the chip, EEPROM 8-byte blocks reversed, the rest of the chip erased), then lays the chip out as the core keeps it",
+    "converted": {
+      "size": 8192,
+      "sha1": "7ff1e093ca5a0c3e85f12fa917ae909e73c075cd"
+    },
+    "script": "scripts/gba/Boktai - The Sun Is in Your Hand.load.txt",
+    "cores": {
+      "mgba": {
+        "result": "rejected",
+        "detail": "GAME START: DATA.1 NO DATA, as with no save",
+        "core_version": "mGBA 0.11-212-7a12d6d",
+        "file": {
+          "name": "Boktai - The Sun Is in Your Hand (USA).srm",
+          "size": 8192,
+          "sha1": "7ff1e093ca5a0c3e85f12fa917ae909e73c075cd"
+        },
+        "frame": "data"
+      },
+      "vba-m": {
+        "result": "rejected",
+        "detail": "GAME START: DATA.1 NO DATA, as with no save",
+        "core_version": "VBA-M 115defb",
+        "file": {
+          "name": "Boktai - The Sun Is in Your Hand (USA).srm",
+          "size": 8192,
+          "sha1": "7ff1e093ca5a0c3e85f12fa917ae909e73c075cd"
+        },
+        "frame": "data"
+      },
+      "gpsp": {
+        "result": "rejected",
+        "detail": "the game finds no save and runs the solar sensor calibration again, which this core cannot pass (FAILED SETTING: no sensor emulated)",
+        "core_version": "gpSP v1.1.0-5819380",
+        "file": {
+          "name": "Boktai - The Sun Is in Your Hand (USA).srm",
+          "size": 131072,
+          "sha1": "6bc7b69157c24bcdc6a361bf3cd09539e1549cbf"
+        },
+        "frame": "data"
+      },
+      "vba-next": {
+        "result": "rejected",
+        "detail": "the game finds no save and runs the solar sensor calibration again, which this core cannot pass (FAILED SETTING: no sensor emulated)",
+        "core_version": "VBA Next v1.0.2",
+        "file": {
+          "name": "Boktai - The Sun Is in Your Hand (USA).srm",
+          "size": 139264,
+          "sha1": "96b319de76769612fa49530781acc568a5cdb6b0"
+        },
+        "frame": "data"
+      },
+      "beetle-gba": {
+        "result": "rejected",
+        "detail": "GAME START: DATA.1 NO DATA, as with no save",
+        "core_version": "Beetle GBA v0.9.36 b158166",
+        "file": {
+          "name": "Boktai - The Sun Is in Your Hand (USA).ff75c62ab690410cc8fca24204d783e9.eep",
+          "size": 8192,
+          "sha1": "7ff1e093ca5a0c3e85f12fa917ae909e73c075cd"
+        },
+        "frame": "data"
+      },
+      "skyemu": {
+        "result": "rejected",
+        "detail": "GAME START: DATA.1 NO DATA, as with no save",
+        "core_version": "SkyEmu adacd0788964ed89f5c43dcbc1f3cc26deec996c",
+        "file": {
+          "name": "Boktai - The Sun Is in Your Hand (USA).srm",
+          "size": 131072,
+          "sha1": "cab54b072f78f510fe31576d3cbc724a74f86136"
+        },
+        "frame": "data"
+      }
+    },
+    "proof_order": [
+      "mgba",
+      "vba-m",
+      "gpsp",
+      "vba-next",
+      "beetle-gba",
+      "skyemu"
+    ]
+  },
+  "note": "Neither byte order gives a save the game accepts: with the payload reversed (as mGBA imports it) or taken as is (checked in mGBA), DATA.1 shows NO DATA."
+}

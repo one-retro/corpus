@@ -1,0 +1,109 @@
+{
+  "method": "downloaded",
+  "system": "nds",
+  "core": "_action-replay-ds",
+  "url": "https://gamefaqs.gamespot.com/ds/942028-mario-party-ds/saves/27509",
+  "source_page": "https://gamefaqs.gamespot.com/ds/942028-mario-party-ds/saves",
+  "source": "GameFAQs (section 'Action Replay Max DS (.duc) Game Save (North America)')",
+  "author": "BOBdotEXE",
+  "licence": null,
+  "posted": "2021-04-08",
+  "fetched": "2026-11-05",
+  "what_it_is": "Mario Party DS Gamesave 100%",
+  "gamefaqs": {
+    "id": 27509,
+    "product": "Mario Party DS",
+    "section": "Action Replay Max DS (.duc) Game Save (North America)",
+    "region": "North America",
+    "served_as": "mario-party-ds.27509.duc",
+    "listed_size": "256KB"
+  },
+  "format": "Action Replay DS save: the 500-byte 'ARDS000000000001' header written by a converter ('Converted Savegame' / 'Savegame', ASCII 'shuny conv'), then 256 KiB raw for the 8 KiB EEPROM (cut 262144 -> 8192; the rest was all 0xFF)",
+  "files": {
+    "mario-party-ds.27509.duc": {
+      "size": 262644,
+      "sha1": "96a9112daaba572222b52c91ec3db50a067061fd"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Mario Party DS (USA).nds",
+      "sha1": "ef7947a543a3b2aa138576506474e6c4ac317141",
+      "size": 33554432
+    },
+    "converted_with": "tools/gamefaqs/nds-ards.py IN step0.bin, then tools/gamefaqs/nds-cores.py step0.bin --chip 8192 --stem 'Mario Party DS (USA)' --out DIR: drops the Action Replay header; fits it to the 8192-byte chip (cut 262144 -> 8192; the rest was all 0xFF) and writes each core's file",
+    "converted": {
+      "size": 8192,
+      "sha1": "8b4d4c2c86cdde90819a821ffbd60b9d951dcdd5"
+    },
+    "core_files": {
+      "desmume": {
+        "name": "Mario Party DS (USA).dsv",
+        "size": 8314,
+        "sha1": "21cf0c3dca06904521db8f25c3bd36f1f706bd97"
+      },
+      "desmume-2015": {
+        "name": "Mario Party DS (USA).dsv",
+        "size": 8314,
+        "sha1": "21cf0c3dca06904521db8f25c3bd36f1f706bd97"
+      },
+      "melonds": {
+        "name": "Mario Party DS (USA).sav",
+        "size": 8192,
+        "sha1": "8b4d4c2c86cdde90819a821ffbd60b9d951dcdd5"
+      },
+      "melonds-ds": {
+        "name": "Mario Party DS (USA).srm",
+        "size": 8192,
+        "sha1": "8b4d4c2c86cdde90819a821ffbd60b9d951dcdd5"
+      },
+      "noods": {
+        "name": "Mario Party DS (USA).sav",
+        "size": 8192,
+        "sha1": "8b4d4c2c86cdde90819a821ffbd60b9d951dcdd5"
+      },
+      "skyemu": {
+        "name": "Mario Party DS (USA).srm",
+        "size": 8388608,
+        "sha1": "3c1dec37c735f7aa7c0e9d0a04629157a210dfc0"
+      }
+    },
+    "script": "scripts/nds/Mario Party DS.load.txt",
+    "cores": {
+      "desmume": {
+        "result": "loads",
+        "detail": "Select Data: file 1 \"moncoeur\", MP Points 76225; file 2 empty"
+      },
+      "desmume-2015": {
+        "result": "loads",
+        "detail": "Select Data: file 1 \"moncoeur\", MP Points 76225; file 2 empty"
+      },
+      "melonds": {
+        "result": "loads",
+        "detail": "Select Data: file 1 \"moncoeur\", MP Points 76225; file 2 empty"
+      },
+      "melonds-ds": {
+        "result": "loads",
+        "detail": "Select Data: file 1 \"moncoeur\", MP Points 76225; file 2 empty"
+      },
+      "noods": {
+        "result": "loads",
+        "detail": "Select Data: file 1 \"moncoeur\", MP Points 76225; file 2 empty"
+      },
+      "skyemu": {
+        "result": "loads",
+        "detail": "Select Data: file 1 \"moncoeur\", MP Points 76225; file 2 empty"
+      }
+    },
+    "proof_order": [
+      "desmume",
+      "desmume-2015",
+      "melonds",
+      "melonds-ds",
+      "noods",
+      "skyemu"
+    ]
+  },
+  "note": "Release: the save starts \"NTR-P-A8TE\" (Mario Party DS, USA). The save in file 1 is named \"moncoeur\", like GameFAQs 16307 (uploader moncoeur1, Europe, same description), but this one is the USA release's (A8TE) and 660 bytes differ."
+}

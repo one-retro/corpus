@@ -1,0 +1,89 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_dexdrive",
+  "url": "https://gamefaqs.gamespot.com/ps/197468-gran-turismo/saves/26537",
+  "source_page": "https://gamefaqs.gamespot.com/ps/197468-gran-turismo/saves",
+  "source": "GameFAQs (section 'PlayStation DexDrive Save (North America)')",
+  "author": "PabsysAsphalt",
+  "licence": null,
+  "posted": "2019-09-06",
+  "fetched": "2026-11-05",
+  "what_it_is": "Day #2- 12 Great Cars (including the rare Corvette '67 427 Coupe, a 1188HP Viper RT/10, a 1433HP Viper GTS-R, a 1491HP NSX-R LM GT2, a 1572HP CR-X Del Sol LM Edition & a 1449HP FTO LM Edition)",
+  "gamefaqs": {
+    "id": 26537,
+    "product": "Gran Turismo",
+    "section": "PlayStation DexDrive Save (North America)",
+    "region": "North America",
+    "served_as": "gran-turismo.26537.gme",
+    "listed_size": "131KB"
+  },
+  "format": "DexDrive .gme: '123-456-STD' 3904-byte header (per-block comments) + 131072-byte raw card; the card holds 2 save(s), 2 for this game (BASCUS-94194GT, BASCUS-94194RT)",
+  "release": "Gran Turismo (USA) (Rev 1)",
+  "game_saves": [
+    {
+      "name": "BASCUS-94194GT",
+      "blocks": 5,
+      "title": "GT game data"
+    },
+    {
+      "name": "BASCUS-94194RT",
+      "blocks": 3,
+      "title": "GT replay data"
+    }
+  ],
+  "files": {
+    "gran-turismo.26537.gme": {
+      "size": 134976,
+      "sha1": "93bb8a957ca6f46822480694cee5bf43ea231a6a"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Gran Turismo (USA) (Rev 1).cue",
+      "sha1": "ad114ef1312b81c7ee9995df1217cc1a089e381e",
+      "size": 92
+    },
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr gran-turismo.26537.gme: unwraps the card (DexDrive .gme: 3904-byte header + card)",
+    "converted": {
+      "size": 131072,
+      "sha1": "eabb2a5c2cf842a70b537042f21c01f9515ece4d"
+    },
+    "script": "scripts/psx/Gran Turismo.load.txt",
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "loads",
+        "detail": "the game loads the card at boot; Simulation Mode > My Home shows Day 2, Cr 1,000,000,000, car Corvette '67"
+      },
+      "beetle-psx-hw": {
+        "result": "loads",
+        "detail": "the game loads the card at boot; Simulation Mode > My Home shows Day 2, Cr 1,000,000,000, car Corvette '67 (the same screen as on beetle-psx)"
+      },
+      "pcsx-rearmed": {
+        "result": "loads",
+        "detail": "the game loads the card at boot; Simulation Mode > My Home shows Day 2, Cr 1,000,000,000, car Corvette '67 (the same screen as on beetle-psx)"
+      },
+      "swanstation": {
+        "result": "loads",
+        "detail": "the game loads the card at boot; Simulation Mode > My Home shows Day 2, Cr 1,000,000,000, car Corvette '67 (the same screen as on beetle-psx)"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": [
+      "beetle-psx",
+      "beetle-psx-hw",
+      "pcsx-rearmed",
+      "swanstation"
+    ]
+  },
+  "note": null
+}

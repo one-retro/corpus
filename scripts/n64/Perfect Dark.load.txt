@@ -1,0 +1,13 @@
+# Perfect Dark, load check: power on, Start in the attract sequence,
+# Choose Your Reality: the agent files the game finds on the Game Pak and
+# on the Controller Pak in port 1. Then A once: on an NTSC game it opens
+# the first agent (its name and progress); a PAL game first asks for a
+# language (A = English) and shows Choose Your Reality after it.
+# N64 buttons on the RetroPad: A = b, B = y, Z = l2, Start = start.
+wait 2900
+press start 10      # attract sequence -> Choose Your Reality (loads)
+wait 1300
+shot reality
+press b 10
+wait 600
+shot next

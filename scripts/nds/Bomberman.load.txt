@@ -1,0 +1,10 @@
+# Bomberman (2005), loading a save: wait out the logos (the title comes at about
+# frame 1650 when nothing is pressed), touch the title, touch Normal:
+# File Select shows each file's AREA, CLEAR % and TIME, and "You have a quick
+# save!" when there is one.
+wait 2400
+touch 128 290 8     # TOUCH TO START -> Normal / Battle
+wait 300
+touch 62 290 8      # Normal -> File Select
+wait 300
+shot fileselect

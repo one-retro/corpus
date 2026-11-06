@@ -1,0 +1,84 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_dexdrive",
+  "url": "https://gamefaqs.gamespot.com/ps/199061-tony-hawks-pro-skater-2/saves/1549",
+  "source_page": "https://gamefaqs.gamespot.com/ps/199061-tony-hawks-pro-skater-2/saves",
+  "source": "GameFAQs (section 'PlayStation DexDrive Save (North America)')",
+  "author": "mike_tru",
+  "licence": null,
+  "posted": "2002-02-18",
+  "fetched": "2026-11-05",
+  "what_it_is": "Replay: School II; I grind through the center of a building, then half of the level disappears",
+  "gamefaqs": {
+    "id": 1549,
+    "product": "Tony Hawk's Pro Skater 2",
+    "section": "PlayStation DexDrive Save (North America)",
+    "region": "North America",
+    "served_as": "tony-hawks-pro-skater-2.1549.gme",
+    "listed_size": "131KB"
+  },
+  "format": "DexDrive .gme: '123-456-STD' 3904-byte header (per-block comments) + 131072-byte raw card; the card holds 1 save(s), 1 for this game (BASLUS-010667G[7VAH)",
+  "release": "Tony Hawk's Pro Skater 2 (USA)",
+  "game_saves": [
+    {
+      "name": "BASLUS-010667G[7VAH",
+      "blocks": 3,
+      "title": "THPS2 REPLAYー 7"
+    }
+  ],
+  "files": {
+    "tony-hawks-pro-skater-2.1549.gme": {
+      "size": 134976,
+      "sha1": "05d0276e5126d1ca62f59c82c8fbbe4080ab3f15"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Tony Hawk's Pro Skater 2 (USA).cue",
+      "sha1": "ea5388de4fa83e3d3b5f37d752f1eb8d3bd5d88e",
+      "size": 96
+    },
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr tony-hawks-pro-skater-2.1549.gme: unwraps the card (DexDrive .gme: 3904-byte header + card)",
+    "converted": {
+      "size": 131072,
+      "sha1": "3ad12c013f1762458dafb91aca4622df1bf31ecf"
+    },
+    "script": "scripts/psx/Tony Hawk's Pro Skater 2.load.txt",
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "loads",
+        "detail": "Options > Memory Card > Load Replay lists the replay 7 (3 blks)"
+      },
+      "beetle-psx-hw": {
+        "result": "loads",
+        "detail": "Options > Memory Card > Load Replay lists the replay 7 (3 blks) (the same screen as on beetle-psx)"
+      },
+      "pcsx-rearmed": {
+        "result": "loads",
+        "detail": "Options > Memory Card > Load Replay lists the replay 7 (3 blks) (the same screen as on beetle-psx)"
+      },
+      "swanstation": {
+        "result": "loads",
+        "detail": "Options > Memory Card > Load Replay lists the replay 7 (3 blks) (the same screen as on beetle-psx)"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": [
+      "beetle-psx",
+      "beetle-psx-hw",
+      "pcsx-rearmed",
+      "swanstation"
+    ]
+  },
+  "note": null
+}

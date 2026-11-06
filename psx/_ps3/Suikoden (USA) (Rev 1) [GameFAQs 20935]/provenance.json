@@ -1,0 +1,88 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_ps3",
+  "url": "https://gamefaqs.gamespot.com/ps/198843-suikoden/saves/20935",
+  "source_page": "https://gamefaqs.gamespot.com/ps/198843-suikoden/saves",
+  "source": "GameFAQs (section 'PlayStation PS3 Virtual Memory Card Save (ZIP) (North America)')",
+  "author": "WhiteLeo143",
+  "licence": null,
+  "posted": "2010-07-30",
+  "fetched": "2026-11-05",
+  "what_it_is": "Tir and party is level 60, has all 108 characters with Grermio, in final dungeon, party has level 16 weapons, saved at final save point, collected all sound and window settings, got all paints",
+  "gamefaqs": {
+    "id": 20935,
+    "product": "Suikoden",
+    "section": "PlayStation PS3 Virtual Memory Card Save (ZIP) (North America)",
+    "region": "North America",
+    "served_as": "suikoden.20935.zip",
+    "listed_size": "3KB",
+    "served_zip": {
+      "size": 3880,
+      "sha1": "207804538dfacad2c96fe2b99d2db4c1523ba48e"
+    }
+  },
+  "format": "zip of 1 PS3 export(s) (.PSV): '\\0VSP' header (signature, save name at 0x64), the save's blocks from 0x84 (16516 bytes); it holds 1 save(s), 1 for this game (BASLUS-00292GENSOU00)",
+  "release": "Suikoden (USA) (Rev 1)",
+  "game_saves": [
+    {
+      "name": "BASLUS-00292GENSOU00",
+      "blocks": 2,
+      "title": "SUIKODEN LV60"
+    }
+  ],
+  "files": {
+    "BASLUS-0029247454E534F553030.PSV": {
+      "size": 16516,
+      "sha1": "5938ac13ad49f4cd47424c694f2a7030a3358923"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Suikoden (USA) (Rev 1).cue",
+      "sha1": "7ec895dbc9d1f23aab3bde7ccd35e003ab2fb25d",
+      "size": 88
+    },
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr BASLUS-0029247454E534F553030.PSV: puts the save(s) on a freshly formatted card, as MemcardRex imports a single save",
+    "converted": {
+      "size": 131072,
+      "sha1": "d4bd28f165e750f533c2a08da3574b354917cddf"
+    },
+    "script": "scripts/psx/Suikoden.load.txt",
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "loads",
+        "detail": "Continue game lists the file: Tir, Lv. 60 (no card: \"No data on Memory card\")"
+      },
+      "beetle-psx-hw": {
+        "result": "loads",
+        "detail": "Continue game lists the file: Tir, Lv. 60 (no card: \"No data on Memory card\") (the same screen as on beetle-psx)"
+      },
+      "pcsx-rearmed": {
+        "result": "loads",
+        "detail": "Continue game lists the file: Tir, Lv. 60 (no card: \"No data on Memory card\") (the same screen as on beetle-psx)"
+      },
+      "swanstation": {
+        "result": "loads",
+        "detail": "Continue game lists the file: Tir, Lv. 60 (no card: \"No data on Memory card\") (the same screen as on beetle-psx)"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": [
+      "beetle-psx",
+      "beetle-psx-hw",
+      "pcsx-rearmed",
+      "swanstation"
+    ]
+  },
+  "note": null
+}

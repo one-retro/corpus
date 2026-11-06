@@ -1,0 +1,119 @@
+{
+  "method": "downloaded",
+  "system": "gba",
+  "core": "_gameshark",
+  "url": "https://gamefaqs.gamespot.com/gba/563596-pokemon-sapphire-version/saves/4963",
+  "source_page": "https://gamefaqs.gamespot.com/gba/563596-pokemon-sapphire-version/saves",
+  "source": "GameFAQs (section 'GameBoy Advance GameShark Save (Japan)')",
+  "author": "SecureGamer",
+  "licence": null,
+  "posted": "2004-09-14",
+  "fetched": "2026-11-05",
+  "what_it_is": "Name: EMERA, Pokemon: Treecko",
+  "gamefaqs": {
+    "id": 4963,
+    "product": "Pokemon Ruby / Sapphire / Emerald Version",
+    "section": "GameBoy Advance GameShark Save (Japan)",
+    "region": "Japan",
+    "served_as": "pokemon-ruby-sapphire-emerald-version.4963.sps",
+    "listed_size": "128KB"
+  },
+  "format": "SharkPort save (\"SharkPortSave\", kind 0x000F0000): title \"POKEMON EMER\", date \"9/14/2004 9:01:40 PM\", notes \"\"; cart header \"POKEMON EMER\" / 'BPEJ' (complement 0x6d); payload 131072 bytes; checksum: signed",
+  "files": {
+    "pokemon-ruby-sapphire-emerald-version.4963.sps": {
+      "size": 131173,
+      "sha1": "89a165e94b22421f647b311e2a717ab26d0b14f2"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Pocket Monsters - Emerald (Japan).gba",
+      "sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+      "size": 16777216
+    },
+    "converted_with": "tools/gamefaqs/gba-sharkport.py pokemon-ruby-sapphire-emerald-version.4963.sps --rom ROM --core CORE --outdir DIR: reads the SharkPort container as mGBA does and imports the payload as mGBA's _importSavedata does (cut to the chip, EEPROM 8-byte blocks reversed, the rest of the chip erased), then lays the chip out as the core keeps it",
+    "converted": {
+      "size": 131072,
+      "sha1": "a0615498d7a5e453b0b164d47531ff48db165487"
+    },
+    "script": "scripts/gba/Pokemon - Ruby Version.load.txt",
+    "cores": {
+      "mgba": {
+        "result": "loads",
+        "detail": "CONTINUE: EMERA, 0:08",
+        "core_version": "mGBA 0.11-212-7a12d6d",
+        "file": {
+          "name": "Pocket Monsters - Emerald (Japan).srm",
+          "size": 131072,
+          "sha1": "a0615498d7a5e453b0b164d47531ff48db165487"
+        },
+        "frame": "menu"
+      },
+      "vba-m": {
+        "result": "loads",
+        "detail": "CONTINUE: EMERA, 0:08",
+        "core_version": "VBA-M 115defb",
+        "file": {
+          "name": "Pocket Monsters - Emerald (Japan).srm",
+          "size": 131072,
+          "sha1": "a0615498d7a5e453b0b164d47531ff48db165487"
+        },
+        "frame": "menu"
+      },
+      "gpsp": {
+        "result": "loads",
+        "detail": "CONTINUE: EMERA, 0:08",
+        "core_version": "gpSP v1.1.0-5819380",
+        "file": {
+          "name": "Pocket Monsters - Emerald (Japan).srm",
+          "size": 131072,
+          "sha1": "a0615498d7a5e453b0b164d47531ff48db165487"
+        },
+        "frame": "menu"
+      },
+      "vba-next": {
+        "result": "loads",
+        "detail": "CONTINUE: EMERA, 0:08",
+        "core_version": "VBA Next v1.0.2",
+        "file": {
+          "name": "Pocket Monsters - Emerald (Japan).srm",
+          "size": 139264,
+          "sha1": "8c3083606bf720ca443cbe718b8822ef500cc7dc"
+        },
+        "frame": "menu"
+      },
+      "beetle-gba": {
+        "result": "loads",
+        "detail": "CONTINUE: EMERA, 0:08",
+        "core_version": "Beetle GBA v0.9.36 b158166",
+        "file": {
+          "name": "Pocket Monsters - Emerald (Japan).92eecf93f1ab828bdf2a83daddacf3e5.sav",
+          "size": 131072,
+          "sha1": "a0615498d7a5e453b0b164d47531ff48db165487"
+        },
+        "frame": "menu"
+      },
+      "skyemu": {
+        "result": "loads",
+        "detail": "CONTINUE: EMERA, 0:08",
+        "core_version": "SkyEmu adacd0788964ed89f5c43dcbc1f3cc26deec996c",
+        "file": {
+          "name": "Pocket Monsters - Emerald (Japan).srm",
+          "size": 131072,
+          "sha1": "a0615498d7a5e453b0b164d47531ff48db165487"
+        },
+        "frame": "menu"
+      }
+    },
+    "proof_order": [
+      "mgba",
+      "vba-m",
+      "gpsp",
+      "vba-next",
+      "beetle-gba",
+      "skyemu"
+    ]
+  },
+  "note": null
+}

@@ -1,0 +1,18 @@
+# Pokemon Platinum, loading a save: the CONTINUE panel (PLAYER, TIME, BADGES,
+# POKéDEX), as in Diamond and Pearl.
+wait 700
+press start 6       # skip the intro to the title
+wait 400
+press a 6           # title -> CONTINUE / NEW GAME (or the introduction)
+wait 500
+shot continue
+# When the game first shows messages about the save ("The most recent Battle
+# Video is corrupted.", "The previously saved Battle Video will be loaded
+# instead."), A dismisses each and the shots show what follows. For any other
+# save the first A picks CONTINUE and the shots show the journal.
+press a 6
+wait 400
+shot after
+press a 6
+wait 400
+shot after2

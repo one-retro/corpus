@@ -1,0 +1,15 @@
+# Castlevania - Dawn of Sorrow, loading a save. A core whose save the game
+# rejects stops at boot on "Save data is corrupted. Data has been deleted."
+# (shot boot). Otherwise GAME START, Start game, then the file list, which shows
+# the chosen file's name, room, LV, map %, TIME and GOLD (shot files). In a
+# rejecting core the message waits for a button, and START dismisses it.
+wait 1500
+shot boot
+wait 500
+press start 6       # title menu: GAME START
+wait 300
+press a 6           # SELECT DATA: Start game / Copy / Delete
+wait 300
+press a 6           # Start game: the files
+wait 300
+shot files

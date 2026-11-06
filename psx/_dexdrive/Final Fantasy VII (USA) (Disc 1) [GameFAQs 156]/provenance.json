@@ -1,0 +1,84 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_dexdrive",
+  "url": "https://gamefaqs.gamespot.com/ps/197341-final-fantasy-vii/saves/156",
+  "source_page": "https://gamefaqs.gamespot.com/ps/197341-final-fantasy-vii/saves",
+  "source": "GameFAQs (section 'PlayStation DexDrive Save (North America)')",
+  "author": "Space_Ace",
+  "licence": null,
+  "posted": "2000-06-14",
+  "fetched": "2026-11-05",
+  "what_it_is": "A rare HoneyBee Inn Save. The membership card for this Bonus Area is in hand so prepare for some weird and even kind of creepy stuff in there.",
+  "gamefaqs": {
+    "id": 156,
+    "product": "Final Fantasy VII",
+    "section": "PlayStation DexDrive Save (North America)",
+    "region": "North America",
+    "served_as": "final-fantasy-vii.156.gme",
+    "listed_size": "131KB"
+  },
+  "format": "DexDrive .gme: '123-456-STD' 3904-byte header (per-block comments) + 131072-byte raw card; the card holds 1 save(s), 1 for this game (BASCUS-94163FF7-S02)",
+  "release": "Final Fantasy VII (USA) (Disc 1)",
+  "game_saves": [
+    {
+      "name": "BASCUS-94163FF7-S02",
+      "blocks": 1,
+      "title": "FF7/SAVE02/03:30"
+    }
+  ],
+  "files": {
+    "final-fantasy-vii.156.gme": {
+      "size": 134976,
+      "sha1": "d44b3c9ae300ee129579952792d65a0b7e4b2be3"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Final Fantasy VII (USA) (Disc 1).cue",
+      "sha1": "c8df949f13d990d325ac3b8d6eb835c440380e52",
+      "size": 98
+    },
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr final-fantasy-vii.156.gme: unwraps the card (DexDrive .gme: 3904-byte header + card)",
+    "converted": {
+      "size": 131072,
+      "sha1": "4f98ca69589015e0d99b120ee2a46e996d7e174d"
+    },
+    "script": "scripts/psx/Final Fantasy VII.load.txt",
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "loads",
+        "detail": "Slot 1 lists file 2: Cloud, Level 11, 03:30, Wall Market"
+      },
+      "beetle-psx-hw": {
+        "result": "loads",
+        "detail": "Slot 1 lists file 2: Cloud, Level 11, 03:30, Wall Market (the same screen as on beetle-psx)"
+      },
+      "pcsx-rearmed": {
+        "result": "loads",
+        "detail": "Slot 1 lists file 2: Cloud, Level 11, 03:30, Wall Market (the same screen as on beetle-psx)"
+      },
+      "swanstation": {
+        "result": "loads",
+        "detail": "Slot 1 lists file 2: Cloud, Level 11, 03:30, Wall Market (the same screen as on beetle-psx)"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": [
+      "beetle-psx",
+      "beetle-psx-hw",
+      "pcsx-rearmed",
+      "swanstation"
+    ]
+  },
+  "note": null
+}

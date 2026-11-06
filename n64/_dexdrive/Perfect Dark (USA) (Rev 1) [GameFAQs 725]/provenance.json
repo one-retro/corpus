@@ -1,0 +1,77 @@
+{
+  "method": "downloaded",
+  "system": "n64",
+  "core": "_dexdrive",
+  "url": "https://gamefaqs.gamespot.com/n64/198275-perfect-dark/saves/725",
+  "source_page": "https://gamefaqs.gamespot.com/n64/198275-perfect-dark/saves",
+  "source": "GameFAQs (section 'Nintendo 64 DexDrive Save (North America)')",
+  "author": "MoonBunny2",
+  "licence": null,
+  "posted": "2001-02-27",
+  "fetched": "2026-11-05",
+  "what_it_is": "All Secret Agent missions finished; 5 Perfect Agents. Lotsa cheats. Plus a Combat Sim Profile @ 8:Deadly. Close to a 7. All challenges unlocked.",
+  "gamefaqs": {
+    "id": 725,
+    "product": "Perfect Dark (2000)",
+    "section": "Nintendo 64 DexDrive Save (North America)",
+    "region": "North America",
+    "served_as": "perfect-dark-2000.725.n64",
+    "listed_size": "36KB"
+  },
+  "format": "DexDrive .n64: \"123-456-STD\" and a 0x1040-byte header (DexPlorer comments), then a 32 KiB Controller Pak (an ID block repaired by libultra: FF FF FF FF, then the count register): note NPDE/4Y \"PERFECT DARK\", 28 pages, and seven entries with no pages (BLASI RACING, S.F. RUSH, TH-TP, BOMBERMAN64U, two BLASTCORPS names)",
+  "files": {
+    "perfect-dark-2000.725.n64": {
+      "size": 36928,
+      "sha1": "1ffdd0087eaf4a7c0a9fe8690c278dd070981ece"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "converted_with": "tools/gamefaqs/n64-dexdrive.py convert perfect-dark-2000.725.n64 OUT: dexdrive: pak = the 32768 bytes after the 0x1040-byte header",
+    "converted": {
+      "size": 296960,
+      "sha1": "8f2301cd270f883966d9a38e180506fc5dba5297"
+    },
+    "converted_standalone": {
+      "files": {
+        "save.mpk": {
+          "size": 131072,
+          "sha1": "0a028db4063df762cd7568f4f4bbbb4ff3417ec8"
+        }
+      },
+      "how": "the same bytes as the .srm regions, as standalone Mupen64Plus keeps them: <GoodName (32 chars)>-<MD5 8>.eep/.sra/.fla/.mpk in its save folder"
+    },
+    "rom": {
+      "name": "Perfect Dark (USA) (Rev 1).z64",
+      "sha1": "af8788ac4d1a57260eae9c53ffe851fcf2a3319b",
+      "size": 33554432
+    },
+    "script": "scripts/n64/Perfect Dark.load.txt",
+    "baseline": "with no save: Choose Your Reality lists only New Agent...",
+    "cores": {
+      "mupen64plus-next": {
+        "result": "loads",
+        "detail": "Choose Your Reality lists Controller Pak 1: agent \"Dark Bunny\", Pelagic II - Exploration, mission time 1:06:02.35; A opens the agent's Perfect Menu"
+      },
+      "parallel-n64": {
+        "result": "loads",
+        "detail": "Choose Your Reality lists Controller Pak 1: agent \"Dark Bunny\", Pelagic II - Exploration, mission time 1:06:02.35; A opens the agent's Perfect Menu"
+      },
+      "mupen64plus": {
+        "result": "loads",
+        "detail": "Choose Your Reality lists Controller Pak 1: agent \"Dark Bunny\", Pelagic II - Exploration, mission time 1:06:02.35; A opens the agent's Perfect Menu"
+      }
+    },
+    "core_versions": {
+      "mupen64plus": "Mupen64Plus 2.6.0 (Homebrew), glide64mk2 video, rsp-hle",
+      "mupen64plus-next": "Mupen64Plus-Next 3.0-Vulkan 15bada8",
+      "parallel-n64": "ParaLLEl N64 1.0 e8cbdbb"
+    },
+    "proof_order": [
+      "mupen64plus-next",
+      "parallel-n64",
+      "mupen64plus"
+    ]
+  },
+  "note": "The revision is not recorded on the pak; Rev 1 used."
+}

@@ -1,0 +1,12 @@
+# Silent Hill, PCSX-ReARMed variant: title > Load > the memory card's file list (data, time, saves).
+wait 1500           # BIOS logos
+repeat 1            # PCSX-ReARMed reaches the title after one press; a second would pick CONTINUE
+press start 6
+wait 250
+end
+wait 400            # the menu takes input once the title has settled (later on SwanStation)
+press up 6          # LOAD (the cursor starts on CONTINUE when a save is found)
+wait 30
+press start 6
+wait 300
+shot load

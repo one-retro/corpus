@@ -1,0 +1,84 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_dexdrive",
+  "url": "https://gamefaqs.gamespot.com/ps/198843-suikoden/saves/962",
+  "source_page": "https://gamefaqs.gamespot.com/ps/198843-suikoden/saves",
+  "source": "GameFAQs (section 'PlayStation DexDrive Save (North America)')",
+  "author": "carlde21",
+  "licence": null,
+  "posted": "2001-07-20",
+  "fetched": "2026-11-05",
+  "what_it_is": "Last dungeon, level 60.",
+  "gamefaqs": {
+    "id": 962,
+    "product": "Suikoden",
+    "section": "PlayStation DexDrive Save (North America)",
+    "region": "North America",
+    "served_as": "suikoden.962.gme",
+    "listed_size": "131KB"
+  },
+  "format": "DexDrive .gme: '123-456-STD' 3904-byte header (per-block comments) + 131072-byte raw card; the card holds 1 save(s), 1 for this game (BASLUS-00292GENSOU00)",
+  "release": "Suikoden (USA) (Rev 1)",
+  "game_saves": [
+    {
+      "name": "BASLUS-00292GENSOU00",
+      "blocks": 2,
+      "title": "SUIKODEN LV60"
+    }
+  ],
+  "files": {
+    "suikoden.962.gme": {
+      "size": 134976,
+      "sha1": "ebd32898455abdffbd4c70394ce3a005067e2180"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Suikoden (USA) (Rev 1).cue",
+      "sha1": "7ec895dbc9d1f23aab3bde7ccd35e003ab2fb25d",
+      "size": 88
+    },
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr suikoden.962.gme: unwraps the card (DexDrive .gme: 3904-byte header + card)",
+    "converted": {
+      "size": 131072,
+      "sha1": "82b49079c3a5fab18f2023649a75639cd41db643"
+    },
+    "script": "scripts/psx/Suikoden.load.txt",
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "loads",
+        "detail": "Continue game lists the file: Carl, Lv. 60 (no card: \"No data on Memory card\")"
+      },
+      "beetle-psx-hw": {
+        "result": "loads",
+        "detail": "Continue game lists the file: Carl, Lv. 60 (no card: \"No data on Memory card\") (the same screen as on beetle-psx)"
+      },
+      "pcsx-rearmed": {
+        "result": "loads",
+        "detail": "Continue game lists the file: Carl, Lv. 60 (no card: \"No data on Memory card\") (the same screen as on beetle-psx)"
+      },
+      "swanstation": {
+        "result": "loads",
+        "detail": "Continue game lists the file: Carl, Lv. 60 (no card: \"No data on Memory card\") (the same screen as on beetle-psx)"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": [
+      "beetle-psx",
+      "beetle-psx-hw",
+      "pcsx-rearmed",
+      "swanstation"
+    ]
+  },
+  "note": null
+}

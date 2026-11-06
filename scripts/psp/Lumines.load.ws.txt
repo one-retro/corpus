@@ -1,0 +1,15 @@
+# PPSSPP debugger WebSocket plan for PPSSPPSDL.app (ppsspp@ppsspp): Lumines.load.txt press for press,
+# waits in 1/60 s of wall-clock time. The save is on the memory stick (.config/ppsspp/PSP/SAVEDATA/
+# ULUS10002LUMINES/ in the app's HOME). The app runs with the software renderer (Vulkan output) so the
+# PSP framebuffer is in emulated VRAM: `vramdump` reads VRAM over the debugger (memory.read), and the
+# framebuffer at 0x04000000 (480x272, stride 512, 8888) is the frame. The debugger's own
+# gpu.buffer.screenshot / renderColor answer "Could not download output" on every backend here.
+# Client: ppsspp_ws.py from STANDALONE.md plus `vramdump` and `ramdump` (memory.read).
+wait 3000
+press start 6
+wait 240
+press start 6
+wait 240
+vramdump menu
+ramdump menu
+status

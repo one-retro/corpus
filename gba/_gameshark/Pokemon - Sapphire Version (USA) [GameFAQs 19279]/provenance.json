@@ -1,0 +1,119 @@
+{
+  "method": "downloaded",
+  "system": "gba",
+  "core": "_gameshark",
+  "url": "https://gamefaqs.gamespot.com/gba/563596-pokemon-sapphire-version/saves/19279",
+  "source_page": "https://gamefaqs.gamespot.com/gba/563596-pokemon-sapphire-version/saves",
+  "source": "GameFAQs (section 'GameBoy Advance GameShark Save (North America)')",
+  "author": "camwow",
+  "licence": null,
+  "posted": "2009-06-12",
+  "fetched": "2026-11-05",
+  "what_it_is": "Name: TERRY. No badges. All 9 starters all level five, with level 100 Gengar, Umbreon, and Mew as backup.>700 Masterballs. >5000 Rare Candies in item storage.",
+  "gamefaqs": {
+    "id": 19279,
+    "product": "Pokemon Ruby / Sapphire / Emerald Version",
+    "section": "GameBoy Advance GameShark Save (North America)",
+    "region": "North America",
+    "served_as": "pokemon-ruby-sapphire-emerald-version.19279.sps",
+    "listed_size": "128KB"
+  },
+  "format": "SharkPort save (\"SharkPortSave\", kind 0x000F0000): title \"sapphire\", date \"6/11/2009 7:16:31 PM\", notes \"\"; cart header \"POKEMON SAPP\" / 'AXPE' (complement 0x55); payload 131072 bytes; checksum: signed",
+  "files": {
+    "pokemon-ruby-sapphire-emerald-version.19279.sps": {
+      "size": 131169,
+      "sha1": "acaa3a04d669bbb02268aeeb2aafdb7197e8a51b"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Pokemon - Sapphire Version (USA).gba",
+      "sha1": "3ccbbd45f8553c36463f13b938e833f652b793e4",
+      "size": 16777216
+    },
+    "converted_with": "tools/gamefaqs/gba-sharkport.py pokemon-ruby-sapphire-emerald-version.19279.sps --rom ROM --core CORE --outdir DIR: reads the SharkPort container as mGBA does and imports the payload as mGBA's _importSavedata does (cut to the chip, EEPROM 8-byte blocks reversed, the rest of the chip erased), then lays the chip out as the core keeps it",
+    "converted": {
+      "size": 131072,
+      "sha1": "621c923c23b5cd2fb5f98d4920f6f84e7e2be94e"
+    },
+    "script": "scripts/gba/Pokemon - Ruby Version.load.txt",
+    "cores": {
+      "mgba": {
+        "result": "loads",
+        "detail": "CONTINUE: TERRY, 5:01",
+        "core_version": "mGBA 0.11-212-7a12d6d",
+        "file": {
+          "name": "Pokemon - Sapphire Version (USA).srm",
+          "size": 131072,
+          "sha1": "621c923c23b5cd2fb5f98d4920f6f84e7e2be94e"
+        },
+        "frame": "menu"
+      },
+      "vba-m": {
+        "result": "loads",
+        "detail": "CONTINUE: TERRY, 5:01",
+        "core_version": "VBA-M 115defb",
+        "file": {
+          "name": "Pokemon - Sapphire Version (USA).srm",
+          "size": 131072,
+          "sha1": "621c923c23b5cd2fb5f98d4920f6f84e7e2be94e"
+        },
+        "frame": "menu"
+      },
+      "gpsp": {
+        "result": "loads",
+        "detail": "CONTINUE: TERRY, 5:01",
+        "core_version": "gpSP v1.1.0-5819380",
+        "file": {
+          "name": "Pokemon - Sapphire Version (USA).srm",
+          "size": 131072,
+          "sha1": "621c923c23b5cd2fb5f98d4920f6f84e7e2be94e"
+        },
+        "frame": "menu"
+      },
+      "vba-next": {
+        "result": "loads",
+        "detail": "CONTINUE: TERRY, 5:01",
+        "core_version": "VBA Next v1.0.2",
+        "file": {
+          "name": "Pokemon - Sapphire Version (USA).srm",
+          "size": 139264,
+          "sha1": "28196ebf81864db5e2c67014610eda6c5abe5b74"
+        },
+        "frame": "menu"
+      },
+      "beetle-gba": {
+        "result": "loads",
+        "detail": "CONTINUE: TERRY, 5:01",
+        "core_version": "Beetle GBA v0.9.36 b158166",
+        "file": {
+          "name": "Pokemon - Sapphire Version (USA).f34e91399c719812e66e2c828a2e93d7.sav",
+          "size": 131072,
+          "sha1": "621c923c23b5cd2fb5f98d4920f6f84e7e2be94e"
+        },
+        "frame": "menu"
+      },
+      "skyemu": {
+        "result": "loads",
+        "detail": "CONTINUE: TERRY, 5:01",
+        "core_version": "SkyEmu adacd0788964ed89f5c43dcbc1f3cc26deec996c",
+        "file": {
+          "name": "Pokemon - Sapphire Version (USA).srm",
+          "size": 131072,
+          "sha1": "621c923c23b5cd2fb5f98d4920f6f84e7e2be94e"
+        },
+        "frame": "menu"
+      }
+    },
+    "proof_order": [
+      "mgba",
+      "vba-m",
+      "gpsp",
+      "vba-next",
+      "beetle-gba",
+      "skyemu"
+    ]
+  },
+  "note": null
+}

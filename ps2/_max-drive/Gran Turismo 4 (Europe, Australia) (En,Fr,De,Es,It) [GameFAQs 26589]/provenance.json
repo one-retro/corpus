@@ -1,0 +1,114 @@
+{
+  "method": "downloaded",
+  "system": "ps2",
+  "core": "_max-drive",
+  "url": "https://gamefaqs.gamespot.com/ps2/561066-gran-turismo-4/saves/26589",
+  "source_page": "https://gamefaqs.gamespot.com/ps2/561066-gran-turismo-4/saves",
+  "source": "GameFAQs (section 'PlayStation2 Max Drive Save (Europe)')",
+  "author": "Sal_89",
+  "licence": null,
+  "posted": "2019-10-05",
+  "fetched": "2026-11-05",
+  "what_it_is": "Set B of used cars from Late '90s. 1000 cars garage",
+  "gamefaqs": {
+    "id": 26589,
+    "product": "Gran Turismo 4",
+    "section": "PlayStation2 Max Drive Save (Europe)",
+    "region": "Europe",
+    "served_as": "gran-turismo-4.26589.max",
+    "listed_size": "1488KB"
+  },
+  "format": "Max Drive / PowerSave save: 'Ps2PowerSave' header (CRC32 bdf5b1de, matches), folder BESCES-51719GAMEDATA, 4 files, LZARI stream 1523702 bytes unpacking to 1528760 bytes (1528584 bytes of file data)",
+  "files": {
+    "gran-turismo-4.26589.max": {
+      "size": 1523794,
+      "sha1": "fb8ba87ac19793bb765e65b8701057f166784f7f"
+    }
+  },
+  "save": {
+    "folder": "BESCES-51719GAMEDATA",
+    "title": [
+      "GRAN TURISMO 4",
+      "Game data"
+    ],
+    "times": "none: a max file stores no file times",
+    "files": [
+      {
+        "name": "icon.sys",
+        "size": 964,
+        "sha1": "cce82f67a0f89c70731af7b0fb0b9c752fd05e5e"
+      },
+      {
+        "name": "icon0.ico",
+        "size": 9796,
+        "sha1": "5c55e0ea3f302b6ce15d03fb247039d41b83f032"
+      },
+      {
+        "name": "garage",
+        "size": 1280064,
+        "sha1": "f8acf734490cca78ad28c7e881071015d94cb6cc"
+      },
+      {
+        "name": "BESCES-51719GAMEDATA",
+        "size": 237760,
+        "sha1": "5ff881c588a591256d5fa73530081088ae95bdda"
+      }
+    ]
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": null,
+    "converted_with": "tools/gamefaqs/ps2-card.py 'gran-turismo-4.26589.max' -o OUT: reads the save with mymcplus 3.0.5 and writes OUT/Mcd001.ps2 (an 8 MiB card with ECC, formatted and filled by mymcplus) for lrps2/pcee2/pcsx2, and OUT/mc0/<folder>/ for Play!",
+    "converted": {
+      "Mcd001.ps2": {
+        "size": 8650752,
+        "sha1": "af86eed3cc30f235f042d71c736ab79771dc59c6"
+      },
+      "mc0/BESCES-51719GAMEDATA/": {
+        "icon.sys": {
+          "size": 964,
+          "sha1": "cce82f67a0f89c70731af7b0fb0b9c752fd05e5e"
+        },
+        "icon0.ico": {
+          "size": 9796,
+          "sha1": "5c55e0ea3f302b6ce15d03fb247039d41b83f032"
+        },
+        "garage": {
+          "size": 1280064,
+          "sha1": "f8acf734490cca78ad28c7e881071015d94cb6cc"
+        },
+        "BESCES-51719GAMEDATA": {
+          "size": 237760,
+          "sha1": "5ff881c588a591256d5fa73530081088ae95bdda"
+        }
+      },
+      "read_back": "work/ps2/tools/mcfs.py lists every file with the size and SHA-1 put on the card; one-saves (1saves convert + inspect) reads the card and finds BESCES-51719GAMEDATA",
+      "timestamps": "what the save does not date is 2000-01-01 00:00:00 (JST, as a card stores it); the card's own root entries too"
+    },
+    "script": null,
+    "cores": {
+      "pcee2": {
+        "result": "not-run",
+        "detail": "no image of Gran Turismo 4 (Europe, Australia) (En,Fr,De,Es,It) in the library"
+      },
+      "lrps2": {
+        "result": "not-run",
+        "detail": "no image of Gran Turismo 4 (Europe, Australia) (En,Fr,De,Es,It) in the library"
+      },
+      "play": {
+        "result": "not-run",
+        "detail": "no image of Gran Turismo 4 (Europe, Australia) (En,Fr,De,Es,It) in the library"
+      },
+      "pcsx2": {
+        "result": "not-run",
+        "detail": "no image of Gran Turismo 4 (Europe, Australia) (En,Fr,De,Es,It) in the library"
+      },
+      "armsx2": {
+        "result": "not-run",
+        "detail": "ARMSX2 renders only through Vulkan here and falls back to a null GS (no picture), so nothing shows what the game read (ps2/NOTES.md)"
+      }
+    },
+    "proof_order": []
+  },
+  "note": null
+}

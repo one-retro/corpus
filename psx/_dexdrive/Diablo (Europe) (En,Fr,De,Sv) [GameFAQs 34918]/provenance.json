@@ -1,0 +1,75 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_dexdrive",
+  "url": "https://gamefaqs.gamespot.com/mac/575278-diablo/saves/34918",
+  "source_page": "https://gamefaqs.gamespot.com/mac/575278-diablo/saves",
+  "source": "GameFAQs (section 'PlayStation DexDrive Save (Europe)')",
+  "author": "fepnascimento",
+  "licence": null,
+  "posted": "2026-06-09",
+  "fetched": "2026-11-05",
+  "what_it_is": "Rogue lv 36, ready to face Diablo. Good gear.",
+  "gamefaqs": {
+    "id": 34918,
+    "product": "Diablo",
+    "section": "PlayStation DexDrive Save (Europe)",
+    "region": "Europe",
+    "served_as": "diablo.34918.gme",
+    "listed_size": "131KB"
+  },
+  "format": "DexDrive .gme: '123-456-STD' 3904-byte header (per-block comments) + 131072-byte raw card; the card holds 1 save(s), 1 for this game (BESLES-01156-DIAB-01)",
+  "release": "Diablo (Europe) (En,Fr,De,Sv)",
+  "game_saves": [
+    {
+      "name": "BESLES-01156-DIAB-01",
+      "blocks": 10,
+      "title": "DIABLO−1P L34 ROG RITA"
+    }
+  ],
+  "files": {
+    "diablo.34918.gme": {
+      "size": 134976,
+      "sha1": "9b47dc787abb8d4330336147c7f6696571ee9f9f"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": null,
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr diablo.34918.gme: unwraps the card (DexDrive .gme: 3904-byte header + card)",
+    "converted": {
+      "size": 131072,
+      "sha1": "83d4f62f9df1c55f76f0b4ea229145064d2db5ab"
+    },
+    "script": null,
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "not-run",
+        "detail": "no image of Diablo (Europe) (En,Fr,De,Sv) in the library"
+      },
+      "beetle-psx-hw": {
+        "result": "not-run",
+        "detail": "no image of Diablo (Europe) (En,Fr,De,Sv) in the library"
+      },
+      "pcsx-rearmed": {
+        "result": "not-run",
+        "detail": "no image of Diablo (Europe) (En,Fr,De,Sv) in the library"
+      },
+      "swanstation": {
+        "result": "not-run",
+        "detail": "no image of Diablo (Europe) (En,Fr,De,Sv) in the library"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": []
+  },
+  "note": null
+}

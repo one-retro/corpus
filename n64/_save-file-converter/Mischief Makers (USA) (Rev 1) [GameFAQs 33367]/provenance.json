@@ -1,0 +1,81 @@
+{
+  "method": "downloaded",
+  "system": "n64",
+  "core": "_save-file-converter",
+  "url": "https://gamefaqs.gamespot.com/n64/197950-mischief-makers/saves/33367",
+  "source_page": "https://gamefaqs.gamespot.com/n64/197950-mischief-makers/saves",
+  "source": "GameFAQs (section 'Nintendo 64 DexDrive Save (North America)')",
+  "author": "KCodyB",
+  "licence": null,
+  "posted": "2025-08-11",
+  "fetched": "2026-11-05",
+  "what_it_is": "A 100% save file for v1.1 of Mischief Makers.All yellow gems, all S ranks, and maxed out red gems.I saw nobody uploaded a save file with all S-ranks, and decided to do it myself! Use this for whatever wants or needs you may have!",
+  "gamefaqs": {
+    "id": 33367,
+    "product": "Mischief Makers",
+    "section": "Nintendo 64 DexDrive Save (North America)",
+    "region": "North America",
+    "served_as": "mischief-makers.33367.n64",
+    "listed_size": "36KB"
+  },
+  "format": "36928 bytes laid out as a DexDrive .n64 but with an all-zero 0x1040-byte header (no magic), then a 32 KiB Controller Pak as savefileconverter.com builds one (its random-serial ID pattern, index-table checksum byte 0): one cart-save note \"MISCHIEF MAKERS\" ext 1 (3BADD1E5/FADE), 2 pages = the 4 Kbit EEPROM",
+  "files": {
+    "mischief-makers.33367.n64": {
+      "size": 36928,
+      "sha1": "dc5b506b49d138b758685179298ea5e074eeb36a"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "converted_with": "tools/gamefaqs/n64-dexdrive.py convert mischief-makers.33367.n64 OUT: dexdrive-blank-header: pak = the 32768 bytes after the 0x1040-byte header; cart-save note 'MISCHIEF MAKERS' (GameShark 3BADD1E5/FADE): raw EEPROM, 512 bytes",
+    "converted": {
+      "size": 296960,
+      "sha1": "991712fdec1f8641a2961ec6534cb8adef41a5dd"
+    },
+    "converted_standalone": {
+      "files": {
+        "save.mpk": {
+          "size": 131072,
+          "sha1": "fab0ccb88c3c6234f68ea4d7ebaf425f4b911a3d"
+        },
+        "save.eep": {
+          "size": 512,
+          "sha1": "3ced235f1f84919c011b33b836eb4e2a1d3bffa6"
+        }
+      },
+      "how": "the same bytes as the .srm regions, as standalone Mupen64Plus keeps them: <GoodName (32 chars)>-<MD5 8>.eep/.sra/.fla/.mpk in its save folder"
+    },
+    "rom": {
+      "name": "Mischief Makers (USA) (Rev 1).z64",
+      "sha1": "811709c6473f74cbf283aa61f056e1de3046ec73",
+      "size": 8388608
+    },
+    "script": "scripts/n64/Mischief Makers.load.txt",
+    "baseline": "with no save: Which? shows 1 Start, 2 Start; Start begins the name entry",
+    "cores": {
+      "mupen64plus-next": {
+        "result": "loads",
+        "detail": "Which?: file 1 \"Marina\", F, Age 16, 9999 red gems, 53 yellow gems, 00 day 16 hrs 18 min 10 sec; Start on it opens Imperial HQ with S ranks on every stage"
+      },
+      "parallel-n64": {
+        "result": "loads",
+        "detail": "Which?: file 1 \"Marina\", F, Age 16, 9999 red gems, 53 yellow gems, 00 day 16 hrs 18 min 10 sec; Start on it opens Imperial HQ with S ranks on every stage"
+      },
+      "mupen64plus": {
+        "result": "loads",
+        "detail": "Which?: file 1 \"Marina\", F, Age 16, 9999 red gems, 53 yellow gems, 00 day 16 hrs 18 min 10 sec; Start on it opens Imperial HQ with S ranks on every stage"
+      }
+    },
+    "core_versions": {
+      "mupen64plus": "Mupen64Plus 2.6.0 (Homebrew), glide64mk2 video, rsp-hle",
+      "mupen64plus-next": "Mupen64Plus-Next 3.0-Vulkan 15bada8",
+      "parallel-n64": "ParaLLEl N64 1.0 e8cbdbb"
+    },
+    "proof_order": [
+      "mupen64plus-next",
+      "parallel-n64",
+      "mupen64plus"
+    ]
+  },
+  "note": "Not written by a DexDrive: the pak has savefileconverter.com's random-serial ID pattern and 00 index-table checksum, and the note name is the uploader's file name in capitals, as that tool makes it; the DexDrive header is all zeros. The description says v1.1, so the Rev 1 release."
+}

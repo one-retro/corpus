@@ -1,0 +1,88 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_ps3",
+  "url": "https://gamefaqs.gamespot.com/ps/197341-final-fantasy-vii/saves/33809",
+  "source_page": "https://gamefaqs.gamespot.com/ps/197341-final-fantasy-vii/saves",
+  "source": "GameFAQs (section 'PlayStation PS3 Virtual Memory Card Save (ZIP) (North America)')",
+  "author": "YOKISWAKYEWAKYE",
+  "licence": null,
+  "posted": "2025-10-08",
+  "fetched": "2026-11-05",
+  "what_it_is": "End-game save. 100% completed, all level 99, max stats, all materia mastered, all items, all minigames completed with best scores, all side-quests completed, all treasure found, Max Gil/GP, Aerith is in the party.",
+  "gamefaqs": {
+    "id": 33809,
+    "product": "Final Fantasy VII",
+    "section": "PlayStation PS3 Virtual Memory Card Save (ZIP) (North America)",
+    "region": "North America",
+    "served_as": "final-fantasy-vii.33809.zip",
+    "listed_size": "2KB",
+    "served_zip": {
+      "size": 2261,
+      "sha1": "507dc5b6e8d5ff80865a43178df5849b66f628f1"
+    }
+  },
+  "format": "zip of 1 PS3 export(s) (.PSV): '\\0VSP' header (signature, save name at 0x64), the save's blocks from 0x84 (8324 bytes); it holds 1 save(s), 1 for this game (BASCUS-94163FF7-S01)",
+  "release": "Final Fantasy VII (USA) (Disc 1)",
+  "game_saves": [
+    {
+      "name": "BASCUS-94163FF7-S01",
+      "blocks": 1,
+      "title": "FF7/SAVE01/99:00"
+    }
+  ],
+  "files": {
+    "BASCUS-941634646372D533031.PSV": {
+      "size": 8324,
+      "sha1": "b8fc84577569a3ba061588f4bde5c481a9d71ed8"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Final Fantasy VII (USA) (Disc 1).cue",
+      "sha1": "c8df949f13d990d325ac3b8d6eb835c440380e52",
+      "size": 98
+    },
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr BASCUS-941634646372D533031.PSV: puts the save(s) on a freshly formatted card, as MemcardRex imports a single save",
+    "converted": {
+      "size": 131072,
+      "sha1": "0e43aa2926ea0d58122a40e5ddc15a6b39fd9857"
+    },
+    "script": "scripts/psx/Final Fantasy VII.load.txt",
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "loads",
+        "detail": "Slot 1 lists file 1: Cloud, Level 99, 99:00, Grasslands Area"
+      },
+      "beetle-psx-hw": {
+        "result": "loads",
+        "detail": "Slot 1 lists file 1: Cloud, Level 99, 99:00, Grasslands Area (the same screen as on beetle-psx)"
+      },
+      "pcsx-rearmed": {
+        "result": "loads",
+        "detail": "Slot 1 lists file 1: Cloud, Level 99, 99:00, Grasslands Area (the same screen as on beetle-psx)"
+      },
+      "swanstation": {
+        "result": "loads",
+        "detail": "Slot 1 lists file 1: Cloud, Level 99, 99:00, Grasslands Area (the same screen as on beetle-psx)"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": [
+      "beetle-psx",
+      "beetle-psx-hw",
+      "pcsx-rearmed",
+      "swanstation"
+    ]
+  },
+  "note": null
+}

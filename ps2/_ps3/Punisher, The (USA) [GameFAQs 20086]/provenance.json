@@ -1,0 +1,199 @@
+{
+  "method": "downloaded",
+  "system": "ps2",
+  "core": "_ps3",
+  "url": "https://gamefaqs.gamespot.com/ps2/919349-the-punisher/saves/20086",
+  "source_page": "https://gamefaqs.gamespot.com/ps2/919349-the-punisher/saves",
+  "source": "GameFAQs (section 'PlayStation 2 PS3 Virtual Memory Card Save (ZIP) (North America)')",
+  "author": "WilHiteWarrior",
+  "licence": null,
+  "posted": "2009-12-23",
+  "fetched": "2026-11-05",
+  "what_it_is": "All gold medals obtained, all challenges complete, everything unlocked",
+  "gamefaqs": {
+    "id": 20086,
+    "product": "The Punisher",
+    "section": "PlayStation 2 PS3 Virtual Memory Card Save (ZIP) (North America)",
+    "region": "North America",
+    "served_as": "the-punisher.20086.zip",
+    "listed_size": "25KB"
+  },
+  "format": "PS3 Virtual Memory Card export (.PSV): '\\0VSP' header, PS2 save type 2, 354128 bytes, folder BASLUS-20864vol, 11 files, 353308 bytes of file data",
+  "files": {
+    "BASLUS-20864766F6C.PSV": {
+      "size": 354128,
+      "sha1": "2096dff7cf39af087dc425128cfde640fc6ae6e9"
+    }
+  },
+  "save": {
+    "folder": "BASLUS-20864vol",
+    "title": [
+      "The Punisher",
+      ""
+    ],
+    "times": "as the file stores them (PS2 card times, JST)",
+    "files": [
+      {
+        "name": "icon.sys",
+        "size": 964,
+        "sha1": "9397ecb64aa61b9ce265d10f47c2e0c21c3c7ab5",
+        "created": "2009-10-23 09:29:27",
+        "modified": "2009-10-23 09:29:27"
+      },
+      {
+        "name": "BASLUS-20864vol",
+        "size": 128,
+        "sha1": "3ae2fdc2bf09c44079634f69cc40ceaa8bf91561",
+        "created": "2009-10-23 09:29:27",
+        "modified": "2009-10-23 09:29:27"
+      },
+      {
+        "name": "rf_psx2_icon.ico",
+        "size": 112728,
+        "sha1": "760575929c57d7f2357b0ee793468bea31490753",
+        "created": "2009-10-23 09:29:27",
+        "modified": "2009-10-23 09:29:28"
+      },
+      {
+        "name": "_0.del",
+        "size": 29936,
+        "sha1": "adf63613c273ecdbe8e90bd39364eab98df28528",
+        "created": "2009-10-23 09:29:28",
+        "modified": "2009-10-23 09:29:28"
+      },
+      {
+        "name": "_1.del",
+        "size": 29936,
+        "sha1": "adf63613c273ecdbe8e90bd39364eab98df28528",
+        "created": "2009-10-23 09:29:28",
+        "modified": "2009-10-23 09:29:28"
+      },
+      {
+        "name": "_2.del",
+        "size": 29936,
+        "sha1": "adf63613c273ecdbe8e90bd39364eab98df28528",
+        "created": "2009-10-23 09:29:28",
+        "modified": "2009-10-23 09:29:28"
+      },
+      {
+        "name": "_3.del",
+        "size": 29936,
+        "sha1": "adf63613c273ecdbe8e90bd39364eab98df28528",
+        "created": "2009-10-23 09:29:28",
+        "modified": "2009-10-23 09:29:28"
+      },
+      {
+        "name": "_4.del",
+        "size": 29936,
+        "sha1": "adf63613c273ecdbe8e90bd39364eab98df28528",
+        "created": "2009-10-23 09:29:28",
+        "modified": "2009-10-23 09:29:28"
+      },
+      {
+        "name": "_5.del",
+        "size": 29936,
+        "sha1": "adf63613c273ecdbe8e90bd39364eab98df28528",
+        "created": "2009-10-23 09:29:28",
+        "modified": "2009-10-23 09:29:28"
+      },
+      {
+        "name": "_6.del",
+        "size": 29936,
+        "sha1": "adf63613c273ecdbe8e90bd39364eab98df28528",
+        "created": "2009-10-23 09:29:28",
+        "modified": "2009-10-23 09:29:28"
+      },
+      {
+        "name": "PUNISHER.pun",
+        "size": 29936,
+        "sha1": "e51af6e9d1d9d75dac9b6aacf3730b747faa1ed6",
+        "created": "2009-10-23 09:29:28",
+        "modified": "2009-10-23 09:29:28"
+      }
+    ]
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": null,
+    "converted_with": "tools/gamefaqs/ps2-card.py 'BASLUS-20864766F6C.PSV' -o OUT: reads the save with mymcplus 3.0.5 and writes OUT/Mcd001.ps2 (an 8 MiB card with ECC, formatted and filled by mymcplus) for lrps2/pcee2/pcsx2, and OUT/mc0/<folder>/ for Play!",
+    "converted": {
+      "Mcd001.ps2": {
+        "size": 8650752,
+        "sha1": "f7d0b6bf9e6fc858d401f89e29163219e77a19ae"
+      },
+      "mc0/BASLUS-20864vol/": {
+        "icon.sys": {
+          "size": 964,
+          "sha1": "9397ecb64aa61b9ce265d10f47c2e0c21c3c7ab5"
+        },
+        "BASLUS-20864vol": {
+          "size": 128,
+          "sha1": "3ae2fdc2bf09c44079634f69cc40ceaa8bf91561"
+        },
+        "rf_psx2_icon.ico": {
+          "size": 112728,
+          "sha1": "760575929c57d7f2357b0ee793468bea31490753"
+        },
+        "_0.del": {
+          "size": 29936,
+          "sha1": "adf63613c273ecdbe8e90bd39364eab98df28528"
+        },
+        "_1.del": {
+          "size": 29936,
+          "sha1": "adf63613c273ecdbe8e90bd39364eab98df28528"
+        },
+        "_2.del": {
+          "size": 29936,
+          "sha1": "adf63613c273ecdbe8e90bd39364eab98df28528"
+        },
+        "_3.del": {
+          "size": 29936,
+          "sha1": "adf63613c273ecdbe8e90bd39364eab98df28528"
+        },
+        "_4.del": {
+          "size": 29936,
+          "sha1": "adf63613c273ecdbe8e90bd39364eab98df28528"
+        },
+        "_5.del": {
+          "size": 29936,
+          "sha1": "adf63613c273ecdbe8e90bd39364eab98df28528"
+        },
+        "_6.del": {
+          "size": 29936,
+          "sha1": "adf63613c273ecdbe8e90bd39364eab98df28528"
+        },
+        "PUNISHER.pun": {
+          "size": 29936,
+          "sha1": "e51af6e9d1d9d75dac9b6aacf3730b747faa1ed6"
+        }
+      },
+      "read_back": "work/ps2/tools/mcfs.py lists every file with the size and SHA-1 put on the card; one-saves (1saves convert + inspect) reads the card and finds BASLUS-20864vol",
+      "timestamps": "what the save does not date is 2000-01-01 00:00:00 (JST, as a card stores it); the card's own root entries too"
+    },
+    "script": null,
+    "cores": {
+      "pcee2": {
+        "result": "not-run",
+        "detail": "no image of Punisher, The (USA) in the library"
+      },
+      "lrps2": {
+        "result": "not-run",
+        "detail": "no image of Punisher, The (USA) in the library"
+      },
+      "play": {
+        "result": "not-run",
+        "detail": "no image of Punisher, The (USA) in the library"
+      },
+      "pcsx2": {
+        "result": "not-run",
+        "detail": "no image of Punisher, The (USA) in the library"
+      },
+      "armsx2": {
+        "result": "not-run",
+        "detail": "ARMSX2 renders only through Vulkan here and falls back to a null GS (no picture), so nothing shows what the game read (ps2/NOTES.md)"
+      }
+    },
+    "proof_order": []
+  },
+  "note": null
+}

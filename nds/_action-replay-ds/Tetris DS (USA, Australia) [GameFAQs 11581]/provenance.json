@@ -1,0 +1,109 @@
+{
+  "method": "downloaded",
+  "system": "nds",
+  "core": "_action-replay-ds",
+  "url": "https://gamefaqs.gamespot.com/ds/930648-tetris-ds/saves/11581",
+  "source_page": "https://gamefaqs.gamespot.com/ds/930648-tetris-ds/saves",
+  "source": "GameFAQs (section 'Action Replay Max DS (.dst) Game Save (North America)')",
+  "author": "Sekoku",
+  "licence": null,
+  "posted": "2006-04-22",
+  "fetched": "2026-11-05",
+  "what_it_is": "Everything Unlocked",
+  "gamefaqs": {
+    "id": 11581,
+    "product": "Tetris DS",
+    "section": "Action Replay Max DS (.dst) Game Save (North America)",
+    "region": "North America",
+    "served_as": "tetris-ds.11581.dst",
+    "listed_size": "1KB"
+  },
+  "format": "Action Replay DS save: the 500-byte 'ARDS000000000001' header (game 'Tetris: DS', name 'Everything Unlocked'), then 896 bytes of block-RLE-compressed save (1 blocks decoding to 8 KiB: the 8 KiB EEPROM)",
+  "files": {
+    "tetris-ds.11581.dst": {
+      "size": 1396,
+      "sha1": "46796b4aab087a626d10b59a8298534e0cf9e5b7"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Tetris DS (USA, Australia).nds",
+      "sha1": "13eb2e7e5357a6e31f94ea238826c111c965bc9b",
+      "size": 16777216
+    },
+    "converted_with": "tools/gamefaqs/nds-ards.py IN step0.bin, then tools/gamefaqs/nds-cores.py step0.bin --chip 8192 --stem 'Tetris DS (USA, Australia)' --out DIR: drops the Action Replay header; fits it to the 8192-byte chip (exact size) and writes each core's file",
+    "converted": {
+      "size": 8192,
+      "sha1": "b7ef7fe0d67a59a5b247d5df0a703ae7850d295e"
+    },
+    "core_files": {
+      "desmume": {
+        "name": "Tetris DS (USA, Australia).dsv",
+        "size": 8314,
+        "sha1": "c20781a7534b75f66e57ae37b8f906f5b591f5d3"
+      },
+      "desmume-2015": {
+        "name": "Tetris DS (USA, Australia).dsv",
+        "size": 8314,
+        "sha1": "c20781a7534b75f66e57ae37b8f906f5b591f5d3"
+      },
+      "melonds": {
+        "name": "Tetris DS (USA, Australia).sav",
+        "size": 8192,
+        "sha1": "b7ef7fe0d67a59a5b247d5df0a703ae7850d295e"
+      },
+      "melonds-ds": {
+        "name": "Tetris DS (USA, Australia).srm",
+        "size": 8192,
+        "sha1": "b7ef7fe0d67a59a5b247d5df0a703ae7850d295e"
+      },
+      "noods": {
+        "name": "Tetris DS (USA, Australia).sav",
+        "size": 8192,
+        "sha1": "b7ef7fe0d67a59a5b247d5df0a703ae7850d295e"
+      },
+      "skyemu": {
+        "name": "Tetris DS (USA, Australia).srm",
+        "size": 8388608,
+        "sha1": "1ae587e805fb0a390779d48918e1b0ceab2ada2c"
+      }
+    },
+    "script": "scripts/nds/Tetris DS.load.txt",
+    "cores": {
+      "desmume": {
+        "result": "loads",
+        "detail": "RECORDS: TETRIS POINTS 5050, Marathon high score 260515, Endless 0 (TETRIS POINTS 0 without a save)"
+      },
+      "desmume-2015": {
+        "result": "loads",
+        "detail": "RECORDS: TETRIS POINTS 5050, Marathon high score 260515, Endless 0 (TETRIS POINTS 0 without a save)"
+      },
+      "melonds": {
+        "result": "loads",
+        "detail": "RECORDS: TETRIS POINTS 5050, Marathon high score 260515, Endless 0 (TETRIS POINTS 0 without a save)"
+      },
+      "melonds-ds": {
+        "result": "loads",
+        "detail": "RECORDS: TETRIS POINTS 5050, Marathon high score 260515, Endless 0 (TETRIS POINTS 0 without a save)"
+      },
+      "noods": {
+        "result": "loads",
+        "detail": "RECORDS: TETRIS POINTS 5050, Marathon high score 260515, Endless 0 (TETRIS POINTS 0 without a save)"
+      },
+      "skyemu": {
+        "result": "loads",
+        "detail": "RECORDS: TETRIS POINTS 5050, Marathon high score 260515, Endless 0 (TETRIS POINTS 0 without a save)"
+      }
+    },
+    "proof_order": [
+      "desmume",
+      "desmume-2015",
+      "melonds",
+      "melonds-ds",
+      "noods",
+      "skyemu"
+    ]
+  },
+  "note": "The oldest Action Replay format here: the payload is block-RLE compressed (see nds-ards.py)."
+}

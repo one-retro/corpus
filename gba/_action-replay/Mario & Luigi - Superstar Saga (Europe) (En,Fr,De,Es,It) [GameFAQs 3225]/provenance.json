@@ -1,0 +1,119 @@
+{
+  "method": "downloaded",
+  "system": "gba",
+  "core": "_action-replay",
+  "url": "https://gamefaqs.gamespot.com/gba/914980-mario-and-luigi-superstar-saga/saves/3225",
+  "source_page": "https://gamefaqs.gamespot.com/gba/914980-mario-and-luigi-superstar-saga/saves",
+  "source": "GameFAQs (section 'GameBoy Advance Pro Action Replay Save (North America)')",
+  "author": "Wind_Waker2",
+  "licence": null,
+  "posted": "2004-01-08",
+  "fetched": "2026-11-05",
+  "what_it_is": "On the rock bridge",
+  "gamefaqs": {
+    "id": 3225,
+    "product": "Mario & Luigi: Superstar Saga",
+    "section": "GameBoy Advance Pro Action Replay Save (North America)",
+    "region": "North America",
+    "served_as": "mario-and-luigi-superstar-saga.3225.xps",
+    "listed_size": "64KB"
+  },
+  "format": "SharkPort save (\"SharkPortSave\", kind 0x000F0000): title \"ÓARIO&LUIGIP\", date \"Save1/7/04 8:45:57 PM 41\", notes \"\"; cart header \"ÓARIO&LUIGIP\" / 'A8xP' (complement 0x20); payload 65536 bytes; checksum: unsigned",
+  "files": {
+    "mario-and-luigi-superstar-saga.3225.xps": {
+      "size": 65641,
+      "sha1": "56012e6b72484a50b48268b615ad0c7867940256"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Mario & Luigi - Superstar Saga (Europe) (En,Fr,De,Es,It).gba",
+      "sha1": "fa2314c2fbe0db1ab17175f8be7cceb0ab084efc",
+      "size": 16777216
+    },
+    "converted_with": "tools/gamefaqs/gba-sharkport.py mario-and-luigi-superstar-saga.3225.xps --rom ROM --core CORE --outdir DIR: reads the SharkPort container as mGBA does and imports the payload as mGBA's _importSavedata does (cut to the chip, EEPROM 8-byte blocks reversed, the rest of the chip erased), then lays the chip out as the core keeps it",
+    "converted": {
+      "size": 8192,
+      "sha1": "1c8d67bb9e019035ce7e96ba4e794247fc8f4667"
+    },
+    "script": "scripts/gba/Mario & Luigi - Superstar Saga.load.txt",
+    "cores": {
+      "mgba": {
+        "result": "rejected",
+        "detail": "the language prompt the European release shows only when it finds no save: the dump has bit errors (header reads \"\\xd3ARIO&LUIGIP\")",
+        "core_version": "mGBA 0.11-212-7a12d6d",
+        "file": {
+          "name": "Mario & Luigi - Superstar Saga (Europe) (En,Fr,De,Es,It).srm",
+          "size": 8192,
+          "sha1": "1c8d67bb9e019035ce7e96ba4e794247fc8f4667"
+        },
+        "frame": "files"
+      },
+      "vba-m": {
+        "result": "rejected",
+        "detail": "the language prompt the European release shows only when it finds no save: the dump has bit errors (header reads \"\\xd3ARIO&LUIGIP\")",
+        "core_version": "VBA-M 115defb",
+        "file": {
+          "name": "Mario & Luigi - Superstar Saga (Europe) (En,Fr,De,Es,It).srm",
+          "size": 8192,
+          "sha1": "1c8d67bb9e019035ce7e96ba4e794247fc8f4667"
+        },
+        "frame": "files"
+      },
+      "gpsp": {
+        "result": "rejected",
+        "detail": "the language prompt the European release shows only when it finds no save: the dump has bit errors (header reads \"\\xd3ARIO&LUIGIP\")",
+        "core_version": "gpSP v1.1.0-5819380",
+        "file": {
+          "name": "Mario & Luigi - Superstar Saga (Europe) (En,Fr,De,Es,It).srm",
+          "size": 131072,
+          "sha1": "5a5df261d1a2e7ad2177bcdb0b377099f4861287"
+        },
+        "frame": "files"
+      },
+      "vba-next": {
+        "result": "rejected",
+        "detail": "the language prompt the European release shows only when it finds no save: the dump has bit errors (header reads \"\\xd3ARIO&LUIGIP\")",
+        "core_version": "VBA Next v1.0.2",
+        "file": {
+          "name": "Mario & Luigi - Superstar Saga (Europe) (En,Fr,De,Es,It).srm",
+          "size": 139264,
+          "sha1": "11a19bfbabe825d651f88aea199ea17b1f1d1192"
+        },
+        "frame": "files"
+      },
+      "beetle-gba": {
+        "result": "rejected",
+        "detail": "the language prompt the European release shows only when it finds no save: the dump has bit errors (header reads \"\\xd3ARIO&LUIGIP\")",
+        "core_version": "Beetle GBA v0.9.36 b158166",
+        "file": {
+          "name": "Mario & Luigi - Superstar Saga (Europe) (En,Fr,De,Es,It).3b50b9f9e13e271ead33ee5a234650a9.eep",
+          "size": 8192,
+          "sha1": "1c8d67bb9e019035ce7e96ba4e794247fc8f4667"
+        },
+        "frame": "files"
+      },
+      "skyemu": {
+        "result": "rejected",
+        "detail": "the language prompt the European release shows only when it finds no save: the dump has bit errors (header reads \"\\xd3ARIO&LUIGIP\")",
+        "core_version": "SkyEmu adacd0788964ed89f5c43dcbc1f3cc26deec996c",
+        "file": {
+          "name": "Mario & Luigi - Superstar Saga (Europe) (En,Fr,De,Es,It).srm",
+          "size": 131072,
+          "sha1": "7f522905f53a496c893498325d6595fcd1a70b39"
+        },
+        "frame": "files"
+      }
+    },
+    "proof_order": [
+      "mgba",
+      "vba-m",
+      "gpsp",
+      "vba-next",
+      "beetle-gba",
+      "skyemu"
+    ]
+  },
+  "note": "The cart header in the file has bit errors (\"\\xd3ARIO&LUIGIP\" / \"A8xP\"), as a GameShark reading through a poor cartridge contact gives; the release was taken from the readable part."
+}

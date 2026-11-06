@@ -1,0 +1,84 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_dexdrive",
+  "url": "https://gamefaqs.gamespot.com/ps/198763-star-ocean-the-second-story/saves/1401",
+  "source_page": "https://gamefaqs.gamespot.com/ps/198763-star-ocean-the-second-story/saves",
+  "source": "GameFAQs (section 'PlayStation DexDrive Save (North America)')",
+  "author": "FFRules",
+  "licence": null,
+  "posted": "2001-12-29",
+  "fetched": "2026-11-05",
+  "what_it_is": "Ready to fight the Iselia Queen, 8 characters (Claude, Rena, Celine, Ashton, Precis, Leon, Chisato and Noel) at level 255 with best choice of equipment, all skills mastered, lots of weapons, items, and fol.",
+  "gamefaqs": {
+    "id": 1401,
+    "product": "Star Ocean: The Second Story",
+    "section": "PlayStation DexDrive Save (North America)",
+    "region": "North America",
+    "served_as": "star-ocean-the-second-story.1401.gme",
+    "listed_size": "131KB"
+  },
+  "format": "DexDrive .gme: '123-456-STD' 3904-byte header (per-block comments) + 131072-byte raw card; the card holds 1 save(s), 1 for this game (BASCUS-94421S02-S01)",
+  "release": "Star Ocean - The Second Story (USA) (Disc 1)",
+  "game_saves": [
+    {
+      "name": "BASCUS-94421S02-S01",
+      "blocks": 1,
+      "title": "SO2 01 66:28 Claude LV255"
+    }
+  ],
+  "files": {
+    "star-ocean-the-second-story.1401.gme": {
+      "size": 134976,
+      "sha1": "9e77bb3651d811118f8861ea376ca377d4a42922"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Star Ocean - The Second Story (USA) (Disc 1).cue",
+      "sha1": "c13756292cbf2a27d2be247c5576e584552ce40f",
+      "size": 110
+    },
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr star-ocean-the-second-story.1401.gme: unwraps the card (DexDrive .gme: 3904-byte header + card)",
+    "converted": {
+      "size": 131072,
+      "sha1": "1012bab5f5735e6499e92c5c0be1274a2f2b08cd"
+    },
+    "script": "scripts/psx/Star Ocean - The Second Story.load.txt",
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "loads",
+        "detail": "Load, Slot 1 shows #1: time 66:28, 2182 battles"
+      },
+      "beetle-psx-hw": {
+        "result": "loads",
+        "detail": "Load, Slot 1 shows #1: time 66:28, 2182 battles (the same screen as on beetle-psx)"
+      },
+      "pcsx-rearmed": {
+        "result": "loads",
+        "detail": "Load, Slot 1 shows #1: time 66:28, 2182 battles (the same screen as on beetle-psx)"
+      },
+      "swanstation": {
+        "result": "loads",
+        "detail": "Load, Slot 1 shows #1: time 66:28, 2182 battles (the same screen as on beetle-psx)"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": [
+      "beetle-psx",
+      "beetle-psx-hw",
+      "pcsx-rearmed",
+      "swanstation"
+    ]
+  },
+  "note": null
+}

@@ -1,0 +1,13 @@
+# Gran Turismo: the game loads the card at boot; Simulation Mode > My Home shows the day and the credits.
+wait 1500           # BIOS logos
+repeat 5            # skip the intros to the title menu
+press start 6
+wait 250
+end
+press down 6        # Simulation Mode
+wait 30
+press b 6
+wait 900            # the city map, cursor on HOME
+press b 6
+wait 500
+shot load

@@ -1,0 +1,123 @@
+{
+  "method": "downloaded",
+  "system": "ps2",
+  "core": "_max-drive",
+  "url": "https://gamefaqs.gamespot.com/gamecube/926672-shadow-the-hedgehog/saves/32061",
+  "source_page": "https://gamefaqs.gamespot.com/gamecube/926672-shadow-the-hedgehog/saves",
+  "source": "GameFAQs (section 'PlayStation2 Max Drive Save (Japan)')",
+  "author": "GokaiWhite",
+  "licence": null,
+  "posted": "2025-05-06",
+  "fetched": "2026-11-05",
+  "what_it_is": "All Dark endings complete,All Stages available with all keys(except in Last Way)13/71 A Ranks",
+  "gamefaqs": {
+    "id": 32061,
+    "product": "Shadow the Hedgehog",
+    "section": "PlayStation2 Max Drive Save (Japan)",
+    "region": "Japan",
+    "served_as": "shadow-the-hedgehog.32061.max",
+    "listed_size": "23KB"
+  },
+  "format": "Max Drive / PowerSave save: 'Ps2PowerSave' header (CRC32 7ff8a172, matches), folder BISLPM-66166, 5 files, LZARI stream 23700 bytes unpacking to 152760 bytes (152556 bytes of file data)",
+  "files": {
+    "shadow-the-hedgehog.32061.max": {
+      "size": 23792,
+      "sha1": "4aabacdd8b965929a3802e0b401c84187cb7a012"
+    }
+  },
+  "save": {
+    "folder": "BISLPM-66166",
+    "title": [
+      "シャドウ・ザ・ヘッジホッグ",
+      ""
+    ],
+    "times": "none: a max file stores no file times",
+    "files": [
+      {
+        "name": "icon.sys",
+        "size": 964,
+        "sha1": "7ef80add5426ec9080d306d287cd6164c7aa7094"
+      },
+      {
+        "name": "LIST.ICO",
+        "size": 47800,
+        "sha1": "8657b8abbe2099d345ee3b57cc111ef97ceec4fc"
+      },
+      {
+        "name": "DEL.ICO",
+        "size": 47800,
+        "sha1": "8657b8abbe2099d345ee3b57cc111ef97ceec4fc"
+      },
+      {
+        "name": "COPY.ICO",
+        "size": 47800,
+        "sha1": "8657b8abbe2099d345ee3b57cc111ef97ceec4fc"
+      },
+      {
+        "name": "BISLPM-66166",
+        "size": 8192,
+        "sha1": "ddff882eb15325258ae3b44caea651860f75648c"
+      }
+    ]
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": null,
+    "converted_with": "tools/gamefaqs/ps2-card.py 'shadow-the-hedgehog.32061.max' -o OUT: reads the save with mymcplus 3.0.5 and writes OUT/Mcd001.ps2 (an 8 MiB card with ECC, formatted and filled by mymcplus) for lrps2/pcee2/pcsx2, and OUT/mc0/<folder>/ for Play!",
+    "converted": {
+      "Mcd001.ps2": {
+        "size": 8650752,
+        "sha1": "4f2e46894ae5e60f399c43d2489ba623239765d5"
+      },
+      "mc0/BISLPM-66166/": {
+        "icon.sys": {
+          "size": 964,
+          "sha1": "7ef80add5426ec9080d306d287cd6164c7aa7094"
+        },
+        "LIST.ICO": {
+          "size": 47800,
+          "sha1": "8657b8abbe2099d345ee3b57cc111ef97ceec4fc"
+        },
+        "DEL.ICO": {
+          "size": 47800,
+          "sha1": "8657b8abbe2099d345ee3b57cc111ef97ceec4fc"
+        },
+        "COPY.ICO": {
+          "size": 47800,
+          "sha1": "8657b8abbe2099d345ee3b57cc111ef97ceec4fc"
+        },
+        "BISLPM-66166": {
+          "size": 8192,
+          "sha1": "ddff882eb15325258ae3b44caea651860f75648c"
+        }
+      },
+      "read_back": "work/ps2/tools/mcfs.py lists every file with the size and SHA-1 put on the card; one-saves (1saves convert + inspect) reads the card and finds BISLPM-66166",
+      "timestamps": "what the save does not date is 2000-01-01 00:00:00 (JST, as a card stores it); the card's own root entries too"
+    },
+    "script": null,
+    "cores": {
+      "pcee2": {
+        "result": "not-run",
+        "detail": "no image of Shadow the Hedgehog (Japan) (En,Ja,Fr,De,Es,It) in the library"
+      },
+      "lrps2": {
+        "result": "not-run",
+        "detail": "no image of Shadow the Hedgehog (Japan) (En,Ja,Fr,De,Es,It) in the library"
+      },
+      "play": {
+        "result": "not-run",
+        "detail": "no image of Shadow the Hedgehog (Japan) (En,Ja,Fr,De,Es,It) in the library"
+      },
+      "pcsx2": {
+        "result": "not-run",
+        "detail": "no image of Shadow the Hedgehog (Japan) (En,Ja,Fr,De,Es,It) in the library"
+      },
+      "armsx2": {
+        "result": "not-run",
+        "detail": "ARMSX2 renders only through Vulkan here and falls back to a null GS (no picture), so nothing shows what the game read (ps2/NOTES.md)"
+      }
+    },
+    "proof_order": []
+  },
+  "note": null
+}

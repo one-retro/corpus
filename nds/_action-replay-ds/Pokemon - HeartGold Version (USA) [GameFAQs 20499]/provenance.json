@@ -1,0 +1,110 @@
+{
+  "method": "downloaded",
+  "system": "nds",
+  "core": "_action-replay-ds",
+  "url": "https://gamefaqs.gamespot.com/ds/960099-pokemon-heartgold-version/saves/20499",
+  "source_page": "https://gamefaqs.gamespot.com/ds/960099-pokemon-heartgold-version/saves",
+  "source": "GameFAQs (section 'Action Replay Max DS (.duc) Game Save (North America)')",
+  "author": "Chrisbobs1234",
+  "licence": null,
+  "posted": "2010-03-31",
+  "fetched": "2026-11-05",
+  "what_it_is": "This game save file has got: lots of event pokemon pokedex complete and the name is Gold. Hope you enjoy!",
+  "gamefaqs": {
+    "id": 20499,
+    "product": "Pokemon HeartGold / SoulSilver Version",
+    "section": "Action Replay Max DS (.duc) Game Save (North America)",
+    "region": "North America",
+    "served_as": "pokemon-heartgold-soulsilver-version.20499.duc",
+    "listed_size": "256KB"
+  },
+  "format": "Action Replay DS save: the 500-byte 'ARDS000000000001' header written by a converter ('Converted Savegame' / 'Savegame', ASCII 'shuny conv'), then 256 KiB raw for the 512 KiB flash (padded 262144 -> 524288 with 0xFF)",
+  "files": {
+    "pokemon-heartgold-soulsilver-version.20499.duc": {
+      "size": 262644,
+      "sha1": "3f250381715771fc675268f3fe6e7c048670fa99"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Pokemon - HeartGold Version (USA).nds",
+      "sha1": "30793e274fb4c7ba070ae226edbdfe355504b1f5",
+      "size": 134217728,
+      "note": "a dump of this game code whose sha1 is not in the No-Intro DAT (the area after the used ROM size is blank); the region in the name is a guess"
+    },
+    "converted_with": "tools/gamefaqs/nds-ards.py IN step0.bin, then tools/gamefaqs/nds-cores.py step0.bin --chip 524288 --stem 'Pokemon - HeartGold Version (USA)' --out DIR: drops the Action Replay header; fits it to the 524288-byte chip (padded 262144 -> 524288 with 0xFF) and writes each core's file",
+    "converted": {
+      "size": 524288,
+      "sha1": "6abe9948fb68d8fbf2685d925bca69d6c81956a4"
+    },
+    "core_files": {
+      "desmume": {
+        "name": "Pokemon - HeartGold Version (USA).dsv",
+        "size": 524410,
+        "sha1": "b957047d59e65459465f61ddd920f05a337fd89e"
+      },
+      "desmume-2015": {
+        "name": "Pokemon - HeartGold Version (USA).dsv",
+        "size": 524410,
+        "sha1": "b957047d59e65459465f61ddd920f05a337fd89e"
+      },
+      "melonds": {
+        "name": "Pokemon - HeartGold Version (USA).sav",
+        "size": 524288,
+        "sha1": "6abe9948fb68d8fbf2685d925bca69d6c81956a4"
+      },
+      "melonds-ds": {
+        "name": "Pokemon - HeartGold Version (USA).srm",
+        "size": 524288,
+        "sha1": "6abe9948fb68d8fbf2685d925bca69d6c81956a4"
+      },
+      "noods": {
+        "name": "Pokemon - HeartGold Version (USA).sav",
+        "size": 524288,
+        "sha1": "6abe9948fb68d8fbf2685d925bca69d6c81956a4"
+      },
+      "skyemu": {
+        "name": "Pokemon - HeartGold Version (USA).srm",
+        "size": 8388608,
+        "sha1": "e50367e5847beab9a66f5f9eaaee1d85affef41e"
+      }
+    },
+    "script": "scripts/nds/Pokemon - HeartGold Version.load.txt",
+    "cores": {
+      "desmume": {
+        "result": "loads",
+        "detail": "CONTINUE: PLAYER Gold, TIME 0:34, BADGES 0, POKéDEX 493"
+      },
+      "desmume-2015": {
+        "result": "loads",
+        "detail": "CONTINUE: PLAYER Gold, TIME 0:34, BADGES 0, POKéDEX 493"
+      },
+      "melonds": {
+        "result": "core-error",
+        "detail": "\"A communication error has occurred. You will be returned to the title screen.\" instead of the CONTINUE panel; the same happens with every HeartGold/SoulSilver save in this core (no BIOS or firmware here, FreeBIOS), so it is the core, not this save"
+      },
+      "melonds-ds": {
+        "result": "loads",
+        "detail": "CONTINUE: PLAYER Gold, TIME 0:34, BADGES 0, POKéDEX 493"
+      },
+      "noods": {
+        "result": "loads",
+        "detail": "CONTINUE: PLAYER Gold, TIME 0:34, BADGES 0, POKéDEX 493"
+      },
+      "skyemu": {
+        "result": "loads",
+        "detail": "CONTINUE: PLAYER Gold, TIME 0:34, BADGES 0, POKéDEX 493"
+      }
+    },
+    "proof_order": [
+      "desmume",
+      "desmume-2015",
+      "melonds",
+      "melonds-ds",
+      "noods",
+      "skyemu"
+    ]
+  },
+  "note": "Release: English; HeartGold assumed: the party all comes from HeartGold, but none of it is the player's own catch (an edited save)."
+}

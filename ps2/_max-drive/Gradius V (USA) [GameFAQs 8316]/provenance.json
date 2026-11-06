@@ -1,0 +1,122 @@
+{
+  "method": "downloaded",
+  "system": "ps2",
+  "core": "_max-drive",
+  "url": "https://gamefaqs.gamespot.com/ps2/589460-gradius-v/saves/8316",
+  "source_page": "https://gamefaqs.gamespot.com/ps2/589460-gradius-v/saves",
+  "source": "GameFAQs (section 'PlayStation2 Max Drive Save (North America)')",
+  "author": "GuardianHero",
+  "licence": null,
+  "posted": "2005-07-01",
+  "fetched": "2026-11-05",
+  "what_it_is": "Free Play Unlocked",
+  "gamefaqs": {
+    "id": 8316,
+    "product": "Gradius V",
+    "section": "PlayStation2 Max Drive Save (North America)",
+    "region": "North America",
+    "served_as": "gradius-v.8316.max",
+    "listed_size": "4KB"
+  },
+  "format": "Max Drive / PowerSave save: 'Ps2PowerSave' header (CRC32 de88a01d, matches), folder BASLUS-20712, 3 files, LZARI stream 4888 bytes unpacking to 36456 bytes (36340 bytes of file data)",
+  "files": {
+    "gradius-v.8316.max": {
+      "size": 4980,
+      "sha1": "8ecaaca16a1c7446cd5927ad9f98204ba0a6221b"
+    }
+  },
+  "save": {
+    "folder": "BASLUS-20712",
+    "title": [
+      "GRADIUS V",
+      "SAVE DATA"
+    ],
+    "times": "none: a max file stores no file times",
+    "files": [
+      {
+        "name": "icon.sys",
+        "size": 964,
+        "sha1": "fc00cc3d7b82c6c457006addb03ff5ee491aa957"
+      },
+      {
+        "name": "icon.ico",
+        "size": 33688,
+        "sha1": "d34c1b7985d9303a054eccbf8a5b433a106569b2"
+      },
+      {
+        "name": "BASLUS-20712",
+        "size": 1688,
+        "sha1": "1dede4cf0ca91ac3b37e9394da71bbb7bdeb8d91"
+      }
+    ]
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Gradius V (USA).cue",
+      "sha1": "2ef30018585d72e7d0b5f501f77f17301b818e3a",
+      "size": 81,
+      "tracks": [
+        {
+          "name": "Gradius V (USA).bin",
+          "sha1": "57a4a82fa3aa89d2fdd68c0d354aacca0fc82fd2",
+          "size": 465832416
+        }
+      ]
+    },
+    "converted_with": "tools/gamefaqs/ps2-card.py 'gradius-v.8316.max' -o OUT: reads the save with mymcplus 3.0.5 and writes OUT/Mcd001.ps2 (an 8 MiB card with ECC, formatted and filled by mymcplus) for lrps2/pcee2/pcsx2, and OUT/mc0/<folder>/ for Play!",
+    "converted": {
+      "Mcd001.ps2": {
+        "size": 8650752,
+        "sha1": "0e2d57cb8cde14f49e36f26c7a089e65ffebc431"
+      },
+      "mc0/BASLUS-20712/": {
+        "icon.sys": {
+          "size": 964,
+          "sha1": "fc00cc3d7b82c6c457006addb03ff5ee491aa957"
+        },
+        "icon.ico": {
+          "size": 33688,
+          "sha1": "d34c1b7985d9303a054eccbf8a5b433a106569b2"
+        },
+        "BASLUS-20712": {
+          "size": 1688,
+          "sha1": "1dede4cf0ca91ac3b37e9394da71bbb7bdeb8d91"
+        }
+      },
+      "read_back": "work/ps2/tools/mcfs.py lists every file with the size and SHA-1 put on the card; one-saves (1saves convert + inspect) reads the card and finds BASLUS-20712",
+      "timestamps": "what the save does not date is 2000-01-01 00:00:00 (JST, as a card stores it); the card's own root entries too"
+    },
+    "script": "scripts/ps2/Gradius V (USA).load.txt",
+    "cores": {
+      "pcee2": {
+        "detail": "menu reads FREE PLAY (no save: CREDIT 3); STAGE SELECT offers stages 1-8 (no save: stage 1); RANKING (VERY EASY) SMJ 1260750, 1208820, 1178710, 1086510, 933770",
+        "result": "loads"
+      },
+      "lrps2": {
+        "detail": "menu reads FREE PLAY (no save: CREDIT 3); STAGE SELECT offers stages 1-8 (no save: stage 1); RANKING (VERY EASY) SMJ 1260750, 1208820, 1178710, 1086510, 933770",
+        "result": "loads"
+      },
+      "play": {
+        "detail": "menu reads FREE PLAY (no save: CREDIT 3); STAGE SELECT offers stages 1-8 (no save: stage 1); RANKING (VERY EASY) SMJ 1260750, 1208820, 1178710, 1086510, 933770",
+        "result": "loads"
+      },
+      "pcsx2": {
+        "detail": "menu reads FREE PLAY (no save: CREDIT 3); STAGE SELECT offers stages 1-8 (no save: stage 1); RANKING (VERY EASY) SMJ 1260750, 1208820, 1178710, 1086510, 933770",
+        "result": "loads",
+        "image": "Gradius V (USA).bin (the track itself, as the played pcsx2 entries ran it)"
+      },
+      "armsx2": {
+        "result": "not-run",
+        "detail": "ARMSX2 renders only through Vulkan here and falls back to a null GS (no picture), so nothing shows what the game read (ps2/NOTES.md)"
+      }
+    },
+    "proof_order": [
+      "pcee2",
+      "lrps2",
+      "play",
+      "pcsx2"
+    ]
+  },
+  "note": null
+}

@@ -1,0 +1,123 @@
+{
+  "method": "downloaded",
+  "system": "ps2",
+  "core": "_max-drive",
+  "url": "https://gamefaqs.gamespot.com/ps2/561066-gran-turismo-4/saves/6512",
+  "source_page": "https://gamefaqs.gamespot.com/ps2/561066-gran-turismo-4/saves",
+  "source": "GameFAQs (section 'PlayStation2 Max Drive Save (North America)')",
+  "author": "slyty71",
+  "licence": null,
+  "posted": "2005-02-25",
+  "fetched": "2026-11-05",
+  "what_it_is": "Start with 999,999,999,999 dollars and all licenses",
+  "gamefaqs": {
+    "id": 6512,
+    "product": "Gran Turismo 4",
+    "section": "PlayStation2 Max Drive Save (North America)",
+    "region": "North America",
+    "served_as": "gran-turismo-4.6512.max",
+    "listed_size": "1493KB"
+  },
+  "format": "Max Drive / PowerSave save: 'Ps2PowerSave' header (CRC32 f4660c60, matches), folder BASCUS-97328GAMEDATA, 4 files, LZARI stream 1529358 bytes unpacking to 1552648 bytes (1552476 bytes of file data)",
+  "files": {
+    "gran-turismo-4.6512.max": {
+      "size": 1529450,
+      "sha1": "4d6ef3a2ffdd4f3422eb26d38ea1bad6721656ea"
+    }
+  },
+  "save": {
+    "folder": "BASCUS-97328GAMEDATA",
+    "title": [
+      "GRAN TURISMO 4",
+      "Game data"
+    ],
+    "times": "none: a max file stores no file times",
+    "files": [
+      {
+        "name": "icon.sys",
+        "size": 964,
+        "sha1": "cce82f67a0f89c70731af7b0fb0b9c752fd05e5e"
+      },
+      {
+        "name": "icon0.ico",
+        "size": 33688,
+        "sha1": "851a453925e06eea83635553ab95a2dcb333515d"
+      },
+      {
+        "name": "BASCUS-97328GAMEDATA",
+        "size": 237760,
+        "sha1": "e9080529ec43ada1c12d33be0ba47c6e174acb21"
+      },
+      {
+        "name": "garage",
+        "size": 1280064,
+        "sha1": "290f8e11007769238bb18198aa345a978ef83b45"
+      }
+    ]
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Gran Turismo 4 (USA).iso",
+      "sha1": "5b1dbf056f45f8023e8e4958e6d7deb31fc64a47",
+      "size": 5314478080
+    },
+    "converted_with": "tools/gamefaqs/ps2-card.py 'gran-turismo-4.6512.max' -o OUT: reads the save with mymcplus 3.0.5 and writes OUT/Mcd001.ps2 (an 8 MiB card with ECC, formatted and filled by mymcplus) for lrps2/pcee2/pcsx2, and OUT/mc0/<folder>/ for Play!",
+    "converted": {
+      "Mcd001.ps2": {
+        "size": 8650752,
+        "sha1": "aa604d434ef06db20bf6b2c2fc36ca3883d697a3"
+      },
+      "mc0/BASCUS-97328GAMEDATA/": {
+        "icon.sys": {
+          "size": 964,
+          "sha1": "cce82f67a0f89c70731af7b0fb0b9c752fd05e5e"
+        },
+        "icon0.ico": {
+          "size": 33688,
+          "sha1": "851a453925e06eea83635553ab95a2dcb333515d"
+        },
+        "BASCUS-97328GAMEDATA": {
+          "size": 237760,
+          "sha1": "e9080529ec43ada1c12d33be0ba47c6e174acb21"
+        },
+        "garage": {
+          "size": 1280064,
+          "sha1": "290f8e11007769238bb18198aa345a978ef83b45"
+        }
+      },
+      "read_back": "work/ps2/tools/mcfs.py lists every file with the size and SHA-1 put on the card; one-saves (1saves convert + inspect) reads the card and finds BASCUS-97328GAMEDATA",
+      "timestamps": "what the save does not date is 2000-01-01 00:00:00 (JST, as a card stores it); the card's own root entries too"
+    },
+    "script": "scripts/ps2/Gran Turismo 4 (USA).load.txt",
+    "cores": {
+      "pcee2": {
+        "detail": "GT Mode map: Infiniti FX45 Concept, Cr 1,000,000,000,000, 18 APR; Cmx's Home: Complete 0.0%, Days 17",
+        "result": "loads"
+      },
+      "lrps2": {
+        "detail": "GT Mode map: Infiniti FX45 Concept, Cr 1,000,000,000,000, 18 APR; Cmx's Home: Complete 0.0%, Days 17",
+        "result": "loads"
+      },
+      "play": {
+        "detail": "GT Mode map: Infiniti FX45 Concept, Cr 1,000,000,000,000, 18 APR",
+        "result": "loads"
+      },
+      "pcsx2": {
+        "detail": "GT Mode map: Infiniti FX45 Concept, Cr 1,000,000,000,000, 18 APR; Cmx's Home: Complete 0.0%, Days 17",
+        "result": "loads"
+      },
+      "armsx2": {
+        "result": "not-run",
+        "detail": "ARMSX2 renders only through Vulkan here and falls back to a null GS (no picture), so nothing shows what the game read (ps2/NOTES.md)"
+      }
+    },
+    "proof_order": [
+      "pcee2",
+      "lrps2",
+      "play",
+      "pcsx2"
+    ]
+  },
+  "note": null
+}

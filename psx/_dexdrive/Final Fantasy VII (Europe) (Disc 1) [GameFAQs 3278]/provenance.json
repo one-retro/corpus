@@ -1,0 +1,105 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_dexdrive",
+  "url": "https://gamefaqs.gamespot.com/ps/197341-final-fantasy-vii/saves/3278",
+  "source_page": "https://gamefaqs.gamespot.com/ps/197341-final-fantasy-vii/saves",
+  "source": "GameFAQs (section 'PlayStation DexDrive Save (Europe)')",
+  "author": "ChandooG",
+  "licence": null,
+  "posted": "2004-01-10",
+  "fetched": "2026-11-05",
+  "what_it_is": "Saves from various locations in disc1 FF7 PAL version.. good stats",
+  "gamefaqs": {
+    "id": 3278,
+    "product": "Final Fantasy VII",
+    "section": "PlayStation DexDrive Save (Europe)",
+    "region": "Europe",
+    "served_as": "final-fantasy-vii.3278.gme",
+    "listed_size": "131KB"
+  },
+  "format": "DexDrive .gme: '123-456-STD' 3904-byte header (per-block comments) + 131072-byte raw card; the card holds 7 save(s), 7 for this game (BESCES-00867FF7-S05, BESCES-00867FF7-S01, BESCES-00867FF7-S02, BESCES-00867FF7-S03, ...)",
+  "release": "Final Fantasy VII (Europe) (Disc 1)",
+  "game_saves": [
+    {
+      "name": "BESCES-00867FF7-S05",
+      "blocks": 1,
+      "title": "FF7/SAVE05/14:20"
+    },
+    {
+      "name": "BESCES-00867FF7-S01",
+      "blocks": 1,
+      "title": "FF7/SAVE01/03:05"
+    },
+    {
+      "name": "BESCES-00867FF7-S02",
+      "blocks": 1,
+      "title": "FF7/SAVE02/05:09"
+    },
+    {
+      "name": "BESCES-00867FF7-S03",
+      "blocks": 1,
+      "title": "FF7/SAVE03/08:07"
+    },
+    {
+      "name": "BESCES-00867FF7-S06",
+      "blocks": 1,
+      "title": "FF7/SAVE06/16:20"
+    },
+    {
+      "name": "BESCES-00867FF7-S07",
+      "blocks": 1,
+      "title": "FF7/SAVE07/18:15"
+    },
+    {
+      "name": "BESCES-00867FF7-S08",
+      "blocks": 1,
+      "title": "FF7/SAVE08/20:15"
+    }
+  ],
+  "files": {
+    "final-fantasy-vii.3278.gme": {
+      "size": 134976,
+      "sha1": "8cf6604f07736d44c3fc082b5a6b6211f0e0696c"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": null,
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr final-fantasy-vii.3278.gme: unwraps the card (DexDrive .gme: 3904-byte header + card)",
+    "converted": {
+      "size": 131072,
+      "sha1": "2ab9bafd8e7c3d10ead493e5496344c4fecb7e93"
+    },
+    "script": null,
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "not-run",
+        "detail": "no image of Final Fantasy VII (Europe) (Disc 1) in the library"
+      },
+      "beetle-psx-hw": {
+        "result": "not-run",
+        "detail": "no image of Final Fantasy VII (Europe) (Disc 1) in the library"
+      },
+      "pcsx-rearmed": {
+        "result": "not-run",
+        "detail": "no image of Final Fantasy VII (Europe) (Disc 1) in the library"
+      },
+      "swanstation": {
+        "result": "not-run",
+        "detail": "no image of Final Fantasy VII (Europe) (Disc 1) in the library"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": []
+  },
+  "note": null
+}

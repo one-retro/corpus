@@ -1,0 +1,77 @@
+{
+  "method": "downloaded",
+  "system": "n64",
+  "core": "_wii-vc",
+  "url": "https://gamefaqs.gamespot.com/n64/197770-the-legend-of-zelda-majoras-mask/saves/26519",
+  "source_page": "https://gamefaqs.gamespot.com/n64/197770-the-legend-of-zelda-majoras-mask/saves",
+  "source": "GameFAQs (section 'Wii VC Game Save File (Europe)')",
+  "author": "battousai_hades",
+  "licence": null,
+  "posted": "2019-08-27",
+  "fetched": "2026-11-05",
+  "what_it_is": "Perfect Save: 100% Complete. Name: Link.",
+  "gamefaqs": {
+    "id": 26519,
+    "product": "The Legend of Zelda: Majora's Mask",
+    "section": "Wii VC Game Save File (Europe)",
+    "region": "Europe",
+    "served_as": "the-legend-of-zelda-majoras-mask.26519.bin",
+    "listed_size": "317KB"
+  },
+  "format": "Wii data.bin (an SD-card export; header AES-128-CBC with the SD key, header MD5 valid): title 00010001-NARP \"Zelda: Majora's Mask\", 1 file: EEP_NZSP 262144 bytes - EEP_NZSP is the N64 cartridge save in console byte order",
+  "files": {
+    "the-legend-of-zelda-majoras-mask.26519.bin": {
+      "size": 324864,
+      "sha1": "ac239f599a52c7c558268eb5a2a6a0450fdb3762"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "converted_with": "tools/gamefaqs/wiivc-convert.py convert the-legend-of-zelda-majoras-mask.26519.bin OUT: decrypts the data.bin (AES-128-CBC, SD key, per-file IVs) and takes EEP_NZSP (262144 bytes, FlashRAM): first 0x20000 bytes, 32-bit words reversed, at 0x28800",
+    "converted": {
+      "size": 296960,
+      "sha1": "c417d5ea6f2bd094b32a58f06ab9e2958073a898"
+    },
+    "converted_standalone": {
+      "files": {
+        "save.fla": {
+          "size": 131072,
+          "sha1": "7b764cd0dc83fe8328dfbfa2b1a91ef9d67ed42a"
+        }
+      },
+      "how": "the same bytes as the .srm regions, as standalone Mupen64Plus keeps them: <GoodName (32 chars)>-<MD5 8>.eep/.sra/.fla/.mpk in its save folder"
+    },
+    "rom": {
+      "name": "Legend of Zelda, The - Majora's Mask (Europe) (En,Fr,De,Es) (Rev 1).z64",
+      "sha1": "bb4e4757d10727c7584c59c1f2e5f44196e9c293",
+      "size": 33554432
+    },
+    "script": "scripts/n64/Legend of Zelda, The - Majora's Mask.load.txt",
+    "baseline": "with no save the PAL game first asks for a language, then shows two empty files",
+    "cores": {
+      "mupen64plus-next": {
+        "result": "loads",
+        "detail": "\"¿Abro este fichero?\" Fichero 1 \"Link\": 20 hearts, MÁSCARAS 24, the four transformation masks (the save's language is Spanish)"
+      },
+      "parallel-n64": {
+        "result": "loads",
+        "detail": "Fichero 1 \"Link\": 20 hearts, 24 masks, the four transformation masks"
+      },
+      "mupen64plus": {
+        "result": "loads",
+        "detail": "\"Por favor, elige un fichero\": Fichero 1 \"Link\" (with no save the game asks for a language and a name)"
+      }
+    },
+    "core_versions": {
+      "mupen64plus": "Mupen64Plus 2.6.0 (Homebrew), glide64mk2 video, rsp-hle",
+      "mupen64plus-next": "Mupen64Plus-Next 3.0-Vulkan 15bada8",
+      "parallel-n64": "ParaLLEl N64 1.0 e8cbdbb"
+    },
+    "proof_order": [
+      "mupen64plus-next",
+      "parallel-n64",
+      "mupen64plus"
+    ]
+  },
+  "note": "The VC keeps Majora's Mask's FlashRAM as a 256 KiB file: the first 128 KiB is the flash (unused pages filled with AA, the VC's fill, not FF), the second half is all AA. The converter keeps the first 128 KiB (save-file-converter keeps all 256 KiB as the .fla). Verified with the European Rev 1 (the library's only European release); the VC's game code is NZSP."
+}

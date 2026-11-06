@@ -1,0 +1,173 @@
+{
+  "method": "downloaded",
+  "system": "ps2",
+  "core": "_ps3",
+  "url": "https://gamefaqs.gamespot.com/ps2/561107-ratchet-and-clank/saves/16780",
+  "source_page": "https://gamefaqs.gamespot.com/ps2/561107-ratchet-and-clank/saves",
+  "source": "GameFAQs (section 'PlayStation 2 PS3 Virtual Memory Card Save (ZIP) (North America)')",
+  "author": "The_Volcano",
+  "licence": null,
+  "posted": "2008-03-10",
+  "fetched": "2026-11-05",
+  "what_it_is": "completed all weapons unlocked, some gold weapons",
+  "gamefaqs": {
+    "id": 16780,
+    "product": "Ratchet & Clank",
+    "section": "PlayStation 2 PS3 Virtual Memory Card Save (ZIP) (North America)",
+    "region": "North America",
+    "served_as": "ratchet-and-clank.16780.zip",
+    "listed_size": "31KB"
+  },
+  "format": "PS3 Virtual Memory Card export (.PSV): '\\0VSP' header, PS2 save type 2, 349640 bytes, folder BASCUS-97199RATCHET, 8 files, 349000 bytes of file data",
+  "files": {
+    "ratchet and clank/BASCUS-9719952415443484554.PSV": {
+      "size": 349640,
+      "sha1": "2db2899630fdb89c568b542f4de7a30eba62d9ab"
+    }
+  },
+  "save": {
+    "folder": "BASCUS-97199RATCHET",
+    "title": [
+      "Ratchet & Clank",
+      ""
+    ],
+    "times": "as the file stores them (PS2 card times, JST)",
+    "files": [
+      {
+        "name": "icon.sys",
+        "size": 964,
+        "sha1": "8cca25cff703c3c9cbbbd4faca65b879480c0f26",
+        "created": "2007-12-30 18:12:39",
+        "modified": "2007-12-30 18:12:39"
+      },
+      {
+        "name": "static.ico",
+        "size": 33112,
+        "sha1": "7444235f8f59b7be18a84ce258746381e06164ca",
+        "created": "2007-12-30 18:12:39",
+        "modified": "2007-12-30 18:12:39"
+      },
+      {
+        "name": "save0.bin",
+        "size": 59912,
+        "sha1": "b647d3534bac19d49b8d7a6121633bf36b71596f",
+        "created": "2007-12-30 18:12:39",
+        "modified": "2008-01-11 12:00:04"
+      },
+      {
+        "name": "save1.bin",
+        "size": 59912,
+        "sha1": "6da43cc18447e022c92f9d12775a2bcfb545caf4",
+        "created": "2007-12-30 18:12:39",
+        "modified": "2008-01-09 19:43:56"
+      },
+      {
+        "name": "save2.bin",
+        "size": 59912,
+        "sha1": "25cbb89ea571cf55f0a6db110b1331f480ed2a75",
+        "created": "2007-12-30 18:12:39",
+        "modified": "2008-01-09 20:37:09"
+      },
+      {
+        "name": "save3.bin",
+        "size": 59912,
+        "sha1": "2609e729bbe1bc9f809db8ee4b236a2a6fbed685",
+        "created": "2007-12-30 18:12:39",
+        "modified": "2007-12-30 18:12:39"
+      },
+      {
+        "name": "save4.bin",
+        "size": 59912,
+        "sha1": "2609e729bbe1bc9f809db8ee4b236a2a6fbed685",
+        "created": "2007-12-30 18:12:39",
+        "modified": "2007-12-30 18:12:39"
+      },
+      {
+        "name": "BASCUS-97199RATCHET",
+        "size": 15364,
+        "sha1": "b6bddf4ec24307c9a7fa17fb44b2430645d5a9e8",
+        "created": "2007-12-30 18:12:39",
+        "modified": "2007-12-30 18:12:39"
+      }
+    ]
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Ratchet & Clank (USA).iso",
+      "sha1": "aee9275384f739c9b24cd5de6f7e200292db7b01",
+      "size": 4214095872
+    },
+    "converted_with": "tools/gamefaqs/ps2-card.py 'ratchet and clank/BASCUS-9719952415443484554.PSV' -o OUT: reads the save with mymcplus 3.0.5 and writes OUT/Mcd001.ps2 (an 8 MiB card with ECC, formatted and filled by mymcplus) for lrps2/pcee2/pcsx2, and OUT/mc0/<folder>/ for Play!",
+    "converted": {
+      "Mcd001.ps2": {
+        "size": 8650752,
+        "sha1": "fa5a32dbcb35e89e49997278c4130cdd4102fcae"
+      },
+      "mc0/BASCUS-97199RATCHET/": {
+        "icon.sys": {
+          "size": 964,
+          "sha1": "8cca25cff703c3c9cbbbd4faca65b879480c0f26"
+        },
+        "static.ico": {
+          "size": 33112,
+          "sha1": "7444235f8f59b7be18a84ce258746381e06164ca"
+        },
+        "save0.bin": {
+          "size": 59912,
+          "sha1": "b647d3534bac19d49b8d7a6121633bf36b71596f"
+        },
+        "save1.bin": {
+          "size": 59912,
+          "sha1": "6da43cc18447e022c92f9d12775a2bcfb545caf4"
+        },
+        "save2.bin": {
+          "size": 59912,
+          "sha1": "25cbb89ea571cf55f0a6db110b1331f480ed2a75"
+        },
+        "save3.bin": {
+          "size": 59912,
+          "sha1": "2609e729bbe1bc9f809db8ee4b236a2a6fbed685"
+        },
+        "save4.bin": {
+          "size": 59912,
+          "sha1": "2609e729bbe1bc9f809db8ee4b236a2a6fbed685"
+        },
+        "BASCUS-97199RATCHET": {
+          "size": 15364,
+          "sha1": "b6bddf4ec24307c9a7fa17fb44b2430645d5a9e8"
+        }
+      },
+      "read_back": "work/ps2/tools/mcfs.py lists every file with the size and SHA-1 put on the card; one-saves (1saves convert + inspect) reads the card and finds BASCUS-97199RATCHET",
+      "timestamps": "what the save does not date is 2000-01-01 00:00:00 (JST, as a card stores it); the card's own root entries too"
+    },
+    "script": "scripts/ps2/Ratchet & Clank (USA).load.txt",
+    "cores": {
+      "pcee2": {
+        "detail": "Load Game: 19:37 65,535 bolts 01/10/08 and 00:00 (challenge 1) 262,143 01/09/08; Kyzil Plateau, Veldin",
+        "result": "loads"
+      },
+      "lrps2": {
+        "detail": "Ratchet & Clank (USA) hangs in LRPS2 at the end of its intro before any menu, with no card and with GameFAQs saves 17135 and 5489; the other saves were not run",
+        "result": "not-run"
+      },
+      "play": {
+        "detail": "Play! hangs at the end of the game's intro (no more frames, 100% CPU), with this save as with no card; stopped after 200 s with no frame of the load menu. The same hang is in ps2/NOTES.md for the played entries",
+        "result": "core-error"
+      },
+      "pcsx2": {
+        "detail": "Load Game: 19:37 65,535 bolts 01/10/08 and 00:00 (challenge 1) 262,143 01/09/08; Kyzil Plateau, Veldin",
+        "result": "loads"
+      },
+      "armsx2": {
+        "result": "not-run",
+        "detail": "ARMSX2 renders only through Vulkan here and falls back to a null GS (no picture), so nothing shows what the game read (ps2/NOTES.md)"
+      }
+    },
+    "proof_order": [
+      "pcee2",
+      "pcsx2"
+    ]
+  },
+  "note": null
+}

@@ -1,0 +1,158 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_epsxe",
+  "url": "https://gamefaqs.gamespot.com/ps/197765-the-legend-of-dragoon/saves/28165",
+  "source_page": "https://gamefaqs.gamespot.com/ps/197765-the-legend-of-dragoon/saves",
+  "source": "GameFAQs (section 'PlayStation PS3 Virtual Memory Card Save (ZIP) (North America)')",
+  "author": "Lordabrino55",
+  "licence": null,
+  "posted": "2022-08-03",
+  "fetched": "2026-11-05",
+  "what_it_is": "All Levels, Items, Weapons, Dragons and Diviane Dragons have been obtained",
+  "gamefaqs": {
+    "id": 28165,
+    "product": "The Legend of Dragoon",
+    "section": "PlayStation PS3 Virtual Memory Card Save (ZIP) (North America)",
+    "region": "North America",
+    "served_as": "the-legend-of-dragoon.28165.zip",
+    "listed_size": "10KB",
+    "served_zip": {
+      "size": 10364,
+      "sha1": "012bcc3b3d8c6ee0fbd5a49b854e211c7e44341c"
+    }
+  },
+  "format": "zip of ePSXe's memory card epsxe000.mcr: raw 131072-byte card; the card holds 15 save(s), 15 for this game (BASCUS-94491drgn0000, BASCUS-94491drgn0001, BASCUS-94491drgn0002, BASCUS-94491drgn0003, ...)",
+  "release": "Legend of Dragoon, The (USA) (Disc 1)",
+  "game_saves": [
+    {
+      "name": "BASCUS-94491drgn0000",
+      "blocks": 1,
+      "title": "LOD FILE01 LV60 TIME 008:43:27"
+    },
+    {
+      "name": "BASCUS-94491drgn0001",
+      "blocks": 1,
+      "title": "LOD FILE02 LV60 TIME 001:37:42"
+    },
+    {
+      "name": "BASCUS-94491drgn0002",
+      "blocks": 1,
+      "title": "LOD FILE03 LV60 TIME 010:23:38"
+    },
+    {
+      "name": "BASCUS-94491drgn0003",
+      "blocks": 1,
+      "title": "LOD FILE04 LV60 TIME 005:25:43"
+    },
+    {
+      "name": "BASCUS-94491drgn0004",
+      "blocks": 1,
+      "title": "LOD FILE05 LV60 TIME 013:56:29"
+    },
+    {
+      "name": "BASCUS-94491drgn0005",
+      "blocks": 1,
+      "title": "LOD FILE06 LV60 TIME 015:59:36"
+    },
+    {
+      "name": "BASCUS-94491drgn0006",
+      "blocks": 1,
+      "title": "LOD FILE07 LV60 TIME 017:23:39"
+    },
+    {
+      "name": "BASCUS-94491drgn0007",
+      "blocks": 1,
+      "title": "LOD FILE08 LV60 TIME 017:38:03"
+    },
+    {
+      "name": "BASCUS-94491drgn0008",
+      "blocks": 1,
+      "title": "LOD FILE09 LV60 TIME 017:52:02"
+    },
+    {
+      "name": "BASCUS-94491drgn0009",
+      "blocks": 1,
+      "title": "LOD FILE10 LV60 TIME 019:39:03"
+    },
+    {
+      "name": "BASCUS-94491drgn0010",
+      "blocks": 1,
+      "title": "LOD FILE11 LV60 TIME 022:36:49"
+    },
+    {
+      "name": "BASCUS-94491drgn0011",
+      "blocks": 1,
+      "title": "LOD FILE12 LV60 TIME 023:00:12"
+    },
+    {
+      "name": "BASCUS-94491drgn0012",
+      "blocks": 1,
+      "title": "LOD FILE13 LV60 TIME 042:15:48"
+    },
+    {
+      "name": "BASCUS-94491drgn0013",
+      "blocks": 1,
+      "title": "LOD FILE14 LV60 TIME 041:45:21"
+    },
+    {
+      "name": "BASCUS-94491drgn0014",
+      "blocks": 1,
+      "title": "LOD FILE15 LV60 TIME 034:49:37"
+    }
+  ],
+  "files": {
+    "Save game/epsxe000.mcr": {
+      "size": 131072,
+      "sha1": "fa69820845aaf40d4842b8464127693bedee93db"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Legend of Dragoon, The (USA) (Disc 1).cue",
+      "sha1": "ae7c4642ff995bd5762937cd1fc2ac9c4474db18",
+      "size": 103
+    },
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr Save game/epsxe000.mcr: unwraps the card (raw card)",
+    "converted": {
+      "size": 131072,
+      "sha1": "fa69820845aaf40d4842b8464127693bedee93db"
+    },
+    "script": "scripts/psx/Legend of Dragoon.load.txt",
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "loads",
+        "detail": "Continue lists files 13-15: LV 60 042:15:48 Moon, LV 60 041:45:21 Moon, LV 60 034:49:37 Ulara"
+      },
+      "beetle-psx-hw": {
+        "result": "loads",
+        "detail": "Continue lists files 13-15: LV 60 042:15:48 Moon, LV 60 041:45:21 Moon, LV 60 034:49:37 Ulara (the same screen as on beetle-psx)"
+      },
+      "pcsx-rearmed": {
+        "result": "loads",
+        "detail": "Continue lists files 13-15: LV 60 042:15:48 Moon, LV 60 041:45:21 Moon, LV 60 034:49:37 Ulara (the same screen as on beetle-psx)"
+      },
+      "swanstation": {
+        "result": "loads",
+        "detail": "Continue lists files 13-15: LV 60 042:15:48 Moon, LV 60 041:45:21 Moon, LV 60 034:49:37 Ulara (the same screen as on beetle-psx)"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": [
+      "beetle-psx",
+      "beetle-psx-hw",
+      "pcsx-rearmed",
+      "swanstation"
+    ]
+  },
+  "note": "Filed under GameFAQs' 'PlayStation PS3 Virtual Memory Card Save (ZIP) (North America)' section, but it is not a PS3 export (.psv): zip of ePSXe's memory card epsxe000.mcr: raw 131072-byte card."
+}

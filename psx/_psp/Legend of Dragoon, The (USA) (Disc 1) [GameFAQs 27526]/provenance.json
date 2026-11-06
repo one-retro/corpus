@@ -1,0 +1,119 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_psp",
+  "url": "https://gamefaqs.gamespot.com/ps/197765-the-legend-of-dragoon/saves/27526",
+  "source_page": "https://gamefaqs.gamespot.com/ps/197765-the-legend-of-dragoon/saves",
+  "source": "GameFAQs (section 'PlayStation PS3 Virtual Memory Card Save (ZIP) (North America)')",
+  "author": "iResist",
+  "licence": null,
+  "posted": "2021-04-19",
+  "fetched": "2026-11-05",
+  "what_it_is": "PSP save: NG+ Begin the game with Red Dragoon and Max everything. Includes Saves at start of every disk.",
+  "gamefaqs": {
+    "id": 27526,
+    "product": "The Legend of Dragoon",
+    "section": "PlayStation PS3 Virtual Memory Card Save (ZIP) (North America)",
+    "region": "North America",
+    "served_as": "the-legend-of-dragoon.27526.zip",
+    "listed_size": "22KB",
+    "served_zip": {
+      "size": 23113,
+      "sha1": "999965773bac400318f596f10184c1bc266b5b2d"
+    }
+  },
+  "format": "zip of a PSP save folder for a PSone Classic (PARAM.SFO, ICON0.PNG, CONFIG.BIN, SCEVMC0.VMP and SCEVMC1.VMP): each .VMP is '\\0PMV' 128-byte header + 131072-byte card, slot 1 and slot 2; the card holds 4 save(s), 4 for this game (BASCUS-94491drgn0000, BASCUS-94491drgn0001, BASCUS-94491drgn0002, BASCUS-94491drgn0003)",
+  "release": "Legend of Dragoon, The (USA) (Disc 1)",
+  "game_saves": [
+    {
+      "name": "BASCUS-94491drgn0000",
+      "blocks": 1,
+      "title": "LOD FILE01 LV28 TIME 045:59:35"
+    },
+    {
+      "name": "BASCUS-94491drgn0001",
+      "blocks": 1,
+      "title": "LOD FILE02 LV30 TIME 047:55:03"
+    },
+    {
+      "name": "BASCUS-94491drgn0002",
+      "blocks": 1,
+      "title": "LOD FILE03 LV41 TIME 058:32:46"
+    },
+    {
+      "name": "BASCUS-94491drgn0003",
+      "blocks": 1,
+      "title": "LOD FILE04 LV41 TIME 058:43:25"
+    }
+  ],
+  "files": {
+    "SCUS94491/CONFIG.BIN": {
+      "size": 1040,
+      "sha1": "51cf655a72abc1f8b1167a15013cb5f0a5513365"
+    },
+    "SCUS94491/ICON0.PNG": {
+      "size": 17239,
+      "sha1": "a2cc995541e239909b60dc49283e3d6ebb8dc00c"
+    },
+    "SCUS94491/PARAM.SFO": {
+      "size": 4912,
+      "sha1": "c494d155812147199abc84ece045fea0562c6859"
+    },
+    "SCUS94491/SCEVMC0.VMP": {
+      "size": 131200,
+      "sha1": "52512056edf88764f9992a5d92cc2194e9f91359"
+    },
+    "SCUS94491/SCEVMC1.VMP": {
+      "size": 131200,
+      "sha1": "99a3f7f6853db0288dfa544730514b6a8a87f55e"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Legend of Dragoon, The (USA) (Disc 1).cue",
+      "sha1": "ae7c4642ff995bd5762937cd1fc2ac9c4474db18",
+      "size": 103
+    },
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr SCUS94491/SCEVMC0.VMP: unwraps the card (VMP (PSP/PS3 virtual card): 128-byte header + card)",
+    "converted": {
+      "size": 131072,
+      "sha1": "337ab219196418eb4afa146d888d6728f27ce2fc"
+    },
+    "script": "scripts/psx/Legend of Dragoon.load.txt",
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "loads",
+        "detail": "Continue lists file 4: LV 41, 058:43:25, Moon"
+      },
+      "beetle-psx-hw": {
+        "result": "loads",
+        "detail": "Continue lists file 4: LV 41, 058:43:25, Moon (the same screen as on beetle-psx)"
+      },
+      "pcsx-rearmed": {
+        "result": "loads",
+        "detail": "Continue lists file 4: LV 41, 058:43:25, Moon (the same screen as on beetle-psx)"
+      },
+      "swanstation": {
+        "result": "loads",
+        "detail": "Continue lists file 4: LV 41, 058:43:25, Moon (the same screen as on beetle-psx)"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": [
+      "beetle-psx",
+      "beetle-psx-hw",
+      "pcsx-rearmed",
+      "swanstation"
+    ]
+  },
+  "note": "Filed under GameFAQs' 'PlayStation PS3 Virtual Memory Card Save (ZIP) (North America)' section, but it is not a PS3 export (.psv): zip of a PSP save folder for a PSone Classic (PARAM.SFO, ICON0.PNG, CONFIG.BIN, SCEVMC0.VMP and SCEVMC1.VMP): each .VMP is '\\0PMV' 128-byte header + 131072-byte card, slot 1 and slot 2. Only SCEVMC0.VMP (memory card slot 1) is converted and loaded; SCEVMC1.VMP is slot 2 and holds no saves. one-saves (1saves convert) does not read this file: this archive holds 2 cards: SCUS94491/SCEVMC0.VMP, SCUS94491/SCEVMC1.VMP"
+}

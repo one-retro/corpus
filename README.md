@@ -15,8 +15,9 @@ corpus/
     <core>@<app>/           the same core inside a frontend that is not RetroArch-style
                             (mgba@mgba for the mGBA app, gambatte@openemu, dolphin-emu@dolphin):
                             apps write different names and layouts than RetroArch does
-    _<producer>/            a producer that is not a registry core (real hardware via a
-                            save manager such as _jksv); used sparingly
+    _<producer>/            a producer that is not a registry core: real hardware via a
+                            save manager (_jksv), or a save device (_dexdrive, _max-drive,
+                            _gameshark, _action-replay-ds) for the GameFAQs saves
   scripts/<system>/<game>.txt   input scripts, shared by every core of the system
   tools/                    the harness, the runner, the fetchers
 ```
@@ -45,6 +46,12 @@ turned "sort saves by core" off would have them.
 libretro cores with no macOS build), a save that core or emulator wrote, found online.
 `provenance.json` then names the URL, the page it came from, who made it if known, any licence,
 and the date fetched.
+
+The largest group of downloads is every GameFAQs save for a game in the corpus (1,082 of them,
+`<system>/_<device>/<release> [GameFAQs <id>]/`). They come from save devices (DexDrive, Max
+Drive, GameShark, Action Replay) more than emulators, so each was also converted to what the
+cores load and booted in every runnable core; `"verified"` in its provenance records what each
+core's game showed. `GAMEFAQS.md` tabulates the results, `tools/GAMEFAQS.md` says how.
 
 **Device backup.** The owner's own devices, from backups that are not 1Retro syncs: an
 Analogue Pocket's SD card (`Saves/`), a 3DS's JKSV backups (`JKSV/`), and
@@ -84,6 +91,7 @@ All Python runs with `-I`.
 | `tools/retro-run/retro-run` | The harness. `--help` lists the script commands. `retro-run-x86_64` is the same for Intel-only cores (Rosetta). |
 | `tools/make-save.py SYSTEM CORE ROM SCRIPT` | Runs a script in a core in a fresh directory and files what it saved, with provenance and proof. `--dry` to develop a script without filing. Also files what the core wrote into its working directory (`cwd/`), its system directory with `--keep-sysdir` (`system/`), or its own HOME with `--home` (`home/`); `--subsystem ID --slot FILE` loads a subsystem (Sufami Turbo); `--rom-source URL` records a homebrew ROM's origin. |
 | `tools/ps2-save.py CORE ROM SCRIPT` | make-save for PS2: a real system directory and HOME per run, filing the memory cards the cores keep there (`ps2/NOTES.md`). |
+| `tools/gamefaqs/*.py` | Converters from save-device and emulator formats (DexDrive, Max Drive, CodeBreaker, SharkPort, GameShark, Action Replay, Wii VC, ...) to what each core loads; `summary.py` writes `GAMEFAQS.md`. |
 | `tools/retro-run/crop.py` | `crop` magnifies part of a frame, `tile` puts many frames on one sheet. |
 
 ### Script commands, briefly

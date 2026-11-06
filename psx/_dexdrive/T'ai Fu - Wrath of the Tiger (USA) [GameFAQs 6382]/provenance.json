@@ -1,0 +1,86 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_dexdrive",
+  "url": "https://gamefaqs.gamespot.com/ps/198880-tai-fu-wrath-of-the-tiger/saves/6382",
+  "source_page": "https://gamefaqs.gamespot.com/ps/198880-tai-fu-wrath-of-the-tiger/saves",
+  "source": "GameFAQs (section 'PlayStation DexDrive Save (North America)')",
+  "author": "AngeliusT",
+  "licence": null,
+  "posted": "2005-02-20",
+  "fetched": "2026-11-05",
+  "what_it_is": "T'ai Fu end of game with all arts and levels 20+ lives",
+  "gamefaqs": {
+    "id": 6382,
+    "product": "T'ai Fu: Wrath of the Tiger",
+    "section": "PlayStation DexDrive Save (North America)",
+    "region": "North America",
+    "served_as": "tai-fu-wrath-of-the-tiger.6382.gme",
+    "listed_size": "131KB"
+  },
+  "format": "DexDrive .gme: '123-456-STD' 3904-byte header (per-block comments) + 131072-byte raw card; the card holds 1 save(s), 1 for this game (BASLUS-00787TAIFUMHT)",
+  "release": "T'ai Fu - Wrath of the Tiger (USA)",
+  "game_saves": [
+    {
+      "name": "BASLUS-00787TAIFUMHT",
+      "blocks": 1,
+      "title": "T’ai Fu: Wrath of the Tiger"
+    }
+  ],
+  "files": {
+    "tai-fu-wrath-of-the-tiger.6382.gme": {
+      "size": 134976,
+      "sha1": "a49fd2e8fd066e8f5594901b140b30964112e038"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "T'ai Fu - Wrath of the Tiger (USA).cue",
+      "sha1": "2e962ec3d496fb40660d6a2a43490c90a1eb4b3c",
+      "size": 2046
+    },
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr tai-fu-wrath-of-the-tiger.6382.gme: unwraps the card (DexDrive .gme: 3904-byte header + card)",
+    "converted": {
+      "size": 131072,
+      "sha1": "45a3952d3d25e86713f2e748b441c1a4a642e31b"
+    },
+    "script": "scripts/psx/T'ai Fu - Wrath of the Tiger.load.txt",
+    "script_variants": {
+      "pcsx-rearmed": "scripts/psx/T'ai Fu - Wrath of the Tiger.pcsx-rearmed.load.txt"
+    },
+    "cores": {
+      "beetle-psx": {
+        "result": "loads",
+        "detail": "Load lists SAVE 1: 100%, level Forbidden Palace, lives 27, Jade's styles (no card: \"No T'ai Fu save on card\")"
+      },
+      "beetle-psx-hw": {
+        "result": "loads",
+        "detail": "Load lists SAVE 1: 100%, level Forbidden Palace, lives 27, Jade's styles (no card: \"No T'ai Fu save on card\") (the same screen as on beetle-psx)"
+      },
+      "pcsx-rearmed": {
+        "result": "loads",
+        "detail": "Load lists SAVE 1: 100%, level Forbidden Palace, lives 27, Jade's styles (no card: \"No T'ai Fu save on card\") (the same screen as on beetle-psx)"
+      },
+      "swanstation": {
+        "result": "loads",
+        "detail": "Load lists SAVE 1: 100%, level Forbidden Palace, lives 27, Jade's styles (no card: \"No T'ai Fu save on card\") (the same screen as on beetle-psx)"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": [
+      "beetle-psx",
+      "beetle-psx-hw",
+      "pcsx-rearmed",
+      "swanstation"
+    ]
+  },
+  "note": null
+}

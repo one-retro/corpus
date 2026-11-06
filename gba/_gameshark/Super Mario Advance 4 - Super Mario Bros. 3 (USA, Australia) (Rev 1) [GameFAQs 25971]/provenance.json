@@ -1,0 +1,119 @@
+{
+  "method": "downloaded",
+  "system": "gba",
+  "core": "_gameshark",
+  "url": "https://gamefaqs.gamespot.com/gba/589393-super-mario-advance-4-super-mario-bros-3/saves/25971",
+  "source_page": "https://gamefaqs.gamespot.com/gba/589393-super-mario-advance-4-super-mario-bros-3/saves",
+  "source": "GameFAQs (section 'GameBoy Advance GameShark Save (North America)')",
+  "author": "Eevee-Trainer",
+  "licence": null,
+  "posted": "2018-08-20",
+  "fetched": "2026-11-05",
+  "what_it_is": "Files 1-3 are completely blank - however, 35 e-Reader levels are unlocked by default (including levels not released in this region)!",
+  "gamefaqs": {
+    "id": 25971,
+    "product": "Super Mario Advance 4: Super Mario Bros. 3",
+    "section": "GameBoy Advance GameShark Save (North America)",
+    "region": "North America",
+    "served_as": "super-mario-advance-4-super-mario-bros-3.25971.sps",
+    "listed_size": "128KB"
+  },
+  "format": "SharkPort save (\"SharkPortSave\", kind 0x000F0000): title \"SUPER MARIOD\", date \"6/4/2018 1:58:12 PM\", notes \"\"; cart header \"SUPER MARIOD\" / 'AX4E' (complement 0x72); payload 131072 bytes; checksum: signed",
+  "files": {
+    "super-mario-advance-4-super-mario-bros-3.25971.sps": {
+      "size": 131172,
+      "sha1": "2fcdf4262d63aaf5210e85889fb1eee36351726d"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Super Mario Advance 4 - Super Mario Bros. 3 (USA, Australia) (Rev 1).gba",
+      "sha1": "532f3307021637474b6dd37da059ca360f612337",
+      "size": 4194304
+    },
+    "converted_with": "tools/gamefaqs/gba-sharkport.py super-mario-advance-4-super-mario-bros-3.25971.sps --rom ROM --core CORE --outdir DIR: reads the SharkPort container as mGBA does and imports the payload as mGBA's _importSavedata does (cut to the chip, EEPROM 8-byte blocks reversed, the rest of the chip erased), then lays the chip out as the core keeps it",
+    "converted": {
+      "size": 131072,
+      "sha1": "abd9b981bb935ba7689423bd658030a85dd24125"
+    },
+    "script": "scripts/gba/Super Mario Advance 4 - Super Mario Bros. 3.load.txt",
+    "cores": {
+      "mgba": {
+        "result": "loads",
+        "detail": "the game reads the save without formatting it (with no save it shows \"Formatting saved data...\"), and Select a File shows files 1-3 New, as the description says (blank files); the e-Reader levels it unlocks are not on this screen",
+        "core_version": "mGBA 0.11-212-7a12d6d",
+        "file": {
+          "name": "Super Mario Advance 4 - Super Mario Bros. 3 (USA, Australia) (Rev 1).srm",
+          "size": 131072,
+          "sha1": "abd9b981bb935ba7689423bd658030a85dd24125"
+        },
+        "frame": "files"
+      },
+      "vba-m": {
+        "result": "loads",
+        "detail": "the game reads the save without formatting it (with no save it shows \"Formatting saved data...\"), and Select a File shows files 1-3 New, as the description says (blank files); the e-Reader levels it unlocks are not on this screen",
+        "core_version": "VBA-M 115defb",
+        "file": {
+          "name": "Super Mario Advance 4 - Super Mario Bros. 3 (USA, Australia) (Rev 1).srm",
+          "size": 131072,
+          "sha1": "abd9b981bb935ba7689423bd658030a85dd24125"
+        },
+        "frame": "files"
+      },
+      "gpsp": {
+        "result": "loads",
+        "detail": "the game reads the save without formatting it (with no save it shows \"Formatting saved data...\"), and Select a File shows files 1-3 New, as the description says (blank files); the e-Reader levels it unlocks are not on this screen",
+        "core_version": "gpSP v1.1.0-5819380",
+        "file": {
+          "name": "Super Mario Advance 4 - Super Mario Bros. 3 (USA, Australia) (Rev 1).srm",
+          "size": 131072,
+          "sha1": "abd9b981bb935ba7689423bd658030a85dd24125"
+        },
+        "frame": "files"
+      },
+      "vba-next": {
+        "result": "loads",
+        "detail": "the game reads the save without formatting it (with no save it shows \"Formatting saved data...\"), and Select a File shows files 1-3 New, as the description says (blank files); the e-Reader levels it unlocks are not on this screen",
+        "core_version": "VBA Next v1.0.2",
+        "file": {
+          "name": "Super Mario Advance 4 - Super Mario Bros. 3 (USA, Australia) (Rev 1).srm",
+          "size": 139264,
+          "sha1": "92f475d93974817f4f8f19d183fb7646985eb413"
+        },
+        "frame": "files"
+      },
+      "beetle-gba": {
+        "result": "loads",
+        "detail": "the game reads the save without formatting it (with no save it shows \"Formatting saved data...\"), and Select a File shows files 1-3 New, as the description says (blank files); the e-Reader levels it unlocks are not on this screen",
+        "core_version": "Beetle GBA v0.9.36 b158166",
+        "file": {
+          "name": "Super Mario Advance 4 - Super Mario Bros. 3 (USA, Australia) (Rev 1).605286b3aedeffba70bf46b834b120b1.sav",
+          "size": 131072,
+          "sha1": "abd9b981bb935ba7689423bd658030a85dd24125"
+        },
+        "frame": "files"
+      },
+      "skyemu": {
+        "result": "loads",
+        "detail": "the game reads the save without formatting it (with no save it shows \"Formatting saved data...\"), and Select a File shows files 1-3 New, as the description says (blank files); the e-Reader levels it unlocks are not on this screen",
+        "core_version": "SkyEmu adacd0788964ed89f5c43dcbc1f3cc26deec996c",
+        "file": {
+          "name": "Super Mario Advance 4 - Super Mario Bros. 3 (USA, Australia) (Rev 1).srm",
+          "size": 131072,
+          "sha1": "abd9b981bb935ba7689423bd658030a85dd24125"
+        },
+        "frame": "files"
+      }
+    },
+    "proof_order": [
+      "mgba",
+      "vba-m",
+      "gpsp",
+      "vba-next",
+      "beetle-gba",
+      "skyemu"
+    ]
+  },
+  "note": null
+}

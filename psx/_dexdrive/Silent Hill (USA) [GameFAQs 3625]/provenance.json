@@ -1,0 +1,87 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_dexdrive",
+  "url": "https://gamefaqs.gamespot.com/ps/198641-silent-hill/saves/3625",
+  "source_page": "https://gamefaqs.gamespot.com/ps/198641-silent-hill/saves",
+  "source": "GameFAQs (section 'PlayStation DexDrive Save (North America)')",
+  "author": "Warhawk",
+  "licence": null,
+  "posted": "2004-03-25",
+  "fetched": "2026-11-05",
+  "what_it_is": "Saved up to Child's Room with all key items to unlock door and in preperation for final boss fight (save set up for Good+ ending). All firearms with good amount of ammo for each and All Melee weapons.",
+  "gamefaqs": {
+    "id": 3625,
+    "product": "Silent Hill (1999)",
+    "section": "PlayStation DexDrive Save (North America)",
+    "region": "North America",
+    "served_as": "silent-hill-1999.3625.gme",
+    "listed_size": "131KB"
+  },
+  "format": "DexDrive .gme: '123-456-STD' 3904-byte header (per-block comments) + 131072-byte raw card; the card holds 1 save(s), 1 for this game (BASLUS-00707SILENT00)",
+  "release": "Silent Hill (USA)",
+  "game_saves": [
+    {
+      "name": "BASLUS-00707SILENT00",
+      "blocks": 1,
+      "title": "SILENT HILL FILE01"
+    }
+  ],
+  "files": {
+    "silent-hill-1999.3625.gme": {
+      "size": 134976,
+      "sha1": "10a84d565033e92dc200927518b9d424ab1811c7"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Silent Hill (USA).cue",
+      "sha1": "e7bf6999a1b06337efa9ccbd6d528406811d982f",
+      "size": 83
+    },
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr silent-hill-1999.3625.gme: unwraps the card (DexDrive .gme: 3904-byte header + card)",
+    "converted": {
+      "size": 131072,
+      "sha1": "ff68699eed1df1abf0afaacc8c50c4d6113ec41c"
+    },
+    "script": "scripts/psx/Silent Hill.load.txt",
+    "script_variants": {
+      "pcsx-rearmed": "scripts/psx/Silent Hill.pcsx-rearmed.load.txt",
+      "swanstation": "scripts/psx/Silent Hill.swanstation.load.txt"
+    },
+    "cores": {
+      "beetle-psx": {
+        "result": "loads",
+        "detail": "Load, slot 1 lists File 1 (Child's room); Data 1, Time 4:25:34, Save 34"
+      },
+      "beetle-psx-hw": {
+        "result": "loads",
+        "detail": "Load, slot 1 lists File 1 (Child's room); Data 1, Time 4:25:34, Save 34 (the same screen as on beetle-psx)"
+      },
+      "pcsx-rearmed": {
+        "result": "loads",
+        "detail": "Load, slot 1 lists File 1 (Child's room); Data 1, Time 4:25:34, Save 34 (the same screen as on beetle-psx)"
+      },
+      "swanstation": {
+        "result": "loads",
+        "detail": "Load, slot 1 lists File 1 (Child's room); Data 1, Time 4:25:34, Save 34 (the same screen as on beetle-psx)"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": [
+      "beetle-psx",
+      "beetle-psx-hw",
+      "pcsx-rearmed",
+      "swanstation"
+    ]
+  },
+  "note": null
+}

@@ -1,0 +1,84 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_dexdrive",
+  "url": "https://gamefaqs.gamespot.com/ps/199061-tony-hawks-pro-skater-2/saves/720",
+  "source_page": "https://gamefaqs.gamespot.com/ps/199061-tony-hawks-pro-skater-2/saves",
+  "source": "GameFAQs (section 'PlayStation DexDrive Save (North America)')",
+  "author": "skeierdude",
+  "licence": null,
+  "posted": "2001-03-08",
+  "fetched": "2026-11-05",
+  "what_it_is": "This save file contains the Beaverton, OR Tualitin Hills Rec skate Park.",
+  "gamefaqs": {
+    "id": 720,
+    "product": "Tony Hawk's Pro Skater 2",
+    "section": "PlayStation DexDrive Save (North America)",
+    "region": "North America",
+    "served_as": "tony-hawks-pro-skater-2.720.gme",
+    "listed_size": "131KB"
+  },
+  "format": "DexDrive .gme: '123-456-STD' 3904-byte header (per-block comments) + 131072-byte raw card; the card holds 1 save(s), 1 for this game (BASLUS-01066BPPRPAD)",
+  "release": "Tony Hawk's Pro Skater 2 (USA)",
+  "game_saves": [
+    {
+      "name": "BASLUS-01066BPPRPAD",
+      "blocks": 1,
+      "title": "THPS2 PARKー BEAVERTON OR"
+    }
+  ],
+  "files": {
+    "tony-hawks-pro-skater-2.720.gme": {
+      "size": 134976,
+      "sha1": "fe6573bcc96d9e796c48cd586a44bd7768368c62"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Tony Hawk's Pro Skater 2 (USA).cue",
+      "sha1": "ea5388de4fa83e3d3b5f37d752f1eb8d3bd5d88e",
+      "size": 96
+    },
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr tony-hawks-pro-skater-2.720.gme: unwraps the card (DexDrive .gme: 3904-byte header + card)",
+    "converted": {
+      "size": 131072,
+      "sha1": "744200bbffaf80465e50f1f9ba2147d729992e8b"
+    },
+    "script": "scripts/psx/Tony Hawk's Pro Skater 2.load.txt",
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "loads",
+        "detail": "Park Editor > Load lists the park BEAVERTON OR"
+      },
+      "beetle-psx-hw": {
+        "result": "loads",
+        "detail": "Park Editor > Load lists the park BEAVERTON OR (the same screen as on beetle-psx)"
+      },
+      "pcsx-rearmed": {
+        "result": "loads",
+        "detail": "Park Editor > Load lists the park BEAVERTON OR (the same screen as on beetle-psx)"
+      },
+      "swanstation": {
+        "result": "loads",
+        "detail": "Park Editor > Load lists the park BEAVERTON OR (the same screen as on beetle-psx)"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": [
+      "beetle-psx",
+      "beetle-psx-hw",
+      "pcsx-rearmed",
+      "swanstation"
+    ]
+  },
+  "note": null
+}

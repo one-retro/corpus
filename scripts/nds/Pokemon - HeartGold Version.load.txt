@@ -1,0 +1,12 @@
+# Pokemon HeartGold / SoulSilver, loading a save: START skips the intro to the
+# title, START again opens the CONTINUE panel (PLAYER, TIME, BADGES, POKéDEX);
+# a third START, for a core still on the title, does nothing on that panel.
+# Without a save the game starts Professor Oak's introduction instead.
+wait 700
+press start 6       # intro -> title
+wait 300
+press start 6       # title -> CONTINUE / NEW GAME
+wait 300
+press start 6
+wait 500
+shot continue

@@ -1,0 +1,15 @@
+# Banjo-Kazooie, load check: power on, through the logos to the title,
+# Start: Banjo's bed, with each game's play time, jiggies and notes.
+# N64 buttons on the RetroPad: A = b, B = y, Z = l2, Start = start.
+wait 2400
+press start 6       # logos -> title
+wait 300
+press b 6           # (the title ignores A; these only pass time)
+wait 300
+press b 6
+wait 300
+press b 6
+wait 300
+press start 6       # title -> Banjo's bed
+wait 400
+shot bed

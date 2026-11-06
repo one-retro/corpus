@@ -1,0 +1,19 @@
+# Donkey Kong 64, load check: power on, Start at the title (four presses,
+# 300 frames apart: the title comes up at a different frame on every boot,
+# and Start does nothing on the main menu), the main menu (ADVENTURE), A:
+# the file barrel (GAME 1, or EMPTY), A again: GAME 1's completion, golden
+# bananas and play time (on an EMPTY file this starts a new game instead).
+# N64 buttons on the RetroPad: A = b, B = y, Z = l2, Start = start.
+wait 1600
+repeat 4
+press start 6       # title -> main menu
+wait 300
+end
+wait 300
+shot menu
+press b 6           # ADVENTURE -> the files
+wait 300
+shot files
+press b 6           # GAME 1
+wait 400
+shot game1

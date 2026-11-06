@@ -1,0 +1,8 @@
+# Super Metroid, load check: Start skips the intro to the title, Start at
+# the title opens SAMUS DATA: each file's energy and time.
+wait 800
+press start 6       # intro -> title
+wait 800
+press start 6       # title -> SAMUS DATA
+wait 200
+shot data

@@ -1,0 +1,51 @@
+{
+  "method": "downloaded",
+  "system": "gc",
+  "core": "_usb-memory-adapter",
+  "url": "https://gamefaqs.gamespot.com/gamecube/516710-mario-kart-double-dash/saves/3609",
+  "source_page": "https://gamefaqs.gamespot.com/gamecube/516710-mario-kart-double-dash/saves",
+  "source": "GameFAQs (section 'GameCube USB Memory Adapter Save (Europe)')",
+  "author": "PM5KDemon",
+  "licence": null,
+  "posted": "2004-03-21",
+  "fetched": "2026-11-05",
+  "what_it_is": "100% Complete, Everything Unlocked",
+  "gamefaqs": {
+    "id": 3609,
+    "product": "Mario Kart: Double Dash!!",
+    "section": "GameCube USB Memory Adapter Save (Europe)",
+    "region": "Europe",
+    "served_as": "mario-kart-double-dash.3609.gci",
+    "listed_size": "24KB"
+  },
+  "format": "GCI: the 64-byte card directory entry (GM4P01, file 'MarioKart Double Dash!!', 3 blocks, modified 2004-03-21 17:52:50, comment 'Mario Kart: Double Dash!! / Game Data 21/03/04') then 3 x 8 KiB blocks = 24640 bytes",
+  "files": {
+    "mario-kart-double-dash.3609.gci": {
+      "size": 24640,
+      "sha1": "e5e1dbdf2e07665522a3ad9500f53149539716d6"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": null,
+    "converted_with": "tools/gamefaqs/gc-gci.py place <file> <GC/USA/Card A>: copies the GCI unchanged into the GCI folder under Dolphin's own name for it",
+    "converted": {
+      "size": 24640,
+      "sha1": "e5e1dbdf2e07665522a3ad9500f53149539716d6",
+      "name": "01-GM4P-MarioKart Double Dash!!.gci"
+    },
+    "script": null,
+    "cores": {
+      "dolphin-emu": {
+        "result": "not-run",
+        "detail": "no Mario Kart - Double Dash!! (Europe, Australia) (En,Fr,De,Es,It) disc image in the library (only the USA release)"
+      },
+      "dolphin-emu@dolphin": {
+        "result": "not-run",
+        "detail": "no Mario Kart - Double Dash!! (Europe, Australia) (En,Fr,De,Es,It) disc image in the library (only the USA release)"
+      }
+    },
+    "proof_order": []
+  },
+  "note": null
+}

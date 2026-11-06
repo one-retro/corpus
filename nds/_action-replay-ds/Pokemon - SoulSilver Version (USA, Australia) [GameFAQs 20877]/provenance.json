@@ -1,0 +1,110 @@
+{
+  "method": "downloaded",
+  "system": "nds",
+  "core": "_action-replay-ds",
+  "url": "https://gamefaqs.gamespot.com/ds/960099-pokemon-heartgold-version/saves/20877",
+  "source_page": "https://gamefaqs.gamespot.com/ds/960099-pokemon-heartgold-version/saves",
+  "source": "GameFAQs (section 'Action Replay Max DS (.duc) Game Save (North America)')",
+  "author": "Pontakorn",
+  "licence": null,
+  "posted": "2010-07-03",
+  "fetched": "2026-11-05",
+  "what_it_is": "Have many Legendary Pokemons, Complete Jhoto & Kanto , 100% Pokedex and money 9999",
+  "gamefaqs": {
+    "id": 20877,
+    "product": "Pokemon HeartGold / SoulSilver Version",
+    "section": "Action Replay Max DS (.duc) Game Save (North America)",
+    "region": "North America",
+    "served_as": "pokemon-heartgold-soulsilver-version.20877.duc",
+    "listed_size": "256KB"
+  },
+  "format": "Action Replay DS save: the 500-byte 'ARDS000000000001' header written by a converter ('Converted Savegame' / 'Savegame', ASCII 'shuny conv'), then 256 KiB raw for the 512 KiB flash (padded 262144 -> 524288 with 0xFF)",
+  "files": {
+    "pokemon-heartgold-soulsilver-version.20877.duc": {
+      "size": 262644,
+      "sha1": "25db1fc2479af1ffba573ad100eeaa0e384a4c04"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Pokemon - SoulSilver Version (USA, Australia).nds",
+      "sha1": "0959fe9e64dc749382460f1ccf90996f5ef4088d",
+      "size": 134217728,
+      "note": "a dump of this game code whose sha1 is not in the No-Intro DAT (the area after the used ROM size is blank); the region in the name is a guess"
+    },
+    "converted_with": "tools/gamefaqs/nds-ards.py IN step0.bin, then tools/gamefaqs/nds-cores.py step0.bin --chip 524288 --stem 'Pokemon - SoulSilver Version (USA, Australia)' --out DIR: drops the Action Replay header; fits it to the 524288-byte chip (padded 262144 -> 524288 with 0xFF) and writes each core's file",
+    "converted": {
+      "size": 524288,
+      "sha1": "bd122c69d7f577c811beb8dc7f20782a408ef3a5"
+    },
+    "core_files": {
+      "desmume": {
+        "name": "Pokemon - SoulSilver Version (USA, Australia).dsv",
+        "size": 524410,
+        "sha1": "561c11a2d6939f6777b2ed0e25a29d27024e86dc"
+      },
+      "desmume-2015": {
+        "name": "Pokemon - SoulSilver Version (USA, Australia).dsv",
+        "size": 524410,
+        "sha1": "561c11a2d6939f6777b2ed0e25a29d27024e86dc"
+      },
+      "melonds": {
+        "name": "Pokemon - SoulSilver Version (USA, Australia).sav",
+        "size": 524288,
+        "sha1": "bd122c69d7f577c811beb8dc7f20782a408ef3a5"
+      },
+      "melonds-ds": {
+        "name": "Pokemon - SoulSilver Version (USA, Australia).srm",
+        "size": 524288,
+        "sha1": "bd122c69d7f577c811beb8dc7f20782a408ef3a5"
+      },
+      "noods": {
+        "name": "Pokemon - SoulSilver Version (USA, Australia).sav",
+        "size": 524288,
+        "sha1": "bd122c69d7f577c811beb8dc7f20782a408ef3a5"
+      },
+      "skyemu": {
+        "name": "Pokemon - SoulSilver Version (USA, Australia).srm",
+        "size": 8388608,
+        "sha1": "bd689968448a90d96f2dc00d2a834a637c16cb60"
+      }
+    },
+    "script": "scripts/nds/Pokemon - SoulSilver Version.load.txt",
+    "cores": {
+      "desmume": {
+        "result": "loads",
+        "detail": "CONTINUE: PLAYER PON, TIME 22:14, BADGES 16, POKéDEX 256"
+      },
+      "desmume-2015": {
+        "result": "loads",
+        "detail": "CONTINUE: PLAYER PON, TIME 22:14, BADGES 16, POKéDEX 256"
+      },
+      "melonds": {
+        "result": "core-error",
+        "detail": "\"A communication error has occurred. You will be returned to the title screen.\" instead of the CONTINUE panel; the same happens with every HeartGold/SoulSilver save in this core (no BIOS or firmware here, FreeBIOS), so it is the core, not this save"
+      },
+      "melonds-ds": {
+        "result": "loads",
+        "detail": "CONTINUE: PLAYER PON, TIME 22:14, BADGES 16, POKéDEX 256"
+      },
+      "noods": {
+        "result": "loads",
+        "detail": "CONTINUE: PLAYER PON, TIME 22:14, BADGES 16, POKéDEX 256"
+      },
+      "skyemu": {
+        "result": "loads",
+        "detail": "CONTINUE: PLAYER PON, TIME 22:14, BADGES 16, POKéDEX 256"
+      }
+    },
+    "proof_order": [
+      "desmume",
+      "desmume-2015",
+      "melonds",
+      "melonds-ds",
+      "noods",
+      "skyemu"
+    ]
+  },
+  "note": "Release: English; SoulSilver from the version that caught the player's own Pokemon (origin game in the decrypted Pokemon data, OT matching the trainer)."
+}

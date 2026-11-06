@@ -1,0 +1,119 @@
+{
+  "method": "downloaded",
+  "system": "gba",
+  "core": "_gameshark",
+  "url": "https://gamefaqs.gamespot.com/gba/472541-klonoa-empire-of-dreams/saves/13463",
+  "source_page": "https://gamefaqs.gamespot.com/gba/472541-klonoa-empire-of-dreams/saves",
+  "source": "GameFAQs (section 'GameBoy Advance GameShark Save (North America)')",
+  "author": "Guard_Master",
+  "licence": null,
+  "posted": "2006-10-29",
+  "fetched": "2026-11-05",
+  "what_it_is": "100% Complete",
+  "gamefaqs": {
+    "id": 13463,
+    "product": "Klonoa: Empire of Dreams",
+    "section": "GameBoy Advance GameShark Save (North America)",
+    "region": "North America",
+    "served_as": "klonoa-empire-of-dreams.13463.sps",
+    "listed_size": "64KB"
+  },
+  "format": "SharkPort save (\"SharkPortSave\", kind 0x000F0000): title \"Klonoa: Empire of Dreams\", date \"100% Complete\", notes \"Created by: Guard Master (David Morris)\r\nDate: October 28...\"; cart header \"KLONOA\" / 'AKLE' (complement 0xe9); payload 65536 bytes; checksum: signed",
+  "files": {
+    "klonoa-empire-of-dreams.13463.sps": {
+      "size": 65705,
+      "sha1": "6344f993d8a7ce89ce5ed1e3909beb5b2e92dd63"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Klonoa - Empire of Dreams (USA).gba",
+      "sha1": "a0a298d9dba1ba15d04a42fc2eb35893d1a9569b",
+      "size": 4194304
+    },
+    "converted_with": "tools/gamefaqs/gba-sharkport.py klonoa-empire-of-dreams.13463.sps --rom ROM --core CORE --outdir DIR: reads the SharkPort container as mGBA does and imports the payload as mGBA's _importSavedata does (cut to the chip, EEPROM 8-byte blocks reversed, the rest of the chip erased), then lays the chip out as the core keeps it",
+    "converted": {
+      "size": 512,
+      "sha1": "da8327f1b2fb834577ef71d5422470c944fa9e43"
+    },
+    "script": "scripts/gba/Klonoa - Empire of Dreams.load.txt",
+    "cores": {
+      "mgba": {
+        "result": "rejected",
+        "detail": "Select a Save file: NO DATA x3: payload in emulator byte order, scrambled by the GameShark reversal",
+        "core_version": "mGBA 0.11-212-7a12d6d",
+        "file": {
+          "name": "Klonoa - Empire of Dreams (USA).srm",
+          "size": 512,
+          "sha1": "da8327f1b2fb834577ef71d5422470c944fa9e43"
+        },
+        "frame": "files"
+      },
+      "vba-m": {
+        "result": "rejected",
+        "detail": "Select a Save file: NO DATA x3: payload in emulator byte order, scrambled by the GameShark reversal",
+        "core_version": "VBA-M 115defb",
+        "file": {
+          "name": "Klonoa - Empire of Dreams (USA).srm",
+          "size": 512,
+          "sha1": "da8327f1b2fb834577ef71d5422470c944fa9e43"
+        },
+        "frame": "files"
+      },
+      "gpsp": {
+        "result": "rejected",
+        "detail": "Select a Save file: NO DATA x3: payload in emulator byte order, scrambled by the GameShark reversal",
+        "core_version": "gpSP v1.1.0-5819380",
+        "file": {
+          "name": "Klonoa - Empire of Dreams (USA).srm",
+          "size": 131072,
+          "sha1": "8b6ba5b366ef42bdb0ee50a7bf4f36904e93cd4b"
+        },
+        "frame": "files"
+      },
+      "vba-next": {
+        "result": "rejected",
+        "detail": "Select a Save file: NO DATA x3: payload in emulator byte order, scrambled by the GameShark reversal",
+        "core_version": "VBA Next v1.0.2",
+        "file": {
+          "name": "Klonoa - Empire of Dreams (USA).srm",
+          "size": 139264,
+          "sha1": "cf4c759989d3aa6c007f34feddb3150b82aba9b0"
+        },
+        "frame": "files"
+      },
+      "beetle-gba": {
+        "result": "rejected",
+        "detail": "Select a Save file: NO DATA x3: payload in emulator byte order, scrambled by the GameShark reversal",
+        "core_version": "Beetle GBA v0.9.36 b158166",
+        "file": {
+          "name": "Klonoa - Empire of Dreams (USA).f4f23f40e29451150b46d4bbdef63f13.eep",
+          "size": 512,
+          "sha1": "da8327f1b2fb834577ef71d5422470c944fa9e43"
+        },
+        "frame": "files"
+      },
+      "skyemu": {
+        "result": "rejected",
+        "detail": "Select a Save file: NO DATA x3: payload in emulator byte order, scrambled by the GameShark reversal",
+        "core_version": "SkyEmu adacd0788964ed89f5c43dcbc1f3cc26deec996c",
+        "file": {
+          "name": "Klonoa - Empire of Dreams (USA).srm",
+          "size": 131072,
+          "sha1": "70cf52b8cb52961a1910f25b1e29e19c3428fc0b"
+        },
+        "frame": "files"
+      }
+    },
+    "proof_order": [
+      "mgba",
+      "vba-m",
+      "gpsp",
+      "vba-next",
+      "beetle-gba",
+      "skyemu"
+    ]
+  },
+  "note": "The EEPROM payload is in emulator byte order (the order mGBA, VBA-M and a raw .sav use; text such as \"ADLEZBGA\" reads backwards per 8 bytes), not the GameShark order, so mGBA's import (which reverses each 8-byte block) scrambles it; taken as is instead, mGBA shows it: World 5 Leljimba, Klonoa x99."
+}

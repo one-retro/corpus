@@ -1,0 +1,84 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_dexdrive",
+  "url": "https://gamefaqs.gamespot.com/ps/196989-ctr-crash-team-racing/saves/2030",
+  "source_page": "https://gamefaqs.gamespot.com/ps/196989-ctr-crash-team-racing/saves",
+  "source": "GameFAQs (section 'PlayStation DexDrive Save (North America)')",
+  "author": "Crash28",
+  "licence": null,
+  "posted": "2002-12-11",
+  "fetched": "2026-11-05",
+  "what_it_is": "All characters unlocked except Fake Crash. N.Tropy almost unlocked without codes! Game is 98% beaten",
+  "gamefaqs": {
+    "id": 2030,
+    "product": "CTR: Crash Team Racing",
+    "section": "PlayStation DexDrive Save (North America)",
+    "region": "North America",
+    "served_as": "ctr-crash-team-racing.2030.gme",
+    "listed_size": "19KB"
+  },
+  "format": "DexDrive .gme cut short: '123-456-STD' 3904-byte header + only the first 16384 bytes of the card (2 of 16 blocks); the card holds 1 save(s), 1 for this game (BASCUS-94426-SLOTS)",
+  "release": "CTR - Crash Team Racing (USA)",
+  "game_saves": [
+    {
+      "name": "BASCUS-94426-SLOTS",
+      "blocks": 1,
+      "title": "CTR:Saved Games and Scores"
+    }
+  ],
+  "files": {
+    "ctr-crash-team-racing.2030.gme": {
+      "size": 20288,
+      "sha1": "fc9aa22b43bccaa200d1800eca6336e6f4b5dea3"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "CTR - Crash Team Racing (USA).cue",
+      "sha1": "2ff60f30b7f068b9c79adb5311004a940d72de07",
+      "size": 95
+    },
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr ctr-crash-team-racing.2030.gme: unwraps the card (DexDrive .gme: 3904-byte header + card (only 16384 card bytes, zero-padded to 131072))",
+    "converted": {
+      "size": 131072,
+      "sha1": "9713a95f730000ba73b9d605cfb048a16ab47171"
+    },
+    "script": "scripts/psx/CTR - Crash Team Racing.load.txt",
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "loads",
+        "detail": "Choose a Game to Load shows LIL_POLA: 16 trophies, 94%, 4 keys, 17 relics"
+      },
+      "beetle-psx-hw": {
+        "result": "loads",
+        "detail": "Choose a Game to Load shows LIL_POLA: 16 trophies, 94%, 4 keys, 17 relics (the same screen as on beetle-psx)"
+      },
+      "pcsx-rearmed": {
+        "result": "loads",
+        "detail": "Choose a Game to Load shows LIL_POLA: 16 trophies, 94%, 4 keys, 17 relics (the same screen as on beetle-psx)"
+      },
+      "swanstation": {
+        "result": "loads",
+        "detail": "Choose a Game to Load shows LIL_POLA: 16 trophies, 94%, 4 keys, 17 relics (the same screen as on beetle-psx)"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": [
+      "beetle-psx",
+      "beetle-psx-hw",
+      "pcsx-rearmed",
+      "swanstation"
+    ]
+  },
+  "note": "The converter pads the missing blocks with zeroes, as DuckStation's ImportCardGME does; the saves on the card all lie in the blocks present. one-saves (1saves convert) does not read this file: a PS1 memory card is 131072 bytes, or that behind a DexDrive, VGS or PSP header, but this file is 20288 bytes"
+}

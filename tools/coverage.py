@@ -12,6 +12,7 @@ directories here that are not registry cores (`core@app`, `_producer`).
 import collections
 import json
 import os
+import re
 import sys
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
@@ -46,7 +47,8 @@ def main():
                 method = "unreadable"
             counts[system][rel[0]][method] += 1
             if len(rel) > 1:
-                games[system].add(rel[1])
+                # "<release> [GameFAQs 123]" is one more save of <release>
+                games[system].add(re.sub(r" \[GameFAQs \d+\]$", "", rel[1]))
 
     # Systems the corpus holds that the registry has not added yet (e.g. pico-8) go last.
     known = {s["slug"] for s in systems}

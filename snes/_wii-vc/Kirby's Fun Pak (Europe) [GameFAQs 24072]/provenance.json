@@ -1,0 +1,146 @@
+{
+  "method": "downloaded",
+  "system": "snes",
+  "core": "_wii-vc",
+  "url": "https://gamefaqs.gamespot.com/snes/588425-kirby-super-star/saves/24072",
+  "source_page": "https://gamefaqs.gamespot.com/snes/588425-kirby-super-star/saves",
+  "source": "GameFAQs (section 'Wii VC Game Save File (Europe)')",
+  "author": "PMniac",
+  "licence": null,
+  "posted": "2014-12-31",
+  "fetched": "2026-11-05",
+  "what_it_is": "JCCP 100% - Everything unlocked and awesome times at Gourmet Race.",
+  "gamefaqs": {
+    "id": 24072,
+    "product": "Kirby Super Star",
+    "section": "Wii VC Game Save File (Europe)",
+    "region": "Europe",
+    "served_as": "kirby-super-star.24072.bin",
+    "listed_size": "69KB"
+  },
+  "format": "Wii data.bin (an SD-card export; header AES-128-CBC with the SD key, header MD5 valid): title 00010001-JCCP \"Kirby's Fun Pak\", 1 file: savedata.bin 8192 bytes - savedata.bin is the SNES SRAM",
+  "files": {
+    "kirby-super-star.24072.bin": {
+      "size": 70912,
+      "sha1": "056b400ea49f16ad74f6e1bfe3a83fcce1cbaff2"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "converted_with": "tools/gamefaqs/wiivc-convert.py convert kirby-super-star.24072.bin OUT: decrypts the data.bin (AES-128-CBC, SD key, per-file IVs) and takes savedata.bin (8192 bytes): the SRAM, as is",
+    "converted": {
+      "size": 8192,
+      "sha1": "e1dbc71102c842f4ad418e3ae09b50168e008be6"
+    },
+    "rom": {
+      "name": "Kirby's Fun Pak (Europe).sfc",
+      "sha1": "ce325ad271e91735ce19e9c2b8e0ad04dc103ae1",
+      "size": 4194304
+    },
+    "script": "scripts/snes/Kirby Super Star.load.txt",
+    "baseline": "with no save: the three files at 0% (the game formats SRAM at first boot)",
+    "cores": {
+      "snes9x": {
+        "result": "loads",
+        "detail": "file select: Kirby 1 at 100% (every star lit), files 2-3 at 0%"
+      },
+      "snes9x-2010": {
+        "result": "loads",
+        "detail": "file select: Kirby 1 at 100% (every star lit), files 2-3 at 0%"
+      },
+      "snes9x-2005-plus": {
+        "result": "loads",
+        "detail": "file select: Kirby 1 at 100% (every star lit), files 2-3 at 0%"
+      },
+      "snes9x-2005": {
+        "result": "loads",
+        "detail": "file select: Kirby 1 at 100% (every star lit), files 2-3 at 0%"
+      },
+      "snes9x-2002": {
+        "result": "loads",
+        "detail": "file select: Kirby 1 at 100% (every star lit), files 2-3 at 0%"
+      },
+      "bsnes": {
+        "result": "loads",
+        "detail": "file select: Kirby 1 at 100% (every star lit), files 2-3 at 0%"
+      },
+      "bsnes-hd-beta": {
+        "result": "loads",
+        "detail": "file select: Kirby 1 at 100% (every star lit), files 2-3 at 0%"
+      },
+      "bsnes-mercury": {
+        "result": "loads",
+        "detail": "file select: Kirby 1 at 100% (every star lit), files 2-3 at 0%"
+      },
+      "bsnes2014": {
+        "result": "loads",
+        "detail": "file select: Kirby 1 at 100% (every star lit), files 2-3 at 0%"
+      },
+      "higan-super-famicom": {
+        "result": "loads",
+        "detail": "file select: Kirby 1 at 100% (every star lit), files 2-3 at 0%"
+      },
+      "mednafen-bsnes": {
+        "result": "loads",
+        "detail": "file select: Kirby 1 at 100% (every star lit), files 2-3 at 0% (the core reads its own <stem>.srm from the save folder, and aborts with SIGABRT when unloaded, after the run, as in snes/NOTES.md)"
+      },
+      "mesen-s": {
+        "result": "loads",
+        "detail": "file select: Kirby 1 at 100% (every star lit), files 2-3 at 0%"
+      },
+      "beetle-supafaust": {
+        "result": "loads",
+        "detail": "file select: Kirby 1 at 100% (every star lit), files 2-3 at 0%"
+      },
+      "bsnes-jg": {
+        "result": "loads",
+        "detail": "file select: Kirby 1 at 100% (every star lit), files 2-3 at 0%"
+      },
+      "chimerasnes": {
+        "result": "loads",
+        "detail": "file select: Kirby 1 at 100% (every star lit), files 2-3 at 0%"
+      },
+      "higan-super-famicom-balanced": {
+        "result": "loads",
+        "detail": "file select: Kirby 1 at 100% (every star lit), files 2-3 at 0% (exits with SIGTRAP in retro_deinit after the run, as in BUILT-CORES.md)"
+      }
+    },
+    "core_versions": {
+      "beetle-supafaust": "Beetle Supafaust 1.29.0 642d1d1",
+      "bsnes": "bsnes 115",
+      "bsnes-hd-beta": "bsnes-hd beta 10.6",
+      "bsnes-jg": "bsnes-jg 2.1.0",
+      "bsnes-mercury": "bsnes-mercury v094 (Accuracy) 79d7f9d",
+      "bsnes2014": "bsnes2014 v094 (Accuracy) 3c1394e",
+      "chimerasnes": "ChimeraSNES  04c57c2",
+      "higan-super-famicom": "higan (Super Famicom Accuracy) 106",
+      "higan-super-famicom-balanced": "higan (Super Famicom Balanced) 106.25",
+      "mednafen-bsnes": "Mednafen bSNES v0.9.26 5f05e4c",
+      "mesen-s": "Mesen2 2.0.0",
+      "snes9x": "Snes9x 1.63 fae2fea",
+      "snes9x-2002": "Snes9x 2002 7.2.0",
+      "snes9x-2005": "Snes9x 2005 v1.36 a79dfe9",
+      "snes9x-2005-plus": "Snes9x 2005 Plus v1.36 a79dfe9",
+      "snes9x-2010": "Snes9x 2010 1.52.4 fe690dd"
+    },
+    "proof_order": [
+      "snes9x",
+      "snes9x-2010",
+      "snes9x-2005-plus",
+      "snes9x-2005",
+      "snes9x-2002",
+      "bsnes",
+      "bsnes-hd-beta",
+      "bsnes-mercury",
+      "bsnes2014",
+      "higan-super-famicom",
+      "mednafen-bsnes",
+      "mesen-s",
+      "beetle-supafaust",
+      "bsnes-jg",
+      "chimerasnes",
+      "higan-super-famicom-balanced"
+    ]
+  },
+  "note": "The European VC release (JCCP) is Kirby's Fun Pak; verified with that cartridge."
+}

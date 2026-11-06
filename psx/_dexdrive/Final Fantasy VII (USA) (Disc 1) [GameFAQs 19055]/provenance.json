@@ -1,0 +1,78 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_dexdrive",
+  "url": "https://gamefaqs.gamespot.com/ps/197341-final-fantasy-vii/saves/19055",
+  "source_page": "https://gamefaqs.gamespot.com/ps/197341-final-fantasy-vii/saves",
+  "source": "GameFAQs (section 'PlayStation DexDrive Save (North America)')",
+  "author": "PurestProdigy",
+  "licence": null,
+  "posted": "2009-05-05",
+  "fetched": "2026-11-05",
+  "what_it_is": "2 game saves. 1 is in the Final Dungeon and 1 is on the world map. Both have all characters level at level 100, best equipment, all MASTER materia, all limit breaks, and all hidden bosses defeated.",
+  "gamefaqs": {
+    "id": 19055,
+    "product": "Final Fantasy VII",
+    "section": "PlayStation DexDrive Save (North America)",
+    "region": "North America",
+    "served_as": "final-fantasy-vii.19055.gme",
+    "listed_size": "131KB"
+  },
+  "format": "DexDrive .gme: '123-456-STD' 3904-byte header (per-block comments) + 131072-byte raw card; the card holds no saves",
+  "release": "Final Fantasy VII (USA) (Disc 1)",
+  "game_saves": [],
+  "files": {
+    "final-fantasy-vii.19055.gme": {
+      "size": 134976,
+      "sha1": "cb36bc194de42b6133950963fcf2b8ad4bc3e187"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Final Fantasy VII (USA) (Disc 1).cue",
+      "sha1": "c8df949f13d990d325ac3b8d6eb835c440380e52",
+      "size": 98
+    },
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr final-fantasy-vii.19055.gme: unwraps the card (DexDrive .gme: 3904-byte header + card)",
+    "converted": {
+      "size": 131072,
+      "sha1": "3c6d19593bc4b9d615320aa1824e43f3b6e8ad7b"
+    },
+    "script": "scripts/psx/Final Fantasy VII.load.txt",
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "rejected",
+        "detail": "Slot 1 lists every file EMPTY (the card is blank)"
+      },
+      "beetle-psx-hw": {
+        "result": "rejected",
+        "detail": "Slot 1 lists every file EMPTY (the card is blank)"
+      },
+      "pcsx-rearmed": {
+        "result": "rejected",
+        "detail": "Slot 1 lists every file EMPTY (the card is blank)"
+      },
+      "swanstation": {
+        "result": "rejected",
+        "detail": "Slot 1 lists every file EMPTY (the card is blank)"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": [
+      "beetle-psx",
+      "beetle-psx-hw",
+      "pcsx-rearmed",
+      "swanstation"
+    ]
+  },
+  "note": "The card holds no saves: every directory frame is free, and every data block repeats one 8 KiB pattern beginning 'MC' followed by what looks like PC memory (a failed DexDrive read)."
+}

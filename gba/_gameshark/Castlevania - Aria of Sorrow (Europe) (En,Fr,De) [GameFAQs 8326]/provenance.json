@@ -1,0 +1,119 @@
+{
+  "method": "downloaded",
+  "system": "gba",
+  "core": "_gameshark",
+  "url": "https://gamefaqs.gamespot.com/gba/589456-castlevania-aria-of-sorrow/saves/8326",
+  "source_page": "https://gamefaqs.gamespot.com/gba/589456-castlevania-aria-of-sorrow/saves",
+  "source": "GameFAQs (section 'GameBoy Advance GameShark Save (North America)')",
+  "author": "TeknoBlade",
+  "licence": null,
+  "posted": "2005-07-01",
+  "fetched": "2026-11-05",
+  "what_it_is": "100%, level 99, all items, souls 100%, Boss Mode best time 2:09",
+  "gamefaqs": {
+    "id": 8326,
+    "product": "Castlevania: Aria of Sorrow",
+    "section": "GameBoy Advance GameShark Save (North America)",
+    "region": "North America",
+    "served_as": "castlevania-aria-of-sorrow.8326.sps",
+    "listed_size": "64KB"
+  },
+  "format": "SharkPort save (\"SharkPortSave\", kind 0x000F0000): title \"CASTLEVANIA2\", date \"Save7/1/2005 5:45:33 PM 41\", notes \"\"; cart header \"CASTLEVANIA2\" / 'A2CP' (complement 0x79); payload 65536 bytes; checksum: unsigned",
+  "files": {
+    "castlevania-aria-of-sorrow.8326.sps": {
+      "size": 65643,
+      "sha1": "fd9c692f14133bae83b0800f7e9e7d397716adb0"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Castlevania - Aria of Sorrow (Europe) (En,Fr,De).gba",
+      "sha1": "2e8302c2a5a61614749f609d7edc8c3e6af20585",
+      "size": 8388608
+    },
+    "converted_with": "tools/gamefaqs/gba-sharkport.py castlevania-aria-of-sorrow.8326.sps --rom ROM --core CORE --outdir DIR: reads the SharkPort container as mGBA does and imports the payload as mGBA's _importSavedata does (cut to the chip, EEPROM 8-byte blocks reversed, the rest of the chip erased), then lays the chip out as the core keeps it",
+    "converted": {
+      "size": 32768,
+      "sha1": "595e03c3a478243b43345d6532354a783149cf6a"
+    },
+    "script": "scripts/gba/Castlevania - Aria of Sorrow.load.txt",
+    "cores": {
+      "mgba": {
+        "result": "loads",
+        "detail": "Select Data: JOSH, Top Floor, Lv.99, 100.0%",
+        "core_version": "mGBA 0.11-212-7a12d6d",
+        "file": {
+          "name": "Castlevania - Aria of Sorrow (Europe) (En,Fr,De).srm",
+          "size": 32768,
+          "sha1": "595e03c3a478243b43345d6532354a783149cf6a"
+        },
+        "frame": "files"
+      },
+      "vba-m": {
+        "result": "loads",
+        "detail": "Select Data: JOSH, Top Floor, Lv.99, 100.0%",
+        "core_version": "VBA-M 115defb",
+        "file": {
+          "name": "Castlevania - Aria of Sorrow (Europe) (En,Fr,De).srm",
+          "size": 32768,
+          "sha1": "595e03c3a478243b43345d6532354a783149cf6a"
+        },
+        "frame": "files"
+      },
+      "gpsp": {
+        "result": "loads",
+        "detail": "Select Data: JOSH, Top Floor, Lv.99, 100.0%",
+        "core_version": "gpSP v1.1.0-5819380",
+        "file": {
+          "name": "Castlevania - Aria of Sorrow (Europe) (En,Fr,De).srm",
+          "size": 131072,
+          "sha1": "91f76a1599c87c2afe737a5a2274ce5fc9c8f36f"
+        },
+        "frame": "files"
+      },
+      "vba-next": {
+        "result": "loads",
+        "detail": "Select Data: JOSH, Top Floor, Lv.99, 100.0%",
+        "core_version": "VBA Next v1.0.2",
+        "file": {
+          "name": "Castlevania - Aria of Sorrow (Europe) (En,Fr,De).srm",
+          "size": 139264,
+          "sha1": "450efbb3c0e245b269ea91735f2a17fb4977d03b"
+        },
+        "frame": "files"
+      },
+      "beetle-gba": {
+        "result": "loads",
+        "detail": "Select Data: JOSH, Top Floor, Lv.99, 100.0%",
+        "core_version": "Beetle GBA v0.9.36 b158166",
+        "file": {
+          "name": "Castlevania - Aria of Sorrow (Europe) (En,Fr,De).4a5d8e686d55829d54a03fda8d6887d7.sav",
+          "size": 65536,
+          "sha1": "a85dc507fb8e206ffbe4ff04bce6b983407fb86d"
+        },
+        "frame": "files"
+      },
+      "skyemu": {
+        "result": "loads",
+        "detail": "Select Data: JOSH, Top Floor, Lv.99, 100.0%",
+        "core_version": "SkyEmu adacd0788964ed89f5c43dcbc1f3cc26deec996c",
+        "file": {
+          "name": "Castlevania - Aria of Sorrow (Europe) (En,Fr,De).srm",
+          "size": 131072,
+          "sha1": "91f76a1599c87c2afe737a5a2274ce5fc9c8f36f"
+        },
+        "frame": "files"
+      }
+    },
+    "proof_order": [
+      "mgba",
+      "vba-m",
+      "gpsp",
+      "vba-next",
+      "beetle-gba",
+      "skyemu"
+    ]
+  },
+  "note": null
+}

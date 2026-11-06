@@ -1,0 +1,84 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_dexdrive",
+  "url": "https://gamefaqs.gamespot.com/ps/197341-final-fantasy-vii/saves/158",
+  "source_page": "https://gamefaqs.gamespot.com/ps/197341-final-fantasy-vii/saves",
+  "source": "GameFAQs (section 'PlayStation DexDrive Save (North America)')",
+  "author": "Space_Ace",
+  "licence": null,
+  "posted": "2000-06-14",
+  "fetched": "2026-11-05",
+  "what_it_is": "The Final Battle of Disk 1, and one awesome Cinema!!",
+  "gamefaqs": {
+    "id": 158,
+    "product": "Final Fantasy VII",
+    "section": "PlayStation DexDrive Save (North America)",
+    "region": "North America",
+    "served_as": "final-fantasy-vii.158.gme",
+    "listed_size": "131KB"
+  },
+  "format": "DexDrive .gme: '123-456-STD' 3904-byte header (per-block comments) + 131072-byte raw card; the card holds 1 save(s), 1 for this game (BASCUS-94163FF7-S09)",
+  "release": "Final Fantasy VII (USA) (Disc 1)",
+  "game_saves": [
+    {
+      "name": "BASCUS-94163FF7-S09",
+      "blocks": 1,
+      "title": "FF7/SAVE09/26:53"
+    }
+  ],
+  "files": {
+    "final-fantasy-vii.158.gme": {
+      "size": 134976,
+      "sha1": "804c0788782a68092825a4b8920fba7aa2a058fc"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Final Fantasy VII (USA) (Disc 1).cue",
+      "sha1": "c8df949f13d990d325ac3b8d6eb835c440380e52",
+      "size": 98
+    },
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr final-fantasy-vii.158.gme: unwraps the card (DexDrive .gme: 3904-byte header + card)",
+    "converted": {
+      "size": 131072,
+      "sha1": "3053f08f6f000269dcae08ab27615df601915ae2"
+    },
+    "script": "scripts/psx/Final Fantasy VII.load.txt",
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "loads",
+        "detail": "Slot 1, paged to files 7-9, lists file 9: Cloud, Level 35, 26:53, Forgotten City"
+      },
+      "beetle-psx-hw": {
+        "result": "loads",
+        "detail": "Slot 1, paged to files 7-9, lists file 9: Cloud, Level 35, 26:53, Forgotten City (the same screen as on beetle-psx)"
+      },
+      "pcsx-rearmed": {
+        "result": "loads",
+        "detail": "Slot 1, paged to files 7-9, lists file 9: Cloud, Level 35, 26:53, Forgotten City (the same screen as on beetle-psx)"
+      },
+      "swanstation": {
+        "result": "loads",
+        "detail": "Slot 1, paged to files 7-9, lists file 9: Cloud, Level 35, 26:53, Forgotten City (the same screen as on beetle-psx)"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": [
+      "beetle-psx",
+      "beetle-psx-hw",
+      "pcsx-rearmed",
+      "swanstation"
+    ]
+  },
+  "note": null
+}

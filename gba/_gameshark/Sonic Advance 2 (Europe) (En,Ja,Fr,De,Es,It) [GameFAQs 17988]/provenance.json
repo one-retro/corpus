@@ -1,0 +1,119 @@
+{
+  "method": "downloaded",
+  "system": "gba",
+  "core": "_gameshark",
+  "url": "https://gamefaqs.gamespot.com/gba/561898-sonic-advance-2/saves/17988",
+  "source_page": "https://gamefaqs.gamespot.com/gba/561898-sonic-advance-2/saves",
+  "source": "GameFAQs (section 'GameBoy Advance GameShark Save (Europe)')",
+  "author": "aitorsuomi",
+  "licence": null,
+  "posted": "2008-10-12",
+  "fetched": "2026-11-05",
+  "what_it_is": "100% COMPLETE, all chaos emeralds, metal sonic chao in garden",
+  "gamefaqs": {
+    "id": 17988,
+    "product": "Sonic Advance 2",
+    "section": "GameBoy Advance GameShark Save (Europe)",
+    "region": "Europe",
+    "served_as": "sonic-advance-2.17988.sps",
+    "listed_size": "64KB"
+  },
+  "format": "SharkPort save (\"SharkPortSave\", kind 0x000F0000): title \"SONIC ADVANC\", date \"12/10/2008 11:01:29\", notes \"\"; cart header \"SONIC ADVANC\" / 'A2NP' (complement 0x6f); payload 65536 bytes; checksum: signed",
+  "files": {
+    "sonic-advance-2.17988.sps": {
+      "size": 65636,
+      "sha1": "b8c48b57c17a170025be531481a72b97aa1b03ad"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Sonic Advance 2 (Europe) (En,Ja,Fr,De,Es,It).gba",
+      "sha1": "b0f64bdca097f2de8f05ac4c8caea2b80c5faeb1",
+      "size": 16777216
+    },
+    "converted_with": "tools/gamefaqs/gba-sharkport.py sonic-advance-2.17988.sps --rom ROM --core CORE --outdir DIR: reads the SharkPort container as mGBA does and imports the payload as mGBA's _importSavedata does (cut to the chip, EEPROM 8-byte blocks reversed, the rest of the chip erased), then lays the chip out as the core keeps it",
+    "converted": {
+      "size": 65536,
+      "sha1": "31a4d103d04f1779a85aa7f2b568e32f47c88334"
+    },
+    "script": "scripts/gba/Sonic Advance 2.load.txt",
+    "cores": {
+      "mgba": {
+        "result": "loads",
+        "detail": "OPTIONS: PLAYER DATA \"Frank\" (with no save the game asks for a name first)",
+        "core_version": "mGBA 0.11-212-7a12d6d",
+        "file": {
+          "name": "Sonic Advance 2 (Europe) (En,Ja,Fr,De,Es,It).srm",
+          "size": 65536,
+          "sha1": "31a4d103d04f1779a85aa7f2b568e32f47c88334"
+        },
+        "frame": "options"
+      },
+      "vba-m": {
+        "result": "loads",
+        "detail": "OPTIONS: PLAYER DATA \"Frank\" (with no save the game asks for a name first)",
+        "core_version": "VBA-M 115defb",
+        "file": {
+          "name": "Sonic Advance 2 (Europe) (En,Ja,Fr,De,Es,It).srm",
+          "size": 65536,
+          "sha1": "31a4d103d04f1779a85aa7f2b568e32f47c88334"
+        },
+        "frame": "options"
+      },
+      "gpsp": {
+        "result": "loads",
+        "detail": "OPTIONS: PLAYER DATA \"Frank\" (with no save the game asks for a name first)",
+        "core_version": "gpSP v1.1.0-5819380",
+        "file": {
+          "name": "Sonic Advance 2 (Europe) (En,Ja,Fr,De,Es,It).srm",
+          "size": 131072,
+          "sha1": "d935f20f93af60575778f60b8f7ba10c724f5a19"
+        },
+        "frame": "options"
+      },
+      "vba-next": {
+        "result": "loads",
+        "detail": "OPTIONS: PLAYER DATA \"Frank\" (with no save the game asks for a name first)",
+        "core_version": "VBA Next v1.0.2",
+        "file": {
+          "name": "Sonic Advance 2 (Europe) (En,Ja,Fr,De,Es,It).srm",
+          "size": 139264,
+          "sha1": "d66b6ac406d832ea52862ec76b481e9ba48026a6"
+        },
+        "frame": "options"
+      },
+      "beetle-gba": {
+        "result": "loads",
+        "detail": "OPTIONS: PLAYER DATA \"Frank\" (with no save the game asks for a name first)",
+        "core_version": "Beetle GBA v0.9.36 b158166",
+        "file": {
+          "name": "Sonic Advance 2 (Europe) (En,Ja,Fr,De,Es,It).6664b43c51935ea8f06f5b37ce83feca.sav",
+          "size": 65536,
+          "sha1": "31a4d103d04f1779a85aa7f2b568e32f47c88334"
+        },
+        "frame": "options"
+      },
+      "skyemu": {
+        "result": "loads",
+        "detail": "OPTIONS: PLAYER DATA \"Frank\" (with no save the game asks for a name first)",
+        "core_version": "SkyEmu adacd0788964ed89f5c43dcbc1f3cc26deec996c",
+        "file": {
+          "name": "Sonic Advance 2 (Europe) (En,Ja,Fr,De,Es,It).srm",
+          "size": 131072,
+          "sha1": "d935f20f93af60575778f60b8f7ba10c724f5a19"
+        },
+        "frame": "options"
+      }
+    },
+    "proof_order": [
+      "mgba",
+      "vba-m",
+      "gpsp",
+      "vba-next",
+      "beetle-gba",
+      "skyemu"
+    ]
+  },
+  "note": null
+}

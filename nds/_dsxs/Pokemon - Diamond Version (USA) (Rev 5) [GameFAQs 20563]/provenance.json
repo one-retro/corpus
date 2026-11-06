@@ -1,0 +1,109 @@
+{
+  "method": "downloaded",
+  "system": "nds",
+  "core": "_dsxs",
+  "url": "https://gamefaqs.gamespot.com/ds/925601-pokemon-diamond-version/saves/20563",
+  "source_page": "https://gamefaqs.gamespot.com/ds/925601-pokemon-diamond-version/saves",
+  "source": "GameFAQs (section 'Action Replay Max DS (.duc) Game Save (North America)')",
+  "author": "jpickyeater",
+  "licence": null,
+  "posted": "2010-04-18",
+  "fetched": "2026-11-05",
+  "what_it_is": "Filled With Events-GDS GameSharkCheatSaves Format",
+  "gamefaqs": {
+    "id": 20563,
+    "product": "Pokemon Diamond / Pearl / Platinum Version",
+    "section": "Action Replay Max DS (.duc) Game Save (North America)",
+    "region": "North America",
+    "served_as": "pokemon-diamond-pearl-platinum-version.20563.duc",
+    "listed_size": "160KB"
+  },
+  "format": "'DSXS' container: 256-byte header (ASCII 'Pokemon Diamond', 'Full Game with Events', 'Missing Eigikan Acreus') and a gzip member holding the 512 KiB raw save",
+  "files": {
+    "pokemon-diamond-pearl-platinum-version.20563.duc": {
+      "size": 164017,
+      "sha1": "3f45105852cb674bec8016b786236fc349b68ed0"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Pokemon - Diamond Version (Europe) (Rev 5).nds",
+      "sha1": "66d2fbfb0dbc1f86a3d726971196989b950092bc",
+      "size": 67108864
+    },
+    "converted_with": "tools/gamefaqs/nds-dsxs.py IN step0.bin, then tools/gamefaqs/nds-cores.py step0.bin --chip 524288 --stem 'Pokemon - Diamond Version (Europe) (Rev 5)' --out DIR: gunzips the save from the DSXS container; fits it to the 524288-byte chip (exact size) and writes each core's file",
+    "converted": {
+      "size": 524288,
+      "sha1": "1bb76737dcad743e13a5094e562ba4a767592250"
+    },
+    "core_files": {
+      "desmume": {
+        "name": "Pokemon - Diamond Version (Europe) (Rev 5).dsv",
+        "size": 524410,
+        "sha1": "9379ec0ba36e90d713fccb4113f973b17b17b39e"
+      },
+      "desmume-2015": {
+        "name": "Pokemon - Diamond Version (Europe) (Rev 5).dsv",
+        "size": 524410,
+        "sha1": "9379ec0ba36e90d713fccb4113f973b17b17b39e"
+      },
+      "melonds": {
+        "name": "Pokemon - Diamond Version (Europe) (Rev 5).sav",
+        "size": 524288,
+        "sha1": "1bb76737dcad743e13a5094e562ba4a767592250"
+      },
+      "melonds-ds": {
+        "name": "Pokemon - Diamond Version (Europe) (Rev 5).srm",
+        "size": 524288,
+        "sha1": "1bb76737dcad743e13a5094e562ba4a767592250"
+      },
+      "noods": {
+        "name": "Pokemon - Diamond Version (Europe) (Rev 5).sav",
+        "size": 524288,
+        "sha1": "1bb76737dcad743e13a5094e562ba4a767592250"
+      },
+      "skyemu": {
+        "name": "Pokemon - Diamond Version (Europe) (Rev 5).srm",
+        "size": 8388608,
+        "sha1": "b3aac9196bd901eb4defbf480c60ccbb4ce28e79"
+      }
+    },
+    "script": "scripts/nds/Pokemon - Diamond Version.load.txt",
+    "cores": {
+      "desmume": {
+        "result": "loads",
+        "detail": "CONTINUE: PLAYER JOE, TIME 314:55, BADGES 8, POKéDEX 493 (run in the Diamond (Europe) (Rev 5) image, game code ADAE, which the USA release shares)"
+      },
+      "desmume-2015": {
+        "result": "loads",
+        "detail": "CONTINUE: PLAYER JOE, TIME 314:55, BADGES 8, POKéDEX 493 (run in the Diamond (Europe) (Rev 5) image, game code ADAE, which the USA release shares)"
+      },
+      "melonds": {
+        "result": "core-error",
+        "detail": "\"A communication error has occurred\" (\"... you will be returned to wherever you last saved\") instead of the CONTINUE panel, then a white screen; melonDS 0.9.3 does the same with its own Pearl save from this corpus, so it is the core (no BIOS or firmware here, FreeBIOS), not this save"
+      },
+      "melonds-ds": {
+        "result": "loads",
+        "detail": "CONTINUE: PLAYER JOE, TIME 314:55, BADGES 8, POKéDEX 493 (run in the Diamond (Europe) (Rev 5) image, game code ADAE, which the USA release shares)"
+      },
+      "noods": {
+        "result": "loads",
+        "detail": "CONTINUE: PLAYER JOE, TIME 314:55, BADGES 8, POKéDEX 493 (run in the Diamond (Europe) (Rev 5) image, game code ADAE, which the USA release shares)"
+      },
+      "skyemu": {
+        "result": "loads",
+        "detail": "CONTINUE: PLAYER JOE, TIME 314:55, BADGES 8, POKéDEX 493 (run in the Diamond (Europe) (Rev 5) image, game code ADAE, which the USA release shares)"
+      }
+    },
+    "proof_order": [
+      "desmume",
+      "desmume-2015",
+      "melonds",
+      "melonds-ds",
+      "noods",
+      "skyemu"
+    ]
+  },
+  "note": "Release: Diamond/Pearl layout, English; Diamond from the version that caught the player's own Pokemon (origin game in the decrypted Pokemon data, OT matching the trainer) and the DSXS header (\"Pokemon Diamond\"). The library's image of this game code is the Pokemon - Diamond Version (Europe) (Rev 5) release; the save was run in it, since both releases share the game code."
+}

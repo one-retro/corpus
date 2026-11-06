@@ -1,0 +1,119 @@
+{
+  "method": "downloaded",
+  "system": "gba",
+  "core": "_gameshark-sp",
+  "url": "https://gamefaqs.gamespot.com/gba/589393-super-mario-advance-4-super-mario-bros-3/saves/22867",
+  "source_page": "https://gamefaqs.gamespot.com/gba/589393-super-mario-advance-4-super-mario-bros-3/saves",
+  "source": "GameFAQs (section 'GameBoy Advance GameShark SP Save File (North America)')",
+  "author": "PurestProdigy",
+  "licence": null,
+  "posted": "2013-01-29",
+  "fetched": "2026-11-05",
+  "what_it_is": "Level select unlocked and all 5 score stars on save file (for main game and mario bros arcade)",
+  "gamefaqs": {
+    "id": 22867,
+    "product": "Super Mario Advance 4: Super Mario Bros. 3",
+    "section": "GameBoy Advance GameShark SP Save File (North America)",
+    "region": "North America",
+    "served_as": "super-mario-advance-4-super-mario-bros-3.22867.gsv",
+    "listed_size": "65KB"
+  },
+  "format": "GameShark SP save (\"ADVSAVEG\"): cart title \"SUPER MARIOD\", type 1 (not one mGBA knows: the rest of the file), payload 65536 bytes at 0x430, description \"You've got enough lives now go whoop Bowser!\"",
+  "files": {
+    "super-mario-advance-4-super-mario-bros-3.22867.gsv": {
+      "size": 66608,
+      "sha1": "75ec1fbd23fd48383df68158a69de25ac2fd90ca"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Super Mario Advance 4 - Super Mario Bros. 3 (USA, Australia) (Rev 1).gba",
+      "sha1": "532f3307021637474b6dd37da059ca360f612337",
+      "size": 4194304
+    },
+    "converted_with": "tools/gamefaqs/gba-gsv.py super-mario-advance-4-super-mario-bros-3.22867.gsv --rom ROM --core CORE --outdir DIR: reads the GameShark SP container as mGBA does and imports the payload as mGBA's _importSavedata does, then lays the chip out as the core keeps it",
+    "converted": {
+      "size": 131072,
+      "sha1": "b3068bfc835abb77e0556dff85bfca4492481c20"
+    },
+    "script": "scripts/gba/Super Mario Advance 4 - Super Mario Bros. 3.load.txt",
+    "cores": {
+      "mgba": {
+        "result": "rejected",
+        "detail": "after a long read, \"Saved data is corrupted.\", and Select a File shows only New files",
+        "core_version": "mGBA 0.11-212-7a12d6d",
+        "file": {
+          "name": "Super Mario Advance 4 - Super Mario Bros. 3 (USA, Australia) (Rev 1).srm",
+          "size": 131072,
+          "sha1": "b3068bfc835abb77e0556dff85bfca4492481c20"
+        },
+        "frame": "files"
+      },
+      "vba-m": {
+        "result": "rejected",
+        "detail": "after a long read, \"Saved data is corrupted.\", and Select a File shows only New files",
+        "core_version": "VBA-M 115defb",
+        "file": {
+          "name": "Super Mario Advance 4 - Super Mario Bros. 3 (USA, Australia) (Rev 1).srm",
+          "size": 131072,
+          "sha1": "b3068bfc835abb77e0556dff85bfca4492481c20"
+        },
+        "frame": "files"
+      },
+      "gpsp": {
+        "result": "rejected",
+        "detail": "after a long read, \"Saved data is corrupted.\", and Select a File shows only New files",
+        "core_version": "gpSP v1.1.0-5819380",
+        "file": {
+          "name": "Super Mario Advance 4 - Super Mario Bros. 3 (USA, Australia) (Rev 1).srm",
+          "size": 131072,
+          "sha1": "b3068bfc835abb77e0556dff85bfca4492481c20"
+        },
+        "frame": "files"
+      },
+      "vba-next": {
+        "result": "rejected",
+        "detail": "after a long read, \"Saved data is corrupted.\", and Select a File shows only New files",
+        "core_version": "VBA Next v1.0.2",
+        "file": {
+          "name": "Super Mario Advance 4 - Super Mario Bros. 3 (USA, Australia) (Rev 1).srm",
+          "size": 139264,
+          "sha1": "3b8f26d18aad44981449515a1cfba727d54a33a6"
+        },
+        "frame": "files"
+      },
+      "beetle-gba": {
+        "result": "rejected",
+        "detail": "after a long read, \"Saved data is corrupted.\", and Select a File shows only New files",
+        "core_version": "Beetle GBA v0.9.36 b158166",
+        "file": {
+          "name": "Super Mario Advance 4 - Super Mario Bros. 3 (USA, Australia) (Rev 1).605286b3aedeffba70bf46b834b120b1.sav",
+          "size": 131072,
+          "sha1": "b3068bfc835abb77e0556dff85bfca4492481c20"
+        },
+        "frame": "files"
+      },
+      "skyemu": {
+        "result": "rejected",
+        "detail": "after a long read, \"Saved data is corrupted.\", and Select a File shows only New files",
+        "core_version": "SkyEmu adacd0788964ed89f5c43dcbc1f3cc26deec996c",
+        "file": {
+          "name": "Super Mario Advance 4 - Super Mario Bros. 3 (USA, Australia) (Rev 1).srm",
+          "size": 131072,
+          "sha1": "b3068bfc835abb77e0556dff85bfca4492481c20"
+        },
+        "frame": "files"
+      }
+    },
+    "proof_order": [
+      "mgba",
+      "vba-m",
+      "gpsp",
+      "vba-next",
+      "beetle-gba",
+      "skyemu"
+    ]
+  },
+  "note": "The file does not say which revision it is for; it was booted in the revision the corpus uses. The payload has bit errors from the read: it starts \"SEA\\x14EWE\\x10\" where the game writes \"SMA4MWE0\", so the game resets its files. GSV type 1 is not a type mGBA knows, so the payload is the rest of the file (64 KiB of the 128 KiB flash)."
+}

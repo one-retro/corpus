@@ -1,0 +1,89 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_dexdrive",
+  "url": "https://gamefaqs.gamespot.com/ps/477343-final-fantasy-chronicles/saves/4566",
+  "source_page": "https://gamefaqs.gamespot.com/ps/477343-final-fantasy-chronicles/saves",
+  "source": "GameFAQs (section 'PlayStation DexDrive Save (North America)')",
+  "author": "ChandooG",
+  "licence": null,
+  "posted": "2004-07-24",
+  "fetched": "2026-11-05",
+  "what_it_is": "Save for CT, has 2 features, first is every extra unlocked, and i mean EVERY. Second, start a new game + with max stats for all characters (xcept magus)",
+  "gamefaqs": {
+    "id": 4566,
+    "product": "Final Fantasy Chronicles",
+    "section": "PlayStation DexDrive Save (North America)",
+    "region": "North America",
+    "served_as": "final-fantasy-chronicles.4566.gme",
+    "listed_size": "131KB"
+  },
+  "format": "DexDrive .gme: '123-456-STD' 3904-byte header (per-block comments) + 131072-byte raw card; the card holds 2 save(s), 2 for this game (BASLUS-01363-00001, BASLUS-01363SYSTEM)",
+  "release": "Final Fantasy Chronicles - Chrono Trigger (USA) (Rev 1)",
+  "game_saves": [
+    {
+      "name": "BASLUS-01363-00001",
+      "blocks": 1,
+      "title": "Chrono FILE01 Crono LV★★ 08:22"
+    },
+    {
+      "name": "BASLUS-01363SYSTEM",
+      "blocks": 1,
+      "title": "Chrono System File"
+    }
+  ],
+  "files": {
+    "final-fantasy-chronicles.4566.gme": {
+      "size": 134976,
+      "sha1": "f538bd9b057e2341227e690a66d7aa01a2bb6c04"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Final Fantasy Chronicles - Chrono Trigger (USA) (Rev 1).cue",
+      "sha1": "8958dc68e4ba6b5d8aaf2f101b00ea38fc3ecdc5",
+      "size": 121
+    },
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr final-fantasy-chronicles.4566.gme: unwraps the card (DexDrive .gme: 3904-byte header + card)",
+    "converted": {
+      "size": 131072,
+      "sha1": "4e0aefc2f39c9634da18c67d19a4b7d19d8d191a"
+    },
+    "script": "scripts/psx/Chrono Trigger.load.txt",
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "loads",
+        "detail": "Slot 1's header reads NEW GAME +; block 1: The Final Battle"
+      },
+      "beetle-psx-hw": {
+        "result": "loads",
+        "detail": "Slot 1's header reads NEW GAME +; block 1: The Final Battle (the same screen as on beetle-psx)"
+      },
+      "pcsx-rearmed": {
+        "result": "loads",
+        "detail": "Slot 1's header reads NEW GAME +; block 1: The Final Battle (the same screen as on beetle-psx)"
+      },
+      "swanstation": {
+        "result": "loads",
+        "detail": "Slot 1's header reads NEW GAME +; block 1: The Final Battle (the same screen as on beetle-psx)"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": [
+      "beetle-psx",
+      "beetle-psx-hw",
+      "pcsx-rearmed",
+      "swanstation"
+    ]
+  },
+  "note": null
+}

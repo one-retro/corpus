@@ -1,0 +1,75 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_dexdrive",
+  "url": "https://gamefaqs.gamespot.com/ps/198277-persona-revelations-series/saves/1348",
+  "source_page": "https://gamefaqs.gamespot.com/ps/198277-persona-revelations-series/saves",
+  "source": "GameFAQs (section 'PlayStation DexDrive Save (Japan)')",
+  "author": "DuoMaxwell",
+  "licence": null,
+  "posted": "2001-12-07",
+  "fetched": "2026-11-05",
+  "what_it_is": "End game of the good ending",
+  "gamefaqs": {
+    "id": 1348,
+    "product": "Persona: Revelations Series",
+    "section": "PlayStation DexDrive Save (Japan)",
+    "region": "Japan",
+    "served_as": "persona-revelations-series.1348.gme",
+    "listed_size": "131KB"
+  },
+  "format": "DexDrive .gme: '123-456-STD' 3904-byte header (per-block comments) + 131072-byte raw card; the card holds 1 save(s), 1 for this game (BISLPS-00500S0)",
+  "release": "Megami Ibunroku - Persona - Be Your True Mind (Japan)",
+  "game_saves": [
+    {
+      "name": "BISLPS-00500S0",
+      "blocks": 2,
+      "title": "女神異聞録 ペルソナ Sデータ1 LV99 54:19:19"
+    }
+  ],
+  "files": {
+    "persona-revelations-series.1348.gme": {
+      "size": 134976,
+      "sha1": "56dfb301657b2674bcb156663838cb29fc910171"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": null,
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr persona-revelations-series.1348.gme: unwraps the card (DexDrive .gme: 3904-byte header + card)",
+    "converted": {
+      "size": 131072,
+      "sha1": "458c62cf411bfbf82977a90e78d784d7c9a26bda"
+    },
+    "script": null,
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "not-run",
+        "detail": "no image of Megami Ibunroku - Persona - Be Your True Mind (Japan) in the library"
+      },
+      "beetle-psx-hw": {
+        "result": "not-run",
+        "detail": "no image of Megami Ibunroku - Persona - Be Your True Mind (Japan) in the library"
+      },
+      "pcsx-rearmed": {
+        "result": "not-run",
+        "detail": "no image of Megami Ibunroku - Persona - Be Your True Mind (Japan) in the library"
+      },
+      "swanstation": {
+        "result": "not-run",
+        "detail": "no image of Megami Ibunroku - Persona - Be Your True Mind (Japan) in the library"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": []
+  },
+  "note": null
+}

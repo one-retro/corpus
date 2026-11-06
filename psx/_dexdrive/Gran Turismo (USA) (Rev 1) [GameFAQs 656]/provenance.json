@@ -1,0 +1,84 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_dexdrive",
+  "url": "https://gamefaqs.gamespot.com/ps/197468-gran-turismo/saves/656",
+  "source_page": "https://gamefaqs.gamespot.com/ps/197468-gran-turismo/saves",
+  "source": "GameFAQs (section 'PlayStation DexDrive Save (North America)')",
+  "author": "The_Game_Spawn",
+  "licence": null,
+  "posted": "2001-01-25",
+  "fetched": "2026-11-05",
+  "what_it_is": "Garage 1 - Approx. 100 Cars - All Modified or Racing Cars - Everything Unlocked (5 Blocks)",
+  "gamefaqs": {
+    "id": 656,
+    "product": "Gran Turismo",
+    "section": "PlayStation DexDrive Save (North America)",
+    "region": "North America",
+    "served_as": "gran-turismo.656.gme",
+    "listed_size": "131KB"
+  },
+  "format": "DexDrive .gme: '123-456-STD' 3904-byte header (per-block comments) + 131072-byte raw card; the card holds 1 save(s), 1 for this game (BASCUS-94194GT)",
+  "release": "Gran Turismo (USA) (Rev 1)",
+  "game_saves": [
+    {
+      "name": "BASCUS-94194GT",
+      "blocks": 5,
+      "title": "GT game data"
+    }
+  ],
+  "files": {
+    "gran-turismo.656.gme": {
+      "size": 134976,
+      "sha1": "d09df82080bddb3cb06a21e1e0afb50b9ee186fc"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Gran Turismo (USA) (Rev 1).cue",
+      "sha1": "ad114ef1312b81c7ee9995df1217cc1a089e381e",
+      "size": 92
+    },
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr gran-turismo.656.gme: unwraps the card (DexDrive .gme: 3904-byte header + card)",
+    "converted": {
+      "size": 131072,
+      "sha1": "c832ace3ef538383bb6d6e802dff35e6dbf99cb3"
+    },
+    "script": "scripts/psx/Gran Turismo.load.txt",
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "loads",
+        "detail": "the game loads the card at boot; Simulation Mode > My Home shows Day 187, Cr 16,467,380, car SUPRA"
+      },
+      "beetle-psx-hw": {
+        "result": "loads",
+        "detail": "the game loads the card at boot; Simulation Mode > My Home shows Day 187, Cr 16,467,380, car SUPRA (the same screen as on beetle-psx)"
+      },
+      "pcsx-rearmed": {
+        "result": "loads",
+        "detail": "the game loads the card at boot; Simulation Mode > My Home shows Day 187, Cr 16,467,380, car SUPRA (the same screen as on beetle-psx)"
+      },
+      "swanstation": {
+        "result": "loads",
+        "detail": "the game loads the card at boot; Simulation Mode > My Home shows Day 187, Cr 16,467,380, car SUPRA (the same screen as on beetle-psx)"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": [
+      "beetle-psx",
+      "beetle-psx-hw",
+      "pcsx-rearmed",
+      "swanstation"
+    ]
+  },
+  "note": null
+}

@@ -1,0 +1,119 @@
+{
+  "method": "downloaded",
+  "system": "gba",
+  "core": "_gameshark",
+  "url": "https://gamefaqs.gamespot.com/gba/468480-fire-emblem/saves/22105",
+  "source_page": "https://gamefaqs.gamespot.com/gba/468480-fire-emblem/saves",
+  "source": "GameFAQs (section 'GameBoy Advance GameShark Save (Europe)')",
+  "author": "HenryEX",
+  "licence": null,
+  "posted": "2011-11-07",
+  "fetched": "2026-11-05",
+  "what_it_is": "Clean file with 100% sound room, 100 % background art, 100% conversations and all (usually not attainable in Europe) GC bonus items. For the game version with languages English, French and German.",
+  "gamefaqs": {
+    "id": 22105,
+    "product": "Fire Emblem",
+    "section": "GameBoy Advance GameShark Save (Europe)",
+    "region": "Europe",
+    "served_as": "fire-emblem.22105.sps",
+    "listed_size": "64KB"
+  },
+  "format": "SharkPort save (\"SharkPortSave\", kind 0x000F0000): title \"FIREEMBLEMX\", date \"07.11.2011 20:35:04\", notes \"This is a fresh save file for the European Fire Emblem ga...\"; cart header \"FIREEMBLEMX\" / 'AE7X' (complement 0xab); payload 65536 bytes; checksum: signed",
+  "files": {
+    "fire-emblem.22105.sps": {
+      "size": 65870,
+      "sha1": "c45e9c934f07324048558c85ca6f7d9c7f5b0b6e"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Fire Emblem (Europe) (En,Fr,De).gba",
+      "sha1": "c37e3bae84b53e6972ed7608541a62896fa5d6a3",
+      "size": 16777216
+    },
+    "converted_with": "tools/gamefaqs/gba-sharkport.py fire-emblem.22105.sps --rom ROM --core CORE --outdir DIR: reads the SharkPort container as mGBA does and imports the payload as mGBA's _importSavedata does (cut to the chip, EEPROM 8-byte blocks reversed, the rest of the chip erased), then lays the chip out as the core keeps it",
+    "converted": {
+      "size": 32768,
+      "sha1": "7b86b2b6d764bb9b0f8be11c7dd4256820a5c208"
+    },
+    "script": "scripts/gba/Fire Emblem (Europe).load.txt",
+    "cores": {
+      "mgba": {
+        "result": "loads",
+        "detail": "Neues Spiel and Extras, German preselected on the language screen: extras only, as described (\"clean file\")",
+        "core_version": "mGBA 0.11-212-7a12d6d",
+        "file": {
+          "name": "Fire Emblem (Europe) (En,Fr,De).srm",
+          "size": 32768,
+          "sha1": "7b86b2b6d764bb9b0f8be11c7dd4256820a5c208"
+        },
+        "frame": "menu"
+      },
+      "vba-m": {
+        "result": "loads",
+        "detail": "Neues Spiel and Extras, German preselected on the language screen: extras only, as described (\"clean file\") (same menu in this core; the background animates)",
+        "core_version": "VBA-M 115defb",
+        "file": {
+          "name": "Fire Emblem (Europe) (En,Fr,De).srm",
+          "size": 32768,
+          "sha1": "7b86b2b6d764bb9b0f8be11c7dd4256820a5c208"
+        },
+        "frame": "menu"
+      },
+      "gpsp": {
+        "result": "loads",
+        "detail": "Neues Spiel and Extras, German preselected on the language screen: extras only, as described (\"clean file\")",
+        "core_version": "gpSP v1.1.0-5819380",
+        "file": {
+          "name": "Fire Emblem (Europe) (En,Fr,De).srm",
+          "size": 131072,
+          "sha1": "1fc85a3841ab4a03117acfcd3f6fe6f6be5f84e1"
+        },
+        "frame": "menu"
+      },
+      "vba-next": {
+        "result": "loads",
+        "detail": "Neues Spiel and Extras, German preselected on the language screen: extras only, as described (\"clean file\")",
+        "core_version": "VBA Next v1.0.2",
+        "file": {
+          "name": "Fire Emblem (Europe) (En,Fr,De).srm",
+          "size": 139264,
+          "sha1": "dc02b8b5db9bbdf281333ca082fe04f39d13e2e8"
+        },
+        "frame": "menu"
+      },
+      "beetle-gba": {
+        "result": "loads",
+        "detail": "Neues Spiel and Extras, German preselected on the language screen: extras only, as described (\"clean file\") (same menu in this core; the background animates)",
+        "core_version": "Beetle GBA v0.9.36 b158166",
+        "file": {
+          "name": "Fire Emblem (Europe) (En,Fr,De).7b7a43f3ac4a3facc65aa6b616c0b887.sav",
+          "size": 65536,
+          "sha1": "45e4db6e0752cf374456a918497b2322cca8de1d"
+        },
+        "frame": "menu"
+      },
+      "skyemu": {
+        "result": "loads",
+        "detail": "Neues Spiel and Extras, German preselected on the language screen: extras only, as described (\"clean file\")",
+        "core_version": "SkyEmu adacd0788964ed89f5c43dcbc1f3cc26deec996c",
+        "file": {
+          "name": "Fire Emblem (Europe) (En,Fr,De).srm",
+          "size": 131072,
+          "sha1": "1fc85a3841ab4a03117acfcd3f6fe6f6be5f84e1"
+        },
+        "frame": "menu"
+      }
+    },
+    "proof_order": [
+      "mgba",
+      "vba-m",
+      "gpsp",
+      "vba-next",
+      "beetle-gba",
+      "skyemu"
+    ]
+  },
+  "note": null
+}

@@ -1,0 +1,131 @@
+{
+  "method": "downloaded",
+  "system": "ps2",
+  "core": "_x-port",
+  "url": "https://gamefaqs.gamespot.com/ps2/561066-gran-turismo-4/saves/17383",
+  "source_page": "https://gamefaqs.gamespot.com/ps2/561066-gran-turismo-4/saves",
+  "source": "GameFAQs (section 'PlayStation2 X-Port Save (North America)')",
+  "author": "Jeco_g",
+  "licence": null,
+  "posted": "2008-07-01",
+  "fetched": "2026-11-05",
+  "what_it_is": "F1 arcade mode, 824 garage, 90% GT mode,money.",
+  "gamefaqs": {
+    "id": 17383,
+    "product": "Gran Turismo 4",
+    "section": "PlayStation2 X-Port Save (North America)",
+    "region": "North America",
+    "served_as": "gran-turismo-4.17383.xps",
+    "listed_size": "1494KB"
+  },
+  "format": "SharkPort / X-Port save: 'SharkPortSave' header (title 'NEW_FILE', date 'Game data', comment ''), folder BASCUS-97328GAMEDATA, 4 files, 1528584 bytes of file data, 4-byte checksum at the end",
+  "files": {
+    "gran-turismo-4.17383.xps": {
+      "size": 1529892,
+      "sha1": "192c67c46897008e1f5a6200c33892db54b7b4c9"
+    }
+  },
+  "save": {
+    "folder": "BASCUS-97328GAMEDATA",
+    "title": [
+      "GRAN TURISMO 4",
+      "Game data"
+    ],
+    "times": "as the file stores them (PS2 card times, JST)",
+    "files": [
+      {
+        "name": "icon.sys",
+        "size": 964,
+        "sha1": "cce82f67a0f89c70731af7b0fb0b9c752fd05e5e",
+        "created": "2008-07-01 12:02:16",
+        "modified": "2008-07-01 12:02:16"
+      },
+      {
+        "name": "icon0.ico",
+        "size": 9796,
+        "sha1": "5c55e0ea3f302b6ce15d03fb247039d41b83f032",
+        "created": "2008-07-01 12:02:16",
+        "modified": "2008-07-01 12:02:16"
+      },
+      {
+        "name": "BASCUS-97328GAMEDATA",
+        "size": 237760,
+        "sha1": "0f9a0ee74d0d9c954cf7b628007ef5d69d3e3308",
+        "created": "2008-07-01 12:02:14",
+        "modified": "2008-07-01 12:02:14"
+      },
+      {
+        "name": "garage",
+        "size": 1280064,
+        "sha1": "81980560b8e06d45d0529671109e7f976ca885ec",
+        "created": "2008-07-01 12:02:16",
+        "modified": "2008-07-01 12:02:16"
+      }
+    ]
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Gran Turismo 4 (USA).iso",
+      "sha1": "5b1dbf056f45f8023e8e4958e6d7deb31fc64a47",
+      "size": 5314478080
+    },
+    "converted_with": "tools/gamefaqs/ps2-card.py 'gran-turismo-4.17383.xps' -o OUT: reads the save with mymcplus 3.0.5 and writes OUT/Mcd001.ps2 (an 8 MiB card with ECC, formatted and filled by mymcplus) for lrps2/pcee2/pcsx2, and OUT/mc0/<folder>/ for Play!",
+    "converted": {
+      "Mcd001.ps2": {
+        "size": 8650752,
+        "sha1": "d0de1228b488a3bafae24253c51ef4e3961e89fa"
+      },
+      "mc0/BASCUS-97328GAMEDATA/": {
+        "icon.sys": {
+          "size": 964,
+          "sha1": "cce82f67a0f89c70731af7b0fb0b9c752fd05e5e"
+        },
+        "icon0.ico": {
+          "size": 9796,
+          "sha1": "5c55e0ea3f302b6ce15d03fb247039d41b83f032"
+        },
+        "BASCUS-97328GAMEDATA": {
+          "size": 237760,
+          "sha1": "0f9a0ee74d0d9c954cf7b628007ef5d69d3e3308"
+        },
+        "garage": {
+          "size": 1280064,
+          "sha1": "81980560b8e06d45d0529671109e7f976ca885ec"
+        }
+      },
+      "read_back": "work/ps2/tools/mcfs.py lists every file with the size and SHA-1 put on the card; one-saves (1saves convert + inspect) reads the card and finds BASCUS-97328GAMEDATA",
+      "timestamps": "what the save does not date is 2000-01-01 00:00:00 (JST, as a card stores it); the card's own root entries too"
+    },
+    "script": "scripts/ps2/Gran Turismo 4 (USA).load.txt",
+    "cores": {
+      "pcee2": {
+        "detail": "GT Mode map: DMC DeLorean S2 '04, Cr 999,919,411,385, 15 JUL; Jeko's Home: Complete 90.3%, A-spec 12903, B-spec 1964, Days 1201",
+        "result": "loads"
+      },
+      "lrps2": {
+        "detail": "GT Mode map: DMC DeLorean S2 '04, Cr 999,919,411,385, 15 JUL; Jeko's Home: Complete 90.3%, A-spec 12903, B-spec 1964, Days 1201",
+        "result": "loads"
+      },
+      "play": {
+        "detail": "Jeko's Home: Complete 90.3%, A-spec 12903, B-spec 1964, Days 1201; DMC DeLorean S2 '04, Cr 999,919,411,385, 15 JUL",
+        "result": "loads"
+      },
+      "pcsx2": {
+        "detail": "GT Mode map: DMC DeLorean S2 '04, Cr 999,919,411,385, 15 JUL; Jeko's Home: Complete 90.3%, A-spec 12903, B-spec 1964, Days 1201",
+        "result": "loads"
+      },
+      "armsx2": {
+        "result": "not-run",
+        "detail": "ARMSX2 renders only through Vulkan here and falls back to a null GS (no picture), so nothing shows what the game read (ps2/NOTES.md)"
+      }
+    },
+    "proof_order": [
+      "pcee2",
+      "lrps2",
+      "play",
+      "pcsx2"
+    ]
+  },
+  "note": null
+}

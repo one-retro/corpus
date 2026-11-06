@@ -1,0 +1,8 @@
+# Load check for a save made elsewhere (tools/GAMEFAQS.md), European release:
+# with no file the game asks for a language first; A takes the selected one,
+# then CHOOSE A FILE shows the files.
+wait 1100
+shot language
+press a 6
+wait 400
+shot files

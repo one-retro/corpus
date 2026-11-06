@@ -1,0 +1,84 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_dexdrive",
+  "url": "https://gamefaqs.gamespot.com/arcade/563192-tekken-3/saves/29",
+  "source_page": "https://gamefaqs.gamespot.com/arcade/563192-tekken-3/saves",
+  "source": "GameFAQs (section 'PlayStation DexDrive Save (North America)')",
+  "author": "WLau",
+  "licence": null,
+  "posted": "2000-06-02",
+  "fetched": "2026-11-05",
+  "what_it_is": "All secrets unlocked.",
+  "gamefaqs": {
+    "id": 29,
+    "product": "Tekken 3",
+    "section": "PlayStation DexDrive Save (North America)",
+    "region": "North America",
+    "served_as": "tekken-3.29.gme",
+    "listed_size": "131KB"
+  },
+  "format": "DexDrive .gme: '123-456-STD' 3904-byte header (per-block comments) + 131072-byte raw card; the card holds 1 save(s), 1 for this game (BASLUS-00402TEKKEN-3)",
+  "release": "Tekken 3 (USA)",
+  "game_saves": [
+    {
+      "name": "BASLUS-00402TEKKEN-3",
+      "blocks": 1,
+      "title": "[TEKKEN 3] NEW BATTLES AWAIT!!"
+    }
+  ],
+  "files": {
+    "tekken-3.29.gme": {
+      "size": 134976,
+      "sha1": "e7621deffa2ed67d22f09eebee2644b97b183d4e"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Tekken 3 (USA).cue",
+      "sha1": "69d1f34ff24096b9fb95b45232ba684872cd8de2",
+      "size": 306
+    },
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr tekken-3.29.gme: unwraps the card (DexDrive .gme: 3904-byte header + card)",
+    "converted": {
+      "size": 131072,
+      "sha1": "ac3ac4a38f35942b1f4ed4b5abd2d5bc0dc6057c"
+    },
+    "script": "scripts/psx/Tekken 3.load.txt",
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "loads",
+        "detail": "the game loads the card at boot; Arcade opens the full Player Select grid of 24 fighters (no card: the starting ten)"
+      },
+      "beetle-psx-hw": {
+        "result": "loads",
+        "detail": "the game loads the card at boot; Arcade opens the full Player Select grid of 24 fighters (no card: the starting ten) (the same screen as on beetle-psx)"
+      },
+      "pcsx-rearmed": {
+        "result": "loads",
+        "detail": "the game loads the card at boot; Arcade opens the full Player Select grid of 24 fighters (no card: the starting ten) (the same screen as on beetle-psx)"
+      },
+      "swanstation": {
+        "result": "loads",
+        "detail": "the game loads the card at boot; Arcade opens the full Player Select grid of 24 fighters (no card: the starting ten) (the same screen as on beetle-psx)"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": [
+      "beetle-psx",
+      "beetle-psx-hw",
+      "pcsx-rearmed",
+      "swanstation"
+    ]
+  },
+  "note": null
+}

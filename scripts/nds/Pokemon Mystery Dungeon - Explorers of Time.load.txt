@@ -1,0 +1,2 @@
+# Pokemon Mystery Dungeon - Explorers of Time: the same menus as Explorers of Sky.
+include Pokemon Mystery Dungeon - Explorers of Sky.load.txt

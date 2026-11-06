@@ -1,0 +1,2 @@
+# Pokemon Diamond: the same game as Pearl.
+include Pokemon - Pearl Version.load.txt

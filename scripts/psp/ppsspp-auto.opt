@@ -1,0 +1,3 @@
+# libretro PPSSPP: leave the backend on auto. "opengl" asks for a legacy context, which on macOS
+# is OpenGL 2.1 and the game never starts; auto takes the OpenGL 4.1 core context.
+ppsspp_backend = auto

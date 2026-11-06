@@ -1,0 +1,77 @@
+{
+  "method": "downloaded",
+  "system": "n64",
+  "core": "_dexdrive",
+  "url": "https://gamefaqs.gamespot.com/n64/198275-perfect-dark/saves/34",
+  "source_page": "https://gamefaqs.gamespot.com/n64/198275-perfect-dark/saves",
+  "source": "GameFAQs (section 'Nintendo 64 DexDrive Save (North America)')",
+  "author": "Nemesis",
+  "licence": null,
+  "posted": "2000-06-02",
+  "fetched": "2026-11-05",
+  "what_it_is": "Solo missions fully completed in Agent Mode, along with some cool cheats like Rocket Launchers unlocked.",
+  "gamefaqs": {
+    "id": 34,
+    "product": "Perfect Dark (2000)",
+    "section": "Nintendo 64 DexDrive Save (North America)",
+    "region": "North America",
+    "served_as": "perfect-dark-2000.34.n64",
+    "listed_size": "36KB"
+  },
+  "format": "DexDrive .n64: \"123-456-STD\" and a 0x1040-byte header (DexPlorer comments), then a 32 KiB Controller Pak: note NPDE/4Y \"PERFECT DARK\", 28 pages",
+  "files": {
+    "perfect-dark-2000.34.n64": {
+      "size": 36928,
+      "sha1": "1664712598acf48285657508d929a4c46abf932d"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "converted_with": "tools/gamefaqs/n64-dexdrive.py convert perfect-dark-2000.34.n64 OUT: dexdrive: pak = the 32768 bytes after the 0x1040-byte header",
+    "converted": {
+      "size": 296960,
+      "sha1": "f912794e54de21485884de131eeb14b2f574d0a2"
+    },
+    "converted_standalone": {
+      "files": {
+        "save.mpk": {
+          "size": 131072,
+          "sha1": "162ce7e6bb68d5f09d42f4ccb5215d12c20b82da"
+        }
+      },
+      "how": "the same bytes as the .srm regions, as standalone Mupen64Plus keeps them: <GoodName (32 chars)>-<MD5 8>.eep/.sra/.fla/.mpk in its save folder"
+    },
+    "rom": {
+      "name": "Perfect Dark (USA) (Rev 1).z64",
+      "sha1": "af8788ac4d1a57260eae9c53ffe851fcf2a3319b",
+      "size": 33554432
+    },
+    "script": "scripts/n64/Perfect Dark.load.txt",
+    "baseline": "with no save: Choose Your Reality lists only New Agent...",
+    "cores": {
+      "mupen64plus-next": {
+        "result": "rejected",
+        "detail": "Choose Your Reality lists only New Agent...: the game reads the pak (no damage message) but finds no agent file in the PERFECT DARK note; the same in all three cores"
+      },
+      "parallel-n64": {
+        "result": "rejected",
+        "detail": "Choose Your Reality lists only New Agent...: the game reads the pak (no damage message) but finds no agent file in the PERFECT DARK note; the same in all three cores"
+      },
+      "mupen64plus": {
+        "result": "rejected",
+        "detail": "Choose Your Reality lists only New Agent...: the game reads the pak (no damage message) but finds no agent file in the PERFECT DARK note; the same in all three cores"
+      }
+    },
+    "core_versions": {
+      "mupen64plus": "Mupen64Plus 2.6.0 (Homebrew), glide64mk2 video, rsp-hle",
+      "mupen64plus-next": "Mupen64Plus-Next 3.0-Vulkan 15bada8",
+      "parallel-n64": "ParaLLEl N64 1.0 e8cbdbb"
+    },
+    "proof_order": [
+      "mupen64plus-next",
+      "parallel-n64",
+      "mupen64plus"
+    ]
+  },
+  "note": "The PERFECT DARK note is intact as far as the pak's file system goes (28 pages, index table valid), but no core lists an agent from it. Posted 11 days after the game's US release, so it may come from the first revision; the library has only Rev 1 to test with."
+}

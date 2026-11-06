@@ -1,0 +1,98 @@
+{
+  "method": "downloaded",
+  "system": "nds",
+  "core": "_nogba",
+  "url": "https://gamefaqs.gamespot.com/ds/925601-pokemon-diamond-version/saves/16637",
+  "source_page": "https://gamefaqs.gamespot.com/ds/925601-pokemon-diamond-version/saves",
+  "source": "GameFAQs (section 'Action Replay Max DS (1.00-1.03) Game Save (Europe)')",
+  "author": "Wachon",
+  "licence": null,
+  "posted": "2008-02-16",
+  "fetched": "2026-11-05",
+  "what_it_is": "Some Pokemon at level 100 All done",
+  "gamefaqs": {
+    "id": 16637,
+    "product": "Pokemon Diamond / Pearl / Platinum Version",
+    "section": "Action Replay Max DS (1.00-1.03) Game Save (Europe)",
+    "region": "Europe",
+    "served_as": "pokemon-diamond-pearl-platinum-version.16637.dss",
+    "listed_size": "156KB"
+  },
+  "format": "no$gba backup file ('NocashGbaBackupMediaSavDataFile', SRAM, method 1 packed): unpacks to 512 KiB raw",
+  "files": {
+    "pokemon-diamond-pearl-platinum-version.16637.dss": {
+      "size": 159830,
+      "sha1": "4bb844ecd0c957de5d81adbc4ac8f714b276b0eb"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": null,
+    "converted_with": "tools/gamefaqs/nds-nocash.py IN step0.bin, then tools/gamefaqs/nds-cores.py step0.bin --chip 524288 --stem 'Pokemon - Edicion Diamante (Spain) (Rev 5)' --out DIR: unpacks the no$gba file; fits it to the 524288-byte chip (exact size) and writes each core's file",
+    "converted": {
+      "size": 524288,
+      "sha1": "b62a74ece01dfbb7db734b40ea6a91b111690fd6"
+    },
+    "core_files": {
+      "desmume": {
+        "name": "Pokemon - Edicion Diamante (Spain) (Rev 5).dsv",
+        "size": 524410,
+        "sha1": "64f4975f23677282e4e8f3c16f61cf537f75e53c"
+      },
+      "desmume-2015": {
+        "name": "Pokemon - Edicion Diamante (Spain) (Rev 5).dsv",
+        "size": 524410,
+        "sha1": "64f4975f23677282e4e8f3c16f61cf537f75e53c"
+      },
+      "melonds": {
+        "name": "Pokemon - Edicion Diamante (Spain) (Rev 5).sav",
+        "size": 524288,
+        "sha1": "b62a74ece01dfbb7db734b40ea6a91b111690fd6"
+      },
+      "melonds-ds": {
+        "name": "Pokemon - Edicion Diamante (Spain) (Rev 5).srm",
+        "size": 524288,
+        "sha1": "b62a74ece01dfbb7db734b40ea6a91b111690fd6"
+      },
+      "noods": {
+        "name": "Pokemon - Edicion Diamante (Spain) (Rev 5).sav",
+        "size": 524288,
+        "sha1": "b62a74ece01dfbb7db734b40ea6a91b111690fd6"
+      },
+      "skyemu": {
+        "name": "Pokemon - Edicion Diamante (Spain) (Rev 5).srm",
+        "size": 8388608,
+        "sha1": "e4377dc387e50c923651aae6e3661ee4f3047124"
+      }
+    },
+    "script": null,
+    "cores": {
+      "desmume": {
+        "result": "not-run",
+        "detail": "no image of Pokemon - Edicion Diamante (Spain) (Rev 5) in the library"
+      },
+      "desmume-2015": {
+        "result": "not-run",
+        "detail": "no image of Pokemon - Edicion Diamante (Spain) (Rev 5) in the library"
+      },
+      "melonds": {
+        "result": "not-run",
+        "detail": "no image of Pokemon - Edicion Diamante (Spain) (Rev 5) in the library"
+      },
+      "melonds-ds": {
+        "result": "not-run",
+        "detail": "no image of Pokemon - Edicion Diamante (Spain) (Rev 5) in the library"
+      },
+      "noods": {
+        "result": "not-run",
+        "detail": "no image of Pokemon - Edicion Diamante (Spain) (Rev 5) in the library"
+      },
+      "skyemu": {
+        "result": "not-run",
+        "detail": "no image of Pokemon - Edicion Diamante (Spain) (Rev 5) in the library"
+      }
+    },
+    "proof_order": []
+  },
+  "note": "Release: Diamond/Pearl layout, Spanish (language 7); Diamond from the version that caught the player's own Pokemon (origin game in the decrypted Pokemon data, OT matching the trainer)."
+}

@@ -1,0 +1,84 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_dexdrive",
+  "url": "https://gamefaqs.gamespot.com/ps/477343-final-fantasy-chronicles/saves/11418",
+  "source_page": "https://gamefaqs.gamespot.com/ps/477343-final-fantasy-chronicles/saves",
+  "source": "GameFAQs (section 'PlayStation DexDrive Save (North America)')",
+  "author": "Sizux",
+  "licence": null,
+  "posted": "2006-04-11",
+  "fetched": "2026-11-05",
+  "what_it_is": "Chrono at end of game, level 42 with very good stuff.",
+  "gamefaqs": {
+    "id": 11418,
+    "product": "Final Fantasy Chronicles",
+    "section": "PlayStation DexDrive Save (North America)",
+    "region": "North America",
+    "served_as": "final-fantasy-chronicles.11418.gme",
+    "listed_size": "131KB"
+  },
+  "format": "DexDrive .gme: '123-456-STD' 3904-byte header (per-block comments) + 131072-byte raw card; the card holds 1 save(s), 1 for this game (BASLUS-01363-00002)",
+  "release": "Final Fantasy Chronicles - Chrono Trigger (USA) (Rev 1)",
+  "game_saves": [
+    {
+      "name": "BASLUS-01363-00002",
+      "blocks": 1,
+      "title": "Chrono FILE02 Crono LV46 15:39"
+    }
+  ],
+  "files": {
+    "final-fantasy-chronicles.11418.gme": {
+      "size": 134976,
+      "sha1": "a2baaded6ee2e2394fc6a4fa6a837fb8e070d1ff"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Final Fantasy Chronicles - Chrono Trigger (USA) (Rev 1).cue",
+      "sha1": "8958dc68e4ba6b5d8aaf2f101b00ea38fc3ecdc5",
+      "size": 121
+    },
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr final-fantasy-chronicles.11418.gme: unwraps the card (DexDrive .gme: 3904-byte header + card)",
+    "converted": {
+      "size": 131072,
+      "sha1": "a7c804e7a03fe7420259a60e343bd9e935e95327"
+    },
+    "script": "scripts/psx/Chrono Trigger.load.txt",
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "loads",
+        "detail": "Slot 1 lists block 2: The Fated Hour"
+      },
+      "beetle-psx-hw": {
+        "result": "loads",
+        "detail": "Slot 1 lists block 2: The Fated Hour (the same screen as on beetle-psx)"
+      },
+      "pcsx-rearmed": {
+        "result": "loads",
+        "detail": "Slot 1 lists block 2: The Fated Hour (the same screen as on beetle-psx)"
+      },
+      "swanstation": {
+        "result": "loads",
+        "detail": "Slot 1 lists block 2: The Fated Hour (the same screen as on beetle-psx)"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": [
+      "beetle-psx",
+      "beetle-psx-hw",
+      "pcsx-rearmed",
+      "swanstation"
+    ]
+  },
+  "note": null
+}

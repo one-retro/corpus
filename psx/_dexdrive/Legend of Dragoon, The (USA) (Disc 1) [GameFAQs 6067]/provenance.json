@@ -1,0 +1,89 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_dexdrive",
+  "url": "https://gamefaqs.gamespot.com/ps/197765-the-legend-of-dragoon/saves/6067",
+  "source_page": "https://gamefaqs.gamespot.com/ps/197765-the-legend-of-dragoon/saves",
+  "source": "GameFAQs (section 'PlayStation DexDrive Save (North America)')",
+  "author": "DuskPaladin",
+  "licence": null,
+  "posted": "2005-01-26",
+  "fetched": "2026-11-05",
+  "what_it_is": "Savestate before Drake with rather powerful characters , savestate afterwards with bandit ring (do you get the boots from drake? :)) [no cheats or anything]",
+  "gamefaqs": {
+    "id": 6067,
+    "product": "The Legend of Dragoon",
+    "section": "PlayStation DexDrive Save (North America)",
+    "region": "North America",
+    "served_as": "the-legend-of-dragoon.6067.gme",
+    "listed_size": "131KB"
+  },
+  "format": "DexDrive .gme: '123-456-STD' 3904-byte header (per-block comments) + 131072-byte raw card; the card holds 2 save(s), 2 for this game (BASCUS-94491drgn0005, BASCUS-94491drgn0003)",
+  "release": "Legend of Dragoon, The (USA) (Disc 1)",
+  "game_saves": [
+    {
+      "name": "BASCUS-94491drgn0005",
+      "blocks": 1,
+      "title": "LOD FILE06 LV13 TIME 010:37:49"
+    },
+    {
+      "name": "BASCUS-94491drgn0003",
+      "blocks": 1,
+      "title": "LOD FILE04 LV14 TIME 010:48:29"
+    }
+  ],
+  "files": {
+    "the-legend-of-dragoon.6067.gme": {
+      "size": 134976,
+      "sha1": "08d0e8fe0e15845df76d6d6002b834d69e406ed7"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Legend of Dragoon, The (USA) (Disc 1).cue",
+      "sha1": "ae7c4642ff995bd5762937cd1fc2ac9c4474db18",
+      "size": 103
+    },
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr the-legend-of-dragoon.6067.gme: unwraps the card (DexDrive .gme: 3904-byte header + card)",
+    "converted": {
+      "size": 131072,
+      "sha1": "c3b8fda9f1d32d4ae96ea4d48779a13a76fef475"
+    },
+    "script": "scripts/psx/Legend of Dragoon.load.txt",
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "loads",
+        "detail": "Continue lists files 4 and 6: LV 14 010:48:29 and LV 13 010:37:49, Shirley's Shrine"
+      },
+      "beetle-psx-hw": {
+        "result": "loads",
+        "detail": "Continue lists files 4 and 6: LV 14 010:48:29 and LV 13 010:37:49, Shirley's Shrine (the same screen as on beetle-psx)"
+      },
+      "pcsx-rearmed": {
+        "result": "loads",
+        "detail": "Continue lists files 4 and 6: LV 14 010:48:29 and LV 13 010:37:49, Shirley's Shrine (the same screen as on beetle-psx)"
+      },
+      "swanstation": {
+        "result": "loads",
+        "detail": "Continue lists files 4 and 6: LV 14 010:48:29 and LV 13 010:37:49, Shirley's Shrine (the same screen as on beetle-psx)"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": [
+      "beetle-psx",
+      "beetle-psx-hw",
+      "pcsx-rearmed",
+      "swanstation"
+    ]
+  },
+  "note": null
+}

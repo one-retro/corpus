@@ -231,3 +231,21 @@ SameBoy and IroGB only.
 ### Net de Get (MBC6)
 
 Filed under `gbc/`, see `gbc/NOTES.md`.
+
+## GameFAQs saves
+
+GameFAQs has no save section for Game Boy games; the one Game Boy save of the GameFAQs pass
+(`tools/GAMEFAQS.md`) was posted on the GBA Pokemon FireRed / LeafGreen page, in the GameShark SP
+section: GameFAQs 30881, `gb/_unknown/Pokemon - Red Version (USA, Europe) (SGB Enhanced) [GameFAQs 30881]/`.
+
+- **What it is:** 32768 bytes of MBC3 cartridge RAM (player RED, 151 caught, no badges, 16:02)
+  plus a **44-byte** clock footer: 5 + 5 u32 LE registers and a **u32** Unix time (2024-11-06, two
+  days before it was posted). That is the older VBA/BGB footer; mGBA, VBA-M and BGB write 48 bytes
+  now (u64 time, see "Clock" above), so the emulator is not identified (`_unknown`). Red and Blue
+  share the layout; it is filed and verified as Red.
+- **Converted:** `tools/gamefaqs/gb-footer.py` keeps the RAM and drops the footer.
+- **Verified:** `scripts/gb/Pokemon Red.load.txt` (title, CONTINUE, the file box) on the ten libretro
+  cores: doublecherrygb, fixgb, gambatte, gearboy, irogb, mgba, sameboy, skyemu, tgb-dual, vba-m.
+  **All ten load it** and show the same box; with no save all ten start NEW GAME. FixGB and IroGB
+  reach the title menu a few START taps after the others. Mednafen and the mGBA app were not run;
+  the MiSTer and openFPGA cores cannot run here.

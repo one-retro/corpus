@@ -1,0 +1,87 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_dexdrive",
+  "url": "https://gamefaqs.gamespot.com/mac/575278-diablo/saves/583",
+  "source_page": "https://gamefaqs.gamespot.com/mac/575278-diablo/saves",
+  "source": "GameFAQs (section 'PlayStation DexDrive Save (North America)')",
+  "author": "Kasket_Darkfyre",
+  "licence": null,
+  "posted": "2001-01-03",
+  "fetched": "2026-11-05",
+  "what_it_is": "Good Start with Gold: Warrior Class",
+  "gamefaqs": {
+    "id": 583,
+    "product": "Diablo",
+    "section": "PlayStation DexDrive Save (North America)",
+    "region": "North America",
+    "served_as": "diablo.583.gme",
+    "listed_size": "131KB"
+  },
+  "format": "DexDrive .gme: '123-456-STD' 3904-byte header (per-block comments) + 131072-byte raw card; the card holds 1 save(s), 1 for this game (BASLUS-00619-DIAB-01)",
+  "release": "Diablo (USA) (En,Fr,De,Sv)",
+  "game_saves": [
+    {
+      "name": "BASLUS-00619-DIAB-01",
+      "blocks": 10,
+      "title": "DIABLO−1P L 3 WAR KASKET"
+    }
+  ],
+  "files": {
+    "diablo.583.gme": {
+      "size": 134976,
+      "sha1": "9cd370ddc1ebc42ed572a93736bcf769e2b4e755"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Diablo (USA) (En,Fr,De,Sv).cue",
+      "sha1": "0789d354e661ae88facb3f22fc2cf39e0bc771e6",
+      "size": 92
+    },
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr diablo.583.gme: unwraps the card (DexDrive .gme: 3904-byte header + card)",
+    "converted": {
+      "size": 131072,
+      "sha1": "7152e151654556417381c53397af2f2f29d686be"
+    },
+    "script": "scripts/psx/Diablo.load.txt",
+    "script_variants": {
+      "pcsx-rearmed": "scripts/psx/Diablo.pcsx-rearmed.load.txt",
+      "swanstation": "scripts/psx/Diablo.swanstation.load.txt"
+    },
+    "cores": {
+      "beetle-psx": {
+        "result": "loads",
+        "detail": "Select Memory Card names slot 1's game: 1P L 3 WARRIOR KASKET"
+      },
+      "beetle-psx-hw": {
+        "result": "loads",
+        "detail": "Select Memory Card names slot 1's game: 1P L 3 WARRIOR KASKET (the same screen as on beetle-psx)"
+      },
+      "pcsx-rearmed": {
+        "result": "loads",
+        "detail": "Select Memory Card names slot 1's game: 1P L 3 WARRIOR KASKET (the same screen as on beetle-psx)"
+      },
+      "swanstation": {
+        "result": "loads",
+        "detail": "Select Memory Card names slot 1's game: 1P L 3 WARRIOR KASKET (the same screen as on beetle-psx)"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": [
+      "beetle-psx",
+      "beetle-psx-hw",
+      "pcsx-rearmed",
+      "swanstation"
+    ]
+  },
+  "note": null
+}

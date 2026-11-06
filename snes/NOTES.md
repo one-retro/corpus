@@ -251,3 +251,53 @@ Two facts from that search:
 - **Aborting cores:** make-save.py treats any non-zero exit as failure, even when the core wrote its saves before aborting (mednafen-bsnes). Workaround: `work/snes/file_aborted.py`.
 - **Re-pressing a button:** two `press` lines back to back do not release the button in between, so a second press of the same button needs a gap or another command.
 - **Disk:** the disk was full (about 130 MB free) during this run. This slice's scratch was deleted to make room.
+
+## GameFAQs saves
+
+The GameFAQs pass (2026-11-05, `tools/GAMEFAQS.md`) found 8 SNES saves, all in "Wii VC Game Save
+File" sections. A ninth file, posted in the Wii VC section of the TurboGrafx-CD Ys III page, turned
+out to be this system's: the SNES Ys III's SRAM.
+
+| Id | Filed as | Release | What it is |
+| --- | --- | --- | --- |
+| 22056, 21934, 21935, 21936, 21937 | `_wii-vc` | Chrono Trigger (USA) | `data.bin`, title `JECE`, `savedata.bin` 8192 |
+| 24072 | `_wii-vc` | Kirby's Fun Pak (Europe) | `data.bin`, `JCCP`, `savedata.bin` 8192 |
+| 22019 | `_wii-vc` | Super Mario RPG - Legend of the Seven Stars (USA, Europe) (Virtual Console) | `data.bin`, `JCBM` (the European VC release is the US game), `savedata.bin` **32768** |
+| 35117 | `_wii-vc` | Super Metroid (Japan, USA) (En,Ja) | `data.bin`, `JAVE`, `savedata.bin` 8192, plus `nocopy/dummy` (348032 bytes, the VC's own data) |
+| 26177 | `_unknown` | Ys III - Wanderers from Ys (USA) | a raw 8 KiB SRAM, no container: "Wanderes from Ys (Ys-3) Programed by N.Fujisawa 91-04-24" at 0x20 is in the SNES ROM, not on the TurboGrafx-CD disc |
+
+**Conversion.** `tools/gamefaqs/wiivc-convert.py` decrypts the `data.bin`: the header is
+AES-128-CBC with the SD key, and every header MD5 checks. It takes `savedata.bin`, which is the
+cartridge SRAM byte for byte (vcromclaim: "VC SNES saves are standard SRM files"). The Ys III file
+needed nothing. Each was loaded both ways:
+- as `<ROM stem>.srm` in the save folder, for cores that read their own file (mednafen-bsnes);
+- with `--srm`, into the core's save RAM.
+
+Bytes worth knowing:
+- Super Metroid's `savedata.bin` has 3271 bytes of `60`, the same value snes9x fills fresh SRAM
+  with.
+- Super Mario RPG's VC SRAM is 32 KiB, as MiSTer's file is (see Downloaded entries).
+- one-saves has no Wii `data.bin` reader.
+
+**Saves x cores: every save loads in all 16 runnable cores.**
+- The cores: snes9x, snes9x-2010, snes9x-2005-plus, snes9x-2005, snes9x-2002, bsnes, bsnes-hd-beta,
+  bsnes-mercury, bsnes2014, higan-super-famicom, mednafen-bsnes, mesen-s, beetle-supafaust,
+  bsnes-jg, chimerasnes, higan-super-famicom-balanced.
+- The totals: 144 loads, 0 rejected, 0 core errors, 0 not run. Each core also had a baseline with
+  no save.
+- Two cores end the same way every time, after all frames have run: mednafen-bsnes aborts
+  (SIGABRT) at unload and higan-super-famicom-balanced traps (SIGTRAP) in `retro_deinit`. Both are
+  noted above and in BUILT-CORES.md, and both had already drawn every frame.
+
+| Save | What every core shows |
+| --- | --- |
+| 22056 | load screen: slot 1 "The Final Battle", End of Time, 11:30, LV 99s |
+| 21934-21937 | three slots each, named for the endings' save points ("The Final Battle", "We're Back!", "Tata and the Frog", "Forward to the Past" ...), with time, gold and save count |
+| 24072 | Kirby 1 at 100% |
+| 22019 | MARIO1 LV25 Mario's Pad, MARIO2 LV23 Factory, MARIO3 LV15 Monstro Town |
+| 35117 | SAMUS A 02:13, B 09:49, C 02:09 |
+| 26177 | LOAD MENU slot "ENTRANCE TO REDMONT"; loaded: Adol at 255/255 HP, 65535 EXP, 61597 gold |
+
+Load scripts: `scripts/snes/<game>.load.txt`. Chrono Trigger with a save goes from the title
+straight to its load screen; with no save, Start begins a new game. Kirby's Fun Pak's title is up
+only from about frame 800 to 1050.

@@ -1,0 +1,16 @@
+# Load check for a save made elsewhere (tools/GAMEFAQS.md): power on and open
+# the title menu, then the second entry: the POKeDEX (Seen and Own counts)
+# when the menu is GAME START / POKeDEX / OPTIONS / HI-SCORE, or CONTINUE (the
+# suspended game resumes) when a game was saved mid-play and the menu is
+# NEW GAME / CONTINUE / POKeDEX / ...
+# The title ignores presses until about frame 2000, and the menu ignores the
+# d-pad for about 400 frames after it opens.
+wait 2100
+press a 10          # title -> menu
+wait 500
+shot menu
+press down 10
+wait 60
+press a 10          # POKeDEX, or CONTINUE
+wait 400
+shot dex

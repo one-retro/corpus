@@ -1,0 +1,110 @@
+{
+  "method": "downloaded",
+  "system": "nds",
+  "core": "_raw",
+  "url": "https://gamefaqs.gamespot.com/ds/960099-pokemon-heartgold-version/saves/25712",
+  "source_page": "https://gamefaqs.gamespot.com/ds/960099-pokemon-heartgold-version/saves",
+  "source": "GameFAQs (section 'Action Replay Max DS (1.00-1.03) Game Save (North America)')",
+  "author": "Tamo66",
+  "licence": null,
+  "posted": "2018-08-13",
+  "fetched": "2026-11-05",
+  "what_it_is": "Beaten Everything",
+  "gamefaqs": {
+    "id": 25712,
+    "product": "Pokemon HeartGold / SoulSilver Version",
+    "section": "Action Replay Max DS (1.00-1.03) Game Save (North America)",
+    "region": "North America",
+    "served_as": "pokemon-heartgold-soulsilver-version.25712.dss",
+    "listed_size": "512KB"
+  },
+  "format": "raw 512 KiB chip image with no header (exact size)",
+  "files": {
+    "pokemon-heartgold-soulsilver-version.25712.dss": {
+      "size": 524288,
+      "sha1": "04023cafe6974589596a8d16e38bce82270e5c20"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Pokemon - HeartGold Version (USA).nds",
+      "sha1": "30793e274fb4c7ba070ae226edbdfe355504b1f5",
+      "size": 134217728,
+      "note": "a dump of this game code whose sha1 is not in the No-Intro DAT (the area after the used ROM size is blank); the region in the name is a guess"
+    },
+    "converted_with": "tools/gamefaqs/nds-cores.py IN --chip 524288 --stem 'Pokemon - HeartGold Version (USA)' --out DIR: fits it to the 524288-byte chip (exact size) and writes each core's file",
+    "converted": {
+      "size": 524288,
+      "sha1": "04023cafe6974589596a8d16e38bce82270e5c20"
+    },
+    "core_files": {
+      "desmume": {
+        "name": "Pokemon - HeartGold Version (USA).dsv",
+        "size": 524410,
+        "sha1": "845fe1132ef98a1c355c3aa45de85d6691b2745b"
+      },
+      "desmume-2015": {
+        "name": "Pokemon - HeartGold Version (USA).dsv",
+        "size": 524410,
+        "sha1": "845fe1132ef98a1c355c3aa45de85d6691b2745b"
+      },
+      "melonds": {
+        "name": "Pokemon - HeartGold Version (USA).sav",
+        "size": 524288,
+        "sha1": "04023cafe6974589596a8d16e38bce82270e5c20"
+      },
+      "melonds-ds": {
+        "name": "Pokemon - HeartGold Version (USA).srm",
+        "size": 524288,
+        "sha1": "04023cafe6974589596a8d16e38bce82270e5c20"
+      },
+      "noods": {
+        "name": "Pokemon - HeartGold Version (USA).sav",
+        "size": 524288,
+        "sha1": "04023cafe6974589596a8d16e38bce82270e5c20"
+      },
+      "skyemu": {
+        "name": "Pokemon - HeartGold Version (USA).srm",
+        "size": 8388608,
+        "sha1": "9215f9f899a56f89b8168a40633ee7732dec7764"
+      }
+    },
+    "script": "scripts/nds/Pokemon - HeartGold Version.load.txt",
+    "cores": {
+      "desmume": {
+        "result": "loads",
+        "detail": "CONTINUE: PLAYER Laptop (and a symbol), TIME 34:33, BADGES 16, POKéDEX 493"
+      },
+      "desmume-2015": {
+        "result": "loads",
+        "detail": "CONTINUE: PLAYER Laptop (and a symbol), TIME 34:33, BADGES 16, POKéDEX 493"
+      },
+      "melonds": {
+        "result": "core-error",
+        "detail": "\"A communication error has occurred. You will be returned to the title screen.\" instead of the CONTINUE panel; the same happens with every HeartGold/SoulSilver save in this core (no BIOS or firmware here, FreeBIOS), so it is the core, not this save"
+      },
+      "melonds-ds": {
+        "result": "loads",
+        "detail": "CONTINUE: PLAYER Laptop (and a symbol), TIME 34:33, BADGES 16, POKéDEX 493"
+      },
+      "noods": {
+        "result": "loads",
+        "detail": "CONTINUE: PLAYER Laptop (and a symbol), TIME 34:33, BADGES 16, POKéDEX 493"
+      },
+      "skyemu": {
+        "result": "loads",
+        "detail": "CONTINUE: PLAYER Laptop (and a symbol), TIME 34:33, BADGES 16, POKéDEX 493"
+      }
+    },
+    "proof_order": [
+      "desmume",
+      "desmume-2015",
+      "melonds",
+      "melonds-ds",
+      "noods",
+      "skyemu"
+    ]
+  },
+  "note": "Release: English; HeartGold from the version that caught the player's own Pokemon (origin game in the decrypted Pokemon data, OT matching the trainer). A raw 512 KiB file with no header; nothing in it says what wrote it."
+}

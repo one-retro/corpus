@@ -1,0 +1,10 @@
+# Load check for a save made elsewhere (tools/GAMEFAQS.md): power on and go to
+# the file screen: coins, play time, levels and the place it was saved.
+# The European release asks for a language first when it finds no save;
+# then the last shot shows that prompt.
+wait 1200
+press start 6       # PRESS START
+wait 300
+press start 6       # MARIO & LUIGI -> the file
+wait 300
+shot files

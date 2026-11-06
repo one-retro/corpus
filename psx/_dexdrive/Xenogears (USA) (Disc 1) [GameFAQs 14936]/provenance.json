@@ -1,0 +1,144 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_dexdrive",
+  "url": "https://gamefaqs.gamespot.com/ps/199365-xenogears/saves/14936",
+  "source_page": "https://gamefaqs.gamespot.com/ps/199365-xenogears/saves",
+  "source": "GameFAQs (section 'PlayStation DexDrive Save (North America)')",
+  "author": "Unos_Hambalos",
+  "licence": null,
+  "posted": "2007-05-13",
+  "fetched": "2026-11-05",
+  "what_it_is": "Save Collection VI: Promised Land, Merkava Calls, Dreams..., Fallen Star, First and Last",
+  "gamefaqs": {
+    "id": 14936,
+    "product": "Xenogears",
+    "section": "PlayStation DexDrive Save (North America)",
+    "region": "North America",
+    "served_as": "xenogears.14936.gme",
+    "listed_size": "131KB"
+  },
+  "format": "DexDrive .gme: '123-456-STD' 3904-byte header (per-block comments) + 131072-byte raw card; the card holds 13 save(s), 13 for this game (BASLUS-006640, BASLUS-006641, BASLUS-006642, BASLUS-006643, ...)",
+  "release": "Xenogears (USA) (Disc 1)",
+  "game_saves": [
+    {
+      "name": "BASLUS-006640",
+      "blocks": 1,
+      "title": "XENOGEARS/No.01 Promised Land"
+    },
+    {
+      "name": "BASLUS-006641",
+      "blocks": 1,
+      "title": "XENOGEARS/No.02 Merkava Calls"
+    },
+    {
+      "name": "BASLUS-006642",
+      "blocks": 1,
+      "title": "XENOGEARS/No.03 Dreams..."
+    },
+    {
+      "name": "BASLUS-006643",
+      "blocks": 1,
+      "title": "XENOGEARS/No.04 Dreams..."
+    },
+    {
+      "name": "BASLUS-006644",
+      "blocks": 1,
+      "title": "XENOGEARS/No.05 Fallen Star"
+    },
+    {
+      "name": "BASLUS-006646",
+      "blocks": 1,
+      "title": "XENOGEARS/No.07 First and Last"
+    },
+    {
+      "name": "BASLUS-006647",
+      "blocks": 1,
+      "title": "XENOGEARS/No.08 First and Last"
+    },
+    {
+      "name": "BASLUS-006648",
+      "blocks": 1,
+      "title": "XENOGEARS/No.09 First and Last"
+    },
+    {
+      "name": "BASLUS-006645",
+      "blocks": 1,
+      "title": "XENOGEARS/No.06 First and Last"
+    },
+    {
+      "name": "BASLUS-006649",
+      "blocks": 1,
+      "title": "XENOGEARS/No.10 First and Last"
+    },
+    {
+      "name": "BASLUS-00664:",
+      "blocks": 1,
+      "title": "XENOGEARS/No.11 First and Last"
+    },
+    {
+      "name": "BASLUS-00664;",
+      "blocks": 1,
+      "title": "XENOGEARS/No.12 First and Last"
+    },
+    {
+      "name": "BASLUS-00664<",
+      "blocks": 1,
+      "title": "XENOGEARS/No.13 First and Last"
+    }
+  ],
+  "files": {
+    "xenogears.14936.gme": {
+      "size": 134976,
+      "sha1": "6050e6b67839d8379e0e1cec10ec9a1c71e0479d"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Xenogears (USA) (Disc 1).cue",
+      "sha1": "90ba9637f68f839fde92ca18b0346ae349ba0be2",
+      "size": 90
+    },
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr xenogears.14936.gme: unwraps the card (DexDrive .gme: 3904-byte header + card)",
+    "converted": {
+      "size": 131072,
+      "sha1": "8178b0457da826eac512efb0791fa99ec829b2b2"
+    },
+    "script": "scripts/psx/Xenogears.load.txt",
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "loads",
+        "detail": "Continue > Load shows save No. 01: Fei Lv 71, 052:57:07, Promised Land"
+      },
+      "beetle-psx-hw": {
+        "result": "loads",
+        "detail": "Continue > Load shows save No. 01: Fei Lv 71, 052:57:07, Promised Land (the same screen as on beetle-psx)"
+      },
+      "pcsx-rearmed": {
+        "result": "loads",
+        "detail": "Continue > Load shows save No. 01: Fei Lv 71, 052:57:07, Promised Land (the same screen as on beetle-psx)"
+      },
+      "swanstation": {
+        "result": "loads",
+        "detail": "Continue > Load shows save No. 01: Fei Lv 71, 052:57:07, Promised Land (the same screen as on beetle-psx)"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": [
+      "beetle-psx",
+      "beetle-psx-hw",
+      "pcsx-rearmed",
+      "swanstation"
+    ]
+  },
+  "note": null
+}

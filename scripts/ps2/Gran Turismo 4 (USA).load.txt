@@ -1,0 +1,19 @@
+# Gran Turismo 4 (USA), SCUS-97328, DVD: show a loaded save.
+# With game data on the card the game loads it at power-on and plays the intro (with none it
+# asks to create game data instead). START > title: Arcade Mode / Gran Turismo Mode; Down >
+# Gran Turismo Mode > GT Mode opens where the save was made (the world map, the Garage, the
+# License Center), with the save's current car, credits and date in the top bar; then Circle on
+# whatever the cursor is on (on the map that is usually Home: Complete %, A-spec points, B-spec
+# level, Days).
+wait 2100
+press start 10       # skip the intro
+wait 300
+shot title
+press down 10        # Gran Turismo Mode
+wait 60
+press b 10
+wait 1200
+shot map             # GT Mode as saved: car, Cr., date in the top bar
+press b 10           # Home (on the map)
+wait 900
+shot home            # <name>'s Home: Complete %, A-spec points, B-spec level, Days

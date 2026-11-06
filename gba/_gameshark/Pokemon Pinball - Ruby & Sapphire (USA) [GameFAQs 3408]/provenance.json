@@ -1,0 +1,119 @@
+{
+  "method": "downloaded",
+  "system": "gba",
+  "core": "_gameshark",
+  "url": "https://gamefaqs.gamespot.com/gba/914978-pokemon-pinball-ruby-and-sapphire/saves/3408",
+  "source_page": "https://gamefaqs.gamespot.com/gba/914978-pokemon-pinball-ruby-and-sapphire/saves",
+  "source": "GameFAQs (section 'GameBoy Advance GameShark Save (North America)')",
+  "author": "ares9090",
+  "licence": null,
+  "posted": "2004-01-31",
+  "fetched": "2026-11-05",
+  "what_it_is": "201 Seen and Caught Pokemon in Pokedex",
+  "gamefaqs": {
+    "id": 3408,
+    "product": "Pokemon Pinball: Ruby & Sapphire",
+    "section": "GameBoy Advance GameShark Save (North America)",
+    "region": "North America",
+    "served_as": "pokemon-pinball-ruby-and-sapphire.3408.sps",
+    "listed_size": "64KB"
+  },
+  "format": "SharkPort save (\"SharkPortSave\", kind 0x000F0000): title \"POKEPIN R/S\", date \"Save19/01/2004 09:36:16 a.m. 41\", notes \"\"; cart header \"POKEPIN R/S\" / 'BPPE' (complement 0xbf); payload 65536 bytes; checksum: unsigned",
+  "files": {
+    "pokemon-pinball-ruby-and-sapphire.3408.sps": {
+      "size": 65647,
+      "sha1": "a7bc897d2e9f22b43286d743defb8311dcbee9eb"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Pokemon Pinball - Ruby & Sapphire (USA).gba",
+      "sha1": "9fec81ce2c5df589e0371a0bf2f92a5fe8db730b",
+      "size": 8388608
+    },
+    "converted_with": "tools/gamefaqs/gba-sharkport.py pokemon-pinball-ruby-and-sapphire.3408.sps --rom ROM --core CORE --outdir DIR: reads the SharkPort container as mGBA does and imports the payload as mGBA's _importSavedata does (cut to the chip, EEPROM 8-byte blocks reversed, the rest of the chip erased), then lays the chip out as the core keeps it",
+    "converted": {
+      "size": 32768,
+      "sha1": "17422e2b0f3b29d9225ecc82e12c666510db7a96"
+    },
+    "script": "scripts/gba/Pokemon Pinball - Ruby & Sapphire.load.txt",
+    "cores": {
+      "mgba": {
+        "result": "loads",
+        "detail": "POKeDEX Seen 201, Own 201",
+        "core_version": "mGBA 0.11-212-7a12d6d",
+        "file": {
+          "name": "Pokemon Pinball - Ruby & Sapphire (USA).srm",
+          "size": 32768,
+          "sha1": "17422e2b0f3b29d9225ecc82e12c666510db7a96"
+        },
+        "frame": "dex"
+      },
+      "vba-m": {
+        "result": "loads",
+        "detail": "POKeDEX Seen 201, Own 201",
+        "core_version": "VBA-M 115defb",
+        "file": {
+          "name": "Pokemon Pinball - Ruby & Sapphire (USA).srm",
+          "size": 32768,
+          "sha1": "17422e2b0f3b29d9225ecc82e12c666510db7a96"
+        },
+        "frame": "dex"
+      },
+      "gpsp": {
+        "result": "loads",
+        "detail": "POKeDEX Seen 201, Own 201",
+        "core_version": "gpSP v1.1.0-5819380",
+        "file": {
+          "name": "Pokemon Pinball - Ruby & Sapphire (USA).srm",
+          "size": 131072,
+          "sha1": "3927c26d0c5283b8f5d742c1a252b1549134626a"
+        },
+        "frame": "dex"
+      },
+      "vba-next": {
+        "result": "loads",
+        "detail": "POKeDEX Seen 201, Own 201",
+        "core_version": "VBA Next v1.0.2",
+        "file": {
+          "name": "Pokemon Pinball - Ruby & Sapphire (USA).srm",
+          "size": 139264,
+          "sha1": "b91783abfb75c8097bd58340a482958ea5facc01"
+        },
+        "frame": "dex"
+      },
+      "beetle-gba": {
+        "result": "loads",
+        "detail": "POKeDEX Seen 201, Own 201",
+        "core_version": "Beetle GBA v0.9.36 b158166",
+        "file": {
+          "name": "Pokemon Pinball - Ruby & Sapphire (USA).ba6d0fbff297b8937d3c8e7f2c25fa0f.sav",
+          "size": 65536,
+          "sha1": "abc17408b8c4afb303fa9f8c01c2abd53e531963"
+        },
+        "frame": "dex"
+      },
+      "skyemu": {
+        "result": "loads",
+        "detail": "POKeDEX Seen 201, Own 201",
+        "core_version": "SkyEmu adacd0788964ed89f5c43dcbc1f3cc26deec996c",
+        "file": {
+          "name": "Pokemon Pinball - Ruby & Sapphire (USA).srm",
+          "size": 131072,
+          "sha1": "3927c26d0c5283b8f5d742c1a252b1549134626a"
+        },
+        "frame": "dex"
+      }
+    },
+    "proof_order": [
+      "mgba",
+      "vba-m",
+      "gpsp",
+      "vba-next",
+      "beetle-gba",
+      "skyemu"
+    ]
+  },
+  "note": null
+}

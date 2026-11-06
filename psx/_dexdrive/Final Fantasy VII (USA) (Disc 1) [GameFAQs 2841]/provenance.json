@@ -1,0 +1,84 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_dexdrive",
+  "url": "https://gamefaqs.gamespot.com/ps/197341-final-fantasy-vii/saves/2841",
+  "source_page": "https://gamefaqs.gamespot.com/ps/197341-final-fantasy-vii/saves",
+  "source": "GameFAQs (section 'PlayStation DexDrive Save (North America)')",
+  "author": "_xenoskater",
+  "licence": null,
+  "posted": "2003-07-05",
+  "fetched": "2026-11-05",
+  "what_it_is": "All Limit Breaks for everyone. Everyone's final weapons. All of the Materia(including Knights of the Round). Not max level but, able to defeat final boss.",
+  "gamefaqs": {
+    "id": 2841,
+    "product": "Final Fantasy VII",
+    "section": "PlayStation DexDrive Save (North America)",
+    "region": "North America",
+    "served_as": "final-fantasy-vii.2841.gme",
+    "listed_size": "19KB"
+  },
+  "format": "DexDrive .gme cut short: '123-456-STD' 3904-byte header + only the first 16384 bytes of the card (2 of 16 blocks); the card holds 1 save(s), 1 for this game (BASCUS-94163FF7-S01)",
+  "release": "Final Fantasy VII (USA) (Disc 1)",
+  "game_saves": [
+    {
+      "name": "BASCUS-94163FF7-S01",
+      "blocks": 1,
+      "title": "FF7/SAVE01/66:52"
+    }
+  ],
+  "files": {
+    "final-fantasy-vii.2841.gme": {
+      "size": 20288,
+      "sha1": "aa3ee74a1e4c1be5431eaf24c15eed82bb0ca0b8"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Final Fantasy VII (USA) (Disc 1).cue",
+      "sha1": "c8df949f13d990d325ac3b8d6eb835c440380e52",
+      "size": 98
+    },
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr final-fantasy-vii.2841.gme: unwraps the card (DexDrive .gme: 3904-byte header + card (only 16384 card bytes, zero-padded to 131072))",
+    "converted": {
+      "size": 131072,
+      "sha1": "a3d284044889affb56f3b7debf4e14536554c83b"
+    },
+    "script": "scripts/psx/Final Fantasy VII.load.txt",
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "loads",
+        "detail": "Slot 1 lists file 1: Cloud, Level 66, 66:52, Junon Area"
+      },
+      "beetle-psx-hw": {
+        "result": "loads",
+        "detail": "Slot 1 lists file 1: Cloud, Level 66, 66:52, Junon Area (the same screen as on beetle-psx)"
+      },
+      "pcsx-rearmed": {
+        "result": "loads",
+        "detail": "Slot 1 lists file 1: Cloud, Level 66, 66:52, Junon Area (the same screen as on beetle-psx)"
+      },
+      "swanstation": {
+        "result": "loads",
+        "detail": "Slot 1 lists file 1: Cloud, Level 66, 66:52, Junon Area (the same screen as on beetle-psx)"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": [
+      "beetle-psx",
+      "beetle-psx-hw",
+      "pcsx-rearmed",
+      "swanstation"
+    ]
+  },
+  "note": "The converter pads the missing blocks with zeroes, as DuckStation's ImportCardGME does; the saves on the card all lie in the blocks present. one-saves (1saves convert) does not read this file: a PS1 memory card is 131072 bytes, or that behind a DexDrive, VGS or PSP header, but this file is 20288 bytes"
+}

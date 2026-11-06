@@ -1,0 +1,114 @@
+{
+  "method": "downloaded",
+  "system": "ps2",
+  "core": "_max-drive",
+  "url": "https://gamefaqs.gamespot.com/ps2/561066-gran-turismo-4/saves/17643",
+  "source_page": "https://gamefaqs.gamespot.com/ps2/561066-gran-turismo-4/saves",
+  "source": "GameFAQs (section 'PlayStation2 Max Drive Save (Europe)')",
+  "author": "solidfranz",
+  "licence": null,
+  "posted": "2008-08-08",
+  "fetched": "2026-11-05",
+  "what_it_is": "100% complete. Day 2129, 257 cars avaliable in garage, all special black cars purchased. NO cheats used. Game ID: SCES 51719",
+  "gamefaqs": {
+    "id": 17643,
+    "product": "Gran Turismo 4",
+    "section": "PlayStation2 Max Drive Save (Europe)",
+    "region": "Europe",
+    "served_as": "gran-turismo-4.17643.max",
+    "listed_size": "1487KB"
+  },
+  "format": "Max Drive / PowerSave save: 'Ps2PowerSave' header (CRC32 cb3fc2f5, matches), folder BESCES-51719GAMEDATA, 4 files, LZARI stream 1523459 bytes unpacking to 1528760 bytes (1528584 bytes of file data)",
+  "files": {
+    "gran-turismo-4.17643.max": {
+      "size": 1523551,
+      "sha1": "5a40292ba5dd9806143362a65796fa5418e423ec"
+    }
+  },
+  "save": {
+    "folder": "BESCES-51719GAMEDATA",
+    "title": [
+      "GRAN TURISMO 4",
+      "Dati gioco"
+    ],
+    "times": "none: a max file stores no file times",
+    "files": [
+      {
+        "name": "garage",
+        "size": 1280064,
+        "sha1": "af5c9625fce3cfcaefdc1c74a55fbaa622796b22"
+      },
+      {
+        "name": "BESCES-51719GAMEDATA",
+        "size": 237760,
+        "sha1": "7117880b5b47905793473a302f72fbe7a67bd0e6"
+      },
+      {
+        "name": "icon0.ico",
+        "size": 9796,
+        "sha1": "5c55e0ea3f302b6ce15d03fb247039d41b83f032"
+      },
+      {
+        "name": "icon.sys",
+        "size": 964,
+        "sha1": "a509b6416d93d009542d173ca61d7fa526d9f834"
+      }
+    ]
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": null,
+    "converted_with": "tools/gamefaqs/ps2-card.py 'gran-turismo-4.17643.max' -o OUT: reads the save with mymcplus 3.0.5 and writes OUT/Mcd001.ps2 (an 8 MiB card with ECC, formatted and filled by mymcplus) for lrps2/pcee2/pcsx2, and OUT/mc0/<folder>/ for Play!",
+    "converted": {
+      "Mcd001.ps2": {
+        "size": 8650752,
+        "sha1": "e55716a80bc30e2b19f8849f6dd088ba031ad2a9"
+      },
+      "mc0/BESCES-51719GAMEDATA/": {
+        "garage": {
+          "size": 1280064,
+          "sha1": "af5c9625fce3cfcaefdc1c74a55fbaa622796b22"
+        },
+        "BESCES-51719GAMEDATA": {
+          "size": 237760,
+          "sha1": "7117880b5b47905793473a302f72fbe7a67bd0e6"
+        },
+        "icon0.ico": {
+          "size": 9796,
+          "sha1": "5c55e0ea3f302b6ce15d03fb247039d41b83f032"
+        },
+        "icon.sys": {
+          "size": 964,
+          "sha1": "a509b6416d93d009542d173ca61d7fa526d9f834"
+        }
+      },
+      "read_back": "work/ps2/tools/mcfs.py lists every file with the size and SHA-1 put on the card; one-saves (1saves convert + inspect) reads the card and finds BESCES-51719GAMEDATA",
+      "timestamps": "what the save does not date is 2000-01-01 00:00:00 (JST, as a card stores it); the card's own root entries too"
+    },
+    "script": null,
+    "cores": {
+      "pcee2": {
+        "result": "not-run",
+        "detail": "no image of Gran Turismo 4 (Europe, Australia) (En,Fr,De,Es,It) in the library"
+      },
+      "lrps2": {
+        "result": "not-run",
+        "detail": "no image of Gran Turismo 4 (Europe, Australia) (En,Fr,De,Es,It) in the library"
+      },
+      "play": {
+        "result": "not-run",
+        "detail": "no image of Gran Turismo 4 (Europe, Australia) (En,Fr,De,Es,It) in the library"
+      },
+      "pcsx2": {
+        "result": "not-run",
+        "detail": "no image of Gran Turismo 4 (Europe, Australia) (En,Fr,De,Es,It) in the library"
+      },
+      "armsx2": {
+        "result": "not-run",
+        "detail": "ARMSX2 renders only through Vulkan here and falls back to a null GS (no picture), so nothing shows what the game read (ps2/NOTES.md)"
+      }
+    },
+    "proof_order": []
+  },
+  "note": null
+}

@@ -1,0 +1,81 @@
+{
+  "method": "downloaded",
+  "system": "n64",
+  "core": "_dexdrive",
+  "url": "https://gamefaqs.gamespot.com/n64/197771-the-legend-of-zelda-ocarina-of-time/saves/1260",
+  "source_page": "https://gamefaqs.gamespot.com/n64/197771-the-legend-of-zelda-ocarina-of-time/saves",
+  "source": "GameFAQs (section 'Nintendo 64 DexDrive Save (North America)')",
+  "author": "Zdaw1",
+  "licence": null,
+  "posted": "2001-11-13",
+  "fetched": "2026-11-05",
+  "what_it_is": "Has all skutullas(with extras due to skutulla trick in the game), All status items, all weapon and equipment and all heart containers",
+  "gamefaqs": {
+    "id": 1260,
+    "product": "The Legend of Zelda: Ocarina of Time (1998)",
+    "section": "Nintendo 64 DexDrive Save (North America)",
+    "region": "North America",
+    "served_as": "the-legend-of-zelda-ocarina-of-time-1998.1260.n64",
+    "listed_size": "36KB"
+  },
+  "format": "byte-identical to GameFAQs 1263 (same uploader): DexDrive .n64: \"123-456-STD\" and a 0x1040-byte header (DexPlorer comments), then a 32 KiB Controller Pak with one GameShark cart-save note \"ZLZL\" (3BADD1E5/FADE), 24 pages: length 0x8000 + LZARI stream of the 32 KiB SRAM",
+  "files": {
+    "the-legend-of-zelda-ocarina-of-time-1998.1260.n64": {
+      "size": 36928,
+      "sha1": "546ccf10fa44f0ad0bef8f3602f719957c56a710"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "converted_with": "tools/gamefaqs/n64-dexdrive.py convert the-legend-of-zelda-ocarina-of-time-1998.1260.n64 OUT: dexdrive: pak = the 32768 bytes after the 0x1040-byte header; ID block checksums 0101/FEFD wrong in every copy, rewritten as 0101/FEF1; cart-save note 'ZLZL' (GameShark 3BADD1E5/FADE): LZARI, 6054 bytes -> 32768",
+    "converted": {
+      "size": 296960,
+      "sha1": "86ad063bec667a72650df4e123dab4e8e0b3d6fd"
+    },
+    "converted_standalone": {
+      "files": {
+        "save.mpk": {
+          "size": 131072,
+          "sha1": "6d9c273f6b83958b259b7cfad525c91f6dcfa047"
+        },
+        "save.sra": {
+          "size": 32768,
+          "sha1": "ed17e4aca4ec01f446ea82087e17be795a7c287b"
+        }
+      },
+      "how": "the same bytes as the .srm regions, as standalone Mupen64Plus keeps them: <GoodName (32 chars)>-<MD5 8>.eep/.sra/.fla/.mpk in its save folder"
+    },
+    "rom": {
+      "name": "Legend of Zelda, The - Ocarina of Time (USA) (Rev 2).z64",
+      "sha1": "41b3bdc48d98c48529219919015a1af22f5057c2",
+      "size": 33554432
+    },
+    "script": "scripts/n64/Legend of Zelda, The - Ocarina of Time.load.txt",
+    "baseline": "with no save: three empty files; A on File 1 opens the name entry",
+    "cores": {
+      "mupen64plus-next": {
+        "result": "loads",
+        "detail": "File 1 \"Link\": 3 deaths, 20 hearts, all stones and medallions; Files 2 and 3 \"Link\" with 18 hearts"
+      },
+      "parallel-n64": {
+        "result": "loads",
+        "detail": "File 1 \"Link\": 3 deaths, 20 hearts, all stones and medallions"
+      },
+      "mupen64plus": {
+        "result": "loads",
+        "detail": "\"Open this file?\" File 1 \"Link\": 3 deaths, 20 hearts, all medallions; the script's later presses open it: Inside Ganon's Castle, 20 hearts, 500 rupees"
+      }
+    },
+    "core_versions": {
+      "mupen64plus": "Mupen64Plus 2.6.0 (Homebrew), glide64mk2 video, rsp-hle",
+      "mupen64plus-next": "Mupen64Plus-Next 3.0-Vulkan 15bada8",
+      "parallel-n64": "ParaLLEl N64 1.0 e8cbdbb"
+    },
+    "proof_order": [
+      "mupen64plus-next",
+      "parallel-n64",
+      "mupen64plus"
+    ]
+  },
+  "note": "Byte-identical to GameFAQs 1263 (same uploader, four days earlier): see that entry. A GameShark LZARI-compressed copy of the cartridge SRAM; Rev 2 used, the revision is not recorded."
+}

@@ -1,0 +1,111 @@
+{
+  "method": "downloaded",
+  "system": "ps2",
+  "core": "_ps3",
+  "url": "https://gamefaqs.gamespot.com/ps2/950768-thunder-force-vi/saves/32725",
+  "source_page": "https://gamefaqs.gamespot.com/ps2/950768-thunder-force-vi/saves",
+  "source": "GameFAQs (section 'PlayStation 2 PS3 Virtual Memory Card Save (ZIP) (Japan)')",
+  "author": "ForteNT7601",
+  "licence": null,
+  "posted": "2025-07-09",
+  "fetched": "2026-11-05",
+  "what_it_is": "PS3 .PSV Format. Copy to USB/CF/SD and use the Memory Card utility to copy the Save Data to the Virtual PS2 Memory CardRynex-R & Syrinx Unlocked",
+  "gamefaqs": {
+    "id": 32725,
+    "product": "Thunder Force VI",
+    "section": "PlayStation 2 PS3 Virtual Memory Card Save (ZIP) (Japan)",
+    "region": "Japan",
+    "served_as": "thunder-force-vi.32725.zip",
+    "listed_size": "18KB"
+  },
+  "format": "PS3 Virtual Memory Card export (.PSV): '\\0VSP' header, PS2 save type 2, 95248 bytes, folder BISLPM-55096, 3 files, 94908 bytes of file data",
+  "files": {
+    "BISLPM-55096.PSV": {
+      "size": 95248,
+      "sha1": "c0d779b65dfabcc310c0149312bafc8ae8e81df4"
+    }
+  },
+  "save": {
+    "folder": "BISLPM-55096",
+    "title": [
+      "THUNDER FORCE VI",
+      ""
+    ],
+    "times": "as the file stores them (PS2 card times, JST)",
+    "files": [
+      {
+        "name": "icon.sys",
+        "size": 964,
+        "sha1": "e5a69d28137bd9a74d2943c861f81245d7e3381a",
+        "created": "2025-06-03 05:19:36",
+        "modified": "2025-06-03 05:19:36"
+      },
+      {
+        "name": "static.ico",
+        "size": 54424,
+        "sha1": "17f17f7280d541f25cf09f03c9edc037a8f648c2",
+        "created": "2025-06-03 05:19:36",
+        "modified": "2025-06-03 05:19:36"
+      },
+      {
+        "name": "BISLPM-55096",
+        "size": 39520,
+        "sha1": "ee2ed8014fbaee9d64f5fd0002a55c3fae33fe02",
+        "created": "2025-06-03 05:19:36",
+        "modified": "2025-06-03 05:19:36"
+      }
+    ]
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": null,
+    "converted_with": "tools/gamefaqs/ps2-card.py 'BISLPM-55096.PSV' -o OUT: reads the save with mymcplus 3.0.5 and writes OUT/Mcd001.ps2 (an 8 MiB card with ECC, formatted and filled by mymcplus) for lrps2/pcee2/pcsx2, and OUT/mc0/<folder>/ for Play!",
+    "converted": {
+      "Mcd001.ps2": {
+        "size": 8650752,
+        "sha1": "473c5ce301540382e6e23dc664372dc8f01e0adb"
+      },
+      "mc0/BISLPM-55096/": {
+        "icon.sys": {
+          "size": 964,
+          "sha1": "e5a69d28137bd9a74d2943c861f81245d7e3381a"
+        },
+        "static.ico": {
+          "size": 54424,
+          "sha1": "17f17f7280d541f25cf09f03c9edc037a8f648c2"
+        },
+        "BISLPM-55096": {
+          "size": 39520,
+          "sha1": "ee2ed8014fbaee9d64f5fd0002a55c3fae33fe02"
+        }
+      },
+      "read_back": "work/ps2/tools/mcfs.py lists every file with the size and SHA-1 put on the card; one-saves (1saves convert + inspect) reads the card and finds BISLPM-55096",
+      "timestamps": "what the save does not date is 2000-01-01 00:00:00 (JST, as a card stores it); the card's own root entries too"
+    },
+    "script": null,
+    "cores": {
+      "pcee2": {
+        "result": "not-run",
+        "detail": "no image of Thunder Force VI (Japan) (En,Ja) in the library"
+      },
+      "lrps2": {
+        "result": "not-run",
+        "detail": "no image of Thunder Force VI (Japan) (En,Ja) in the library"
+      },
+      "play": {
+        "result": "not-run",
+        "detail": "no image of Thunder Force VI (Japan) (En,Ja) in the library"
+      },
+      "pcsx2": {
+        "result": "not-run",
+        "detail": "no image of Thunder Force VI (Japan) (En,Ja) in the library"
+      },
+      "armsx2": {
+        "result": "not-run",
+        "detail": "ARMSX2 renders only through Vulkan here and falls back to a null GS (no picture), so nothing shows what the game read (ps2/NOTES.md)"
+      }
+    },
+    "proof_order": []
+  },
+  "note": null
+}

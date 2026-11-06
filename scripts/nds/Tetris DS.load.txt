@@ -1,0 +1,13 @@
+# Tetris DS, loading a save: RECORDS from the main menu. Its first page shows
+# the saved TETRIS POINTS and the STANDARD records (Marathon high score, Line
+# Clear, Vs CPU).
+wait 600
+press start 6       # title -> main menu (SINGLE PLAYER)
+wait 300
+repeat 4            # down to RECORDS
+press down 6
+wait 30
+end
+press a 6           # RECORDS
+wait 300
+shot records

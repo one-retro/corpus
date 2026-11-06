@@ -1,0 +1,91 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_ps3",
+  "url": "https://gamefaqs.gamespot.com/ps/198641-silent-hill/saves/16647",
+  "source_page": "https://gamefaqs.gamespot.com/ps/198641-silent-hill/saves",
+  "source": "GameFAQs (section 'PlayStation PS3 Virtual Memory Card Save (ZIP) (North America)')",
+  "author": "villicana64",
+  "licence": null,
+  "posted": "2008-02-15",
+  "fetched": "2026-11-05",
+  "what_it_is": "Next Fear Hard mode, Obtained all 5 endings. Unlocked chainsaw with gasoline, hyperblaster, katana, rock drill with gasoline, channeling stone,gasoline container. BULLET ADJUST X 6",
+  "gamefaqs": {
+    "id": 16647,
+    "product": "Silent Hill (1999)",
+    "section": "PlayStation PS3 Virtual Memory Card Save (ZIP) (North America)",
+    "region": "North America",
+    "served_as": "silent-hill-1999.16647.zip",
+    "listed_size": "0KB",
+    "served_zip": {
+      "size": 703,
+      "sha1": "a0044398eecc1210b015f40941ceaf3548f42792"
+    }
+  },
+  "format": "zip of 1 PS3 export(s) (.PSV): '\\0VSP' header (signature, save name at 0x64), the save's blocks from 0x84 (8324 bytes); it holds 1 save(s), 1 for this game (BASLUS-00707SILENT00)",
+  "release": "Silent Hill (USA)",
+  "game_saves": [
+    {
+      "name": "BASLUS-00707SILENT00",
+      "blocks": 1,
+      "title": "SILENT HILL FILE01"
+    }
+  ],
+  "files": {
+    "BASLUS-0070753494C454E543030.PSV": {
+      "size": 8324,
+      "sha1": "61a95d8166fe1ea988a15d6a20934466234ec419"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Silent Hill (USA).cue",
+      "sha1": "e7bf6999a1b06337efa9ccbd6d528406811d982f",
+      "size": 83
+    },
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr BASLUS-0070753494C454E543030.PSV: puts the save(s) on a freshly formatted card, as MemcardRex imports a single save",
+    "converted": {
+      "size": 131072,
+      "sha1": "a0d73994f11c88c5a5e2a177e9269a0c86a7dfe5"
+    },
+    "script": "scripts/psx/Silent Hill.load.txt",
+    "script_variants": {
+      "pcsx-rearmed": "scripts/psx/Silent Hill.pcsx-rearmed.load.txt",
+      "swanstation": "scripts/psx/Silent Hill.swanstation.load.txt"
+    },
+    "cores": {
+      "beetle-psx": {
+        "result": "loads",
+        "detail": "Load, slot 1 lists File 1 (Next fear); Data 1"
+      },
+      "beetle-psx-hw": {
+        "result": "loads",
+        "detail": "Load, slot 1 lists File 1 (Next fear); Data 1 (the same screen as on beetle-psx)"
+      },
+      "pcsx-rearmed": {
+        "result": "loads",
+        "detail": "Load, slot 1 lists File 1 (Next fear); Data 1 (the same screen as on beetle-psx)"
+      },
+      "swanstation": {
+        "result": "loads",
+        "detail": "Load, slot 1 lists File 1 (Next fear); Data 1 (the same screen as on beetle-psx)"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": [
+      "beetle-psx",
+      "beetle-psx-hw",
+      "pcsx-rearmed",
+      "swanstation"
+    ]
+  },
+  "note": null
+}

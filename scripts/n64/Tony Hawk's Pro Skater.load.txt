@@ -1,0 +1,20 @@
+# Tony Hawk's Pro Skater, load check: power on, main menu, Career Mode,
+# LOAD GAME: the career notes on the Controller Pak in port 1; A loads the
+# first one.
+# N64 buttons on the RetroPad: A = b, B = y, Z = l2, Start = start.
+wait 1200
+press start 6       # skip the logos
+wait 150
+press start 6       # PRESS START -> main menu (Career Mode)
+wait 150
+press b 6           # Career Mode -> Continue / New Game / Load Game
+wait 150
+shot career
+press down 10       # the cursor starts on NEW GAME: LOAD GAME
+wait 40
+press b 6
+wait 300
+shot load
+press b 6           # load the first note
+wait 400
+shot loaded

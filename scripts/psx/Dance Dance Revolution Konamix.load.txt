@@ -1,0 +1,7 @@
+# Dance Dance Revolution Konamix: the game loads its system data at boot and says so; a frame every
+# 40 from frame 1000 to 3000, as the message comes at a different time on each core.
+wait 1000
+repeat 50
+wait 40
+shot
+end

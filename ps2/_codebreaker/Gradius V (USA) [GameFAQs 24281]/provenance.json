@@ -1,0 +1,128 @@
+{
+  "method": "downloaded",
+  "system": "ps2",
+  "core": "_codebreaker",
+  "url": "https://gamefaqs.gamespot.com/ps2/589460-gradius-v/saves/24281",
+  "source_page": "https://gamefaqs.gamespot.com/ps2/589460-gradius-v/saves",
+  "source": "GameFAQs (section 'PlayStation2 CodeBreaker Save (North America)')",
+  "author": "HiHoFai",
+  "licence": null,
+  "posted": "2015-06-07",
+  "fetched": "2026-11-05",
+  "what_it_is": "100% Everything Completed, Unlocked & Achieved - Weapons Edit & Free Play!",
+  "gamefaqs": {
+    "id": 24281,
+    "product": "Gradius V",
+    "section": "PlayStation2 CodeBreaker Save (North America)",
+    "region": "North America",
+    "served_as": "gradius-v.24281.cbs",
+    "listed_size": "3KB"
+  },
+  "format": "CodeBreaker save: 'CFU\\0' header of 296 bytes (folder field 'BASLUS-20712', title 'GRADIUS V SAVE DATA'), RC4-encrypted zlib body of 3013 bytes unpacking to 36532 bytes: 3 files, 36340 bytes of file data",
+  "files": {
+    "gradius-v.24281.cbs": {
+      "size": 3309,
+      "sha1": "d83a5aa9a354302535193e3eb9213d01038cc732"
+    }
+  },
+  "save": {
+    "folder": "BASLUS-20712",
+    "title": [
+      "GRADIUS V",
+      "SAVE DATA"
+    ],
+    "times": "as the file stores them (PS2 card times, JST)",
+    "files": [
+      {
+        "name": "BASLUS-20712",
+        "size": 1688,
+        "sha1": "fcc93e738ef30d718deb5c45dfdf947c855b428a",
+        "created": "2015-06-01 21:11:10",
+        "modified": "2015-06-07 14:01:26"
+      },
+      {
+        "name": "icon.ico",
+        "size": 33688,
+        "sha1": "1f9cb9d18cb43e29961bb12ce56d0216ca63bb58",
+        "created": "2015-06-01 21:11:11",
+        "modified": "2015-06-01 21:11:12"
+      },
+      {
+        "name": "icon.sys",
+        "size": 964,
+        "sha1": "fc00cc3d7b82c6c457006addb03ff5ee491aa957",
+        "created": "2015-06-01 21:11:13",
+        "modified": "2015-06-01 21:11:13"
+      }
+    ]
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Gradius V (USA).cue",
+      "sha1": "2ef30018585d72e7d0b5f501f77f17301b818e3a",
+      "size": 81,
+      "tracks": [
+        {
+          "name": "Gradius V (USA).bin",
+          "sha1": "57a4a82fa3aa89d2fdd68c0d354aacca0fc82fd2",
+          "size": 465832416
+        }
+      ]
+    },
+    "converted_with": "tools/gamefaqs/ps2-card.py 'gradius-v.24281.cbs' -o OUT: reads the save with mymcplus 3.0.5 and writes OUT/Mcd001.ps2 (an 8 MiB card with ECC, formatted and filled by mymcplus) for lrps2/pcee2/pcsx2, and OUT/mc0/<folder>/ for Play!",
+    "converted": {
+      "Mcd001.ps2": {
+        "size": 8650752,
+        "sha1": "40f02fe8964f1ff647d6f830b86f2d8726dd21c6"
+      },
+      "mc0/BASLUS-20712/": {
+        "BASLUS-20712": {
+          "size": 1688,
+          "sha1": "fcc93e738ef30d718deb5c45dfdf947c855b428a"
+        },
+        "icon.ico": {
+          "size": 33688,
+          "sha1": "1f9cb9d18cb43e29961bb12ce56d0216ca63bb58"
+        },
+        "icon.sys": {
+          "size": 964,
+          "sha1": "fc00cc3d7b82c6c457006addb03ff5ee491aa957"
+        }
+      },
+      "read_back": "work/ps2/tools/mcfs.py lists every file with the size and SHA-1 put on the card; one-saves (1saves convert + inspect) reads the card and finds BASLUS-20712",
+      "timestamps": "what the save does not date is 2000-01-01 00:00:00 (JST, as a card stores it); the card's own root entries too"
+    },
+    "script": "scripts/ps2/Gradius V (USA).load.txt",
+    "cores": {
+      "pcee2": {
+        "detail": "menu reads FREE PLAY (no save: CREDIT 3); STAGE SELECT offers stages 1-8 (no save: stage 1); RANKING (VERY HARD) FAI 7896847 1-1 with the Edit weapon type on top of the default table",
+        "result": "loads"
+      },
+      "lrps2": {
+        "detail": "menu reads FREE PLAY (no save: CREDIT 3); STAGE SELECT offers stages 1-8 (no save: stage 1); RANKING (VERY HARD) FAI 7896847 1-1 with the Edit weapon type on top of the default table",
+        "result": "loads"
+      },
+      "play": {
+        "detail": "menu reads FREE PLAY (no save: CREDIT 3); STAGE SELECT offers stages 1-8 (no save: stage 1); RANKING (VERY HARD) FAI 7896847 1-1 with the Edit weapon type on top of the default table",
+        "result": "loads"
+      },
+      "pcsx2": {
+        "detail": "menu reads FREE PLAY (no save: CREDIT 3); STAGE SELECT offers stages 1-8 (no save: stage 1); RANKING (VERY HARD) FAI 7896847 1-1 with the Edit weapon type on top of the default table",
+        "result": "loads",
+        "image": "Gradius V (USA).bin (the track itself, as the played pcsx2 entries ran it)"
+      },
+      "armsx2": {
+        "result": "not-run",
+        "detail": "ARMSX2 renders only through Vulkan here and falls back to a null GS (no picture), so nothing shows what the game read (ps2/NOTES.md)"
+      }
+    },
+    "proof_order": [
+      "pcee2",
+      "lrps2",
+      "play",
+      "pcsx2"
+    ]
+  },
+  "note": null
+}

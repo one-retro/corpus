@@ -1,0 +1,97 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_ps3",
+  "url": "https://gamefaqs.gamespot.com/ps/477343-final-fantasy-chronicles/saves/20259",
+  "source_page": "https://gamefaqs.gamespot.com/ps/477343-final-fantasy-chronicles/saves",
+  "source": "GameFAQs (section 'PlayStation PS3 Virtual Memory Card Save (ZIP) (North America)')",
+  "author": "Caldor",
+  "licence": null,
+  "posted": "2010-02-02",
+  "fetched": "2026-11-05",
+  "what_it_is": "Chrono Trigger. New Game + save at the start of the game. Levels in the lower to mid 50s. Complete system file included.",
+  "gamefaqs": {
+    "id": 20259,
+    "product": "Final Fantasy Chronicles",
+    "section": "PlayStation PS3 Virtual Memory Card Save (ZIP) (North America)",
+    "region": "North America",
+    "served_as": "final-fantasy-chronicles.20259.zip",
+    "listed_size": "2KB",
+    "served_zip": {
+      "size": 2593,
+      "sha1": "02f38431e19d1d66122b1eb1a3de8a11f33336a3"
+    }
+  },
+  "format": "zip of 2 PS3 export(s) (.PSV): '\\0VSP' header (signature, save name at 0x64), the save's blocks from 0x84 (8324 bytes); together they hold 2 save(s), 2 for this game (BASLUS-01363-00002, BASLUS-01363SYSTEM)",
+  "release": "Final Fantasy Chronicles - Chrono Trigger (USA) (Rev 1)",
+  "game_saves": [
+    {
+      "name": "BASLUS-01363-00002",
+      "blocks": 1,
+      "title": "Chrono FILE02 Crono LV57 00:01"
+    },
+    {
+      "name": "BASLUS-01363SYSTEM",
+      "blocks": 1,
+      "title": "Chrono System File"
+    }
+  ],
+  "files": {
+    "PS3/EXPORT/PSV/BASLUS-013632D3030303032.PSV": {
+      "size": 8324,
+      "sha1": "f6ccd33288fbc115e3ef0fa6038936efbc4535f2"
+    },
+    "PS3/EXPORT/PSV/BASLUS-0136353595354454D.PSV": {
+      "size": 8324,
+      "sha1": "92e4e9cb4f2b7ca617259ad17a8a3f22eef75680"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Final Fantasy Chronicles - Chrono Trigger (USA) (Rev 1).cue",
+      "sha1": "8958dc68e4ba6b5d8aaf2f101b00ea38fc3ecdc5",
+      "size": 121
+    },
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr PS3/EXPORT/PSV/BASLUS-013632D3030303032.PSV PS3/EXPORT/PSV/BASLUS-0136353595354454D.PSV: puts the save(s) on a freshly formatted card, as MemcardRex imports a single save",
+    "converted": {
+      "size": 131072,
+      "sha1": "59d6074cbf74315bb4cd2701a2350a935152cdb4"
+    },
+    "script": "scripts/psx/Chrono Trigger.load.txt",
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "loads",
+        "detail": "Slot 1's header reads NEW GAME +; block 2: The Millennial Fair"
+      },
+      "beetle-psx-hw": {
+        "result": "loads",
+        "detail": "Slot 1's header reads NEW GAME +; block 2: The Millennial Fair (the same screen as on beetle-psx)"
+      },
+      "pcsx-rearmed": {
+        "result": "loads",
+        "detail": "Slot 1's header reads NEW GAME +; block 2: The Millennial Fair (the same screen as on beetle-psx)"
+      },
+      "swanstation": {
+        "result": "loads",
+        "detail": "Slot 1's header reads NEW GAME +; block 2: The Millennial Fair (the same screen as on beetle-psx)"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": [
+      "beetle-psx",
+      "beetle-psx-hw",
+      "pcsx-rearmed",
+      "swanstation"
+    ]
+  },
+  "note": null
+}

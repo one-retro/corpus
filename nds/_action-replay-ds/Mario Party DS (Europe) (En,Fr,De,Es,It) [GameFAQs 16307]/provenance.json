@@ -1,0 +1,98 @@
+{
+  "method": "downloaded",
+  "system": "nds",
+  "core": "_action-replay-ds",
+  "url": "https://gamefaqs.gamespot.com/ds/942028-mario-party-ds/saves/16307",
+  "source_page": "https://gamefaqs.gamespot.com/ds/942028-mario-party-ds/saves",
+  "source": "GameFAQs (section 'Action Replay Max DS (.duc) Game Save (Europe)')",
+  "author": "moncoeur1",
+  "licence": null,
+  "posted": "2007-12-13",
+  "fetched": "2026-11-05",
+  "what_it_is": "Mario Party DS Gamesave 100%",
+  "gamefaqs": {
+    "id": 16307,
+    "product": "Mario Party DS",
+    "section": "Action Replay Max DS (.duc) Game Save (Europe)",
+    "region": "Europe",
+    "served_as": "mario-party-ds.16307.duc",
+    "listed_size": "256KB"
+  },
+  "format": "Action Replay DS save: the 500-byte 'ARDS000000000001' header written by a converter ('Converted Savegame' / 'Savegame', ASCII 'shuny conv'), then 256 KiB raw for the 8 KiB EEPROM (cut 262144 -> 8192; the rest was all 0xFF)",
+  "files": {
+    "mario-party-ds.16307.duc": {
+      "size": 262644,
+      "sha1": "9992067554da18cc5af1f3517e3ee4fd1b61346c"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": null,
+    "converted_with": "tools/gamefaqs/nds-ards.py IN step0.bin, then tools/gamefaqs/nds-cores.py step0.bin --chip 8192 --stem 'Mario Party DS (Europe) (En,Fr,De,Es,It)' --out DIR: drops the Action Replay header; fits it to the 8192-byte chip (cut 262144 -> 8192; the rest was all 0xFF) and writes each core's file",
+    "converted": {
+      "size": 8192,
+      "sha1": "3e21df3e0f46f83583ec050febf2d015d65cb902"
+    },
+    "core_files": {
+      "desmume": {
+        "name": "Mario Party DS (Europe) (En,Fr,De,Es,It).dsv",
+        "size": 8314,
+        "sha1": "bc7ebdf4a1aa50650f5ca9a159ea30758ba077b1"
+      },
+      "desmume-2015": {
+        "name": "Mario Party DS (Europe) (En,Fr,De,Es,It).dsv",
+        "size": 8314,
+        "sha1": "bc7ebdf4a1aa50650f5ca9a159ea30758ba077b1"
+      },
+      "melonds": {
+        "name": "Mario Party DS (Europe) (En,Fr,De,Es,It).sav",
+        "size": 8192,
+        "sha1": "3e21df3e0f46f83583ec050febf2d015d65cb902"
+      },
+      "melonds-ds": {
+        "name": "Mario Party DS (Europe) (En,Fr,De,Es,It).srm",
+        "size": 8192,
+        "sha1": "3e21df3e0f46f83583ec050febf2d015d65cb902"
+      },
+      "noods": {
+        "name": "Mario Party DS (Europe) (En,Fr,De,Es,It).sav",
+        "size": 8192,
+        "sha1": "3e21df3e0f46f83583ec050febf2d015d65cb902"
+      },
+      "skyemu": {
+        "name": "Mario Party DS (Europe) (En,Fr,De,Es,It).srm",
+        "size": 8388608,
+        "sha1": "ecf567d8e02a34a2ec982a2ac776b46458c61b00"
+      }
+    },
+    "script": null,
+    "cores": {
+      "desmume": {
+        "result": "not-run",
+        "detail": "no image of Mario Party DS (Europe) (En,Fr,De,Es,It) in the library"
+      },
+      "desmume-2015": {
+        "result": "not-run",
+        "detail": "no image of Mario Party DS (Europe) (En,Fr,De,Es,It) in the library"
+      },
+      "melonds": {
+        "result": "not-run",
+        "detail": "no image of Mario Party DS (Europe) (En,Fr,De,Es,It) in the library"
+      },
+      "melonds-ds": {
+        "result": "not-run",
+        "detail": "no image of Mario Party DS (Europe) (En,Fr,De,Es,It) in the library"
+      },
+      "noods": {
+        "result": "not-run",
+        "detail": "no image of Mario Party DS (Europe) (En,Fr,De,Es,It) in the library"
+      },
+      "skyemu": {
+        "result": "not-run",
+        "detail": "no image of Mario Party DS (Europe) (En,Fr,De,Es,It) in the library"
+      }
+    },
+    "proof_order": []
+  },
+  "note": "Release: the save starts \"NTR-P-A8TP\" (Mario Party DS, Europe)."
+}

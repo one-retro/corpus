@@ -1,0 +1,111 @@
+{
+  "method": "downloaded",
+  "system": "ps2",
+  "core": "_x-port",
+  "url": "https://gamefaqs.gamespot.com/dreamcast/914427-marvel-vs-capcom-2/saves/5418",
+  "source_page": "https://gamefaqs.gamespot.com/dreamcast/914427-marvel-vs-capcom-2/saves",
+  "source": "GameFAQs (section 'PlayStation2 X-Port Save (Europe)')",
+  "author": "mrplugo",
+  "licence": null,
+  "posted": "2004-11-18",
+  "fetched": "2026-11-05",
+  "what_it_is": "All Characters Unlocked",
+  "gamefaqs": {
+    "id": 5418,
+    "product": "Marvel vs. Capcom 2",
+    "section": "PlayStation2 X-Port Save (Europe)",
+    "region": "Europe",
+    "served_as": "marvel-vs-capcom-2.5418.xps",
+    "listed_size": "53KB"
+  },
+  "format": "SharkPort / X-Port save: 'SharkPortSave' header (title 'MARVEL VS CAPCOM2 SYSTEM', date 'Save18/11/2004 00:37:22 41', comment ''), folder BESLES-51174SYS, 3 files, 53808 bytes of file data, 4-byte checksum at the end",
+  "files": {
+    "marvel-vs-capcom-2.5418.xps": {
+      "size": 54899,
+      "sha1": "e5ae7f02f81cb91d6fd495b15bee06634eced266"
+    }
+  },
+  "save": {
+    "folder": "BESLES-51174SYS",
+    "title": [
+      "MARVEL VS CAPCOM",
+      "2 SYSTEM"
+    ],
+    "times": "as the file stores them (PS2 card times, JST)",
+    "files": [
+      {
+        "name": "icon.sys",
+        "size": 964,
+        "sha1": "74cbac94ffddc1c7cdddf747a174c8cee23b3aac",
+        "created": "2004-05-27 06:51:33",
+        "modified": "2004-05-27 06:51:33"
+      },
+      {
+        "name": "mvsc2.ico",
+        "size": 50968,
+        "sha1": "69826b3ecc278e400a8c0756ab7f5f4d99ea8522",
+        "created": "2004-05-27 06:51:34",
+        "modified": "2004-05-27 06:51:35"
+      },
+      {
+        "name": "BESLES-51174SYS",
+        "size": 1876,
+        "sha1": "84de3eadf45d8f7955b600af9f4f268a8191100e",
+        "created": "2004-08-24 01:39:41",
+        "modified": "2004-08-24 01:39:42"
+      }
+    ]
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": null,
+    "converted_with": "tools/gamefaqs/ps2-card.py 'marvel-vs-capcom-2.5418.xps' -o OUT: reads the save with mymcplus 3.0.5 and writes OUT/Mcd001.ps2 (an 8 MiB card with ECC, formatted and filled by mymcplus) for lrps2/pcee2/pcsx2, and OUT/mc0/<folder>/ for Play!",
+    "converted": {
+      "Mcd001.ps2": {
+        "size": 8650752,
+        "sha1": "25c6c4bee3c6be1e7c14f4666836503deaf3d84c"
+      },
+      "mc0/BESLES-51174SYS/": {
+        "icon.sys": {
+          "size": 964,
+          "sha1": "74cbac94ffddc1c7cdddf747a174c8cee23b3aac"
+        },
+        "mvsc2.ico": {
+          "size": 50968,
+          "sha1": "69826b3ecc278e400a8c0756ab7f5f4d99ea8522"
+        },
+        "BESLES-51174SYS": {
+          "size": 1876,
+          "sha1": "84de3eadf45d8f7955b600af9f4f268a8191100e"
+        }
+      },
+      "read_back": "work/ps2/tools/mcfs.py lists every file with the size and SHA-1 put on the card; one-saves (1saves convert + inspect) reads the card and finds BESLES-51174SYS",
+      "timestamps": "what the save does not date is 2000-01-01 00:00:00 (JST, as a card stores it); the card's own root entries too"
+    },
+    "script": null,
+    "cores": {
+      "pcee2": {
+        "result": "not-run",
+        "detail": "no image of Marvel vs. Capcom 2 - New Age of Heroes (Europe) in the library"
+      },
+      "lrps2": {
+        "result": "not-run",
+        "detail": "no image of Marvel vs. Capcom 2 - New Age of Heroes (Europe) in the library"
+      },
+      "play": {
+        "result": "not-run",
+        "detail": "no image of Marvel vs. Capcom 2 - New Age of Heroes (Europe) in the library"
+      },
+      "pcsx2": {
+        "result": "not-run",
+        "detail": "no image of Marvel vs. Capcom 2 - New Age of Heroes (Europe) in the library"
+      },
+      "armsx2": {
+        "result": "not-run",
+        "detail": "ARMSX2 renders only through Vulkan here and falls back to a null GS (no picture), so nothing shows what the game read (ps2/NOTES.md)"
+      }
+    },
+    "proof_order": []
+  },
+  "note": null
+}

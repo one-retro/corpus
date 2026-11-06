@@ -1,0 +1,119 @@
+{
+  "method": "downloaded",
+  "system": "gba",
+  "core": "_gameshark",
+  "url": "https://gamefaqs.gamespot.com/gba/589456-castlevania-aria-of-sorrow/saves/34901",
+  "source_page": "https://gamefaqs.gamespot.com/gba/589456-castlevania-aria-of-sorrow/saves",
+  "source": "GameFAQs (section 'GameBoy Advance GameShark Save (North America)')",
+  "author": "fepnascimento",
+  "licence": null,
+  "posted": "2026-06-09",
+  "fetched": "2026-11-05",
+  "what_it_is": "Just before the final boss for the best ending",
+  "gamefaqs": {
+    "id": 34901,
+    "product": "Castlevania: Aria of Sorrow",
+    "section": "GameBoy Advance GameShark Save (North America)",
+    "region": "North America",
+    "served_as": "castlevania-aria-of-sorrow.34901.sps",
+    "listed_size": "32KB"
+  },
+  "format": "SharkPort save (\"SharkPortSave\", kind 0x000F0000): title \"CASTLEVANIA2\", date \"06/03/2026 07:01:24 PM\", notes \"\"; cart header \"CASTLEVANIA2\" / 'A2CE' (complement 0x84); payload 32768 bytes; checksum: signed",
+  "files": {
+    "castlevania-aria-of-sorrow.34901.sps": {
+      "size": 32871,
+      "sha1": "af064dabf84733eb3cc627cc9aac70903f202b08"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Castlevania - Aria of Sorrow (USA).gba",
+      "sha1": "abd71fe01ebb201bcc133074db1dd8c5253776c7",
+      "size": 8388608
+    },
+    "converted_with": "tools/gamefaqs/gba-sharkport.py castlevania-aria-of-sorrow.34901.sps --rom ROM --core CORE --outdir DIR: reads the SharkPort container as mGBA does and imports the payload as mGBA's _importSavedata does (cut to the chip, EEPROM 8-byte blocks reversed, the rest of the chip erased), then lays the chip out as the core keeps it",
+    "converted": {
+      "size": 32768,
+      "sha1": "ef37feb69e5df0d675f425e91922de8e6e0b5fd5"
+    },
+    "script": "scripts/gba/Castlevania - Aria of Sorrow.load.txt",
+    "cores": {
+      "mgba": {
+        "result": "loads",
+        "detail": "Select Data: FELIPE, Chaotic Realm, Lv.72, 301.8%",
+        "core_version": "mGBA 0.11-212-7a12d6d",
+        "file": {
+          "name": "Castlevania - Aria of Sorrow (USA).srm",
+          "size": 32768,
+          "sha1": "ef37feb69e5df0d675f425e91922de8e6e0b5fd5"
+        },
+        "frame": "files"
+      },
+      "vba-m": {
+        "result": "loads",
+        "detail": "Select Data: FELIPE, Chaotic Realm, Lv.72, 301.8%",
+        "core_version": "VBA-M 115defb",
+        "file": {
+          "name": "Castlevania - Aria of Sorrow (USA).srm",
+          "size": 32768,
+          "sha1": "ef37feb69e5df0d675f425e91922de8e6e0b5fd5"
+        },
+        "frame": "files"
+      },
+      "gpsp": {
+        "result": "loads",
+        "detail": "Select Data: FELIPE, Chaotic Realm, Lv.72, 301.8%",
+        "core_version": "gpSP v1.1.0-5819380",
+        "file": {
+          "name": "Castlevania - Aria of Sorrow (USA).srm",
+          "size": 131072,
+          "sha1": "f73031372edc5e09b436bb66cc411623333d5122"
+        },
+        "frame": "files"
+      },
+      "vba-next": {
+        "result": "loads",
+        "detail": "Select Data: FELIPE, Chaotic Realm, Lv.72, 301.8%",
+        "core_version": "VBA Next v1.0.2",
+        "file": {
+          "name": "Castlevania - Aria of Sorrow (USA).srm",
+          "size": 139264,
+          "sha1": "8f6f3f66895180efc515f35fe04bc69cf8d0947e"
+        },
+        "frame": "files"
+      },
+      "beetle-gba": {
+        "result": "loads",
+        "detail": "Select Data: FELIPE, Chaotic Realm, Lv.72, 301.8%",
+        "core_version": "Beetle GBA v0.9.36 b158166",
+        "file": {
+          "name": "Castlevania - Aria of Sorrow (USA).e7470df4d241f73060d14437011b90ce.sav",
+          "size": 65536,
+          "sha1": "bcc091aa5931e92569318d0982dd2a76822ccd2d"
+        },
+        "frame": "files"
+      },
+      "skyemu": {
+        "result": "loads",
+        "detail": "Select Data: FELIPE, Chaotic Realm, Lv.72, 301.8%",
+        "core_version": "SkyEmu adacd0788964ed89f5c43dcbc1f3cc26deec996c",
+        "file": {
+          "name": "Castlevania - Aria of Sorrow (USA).srm",
+          "size": 131072,
+          "sha1": "f73031372edc5e09b436bb66cc411623333d5122"
+        },
+        "frame": "files"
+      }
+    },
+    "proof_order": [
+      "mgba",
+      "vba-m",
+      "gpsp",
+      "vba-next",
+      "beetle-gba",
+      "skyemu"
+    ]
+  },
+  "note": null
+}

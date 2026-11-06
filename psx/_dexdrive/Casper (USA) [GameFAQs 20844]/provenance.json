@@ -1,0 +1,84 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_dexdrive",
+  "url": "https://gamefaqs.gamespot.com/ps/196879-casper/saves/20844",
+  "source_page": "https://gamefaqs.gamespot.com/ps/196879-casper/saves",
+  "source": "GameFAQs (section 'PlayStation DexDrive Save (North America)')",
+  "author": "Mezmorize99",
+  "licence": null,
+  "posted": "2010-06-26",
+  "fetched": "2026-11-05",
+  "what_it_is": "A new game with the Iron and Brass keys already found.",
+  "gamefaqs": {
+    "id": 20844,
+    "product": "Casper",
+    "section": "PlayStation DexDrive Save (North America)",
+    "region": "North America",
+    "served_as": "casper.20844.gme",
+    "listed_size": "131KB"
+  },
+  "format": "DexDrive .gme: '123-456-STD' 3904-byte header (per-block comments) + 131072-byte raw card; the card holds 1 save(s), 1 for this game (BASLUS-00162CASPER4)",
+  "release": "Casper (USA)",
+  "game_saves": [
+    {
+      "name": "BASLUS-00162CASPER4",
+      "blocks": 2,
+      "title": "Casper Game 4"
+    }
+  ],
+  "files": {
+    "casper.20844.gme": {
+      "size": 134976,
+      "sha1": "928185cb53ea891300f1b9f61dcf45a8e576b604"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Casper (USA).cue",
+      "sha1": "b4d44392ea4c47c9b499c8c59d29edd3e95bc0a0",
+      "size": 194
+    },
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr casper.20844.gme: unwraps the card (DexDrive .gme: 3904-byte header + card)",
+    "converted": {
+      "size": 131072,
+      "sha1": "62d78bf0adddb1aa24f63cbd2ad04cf713260551"
+    },
+    "script": "scripts/psx/Casper.load.txt",
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "loads",
+        "detail": "the New Game door lists the slots New Game, New Game, Game 4"
+      },
+      "beetle-psx-hw": {
+        "result": "loads",
+        "detail": "the New Game door lists the slots New Game, New Game, Game 4 (the same screen as on beetle-psx)"
+      },
+      "pcsx-rearmed": {
+        "result": "loads",
+        "detail": "the New Game door lists the slots New Game, New Game, Game 4 (the same screen as on beetle-psx)"
+      },
+      "swanstation": {
+        "result": "loads",
+        "detail": "the New Game door lists the slots New Game, New Game, Game 4 (the same screen as on beetle-psx)"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": [
+      "beetle-psx",
+      "beetle-psx-hw",
+      "pcsx-rearmed",
+      "swanstation"
+    ]
+  },
+  "note": null
+}

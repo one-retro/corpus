@@ -1,0 +1,9 @@
+# Super Mario RPG, load check: Start skips the intro to the title, Start
+# at the title opens the file select: each file's level, star pieces and
+# location.
+wait 800
+press start 6       # intro -> title
+wait 800
+press start 6       # title -> files
+wait 200
+shot files

@@ -1,0 +1,119 @@
+{
+  "method": "downloaded",
+  "system": "gba",
+  "core": "_gameshark",
+  "url": "https://gamefaqs.gamespot.com/gba/920670-the-legend-of-zelda-the-minish-cap/saves/35099",
+  "source_page": "https://gamefaqs.gamespot.com/gba/920670-the-legend-of-zelda-the-minish-cap/saves",
+  "source": "GameFAQs (section 'GameBoy Advance GameShark Save (North America)')",
+  "author": "FluSherEYE",
+  "licence": null,
+  "posted": "2026-07-07",
+  "fetched": "2026-11-05",
+  "what_it_is": "Spanish Version (E) 100% Completed, Nayru & Din houses, all elements, all sword techniques, full inventory, full heart, Tingle Trofy and the Carlov Medal",
+  "gamefaqs": {
+    "id": 35099,
+    "product": "The Legend of Zelda: The Minish Cap",
+    "section": "GameBoy Advance GameShark Save (North America)",
+    "region": "North America",
+    "served_as": "the-legend-of-zelda-the-minish-cap.35099.sps",
+    "listed_size": "8KB"
+  },
+  "format": "SharkPort save (\"SharkPortSave\", kind 0x000F0000): title \"oThe Legend of Zelda - The Minish Cap (E)\", date \"01/07/2026 07:50:42 pm\", notes \"Created with savefileconverter.com\"; cart header \"\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\tde\" / 'sc\\x00\\x00' (complement 0x64); payload 8192 bytes; checksum: neither; written by savefileconverter.com (notes field), whose checksum matches neither variant",
+  "files": {
+    "the-legend-of-zelda-the-minish-cap.35099.sps": {
+      "size": 8358,
+      "sha1": "c878918ea2830a0b077a756347ec6e168f7fd42a"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Legend of Zelda, The - The Minish Cap (Europe) (En,Fr,De,Es,It).gba",
+      "sha1": "cff199b36ff173fb6faf152653d1bccf87c26fb7",
+      "size": 16777216
+    },
+    "converted_with": "tools/gamefaqs/gba-sharkport.py the-legend-of-zelda-the-minish-cap.35099.sps --rom ROM --core CORE --outdir DIR: reads the SharkPort container as mGBA does and imports the payload as mGBA's _importSavedata does (cut to the chip, EEPROM 8-byte blocks reversed, the rest of the chip erased), then lays the chip out as the core keeps it",
+    "converted": {
+      "size": 8192,
+      "sha1": "fbd8c03189594579c9d865471046d9f272b28e88"
+    },
+    "script": "scripts/gba/Legend of Zelda, The - The Minish Cap.load.txt",
+    "cores": {
+      "mgba": {
+        "result": "rejected",
+        "detail": "CHOOSE A FILE with three empty slots, as with no save: the payload is in emulator byte order, and the GameShark reversal scrambles it",
+        "core_version": "mGBA 0.11-212-7a12d6d",
+        "file": {
+          "name": "Legend of Zelda, The - The Minish Cap (Europe) (En,Fr,De,Es,It).srm",
+          "size": 8192,
+          "sha1": "fbd8c03189594579c9d865471046d9f272b28e88"
+        },
+        "frame": "files"
+      },
+      "vba-m": {
+        "result": "rejected",
+        "detail": "CHOOSE A FILE with three empty slots, as with no save: the payload is in emulator byte order, and the GameShark reversal scrambles it (same files; the water background animates, and here a press landed in the file list (file 1 highlighted, or the name entry of an empty file))",
+        "core_version": "VBA-M 115defb",
+        "file": {
+          "name": "Legend of Zelda, The - The Minish Cap (Europe) (En,Fr,De,Es,It).srm",
+          "size": 8192,
+          "sha1": "fbd8c03189594579c9d865471046d9f272b28e88"
+        },
+        "frame": "files"
+      },
+      "gpsp": {
+        "result": "rejected",
+        "detail": "CHOOSE A FILE with three empty slots, as with no save: the payload is in emulator byte order, and the GameShark reversal scrambles it (same files; the water background animates, and here a press landed in the file list (file 1 highlighted, or the name entry of an empty file))",
+        "core_version": "gpSP v1.1.0-5819380",
+        "file": {
+          "name": "Legend of Zelda, The - The Minish Cap (Europe) (En,Fr,De,Es,It).srm",
+          "size": 131072,
+          "sha1": "fdac3a31da557c7a7a356dfd4e7d123b2f17a8c0"
+        },
+        "frame": "files"
+      },
+      "vba-next": {
+        "result": "rejected",
+        "detail": "CHOOSE A FILE with three empty slots, as with no save: the payload is in emulator byte order, and the GameShark reversal scrambles it",
+        "core_version": "VBA Next v1.0.2",
+        "file": {
+          "name": "Legend of Zelda, The - The Minish Cap (Europe) (En,Fr,De,Es,It).srm",
+          "size": 139264,
+          "sha1": "dca1accd0fb97918ec0328f298f4d5c54576279a"
+        },
+        "frame": "files"
+      },
+      "beetle-gba": {
+        "result": "rejected",
+        "detail": "CHOOSE A FILE with three empty slots, as with no save: the payload is in emulator byte order, and the GameShark reversal scrambles it (same files; the water background animates, and here a press landed in the file list (file 1 highlighted, or the name entry of an empty file))",
+        "core_version": "Beetle GBA v0.9.36 b158166",
+        "file": {
+          "name": "Legend of Zelda, The - The Minish Cap (Europe) (En,Fr,De,Es,It).2af78edbe244b5de44471368ae2b6f0b.eep",
+          "size": 8192,
+          "sha1": "fbd8c03189594579c9d865471046d9f272b28e88"
+        },
+        "frame": "files"
+      },
+      "skyemu": {
+        "result": "rejected",
+        "detail": "CHOOSE A FILE with three empty slots, as with no save: the payload is in emulator byte order, and the GameShark reversal scrambles it (same files; the water background animates, and here a press landed in the file list (file 1 highlighted, or the name entry of an empty file))",
+        "core_version": "SkyEmu adacd0788964ed89f5c43dcbc1f3cc26deec996c",
+        "file": {
+          "name": "Legend of Zelda, The - The Minish Cap (Europe) (En,Fr,De,Es,It).srm",
+          "size": 131072,
+          "sha1": "27fff44602f2f6c78b1e42e906ee728b11a5676e"
+        },
+        "frame": "files"
+      }
+    },
+    "proof_order": [
+      "mgba",
+      "vba-m",
+      "gpsp",
+      "vba-next",
+      "beetle-gba",
+      "skyemu"
+    ]
+  },
+  "note": "The EEPROM payload is in emulator byte order (the order mGBA, VBA-M and a raw .sav use; text such as \"ADLEZBGA\" reads backwards per 8 bytes), not the GameShark order, so mGBA's import (which reverses each 8-byte block) scrambles it; taken as is instead, mGBA shows it: ELIGE UN ARCHIVO, TULA. savefileconverter.com wrote the cart header as zeros and stray text; the release comes from the title field (\"The Minish Cap (E)\") and the description (Spanish version)."
+}

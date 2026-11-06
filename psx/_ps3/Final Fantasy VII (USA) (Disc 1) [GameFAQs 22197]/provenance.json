@@ -1,0 +1,88 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_ps3",
+  "url": "https://gamefaqs.gamespot.com/ps/197341-final-fantasy-vii/saves/22197",
+  "source_page": "https://gamefaqs.gamespot.com/ps/197341-final-fantasy-vii/saves",
+  "source": "GameFAQs (section 'PlayStation PS3 Virtual Memory Card Save (ZIP) (North America)')",
+  "author": "qHidden_Legendp",
+  "licence": null,
+  "posted": "2011-12-30",
+  "fetched": "2026-11-05",
+  "what_it_is": "No cheats. 90 hours. All characters level 99. All three master materias for each fighter. Ready to fight either Emerald or Ruby weapon.",
+  "gamefaqs": {
+    "id": 22197,
+    "product": "Final Fantasy VII",
+    "section": "PlayStation PS3 Virtual Memory Card Save (ZIP) (North America)",
+    "region": "North America",
+    "served_as": "final-fantasy-vii.22197.zip",
+    "listed_size": "2KB",
+    "served_zip": {
+      "size": 2480,
+      "sha1": "ad4090e3695ceb469d5ff26c959cea3ecc267b3f"
+    }
+  },
+  "format": "zip of 1 PS3 export(s) (.PSV): '\\0VSP' header (signature, save name at 0x64), the save's blocks from 0x84 (8324 bytes); it holds 1 save(s), 1 for this game (BASCUS-94163FF7-S15)",
+  "release": "Final Fantasy VII (USA) (Disc 1)",
+  "game_saves": [
+    {
+      "name": "BASCUS-94163FF7-S15",
+      "blocks": 1,
+      "title": "FF7/SAVE15/90:39"
+    }
+  ],
+  "files": {
+    "BASCUS-941634646372D533135.PSV": {
+      "size": 8324,
+      "sha1": "a46b38d04712592f9e5eb549410bb03d8a0d6bfe"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Final Fantasy VII (USA) (Disc 1).cue",
+      "sha1": "c8df949f13d990d325ac3b8d6eb835c440380e52",
+      "size": 98
+    },
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr BASCUS-941634646372D533135.PSV: puts the save(s) on a freshly formatted card, as MemcardRex imports a single save",
+    "converted": {
+      "size": 131072,
+      "sha1": "e9d8aa757e6648dd9cec3b80e62836c00c8a0a5a"
+    },
+    "script": "scripts/psx/Final Fantasy VII.load.txt",
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "loads",
+        "detail": "Slot 1, paged to files 13-15, lists file 15: Cloud, Level 99, 90:39, Junon Area"
+      },
+      "beetle-psx-hw": {
+        "result": "loads",
+        "detail": "Slot 1, paged to files 13-15, lists file 15: Cloud, Level 99, 90:39, Junon Area (the same screen as on beetle-psx)"
+      },
+      "pcsx-rearmed": {
+        "result": "loads",
+        "detail": "Slot 1, paged to files 13-15, lists file 15: Cloud, Level 99, 90:39, Junon Area (the same screen as on beetle-psx)"
+      },
+      "swanstation": {
+        "result": "loads",
+        "detail": "Slot 1, paged to files 13-15, lists file 15: Cloud, Level 99, 90:39, Junon Area (the same screen as on beetle-psx)"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": [
+      "beetle-psx",
+      "beetle-psx-hw",
+      "pcsx-rearmed",
+      "swanstation"
+    ]
+  },
+  "note": null
+}

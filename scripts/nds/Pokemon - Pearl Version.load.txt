@@ -1,0 +1,16 @@
+# Pokemon Diamond / Pearl, loading a save: skip the intro, PRESS START, then A
+# on the title. With a save the game opens the CONTINUE panel (PLAYER, TIME,
+# BADGES, POKéDEX); without one it starts Professor Rowan's introduction.
+wait 700
+press start 6       # skip the intro to the title
+wait 400
+press a 6           # title -> CONTINUE / NEW GAME (or the introduction)
+wait 500
+shot continue
+# When the game first shows a message about the save ("The most recent Battle
+# Video is corrupted.", "The save file has been erased due to corruption or
+# damage."), A dismisses it and the next shot shows what follows. For any other
+# save this A picks CONTINUE and the shot shows the journal.
+press a 6
+wait 400
+shot after

@@ -1,0 +1,5 @@
+# Load check for a save made elsewhere (tools/GAMEFAQS.md): power on and wait
+# for CHOOSE A FILE, which shows the three files' names, and file 1's hearts
+# and items.
+wait 1100
+shot files

@@ -1,0 +1,119 @@
+{
+  "method": "downloaded",
+  "system": "gba",
+  "core": "_gameshark",
+  "url": "https://gamefaqs.gamespot.com/gba/449471-castlevania-circle-of-the-moon/saves/14921",
+  "source_page": "https://gamefaqs.gamespot.com/gba/449471-castlevania-circle-of-the-moon/saves",
+  "source": "GameFAQs (section 'GameBoy Advance GameShark Save (Europe)')",
+  "author": "Biagettipas",
+  "licence": null,
+  "posted": "2007-05-12",
+  "fetched": "2026-11-05",
+  "what_it_is": "Level 73 - 100% Map - All Items founded",
+  "gamefaqs": {
+    "id": 14921,
+    "product": "Castlevania: Circle of the Moon",
+    "section": "GameBoy Advance GameShark Save (Europe)",
+    "region": "Europe",
+    "served_as": "castlevania-circle-of-the-moon.14921.sps",
+    "listed_size": "64KB"
+  },
+  "format": "SharkPort save (\"SharkPortSave\", kind 0x000F0000): title \"DRACULA AGB1\", date \"12/05/2007 16.42.09\", notes \"\"; cart header \"DRACULA AGB1\" / 'AAMP' (complement 0xa6); payload 65536 bytes; checksum: signed",
+  "files": {
+    "castlevania-circle-of-the-moon.14921.sps": {
+      "size": 65636,
+      "sha1": "191ccbb86f6f4b848fd94103a849fa682433f348"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Castlevania (Europe).gba",
+      "sha1": "a127e0c62ce61cd72661a1af6f0bda18bcad26b3",
+      "size": 8388608
+    },
+    "converted_with": "tools/gamefaqs/gba-sharkport.py castlevania-circle-of-the-moon.14921.sps --rom ROM --core CORE --outdir DIR: reads the SharkPort container as mGBA does and imports the payload as mGBA's _importSavedata does (cut to the chip, EEPROM 8-byte blocks reversed, the rest of the chip erased), then lays the chip out as the core keeps it",
+    "converted": {
+      "size": 32768,
+      "sha1": "a83813a544780188ca301c9e2c92b44ad65a06d9"
+    },
+    "script": "scripts/gba/Castlevania - Circle of the Moon.load.txt",
+    "cores": {
+      "mgba": {
+        "result": "loads",
+        "detail": "DATA SELECT: BIAGIO, Catacomb, LV 73, 100.0%, 25:22:22",
+        "core_version": "mGBA 0.11-212-7a12d6d",
+        "file": {
+          "name": "Castlevania (Europe).srm",
+          "size": 32768,
+          "sha1": "a83813a544780188ca301c9e2c92b44ad65a06d9"
+        },
+        "frame": "files"
+      },
+      "vba-m": {
+        "result": "loads",
+        "detail": "DATA SELECT: BIAGIO, Catacomb, LV 73, 100.0%, 25:22:22",
+        "core_version": "VBA-M 115defb",
+        "file": {
+          "name": "Castlevania (Europe).srm",
+          "size": 32768,
+          "sha1": "a83813a544780188ca301c9e2c92b44ad65a06d9"
+        },
+        "frame": "files"
+      },
+      "gpsp": {
+        "result": "loads",
+        "detail": "DATA SELECT: BIAGIO, Catacomb, LV 73, 100.0%, 25:22:22",
+        "core_version": "gpSP v1.1.0-5819380",
+        "file": {
+          "name": "Castlevania (Europe).srm",
+          "size": 131072,
+          "sha1": "6d287ae7f4e135b397f1ab71a1aa87ee2d3d833a"
+        },
+        "frame": "files"
+      },
+      "vba-next": {
+        "result": "loads",
+        "detail": "DATA SELECT: BIAGIO, Catacomb, LV 73, 100.0%, 25:22:22",
+        "core_version": "VBA Next v1.0.2",
+        "file": {
+          "name": "Castlevania (Europe).srm",
+          "size": 139264,
+          "sha1": "c50719c0514664675df7169ddfa8a443eba3cdc8"
+        },
+        "frame": "files"
+      },
+      "beetle-gba": {
+        "result": "loads",
+        "detail": "DATA SELECT: BIAGIO, Catacomb, LV 73, 100.0%, 25:22:22",
+        "core_version": "Beetle GBA v0.9.36 b158166",
+        "file": {
+          "name": "Castlevania (Europe).b7b0e7a5f8e8bd22ac9f5766d1acef56.sav",
+          "size": 65536,
+          "sha1": "3f028ebd0987f63af867163f1061494b23716c15"
+        },
+        "frame": "files"
+      },
+      "skyemu": {
+        "result": "loads",
+        "detail": "DATA SELECT: BIAGIO, Catacomb, LV 73, 100.0%, 25:22:22",
+        "core_version": "SkyEmu adacd0788964ed89f5c43dcbc1f3cc26deec996c",
+        "file": {
+          "name": "Castlevania (Europe).srm",
+          "size": 131072,
+          "sha1": "6d287ae7f4e135b397f1ab71a1aa87ee2d3d833a"
+        },
+        "frame": "files"
+      }
+    },
+    "proof_order": [
+      "mgba",
+      "vba-m",
+      "gpsp",
+      "vba-next",
+      "beetle-gba",
+      "skyemu"
+    ]
+  },
+  "note": null
+}

@@ -1,0 +1,84 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_dexdrive",
+  "url": "https://gamefaqs.gamespot.com/ps/198277-persona-revelations-series/saves/22694",
+  "source_page": "https://gamefaqs.gamespot.com/ps/198277-persona-revelations-series/saves",
+  "source": "GameFAQs (section 'PlayStation DexDrive Save (North America)')",
+  "author": "Pretinaverse",
+  "licence": null,
+  "posted": "2012-10-15",
+  "fetched": "2026-11-05",
+  "what_it_is": "After rescuing Mark and Brad from the police station. Ellen as the 5th character. All maxed.",
+  "gamefaqs": {
+    "id": 22694,
+    "product": "Persona: Revelations Series",
+    "section": "PlayStation DexDrive Save (North America)",
+    "region": "North America",
+    "served_as": "persona-revelations-series.22694.gme",
+    "listed_size": "131KB"
+  },
+  "format": "DexDrive .gme: '123-456-STD' 3904-byte header (per-block comments) + 131072-byte raw card; the card holds 1 save(s), 1 for this game (BASLUS-00339S0)",
+  "release": "Persona (USA)",
+  "game_saves": [
+    {
+      "name": "BASLUS-00339S0",
+      "blocks": 2,
+      "title": "PERSONA FILE #1 LV99 12:32:10"
+    }
+  ],
+  "files": {
+    "persona-revelations-series.22694.gme": {
+      "size": 134976,
+      "sha1": "47e2509100ef44d44e741d52b51903c8ff9c6401"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Persona (USA).cue",
+      "sha1": "2715c8946237358a03e31d2d85d39b4fe33df641",
+      "size": 79
+    },
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr persona-revelations-series.22694.gme: unwraps the card (DexDrive .gme: 3904-byte header + card)",
+    "converted": {
+      "size": 131072,
+      "sha1": "4db7d89b226472d0524585721b045fa8dab70dae"
+    },
+    "script": "scripts/psx/Persona.load.txt",
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "loads",
+        "detail": "Load Game, Slot 1 lists Chris, Lv 99, time 12:32"
+      },
+      "beetle-psx-hw": {
+        "result": "loads",
+        "detail": "Load Game, Slot 1 lists Chris, Lv 99, time 12:32 (the same screen as on beetle-psx)"
+      },
+      "pcsx-rearmed": {
+        "result": "loads",
+        "detail": "Load Game, Slot 1 lists Chris, Lv 99, time 12:32 (the same screen as on beetle-psx)"
+      },
+      "swanstation": {
+        "result": "loads",
+        "detail": "Load Game, Slot 1 lists Chris, Lv 99, time 12:32 (the same screen as on beetle-psx)"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": [
+      "beetle-psx",
+      "beetle-psx-hw",
+      "pcsx-rearmed",
+      "swanstation"
+    ]
+  },
+  "note": null
+}

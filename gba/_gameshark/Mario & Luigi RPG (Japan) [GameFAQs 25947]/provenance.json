@@ -1,0 +1,63 @@
+{
+  "method": "downloaded",
+  "system": "gba",
+  "core": "_gameshark",
+  "url": "https://gamefaqs.gamespot.com/gba/914980-mario-and-luigi-superstar-saga/saves/25947",
+  "source_page": "https://gamefaqs.gamespot.com/gba/914980-mario-and-luigi-superstar-saga/saves",
+  "source": "GameFAQs (section 'GameBoy Advance GameShark Save (Japan)')",
+  "author": "Eevee-Trainer",
+  "licence": null,
+  "posted": "2018-08-16",
+  "fetched": "2026-11-05",
+  "what_it_is": "Saved before final boss. Game otherwise 100% complete. Mario & Luigi are Level 45 & 46 respectively with 999 in all stats when not equipped. You have 65,535 Coins, 254 of all items, best equipment on.",
+  "gamefaqs": {
+    "id": 25947,
+    "product": "Mario & Luigi: Superstar Saga",
+    "section": "GameBoy Advance GameShark Save (Japan)",
+    "region": "Japan",
+    "served_as": "mario-and-luigi-superstar-saga.25947.sps",
+    "listed_size": "8KB"
+  },
+  "format": "SharkPort save (\"SharkPortSave\" header) that mGBA's reader rejects: string field at 0x29 claims 0x2f382f35 bytes, past the end of the file",
+  "files": {
+    "mario-and-luigi-superstar-saga.25947.sps": {
+      "size": 8288,
+      "sha1": "6c1bd1e66438c4c8a9b6d30c3727ebff6078f885"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": null,
+    "converted_with": null,
+    "converted": null,
+    "script": null,
+    "cores": {
+      "mgba": {
+        "result": "not-run",
+        "detail": "the file could not be converted: it is not a well-formed SharkPort file (see note)"
+      },
+      "vba-m": {
+        "result": "not-run",
+        "detail": "the file could not be converted: it is not a well-formed SharkPort file (see note)"
+      },
+      "gpsp": {
+        "result": "not-run",
+        "detail": "the file could not be converted: it is not a well-formed SharkPort file (see note)"
+      },
+      "vba-next": {
+        "result": "not-run",
+        "detail": "the file could not be converted: it is not a well-formed SharkPort file (see note)"
+      },
+      "beetle-gba": {
+        "result": "not-run",
+        "detail": "the file could not be converted: it is not a well-formed SharkPort file (see note)"
+      },
+      "skyemu": {
+        "result": "not-run",
+        "detail": "the file could not be converted: it is not a well-formed SharkPort file (see note)"
+      }
+    },
+    "proof_order": []
+  },
+  "note": "Hand-assembled in 2018 and malformed: the date string follows a length field of 0, and the payload size field says 0x2001C where 8192 bytes follow with no checksum after them, so mGBA's reader (and this converter, which follows it) cannot find the payload. The cart header names \"MARIOLUIGI\" without the \"&\" of the real title, which mGBA would refuse anyway."
+}

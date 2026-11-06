@@ -1,0 +1,119 @@
+{
+  "method": "downloaded",
+  "system": "gba",
+  "core": "_gameshark",
+  "url": "https://gamefaqs.gamespot.com/gba/449471-castlevania-circle-of-the-moon/saves/34902",
+  "source_page": "https://gamefaqs.gamespot.com/gba/449471-castlevania-circle-of-the-moon/saves",
+  "source": "GameFAQs (section 'GameBoy Advance GameShark Save (North America)')",
+  "author": "fepnascimento",
+  "licence": null,
+  "posted": "2026-06-09",
+  "fetched": "2026-11-05",
+  "what_it_is": "99.8% Ready to face Dracula",
+  "gamefaqs": {
+    "id": 34902,
+    "product": "Castlevania: Circle of the Moon",
+    "section": "GameBoy Advance GameShark Save (North America)",
+    "region": "North America",
+    "served_as": "castlevania-circle-of-the-moon.34902.sps",
+    "listed_size": "32KB"
+  },
+  "format": "SharkPort save (\"SharkPortSave\", kind 0x000F0000): title \"DRACULA AGB1\", date \"06/03/2026 08:05:39 PM\", notes \"\"; cart header \"DRACULA AGB1\" / 'AAME' (complement 0xb1); payload 32768 bytes; checksum: signed",
+  "files": {
+    "castlevania-circle-of-the-moon.34902.sps": {
+      "size": 32871,
+      "sha1": "fd611817209bbe18f8cb68dcfaf7588b878fcfea"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Castlevania - Circle of the Moon (USA).gba",
+      "sha1": "d661b01eb94186435723ac03344792c11c20c522",
+      "size": 8388608
+    },
+    "converted_with": "tools/gamefaqs/gba-sharkport.py castlevania-circle-of-the-moon.34902.sps --rom ROM --core CORE --outdir DIR: reads the SharkPort container as mGBA does and imports the payload as mGBA's _importSavedata does (cut to the chip, EEPROM 8-byte blocks reversed, the rest of the chip erased), then lays the chip out as the core keeps it",
+    "converted": {
+      "size": 32768,
+      "sha1": "cd92190eb2e59d068ce1670545910a97bbd52d29"
+    },
+    "script": "scripts/gba/Castlevania - Circle of the Moon.load.txt",
+    "cores": {
+      "mgba": {
+        "result": "rejected",
+        "detail": "DATA SELECT shows NEW GAME and no files, as with no save: the file holds only the \"DRACULA AGB\" header, the rest is zero",
+        "core_version": "mGBA 0.11-212-7a12d6d",
+        "file": {
+          "name": "Castlevania - Circle of the Moon (USA).srm",
+          "size": 32768,
+          "sha1": "cd92190eb2e59d068ce1670545910a97bbd52d29"
+        },
+        "frame": "files"
+      },
+      "vba-m": {
+        "result": "rejected",
+        "detail": "DATA SELECT shows NEW GAME and no files, as with no save: the file holds only the \"DRACULA AGB\" header, the rest is zero",
+        "core_version": "VBA-M 115defb",
+        "file": {
+          "name": "Castlevania - Circle of the Moon (USA).srm",
+          "size": 32768,
+          "sha1": "cd92190eb2e59d068ce1670545910a97bbd52d29"
+        },
+        "frame": "files"
+      },
+      "gpsp": {
+        "result": "rejected",
+        "detail": "DATA SELECT shows NEW GAME and no files, as with no save: the file holds only the \"DRACULA AGB\" header, the rest is zero",
+        "core_version": "gpSP v1.1.0-5819380",
+        "file": {
+          "name": "Castlevania - Circle of the Moon (USA).srm",
+          "size": 131072,
+          "sha1": "f9529fca0783734035a694ab4814723aa3332016"
+        },
+        "frame": "files"
+      },
+      "vba-next": {
+        "result": "rejected",
+        "detail": "DATA SELECT shows NEW GAME and no files, as with no save: the file holds only the \"DRACULA AGB\" header, the rest is zero",
+        "core_version": "VBA Next v1.0.2",
+        "file": {
+          "name": "Castlevania - Circle of the Moon (USA).srm",
+          "size": 139264,
+          "sha1": "344c0f25d5ca9ebc8e4a0a5e7472dc372e0fc51f"
+        },
+        "frame": "files"
+      },
+      "beetle-gba": {
+        "result": "rejected",
+        "detail": "DATA SELECT shows NEW GAME and no files, as with no save: the file holds only the \"DRACULA AGB\" header, the rest is zero",
+        "core_version": "Beetle GBA v0.9.36 b158166",
+        "file": {
+          "name": "Castlevania - Circle of the Moon (USA).50a1089600603a94e15ecf287f8d5a1f.sav",
+          "size": 65536,
+          "sha1": "dc22e4647a8c9206bc49ac2a5ef8af61dbcda609"
+        },
+        "frame": "files"
+      },
+      "skyemu": {
+        "result": "rejected",
+        "detail": "DATA SELECT shows NEW GAME and no files, as with no save: the file holds only the \"DRACULA AGB\" header, the rest is zero",
+        "core_version": "SkyEmu adacd0788964ed89f5c43dcbc1f3cc26deec996c",
+        "file": {
+          "name": "Castlevania - Circle of the Moon (USA).srm",
+          "size": 131072,
+          "sha1": "f9529fca0783734035a694ab4814723aa3332016"
+        },
+        "frame": "files"
+      }
+    },
+    "proof_order": [
+      "mgba",
+      "vba-m",
+      "gpsp",
+      "vba-next",
+      "beetle-gba",
+      "skyemu"
+    ]
+  },
+  "note": "The 32 KiB payload holds only the 12-byte \"DRACULA AGB\" signature; everything else is zero."
+}

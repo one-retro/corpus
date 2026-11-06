@@ -1,0 +1,98 @@
+{
+  "method": "downloaded",
+  "system": "nds",
+  "core": "_drastic",
+  "url": "https://gamefaqs.gamespot.com/ds/938930-pokemon-mystery-dungeon-explorers-of-darkness/saves/34740",
+  "source_page": "https://gamefaqs.gamespot.com/ds/938930-pokemon-mystery-dungeon-explorers-of-darkness/saves",
+  "source": "GameFAQs (section 'Action Replay Max DS (1.00-1.03) Game Save (Europe)')",
+  "author": "Nokoo",
+  "licence": null,
+  "posted": "2026-05-06",
+  "fetched": "2026-11-05",
+  "what_it_is": "Pokémon : Donjon Mystère - Explorateur du Ciel (Europe)- 100% MAIN STORY / POST GAME / SUB STORY / MAX GRADE / ALL POKEMON (GEN 1 - 4) / ALL LEGENDARY / 1.2M GOLD IN BANK / FULL ITEMS / ALL DUNGEONS (just for fun ahah)..",
+  "gamefaqs": {
+    "id": 34740,
+    "product": "Pokemon Mystery Dungeon: Explorers",
+    "section": "Action Replay Max DS (1.00-1.03) Game Save (Europe)",
+    "region": "Europe",
+    "served_as": "pokemon-mystery-dungeon-explorers.34740.dss",
+    "listed_size": "1265KB"
+  },
+  "format": "DraStic save state: DraStic state for C2SP; inflated 5690006 bytes; save memory record at 0x30000: type 2, 131072 bytes, 3-byte addresses",
+  "files": {
+    "pokemon-mystery-dungeon-explorers.34740.dss": {
+      "size": 1296096,
+      "sha1": "4d04fb6792c17dc315f7757d8cbf90a3e7672ab2"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": null,
+    "converted_with": "tools/gamefaqs/nds-drastic-state.py IN step0.bin, then tools/gamefaqs/nds-cores.py step0.bin --chip 131072 --stem 'Pokemon Mystery Dungeon - Explorers of Sky (Europe) (En,Fr,De,Es,It)' --out DIR: takes the save memory out of the DraStic state; fits it to the 131072-byte chip (exact size) and writes each core's file",
+    "converted": {
+      "size": 131072,
+      "sha1": "818d6eb6976cc7f7c2831a73ed9272c72ee5aada"
+    },
+    "core_files": {
+      "desmume": {
+        "name": "Pokemon Mystery Dungeon - Explorers of Sky (Europe) (En,Fr,De,Es,It).dsv",
+        "size": 262266,
+        "sha1": "c488186535c4454acd5f0951eab93ee2ec255e09"
+      },
+      "desmume-2015": {
+        "name": "Pokemon Mystery Dungeon - Explorers of Sky (Europe) (En,Fr,De,Es,It).dsv",
+        "size": 262266,
+        "sha1": "c488186535c4454acd5f0951eab93ee2ec255e09"
+      },
+      "melonds": {
+        "name": "Pokemon Mystery Dungeon - Explorers of Sky (Europe) (En,Fr,De,Es,It).sav",
+        "size": 131072,
+        "sha1": "818d6eb6976cc7f7c2831a73ed9272c72ee5aada"
+      },
+      "melonds-ds": {
+        "name": "Pokemon Mystery Dungeon - Explorers of Sky (Europe) (En,Fr,De,Es,It).srm",
+        "size": 131072,
+        "sha1": "818d6eb6976cc7f7c2831a73ed9272c72ee5aada"
+      },
+      "noods": {
+        "name": "Pokemon Mystery Dungeon - Explorers of Sky (Europe) (En,Fr,De,Es,It).sav",
+        "size": 131072,
+        "sha1": "818d6eb6976cc7f7c2831a73ed9272c72ee5aada"
+      },
+      "skyemu": {
+        "name": "Pokemon Mystery Dungeon - Explorers of Sky (Europe) (En,Fr,De,Es,It).srm",
+        "size": 8388608,
+        "sha1": "bcf704075871704ddd480f6be0cfadbc82d86233"
+      }
+    },
+    "script": null,
+    "cores": {
+      "desmume": {
+        "result": "not-run",
+        "detail": "no image of Pokemon Mystery Dungeon - Explorers of Sky (Europe) (En,Fr,De,Es,It) in the library"
+      },
+      "desmume-2015": {
+        "result": "not-run",
+        "detail": "no image of Pokemon Mystery Dungeon - Explorers of Sky (Europe) (En,Fr,De,Es,It) in the library"
+      },
+      "melonds": {
+        "result": "not-run",
+        "detail": "no image of Pokemon Mystery Dungeon - Explorers of Sky (Europe) (En,Fr,De,Es,It) in the library"
+      },
+      "melonds-ds": {
+        "result": "not-run",
+        "detail": "no image of Pokemon Mystery Dungeon - Explorers of Sky (Europe) (En,Fr,De,Es,It) in the library"
+      },
+      "noods": {
+        "result": "not-run",
+        "detail": "no image of Pokemon Mystery Dungeon - Explorers of Sky (Europe) (En,Fr,De,Es,It) in the library"
+      },
+      "skyemu": {
+        "result": "not-run",
+        "detail": "no image of Pokemon Mystery Dungeon - Explorers of Sky (Europe) (En,Fr,De,Es,It) in the library"
+      }
+    },
+    "proof_order": []
+  },
+  "note": "Release: the DraStic state records the game code C2SP. DraStic's state format is closed; nds-drastic-state.py takes the save memory record it finds at 0x30000."
+}

@@ -1,0 +1,27 @@
+# Shadow the Hedgehog (USA), SLUS-21261, DVD: show a loaded save.
+# At power-on the game asks "Do you want to load Game Data ...?" (Yes) > "Load successful." (OK)
+# > the autosave notice (OK) > intro (START) > title (START) > 1P GAME > STORY MODE: NEW /
+# CONTINUE / LIBRARY, plus LAST STORY once the save has unlocked it. With a save the cursor
+# starts on CONTINUE, so Down picks LIBRARY: the story paths and endings the save has seen.
+# With no save there is no load prompt and the presses land elsewhere.
+wait 2000            # the prompt waits for input (up by ~1500 frames in PCEE2 and LRPS2)
+press b 10           # "load Game Data?" Yes
+wait 600
+press b 10           # "Load successful." OK
+wait 600
+press b 10           # autosave notice OK
+wait 800
+press start 10       # skip the intro
+wait 600
+press start 10       # PRESS START BUTTON -> 1P GAME / 2P GAME / OPTIONS
+wait 600
+press b 10           # 1P GAME -> STORY MODE / SELECT MODE
+wait 600
+press b 10           # STORY MODE
+wait 600
+shot story           # NEW / CONTINUE / LIBRARY (/ LAST STORY)
+press down 10        # LIBRARY
+wait 60
+press b 10
+wait 900
+shot library         # story paths seen, endings checked

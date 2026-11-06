@@ -1,0 +1,86 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_dexdrive",
+  "url": "https://gamefaqs.gamespot.com/ps/551239-dance-dance-revolution-konamix/saves/2003",
+  "source_page": "https://gamefaqs.gamespot.com/ps/551239-dance-dance-revolution-konamix/saves",
+  "source": "GameFAQs (section 'PlayStation DexDrive Save (North America)')",
+  "author": "Gunvalkyrie",
+  "licence": null,
+  "posted": "2002-11-24",
+  "fetched": "2026-11-05",
+  "what_it_is": "All Songs Unlocked, The 2 Secret Characters Unlocked & 156 AA Ranking in Single Players Mode.",
+  "gamefaqs": {
+    "id": 2003,
+    "product": "Dance Dance Revolution Konamix",
+    "section": "PlayStation DexDrive Save (North America)",
+    "region": "North America",
+    "served_as": "dance-dance-revolution-konamix.2003.gme",
+    "listed_size": "131KB"
+  },
+  "format": "DexDrive .gme: '123-456-STD' 3904-byte header (per-block comments) + 131072-byte raw card; the card holds 1 save(s), 1 for this game (BASLUS-01446system)",
+  "release": "Dance Dance Revolution Konamix (USA)",
+  "game_saves": [
+    {
+      "name": "BASLUS-01446system",
+      "blocks": 1,
+      "title": "KONAMIX SYSTEM"
+    }
+  ],
+  "files": {
+    "dance-dance-revolution-konamix.2003.gme": {
+      "size": 134976,
+      "sha1": "4663e8fd649f7bb309061f227ef554bcb4bd2efd"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Dance Dance Revolution Konamix (USA).cue",
+      "sha1": "7f8c432de9a9e8d7d8c995852cba571fafbe11ae",
+      "size": 117
+    },
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr dance-dance-revolution-konamix.2003.gme: unwraps the card (DexDrive .gme: 3904-byte header + card)",
+    "converted": {
+      "size": 131072,
+      "sha1": "4b2b50628429781e41a7375a29fb27c81aa2503c"
+    },
+    "script": "scripts/psx/Dance Dance Revolution Konamix.load.txt",
+    "script_variants": {
+      "pcsx-rearmed": "scripts/psx/Dance Dance Revolution Konamix.pcsx-rearmed.load.txt"
+    },
+    "cores": {
+      "beetle-psx": {
+        "result": "loads",
+        "detail": "the game reports \"Loaded system data.\" at boot (with no card: \"No system data. Do you wish to create system data?\")"
+      },
+      "beetle-psx-hw": {
+        "result": "loads",
+        "detail": "the game reports \"Loaded system data.\" at boot (with no card: \"No system data. Do you wish to create system data?\") (the same screen as on beetle-psx)"
+      },
+      "pcsx-rearmed": {
+        "result": "loads",
+        "detail": "the game reports \"Loaded system data.\" at boot (with no card: \"No system data. Do you wish to create system data?\") (the same screen as on beetle-psx)"
+      },
+      "swanstation": {
+        "result": "loads",
+        "detail": "the game reports \"Loaded system data.\" at boot (with no card: \"No system data. Do you wish to create system data?\") (the same screen as on beetle-psx)"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": [
+      "beetle-psx",
+      "beetle-psx-hw",
+      "pcsx-rearmed",
+      "swanstation"
+    ]
+  },
+  "note": null
+}

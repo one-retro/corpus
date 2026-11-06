@@ -1,0 +1,122 @@
+{
+  "method": "downloaded",
+  "system": "ps2",
+  "core": "_ps3",
+  "url": "https://gamefaqs.gamespot.com/ps2/561066-gran-turismo-4/saves/19808",
+  "source_page": "https://gamefaqs.gamespot.com/ps2/561066-gran-turismo-4/saves",
+  "source": "GameFAQs (section 'PlayStation 2 PS3 Virtual Memory Card Save (ZIP) (Europe)')",
+  "author": "LuBu1975",
+  "licence": null,
+  "posted": "2009-10-10",
+  "fetched": "2026-11-05",
+  "what_it_is": "The hard to find all gold licences and their prize cars 0% races completed. PAL",
+  "gamefaqs": {
+    "id": 19808,
+    "product": "Gran Turismo 4",
+    "section": "PlayStation 2 PS3 Virtual Memory Card Save (ZIP) (Europe)",
+    "region": "Europe",
+    "served_as": "gran-turismo-4.19808.zip",
+    "listed_size": "1486KB"
+  },
+  "format": "PS3 Virtual Memory Card export (.PSV): '\\0VSP' header, PS2 save type 2, 1528984 bytes, folder BESCES-51719GAMEDATA, 4 files, 1528584 bytes of file data",
+  "files": {
+    "BESCES-5171947414D4544415441.PSV": {
+      "size": 1528984,
+      "sha1": "9fb7c0aacdef064053b7d9594893ff26bfac49e0"
+    }
+  },
+  "save": {
+    "folder": "BESCES-51719GAMEDATA",
+    "title": [
+      "GRAN TURISMO 4",
+      "Game data"
+    ],
+    "times": "as the file stores them (PS2 card times, JST)",
+    "files": [
+      {
+        "name": "icon.sys",
+        "size": 964,
+        "sha1": "cce82f67a0f89c70731af7b0fb0b9c752fd05e5e",
+        "created": "2007-05-14 03:28:28",
+        "modified": "2007-05-14 03:28:28"
+      },
+      {
+        "name": "icon0.ico",
+        "size": 9796,
+        "sha1": "5c55e0ea3f302b6ce15d03fb247039d41b83f032",
+        "created": "2007-05-14 03:28:28",
+        "modified": "2007-05-14 03:28:29"
+      },
+      {
+        "name": "BESCES-51719GAMEDATA",
+        "size": 237760,
+        "sha1": "197970732641c582aeff8dfa6e9cce063910cbea",
+        "created": "2007-05-14 03:28:29",
+        "modified": "2007-05-14 03:28:32"
+      },
+      {
+        "name": "garage",
+        "size": 1280064,
+        "sha1": "ce2518729860c29014a9ab2d78f269aac98d0536",
+        "created": "2007-05-14 03:28:32",
+        "modified": "2007-05-14 03:28:48"
+      }
+    ]
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": null,
+    "converted_with": "tools/gamefaqs/ps2-card.py 'BESCES-5171947414D4544415441.PSV' -o OUT: reads the save with mymcplus 3.0.5 and writes OUT/Mcd001.ps2 (an 8 MiB card with ECC, formatted and filled by mymcplus) for lrps2/pcee2/pcsx2, and OUT/mc0/<folder>/ for Play!",
+    "converted": {
+      "Mcd001.ps2": {
+        "size": 8650752,
+        "sha1": "7e63df34b36b0f3a2970d90a05b84e18e4a1020b"
+      },
+      "mc0/BESCES-51719GAMEDATA/": {
+        "icon.sys": {
+          "size": 964,
+          "sha1": "cce82f67a0f89c70731af7b0fb0b9c752fd05e5e"
+        },
+        "icon0.ico": {
+          "size": 9796,
+          "sha1": "5c55e0ea3f302b6ce15d03fb247039d41b83f032"
+        },
+        "BESCES-51719GAMEDATA": {
+          "size": 237760,
+          "sha1": "197970732641c582aeff8dfa6e9cce063910cbea"
+        },
+        "garage": {
+          "size": 1280064,
+          "sha1": "ce2518729860c29014a9ab2d78f269aac98d0536"
+        }
+      },
+      "read_back": "work/ps2/tools/mcfs.py lists every file with the size and SHA-1 put on the card; one-saves (1saves convert + inspect) reads the card and finds BESCES-51719GAMEDATA",
+      "timestamps": "what the save does not date is 2000-01-01 00:00:00 (JST, as a card stores it); the card's own root entries too"
+    },
+    "script": null,
+    "cores": {
+      "pcee2": {
+        "result": "not-run",
+        "detail": "no image of Gran Turismo 4 (Europe, Australia) (En,Fr,De,Es,It) in the library"
+      },
+      "lrps2": {
+        "result": "not-run",
+        "detail": "no image of Gran Turismo 4 (Europe, Australia) (En,Fr,De,Es,It) in the library"
+      },
+      "play": {
+        "result": "not-run",
+        "detail": "no image of Gran Turismo 4 (Europe, Australia) (En,Fr,De,Es,It) in the library"
+      },
+      "pcsx2": {
+        "result": "not-run",
+        "detail": "no image of Gran Turismo 4 (Europe, Australia) (En,Fr,De,Es,It) in the library"
+      },
+      "armsx2": {
+        "result": "not-run",
+        "detail": "ARMSX2 renders only through Vulkan here and falls back to a null GS (no picture), so nothing shows what the game read (ps2/NOTES.md)"
+      }
+    },
+    "proof_order": []
+  },
+  "note": null
+}

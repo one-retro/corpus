@@ -1,0 +1,75 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_dexdrive",
+  "url": "https://gamefaqs.gamespot.com/arcade/564869-street-fighter-alpha-3/saves/40",
+  "source_page": "https://gamefaqs.gamespot.com/arcade/564869-street-fighter-alpha-3/saves",
+  "source": "GameFAQs (section 'PlayStation DexDrive Save (Japan)')",
+  "author": "MTsuboi",
+  "licence": null,
+  "posted": "2000-06-04",
+  "fetched": "2026-11-05",
+  "what_it_is": "Every character and mode",
+  "gamefaqs": {
+    "id": 40,
+    "product": "Street Fighter Alpha 3",
+    "section": "PlayStation DexDrive Save (Japan)",
+    "region": "Japan",
+    "served_as": "street-fighter-alpha-3.40.gme",
+    "listed_size": "131KB"
+  },
+  "format": "DexDrive .gme: '123-456-STD' 3904-byte header (per-block comments) + 131072-byte raw card; the card holds 1 save(s), 1 for this game (BISLPSP01777-ZERO3D)",
+  "release": "Street Fighter Zero 3 (Japan)",
+  "game_saves": [
+    {
+      "name": "BISLPSP01777-ZERO3D",
+      "blocks": 1,
+      "title": "ZERO3セーブデータ"
+    }
+  ],
+  "files": {
+    "street-fighter-alpha-3.40.gme": {
+      "size": 134976,
+      "sha1": "f881280c8ec808c7e6bcbd4c7ff80ed40c9126b0"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": null,
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr street-fighter-alpha-3.40.gme: unwraps the card (DexDrive .gme: 3904-byte header + card)",
+    "converted": {
+      "size": 131072,
+      "sha1": "ebd43fd1f58063f29ec841a6b5e0c7aa09d2352d"
+    },
+    "script": null,
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "not-run",
+        "detail": "no image of Street Fighter Zero 3 (Japan) in the library"
+      },
+      "beetle-psx-hw": {
+        "result": "not-run",
+        "detail": "no image of Street Fighter Zero 3 (Japan) in the library"
+      },
+      "pcsx-rearmed": {
+        "result": "not-run",
+        "detail": "no image of Street Fighter Zero 3 (Japan) in the library"
+      },
+      "swanstation": {
+        "result": "not-run",
+        "detail": "no image of Street Fighter Zero 3 (Japan) in the library"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": []
+  },
+  "note": null
+}

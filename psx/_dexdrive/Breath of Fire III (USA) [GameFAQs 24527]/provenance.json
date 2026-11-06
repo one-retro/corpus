@@ -1,0 +1,84 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_dexdrive",
+  "url": "https://gamefaqs.gamespot.com/ps/196817-breath-of-fire-iii/saves/24527",
+  "source_page": "https://gamefaqs.gamespot.com/ps/196817-breath-of-fire-iii/saves",
+  "source": "GameFAQs (section 'PlayStation DexDrive Save (North America)')",
+  "author": "LancetJades",
+  "licence": null,
+  "posted": "2016-01-15",
+  "fetched": "2026-11-05",
+  "what_it_is": "Saved right outside the last dungeon of child Ryu's story.",
+  "gamefaqs": {
+    "id": 24527,
+    "product": "Breath of Fire III",
+    "section": "PlayStation DexDrive Save (North America)",
+    "region": "North America",
+    "served_as": "breath-of-fire-iii.24527.gme",
+    "listed_size": "131KB"
+  },
+  "format": "DexDrive .gme: '123-456-STD' 3904-byte header (per-block comments) + 131072-byte raw card; the card holds 1 save(s), 1 for this game (BASLUS-00422BOF301)",
+  "release": "Breath of Fire III (USA)",
+  "game_saves": [
+    {
+      "name": "BASLUS-00422BOF301",
+      "blocks": 1,
+      "title": "Breath of Fire 3(2) 45h00m Lv.24"
+    }
+  ],
+  "files": {
+    "breath-of-fire-iii.24527.gme": {
+      "size": 134976,
+      "sha1": "16e49de78478b7d50bb9614135ce5664f685a221"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Breath of Fire III (USA).cue",
+      "sha1": "046ea122a7720d758492ddc2545eb9e78d788461",
+      "size": 218
+    },
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr breath-of-fire-iii.24527.gme: unwraps the card (DexDrive .gme: 3904-byte header + card)",
+    "converted": {
+      "size": 131072,
+      "sha1": "d8bf013d563925a6bfeb95b70b01f1847a8d2be9"
+    },
+    "script": "scripts/psx/Breath of Fire III.load.txt",
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "loads",
+        "detail": "Load Which File? shows file 2: Ryu, LV 24, 45:00"
+      },
+      "beetle-psx-hw": {
+        "result": "loads",
+        "detail": "Load Which File? shows file 2: Ryu, LV 24, 45:00 (the same screen as on beetle-psx)"
+      },
+      "pcsx-rearmed": {
+        "result": "loads",
+        "detail": "Load Which File? shows file 2: Ryu, LV 24, 45:00 (the same screen as on beetle-psx)"
+      },
+      "swanstation": {
+        "result": "loads",
+        "detail": "Load Which File? shows file 2: Ryu, LV 24, 45:00 (the same screen as on beetle-psx)"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": [
+      "beetle-psx",
+      "beetle-psx-hw",
+      "pcsx-rearmed",
+      "swanstation"
+    ]
+  },
+  "note": null
+}

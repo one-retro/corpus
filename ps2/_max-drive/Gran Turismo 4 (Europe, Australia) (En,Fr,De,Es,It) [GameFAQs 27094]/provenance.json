@@ -1,0 +1,114 @@
+{
+  "method": "downloaded",
+  "system": "ps2",
+  "core": "_max-drive",
+  "url": "https://gamefaqs.gamespot.com/ps2/561066-gran-turismo-4/saves/27094",
+  "source_page": "https://gamefaqs.gamespot.com/ps2/561066-gran-turismo-4/saves",
+  "source": "GameFAQs (section 'PlayStation2 Max Drive Save (Europe)')",
+  "author": "Sal_89",
+  "licence": null,
+  "posted": "2020-07-26",
+  "fetched": "2026-11-05",
+  "what_it_is": "100% completion, all licences gold, all 730 cars (727 in Arcade Mode), all special and black color cars, all colors for the Mazda RX-8 Concept (Type-II) in GT Mode, max money and all courses in Arcade",
+  "gamefaqs": {
+    "id": 27094,
+    "product": "Gran Turismo 4",
+    "section": "PlayStation2 Max Drive Save (Europe)",
+    "region": "Europe",
+    "served_as": "gran-turismo-4.27094.max",
+    "listed_size": "1487KB"
+  },
+  "format": "Max Drive / PowerSave save: 'Ps2PowerSave' header (CRC32 c56d1e46, matches), folder BESCES-51719GAMEDATA, 4 files, LZARI stream 1523558 bytes unpacking to 1528760 bytes (1528584 bytes of file data)",
+  "files": {
+    "gran-turismo-4.27094.max": {
+      "size": 1523650,
+      "sha1": "da73577299d3eb920418e97ab068a6de7fbd92d0"
+    }
+  },
+  "save": {
+    "folder": "BESCES-51719GAMEDATA",
+    "title": [
+      "GRAN TURISMO 4",
+      "Game data"
+    ],
+    "times": "none: a max file stores no file times",
+    "files": [
+      {
+        "name": "icon.sys",
+        "size": 964,
+        "sha1": "cce82f67a0f89c70731af7b0fb0b9c752fd05e5e"
+      },
+      {
+        "name": "icon0.ico",
+        "size": 9796,
+        "sha1": "5c55e0ea3f302b6ce15d03fb247039d41b83f032"
+      },
+      {
+        "name": "garage",
+        "size": 1280064,
+        "sha1": "822b772a3078f9a39665ec9f76bae48d6f75a930"
+      },
+      {
+        "name": "BESCES-51719GAMEDATA",
+        "size": 237760,
+        "sha1": "86c0c91ad07c46e2396cbfdc4d041dc995098520"
+      }
+    ]
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": null,
+    "converted_with": "tools/gamefaqs/ps2-card.py 'gran-turismo-4.27094.max' -o OUT: reads the save with mymcplus 3.0.5 and writes OUT/Mcd001.ps2 (an 8 MiB card with ECC, formatted and filled by mymcplus) for lrps2/pcee2/pcsx2, and OUT/mc0/<folder>/ for Play!",
+    "converted": {
+      "Mcd001.ps2": {
+        "size": 8650752,
+        "sha1": "32568cf02f2a3883c9c64fe0c0141a33bfd5c594"
+      },
+      "mc0/BESCES-51719GAMEDATA/": {
+        "icon.sys": {
+          "size": 964,
+          "sha1": "cce82f67a0f89c70731af7b0fb0b9c752fd05e5e"
+        },
+        "icon0.ico": {
+          "size": 9796,
+          "sha1": "5c55e0ea3f302b6ce15d03fb247039d41b83f032"
+        },
+        "garage": {
+          "size": 1280064,
+          "sha1": "822b772a3078f9a39665ec9f76bae48d6f75a930"
+        },
+        "BESCES-51719GAMEDATA": {
+          "size": 237760,
+          "sha1": "86c0c91ad07c46e2396cbfdc4d041dc995098520"
+        }
+      },
+      "read_back": "work/ps2/tools/mcfs.py lists every file with the size and SHA-1 put on the card; one-saves (1saves convert + inspect) reads the card and finds BESCES-51719GAMEDATA",
+      "timestamps": "what the save does not date is 2000-01-01 00:00:00 (JST, as a card stores it); the card's own root entries too"
+    },
+    "script": null,
+    "cores": {
+      "pcee2": {
+        "result": "not-run",
+        "detail": "no image of Gran Turismo 4 (Europe, Australia) (En,Fr,De,Es,It) in the library"
+      },
+      "lrps2": {
+        "result": "not-run",
+        "detail": "no image of Gran Turismo 4 (Europe, Australia) (En,Fr,De,Es,It) in the library"
+      },
+      "play": {
+        "result": "not-run",
+        "detail": "no image of Gran Turismo 4 (Europe, Australia) (En,Fr,De,Es,It) in the library"
+      },
+      "pcsx2": {
+        "result": "not-run",
+        "detail": "no image of Gran Turismo 4 (Europe, Australia) (En,Fr,De,Es,It) in the library"
+      },
+      "armsx2": {
+        "result": "not-run",
+        "detail": "ARMSX2 renders only through Vulkan here and falls back to a null GS (no picture), so nothing shows what the game read (ps2/NOTES.md)"
+      }
+    },
+    "proof_order": []
+  },
+  "note": null
+}

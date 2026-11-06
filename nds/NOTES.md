@@ -284,3 +284,181 @@ SkyEmu's `.rtc` is a console-RTC register dump.
   unload, would make this robust.
 - The disk was full when this work started. ROMs are symlinks, and dry-run directories were
   deleted as they finished.
+
+## GameFAQs saves
+
+All 79 saves on GameFAQs' save pages for this corpus's DS games, fetched 2026-11-05 from the
+three "Action Replay Max DS" sections (`.duc`, `.dst`, `(1.00-1.03)`). Each is filed as it was
+served under `nds/<writer>/<release> [GameFAQs <id>]/` with `provenance.json` and, when it was
+run, `proof.png` (one frame per core, in the order of `verified.proof_order`). Products: Pokemon
+Diamond / Pearl / Platinum (25), HeartGold / SoulSilver (21), Mario Kart DS (12), Pokemon Mystery
+Dungeon: Explorers (10), Bomberman (3), Mario Party DS (3), Clubhouse Games (2), Tetris DS (2),
+Picross 3D (1).
+
+### What the files are
+
+Read from the bytes, not from the section (see "Mislabelled" below):
+
+| What it is | Files | Filed under | Converter |
+| --- | ---: | --- | --- |
+| Action Replay DS, version 1: `ARDS000000000001`, 500-byte header, then the raw save | 53 | `_action-replay-ds` | `nds-ards.py` |
+| the same header, then the save **block-RLE compressed** (11581 Tetris DS, 12118 Mario Kart DS) | 2 | `_action-replay-ds` | `nds-ards.py` |
+| the same header around a DeSmuME `.dsv` (33877) or a no$gba file (19144), padded with 0xFF | 2 | `_action-replay-ds` | `nds-ards.py`, then `nds-dsv.py` / `nds-nocash.py` |
+| Action Replay DS, version 2: 0xA4-byte header (17815) | 1 | `_action-replay-ds` | `nds-ards.py` |
+| DeSmuME `.dsv` (raw + 122-byte footer) | 4 | `desmume` | `nds-dsv.py` |
+| DeSmuME save state (`DeSmuME SState`, zlib) | 4 | `desmume` | `nds-desmume-state.py` |
+| no$gba backup file (`NocashGbaBackupMediaSavDataFile`, method 1) | 1 | `_nogba` | `nds-nocash.py` |
+| DraStic save state (`DraStic-SaveState`, zlib) | 2 | `_drastic` | `nds-drastic-state.py` |
+| `DSXS` container: 256-byte header, then a gzip member (20563) | 1 | `_dsxs` | `nds-dsxs.py` |
+| raw chip image, no header (512 KiB, one 1 MiB) | 9 | `_raw` | none |
+
+- **Headers.** Of the 57 version-1 Action Replay files, only 9 carry what a user typed on the
+  device (game, save name, description). 39 have a converter's header (`Converted Savegame` /
+  `Savegame`, ASCII `shuny conv`), 7 another converter's (`Converted Saves` / `Conversion code by
+  UniqueGeeks.Net`), 2 the DualScene.net archive's. None holds a game code: the release was
+  worked out from the save itself (below).
+- **The `shuny conv` converter writes 262,144 bytes whatever the chip.** For the 512 B, 8 KiB
+  and 128 KiB chips the rest is 0xFF and is cut. For Pokemon's 512 KiB flash it keeps only the
+  first half, one of the game's two save copies (padded back with 0xFF): 11 of the 12 such
+  Pokemon saves that could be run load from that copy (20884 is rejected, below). For Picross 3D
+  (1 MiB) it keeps a quarter.
+- **The DeSmuME `.dsv` files** all have footer type 0 (Autodetect) and size = padSize; 21611
+  (2011) also has mem_size 0. DeSmuME itself writes the real type (6 for 512 KiB) and the highest
+  address written as the first field, so these were probably made by an older DeSmuME or a tool.
+- **The DeSmuME states** hold the save in the MMU chunk (61) as DeSmuME's backup device stores it,
+  and three of them the ROM header (chunk 130): IPKE (HeartGold, 0.9.10 and 0.9.11) and ADAD
+  (German Diamond, Rev 5, 0.9.13). The fourth (22072, an older state format) records no ROM and
+  holds 188,672 bytes of a 256 KiB flash, which DeSmuME pads with 0xFF on load, as the converter does.
+- **The DraStic states** are closed-format. Inflated, both have at 0x30000 a record that is plainly
+  the cartridge's save memory: u32 2, u32 mask 0x1FFFF, u32 0, u8 3, then 128 KiB, which is an
+  Explorers of Sky save (its header and backup copy where they belong). The game code at 0x34
+  (C2SE, C2SP) gives the release. Both convert; the USA one loads in every core.
+- **DSXS**: the uploader calls it "GDS GameSharkCheatSaves Format". No documentation was found;
+  the layout is in `nds-dsxs.py`. The gzip member's own CRC-32 checks the save.
+- **The compressed Action Replay payload** (in the two oldest `.dst` uploads, 2006): u32 LE total,
+  u32 LE block count, then per 8 KiB block u32 BE output size, u32 BE input size, an escape byte
+  and RLE data (ESC 00 = the escape byte, ESC n v = n+1 copies of v). Both decode exactly to the
+  chip size and load. DeSmuME's `import_duc` does not know this and would import the compressed
+  bytes as the save.
+
+### Converting to each core's file
+
+`tools/gamefaqs/nds-*.py`, standard library only. The container converters write the raw save
+they find; `nds-cores.py` fits it to the game's chip (melonDS's game-code database) and writes
+each core's file, as described in "How each core writes the save":
+
+- shorter than the chip: padded with 0xFF; longer: cut, but only when the rest is 0xFF, 0x00 or
+  copies of the chip, unless `--drop-tail` (used once, 35489: its upper 128 KiB hold a second,
+  different Explorers of Sky save that the 1 Mbit chip cannot address);
+- melonDS, NooDS: `<stem>.sav` in the save directory; melonDS DS: `<stem>.srm` through SAVE_RAM;
+  SkyEmu: the chip then 0x00 to 8 MiB, through SAVE_RAM;
+- DeSmuME and DeSmuME 2015: the `.dsv` DeSmuME's own import would write (`import_duc` /
+  `import_raw`, `ensure()`): the data padded with 0xFF to DeSmuME's next size, then the footer.
+  A 128 KiB Explorers of Sky save becomes 256 KiB, type 5 (FLASH 2Mbit), addr_size 3, which is
+  what DeSmuME writes for that game itself.
+
+Each provenance records the chain (`converted_with`), the chip image's hash (`converted`) and
+every core file's name, size and hash (`core_files`).
+
+What DeSmuME's own *Import Backup Memory* would make of these files, from `mc.cpp`:
+- it imports an Action Replay payload at whatever size it has, with addr_size from that size. A
+  256 KiB `Converted Savegame` of an 8 KiB EEPROM game becomes "FLASH 2Mbit" with 3-byte
+  addresses: Mario Party DS (27509 imported
+  that way, `--chip 262144`) stops on "Unable to write data. Please turn off the power and
+  reinsert the Game Card." in both DeSmuME builds. Cut to the 8 KiB chip, it loads in all six.
+- it does not unwrap an Action Replay file holding a `.dsv`, a no$gba file or the RLE payload.
+- a `.dss` is treated as an Action Replay file; none of the seven `.dss` here is one.
+
+### Verifying
+
+One load script per game, `scripts/nds/<game>.load.txt`, goes to the screen that shows a save's
+content and shoots it: Pokemon's CONTINUE panel, Explorers' Adventure Record, Mario Kart DS's
+SELECT CUP, Mario Party DS's Select Data, Bomberman's File Select, Tetris DS's Marathon HIGH
+SCORE, Dawn of Sorrow's file list. Each ran once per core with no save (the baseline, under
+`work/`) and once per save, with the same options files and no BIOS or firmware, as the played
+entries.
+
+Results (L loads, R rejected, E core-error, N not-run):
+
+| Game | saves | desmume | desmume-2015 | melonds | melonds-ds | noods | skyemu |
+| --- | ---: | --- | --- | --- | --- | --- | --- |
+| Bomberman | 3 | 2 L, 1 N | 2 L, 1 N | 2 L, 1 N | 2 L, 1 N | 2 L, 1 N | 2 L, 1 N |
+| Clubhouse Games (Europe, Japan) | 2 | 2 N | 2 N | 2 N | 2 N | 2 N | 2 N |
+| Mario Kart DS | 12 | 6 L, 6 N | 6 L, 6 N | 6 L, 6 N | 6 L, 6 N | 6 L, 6 N | 6 L, 6 N |
+| Mario Party DS | 3 | 1 L, 2 N | 1 L, 2 N | 1 L, 2 N | 1 L, 2 N | 1 L, 2 N | 1 L, 2 N |
+| Picross 3D (Japan) | 1 | 1 N | 1 N | 1 N | 1 N | 1 N | 1 N |
+| Pokemon Diamond / Pearl | 13 | 8 L, 3 R, 2 N | 8 L, 3 R, 2 N | **8 E**, 3 R, 2 N | 8 L, 3 R, 2 N | 8 L, 3 R, 2 N | 8 L, 3 R, 2 N |
+| Pokemon Platinum | 9 | 5 L, 4 N | 5 L, 4 N | **5 E**, 4 N | 5 L, 4 N | 5 L, 4 N | 5 L, 4 N |
+| Pokemon HeartGold / SoulSilver | 21 | 14 L, 7 N | 14 L, 7 N | **14 E**, 7 N | 14 L, 7 N | 14 L, 7 N | 14 L, 7 N |
+| Castlevania - Dawn of Sorrow (on the Pokemon page) | 3 | 3 L | 3 L | **3 R** | 3 L | **3 R** | **3 R** |
+| Mystery Dungeon - Explorers of Time / Darkness | 4 | 3 L, 1 N | 3 L, 1 N | 3 L, 1 N | 3 L, 1 N | 3 L, 1 N | 3 L, 1 N |
+| Mystery Dungeon - Explorers of Sky | 6 | 5 L, 1 N | 5 L, 1 N | 5 L, 1 N | 5 L, 1 N | 5 L, 1 N | 5 L, 1 N |
+| Tetris DS | 2 | 2 L | 2 L | 2 L | 2 L | 2 L | 2 L |
+| **All** | 79 | 49 L, 3 R, 27 N | 49 L, 3 R, 27 N | 19 L, 6 R, 27 E, 27 N | 49 L, 3 R, 27 N | 46 L, 6 R, 27 N | 46 L, 6 R, 27 N |
+
+- The 27 not-run are saves for releases the library has no image of (below).
+- The 3 saves every core rejects are broken files, not core problems: 20884 ("The save file has
+  been erased due to corruption or damage."), 15053 and 19576 (no valid save at all; the game
+  starts a new one).
+- Where the European English and the USA release share a game code (Pokemon ADAE, APAE, CPUE,
+  IPKE, IPGE), a save was run in whichever of the two the library has, and provenance says so.
+  The library's Diamond is the European release; its Platinum, HeartGold and SoulSilver match no
+  No-Intro hash, so their region is unknown.
+- Version cross-checks, in desmume: the Time/Darkness saves (17564, 22072, 25597) show the same
+  Adventure Record in Explorers of Darkness as in Time, and a SoulSilver save (31668) loads in
+  HeartGold. So the version cannot be told by loading; it was taken from the description or, for
+  Pokemon, from the game that caught the player's own Pokemon (provenance `note`).
+
+### What differs between cores
+
+- **melonDS 0.9.3 cannot continue any Pokemon Diamond, Pearl, Platinum, HeartGold or SoulSilver
+  save here (27 core-errors).** Where the other five show the CONTINUE panel it shows "A
+  communication error has occurred" (Diamond/Pearl/Platinum: "...returned to wherever you last
+  saved", then a white screen; HeartGold/SoulSilver: "...returned to the title screen"). It
+  does the same with melonDS's own Pearl save from this corpus. It does not with a broken or
+  missing save (those reach the corruption message or the introduction), so the game finds the
+  save and then fails a wireless check. melonDS 0.9.3 runs on FreeBIOS and its own firmware
+  here; melonDS DS 1.4.0, under the same conditions, is fine.
+- **Castlevania - Dawn of Sorrow: melonDS 0.9.3, NooDS and SkyEmu reject a save that DeSmuME
+  (both builds) and melonDS DS load.** At boot the game says "Save data is corrupted. Data has
+  been deleted." The bytes are the same: melonDS DS's `.srm` is byte-identical to melonDS's and
+  NooDS's `.sav`, and all three databases give the game (ACVE) an 8 KiB EEPROM. The game deletes
+  the data at that point, so a user of those cores would lose this save. Nothing else here
+  explains the difference; Dawn of Sorrow was not among the played games, so no core's own save
+  of it was tried.
+- Everything else behaves the same in all six cores: SkyEmu's 8 MiB `.srm`, melonDS DS's
+  SAVE_RAM, DeSmuME's 256 KiB `.dsv` of a 128 KiB EEPROM (Explorers of Sky), the 256 KiB
+  half-saves of 512 KiB Pokemon flash, the DraStic and DeSmuME state extractions and the RLE
+  payloads all show the save's content.
+- Save messages are the game's, and the same in every core: Platinum 19144 reports "The most
+  recent Battle Video is corrupted." before its CONTINUE panel; Explorers of Sky saves with the
+  Special Episodes unlocked answer Continue with "Main Story / Special Episodes". The load scripts
+  take a second (and for Platinum a third) shot for these, and provenance names the frame used.
+
+### Mislabelled sections and products
+
+- **Format sections.** `(1.00-1.03)` holds no Action Replay file at all: 2 DraStic states, a
+  no$gba file, a DeSmuME `.dsv` and 3 raw saves. `(.dst)` holds 3 Action Replay files, 4 DeSmuME
+  save states, a `.dsv` and a raw save. `(.duc)` holds 55 Action Replay files (one version 2, two
+  wrapping a `.dsv` or a no$gba file), 2 `.dsv`, 5 raw saves and the DSXS file. DeSmuME treats
+  `.duc` and `.dss` alike as Action Replay files, so a `.dss` from this site would fail its import.
+- **Product.** 13729, 15744 (North America) and 14593 (Japan) on the Pokemon Diamond / Pearl /
+  Platinum page, described as Pokemon saves, are one Castlevania - Dawn of Sorrow save
+  (the Action Replay header's ASCII copy says "castlevania"). Filed as Dawn of Sorrow (USA).
+- **Region.** 19096 and 18826 (North America) are Japanese Platinum saves (language 1, the
+  player's own Pokemon from Japanese Platinum). 18295 (Europe, "fr save game") is English.
+  31688 (Europe) and 31689 (Japan) are the same file; so are 19741 and 19742, and 25417 and
+  28633. 27509 (North America) carries the same player name as 16307 (Europe, same description)
+  but the USA game code.
+
+### Releases the library lacks
+
+Not run, no image in the library: Bomberman (Europe); 42 All-Time Classics (Europe) and Daredemo
+Asobi Taizen (Japan) (Clubhouse Games); Mario Kart DS (Europe) x5 and (Japan); Mario Party DS
+(Europe) and (Japan); Rittai Picross (Japan) (Picross 3D, and only a quarter of its 1 MiB is in
+the file); Pokemon Diamant-Edition (Germany), Edicion Diamante (Spain); Pocket Monsters Platinum
+(Japan) x4; Pocket Monsters HeartGold (Japan) x2 and SoulSilver (Japan) x3; Edicion Oro HeartGold
+(Spain); Version Argent SoulSilver (France); Mystery Dungeon Explorers of Time (Europe) and of Sky
+(Europe). All 27 converted without error.
+
+`one-saves` has no reader for any of these DS formats, so `1saves` was not run on them.

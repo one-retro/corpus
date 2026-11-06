@@ -1,0 +1,109 @@
+{
+  "method": "downloaded",
+  "system": "nds",
+  "core": "_action-replay-ds",
+  "url": "https://gamefaqs.gamespot.com/ds/920788-mario-kart-ds/saves/33980",
+  "source_page": "https://gamefaqs.gamespot.com/ds/920788-mario-kart-ds/saves",
+  "source": "GameFAQs (section 'Action Replay Max DS (.duc) Game Save (North America)')",
+  "author": "MC64",
+  "licence": null,
+  "posted": "2025-11-10",
+  "fetched": "2026-11-05",
+  "what_it_is": "The True 100% Save! 3 Star-Rank in 50cc, 100cc, 150cc and 150cc Mirror, All Track, Characters and Karts Unlocked + Mission 3 Star Ranked. Everything is Unlocked and Enjoy!",
+  "gamefaqs": {
+    "id": 33980,
+    "product": "Mario Kart DS",
+    "section": "Action Replay Max DS (.duc) Game Save (North America)",
+    "region": "North America",
+    "served_as": "mario-kart-ds.33980.duc",
+    "listed_size": "256KB"
+  },
+  "format": "Action Replay DS save: the 500-byte 'ARDS000000000001' header written by a converter ('Converted Savegame' / 'Savegame', ASCII 'shuny conv'), then 256 KiB raw for the 256 KiB flash (exact size)",
+  "files": {
+    "mario-kart-ds.33980.duc": {
+      "size": 262644,
+      "sha1": "9aac49473191bc4159f15cf5e1ddf90c8cc8eaa3"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Mario Kart DS (USA, Australia) (En,Fr,De,Es,It).nds",
+      "sha1": "691e00d9a5dd80b04f80cc7559503e8b06848785",
+      "size": 33554432
+    },
+    "converted_with": "tools/gamefaqs/nds-ards.py IN step0.bin, then tools/gamefaqs/nds-cores.py step0.bin --chip 262144 --stem 'Mario Kart DS (USA, Australia) (En,Fr,De,Es,It)' --out DIR: drops the Action Replay header; fits it to the 262144-byte chip (exact size) and writes each core's file",
+    "converted": {
+      "size": 262144,
+      "sha1": "5d1d4e30d8ad243e3beb201816485f0364a35a85"
+    },
+    "core_files": {
+      "desmume": {
+        "name": "Mario Kart DS (USA, Australia) (En,Fr,De,Es,It).dsv",
+        "size": 262266,
+        "sha1": "d629ceb345e5d3535199aca7a359446d46571075"
+      },
+      "desmume-2015": {
+        "name": "Mario Kart DS (USA, Australia) (En,Fr,De,Es,It).dsv",
+        "size": 262266,
+        "sha1": "d629ceb345e5d3535199aca7a359446d46571075"
+      },
+      "melonds": {
+        "name": "Mario Kart DS (USA, Australia) (En,Fr,De,Es,It).sav",
+        "size": 262144,
+        "sha1": "5d1d4e30d8ad243e3beb201816485f0364a35a85"
+      },
+      "melonds-ds": {
+        "name": "Mario Kart DS (USA, Australia) (En,Fr,De,Es,It).srm",
+        "size": 262144,
+        "sha1": "5d1d4e30d8ad243e3beb201816485f0364a35a85"
+      },
+      "noods": {
+        "name": "Mario Kart DS (USA, Australia) (En,Fr,De,Es,It).sav",
+        "size": 262144,
+        "sha1": "5d1d4e30d8ad243e3beb201816485f0364a35a85"
+      },
+      "skyemu": {
+        "name": "Mario Kart DS (USA, Australia) (En,Fr,De,Es,It).srm",
+        "size": 8388608,
+        "sha1": "0d428b382b511dd805e542ee4ddfea6c6aaae136"
+      }
+    },
+    "script": "scripts/nds/Mario Kart DS.load.txt",
+    "cores": {
+      "desmume": {
+        "result": "loads",
+        "detail": "SELECT CUP (50cc): all eight cups open, trophies, Mushroom Cup RANK ★★★"
+      },
+      "desmume-2015": {
+        "result": "loads",
+        "detail": "SELECT CUP (50cc): all eight cups open, trophies, Mushroom Cup RANK ★★★"
+      },
+      "melonds": {
+        "result": "loads",
+        "detail": "SELECT CUP (50cc): all eight cups open, trophies, Mushroom Cup RANK ★★★"
+      },
+      "melonds-ds": {
+        "result": "loads",
+        "detail": "SELECT CUP (50cc): all eight cups open, trophies, Mushroom Cup RANK ★★★"
+      },
+      "noods": {
+        "result": "loads",
+        "detail": "SELECT CUP (50cc): all eight cups open, trophies, Mushroom Cup RANK ★★★"
+      },
+      "skyemu": {
+        "result": "loads",
+        "detail": "SELECT CUP (50cc): all eight cups open, trophies, Mushroom Cup RANK ★★★"
+      }
+    },
+    "proof_order": [
+      "desmume",
+      "desmume-2015",
+      "melonds",
+      "melonds-ds",
+      "noods",
+      "skyemu"
+    ]
+  },
+  "note": null
+}

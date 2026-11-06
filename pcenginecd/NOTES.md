@@ -228,3 +228,25 @@ map as: a = I, b = II, start = RUN.
 | Prince of Persia | filed, time byte differs (59:49) |
 | Beyond Shadowgate | filed, = beetle-pce |
 | Akumajou Dracula X | filed, = beetle-pce |
+
+## GameFAQs saves
+
+The GameFAQs pass (2026-11-05, `tools/GAMEFAQS.md`) found one save for a PC Engine CD game here:
+GameFAQs 26177, in the "Wii VC Game Save File (North America)" section of Ys III: Wanderers from
+Ys. **It is not a PC Engine CD save:**
+- It is 8192 bytes with no `$PCE` header and no `HUBM`, so it is neither a Wii export nor a BRAM.
+- At 0x20 it holds "Wanderes from Ys (Ys-3) Programed by N.Fujisawa 91-04-24", a string found in
+  the SNES Ys III ROM and not on the TurboGrafx-CD disc.
+
+It is filed under `snes/_unknown/Ys III - Wanderers from Ys (USA) [GameFAQs 26177]/` and loads in
+all 16 SNES cores (see snes/NOTES.md). No PC Engine CD core was run.
+
+For a real VC TurboGrafx(-CD) save, `tools/gamefaqs/wiivc-convert.py` already handles
+`pcengine.bup`:
+- the file is `$PCE`, a seed, then an 8 KiB BRAM, each 4-byte block XORed with the NOT of the
+  block stored before it (vcromclaim `tgsave.py`);
+- it becomes the cores' 2 KiB BRAM, with the end pointer 0xA000 changed to 0x8800.
+
+This path is untested: no such file turned up in this pass.
+
+That BRAM header is worth knowing: the VC's 8 KiB BRAM ends at 0xA000, like Geargrafx's.

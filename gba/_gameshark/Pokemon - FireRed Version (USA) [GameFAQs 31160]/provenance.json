@@ -1,0 +1,119 @@
+{
+  "method": "downloaded",
+  "system": "gba",
+  "core": "_gameshark",
+  "url": "https://gamefaqs.gamespot.com/gba/918915-pokemon-firered-version/saves/31160",
+  "source_page": "https://gamefaqs.gamespot.com/gba/918915-pokemon-firered-version/saves",
+  "source": "GameFAQs (section 'GameBoy Advance GameShark Save (North America)')",
+  "author": "suoutsukasa555",
+  "licence": null,
+  "posted": "2025-01-06",
+  "fetched": "2026-11-05",
+  "what_it_is": "Name: Shinobu. Saved just before the Cerulean City rival battle, and ONLY has a Shiny Poliwhirl that has Hail, Substitute and Belly Drum! Inspired by the video \"Softlock Picking: Shiny Poliwhirl Cannot Escape\"! Good luck ESCAPING!",
+  "gamefaqs": {
+    "id": 31160,
+    "product": "Pokemon FireRed / LeafGreen Version",
+    "section": "GameBoy Advance GameShark Save (North America)",
+    "region": "North America",
+    "served_as": "pokemon-firered-leafgreen-version.31160.sps",
+    "listed_size": "128KB"
+  },
+  "format": "SharkPort save (\"SharkPortSave\", kind 0x000F0000): title \"Pokemon FireRed - Poliwhirl Softlock!!\", date \"1/5/2025 5:16:28 PM\", notes \"Inspired by the video \"Soft Lock Picking: Shiny Poliwhirl...\"; cart header \"POKEMON FIRE\" / 'BPRE' (complement 0x68); payload 131072 bytes; checksum: signed",
+  "files": {
+    "pokemon-firered-leafgreen-version.31160.sps": {
+      "size": 131358,
+      "sha1": "b393292607571de8df0fea041a7f11fe54ffb8a4"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Pokemon - FireRed Version (USA).gba",
+      "sha1": "41cb23d8dccc8ebd7c649cd8fbb58eeace6e2fdc",
+      "size": 16777216
+    },
+    "converted_with": "tools/gamefaqs/gba-sharkport.py pokemon-firered-leafgreen-version.31160.sps --rom ROM --core CORE --outdir DIR: reads the SharkPort container as mGBA does and imports the payload as mGBA's _importSavedata does (cut to the chip, EEPROM 8-byte blocks reversed, the rest of the chip erased), then lays the chip out as the core keeps it",
+    "converted": {
+      "size": 131072,
+      "sha1": "4c3eec8ef9aa16e41489af60833a11c88077dbf8"
+    },
+    "script": "scripts/gba/Pokemon - FireRed Version.load.txt",
+    "cores": {
+      "mgba": {
+        "result": "loads",
+        "detail": "CONTINUE: Shinobu, 4:20",
+        "core_version": "mGBA 0.11-212-7a12d6d",
+        "file": {
+          "name": "Pokemon - FireRed Version (USA).srm",
+          "size": 131072,
+          "sha1": "4c3eec8ef9aa16e41489af60833a11c88077dbf8"
+        },
+        "frame": "menu"
+      },
+      "vba-m": {
+        "result": "loads",
+        "detail": "CONTINUE: Shinobu, 4:20",
+        "core_version": "VBA-M 115defb",
+        "file": {
+          "name": "Pokemon - FireRed Version (USA).srm",
+          "size": 131072,
+          "sha1": "4c3eec8ef9aa16e41489af60833a11c88077dbf8"
+        },
+        "frame": "menu"
+      },
+      "gpsp": {
+        "result": "loads",
+        "detail": "CONTINUE: Shinobu, 4:20",
+        "core_version": "gpSP v1.1.0-5819380",
+        "file": {
+          "name": "Pokemon - FireRed Version (USA).srm",
+          "size": 131072,
+          "sha1": "4c3eec8ef9aa16e41489af60833a11c88077dbf8"
+        },
+        "frame": "menu"
+      },
+      "vba-next": {
+        "result": "loads",
+        "detail": "CONTINUE: Shinobu, 4:20",
+        "core_version": "VBA Next v1.0.2",
+        "file": {
+          "name": "Pokemon - FireRed Version (USA).srm",
+          "size": 139264,
+          "sha1": "b542ca83a4635da30682c0cb818940840e516726"
+        },
+        "frame": "menu"
+      },
+      "beetle-gba": {
+        "result": "loads",
+        "detail": "CONTINUE: Shinobu, 4:20",
+        "core_version": "Beetle GBA v0.9.36 b158166",
+        "file": {
+          "name": "Pokemon - FireRed Version (USA).e26ee0d44e809351c8ce2d73c7400cdd.sav",
+          "size": 131072,
+          "sha1": "4c3eec8ef9aa16e41489af60833a11c88077dbf8"
+        },
+        "frame": "menu"
+      },
+      "skyemu": {
+        "result": "loads",
+        "detail": "CONTINUE: Shinobu, 4:20",
+        "core_version": "SkyEmu adacd0788964ed89f5c43dcbc1f3cc26deec996c",
+        "file": {
+          "name": "Pokemon - FireRed Version (USA).srm",
+          "size": 131072,
+          "sha1": "4c3eec8ef9aa16e41489af60833a11c88077dbf8"
+        },
+        "frame": "menu"
+      }
+    },
+    "proof_order": [
+      "mgba",
+      "vba-m",
+      "gpsp",
+      "vba-next",
+      "beetle-gba",
+      "skyemu"
+    ]
+  },
+  "note": null
+}

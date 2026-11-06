@@ -1,0 +1,98 @@
+{
+  "method": "downloaded",
+  "system": "nds",
+  "core": "_action-replay-ds",
+  "url": "https://gamefaqs.gamespot.com/ds/938930-pokemon-mystery-dungeon-explorers-of-darkness/saves/17622",
+  "source_page": "https://gamefaqs.gamespot.com/ds/938930-pokemon-mystery-dungeon-explorers-of-darkness/saves",
+  "source": "GameFAQs (section 'Action Replay Max DS (.duc) Game Save (Europe)')",
+  "author": "lucemon6667",
+  "licence": null,
+  "posted": "2008-08-05",
+  "fetched": "2026-11-05",
+  "what_it_is": "darkrai beate and recruited and lot of legendaries and starters evolved",
+  "gamefaqs": {
+    "id": 17622,
+    "product": "Pokemon Mystery Dungeon: Explorers",
+    "section": "Action Replay Max DS (.duc) Game Save (Europe)",
+    "region": "Europe",
+    "served_as": "pokemon-mystery-dungeon-explorers.17622.duc",
+    "listed_size": "256KB"
+  },
+  "format": "Action Replay DS save: the 500-byte 'ARDS000000000001' header written by a converter ('Converted Savegame' / 'Savegame', ASCII 'shuny conv'), then 256 KiB raw for the 256 KiB flash (exact size)",
+  "files": {
+    "pokemon-mystery-dungeon-explorers.17622.duc": {
+      "size": 262644,
+      "sha1": "818ac8d8f0e2f691428f51da5c249afa0d3b3f40"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": null,
+    "converted_with": "tools/gamefaqs/nds-ards.py IN step0.bin, then tools/gamefaqs/nds-cores.py step0.bin --chip 262144 --stem 'Pokemon Mystery Dungeon - Explorers of Time (Europe) (En,Fr,De,Es,It)' --out DIR: drops the Action Replay header; fits it to the 262144-byte chip (exact size) and writes each core's file",
+    "converted": {
+      "size": 262144,
+      "sha1": "33772c661245e1f5a5aa254007c4008916beb256"
+    },
+    "core_files": {
+      "desmume": {
+        "name": "Pokemon Mystery Dungeon - Explorers of Time (Europe) (En,Fr,De,Es,It).dsv",
+        "size": 262266,
+        "sha1": "4cdbb2dd36bce47d1bee194316e9b9033bd132bc"
+      },
+      "desmume-2015": {
+        "name": "Pokemon Mystery Dungeon - Explorers of Time (Europe) (En,Fr,De,Es,It).dsv",
+        "size": 262266,
+        "sha1": "4cdbb2dd36bce47d1bee194316e9b9033bd132bc"
+      },
+      "melonds": {
+        "name": "Pokemon Mystery Dungeon - Explorers of Time (Europe) (En,Fr,De,Es,It).sav",
+        "size": 262144,
+        "sha1": "33772c661245e1f5a5aa254007c4008916beb256"
+      },
+      "melonds-ds": {
+        "name": "Pokemon Mystery Dungeon - Explorers of Time (Europe) (En,Fr,De,Es,It).srm",
+        "size": 262144,
+        "sha1": "33772c661245e1f5a5aa254007c4008916beb256"
+      },
+      "noods": {
+        "name": "Pokemon Mystery Dungeon - Explorers of Time (Europe) (En,Fr,De,Es,It).sav",
+        "size": 262144,
+        "sha1": "33772c661245e1f5a5aa254007c4008916beb256"
+      },
+      "skyemu": {
+        "name": "Pokemon Mystery Dungeon - Explorers of Time (Europe) (En,Fr,De,Es,It).srm",
+        "size": 8388608,
+        "sha1": "b94100464ed86f3b35baf539237bb5ca6d875f96"
+      }
+    },
+    "script": null,
+    "cores": {
+      "desmume": {
+        "result": "not-run",
+        "detail": "no image of Pokemon Mystery Dungeon - Explorers of Time (Europe) (En,Fr,De,Es,It) in the library"
+      },
+      "desmume-2015": {
+        "result": "not-run",
+        "detail": "no image of Pokemon Mystery Dungeon - Explorers of Time (Europe) (En,Fr,De,Es,It) in the library"
+      },
+      "melonds": {
+        "result": "not-run",
+        "detail": "no image of Pokemon Mystery Dungeon - Explorers of Time (Europe) (En,Fr,De,Es,It) in the library"
+      },
+      "melonds-ds": {
+        "result": "not-run",
+        "detail": "no image of Pokemon Mystery Dungeon - Explorers of Time (Europe) (En,Fr,De,Es,It) in the library"
+      },
+      "noods": {
+        "result": "not-run",
+        "detail": "no image of Pokemon Mystery Dungeon - Explorers of Time (Europe) (En,Fr,De,Es,It) in the library"
+      },
+      "skyemu": {
+        "result": "not-run",
+        "detail": "no image of Pokemon Mystery Dungeon - Explorers of Time (Europe) (En,Fr,De,Es,It) in the library"
+      }
+    },
+    "proof_order": []
+  },
+  "note": "Release: save id POKE_DUN_TOKI_YA, which Explorers of Time and of Darkness share: Time assumed; Europe from the section."
+}

@@ -1,0 +1,16 @@
+# Load check for a save made elsewhere (tools/GAMEFAQS.md): power on and go to
+# OPTIONS, whose PLAYER DATA line shows the save's player name.
+wait 900
+press start 6       # PRESS START
+wait 300
+press start 6       # SINGLE PLAYER
+wait 300
+press a 6           # GAME START / TIME ATTACK / OPTIONS / ...
+wait 200
+press down 6
+wait 30
+press down 6
+wait 30
+press a 6           # OPTIONS
+wait 300
+shot options

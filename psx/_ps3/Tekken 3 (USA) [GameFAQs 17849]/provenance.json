@@ -1,0 +1,88 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_ps3",
+  "url": "https://gamefaqs.gamespot.com/arcade/563192-tekken-3/saves/17849",
+  "source_page": "https://gamefaqs.gamespot.com/arcade/563192-tekken-3/saves",
+  "source": "GameFAQs (section 'PlayStation PS3 Virtual Memory Card Save (ZIP) (North America)')",
+  "author": "SaturnHST",
+  "licence": null,
+  "posted": "2008-09-16",
+  "fetched": "2026-11-05",
+  "what_it_is": "All characters and modes unlocked.",
+  "gamefaqs": {
+    "id": 17849,
+    "product": "Tekken 3",
+    "section": "PlayStation PS3 Virtual Memory Card Save (ZIP) (North America)",
+    "region": "North America",
+    "served_as": "tekken-3.17849.zip",
+    "listed_size": "1KB",
+    "served_zip": {
+      "size": 1807,
+      "sha1": "3eae295b430fd0dd0fa1bf9e6f6795137c1cb928"
+    }
+  },
+  "format": "zip of 1 PS3 export(s) (.PSV): '\\0VSP' header (signature, save name at 0x64), the save's blocks from 0x84 (8324 bytes); it holds 1 save(s), 1 for this game (BASLUS-00402TEKKEN-3)",
+  "release": "Tekken 3 (USA)",
+  "game_saves": [
+    {
+      "name": "BASLUS-00402TEKKEN-3",
+      "blocks": 1,
+      "title": "[TEKKEN 3] NEW BATTLES AWAIT!!"
+    }
+  ],
+  "files": {
+    "tekken 3/BASLUS-0040254454B4B454E2D33.PSV": {
+      "size": 8324,
+      "sha1": "8d7268808dcdf94f3fa5d23b74e6b48615ecb7ef"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Tekken 3 (USA).cue",
+      "sha1": "69d1f34ff24096b9fb95b45232ba684872cd8de2",
+      "size": 306
+    },
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr tekken 3/BASLUS-0040254454B4B454E2D33.PSV: puts the save(s) on a freshly formatted card, as MemcardRex imports a single save",
+    "converted": {
+      "size": 131072,
+      "sha1": "5c0322845cdff301df91c307a2ae2e30708c11dd"
+    },
+    "script": "scripts/psx/Tekken 3.load.txt",
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "loads",
+        "detail": "the game loads the card at boot; Player Select offers two rows of fighters, cursor on Doctor B. (no card: one row of ten)"
+      },
+      "beetle-psx-hw": {
+        "result": "loads",
+        "detail": "the game loads the card at boot; Player Select offers two rows of fighters, cursor on Doctor B. (no card: one row of ten) (the same screen as on beetle-psx)"
+      },
+      "pcsx-rearmed": {
+        "result": "loads",
+        "detail": "the game loads the card at boot; Player Select offers two rows of fighters, cursor on Doctor B. (no card: one row of ten) (the same screen as on beetle-psx)"
+      },
+      "swanstation": {
+        "result": "loads",
+        "detail": "the game loads the card at boot; Player Select offers two rows of fighters, cursor on Doctor B. (no card: one row of ten) (the same screen as on beetle-psx)"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": [
+      "beetle-psx",
+      "beetle-psx-hw",
+      "pcsx-rearmed",
+      "swanstation"
+    ]
+  },
+  "note": null
+}

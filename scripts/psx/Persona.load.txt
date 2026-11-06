@@ -1,0 +1,12 @@
+# Revelations: Persona: title > Load Game > Slot 1 > the file list.
+wait 1500           # BIOS logos
+repeat 4            # skip the intros to the title menu
+press start 6
+wait 250
+end
+press b 6           # LOAD GAME
+wait 300
+shot slot
+press b 6           # SLOT 1
+wait 400
+shot load

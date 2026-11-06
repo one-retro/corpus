@@ -1,0 +1,9 @@
+# Disney's The Emperor's New Groove: title > Start Game > the saved game's chapter, level and coins.
+wait 1500           # BIOS logos
+repeat 11            # skip the intros to the title menu
+press start 6
+wait 250
+end
+press b 6           # Start Game
+wait 400
+shot load

@@ -1,0 +1,109 @@
+{
+  "method": "downloaded",
+  "system": "nds",
+  "core": "_action-replay-ds",
+  "url": "https://gamefaqs.gamespot.com/ds/920766-bomberman/saves/22246",
+  "source_page": "https://gamefaqs.gamespot.com/ds/920766-bomberman/saves",
+  "source": "GameFAQs (section 'Action Replay Max DS (.dst) Game Save (North America)')",
+  "author": "Sangogi",
+  "licence": null,
+  "posted": "2012-01-09",
+  "fetched": "2026-11-05",
+  "what_it_is": "Last game save. Level 10 - 6, lots of items to try. Enjoy!",
+  "gamefaqs": {
+    "id": 22246,
+    "product": "Bomberman (2005)",
+    "section": "Action Replay Max DS (.dst) Game Save (North America)",
+    "region": "North America",
+    "served_as": "bomberman-2005.22246.dst",
+    "listed_size": "256KB"
+  },
+  "format": "Action Replay DS save: the 500-byte 'ARDS000000000001' header written by a converter ('Converted Savegame' / 'Savegame', ASCII 'shuny conv'), then 256 KiB raw for the 512 B EEPROM (cut 262144 -> 512; the rest was all 0xFF)",
+  "files": {
+    "bomberman-2005.22246.dst": {
+      "size": 262644,
+      "sha1": "10d604bcdaa27b77440bef5db7c5a1fd86ffb018"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Bomberman (USA).nds",
+      "sha1": "c88a441cf460a8a863fc31719ef0f56ee86b4e05",
+      "size": 8388608
+    },
+    "converted_with": "tools/gamefaqs/nds-ards.py IN step0.bin, then tools/gamefaqs/nds-cores.py step0.bin --chip 512 --stem 'Bomberman (USA)' --out DIR: drops the Action Replay header; fits it to the 512-byte chip (cut 262144 -> 512; the rest was all 0xFF) and writes each core's file",
+    "converted": {
+      "size": 512,
+      "sha1": "a73f7a9ec338ab9dd444a00c2f5279f7fa8b7d3a"
+    },
+    "core_files": {
+      "desmume": {
+        "name": "Bomberman (USA).dsv",
+        "size": 634,
+        "sha1": "71a88e4c2755c3973e2c05c5e39fe2b34ade8cbd"
+      },
+      "desmume-2015": {
+        "name": "Bomberman (USA).dsv",
+        "size": 634,
+        "sha1": "71a88e4c2755c3973e2c05c5e39fe2b34ade8cbd"
+      },
+      "melonds": {
+        "name": "Bomberman (USA).sav",
+        "size": 512,
+        "sha1": "a73f7a9ec338ab9dd444a00c2f5279f7fa8b7d3a"
+      },
+      "melonds-ds": {
+        "name": "Bomberman (USA).srm",
+        "size": 512,
+        "sha1": "a73f7a9ec338ab9dd444a00c2f5279f7fa8b7d3a"
+      },
+      "noods": {
+        "name": "Bomberman (USA).sav",
+        "size": 512,
+        "sha1": "a73f7a9ec338ab9dd444a00c2f5279f7fa8b7d3a"
+      },
+      "skyemu": {
+        "name": "Bomberman (USA).srm",
+        "size": 8388608,
+        "sha1": "eac788836364d705316d8c52431bd356e14d1c2e"
+      }
+    },
+    "script": "scripts/nds/Bomberman.load.txt",
+    "cores": {
+      "desmume": {
+        "result": "loads",
+        "detail": "File Select: File A \"San\", AREA 10-06, CLEAR 095%, TIME 003:29; Files B and C empty"
+      },
+      "desmume-2015": {
+        "result": "loads",
+        "detail": "File Select: File A \"San\", AREA 10-06, CLEAR 095%, TIME 003:29; Files B and C empty"
+      },
+      "melonds": {
+        "result": "loads",
+        "detail": "File Select: File A \"San\", AREA 10-06, CLEAR 095%, TIME 003:29; Files B and C empty"
+      },
+      "melonds-ds": {
+        "result": "loads",
+        "detail": "File Select: File A \"San\", AREA 10-06, CLEAR 095%, TIME 003:29; Files B and C empty"
+      },
+      "noods": {
+        "result": "loads",
+        "detail": "File Select: File A \"San\", AREA 10-06, CLEAR 095%, TIME 003:29; Files B and C empty"
+      },
+      "skyemu": {
+        "result": "loads",
+        "detail": "File Select: File A \"San\", AREA 10-06, CLEAR 095%, TIME 003:29; Files B and C empty"
+      }
+    },
+    "proof_order": [
+      "desmume",
+      "desmume-2015",
+      "melonds",
+      "melonds-ds",
+      "noods",
+      "skyemu"
+    ]
+  },
+  "note": null
+}

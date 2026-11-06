@@ -1,0 +1,114 @@
+{
+  "method": "downloaded",
+  "system": "ps2",
+  "core": "_max-drive",
+  "url": "https://gamefaqs.gamespot.com/ps2/561066-gran-turismo-4/saves/34716",
+  "source_page": "https://gamefaqs.gamespot.com/ps2/561066-gran-turismo-4/saves",
+  "source": "GameFAQs (section 'PlayStation2 Max Drive Save (Korea)')",
+  "author": "Ramiro2064",
+  "licence": null,
+  "posted": "2026-05-04",
+  "fetched": "2026-11-05",
+  "what_it_is": "100% complete, 231 cars and 10,000,000,000 cr",
+  "gamefaqs": {
+    "id": 34716,
+    "product": "Gran Turismo 4",
+    "section": "PlayStation2 Max Drive Save (Korea)",
+    "region": "Korea",
+    "served_as": "gran-turismo-4.34716.max",
+    "listed_size": "1487KB"
+  },
+  "format": "Max Drive / PowerSave save: 'Ps2PowerSave' header (CRC32 625095cf, matches), folder BKSCKA-30001GAMEDATA, 4 files, LZARI stream 1523570 bytes unpacking to 1528760 bytes (1528584 bytes of file data)",
+  "files": {
+    "gran-turismo-4.34716.max": {
+      "size": 1523662,
+      "sha1": "278b435b324747e7de8f4bb266566241b6781b77"
+    }
+  },
+  "save": {
+    "folder": "BKSCKA-30001GAMEDATA",
+    "title": [
+      "GRAN TURISMO 4",
+      "GameData"
+    ],
+    "times": "none: a max file stores no file times",
+    "files": [
+      {
+        "name": "icon.sys",
+        "size": 964,
+        "sha1": "f3c407db47b6d9ed56ca56cc156cba11bd8a9d7a"
+      },
+      {
+        "name": "icon0.ico",
+        "size": 9796,
+        "sha1": "5c55e0ea3f302b6ce15d03fb247039d41b83f032"
+      },
+      {
+        "name": "BKSCKA-30001GAMEDATA",
+        "size": 237760,
+        "sha1": "6e6bf8f4e2795158cd300def79b1a27bd18d75fe"
+      },
+      {
+        "name": "garage",
+        "size": 1280064,
+        "sha1": "5ccee96f173a93cac42810cd6c1bd41d6743d639"
+      }
+    ]
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": null,
+    "converted_with": "tools/gamefaqs/ps2-card.py 'gran-turismo-4.34716.max' -o OUT: reads the save with mymcplus 3.0.5 and writes OUT/Mcd001.ps2 (an 8 MiB card with ECC, formatted and filled by mymcplus) for lrps2/pcee2/pcsx2, and OUT/mc0/<folder>/ for Play!",
+    "converted": {
+      "Mcd001.ps2": {
+        "size": 8650752,
+        "sha1": "9c37b814079deca7e2aa6f7e78c0fe86b81258d1"
+      },
+      "mc0/BKSCKA-30001GAMEDATA/": {
+        "icon.sys": {
+          "size": 964,
+          "sha1": "f3c407db47b6d9ed56ca56cc156cba11bd8a9d7a"
+        },
+        "icon0.ico": {
+          "size": 9796,
+          "sha1": "5c55e0ea3f302b6ce15d03fb247039d41b83f032"
+        },
+        "BKSCKA-30001GAMEDATA": {
+          "size": 237760,
+          "sha1": "6e6bf8f4e2795158cd300def79b1a27bd18d75fe"
+        },
+        "garage": {
+          "size": 1280064,
+          "sha1": "5ccee96f173a93cac42810cd6c1bd41d6743d639"
+        }
+      },
+      "read_back": "work/ps2/tools/mcfs.py lists every file with the size and SHA-1 put on the card; one-saves (1saves convert + inspect) reads the card and finds BKSCKA-30001GAMEDATA",
+      "timestamps": "what the save does not date is 2000-01-01 00:00:00 (JST, as a card stores it); the card's own root entries too"
+    },
+    "script": null,
+    "cores": {
+      "pcee2": {
+        "result": "not-run",
+        "detail": "no image of Gran Turismo 4 (Korea) in the library"
+      },
+      "lrps2": {
+        "result": "not-run",
+        "detail": "no image of Gran Turismo 4 (Korea) in the library"
+      },
+      "play": {
+        "result": "not-run",
+        "detail": "no image of Gran Turismo 4 (Korea) in the library"
+      },
+      "pcsx2": {
+        "result": "not-run",
+        "detail": "no image of Gran Turismo 4 (Korea) in the library"
+      },
+      "armsx2": {
+        "result": "not-run",
+        "detail": "ARMSX2 renders only through Vulkan here and falls back to a null GS (no picture), so nothing shows what the game read (ps2/NOTES.md)"
+      }
+    },
+    "proof_order": []
+  },
+  "note": null
+}

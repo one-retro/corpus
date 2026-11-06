@@ -1,0 +1,79 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_ps3",
+  "url": "https://gamefaqs.gamespot.com/ps/196989-ctr-crash-team-racing/saves/31693",
+  "source_page": "https://gamefaqs.gamespot.com/ps/196989-ctr-crash-team-racing/saves",
+  "source": "GameFAQs (section 'PlayStation PS3 Virtual Memory Card Save (ZIP) (Europe)')",
+  "author": "VanRalen0",
+  "licence": null,
+  "posted": "2025-03-11",
+  "fetched": "2026-11-05",
+  "what_it_is": "4 save files at the beginning of Adventure Mode with bosses - Pinstripe, Komodo Joe, Ripper Roo and Papu Papu",
+  "gamefaqs": {
+    "id": 31693,
+    "product": "CTR: Crash Team Racing",
+    "section": "PlayStation PS3 Virtual Memory Card Save (ZIP) (Europe)",
+    "region": "Europe",
+    "served_as": "ctr-crash-team-racing.31693.zip",
+    "listed_size": "3KB",
+    "served_zip": {
+      "size": 3274,
+      "sha1": "eecd7d7491d2a0adf6a989eda7ee58412c4dd65e"
+    }
+  },
+  "format": "zip of 1 PS3 export(s) (.PSV): '\\0VSP' header (signature, save name at 0x64), the save's blocks from 0x84 (8324 bytes); it holds 1 save(s), 1 for this game (BESCES-02105-SLOTS)",
+  "release": "CTR - Crash Team Racing (Europe) (En,Fr,De,Es,It,Nl)",
+  "game_saves": [
+    {
+      "name": "BESCES-02105-SLOTS",
+      "blocks": 1,
+      "title": "CTR:Saved Games and Scores"
+    }
+  ],
+  "files": {
+    "PSV/BESCES-021052D534C4F5453.PSV": {
+      "size": 8324,
+      "sha1": "fb04bc4e57550d18fff605335f245cc12406734f"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": null,
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr PSV/BESCES-021052D534C4F5453.PSV: puts the save(s) on a freshly formatted card, as MemcardRex imports a single save",
+    "converted": {
+      "size": 131072,
+      "sha1": "4dd3a658a8e2de5f9913696a78283aea0c0b2c1c"
+    },
+    "script": null,
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "not-run",
+        "detail": "no image of CTR - Crash Team Racing (Europe) (En,Fr,De,Es,It,Nl) in the library"
+      },
+      "beetle-psx-hw": {
+        "result": "not-run",
+        "detail": "no image of CTR - Crash Team Racing (Europe) (En,Fr,De,Es,It,Nl) in the library"
+      },
+      "pcsx-rearmed": {
+        "result": "not-run",
+        "detail": "no image of CTR - Crash Team Racing (Europe) (En,Fr,De,Es,It,Nl) in the library"
+      },
+      "swanstation": {
+        "result": "not-run",
+        "detail": "no image of CTR - Crash Team Racing (Europe) (En,Fr,De,Es,It,Nl) in the library"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": []
+  },
+  "note": null
+}

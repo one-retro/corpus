@@ -1,0 +1,18 @@
+# Pokemon Mystery Dungeon - Explorers of Sky (and of Time / Darkness), loading a
+# save: title, then Continue, which shows the Adventure Record (name, team,
+# location, play time, adventures) and asks "OK to resume the saved adventure?".
+# The shot is taken there, before answering.
+wait 900
+press start 6       # to the title
+wait 300
+press a 6           # top menu: Continue ... (New Game without a save)
+wait 300
+press a 6           # Continue: the Adventure Record
+wait 300
+shot record
+# A save with the Special Episodes unlocked answers Continue with "Main Story /
+# Special Episodes"; A picks Main Story and the next shot shows the Adventure
+# Record. For any other save this A answers Yes and the adventure resumes.
+press a 6
+wait 300
+shot after

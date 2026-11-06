@@ -1,0 +1,98 @@
+{
+  "method": "downloaded",
+  "system": "nds",
+  "core": "_action-replay-ds",
+  "url": "https://gamefaqs.gamespot.com/ds/920766-bomberman/saves/33877",
+  "source_page": "https://gamefaqs.gamespot.com/ds/920766-bomberman/saves",
+  "source": "GameFAQs (section 'Action Replay Max DS (.duc) Game Save (Europe)')",
+  "author": "Elky",
+  "licence": null,
+  "posted": "2025-10-17",
+  "fetched": "2026-11-05",
+  "what_it_is": "100% completado. Todos los niveles superados.",
+  "gamefaqs": {
+    "id": 33877,
+    "product": "Bomberman (2005)",
+    "section": "Action Replay Max DS (.duc) Game Save (Europe)",
+    "region": "Europe",
+    "served_as": "bomberman-2005.33877.duc",
+    "listed_size": "256KB"
+  },
+  "format": "Action Replay DS save: the 500-byte 'ARDS000000000001' header written by a converter ('Converted Savegame' / 'Savegame', ASCII 'shuny conv'), then 256 KiB: a DeSmuME .dsv of the 512 B EEPROM (512 bytes and the 122-byte footer: size 512, padSize 512, type 0, addr_size 1) padded with 0xFF",
+  "files": {
+    "bomberman-2005.33877.duc": {
+      "size": 262644,
+      "sha1": "e2a95b145ab431825cfe071d763093099bb84f8b"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": null,
+    "converted_with": "tools/gamefaqs/nds-ards.py IN step0.bin, then tools/gamefaqs/nds-dsv.py step0.bin step1.bin, then tools/gamefaqs/nds-cores.py step1.bin --chip 512 --stem 'Bomberman (Europe) (En,Fr,De,Es,It)' --out DIR: drops the Action Replay header; cuts the DeSmuME footer; fits it to the 512-byte chip (exact size) and writes each core's file",
+    "converted": {
+      "size": 512,
+      "sha1": "f085d6a79dc7d9c373c7f41811a1e09b246e73dc"
+    },
+    "core_files": {
+      "desmume": {
+        "name": "Bomberman (Europe) (En,Fr,De,Es,It).dsv",
+        "size": 634,
+        "sha1": "417a0a5af3c7d280be62c7872cc198ad3c3596db"
+      },
+      "desmume-2015": {
+        "name": "Bomberman (Europe) (En,Fr,De,Es,It).dsv",
+        "size": 634,
+        "sha1": "417a0a5af3c7d280be62c7872cc198ad3c3596db"
+      },
+      "melonds": {
+        "name": "Bomberman (Europe) (En,Fr,De,Es,It).sav",
+        "size": 512,
+        "sha1": "f085d6a79dc7d9c373c7f41811a1e09b246e73dc"
+      },
+      "melonds-ds": {
+        "name": "Bomberman (Europe) (En,Fr,De,Es,It).srm",
+        "size": 512,
+        "sha1": "f085d6a79dc7d9c373c7f41811a1e09b246e73dc"
+      },
+      "noods": {
+        "name": "Bomberman (Europe) (En,Fr,De,Es,It).sav",
+        "size": 512,
+        "sha1": "f085d6a79dc7d9c373c7f41811a1e09b246e73dc"
+      },
+      "skyemu": {
+        "name": "Bomberman (Europe) (En,Fr,De,Es,It).srm",
+        "size": 8388608,
+        "sha1": "bbdd1858435e11e4c63ba10487198153b22940ed"
+      }
+    },
+    "script": null,
+    "cores": {
+      "desmume": {
+        "result": "not-run",
+        "detail": "no image of Bomberman (Europe) (En,Fr,De,Es,It) in the library"
+      },
+      "desmume-2015": {
+        "result": "not-run",
+        "detail": "no image of Bomberman (Europe) (En,Fr,De,Es,It) in the library"
+      },
+      "melonds": {
+        "result": "not-run",
+        "detail": "no image of Bomberman (Europe) (En,Fr,De,Es,It) in the library"
+      },
+      "melonds-ds": {
+        "result": "not-run",
+        "detail": "no image of Bomberman (Europe) (En,Fr,De,Es,It) in the library"
+      },
+      "noods": {
+        "result": "not-run",
+        "detail": "no image of Bomberman (Europe) (En,Fr,De,Es,It) in the library"
+      },
+      "skyemu": {
+        "result": "not-run",
+        "detail": "no image of Bomberman (Europe) (En,Fr,De,Es,It) in the library"
+      }
+    },
+    "proof_order": []
+  },
+  "note": "A converter wrapped a whole DeSmuME .dsv, footer included, in an Action Replay header and padded it to 256 KiB; nds-ards.py then nds-dsv.py unwrap it. Not run: the library has only Bomberman (USA)."
+}

@@ -1,0 +1,123 @@
+{
+  "method": "downloaded",
+  "system": "ps2",
+  "core": "_max-drive",
+  "url": "https://gamefaqs.gamespot.com/ps2/561066-gran-turismo-4/saves/33158",
+  "source_page": "https://gamefaqs.gamespot.com/ps2/561066-gran-turismo-4/saves",
+  "source": "GameFAQs (section 'PlayStation2 Max Drive Save (North America)')",
+  "author": "vilonis",
+  "licence": null,
+  "posted": "2025-07-30",
+  "fetched": "2026-11-05",
+  "what_it_is": "- NTSC-U 722 CARS UNLOCKED ALL PRIZE CARS -720 ARCADE CARS, 371 cars BY ERA, 995 GARAGE CARS-All 80 Gold License tests, Not all driving missions completed- 1,000,000,000 Credits , 78.2% , DAY 101205- All circuits unlocked in Arcade",
+  "gamefaqs": {
+    "id": 33158,
+    "product": "Gran Turismo 4",
+    "section": "PlayStation2 Max Drive Save (North America)",
+    "region": "North America",
+    "served_as": "gran-turismo-4.33158.max",
+    "listed_size": "1488KB"
+  },
+  "format": "Max Drive / PowerSave save: 'Ps2PowerSave' header (CRC32 7b6f773a, matches), folder BASCUS-97328GAMEDATA, 4 files, LZARI stream 1523737 bytes unpacking to 1528760 bytes (1528584 bytes of file data)",
+  "files": {
+    "gran-turismo-4.33158.max": {
+      "size": 1523829,
+      "sha1": "a27b8a98a5fc999fefe75090b28f2d74815ce732"
+    }
+  },
+  "save": {
+    "folder": "BASCUS-97328GAMEDATA",
+    "title": [
+      "GRAN TURISMO 4",
+      "Game data"
+    ],
+    "times": "none: a max file stores no file times",
+    "files": [
+      {
+        "name": "icon.sys",
+        "size": 964,
+        "sha1": "cce82f67a0f89c70731af7b0fb0b9c752fd05e5e"
+      },
+      {
+        "name": "icon0.ico",
+        "size": 9796,
+        "sha1": "5c55e0ea3f302b6ce15d03fb247039d41b83f032"
+      },
+      {
+        "name": "BASCUS-97328GAMEDATA",
+        "size": 237760,
+        "sha1": "92b5fd3d15a0624fc234feab8a684cbb52b420c0"
+      },
+      {
+        "name": "garage",
+        "size": 1280064,
+        "sha1": "784da4b5f34d3c8acd8cc7dc0f79c60120419c69"
+      }
+    ]
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Gran Turismo 4 (USA).iso",
+      "sha1": "5b1dbf056f45f8023e8e4958e6d7deb31fc64a47",
+      "size": 5314478080
+    },
+    "converted_with": "tools/gamefaqs/ps2-card.py 'gran-turismo-4.33158.max' -o OUT: reads the save with mymcplus 3.0.5 and writes OUT/Mcd001.ps2 (an 8 MiB card with ECC, formatted and filled by mymcplus) for lrps2/pcee2/pcsx2, and OUT/mc0/<folder>/ for Play!",
+    "converted": {
+      "Mcd001.ps2": {
+        "size": 8650752,
+        "sha1": "ab39244b68f1d61e1b95c3404d0c25a710fc89da"
+      },
+      "mc0/BASCUS-97328GAMEDATA/": {
+        "icon.sys": {
+          "size": 964,
+          "sha1": "cce82f67a0f89c70731af7b0fb0b9c752fd05e5e"
+        },
+        "icon0.ico": {
+          "size": 9796,
+          "sha1": "5c55e0ea3f302b6ce15d03fb247039d41b83f032"
+        },
+        "BASCUS-97328GAMEDATA": {
+          "size": 237760,
+          "sha1": "92b5fd3d15a0624fc234feab8a684cbb52b420c0"
+        },
+        "garage": {
+          "size": 1280064,
+          "sha1": "784da4b5f34d3c8acd8cc7dc0f79c60120419c69"
+        }
+      },
+      "read_back": "work/ps2/tools/mcfs.py lists every file with the size and SHA-1 put on the card; one-saves (1saves convert + inspect) reads the card and finds BASCUS-97328GAMEDATA",
+      "timestamps": "what the save does not date is 2000-01-01 00:00:00 (JST, as a card stores it); the card's own root entries too"
+    },
+    "script": "scripts/ps2/Gran Turismo 4 (USA).load.txt",
+    "cores": {
+      "pcee2": {
+        "detail": "GT Mode map: MINI ONE '02, Cr 1,000,000,000, 4 MAY; Vilonis's Home: Complete 78.2%, A-spec 50975 points, Days 101205",
+        "result": "loads"
+      },
+      "lrps2": {
+        "detail": "GT Mode map: MINI ONE '02, Cr 1,000,000,000, 4 MAY; Vilonis's Home: Complete 78.2%, A-spec 50975 points, Days 101205",
+        "result": "loads"
+      },
+      "play": {
+        "detail": "Vilonis's Home: Complete 78.2%, A-spec 50975, Days 101205; MINI ONE, Cr 1,000,000,000, 4 MAY",
+        "result": "loads"
+      },
+      "pcsx2": {
+        "detail": "GT Mode map: MINI ONE '02, Cr 1,000,000,000, 4 MAY; Vilonis's Home: Complete 78.2%, A-spec 50975 points, Days 101205",
+        "result": "loads"
+      },
+      "armsx2": {
+        "result": "not-run",
+        "detail": "ARMSX2 renders only through Vulkan here and falls back to a null GS (no picture), so nothing shows what the game read (ps2/NOTES.md)"
+      }
+    },
+    "proof_order": [
+      "pcee2",
+      "lrps2",
+      "play",
+      "pcsx2"
+    ]
+  },
+  "note": null
+}

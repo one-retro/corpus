@@ -1,0 +1,110 @@
+{
+  "method": "downloaded",
+  "system": "nds",
+  "core": "_action-replay-ds",
+  "url": "https://gamefaqs.gamespot.com/ds/938930-pokemon-mystery-dungeon-explorers-of-darkness/saves/35489",
+  "source_page": "https://gamefaqs.gamespot.com/ds/938930-pokemon-mystery-dungeon-explorers-of-darkness/saves",
+  "source": "GameFAQs (section 'Action Replay Max DS (.duc) Game Save (North America)')",
+  "author": "Memory-",
+  "licence": null,
+  "posted": "2026-09-14",
+  "fetched": "2026-11-05",
+  "what_it_is": "(100% Absolute Completion) EoS. Living dex with all formes (534/552) at Lv100 with max stats, max IQ, and ginseng movesets. Adventure log complete, all dungeons, max rank, max money, and all exclusive items with unique gameplay effects.",
+  "gamefaqs": {
+    "id": 35489,
+    "product": "Pokemon Mystery Dungeon: Explorers",
+    "section": "Action Replay Max DS (.duc) Game Save (North America)",
+    "region": "North America",
+    "served_as": "pokemon-mystery-dungeon-explorers.35489.duc",
+    "listed_size": "256KB"
+  },
+  "format": "Action Replay DS save: the 500-byte 'ARDS000000000001' header written by a converter ('Converted Saves' / 'Converted Save' / 'Conversion code by UniqueGeeks.Net'), then 256 KiB raw for the 128 KiB EEPROM (cut 262144 -> 131072; the rest was data (113290 bytes not 0xFF), dropped (--drop-tail))",
+  "files": {
+    "pokemon-mystery-dungeon-explorers.35489.duc": {
+      "size": 262644,
+      "sha1": "e073e5512a66dc24fdfc2706f839400c98e3e105"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Pokemon Mystery Dungeon - Explorers of Sky (USA).nds",
+      "sha1": "7efb50f925f0b483a66f2a266524173c8a25c4f0",
+      "size": 134217728,
+      "note": "a dump of this game code whose sha1 is not in the No-Intro DAT (the area after the used ROM size is blank); the region in the name is a guess"
+    },
+    "converted_with": "tools/gamefaqs/nds-ards.py IN step0.bin, then tools/gamefaqs/nds-cores.py step0.bin --chip 131072 --stem 'Pokemon Mystery Dungeon - Explorers of Sky (USA)' --out DIR --drop-tail: drops the Action Replay header; fits it to the 131072-byte chip (cut 262144 -> 131072; the rest was data (113290 bytes not 0xFF), dropped (--drop-tail)) and writes each core's file",
+    "converted": {
+      "size": 131072,
+      "sha1": "42a05b20f558321afb33fbb4d9fab7159c673187"
+    },
+    "core_files": {
+      "desmume": {
+        "name": "Pokemon Mystery Dungeon - Explorers of Sky (USA).dsv",
+        "size": 262266,
+        "sha1": "4be481e04a8d10f03b248dfa9b42eda2e6dcc1f9"
+      },
+      "desmume-2015": {
+        "name": "Pokemon Mystery Dungeon - Explorers of Sky (USA).dsv",
+        "size": 262266,
+        "sha1": "4be481e04a8d10f03b248dfa9b42eda2e6dcc1f9"
+      },
+      "melonds": {
+        "name": "Pokemon Mystery Dungeon - Explorers of Sky (USA).sav",
+        "size": 131072,
+        "sha1": "42a05b20f558321afb33fbb4d9fab7159c673187"
+      },
+      "melonds-ds": {
+        "name": "Pokemon Mystery Dungeon - Explorers of Sky (USA).srm",
+        "size": 131072,
+        "sha1": "42a05b20f558321afb33fbb4d9fab7159c673187"
+      },
+      "noods": {
+        "name": "Pokemon Mystery Dungeon - Explorers of Sky (USA).sav",
+        "size": 131072,
+        "sha1": "42a05b20f558321afb33fbb4d9fab7159c673187"
+      },
+      "skyemu": {
+        "name": "Pokemon Mystery Dungeon - Explorers of Sky (USA).srm",
+        "size": 8388608,
+        "sha1": "ef606d74b417697666c1cd45eed229941bbf31c5"
+      }
+    },
+    "script": "scripts/nds/Pokemon Mystery Dungeon - Explorers of Sky.load.txt",
+    "cores": {
+      "desmume": {
+        "result": "loads",
+        "detail": "Adventure Record: Lucario, team Memory, Crossroads, play time 9999:59:59, 24278 adventures"
+      },
+      "desmume-2015": {
+        "result": "loads",
+        "detail": "Adventure Record: Lucario, team Memory, Crossroads, play time 9999:59:59, 24278 adventures"
+      },
+      "melonds": {
+        "result": "loads",
+        "detail": "Adventure Record: Lucario, team Memory, Crossroads, play time 9999:59:59, 24278 adventures"
+      },
+      "melonds-ds": {
+        "result": "loads",
+        "detail": "Adventure Record: Lucario, team Memory, Crossroads, play time 9999:59:59, 24278 adventures"
+      },
+      "noods": {
+        "result": "loads",
+        "detail": "Adventure Record: Lucario, team Memory, Crossroads, play time 9999:59:59, 24278 adventures"
+      },
+      "skyemu": {
+        "result": "loads",
+        "detail": "Adventure Record: Lucario, team Memory, Crossroads, play time 9999:59:59, 24278 adventures"
+      }
+    },
+    "proof_order": [
+      "desmume",
+      "desmume-2015",
+      "melonds",
+      "melonds-ds",
+      "noods",
+      "skyemu"
+    ]
+  },
+  "note": "Release: save id POKE_DUN_SORA (Explorers of Sky). The Action Replay payload is 256 KiB; its lower 128 KiB is this Explorers of Sky save, its upper 128 KiB a second, different one. The game's 1 Mbit EEPROM cannot address the upper half, so it was dropped (nds-cores.py --drop-tail)."
+}

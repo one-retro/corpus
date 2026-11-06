@@ -1,0 +1,84 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_dexdrive",
+  "url": "https://gamefaqs.gamespot.com/ps/198754-spyro-the-dragon/saves/2759",
+  "source_page": "https://gamefaqs.gamespot.com/ps/198754-spyro-the-dragon/saves",
+  "source": "GameFAQs (section 'PlayStation DexDrive Save (North America)')",
+  "author": "insannescorp55",
+  "licence": null,
+  "posted": "2003-06-11",
+  "fetched": "2026-11-05",
+  "what_it_is": "Beginning of game. All 69 dragons, all keys, eggs, and 65,000 gems. Super speed, moon jump, and flame breath enabled.",
+  "gamefaqs": {
+    "id": 2759,
+    "product": "Spyro the Dragon",
+    "section": "PlayStation DexDrive Save (North America)",
+    "region": "North America",
+    "served_as": "spyro-the-dragon.2759.gme",
+    "listed_size": "131KB"
+  },
+  "format": "DexDrive .gme: '123-456-STD' 3904-byte header (per-block comments) + 131072-byte raw card; the card holds 1 save(s), 1 for this game (BASCUS-94228SPYRO)",
+  "release": "Spyro the Dragon (USA)",
+  "game_saves": [
+    {
+      "name": "BASCUS-94228SPYRO",
+      "blocks": 1,
+      "title": "SPYRO THE DRAGON"
+    }
+  ],
+  "files": {
+    "spyro-the-dragon.2759.gme": {
+      "size": 134976,
+      "sha1": "4b96090566388d0c0efee6acb10888b46f40d07a"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Spyro the Dragon (USA).cue",
+      "sha1": "6abdbc5a00bcb521528825fb7cb6bfebd99a7a91",
+      "size": 88
+    },
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr spyro-the-dragon.2759.gme: unwraps the card (DexDrive .gme: 3904-byte header + card)",
+    "converted": {
+      "size": 131072,
+      "sha1": "4c16279fe3ab584fdd0792e58259821eb7ce65be"
+    },
+    "script": "scripts/psx/Spyro the Dragon.load.txt",
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "loads",
+        "detail": "the first save slot shows 73 dragons, the other two EMPTY"
+      },
+      "beetle-psx-hw": {
+        "result": "loads",
+        "detail": "the first save slot shows 73 dragons, the other two EMPTY (the same screen as on beetle-psx)"
+      },
+      "pcsx-rearmed": {
+        "result": "loads",
+        "detail": "the first save slot shows 73 dragons, the other two EMPTY (the same screen as on beetle-psx)"
+      },
+      "swanstation": {
+        "result": "loads",
+        "detail": "the first save slot shows 73 dragons, the other two EMPTY (the same screen as on beetle-psx)"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": [
+      "beetle-psx",
+      "beetle-psx-hw",
+      "pcsx-rearmed",
+      "swanstation"
+    ]
+  },
+  "note": null
+}

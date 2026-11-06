@@ -1,0 +1,43 @@
+# Marvel vs. Capcom 2 - New Age of Heroes (USA), SLUS-20486, CD: show a loaded save.
+# Main menu > SAVE/LOAD > LOAD > SLOT 1 ("Load successful", the save's date on the slot
+# screen), then EXIT > SECRET FACTOR (YOUR POINTS) > YOUR CHARACTERS: the character grid,
+# with every character the save has bought; with no save, only the starting cast.
+wait 1800
+press start 6        # skip the intro to the title
+wait 300
+press start 6        # title -> main menu (ARCADE MODE selected)
+wait 300
+press down 6         # SCORE RANKING
+wait 30
+press right 6        # SCORE ATTACK
+wait 30
+press right 6        # SECRET FACTOR
+wait 30
+press right 6        # SAVE/LOAD
+wait 60
+press b 6            # SAVE / LOAD / EXIT
+wait 120
+press down 6         # LOAD
+wait 30
+press b 6
+wait 120
+press b 6            # SLOT 1
+wait 300
+shot loaded          # "Load successful." (or: no data / unformatted)
+wait 400
+press down 6         # EXIT
+wait 60
+press b 6
+wait 400             # back on the main menu (SAVE/LOAD selected)
+press left 6         # SECRET FACTOR
+wait 120
+press b 6
+wait 400
+shot points          # YOUR POINTS
+press down 6         # GALLERY
+wait 60
+press down 6         # YOUR CHARACTERS
+wait 60
+press b 6
+wait 400
+shot characters      # the character grid

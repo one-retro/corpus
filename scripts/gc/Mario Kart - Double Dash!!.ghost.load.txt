@@ -1,0 +1,61 @@
+# Load script for a downloaded Time Trial ghost file (GameFAQs) of Mario Kart: Double Dash!!,
+# Yoshi Circuit. A ghost is its own card file; the game's main data is not on the card, so the
+# game first asks to create it (YES), then Time Trials > Star Cup > Yoshi Circuit opens
+# LOAD GHOST DATA, which lists the ghost found in Slot A.
+# libretro Dolphin under retro-run, single-core (scripts/gc/dolphin-single-core.opt).
+# Presses found by trial; some land on transitions and do nothing, which is fine.
+wait 1200
+press start 6      # skip the intro to the title
+wait 300
+press a 6          # "Would you like to create data ...?" YES
+wait 300
+press a 6          # title menu
+wait 300
+press a 6          # START GAME -> how many players
+wait 300
+press a 6          # 1 PLAYER -> select mode
+wait 300
+stick 0 max 8      # TIME TRIALS
+wait 90
+press a 6
+wait 300
+press a 6          # initials AAA, OK
+wait 300
+press a 6
+wait 120
+press a 6
+wait 300
+press a 6          # character select
+wait 300
+stick max 0 8
+wait 90
+stick max 0 8      # cursor to Yoshi
+wait 90
+press a 6          # first driver
+wait 300
+stick 0 max 8
+wait 90
+stick 0 max 8      # cursor to Birdo (the two drivers must differ)
+wait 90
+press a 6          # second driver
+wait 300
+press a 6          # kart OK -> select course
+wait 300
+stick max 0 8
+wait 90
+stick max 0 8      # Star Cup
+wait 90
+press a 6
+wait 200
+stick 0 max 8
+wait 90
+stick 0 max 8      # Yoshi Circuit
+wait 90
+press a 6          # OK?
+wait 600
+press a 6          # LOAD GHOST DATA
+wait 300
+shot ghost-list
+press a 6          # Slot A
+wait 300
+shot ghost

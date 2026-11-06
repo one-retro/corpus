@@ -1,0 +1,154 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_dexdrive",
+  "url": "https://gamefaqs.gamespot.com/ps/199365-xenogears/saves/14935",
+  "source_page": "https://gamefaqs.gamespot.com/ps/199365-xenogears/saves",
+  "source": "GameFAQs (section 'PlayStation DexDrive Save (North America)')",
+  "author": "Unos_Hambalos",
+  "licence": null,
+  "posted": "2007-05-13",
+  "fetched": "2026-11-05",
+  "what_it_is": "Save Collection V: Escape Solaris, Lone Wolf, Krelian's Lab, Tears for Fears, Shot Down, Break the Seal, Soul Vessel, The Stars Know, Above Mahanon, Paradise",
+  "gamefaqs": {
+    "id": 14935,
+    "product": "Xenogears",
+    "section": "PlayStation DexDrive Save (North America)",
+    "region": "North America",
+    "served_as": "xenogears.14935.gme",
+    "listed_size": "131KB"
+  },
+  "format": "DexDrive .gme: '123-456-STD' 3904-byte header (per-block comments) + 131072-byte raw card; the card holds 15 save(s), 15 for this game (BASLUS-006640, BASLUS-006641, BASLUS-006642, BASLUS-006643, ...)",
+  "release": "Xenogears (USA) (Disc 1)",
+  "game_saves": [
+    {
+      "name": "BASLUS-006640",
+      "blocks": 1,
+      "title": "XENOGEARS/No.01 Escape Solaris"
+    },
+    {
+      "name": "BASLUS-006641",
+      "blocks": 1,
+      "title": "XENOGEARS/No.02 Lone Wolf"
+    },
+    {
+      "name": "BASLUS-006642",
+      "blocks": 1,
+      "title": "XENOGEARS/No.03 Krelian’s lab"
+    },
+    {
+      "name": "BASLUS-006643",
+      "blocks": 1,
+      "title": "XENOGEARS/No.04 Tears for Fears"
+    },
+    {
+      "name": "BASLUS-006644",
+      "blocks": 1,
+      "title": "XENOGEARS/No.05 Tears for Fears"
+    },
+    {
+      "name": "BASLUS-006645",
+      "blocks": 1,
+      "title": "XENOGEARS/No.06 Shot Down!"
+    },
+    {
+      "name": "BASLUS-006646",
+      "blocks": 1,
+      "title": "XENOGEARS/No.07 Shot Down!"
+    },
+    {
+      "name": "BASLUS-006647",
+      "blocks": 1,
+      "title": "XENOGEARS/No.08 Break the Seal"
+    },
+    {
+      "name": "BASLUS-006648",
+      "blocks": 1,
+      "title": "XENOGEARS/No.09 Break the Seal"
+    },
+    {
+      "name": "BASLUS-006649",
+      "blocks": 1,
+      "title": "XENOGEARS/No.10 Soul Vessel"
+    },
+    {
+      "name": "BASLUS-00664:",
+      "blocks": 1,
+      "title": "XENOGEARS/No.11 Soul Vessel"
+    },
+    {
+      "name": "BASLUS-00664;",
+      "blocks": 1,
+      "title": "XENOGEARS/No.12 The Stars Know"
+    },
+    {
+      "name": "BASLUS-00664<",
+      "blocks": 1,
+      "title": "XENOGEARS/No.13 The Stars Know"
+    },
+    {
+      "name": "BASLUS-00664=",
+      "blocks": 1,
+      "title": "XENOGEARS/No.14 Above Mahanon"
+    },
+    {
+      "name": "BASLUS-00664>",
+      "blocks": 1,
+      "title": "XENOGEARS/No.15 Paradise"
+    }
+  ],
+  "files": {
+    "xenogears.14935.gme": {
+      "size": 134976,
+      "sha1": "b46610406838c0f4dff05becf375ce4f6041ae03"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Xenogears (USA) (Disc 1).cue",
+      "sha1": "90ba9637f68f839fde92ca18b0346ae349ba0be2",
+      "size": 90
+    },
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr xenogears.14935.gme: unwraps the card (DexDrive .gme: 3904-byte header + card)",
+    "converted": {
+      "size": 131072,
+      "sha1": "eb1ce81a594bd7e507da412be7753b1accfbedc6"
+    },
+    "script": "scripts/psx/Xenogears.load.txt",
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "loads",
+        "detail": "Continue > Load shows save No. 01: Fei Lv 63, 043:55:36, Escape Solaris"
+      },
+      "beetle-psx-hw": {
+        "result": "loads",
+        "detail": "Continue > Load shows save No. 01: Fei Lv 63, 043:55:36, Escape Solaris (the same screen as on beetle-psx)"
+      },
+      "pcsx-rearmed": {
+        "result": "loads",
+        "detail": "Continue > Load shows save No. 01: Fei Lv 63, 043:55:36, Escape Solaris (the same screen as on beetle-psx)"
+      },
+      "swanstation": {
+        "result": "loads",
+        "detail": "Continue > Load shows save No. 01: Fei Lv 63, 043:55:36, Escape Solaris (the same screen as on beetle-psx)"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": [
+      "beetle-psx",
+      "beetle-psx-hw",
+      "pcsx-rearmed",
+      "swanstation"
+    ]
+  },
+  "note": null
+}

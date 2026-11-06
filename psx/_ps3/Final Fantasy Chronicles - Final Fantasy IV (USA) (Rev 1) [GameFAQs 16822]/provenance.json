@@ -1,0 +1,88 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_ps3",
+  "url": "https://gamefaqs.gamespot.com/ps/477343-final-fantasy-chronicles/saves/16822",
+  "source_page": "https://gamefaqs.gamespot.com/ps/477343-final-fantasy-chronicles/saves",
+  "source": "GameFAQs (section 'PlayStation PS3 Virtual Memory Card Save (ZIP) (North America)')",
+  "author": "_Mace_",
+  "licence": null,
+  "posted": "2008-03-16",
+  "fetched": "2026-11-05",
+  "what_it_is": "FFIV: Outside Cave Bahamut, Lvs 46-51, Cecil, Rosa, Edge, Rydia, FuSoYa",
+  "gamefaqs": {
+    "id": 16822,
+    "product": "Final Fantasy Chronicles",
+    "section": "PlayStation PS3 Virtual Memory Card Save (ZIP) (North America)",
+    "region": "North America",
+    "served_as": "final-fantasy-chronicles.16822.zip",
+    "listed_size": "1KB",
+    "served_zip": {
+      "size": 1582,
+      "sha1": "e81129342564831bf8a6b0c07c265dc6df5f3ade"
+    }
+  },
+  "format": "zip of 1 PS3 export(s) (.PSV): '\\0VSP' header (signature, save name at 0x64), the save's blocks from 0x84 (16516 bytes); it holds 1 save(s), 1 for this game (BASLUS-01360FF4)",
+  "release": "Final Fantasy Chronicles - Final Fantasy IV (USA) (Rev 1)",
+  "game_saves": [
+    {
+      "name": "BASLUS-01360FF4",
+      "blocks": 2,
+      "title": "FF4 3107/3107 45:20"
+    }
+  ],
+  "files": {
+    "BASLUS-01360464634.PSV": {
+      "size": 16516,
+      "sha1": "38c4f2af4a19e48658e90e80e322feeb016be980"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Final Fantasy Chronicles - Final Fantasy IV (USA) (Rev 1).cue",
+      "sha1": "476c9de3868d155c5c315461938fb94bd725860a",
+      "size": 123
+    },
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr BASLUS-01360464634.PSV: puts the save(s) on a freshly formatted card, as MemcardRex imports a single save",
+    "converted": {
+      "size": 131072,
+      "sha1": "366ef7a88e0eea9474a6b1e4b53f1769db9a662e"
+    },
+    "script": "scripts/psx/Final Fantasy IV.load.txt",
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "loads",
+        "detail": "Slot 1 lists save 1: 45:20, HP 3107/3107"
+      },
+      "beetle-psx-hw": {
+        "result": "loads",
+        "detail": "Slot 1 lists save 1: 45:20, HP 3107/3107 (the same screen as on beetle-psx)"
+      },
+      "pcsx-rearmed": {
+        "result": "loads",
+        "detail": "Slot 1 lists save 1: 45:20, HP 3107/3107 (the same screen as on beetle-psx)"
+      },
+      "swanstation": {
+        "result": "loads",
+        "detail": "Slot 1 lists save 1: 45:20, HP 3107/3107 (the same screen as on beetle-psx)"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": [
+      "beetle-psx",
+      "beetle-psx-hw",
+      "pcsx-rearmed",
+      "swanstation"
+    ]
+  },
+  "note": null
+}

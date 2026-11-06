@@ -1,0 +1,119 @@
+{
+  "method": "downloaded",
+  "system": "gba",
+  "core": "_gameshark",
+  "url": "https://gamefaqs.gamespot.com/gba/468480-fire-emblem/saves/27407",
+  "source_page": "https://gamefaqs.gamespot.com/gba/468480-fire-emblem/saves",
+  "source": "GameFAQs (section 'GameBoy Advance GameShark Save (North America)')",
+  "author": "Memory-",
+  "licence": null,
+  "posted": "2021-02-06",
+  "fetched": "2026-11-05",
+  "what_it_is": "[FOR RANKED RUNS - HHM UNLOCKED] Intentionally sabotaged rankings for each mode, so accurate battle history can be recorded when finishing a run. 100% supports, sound room/cgs, and bonus disk content!",
+  "gamefaqs": {
+    "id": 27407,
+    "product": "Fire Emblem",
+    "section": "GameBoy Advance GameShark Save (North America)",
+    "region": "North America",
+    "served_as": "fire-emblem.27407.sps",
+    "listed_size": "64KB"
+  },
+  "format": "SharkPort save (\"SharkPortSave\", kind 0x000F0000): title \"FIREEMBLEME\", date \"2/6/2021 7:35:06 AM\", notes \"\"; cart header \"FIREEMBLEME\" / 'AE7E' (complement 0xd1); payload 65536 bytes; checksum: signed",
+  "files": {
+    "fire-emblem.27407.sps": {
+      "size": 65635,
+      "sha1": "4a5f6b2e3c8caec7f7816cf37dab9ef55dff733f"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Fire Emblem (USA, Australia).gba",
+      "sha1": "c735fdbb9e8abe19e0c6a44708df19acc962e204",
+      "size": 16777216
+    },
+    "converted_with": "tools/gamefaqs/gba-sharkport.py fire-emblem.27407.sps --rom ROM --core CORE --outdir DIR: reads the SharkPort container as mGBA does and imports the payload as mGBA's _importSavedata does (cut to the chip, EEPROM 8-byte blocks reversed, the rest of the chip erased), then lays the chip out as the core keeps it",
+    "converted": {
+      "size": 32768,
+      "sha1": "f56a8c67b5e20974dd3d6d87457554743aa47fea"
+    },
+    "script": "scripts/gba/Fire Emblem.load.txt",
+    "cores": {
+      "mgba": {
+        "result": "loads",
+        "detail": "New Game and Extras: the unlocked extras, no chapter file (a save for ranked runs, as described)",
+        "core_version": "mGBA 0.11-212-7a12d6d",
+        "file": {
+          "name": "Fire Emblem (USA, Australia).srm",
+          "size": 32768,
+          "sha1": "f56a8c67b5e20974dd3d6d87457554743aa47fea"
+        },
+        "frame": "menu"
+      },
+      "vba-m": {
+        "result": "loads",
+        "detail": "New Game and Extras: the unlocked extras, no chapter file (a save for ranked runs, as described) (same menu in this core; the background animates)",
+        "core_version": "VBA-M 115defb",
+        "file": {
+          "name": "Fire Emblem (USA, Australia).srm",
+          "size": 32768,
+          "sha1": "f56a8c67b5e20974dd3d6d87457554743aa47fea"
+        },
+        "frame": "menu"
+      },
+      "gpsp": {
+        "result": "loads",
+        "detail": "New Game and Extras: the unlocked extras, no chapter file (a save for ranked runs, as described) (same menu in this core; the background animates)",
+        "core_version": "gpSP v1.1.0-5819380",
+        "file": {
+          "name": "Fire Emblem (USA, Australia).srm",
+          "size": 131072,
+          "sha1": "725180b0a529949885aef41425c338f01749e9f6"
+        },
+        "frame": "menu"
+      },
+      "vba-next": {
+        "result": "loads",
+        "detail": "New Game and Extras: the unlocked extras, no chapter file (a save for ranked runs, as described) (same menu in this core; the background animates)",
+        "core_version": "VBA Next v1.0.2",
+        "file": {
+          "name": "Fire Emblem (USA, Australia).srm",
+          "size": 139264,
+          "sha1": "c180e099bb9c54b086df3857d14168798b95da4d"
+        },
+        "frame": "menu"
+      },
+      "beetle-gba": {
+        "result": "loads",
+        "detail": "New Game and Extras: the unlocked extras, no chapter file (a save for ranked runs, as described) (same menu in this core; the background animates)",
+        "core_version": "Beetle GBA v0.9.36 b158166",
+        "file": {
+          "name": "Fire Emblem (USA, Australia).f1a1b9742fcd467a531dd4314c4e7d19.sav",
+          "size": 65536,
+          "sha1": "956673860f01261b7a240bf3362e0935d49f6e05"
+        },
+        "frame": "menu"
+      },
+      "skyemu": {
+        "result": "loads",
+        "detail": "New Game and Extras: the unlocked extras, no chapter file (a save for ranked runs, as described) (same menu in this core; the background animates)",
+        "core_version": "SkyEmu adacd0788964ed89f5c43dcbc1f3cc26deec996c",
+        "file": {
+          "name": "Fire Emblem (USA, Australia).srm",
+          "size": 131072,
+          "sha1": "725180b0a529949885aef41425c338f01749e9f6"
+        },
+        "frame": "menu"
+      }
+    },
+    "proof_order": [
+      "mgba",
+      "vba-m",
+      "gpsp",
+      "vba-next",
+      "beetle-gba",
+      "skyemu"
+    ]
+  },
+  "note": null
+}

@@ -1,0 +1,67 @@
+{
+  "method": "downloaded",
+  "system": "psp",
+  "core": "_psp",
+  "url": "https://gamefaqs.gamespot.com/psp/924594-lumines/saves/6028",
+  "source_page": "https://gamefaqs.gamespot.com/psp/924594-lumines/saves",
+  "source": "GameFAQs (section 'PSP Game Save Directory (ZIP) (Japan)')",
+  "author": "SkylineQS",
+  "licence": null,
+  "posted": "2005-01-23",
+  "fetched": "2026-11-05",
+  "what_it_is": "All The Skins Are Unlocked",
+  "gamefaqs": {
+    "id": 6028,
+    "product": "Lumines",
+    "section": "PSP Game Save Directory (ZIP) (Japan)",
+    "region": "Japan",
+    "served_as": "lumines.6028.zip",
+    "listed_size": "39KB"
+  },
+  "format": "PSP save folder, 5 files in the folder ULJS00005LUMINES/: PARAM.SFO (SAVEDATA_DIRECTORY ULJS00005LUMINES, TITLE LUMINES, SAVEDATA_FILE_LIST names no file (4 bytes 785f6908, then zeros)), DATA.BIN 18464 bytes (encrypted by the system's savedata call), ICON0.PNG, PIC1.PNG, Thumbs.db (Thumbs.db: a Windows thumbnail cache of ICON0.PNG and PIC1.PNG, not save data)",
+  "files": {
+    "ULJS00005LUMINES/DATA.BIN": {
+      "size": 18464,
+      "sha1": "ce5b1737cd678a02ef01db9aa5b9f90496ca7f09"
+    },
+    "ULJS00005LUMINES/ICON0.PNG": {
+      "size": 10715,
+      "sha1": "2cb03b495d460e16a8aea2c76b58424ff55eaf2a"
+    },
+    "ULJS00005LUMINES/PARAM.SFO": {
+      "size": 4912,
+      "sha1": "7023a2caca38498f9805be7b5cb49d2c9a131328"
+    },
+    "ULJS00005LUMINES/PIC1.PNG": {
+      "size": 5562,
+      "sha1": "694daff6bf27bde3d4eed1db68e580e6938ffb5c"
+    },
+    "ULJS00005LUMINES/Thumbs.db": {
+      "size": 8192,
+      "sha1": "fbfe6862d1a2e7f2bb8d430736c03b61fcb0d296"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": null,
+    "converted_with": "tools/gamefaqs/psp-savedata.py memstick <zip> <memory stick>: writes the zip's files, unchanged, to PSP/SAVEDATA/<SAVEDATA_DIRECTORY>/ (the name read from PARAM.SFO)",
+    "converted": {
+      "path": "PSP/SAVEDATA/ULJS00005LUMINES/",
+      "files": 5,
+      "bytes_changed": 0
+    },
+    "script": null,
+    "cores": {
+      "ppsspp": {
+        "result": "not-run",
+        "detail": "no Lumines (Japan) image in the library (it has Lumines (USA) only)"
+      },
+      "ppsspp@ppsspp": {
+        "result": "not-run",
+        "detail": "no Lumines (Japan) image in the library (it has Lumines (USA) only)"
+      }
+    },
+    "proof_order": []
+  },
+  "note": null
+}

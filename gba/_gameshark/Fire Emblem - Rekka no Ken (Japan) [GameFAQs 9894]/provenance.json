@@ -1,0 +1,119 @@
+{
+  "method": "downloaded",
+  "system": "gba",
+  "core": "_gameshark",
+  "url": "https://gamefaqs.gamespot.com/gba/468480-fire-emblem/saves/9894",
+  "source_page": "https://gamefaqs.gamespot.com/gba/468480-fire-emblem/saves",
+  "source": "GameFAQs (section 'GameBoy Advance GameShark Save (Japan)')",
+  "author": "Gargant",
+  "licence": null,
+  "posted": "2005-11-14",
+  "fetched": "2026-11-05",
+  "what_it_is": "Saved at chapter 2 Lyn has max stats",
+  "gamefaqs": {
+    "id": 9894,
+    "product": "Fire Emblem",
+    "section": "GameBoy Advance GameShark Save (Japan)",
+    "region": "Japan",
+    "served_as": "fire-emblem.9894.sps",
+    "listed_size": "64KB"
+  },
+  "format": "SharkPort save (\"SharkPortSave\", kind 0x000F0000): title \"FIREEMBLEM7\", date \"15/11/2005 4:56:36 PM\", notes \"\"; cart header \"FIREEMBLEM7\" / 'AE7J' (complement 0xda); payload 65536 bytes; checksum: signed",
+  "files": {
+    "fire-emblem.9894.sps": {
+      "size": 65637,
+      "sha1": "8e4fa19c9239f0a9cf9f5ff75237aae38887a176"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Fire Emblem - Rekka no Ken (Japan).gba",
+      "sha1": "037702b1febd5c9535262165bf030551d153de81",
+      "size": 16777216
+    },
+    "converted_with": "tools/gamefaqs/gba-sharkport.py fire-emblem.9894.sps --rom ROM --core CORE --outdir DIR: reads the SharkPort container as mGBA does and imports the payload as mGBA's _importSavedata does (cut to the chip, EEPROM 8-byte blocks reversed, the rest of the chip erased), then lays the chip out as the core keeps it",
+    "converted": {
+      "size": 32768,
+      "sha1": "9b4b6606bf4e4dde3b7fcebaa330aef94f532b7e"
+    },
+    "script": "scripts/gba/Fire Emblem.load.txt",
+    "cores": {
+      "mgba": {
+        "result": "loads",
+        "detail": "title menu with 中断から始める / 記録から始める (resume / restart from a file)",
+        "core_version": "mGBA 0.11-212-7a12d6d",
+        "file": {
+          "name": "Fire Emblem - Rekka no Ken (Japan).srm",
+          "size": 32768,
+          "sha1": "9b4b6606bf4e4dde3b7fcebaa330aef94f532b7e"
+        },
+        "frame": "menu"
+      },
+      "vba-m": {
+        "result": "loads",
+        "detail": "title menu with 中断から始める / 記録から始める (resume / restart from a file) (same menu in this core; the background animates)",
+        "core_version": "VBA-M 115defb",
+        "file": {
+          "name": "Fire Emblem - Rekka no Ken (Japan).srm",
+          "size": 32768,
+          "sha1": "9b4b6606bf4e4dde3b7fcebaa330aef94f532b7e"
+        },
+        "frame": "menu"
+      },
+      "gpsp": {
+        "result": "loads",
+        "detail": "title menu with 中断から始める / 記録から始める (resume / restart from a file)",
+        "core_version": "gpSP v1.1.0-5819380",
+        "file": {
+          "name": "Fire Emblem - Rekka no Ken (Japan).srm",
+          "size": 131072,
+          "sha1": "04517e83037406e4cb7f08d0dde63098f41e1425"
+        },
+        "frame": "menu"
+      },
+      "vba-next": {
+        "result": "loads",
+        "detail": "title menu with 中断から始める / 記録から始める (resume / restart from a file)",
+        "core_version": "VBA Next v1.0.2",
+        "file": {
+          "name": "Fire Emblem - Rekka no Ken (Japan).srm",
+          "size": 139264,
+          "sha1": "917dc12ecd5068f0b3feb99b3d8ec345b46012b5"
+        },
+        "frame": "menu"
+      },
+      "beetle-gba": {
+        "result": "loads",
+        "detail": "title menu with 中断から始める / 記録から始める (resume / restart from a file) (same menu in this core; the background animates)",
+        "core_version": "Beetle GBA v0.9.36 b158166",
+        "file": {
+          "name": "Fire Emblem - Rekka no Ken (Japan).9485f273f4e97e9e8f21966407f2e782.sav",
+          "size": 65536,
+          "sha1": "c34320c343b98814faf287ad398a2b1e23b590dc"
+        },
+        "frame": "menu"
+      },
+      "skyemu": {
+        "result": "loads",
+        "detail": "title menu with 中断から始める / 記録から始める (resume / restart from a file)",
+        "core_version": "SkyEmu adacd0788964ed89f5c43dcbc1f3cc26deec996c",
+        "file": {
+          "name": "Fire Emblem - Rekka no Ken (Japan).srm",
+          "size": 131072,
+          "sha1": "04517e83037406e4cb7f08d0dde63098f41e1425"
+        },
+        "frame": "menu"
+      }
+    },
+    "proof_order": [
+      "mgba",
+      "vba-m",
+      "gpsp",
+      "vba-next",
+      "beetle-gba",
+      "skyemu"
+    ]
+  },
+  "note": null
+}

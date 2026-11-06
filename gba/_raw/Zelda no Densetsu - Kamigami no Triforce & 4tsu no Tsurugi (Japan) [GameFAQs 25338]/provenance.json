@@ -1,0 +1,119 @@
+{
+  "method": "downloaded",
+  "system": "gba",
+  "core": "_raw",
+  "url": "https://gamefaqs.gamespot.com/snes/588436-the-legend-of-zelda-a-link-to-the-past/saves/25338",
+  "source_page": "https://gamefaqs.gamespot.com/snes/588436-the-legend-of-zelda-a-link-to-the-past/saves",
+  "source": "GameFAQs (section 'GameBoy Advance GameShark Save (Japan)')",
+  "author": "Luziano",
+  "licence": null,
+  "posted": "2018-02-14",
+  "fetched": "2026-11-05",
+  "what_it_is": "Kamigami no Triforce and 4tsu no Tsurugi games beaten.",
+  "gamefaqs": {
+    "id": 25338,
+    "product": "The Legend of Zelda: A Link to the Past",
+    "section": "GameBoy Advance GameShark Save (Japan)",
+    "region": "Japan",
+    "served_as": "the-legend-of-zelda-a-link-to-the-past.25338.sps",
+    "listed_size": "8KB"
+  },
+  "format": "raw 8192-byte save image, no header",
+  "files": {
+    "the-legend-of-zelda-a-link-to-the-past.25338.sps": {
+      "size": 8192,
+      "sha1": "bce836539416e775b309a36ab7fd842705be4334"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Zelda no Densetsu - Kamigami no Triforce & 4tsu no Tsurugi (Japan).gba",
+      "sha1": "fb3803f6a806154dc93541d17a6d53203cb339ee",
+      "size": 8388608
+    },
+    "converted_with": "tools/gamefaqs/gba-layout.py the-legend-of-zelda-a-link-to-the-past.25338.sps --rom ROM --core CORE --outdir DIR: takes the raw image as the chip (cut or padded with 0xFF to the chip size, as mGBA maps a .sav) and lays it out as the core keeps it",
+    "converted": {
+      "size": 8192,
+      "sha1": "bce836539416e775b309a36ab7fd842705be4334"
+    },
+    "script": "scripts/gba/Legend of Zelda, The - A Link to the Past & Four Swords.load.txt",
+    "cores": {
+      "mgba": {
+        "result": "loads",
+        "detail": "ファイル選択: Louie, with hearts and items",
+        "core_version": "mGBA 0.11-212-7a12d6d",
+        "file": {
+          "name": "Zelda no Densetsu - Kamigami no Triforce & 4tsu no Tsurugi (Japan).srm",
+          "size": 8192,
+          "sha1": "bce836539416e775b309a36ab7fd842705be4334"
+        },
+        "frame": "files"
+      },
+      "vba-m": {
+        "result": "loads",
+        "detail": "ファイル選択: Louie, with hearts and items",
+        "core_version": "VBA-M 115defb",
+        "file": {
+          "name": "Zelda no Densetsu - Kamigami no Triforce & 4tsu no Tsurugi (Japan).srm",
+          "size": 8192,
+          "sha1": "bce836539416e775b309a36ab7fd842705be4334"
+        },
+        "frame": "files"
+      },
+      "gpsp": {
+        "result": "loads",
+        "detail": "ファイル選択: Louie, with hearts and items",
+        "core_version": "gpSP v1.1.0-5819380",
+        "file": {
+          "name": "Zelda no Densetsu - Kamigami no Triforce & 4tsu no Tsurugi (Japan).srm",
+          "size": 131072,
+          "sha1": "0e6232a12cdf1b1f839c752ccc6c2c7652dc6d49"
+        },
+        "frame": "files"
+      },
+      "vba-next": {
+        "result": "loads",
+        "detail": "ファイル選択: Louie, with hearts and items",
+        "core_version": "VBA Next v1.0.2",
+        "file": {
+          "name": "Zelda no Densetsu - Kamigami no Triforce & 4tsu no Tsurugi (Japan).srm",
+          "size": 139264,
+          "sha1": "dd1a769ea197ca9cff02116943e74a11759fabe7"
+        },
+        "frame": "files"
+      },
+      "beetle-gba": {
+        "result": "loads",
+        "detail": "ファイル選択: Louie, with hearts and items",
+        "core_version": "Beetle GBA v0.9.36 b158166",
+        "file": {
+          "name": "Zelda no Densetsu - Kamigami no Triforce & 4tsu no Tsurugi (Japan).8f289129beefd40717718c7ab8baa447.eep",
+          "size": 8192,
+          "sha1": "bce836539416e775b309a36ab7fd842705be4334"
+        },
+        "frame": "files"
+      },
+      "skyemu": {
+        "result": "loads",
+        "detail": "ファイル選択: Louie, with hearts and items (same file list; the background animates)",
+        "core_version": "SkyEmu adacd0788964ed89f5c43dcbc1f3cc26deec996c",
+        "file": {
+          "name": "Zelda no Densetsu - Kamigami no Triforce & 4tsu no Tsurugi (Japan).srm",
+          "size": 131072,
+          "sha1": "72c462888247c4f479ea292d647a2b2b82e75bf0"
+        },
+        "frame": "files"
+      }
+    },
+    "proof_order": [
+      "mgba",
+      "vba-m",
+      "gpsp",
+      "vba-next",
+      "beetle-gba",
+      "skyemu"
+    ]
+  },
+  "note": "No container: a bare save image uploaded as .sps, so the writer (an emulator, a flash cart, the GameShark software) cannot be told from the bytes. Uploaded as .sps in a GameShark section, but it is a raw 8 KiB EEPROM image in emulator byte order."
+}

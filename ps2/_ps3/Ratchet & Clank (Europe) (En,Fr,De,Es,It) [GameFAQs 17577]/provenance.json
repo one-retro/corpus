@@ -1,0 +1,166 @@
+{
+  "method": "downloaded",
+  "system": "ps2",
+  "core": "_ps3",
+  "url": "https://gamefaqs.gamespot.com/ps2/561107-ratchet-and-clank/saves/17577",
+  "source_page": "https://gamefaqs.gamespot.com/ps2/561107-ratchet-and-clank/saves",
+  "source": "GameFAQs (section 'PlayStation 2 PS3 Virtual Memory Card Save (ZIP) (Europe)')",
+  "author": "solidfranz",
+  "licence": null,
+  "posted": "2008-08-04",
+  "fetched": "2026-11-05",
+  "what_it_is": "100% complete. All gold bolts, skill points, goodies unlocked. All Weapons avaliable, including 10 gold weapons.",
+  "gamefaqs": {
+    "id": 17577,
+    "product": "Ratchet & Clank",
+    "section": "PlayStation 2 PS3 Virtual Memory Card Save (ZIP) (Europe)",
+    "region": "Europe",
+    "served_as": "ratchet-and-clank.17577.zip",
+    "listed_size": "35KB"
+  },
+  "format": "PS3 Virtual Memory Card export (.PSV): '\\0VSP' header, PS2 save type 2, 349636 bytes, folder BESCES-50916RATCHET, 8 files, 348996 bytes of file data",
+  "files": {
+    "BESCES-5091652415443484554.PSV": {
+      "size": 349636,
+      "sha1": "c153b1119c9913b629a834a35bf013f9af1fd882"
+    }
+  },
+  "save": {
+    "folder": "BESCES-50916RATCHET",
+    "title": [
+      "Ratchet & Clank",
+      ""
+    ],
+    "times": "as the file stores them (PS2 card times, JST)",
+    "files": [
+      {
+        "name": "icon.sys",
+        "size": 964,
+        "sha1": "8cca25cff703c3c9cbbbd4faca65b879480c0f26",
+        "created": "2007-10-19 03:22:16",
+        "modified": "2007-10-19 03:22:16"
+      },
+      {
+        "name": "static.ico",
+        "size": 33112,
+        "sha1": "7444235f8f59b7be18a84ce258746381e06164ca",
+        "created": "2007-10-19 03:22:16",
+        "modified": "2007-10-19 03:22:16"
+      },
+      {
+        "name": "save0.bin",
+        "size": 59912,
+        "sha1": "c21e071ee4b5171df2d9dce99424fd903091ac92",
+        "created": "2007-10-19 03:22:16",
+        "modified": "2007-10-19 03:22:16"
+      },
+      {
+        "name": "save1.bin",
+        "size": 59912,
+        "sha1": "4a01e2b5993187b3bb4626a717cb132133755fee",
+        "created": "2007-10-19 03:22:16",
+        "modified": "2007-10-19 03:22:16"
+      },
+      {
+        "name": "save2.bin",
+        "size": 59912,
+        "sha1": "edba02a3cff668f7d367c8d1139db9e19c5c0ad8",
+        "created": "2007-10-19 03:22:16",
+        "modified": "2007-10-19 03:22:16"
+      },
+      {
+        "name": "save3.bin",
+        "size": 59912,
+        "sha1": "2609e729bbe1bc9f809db8ee4b236a2a6fbed685",
+        "created": "2007-10-19 03:22:16",
+        "modified": "2007-10-19 03:22:16"
+      },
+      {
+        "name": "save4.bin",
+        "size": 59912,
+        "sha1": "2609e729bbe1bc9f809db8ee4b236a2a6fbed685",
+        "created": "2007-10-19 03:22:16",
+        "modified": "2007-10-19 03:22:16"
+      },
+      {
+        "name": "BESCES-50916RATCHET",
+        "size": 15360,
+        "sha1": "8ff2c77f62987a0927f53e891eb47628a1f03b96",
+        "created": "2007-10-19 03:22:16",
+        "modified": "2007-10-19 03:22:16"
+      }
+    ]
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": null,
+    "converted_with": "tools/gamefaqs/ps2-card.py 'BESCES-5091652415443484554.PSV' -o OUT: reads the save with mymcplus 3.0.5 and writes OUT/Mcd001.ps2 (an 8 MiB card with ECC, formatted and filled by mymcplus) for lrps2/pcee2/pcsx2, and OUT/mc0/<folder>/ for Play!",
+    "converted": {
+      "Mcd001.ps2": {
+        "size": 8650752,
+        "sha1": "3e4fe0be19850dd3567fc02e4832b41e62dd629c"
+      },
+      "mc0/BESCES-50916RATCHET/": {
+        "icon.sys": {
+          "size": 964,
+          "sha1": "8cca25cff703c3c9cbbbd4faca65b879480c0f26"
+        },
+        "static.ico": {
+          "size": 33112,
+          "sha1": "7444235f8f59b7be18a84ce258746381e06164ca"
+        },
+        "save0.bin": {
+          "size": 59912,
+          "sha1": "c21e071ee4b5171df2d9dce99424fd903091ac92"
+        },
+        "save1.bin": {
+          "size": 59912,
+          "sha1": "4a01e2b5993187b3bb4626a717cb132133755fee"
+        },
+        "save2.bin": {
+          "size": 59912,
+          "sha1": "edba02a3cff668f7d367c8d1139db9e19c5c0ad8"
+        },
+        "save3.bin": {
+          "size": 59912,
+          "sha1": "2609e729bbe1bc9f809db8ee4b236a2a6fbed685"
+        },
+        "save4.bin": {
+          "size": 59912,
+          "sha1": "2609e729bbe1bc9f809db8ee4b236a2a6fbed685"
+        },
+        "BESCES-50916RATCHET": {
+          "size": 15360,
+          "sha1": "8ff2c77f62987a0927f53e891eb47628a1f03b96"
+        }
+      },
+      "read_back": "work/ps2/tools/mcfs.py lists every file with the size and SHA-1 put on the card; one-saves (1saves convert + inspect) reads the card and finds BESCES-50916RATCHET",
+      "timestamps": "what the save does not date is 2000-01-01 00:00:00 (JST, as a card stores it); the card's own root entries too"
+    },
+    "script": null,
+    "cores": {
+      "pcee2": {
+        "result": "not-run",
+        "detail": "no image of Ratchet & Clank (Europe) (En,Fr,De,Es,It) in the library"
+      },
+      "lrps2": {
+        "result": "not-run",
+        "detail": "no image of Ratchet & Clank (Europe) (En,Fr,De,Es,It) in the library"
+      },
+      "play": {
+        "result": "not-run",
+        "detail": "no image of Ratchet & Clank (Europe) (En,Fr,De,Es,It) in the library"
+      },
+      "pcsx2": {
+        "result": "not-run",
+        "detail": "no image of Ratchet & Clank (Europe) (En,Fr,De,Es,It) in the library"
+      },
+      "armsx2": {
+        "result": "not-run",
+        "detail": "ARMSX2 renders only through Vulkan here and falls back to a null GS (no picture), so nothing shows what the game read (ps2/NOTES.md)"
+      }
+    },
+    "proof_order": []
+  },
+  "note": null
+}

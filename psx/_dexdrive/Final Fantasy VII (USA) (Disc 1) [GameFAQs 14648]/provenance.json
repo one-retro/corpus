@@ -1,0 +1,84 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_dexdrive",
+  "url": "https://gamefaqs.gamespot.com/ps/197341-final-fantasy-vii/saves/14648",
+  "source_page": "https://gamefaqs.gamespot.com/ps/197341-final-fantasy-vii/saves",
+  "source": "GameFAQs (section 'PlayStation DexDrive Save (North America)')",
+  "author": "den_b7",
+  "licence": null,
+  "posted": "2007-03-23",
+  "fetched": "2026-11-05",
+  "what_it_is": "Save slot 02 - Saved at Wall Market, have all key items necessary for Don Corneo to pick Cloud. Proceed to the dressing room in the dress store then go to Don Corneo's mansion.",
+  "gamefaqs": {
+    "id": 14648,
+    "product": "Final Fantasy VII",
+    "section": "PlayStation DexDrive Save (North America)",
+    "region": "North America",
+    "served_as": "final-fantasy-vii.14648.gme",
+    "listed_size": "131KB"
+  },
+  "format": "DexDrive .gme layout (134976 bytes: 3904-byte header + 131072-byte card) with the header zeroed, no '123-456-STD'; the card holds 1 save(s), 1 for this game (BASCUS-94163FF7-S02)",
+  "release": "Final Fantasy VII (USA) (Disc 1)",
+  "game_saves": [
+    {
+      "name": "BASCUS-94163FF7-S02",
+      "blocks": 1,
+      "title": "FF7/SAVE02/01:34"
+    }
+  ],
+  "files": {
+    "final-fantasy-vii.14648.gme": {
+      "size": 134976,
+      "sha1": "75e5c7e2a14ddf4e72d86647d0207413abe3e1c2"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Final Fantasy VII (USA) (Disc 1).cue",
+      "sha1": "c8df949f13d990d325ac3b8d6eb835c440380e52",
+      "size": 98
+    },
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr final-fantasy-vii.14648.gme: unwraps the card (DexDrive .gme layout with a blank header (no 123-456-STD))",
+    "converted": {
+      "size": 131072,
+      "sha1": "913dd7947643c2ce9ea1dd0086ad3244596652cc"
+    },
+    "script": "scripts/psx/Final Fantasy VII.load.txt",
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "loads",
+        "detail": "Slot 1 lists file 2: Cloud, Level 99, 01:34, Wall Market"
+      },
+      "beetle-psx-hw": {
+        "result": "loads",
+        "detail": "Slot 1 lists file 2: Cloud, Level 99, 01:34, Wall Market (the same screen as on beetle-psx)"
+      },
+      "pcsx-rearmed": {
+        "result": "loads",
+        "detail": "Slot 1 lists file 2: Cloud, Level 99, 01:34, Wall Market (the same screen as on beetle-psx)"
+      },
+      "swanstation": {
+        "result": "loads",
+        "detail": "Slot 1 lists file 2: Cloud, Level 99, 01:34, Wall Market (the same screen as on beetle-psx)"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": [
+      "beetle-psx",
+      "beetle-psx-hw",
+      "pcsx-rearmed",
+      "swanstation"
+    ]
+  },
+  "note": "one-saves (1saves convert) does not read this file: a PS1 memory card is 131072 bytes, or that behind a DexDrive, VGS or PSP header, but this file is 134976 bytes"
+}

@@ -1,0 +1,133 @@
+{
+  "method": "downloaded",
+  "system": "ps2",
+  "core": "_x-port",
+  "url": "https://gamefaqs.gamespot.com/gamecube/926672-shadow-the-hedgehog/saves/32290",
+  "source_page": "https://gamefaqs.gamespot.com/gamecube/926672-shadow-the-hedgehog/saves",
+  "source": "GameFAQs (section 'PlayStation2 X-Port Save (Europe)')",
+  "author": "Oyenn",
+  "licence": null,
+  "posted": "2025-05-30",
+  "fetched": "2026-11-05",
+  "what_it_is": "All 326 Paths,All A Ranks, All Keys, Expert Mode Unlocked, Last Story Unlocked (French translation having issues so some paths have the same number in Library)",
+  "gamefaqs": {
+    "id": 32290,
+    "product": "Shadow the Hedgehog",
+    "section": "PlayStation2 X-Port Save (Europe)",
+    "region": "Europe",
+    "served_as": "shadow-the-hedgehog.32290.xps",
+    "listed_size": "150KB"
+  },
+  "format": "SharkPort / X-Port save: 'SharkPortSave' header (title 'SHADOWTHE HEDGEHOG', date 'SHADOWTHE HEDGEHOG', comment 'Made using file converter by ffgriever'), folder BESLES-53542, 5 files, 152556 bytes of file data, 4-byte checksum at the end",
+  "files": {
+    "shadow-the-hedgehog.32290.xps": {
+      "size": 154171,
+      "sha1": "3b04cd019c721421712755eb33fb161be96f2f1f"
+    }
+  },
+  "save": {
+    "folder": "BESLES-53542",
+    "title": [
+      "SHADOW",
+      "THE HEDGEHOG"
+    ],
+    "times": "as the file stores them (PS2 card times, JST)",
+    "files": [
+      {
+        "name": "BESLES-53542",
+        "size": 8192,
+        "sha1": "b81702cfd3e9b30b3dc998dafb463ac3c3cf2a1a",
+        "created": "2025-03-15 07:34:31",
+        "modified": "2025-03-15 07:34:32"
+      },
+      {
+        "name": "LIST.ICO",
+        "size": 47800,
+        "sha1": "8657b8abbe2099d345ee3b57cc111ef97ceec4fc",
+        "created": "2025-03-15 07:34:32",
+        "modified": "2025-03-15 07:34:33"
+      },
+      {
+        "name": "COPY.ICO",
+        "size": 47800,
+        "sha1": "8657b8abbe2099d345ee3b57cc111ef97ceec4fc",
+        "created": "2025-03-15 07:34:34",
+        "modified": "2025-03-15 07:34:35"
+      },
+      {
+        "name": "DEL.ICO",
+        "size": 47800,
+        "sha1": "8657b8abbe2099d345ee3b57cc111ef97ceec4fc",
+        "created": "2025-03-15 07:34:35",
+        "modified": "2025-03-15 07:34:37"
+      },
+      {
+        "name": "icon.sys",
+        "size": 964,
+        "sha1": "6b5c86b31e6eb1dd663fdbb26715eb641184158d",
+        "created": "2025-03-15 07:34:37",
+        "modified": "2025-03-15 07:34:38"
+      }
+    ]
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": null,
+    "converted_with": "tools/gamefaqs/ps2-card.py 'shadow-the-hedgehog.32290.xps' -o OUT: reads the save with mymcplus 3.0.5 and writes OUT/Mcd001.ps2 (an 8 MiB card with ECC, formatted and filled by mymcplus) for lrps2/pcee2/pcsx2, and OUT/mc0/<folder>/ for Play!",
+    "converted": {
+      "Mcd001.ps2": {
+        "size": 8650752,
+        "sha1": "bc09e4d4321135e5c16ff7d1480bad7cc6d6b0f4"
+      },
+      "mc0/BESLES-53542/": {
+        "BESLES-53542": {
+          "size": 8192,
+          "sha1": "b81702cfd3e9b30b3dc998dafb463ac3c3cf2a1a"
+        },
+        "LIST.ICO": {
+          "size": 47800,
+          "sha1": "8657b8abbe2099d345ee3b57cc111ef97ceec4fc"
+        },
+        "COPY.ICO": {
+          "size": 47800,
+          "sha1": "8657b8abbe2099d345ee3b57cc111ef97ceec4fc"
+        },
+        "DEL.ICO": {
+          "size": 47800,
+          "sha1": "8657b8abbe2099d345ee3b57cc111ef97ceec4fc"
+        },
+        "icon.sys": {
+          "size": 964,
+          "sha1": "6b5c86b31e6eb1dd663fdbb26715eb641184158d"
+        }
+      },
+      "read_back": "work/ps2/tools/mcfs.py lists every file with the size and SHA-1 put on the card; one-saves (1saves convert + inspect) reads the card and finds BESLES-53542",
+      "timestamps": "what the save does not date is 2000-01-01 00:00:00 (JST, as a card stores it); the card's own root entries too"
+    },
+    "script": null,
+    "cores": {
+      "pcee2": {
+        "result": "not-run",
+        "detail": "no image of Shadow the Hedgehog (Europe, Australia) (En,Fr,De,Es,It) in the library"
+      },
+      "lrps2": {
+        "result": "not-run",
+        "detail": "no image of Shadow the Hedgehog (Europe, Australia) (En,Fr,De,Es,It) in the library"
+      },
+      "play": {
+        "result": "not-run",
+        "detail": "no image of Shadow the Hedgehog (Europe, Australia) (En,Fr,De,Es,It) in the library"
+      },
+      "pcsx2": {
+        "result": "not-run",
+        "detail": "no image of Shadow the Hedgehog (Europe, Australia) (En,Fr,De,Es,It) in the library"
+      },
+      "armsx2": {
+        "result": "not-run",
+        "detail": "ARMSX2 renders only through Vulkan here and falls back to a null GS (no picture), so nothing shows what the game read (ps2/NOTES.md)"
+      }
+    },
+    "proof_order": []
+  },
+  "note": "The header's comment reads 'Made using file converter by ffgriever': a PC tool rebuilt this file; the format is SharkPort/X-Port's."
+}

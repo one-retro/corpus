@@ -1,0 +1,119 @@
+{
+  "method": "downloaded",
+  "system": "gba",
+  "core": "_action-replay",
+  "url": "https://gamefaqs.gamespot.com/gba/918915-pokemon-firered-version/saves/5471",
+  "source_page": "https://gamefaqs.gamespot.com/gba/918915-pokemon-firered-version/saves",
+  "source": "GameFAQs (section 'GameBoy Advance Pro Action Replay Save (North America)')",
+  "author": "Joseph881",
+  "licence": null,
+  "posted": "2004-11-28",
+  "fetched": "2026-11-05",
+  "what_it_is": "Name: Joseph, Game Fully Completed, All 386 Pokemon in Pokedex, All legendaries and strong PKMN in \"Party\" box",
+  "gamefaqs": {
+    "id": 5471,
+    "product": "Pokemon FireRed / LeafGreen Version",
+    "section": "GameBoy Advance Pro Action Replay Save (North America)",
+    "region": "North America",
+    "served_as": "pokemon-firered-leafgreen-version.5471.xps",
+    "listed_size": "64KB"
+  },
+  "format": "SharkPort save (\"SharkPortSave\", kind 0x000F0000): title \"POKEMON LEAF\", date \"Save11/24/2004 5:29:07 PM 41\", notes \"\"; cart header \"POKEMON LEAF\" / 'BPGE' (complement 0x81); payload 65536 bytes; checksum: unsigned",
+  "files": {
+    "pokemon-firered-leafgreen-version.5471.xps": {
+      "size": 65645,
+      "sha1": "5418e1a8cd4688163af4711044673ef220f67ee8"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Pokemon - LeafGreen Version (USA).gba",
+      "sha1": "574fa542ffebb14be69902d1d36f1ec0a4afd71e",
+      "size": 16777216
+    },
+    "converted_with": "tools/gamefaqs/gba-sharkport.py pokemon-firered-leafgreen-version.5471.xps --rom ROM --core CORE --outdir DIR: reads the SharkPort container as mGBA does and imports the payload as mGBA's _importSavedata does (cut to the chip, EEPROM 8-byte blocks reversed, the rest of the chip erased), then lays the chip out as the core keeps it",
+    "converted": {
+      "size": 131072,
+      "sha1": "fbebcf46f3a78b5e517b6bd8b9d769451b5d8e73"
+    },
+    "script": "scripts/gba/Pokemon - FireRed Version.load.txt",
+    "cores": {
+      "mgba": {
+        "result": "loads",
+        "detail": "\"The save file is corrupt(ed). The previous save file will be loaded.\", then CONTINUE: Joseph, 0:23 (the older of the two copies)",
+        "core_version": "mGBA 0.11-212-7a12d6d",
+        "file": {
+          "name": "Pokemon - LeafGreen Version (USA).srm",
+          "size": 131072,
+          "sha1": "fbebcf46f3a78b5e517b6bd8b9d769451b5d8e73"
+        },
+        "frame": "next2"
+      },
+      "vba-m": {
+        "result": "loads",
+        "detail": "\"The save file is corrupt(ed). The previous save file will be loaded.\", then CONTINUE: Joseph, 0:23 (the older of the two copies)",
+        "core_version": "VBA-M 115defb",
+        "file": {
+          "name": "Pokemon - LeafGreen Version (USA).srm",
+          "size": 131072,
+          "sha1": "fbebcf46f3a78b5e517b6bd8b9d769451b5d8e73"
+        },
+        "frame": "next2"
+      },
+      "gpsp": {
+        "result": "loads",
+        "detail": "\"The save file is corrupt(ed). The previous save file will be loaded.\", then CONTINUE: Joseph, 0:23 (the older of the two copies)",
+        "core_version": "gpSP v1.1.0-5819380",
+        "file": {
+          "name": "Pokemon - LeafGreen Version (USA).srm",
+          "size": 131072,
+          "sha1": "fbebcf46f3a78b5e517b6bd8b9d769451b5d8e73"
+        },
+        "frame": "next2"
+      },
+      "vba-next": {
+        "result": "loads",
+        "detail": "\"The save file is corrupt(ed). The previous save file will be loaded.\", then CONTINUE: Joseph, 0:23 (the older of the two copies)",
+        "core_version": "VBA Next v1.0.2",
+        "file": {
+          "name": "Pokemon - LeafGreen Version (USA).srm",
+          "size": 139264,
+          "sha1": "f124c36912bbf465f775987f37f51dae30789991"
+        },
+        "frame": "next2"
+      },
+      "beetle-gba": {
+        "result": "loads",
+        "detail": "\"The save file is corrupt(ed). The previous save file will be loaded.\", then CONTINUE: Joseph, 0:23 (the older of the two copies)",
+        "core_version": "Beetle GBA v0.9.36 b158166",
+        "file": {
+          "name": "Pokemon - LeafGreen Version (USA).612ca9473451fa42b51d1711031ed5f6.sav",
+          "size": 131072,
+          "sha1": "fbebcf46f3a78b5e517b6bd8b9d769451b5d8e73"
+        },
+        "frame": "next2"
+      },
+      "skyemu": {
+        "result": "loads",
+        "detail": "\"The save file is corrupt(ed). The previous save file will be loaded.\", then CONTINUE: Joseph, 0:23 (the older of the two copies)",
+        "core_version": "SkyEmu adacd0788964ed89f5c43dcbc1f3cc26deec996c",
+        "file": {
+          "name": "Pokemon - LeafGreen Version (USA).srm",
+          "size": 131072,
+          "sha1": "fbebcf46f3a78b5e517b6bd8b9d769451b5d8e73"
+        },
+        "frame": "next2"
+      }
+    },
+    "proof_order": [
+      "mgba",
+      "vba-m",
+      "gpsp",
+      "vba-next",
+      "beetle-gba",
+      "skyemu"
+    ]
+  },
+  "note": "The GameShark copied only the first 64 KiB of the 128 KiB flash; imported as mGBA does, the second half of the chip stays erased."
+}

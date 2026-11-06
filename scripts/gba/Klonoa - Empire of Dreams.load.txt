@@ -1,0 +1,8 @@
+# Load check for a save made elsewhere (tools/GAMEFAQS.md): power on and go to
+# Select a Save file: each file's world, vision and lives.
+wait 900
+press start 6
+wait 300
+press start 6       # title -> Select a Save file
+wait 300
+shot files

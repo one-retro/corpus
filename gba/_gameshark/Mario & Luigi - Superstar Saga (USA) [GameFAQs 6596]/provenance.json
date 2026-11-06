@@ -1,0 +1,119 @@
+{
+  "method": "downloaded",
+  "system": "gba",
+  "core": "_gameshark",
+  "url": "https://gamefaqs.gamespot.com/gba/914980-mario-and-luigi-superstar-saga/saves/6596",
+  "source_page": "https://gamefaqs.gamespot.com/gba/914980-mario-and-luigi-superstar-saga/saves",
+  "source": "GameFAQs (section 'GameBoy Advance GameShark Save (North America)')",
+  "author": "Sangogi",
+  "licence": null,
+  "posted": "2005-03-02",
+  "fetched": "2026-11-05",
+  "what_it_is": "Almost all armor and badges. All accesories. Both in level 44. Great status. Lots of items. Saved in Bowser Castle.",
+  "gamefaqs": {
+    "id": 6596,
+    "product": "Mario & Luigi: Superstar Saga",
+    "section": "GameBoy Advance GameShark Save (North America)",
+    "region": "North America",
+    "served_as": "mario-and-luigi-superstar-saga.6596.sps",
+    "listed_size": "64KB"
+  },
+  "format": "SharkPort save (\"SharkPortSave\", kind 0x000F0000): title \"MARIO&LUIGIU\", date \"24/02/05 02:05:28 a.m.\", notes \"\"; cart header \"MARIO&LUIGIU\" / 'A88E' (complement 0x8d); payload 65536 bytes; checksum: signed",
+  "files": {
+    "mario-and-luigi-superstar-saga.6596.sps": {
+      "size": 65639,
+      "sha1": "37e2c5b43656d6942471881af016b9f29277c7ff"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Mario & Luigi - Superstar Saga (USA).gba",
+      "sha1": "7c303cdde5061ee329296948060b875cb50ba410",
+      "size": 16777216
+    },
+    "converted_with": "tools/gamefaqs/gba-sharkport.py mario-and-luigi-superstar-saga.6596.sps --rom ROM --core CORE --outdir DIR: reads the SharkPort container as mGBA does and imports the payload as mGBA's _importSavedata does (cut to the chip, EEPROM 8-byte blocks reversed, the rest of the chip erased), then lays the chip out as the core keeps it",
+    "converted": {
+      "size": 8192,
+      "sha1": "08963d67580d79ff2f22a8cb52b1fe5dd2a74564"
+    },
+    "script": "scripts/gba/Mario & Luigi - Superstar Saga.load.txt",
+    "cores": {
+      "mgba": {
+        "result": "rejected",
+        "detail": "empty file screen (Start Game / Cancel, 00:00): payload in emulator byte order, scrambled by the GameShark reversal",
+        "core_version": "mGBA 0.11-212-7a12d6d",
+        "file": {
+          "name": "Mario & Luigi - Superstar Saga (USA).srm",
+          "size": 8192,
+          "sha1": "08963d67580d79ff2f22a8cb52b1fe5dd2a74564"
+        },
+        "frame": "files"
+      },
+      "vba-m": {
+        "result": "rejected",
+        "detail": "empty file screen (Start Game / Cancel, 00:00): payload in emulator byte order, scrambled by the GameShark reversal",
+        "core_version": "VBA-M 115defb",
+        "file": {
+          "name": "Mario & Luigi - Superstar Saga (USA).srm",
+          "size": 8192,
+          "sha1": "08963d67580d79ff2f22a8cb52b1fe5dd2a74564"
+        },
+        "frame": "files"
+      },
+      "gpsp": {
+        "result": "rejected",
+        "detail": "empty file screen (Start Game / Cancel, 00:00): payload in emulator byte order, scrambled by the GameShark reversal",
+        "core_version": "gpSP v1.1.0-5819380",
+        "file": {
+          "name": "Mario & Luigi - Superstar Saga (USA).srm",
+          "size": 131072,
+          "sha1": "490b38e7e47d1d6859456464bd09e4fdccf43dbc"
+        },
+        "frame": "files"
+      },
+      "vba-next": {
+        "result": "rejected",
+        "detail": "empty file screen (Start Game / Cancel, 00:00): payload in emulator byte order, scrambled by the GameShark reversal",
+        "core_version": "VBA Next v1.0.2",
+        "file": {
+          "name": "Mario & Luigi - Superstar Saga (USA).srm",
+          "size": 139264,
+          "sha1": "5e646b5cbf22c6b7bfd585d4cbb578c3bb93a978"
+        },
+        "frame": "files"
+      },
+      "beetle-gba": {
+        "result": "rejected",
+        "detail": "empty file screen (Start Game / Cancel, 00:00): payload in emulator byte order, scrambled by the GameShark reversal",
+        "core_version": "Beetle GBA v0.9.36 b158166",
+        "file": {
+          "name": "Mario & Luigi - Superstar Saga (USA).4b1a5897d89d9e74ec7f630eefdfd435.eep",
+          "size": 8192,
+          "sha1": "08963d67580d79ff2f22a8cb52b1fe5dd2a74564"
+        },
+        "frame": "files"
+      },
+      "skyemu": {
+        "result": "rejected",
+        "detail": "empty file screen (Start Game / Cancel, 00:00): payload in emulator byte order, scrambled by the GameShark reversal",
+        "core_version": "SkyEmu adacd0788964ed89f5c43dcbc1f3cc26deec996c",
+        "file": {
+          "name": "Mario & Luigi - Superstar Saga (USA).srm",
+          "size": 131072,
+          "sha1": "357fee97211d73954f1c20d58867dc4ed6cdc61d"
+        },
+        "frame": "files"
+      }
+    },
+    "proof_order": [
+      "mgba",
+      "vba-m",
+      "gpsp",
+      "vba-next",
+      "beetle-gba",
+      "skyemu"
+    ]
+  },
+  "note": "The EEPROM payload is in emulator byte order (the order mGBA, VBA-M and a raw .sav use; text such as \"ADLEZBGA\" reads backwards per 8 bytes), not the GameShark order, so mGBA's import (which reverses each 8-byte block) scrambles it; taken as is instead, mGBA shows it: 2481 coins, 15:08, levels 44/44, Bowser's Castle Great Door."
+}

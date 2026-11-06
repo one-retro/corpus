@@ -1,0 +1,9 @@
+# Load check for a save made elsewhere (tools/GAMEFAQS.md): power on and go to
+# the save select: SAVE A and SAVE B with the level reached, jewels, money,
+# CDs and difficulty.
+wait 1200
+press start 6       # intro -> title (PUSH START)
+wait 600
+press start 6       # title -> save select
+wait 300
+shot files

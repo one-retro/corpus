@@ -1,0 +1,23 @@
+# Load check for a save made elsewhere (tools/GAMEFAQS.md): power on, get past
+# the solar sensor calibration and the clock (kept as read), and go to the
+# data screen, which shows DATA.1-3 with name and place.
+wait 900
+press start 6       # skip the logos
+wait 300
+press start 6
+wait 300
+press a 6           # SOLAR SENSOR SETTING: calibrate
+wait 200
+press start 6       # TIME SETTING: END
+wait 600
+press start 6       # Konami
+wait 300
+press start 6       # caution
+wait 300
+press start 6       # title: PUSH START
+wait 300
+press start 6       # GAME START
+wait 300
+press start 6       # the data screen
+wait 300
+shot data

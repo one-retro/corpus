@@ -1,0 +1,77 @@
+{
+  "method": "downloaded",
+  "system": "n64",
+  "core": "_unknown",
+  "url": "https://gamefaqs.gamespot.com/n64/191702-donkey-kong-64/saves/32471",
+  "source_page": "https://gamefaqs.gamespot.com/n64/191702-donkey-kong-64/saves",
+  "source": "GameFAQs (section 'Nintendo 64 DexDrive Save (North America)')",
+  "author": "Vigor2025",
+  "licence": null,
+  "posted": "2025-07-09",
+  "fetched": "2026-11-05",
+  "what_it_is": "137 Golden Bananas 66%16:01Start of Crystal CavesFor those that don’t want a 100% save like every other file lol",
+  "gamefaqs": {
+    "id": 32471,
+    "product": "Donkey Kong 64",
+    "section": "Nintendo 64 DexDrive Save (North America)",
+    "region": "North America",
+    "served_as": "donkey-kong-64.32471.n64",
+    "listed_size": "2KB"
+  },
+  "format": "raw 16 Kbit EEPROM, 2048 bytes, console byte order; nothing in it names the program that wrote it",
+  "files": {
+    "donkey-kong-64.32471.n64": {
+      "size": 2048,
+      "sha1": "29c909483e3629511dc09d2d451fa96040649850"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "converted_with": "tools/gamefaqs/n64-dexdrive.py convert donkey-kong-64.32471.n64 OUT --raw eeprom: raw EEPROM, 2048 bytes, console order",
+    "converted": {
+      "size": 296960,
+      "sha1": "d495b3831fd551c713d492d6d2085c20edf54dd2"
+    },
+    "converted_standalone": {
+      "files": {
+        "save.eep": {
+          "size": 2048,
+          "sha1": "29c909483e3629511dc09d2d451fa96040649850"
+        }
+      },
+      "how": "the same bytes as the .srm regions, as standalone Mupen64Plus keeps them: <GoodName (32 chars)>-<MD5 8>.eep/.sra/.fla/.mpk in its save folder"
+    },
+    "rom": {
+      "name": "Donkey Kong 64 (USA).z64",
+      "sha1": "cf806ff2603640a748fca5026ded28802f1f4a50",
+      "size": 33554432
+    },
+    "script": "scripts/n64/Donkey Kong 64.load.txt",
+    "baseline": "with no save: the file barrel reads EMPTY, and A starts a new game (GAME 1, 0%, 000:00)",
+    "cores": {
+      "mupen64plus-next": {
+        "result": "loads",
+        "detail": "file barrel GAME 1, then 66%, 137 golden bananas, 016:00, all five Kongs: as described (137 bananas, 66%, 16:01)"
+      },
+      "parallel-n64": {
+        "result": "loads",
+        "detail": "file barrel GAME 1, then 66%, 137 golden bananas, 016:00, all five Kongs: as described (137 bananas, 66%, 16:01)"
+      },
+      "mupen64plus": {
+        "result": "loads",
+        "detail": "file barrel GAME 1, then 66%, 137 golden bananas, 016:00, all five Kongs: as described (137 bananas, 66%, 16:01)"
+      }
+    },
+    "core_versions": {
+      "mupen64plus": "Mupen64Plus 2.6.0 (Homebrew), glide64mk2 video, rsp-hle",
+      "mupen64plus-next": "Mupen64Plus-Next 3.0-Vulkan 15bada8",
+      "parallel-n64": "ParaLLEl N64 1.0 e8cbdbb"
+    },
+    "proof_order": [
+      "mupen64plus-next",
+      "parallel-n64",
+      "mupen64plus"
+    ]
+  },
+  "note": "Posted as a DexDrive save; it is a raw 16 Kbit EEPROM (2048 bytes) with no container, from an emulator, flash cart or cart reader that the bytes do not identify."
+}

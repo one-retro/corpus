@@ -1,0 +1,110 @@
+{
+  "method": "downloaded",
+  "system": "nds",
+  "core": "_action-replay-ds",
+  "url": "https://gamefaqs.gamespot.com/ds/960099-pokemon-heartgold-version/saves/35731",
+  "source_page": "https://gamefaqs.gamespot.com/ds/960099-pokemon-heartgold-version/saves",
+  "source": "GameFAQs (section 'Action Replay Max DS (.duc) Game Save (North America)')",
+  "author": "Memory-",
+  "licence": null,
+  "posted": "2026-10-26",
+  "fetched": "2026-11-05",
+  "what_it_is": "(100% Absolute Completion) SoulSilver. Black trainer card, event flags/can fight all legends, max items. In boxes(shiny if possible): all legends, all final evos, colo/XD mons, ditto breeding, all unown, rare/move events, frontier teams.",
+  "gamefaqs": {
+    "id": 35731,
+    "product": "Pokemon HeartGold / SoulSilver Version",
+    "section": "Action Replay Max DS (.duc) Game Save (North America)",
+    "region": "North America",
+    "served_as": "pokemon-heartgold-soulsilver-version.35731.duc",
+    "listed_size": "512KB"
+  },
+  "format": "Action Replay DS save: the 500-byte 'ARDS000000000001' header written by a converter ('Converted Saves' / 'Converted Save' / 'Conversion code by UniqueGeeks.Net'), then 512 KiB raw for the 512 KiB flash (exact size)",
+  "files": {
+    "pokemon-heartgold-soulsilver-version.35731.duc": {
+      "size": 524788,
+      "sha1": "3876f2bdb3f50562c34155acd2e1af5581fd9e65"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Pokemon - SoulSilver Version (USA, Australia).nds",
+      "sha1": "0959fe9e64dc749382460f1ccf90996f5ef4088d",
+      "size": 134217728,
+      "note": "a dump of this game code whose sha1 is not in the No-Intro DAT (the area after the used ROM size is blank); the region in the name is a guess"
+    },
+    "converted_with": "tools/gamefaqs/nds-ards.py IN step0.bin, then tools/gamefaqs/nds-cores.py step0.bin --chip 524288 --stem 'Pokemon - SoulSilver Version (USA, Australia)' --out DIR: drops the Action Replay header; fits it to the 524288-byte chip (exact size) and writes each core's file",
+    "converted": {
+      "size": 524288,
+      "sha1": "c379d88b213aa16fd524dc18ef1ce555135b86b2"
+    },
+    "core_files": {
+      "desmume": {
+        "name": "Pokemon - SoulSilver Version (USA, Australia).dsv",
+        "size": 524410,
+        "sha1": "9ba79759590e68bf063419387e927f4eb5848786"
+      },
+      "desmume-2015": {
+        "name": "Pokemon - SoulSilver Version (USA, Australia).dsv",
+        "size": 524410,
+        "sha1": "9ba79759590e68bf063419387e927f4eb5848786"
+      },
+      "melonds": {
+        "name": "Pokemon - SoulSilver Version (USA, Australia).sav",
+        "size": 524288,
+        "sha1": "c379d88b213aa16fd524dc18ef1ce555135b86b2"
+      },
+      "melonds-ds": {
+        "name": "Pokemon - SoulSilver Version (USA, Australia).srm",
+        "size": 524288,
+        "sha1": "c379d88b213aa16fd524dc18ef1ce555135b86b2"
+      },
+      "noods": {
+        "name": "Pokemon - SoulSilver Version (USA, Australia).sav",
+        "size": 524288,
+        "sha1": "c379d88b213aa16fd524dc18ef1ce555135b86b2"
+      },
+      "skyemu": {
+        "name": "Pokemon - SoulSilver Version (USA, Australia).srm",
+        "size": 8388608,
+        "sha1": "74610a8f8619513f75143795b245e7a786ba1940"
+      }
+    },
+    "script": "scripts/nds/Pokemon - SoulSilver Version.load.txt",
+    "cores": {
+      "desmume": {
+        "result": "loads",
+        "detail": "CONTINUE: PLAYER Memory (girl), TIME 999:59, BADGES 16, POKéDEX 493"
+      },
+      "desmume-2015": {
+        "result": "loads",
+        "detail": "CONTINUE: PLAYER Memory (girl), TIME 999:59, BADGES 16, POKéDEX 493"
+      },
+      "melonds": {
+        "result": "core-error",
+        "detail": "\"A communication error has occurred. You will be returned to the title screen.\" instead of the CONTINUE panel; the same happens with every HeartGold/SoulSilver save in this core (no BIOS or firmware here, FreeBIOS), so it is the core, not this save"
+      },
+      "melonds-ds": {
+        "result": "loads",
+        "detail": "CONTINUE: PLAYER Memory (girl), TIME 999:59, BADGES 16, POKéDEX 493"
+      },
+      "noods": {
+        "result": "loads",
+        "detail": "CONTINUE: PLAYER Memory (girl), TIME 999:59, BADGES 16, POKéDEX 493"
+      },
+      "skyemu": {
+        "result": "loads",
+        "detail": "CONTINUE: PLAYER Memory (girl), TIME 999:59, BADGES 16, POKéDEX 493"
+      }
+    },
+    "proof_order": [
+      "desmume",
+      "desmume-2015",
+      "melonds",
+      "melonds-ds",
+      "noods",
+      "skyemu"
+    ]
+  },
+  "note": "Release: HeartGold/SoulSilver layout, English; SoulSilver from the description (the Pokemon are all traded)."
+}

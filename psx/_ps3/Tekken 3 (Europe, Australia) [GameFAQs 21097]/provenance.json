@@ -1,0 +1,79 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_ps3",
+  "url": "https://gamefaqs.gamespot.com/arcade/563192-tekken-3/saves/21097",
+  "source_page": "https://gamefaqs.gamespot.com/arcade/563192-tekken-3/saves",
+  "source": "GameFAQs (section 'PlayStation PS3 Virtual Memory Card Save (ZIP) (Europe)')",
+  "author": "AkuAku96",
+  "licence": null,
+  "posted": "2010-09-27",
+  "fetched": "2026-11-05",
+  "what_it_is": "Tekken 3 Save Game for PS3 with ALL!!!",
+  "gamefaqs": {
+    "id": 21097,
+    "product": "Tekken 3",
+    "section": "PlayStation PS3 Virtual Memory Card Save (ZIP) (Europe)",
+    "region": "Europe",
+    "served_as": "tekken-3.21097.zip",
+    "listed_size": "1KB",
+    "served_zip": {
+      "size": 1218,
+      "sha1": "2f4758ff4949ed1238b4099f05e65b0f49762c6f"
+    }
+  },
+  "format": "zip of 1 PS3 export(s) (.PSV): '\\0VSP' header (signature, save name at 0x64), the save's blocks from 0x84 (8324 bytes); it holds 1 save(s), 1 for this game (BESCES-01237TEKKEN-3)",
+  "release": "Tekken 3 (Europe, Australia)",
+  "game_saves": [
+    {
+      "name": "BESCES-01237TEKKEN-3",
+      "blocks": 1,
+      "title": "[TEKKEN 3] NEW BATTLES AWAIT!!"
+    }
+  ],
+  "files": {
+    "BESCES-0123754454B4B454E2D33.PSV": {
+      "size": 8324,
+      "sha1": "4a48c2a3f36655e4d976fa2c4ad37676dede05fa"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": null,
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr BESCES-0123754454B4B454E2D33.PSV: puts the save(s) on a freshly formatted card, as MemcardRex imports a single save",
+    "converted": {
+      "size": 131072,
+      "sha1": "2d67c5ad92d290f35d6ea76ab63e50507b7c8e09"
+    },
+    "script": null,
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "not-run",
+        "detail": "no image of Tekken 3 (Europe, Australia) in the library"
+      },
+      "beetle-psx-hw": {
+        "result": "not-run",
+        "detail": "no image of Tekken 3 (Europe, Australia) in the library"
+      },
+      "pcsx-rearmed": {
+        "result": "not-run",
+        "detail": "no image of Tekken 3 (Europe, Australia) in the library"
+      },
+      "swanstation": {
+        "result": "not-run",
+        "detail": "no image of Tekken 3 (Europe, Australia) in the library"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": []
+  },
+  "note": null
+}

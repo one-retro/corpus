@@ -1,0 +1,87 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_dexdrive",
+  "url": "https://gamefaqs.gamespot.com/ps/572387-air-combat/saves/27246",
+  "source_page": "https://gamefaqs.gamespot.com/ps/572387-air-combat/saves",
+  "source": "GameFAQs (section 'PlayStation DexDrive Save (North America)')",
+  "author": "Phoenix1379",
+  "licence": null,
+  "posted": "2020-10-24",
+  "fetched": "2026-11-05",
+  "what_it_is": "100% Completed, A lot of money, Stage select, all aircrafts, player and wingman without original paint, free wingman and unlimited aircrafts.",
+  "gamefaqs": {
+    "id": 27246,
+    "product": "Air Combat (1995)",
+    "section": "PlayStation DexDrive Save (North America)",
+    "region": "North America",
+    "served_as": "air-combat-1995.27246.gme",
+    "listed_size": "131KB"
+  },
+  "format": "DexDrive .gme: '123-456-STD' 3904-byte header (per-block comments) + 131072-byte raw card; the card holds 1 save(s), 1 for this game (BASLUS-00001AIRCOMB)",
+  "release": "Air Combat (USA)",
+  "game_saves": [
+    {
+      "name": "BASLUS-00001AIRCOMB",
+      "blocks": 1,
+      "title": "AIRCOMBAT"
+    }
+  ],
+  "files": {
+    "air-combat-1995.27246.gme": {
+      "size": 134976,
+      "sha1": "e69040f970cff4bfaf2da7f3fc5df469a5f70a09"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Air Combat (USA).cue",
+      "sha1": "6bb0056c230defaa52bc56e86c0f3c00e114b7d6",
+      "size": 6975
+    },
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr air-combat-1995.27246.gme: unwraps the card (DexDrive .gme: 3904-byte header + card)",
+    "converted": {
+      "size": 131072,
+      "sha1": "75704a0ee8f545a467b78b5ba40b490767f2f19e"
+    },
+    "script": "scripts/psx/Air Combat.load.txt",
+    "script_variants": {
+      "pcsx-rearmed": "scripts/psx/Air Combat.pcsx-rearmed.load.txt",
+      "swanstation": "scripts/psx/Air Combat.swanstation.load.txt"
+    },
+    "cores": {
+      "beetle-psx": {
+        "result": "loads",
+        "detail": "Load your squadron lists Sqdn 1: mission 17, F-4, 999999900 points, 1/07/38"
+      },
+      "beetle-psx-hw": {
+        "result": "loads",
+        "detail": "Load your squadron lists Sqdn 1: mission 17, F-4, 999999900 points, 1/07/38 (the same screen as on beetle-psx)"
+      },
+      "pcsx-rearmed": {
+        "result": "loads",
+        "detail": "Load your squadron lists Sqdn 1: mission 17, F-4, 999999900 points, 1/07/38 (the same screen as on beetle-psx)"
+      },
+      "swanstation": {
+        "result": "loads",
+        "detail": "Load your squadron lists Sqdn 1: mission 17, F-4, 999999900 points, 1/07/38 (the same screen as on beetle-psx)"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": [
+      "beetle-psx",
+      "beetle-psx-hw",
+      "pcsx-rearmed",
+      "swanstation"
+    ]
+  },
+  "note": null
+}

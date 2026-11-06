@@ -1,0 +1,146 @@
+{
+  "method": "downloaded",
+  "system": "snes",
+  "core": "_unknown",
+  "url": "https://gamefaqs.gamespot.com/pc88/604339-ys-iii-wanderers-from-ys/saves/26177",
+  "source_page": "https://gamefaqs.gamespot.com/pc88/604339-ys-iii-wanderers-from-ys/saves",
+  "source": "GameFAQs (section 'Wii VC Game Save File (North America)')",
+  "author": "OmegaVideoGameG",
+  "licence": null,
+  "posted": "2019-01-31",
+  "fetched": "2026-11-05",
+  "what_it_is": "YS 3 Ending Save, Final Boss Beat Ready For The Ending",
+  "gamefaqs": {
+    "id": 26177,
+    "product": "Ys III: Wanderers from Ys",
+    "section": "Wii VC Game Save File (North America)",
+    "region": "North America",
+    "served_as": "ys-iii-wanderers-from-ys.26177.bin",
+    "listed_size": "8KB"
+  },
+  "format": "raw SNES SRAM, 8192 bytes: the SNES Ys III's save (\"Wanderes from Ys (Ys-3) Programed by N.Fujisawa 91-04-24\" at 0x20, a string in the SNES ROM, not on the TurboGrafx-CD disc). Not a Wii data.bin; a decrypted VC savedata.bin and an emulator .srm would look the same",
+  "files": {
+    "ys-iii-wanderers-from-ys.26177.bin": {
+      "size": 8192,
+      "sha1": "8aad471afe2964b7ac64f09988fbc73902725721"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "converted_with": "none needed: the file is already the raw 8 KiB SRAM the SNES cores load; it was copied unchanged as <ROM stem>.srm",
+    "converted": {
+      "size": 8192,
+      "sha1": "8aad471afe2964b7ac64f09988fbc73902725721"
+    },
+    "rom": {
+      "name": "Ys III - Wanderers from Ys (USA).sfc",
+      "sha1": "0b677af3c10afc4cf4fee26225e70e3967f9b757",
+      "size": 1048576
+    },
+    "script": "scripts/snes/Ys III - Wanderers from Ys.load.txt",
+    "baseline": "with no save: Start begins a new game (Adol at 20 hit points, 0 experience)",
+    "cores": {
+      "snes9x": {
+        "result": "loads",
+        "detail": "LOAD MENU lists slot 1 \"ENTRANCE TO REDMONT\"; loading it: Adol at HIT POINT 255/255, RING 041, EXP 65535, GOLD 61597"
+      },
+      "snes9x-2010": {
+        "result": "loads",
+        "detail": "LOAD MENU lists slot 1 \"ENTRANCE TO REDMONT\"; loading it: Adol at HIT POINT 255/255, RING 041, EXP 65535, GOLD 61597"
+      },
+      "snes9x-2005-plus": {
+        "result": "loads",
+        "detail": "LOAD MENU lists slot 1 \"ENTRANCE TO REDMONT\"; loading it: Adol at HIT POINT 255/255, RING 041, EXP 65535, GOLD 61597"
+      },
+      "snes9x-2005": {
+        "result": "loads",
+        "detail": "LOAD MENU lists slot 1 \"ENTRANCE TO REDMONT\"; loading it: Adol at HIT POINT 255/255, RING 041, EXP 65535, GOLD 61597"
+      },
+      "snes9x-2002": {
+        "result": "loads",
+        "detail": "LOAD MENU lists slot 1 \"ENTRANCE TO REDMONT\"; loading it: Adol at HIT POINT 255/255, RING 041, EXP 65535, GOLD 61597"
+      },
+      "bsnes": {
+        "result": "loads",
+        "detail": "LOAD MENU lists slot 1 \"ENTRANCE TO REDMONT\"; loading it: Adol at HIT POINT 255/255, RING 041, EXP 65535, GOLD 61597"
+      },
+      "bsnes-hd-beta": {
+        "result": "loads",
+        "detail": "LOAD MENU lists slot 1 \"ENTRANCE TO REDMONT\"; loading it: Adol at HIT POINT 255/255, RING 041, EXP 65535, GOLD 61597"
+      },
+      "bsnes-mercury": {
+        "result": "loads",
+        "detail": "LOAD MENU lists slot 1 \"ENTRANCE TO REDMONT\"; loading it: Adol at HIT POINT 255/255, RING 041, EXP 65535, GOLD 61597"
+      },
+      "bsnes2014": {
+        "result": "loads",
+        "detail": "LOAD MENU lists slot 1 \"ENTRANCE TO REDMONT\"; loading it: Adol at HIT POINT 255/255, RING 041, EXP 65535, GOLD 61597"
+      },
+      "higan-super-famicom": {
+        "result": "loads",
+        "detail": "LOAD MENU lists slot 1 \"ENTRANCE TO REDMONT\"; loading it: Adol at HIT POINT 255/255, RING 041, EXP 65535, GOLD 61597"
+      },
+      "mednafen-bsnes": {
+        "result": "loads",
+        "detail": "LOAD MENU lists slot 1 \"ENTRANCE TO REDMONT\"; loading it: Adol at HIT POINT 255/255, RING 041, EXP 65535, GOLD 61597 (the core reads its own <stem>.srm from the save folder, and aborts with SIGABRT when unloaded, after the run, as in snes/NOTES.md)"
+      },
+      "mesen-s": {
+        "result": "loads",
+        "detail": "LOAD MENU lists slot 1 \"ENTRANCE TO REDMONT\"; loading it: Adol at HIT POINT 255/255, RING 041, EXP 65535, GOLD 61597"
+      },
+      "beetle-supafaust": {
+        "result": "loads",
+        "detail": "LOAD MENU lists slot 1 \"ENTRANCE TO REDMONT\"; loading it: Adol at HIT POINT 255/255, RING 041, EXP 65535, GOLD 61597"
+      },
+      "bsnes-jg": {
+        "result": "loads",
+        "detail": "LOAD MENU lists slot 1 \"ENTRANCE TO REDMONT\"; loading it: Adol at HIT POINT 255/255, RING 041, EXP 65535, GOLD 61597"
+      },
+      "chimerasnes": {
+        "result": "loads",
+        "detail": "LOAD MENU lists slot 1 \"ENTRANCE TO REDMONT\"; loading it: Adol at HIT POINT 255/255, RING 041, EXP 65535, GOLD 61597"
+      },
+      "higan-super-famicom-balanced": {
+        "result": "loads",
+        "detail": "LOAD MENU lists slot 1 \"ENTRANCE TO REDMONT\"; loading it: Adol at HIT POINT 255/255, RING 041, EXP 65535, GOLD 61597 (exits with SIGTRAP in retro_deinit after the run, as in BUILT-CORES.md)"
+      }
+    },
+    "core_versions": {
+      "beetle-supafaust": "Beetle Supafaust 1.29.0 642d1d1",
+      "bsnes": "bsnes 115",
+      "bsnes-hd-beta": "bsnes-hd beta 10.6",
+      "bsnes-jg": "bsnes-jg 2.1.0",
+      "bsnes-mercury": "bsnes-mercury v094 (Accuracy) 79d7f9d",
+      "bsnes2014": "bsnes2014 v094 (Accuracy) 3c1394e",
+      "chimerasnes": "ChimeraSNES  04c57c2",
+      "higan-super-famicom": "higan (Super Famicom Accuracy) 106",
+      "higan-super-famicom-balanced": "higan (Super Famicom Balanced) 106.25",
+      "mednafen-bsnes": "Mednafen bSNES v0.9.26 5f05e4c",
+      "mesen-s": "Mesen2 2.0.0",
+      "snes9x": "Snes9x 1.63 fae2fea",
+      "snes9x-2002": "Snes9x 2002 7.2.0",
+      "snes9x-2005": "Snes9x 2005 v1.36 a79dfe9",
+      "snes9x-2005-plus": "Snes9x 2005 Plus v1.36 a79dfe9",
+      "snes9x-2010": "Snes9x 2010 1.52.4 fe690dd"
+    },
+    "proof_order": [
+      "snes9x",
+      "snes9x-2010",
+      "snes9x-2005-plus",
+      "snes9x-2005",
+      "snes9x-2002",
+      "bsnes",
+      "bsnes-hd-beta",
+      "bsnes-mercury",
+      "bsnes2014",
+      "higan-super-famicom",
+      "mednafen-bsnes",
+      "mesen-s",
+      "beetle-supafaust",
+      "bsnes-jg",
+      "chimerasnes",
+      "higan-super-famicom-balanced"
+    ]
+  },
+  "note": "Posted on the TurboGrafx-CD game's page in the Wii VC section, but it is neither a Wii export nor a TurboGrafx-CD save: it is the 8 KiB SRAM of the SNES Ys III, so it is filed under snes. Nothing in it says which emulator or device wrote it."
+}

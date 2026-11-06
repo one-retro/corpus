@@ -1,0 +1,87 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_dexdrive",
+  "url": "https://gamefaqs.gamespot.com/mac/575278-diablo/saves/1444",
+  "source_page": "https://gamefaqs.gamespot.com/mac/575278-diablo/saves",
+  "source": "GameFAQs (section 'PlayStation DexDrive Save (North America)')",
+  "author": "NeoGamer",
+  "licence": null,
+  "posted": "2002-01-22",
+  "fetched": "2026-11-05",
+  "what_it_is": "Level 50 Rogue with max stats; best weapons and armor.",
+  "gamefaqs": {
+    "id": 1444,
+    "product": "Diablo",
+    "section": "PlayStation DexDrive Save (North America)",
+    "region": "North America",
+    "served_as": "diablo.1444.gme",
+    "listed_size": "131KB"
+  },
+  "format": "DexDrive .gme: '123-456-STD' 3904-byte header (per-block comments) + 131072-byte raw card; the card holds 1 save(s), 1 for this game (BASLUS-00619-DIAB-88)",
+  "release": "Diablo (USA) (En,Fr,De,Sv)",
+  "game_saves": [
+    {
+      "name": "BASLUS-00619-DIAB-88",
+      "blocks": 1,
+      "title": "DIABLO SAVED CHARACTERS"
+    }
+  ],
+  "files": {
+    "diablo.1444.gme": {
+      "size": 134976,
+      "sha1": "41433170f6c465771ca4786787afe7c7e5f77167"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Diablo (USA) (En,Fr,De,Sv).cue",
+      "sha1": "0789d354e661ae88facb3f22fc2cf39e0bc771e6",
+      "size": 92
+    },
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr diablo.1444.gme: unwraps the card (DexDrive .gme: 3904-byte header + card)",
+    "converted": {
+      "size": 131072,
+      "sha1": "a0a982e35775c507dd82beb5567d35a13e9dbb64"
+    },
+    "script": "scripts/psx/Diablo.load.txt",
+    "script_variants": {
+      "pcsx-rearmed": "scripts/psx/Diablo.pcsx-rearmed.load.txt",
+      "swanstation": "scripts/psx/Diablo.swanstation.load.txt"
+    },
+    "cores": {
+      "beetle-psx": {
+        "result": "loads",
+        "detail": "New Game > Load Character lists 1. NEOGAMER LEVEL 50 ROGUE"
+      },
+      "beetle-psx-hw": {
+        "result": "loads",
+        "detail": "New Game > Load Character lists 1. NEOGAMER LEVEL 50 ROGUE (the same screen as on beetle-psx)"
+      },
+      "pcsx-rearmed": {
+        "result": "loads",
+        "detail": "New Game > Load Character lists 1. NEOGAMER LEVEL 50 ROGUE (the same screen as on beetle-psx)"
+      },
+      "swanstation": {
+        "result": "loads",
+        "detail": "New Game > Load Character lists 1. NEOGAMER LEVEL 50 ROGUE (the same screen as on beetle-psx)"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": [
+      "beetle-psx",
+      "beetle-psx-hw",
+      "pcsx-rearmed",
+      "swanstation"
+    ]
+  },
+  "note": null
+}

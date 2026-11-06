@@ -1,0 +1,11 @@
+# Load check for a save made elsewhere (tools/GAMEFAQS.md): power on and go to
+# Select Data, whose panel shows file 1: name, area, level, %, time, gold.
+# Also used for Harmony of Dissonance (the same menus).
+wait 900
+press start 6       # intro -> title (GAME START)
+wait 240
+press start 6       # GAME START -> Select Data / Copy / Delete
+wait 240
+press start 6       # Select Data -> the three files
+wait 240
+shot files

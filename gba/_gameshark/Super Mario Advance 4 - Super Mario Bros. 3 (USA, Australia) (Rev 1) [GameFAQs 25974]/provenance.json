@@ -1,0 +1,119 @@
+{
+  "method": "downloaded",
+  "system": "gba",
+  "core": "_gameshark",
+  "url": "https://gamefaqs.gamespot.com/gba/589393-super-mario-advance-4-super-mario-bros-3/saves/25974",
+  "source_page": "https://gamefaqs.gamespot.com/gba/589393-super-mario-advance-4-super-mario-bros-3/saves",
+  "source": "GameFAQs (section 'GameBoy Advance GameShark Save (Australia)')",
+  "author": "Eevee-Trainer",
+  "licence": null,
+  "posted": "2018-08-20",
+  "fetched": "2026-11-05",
+  "what_it_is": "Game 100% complete (all levels, including 35 e-Reader levels & A Coins). File 1 and e-Reader files have 999 lives, max score, and stocks of 3 Whistles, 6 Cape Feathers, and 27 P-Wings.",
+  "gamefaqs": {
+    "id": 25974,
+    "product": "Super Mario Advance 4: Super Mario Bros. 3",
+    "section": "GameBoy Advance GameShark Save (Australia)",
+    "region": "Australia",
+    "served_as": "super-mario-advance-4-super-mario-bros-3.25974.sps",
+    "listed_size": "128KB"
+  },
+  "format": "SharkPort save (\"SharkPortSave\", kind 0x000F0000): title \"SUPER MARIOD\", date \"6/7/2018 3:50:52 PM\", notes \"\"; cart header \"SUPER MARIOD\" / 'AX4E' (complement 0x72); payload 131072 bytes; checksum: signed",
+  "files": {
+    "super-mario-advance-4-super-mario-bros-3.25974.sps": {
+      "size": 131172,
+      "sha1": "e14d7a89a60db3cdc4f1dec52224355f3ba81267"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Super Mario Advance 4 - Super Mario Bros. 3 (USA, Australia) (Rev 1).gba",
+      "sha1": "532f3307021637474b6dd37da059ca360f612337",
+      "size": 4194304
+    },
+    "converted_with": "tools/gamefaqs/gba-sharkport.py super-mario-advance-4-super-mario-bros-3.25974.sps --rom ROM --core CORE --outdir DIR: reads the SharkPort container as mGBA does and imports the payload as mGBA's _importSavedata does (cut to the chip, EEPROM 8-byte blocks reversed, the rest of the chip erased), then lays the chip out as the core keeps it",
+    "converted": {
+      "size": 131072,
+      "sha1": "77f0977861bc41eadaa9830c267a94e4412662d2"
+    },
+    "script": "scripts/gba/Super Mario Advance 4 - Super Mario Bros. 3.load.txt",
+    "cores": {
+      "mgba": {
+        "result": "loads",
+        "detail": "Select a File: File 1 WORLD 1, Level Card Levels (38)",
+        "core_version": "mGBA 0.11-212-7a12d6d",
+        "file": {
+          "name": "Super Mario Advance 4 - Super Mario Bros. 3 (USA, Australia) (Rev 1).srm",
+          "size": 131072,
+          "sha1": "77f0977861bc41eadaa9830c267a94e4412662d2"
+        },
+        "frame": "files"
+      },
+      "vba-m": {
+        "result": "loads",
+        "detail": "Select a File: File 1 WORLD 1, Level Card Levels (38)",
+        "core_version": "VBA-M 115defb",
+        "file": {
+          "name": "Super Mario Advance 4 - Super Mario Bros. 3 (USA, Australia) (Rev 1).srm",
+          "size": 131072,
+          "sha1": "77f0977861bc41eadaa9830c267a94e4412662d2"
+        },
+        "frame": "files"
+      },
+      "gpsp": {
+        "result": "loads",
+        "detail": "Select a File: File 1 WORLD 1, Level Card Levels (38)",
+        "core_version": "gpSP v1.1.0-5819380",
+        "file": {
+          "name": "Super Mario Advance 4 - Super Mario Bros. 3 (USA, Australia) (Rev 1).srm",
+          "size": 131072,
+          "sha1": "77f0977861bc41eadaa9830c267a94e4412662d2"
+        },
+        "frame": "files"
+      },
+      "vba-next": {
+        "result": "loads",
+        "detail": "Select a File: File 1 WORLD 1, Level Card Levels (38)",
+        "core_version": "VBA Next v1.0.2",
+        "file": {
+          "name": "Super Mario Advance 4 - Super Mario Bros. 3 (USA, Australia) (Rev 1).srm",
+          "size": 139264,
+          "sha1": "a9728b1e56919c3930f28f35c45706e7859a18f4"
+        },
+        "frame": "files"
+      },
+      "beetle-gba": {
+        "result": "loads",
+        "detail": "Select a File: File 1 WORLD 1, Level Card Levels (38)",
+        "core_version": "Beetle GBA v0.9.36 b158166",
+        "file": {
+          "name": "Super Mario Advance 4 - Super Mario Bros. 3 (USA, Australia) (Rev 1).605286b3aedeffba70bf46b834b120b1.sav",
+          "size": 131072,
+          "sha1": "77f0977861bc41eadaa9830c267a94e4412662d2"
+        },
+        "frame": "files"
+      },
+      "skyemu": {
+        "result": "loads",
+        "detail": "Select a File: File 1 WORLD 1, Level Card Levels (38)",
+        "core_version": "SkyEmu adacd0788964ed89f5c43dcbc1f3cc26deec996c",
+        "file": {
+          "name": "Super Mario Advance 4 - Super Mario Bros. 3 (USA, Australia) (Rev 1).srm",
+          "size": 131072,
+          "sha1": "77f0977861bc41eadaa9830c267a94e4412662d2"
+        },
+        "frame": "files"
+      }
+    },
+    "proof_order": [
+      "mgba",
+      "vba-m",
+      "gpsp",
+      "vba-next",
+      "beetle-gba",
+      "skyemu"
+    ]
+  },
+  "note": null
+}

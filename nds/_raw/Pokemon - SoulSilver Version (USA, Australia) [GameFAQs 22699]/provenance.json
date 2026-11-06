@@ -1,0 +1,110 @@
+{
+  "method": "downloaded",
+  "system": "nds",
+  "core": "_raw",
+  "url": "https://gamefaqs.gamespot.com/ds/960099-pokemon-heartgold-version/saves/22699",
+  "source_page": "https://gamefaqs.gamespot.com/ds/960099-pokemon-heartgold-version/saves",
+  "source": "GameFAQs (section 'Action Replay Max DS (1.00-1.03) Game Save (North America)')",
+  "author": "xanderzero99",
+  "licence": null,
+  "posted": "2012-10-16",
+  "fetched": "2026-11-05",
+  "what_it_is": "16 badges and Legendary Pokemons with items",
+  "gamefaqs": {
+    "id": 22699,
+    "product": "Pokemon HeartGold / SoulSilver Version",
+    "section": "Action Replay Max DS (1.00-1.03) Game Save (North America)",
+    "region": "North America",
+    "served_as": "pokemon-heartgold-soulsilver-version.22699.dss",
+    "listed_size": "1024KB"
+  },
+  "format": "raw 1024 KiB chip image with no header (cut 1048576 -> 524288; the rest was all 0xFF)",
+  "files": {
+    "pokemon-heartgold-soulsilver-version.22699.dss": {
+      "size": 1048576,
+      "sha1": "adecb5c4da9a2b300da897ce2596619f21da641f"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Pokemon - SoulSilver Version (USA, Australia).nds",
+      "sha1": "0959fe9e64dc749382460f1ccf90996f5ef4088d",
+      "size": 134217728,
+      "note": "a dump of this game code whose sha1 is not in the No-Intro DAT (the area after the used ROM size is blank); the region in the name is a guess"
+    },
+    "converted_with": "tools/gamefaqs/nds-cores.py IN --chip 524288 --stem 'Pokemon - SoulSilver Version (USA, Australia)' --out DIR: fits it to the 524288-byte chip (cut 1048576 -> 524288; the rest was all 0xFF) and writes each core's file",
+    "converted": {
+      "size": 524288,
+      "sha1": "29e8b92fced04883b29bd24c5a4eaeb696597598"
+    },
+    "core_files": {
+      "desmume": {
+        "name": "Pokemon - SoulSilver Version (USA, Australia).dsv",
+        "size": 524410,
+        "sha1": "624c4b9e2dcf9fb6845f88603faf32744f914f68"
+      },
+      "desmume-2015": {
+        "name": "Pokemon - SoulSilver Version (USA, Australia).dsv",
+        "size": 524410,
+        "sha1": "624c4b9e2dcf9fb6845f88603faf32744f914f68"
+      },
+      "melonds": {
+        "name": "Pokemon - SoulSilver Version (USA, Australia).sav",
+        "size": 524288,
+        "sha1": "29e8b92fced04883b29bd24c5a4eaeb696597598"
+      },
+      "melonds-ds": {
+        "name": "Pokemon - SoulSilver Version (USA, Australia).srm",
+        "size": 524288,
+        "sha1": "29e8b92fced04883b29bd24c5a4eaeb696597598"
+      },
+      "noods": {
+        "name": "Pokemon - SoulSilver Version (USA, Australia).sav",
+        "size": 524288,
+        "sha1": "29e8b92fced04883b29bd24c5a4eaeb696597598"
+      },
+      "skyemu": {
+        "name": "Pokemon - SoulSilver Version (USA, Australia).srm",
+        "size": 8388608,
+        "sha1": "92d668b479b67cc5b52c169ab71d3f47f0dca5da"
+      }
+    },
+    "script": "scripts/nds/Pokemon - SoulSilver Version.load.txt",
+    "cores": {
+      "desmume": {
+        "result": "loads",
+        "detail": "CONTINUE: PLAYER ALEX, TIME 114:23, BADGES 16, POKéDEX 39"
+      },
+      "desmume-2015": {
+        "result": "loads",
+        "detail": "CONTINUE: PLAYER ALEX, TIME 114:23, BADGES 16, POKéDEX 39"
+      },
+      "melonds": {
+        "result": "core-error",
+        "detail": "\"A communication error has occurred. You will be returned to the title screen.\" instead of the CONTINUE panel; the same happens with every HeartGold/SoulSilver save in this core (no BIOS or firmware here, FreeBIOS), so it is the core, not this save"
+      },
+      "melonds-ds": {
+        "result": "loads",
+        "detail": "CONTINUE: PLAYER ALEX, TIME 114:23, BADGES 16, POKéDEX 39"
+      },
+      "noods": {
+        "result": "loads",
+        "detail": "CONTINUE: PLAYER ALEX, TIME 114:23, BADGES 16, POKéDEX 39"
+      },
+      "skyemu": {
+        "result": "loads",
+        "detail": "CONTINUE: PLAYER ALEX, TIME 114:23, BADGES 16, POKéDEX 39"
+      }
+    },
+    "proof_order": [
+      "desmume",
+      "desmume-2015",
+      "melonds",
+      "melonds-ds",
+      "noods",
+      "skyemu"
+    ]
+  },
+  "note": "Release: English; SoulSilver from the version that caught the player's own Pokemon (origin game in the decrypted Pokemon data, OT matching the trainer). A 1 MiB raw file: the 512 KiB save, then 512 KiB of 0xFF. Nothing in it says what wrote it."
+}

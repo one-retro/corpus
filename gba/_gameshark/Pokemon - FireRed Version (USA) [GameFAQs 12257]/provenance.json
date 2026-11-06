@@ -1,0 +1,119 @@
+{
+  "method": "downloaded",
+  "system": "gba",
+  "core": "_gameshark",
+  "url": "https://gamefaqs.gamespot.com/gba/918915-pokemon-firered-version/saves/12257",
+  "source_page": "https://gamefaqs.gamespot.com/gba/918915-pokemon-firered-version/saves",
+  "source": "GameFAQs (section 'GameBoy Advance GameShark Save (Europe)')",
+  "author": "paultribal",
+  "licence": null,
+  "posted": "2006-06-28",
+  "fetched": "2026-11-05",
+  "what_it_is": "Lots of money, all pokeballs in bag, lots of items, a few pokemon saved at mt moon, just started",
+  "gamefaqs": {
+    "id": 12257,
+    "product": "Pokemon FireRed / LeafGreen Version",
+    "section": "GameBoy Advance GameShark Save (Europe)",
+    "region": "Europe",
+    "served_as": "pokemon-firered-leafgreen-version.12257.sps",
+    "listed_size": "64KB"
+  },
+  "format": "SharkPort save (\"SharkPortSave\", kind 0x000F0000): title \"POKEMON FIRE\", date \"28/06/06 08:45:41\", notes \"lots of money, all pokeballs in bag, a few pokemon, saved...\"; cart header \"POKEMON FIRE\" / 'BPRE' (complement 0x68); payload 65536 bytes; checksum: signed",
+  "files": {
+    "pokemon-firered-leafgreen-version.12257.sps": {
+      "size": 65718,
+      "sha1": "1e96bdb9a97acdad6937c7b9229f40b9bbaa7387"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Pokemon - FireRed Version (USA).gba",
+      "sha1": "41cb23d8dccc8ebd7c649cd8fbb58eeace6e2fdc",
+      "size": 16777216
+    },
+    "converted_with": "tools/gamefaqs/gba-sharkport.py pokemon-firered-leafgreen-version.12257.sps --rom ROM --core CORE --outdir DIR: reads the SharkPort container as mGBA does and imports the payload as mGBA's _importSavedata does (cut to the chip, EEPROM 8-byte blocks reversed, the rest of the chip erased), then lays the chip out as the core keeps it",
+    "converted": {
+      "size": 131072,
+      "sha1": "12196111aa85694fbdd0c79d7a4d0fc8a57922c2"
+    },
+    "script": "scripts/gba/Pokemon - FireRed Version.load.txt",
+    "cores": {
+      "mgba": {
+        "result": "loads",
+        "detail": "\"The save file is corrupt(ed). The previous save file will be loaded.\", then CONTINUE: Paul, 3:23 (the older of the two copies)",
+        "core_version": "mGBA 0.11-212-7a12d6d",
+        "file": {
+          "name": "Pokemon - FireRed Version (USA).srm",
+          "size": 131072,
+          "sha1": "12196111aa85694fbdd0c79d7a4d0fc8a57922c2"
+        },
+        "frame": "next2"
+      },
+      "vba-m": {
+        "result": "loads",
+        "detail": "\"The save file is corrupt(ed). The previous save file will be loaded.\", then CONTINUE: Paul, 3:23 (the older of the two copies)",
+        "core_version": "VBA-M 115defb",
+        "file": {
+          "name": "Pokemon - FireRed Version (USA).srm",
+          "size": 131072,
+          "sha1": "12196111aa85694fbdd0c79d7a4d0fc8a57922c2"
+        },
+        "frame": "next2"
+      },
+      "gpsp": {
+        "result": "loads",
+        "detail": "\"The save file is corrupt(ed). The previous save file will be loaded.\", then CONTINUE: Paul, 3:23 (the older of the two copies)",
+        "core_version": "gpSP v1.1.0-5819380",
+        "file": {
+          "name": "Pokemon - FireRed Version (USA).srm",
+          "size": 131072,
+          "sha1": "12196111aa85694fbdd0c79d7a4d0fc8a57922c2"
+        },
+        "frame": "next2"
+      },
+      "vba-next": {
+        "result": "loads",
+        "detail": "\"The save file is corrupt(ed). The previous save file will be loaded.\", then CONTINUE: Paul, 3:23 (the older of the two copies)",
+        "core_version": "VBA Next v1.0.2",
+        "file": {
+          "name": "Pokemon - FireRed Version (USA).srm",
+          "size": 139264,
+          "sha1": "1d44b97e5132af1fd9229b15f8ff0045351340dd"
+        },
+        "frame": "next2"
+      },
+      "beetle-gba": {
+        "result": "loads",
+        "detail": "\"The save file is corrupt(ed). The previous save file will be loaded.\", then CONTINUE: Paul, 3:23 (the older of the two copies)",
+        "core_version": "Beetle GBA v0.9.36 b158166",
+        "file": {
+          "name": "Pokemon - FireRed Version (USA).e26ee0d44e809351c8ce2d73c7400cdd.sav",
+          "size": 131072,
+          "sha1": "12196111aa85694fbdd0c79d7a4d0fc8a57922c2"
+        },
+        "frame": "next2"
+      },
+      "skyemu": {
+        "result": "loads",
+        "detail": "\"The save file is corrupt(ed). The previous save file will be loaded.\", then CONTINUE: Paul, 3:23 (the older of the two copies)",
+        "core_version": "SkyEmu adacd0788964ed89f5c43dcbc1f3cc26deec996c",
+        "file": {
+          "name": "Pokemon - FireRed Version (USA).srm",
+          "size": 131072,
+          "sha1": "12196111aa85694fbdd0c79d7a4d0fc8a57922c2"
+        },
+        "frame": "next2"
+      }
+    },
+    "proof_order": [
+      "mgba",
+      "vba-m",
+      "gpsp",
+      "vba-next",
+      "beetle-gba",
+      "skyemu"
+    ]
+  },
+  "note": "The GameShark copied only the first 64 KiB of the 128 KiB flash; imported as mGBA does, the second half of the chip stays erased."
+}

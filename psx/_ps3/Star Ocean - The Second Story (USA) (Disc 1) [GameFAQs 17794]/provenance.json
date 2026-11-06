@@ -1,0 +1,88 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_ps3",
+  "url": "https://gamefaqs.gamespot.com/ps/198763-star-ocean-the-second-story/saves/17794",
+  "source_page": "https://gamefaqs.gamespot.com/ps/198763-star-ocean-the-second-story/saves",
+  "source": "GameFAQs (section 'PlayStation PS3 Virtual Memory Card Save (ZIP) (North America)')",
+  "author": "ZePenguins",
+  "licence": null,
+  "posted": "2008-09-02",
+  "fetched": "2026-11-05",
+  "what_it_is": "Claude and Ashton game, with Eternal Sphere outside Linga. Disk one.",
+  "gamefaqs": {
+    "id": 17794,
+    "product": "Star Ocean: The Second Story",
+    "section": "PlayStation PS3 Virtual Memory Card Save (ZIP) (North America)",
+    "region": "North America",
+    "served_as": "star-ocean-the-second-story.17794.zip",
+    "listed_size": "2KB",
+    "served_zip": {
+      "size": 2178,
+      "sha1": "fcc487e3d9c812de4629688800cb7e5329412e7d"
+    }
+  },
+  "format": "zip of 1 PS3 export(s) (.PSV): '\\0VSP' header (signature, save name at 0x64), the save's blocks from 0x84 (8324 bytes); it holds 1 save(s), 1 for this game (BASCUS-94421S02-S03)",
+  "release": "Star Ocean - The Second Story (USA) (Disc 1)",
+  "game_saves": [
+    {
+      "name": "BASCUS-94421S02-S03",
+      "blocks": 1,
+      "title": "SO2 03 8:45 Claude LV43"
+    }
+  ],
+  "files": {
+    "BASCUS-944215330322D533033.PSV": {
+      "size": 8324,
+      "sha1": "6fb419825be0ecd8f18750cb6d22dcede0cea6c4"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Star Ocean - The Second Story (USA) (Disc 1).cue",
+      "sha1": "c13756292cbf2a27d2be247c5576e584552ce40f",
+      "size": 110
+    },
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr BASCUS-944215330322D533033.PSV: puts the save(s) on a freshly formatted card, as MemcardRex imports a single save",
+    "converted": {
+      "size": 131072,
+      "sha1": "646c0a4aad3cc26c577f1f416337c9a925e18ff5"
+    },
+    "script": "scripts/psx/Star Ocean - The Second Story.load.txt",
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "loads",
+        "detail": "Load, Slot 1 shows #3: time 8:45, 293 battles"
+      },
+      "beetle-psx-hw": {
+        "result": "loads",
+        "detail": "Load, Slot 1 shows #3: time 8:45, 293 battles (the same screen as on beetle-psx)"
+      },
+      "pcsx-rearmed": {
+        "result": "loads",
+        "detail": "Load, Slot 1 shows #3: time 8:45, 293 battles (the same screen as on beetle-psx)"
+      },
+      "swanstation": {
+        "result": "loads",
+        "detail": "Load, Slot 1 shows #3: time 8:45, 293 battles (the same screen as on beetle-psx)"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": [
+      "beetle-psx",
+      "beetle-psx-hw",
+      "pcsx-rearmed",
+      "swanstation"
+    ]
+  },
+  "note": null
+}

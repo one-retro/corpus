@@ -1,0 +1,111 @@
+{
+  "method": "downloaded",
+  "system": "ps2",
+  "core": "_x-port",
+  "url": "https://gamefaqs.gamespot.com/ps2/589460-gradius-v/saves/24538",
+  "source_page": "https://gamefaqs.gamespot.com/ps2/589460-gradius-v/saves",
+  "source": "GameFAQs (section 'PlayStation2 X-Port Save (Europe)')",
+  "author": "DJ_Shang_Tsung",
+  "licence": null,
+  "posted": "2016-01-26",
+  "fetched": "2026-11-05",
+  "what_it_is": "Free play unlocked",
+  "gamefaqs": {
+    "id": 24538,
+    "product": "Gradius V",
+    "section": "PlayStation2 X-Port Save (Europe)",
+    "region": "Europe",
+    "served_as": "gradius-v.24538.xps",
+    "listed_size": "36KB"
+  },
+  "format": "SharkPort / X-Port save: 'SharkPortSave' header (title 'NEW_FILE', date 'Made with PS2 Save Builder', comment ''), folder BESLES-52095, 3 files, 36340 bytes of file data, 4-byte checksum at the end",
+  "files": {
+    "gradius-v.24538.xps": {
+      "size": 37415,
+      "sha1": "6c5527a21fd1309eaa9a6b8378130b5c4a2981c2"
+    }
+  },
+  "save": {
+    "folder": "BESLES-52095",
+    "title": [
+      "GRADIUS V",
+      "SAVE DATA"
+    ],
+    "times": "as the file stores them (PS2 card times, JST)",
+    "files": [
+      {
+        "name": "icon.sys",
+        "size": 964,
+        "sha1": "fc00cc3d7b82c6c457006addb03ff5ee491aa957",
+        "created": "2016-01-27 02:27:10",
+        "modified": "2016-01-27 02:27:10"
+      },
+      {
+        "name": "icon.ico",
+        "size": 33688,
+        "sha1": "1f9cb9d18cb43e29961bb12ce56d0216ca63bb58",
+        "created": "2016-01-27 02:27:06",
+        "modified": "2016-01-27 02:27:06"
+      },
+      {
+        "name": "BESLES-52095",
+        "size": 1688,
+        "sha1": "52cb78184440ef723fbe9bfc343d729806782490",
+        "created": "2016-01-27 02:27:02",
+        "modified": "2016-01-27 02:27:02"
+      }
+    ]
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": null,
+    "converted_with": "tools/gamefaqs/ps2-card.py 'gradius-v.24538.xps' -o OUT: reads the save with mymcplus 3.0.5 and writes OUT/Mcd001.ps2 (an 8 MiB card with ECC, formatted and filled by mymcplus) for lrps2/pcee2/pcsx2, and OUT/mc0/<folder>/ for Play!",
+    "converted": {
+      "Mcd001.ps2": {
+        "size": 8650752,
+        "sha1": "778a4cf6d559dd1f50ac3cf3b9bee34aa2ba765b"
+      },
+      "mc0/BESLES-52095/": {
+        "icon.sys": {
+          "size": 964,
+          "sha1": "fc00cc3d7b82c6c457006addb03ff5ee491aa957"
+        },
+        "icon.ico": {
+          "size": 33688,
+          "sha1": "1f9cb9d18cb43e29961bb12ce56d0216ca63bb58"
+        },
+        "BESLES-52095": {
+          "size": 1688,
+          "sha1": "52cb78184440ef723fbe9bfc343d729806782490"
+        }
+      },
+      "read_back": "work/ps2/tools/mcfs.py lists every file with the size and SHA-1 put on the card; one-saves (1saves convert + inspect) reads the card and finds BESLES-52095",
+      "timestamps": "what the save does not date is 2000-01-01 00:00:00 (JST, as a card stores it); the card's own root entries too"
+    },
+    "script": null,
+    "cores": {
+      "pcee2": {
+        "result": "not-run",
+        "detail": "no image of Gradius V (Europe) (En,Fr,De,Es,It) in the library"
+      },
+      "lrps2": {
+        "result": "not-run",
+        "detail": "no image of Gradius V (Europe) (En,Fr,De,Es,It) in the library"
+      },
+      "play": {
+        "result": "not-run",
+        "detail": "no image of Gradius V (Europe) (En,Fr,De,Es,It) in the library"
+      },
+      "pcsx2": {
+        "result": "not-run",
+        "detail": "no image of Gradius V (Europe) (En,Fr,De,Es,It) in the library"
+      },
+      "armsx2": {
+        "result": "not-run",
+        "detail": "ARMSX2 renders only through Vulkan here and falls back to a null GS (no picture), so nothing shows what the game read (ps2/NOTES.md)"
+      }
+    },
+    "proof_order": []
+  },
+  "note": "The header's date field reads 'Made with PS2 Save Builder': a PC tool rebuilt this file; the format is SharkPort/X-Port's."
+}

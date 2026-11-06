@@ -1,0 +1,51 @@
+{
+  "method": "downloaded",
+  "system": "gc",
+  "core": "_usb-memory-adapter",
+  "url": "https://gamefaqs.gamespot.com/gamecube/589687-kirby-air-ride/saves/33503",
+  "source_page": "https://gamefaqs.gamespot.com/gamecube/589687-kirby-air-ride/saves",
+  "source": "GameFAQs (section 'GameCube USB Memory Adapter Save (Japan)')",
+  "author": "NewGabeOrder",
+  "licence": null,
+  "posted": "2025-08-26",
+  "fetched": "2026-11-05",
+  "what_it_is": "Everything unlocked except ending movies and most Sound Test BGM",
+  "gamefaqs": {
+    "id": 33503,
+    "product": "Kirby Air Ride",
+    "section": "GameCube USB Memory Adapter Save (Japan)",
+    "region": "Japan",
+    "served_as": "kirby-air-ride.33503.gci",
+    "listed_size": "32KB"
+  },
+  "format": "GCI: the 64-byte card directory entry (GKYJ01, file 'KA030621_0100_T030529_2154', 4 blocks, modified 2025-08-23 17:20:42, comment 'カービィのエアライド / セーブデータ 2025/08/23') then 4 x 8 KiB blocks = 32832 bytes",
+  "files": {
+    "kirby-air-ride.33503.gci": {
+      "size": 32832,
+      "sha1": "00537df703bd7442e8e2e67c0195ea132a946130"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": null,
+    "converted_with": "tools/gamefaqs/gc-gci.py place <file> <GC/USA/Card A>: copies the GCI unchanged into the GCI folder under Dolphin's own name for it",
+    "converted": {
+      "size": 32832,
+      "sha1": "00537df703bd7442e8e2e67c0195ea132a946130",
+      "name": "01-GKYJ-KA030621_0100_T030529_2154.gci"
+    },
+    "script": null,
+    "cores": {
+      "dolphin-emu": {
+        "result": "not-run",
+        "detail": "no Kirby's Airride (Japan) disc image in the library (only the USA release and Kirby Air Ride (Europe))"
+      },
+      "dolphin-emu@dolphin": {
+        "result": "not-run",
+        "detail": "no Kirby's Airride (Japan) disc image in the library (only the USA release and Kirby Air Ride (Europe))"
+      }
+    },
+    "proof_order": []
+  },
+  "note": "1saves reads it from a card but gives it no label (the Shift-JIS comment is not decoded)."
+}

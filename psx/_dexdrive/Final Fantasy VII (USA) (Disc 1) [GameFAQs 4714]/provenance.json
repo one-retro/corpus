@@ -1,0 +1,154 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_dexdrive",
+  "url": "https://gamefaqs.gamespot.com/ps/197341-final-fantasy-vii/saves/4714",
+  "source_page": "https://gamefaqs.gamespot.com/ps/197341-final-fantasy-vii/saves",
+  "source": "GameFAQs (section 'PlayStation DexDrive Save (North America)')",
+  "author": "rojotrece",
+  "licence": null,
+  "posted": "2004-08-07",
+  "fetched": "2026-11-05",
+  "what_it_is": "Story saves from Disc One. I didn't pick up unnecessary Materia or treasures",
+  "gamefaqs": {
+    "id": 4714,
+    "product": "Final Fantasy VII",
+    "section": "PlayStation DexDrive Save (North America)",
+    "region": "North America",
+    "served_as": "final-fantasy-vii.4714.gme",
+    "listed_size": "131KB"
+  },
+  "format": "DexDrive .gme: '123-456-STD' 3904-byte header (per-block comments) + 131072-byte raw card; the card holds 15 save(s), 15 for this game (BASCUS-94163FF7-S01, BASCUS-94163FF7-S02, BASCUS-94163FF7-S03, BASCUS-94163FF7-S04, ...)",
+  "release": "Final Fantasy VII (USA) (Disc 1)",
+  "game_saves": [
+    {
+      "name": "BASCUS-94163FF7-S01",
+      "blocks": 1,
+      "title": "FF7/SAVE01/00:26"
+    },
+    {
+      "name": "BASCUS-94163FF7-S02",
+      "blocks": 1,
+      "title": "FF7/SAVE02/01:25"
+    },
+    {
+      "name": "BASCUS-94163FF7-S03",
+      "blocks": 1,
+      "title": "FF7/SAVE03/01:58"
+    },
+    {
+      "name": "BASCUS-94163FF7-S04",
+      "blocks": 1,
+      "title": "FF7/SAVE04/02:13"
+    },
+    {
+      "name": "BASCUS-94163FF7-S05",
+      "blocks": 1,
+      "title": "FF7/SAVE05/03:10"
+    },
+    {
+      "name": "BASCUS-94163FF7-S06",
+      "blocks": 1,
+      "title": "FF7/SAVE06/03:41"
+    },
+    {
+      "name": "BASCUS-94163FF7-S07",
+      "blocks": 1,
+      "title": "FF7/SAVE07/03:54"
+    },
+    {
+      "name": "BASCUS-94163FF7-S08",
+      "blocks": 1,
+      "title": "FF7/SAVE08/04:13"
+    },
+    {
+      "name": "BASCUS-94163FF7-S09",
+      "blocks": 1,
+      "title": "FF7/SAVE09/06:00"
+    },
+    {
+      "name": "BASCUS-94163FF7-S10",
+      "blocks": 1,
+      "title": "FF7/SAVE10/06:39"
+    },
+    {
+      "name": "BASCUS-94163FF7-S11",
+      "blocks": 1,
+      "title": "FF7/SAVE11/07:46"
+    },
+    {
+      "name": "BASCUS-94163FF7-S12",
+      "blocks": 1,
+      "title": "FF7/SAVE12/08:05"
+    },
+    {
+      "name": "BASCUS-94163FF7-S13",
+      "blocks": 1,
+      "title": "FF7/SAVE13/09:01"
+    },
+    {
+      "name": "BASCUS-94163FF7-S14",
+      "blocks": 1,
+      "title": "FF7/SAVE14/09:28"
+    },
+    {
+      "name": "BASCUS-94163FF7-S15",
+      "blocks": 1,
+      "title": "FF7/SAVE15/10:02"
+    }
+  ],
+  "files": {
+    "final-fantasy-vii.4714.gme": {
+      "size": 134976,
+      "sha1": "35805da5d8888a9f57b329e80e95b804f320f6e7"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Final Fantasy VII (USA) (Disc 1).cue",
+      "sha1": "c8df949f13d990d325ac3b8d6eb835c440380e52",
+      "size": 98
+    },
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr final-fantasy-vii.4714.gme: unwraps the card (DexDrive .gme: 3904-byte header + card)",
+    "converted": {
+      "size": 131072,
+      "sha1": "00bd624b783f04519062e63110940e056ab7b43a"
+    },
+    "script": "scripts/psx/Final Fantasy VII.load.txt",
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "loads",
+        "detail": "Slot 1 lists 15 files; files 1-3: Cliffy Lv 8 00:26 Sector 7 Slums, Lv 10 01:25 Wall Market, Lv 11 01:58 Sector 7 Slums"
+      },
+      "beetle-psx-hw": {
+        "result": "loads",
+        "detail": "Slot 1 lists 15 files; files 1-3: Cliffy Lv 8 00:26 Sector 7 Slums, Lv 10 01:25 Wall Market, Lv 11 01:58 Sector 7 Slums (the same screen as on beetle-psx)"
+      },
+      "pcsx-rearmed": {
+        "result": "loads",
+        "detail": "Slot 1 lists 15 files; files 1-3: Cliffy Lv 8 00:26 Sector 7 Slums, Lv 10 01:25 Wall Market, Lv 11 01:58 Sector 7 Slums (the same screen as on beetle-psx)"
+      },
+      "swanstation": {
+        "result": "loads",
+        "detail": "Slot 1 lists 15 files; files 1-3: Cliffy Lv 8 00:26 Sector 7 Slums, Lv 10 01:25 Wall Market, Lv 11 01:58 Sector 7 Slums (the same screen as on beetle-psx)"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": [
+      "beetle-psx",
+      "beetle-psx-hw",
+      "pcsx-rearmed",
+      "swanstation"
+    ]
+  },
+  "note": null
+}

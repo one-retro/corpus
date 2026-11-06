@@ -1,0 +1,86 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_raw-card",
+  "url": "https://gamefaqs.gamespot.com/ps/198477-r4-ridge-racer-type-4/saves/20979",
+  "source_page": "https://gamefaqs.gamespot.com/ps/198477-r4-ridge-racer-type-4/saves",
+  "source": "GameFAQs (section 'PlayStation DexDrive Save (North America)')",
+  "author": "MarianoRyu",
+  "licence": null,
+  "posted": "2010-08-17",
+  "fetched": "2026-11-05",
+  "what_it_is": "All cars and tracks unlocked. Extra trial unlocked. Pacman car unlocked.",
+  "gamefaqs": {
+    "id": 20979,
+    "product": "R4: Ridge Racer Type 4",
+    "section": "PlayStation DexDrive Save (North America)",
+    "region": "North America",
+    "served_as": "r4-ridge-racer-type-4.20979.gme",
+    "listed_size": "128KB"
+  },
+  "format": "raw 131072-byte PS1 memory card ('MC' header frame), served as .gme; the card holds 1 save(s), 1 for this game (BASLUSP00797RR4_GAME)",
+  "release": "R4 - Ridge Racer Type 4 (USA)",
+  "game_saves": [
+    {
+      "name": "BASLUSP00797RR4_GAME",
+      "blocks": 1,
+      "title": "R4 Game Data(Try Pac−Man Car!)"
+    }
+  ],
+  "files": {
+    "r4-ridge-racer-type-4.20979.gme": {
+      "size": 131072,
+      "sha1": "2a6027fc0a52b62ec11896a511a169539a8c1b48"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "R4 - Ridge Racer Type 4 (USA).cue",
+      "sha1": "7fb365c31e0a1f315479ac9eef1d6fde1a84bd1d",
+      "size": 95
+    },
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr r4-ridge-racer-type-4.20979.gme: unwraps the card (raw card)",
+    "converted": {
+      "size": 131072,
+      "sha1": "2a6027fc0a52b62ec11896a511a169539a8c1b48"
+    },
+    "script": "scripts/psx/R4 - Ridge Racer Type 4.load.txt",
+    "script_variants": {
+      "pcsx-rearmed": "scripts/psx/R4 - Ridge Racer Type 4.pcsx-rearmed.load.txt"
+    },
+    "cores": {
+      "beetle-psx": {
+        "result": "loads",
+        "detail": "Grand Prix > Continue lists file 1: team P.R.C., maker Terrazi, 1st Heat (no card: Team Select for a new Grand Prix)"
+      },
+      "beetle-psx-hw": {
+        "result": "loads",
+        "detail": "Grand Prix > Continue lists file 1: team P.R.C., maker Terrazi, 1st Heat (no card: Team Select for a new Grand Prix) (the same screen as on beetle-psx)"
+      },
+      "pcsx-rearmed": {
+        "result": "loads",
+        "detail": "Grand Prix > Continue lists file 1: team P.R.C., maker Terrazi, 1st Heat (no card: Team Select for a new Grand Prix) (the same screen as on beetle-psx)"
+      },
+      "swanstation": {
+        "result": "loads",
+        "detail": "Grand Prix > Continue lists file 1: team P.R.C., maker Terrazi, 1st Heat (no card: Team Select for a new Grand Prix) (the same screen as on beetle-psx)"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": [
+      "beetle-psx",
+      "beetle-psx-hw",
+      "pcsx-rearmed",
+      "swanstation"
+    ]
+  },
+  "note": "Filed under GameFAQs' 'PlayStation DexDrive Save (North America)' section, but it is not a DexDrive .gme: raw 131072-byte PS1 memory card ('MC' header frame), served as .gme."
+}

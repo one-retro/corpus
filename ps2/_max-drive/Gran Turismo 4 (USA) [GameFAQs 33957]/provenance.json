@@ -1,0 +1,123 @@
+{
+  "method": "downloaded",
+  "system": "ps2",
+  "core": "_max-drive",
+  "url": "https://gamefaqs.gamespot.com/ps2/561066-gran-turismo-4/saves/33957",
+  "source_page": "https://gamefaqs.gamespot.com/ps2/561066-gran-turismo-4/saves",
+  "source": "GameFAQs (section 'PlayStation2 Max Drive Save (North America)')",
+  "author": "amogus3751",
+  "licence": null,
+  "posted": "2025-11-04",
+  "fetched": "2026-11-05",
+  "what_it_is": "here a surly 100% save file pls appreciated i haved played this for 3 and a half years since i was 8 and has alll cars tuned up and all black race cars and all formula 1 colors (including black) and all races completed so yea 100%",
+  "gamefaqs": {
+    "id": 33957,
+    "product": "Gran Turismo 4",
+    "section": "PlayStation2 Max Drive Save (North America)",
+    "region": "North America",
+    "served_as": "gran-turismo-4.33957.max",
+    "listed_size": "1487KB"
+  },
+  "format": "Max Drive / PowerSave save: 'Ps2PowerSave' header (CRC32 0a705c63, matches), folder BASCUS-97328GAMEDATA, 4 files, LZARI stream 1523457 bytes unpacking to 1528760 bytes (1528584 bytes of file data)",
+  "files": {
+    "gran-turismo-4.33957.max": {
+      "size": 1523549,
+      "sha1": "84ccea73f396954e614d63aff866261e6c03f33c"
+    }
+  },
+  "save": {
+    "folder": "BASCUS-97328GAMEDATA",
+    "title": [
+      "GRAN TURISMO 4",
+      "Game data"
+    ],
+    "times": "none: a max file stores no file times",
+    "files": [
+      {
+        "name": "garage",
+        "size": 1280064,
+        "sha1": "2efee45d6b9af2c8bebdc8c237aef2af2ef57be6"
+      },
+      {
+        "name": "BASCUS-97328GAMEDATA",
+        "size": 237760,
+        "sha1": "f6fc6ef843a93aa601f15f929aff5a863d7da1d5"
+      },
+      {
+        "name": "icon0.ico",
+        "size": 9796,
+        "sha1": "5c55e0ea3f302b6ce15d03fb247039d41b83f032"
+      },
+      {
+        "name": "icon.sys",
+        "size": 964,
+        "sha1": "cce82f67a0f89c70731af7b0fb0b9c752fd05e5e"
+      }
+    ]
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Gran Turismo 4 (USA).iso",
+      "sha1": "5b1dbf056f45f8023e8e4958e6d7deb31fc64a47",
+      "size": 5314478080
+    },
+    "converted_with": "tools/gamefaqs/ps2-card.py 'gran-turismo-4.33957.max' -o OUT: reads the save with mymcplus 3.0.5 and writes OUT/Mcd001.ps2 (an 8 MiB card with ECC, formatted and filled by mymcplus) for lrps2/pcee2/pcsx2, and OUT/mc0/<folder>/ for Play!",
+    "converted": {
+      "Mcd001.ps2": {
+        "size": 8650752,
+        "sha1": "c5907d37df2ddc5f852f17f3b649de135620682b"
+      },
+      "mc0/BASCUS-97328GAMEDATA/": {
+        "garage": {
+          "size": 1280064,
+          "sha1": "2efee45d6b9af2c8bebdc8c237aef2af2ef57be6"
+        },
+        "BASCUS-97328GAMEDATA": {
+          "size": 237760,
+          "sha1": "f6fc6ef843a93aa601f15f929aff5a863d7da1d5"
+        },
+        "icon0.ico": {
+          "size": 9796,
+          "sha1": "5c55e0ea3f302b6ce15d03fb247039d41b83f032"
+        },
+        "icon.sys": {
+          "size": 964,
+          "sha1": "cce82f67a0f89c70731af7b0fb0b9c752fd05e5e"
+        }
+      },
+      "read_back": "work/ps2/tools/mcfs.py lists every file with the size and SHA-1 put on the card; one-saves (1saves convert + inspect) reads the card and finds BASCUS-97328GAMEDATA",
+      "timestamps": "what the save does not date is 2000-01-01 00:00:00 (JST, as a card stores it); the card's own root entries too"
+    },
+    "script": "scripts/ps2/Gran Turismo 4 (USA).load.txt",
+    "cores": {
+      "pcee2": {
+        "detail": "GT Mode opens in the Garage: 757/757 cars (Toyota GT-ONE Race Car first), Cr 999,705,314,657, 15 JUL",
+        "result": "loads"
+      },
+      "lrps2": {
+        "detail": "GT Mode opens at John's Home (Complete 100.0%, A-spec 23028, B-spec 4841, Days 100547; Toyota GT-ONE Race Car, Cr 999,705,314,657, 15 JUL), then the Garage: 757/757 cars",
+        "result": "loads"
+      },
+      "play": {
+        "detail": "John's Home: Complete 100.0%, A-spec 23028, B-spec 4841, Days 100547; Toyota GT-ONE Race Car, Cr 999,705,314,657, 15 JUL",
+        "result": "loads"
+      },
+      "pcsx2": {
+        "detail": "GT Mode opens in the Garage: 757/757 cars (Toyota GT-ONE Race Car first), Cr 999,705,314,657, 15 JUL",
+        "result": "loads"
+      },
+      "armsx2": {
+        "result": "not-run",
+        "detail": "ARMSX2 renders only through Vulkan here and falls back to a null GS (no picture), so nothing shows what the game read (ps2/NOTES.md)"
+      }
+    },
+    "proof_order": [
+      "pcee2",
+      "lrps2",
+      "play",
+      "pcsx2"
+    ]
+  },
+  "note": null
+}

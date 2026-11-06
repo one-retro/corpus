@@ -1,0 +1,109 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_dexdrive",
+  "url": "https://gamefaqs.gamespot.com/ps/199061-tony-hawks-pro-skater-2/saves/989",
+  "source_page": "https://gamefaqs.gamespot.com/ps/199061-tony-hawks-pro-skater-2/saves",
+  "source": "GameFAQs (section 'PlayStation DexDrive Save (North America)')",
+  "author": "ohnoitschris",
+  "licence": null,
+  "posted": "2001-07-25",
+  "fetched": "2026-11-05",
+  "what_it_is": "5 of my very best skate parks, a career that has all basic levels unlocked, and Bob Burnquist at maximum stats.",
+  "gamefaqs": {
+    "id": 989,
+    "product": "Tony Hawk's Pro Skater 2",
+    "section": "PlayStation DexDrive Save (North America)",
+    "region": "North America",
+    "served_as": "tony-hawks-pro-skater-2.989.gme",
+    "listed_size": "131KB"
+  },
+  "format": "DexDrive .gme: '123-456-STD' 3904-byte header (per-block comments) + 131072-byte raw card; the card holds 6 save(s), 6 for this game (BASLUS-01066PI\\KPAQ, BASLUS-01066UAENPBB, BASLUS-010661CJKPBC, BASLUS-01066PSJAPB0, ...)",
+  "release": "Tony Hawk's Pro Skater 2 (USA)",
+  "game_saves": [
+    {
+      "name": "BASLUS-01066PI\\KPAQ",
+      "blocks": 1,
+      "title": "THPS2 PARKー PHUN PARK"
+    },
+    {
+      "name": "BASLUS-01066UAENPBB",
+      "blocks": 1,
+      "title": "THPS2 PARKー UP IN DA T0WN"
+    },
+    {
+      "name": "BASLUS-010661CJKPBC",
+      "blocks": 1,
+      "title": "THPS2 PARKー 1337 P4RK"
+    },
+    {
+      "name": "BASLUS-01066PSJAPB0",
+      "blocks": 1,
+      "title": "THPS2 PARKー MAD PARK"
+    },
+    {
+      "name": "BASLUS-01066C\\HAGAV",
+      "blocks": 1,
+      "title": "THPS2 CAREERー CAREER A"
+    },
+    {
+      "name": "BASLUS-01066C\\FDPAO",
+      "blocks": 1,
+      "title": "THPS2 PARKー CHR MNB JLA WORLD"
+    }
+  ],
+  "files": {
+    "tony-hawks-pro-skater-2.989.gme": {
+      "size": 134976,
+      "sha1": "9016f946299cb2872436700247892b9839f5cf0b"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Tony Hawk's Pro Skater 2 (USA).cue",
+      "sha1": "ea5388de4fa83e3d3b5f37d752f1eb8d3bd5d88e",
+      "size": 96
+    },
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr tony-hawks-pro-skater-2.989.gme: unwraps the card (DexDrive .gme: 3904-byte header + card)",
+    "converted": {
+      "size": 131072,
+      "sha1": "1d0ec86ad84a3d53a6c12e520561e79d37e42b62"
+    },
+    "script": "scripts/psx/Tony Hawk's Pro Skater 2.load.txt",
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "loads",
+        "detail": "Options > Memory Card > Load Data lists the career CAREER A; Park Editor > Load lists its 5 park(s)"
+      },
+      "beetle-psx-hw": {
+        "result": "loads",
+        "detail": "Options > Memory Card > Load Data lists the career CAREER A; Park Editor > Load lists its 5 park(s) (the same screen as on beetle-psx)"
+      },
+      "pcsx-rearmed": {
+        "result": "loads",
+        "detail": "Options > Memory Card > Load Data lists the career CAREER A; Park Editor > Load lists its 5 park(s) (the same screen as on beetle-psx)"
+      },
+      "swanstation": {
+        "result": "loads",
+        "detail": "Options > Memory Card > Load Data lists the career CAREER A; Park Editor > Load lists its 5 park(s) (the same screen as on beetle-psx)"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": [
+      "beetle-psx",
+      "beetle-psx-hw",
+      "pcsx-rearmed",
+      "swanstation"
+    ]
+  },
+  "note": null
+}

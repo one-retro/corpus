@@ -1,0 +1,98 @@
+{
+  "method": "downloaded",
+  "system": "nds",
+  "core": "desmume",
+  "url": "https://gamefaqs.gamespot.com/ds/960099-pokemon-heartgold-version/saves/29982",
+  "source_page": "https://gamefaqs.gamespot.com/ds/960099-pokemon-heartgold-version/saves",
+  "source": "GameFAQs (section 'Action Replay Max DS (.duc) Game Save (Europe)')",
+  "author": "KevinHacks",
+  "licence": null,
+  "posted": "2024-06-24",
+  "fetched": "2026-11-05",
+  "what_it_is": "100% complete 493 Pokemon captured complete pokedex black coach card coach card with 5 stars",
+  "gamefaqs": {
+    "id": 29982,
+    "product": "Pokemon HeartGold / SoulSilver Version",
+    "section": "Action Replay Max DS (.duc) Game Save (Europe)",
+    "region": "Europe",
+    "served_as": "pokemon-heartgold-soulsilver-version.29982.duc",
+    "listed_size": "512KB"
+  },
+  "format": "DeSmuME .dsv: 512 KiB raw and the 122-byte footer (size 524288, padSize 524288, type 0 (Autodetect), addr_size 3, mem_size 524288)",
+  "files": {
+    "pokemon-heartgold-soulsilver-version.29982.duc": {
+      "size": 524410,
+      "sha1": "2f545322c78b5adc738eea5879d1252708549c73"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": null,
+    "converted_with": "tools/gamefaqs/nds-dsv.py IN step0.bin, then tools/gamefaqs/nds-cores.py step0.bin --chip 524288 --stem 'Pokemon - Edicion Oro HeartGold (Spain)' --out DIR: cuts the DeSmuME footer; fits it to the 524288-byte chip (exact size) and writes each core's file",
+    "converted": {
+      "size": 524288,
+      "sha1": "5efbbcfc82e8a30942e17e310b1185ac3105f4b7"
+    },
+    "core_files": {
+      "desmume": {
+        "name": "Pokemon - Edicion Oro HeartGold (Spain).dsv",
+        "size": 524410,
+        "sha1": "adf65b948f6344bfd6695fcaa105f1362825054d"
+      },
+      "desmume-2015": {
+        "name": "Pokemon - Edicion Oro HeartGold (Spain).dsv",
+        "size": 524410,
+        "sha1": "adf65b948f6344bfd6695fcaa105f1362825054d"
+      },
+      "melonds": {
+        "name": "Pokemon - Edicion Oro HeartGold (Spain).sav",
+        "size": 524288,
+        "sha1": "5efbbcfc82e8a30942e17e310b1185ac3105f4b7"
+      },
+      "melonds-ds": {
+        "name": "Pokemon - Edicion Oro HeartGold (Spain).srm",
+        "size": 524288,
+        "sha1": "5efbbcfc82e8a30942e17e310b1185ac3105f4b7"
+      },
+      "noods": {
+        "name": "Pokemon - Edicion Oro HeartGold (Spain).sav",
+        "size": 524288,
+        "sha1": "5efbbcfc82e8a30942e17e310b1185ac3105f4b7"
+      },
+      "skyemu": {
+        "name": "Pokemon - Edicion Oro HeartGold (Spain).srm",
+        "size": 8388608,
+        "sha1": "ede80fdf8ce9adc9f534a65e4f28973cef47e8e3"
+      }
+    },
+    "script": null,
+    "cores": {
+      "desmume": {
+        "result": "not-run",
+        "detail": "no image of Pokemon - Edicion Oro HeartGold (Spain) in the library"
+      },
+      "desmume-2015": {
+        "result": "not-run",
+        "detail": "no image of Pokemon - Edicion Oro HeartGold (Spain) in the library"
+      },
+      "melonds": {
+        "result": "not-run",
+        "detail": "no image of Pokemon - Edicion Oro HeartGold (Spain) in the library"
+      },
+      "melonds-ds": {
+        "result": "not-run",
+        "detail": "no image of Pokemon - Edicion Oro HeartGold (Spain) in the library"
+      },
+      "noods": {
+        "result": "not-run",
+        "detail": "no image of Pokemon - Edicion Oro HeartGold (Spain) in the library"
+      },
+      "skyemu": {
+        "result": "not-run",
+        "detail": "no image of Pokemon - Edicion Oro HeartGold (Spain) in the library"
+      }
+    },
+    "proof_order": []
+  },
+  "note": "Release: Spanish (language 7); HeartGold from the version that caught the player's own Pokemon (origin game in the decrypted Pokemon data, OT matching the trainer)."
+}

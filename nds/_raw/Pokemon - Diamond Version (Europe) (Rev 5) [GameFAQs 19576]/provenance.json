@@ -1,0 +1,109 @@
+{
+  "method": "downloaded",
+  "system": "nds",
+  "core": "_raw",
+  "url": "https://gamefaqs.gamespot.com/ds/925601-pokemon-diamond-version/saves/19576",
+  "source_page": "https://gamefaqs.gamespot.com/ds/925601-pokemon-diamond-version/saves",
+  "source": "GameFAQs (section 'Action Replay Max DS (.duc) Game Save (Europe)')",
+  "author": "jisse2",
+  "licence": null,
+  "posted": "2009-08-11",
+  "fetched": "2026-11-05",
+  "what_it_is": "all badges, all cities, all pokemon and pokedex",
+  "gamefaqs": {
+    "id": 19576,
+    "product": "Pokemon Diamond / Pearl / Platinum Version",
+    "section": "Action Replay Max DS (.duc) Game Save (Europe)",
+    "region": "Europe",
+    "served_as": "pokemon-diamond-pearl-platinum-version.19576.duc",
+    "listed_size": "512KB"
+  },
+  "format": "raw 512 KiB chip image with no header (exact size)",
+  "files": {
+    "pokemon-diamond-pearl-platinum-version.19576.duc": {
+      "size": 524288,
+      "sha1": "0132288ef06b7ecbf1d2be25f0024cecd7f02b07"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Pokemon - Diamond Version (Europe) (Rev 5).nds",
+      "sha1": "66d2fbfb0dbc1f86a3d726971196989b950092bc",
+      "size": 67108864
+    },
+    "converted_with": "tools/gamefaqs/nds-cores.py IN --chip 524288 --stem 'Pokemon - Diamond Version (Europe) (Rev 5)' --out DIR: fits it to the 524288-byte chip (exact size) and writes each core's file",
+    "converted": {
+      "size": 524288,
+      "sha1": "0132288ef06b7ecbf1d2be25f0024cecd7f02b07"
+    },
+    "core_files": {
+      "desmume": {
+        "name": "Pokemon - Diamond Version (Europe) (Rev 5).dsv",
+        "size": 524410,
+        "sha1": "5db83ca9c6d36f134441ef92a89cbee52e02f9b7"
+      },
+      "desmume-2015": {
+        "name": "Pokemon - Diamond Version (Europe) (Rev 5).dsv",
+        "size": 524410,
+        "sha1": "5db83ca9c6d36f134441ef92a89cbee52e02f9b7"
+      },
+      "melonds": {
+        "name": "Pokemon - Diamond Version (Europe) (Rev 5).sav",
+        "size": 524288,
+        "sha1": "0132288ef06b7ecbf1d2be25f0024cecd7f02b07"
+      },
+      "melonds-ds": {
+        "name": "Pokemon - Diamond Version (Europe) (Rev 5).srm",
+        "size": 524288,
+        "sha1": "0132288ef06b7ecbf1d2be25f0024cecd7f02b07"
+      },
+      "noods": {
+        "name": "Pokemon - Diamond Version (Europe) (Rev 5).sav",
+        "size": 524288,
+        "sha1": "0132288ef06b7ecbf1d2be25f0024cecd7f02b07"
+      },
+      "skyemu": {
+        "name": "Pokemon - Diamond Version (Europe) (Rev 5).srm",
+        "size": 8388608,
+        "sha1": "3a20eab2bacbae497b931e0f53b4c84c3b3be800"
+      }
+    },
+    "script": "scripts/nds/Pokemon - Diamond Version.load.txt",
+    "cores": {
+      "desmume": {
+        "result": "rejected",
+        "detail": "the game finds no save: Professor Rowan's introduction (\"Hello there! It's so very nice to meet you!\"), as with no save at all"
+      },
+      "desmume-2015": {
+        "result": "rejected",
+        "detail": "the game finds no save: Professor Rowan's introduction (\"Hello there! It's so very nice to meet you!\"), as with no save at all"
+      },
+      "melonds": {
+        "result": "rejected",
+        "detail": "the game finds no save: Professor Rowan's introduction (\"Hello there! It's so very nice to meet you!\"), as with no save at all"
+      },
+      "melonds-ds": {
+        "result": "rejected",
+        "detail": "the game finds no save: Professor Rowan's introduction (\"Hello there! It's so very nice to meet you!\"), as with no save at all"
+      },
+      "noods": {
+        "result": "rejected",
+        "detail": "the game finds no save: Professor Rowan's introduction (\"Hello there! It's so very nice to meet you!\"), as with no save at all"
+      },
+      "skyemu": {
+        "result": "rejected",
+        "detail": "the game finds no save: Professor Rowan's introduction (\"Hello there! It's so very nice to meet you!\"), as with no save at all"
+      }
+    },
+    "proof_order": [
+      "desmume",
+      "desmume-2015",
+      "melonds",
+      "melonds-ds",
+      "noods",
+      "skyemu"
+    ]
+  },
+  "note": "Release: nothing in the file identifies a release: Diamond (Europe) assumed from the section and the product. The first 256 KiB is 0x00 with about 1.8 KiB of scattered data, the rest 0xFF: no Pokemon block footer anywhere. Every core starts a new game."
+}

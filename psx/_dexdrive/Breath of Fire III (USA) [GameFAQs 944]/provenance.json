@@ -1,0 +1,84 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_dexdrive",
+  "url": "https://gamefaqs.gamespot.com/ps/196817-breath-of-fire-iii/saves/944",
+  "source_page": "https://gamefaqs.gamespot.com/ps/196817-breath-of-fire-iii/saves",
+  "source": "GameFAQs (section 'PlayStation DexDrive Save (North America)')",
+  "author": "carlde21",
+  "licence": null,
+  "posted": "2001-07-14",
+  "fetched": "2026-11-05",
+  "what_it_is": "A clear game save, so have fun wandering around the world! Level 43",
+  "gamefaqs": {
+    "id": 944,
+    "product": "Breath of Fire III",
+    "section": "PlayStation DexDrive Save (North America)",
+    "region": "North America",
+    "served_as": "breath-of-fire-iii.944.gme",
+    "listed_size": "131KB"
+  },
+  "format": "DexDrive .gme: '123-456-STD' 3904-byte header (per-block comments) + 131072-byte raw card; the card holds 1 save(s), 1 for this game (BASLUS-00422BOF300)",
+  "release": "Breath of Fire III (USA)",
+  "game_saves": [
+    {
+      "name": "BASLUS-00422BOF300",
+      "blocks": 1,
+      "title": "Breath of Fire 3(1) 51h56m Lv.43"
+    }
+  ],
+  "files": {
+    "breath-of-fire-iii.944.gme": {
+      "size": 134976,
+      "sha1": "4443499cc850ebfdab3241cb09a2d7d93e95edeb"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Breath of Fire III (USA).cue",
+      "sha1": "046ea122a7720d758492ddc2545eb9e78d788461",
+      "size": 218
+    },
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr breath-of-fire-iii.944.gme: unwraps the card (DexDrive .gme: 3904-byte header + card)",
+    "converted": {
+      "size": 131072,
+      "sha1": "7d1dcbc97c62cf88f432aedb270f7c480ec0fcf0"
+    },
+    "script": "scripts/psx/Breath of Fire III.load.txt",
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "loads",
+        "detail": "Load Which File? shows file 1: Carl, LV 43, CLEAR, 51:56"
+      },
+      "beetle-psx-hw": {
+        "result": "loads",
+        "detail": "Load Which File? shows file 1: Carl, LV 43, CLEAR, 51:56 (the same screen as on beetle-psx)"
+      },
+      "pcsx-rearmed": {
+        "result": "loads",
+        "detail": "Load Which File? shows file 1: Carl, LV 43, CLEAR, 51:56 (the same screen as on beetle-psx)"
+      },
+      "swanstation": {
+        "result": "loads",
+        "detail": "Load Which File? shows file 1: Carl, LV 43, CLEAR, 51:56 (the same screen as on beetle-psx)"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": [
+      "beetle-psx",
+      "beetle-psx-hw",
+      "pcsx-rearmed",
+      "swanstation"
+    ]
+  },
+  "note": null
+}

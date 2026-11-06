@@ -1,0 +1,98 @@
+{
+  "method": "downloaded",
+  "system": "nds",
+  "core": "_action-replay-ds",
+  "url": "https://gamefaqs.gamespot.com/ds/954391-picross-3d/saves/19278",
+  "source_page": "https://gamefaqs.gamespot.com/ds/954391-picross-3d/saves",
+  "source": "GameFAQs (section 'Action Replay Max DS (.duc) Game Save (Japan)')",
+  "author": "MYST4KE",
+  "licence": null,
+  "posted": "2009-06-11",
+  "fetched": "2026-11-05",
+  "what_it_is": "369/369 100% complete 3 stars every puzzle",
+  "gamefaqs": {
+    "id": 19278,
+    "product": "Picross 3D",
+    "section": "Action Replay Max DS (.duc) Game Save (Japan)",
+    "region": "Japan",
+    "served_as": "picross-3d.19278.duc",
+    "listed_size": "256KB"
+  },
+  "format": "Action Replay DS save: the 500-byte 'ARDS000000000001' header written by a converter ('Converted Savegame' / 'Savegame', ASCII 'shuny conv'), then 256 KiB raw for the 1 MiB flash (padded 262144 -> 1048576 with 0xFF)",
+  "files": {
+    "picross-3d.19278.duc": {
+      "size": 262644,
+      "sha1": "b717a4dc233e443b1b3295510141667ac0c6c249"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": null,
+    "converted_with": "tools/gamefaqs/nds-ards.py IN step0.bin, then tools/gamefaqs/nds-cores.py step0.bin --chip 1048576 --stem 'Rittai Picross (Japan)' --out DIR: drops the Action Replay header; fits it to the 1048576-byte chip (padded 262144 -> 1048576 with 0xFF) and writes each core's file",
+    "converted": {
+      "size": 1048576,
+      "sha1": "1e9d93093535755eaa8ec9f92053867e739a99cb"
+    },
+    "core_files": {
+      "desmume": {
+        "name": "Rittai Picross (Japan).dsv",
+        "size": 1048698,
+        "sha1": "7a28b40f35e492c4841189f31ac5327da9965ed2"
+      },
+      "desmume-2015": {
+        "name": "Rittai Picross (Japan).dsv",
+        "size": 1048698,
+        "sha1": "7a28b40f35e492c4841189f31ac5327da9965ed2"
+      },
+      "melonds": {
+        "name": "Rittai Picross (Japan).sav",
+        "size": 1048576,
+        "sha1": "1e9d93093535755eaa8ec9f92053867e739a99cb"
+      },
+      "melonds-ds": {
+        "name": "Rittai Picross (Japan).srm",
+        "size": 1048576,
+        "sha1": "1e9d93093535755eaa8ec9f92053867e739a99cb"
+      },
+      "noods": {
+        "name": "Rittai Picross (Japan).sav",
+        "size": 1048576,
+        "sha1": "1e9d93093535755eaa8ec9f92053867e739a99cb"
+      },
+      "skyemu": {
+        "name": "Rittai Picross (Japan).srm",
+        "size": 8388608,
+        "sha1": "c9f5d04419b59f6c746695deff07d8ed9f2614e7"
+      }
+    },
+    "script": null,
+    "cores": {
+      "desmume": {
+        "result": "not-run",
+        "detail": "no image of Rittai Picross (Japan) in the library"
+      },
+      "desmume-2015": {
+        "result": "not-run",
+        "detail": "no image of Rittai Picross (Japan) in the library"
+      },
+      "melonds": {
+        "result": "not-run",
+        "detail": "no image of Rittai Picross (Japan) in the library"
+      },
+      "melonds-ds": {
+        "result": "not-run",
+        "detail": "no image of Rittai Picross (Japan) in the library"
+      },
+      "noods": {
+        "result": "not-run",
+        "detail": "no image of Rittai Picross (Japan) in the library"
+      },
+      "skyemu": {
+        "result": "not-run",
+        "detail": "no image of Rittai Picross (Japan) in the library"
+      }
+    },
+    "proof_order": []
+  },
+  "note": null
+}

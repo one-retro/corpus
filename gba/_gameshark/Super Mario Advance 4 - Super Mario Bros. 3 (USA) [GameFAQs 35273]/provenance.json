@@ -1,0 +1,119 @@
+{
+  "method": "downloaded",
+  "system": "gba",
+  "core": "_gameshark",
+  "url": "https://gamefaqs.gamespot.com/gba/589393-super-mario-advance-4-super-mario-bros-3/saves/35273",
+  "source_page": "https://gamefaqs.gamespot.com/gba/589393-super-mario-advance-4-super-mario-bros-3/saves",
+  "source": "GameFAQs (section 'GameBoy Advance GameShark Save (North America)')",
+  "author": "Memory-",
+  "licence": null,
+  "posted": "2026-07-27",
+  "fetched": "2026-11-05",
+  "what_it_is": "(100% Complete) All main game levels cleared. 32 e-reader levels are loaded/completed with all Ace/E-Coins collected, and access to all 3 toad house mini-games. Max lives and score for both main file and e-reader world.",
+  "gamefaqs": {
+    "id": 35273,
+    "product": "Super Mario Advance 4: Super Mario Bros. 3",
+    "section": "GameBoy Advance GameShark Save (North America)",
+    "region": "North America",
+    "served_as": "super-mario-advance-4-super-mario-bros-3.35273.sps",
+    "listed_size": "128KB"
+  },
+  "format": "SharkPort save (\"SharkPortSave\", kind 0x000F0000): title \"SUPER MARIOD\", date \"7/24/2026 6:28:36 PM\", notes \"\"; cart header \"SUPER MARIOD\" / 'AX4E' (complement 0x73); payload 131072 bytes; checksum: signed",
+  "files": {
+    "super-mario-advance-4-super-mario-bros-3.35273.sps": {
+      "size": 131173,
+      "sha1": "f98a7130420366ca403e1d9432515fe92ea5f5fd"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Super Mario Advance 4 - Super Mario Bros. 3 (USA).gba",
+      "sha1": "69e81f41394f02d64cad206adb26b3cd43690770",
+      "size": 4194304
+    },
+    "converted_with": "tools/gamefaqs/gba-sharkport.py super-mario-advance-4-super-mario-bros-3.35273.sps --rom ROM --core CORE --outdir DIR: reads the SharkPort container as mGBA does and imports the payload as mGBA's _importSavedata does (cut to the chip, EEPROM 8-byte blocks reversed, the rest of the chip erased), then lays the chip out as the core keeps it",
+    "converted": {
+      "size": 131072,
+      "sha1": "bd3b7fbc8a72b21a3df93211e020514bfc34684a"
+    },
+    "script": "scripts/gba/Super Mario Advance 4 - Super Mario Bros. 3.load.txt",
+    "cores": {
+      "mgba": {
+        "result": "loads",
+        "detail": "Select a File: File 1 WORLD 1, Level Card with the e-Reader levels",
+        "core_version": "mGBA 0.11-212-7a12d6d",
+        "file": {
+          "name": "Super Mario Advance 4 - Super Mario Bros. 3 (USA).srm",
+          "size": 131072,
+          "sha1": "bd3b7fbc8a72b21a3df93211e020514bfc34684a"
+        },
+        "frame": "files"
+      },
+      "vba-m": {
+        "result": "loads",
+        "detail": "Select a File: File 1 WORLD 1, Level Card with the e-Reader levels",
+        "core_version": "VBA-M 115defb",
+        "file": {
+          "name": "Super Mario Advance 4 - Super Mario Bros. 3 (USA).srm",
+          "size": 131072,
+          "sha1": "bd3b7fbc8a72b21a3df93211e020514bfc34684a"
+        },
+        "frame": "files"
+      },
+      "gpsp": {
+        "result": "loads",
+        "detail": "Select a File: File 1 WORLD 1, Level Card with the e-Reader levels",
+        "core_version": "gpSP v1.1.0-5819380",
+        "file": {
+          "name": "Super Mario Advance 4 - Super Mario Bros. 3 (USA).srm",
+          "size": 131072,
+          "sha1": "bd3b7fbc8a72b21a3df93211e020514bfc34684a"
+        },
+        "frame": "files"
+      },
+      "vba-next": {
+        "result": "loads",
+        "detail": "Select a File: File 1 WORLD 1, Level Card with the e-Reader levels",
+        "core_version": "VBA Next v1.0.2",
+        "file": {
+          "name": "Super Mario Advance 4 - Super Mario Bros. 3 (USA).srm",
+          "size": 139264,
+          "sha1": "b2d344abcc781444f96197c30b291af914d0e841"
+        },
+        "frame": "files"
+      },
+      "beetle-gba": {
+        "result": "loads",
+        "detail": "Select a File: File 1 WORLD 1, Level Card with the e-Reader levels",
+        "core_version": "Beetle GBA v0.9.36 b158166",
+        "file": {
+          "name": "Super Mario Advance 4 - Super Mario Bros. 3 (USA).4e5fde12dbd0441150a9c177e545f56f.sav",
+          "size": 131072,
+          "sha1": "bd3b7fbc8a72b21a3df93211e020514bfc34684a"
+        },
+        "frame": "files"
+      },
+      "skyemu": {
+        "result": "loads",
+        "detail": "Select a File: File 1 WORLD 1, Level Card with the e-Reader levels",
+        "core_version": "SkyEmu adacd0788964ed89f5c43dcbc1f3cc26deec996c",
+        "file": {
+          "name": "Super Mario Advance 4 - Super Mario Bros. 3 (USA).srm",
+          "size": 131072,
+          "sha1": "bd3b7fbc8a72b21a3df93211e020514bfc34684a"
+        },
+        "frame": "files"
+      }
+    },
+    "proof_order": [
+      "mgba",
+      "vba-m",
+      "gpsp",
+      "vba-next",
+      "beetle-gba",
+      "skyemu"
+    ]
+  },
+  "note": null
+}

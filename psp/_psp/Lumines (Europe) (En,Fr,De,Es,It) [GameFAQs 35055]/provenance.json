@@ -1,0 +1,63 @@
+{
+  "method": "downloaded",
+  "system": "psp",
+  "core": "_psp",
+  "url": "https://gamefaqs.gamespot.com/psp/924594-lumines/saves/35055",
+  "source_page": "https://gamefaqs.gamespot.com/psp/924594-lumines/saves",
+  "source": "GameFAQs (section 'PSP Game Save Directory (ZIP) (Europe)')",
+  "author": "Edward22",
+  "licence": null,
+  "posted": "2026-06-22",
+  "fetched": "2026-11-05",
+  "what_it_is": "Save 100% All Skins",
+  "gamefaqs": {
+    "id": 35055,
+    "product": "Lumines",
+    "section": "PSP Game Save Directory (ZIP) (Europe)",
+    "region": "Europe",
+    "served_as": "lumines.35055.zip",
+    "listed_size": "37KB"
+  },
+  "format": "PSP save folder, 4 files in the folder ULES00043LUMINES/: PARAM.SFO (SAVEDATA_DIRECTORY ULES00043LUMINES, TITLE LUMINES, SAVEDATA_FILE_LIST names no file (4 bytes 785f6908, then zeros)), DATA.BIN 18464 bytes (encrypted by the system's savedata call), ICON0.PNG, PIC1.PNG",
+  "files": {
+    "ULES00043LUMINES/DATA.BIN": {
+      "size": 18464,
+      "sha1": "e335bfbf8bf3143bb4b88232be462d345f97fda8"
+    },
+    "ULES00043LUMINES/ICON0.PNG": {
+      "size": 16246,
+      "sha1": "9bc662b73118d36311ade4111445568142b5df41"
+    },
+    "ULES00043LUMINES/PARAM.SFO": {
+      "size": 4912,
+      "sha1": "3cff3e803a09a85d862b2ec61a98d4be851faf71"
+    },
+    "ULES00043LUMINES/PIC1.PNG": {
+      "size": 4285,
+      "sha1": "3e28ab06d010719cbc34cc92f63b87f962d8b146"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": null,
+    "converted_with": "tools/gamefaqs/psp-savedata.py memstick <zip> <memory stick>: writes the zip's files, unchanged, to PSP/SAVEDATA/<SAVEDATA_DIRECTORY>/ (the name read from PARAM.SFO)",
+    "converted": {
+      "path": "PSP/SAVEDATA/ULES00043LUMINES/",
+      "files": 4,
+      "bytes_changed": 0
+    },
+    "script": null,
+    "cores": {
+      "ppsspp": {
+        "result": "not-run",
+        "detail": "no Lumines (Europe) (En,Fr,De,Es,It) image in the library (it has Lumines (USA) only)"
+      },
+      "ppsspp@ppsspp": {
+        "result": "not-run",
+        "detail": "no Lumines (Europe) (En,Fr,De,Es,It) image in the library (it has Lumines (USA) only)"
+      }
+    },
+    "proof_order": []
+  },
+  "note": null
+}

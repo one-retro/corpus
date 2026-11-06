@@ -1,0 +1,16 @@
+# Final Fantasy IV (Final Fantasy Chronicles): title > Load > Slot 1 > the save list.
+wait 1500           # BIOS logos
+repeat 6            # skip the intros to the title menu
+press start 6
+wait 250
+end
+press b 6           # the Load menu: New Game / Memo / Slot 1 / Slot 2 / Save Info
+wait 300
+press down 6
+wait 30
+press down 6
+wait 30
+shot menu
+press b 6           # Slot 1: "LOADING", then the list
+wait 1000
+shot load

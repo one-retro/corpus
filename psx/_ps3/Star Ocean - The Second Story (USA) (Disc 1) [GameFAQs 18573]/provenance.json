@@ -1,0 +1,88 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_ps3",
+  "url": "https://gamefaqs.gamespot.com/ps/198763-star-ocean-the-second-story/saves/18573",
+  "source_page": "https://gamefaqs.gamespot.com/ps/198763-star-ocean-the-second-story/saves",
+  "source": "GameFAQs (section 'PlayStation PS3 Virtual Memory Card Save (ZIP) (North America)')",
+  "author": "blade39194",
+  "licence": null,
+  "posted": "2009-01-29",
+  "fetched": "2026-11-05",
+  "what_it_is": "Save at the earliest moment with Claude with Max Money",
+  "gamefaqs": {
+    "id": 18573,
+    "product": "Star Ocean: The Second Story",
+    "section": "PlayStation PS3 Virtual Memory Card Save (ZIP) (North America)",
+    "region": "North America",
+    "served_as": "star-ocean-the-second-story.18573.zip",
+    "listed_size": "2KB",
+    "served_zip": {
+      "size": 2587,
+      "sha1": "eaa0ab5f33d66142d12ec92e9a2a2a22b30348c9"
+    }
+  },
+  "format": "zip of 1 PS3 export(s) (.PSV): '\\0VSP' header (signature, save name at 0x64), the save's blocks from 0x84 (8324 bytes); it holds 1 save(s), 1 for this game (BASCUS-94421S02-S01)",
+  "release": "Star Ocean - The Second Story (USA) (Disc 1)",
+  "game_saves": [
+    {
+      "name": "BASCUS-94421S02-S01",
+      "blocks": 1,
+      "title": "SO2 01 0:05 Claude LV1"
+    }
+  ],
+  "files": {
+    "BASCUS-944215330322D533031.PSV": {
+      "size": 8324,
+      "sha1": "9507076b25f287f368aef6cde86672bfa11ef437"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Star Ocean - The Second Story (USA) (Disc 1).cue",
+      "sha1": "c13756292cbf2a27d2be247c5576e584552ce40f",
+      "size": 110
+    },
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr BASCUS-944215330322D533031.PSV: puts the save(s) on a freshly formatted card, as MemcardRex imports a single save",
+    "converted": {
+      "size": 131072,
+      "sha1": "6d4543a1b6ea6d9c5bb5a840fa1a0304e994bbc6"
+    },
+    "script": "scripts/psx/Star Ocean - The Second Story.load.txt",
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "loads",
+        "detail": "Load, Slot 1 shows #1: time 0:05, 0 battles"
+      },
+      "beetle-psx-hw": {
+        "result": "loads",
+        "detail": "Load, Slot 1 shows #1: time 0:05, 0 battles (the same screen as on beetle-psx)"
+      },
+      "pcsx-rearmed": {
+        "result": "loads",
+        "detail": "Load, Slot 1 shows #1: time 0:05, 0 battles (the same screen as on beetle-psx)"
+      },
+      "swanstation": {
+        "result": "loads",
+        "detail": "Load, Slot 1 shows #1: time 0:05, 0 battles (the same screen as on beetle-psx)"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": [
+      "beetle-psx",
+      "beetle-psx-hw",
+      "pcsx-rearmed",
+      "swanstation"
+    ]
+  },
+  "note": null
+}

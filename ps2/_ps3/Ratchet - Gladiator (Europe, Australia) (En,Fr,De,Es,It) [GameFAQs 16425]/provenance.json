@@ -1,0 +1,188 @@
+{
+  "method": "downloaded",
+  "system": "ps2",
+  "core": "_ps3",
+  "url": "https://gamefaqs.gamespot.com/ps2/927167-ratchet-deadlocked/saves/16425",
+  "source_page": "https://gamefaqs.gamespot.com/ps2/927167-ratchet-deadlocked/saves",
+  "source": "GameFAQs (section 'PlayStation 2 PS3 Virtual Memory Card Save (ZIP) (Europe)')",
+  "author": "finn_74",
+  "licence": null,
+  "posted": "2008-01-04",
+  "fetched": "2026-11-05",
+  "what_it_is": "100% Complete, except only have 314 nanotech, for Australian Version",
+  "gamefaqs": {
+    "id": 16425,
+    "product": "Ratchet: Deadlocked",
+    "section": "PlayStation 2 PS3 Virtual Memory Card Save (ZIP) (Europe)",
+    "region": "Europe",
+    "served_as": "ratchet-deadlocked.16425.zip",
+    "listed_size": "36KB"
+  },
+  "format": "PS3 Virtual Memory Card export (.PSV): '\\0VSP' header, PS2 save type 2, 402532 bytes, folder BESCES-53285RATCHET, 10 files, 401770 bytes of file data",
+  "files": {
+    "BESCES-5328552415443484554.PSV": {
+      "size": 402532,
+      "sha1": "7f76f30a053e6a239485189122c3f7d4e11759f1"
+    }
+  },
+  "save": {
+    "folder": "BESCES-53285RATCHET",
+    "title": [
+      "Ratchet:",
+      "Gladiator"
+    ],
+    "times": "as the file stores them (PS2 card times, JST)",
+    "files": [
+      {
+        "name": "icon.sys",
+        "size": 964,
+        "sha1": "7656743df968751e786bfe9022f269fe7ff954c0",
+        "created": "2007-06-28 15:21:09",
+        "modified": "2007-06-28 15:21:09"
+      },
+      {
+        "name": "static.ico",
+        "size": 56214,
+        "sha1": "f1a517340a0243debc87ff48a03b16c5cfbbc08d",
+        "created": "2007-06-28 15:21:09",
+        "modified": "2007-06-28 15:21:10"
+      },
+      {
+        "name": "net.bin",
+        "size": 3900,
+        "sha1": "6649f03dfc886b9a528f8e85329a0be3b90dc4ee",
+        "created": "2007-06-28 15:21:10",
+        "modified": "2007-06-28 15:21:11"
+      },
+      {
+        "name": "patch.bin",
+        "size": 65536,
+        "sha1": "e98c0dfc7fd206236980b6c94e33e05445db5ae0",
+        "created": "2007-06-28 15:21:11",
+        "modified": "2007-06-28 15:21:12"
+      },
+      {
+        "name": "save0.bin",
+        "size": 49092,
+        "sha1": "35aedd86b4ffebc4e3f05c095616c89830b01c8c",
+        "created": "2007-06-28 15:21:12",
+        "modified": "2008-01-04 12:05:11"
+      },
+      {
+        "name": "save1.bin",
+        "size": 49092,
+        "sha1": "3a51bcd4f7aa3ab5077061f2e216d071f14b2e95",
+        "created": "2007-06-28 15:21:13",
+        "modified": "2007-10-01 09:47:59"
+      },
+      {
+        "name": "save2.bin",
+        "size": 49092,
+        "sha1": "9c735c6bd9bacda0477312a4e6422dbd7b576a26",
+        "created": "2007-06-28 15:21:14",
+        "modified": "2007-06-28 15:21:15"
+      },
+      {
+        "name": "save3.bin",
+        "size": 49092,
+        "sha1": "9c735c6bd9bacda0477312a4e6422dbd7b576a26",
+        "created": "2007-06-28 15:21:15",
+        "modified": "2007-06-28 15:21:16"
+      },
+      {
+        "name": "save4.bin",
+        "size": 49092,
+        "sha1": "9c735c6bd9bacda0477312a4e6422dbd7b576a26",
+        "created": "2007-06-28 15:21:16",
+        "modified": "2007-06-28 15:21:17"
+      },
+      {
+        "name": "BESCES-53285RATCHET",
+        "size": 29696,
+        "sha1": "9e7f89ab512d3e561646a39b26961775719f3c4c",
+        "created": "2007-06-28 15:21:17",
+        "modified": "2007-06-28 15:21:18"
+      }
+    ]
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": null,
+    "converted_with": "tools/gamefaqs/ps2-card.py 'BESCES-5328552415443484554.PSV' -o OUT: reads the save with mymcplus 3.0.5 and writes OUT/Mcd001.ps2 (an 8 MiB card with ECC, formatted and filled by mymcplus) for lrps2/pcee2/pcsx2, and OUT/mc0/<folder>/ for Play!",
+    "converted": {
+      "Mcd001.ps2": {
+        "size": 8650752,
+        "sha1": "5c298fdedea6f8bc327f4a310f01f619261cc5ca"
+      },
+      "mc0/BESCES-53285RATCHET/": {
+        "icon.sys": {
+          "size": 964,
+          "sha1": "7656743df968751e786bfe9022f269fe7ff954c0"
+        },
+        "static.ico": {
+          "size": 56214,
+          "sha1": "f1a517340a0243debc87ff48a03b16c5cfbbc08d"
+        },
+        "net.bin": {
+          "size": 3900,
+          "sha1": "6649f03dfc886b9a528f8e85329a0be3b90dc4ee"
+        },
+        "patch.bin": {
+          "size": 65536,
+          "sha1": "e98c0dfc7fd206236980b6c94e33e05445db5ae0"
+        },
+        "save0.bin": {
+          "size": 49092,
+          "sha1": "35aedd86b4ffebc4e3f05c095616c89830b01c8c"
+        },
+        "save1.bin": {
+          "size": 49092,
+          "sha1": "3a51bcd4f7aa3ab5077061f2e216d071f14b2e95"
+        },
+        "save2.bin": {
+          "size": 49092,
+          "sha1": "9c735c6bd9bacda0477312a4e6422dbd7b576a26"
+        },
+        "save3.bin": {
+          "size": 49092,
+          "sha1": "9c735c6bd9bacda0477312a4e6422dbd7b576a26"
+        },
+        "save4.bin": {
+          "size": 49092,
+          "sha1": "9c735c6bd9bacda0477312a4e6422dbd7b576a26"
+        },
+        "BESCES-53285RATCHET": {
+          "size": 29696,
+          "sha1": "9e7f89ab512d3e561646a39b26961775719f3c4c"
+        }
+      },
+      "read_back": "work/ps2/tools/mcfs.py lists every file with the size and SHA-1 put on the card; one-saves (1saves convert + inspect) reads the card and finds BESCES-53285RATCHET",
+      "timestamps": "what the save does not date is 2000-01-01 00:00:00 (JST, as a card stores it); the card's own root entries too"
+    },
+    "script": null,
+    "cores": {
+      "pcee2": {
+        "result": "not-run",
+        "detail": "no image of Ratchet - Gladiator (Europe, Australia) (En,Fr,De,Es,It) in the library"
+      },
+      "lrps2": {
+        "result": "not-run",
+        "detail": "no image of Ratchet - Gladiator (Europe, Australia) (En,Fr,De,Es,It) in the library"
+      },
+      "play": {
+        "result": "not-run",
+        "detail": "no image of Ratchet - Gladiator (Europe, Australia) (En,Fr,De,Es,It) in the library"
+      },
+      "pcsx2": {
+        "result": "not-run",
+        "detail": "no image of Ratchet - Gladiator (Europe, Australia) (En,Fr,De,Es,It) in the library"
+      },
+      "armsx2": {
+        "result": "not-run",
+        "detail": "ARMSX2 renders only through Vulkan here and falls back to a null GS (no picture), so nothing shows what the game read (ps2/NOTES.md)"
+      }
+    },
+    "proof_order": []
+  },
+  "note": null
+}

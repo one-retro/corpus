@@ -1,0 +1,8 @@
+# Mario Party DS, loading a save: the title, then Select Data with each file's
+# name and MP Points. Without a save the game formats the EEPROM first.
+wait 600
+press start 6
+wait 300
+press a 6
+wait 300
+shot selectdata

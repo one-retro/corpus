@@ -1,0 +1,119 @@
+{
+  "method": "downloaded",
+  "system": "gba",
+  "core": "_gameshark",
+  "url": "https://gamefaqs.gamespot.com/gba/563596-pokemon-sapphire-version/saves/10722",
+  "source_page": "https://gamefaqs.gamespot.com/gba/563596-pokemon-sapphire-version/saves",
+  "source": "GameFAQs (section 'GameBoy Advance GameShark Save (North America)')",
+  "author": "kittumenon1",
+  "licence": null,
+  "posted": "2006-01-28",
+  "fetched": "2026-11-05",
+  "what_it_is": "Name- Kittu, Pokedex-202, 1 Sharked- Latias, 1 Shiny- Tentacruel, Gold Trainer Card",
+  "gamefaqs": {
+    "id": 10722,
+    "product": "Pokemon Ruby / Sapphire / Emerald Version",
+    "section": "GameBoy Advance GameShark Save (North America)",
+    "region": "North America",
+    "served_as": "pokemon-ruby-sapphire-emerald-version.10722.sps",
+    "listed_size": "64KB"
+  },
+  "format": "SharkPort save (\"SharkPortSave\", kind 0x000F0000): title \"POKEMON RUBY\", date \"1/29/2006 12:00:14 PM\", notes \"\"; cart header \"POKEMON RUBY\" / 'AXVE' (complement 0x41); payload 65536 bytes; checksum: signed",
+  "files": {
+    "pokemon-ruby-sapphire-emerald-version.10722.sps": {
+      "size": 65638,
+      "sha1": "df16d851fcc4ec967a6911212b62ae90c1c6fe13"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Pokemon - Ruby Version (USA).gba",
+      "sha1": "f28b6ffc97847e94a6c21a63cacf633ee5c8df1e",
+      "size": 16777216
+    },
+    "converted_with": "tools/gamefaqs/gba-sharkport.py pokemon-ruby-sapphire-emerald-version.10722.sps --rom ROM --core CORE --outdir DIR: reads the SharkPort container as mGBA does and imports the payload as mGBA's _importSavedata does (cut to the chip, EEPROM 8-byte blocks reversed, the rest of the chip erased), then lays the chip out as the core keeps it",
+    "converted": {
+      "size": 131072,
+      "sha1": "93a24e3b7eebc35ead042706e72c511f17c9d84d"
+    },
+    "script": "scripts/gba/Pokemon - Ruby Version.load.txt",
+    "cores": {
+      "mgba": {
+        "result": "loads",
+        "detail": "\"The save file is corrupt(ed). The previous save file will be loaded.\", then CONTINUE: Kittu, 80:21 (the older of the two copies)",
+        "core_version": "mGBA 0.11-212-7a12d6d",
+        "file": {
+          "name": "Pokemon - Ruby Version (USA).srm",
+          "size": 131072,
+          "sha1": "93a24e3b7eebc35ead042706e72c511f17c9d84d"
+        },
+        "frame": "next"
+      },
+      "vba-m": {
+        "result": "loads",
+        "detail": "\"The save file is corrupt(ed). The previous save file will be loaded.\", then CONTINUE: Kittu, 80:21 (the older of the two copies)",
+        "core_version": "VBA-M 115defb",
+        "file": {
+          "name": "Pokemon - Ruby Version (USA).srm",
+          "size": 131072,
+          "sha1": "93a24e3b7eebc35ead042706e72c511f17c9d84d"
+        },
+        "frame": "next"
+      },
+      "gpsp": {
+        "result": "loads",
+        "detail": "\"The save file is corrupt(ed). The previous save file will be loaded.\", then CONTINUE: Kittu, 80:21 (the older of the two copies)",
+        "core_version": "gpSP v1.1.0-5819380",
+        "file": {
+          "name": "Pokemon - Ruby Version (USA).srm",
+          "size": 131072,
+          "sha1": "93a24e3b7eebc35ead042706e72c511f17c9d84d"
+        },
+        "frame": "next"
+      },
+      "vba-next": {
+        "result": "loads",
+        "detail": "\"The save file is corrupt(ed). The previous save file will be loaded.\", then CONTINUE: Kittu, 80:21 (the older of the two copies)",
+        "core_version": "VBA Next v1.0.2",
+        "file": {
+          "name": "Pokemon - Ruby Version (USA).srm",
+          "size": 139264,
+          "sha1": "e41cf12101bd78cb947df4093b7fdfa9bf888185"
+        },
+        "frame": "next"
+      },
+      "beetle-gba": {
+        "result": "loads",
+        "detail": "\"The save file is corrupt(ed). The previous save file will be loaded.\", then CONTINUE: Kittu, 80:21 (the older of the two copies)",
+        "core_version": "Beetle GBA v0.9.36 b158166",
+        "file": {
+          "name": "Pokemon - Ruby Version (USA).53d1a2027ab49df34a689faa1fb14726.sav",
+          "size": 131072,
+          "sha1": "93a24e3b7eebc35ead042706e72c511f17c9d84d"
+        },
+        "frame": "next"
+      },
+      "skyemu": {
+        "result": "loads",
+        "detail": "\"The save file is corrupt(ed). The previous save file will be loaded.\", then CONTINUE: Kittu, 80:21 (the older of the two copies)",
+        "core_version": "SkyEmu adacd0788964ed89f5c43dcbc1f3cc26deec996c",
+        "file": {
+          "name": "Pokemon - Ruby Version (USA).srm",
+          "size": 131072,
+          "sha1": "93a24e3b7eebc35ead042706e72c511f17c9d84d"
+        },
+        "frame": "next"
+      }
+    },
+    "proof_order": [
+      "mgba",
+      "vba-m",
+      "gpsp",
+      "vba-next",
+      "beetle-gba",
+      "skyemu"
+    ]
+  },
+  "note": "The GameShark copied only the first 64 KiB of the 128 KiB flash; imported as mGBA does, the second half of the chip stays erased."
+}

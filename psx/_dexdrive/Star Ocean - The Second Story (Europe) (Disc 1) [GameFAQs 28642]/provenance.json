@@ -1,0 +1,75 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_dexdrive",
+  "url": "https://gamefaqs.gamespot.com/ps/198763-star-ocean-the-second-story/saves/28642",
+  "source_page": "https://gamefaqs.gamespot.com/ps/198763-star-ocean-the-second-story/saves",
+  "source": "GameFAQs (section 'PlayStation DexDrive Save (Europe)')",
+  "author": "BardBun",
+  "licence": null,
+  "posted": "2023-06-26",
+  "fetched": "2026-11-05",
+  "what_it_is": "100% Voice Collection save game. Unlocks: Galaxy & Universe Difficulty Modes and the Music Player.",
+  "gamefaqs": {
+    "id": 28642,
+    "product": "Star Ocean: The Second Story",
+    "section": "PlayStation DexDrive Save (Europe)",
+    "region": "Europe",
+    "served_as": "star-ocean-the-second-story.28642.gme",
+    "listed_size": "131KB"
+  },
+  "format": "DexDrive .gme: '123-456-STD' 3904-byte header (per-block comments) + 131072-byte raw card; the card holds 1 save(s), 1 for this game (BASCES-02159S02-S01)",
+  "release": "Star Ocean - The Second Story (Europe) (Disc 1)",
+  "game_saves": [
+    {
+      "name": "BASCES-02159S02-S01",
+      "blocks": 1,
+      "title": "SO2 01 0:08 Rena LV1"
+    }
+  ],
+  "files": {
+    "star-ocean-the-second-story.28642.gme": {
+      "size": 134976,
+      "sha1": "244b4197b547c22ab2f028cd53c405ec32c59fef"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": null,
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr star-ocean-the-second-story.28642.gme: unwraps the card (DexDrive .gme: 3904-byte header + card)",
+    "converted": {
+      "size": 131072,
+      "sha1": "9771d3e8a439c7458f9531b13e1fd43b3bd6614f"
+    },
+    "script": null,
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "not-run",
+        "detail": "no image of Star Ocean - The Second Story (Europe) (Disc 1) in the library"
+      },
+      "beetle-psx-hw": {
+        "result": "not-run",
+        "detail": "no image of Star Ocean - The Second Story (Europe) (Disc 1) in the library"
+      },
+      "pcsx-rearmed": {
+        "result": "not-run",
+        "detail": "no image of Star Ocean - The Second Story (Europe) (Disc 1) in the library"
+      },
+      "swanstation": {
+        "result": "not-run",
+        "detail": "no image of Star Ocean - The Second Story (Europe) (Disc 1) in the library"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": []
+  },
+  "note": null
+}

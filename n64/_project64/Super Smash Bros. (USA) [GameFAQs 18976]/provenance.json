@@ -1,0 +1,77 @@
+{
+  "method": "downloaded",
+  "system": "n64",
+  "core": "_project64",
+  "url": "https://gamefaqs.gamespot.com/n64/198854-super-smash-bros/saves/18976",
+  "source_page": "https://gamefaqs.gamespot.com/n64/198854-super-smash-bros/saves",
+  "source": "GameFAQs (section 'Nintendo 64 DexDrive Save (North America)')",
+  "author": "hobojimbolifrnd",
+  "licence": null,
+  "posted": "2009-04-21",
+  "fetched": "2026-11-05",
+  "what_it_is": "All characters and stages",
+  "gamefaqs": {
+    "id": 18976,
+    "product": "Super Smash Bros.",
+    "section": "Nintendo 64 DexDrive Save (North America)",
+    "region": "North America",
+    "served_as": "super-smash-bros.18976.n64",
+    "listed_size": "2KB"
+  },
+  "format": "raw SRAM, 3036 bytes (0x0000-0x0BDB, the part the game writes), each 32-bit word reversed as Project64 and Mupen64Plus store .sra; the length (cut after the last written byte) is Project64's",
+  "files": {
+    "super-smash-bros.18976.n64": {
+      "size": 3036,
+      "sha1": "ca41076cac81a6d636760dd3752f0864c4ba55d4"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "converted_with": "tools/gamefaqs/n64-dexdrive.py convert super-smash-bros.18976.n64 OUT --raw sram-swapped: raw SRAM, 3036 bytes, words already reversed, padded with FF to 32 KiB",
+    "converted": {
+      "size": 296960,
+      "sha1": "8878662069e23d881e1b0089849f31083cb871f9"
+    },
+    "converted_standalone": {
+      "files": {
+        "save.sra": {
+          "size": 32768,
+          "sha1": "f14ffdcde3cd2bb6fe76692e54194d2d96fc1a84"
+        }
+      },
+      "how": "the same bytes as the .srm regions, as standalone Mupen64Plus keeps them: <GoodName (32 chars)>-<MD5 8>.eep/.sra/.fla/.mpk in its save folder"
+    },
+    "rom": {
+      "name": "Super Smash Bros. (USA).z64",
+      "sha1": "e2929e10fccc0aa84e5776227e798abc07cedabf",
+      "size": 16777216
+    },
+    "script": "scripts/n64/Super Smash Bros..load.txt",
+    "baseline": "with no save: 8 fighters and four ? on the character select",
+    "cores": {
+      "mupen64plus-next": {
+        "result": "loads",
+        "detail": "VS character select shows all 12 fighters (Luigi, Captain Falcon, Ness, Jigglypuff unlocked; 8 and four ? with no save)"
+      },
+      "parallel-n64": {
+        "result": "loads",
+        "detail": "VS character select shows all 12 fighters (Luigi, Captain Falcon, Ness, Jigglypuff unlocked; 8 and four ? with no save)"
+      },
+      "mupen64plus": {
+        "result": "loads",
+        "detail": "VS character select shows all 12 fighters (Luigi, Captain Falcon, Ness, Jigglypuff unlocked; 8 and four ? with no save)"
+      }
+    },
+    "core_versions": {
+      "mupen64plus": "Mupen64Plus 2.6.0 (Homebrew), glide64mk2 video, rsp-hle",
+      "mupen64plus-next": "Mupen64Plus-Next 3.0-Vulkan 15bada8",
+      "parallel-n64": "ParaLLEl N64 1.0 e8cbdbb"
+    },
+    "proof_order": [
+      "mupen64plus-next",
+      "parallel-n64",
+      "mupen64plus"
+    ]
+  },
+  "note": "Posted as a DexDrive save; it is a raw emulator .sra. The word order is Mupen64Plus/Project64's and the file ends after the last byte the game writes (0xBDB), which is how Project64 1.x writes SRAM; the converter pads it with FF to 32 KiB."
+}

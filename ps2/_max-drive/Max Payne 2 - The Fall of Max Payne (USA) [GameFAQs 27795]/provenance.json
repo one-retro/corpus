@@ -1,0 +1,223 @@
+{
+  "method": "downloaded",
+  "system": "ps2",
+  "core": "_max-drive",
+  "url": "https://gamefaqs.gamespot.com/pc/561633-max-payne-2-the-fall-of-max-payne/saves/27795",
+  "source_page": "https://gamefaqs.gamespot.com/pc/561633-max-payne-2-the-fall-of-max-payne/saves",
+  "source": "GameFAQs (section 'PlayStation2 Max Drive Save (North America)')",
+  "author": "aljunoftana",
+  "licence": null,
+  "posted": "2021-11-30",
+  "fetched": "2026-11-05",
+  "what_it_is": "100% Completed All Modes",
+  "gamefaqs": {
+    "id": 27795,
+    "product": "Max Payne 2: The Fall of Max Payne",
+    "section": "PlayStation2 Max Drive Save (North America)",
+    "region": "North America",
+    "served_as": "max-payne-2-the-fall-of-max-payne.27795.max",
+    "listed_size": "594KB"
+  },
+  "format": "Max Drive / PowerSave save: 'Ps2PowerSave' header (CRC32 990df487, matches), folder BASLUS-20814MaxPay2, 15 files, LZARI stream 608932 bytes unpacking to 1152712 bytes (1152028 bytes of file data)",
+  "files": {
+    "max-payne-2-the-fall-of-max-payne.27795.max": {
+      "size": 609024,
+      "sha1": "df249a56f7facb788067d8ec134dd3a3ab52282a"
+    }
+  },
+  "save": {
+    "folder": "BASLUS-20814MaxPay2",
+    "title": [
+      "Max Payne 2",
+      ""
+    ],
+    "times": "none: a max file stores no file times",
+    "files": [
+      {
+        "name": "icon.sys",
+        "size": 964,
+        "sha1": "fbdb4043b731deb49a12e526b0910a3d36aa9b63"
+      },
+      {
+        "name": "list.ico",
+        "size": 75664,
+        "sha1": "b9da8e672ec368f446357e9cfa0e6dfe85092921"
+      },
+      {
+        "name": "del.ico",
+        "size": 75664,
+        "sha1": "b9da8e672ec368f446357e9cfa0e6dfe85092921"
+      },
+      {
+        "name": "copy.ico",
+        "size": 75664,
+        "sha1": "b9da8e672ec368f446357e9cfa0e6dfe85092921"
+      },
+      {
+        "name": "savegame5.sav",
+        "size": 153600,
+        "sha1": "77b8e7589317256b7bb2a9566b5b61ef8d470da4"
+      },
+      {
+        "name": "savegame4.sav",
+        "size": 153600,
+        "sha1": "51194b72dc53a65c5e5ef50844a54ab0f68987d7"
+      },
+      {
+        "name": "savegame3.sav",
+        "size": 153600,
+        "sha1": "a7368dbe5210a6e52cf39f1f77c6b91099582a8f"
+      },
+      {
+        "name": "savegame2.sav",
+        "size": 153600,
+        "sha1": "cfe84cf1e0969a512146d73388224b3797ad37c6"
+      },
+      {
+        "name": "savegame1.sav",
+        "size": 153600,
+        "sha1": "a566cf3d034becb0458ecb3cd6c13a8df6b9707e"
+      },
+      {
+        "name": "savegame0.sav",
+        "size": 153600,
+        "sha1": "1d5607c9f8e25553c12fe7c89573cb9d0d8ce34f"
+      },
+      {
+        "name": "options.crc",
+        "size": 4,
+        "sha1": "306fc39a7139c3f62ee514c14b5827ee1ee1073f"
+      },
+      {
+        "name": "options.sav",
+        "size": 488,
+        "sha1": "fb383becf50b984073ae72d31f039db24212be4a"
+      },
+      {
+        "name": "BASLUS-20814MaxPay2",
+        "size": 4,
+        "sha1": "2f086fc767a0dac59a38c67f409b4f74a1eab39f"
+      },
+      {
+        "name": "infoFile.crc",
+        "size": 4,
+        "sha1": "0ea0d5434381d4003362c0fd1417ca73d9a1bdd0"
+      },
+      {
+        "name": "infoFile.txt",
+        "size": 1972,
+        "sha1": "2ac3e0603a70e473a43dc869fae9dc1638782db3"
+      }
+    ]
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Max Payne 2 - The Fall of Max Payne (USA).iso",
+      "sha1": "d0b049e29459be920668ee17d12231ed2822a1a5",
+      "size": 2602237952
+    },
+    "converted_with": "tools/gamefaqs/ps2-card.py 'max-payne-2-the-fall-of-max-payne.27795.max' -o OUT: reads the save with mymcplus 3.0.5 and writes OUT/Mcd001.ps2 (an 8 MiB card with ECC, formatted and filled by mymcplus) for lrps2/pcee2/pcsx2, and OUT/mc0/<folder>/ for Play!",
+    "converted": {
+      "Mcd001.ps2": {
+        "size": 8650752,
+        "sha1": "f4355e8b1c38fe69d6db30d041135c7a47165d33"
+      },
+      "mc0/BASLUS-20814MaxPay2/": {
+        "icon.sys": {
+          "size": 964,
+          "sha1": "fbdb4043b731deb49a12e526b0910a3d36aa9b63"
+        },
+        "list.ico": {
+          "size": 75664,
+          "sha1": "b9da8e672ec368f446357e9cfa0e6dfe85092921"
+        },
+        "del.ico": {
+          "size": 75664,
+          "sha1": "b9da8e672ec368f446357e9cfa0e6dfe85092921"
+        },
+        "copy.ico": {
+          "size": 75664,
+          "sha1": "b9da8e672ec368f446357e9cfa0e6dfe85092921"
+        },
+        "savegame5.sav": {
+          "size": 153600,
+          "sha1": "77b8e7589317256b7bb2a9566b5b61ef8d470da4"
+        },
+        "savegame4.sav": {
+          "size": 153600,
+          "sha1": "51194b72dc53a65c5e5ef50844a54ab0f68987d7"
+        },
+        "savegame3.sav": {
+          "size": 153600,
+          "sha1": "a7368dbe5210a6e52cf39f1f77c6b91099582a8f"
+        },
+        "savegame2.sav": {
+          "size": 153600,
+          "sha1": "cfe84cf1e0969a512146d73388224b3797ad37c6"
+        },
+        "savegame1.sav": {
+          "size": 153600,
+          "sha1": "a566cf3d034becb0458ecb3cd6c13a8df6b9707e"
+        },
+        "savegame0.sav": {
+          "size": 153600,
+          "sha1": "1d5607c9f8e25553c12fe7c89573cb9d0d8ce34f"
+        },
+        "options.crc": {
+          "size": 4,
+          "sha1": "306fc39a7139c3f62ee514c14b5827ee1ee1073f"
+        },
+        "options.sav": {
+          "size": 488,
+          "sha1": "fb383becf50b984073ae72d31f039db24212be4a"
+        },
+        "BASLUS-20814MaxPay2": {
+          "size": 4,
+          "sha1": "2f086fc767a0dac59a38c67f409b4f74a1eab39f"
+        },
+        "infoFile.crc": {
+          "size": 4,
+          "sha1": "0ea0d5434381d4003362c0fd1417ca73d9a1bdd0"
+        },
+        "infoFile.txt": {
+          "size": 1972,
+          "sha1": "2ac3e0603a70e473a43dc869fae9dc1638782db3"
+        }
+      },
+      "read_back": "work/ps2/tools/mcfs.py lists every file with the size and SHA-1 put on the card; one-saves (1saves convert + inspect) reads the card and finds BASLUS-20814MaxPay2",
+      "timestamps": "what the save does not date is 2000-01-01 00:00:00 (JST, as a card stores it); the card's own root entries too"
+    },
+    "script": "scripts/ps2/Max Payne 2 - The Fall of Max Payne (USA).load.txt",
+    "cores": {
+      "pcee2": {
+        "detail": "'Autoload successful.'; LOAD MENU: Savegames 1-6 (Nov 22 21:14 Part III Chapter 8 ... May 7 18:46 Part I Chapter 5); SELECT GAME MODE: every mode selectable (no save: all but Detective dimmed)",
+        "result": "loads"
+      },
+      "lrps2": {
+        "detail": "'Autoload successful.'; LOAD MENU: Savegames 1-6 (Nov 22 21:14 Part III Chapter 8 ... May 7 18:46 Part I Chapter 5); SELECT GAME MODE: every mode selectable (no save: all but Detective dimmed)",
+        "result": "loads"
+      },
+      "play": {
+        "detail": "with the Play! variant script: 'Autoload successful.'; LOAD MENU: Savegames 1-6 (Nov 22 21:14 Part III Chapter 8 ... May 7 18:46 Part I Chapter 5); SELECT GAME MODE: every mode selectable (no save: all but Detective dimmed)",
+        "result": "loads",
+        "script": "scripts/ps2/Max Payne 2 - The Fall of Max Payne (USA).load.play.txt"
+      },
+      "pcsx2": {
+        "detail": "'Autoload successful.'; LOAD MENU: Savegames 1-6 (Nov 22 21:14 Part III Chapter 8 ... May 7 18:46 Part I Chapter 5); SELECT GAME MODE: every mode selectable (no save: all but Detective dimmed)",
+        "result": "loads"
+      },
+      "armsx2": {
+        "result": "not-run",
+        "detail": "ARMSX2 renders only through Vulkan here and falls back to a null GS (no picture), so nothing shows what the game read (ps2/NOTES.md)"
+      }
+    },
+    "proof_order": [
+      "pcee2",
+      "lrps2",
+      "play",
+      "pcsx2"
+    ]
+  },
+  "note": null
+}

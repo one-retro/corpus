@@ -1,0 +1,4 @@
+# libretro Dolphin options for the GameFAQs load runs: emulate on the frontend thread
+# (one retro_run = one frame, so script waits are emulated frames) and no on-screen messages.
+dolphin_main_cpu_thread = disabled
+dolphin_osd_enabled = disabled

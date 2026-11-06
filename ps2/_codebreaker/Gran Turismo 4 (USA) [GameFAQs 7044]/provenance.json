@@ -1,0 +1,131 @@
+{
+  "method": "downloaded",
+  "system": "ps2",
+  "core": "_codebreaker",
+  "url": "https://gamefaqs.gamespot.com/ps2/561066-gran-turismo-4/saves/7044",
+  "source_page": "https://gamefaqs.gamespot.com/ps2/561066-gran-turismo-4/saves",
+  "source": "GameFAQs (section 'PlayStation2 CodeBreaker Save (North America)')",
+  "author": "_eddie00",
+  "licence": null,
+  "posted": "2005-04-02",
+  "fetched": "2026-11-05",
+  "what_it_is": "All gold licenses; All arcade tracks; Garage cars selectable in arcade; 4 Special black cars; 1 Special black F1; All 10 F1 colours; Mercedes Sauber C 9; Secret Prize cars you can't buy or see at the dealerships; Max money",
+  "gamefaqs": {
+    "id": 7044,
+    "product": "Gran Turismo 4",
+    "section": "PlayStation2 CodeBreaker Save (North America)",
+    "region": "North America",
+    "served_as": "gran-turismo-4.7044.cbs",
+    "listed_size": "1486KB"
+  },
+  "format": "CodeBreaker save: 'CFU\\0' header of 296 bytes (folder field 'BASCUS-97328GAMEDATA', title 'GRAN TURISMO 4 Game data'), RC4-encrypted zlib body of 1522185 bytes unpacking to 1528840 bytes: 4 files, 1528584 bytes of file data",
+  "files": {
+    "gran-turismo-4.7044.cbs": {
+      "size": 1522481,
+      "sha1": "18ddda4bda1f06ef12028dec6d4b43825d21d914"
+    }
+  },
+  "save": {
+    "folder": "BASCUS-97328GAMEDATA",
+    "title": [
+      "GRAN TURISMO 4",
+      "Game data"
+    ],
+    "times": "as the file stores them (PS2 card times, JST)",
+    "files": [
+      {
+        "name": "garage",
+        "size": 1280064,
+        "sha1": "160603fc7f9e1e9630eaa5bfb0040a0d2cc99f71",
+        "created": "2005-03-26 08:26:49",
+        "modified": "2005-03-26 12:29:01"
+      },
+      {
+        "name": "BASCUS-97328GAMEDATA",
+        "size": 237760,
+        "sha1": "bc0336a1e5f20a28e2466c9242f61ad9e38c799b",
+        "created": "2005-03-26 12:29:02",
+        "modified": "2005-03-26 12:29:04"
+      },
+      {
+        "name": "icon0.ico",
+        "size": 9796,
+        "sha1": "5c55e0ea3f302b6ce15d03fb247039d41b83f032",
+        "created": "2005-03-26 08:27:06",
+        "modified": "2005-03-26 08:27:07"
+      },
+      {
+        "name": "icon.sys",
+        "size": 964,
+        "sha1": "cce82f67a0f89c70731af7b0fb0b9c752fd05e5e",
+        "created": "2005-03-26 08:27:07",
+        "modified": "2005-03-26 08:27:08"
+      }
+    ]
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Gran Turismo 4 (USA).iso",
+      "sha1": "5b1dbf056f45f8023e8e4958e6d7deb31fc64a47",
+      "size": 5314478080
+    },
+    "converted_with": "tools/gamefaqs/ps2-card.py 'gran-turismo-4.7044.cbs' -o OUT: reads the save with mymcplus 3.0.5 and writes OUT/Mcd001.ps2 (an 8 MiB card with ECC, formatted and filled by mymcplus) for lrps2/pcee2/pcsx2, and OUT/mc0/<folder>/ for Play!",
+    "converted": {
+      "Mcd001.ps2": {
+        "size": 8650752,
+        "sha1": "41a2c588f2e1955ce4fd4a8abb0421654905438b"
+      },
+      "mc0/BASCUS-97328GAMEDATA/": {
+        "garage": {
+          "size": 1280064,
+          "sha1": "160603fc7f9e1e9630eaa5bfb0040a0d2cc99f71"
+        },
+        "BASCUS-97328GAMEDATA": {
+          "size": 237760,
+          "sha1": "bc0336a1e5f20a28e2466c9242f61ad9e38c799b"
+        },
+        "icon0.ico": {
+          "size": 9796,
+          "sha1": "5c55e0ea3f302b6ce15d03fb247039d41b83f032"
+        },
+        "icon.sys": {
+          "size": 964,
+          "sha1": "cce82f67a0f89c70731af7b0fb0b9c752fd05e5e"
+        }
+      },
+      "read_back": "work/ps2/tools/mcfs.py lists every file with the size and SHA-1 put on the card; one-saves (1saves convert + inspect) reads the card and finds BASCUS-97328GAMEDATA",
+      "timestamps": "what the save does not date is 2000-01-01 00:00:00 (JST, as a card stores it); the card's own root entries too"
+    },
+    "script": "scripts/ps2/Gran Turismo 4 (USA).load.txt",
+    "cores": {
+      "pcee2": {
+        "detail": "GT Mode map: no current car, Cr 1,000,000,000, 4 DEC; Supergoop's Home: Complete 0.0%, Days 247",
+        "result": "loads"
+      },
+      "lrps2": {
+        "detail": "GT Mode map: no current car, Cr 1,000,000,000, 4 DEC; Supergoop's Home: Complete 0.0%, Days 247",
+        "result": "loads"
+      },
+      "play": {
+        "detail": "GT Mode map: Cr 1,000,000,000, 4 DEC (as PCEE2)",
+        "result": "loads"
+      },
+      "pcsx2": {
+        "detail": "GT Mode map: no current car, Cr 1,000,000,000, 4 DEC; Supergoop's Home: Complete 0.0%, Days 247",
+        "result": "loads"
+      },
+      "armsx2": {
+        "result": "not-run",
+        "detail": "ARMSX2 renders only through Vulkan here and falls back to a null GS (no picture), so nothing shows what the game read (ps2/NOTES.md)"
+      }
+    },
+    "proof_order": [
+      "pcee2",
+      "lrps2",
+      "play",
+      "pcsx2"
+    ]
+  },
+  "note": null
+}

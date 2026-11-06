@@ -1,0 +1,10 @@
+# Load check for a save made elsewhere (tools/GAMEFAQS.md): power on and go to
+# the file select, which shows each file's area and difficulty.
+wait 900
+press start 6       # health and safety screen
+wait 240
+press start 6       # Game Freak logo -> title
+wait 240
+press start 6       # title -> file select
+wait 240
+shot files

@@ -1,0 +1,119 @@
+{
+  "method": "downloaded",
+  "system": "gba",
+  "core": "_gameshark",
+  "url": "https://gamefaqs.gamespot.com/gba/524513-wario-land-4/saves/25110",
+  "source_page": "https://gamefaqs.gamespot.com/gba/524513-wario-land-4/saves",
+  "source": "GameFAQs (section 'GameBoy Advance GameShark Save (Europe)')",
+  "author": "losma1",
+  "licence": null,
+  "posted": "2017-07-08",
+  "fetched": "2026-11-05",
+  "what_it_is": "S-Hard: All Discs, all treasure, At golden diva in Save B",
+  "gamefaqs": {
+    "id": 25110,
+    "product": "Wario Land 4",
+    "section": "GameBoy Advance GameShark Save (Europe)",
+    "region": "Europe",
+    "served_as": "wario-land-4.25110.sps",
+    "listed_size": "64KB"
+  },
+  "format": "SharkPort save (\"SharkPortSave\", kind 0x000F0000): title \"WARIOLANDE\", date \"08/07/2017 02:21:20 p. m.\", notes \"\"; cart header \"WARIOLANDE\" / 'AWAE' (complement 0xdf); payload 65536 bytes; checksum: signed",
+  "files": {
+    "wario-land-4.25110.sps": {
+      "size": 65640,
+      "sha1": "b3025db3811ef3bf55ff3a7573defef844ac140d"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Wario Land 4 (USA, Europe).gba",
+      "sha1": "b9fe05a8080e124b67bce6a623234ee3b518a2c1",
+      "size": 8388608
+    },
+    "converted_with": "tools/gamefaqs/gba-sharkport.py wario-land-4.25110.sps --rom ROM --core CORE --outdir DIR: reads the SharkPort container as mGBA does and imports the payload as mGBA's _importSavedata does (cut to the chip, EEPROM 8-byte blocks reversed, the rest of the chip erased), then lays the chip out as the core keeps it",
+    "converted": {
+      "size": 32768,
+      "sha1": "0bf1c2ad421ec1986643874dd41c5326eac1d4f8"
+    },
+    "script": "scripts/gba/Wario Land 4.load.txt",
+    "cores": {
+      "mgba": {
+        "result": "loads",
+        "detail": "save select: A Sound Room; B Golden Pyramid, S-Hard, 754770",
+        "core_version": "mGBA 0.11-212-7a12d6d",
+        "file": {
+          "name": "Wario Land 4 (USA, Europe).srm",
+          "size": 32768,
+          "sha1": "0bf1c2ad421ec1986643874dd41c5326eac1d4f8"
+        },
+        "frame": "files"
+      },
+      "vba-m": {
+        "result": "loads",
+        "detail": "save select: A Sound Room; B Golden Pyramid, S-Hard, 754770",
+        "core_version": "VBA-M 115defb",
+        "file": {
+          "name": "Wario Land 4 (USA, Europe).srm",
+          "size": 32768,
+          "sha1": "0bf1c2ad421ec1986643874dd41c5326eac1d4f8"
+        },
+        "frame": "files"
+      },
+      "gpsp": {
+        "result": "loads",
+        "detail": "save select: A Sound Room; B Golden Pyramid, S-Hard, 754770",
+        "core_version": "gpSP v1.1.0-5819380",
+        "file": {
+          "name": "Wario Land 4 (USA, Europe).srm",
+          "size": 131072,
+          "sha1": "fa4e793ec8024847f761b6d8ed47ca2951a9b6da"
+        },
+        "frame": "files"
+      },
+      "vba-next": {
+        "result": "loads",
+        "detail": "save select: A Sound Room; B Golden Pyramid, S-Hard, 754770",
+        "core_version": "VBA Next v1.0.2",
+        "file": {
+          "name": "Wario Land 4 (USA, Europe).srm",
+          "size": 139264,
+          "sha1": "30f5fe5f32ce48c79e40ffa532db3d134d53966e"
+        },
+        "frame": "files"
+      },
+      "beetle-gba": {
+        "result": "loads",
+        "detail": "save select: A Sound Room; B Golden Pyramid, S-Hard, 754770",
+        "core_version": "Beetle GBA v0.9.36 b158166",
+        "file": {
+          "name": "Wario Land 4 (USA, Europe).5fe47355a33e3fabec2a1607af88a404.sav",
+          "size": 65536,
+          "sha1": "9f5e3432a184aaa00186ce3f9116c9b1cdff3174"
+        },
+        "frame": "files"
+      },
+      "skyemu": {
+        "result": "loads",
+        "detail": "save select: A Sound Room; B Golden Pyramid, S-Hard, 754770",
+        "core_version": "SkyEmu adacd0788964ed89f5c43dcbc1f3cc26deec996c",
+        "file": {
+          "name": "Wario Land 4 (USA, Europe).srm",
+          "size": 131072,
+          "sha1": "fa4e793ec8024847f761b6d8ed47ca2951a9b6da"
+        },
+        "frame": "files"
+      }
+    },
+    "proof_order": [
+      "mgba",
+      "vba-m",
+      "gpsp",
+      "vba-next",
+      "beetle-gba",
+      "skyemu"
+    ]
+  },
+  "note": "The header complement byte 0xdf matches no release; the nearest by bits is 0xec, so that revision was used. The cart header in the file has bit errors (complement 0xDF), as a GameShark reading through a poor cartridge contact gives; the release was taken from the readable part."
+}

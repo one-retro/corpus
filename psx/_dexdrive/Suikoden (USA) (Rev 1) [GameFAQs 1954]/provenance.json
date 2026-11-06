@@ -1,0 +1,84 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_dexdrive",
+  "url": "https://gamefaqs.gamespot.com/ps/198843-suikoden/saves/1954",
+  "source_page": "https://gamefaqs.gamespot.com/ps/198843-suikoden/saves",
+  "source": "GameFAQs (section 'PlayStation DexDrive Save (North America)')",
+  "author": "SailorCallie",
+  "licence": null,
+  "posted": "2002-10-13",
+  "fetched": "2026-11-05",
+  "what_it_is": "Hero McDohl, Flik, Viktor, Cleo, Alen and Rubi are the final party at the last save point in the game at level 60 each with all 108 Stars of Destiny alive including Gremino. Best save possible to use for Suikoden II. All weapons equipped six times each w",
+  "gamefaqs": {
+    "id": 1954,
+    "product": "Suikoden",
+    "section": "PlayStation DexDrive Save (North America)",
+    "region": "North America",
+    "served_as": "suikoden.1954.gme",
+    "listed_size": "27KB"
+  },
+  "format": "DexDrive .gme cut short: '123-456-STD' 3904-byte header + only the first 24576 bytes of the card (3 of 16 blocks); the card holds 1 save(s), 1 for this game (BASLUS-00292GENSOU00)",
+  "release": "Suikoden (USA) (Rev 1)",
+  "game_saves": [
+    {
+      "name": "BASLUS-00292GENSOU00",
+      "blocks": 2,
+      "title": "SUIKODEN LV60"
+    }
+  ],
+  "files": {
+    "suikoden.1954.gme": {
+      "size": 28480,
+      "sha1": "58b17aff684e41214a663330e9c11612c3a69e87"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Suikoden (USA) (Rev 1).cue",
+      "sha1": "7ec895dbc9d1f23aab3bde7ccd35e003ab2fb25d",
+      "size": 88
+    },
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr suikoden.1954.gme: unwraps the card (DexDrive .gme: 3904-byte header + card (only 24576 card bytes, zero-padded to 131072))",
+    "converted": {
+      "size": 131072,
+      "sha1": "43947c48bb898e4fe7af09d8975cd6c70f053226"
+    },
+    "script": "scripts/psx/Suikoden.load.txt",
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "rejected",
+        "detail": "Continue game says \"No data on Memory card\", as with no card: the save's directory frame has a wrong checksum (stored 0x12, should be 0x1B)"
+      },
+      "beetle-psx-hw": {
+        "result": "rejected",
+        "detail": "Continue game says \"No data on Memory card\", as with no card: the save's directory frame has a wrong checksum (stored 0x12, should be 0x1B)"
+      },
+      "pcsx-rearmed": {
+        "result": "rejected",
+        "detail": "Continue game says \"No data on Memory card\", as with no card: the save's directory frame has a wrong checksum (stored 0x12, should be 0x1B)"
+      },
+      "swanstation": {
+        "result": "rejected",
+        "detail": "Continue game says \"No data on Memory card\", as with no card: the save's directory frame has a wrong checksum (stored 0x12, should be 0x1B)"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": [
+      "beetle-psx",
+      "beetle-psx-hw",
+      "pcsx-rearmed",
+      "swanstation"
+    ]
+  },
+  "note": "The save's first directory frame has a wrong XOR checksum (stored 0x12, should be 0x1B), and Suikoden does not list the save. With the checksum corrected by hand (not by the converter, which keeps the card's bytes; MemcardRex recomputes directory checksums when it opens a card) Beetle PSX lists it: Marth, Lv. 60, Gregmin., 24:03. The converter pads the missing blocks with zeroes, as DuckStation's ImportCardGME does; the saves on the card all lie in the blocks present. one-saves (1saves convert) does not read this file: a PS1 memory card is 131072 bytes, or that behind a DexDrive, VGS or PSP header, but this file is 28480 bytes"
+}

@@ -1,0 +1,84 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_raw-card",
+  "url": "https://gamefaqs.gamespot.com/ps/198843-suikoden/saves/5655",
+  "source_page": "https://gamefaqs.gamespot.com/ps/198843-suikoden/saves",
+  "source": "GameFAQs (section 'PlayStation DexDrive Save (North America)')",
+  "author": "XERD",
+  "licence": null,
+  "posted": "2004-12-13",
+  "fetched": "2026-11-05",
+  "what_it_is": "Name: McDohl. Playtime is around 14 hours. All 108 Stars Of Destiny has been recruited along with Gremio alive. Saved at the Head Quarters and is ready for Final Battle. All character's equipments are not up to date!",
+  "gamefaqs": {
+    "id": 5655,
+    "product": "Suikoden",
+    "section": "PlayStation DexDrive Save (North America)",
+    "region": "North America",
+    "served_as": "suikoden.5655.gme",
+    "listed_size": "128KB"
+  },
+  "format": "raw 131072-byte PS1 memory card ('MC' header frame), served as .gme; the card holds 1 save(s), 1 for this game (BASLUS-00292GENSOU00)",
+  "release": "Suikoden (USA) (Rev 1)",
+  "game_saves": [
+    {
+      "name": "BASLUS-00292GENSOU00",
+      "blocks": 2,
+      "title": "SUIKODEN LV99"
+    }
+  ],
+  "files": {
+    "suikoden.5655.gme": {
+      "size": 131072,
+      "sha1": "e3e226fb9b168bd15ee1a9b359545f5aaec8eebb"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Suikoden (USA) (Rev 1).cue",
+      "sha1": "7ec895dbc9d1f23aab3bde7ccd35e003ab2fb25d",
+      "size": 88
+    },
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr suikoden.5655.gme: unwraps the card (raw card)",
+    "converted": {
+      "size": 131072,
+      "sha1": "e3e226fb9b168bd15ee1a9b359545f5aaec8eebb"
+    },
+    "script": "scripts/psx/Suikoden.load.txt",
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "loads",
+        "detail": "Continue game lists the file: McDohl, Lv. 99 (no card: \"No data on Memory card\")"
+      },
+      "beetle-psx-hw": {
+        "result": "loads",
+        "detail": "Continue game lists the file: McDohl, Lv. 99 (no card: \"No data on Memory card\") (the same screen as on beetle-psx)"
+      },
+      "pcsx-rearmed": {
+        "result": "loads",
+        "detail": "Continue game lists the file: McDohl, Lv. 99 (no card: \"No data on Memory card\") (the same screen as on beetle-psx)"
+      },
+      "swanstation": {
+        "result": "loads",
+        "detail": "Continue game lists the file: McDohl, Lv. 99 (no card: \"No data on Memory card\") (the same screen as on beetle-psx)"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": [
+      "beetle-psx",
+      "beetle-psx-hw",
+      "pcsx-rearmed",
+      "swanstation"
+    ]
+  },
+  "note": "Filed under GameFAQs' 'PlayStation DexDrive Save (North America)' section, but it is not a DexDrive .gme: raw 131072-byte PS1 memory card ('MC' header frame), served as .gme."
+}

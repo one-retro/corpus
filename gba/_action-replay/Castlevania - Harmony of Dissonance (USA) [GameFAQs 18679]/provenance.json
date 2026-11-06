@@ -1,0 +1,119 @@
+{
+  "method": "downloaded",
+  "system": "gba",
+  "core": "_action-replay",
+  "url": "https://gamefaqs.gamespot.com/gba/449471-castlevania-circle-of-the-moon/saves/18679",
+  "source_page": "https://gamefaqs.gamespot.com/gba/449471-castlevania-circle-of-the-moon/saves",
+  "source": "GameFAQs (section 'GameBoy Advance Pro Action Replay Save (North America)')",
+  "author": "TeknoBlade",
+  "licence": null,
+  "posted": "2009-02-19",
+  "fetched": "2026-11-05",
+  "what_it_is": "Magician mode, 95.7% map, level 100, game completed.",
+  "gamefaqs": {
+    "id": 18679,
+    "product": "Castlevania: Circle of the Moon",
+    "section": "GameBoy Advance Pro Action Replay Save (North America)",
+    "region": "North America",
+    "served_as": "castlevania-circle-of-the-moon.18679.xps",
+    "listed_size": "64KB"
+  },
+  "format": "SharkPort save (\"SharkPortSave\", kind 0x000F0000): title \"CASTLEVANIA1\", date \"Save2/19/2009 3:29:52 PM 41\", notes \"\"; cart header \"CASTLEVANIA1\" / 'ACHE' (complement 0x6f); payload 65536 bytes; checksum: unsigned",
+  "files": {
+    "castlevania-circle-of-the-moon.18679.xps": {
+      "size": 65644,
+      "sha1": "c3b1a654eca8d843a3af435171658ab2a030ee95"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Castlevania - Harmony of Dissonance (USA).gba",
+      "sha1": "b90da0d9be0b3a0893cd9e2c399056bcf9579e21",
+      "size": 8388608
+    },
+    "converted_with": "tools/gamefaqs/gba-sharkport.py castlevania-circle-of-the-moon.18679.xps --rom ROM --core CORE --outdir DIR: reads the SharkPort container as mGBA does and imports the payload as mGBA's _importSavedata does (cut to the chip, EEPROM 8-byte blocks reversed, the rest of the chip erased), then lays the chip out as the core keeps it",
+    "converted": {
+      "size": 32768,
+      "sha1": "257bbe385cf081cfe67a817ac994b002d114517a"
+    },
+    "script": "scripts/gba/Castlevania - Aria of Sorrow.load.txt",
+    "cores": {
+      "mgba": {
+        "result": "loads",
+        "detail": "Select data: J@$H, Castle Treasury, LV 50, 200.0%, 11:48:13",
+        "core_version": "mGBA 0.11-212-7a12d6d",
+        "file": {
+          "name": "Castlevania - Harmony of Dissonance (USA).srm",
+          "size": 32768,
+          "sha1": "257bbe385cf081cfe67a817ac994b002d114517a"
+        },
+        "frame": "files"
+      },
+      "vba-m": {
+        "result": "loads",
+        "detail": "Select data: J@$H, Castle Treasury, LV 50, 200.0%, 11:48:13",
+        "core_version": "VBA-M 115defb",
+        "file": {
+          "name": "Castlevania - Harmony of Dissonance (USA).srm",
+          "size": 32768,
+          "sha1": "257bbe385cf081cfe67a817ac994b002d114517a"
+        },
+        "frame": "files"
+      },
+      "gpsp": {
+        "result": "loads",
+        "detail": "Select data: J@$H, Castle Treasury, LV 50, 200.0%, 11:48:13",
+        "core_version": "gpSP v1.1.0-5819380",
+        "file": {
+          "name": "Castlevania - Harmony of Dissonance (USA).srm",
+          "size": 131072,
+          "sha1": "adacb7cbcb6669678629294bf3dbffc1a37e439a"
+        },
+        "frame": "files"
+      },
+      "vba-next": {
+        "result": "loads",
+        "detail": "Select data: J@$H, Castle Treasury, LV 50, 200.0%, 11:48:13",
+        "core_version": "VBA Next v1.0.2",
+        "file": {
+          "name": "Castlevania - Harmony of Dissonance (USA).srm",
+          "size": 139264,
+          "sha1": "071faa8e0b54991430457665ce8a09941048bd6a"
+        },
+        "frame": "files"
+      },
+      "beetle-gba": {
+        "result": "loads",
+        "detail": "Select data: J@$H, Castle Treasury, LV 50, 200.0%, 11:48:13",
+        "core_version": "Beetle GBA v0.9.36 b158166",
+        "file": {
+          "name": "Castlevania - Harmony of Dissonance (USA).ea589465486d15e91ba94165c8024b55.sav",
+          "size": 65536,
+          "sha1": "31f4493053794162ec3d510272294e52c49c2a73"
+        },
+        "frame": "files"
+      },
+      "skyemu": {
+        "result": "loads",
+        "detail": "Select data: J@$H, Castle Treasury, LV 50, 200.0%, 11:48:13",
+        "core_version": "SkyEmu adacd0788964ed89f5c43dcbc1f3cc26deec996c",
+        "file": {
+          "name": "Castlevania - Harmony of Dissonance (USA).srm",
+          "size": 131072,
+          "sha1": "adacb7cbcb6669678629294bf3dbffc1a37e439a"
+        },
+        "frame": "files"
+      }
+    },
+    "proof_order": [
+      "mgba",
+      "vba-m",
+      "gpsp",
+      "vba-next",
+      "beetle-gba",
+      "skyemu"
+    ]
+  },
+  "note": "Mislabelled: posted on the Circle of the Moon page, but the cart header is Harmony of Dissonance (CASTLEVANIA1 / ACHE) and the save is one."
+}

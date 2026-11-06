@@ -1,0 +1,84 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_dexdrive",
+  "url": "https://gamefaqs.gamespot.com/ps/477343-final-fantasy-chronicles/saves/1744",
+  "source_page": "https://gamefaqs.gamespot.com/ps/477343-final-fantasy-chronicles/saves",
+  "source": "GameFAQs (section 'PlayStation DexDrive Save (North America)')",
+  "author": "CocaColaCat",
+  "licence": null,
+  "posted": "2002-06-20",
+  "fetched": "2026-11-05",
+  "what_it_is": "FFIV: Last save point, best equips, all magic learned, high levels",
+  "gamefaqs": {
+    "id": 1744,
+    "product": "Final Fantasy Chronicles",
+    "section": "PlayStation DexDrive Save (North America)",
+    "region": "North America",
+    "served_as": "final-fantasy-chronicles.1744.gme",
+    "listed_size": "27KB"
+  },
+  "format": "DexDrive .gme cut short: '123-456-STD' 3904-byte header + only the first 24576 bytes of the card (3 of 16 blocks); the card holds 1 save(s), 1 for this game (BASLUS-01360FF4)",
+  "release": "Final Fantasy Chronicles - Final Fantasy IV (USA) (Rev 1)",
+  "game_saves": [
+    {
+      "name": "BASLUS-01360FF4",
+      "blocks": 2,
+      "title": "FF4 5325/5325 22:20"
+    }
+  ],
+  "files": {
+    "final-fantasy-chronicles.1744.gme": {
+      "size": 28480,
+      "sha1": "be0a06bba65102c428c3ea24871fe784fe5de779"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Final Fantasy Chronicles - Final Fantasy IV (USA) (Rev 1).cue",
+      "sha1": "476c9de3868d155c5c315461938fb94bd725860a",
+      "size": 123
+    },
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr final-fantasy-chronicles.1744.gme: unwraps the card (DexDrive .gme: 3904-byte header + card (only 24576 card bytes, zero-padded to 131072))",
+    "converted": {
+      "size": 131072,
+      "sha1": "f25a43c1ac76f6939551bfc136057e13f3841919"
+    },
+    "script": "scripts/psx/Final Fantasy IV.load.txt",
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "loads",
+        "detail": "Slot 1 lists save 1: 22:20, HP 5325/5325"
+      },
+      "beetle-psx-hw": {
+        "result": "loads",
+        "detail": "Slot 1 lists save 1: 22:20, HP 5325/5325 (the same screen as on beetle-psx)"
+      },
+      "pcsx-rearmed": {
+        "result": "loads",
+        "detail": "Slot 1 lists save 1: 22:20, HP 5325/5325 (the same screen as on beetle-psx)"
+      },
+      "swanstation": {
+        "result": "loads",
+        "detail": "Slot 1 lists save 1: 22:20, HP 5325/5325 (the same screen as on beetle-psx)"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": [
+      "beetle-psx",
+      "beetle-psx-hw",
+      "pcsx-rearmed",
+      "swanstation"
+    ]
+  },
+  "note": "The converter pads the missing blocks with zeroes, as DuckStation's ImportCardGME does; the saves on the card all lie in the blocks present. one-saves (1saves convert) does not read this file: a PS1 memory card is 131072 bytes, or that behind a DexDrive, VGS or PSP header, but this file is 28480 bytes"
+}

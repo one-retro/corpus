@@ -1,0 +1,51 @@
+{
+  "method": "downloaded",
+  "system": "gc",
+  "core": "_usb-memory-adapter",
+  "url": "https://gamefaqs.gamespot.com/gamecube/516710-mario-kart-double-dash/saves/5742",
+  "source_page": "https://gamefaqs.gamespot.com/gamecube/516710-mario-kart-double-dash/saves",
+  "source": "GameFAQs (section 'GameCube USB Memory Adapter Save (Europe)')",
+  "author": "Blutorange",
+  "licence": null,
+  "posted": "2004-12-25",
+  "fetched": "2026-11-05",
+  "what_it_is": "DK Mountain TT Ghost. Beats Staff Ghost. 1´47\"332. Uses Shortcut.",
+  "gamefaqs": {
+    "id": 5742,
+    "product": "Mario Kart: Double Dash!!",
+    "section": "GameCube USB Memory Adapter Save (Europe)",
+    "region": "Europe",
+    "served_as": "mario-kart-double-dash.5742.gci",
+    "listed_size": "40KB"
+  },
+  "format": "GCI: the 64-byte card directory entry (GM4P01, file '5\"!-1,5&/2!!!!;.%#QPI*5>*209!aa', 5 blocks, modified 2004-12-24 19:02:58, comment 'Mario Kart: Double Dash!! / Données fantôme 1'47\"332') then 5 x 8 KiB blocks = 41024 bytes",
+  "files": {
+    "mario-kart-double-dash.5742.gci": {
+      "size": 41024,
+      "sha1": "fd3ac713c185bd9cecc85a3de95ff4840e8d0ac5"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": null,
+    "converted_with": "tools/gamefaqs/gc-gci.py place <file> <GC/USA/Card A>: copies the GCI unchanged into the GCI folder under Dolphin's own name for it",
+    "converted": {
+      "size": 41024,
+      "sha1": "fd3ac713c185bd9cecc85a3de95ff4840e8d0ac5",
+      "name": "01-GM4P-5__22__!-1,5&__2f__2!!!!;.%#QPI__2a__5__3e____2a__209!aa.gci"
+    },
+    "script": null,
+    "cores": {
+      "dolphin-emu": {
+        "result": "not-run",
+        "detail": "no Mario Kart - Double Dash!! (Europe, Australia) (En,Fr,De,Es,It) disc image in the library (only the USA release)"
+      },
+      "dolphin-emu@dolphin": {
+        "result": "not-run",
+        "detail": "no Mario Kart - Double Dash!! (Europe, Australia) (En,Fr,De,Es,It) disc image in the library (only the USA release)"
+      }
+    },
+    "proof_order": []
+  },
+  "note": "A Time Trial ghost file (5 blocks), not the main game data. 1saves reads it from a card but drops the second comment line (Windows-1252 é and ô)."
+}

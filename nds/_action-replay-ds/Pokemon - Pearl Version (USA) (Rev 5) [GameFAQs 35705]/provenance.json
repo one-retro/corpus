@@ -1,0 +1,109 @@
+{
+  "method": "downloaded",
+  "system": "nds",
+  "core": "_action-replay-ds",
+  "url": "https://gamefaqs.gamespot.com/ds/925601-pokemon-diamond-version/saves/35705",
+  "source_page": "https://gamefaqs.gamespot.com/ds/925601-pokemon-diamond-version/saves",
+  "source": "GameFAQs (section 'Action Replay Max DS (.duc) Game Save (North America)')",
+  "author": "Memory-",
+  "licence": null,
+  "posted": "2026-10-19",
+  "fetched": "2026-11-05",
+  "what_it_is": "(100% Absolute Completion) Pearl. Black trainer card, event items/can fight all legends, max items. In boxes(shiny if possible): all legends, all final evos, colosseum/XD mons, ditto breeding, all unown, rare/move events, tower teams.",
+  "gamefaqs": {
+    "id": 35705,
+    "product": "Pokemon Diamond / Pearl / Platinum Version",
+    "section": "Action Replay Max DS (.duc) Game Save (North America)",
+    "region": "North America",
+    "served_as": "pokemon-diamond-pearl-platinum-version.35705.duc",
+    "listed_size": "512KB"
+  },
+  "format": "Action Replay DS save: the 500-byte 'ARDS000000000001' header written by a converter ('Converted Saves' / 'Converted Save' / 'Conversion code by UniqueGeeks.Net'), then 512 KiB raw for the 512 KiB flash (exact size)",
+  "files": {
+    "pokemon-diamond-pearl-platinum-version.35705.duc": {
+      "size": 524788,
+      "sha1": "2a7eb085418d505eda9f508fc9c116727d9a84bc"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Pokemon - Pearl Version (USA) (Rev 5).nds",
+      "sha1": "99083bf15ec7c6b81b4ba241ee10abd9e80999ac",
+      "size": 67108864
+    },
+    "converted_with": "tools/gamefaqs/nds-ards.py IN step0.bin, then tools/gamefaqs/nds-cores.py step0.bin --chip 524288 --stem 'Pokemon - Pearl Version (USA) (Rev 5)' --out DIR: drops the Action Replay header; fits it to the 524288-byte chip (exact size) and writes each core's file",
+    "converted": {
+      "size": 524288,
+      "sha1": "d4863e12961eb1f19246c10b1f6d1cd6bd600f99"
+    },
+    "core_files": {
+      "desmume": {
+        "name": "Pokemon - Pearl Version (USA) (Rev 5).dsv",
+        "size": 524410,
+        "sha1": "24876ccf34cd7915942d8c96fd0e8e2f9c2e42ff"
+      },
+      "desmume-2015": {
+        "name": "Pokemon - Pearl Version (USA) (Rev 5).dsv",
+        "size": 524410,
+        "sha1": "24876ccf34cd7915942d8c96fd0e8e2f9c2e42ff"
+      },
+      "melonds": {
+        "name": "Pokemon - Pearl Version (USA) (Rev 5).sav",
+        "size": 524288,
+        "sha1": "d4863e12961eb1f19246c10b1f6d1cd6bd600f99"
+      },
+      "melonds-ds": {
+        "name": "Pokemon - Pearl Version (USA) (Rev 5).srm",
+        "size": 524288,
+        "sha1": "d4863e12961eb1f19246c10b1f6d1cd6bd600f99"
+      },
+      "noods": {
+        "name": "Pokemon - Pearl Version (USA) (Rev 5).sav",
+        "size": 524288,
+        "sha1": "d4863e12961eb1f19246c10b1f6d1cd6bd600f99"
+      },
+      "skyemu": {
+        "name": "Pokemon - Pearl Version (USA) (Rev 5).srm",
+        "size": 8388608,
+        "sha1": "59a088cabbeaf767c6bc7f30be93dce1d5991bca"
+      }
+    },
+    "script": "scripts/nds/Pokemon - Pearl Version.load.txt",
+    "cores": {
+      "desmume": {
+        "result": "loads",
+        "detail": "CONTINUE: PLAYER Memory (girl), TIME 999:59, BADGES 8, POKéDEX 493"
+      },
+      "desmume-2015": {
+        "result": "loads",
+        "detail": "CONTINUE: PLAYER Memory (girl), TIME 999:59, BADGES 8, POKéDEX 493"
+      },
+      "melonds": {
+        "result": "core-error",
+        "detail": "\"A communication error has occurred\" (\"... you will be returned to wherever you last saved\") instead of the CONTINUE panel, then a white screen; melonDS 0.9.3 does the same with its own Pearl save from this corpus, so it is the core (no BIOS or firmware here, FreeBIOS), not this save"
+      },
+      "melonds-ds": {
+        "result": "loads",
+        "detail": "CONTINUE: PLAYER Memory (girl), TIME 999:59, BADGES 8, POKéDEX 493"
+      },
+      "noods": {
+        "result": "loads",
+        "detail": "CONTINUE: PLAYER Memory (girl), TIME 999:59, BADGES 8, POKéDEX 493"
+      },
+      "skyemu": {
+        "result": "loads",
+        "detail": "CONTINUE: PLAYER Memory (girl), TIME 999:59, BADGES 8, POKéDEX 493"
+      }
+    },
+    "proof_order": [
+      "desmume",
+      "desmume-2015",
+      "melonds",
+      "melonds-ds",
+      "noods",
+      "skyemu"
+    ]
+  },
+  "note": "Release: Diamond/Pearl layout, English; Pearl from the description."
+}

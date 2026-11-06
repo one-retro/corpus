@@ -1,0 +1,14 @@
+# Ys III - Wanderers from Ys (SNES), load check: Start at the title
+# (CONTINUE when a save exists): LOAD MENU, each slot named by its
+# location, or SAVE FILE when empty. Down, B: slot 1 loads, and the status
+# bar shows Adol's hit points, experience, ring power and gold. (With no
+# save Start begins a new game.)
+wait 1600
+press start 6       # title -> LOAD MENU
+wait 200
+shot load
+press down 6        # slot 1
+wait 30
+press b 6
+wait 300
+shot loaded

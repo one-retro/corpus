@@ -1,0 +1,12 @@
+# Casper: past the title, the New Game door lists the game's save slots by name (a saved game
+# shows as "Game N", a free slot as "New Game").
+wait 1500           # BIOS logos
+repeat 4            # skip the intros to the doors
+press start 6
+wait 250
+end
+press right 6
+wait 120
+press b 6
+wait 300
+shot load

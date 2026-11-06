@@ -1,0 +1,164 @@
+{
+  "method": "downloaded",
+  "system": "ps2",
+  "core": "_codebreaker",
+  "url": "https://gamefaqs.gamespot.com/ps2/914659-ratchet-and-clank-going-commando/saves/9904",
+  "source_page": "https://gamefaqs.gamespot.com/ps2/914659-ratchet-and-clank-going-commando/saves",
+  "source": "GameFAQs (section 'PlayStation2 CodeBreaker Save (North America)')",
+  "author": "Aceace33333",
+  "licence": null,
+  "posted": "2005-11-14",
+  "fetched": "2026-11-05",
+  "what_it_is": "Everything Unlocked",
+  "gamefaqs": {
+    "id": 9904,
+    "product": "Ratchet & Clank: Going Commando",
+    "section": "PlayStation2 CodeBreaker Save (North America)",
+    "region": "North America",
+    "served_as": "ratchet-and-clank-going-commando.9904.cbs",
+    "listed_size": "45KB"
+  },
+  "format": "CodeBreaker save: 'CFU\\0' header of 296 bytes (folder field 'BASCUS-97268RATCHET', title 'Ratchet : Clank  Going Commando'), RC4-encrypted zlib body of 46433 bytes unpacking to 479902 bytes: 7 files, 479454 bytes of file data",
+  "files": {
+    "ratchet-and-clank-going-commando.9904.cbs": {
+      "size": 46729,
+      "sha1": "6fdda27834bdfc1909275ce48a40810939c4f348"
+    }
+  },
+  "save": {
+    "folder": "BASCUS-97268RATCHET",
+    "title": [
+      "Ratchet & Clank",
+      "Going Commando"
+    ],
+    "times": "as the file stores them (PS2 card times, JST)",
+    "files": [
+      {
+        "name": "icon.sys",
+        "size": 964,
+        "sha1": "f48a7a991b3d2783a6d825c7e4ec0da3cae660c7",
+        "created": "2005-07-29 00:59:37",
+        "modified": "2005-07-29 00:59:37"
+      },
+      {
+        "name": "static.ico",
+        "size": 26134,
+        "sha1": "cd719bc12d7fa82aae767c0b5b7b0d5b9900170a",
+        "created": "2005-07-29 00:59:38",
+        "modified": "2005-07-29 00:59:39"
+      },
+      {
+        "name": "save0.bin",
+        "size": 99264,
+        "sha1": "3c9fcaccd046a3da6ca4a7ce682ba271efc098c8",
+        "created": "2005-07-29 00:59:39",
+        "modified": "2005-07-29 00:59:41"
+      },
+      {
+        "name": "save1.bin",
+        "size": 99264,
+        "sha1": "45e1db6d34b599838489d5d8d81f1ce9bd1a012f",
+        "created": "2005-07-29 00:59:41",
+        "modified": "2005-07-29 00:59:43"
+      },
+      {
+        "name": "save2.bin",
+        "size": 99264,
+        "sha1": "7ee0dba994ae933f198c638bc4113ad78f27af50",
+        "created": "2005-07-29 00:59:43",
+        "modified": "2005-07-29 00:59:45"
+      },
+      {
+        "name": "save3.bin",
+        "size": 99264,
+        "sha1": "4f432f49fdfc2e5a0d93fc8b870ee527a3d4983d",
+        "created": "2005-07-29 00:59:45",
+        "modified": "2005-07-29 00:59:47"
+      },
+      {
+        "name": "BASCUS-97268RATCHET",
+        "size": 55300,
+        "sha1": "11360126d0593b9c2630762025f36adda118a475",
+        "created": "2005-07-29 00:59:48",
+        "modified": "2005-07-29 00:59:49"
+      }
+    ]
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Ratchet & Clank - Going Commando (USA).iso",
+      "sha1": "f2cfaf0eb12b3c0d8fd6db7aa49ce032e8a6020b",
+      "size": 3828350976
+    },
+    "converted_with": "tools/gamefaqs/ps2-card.py 'ratchet-and-clank-going-commando.9904.cbs' -o OUT: reads the save with mymcplus 3.0.5 and writes OUT/Mcd001.ps2 (an 8 MiB card with ECC, formatted and filled by mymcplus) for lrps2/pcee2/pcsx2, and OUT/mc0/<folder>/ for Play!",
+    "converted": {
+      "Mcd001.ps2": {
+        "size": 8650752,
+        "sha1": "97dc7d17f038109ebdde9bb321521590191570ee"
+      },
+      "mc0/BASCUS-97268RATCHET/": {
+        "icon.sys": {
+          "size": 964,
+          "sha1": "f48a7a991b3d2783a6d825c7e4ec0da3cae660c7"
+        },
+        "static.ico": {
+          "size": 26134,
+          "sha1": "cd719bc12d7fa82aae767c0b5b7b0d5b9900170a"
+        },
+        "save0.bin": {
+          "size": 99264,
+          "sha1": "3c9fcaccd046a3da6ca4a7ce682ba271efc098c8"
+        },
+        "save1.bin": {
+          "size": 99264,
+          "sha1": "45e1db6d34b599838489d5d8d81f1ce9bd1a012f"
+        },
+        "save2.bin": {
+          "size": 99264,
+          "sha1": "7ee0dba994ae933f198c638bc4113ad78f27af50"
+        },
+        "save3.bin": {
+          "size": 99264,
+          "sha1": "4f432f49fdfc2e5a0d93fc8b870ee527a3d4983d"
+        },
+        "BASCUS-97268RATCHET": {
+          "size": 55300,
+          "sha1": "11360126d0593b9c2630762025f36adda118a475"
+        }
+      },
+      "read_back": "work/ps2/tools/mcfs.py lists every file with the size and SHA-1 put on the card; one-saves (1saves convert + inspect) reads the card and finds BASCUS-97268RATCHET",
+      "timestamps": "what the save does not date is 2000-01-01 00:00:00 (JST, as a card stores it); the card's own root entries too"
+    },
+    "script": "scripts/ps2/Ratchet & Clank - Going Commando (USA).load.txt",
+    "cores": {
+      "pcee2": {
+        "detail": "Load Game: 4 files (03:02 challenge 5, 03:22 challenge 4, 00:13 challenge 5, 00:07 challenge 5; 9,999,999 bolts each, 07/28/05); Planet Notak, Canal City",
+        "result": "loads"
+      },
+      "lrps2": {
+        "detail": "Load Game: 4 files (03:02 challenge 5, 03:22 challenge 4, 00:13 challenge 5, 00:07 challenge 5; 9,999,999 bolts each, 07/28/05); Planet Notak, Canal City",
+        "result": "loads"
+      },
+      "play": {
+        "detail": "Load Game: 4 files (03:02 challenge 5, 03:22 challenge 4, 00:13 challenge 5, 00:07 challenge 5; 9,999,999 bolts each, 07/28/05); Planet Notak, Canal City",
+        "result": "loads"
+      },
+      "pcsx2": {
+        "detail": "Load Game: 4 files (03:02 challenge 5, 03:22 challenge 4, 00:13 challenge 5, 00:07 challenge 5; 9,999,999 bolts each, 07/28/05); Planet Notak, Canal City",
+        "result": "loads"
+      },
+      "armsx2": {
+        "result": "not-run",
+        "detail": "ARMSX2 renders only through Vulkan here and falls back to a null GS (no picture), so nothing shows what the game read (ps2/NOTES.md)"
+      }
+    },
+    "proof_order": [
+      "pcee2",
+      "lrps2",
+      "play",
+      "pcsx2"
+    ]
+  },
+  "note": null
+}

@@ -283,3 +283,155 @@ untouched all-0xFF card. One user (issues 12764, 13036, 13405) appears three tim
 | Ratchet & Clank (USA).iso | 4214095872 | aee9275384f739c9b24cd5de6f7e200292db7b01 |
 | Ratchet & Clank - Going Commando (USA).iso | 3828350976 | f2cfaf0eb12b3c0d8fd6db7aa49ce032e8a6020b |
 | Gran Turismo 4 (USA).iso | 5314478080 | 5b1dbf056f45f8023e8e4958e6d7deb31fc64a47 |
+
+## GameFAQs saves
+
+All 185 GameFAQs saves for the PS2 games here (see `tools/GAMEFAQS.md`), filed as downloaded
+entries `ps2/_<device>/<release> [GameFAQs <id>]/`: the file as GameFAQs served it (a `.zip`
+replaced by what is in it), `provenance.json` (the uploader's text, what the bytes are, the card
+the converter made and its read-back, and a verdict per core) and `proof.png` (the frame of each
+core that ran it, in `proof_order`).
+
+### What the files are
+
+Read by their bytes, not their extension or GameFAQs' section:
+
+| Served as | Files | What they are | Entry folder |
+| --- | ---: | --- | --- |
+| `.max` | 102 | 101 Max Drive / PowerSave files (`Ps2PowerSave`, LZARI); every header CRC32 matches. The length field is the compressed size in 67 and the unpacked size in 34 (mymcplus reads both). **One is a `.psu`** (26920, raw directory entries) | `_max-drive`, `_psu` |
+| `.cbs` | 27 | CodeBreaker (`CFU\0`, RC4 + zlib). One (28456) has an empty folder field: mymcplus names it `NO_ROOT_NAME` | `_codebreaker` |
+| `.sps` 9, `.xps` 13 | 22 | One format (`\x0d\0\0\0SharkPortSave`). Four were rebuilt by PC tools, named in the header: "Made with PS2 Save Builder" (16771, 24538) and "Made using file converter by ffgriever" (26534, 32290); 26534 lost its folder name (`UNNAMED SAVE`). 3147 (Ecco, X-Port) counts 10 files in its directory entry and holds 9. 14106 = 14108 and 14109 = 14111 are one uploader's files posted in both sections | `_sharkport` (SharkPort 2 section), `_x-port` (X-Port section) |
+| `.zip` | 34 | 29 PS3 exports (`.PSV`, `\0VSP`); **5 are not**: a `.psu` (28540), a raw 8 MiB PCSX2 card `GT4-start[1].ps2` (35694: PCSX2's closing bytes at 0x210 are set), and 3 bare save folders (28454, 28455 named `... - Copy`, a Windows copy; 28898 with an `important.txt` saying to copy the folder to the card) | `_ps3`, `_psu`, `pcsx2`, `_folder` |
+
+No GameFAQs page says which tool made a `.psu` (EMS adapter, uLaunchELF) or copied a bare
+folder, so those entries are named for the format (`_psu`, `_folder`).
+
+### Converting: `tools/gamefaqs/ps2-card.py`
+
+`ps2-card.py SAVE -o OUT [--name DIR]` reads the save with **mymcplus 3.0.5** (PyPI, GPL-3.0,
+installed in `.cache/venv-gamefaqs/`; the script re-runs itself with that venv's python), the
+reference for all five containers, and writes `OUT/Mcd001.ps2`: a card formatted by mymcplus
+(8 MiB, 512-byte pages + 16-byte ECC, 8650752 bytes; its superblock is byte-identical to the one
+the PCSX2-family cores write) with the save imported, and `OUT/mc0/<folder>/<files>`, the same
+save as Play! keeps it. A raw card is used as is. Every "now" mymcplus would stamp (the card's
+root entries, Max Drive files, which keep no times) is a fixed 2000-01-01 00:00:00, so the same
+input always gives the same card. Names from inside a save are checked (ASCII, no `/`, `\`, NUL,
+`.`/`..`, staying inside OUT) before they become host paths; nothing was refused.
+
+Two departures from mymcplus, both recorded in the entry's note: a SharkPort directory count
+larger than the files present is lowered to what is there (3147), and a PSV file mode with
+stray upper bits (`0x07d78497` on 16310's `icon.sys`; the PS3 keeps 32 bits, the card 16) is
+cut to its low 16 bits. One file is not converted: **32060**, a `.PSV` whose file table is
+broken (the header says 5 files, only the first entry is sound, the data starts at 304 instead
+of 460); its files are those of the same uploader's Max Drive 32061.
+
+Every card was read back: `work/ps2/tools/mcfs.py` lists every file with the size and SHA-1 put
+on it (184 of 184). **one-saves** (`1saves convert` + `inspect`) reads 182; it refuses the two
+whose folder has no game code (`UNNAMED SAVE`, `NO_ROOT_NAME`: "header.game: is empty", as for
+`BADATA-SYSTEM` above), and shows SpongeBob's folder `BASLUS-20904SBMovie ` without its trailing
+space. It reads none of the containers themselves (`.max`, `.cbs`, `.sps`, `.psu`, `.psv`: "could
+not tell what this file is"), only the raw card; its `--from` profiles have none for them.
+
+### Verifying
+
+One load script per game, `scripts/ps2/<game>.load.txt`, goes from power-on to screens that
+show what a save holds, run once per core with an empty formatted card (the baseline) and once
+per save (`work/gamefaqs/ps2/run.py`: the card where each core reads slot 1; Play! gets the
+`mc0` folder; standalone PCSX2 as in "PCSX2 standalone" above, run with `-unlimited`, and
+from the `.bin` of the CD games: given the `.cue` it opened an error window, which the watchdog
+stopped). Only the US discs are in the library, so only saves of US releases ran:
+
+| Game | Shows | Baseline (empty card) |
+| --- | --- | --- |
+| Gran Turismo 4 | GT Mode as saved (map, Garage, License Center ...): car, credits, date; then Home: Complete %, A-spec points, Days | "No GT4 game data found ... create game data?" |
+| Gradius V | menu footer FREE PLAY / CREDIT 3, STAGE SELECT, RANKING | CREDIT 3, stage 1, default table |
+| Inuyasha - Feudal Combat | no "no game data" stop at power-on; Battle Mode roster | stops at "no game data", title |
+| Marvel vs. Capcom 2 | SAVE/LOAD > LOAD: "Load successful"; SECRET FACTOR: YOUR POINTS | "No MARVEL VS. CAPCOM 2 save data found" |
+| Max Payne 2 | "Autoload successful."; LOAD MENU savegames; unlocked modes | "No ... savegame folder found"; Detective only |
+| Ratchet & Clank, Going Commando | Load Game: files with time, bolts, date, planet | "Please insert a Memory Card ... that contains ... game data" |
+| Shadow the Hedgehog | "Load successful"; STORY MODE with LAST STORY; LIBRARY paths | no prompt, no LAST STORY |
+
+Script notes: the Select Mode menu of Inuyasha ignores input for longer in LRPS2 than in PCEE2
+(the wait is 2400 frames), a long hold there repeats; Max Payne 2 in Play! shows its first
+"Autoload successful." early enough that it times out back into the intro before the press, so
+Play! runs `... .load.play.txt` (8000 frames). GT4 opens GT Mode wherever the save was made,
+and how far the title press gets depends on how fast the core loads the 1.5 MB save, so the
+proof frame is the one that shows the save in that core (named per core in provenance).
+
+Results (`provenance.json` has each core's verdict and what its frame shows):
+
+| Core | loads | rejected | core-error | not-run |
+| --- | ---: | ---: | ---: | ---: |
+| pcee2 | 63 | 2 | 0 | 120 |
+| lrps2 | 53 | 2 | 2 | 128 |
+| play | 53 | 2 | 2 | 128 |
+| pcsx2 | 63 | 2 | 0 | 120 |
+| armsx2 | 0 | 0 | 0 | 185 |
+
+| Release | saves | pcee2 | lrps2 | play | pcsx2 | armsx2 |
+| --- | ---: | --- | --- | --- | --- | --- |
+| Digimon World 4 (USA) | 1 | not-run | not-run | not-run | not-run | not-run |
+| Ecco the Dolphin - Defender of the Future (Europe) (En,Fr,De,Es,It) | 1 | not-run | not-run | not-run | not-run | not-run |
+| Gradius V (Europe) (En,Fr,De,Es,It) | 1 | not-run | not-run | not-run | not-run | not-run |
+| Gradius V (Japan) | 1 | not-run | not-run | not-run | not-run | not-run |
+| Gradius V (USA) | 7 | 7 loads | 7 loads | 7 loads | 7 loads | not-run |
+| Gran Turismo 4 (Asia) | 3 | not-run | not-run | not-run | not-run | not-run |
+| Gran Turismo 4 (China) | 1 | not-run | not-run | not-run | not-run | not-run |
+| Gran Turismo 4 (Europe, Australia) (En,Fr,De,Es,It) | 32 | not-run | not-run | not-run | not-run | not-run |
+| Gran Turismo 4 (Japan, Asia) | 6 | not-run | not-run | not-run | not-run | not-run |
+| Gran Turismo 4 (Korea) | 3 | not-run | not-run | not-run | not-run | not-run |
+| Gran Turismo 4 (USA) | 30 | 29 loads, 1 rejected | 29 loads, 1 rejected | 29 loads, 1 rejected | 29 loads, 1 rejected | not-run |
+| Gran Turismo 4 - Prologue (Europe) (En,Fr,De,Es,It) | 3 | not-run | not-run | not-run | not-run | not-run |
+| Inuyasha - Feudal Combat (USA) | 2 | 2 loads | 2 loads | 2 loads | 2 loads | not-run |
+| Marvel vs. Capcom 2 - New Age of Heroes (Europe) | 3 | not-run | not-run | not-run | not-run | not-run |
+| Marvel vs. Capcom 2 - New Age of Heroes (Japan) | 3 | not-run | not-run | not-run | not-run | not-run |
+| Marvel vs. Capcom 2 - New Age of Heroes (USA) | 5 | 5 loads | 5 loads | 5 loads | 5 loads | not-run |
+| Max Payne 2 - The Fall of Max Payne (Europe) | 2 | not-run | not-run | not-run | not-run | not-run |
+| Max Payne 2 - The Fall of Max Payne (USA) | 2 | 2 loads | 2 loads | 2 loads | 2 loads | not-run |
+| Nickelodeon The SpongeBob SquarePants Movie (Europe, Australia) | 1 | not-run | not-run | not-run | not-run | not-run |
+| Nickelodeon The SpongeBob SquarePants Movie (USA) | 4 | not-run | not-run | not-run | not-run | not-run |
+| Obscure (USA) (En,Fr,Es) | 5 | not-run | not-run | not-run | not-run | not-run |
+| Punisher, The (Europe) | 2 | not-run | not-run | not-run | not-run | not-run |
+| Punisher, The (USA) | 4 | not-run | not-run | not-run | not-run | not-run |
+| Ratchet & Clank (Europe) (En,Fr,De,Es,It) | 4 | not-run | not-run | not-run | not-run | not-run |
+| Ratchet & Clank (USA) | 10 | 10 loads | 2 core-error, 8 not-run | 2 core-error, 8 not-run | 10 loads | not-run |
+| Ratchet & Clank - Going Commando (USA) | 7 | 6 loads, 1 rejected | 6 loads, 1 rejected | 6 loads, 1 rejected | 6 loads, 1 rejected | not-run |
+| Ratchet & Clank 2 (Europe, Australia) (En,Fr,De,Es,It) | 8 | not-run | not-run | not-run | not-run | not-run |
+| Ratchet - Deadlocked (USA) (En,Fr,Es) | 17 | not-run | not-run | not-run | not-run | not-run |
+| Ratchet - Gladiator (Europe, Australia) (En,Fr,De,Es,It) | 7 | not-run | not-run | not-run | not-run | not-run |
+| Shadow the Hedgehog (Europe, Australia) (En,Fr,De,Es,It) | 2 | not-run | not-run | not-run | not-run | not-run |
+| Shadow the Hedgehog (Japan) (En,Ja,Fr,De,Es,It) | 4 | not-run | not-run | not-run | not-run | not-run |
+| Shadow the Hedgehog (USA) | 2 | 2 loads | 2 loads | 2 loads | 2 loads | not-run |
+| Thunder Force VI (Japan) (En,Ja) | 2 | not-run | not-run | not-run | not-run | not-run |
+
+### Findings
+
+- **No core rejects a sound card.** Every save that one core loads, every other core that ran
+  it loads too, showing the same values (credits, scores, file lists, points).
+- **The rejections are the saves'**, the same in every core: **26534** (GT4, X-Port rebuilt by
+  ffgriever's converter) has the folder name `UNNAMED SAVE`, so GT4 looks for
+  `BASCUS-97328GAMEDATA`, finds nothing and offers to create game data; **7511** (Going
+  Commando, CodeBreaker) gives "Please insert a Memory Card ... that contains ... Going Commando
+  game data" in PCEE2, LRPS2, Play! and PCSX2 alike, although the card reads back file for file.
+  It is the only one of the seven whose `static.ico` is 33688 bytes with mode 8417 and dated two
+  months before the rest (the others have 26134 bytes, 8497), and its `save0.bin` was modified
+  5 minutes after the other files; which of these the game objects to was not worked out.
+- **Ratchet & Clank (USA) hangs in LRPS2 and Play!** at the end of its intro, with no card and
+  with a save (two saves each, then the rest not run), as when it was played (above). PCEE2 and
+  PCSX2 load all ten.
+- Cores differ in timing, not in what they read: how far GT4's title press gets depends on how
+  soon the core has read the 1.5 MB save (Play! is usually first), and LRPS2 and standalone
+  PCSX2 open some menus later than PCEE2 (the waits above have room for all four).
+- **Mislabelled sections:** a `.psu` under Max Drive (26920), a `.psu`, a raw PCSX2 card and
+  three bare folders under "PS3 Virtual Memory Card (ZIP)"; a Digimon World 4 save
+  (`BASLUS-20836savedata`) on the Going Commando page (16842); regions: 6449 (GT4 Prologue
+  Europe, `BESCES-52438`) under North America, 34718 (`BCSCCS-60002`, the Chinese release) under
+  Korea, 17424 (Obscure, `BASLUS-20777`, US) under Europe; three GT4 Prologue saves
+  (`SCES-52438`) on the GT4 page.
+- **Releases the library lacks** (every core `not-run`): all European, Japanese, Asian, Korean
+  and Chinese releases (GT4 Europe alone has 32 saves), Obscure, The Punisher, The SpongeBob
+  SquarePants Movie and Thunder Force VI (no image of any release), and Ecco's one save
+  (European). **Ratchet: Deadlocked (USA)** (17 saves) and **Digimon World 4 (USA)** are in the
+  library only as unfinished downloads (`.iso.part`, almost all zeros); Deadlocked showed a
+  black screen.
+- **ARMSX2** is `not-run` for all: it has no picture here (Vulkan only, null GS; above).

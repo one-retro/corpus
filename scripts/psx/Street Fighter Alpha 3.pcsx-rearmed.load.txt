@@ -1,0 +1,8 @@
+# Street Fighter Alpha 3, PCSX-ReARMed variant (it skips the BIOS logo, so the message comes
+# earlier): the game loads the card at boot and says so ("AUTO LOAD COMPLETE!");
+# a frame every 30 from frame 200 to 1700.
+wait 200
+repeat 50
+wait 30
+shot
+end

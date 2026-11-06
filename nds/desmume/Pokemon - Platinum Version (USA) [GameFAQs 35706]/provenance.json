@@ -1,0 +1,110 @@
+{
+  "method": "downloaded",
+  "system": "nds",
+  "core": "desmume",
+  "url": "https://gamefaqs.gamespot.com/ds/925601-pokemon-diamond-version/saves/35706",
+  "source_page": "https://gamefaqs.gamespot.com/ds/925601-pokemon-diamond-version/saves",
+  "source": "GameFAQs (section 'Action Replay Max DS (1.00-1.03) Game Save (North America)')",
+  "author": "LadiesMan712",
+  "licence": null,
+  "posted": "2026-10-19",
+  "fetched": "2026-11-05",
+  "what_it_is": "100 % complete",
+  "gamefaqs": {
+    "id": 35706,
+    "product": "Pokemon Diamond / Pearl / Platinum Version",
+    "section": "Action Replay Max DS (1.00-1.03) Game Save (North America)",
+    "region": "North America",
+    "served_as": "pokemon-diamond-pearl-platinum-version.35706.dss",
+    "listed_size": "512KB"
+  },
+  "format": "DeSmuME .dsv: 512 KiB raw and the 122-byte footer (size 524288, padSize 524288, type 0 (Autodetect), addr_size 3, mem_size 524288)",
+  "files": {
+    "pokemon-diamond-pearl-platinum-version.35706.dss": {
+      "size": 524410,
+      "sha1": "c010121fe19167fdbc0598cd4e1b26491ba67def"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Pokemon - Platinum Version (USA).nds",
+      "sha1": "c5072bf51a5ecc51ade99d3506c023f5bac3eeb3",
+      "size": 134217728,
+      "note": "a dump of this game code whose sha1 is not in the No-Intro DAT (the area after the used ROM size is blank); the region in the name is a guess"
+    },
+    "converted_with": "tools/gamefaqs/nds-dsv.py IN step0.bin, then tools/gamefaqs/nds-cores.py step0.bin --chip 524288 --stem 'Pokemon - Platinum Version (USA)' --out DIR: cuts the DeSmuME footer; fits it to the 524288-byte chip (exact size) and writes each core's file",
+    "converted": {
+      "size": 524288,
+      "sha1": "0b6ba51d6c29121566cf300ed9e9a7bbc074d798"
+    },
+    "core_files": {
+      "desmume": {
+        "name": "Pokemon - Platinum Version (USA).dsv",
+        "size": 524410,
+        "sha1": "3bc4cfd51036ef6e4d8cb37dd6deb576643b301e"
+      },
+      "desmume-2015": {
+        "name": "Pokemon - Platinum Version (USA).dsv",
+        "size": 524410,
+        "sha1": "3bc4cfd51036ef6e4d8cb37dd6deb576643b301e"
+      },
+      "melonds": {
+        "name": "Pokemon - Platinum Version (USA).sav",
+        "size": 524288,
+        "sha1": "0b6ba51d6c29121566cf300ed9e9a7bbc074d798"
+      },
+      "melonds-ds": {
+        "name": "Pokemon - Platinum Version (USA).srm",
+        "size": 524288,
+        "sha1": "0b6ba51d6c29121566cf300ed9e9a7bbc074d798"
+      },
+      "noods": {
+        "name": "Pokemon - Platinum Version (USA).sav",
+        "size": 524288,
+        "sha1": "0b6ba51d6c29121566cf300ed9e9a7bbc074d798"
+      },
+      "skyemu": {
+        "name": "Pokemon - Platinum Version (USA).srm",
+        "size": 8388608,
+        "sha1": "c2bc675f1049f5cc31add50a594dca4ff0b5114c"
+      }
+    },
+    "script": "scripts/nds/Pokemon - Platinum Version.load.txt",
+    "cores": {
+      "desmume": {
+        "result": "loads",
+        "detail": "CONTINUE: PLAYER Rick, TIME 124:38, BADGES 8, POKéDEX 493"
+      },
+      "desmume-2015": {
+        "result": "loads",
+        "detail": "CONTINUE: PLAYER Rick, TIME 124:38, BADGES 8, POKéDEX 493"
+      },
+      "melonds": {
+        "result": "core-error",
+        "detail": "\"A communication error has occurred\" (\"... you will be returned to wherever you last saved\") instead of the CONTINUE panel, then a white screen; melonDS 0.9.3 does the same with its own Pearl save from this corpus, so it is the core (no BIOS or firmware here, FreeBIOS), not this save"
+      },
+      "melonds-ds": {
+        "result": "loads",
+        "detail": "CONTINUE: PLAYER Rick, TIME 124:38, BADGES 8, POKéDEX 493"
+      },
+      "noods": {
+        "result": "loads",
+        "detail": "CONTINUE: PLAYER Rick, TIME 124:38, BADGES 8, POKéDEX 493"
+      },
+      "skyemu": {
+        "result": "loads",
+        "detail": "CONTINUE: PLAYER Rick, TIME 124:38, BADGES 8, POKéDEX 493"
+      }
+    },
+    "proof_order": [
+      "desmume",
+      "desmume-2015",
+      "melonds",
+      "melonds-ds",
+      "noods",
+      "skyemu"
+    ]
+  },
+  "note": "Release: Platinum layout, English."
+}

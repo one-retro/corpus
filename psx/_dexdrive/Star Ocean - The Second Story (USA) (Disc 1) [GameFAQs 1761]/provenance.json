@@ -1,0 +1,84 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_dexdrive",
+  "url": "https://gamefaqs.gamespot.com/ps/198763-star-ocean-the-second-story/saves/1761",
+  "source_page": "https://gamefaqs.gamespot.com/ps/198763-star-ocean-the-second-story/saves",
+  "source": "GameFAQs (section 'PlayStation DexDrive Save (North America)')",
+  "author": "Ozzy_",
+  "licence": null,
+  "posted": "2002-07-22",
+  "fetched": "2026-11-05",
+  "what_it_is": "Ready to fight indalecio limiter off, I guarantee a victory!",
+  "gamefaqs": {
+    "id": 1761,
+    "product": "Star Ocean: The Second Story",
+    "section": "PlayStation DexDrive Save (North America)",
+    "region": "North America",
+    "served_as": "star-ocean-the-second-story.1761.gme",
+    "listed_size": "19KB"
+  },
+  "format": "DexDrive .gme cut short: '123-456-STD' 3904-byte header + only the first 16384 bytes of the card (2 of 16 blocks); the card holds 1 save(s), 1 for this game (BASCUS-94421S02-S02)",
+  "release": "Star Ocean - The Second Story (USA) (Disc 1)",
+  "game_saves": [
+    {
+      "name": "BASCUS-94421S02-S02",
+      "blocks": 1,
+      "title": "SO2 02 50:41 Rena LV192"
+    }
+  ],
+  "files": {
+    "star-ocean-the-second-story.1761.gme": {
+      "size": 20288,
+      "sha1": "22957e23a88b1fb63c374604ded36f32277ab745"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Star Ocean - The Second Story (USA) (Disc 1).cue",
+      "sha1": "c13756292cbf2a27d2be247c5576e584552ce40f",
+      "size": 110
+    },
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr star-ocean-the-second-story.1761.gme: unwraps the card (DexDrive .gme: 3904-byte header + card (only 16384 card bytes, zero-padded to 131072))",
+    "converted": {
+      "size": 131072,
+      "sha1": "d7000f7acbaef0c7b3450559005c4586bac286aa"
+    },
+    "script": "scripts/psx/Star Ocean - The Second Story.load.txt",
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "loads",
+        "detail": "Load, Slot 1 shows #2: time 50:41, 1695 battles"
+      },
+      "beetle-psx-hw": {
+        "result": "loads",
+        "detail": "Load, Slot 1 shows #2: time 50:41, 1695 battles (the same screen as on beetle-psx)"
+      },
+      "pcsx-rearmed": {
+        "result": "loads",
+        "detail": "Load, Slot 1 shows #2: time 50:41, 1695 battles (the same screen as on beetle-psx)"
+      },
+      "swanstation": {
+        "result": "loads",
+        "detail": "Load, Slot 1 shows #2: time 50:41, 1695 battles (the same screen as on beetle-psx)"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": [
+      "beetle-psx",
+      "beetle-psx-hw",
+      "pcsx-rearmed",
+      "swanstation"
+    ]
+  },
+  "note": "The converter pads the missing blocks with zeroes, as DuckStation's ImportCardGME does; the saves on the card all lie in the blocks present. one-saves (1saves convert) does not read this file: a PS1 memory card is 131072 bytes, or that behind a DexDrive, VGS or PSP header, but this file is 20288 bytes"
+}

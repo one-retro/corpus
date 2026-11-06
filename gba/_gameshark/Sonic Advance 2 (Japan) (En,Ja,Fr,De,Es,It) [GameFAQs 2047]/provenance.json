@@ -1,0 +1,119 @@
+{
+  "method": "downloaded",
+  "system": "gba",
+  "core": "_gameshark",
+  "url": "https://gamefaqs.gamespot.com/gba/561898-sonic-advance-2/saves/2047",
+  "source_page": "https://gamefaqs.gamespot.com/gba/561898-sonic-advance-2/saves",
+  "source": "GameFAQs (section 'GameBoy Advance GameShark Save (Japan)')",
+  "author": "Nigoli",
+  "licence": null,
+  "posted": "2002-12-20",
+  "fetched": "2026-11-05",
+  "what_it_is": "100% Completed with All Emeralds for All 5 Characters with Boss Attack, Chao Garden having 99999 Rings, Sound Test Unlocked, and Extra Stage with Super Sonic.",
+  "gamefaqs": {
+    "id": 2047,
+    "product": "Sonic Advance 2",
+    "section": "GameBoy Advance GameShark Save (Japan)",
+    "region": "Japan",
+    "served_as": "sonic-advance-2.2047.sps",
+    "listed_size": "64KB"
+  },
+  "format": "SharkPort save (\"SharkPortSave\", kind 0x000F0000): title \"Sonic Advance 2\", date \"Completed Save\", notes \"100% Completed with All Emeralds for All 5 Characters wit...\"; cart header \"SONICADVANC2\" / 'A2NJ' (complement 0x63); payload 65536 bytes; checksum: unsigned",
+  "files": {
+    "sonic-advance-2.2047.sps": {
+      "size": 65796,
+      "sha1": "ee9d2bc96c832007ee3f5ec77185563141b28bc6"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Sonic Advance 2 (Japan) (En,Ja,Fr,De,Es,It).gba",
+      "sha1": "dffd0188fc78154b42b401398a224ae0713edf23",
+      "size": 16777216
+    },
+    "converted_with": "tools/gamefaqs/gba-sharkport.py sonic-advance-2.2047.sps --rom ROM --core CORE --outdir DIR: reads the SharkPort container as mGBA does and imports the payload as mGBA's _importSavedata does (cut to the chip, EEPROM 8-byte blocks reversed, the rest of the chip erased), then lays the chip out as the core keeps it",
+    "converted": {
+      "size": 65536,
+      "sha1": "8f7f581eca44cca8ca475176b735ca199f1e4e47"
+    },
+    "script": "scripts/gba/Sonic Advance 2.load.txt",
+    "cores": {
+      "mgba": {
+        "result": "loads",
+        "detail": "OPTIONS: PLAYER DATA \"SoNicK\" (with no save the game asks for a name first)",
+        "core_version": "mGBA 0.11-212-7a12d6d",
+        "file": {
+          "name": "Sonic Advance 2 (Japan) (En,Ja,Fr,De,Es,It).srm",
+          "size": 65536,
+          "sha1": "8f7f581eca44cca8ca475176b735ca199f1e4e47"
+        },
+        "frame": "options"
+      },
+      "vba-m": {
+        "result": "loads",
+        "detail": "OPTIONS: PLAYER DATA \"SoNicK\" (with no save the game asks for a name first)",
+        "core_version": "VBA-M 115defb",
+        "file": {
+          "name": "Sonic Advance 2 (Japan) (En,Ja,Fr,De,Es,It).srm",
+          "size": 65536,
+          "sha1": "8f7f581eca44cca8ca475176b735ca199f1e4e47"
+        },
+        "frame": "options"
+      },
+      "gpsp": {
+        "result": "loads",
+        "detail": "OPTIONS: PLAYER DATA \"SoNicK\" (with no save the game asks for a name first)",
+        "core_version": "gpSP v1.1.0-5819380",
+        "file": {
+          "name": "Sonic Advance 2 (Japan) (En,Ja,Fr,De,Es,It).srm",
+          "size": 131072,
+          "sha1": "481c0f44af6a6b9265c73c4458f66220c213bf12"
+        },
+        "frame": "options"
+      },
+      "vba-next": {
+        "result": "loads",
+        "detail": "OPTIONS: PLAYER DATA \"SoNicK\" (with no save the game asks for a name first)",
+        "core_version": "VBA Next v1.0.2",
+        "file": {
+          "name": "Sonic Advance 2 (Japan) (En,Ja,Fr,De,Es,It).srm",
+          "size": 139264,
+          "sha1": "1e79bd84e04693145ef2c8a87b7fd24e691c2b13"
+        },
+        "frame": "options"
+      },
+      "beetle-gba": {
+        "result": "loads",
+        "detail": "OPTIONS: PLAYER DATA \"SoNicK\" (with no save the game asks for a name first)",
+        "core_version": "Beetle GBA v0.9.36 b158166",
+        "file": {
+          "name": "Sonic Advance 2 (Japan) (En,Ja,Fr,De,Es,It).a219b3042eb65899baafa5143c53560c.sav",
+          "size": 65536,
+          "sha1": "8f7f581eca44cca8ca475176b735ca199f1e4e47"
+        },
+        "frame": "options"
+      },
+      "skyemu": {
+        "result": "loads",
+        "detail": "OPTIONS: PLAYER DATA \"SoNicK\" (with no save the game asks for a name first)",
+        "core_version": "SkyEmu adacd0788964ed89f5c43dcbc1f3cc26deec996c",
+        "file": {
+          "name": "Sonic Advance 2 (Japan) (En,Ja,Fr,De,Es,It).srm",
+          "size": 131072,
+          "sha1": "481c0f44af6a6b9265c73c4458f66220c213bf12"
+        },
+        "frame": "options"
+      }
+    },
+    "proof_order": [
+      "mgba",
+      "vba-m",
+      "gpsp",
+      "vba-next",
+      "beetle-gba",
+      "skyemu"
+    ]
+  },
+  "note": null
+}

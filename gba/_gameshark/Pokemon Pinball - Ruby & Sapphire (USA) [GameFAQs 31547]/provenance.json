@@ -1,0 +1,119 @@
+{
+  "method": "downloaded",
+  "system": "gba",
+  "core": "_gameshark",
+  "url": "https://gamefaqs.gamespot.com/gba/914978-pokemon-pinball-ruby-and-sapphire/saves/31547",
+  "source_page": "https://gamefaqs.gamespot.com/gba/914978-pokemon-pinball-ruby-and-sapphire/saves",
+  "source": "GameFAQs (section 'GameBoy Advance GameShark Save (North America)')",
+  "author": "NewGirlJade",
+  "licence": null,
+  "posted": "2025-02-18",
+  "fetched": "2026-11-05",
+  "what_it_is": "Clean slate save file in which the 4 \"hidden\" pokemon (Cyndaquill, Chickorita, Totodile, & Areodactyl), available exclusively through Japanese events, are unlocked.inspired by gmedley's 2025 video about the game's mechanics",
+  "gamefaqs": {
+    "id": 31547,
+    "product": "Pokemon Pinball: Ruby & Sapphire",
+    "section": "GameBoy Advance GameShark Save (North America)",
+    "region": "North America",
+    "served_as": "pokemon-pinball-ruby-and-sapphire.31547.sps",
+    "listed_size": "32KB"
+  },
+  "format": "SharkPort save (\"SharkPortSave\", kind 0x000F0000): title \"POKEPIN R/S\u0000\", date \"02/11/2025 09:14:31 PM\", notes \"\"; cart header \"POKEPIN R/S\" / 'BPPE' (complement 0xbf); payload 32768 bytes; checksum: signed",
+  "files": {
+    "pokemon-pinball-ruby-and-sapphire.31547.sps": {
+      "size": 32871,
+      "sha1": "50c747b94c5f7c26208f65539d11f13552e1a59f"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Pokemon Pinball - Ruby & Sapphire (USA).gba",
+      "sha1": "9fec81ce2c5df589e0371a0bf2f92a5fe8db730b",
+      "size": 8388608
+    },
+    "converted_with": "tools/gamefaqs/gba-sharkport.py pokemon-pinball-ruby-and-sapphire.31547.sps --rom ROM --core CORE --outdir DIR: reads the SharkPort container as mGBA does and imports the payload as mGBA's _importSavedata does (cut to the chip, EEPROM 8-byte blocks reversed, the rest of the chip erased), then lays the chip out as the core keeps it",
+    "converted": {
+      "size": 32768,
+      "sha1": "0f410a1ee1fc399bc894fc8cc2ad338b0fbe2b93"
+    },
+    "script": "scripts/gba/Pokemon Pinball - Ruby & Sapphire.load.txt",
+    "cores": {
+      "mgba": {
+        "result": "loads",
+        "detail": "POKeDEX lists the species names (with no save they are dashes), Seen 0, Own 0: the \"clean slate\" the description gives",
+        "core_version": "mGBA 0.11-212-7a12d6d",
+        "file": {
+          "name": "Pokemon Pinball - Ruby & Sapphire (USA).srm",
+          "size": 32768,
+          "sha1": "0f410a1ee1fc399bc894fc8cc2ad338b0fbe2b93"
+        },
+        "frame": "dex"
+      },
+      "vba-m": {
+        "result": "loads",
+        "detail": "POKeDEX lists the species names (with no save they are dashes), Seen 0, Own 0: the \"clean slate\" the description gives",
+        "core_version": "VBA-M 115defb",
+        "file": {
+          "name": "Pokemon Pinball - Ruby & Sapphire (USA).srm",
+          "size": 32768,
+          "sha1": "0f410a1ee1fc399bc894fc8cc2ad338b0fbe2b93"
+        },
+        "frame": "dex"
+      },
+      "gpsp": {
+        "result": "loads",
+        "detail": "POKeDEX lists the species names (with no save they are dashes), Seen 0, Own 0: the \"clean slate\" the description gives",
+        "core_version": "gpSP v1.1.0-5819380",
+        "file": {
+          "name": "Pokemon Pinball - Ruby & Sapphire (USA).srm",
+          "size": 131072,
+          "sha1": "dac49f28f7dc2488533a443ffd33563b15d2c4d7"
+        },
+        "frame": "dex"
+      },
+      "vba-next": {
+        "result": "loads",
+        "detail": "POKeDEX lists the species names (with no save they are dashes), Seen 0, Own 0: the \"clean slate\" the description gives",
+        "core_version": "VBA Next v1.0.2",
+        "file": {
+          "name": "Pokemon Pinball - Ruby & Sapphire (USA).srm",
+          "size": 139264,
+          "sha1": "b3d74f933d7febe2216a2aff8f2f6050089ef574"
+        },
+        "frame": "dex"
+      },
+      "beetle-gba": {
+        "result": "loads",
+        "detail": "POKeDEX lists the species names (with no save they are dashes), Seen 0, Own 0: the \"clean slate\" the description gives",
+        "core_version": "Beetle GBA v0.9.36 b158166",
+        "file": {
+          "name": "Pokemon Pinball - Ruby & Sapphire (USA).ba6d0fbff297b8937d3c8e7f2c25fa0f.sav",
+          "size": 65536,
+          "sha1": "ecc10f519ca487d66b7803e374e655f5898c0975"
+        },
+        "frame": "dex"
+      },
+      "skyemu": {
+        "result": "loads",
+        "detail": "POKeDEX lists the species names (with no save they are dashes), Seen 0, Own 0: the \"clean slate\" the description gives",
+        "core_version": "SkyEmu adacd0788964ed89f5c43dcbc1f3cc26deec996c",
+        "file": {
+          "name": "Pokemon Pinball - Ruby & Sapphire (USA).srm",
+          "size": 131072,
+          "sha1": "dac49f28f7dc2488533a443ffd33563b15d2c4d7"
+        },
+        "frame": "dex"
+      }
+    },
+    "proof_order": [
+      "mgba",
+      "vba-m",
+      "gpsp",
+      "vba-next",
+      "beetle-gba",
+      "skyemu"
+    ]
+  },
+  "note": null
+}

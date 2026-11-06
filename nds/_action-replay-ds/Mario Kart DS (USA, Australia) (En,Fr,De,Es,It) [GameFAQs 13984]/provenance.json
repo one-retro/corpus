@@ -1,0 +1,109 @@
+{
+  "method": "downloaded",
+  "system": "nds",
+  "core": "_action-replay-ds",
+  "url": "https://gamefaqs.gamespot.com/ds/920788-mario-kart-ds/saves/13984",
+  "source_page": "https://gamefaqs.gamespot.com/ds/920788-mario-kart-ds/saves",
+  "source": "GameFAQs (section 'Action Replay Max DS (.duc) Game Save (North America)')",
+  "author": "mastertom3",
+  "licence": null,
+  "posted": "2007-01-01",
+  "fetched": "2026-11-05",
+  "what_it_is": "100% save .unlocked everything. 3 stars appear next to your name in wi-fi mode. have not been on wi-fi and friend code have been registered.",
+  "gamefaqs": {
+    "id": 13984,
+    "product": "Mario Kart DS",
+    "section": "Action Replay Max DS (.duc) Game Save (North America)",
+    "region": "North America",
+    "served_as": "mario-kart-ds.13984.duc",
+    "listed_size": "256KB"
+  },
+  "format": "Action Replay DS save: the 500-byte 'ARDS000000000001' header of the DualScene.net save archive ('0168 - Mario Kart DS (U)(SCZ) 5.', name 'DualScene #5'), then 256 KiB raw for the 256 KiB flash (exact size)",
+  "files": {
+    "mario-kart-ds.13984.duc": {
+      "size": 262644,
+      "sha1": "75ebe11aaad8244d40c4c63605e47ad822874ddd"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Mario Kart DS (USA, Australia) (En,Fr,De,Es,It).nds",
+      "sha1": "691e00d9a5dd80b04f80cc7559503e8b06848785",
+      "size": 33554432
+    },
+    "converted_with": "tools/gamefaqs/nds-ards.py IN step0.bin, then tools/gamefaqs/nds-cores.py step0.bin --chip 262144 --stem 'Mario Kart DS (USA, Australia) (En,Fr,De,Es,It)' --out DIR: drops the Action Replay header; fits it to the 262144-byte chip (exact size) and writes each core's file",
+    "converted": {
+      "size": 262144,
+      "sha1": "a3e538817fe513a03acce11ebd801fdcda02577c"
+    },
+    "core_files": {
+      "desmume": {
+        "name": "Mario Kart DS (USA, Australia) (En,Fr,De,Es,It).dsv",
+        "size": 262266,
+        "sha1": "e26c056d2f19e7f3a0b62eef26e2bdef0997198b"
+      },
+      "desmume-2015": {
+        "name": "Mario Kart DS (USA, Australia) (En,Fr,De,Es,It).dsv",
+        "size": 262266,
+        "sha1": "e26c056d2f19e7f3a0b62eef26e2bdef0997198b"
+      },
+      "melonds": {
+        "name": "Mario Kart DS (USA, Australia) (En,Fr,De,Es,It).sav",
+        "size": 262144,
+        "sha1": "a3e538817fe513a03acce11ebd801fdcda02577c"
+      },
+      "melonds-ds": {
+        "name": "Mario Kart DS (USA, Australia) (En,Fr,De,Es,It).srm",
+        "size": 262144,
+        "sha1": "a3e538817fe513a03acce11ebd801fdcda02577c"
+      },
+      "noods": {
+        "name": "Mario Kart DS (USA, Australia) (En,Fr,De,Es,It).sav",
+        "size": 262144,
+        "sha1": "a3e538817fe513a03acce11ebd801fdcda02577c"
+      },
+      "skyemu": {
+        "name": "Mario Kart DS (USA, Australia) (En,Fr,De,Es,It).srm",
+        "size": 8388608,
+        "sha1": "0fb1e934f556e471e508587f93590f465f52c407"
+      }
+    },
+    "script": "scripts/nds/Mario Kart DS.load.txt",
+    "cores": {
+      "desmume": {
+        "result": "loads",
+        "detail": "SELECT CUP (50cc): all eight cups open, trophies, Mushroom Cup RANK ★"
+      },
+      "desmume-2015": {
+        "result": "loads",
+        "detail": "SELECT CUP (50cc): all eight cups open, trophies, Mushroom Cup RANK ★"
+      },
+      "melonds": {
+        "result": "loads",
+        "detail": "SELECT CUP (50cc): all eight cups open, trophies, Mushroom Cup RANK ★"
+      },
+      "melonds-ds": {
+        "result": "loads",
+        "detail": "SELECT CUP (50cc): all eight cups open, trophies, Mushroom Cup RANK ★"
+      },
+      "noods": {
+        "result": "loads",
+        "detail": "SELECT CUP (50cc): all eight cups open, trophies, Mushroom Cup RANK ★"
+      },
+      "skyemu": {
+        "result": "loads",
+        "detail": "SELECT CUP (50cc): all eight cups open, trophies, Mushroom Cup RANK ★"
+      }
+    },
+    "proof_order": [
+      "desmume",
+      "desmume-2015",
+      "melonds",
+      "melonds-ds",
+      "noods",
+      "skyemu"
+    ]
+  },
+  "note": "From the DualScene.net save archive (its header names the scene release \"0168 - Mario Kart DS (U)(SCZ)\")."
+}

@@ -1,0 +1,105 @@
+{
+  "method": "downloaded",
+  "system": "ps2",
+  "core": "_max-drive",
+  "url": "https://gamefaqs.gamespot.com/ps2/589460-gradius-v/saves/18356",
+  "source_page": "https://gamefaqs.gamespot.com/ps2/589460-gradius-v/saves",
+  "source": "GameFAQs (section 'PlayStation2 Max Drive Save (Japan)')",
+  "author": "KarousCrow",
+  "licence": null,
+  "posted": "2008-12-19",
+  "fetched": "2026-11-05",
+  "what_it_is": "Freeplay unlocked",
+  "gamefaqs": {
+    "id": 18356,
+    "product": "Gradius V",
+    "section": "PlayStation2 Max Drive Save (Japan)",
+    "region": "Japan",
+    "served_as": "gradius-v.18356.max",
+    "listed_size": "4KB"
+  },
+  "format": "Max Drive / PowerSave save: 'Ps2PowerSave' header (CRC32 a4568621, matches), folder BISLPM-62462, 3 files, LZARI stream 4058 bytes unpacking to 36472 bytes (36340 bytes of file data)",
+  "files": {
+    "gradius-v.18356.max": {
+      "size": 4150,
+      "sha1": "ddbffb095ba3fc958875207c347c325bb4f3bd16"
+    }
+  },
+  "save": {
+    "folder": "BISLPM-62462",
+    "title": [
+      "グラディウスV",
+      "セーブデータ"
+    ],
+    "times": "none: a max file stores no file times",
+    "files": [
+      {
+        "name": "BISLPM-62462",
+        "size": 1688,
+        "sha1": "bf2ad76b3e8b8b0ce8396bbf97ebe18d5eb168c4"
+      },
+      {
+        "name": "icon.ico",
+        "size": 33688,
+        "sha1": "1f9cb9d18cb43e29961bb12ce56d0216ca63bb58"
+      },
+      {
+        "name": "icon.sys",
+        "size": 964,
+        "sha1": "519010a3d1bf3ba063999ec62bc69f06f7bc66e3"
+      }
+    ]
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": null,
+    "converted_with": "tools/gamefaqs/ps2-card.py 'gradius-v.18356.max' -o OUT: reads the save with mymcplus 3.0.5 and writes OUT/Mcd001.ps2 (an 8 MiB card with ECC, formatted and filled by mymcplus) for lrps2/pcee2/pcsx2, and OUT/mc0/<folder>/ for Play!",
+    "converted": {
+      "Mcd001.ps2": {
+        "size": 8650752,
+        "sha1": "97033797ca8c784b180151b130624c39b40b0865"
+      },
+      "mc0/BISLPM-62462/": {
+        "BISLPM-62462": {
+          "size": 1688,
+          "sha1": "bf2ad76b3e8b8b0ce8396bbf97ebe18d5eb168c4"
+        },
+        "icon.ico": {
+          "size": 33688,
+          "sha1": "1f9cb9d18cb43e29961bb12ce56d0216ca63bb58"
+        },
+        "icon.sys": {
+          "size": 964,
+          "sha1": "519010a3d1bf3ba063999ec62bc69f06f7bc66e3"
+        }
+      },
+      "read_back": "work/ps2/tools/mcfs.py lists every file with the size and SHA-1 put on the card; one-saves (1saves convert + inspect) reads the card and finds BISLPM-62462",
+      "timestamps": "what the save does not date is 2000-01-01 00:00:00 (JST, as a card stores it); the card's own root entries too"
+    },
+    "script": null,
+    "cores": {
+      "pcee2": {
+        "result": "not-run",
+        "detail": "no image of Gradius V (Japan) in the library"
+      },
+      "lrps2": {
+        "result": "not-run",
+        "detail": "no image of Gradius V (Japan) in the library"
+      },
+      "play": {
+        "result": "not-run",
+        "detail": "no image of Gradius V (Japan) in the library"
+      },
+      "pcsx2": {
+        "result": "not-run",
+        "detail": "no image of Gradius V (Japan) in the library"
+      },
+      "armsx2": {
+        "result": "not-run",
+        "detail": "ARMSX2 renders only through Vulkan here and falls back to a null GS (no picture), so nothing shows what the game read (ps2/NOTES.md)"
+      }
+    },
+    "proof_order": []
+  },
+  "note": null
+}

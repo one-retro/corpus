@@ -318,3 +318,132 @@ One file per chip and per pak, in `saves/N64/`, named after the ROM (Main `suppo
 - **Timing:** the N64 core's ROM load takes a different time on every run (a timeline of Majora's
   Mask put the title at frame ~1600 after the script started; another run reached the file select
   with the libretro script's frame 1200), so START presses at fixed frames are fragile here.
+
+## GameFAQs saves
+
+The 29 N64 files of the GameFAQs pass (2026-11-05, `tools/GAMEFAQS.md`): the 21 in GameFAQs'
+"Nintendo 64 DexDrive Save" sections and the 8 N64 "Wii VC Game Save File"s. Each is filed under
+`n64/_<device>/<release> [GameFAQs <id>]/` exactly as served, with provenance and a proof
+(Mupen64Plus-Next, ParaLLEl N64, standalone Mupen64Plus, in that order). Converted files are in
+`.cache/gamefaqs-conv/n64/<id>/` (not committed); provenance records how and their hashes.
+
+### What the files really are
+
+| GameFAQs section says | Files | What the bytes show | Filed as |
+| --- | ---: | --- | --- |
+| DexDrive | 16 | DexDrive `.n64`: `123-456-STD`, 0x40 header, 16 comments of 256 bytes, a 32 KiB pak. Two stop early (943: pages 0-6; 11670: pages 0-11). 7 hold game notes (TWINE, Perfect Dark, THPS); 9 hold **GameShark cart saves** (below) | `_dexdrive` |
+| DexDrive | 2 | Paks built by **savefileconverter.com** from an emulator EEPROM: 31112 says so in its comment; 33367 has the same ID-block pattern and an all-zero 0x1040-byte header | `_save-file-converter` |
+| DexDrive | 1 | 18976: a raw `.sra`, 3036 bytes, words reversed, cut after the last byte written: Project64's way | `_project64` |
+| DexDrive | 2 | 32471: a raw 16 Kbit EEPROM, no container. 32751: 135232 bytes, **all zeros** | `_unknown` |
+| Wii VC | 8 | Wii `data.bin`: decrypted with the SD key, header MD5 valid for all 8 | `_wii-vc` |
+
+**GameShark cart saves.** A pak note with game code `3B AD D1 E5` and publisher `FA DE` (named
+`SMSM`, `BKBK`, `DODO`, `ZLZL`, with extension `1` or none) is a cartridge save that a GameShark's
+Memory Card Manager copied onto the pak, so a DexDrive could read it (save-file-converter
+`GameSerialCodeUtil.js`). This is why Ocarina of Time, Super Mario 64, Banjo-Kazooie and DK64,
+which never use a Controller Pak, have DexDrive saves.
+- **EEPROM** notes are the chip's bytes in console order, 2 pages for 4 Kbit. The device drops
+  trailing padding pages: DK64's `DODO` is 7 pages and is padded with 00 to 2048 bytes, as
+  save-file-converter does.
+- **SRAM** notes (Ocarina of Time's `ZLZL`, 24 or 7 pages for a 32 KiB chip) are compressed: a
+  4-byte **little-endian** length (`00 80 00 00` = 0x8000), then an **LZARI** stream (Okumura's
+  LZARI.C: 4096-byte window, 60-byte matches, 15-bit arithmetic coder, the codec of Datel's PS2
+  Max Drive). It decodes to the SRAM in console order, and all six OoT slots in both files have
+  valid checksums. I found no public tool that decodes these: save-file-converter handles only
+  uncompressed (EEPROM) notes. `n64-dexdrive.py`'s decoder matches mymcplus's LZARI byte for byte.
+
+**DexPlorer ID blocks are invalid.** Every pak that DexPlorer formatted (943, 1043, 1091, 1156,
+1263, 1260, 11670, 1704, 903: header bytes `0000010000 0303...`) has an all-zero serial and
+checksums `0101`/`FEFD` in all four ID copies. libultra wants the second checksum to be
+`0xFFF2 - sum` = `FEF1`. Given the pak as downloaded, Perfect Dark says **Damaged Controller Pak**,
+TWINE says **Corrupt Controller Pak Detected... Attempt To Repair?**, and THPS offers to repair,
+in all three cores. `n64-dexdrive.py` rewrites only the two checksums of each copy when no copy
+is valid (`--keep-id` turns this off). The as-downloaded paks were also run for 943, 1043, 1704
+and 903 to show the dialog. Mupen64Plus-Next formats its own paks with `FEF1`.
+
+**Wii VC.** `data.bin` = AES-128-CBC header (0xF0C0: title ID, banner "WIBN", MD5), the plain
+"Bk" header, then each file with its own IV (WiiBrew "Savegame Files"; save-file-converter
+`Wii.js`). The N64 VC file is `RAM_<code>` (SRAM) or `EEP_<code>` (EEPROM or FlashRAM), the
+chip **in console byte order** (vcromclaim `n64save.py` word-swaps it for Mupen64Plus):
+- OoT `RAM_CZLE` / `RAM_NZLP`, SSB `RAM_NALP` / `RAM_NALJ`: 32768 bytes.
+- Paper Mario `EEP_NMQE`: 131072 bytes of FlashRAM.
+- Majora's Mask `EEP_NZSP`: **262144 bytes**: the 128 KiB flash, then 128 KiB of `AA`. The
+  converter keeps the first half; save-file-converter keeps all of it as the `.fla`.
+- **The VC fills untouched chip memory with `AA`**, not `FF`: whole unused FlashRAM pages, SRAM
+  tails, OoT EU's header padding. No game objected.
+
+### Conversion
+
+`tools/gamefaqs/n64-dexdrive.py` (DexDrive, savefileconverter paks, raw `--raw eeprom` /
+`--raw sram-swapped`) and `tools/gamefaqs/wiivc-convert.py` (Wii VC; also SNES and PCE) write:
+- `save.srm`: the libretro cores' 296960-byte file. The pak goes in port 1 as is (padded with 00
+  if the file stops early), ports 2-4 are blank paks formatted as mupen64plus-core does (zero
+  serial, `FEF1`), and chip regions the file does not fill are `FF`.
+- SRAM and FlashRAM words reversed (`WordOrder::Swapped`), EEPROM and paks in console order.
+- For standalone Mupen64Plus, the same bytes as `.eep` / `.sra` / `.fla` / `.mpk` (four paks),
+  copied into its save folder under its own name: GoodName (32 chars) + `-` + MD5 (8). 32 KiB
+  `.sra` and 128 KiB `.fla` are byte-identical to the `.srm` regions.
+
+### Saves x cores
+
+All three cores agree on every save: **25 loads, 2 rejected, 2 not run each**. That took 81 save
+runs, 12 runs of the as-downloaded paks, and a no-save baseline per game and core (45). Load scripts: `scripts/n64/<game>.load.txt`, with one
+standalone variant (`007 - The World Is Not Enough.mupen64plus.load.txt`: a Down held 10 frames
+moved two lines in that emulator's menu, so it is held 2).
+
+| Id | Device | Release | Mupen64Plus-Next | ParaLLEl N64 | Mupen64Plus |
+| --- | --- | --- | --- | --- | --- |
+| 943 | `_dexdrive` | 007 - The World Is Not Enough (USA) | loads | loads | loads |
+| 1083 | `_dexdrive` | 007 - The World Is Not Enough (USA) | loads | loads | loads |
+| 1141 | `_dexdrive` | Banjo-Kazooie (USA) (Rev 1) | loads | loads | loads |
+| 1156 | `_dexdrive` | Donkey Kong 64 (USA) | loads | loads | loads |
+| 1263 | `_dexdrive` | Legend of Zelda, The - Ocarina of Time (USA) (Rev 2) | loads | loads | loads |
+| 1260 | `_dexdrive` | the same (byte-identical to 1263) | loads | loads | loads |
+| 11670 | `_dexdrive` | Legend of Zelda, The - Ocarina of Time (USA) (Rev 2) | loads | loads | loads |
+| 1043, 725, 1704, 594 | `_dexdrive` | Perfect Dark (USA) (Rev 1) | loads | loads | loads |
+| 34 | `_dexdrive` | Perfect Dark (USA) (Rev 1) | **rejected** | **rejected** | **rejected** |
+| 1169 | `_dexdrive` | Perfect Dark (Europe) (En,Fr,De,Es,It) | loads | loads | loads |
+| 1091 | `_dexdrive` | Super Mario 64 (USA) | loads | loads | loads |
+| 1173 | `_dexdrive` | Super Mario 64 (Europe) (En,Fr,De) | loads | loads | loads |
+| 903 | `_dexdrive` | Tony Hawk's Pro Skater (USA) (Rev 1) | **rejected** | **rejected** | **rejected** |
+| 31112 | `_save-file-converter` | Super Mario 64 (USA) | loads | loads | loads |
+| 33367 | `_save-file-converter` | Mischief Makers (USA) (Rev 1) | loads | loads | loads |
+| 18976 | `_project64` | Super Smash Bros. (USA) | loads | loads | loads |
+| 32471 | `_unknown` | Donkey Kong 64 (USA) | loads | loads | loads |
+| 32751 | `_unknown` | Yoshi's Story (USA) (En,Ja) | not run: all zeros | not run | not run |
+| 26519 | `_wii-vc` | Legend of Zelda, The - Majora's Mask (Europe) (En,Fr,De,Es) (Rev 1) | loads | loads | loads |
+| 30445 | `_wii-vc` | Legend of Zelda, The - Ocarina of Time (USA) (Rev 2) | loads | loads | loads |
+| 26520 | `_wii-vc` | Legend of Zelda, The - Ocarina of Time (Europe) (En,Fr,De) (Rev 1) | loads | loads | loads |
+| 31013, 22873, 31011 | `_wii-vc` | Paper Mario (USA) | loads | loads | loads |
+| 35242 | `_wii-vc` | Nintendo All-Star! Dairantou Smash Brothers (Japan) | not run: no ROM | not run | not run |
+| 26527 | `_wii-vc` | Super Smash Bros. (Europe) (En,Fr,De) | loads | loads | loads |
+
+The two rejections are the files' fault, the same in every core:
+- **903 (THPS)**: the note `TH-ETR` has lost its extension byte; THPS lists only notes with
+  extension `G` and says NO TONY HAWK GAME NOTES FOUND. With that one byte set to `G` (a
+  diagnostic, not filed) it lists "ETR".
+- **34 (Perfect Dark)**: the pak and its 28-page note are intact, but Choose Your Reality lists
+  no agent. It was posted 11 days after the US release, so it may be from the first revision;
+  the library has only Rev 1.
+
+Content notes:
+- **22873 (Paper Mario)** holds only a level-2 file "James": the "perfect game" in its description
+  is not in the upload.
+- **26520** holds three "LINK" files; the perfect one is File 3.
+- The cartridge revision is never recorded in a pak note or a GameShark copy. Entries are named
+  for the library's release that was used: Rev 1 / Rev 2.
+
+### Releases the library lacks, and leads
+
+- 35242 is the Japanese VC Smash Bros. (`NALJ`). It was converted, but not run.
+- PAL releases came from the library's other N64 set and were copied to `.cache/roms/n64/` under
+  No-Intro names: Europe OoT Rev 1, MM Rev 1, Perfect Dark, SM64, SSB.
+
+### one-saves
+
+`1saves` reads DexDrive files only for PS1 and has no Wii `data.bin` reader, so there was
+nothing to compare. For the `.srm` reader:
+- **ID blocks:** paks from DexDrive files carry DexPlorer's invalid `FEFD` ID checksum. A tool
+  that validates paks should expect it; the games themselves offer to repair it.
+- **Index checksums:** savefileconverter.com writes a 00 index-table checksum.
+- **Unused bytes:** VC-derived chips have `AA` there, not `FF`.

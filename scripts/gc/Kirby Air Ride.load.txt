@@ -1,0 +1,23 @@
+# Load script for downloaded saves (GameFAQs): show what a Kirby Air Ride save holds.
+# libretro Dolphin under retro-run, single-core (scripts/gc/dolphin-single-core.opt), so one
+# script frame is one emulated frame. The save sits in the GCI folder (User/GC/USA/Card A/).
+# Air Ride > Records > Checklist: the 120-box checklist and its "N / 120" count.
+# With no save the game stops at "There is no Kirby Air Ride data ... Make a new save data file?".
+wait 1200
+press start 6      # skip the intro to the title
+wait 180
+press start 6      # PRESS START -> Select Mode (Air Ride highlighted)
+wait 180
+press a 6          # Air Ride
+wait 180
+press down 6
+wait 60
+press down 6
+wait 60
+press down 6       # Records
+wait 60
+press a 6
+wait 180
+press a 6          # Checklist
+wait 240
+shot checklist

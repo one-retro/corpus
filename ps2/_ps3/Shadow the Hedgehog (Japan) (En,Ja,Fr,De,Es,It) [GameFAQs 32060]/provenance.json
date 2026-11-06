@@ -1,0 +1,60 @@
+{
+  "method": "downloaded",
+  "system": "ps2",
+  "core": "_ps3",
+  "url": "https://gamefaqs.gamespot.com/gamecube/926672-shadow-the-hedgehog/saves/32060",
+  "source_page": "https://gamefaqs.gamespot.com/gamecube/926672-shadow-the-hedgehog/saves",
+  "source": "GameFAQs (section 'PlayStation 2 PS3 Virtual Memory Card Save (ZIP) (Japan)')",
+  "author": "GokaiWhite",
+  "licence": null,
+  "posted": "2025-05-06",
+  "fetched": "2026-11-05",
+  "what_it_is": "All Dark endings complete,All Stages available with all keys(except in Last Way)13/71 A Ranks",
+  "gamefaqs": {
+    "id": 32060,
+    "product": "Shadow the Hedgehog",
+    "section": "PlayStation 2 PS3 Virtual Memory Card Save (ZIP) (Japan)",
+    "region": "Japan",
+    "served_as": "shadow-the-hedgehog.32060.zip",
+    "listed_size": "20KB"
+  },
+  "format": "a .PSV ('\\0VSP' header, PS2 type 2), 154416 bytes, whose file table is not what the header says",
+  "files": {
+    "BISLPM-66166.PSV": {
+      "size": 154416,
+      "sha1": "bbb42cc0877a51fe5122decfd204f1493bbdc7eb"
+    }
+  },
+  "save": null,
+  "verified": {
+    "date": "2026-11-05",
+    "rom": null,
+    "converted_with": null,
+    "converted": null,
+    "script": null,
+    "cores": {
+      "pcee2": {
+        "result": "not-run",
+        "detail": "the converter cannot read the file"
+      },
+      "lrps2": {
+        "result": "not-run",
+        "detail": "the converter cannot read the file"
+      },
+      "play": {
+        "result": "not-run",
+        "detail": "the converter cannot read the file"
+      },
+      "pcsx2": {
+        "result": "not-run",
+        "detail": "the converter cannot read the file"
+      },
+      "armsx2": {
+        "result": "not-run",
+        "detail": "ARMSX2 renders only through Vulkan here and falls back to a null GS (no picture), so nothing shows what the game read (ps2/NOTES.md)"
+      }
+    },
+    "proof_order": []
+  },
+  "note": "The release is taken from the file's name, BISLPM-66166.PSV, and from the same uploader's Max Drive 32061; the file table cannot be read. The PSV header says 5 files but only the first file entry is well formed: the save data starts at offset 304 instead of 460 and the rest of the file table is data, so mymcplus stops (Unexpected EOF). Its files are those of GameFAQs 32061 (the same uploader's Max Drive file): the 8192-byte BISLPM-66166 at offset 304, icon.sys at 153392. Not converted."
+}

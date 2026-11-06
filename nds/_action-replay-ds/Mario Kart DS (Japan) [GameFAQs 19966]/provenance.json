@@ -1,0 +1,98 @@
+{
+  "method": "downloaded",
+  "system": "nds",
+  "core": "_action-replay-ds",
+  "url": "https://gamefaqs.gamespot.com/ds/920788-mario-kart-ds/saves/19966",
+  "source_page": "https://gamefaqs.gamespot.com/ds/920788-mario-kart-ds/saves",
+  "source": "GameFAQs (section 'Action Replay Max DS (.duc) Game Save (Japan)')",
+  "author": "Sangogi",
+  "licence": null,
+  "posted": "2009-11-19",
+  "fetched": "2026-11-05",
+  "what_it_is": "All characters unlocked, mirror mode unlocked, mission 7 unlocked. Everything!",
+  "gamefaqs": {
+    "id": 19966,
+    "product": "Mario Kart DS",
+    "section": "Action Replay Max DS (.duc) Game Save (Japan)",
+    "region": "Japan",
+    "served_as": "mario-kart-ds.19966.duc",
+    "listed_size": "256KB"
+  },
+  "format": "Action Replay DS save: the 500-byte 'ARDS000000000001' header written by a converter ('Converted Savegame' / 'Savegame', ASCII 'shuny conv'), then 256 KiB raw for the 256 KiB flash (exact size)",
+  "files": {
+    "mario-kart-ds.19966.duc": {
+      "size": 262644,
+      "sha1": "4fe7f99e4347f00c67e2c13719a062fc0b1ad5aa"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": null,
+    "converted_with": "tools/gamefaqs/nds-ards.py IN step0.bin, then tools/gamefaqs/nds-cores.py step0.bin --chip 262144 --stem 'Mario Kart DS (Japan)' --out DIR: drops the Action Replay header; fits it to the 262144-byte chip (exact size) and writes each core's file",
+    "converted": {
+      "size": 262144,
+      "sha1": "c2432eb9f39b713a5b9585e65521d45faa036682"
+    },
+    "core_files": {
+      "desmume": {
+        "name": "Mario Kart DS (Japan).dsv",
+        "size": 262266,
+        "sha1": "42ee8028da0506be5dd6e9e19c46e719b725e342"
+      },
+      "desmume-2015": {
+        "name": "Mario Kart DS (Japan).dsv",
+        "size": 262266,
+        "sha1": "42ee8028da0506be5dd6e9e19c46e719b725e342"
+      },
+      "melonds": {
+        "name": "Mario Kart DS (Japan).sav",
+        "size": 262144,
+        "sha1": "c2432eb9f39b713a5b9585e65521d45faa036682"
+      },
+      "melonds-ds": {
+        "name": "Mario Kart DS (Japan).srm",
+        "size": 262144,
+        "sha1": "c2432eb9f39b713a5b9585e65521d45faa036682"
+      },
+      "noods": {
+        "name": "Mario Kart DS (Japan).sav",
+        "size": 262144,
+        "sha1": "c2432eb9f39b713a5b9585e65521d45faa036682"
+      },
+      "skyemu": {
+        "name": "Mario Kart DS (Japan).srm",
+        "size": 8388608,
+        "sha1": "44976e4372eda4b87cabb17fc3d56bba8c55e0c9"
+      }
+    },
+    "script": null,
+    "cores": {
+      "desmume": {
+        "result": "not-run",
+        "detail": "no image of Mario Kart DS (Japan) in the library"
+      },
+      "desmume-2015": {
+        "result": "not-run",
+        "detail": "no image of Mario Kart DS (Japan) in the library"
+      },
+      "melonds": {
+        "result": "not-run",
+        "detail": "no image of Mario Kart DS (Japan) in the library"
+      },
+      "melonds-ds": {
+        "result": "not-run",
+        "detail": "no image of Mario Kart DS (Japan) in the library"
+      },
+      "noods": {
+        "result": "not-run",
+        "detail": "no image of Mario Kart DS (Japan) in the library"
+      },
+      "skyemu": {
+        "result": "not-run",
+        "detail": "no image of Mario Kart DS (Japan) in the library"
+      }
+    },
+    "proof_order": []
+  },
+  "note": null
+}

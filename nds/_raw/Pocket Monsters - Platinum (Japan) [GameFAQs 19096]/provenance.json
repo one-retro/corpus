@@ -1,0 +1,98 @@
+{
+  "method": "downloaded",
+  "system": "nds",
+  "core": "_raw",
+  "url": "https://gamefaqs.gamespot.com/ds/925601-pokemon-diamond-version/saves/19096",
+  "source_page": "https://gamefaqs.gamespot.com/ds/925601-pokemon-diamond-version/saves",
+  "source": "GameFAQs (section 'Action Replay Max DS (.duc) Game Save (North America)')",
+  "author": "ivanuchiha88",
+  "licence": null,
+  "posted": "2009-05-13",
+  "fetched": "2026-11-05",
+  "what_it_is": "all 8 badges,beat elite four,a whole lot of shiny,many EV'd pokemon.all rotom forms,all items.",
+  "gamefaqs": {
+    "id": 19096,
+    "product": "Pokemon Diamond / Pearl / Platinum Version",
+    "section": "Action Replay Max DS (.duc) Game Save (North America)",
+    "region": "North America",
+    "served_as": "pokemon-diamond-pearl-platinum-version.19096.duc",
+    "listed_size": "512KB"
+  },
+  "format": "raw 512 KiB chip image with no header (exact size)",
+  "files": {
+    "pokemon-diamond-pearl-platinum-version.19096.duc": {
+      "size": 524288,
+      "sha1": "cb8241df11a492146d47470ecae7e3475e2fe243"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": null,
+    "converted_with": "tools/gamefaqs/nds-cores.py IN --chip 524288 --stem 'Pocket Monsters - Platinum (Japan)' --out DIR: fits it to the 524288-byte chip (exact size) and writes each core's file",
+    "converted": {
+      "size": 524288,
+      "sha1": "cb8241df11a492146d47470ecae7e3475e2fe243"
+    },
+    "core_files": {
+      "desmume": {
+        "name": "Pocket Monsters - Platinum (Japan).dsv",
+        "size": 524410,
+        "sha1": "c904668c6a397caa0a1db8455ef23d0043aae410"
+      },
+      "desmume-2015": {
+        "name": "Pocket Monsters - Platinum (Japan).dsv",
+        "size": 524410,
+        "sha1": "c904668c6a397caa0a1db8455ef23d0043aae410"
+      },
+      "melonds": {
+        "name": "Pocket Monsters - Platinum (Japan).sav",
+        "size": 524288,
+        "sha1": "cb8241df11a492146d47470ecae7e3475e2fe243"
+      },
+      "melonds-ds": {
+        "name": "Pocket Monsters - Platinum (Japan).srm",
+        "size": 524288,
+        "sha1": "cb8241df11a492146d47470ecae7e3475e2fe243"
+      },
+      "noods": {
+        "name": "Pocket Monsters - Platinum (Japan).sav",
+        "size": 524288,
+        "sha1": "cb8241df11a492146d47470ecae7e3475e2fe243"
+      },
+      "skyemu": {
+        "name": "Pocket Monsters - Platinum (Japan).srm",
+        "size": 8388608,
+        "sha1": "b077d43e42fa6b4fdaeb53e60c93c6b46e1b56c6"
+      }
+    },
+    "script": null,
+    "cores": {
+      "desmume": {
+        "result": "not-run",
+        "detail": "no image of Pocket Monsters - Platinum (Japan) in the library"
+      },
+      "desmume-2015": {
+        "result": "not-run",
+        "detail": "no image of Pocket Monsters - Platinum (Japan) in the library"
+      },
+      "melonds": {
+        "result": "not-run",
+        "detail": "no image of Pocket Monsters - Platinum (Japan) in the library"
+      },
+      "melonds-ds": {
+        "result": "not-run",
+        "detail": "no image of Pocket Monsters - Platinum (Japan) in the library"
+      },
+      "noods": {
+        "result": "not-run",
+        "detail": "no image of Pocket Monsters - Platinum (Japan) in the library"
+      },
+      "skyemu": {
+        "result": "not-run",
+        "detail": "no image of Pocket Monsters - Platinum (Japan) in the library"
+      }
+    },
+    "proof_order": []
+  },
+  "note": "Release: Platinum layout, but language 1 (Japanese) and the version that caught the player's own Pokemon (origin game in the decrypted Pokemon data, OT matching the trainer) is Japanese Platinum, although it was posted under North America."
+}

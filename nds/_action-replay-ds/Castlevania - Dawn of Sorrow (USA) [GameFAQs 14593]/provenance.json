@@ -1,0 +1,109 @@
+{
+  "method": "downloaded",
+  "system": "nds",
+  "core": "_action-replay-ds",
+  "url": "https://gamefaqs.gamespot.com/ds/925601-pokemon-diamond-version/saves/14593",
+  "source_page": "https://gamefaqs.gamespot.com/ds/925601-pokemon-diamond-version/saves",
+  "source": "GameFAQs (section 'Action Replay Max DS (.duc) Game Save (Japan)')",
+  "author": "randell6542",
+  "licence": null,
+  "posted": "2007-03-12",
+  "fetched": "2026-11-05",
+  "what_it_is": "Elite Four 3 Shinies",
+  "gamefaqs": {
+    "id": 14593,
+    "product": "Pokemon Diamond / Pearl / Platinum Version",
+    "section": "Action Replay Max DS (.duc) Game Save (Japan)",
+    "region": "Japan",
+    "served_as": "pokemon-diamond-pearl-platinum-version.14593.duc",
+    "listed_size": "8KB"
+  },
+  "format": "Action Replay DS save: the 500-byte 'ARDS000000000001' header (game 'Pokemon diamond', name 'elite four , 3 shinys'), then 8 KiB raw for the 8 KiB EEPROM (exact size)",
+  "files": {
+    "pokemon-diamond-pearl-platinum-version.14593.duc": {
+      "size": 8692,
+      "sha1": "96e34257599ee5f50f0470795b7825470944ea7d"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Castlevania - Dawn of Sorrow (USA).nds",
+      "sha1": "47530ff87e608f88105a314fdf36dc385f8dec94",
+      "size": 67108864
+    },
+    "converted_with": "tools/gamefaqs/nds-ards.py IN step0.bin, then tools/gamefaqs/nds-cores.py step0.bin --chip 8192 --stem 'Castlevania - Dawn of Sorrow (USA)' --out DIR: drops the Action Replay header; fits it to the 8192-byte chip (exact size) and writes each core's file",
+    "converted": {
+      "size": 8192,
+      "sha1": "6e4bdb7ef838e4f0e1761d53d884d44768fe3a94"
+    },
+    "core_files": {
+      "desmume": {
+        "name": "Castlevania - Dawn of Sorrow (USA).dsv",
+        "size": 8314,
+        "sha1": "e5ea30c4e9977533b5f0b215aa907664f09eaf08"
+      },
+      "desmume-2015": {
+        "name": "Castlevania - Dawn of Sorrow (USA).dsv",
+        "size": 8314,
+        "sha1": "e5ea30c4e9977533b5f0b215aa907664f09eaf08"
+      },
+      "melonds": {
+        "name": "Castlevania - Dawn of Sorrow (USA).sav",
+        "size": 8192,
+        "sha1": "6e4bdb7ef838e4f0e1761d53d884d44768fe3a94"
+      },
+      "melonds-ds": {
+        "name": "Castlevania - Dawn of Sorrow (USA).srm",
+        "size": 8192,
+        "sha1": "6e4bdb7ef838e4f0e1761d53d884d44768fe3a94"
+      },
+      "noods": {
+        "name": "Castlevania - Dawn of Sorrow (USA).sav",
+        "size": 8192,
+        "sha1": "6e4bdb7ef838e4f0e1761d53d884d44768fe3a94"
+      },
+      "skyemu": {
+        "name": "Castlevania - Dawn of Sorrow (USA).srm",
+        "size": 8388608,
+        "sha1": "5694027bec9f41ade8d66ca77de0651d72c08ac3"
+      }
+    },
+    "script": "scripts/nds/Castlevania - Dawn of Sorrow.load.txt",
+    "cores": {
+      "desmume": {
+        "result": "loads",
+        "detail": "file list: file 1 \"KOLKS\" (hand-written name), Wizardry Lab, LV 10, 12.0%, TIME 00:33:02, GOLD 2681"
+      },
+      "desmume-2015": {
+        "result": "loads",
+        "detail": "file list: file 1 \"KOLKS\" (hand-written name), Wizardry Lab, LV 10, 12.0%, TIME 00:33:02, GOLD 2681"
+      },
+      "melonds": {
+        "result": "rejected",
+        "detail": "at boot: \"Save data is corrupted. Data has been deleted.\" (shot boot); desmume, desmume-2015 and melonds-ds show the same file"
+      },
+      "melonds-ds": {
+        "result": "loads",
+        "detail": "file list: file 1 \"KOLKS\" (hand-written name), Wizardry Lab, LV 10, 12.0%, TIME 00:33:02, GOLD 2681"
+      },
+      "noods": {
+        "result": "rejected",
+        "detail": "at boot: \"Save data is corrupted. Data has been deleted.\" (shot boot); desmume, desmume-2015 and melonds-ds show the same file"
+      },
+      "skyemu": {
+        "result": "rejected",
+        "detail": "at boot: \"Save data is corrupted. Data has been deleted.\" (shot boot); desmume, desmume-2015 and melonds-ds show the same file"
+      }
+    },
+    "proof_order": [
+      "desmume",
+      "desmume-2015",
+      "melonds",
+      "melonds-ds",
+      "noods",
+      "skyemu"
+    ]
+  },
+  "note": "Posted on the Pokemon Diamond / Pearl / Platinum page with a Pokemon description, but it is a Castlevania - Dawn of Sorrow save: the Action Replay header's ASCII copy says \"castlevania\" / \"respaldo 1\" / \"priemer respaldo\", and Dawn of Sorrow (USA) shows its file. GameFAQs 13729, 15744 and 14593 are the same file (two in North America, one in Japan). Filed as the USA release, the one it was verified in; nothing in it names a release."
+}

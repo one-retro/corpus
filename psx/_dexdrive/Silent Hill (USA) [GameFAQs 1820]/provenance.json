@@ -1,0 +1,92 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_dexdrive",
+  "url": "https://gamefaqs.gamespot.com/ps/198641-silent-hill/saves/1820",
+  "source_page": "https://gamefaqs.gamespot.com/ps/198641-silent-hill/saves",
+  "source": "GameFAQs (section 'PlayStation DexDrive Save (North America)')",
+  "author": "ohnoitschris",
+  "licence": null,
+  "posted": "2002-08-25",
+  "fetched": "2026-11-05",
+  "what_it_is": "File 1 contains various saves throughout the game, and file 2 contains a save right before the bad ending's final boss, and unlocks Next Fear mode.",
+  "gamefaqs": {
+    "id": 1820,
+    "product": "Silent Hill (1999)",
+    "section": "PlayStation DexDrive Save (North America)",
+    "region": "North America",
+    "served_as": "silent-hill-1999.1820.gme",
+    "listed_size": "131KB"
+  },
+  "format": "DexDrive .gme: '123-456-STD' 3904-byte header (per-block comments) + 131072-byte raw card; the card holds 2 save(s), 2 for this game (BASLUS-00707SILENT01, BASLUS-00707SILENT00)",
+  "release": "Silent Hill (USA)",
+  "game_saves": [
+    {
+      "name": "BASLUS-00707SILENT01",
+      "blocks": 1,
+      "title": "SILENT HILL FILE02"
+    },
+    {
+      "name": "BASLUS-00707SILENT00",
+      "blocks": 1,
+      "title": "SILENT HILL FILE01"
+    }
+  ],
+  "files": {
+    "silent-hill-1999.1820.gme": {
+      "size": 134976,
+      "sha1": "217fd9df397131f267067b5de635f4d4942d06b7"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Silent Hill (USA).cue",
+      "sha1": "e7bf6999a1b06337efa9ccbd6d528406811d982f",
+      "size": 83
+    },
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr silent-hill-1999.1820.gme: unwraps the card (DexDrive .gme: 3904-byte header + card)",
+    "converted": {
+      "size": 131072,
+      "sha1": "1ec4cfe65da3d3a638d4417567270433dd0f78bd"
+    },
+    "script": "scripts/psx/Silent Hill.load.txt",
+    "script_variants": {
+      "pcsx-rearmed": "scripts/psx/Silent Hill.pcsx-rearmed.load.txt",
+      "swanstation": "scripts/psx/Silent Hill.swanstation.load.txt"
+    },
+    "cores": {
+      "beetle-psx": {
+        "result": "loads",
+        "detail": "Load, slot 1 lists File 2 (Nowhere, Child's room, Next fear, Infirmary); Data 5, Time 0:49:47, Save 6"
+      },
+      "beetle-psx-hw": {
+        "result": "loads",
+        "detail": "Load, slot 1 lists File 2 (Nowhere, Child's room, Next fear, Infirmary); Data 5, Time 0:49:47, Save 6 (the same screen as on beetle-psx)"
+      },
+      "pcsx-rearmed": {
+        "result": "loads",
+        "detail": "Load, slot 1 lists File 2 (Nowhere, Child's room, Next fear, Infirmary); Data 5, Time 0:49:47, Save 6 (the same screen as on beetle-psx)"
+      },
+      "swanstation": {
+        "result": "loads",
+        "detail": "Load, slot 1 lists File 2 (Nowhere, Child's room, Next fear, Infirmary); Data 5, Time 0:49:47, Save 6 (the same screen as on beetle-psx)"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": [
+      "beetle-psx",
+      "beetle-psx-hw",
+      "pcsx-rearmed",
+      "swanstation"
+    ]
+  },
+  "note": null
+}

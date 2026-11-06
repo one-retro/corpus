@@ -1,0 +1,114 @@
+{
+  "method": "downloaded",
+  "system": "ps2",
+  "core": "_max-drive",
+  "url": "https://gamefaqs.gamespot.com/ps2/920196-the-spongebob-squarepants-movie/saves/35155",
+  "source_page": "https://gamefaqs.gamespot.com/ps2/920196-the-spongebob-squarepants-movie/saves",
+  "source": "GameFAQs (section 'PlayStation2 Max Drive Save (North America)')",
+  "author": "JohnThePikachu",
+  "licence": null,
+  "posted": "2026-07-15",
+  "fetched": "2026-11-05",
+  "what_it_is": "File 1: 100% Complete - All 68 Goofy Goober Tokens Collected, All 42 Treasure Chests Collected, All Upgrades Unlocked, 99,999 Manliness Points",
+  "gamefaqs": {
+    "id": 35155,
+    "product": "The SpongeBob SquarePants Movie",
+    "section": "PlayStation2 Max Drive Save (North America)",
+    "region": "North America",
+    "served_as": "the-spongebob-squarepants-movie.35155.max",
+    "listed_size": "19KB"
+  },
+  "format": "Max Drive / PowerSave save: 'Ps2PowerSave' header (CRC32 7282b389, matches), folder BASLUS-20904SBMovie , 4 files, LZARI stream 19528 bytes unpacking to 137608 bytes (137444 bytes of file data)",
+  "files": {
+    "the-spongebob-squarepants-movie.35155.max": {
+      "size": 19620,
+      "sha1": "b9b502be8807acb66e4033f438e6da3a9cbe340b"
+    }
+  },
+  "save": {
+    "folder": "BASLUS-20904SBMovie ",
+    "title": [
+      "SpongeBob −",
+      "The Movie"
+    ],
+    "times": "none: a max file stores no file times",
+    "files": [
+      {
+        "name": "BASLUS-20904SBMovie ",
+        "size": 992,
+        "sha1": "777e5b36e180b96d0c78d3e476f5d17bea04d075"
+      },
+      {
+        "name": "icon.sys",
+        "size": 964,
+        "sha1": "18b7b40ecfcadf88ad0be76bdd7c96a3b400439f"
+      },
+      {
+        "name": "SpongeIcon01.ico",
+        "size": 83544,
+        "sha1": "acf339f406af10e1cc9d87fa7b9d91090d552791"
+      },
+      {
+        "name": "SpongeBobMovie01",
+        "size": 51944,
+        "sha1": "91198d943348aab5340b819c3aa5a450913dacd6"
+      }
+    ]
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": null,
+    "converted_with": "tools/gamefaqs/ps2-card.py 'the-spongebob-squarepants-movie.35155.max' -o OUT: reads the save with mymcplus 3.0.5 and writes OUT/Mcd001.ps2 (an 8 MiB card with ECC, formatted and filled by mymcplus) for lrps2/pcee2/pcsx2, and OUT/mc0/<folder>/ for Play!",
+    "converted": {
+      "Mcd001.ps2": {
+        "size": 8650752,
+        "sha1": "e13d7385be27f39f2371c1a87d1a0645bad41aa5"
+      },
+      "mc0/BASLUS-20904SBMovie /": {
+        "BASLUS-20904SBMovie ": {
+          "size": 992,
+          "sha1": "777e5b36e180b96d0c78d3e476f5d17bea04d075"
+        },
+        "icon.sys": {
+          "size": 964,
+          "sha1": "18b7b40ecfcadf88ad0be76bdd7c96a3b400439f"
+        },
+        "SpongeIcon01.ico": {
+          "size": 83544,
+          "sha1": "acf339f406af10e1cc9d87fa7b9d91090d552791"
+        },
+        "SpongeBobMovie01": {
+          "size": 51944,
+          "sha1": "91198d943348aab5340b819c3aa5a450913dacd6"
+        }
+      },
+      "read_back": "work/ps2/tools/mcfs.py lists every file with the size and SHA-1 put on the card; one-saves (1saves convert + inspect) reads the card and finds BASLUS-20904SBMovie",
+      "timestamps": "what the save does not date is 2000-01-01 00:00:00 (JST, as a card stores it); the card's own root entries too"
+    },
+    "script": null,
+    "cores": {
+      "pcee2": {
+        "result": "not-run",
+        "detail": "no image of Nickelodeon The SpongeBob SquarePants Movie (USA) in the library"
+      },
+      "lrps2": {
+        "result": "not-run",
+        "detail": "no image of Nickelodeon The SpongeBob SquarePants Movie (USA) in the library"
+      },
+      "play": {
+        "result": "not-run",
+        "detail": "no image of Nickelodeon The SpongeBob SquarePants Movie (USA) in the library"
+      },
+      "pcsx2": {
+        "result": "not-run",
+        "detail": "no image of Nickelodeon The SpongeBob SquarePants Movie (USA) in the library"
+      },
+      "armsx2": {
+        "result": "not-run",
+        "detail": "ARMSX2 renders only through Vulkan here and falls back to a null GS (no picture), so nothing shows what the game read (ps2/NOTES.md)"
+      }
+    },
+    "proof_order": []
+  },
+  "note": null
+}

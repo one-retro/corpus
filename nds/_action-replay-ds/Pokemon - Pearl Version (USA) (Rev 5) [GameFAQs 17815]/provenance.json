@@ -1,0 +1,109 @@
+{
+  "method": "downloaded",
+  "system": "nds",
+  "core": "_action-replay-ds",
+  "url": "https://gamefaqs.gamespot.com/ds/925601-pokemon-diamond-version/saves/17815",
+  "source_page": "https://gamefaqs.gamespot.com/ds/925601-pokemon-diamond-version/saves",
+  "source": "GameFAQs (section 'Action Replay Max DS (.duc) Game Save (North America)')",
+  "author": "HyperDude255",
+  "licence": null,
+  "posted": "2008-09-10",
+  "fetched": "2026-11-05",
+  "what_it_is": "Finished game",
+  "gamefaqs": {
+    "id": 17815,
+    "product": "Pokemon Diamond / Pearl / Platinum Version",
+    "section": "Action Replay Max DS (.duc) Game Save (North America)",
+    "region": "North America",
+    "served_as": "pokemon-diamond-pearl-platinum-version.17815.duc",
+    "listed_size": "512KB"
+  },
+  "format": "Action Replay DS save: the 0xA4-byte version-2 header (four zero bytes, size 0x080000 at 0xA1, strings 'pokemon pearl', 'orignal', 'my first game save'), then 512 KiB raw for the 512 KiB flash (exact size)",
+  "files": {
+    "pokemon-diamond-pearl-platinum-version.17815.duc": {
+      "size": 524452,
+      "sha1": "e8a1c7a394d74bc6b81baa55a1a71e538ffbfb05"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Pokemon - Pearl Version (USA) (Rev 5).nds",
+      "sha1": "99083bf15ec7c6b81b4ba241ee10abd9e80999ac",
+      "size": 67108864
+    },
+    "converted_with": "tools/gamefaqs/nds-ards.py IN step0.bin, then tools/gamefaqs/nds-cores.py step0.bin --chip 524288 --stem 'Pokemon - Pearl Version (USA) (Rev 5)' --out DIR: drops the Action Replay header; fits it to the 524288-byte chip (exact size) and writes each core's file",
+    "converted": {
+      "size": 524288,
+      "sha1": "d68b5fd2380309982f17d4cc274bb85d316d289d"
+    },
+    "core_files": {
+      "desmume": {
+        "name": "Pokemon - Pearl Version (USA) (Rev 5).dsv",
+        "size": 524410,
+        "sha1": "315f75407e81b06a5d049d5255cda0100c65b7f9"
+      },
+      "desmume-2015": {
+        "name": "Pokemon - Pearl Version (USA) (Rev 5).dsv",
+        "size": 524410,
+        "sha1": "315f75407e81b06a5d049d5255cda0100c65b7f9"
+      },
+      "melonds": {
+        "name": "Pokemon - Pearl Version (USA) (Rev 5).sav",
+        "size": 524288,
+        "sha1": "d68b5fd2380309982f17d4cc274bb85d316d289d"
+      },
+      "melonds-ds": {
+        "name": "Pokemon - Pearl Version (USA) (Rev 5).srm",
+        "size": 524288,
+        "sha1": "d68b5fd2380309982f17d4cc274bb85d316d289d"
+      },
+      "noods": {
+        "name": "Pokemon - Pearl Version (USA) (Rev 5).sav",
+        "size": 524288,
+        "sha1": "d68b5fd2380309982f17d4cc274bb85d316d289d"
+      },
+      "skyemu": {
+        "name": "Pokemon - Pearl Version (USA) (Rev 5).srm",
+        "size": 8388608,
+        "sha1": "add84a5af21d2da8b44c07ebdf24af218d648c7e"
+      }
+    },
+    "script": "scripts/nds/Pokemon - Pearl Version.load.txt",
+    "cores": {
+      "desmume": {
+        "result": "loads",
+        "detail": "CONTINUE: PLAYER Scott, TIME 395:52, BADGES 8, POKéDEX 493"
+      },
+      "desmume-2015": {
+        "result": "loads",
+        "detail": "CONTINUE: PLAYER Scott, TIME 395:52, BADGES 8, POKéDEX 493"
+      },
+      "melonds": {
+        "result": "core-error",
+        "detail": "\"A communication error has occurred\" (\"... you will be returned to wherever you last saved\") instead of the CONTINUE panel, then a white screen; melonDS 0.9.3 does the same with its own Pearl save from this corpus, so it is the core (no BIOS or firmware here, FreeBIOS), not this save"
+      },
+      "melonds-ds": {
+        "result": "loads",
+        "detail": "CONTINUE: PLAYER Scott, TIME 395:52, BADGES 8, POKéDEX 493"
+      },
+      "noods": {
+        "result": "loads",
+        "detail": "CONTINUE: PLAYER Scott, TIME 395:52, BADGES 8, POKéDEX 493"
+      },
+      "skyemu": {
+        "result": "loads",
+        "detail": "CONTINUE: PLAYER Scott, TIME 395:52, BADGES 8, POKéDEX 493"
+      }
+    },
+    "proof_order": [
+      "desmume",
+      "desmume-2015",
+      "melonds",
+      "melonds-ds",
+      "noods",
+      "skyemu"
+    ]
+  },
+  "note": "Release: Diamond/Pearl layout, English; Pearl from the version that caught the player's own Pokemon (origin game in the decrypted Pokemon data, OT matching the trainer) and the Action Replay header (\"pokemon pearl\")."
+}

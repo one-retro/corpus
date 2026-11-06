@@ -1,0 +1,77 @@
+{
+  "method": "downloaded",
+  "system": "n64",
+  "core": "_wii-vc",
+  "url": "https://gamefaqs.gamespot.com/n64/198849-paper-mario/saves/31013",
+  "source_page": "https://gamefaqs.gamespot.com/n64/198849-paper-mario/saves",
+  "source": "GameFAQs (section 'Wii VC Game Save File (North America)')",
+  "author": "WiiBestConsole",
+  "licence": null,
+  "posted": "2024-12-02",
+  "fetched": "2026-11-05",
+  "what_it_is": "Final Boss Unlocked, All Partners Ultra Rank, 59/80 Badges Collected, 74/160 Star Pieces Found, 15/50 Tayce T's Recipes, 6/9 Chuck Quizmo Quizzes, Saved at Toad Town",
+  "gamefaqs": {
+    "id": 31013,
+    "product": "Paper Mario",
+    "section": "Wii VC Game Save File (North America)",
+    "region": "North America",
+    "served_as": "paper-mario.31013.bin",
+    "listed_size": "189KB"
+  },
+  "format": "Wii data.bin (an SD-card export; header AES-128-CBC with the SD key, header MD5 valid): title 00010001-NAEE \"Paper Mario\", 1 file: EEP_NMQE 131072 bytes - EEP_NMQE is the N64 cartridge save in console byte order",
+  "files": {
+    "paper-mario.31013.bin": {
+      "size": 193792,
+      "sha1": "4300fcec02d0cb3e37da2e34a681a7a9ec3c4964"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "converted_with": "tools/gamefaqs/wiivc-convert.py convert paper-mario.31013.bin OUT: decrypts the data.bin (AES-128-CBC, SD key, per-file IVs) and takes EEP_NMQE (131072 bytes, FlashRAM): first 0x20000 bytes, 32-bit words reversed, at 0x28800",
+    "converted": {
+      "size": 296960,
+      "sha1": "ddb9e051173b4513a08a564243218247d4043e24"
+    },
+    "converted_standalone": {
+      "files": {
+        "save.fla": {
+          "size": 131072,
+          "sha1": "0a15d0392b7b8eec9555343c1c9e4f192de4a015"
+        }
+      },
+      "how": "the same bytes as the .srm regions, as standalone Mupen64Plus keeps them: <GoodName (32 chars)>-<MD5 8>.eep/.sra/.fla/.mpk in its save folder"
+    },
+    "rom": {
+      "name": "Paper Mario (USA).z64",
+      "sha1": "3837f44cda784b466c9a2d99df70d77c322b97a0",
+      "size": 41943040
+    },
+    "script": "scripts/n64/Paper Mario.load.txt",
+    "baseline": "with no save: four files, all NEW",
+    "cores": {
+      "mupen64plus-next": {
+        "result": "loads",
+        "detail": "File 1 \"Mario\": Level 27, play time 21:58, all seven star spirits"
+      },
+      "parallel-n64": {
+        "result": "loads",
+        "detail": "File 1 \"Mario\": Level 27, play time 21:58, all seven star spirits"
+      },
+      "mupen64plus": {
+        "result": "loads",
+        "detail": "File 1 \"Mario\": Level 27, play time 21:58, all seven star spirits"
+      }
+    },
+    "core_versions": {
+      "mupen64plus": "Mupen64Plus 2.6.0 (Homebrew), glide64mk2 video, rsp-hle",
+      "mupen64plus-next": "Mupen64Plus-Next 3.0-Vulkan 15bada8",
+      "parallel-n64": "ParaLLEl N64 1.0 e8cbdbb"
+    },
+    "proof_order": [
+      "mupen64plus-next",
+      "parallel-n64",
+      "mupen64plus"
+    ]
+  },
+  "note": "The VC's 128 KiB EEP_NMQE is the FlashRAM in console order (Paper Mario's \"Mario Story 006\" pages), with AA in unused pages."
+}

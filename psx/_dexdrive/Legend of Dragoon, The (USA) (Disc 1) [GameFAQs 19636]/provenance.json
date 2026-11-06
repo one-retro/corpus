@@ -1,0 +1,94 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_dexdrive",
+  "url": "https://gamefaqs.gamespot.com/ps/197765-the-legend-of-dragoon/saves/19636",
+  "source_page": "https://gamefaqs.gamespot.com/ps/197765-the-legend-of-dragoon/saves",
+  "source": "GameFAQs (section 'PlayStation DexDrive Save (North America)')",
+  "author": "ZeroMarkenz",
+  "licence": null,
+  "posted": "2009-08-26",
+  "fetched": "2026-11-05",
+  "what_it_is": "3 Final Boss Saves. 1st - Super Virage. 2nd - Zieg Feld. 3rd - Melbu Frahma. All Dragoons Level & Additions Mastered. Best Weapons, Armors and Items available.",
+  "gamefaqs": {
+    "id": 19636,
+    "product": "The Legend of Dragoon",
+    "section": "PlayStation DexDrive Save (North America)",
+    "region": "North America",
+    "served_as": "the-legend-of-dragoon.19636.gme",
+    "listed_size": "131KB"
+  },
+  "format": "DexDrive .gme layout (134976 bytes: 3904-byte header + 131072-byte card) with the header zeroed, no '123-456-STD'; the card holds 3 save(s), 3 for this game (BASCUS-94491drgn0000, BASCUS-94491drgn0001, BASCUS-94491drgn0002)",
+  "release": "Legend of Dragoon, The (USA) (Disc 1)",
+  "game_saves": [
+    {
+      "name": "BASCUS-94491drgn0000",
+      "blocks": 1,
+      "title": "LOD FILE01 LV44 TIME 070:02:31"
+    },
+    {
+      "name": "BASCUS-94491drgn0001",
+      "blocks": 1,
+      "title": "LOD FILE02 LV44 TIME 070:16:16"
+    },
+    {
+      "name": "BASCUS-94491drgn0002",
+      "blocks": 1,
+      "title": "LOD FILE03 LV45 TIME 070:35:48"
+    }
+  ],
+  "files": {
+    "the-legend-of-dragoon.19636.gme": {
+      "size": 134976,
+      "sha1": "edd3bc4c127c512278b95d95a56e943eb8d76399"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Legend of Dragoon, The (USA) (Disc 1).cue",
+      "sha1": "ae7c4642ff995bd5762937cd1fc2ac9c4474db18",
+      "size": 103
+    },
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr the-legend-of-dragoon.19636.gme: unwraps the card (DexDrive .gme layout with a blank header (no 123-456-STD))",
+    "converted": {
+      "size": 131072,
+      "sha1": "36c8e24f22283c513837b2914ab841b1eb212a68"
+    },
+    "script": "scripts/psx/Legend of Dragoon.load.txt",
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "loads",
+        "detail": "Continue lists file 3: LV 45, 070:35:48, Moon"
+      },
+      "beetle-psx-hw": {
+        "result": "loads",
+        "detail": "Continue lists file 3: LV 45, 070:35:48, Moon (the same screen as on beetle-psx)"
+      },
+      "pcsx-rearmed": {
+        "result": "loads",
+        "detail": "Continue lists file 3: LV 45, 070:35:48, Moon (the same screen as on beetle-psx)"
+      },
+      "swanstation": {
+        "result": "loads",
+        "detail": "Continue lists file 3: LV 45, 070:35:48, Moon (the same screen as on beetle-psx)"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": [
+      "beetle-psx",
+      "beetle-psx-hw",
+      "pcsx-rearmed",
+      "swanstation"
+    ]
+  },
+  "note": "one-saves (1saves convert) does not read this file: a PS1 memory card is 131072 bytes, or that behind a DexDrive, VGS or PSP header, but this file is 134976 bytes"
+}

@@ -1,0 +1,80 @@
+{
+  "method": "downloaded",
+  "system": "n64",
+  "core": "_dexdrive",
+  "url": "https://gamefaqs.gamespot.com/n64/914163-007-the-world-is-not-enough/saves/943",
+  "source_page": "https://gamefaqs.gamespot.com/n64/914163-007-the-world-is-not-enough/saves",
+  "source": "GameFAQs (section 'Nintendo 64 DexDrive Save (North America)')",
+  "author": "PokemanKidd",
+  "licence": null,
+  "posted": "2001-07-13",
+  "fetched": "2026-11-05",
+  "what_it_is": "All levels on Agent unlocked, Team King of the Hill unlocked, but Meltdown is not beat yet.",
+  "gamefaqs": {
+    "id": 943,
+    "product": "007: The World is not Enough",
+    "section": "Nintendo 64 DexDrive Save (North America)",
+    "region": "North America",
+    "served_as": "007-the-world-is-not-enough.943.n64",
+    "listed_size": "5KB"
+  },
+  "format": "DexDrive .n64: \"123-456-STD\" and a 0x1040-byte header (DexPlorer comments), then only the first 1792 bytes (pages 0-6) of a Controller Pak: note NO7E/69 \"TWINE\" ext A, 2 pages; ID block checksums 0101/FEFD (wrong: 0xFFF2 - sum is FEF1)",
+  "files": {
+    "007-the-world-is-not-enough.943.n64": {
+      "size": 5952,
+      "sha1": "9f9c47610630a0aaee06b267acea3e93c7a67ab4"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "converted_with": "tools/gamefaqs/n64-dexdrive.py convert 007-the-world-is-not-enough.943.n64 OUT: dexdrive: pak = the 1792 bytes after the 0x1040-byte header, padded with 00 to 32 KiB; ID block checksums 0101/FEFD wrong in every copy, rewritten as 0101/FEF1",
+    "converted": {
+      "size": 296960,
+      "sha1": "1633f3bf021dc1215d2452f199ec350d83e4c863"
+    },
+    "converted_standalone": {
+      "files": {
+        "save.mpk": {
+          "size": 131072,
+          "sha1": "5f59d92b7ed0a3897ff146e9c9ec7ac45128ed99"
+        }
+      },
+      "how": "the same bytes as the .srm regions, as standalone Mupen64Plus keeps them: <GoodName (32 chars)>-<MD5 8>.eep/.sra/.fla/.mpk in its save folder"
+    },
+    "rom": {
+      "name": "007 - The World Is Not Enough (USA).z64",
+      "sha1": "d347159808f0374a93cf44cfb6135d8f56279f7b",
+      "size": 33554432
+    },
+    "script": "scripts/n64/007 - The World Is Not Enough.load.txt",
+    "script_variants": {
+      "mupen64plus": "scripts/n64/007 - The World Is Not Enough.mupen64plus.load.txt"
+    },
+    "baseline": "with no save: the Load/Save Menu shows six empty notes, 123 pages free",
+    "cores": {
+      "mupen64plus-next": {
+        "result": "loads",
+        "detail": "Load/Save Menu lists note 1 \"TWINE\" .A, 2 pages (121 pages free); Load on it: \"Game Loaded Successfully\". The pak as downloaded (ID checksums 0101/FEFD) gets \"Corrupt Controller Pak Detected. Repairing May Cause Saved Data To Be Lost. Attempt To Repair?\""
+      },
+      "parallel-n64": {
+        "result": "loads",
+        "detail": "Load/Save Menu lists note 1 \"TWINE\" .A, 2 pages (121 pages free); Load on it: \"Game Loaded Successfully\". The pak as downloaded (ID checksums 0101/FEFD) gets \"Corrupt Controller Pak Detected. Repairing May Cause Saved Data To Be Lost. Attempt To Repair?\""
+      },
+      "mupen64plus": {
+        "result": "loads",
+        "detail": "Load/Save Menu lists note 1 \"TWINE\" .A, 2 pages (121 pages free); Load on it: \"Game Loaded Successfully\". The pak as downloaded (ID checksums 0101/FEFD) gets \"Corrupt Controller Pak Detected. Repairing May Cause Saved Data To Be Lost. Attempt To Repair?\" (standalone variant script: Down held 2 frames)"
+      }
+    },
+    "core_versions": {
+      "mupen64plus": "Mupen64Plus 2.6.0 (Homebrew), glide64mk2 video, rsp-hle",
+      "mupen64plus-next": "Mupen64Plus-Next 3.0-Vulkan 15bada8",
+      "parallel-n64": "ParaLLEl N64 1.0 e8cbdbb"
+    },
+    "proof_order": [
+      "mupen64plus-next",
+      "parallel-n64",
+      "mupen64plus"
+    ]
+  },
+  "note": "The file stops after page 6 of the pak; the converter pads it with 00 to 32 KiB. Like every pak DexPlorer formatted here, its ID block's second checksum is FEFD where libultra expects FEF1, and the game reports a corrupt pak; the converter rewrites the two checksums (and nothing else) because none of the four ID copies is valid."
+}

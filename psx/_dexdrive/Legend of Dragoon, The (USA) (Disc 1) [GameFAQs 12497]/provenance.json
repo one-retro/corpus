@@ -1,0 +1,154 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_dexdrive",
+  "url": "https://gamefaqs.gamespot.com/ps/197765-the-legend-of-dragoon/saves/12497",
+  "source_page": "https://gamefaqs.gamespot.com/ps/197765-the-legend-of-dragoon/saves",
+  "source": "GameFAQs (section 'PlayStation DexDrive Save (North America)')",
+  "author": "ChandooG",
+  "licence": null,
+  "posted": "2006-07-24",
+  "fetched": "2026-11-05",
+  "what_it_is": "Saves from various points in disc 1 start to finish with all characters at max stats and near-infinite gold to spend.",
+  "gamefaqs": {
+    "id": 12497,
+    "product": "The Legend of Dragoon",
+    "section": "PlayStation DexDrive Save (North America)",
+    "region": "North America",
+    "served_as": "the-legend-of-dragoon.12497.gme",
+    "listed_size": "131KB"
+  },
+  "format": "DexDrive .gme: '123-456-STD' 3904-byte header (per-block comments) + 131072-byte raw card; the card holds 15 save(s), 15 for this game (BASCUS-94491drgn0000, BASCUS-94491drgn0001, BASCUS-94491drgn0002, BASCUS-94491drgn0003, ...)",
+  "release": "Legend of Dragoon, The (USA) (Disc 1)",
+  "game_saves": [
+    {
+      "name": "BASCUS-94491drgn0000",
+      "blocks": 1,
+      "title": "LOD FILE01 LV60 TIME 000:07:02"
+    },
+    {
+      "name": "BASCUS-94491drgn0001",
+      "blocks": 1,
+      "title": "LOD FILE02 LV60 TIME 000:17:38"
+    },
+    {
+      "name": "BASCUS-94491drgn0002",
+      "blocks": 1,
+      "title": "LOD FILE03 LV60 TIME 000:45:46"
+    },
+    {
+      "name": "BASCUS-94491drgn0003",
+      "blocks": 1,
+      "title": "LOD FILE04 LV60 TIME 000:53:40"
+    },
+    {
+      "name": "BASCUS-94491drgn0004",
+      "blocks": 1,
+      "title": "LOD FILE05 LV60 TIME 001:08:04"
+    },
+    {
+      "name": "BASCUS-94491drgn0005",
+      "blocks": 1,
+      "title": "LOD FILE06 LV60 TIME 001:23:00"
+    },
+    {
+      "name": "BASCUS-94491drgn0006",
+      "blocks": 1,
+      "title": "LOD FILE07 LV60 TIME 001:28:30"
+    },
+    {
+      "name": "BASCUS-94491drgn0007",
+      "blocks": 1,
+      "title": "LOD FILE08 LV60 TIME 001:37:23"
+    },
+    {
+      "name": "BASCUS-94491drgn0008",
+      "blocks": 1,
+      "title": "LOD FILE09 LV60 TIME 001:48:30"
+    },
+    {
+      "name": "BASCUS-94491drgn0009",
+      "blocks": 1,
+      "title": "LOD FILE10 LV60 TIME 001:56:40"
+    },
+    {
+      "name": "BASCUS-94491drgn0010",
+      "blocks": 1,
+      "title": "LOD FILE11 LV60 TIME 002:20:08"
+    },
+    {
+      "name": "BASCUS-94491drgn0011",
+      "blocks": 1,
+      "title": "LOD FILE12 LV60 TIME 002:42:39"
+    },
+    {
+      "name": "BASCUS-94491drgn0012",
+      "blocks": 1,
+      "title": "LOD FILE13 LV60 TIME 003:05:45"
+    },
+    {
+      "name": "BASCUS-94491drgn0013",
+      "blocks": 1,
+      "title": "LOD FILE14 LV60 TIME 003:26:54"
+    },
+    {
+      "name": "BASCUS-94491drgn0014",
+      "blocks": 1,
+      "title": "LOD FILE15 LV60 TIME 003:37:07"
+    }
+  ],
+  "files": {
+    "the-legend-of-dragoon.12497.gme": {
+      "size": 134976,
+      "sha1": "462b052b07d7272ae0021b2076e6056c39d39876"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Legend of Dragoon, The (USA) (Disc 1).cue",
+      "sha1": "ae7c4642ff995bd5762937cd1fc2ac9c4474db18",
+      "size": 103
+    },
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr the-legend-of-dragoon.12497.gme: unwraps the card (DexDrive .gme: 3904-byte header + card)",
+    "converted": {
+      "size": 131072,
+      "sha1": "e61f3b416a8bd055ed20336f7d7dcabf02402aa8"
+    },
+    "script": "scripts/psx/Legend of Dragoon.load.txt",
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "loads",
+        "detail": "Continue lists files 13-15: LV 60 003:05:45 So. of Serdio, LV 60 003:26:54 Black Castle, LV 60 003:37:07 Ch.2 Platinum Shadow"
+      },
+      "beetle-psx-hw": {
+        "result": "loads",
+        "detail": "Continue lists files 13-15: LV 60 003:05:45 So. of Serdio, LV 60 003:26:54 Black Castle, LV 60 003:37:07 Ch.2 Platinum Shadow (the same screen as on beetle-psx)"
+      },
+      "pcsx-rearmed": {
+        "result": "loads",
+        "detail": "Continue lists files 13-15: LV 60 003:05:45 So. of Serdio, LV 60 003:26:54 Black Castle, LV 60 003:37:07 Ch.2 Platinum Shadow (the same screen as on beetle-psx)"
+      },
+      "swanstation": {
+        "result": "loads",
+        "detail": "Continue lists files 13-15: LV 60 003:05:45 So. of Serdio, LV 60 003:26:54 Black Castle, LV 60 003:37:07 Ch.2 Platinum Shadow (the same screen as on beetle-psx)"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": [
+      "beetle-psx",
+      "beetle-psx-hw",
+      "pcsx-rearmed",
+      "swanstation"
+    ]
+  },
+  "note": null
+}

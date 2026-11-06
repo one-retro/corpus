@@ -1,0 +1,141 @@
+{
+  "method": "downloaded",
+  "system": "ps2",
+  "core": "_max-drive",
+  "url": "https://gamefaqs.gamespot.com/ps2/914659-ratchet-and-clank-going-commando/saves/6420",
+  "source_page": "https://gamefaqs.gamespot.com/ps2/914659-ratchet-and-clank-going-commando/saves",
+  "source": "GameFAQs (section 'PlayStation2 Max Drive Save (Europe)')",
+  "author": "Nicosuper",
+  "licence": null,
+  "posted": "2005-02-20",
+  "fetched": "2026-11-05",
+  "what_it_is": "Game completed once , 25 skills points , one more nano boost to have full nano (the joba motorbike nano), all weapons to their final form, all gadgets and items",
+  "gamefaqs": {
+    "id": 6420,
+    "product": "Ratchet & Clank: Going Commando",
+    "section": "PlayStation2 Max Drive Save (Europe)",
+    "region": "Europe",
+    "served_as": "ratchet-and-clank-going-commando.6420.max",
+    "listed_size": "66KB"
+  },
+  "format": "Max Drive / PowerSave save: 'Ps2PowerSave' header (CRC32 1756c634, matches), folder BESCES-51607RATCHET, 7 files, LZARI stream 67778 bytes unpacking to 479768 bytes (479450 bytes of file data)",
+  "files": {
+    "ratchet-and-clank-going-commando.6420.max": {
+      "size": 67870,
+      "sha1": "f3de03b51720881ab205fe071c8a014cfd71a584"
+    }
+  },
+  "save": {
+    "folder": "BESCES-51607RATCHET",
+    "title": [
+      "Ratchet & Clank",
+      "2"
+    ],
+    "times": "none: a max file stores no file times",
+    "files": [
+      {
+        "name": "icon.sys",
+        "size": 964,
+        "sha1": "fc316126c85388420d3c666cb8177da3c99835d2"
+      },
+      {
+        "name": "static.ico",
+        "size": 26134,
+        "sha1": "cd719bc12d7fa82aae767c0b5b7b0d5b9900170a"
+      },
+      {
+        "name": "save0.bin",
+        "size": 99264,
+        "sha1": "7f0da762a5c32caf127e138f97200dea3ab98872"
+      },
+      {
+        "name": "save1.bin",
+        "size": 99264,
+        "sha1": "fdc33279f8bfa9b78cb95b5c54bb20cf4510e8bf"
+      },
+      {
+        "name": "save2.bin",
+        "size": 99264,
+        "sha1": "87bd053117f6ae3eba0bae713d1c52a7736840f7"
+      },
+      {
+        "name": "save3.bin",
+        "size": 99264,
+        "sha1": "0bbe885ba49354bb30a79331d2c947e185beff7f"
+      },
+      {
+        "name": "BESCES-51607RATCHET",
+        "size": 55296,
+        "sha1": "b15635dd443aa0c0305785a9ef2e9c41e4013b64"
+      }
+    ]
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": null,
+    "converted_with": "tools/gamefaqs/ps2-card.py 'ratchet-and-clank-going-commando.6420.max' -o OUT: reads the save with mymcplus 3.0.5 and writes OUT/Mcd001.ps2 (an 8 MiB card with ECC, formatted and filled by mymcplus) for lrps2/pcee2/pcsx2, and OUT/mc0/<folder>/ for Play!",
+    "converted": {
+      "Mcd001.ps2": {
+        "size": 8650752,
+        "sha1": "bd99ad5d656fe390cfaef2c146e65d50b24c8a3a"
+      },
+      "mc0/BESCES-51607RATCHET/": {
+        "icon.sys": {
+          "size": 964,
+          "sha1": "fc316126c85388420d3c666cb8177da3c99835d2"
+        },
+        "static.ico": {
+          "size": 26134,
+          "sha1": "cd719bc12d7fa82aae767c0b5b7b0d5b9900170a"
+        },
+        "save0.bin": {
+          "size": 99264,
+          "sha1": "7f0da762a5c32caf127e138f97200dea3ab98872"
+        },
+        "save1.bin": {
+          "size": 99264,
+          "sha1": "fdc33279f8bfa9b78cb95b5c54bb20cf4510e8bf"
+        },
+        "save2.bin": {
+          "size": 99264,
+          "sha1": "87bd053117f6ae3eba0bae713d1c52a7736840f7"
+        },
+        "save3.bin": {
+          "size": 99264,
+          "sha1": "0bbe885ba49354bb30a79331d2c947e185beff7f"
+        },
+        "BESCES-51607RATCHET": {
+          "size": 55296,
+          "sha1": "b15635dd443aa0c0305785a9ef2e9c41e4013b64"
+        }
+      },
+      "read_back": "work/ps2/tools/mcfs.py lists every file with the size and SHA-1 put on the card; one-saves (1saves convert + inspect) reads the card and finds BESCES-51607RATCHET",
+      "timestamps": "what the save does not date is 2000-01-01 00:00:00 (JST, as a card stores it); the card's own root entries too"
+    },
+    "script": null,
+    "cores": {
+      "pcee2": {
+        "result": "not-run",
+        "detail": "no image of Ratchet & Clank 2 (Europe, Australia) (En,Fr,De,Es,It) in the library"
+      },
+      "lrps2": {
+        "result": "not-run",
+        "detail": "no image of Ratchet & Clank 2 (Europe, Australia) (En,Fr,De,Es,It) in the library"
+      },
+      "play": {
+        "result": "not-run",
+        "detail": "no image of Ratchet & Clank 2 (Europe, Australia) (En,Fr,De,Es,It) in the library"
+      },
+      "pcsx2": {
+        "result": "not-run",
+        "detail": "no image of Ratchet & Clank 2 (Europe, Australia) (En,Fr,De,Es,It) in the library"
+      },
+      "armsx2": {
+        "result": "not-run",
+        "detail": "ARMSX2 renders only through Vulkan here and falls back to a null GS (no picture), so nothing shows what the game read (ps2/NOTES.md)"
+      }
+    },
+    "proof_order": []
+  },
+  "note": null
+}

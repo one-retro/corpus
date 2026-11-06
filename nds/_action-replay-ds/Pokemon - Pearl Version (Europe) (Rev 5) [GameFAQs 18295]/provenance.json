@@ -1,0 +1,109 @@
+{
+  "method": "downloaded",
+  "system": "nds",
+  "core": "_action-replay-ds",
+  "url": "https://gamefaqs.gamespot.com/ds/925601-pokemon-diamond-version/saves/18295",
+  "source_page": "https://gamefaqs.gamespot.com/ds/925601-pokemon-diamond-version/saves",
+  "source": "GameFAQs (section 'Action Replay Max DS (.duc) Game Save (Europe)')",
+  "author": "Javidjms",
+  "licence": null,
+  "posted": "2008-12-07",
+  "fetched": "2026-11-05",
+  "what_it_is": "fr save game finished all pokemon badge ball money",
+  "gamefaqs": {
+    "id": 18295,
+    "product": "Pokemon Diamond / Pearl / Platinum Version",
+    "section": "Action Replay Max DS (.duc) Game Save (Europe)",
+    "region": "Europe",
+    "served_as": "pokemon-diamond-pearl-platinum-version.18295.duc",
+    "listed_size": "256KB"
+  },
+  "format": "Action Replay DS save: the 500-byte 'ARDS000000000001' header written by a converter ('Converted Savegame' / 'Savegame', ASCII 'shuny conv'), then 256 KiB raw for the 512 KiB flash (padded 262144 -> 524288 with 0xFF)",
+  "files": {
+    "pokemon-diamond-pearl-platinum-version.18295.duc": {
+      "size": 262644,
+      "sha1": "20b4283aa771395cd2f49660cd162e91a353953d"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Pokemon - Pearl Version (USA) (Rev 5).nds",
+      "sha1": "99083bf15ec7c6b81b4ba241ee10abd9e80999ac",
+      "size": 67108864
+    },
+    "converted_with": "tools/gamefaqs/nds-ards.py IN step0.bin, then tools/gamefaqs/nds-cores.py step0.bin --chip 524288 --stem 'Pokemon - Pearl Version (USA) (Rev 5)' --out DIR: drops the Action Replay header; fits it to the 524288-byte chip (padded 262144 -> 524288 with 0xFF) and writes each core's file",
+    "converted": {
+      "size": 524288,
+      "sha1": "333fc68b14f0eaa89432ca631e7e8fcd20b89fa5"
+    },
+    "core_files": {
+      "desmume": {
+        "name": "Pokemon - Pearl Version (USA) (Rev 5).dsv",
+        "size": 524410,
+        "sha1": "b58926453c6d069f04772e0b65d48f9b7d3c4c16"
+      },
+      "desmume-2015": {
+        "name": "Pokemon - Pearl Version (USA) (Rev 5).dsv",
+        "size": 524410,
+        "sha1": "b58926453c6d069f04772e0b65d48f9b7d3c4c16"
+      },
+      "melonds": {
+        "name": "Pokemon - Pearl Version (USA) (Rev 5).sav",
+        "size": 524288,
+        "sha1": "333fc68b14f0eaa89432ca631e7e8fcd20b89fa5"
+      },
+      "melonds-ds": {
+        "name": "Pokemon - Pearl Version (USA) (Rev 5).srm",
+        "size": 524288,
+        "sha1": "333fc68b14f0eaa89432ca631e7e8fcd20b89fa5"
+      },
+      "noods": {
+        "name": "Pokemon - Pearl Version (USA) (Rev 5).sav",
+        "size": 524288,
+        "sha1": "333fc68b14f0eaa89432ca631e7e8fcd20b89fa5"
+      },
+      "skyemu": {
+        "name": "Pokemon - Pearl Version (USA) (Rev 5).srm",
+        "size": 8388608,
+        "sha1": "6c4b7cbf1f611bfb985d3ffc7a2ca550954cd6b7"
+      }
+    },
+    "script": "scripts/nds/Pokemon - Pearl Version.load.txt",
+    "cores": {
+      "desmume": {
+        "result": "loads",
+        "detail": "CONTINUE: PLAYER Javid, TIME 0:01, BADGES 8, POKéDEX 493 (run in the Pearl (USA) (Rev 5) image, game code APAE, which the European English release shares)"
+      },
+      "desmume-2015": {
+        "result": "loads",
+        "detail": "CONTINUE: PLAYER Javid, TIME 0:01, BADGES 8, POKéDEX 493 (run in the Pearl (USA) (Rev 5) image, game code APAE, which the European English release shares)"
+      },
+      "melonds": {
+        "result": "core-error",
+        "detail": "\"A communication error has occurred\" (\"... you will be returned to wherever you last saved\") instead of the CONTINUE panel, then a white screen; melonDS 0.9.3 does the same with its own Pearl save from this corpus, so it is the core (no BIOS or firmware here, FreeBIOS), not this save"
+      },
+      "melonds-ds": {
+        "result": "loads",
+        "detail": "CONTINUE: PLAYER Javid, TIME 0:01, BADGES 8, POKéDEX 493 (run in the Pearl (USA) (Rev 5) image, game code APAE, which the European English release shares)"
+      },
+      "noods": {
+        "result": "loads",
+        "detail": "CONTINUE: PLAYER Javid, TIME 0:01, BADGES 8, POKéDEX 493 (run in the Pearl (USA) (Rev 5) image, game code APAE, which the European English release shares)"
+      },
+      "skyemu": {
+        "result": "loads",
+        "detail": "CONTINUE: PLAYER Javid, TIME 0:01, BADGES 8, POKéDEX 493 (run in the Pearl (USA) (Rev 5) image, game code APAE, which the European English release shares)"
+      }
+    },
+    "proof_order": [
+      "desmume",
+      "desmume-2015",
+      "melonds",
+      "melonds-ds",
+      "noods",
+      "skyemu"
+    ]
+  },
+  "note": "Release: Diamond/Pearl layout, English (the description says French); Pearl from the version that caught the player's own Pokemon (origin game in the decrypted Pokemon data, OT matching the trainer); Europe from the section. The library's image of this game code is the Pokemon - Pearl Version (USA) (Rev 5) release; the save was run in it, since both releases share the game code."
+}

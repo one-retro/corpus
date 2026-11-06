@@ -1,0 +1,87 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_dexdrive",
+  "url": "https://gamefaqs.gamespot.com/ps/572387-air-combat/saves/29073",
+  "source_page": "https://gamefaqs.gamespot.com/ps/572387-air-combat/saves",
+  "source": "GameFAQs (section 'PlayStation DexDrive Save (North America)')",
+  "author": "rarewyt",
+  "licence": null,
+  "posted": "2023-11-14",
+  "fetched": "2026-11-05",
+  "what_it_is": "air combat 1995 us all planes unlocked hard level",
+  "gamefaqs": {
+    "id": 29073,
+    "product": "Air Combat (1995)",
+    "section": "PlayStation DexDrive Save (North America)",
+    "region": "North America",
+    "served_as": "air-combat-1995.29073.gme",
+    "listed_size": "131KB"
+  },
+  "format": "DexDrive .gme: '123-456-STD' 3904-byte header (per-block comments) + 131072-byte raw card; the card holds 1 save(s), 1 for this game (BASLUS-00001AIRCOMB)",
+  "release": "Air Combat (USA)",
+  "game_saves": [
+    {
+      "name": "BASLUS-00001AIRCOMB",
+      "blocks": 1,
+      "title": "AIRCOMBAT"
+    }
+  ],
+  "files": {
+    "air-combat-1995.29073.gme": {
+      "size": 134976,
+      "sha1": "2c1f88fa30f33515a3ffbcc6891d460390f075f3"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Air Combat (USA).cue",
+      "sha1": "6bb0056c230defaa52bc56e86c0f3c00e114b7d6",
+      "size": 6975
+    },
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr air-combat-1995.29073.gme: unwraps the card (DexDrive .gme: 3904-byte header + card)",
+    "converted": {
+      "size": 131072,
+      "sha1": "ef6f3919f1506235a0c316bbf5ccc731e97ae77a"
+    },
+    "script": "scripts/psx/Air Combat.load.txt",
+    "script_variants": {
+      "pcsx-rearmed": "scripts/psx/Air Combat.pcsx-rearmed.load.txt",
+      "swanstation": "scripts/psx/Air Combat.swanstation.load.txt"
+    },
+    "cores": {
+      "beetle-psx": {
+        "result": "loads",
+        "detail": "Load your squadron lists seven squadrons (mission 16-17, F-4, SF-39, F-15, F-14; up to 999999900 points)"
+      },
+      "beetle-psx-hw": {
+        "result": "loads",
+        "detail": "Load your squadron lists seven squadrons (mission 16-17, F-4, SF-39, F-15, F-14; up to 999999900 points) (the same screen as on beetle-psx)"
+      },
+      "pcsx-rearmed": {
+        "result": "loads",
+        "detail": "Load your squadron lists seven squadrons (mission 16-17, F-4, SF-39, F-15, F-14; up to 999999900 points) (the same screen as on beetle-psx)"
+      },
+      "swanstation": {
+        "result": "loads",
+        "detail": "Load your squadron lists seven squadrons (mission 16-17, F-4, SF-39, F-15, F-14; up to 999999900 points) (the same screen as on beetle-psx)"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": [
+      "beetle-psx",
+      "beetle-psx-hw",
+      "pcsx-rearmed",
+      "swanstation"
+    ]
+  },
+  "note": null
+}

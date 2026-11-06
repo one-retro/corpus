@@ -1,0 +1,52 @@
+# Tony Hawk's Pro Skater 2: a THPS2 card holds careers, parks and replays, each listed in its
+# own screen. Options > Memory Card > Load Data lists the careers (shot `career`), Load Replay the
+# replays (shot `replay`); Park Editor > Load lists the parks (shot `park`).
+wait 1500           # BIOS logos
+repeat 2            # skip the intros to the main menu
+press start 6
+wait 250
+end
+wait 600            # the game loads the last career at boot
+press left 6        # OPTIONS
+wait 60
+press b 6
+wait 200
+repeat 4            # MEMORY CARD (a career with cheats adds CHEATS below it, so count from the top;
+press down 6        # SwanStation greys out Player 2 Controls: its variant presses 3)
+wait 30
+end
+press b 6
+wait 300
+press b 6           # LOAD DATA
+wait 400
+shot career
+press x 6
+wait 300
+press down 6
+wait 30
+press down 6        # LOAD REPLAY
+wait 30
+press b 6
+wait 400
+shot replay
+press x 6
+wait 200
+press x 6
+wait 200
+press x 6           # back to the main menu, on OPTIONS
+wait 300
+press left 6        # PARK EDITOR
+wait 60
+press b 6
+wait 1800
+press b 6           # past the layout tips
+wait 300
+press start 6       # the editor's menu
+wait 200
+repeat 5            # LOAD
+press down 6
+wait 30
+end
+press b 6
+wait 400
+shot park

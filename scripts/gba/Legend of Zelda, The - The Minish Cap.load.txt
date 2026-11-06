@@ -1,0 +1,8 @@
+# Load check for a save made elsewhere (tools/GAMEFAQS.md): power on and go to
+# CHOOSE A FILE: the three files' names, and file 1's hearts and items.
+wait 900
+press start 6
+wait 300
+press start 6
+wait 300
+shot files

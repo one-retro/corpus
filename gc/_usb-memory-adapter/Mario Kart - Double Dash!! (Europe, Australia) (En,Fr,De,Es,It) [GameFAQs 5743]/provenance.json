@@ -1,0 +1,51 @@
+{
+  "method": "downloaded",
+  "system": "gc",
+  "core": "_usb-memory-adapter",
+  "url": "https://gamefaqs.gamespot.com/gamecube/516710-mario-kart-double-dash/saves/5743",
+  "source_page": "https://gamefaqs.gamespot.com/gamecube/516710-mario-kart-double-dash/saves",
+  "source": "GameFAQs (section 'GameCube USB Memory Adapter Save (Europe)')",
+  "author": "Blutorange",
+  "licence": null,
+  "posted": "2004-12-25",
+  "fetched": "2026-11-05",
+  "what_it_is": "Yoshi Circuit TT Ghost. Beats Staff Ghost. 1´43\"733.",
+  "gamefaqs": {
+    "id": 5743,
+    "product": "Mario Kart: Double Dash!!",
+    "section": "GameCube USB Memory Adapter Save (Europe)",
+    "region": "Europe",
+    "served_as": "mario-kart-double-dash.5743.gci",
+    "listed_size": "40KB"
+  },
+  "format": "GCI: the 64-byte card directory entry (GM4P01, file '5\"!-*,%&/2!!!!:R)5,DPK%>*2'=!aa', 5 blocks, modified 2004-12-24 19:02:31, comment 'Mario Kart: Double Dash!! / Geist-Daten 1:45:544') then 5 x 8 KiB blocks = 41024 bytes",
+  "files": {
+    "mario-kart-double-dash.5743.gci": {
+      "size": 41024,
+      "sha1": "499fd33937dd7df59286b0e501f7e0cd6d0be95b"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": null,
+    "converted_with": "tools/gamefaqs/gc-gci.py place <file> <GC/USA/Card A>: copies the GCI unchanged into the GCI folder under Dolphin's own name for it",
+    "converted": {
+      "size": 41024,
+      "sha1": "499fd33937dd7df59286b0e501f7e0cd6d0be95b",
+      "name": "01-GM4P-5__22__!-__2a__,%&__2f__2!!!!__3a__R)5,DPK%__3e____2a__2'=!aa.gci"
+    },
+    "script": null,
+    "cores": {
+      "dolphin-emu": {
+        "result": "not-run",
+        "detail": "no Mario Kart - Double Dash!! (Europe, Australia) (En,Fr,De,Es,It) disc image in the library (only the USA release)"
+      },
+      "dolphin-emu@dolphin": {
+        "result": "not-run",
+        "detail": "no Mario Kart - Double Dash!! (Europe, Australia) (En,Fr,De,Es,It) disc image in the library (only the USA release)"
+      }
+    },
+    "proof_order": []
+  },
+  "note": "A Time Trial ghost file (5 blocks), not the main game data."
+}

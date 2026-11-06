@@ -1,0 +1,79 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_ps3",
+  "url": "https://gamefaqs.gamespot.com/ps/258931-mega-man-x5/saves/21500",
+  "source_page": "https://gamefaqs.gamespot.com/ps/258931-mega-man-x5/saves",
+  "source": "GameFAQs (section 'PlayStation PS3 Virtual Memory Card Save (ZIP) (Japan)')",
+  "author": "Nigoli",
+  "licence": null,
+  "posted": "2011-01-27",
+  "fetched": "2026-11-05",
+  "what_it_is": "Normal X, Force, Falcon, Gaea, Ultimate X, Black Zero Selections; All Heart Tanks; All weapons; All parts; All E, W, EX-Tanks.",
+  "gamefaqs": {
+    "id": 21500,
+    "product": "Mega Man X5",
+    "section": "PlayStation PS3 Virtual Memory Card Save (ZIP) (Japan)",
+    "region": "Japan",
+    "served_as": "mega-man-x5.21500.zip",
+    "listed_size": "0KB",
+    "served_zip": {
+      "size": 539,
+      "sha1": "953fdf9c544b3e26e307e92466ac528d8ba05b2b"
+    }
+  },
+  "format": "zip of 1 PS3 export(s) (.PSV): '\\0VSP' header (signature, save name at 0x64), the save's blocks from 0x84 (8324 bytes); it holds 1 save(s), 1 for this game (BISLPM-86666)",
+  "release": "Rockman X5 (Japan)",
+  "game_saves": [
+    {
+      "name": "BISLPM-86666",
+      "blocks": 1,
+      "title": "ロックマンX5のセーブデータです。"
+    }
+  ],
+  "files": {
+    "BISLPM-86666.PSV": {
+      "size": 8324,
+      "sha1": "80ff2c98f21fdb42f364b584475a14df7c5d9fe3"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": null,
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr BISLPM-86666.PSV: puts the save(s) on a freshly formatted card, as MemcardRex imports a single save",
+    "converted": {
+      "size": 131072,
+      "sha1": "6e348566eab1709875f1fa05426e605f84f9ef19"
+    },
+    "script": null,
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "not-run",
+        "detail": "no image of Rockman X5 (Japan) in the library"
+      },
+      "beetle-psx-hw": {
+        "result": "not-run",
+        "detail": "no image of Rockman X5 (Japan) in the library"
+      },
+      "pcsx-rearmed": {
+        "result": "not-run",
+        "detail": "no image of Rockman X5 (Japan) in the library"
+      },
+      "swanstation": {
+        "result": "not-run",
+        "detail": "no image of Rockman X5 (Japan) in the library"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": []
+  },
+  "note": null
+}

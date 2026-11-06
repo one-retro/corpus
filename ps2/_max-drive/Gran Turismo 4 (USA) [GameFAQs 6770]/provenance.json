@@ -1,0 +1,123 @@
+{
+  "method": "downloaded",
+  "system": "ps2",
+  "core": "_max-drive",
+  "url": "https://gamefaqs.gamespot.com/ps2/561066-gran-turismo-4/saves/6770",
+  "source_page": "https://gamefaqs.gamespot.com/ps2/561066-gran-turismo-4/saves",
+  "source": "GameFAQs (section 'PlayStation2 Max Drive Save (North America)')",
+  "author": "thefranchise006",
+  "licence": null,
+  "posted": "2005-03-13",
+  "fetched": "2026-11-05",
+  "what_it_is": "100% Complete+All Cars(including special color models for a total of 723 cars)",
+  "gamefaqs": {
+    "id": 6770,
+    "product": "Gran Turismo 4",
+    "section": "PlayStation2 Max Drive Save (North America)",
+    "region": "North America",
+    "served_as": "gran-turismo-4.6770.max",
+    "listed_size": "1487KB"
+  },
+  "format": "Max Drive / PowerSave save: 'Ps2PowerSave' header (CRC32 e4096f75, matches), folder BASCUS-97328GAMEDATA, 4 files, LZARI stream 1523487 bytes unpacking to 1528760 bytes (1528584 bytes of file data)",
+  "files": {
+    "gran-turismo-4.6770.max": {
+      "size": 1523579,
+      "sha1": "45d55986262acbed10498d8d78f31219c2dea00b"
+    }
+  },
+  "save": {
+    "folder": "BASCUS-97328GAMEDATA",
+    "title": [
+      "GRAN TURISMO 4",
+      "Game data"
+    ],
+    "times": "none: a max file stores no file times",
+    "files": [
+      {
+        "name": "garage",
+        "size": 1280064,
+        "sha1": "aeb2ca0324cac2cfed4354812c6dd9e239f7b4ca"
+      },
+      {
+        "name": "BASCUS-97328GAMEDATA",
+        "size": 237760,
+        "sha1": "70b614052ca6bb05f3ee6610a4e85b76930b0ada"
+      },
+      {
+        "name": "icon0.ico",
+        "size": 9796,
+        "sha1": "5c55e0ea3f302b6ce15d03fb247039d41b83f032"
+      },
+      {
+        "name": "icon.sys",
+        "size": 964,
+        "sha1": "cce82f67a0f89c70731af7b0fb0b9c752fd05e5e"
+      }
+    ]
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Gran Turismo 4 (USA).iso",
+      "sha1": "5b1dbf056f45f8023e8e4958e6d7deb31fc64a47",
+      "size": 5314478080
+    },
+    "converted_with": "tools/gamefaqs/ps2-card.py 'gran-turismo-4.6770.max' -o OUT: reads the save with mymcplus 3.0.5 and writes OUT/Mcd001.ps2 (an 8 MiB card with ECC, formatted and filled by mymcplus) for lrps2/pcee2/pcsx2, and OUT/mc0/<folder>/ for Play!",
+    "converted": {
+      "Mcd001.ps2": {
+        "size": 8650752,
+        "sha1": "16a7c35f445bab3cb8ab802e72f2cbcc5e2e46c9"
+      },
+      "mc0/BASCUS-97328GAMEDATA/": {
+        "garage": {
+          "size": 1280064,
+          "sha1": "aeb2ca0324cac2cfed4354812c6dd9e239f7b4ca"
+        },
+        "BASCUS-97328GAMEDATA": {
+          "size": 237760,
+          "sha1": "70b614052ca6bb05f3ee6610a4e85b76930b0ada"
+        },
+        "icon0.ico": {
+          "size": 9796,
+          "sha1": "5c55e0ea3f302b6ce15d03fb247039d41b83f032"
+        },
+        "icon.sys": {
+          "size": 964,
+          "sha1": "cce82f67a0f89c70731af7b0fb0b9c752fd05e5e"
+        }
+      },
+      "read_back": "work/ps2/tools/mcfs.py lists every file with the size and SHA-1 put on the card; one-saves (1saves convert + inspect) reads the card and finds BASCUS-97328GAMEDATA",
+      "timestamps": "what the save does not date is 2000-01-01 00:00:00 (JST, as a card stores it); the card's own root entries too"
+    },
+    "script": "scripts/ps2/Gran Turismo 4 (USA).load.txt",
+    "cores": {
+      "pcee2": {
+        "detail": "GT Mode opens at Zach's Home: Complete 100.0%, A-spec 2378 points, Days 30; Formula Gran Turismo, Cr 69,400, 1 MAY",
+        "result": "loads"
+      },
+      "lrps2": {
+        "detail": "GT Mode opens at Zach's Home: Complete 100.0%, A-spec 2378 points, Days 30; Formula Gran Turismo, Cr 69,400, 1 MAY",
+        "result": "loads"
+      },
+      "play": {
+        "detail": "Zach's Home: Complete 100.0%, A-spec 2378, Days 30; Formula Gran Turismo, Cr 69,400, 1 MAY",
+        "result": "loads"
+      },
+      "pcsx2": {
+        "detail": "GT Mode opens in the Garage: 724/724 cars (Formula Gran Turismo first), Cr 69,400, 1 MAY (PCEE2 opened Zach's Home of the same save)",
+        "result": "loads"
+      },
+      "armsx2": {
+        "result": "not-run",
+        "detail": "ARMSX2 renders only through Vulkan here and falls back to a null GS (no picture), so nothing shows what the game read (ps2/NOTES.md)"
+      }
+    },
+    "proof_order": [
+      "pcee2",
+      "lrps2",
+      "play",
+      "pcsx2"
+    ]
+  },
+  "note": null
+}

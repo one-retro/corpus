@@ -1,0 +1,8 @@
+# Load check for a save made elsewhere (tools/GAMEFAQS.md): power on and go to
+# DATA SELECT, which shows the file's name, place, level, % and time.
+wait 900
+press start 6       # title -> CROSSROADS menu
+wait 300
+press a 6           # DATA SELECT
+wait 240
+shot files

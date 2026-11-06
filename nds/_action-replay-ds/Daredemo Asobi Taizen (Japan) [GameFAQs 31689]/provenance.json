@@ -1,0 +1,98 @@
+{
+  "method": "downloaded",
+  "system": "nds",
+  "core": "_action-replay-ds",
+  "url": "https://gamefaqs.gamespot.com/ds/933040-clubhouse-games/saves/31689",
+  "source_page": "https://gamefaqs.gamespot.com/ds/933040-clubhouse-games/saves",
+  "source": "GameFAQs (section 'Action Replay Max DS (.duc) Game Save (Japan)')",
+  "author": "MrShiruba",
+  "licence": null,
+  "posted": "2025-03-11",
+  "fetched": "2026-11-05",
+  "what_it_is": "100% save, everything unlocked : Stamp mode cleared in hardest difficulty (Chat color unlocked), Mission mode fully completed (every icon unlocked), every game unlocked and won 15 times (every design unlocked).",
+  "gamefaqs": {
+    "id": 31689,
+    "product": "Clubhouse Games",
+    "section": "Action Replay Max DS (.duc) Game Save (Japan)",
+    "region": "Japan",
+    "served_as": "clubhouse-games.31689.duc",
+    "listed_size": "256KB"
+  },
+  "format": "Action Replay DS save: the 500-byte 'ARDS000000000001' header written by a converter ('Converted Savegame' / 'Savegame', ASCII 'shuny conv'), then 256 KiB raw for the 8 KiB EEPROM (cut 262144 -> 8192; the rest was all 0xFF)",
+  "files": {
+    "clubhouse-games.31689.duc": {
+      "size": 262644,
+      "sha1": "c68ef02054b0a19c70f9d516331807864c18bb54"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": null,
+    "converted_with": "tools/gamefaqs/nds-ards.py IN step0.bin, then tools/gamefaqs/nds-cores.py step0.bin --chip 8192 --stem 'Daredemo Asobi Taizen (Japan)' --out DIR: drops the Action Replay header; fits it to the 8192-byte chip (cut 262144 -> 8192; the rest was all 0xFF) and writes each core's file",
+    "converted": {
+      "size": 8192,
+      "sha1": "52a3a37bfe198ddec50a730e6c239dcde02ac4de"
+    },
+    "core_files": {
+      "desmume": {
+        "name": "Daredemo Asobi Taizen (Japan).dsv",
+        "size": 8314,
+        "sha1": "63dac62c7db20d0a5426c048f1436c6075c31e22"
+      },
+      "desmume-2015": {
+        "name": "Daredemo Asobi Taizen (Japan).dsv",
+        "size": 8314,
+        "sha1": "63dac62c7db20d0a5426c048f1436c6075c31e22"
+      },
+      "melonds": {
+        "name": "Daredemo Asobi Taizen (Japan).sav",
+        "size": 8192,
+        "sha1": "52a3a37bfe198ddec50a730e6c239dcde02ac4de"
+      },
+      "melonds-ds": {
+        "name": "Daredemo Asobi Taizen (Japan).srm",
+        "size": 8192,
+        "sha1": "52a3a37bfe198ddec50a730e6c239dcde02ac4de"
+      },
+      "noods": {
+        "name": "Daredemo Asobi Taizen (Japan).sav",
+        "size": 8192,
+        "sha1": "52a3a37bfe198ddec50a730e6c239dcde02ac4de"
+      },
+      "skyemu": {
+        "name": "Daredemo Asobi Taizen (Japan).srm",
+        "size": 8388608,
+        "sha1": "be183290b41d18f1541d5d0839a77dff687f10cd"
+      }
+    },
+    "script": null,
+    "cores": {
+      "desmume": {
+        "result": "not-run",
+        "detail": "no image of Daredemo Asobi Taizen (Japan) in the library"
+      },
+      "desmume-2015": {
+        "result": "not-run",
+        "detail": "no image of Daredemo Asobi Taizen (Japan) in the library"
+      },
+      "melonds": {
+        "result": "not-run",
+        "detail": "no image of Daredemo Asobi Taizen (Japan) in the library"
+      },
+      "melonds-ds": {
+        "result": "not-run",
+        "detail": "no image of Daredemo Asobi Taizen (Japan) in the library"
+      },
+      "noods": {
+        "result": "not-run",
+        "detail": "no image of Daredemo Asobi Taizen (Japan) in the library"
+      },
+      "skyemu": {
+        "result": "not-run",
+        "detail": "no image of Daredemo Asobi Taizen (Japan) in the library"
+      }
+    },
+    "proof_order": []
+  },
+  "note": "Byte-identical to GameFAQs 31688 (same uploader, Europe section)."
+}

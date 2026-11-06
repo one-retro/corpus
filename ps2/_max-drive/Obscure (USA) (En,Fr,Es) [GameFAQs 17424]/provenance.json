@@ -1,0 +1,195 @@
+{
+  "method": "downloaded",
+  "system": "ps2",
+  "core": "_max-drive",
+  "url": "https://gamefaqs.gamespot.com/ps2/919672-obscure/saves/17424",
+  "source_page": "https://gamefaqs.gamespot.com/ps2/919672-obscure/saves",
+  "source": "GameFAQs (section 'PlayStation2 Max Drive Save (Europe)')",
+  "author": "Sangogi",
+  "licence": null,
+  "posted": "2008-07-11",
+  "fetched": "2026-11-05",
+  "what_it_is": "All extras, costumes, eveything unlocked!",
+  "gamefaqs": {
+    "id": 17424,
+    "product": "Obscure",
+    "section": "PlayStation2 Max Drive Save (Europe)",
+    "region": "Europe",
+    "served_as": "obscure.17424.max",
+    "listed_size": "152KB"
+  },
+  "format": "Max Drive / PowerSave save: 'Ps2PowerSave' header (CRC32 875f8c24, matches), folder BASLUS-20777, 13 files, LZARI stream 156279 bytes unpacking to 278280 bytes (277660 bytes of file data)",
+  "files": {
+    "obscure.17424.max": {
+      "size": 156371,
+      "sha1": "475baf121a6436b0a65348eea63eb323303cafe8"
+    }
+  },
+  "save": {
+    "folder": "BASLUS-20777",
+    "title": [
+      "Obscure",
+      ""
+    ],
+    "times": "none: a max file stores no file times",
+    "files": [
+      {
+        "name": "obscure.ico",
+        "size": 50392,
+        "sha1": "d695f9336d64a4e261ce724d3654f1d7cf20e5b6"
+      },
+      {
+        "name": "game0.sav",
+        "size": 22528,
+        "sha1": "b66731be2538c79665efef6a25d1c5d4e34d7d2d"
+      },
+      {
+        "name": "game1.sav",
+        "size": 22528,
+        "sha1": "09fed72619c6156a2a9a031acd7b7101a0d6dfe7"
+      },
+      {
+        "name": "game2.sav",
+        "size": 22528,
+        "sha1": "0e219f342be3bb30de40bec8195769bb4c07b802"
+      },
+      {
+        "name": "game3.sav",
+        "size": 22528,
+        "sha1": "4718f93a7b4c879a80d70bea417af08d558987f1"
+      },
+      {
+        "name": "game4.sav",
+        "size": 22528,
+        "sha1": "df643b35cd2fb32f93f1ea603bc128ebb538a811"
+      },
+      {
+        "name": "game5.sav",
+        "size": 22528,
+        "sha1": "7a29b11176586fd9bbfcc61b799c275c1836f03a"
+      },
+      {
+        "name": "game6.sav",
+        "size": 22528,
+        "sha1": "943f7f8b8e8ef02784a4fdb357c783ea072dc43b"
+      },
+      {
+        "name": "game7.sav",
+        "size": 22528,
+        "sha1": "2673123794bb11cd8b1a29f4e8db1a37cf7fc622"
+      },
+      {
+        "name": "game8.sav",
+        "size": 22528,
+        "sha1": "094ceb4e3f4e0a45a9562fcd9548a898cdb345ea"
+      },
+      {
+        "name": "game9.sav",
+        "size": 22528,
+        "sha1": "230b89ada1a8528fa8b13b2f87c4cea0b036a413"
+      },
+      {
+        "name": "BASLUS-20777",
+        "size": 1024,
+        "sha1": "e9200712ff95322858417606b35aca12ac2d6647"
+      },
+      {
+        "name": "icon.sys",
+        "size": 964,
+        "sha1": "4d0cae04feae7bd5b1d1bc24a96e0766000147fe"
+      }
+    ]
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": null,
+    "converted_with": "tools/gamefaqs/ps2-card.py 'obscure.17424.max' -o OUT: reads the save with mymcplus 3.0.5 and writes OUT/Mcd001.ps2 (an 8 MiB card with ECC, formatted and filled by mymcplus) for lrps2/pcee2/pcsx2, and OUT/mc0/<folder>/ for Play!",
+    "converted": {
+      "Mcd001.ps2": {
+        "size": 8650752,
+        "sha1": "add10930b939da71bb959aa2c5ca4bfaf198d8d0"
+      },
+      "mc0/BASLUS-20777/": {
+        "obscure.ico": {
+          "size": 50392,
+          "sha1": "d695f9336d64a4e261ce724d3654f1d7cf20e5b6"
+        },
+        "game0.sav": {
+          "size": 22528,
+          "sha1": "b66731be2538c79665efef6a25d1c5d4e34d7d2d"
+        },
+        "game1.sav": {
+          "size": 22528,
+          "sha1": "09fed72619c6156a2a9a031acd7b7101a0d6dfe7"
+        },
+        "game2.sav": {
+          "size": 22528,
+          "sha1": "0e219f342be3bb30de40bec8195769bb4c07b802"
+        },
+        "game3.sav": {
+          "size": 22528,
+          "sha1": "4718f93a7b4c879a80d70bea417af08d558987f1"
+        },
+        "game4.sav": {
+          "size": 22528,
+          "sha1": "df643b35cd2fb32f93f1ea603bc128ebb538a811"
+        },
+        "game5.sav": {
+          "size": 22528,
+          "sha1": "7a29b11176586fd9bbfcc61b799c275c1836f03a"
+        },
+        "game6.sav": {
+          "size": 22528,
+          "sha1": "943f7f8b8e8ef02784a4fdb357c783ea072dc43b"
+        },
+        "game7.sav": {
+          "size": 22528,
+          "sha1": "2673123794bb11cd8b1a29f4e8db1a37cf7fc622"
+        },
+        "game8.sav": {
+          "size": 22528,
+          "sha1": "094ceb4e3f4e0a45a9562fcd9548a898cdb345ea"
+        },
+        "game9.sav": {
+          "size": 22528,
+          "sha1": "230b89ada1a8528fa8b13b2f87c4cea0b036a413"
+        },
+        "BASLUS-20777": {
+          "size": 1024,
+          "sha1": "e9200712ff95322858417606b35aca12ac2d6647"
+        },
+        "icon.sys": {
+          "size": 964,
+          "sha1": "4d0cae04feae7bd5b1d1bc24a96e0766000147fe"
+        }
+      },
+      "read_back": "work/ps2/tools/mcfs.py lists every file with the size and SHA-1 put on the card; one-saves (1saves convert + inspect) reads the card and finds BASLUS-20777",
+      "timestamps": "what the save does not date is 2000-01-01 00:00:00 (JST, as a card stores it); the card's own root entries too"
+    },
+    "script": null,
+    "cores": {
+      "pcee2": {
+        "result": "not-run",
+        "detail": "no image of Obscure (USA) (En,Fr,Es) in the library"
+      },
+      "lrps2": {
+        "result": "not-run",
+        "detail": "no image of Obscure (USA) (En,Fr,Es) in the library"
+      },
+      "play": {
+        "result": "not-run",
+        "detail": "no image of Obscure (USA) (En,Fr,Es) in the library"
+      },
+      "pcsx2": {
+        "result": "not-run",
+        "detail": "no image of Obscure (USA) (En,Fr,Es) in the library"
+      },
+      "armsx2": {
+        "result": "not-run",
+        "detail": "ARMSX2 renders only through Vulkan here and falls back to a null GS (no picture), so nothing shows what the game read (ps2/NOTES.md)"
+      }
+    },
+    "proof_order": []
+  },
+  "note": "Mislabelled region: GameFAQs files it under Europe, the save folder BASLUS-20777 is the Obscure (USA) (En,Fr,Es) release's (North America)."
+}

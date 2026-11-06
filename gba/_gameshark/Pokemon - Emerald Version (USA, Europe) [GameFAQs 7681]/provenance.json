@@ -1,0 +1,119 @@
+{
+  "method": "downloaded",
+  "system": "gba",
+  "core": "_gameshark",
+  "url": "https://gamefaqs.gamespot.com/gba/563596-pokemon-sapphire-version/saves/7681",
+  "source_page": "https://gamefaqs.gamespot.com/gba/563596-pokemon-sapphire-version/saves",
+  "source": "GameFAQs (section 'GameBoy Advance GameShark Save (North America)')",
+  "author": "xyzman",
+  "licence": null,
+  "posted": "2005-05-05",
+  "fetched": "2026-11-05",
+  "what_it_is": "Ultimate cheater's pack: all 3 starters + 2 Mews as HM slaves, 999999 yens cash, a lot of useful items in PC. Saved @ Littleroot right after getting a starter from Birch (before first rival battle). Your rival has got a Mudkip.",
+  "gamefaqs": {
+    "id": 7681,
+    "product": "Pokemon Ruby / Sapphire / Emerald Version",
+    "section": "GameBoy Advance GameShark Save (North America)",
+    "region": "North America",
+    "served_as": "pokemon-ruby-sapphire-emerald-version.7681.sps",
+    "listed_size": "64KB"
+  },
+  "format": "SharkPort save (\"SharkPortSave\", kind 0x000F0000): title \"POKEMON EMER\", date \"05.05.2005 18:02:24\", notes \"\"; cart header \"POKEMON EMER\" / 'BPEE' (complement 0x72); payload 65536 bytes; checksum: signed",
+  "files": {
+    "pokemon-ruby-sapphire-emerald-version.7681.sps": {
+      "size": 65636,
+      "sha1": "fe9356e2b5d096daeb423b3865089fb0f76a0f44"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Pokemon - Emerald Version (USA, Europe).gba",
+      "sha1": "f3ae088181bf583e55daf962a92bb46f4f1d07b7",
+      "size": 16777216
+    },
+    "converted_with": "tools/gamefaqs/gba-sharkport.py pokemon-ruby-sapphire-emerald-version.7681.sps --rom ROM --core CORE --outdir DIR: reads the SharkPort container as mGBA does and imports the payload as mGBA's _importSavedata does (cut to the chip, EEPROM 8-byte blocks reversed, the rest of the chip erased), then lays the chip out as the core keeps it",
+    "converted": {
+      "size": 131072,
+      "sha1": "f9dab60755fe484f73e8a46fb3624e3807785e57"
+    },
+    "script": "scripts/gba/Pokemon - Ruby Version.load.txt",
+    "cores": {
+      "mgba": {
+        "result": "loads",
+        "detail": "\"The save file is corrupt(ed). The previous save file will be loaded.\", then CONTINUE: XYZMAN, 0:00 (the older of the two copies)",
+        "core_version": "mGBA 0.11-212-7a12d6d",
+        "file": {
+          "name": "Pokemon - Emerald Version (USA, Europe).srm",
+          "size": 131072,
+          "sha1": "f9dab60755fe484f73e8a46fb3624e3807785e57"
+        },
+        "frame": "next"
+      },
+      "vba-m": {
+        "result": "loads",
+        "detail": "\"The save file is corrupt(ed). The previous save file will be loaded.\", then CONTINUE: XYZMAN, 0:00 (the older of the two copies)",
+        "core_version": "VBA-M 115defb",
+        "file": {
+          "name": "Pokemon - Emerald Version (USA, Europe).srm",
+          "size": 131072,
+          "sha1": "f9dab60755fe484f73e8a46fb3624e3807785e57"
+        },
+        "frame": "next"
+      },
+      "gpsp": {
+        "result": "loads",
+        "detail": "\"The save file is corrupt(ed). The previous save file will be loaded.\", then CONTINUE: XYZMAN, 0:00 (the older of the two copies)",
+        "core_version": "gpSP v1.1.0-5819380",
+        "file": {
+          "name": "Pokemon - Emerald Version (USA, Europe).srm",
+          "size": 131072,
+          "sha1": "f9dab60755fe484f73e8a46fb3624e3807785e57"
+        },
+        "frame": "next"
+      },
+      "vba-next": {
+        "result": "loads",
+        "detail": "\"The save file is corrupt(ed). The previous save file will be loaded.\", then CONTINUE: XYZMAN, 0:00 (the older of the two copies)",
+        "core_version": "VBA Next v1.0.2",
+        "file": {
+          "name": "Pokemon - Emerald Version (USA, Europe).srm",
+          "size": 139264,
+          "sha1": "262dd42aecf3b6cb3ae765b334300229ea2841b7"
+        },
+        "frame": "next"
+      },
+      "beetle-gba": {
+        "result": "loads",
+        "detail": "\"The save file is corrupt(ed). The previous save file will be loaded.\", then CONTINUE: XYZMAN, 0:00 (the older of the two copies)",
+        "core_version": "Beetle GBA v0.9.36 b158166",
+        "file": {
+          "name": "Pokemon - Emerald Version (USA, Europe).605b89b67018abcea91e693a4dd25be3.sav",
+          "size": 131072,
+          "sha1": "f9dab60755fe484f73e8a46fb3624e3807785e57"
+        },
+        "frame": "next"
+      },
+      "skyemu": {
+        "result": "loads",
+        "detail": "\"The save file is corrupt(ed). The previous save file will be loaded.\", then CONTINUE: XYZMAN, 0:00 (the older of the two copies)",
+        "core_version": "SkyEmu adacd0788964ed89f5c43dcbc1f3cc26deec996c",
+        "file": {
+          "name": "Pokemon - Emerald Version (USA, Europe).srm",
+          "size": 131072,
+          "sha1": "f9dab60755fe484f73e8a46fb3624e3807785e57"
+        },
+        "frame": "next"
+      }
+    },
+    "proof_order": [
+      "mgba",
+      "vba-m",
+      "gpsp",
+      "vba-next",
+      "beetle-gba",
+      "skyemu"
+    ]
+  },
+  "note": "The GameShark copied only the first 64 KiB of the 128 KiB flash; imported as mGBA does, the second half of the chip stays erased."
+}

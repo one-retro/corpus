@@ -1,0 +1,21 @@
+# Air Combat, PCSX-ReARMed variant: title > Option > Load data (Circle confirms) > "Load your squadron" lists the saved
+# squadrons (mission, fighter, points, time).
+wait 1500           # BIOS logos
+repeat 4            # PCSX-ReARMed shows the menu after four presses; a fifth starts a game
+press start 6
+wait 250
+end
+wait 300            # the menu takes input once the logo has settled
+press down 6
+wait 30
+press down 6        # OPTION
+wait 30
+press start 6
+wait 300
+press down 6        # Key configuration
+wait 30
+press down 6        # Load data
+wait 30
+press a 6
+wait 400            # "READING MEMORY", then the list
+shot load

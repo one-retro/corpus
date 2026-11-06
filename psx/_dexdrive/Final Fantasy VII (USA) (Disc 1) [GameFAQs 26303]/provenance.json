@@ -1,0 +1,154 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_dexdrive",
+  "url": "https://gamefaqs.gamespot.com/ps/197341-final-fantasy-vii/saves/26303",
+  "source_page": "https://gamefaqs.gamespot.com/ps/197341-final-fantasy-vii/saves",
+  "source": "GameFAQs (section 'PlayStation DexDrive Save (North America)')",
+  "author": "JagDogger2525",
+  "licence": null,
+  "posted": "2019-05-16",
+  "fetched": "2026-11-05",
+  "what_it_is": "1/This Guy R Sick//2/Cross Dress//3/Motorcycle//4/2nd Trip GS//5|6/Aerith//7|10/Start Disc//8/2nd Trip Capital//9/Hojo//11/GSauce Done//12/OutsideCrater-Full//13/Weaps//14/InCrater-Full//15/Debug Room",
+  "gamefaqs": {
+    "id": 26303,
+    "product": "Final Fantasy VII",
+    "section": "PlayStation DexDrive Save (North America)",
+    "region": "North America",
+    "served_as": "final-fantasy-vii.26303.gme",
+    "listed_size": "131KB"
+  },
+  "format": "DexDrive .gme: '123-456-STD' 3904-byte header (per-block comments) + 131072-byte raw card; the card holds 15 save(s), 15 for this game (BASCUS-94163FF7-S01, BASCUS-94163FF7-S02, BASCUS-94163FF7-S03, BASCUS-94163FF7-S04, ...)",
+  "release": "Final Fantasy VII (USA) (Disc 1)",
+  "game_saves": [
+    {
+      "name": "BASCUS-94163FF7-S01",
+      "blocks": 1,
+      "title": "FF7/SAVE01/01:47"
+    },
+    {
+      "name": "BASCUS-94163FF7-S02",
+      "blocks": 1,
+      "title": "FF7/SAVE02/02:35"
+    },
+    {
+      "name": "BASCUS-94163FF7-S03",
+      "blocks": 1,
+      "title": "FF7/SAVE03/04:54"
+    },
+    {
+      "name": "BASCUS-94163FF7-S04",
+      "blocks": 1,
+      "title": "FF7/SAVE04/16:01"
+    },
+    {
+      "name": "BASCUS-94163FF7-S05",
+      "blocks": 1,
+      "title": "FF7/SAVE05/16:47"
+    },
+    {
+      "name": "BASCUS-94163FF7-S06",
+      "blocks": 1,
+      "title": "FF7/SAVE06/18:09"
+    },
+    {
+      "name": "BASCUS-94163FF7-S07",
+      "blocks": 1,
+      "title": "FF7/SAVE07/18:24"
+    },
+    {
+      "name": "BASCUS-94163FF7-S08",
+      "blocks": 1,
+      "title": "FF7/SAVE08/27:14"
+    },
+    {
+      "name": "BASCUS-94163FF7-S09",
+      "blocks": 1,
+      "title": "FF7/SAVE09/30:24"
+    },
+    {
+      "name": "BASCUS-94163FF7-S10",
+      "blocks": 1,
+      "title": "FF7/SAVE10/30:53"
+    },
+    {
+      "name": "BASCUS-94163FF7-S11",
+      "blocks": 1,
+      "title": "FF7/SAVE11/47:52"
+    },
+    {
+      "name": "BASCUS-94163FF7-S12",
+      "blocks": 1,
+      "title": "FF7/SAVE12/63:00"
+    },
+    {
+      "name": "BASCUS-94163FF7-S13",
+      "blocks": 1,
+      "title": "FF7/SAVE13/63:33"
+    },
+    {
+      "name": "BASCUS-94163FF7-S14",
+      "blocks": 1,
+      "title": "FF7/SAVE14/64:35"
+    },
+    {
+      "name": "BASCUS-94163FF7-S15",
+      "blocks": 1,
+      "title": "FF7/SAVE15/00:00"
+    }
+  ],
+  "files": {
+    "final-fantasy-vii.26303.gme": {
+      "size": 134976,
+      "sha1": "50239b343b9c0d8d8e67e0d6dc1e4bb4adecbb3e"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Final Fantasy VII (USA) (Disc 1).cue",
+      "sha1": "c8df949f13d990d325ac3b8d6eb835c440380e52",
+      "size": 98
+    },
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr final-fantasy-vii.26303.gme: unwraps the card (DexDrive .gme: 3904-byte header + card)",
+    "converted": {
+      "size": 131072,
+      "sha1": "adbf153e19c59dd51435a4992aa83b99830731d8"
+    },
+    "script": "scripts/psx/Final Fantasy VII.load.txt",
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "loads",
+        "detail": "Slot 1 lists 15 files; files 1-3: Cloud Lv 9 01:47 Sector 5 Slum, Lv 10 02:35 Wall Market, Lv 13 04:54 Shinra Bldg. 69f."
+      },
+      "beetle-psx-hw": {
+        "result": "loads",
+        "detail": "Slot 1 lists 15 files; files 1-3: Cloud Lv 9 01:47 Sector 5 Slum, Lv 10 02:35 Wall Market, Lv 13 04:54 Shinra Bldg. 69f. (the same screen as on beetle-psx)"
+      },
+      "pcsx-rearmed": {
+        "result": "loads",
+        "detail": "Slot 1 lists 15 files; files 1-3: Cloud Lv 9 01:47 Sector 5 Slum, Lv 10 02:35 Wall Market, Lv 13 04:54 Shinra Bldg. 69f. (the same screen as on beetle-psx)"
+      },
+      "swanstation": {
+        "result": "loads",
+        "detail": "Slot 1 lists 15 files; files 1-3: Cloud Lv 9 01:47 Sector 5 Slum, Lv 10 02:35 Wall Market, Lv 13 04:54 Shinra Bldg. 69f. (the same screen as on beetle-psx)"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": [
+      "beetle-psx",
+      "beetle-psx-hw",
+      "pcsx-rearmed",
+      "swanstation"
+    ]
+  },
+  "note": null
+}

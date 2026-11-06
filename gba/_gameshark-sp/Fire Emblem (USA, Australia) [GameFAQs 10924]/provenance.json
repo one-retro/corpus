@@ -1,0 +1,119 @@
+{
+  "method": "downloaded",
+  "system": "gba",
+  "core": "_gameshark-sp",
+  "url": "https://gamefaqs.gamespot.com/gba/468480-fire-emblem/saves/10924",
+  "source_page": "https://gamefaqs.gamespot.com/gba/468480-fire-emblem/saves",
+  "source": "GameFAQs (section 'GameBoy Advance GameShark SP Save File (North America)')",
+  "author": "kryptomaster",
+  "licence": null,
+  "posted": "2006-02-23",
+  "fetched": "2026-11-05",
+  "what_it_is": "all 3 saves on HHM chapters are 17,22,and 24 some characters have had their classes modified",
+  "gamefaqs": {
+    "id": 10924,
+    "product": "Fire Emblem",
+    "section": "GameBoy Advance GameShark SP Save File (North America)",
+    "region": "North America",
+    "served_as": "fire-emblem.10924.gsv",
+    "listed_size": "33KB"
+  },
+  "format": "GameShark SP save (\"ADVSAVEG\"): cart title \"FIREEMBLEME\", type 2 (SRAM 32 KiB), payload 32768 bytes at 0x430",
+  "files": {
+    "fire-emblem.10924.gsv": {
+      "size": 33840,
+      "sha1": "f701ff38409c959af7c1a02d85298422056242f2"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Fire Emblem (USA, Australia).gba",
+      "sha1": "c735fdbb9e8abe19e0c6a44708df19acc962e204",
+      "size": 16777216
+    },
+    "converted_with": "tools/gamefaqs/gba-gsv.py fire-emblem.10924.gsv --rom ROM --core CORE --outdir DIR: reads the GameShark SP container as mGBA does and imports the payload as mGBA's _importSavedata does, then lays the chip out as the core keeps it",
+    "converted": {
+      "size": 32768,
+      "sha1": "d0d3bbe972efe12bd283bfb6d8a1547237cb9e31"
+    },
+    "script": "scripts/gba/Fire Emblem.load.txt",
+    "cores": {
+      "mgba": {
+        "result": "loads",
+        "detail": "title menu with Restart Chapter: a chapter file exists (with no save only New Game shows)",
+        "core_version": "mGBA 0.11-212-7a12d6d",
+        "file": {
+          "name": "Fire Emblem (USA, Australia).srm",
+          "size": 32768,
+          "sha1": "d0d3bbe972efe12bd283bfb6d8a1547237cb9e31"
+        },
+        "frame": "menu"
+      },
+      "vba-m": {
+        "result": "loads",
+        "detail": "title menu with Restart Chapter: a chapter file exists (with no save only New Game shows) (same menu in this core; the background animates)",
+        "core_version": "VBA-M 115defb",
+        "file": {
+          "name": "Fire Emblem (USA, Australia).srm",
+          "size": 32768,
+          "sha1": "d0d3bbe972efe12bd283bfb6d8a1547237cb9e31"
+        },
+        "frame": "menu"
+      },
+      "gpsp": {
+        "result": "loads",
+        "detail": "title menu with Restart Chapter: a chapter file exists (with no save only New Game shows) (same menu in this core; the background animates)",
+        "core_version": "gpSP v1.1.0-5819380",
+        "file": {
+          "name": "Fire Emblem (USA, Australia).srm",
+          "size": 131072,
+          "sha1": "b7b25da67dfe037d5501703fd435d9a20c81f9e8"
+        },
+        "frame": "menu"
+      },
+      "vba-next": {
+        "result": "loads",
+        "detail": "title menu with Restart Chapter: a chapter file exists (with no save only New Game shows)",
+        "core_version": "VBA Next v1.0.2",
+        "file": {
+          "name": "Fire Emblem (USA, Australia).srm",
+          "size": 139264,
+          "sha1": "1a075715ad7a499042d7b9868ca315a56d257a60"
+        },
+        "frame": "menu"
+      },
+      "beetle-gba": {
+        "result": "loads",
+        "detail": "title menu with Restart Chapter: a chapter file exists (with no save only New Game shows) (same menu in this core; the background animates)",
+        "core_version": "Beetle GBA v0.9.36 b158166",
+        "file": {
+          "name": "Fire Emblem (USA, Australia).f1a1b9742fcd467a531dd4314c4e7d19.sav",
+          "size": 65536,
+          "sha1": "a1bfa2f3ce1599fa360ade13b9c9ed2b3cc10dfe"
+        },
+        "frame": "menu"
+      },
+      "skyemu": {
+        "result": "loads",
+        "detail": "title menu with Restart Chapter: a chapter file exists (with no save only New Game shows) (same menu in this core; the background animates)",
+        "core_version": "SkyEmu adacd0788964ed89f5c43dcbc1f3cc26deec996c",
+        "file": {
+          "name": "Fire Emblem (USA, Australia).srm",
+          "size": 131072,
+          "sha1": "b7b25da67dfe037d5501703fd435d9a20c81f9e8"
+        },
+        "frame": "menu"
+      }
+    },
+    "proof_order": [
+      "mgba",
+      "vba-m",
+      "gpsp",
+      "vba-next",
+      "beetle-gba",
+      "skyemu"
+    ]
+  },
+  "note": null
+}

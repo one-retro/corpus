@@ -1,0 +1,119 @@
+{
+  "method": "downloaded",
+  "system": "gba",
+  "core": "_raw",
+  "url": "https://gamefaqs.gamespot.com/gba/563596-pokemon-sapphire-version/saves/21951",
+  "source_page": "https://gamefaqs.gamespot.com/gba/563596-pokemon-sapphire-version/saves",
+  "source": "GameFAQs (section 'GameBoy Advance GameShark USB Connector Save (North America)')",
+  "author": "javedrockzz",
+  "licence": null,
+  "posted": "2011-08-12",
+  "fetched": "2026-11-05",
+  "what_it_is": "ulimate pack - FULL pokedex completes,2star trainer card, all battle frontier in GOLD symbols,8 badges,all legendary pokemon in box 14(greek),minimum cheats,party pokemon all stats #999(speed=999 etc)",
+  "gamefaqs": {
+    "id": 21951,
+    "product": "Pokemon Ruby / Sapphire / Emerald Version",
+    "section": "GameBoy Advance GameShark USB Connector Save (North America)",
+    "region": "North America",
+    "served_as": "pokemon-ruby-sapphire-emerald-version.21951.gsb",
+    "listed_size": "64KB"
+  },
+  "format": "raw 65536-byte save image, no header",
+  "files": {
+    "pokemon-ruby-sapphire-emerald-version.21951.gsb": {
+      "size": 65536,
+      "sha1": "0d0a8b58f15424f99b64054bcf26478306c2ebe2"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Pokemon - Emerald Version (USA, Europe).gba",
+      "sha1": "f3ae088181bf583e55daf962a92bb46f4f1d07b7",
+      "size": 16777216
+    },
+    "converted_with": "tools/gamefaqs/gba-layout.py pokemon-ruby-sapphire-emerald-version.21951.gsb --rom ROM --core CORE --outdir DIR: takes the raw image as the chip (cut or padded with 0xFF to the chip size, as mGBA maps a .sav) and lays it out as the core keeps it",
+    "converted": {
+      "size": 131072,
+      "sha1": "168366d35572f2b1de5875e5a4de624e16ec0112"
+    },
+    "script": "scripts/gba/Pokemon - Ruby Version.load.txt",
+    "cores": {
+      "mgba": {
+        "result": "loads",
+        "detail": "\"The save file is corrupt(ed). The previous save file will be loaded.\", then CONTINUE: Javed, 22:06 (the older of the two copies)",
+        "core_version": "mGBA 0.11-212-7a12d6d",
+        "file": {
+          "name": "Pokemon - Emerald Version (USA, Europe).srm",
+          "size": 131072,
+          "sha1": "168366d35572f2b1de5875e5a4de624e16ec0112"
+        },
+        "frame": "next"
+      },
+      "vba-m": {
+        "result": "loads",
+        "detail": "\"The save file is corrupt(ed). The previous save file will be loaded.\", then CONTINUE: Javed, 22:06 (the older of the two copies)",
+        "core_version": "VBA-M 115defb",
+        "file": {
+          "name": "Pokemon - Emerald Version (USA, Europe).srm",
+          "size": 131072,
+          "sha1": "168366d35572f2b1de5875e5a4de624e16ec0112"
+        },
+        "frame": "next"
+      },
+      "gpsp": {
+        "result": "loads",
+        "detail": "\"The save file is corrupt(ed). The previous save file will be loaded.\", then CONTINUE: Javed, 22:06 (the older of the two copies)",
+        "core_version": "gpSP v1.1.0-5819380",
+        "file": {
+          "name": "Pokemon - Emerald Version (USA, Europe).srm",
+          "size": 131072,
+          "sha1": "168366d35572f2b1de5875e5a4de624e16ec0112"
+        },
+        "frame": "next"
+      },
+      "vba-next": {
+        "result": "loads",
+        "detail": "\"The save file is corrupt(ed). The previous save file will be loaded.\", then CONTINUE: Javed, 22:06 (the older of the two copies)",
+        "core_version": "VBA Next v1.0.2",
+        "file": {
+          "name": "Pokemon - Emerald Version (USA, Europe).srm",
+          "size": 139264,
+          "sha1": "f1d935fa715212012ab82f06fefe72bc7b426faf"
+        },
+        "frame": "next"
+      },
+      "beetle-gba": {
+        "result": "loads",
+        "detail": "\"The save file is corrupt(ed). The previous save file will be loaded.\", then CONTINUE: Javed, 22:06 (the older of the two copies)",
+        "core_version": "Beetle GBA v0.9.36 b158166",
+        "file": {
+          "name": "Pokemon - Emerald Version (USA, Europe).605b89b67018abcea91e693a4dd25be3.sav",
+          "size": 131072,
+          "sha1": "168366d35572f2b1de5875e5a4de624e16ec0112"
+        },
+        "frame": "next"
+      },
+      "skyemu": {
+        "result": "loads",
+        "detail": "\"The save file is corrupt(ed). The previous save file will be loaded.\", then CONTINUE: Javed, 22:06 (the older of the two copies)",
+        "core_version": "SkyEmu adacd0788964ed89f5c43dcbc1f3cc26deec996c",
+        "file": {
+          "name": "Pokemon - Emerald Version (USA, Europe).srm",
+          "size": 131072,
+          "sha1": "168366d35572f2b1de5875e5a4de624e16ec0112"
+        },
+        "frame": "next"
+      }
+    },
+    "proof_order": [
+      "mgba",
+      "vba-m",
+      "gpsp",
+      "vba-next",
+      "beetle-gba",
+      "skyemu"
+    ]
+  },
+  "note": "No container: a bare save image uploaded as .gsb, so the writer (an emulator, a flash cart, the GameShark software) cannot be told from the bytes. Only 64 KiB of the 128 KiB flash; as mGBA maps a short .sav, the second half of the chip stays erased."
+}

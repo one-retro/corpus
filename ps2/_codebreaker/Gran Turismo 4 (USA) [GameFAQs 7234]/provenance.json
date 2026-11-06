@@ -1,0 +1,131 @@
+{
+  "method": "downloaded",
+  "system": "ps2",
+  "core": "_codebreaker",
+  "url": "https://gamefaqs.gamespot.com/ps2/561066-gran-turismo-4/saves/7234",
+  "source_page": "https://gamefaqs.gamespot.com/ps2/561066-gran-turismo-4/saves",
+  "source": "GameFAQs (section 'PlayStation2 CodeBreaker Save (North America)')",
+  "author": "hardrocky2",
+  "licence": null,
+  "posted": "2005-04-10",
+  "fetched": "2026-11-05",
+  "what_it_is": "Cars,Cars, Cars. Prize cars in special colors, F-1 colors, Camaro Race car,7 RX-7LM, FTO LM,Subaru LM, others. Built up cars. Black cars. Over $1billion. Game is partially completed ~40%.",
+  "gamefaqs": {
+    "id": 7234,
+    "product": "Gran Turismo 4",
+    "section": "PlayStation2 CodeBreaker Save (North America)",
+    "region": "North America",
+    "served_as": "gran-turismo-4.7234.cbs",
+    "listed_size": "1486KB"
+  },
+  "format": "CodeBreaker save: 'CFU\\0' header of 296 bytes (folder field 'BASCUS-97328GAMEDATA', title 'GRAN TURISMO 4 Game data'), RC4-encrypted zlib body of 1522184 bytes unpacking to 1528840 bytes: 4 files, 1528584 bytes of file data",
+  "files": {
+    "gran-turismo-4.7234.cbs": {
+      "size": 1522480,
+      "sha1": "33c961018e463178209b41f822f9e291467dd2f0"
+    }
+  },
+  "save": {
+    "folder": "BASCUS-97328GAMEDATA",
+    "title": [
+      "GRAN TURISMO 4",
+      "Game data"
+    ],
+    "times": "as the file stores them (PS2 card times, JST)",
+    "files": [
+      {
+        "name": "garage",
+        "size": 1280064,
+        "sha1": "8a32fff22f9bf46d5e4b7479255186da6f01bc40",
+        "created": "2005-03-07 08:22:31",
+        "modified": "2005-04-11 07:58:26"
+      },
+      {
+        "name": "BASCUS-97328GAMEDATA",
+        "size": 237760,
+        "sha1": "3d3a3f13e8161ca8d87e515e32ef03d7ca02284b",
+        "created": "2005-04-11 07:58:26",
+        "modified": "2005-04-11 07:58:28"
+      },
+      {
+        "name": "icon0.ico",
+        "size": 9796,
+        "sha1": "5c55e0ea3f302b6ce15d03fb247039d41b83f032",
+        "created": "2005-03-07 08:22:45",
+        "modified": "2005-03-07 08:22:45"
+      },
+      {
+        "name": "icon.sys",
+        "size": 964,
+        "sha1": "cce82f67a0f89c70731af7b0fb0b9c752fd05e5e",
+        "created": "2005-03-07 08:22:46",
+        "modified": "2005-03-07 08:22:46"
+      }
+    ]
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Gran Turismo 4 (USA).iso",
+      "sha1": "5b1dbf056f45f8023e8e4958e6d7deb31fc64a47",
+      "size": 5314478080
+    },
+    "converted_with": "tools/gamefaqs/ps2-card.py 'gran-turismo-4.7234.cbs' -o OUT: reads the save with mymcplus 3.0.5 and writes OUT/Mcd001.ps2 (an 8 MiB card with ECC, formatted and filled by mymcplus) for lrps2/pcee2/pcsx2, and OUT/mc0/<folder>/ for Play!",
+    "converted": {
+      "Mcd001.ps2": {
+        "size": 8650752,
+        "sha1": "fbbb835f350bdaddfc22fa014b5227735ecd0505"
+      },
+      "mc0/BASCUS-97328GAMEDATA/": {
+        "garage": {
+          "size": 1280064,
+          "sha1": "8a32fff22f9bf46d5e4b7479255186da6f01bc40"
+        },
+        "BASCUS-97328GAMEDATA": {
+          "size": 237760,
+          "sha1": "3d3a3f13e8161ca8d87e515e32ef03d7ca02284b"
+        },
+        "icon0.ico": {
+          "size": 9796,
+          "sha1": "5c55e0ea3f302b6ce15d03fb247039d41b83f032"
+        },
+        "icon.sys": {
+          "size": 964,
+          "sha1": "cce82f67a0f89c70731af7b0fb0b9c752fd05e5e"
+        }
+      },
+      "read_back": "work/ps2/tools/mcfs.py lists every file with the size and SHA-1 put on the card; one-saves (1saves convert + inspect) reads the card and finds BASCUS-97328GAMEDATA",
+      "timestamps": "what the save does not date is 2000-01-01 00:00:00 (JST, as a card stores it); the card's own root entries too"
+    },
+    "script": "scripts/ps2/Gran Turismo 4 (USA).load.txt",
+    "cores": {
+      "pcee2": {
+        "detail": "GT Mode opens in the License Center: every license PASSED (B, IB, A, IA, Super); Toyota GT-ONE Race Car, Cr 1,000,012,974,554, 6 MAY",
+        "result": "loads"
+      },
+      "lrps2": {
+        "detail": "GT Mode opens in the License Center: every license PASSED (B, IB, A, IA, Super); Toyota GT-ONE Race Car, Cr 1,000,012,974,554, 6 MAY",
+        "result": "loads"
+      },
+      "play": {
+        "detail": "GT Mode map: Toyota GT-ONE Race Car, Cr 1,000,012,974,554, 6 MAY (as PCEE2's License Center frame)",
+        "result": "loads"
+      },
+      "pcsx2": {
+        "detail": "GT Mode opens in the License Center: every license PASSED (B, IB, A, IA, Super); Toyota GT-ONE Race Car, Cr 1,000,012,974,554, 6 MAY",
+        "result": "loads"
+      },
+      "armsx2": {
+        "result": "not-run",
+        "detail": "ARMSX2 renders only through Vulkan here and falls back to a null GS (no picture), so nothing shows what the game read (ps2/NOTES.md)"
+      }
+    },
+    "proof_order": [
+      "pcee2",
+      "lrps2",
+      "play",
+      "pcsx2"
+    ]
+  },
+  "note": null
+}

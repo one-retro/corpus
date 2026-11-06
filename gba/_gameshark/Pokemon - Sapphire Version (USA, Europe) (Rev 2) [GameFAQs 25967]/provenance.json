@@ -1,0 +1,119 @@
+{
+  "method": "downloaded",
+  "system": "gba",
+  "core": "_gameshark",
+  "url": "https://gamefaqs.gamespot.com/gba/563596-pokemon-sapphire-version/saves/25967",
+  "source_page": "https://gamefaqs.gamespot.com/gba/563596-pokemon-sapphire-version/saves",
+  "source": "GameFAQs (section 'GameBoy Advance GameShark Save (Australia)')",
+  "author": "Eevee-Trainer",
+  "licence": null,
+  "posted": "2018-08-17",
+  "fetched": "2026-11-05",
+  "what_it_is": "Start of game. Max money, 99 of all items, Shiny Living Pokedex (all 31 IVs/0 EVs), and competitive movesets on all.",
+  "gamefaqs": {
+    "id": 25967,
+    "product": "Pokemon Ruby / Sapphire / Emerald Version",
+    "section": "GameBoy Advance GameShark Save (Australia)",
+    "region": "Australia",
+    "served_as": "pokemon-ruby-sapphire-emerald-version.25967.sps",
+    "listed_size": "128KB"
+  },
+  "format": "SharkPort save (\"SharkPortSave\", kind 0x000F0000): title \"POKEMON SAPP\", date \"5/8/2018 8:15:26 PM\", notes \"\"; cart header \"POKEMON SAPP\" / 'AXPE' (complement 0x53); payload 131072 bytes; checksum: signed",
+  "files": {
+    "pokemon-ruby-sapphire-emerald-version.25967.sps": {
+      "size": 131172,
+      "sha1": "3ed24074ccd4ec145a2238dfc586fd8dcffba5f6"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Pokemon - Sapphire Version (USA, Europe) (Rev 2).gba",
+      "sha1": "89b45fb172e6b55d51fc0e61989775187f6fe63c",
+      "size": 16777216
+    },
+    "converted_with": "tools/gamefaqs/gba-sharkport.py pokemon-ruby-sapphire-emerald-version.25967.sps --rom ROM --core CORE --outdir DIR: reads the SharkPort container as mGBA does and imports the payload as mGBA's _importSavedata does (cut to the chip, EEPROM 8-byte blocks reversed, the rest of the chip erased), then lays the chip out as the core keeps it",
+    "converted": {
+      "size": 131072,
+      "sha1": "381ed43aca14b0a395f5bfcb92efd9e56c859cb7"
+    },
+    "script": "scripts/gba/Pokemon - Ruby Version.load.txt",
+    "cores": {
+      "mgba": {
+        "result": "loads",
+        "detail": "CONTINUE: RUBY, 999:59",
+        "core_version": "mGBA 0.11-212-7a12d6d",
+        "file": {
+          "name": "Pokemon - Sapphire Version (USA, Europe) (Rev 2).srm",
+          "size": 131072,
+          "sha1": "381ed43aca14b0a395f5bfcb92efd9e56c859cb7"
+        },
+        "frame": "menu"
+      },
+      "vba-m": {
+        "result": "loads",
+        "detail": "CONTINUE: RUBY, 999:59",
+        "core_version": "VBA-M 115defb",
+        "file": {
+          "name": "Pokemon - Sapphire Version (USA, Europe) (Rev 2).srm",
+          "size": 131072,
+          "sha1": "381ed43aca14b0a395f5bfcb92efd9e56c859cb7"
+        },
+        "frame": "menu"
+      },
+      "gpsp": {
+        "result": "loads",
+        "detail": "CONTINUE: RUBY, 999:59",
+        "core_version": "gpSP v1.1.0-5819380",
+        "file": {
+          "name": "Pokemon - Sapphire Version (USA, Europe) (Rev 2).srm",
+          "size": 131072,
+          "sha1": "381ed43aca14b0a395f5bfcb92efd9e56c859cb7"
+        },
+        "frame": "menu"
+      },
+      "vba-next": {
+        "result": "loads",
+        "detail": "CONTINUE: RUBY, 999:59",
+        "core_version": "VBA Next v1.0.2",
+        "file": {
+          "name": "Pokemon - Sapphire Version (USA, Europe) (Rev 2).srm",
+          "size": 139264,
+          "sha1": "8635b3b4681e156d4fd495d505dc284ecf547fdf"
+        },
+        "frame": "menu"
+      },
+      "beetle-gba": {
+        "result": "loads",
+        "detail": "CONTINUE: RUBY, 999:59",
+        "core_version": "Beetle GBA v0.9.36 b158166",
+        "file": {
+          "name": "Pokemon - Sapphire Version (USA, Europe) (Rev 2).9bc2b765ca6997175fac51e6cdc29089.sav",
+          "size": 131072,
+          "sha1": "381ed43aca14b0a395f5bfcb92efd9e56c859cb7"
+        },
+        "frame": "menu"
+      },
+      "skyemu": {
+        "result": "loads",
+        "detail": "CONTINUE: RUBY, 999:59",
+        "core_version": "SkyEmu adacd0788964ed89f5c43dcbc1f3cc26deec996c",
+        "file": {
+          "name": "Pokemon - Sapphire Version (USA, Europe) (Rev 2).srm",
+          "size": 131072,
+          "sha1": "381ed43aca14b0a395f5bfcb92efd9e56c859cb7"
+        },
+        "frame": "menu"
+      }
+    },
+    "proof_order": [
+      "mgba",
+      "vba-m",
+      "gpsp",
+      "vba-next",
+      "beetle-gba",
+      "skyemu"
+    ]
+  },
+  "note": null
+}

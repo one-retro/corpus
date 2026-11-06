@@ -1,0 +1,65 @@
+{
+  "method": "downloaded",
+  "system": "gc",
+  "core": "_usb-memory-adapter",
+  "url": "https://gamefaqs.gamespot.com/gamecube/589687-kirby-air-ride/saves/24767",
+  "source_page": "https://gamefaqs.gamespot.com/gamecube/589687-kirby-air-ride/saves",
+  "source": "GameFAQs (section 'GameCube USB Memory Adapter Save (North America)')",
+  "author": "DoctorJoshua",
+  "licence": null,
+  "posted": "2016-10-02",
+  "fetched": "2026-11-05",
+  "what_it_is": "All Checklists complete, everything unlocked, missing some Single Races in Stadium.",
+  "gamefaqs": {
+    "id": 24767,
+    "product": "Kirby Air Ride",
+    "section": "GameCube USB Memory Adapter Save (North America)",
+    "region": "North America",
+    "served_as": "kirby-air-ride.24767.gci",
+    "listed_size": "32KB"
+  },
+  "format": "GCI: the 64-byte card directory entry (GKYE01, file 'KA030621_0100_T030529_2154', 4 blocks, modified 2016-10-02 12:16:33, comment 'Kirby Air Ride / SAVE DATA 10/02/2016') then 4 x 8 KiB blocks = 32832 bytes",
+  "files": {
+    "kirby-air-ride.24767.gci": {
+      "size": 32832,
+      "sha1": "7eb97a4ff03425a47197179f63b9c534ba35c14d"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Kirby Air Ride (USA).rvz",
+      "sha1": "b253bd1abd19ff2576c41bcc9c8a2b10b759945d",
+      "size": 607951944
+    },
+    "converted_with": "tools/gamefaqs/gc-gci.py place <file> <GC/USA/Card A>: copies the GCI unchanged into the GCI folder under Dolphin's own name for it",
+    "converted": {
+      "size": 32832,
+      "sha1": "7eb97a4ff03425a47197179f63b9c534ba35c14d",
+      "name": "01-GKYE-KA030621_0100_T030529_2154.gci"
+    },
+    "script": "scripts/gc/Kirby Air Ride.load.txt",
+    "cores": {
+      "dolphin-emu": {
+        "core_version": "2609.0.169+32c61f9d0e (libretro buildbot, dolphin_libretro.dylib)",
+        "frontend": "tools/retro-run, OpenGL 4.1 core context, options scripts/gc/dolphin-single-core.opt (CPU thread off, OSD off); save in <savedir>/User/GC/USA/Card A/ (the core's GCI folder)",
+        "result": "loads",
+        "detail": "Air Ride > Records > Checklist: all 120 boxes filled, counter 120/120 (as described: all checklists complete); baseline (no save): 'There is no Kirby Air Ride data ... Make a new save data file?' (libretro) / created a new file silently (Dolphin.app); the script then ends on the Air Ride menu",
+        "script": "scripts/gc/Kirby Air Ride.load.txt"
+      },
+      "dolphin-emu@dolphin": {
+        "core_version": "2606a (Dolphin.app)",
+        "frontend": "Dolphin.app, isolated user folder (-u), batch mode (-b), input from a TAS movie (-m) made with work/standalone/tools/gen_dtm.py, frame dump; save in <user>/GC/USA/Card A/ (GCI folder)",
+        "result": "loads",
+        "detail": "Air Ride > Records > Checklist: all 120 boxes filled, counter 120/120 (as described: all checklists complete); baseline (no save): 'There is no Kirby Air Ride data ... Make a new save data file?' (libretro) / created a new file silently (Dolphin.app); the script then ends on the Air Ride menu",
+        "script": "scripts/gc/Kirby Air Ride.load.dtm.txt",
+        "proof_frame": "Dolphin frame dump framedump_4500.png"
+      }
+    },
+    "proof_order": [
+      "dolphin-emu",
+      "dolphin-emu@dolphin"
+    ]
+  },
+  "note": "Kirby Air Ride rewrites its file on the way to the checklist (both cores): new modified time, first block 5 on Dolphin's virtual card, about ten payload bytes; the filed file is the download."
+}

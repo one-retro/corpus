@@ -1,0 +1,109 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_dexdrive",
+  "url": "https://gamefaqs.gamespot.com/ps/199061-tony-hawks-pro-skater-2/saves/995",
+  "source_page": "https://gamefaqs.gamespot.com/ps/199061-tony-hawks-pro-skater-2/saves",
+  "source": "GameFAQs (section 'PlayStation DexDrive Save (North America)')",
+  "author": "Sir_Elric",
+  "licence": null,
+  "posted": "2001-07-25",
+  "fetched": "2026-11-05",
+  "what_it_is": "This file contains 6 \"careers\", each with 4 \"custom\" skaters. Each one is actually a hidden skater (Neversoft Dev, family, or created)",
+  "gamefaqs": {
+    "id": 995,
+    "product": "Tony Hawk's Pro Skater 2",
+    "section": "PlayStation DexDrive Save (North America)",
+    "region": "North America",
+    "served_as": "tony-hawks-pro-skater-2.995.gme",
+    "listed_size": "131KB"
+  },
+  "format": "DexDrive .gme: '123-456-STD' 3904-byte header (per-block comments) + 131072-byte raw card; the card holds 6 save(s), 6 for this game (BASLUS-01066NJL1G01, BASLUS-01066NKH2G01, BASLUS-01066NJK3G01, BASLUS-01066NIH4G01, ...)",
+  "release": "Tony Hawk's Pro Skater 2 (USA)",
+  "game_saves": [
+    {
+      "name": "BASLUS-01066NJL1G01",
+      "blocks": 1,
+      "title": "THPS2 CAREERー NEVERSOFT SK8RS 1"
+    },
+    {
+      "name": "BASLUS-01066NKH2G01",
+      "blocks": 1,
+      "title": "THPS2 CAREERー NEVERSOFT SK8RS 2"
+    },
+    {
+      "name": "BASLUS-01066NJK3G01",
+      "blocks": 1,
+      "title": "THPS2 CAREERー NEVERSOFT SK8RS 3"
+    },
+    {
+      "name": "BASLUS-01066NIH4G01",
+      "blocks": 1,
+      "title": "THPS2 CAREERー NEVERSOFT SK8RS 4"
+    },
+    {
+      "name": "BASLUS-01066NQJ5G01",
+      "blocks": 1,
+      "title": "THPS2 CAREERー NEVERSOFT SK8RS 5"
+    },
+    {
+      "name": "BASLUS-01066NTV6G01",
+      "blocks": 1,
+      "title": "THPS2 CAREERー NEVERSOFT SK8RS 6"
+    }
+  ],
+  "files": {
+    "tony-hawks-pro-skater-2.995.gme": {
+      "size": 134976,
+      "sha1": "d08515a41d6c472c0e9778b9cf1ac27ecf42dd3b"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Tony Hawk's Pro Skater 2 (USA).cue",
+      "sha1": "ea5388de4fa83e3d3b5f37d752f1eb8d3bd5d88e",
+      "size": 96
+    },
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr tony-hawks-pro-skater-2.995.gme: unwraps the card (DexDrive .gme: 3904-byte header + card)",
+    "converted": {
+      "size": 131072,
+      "sha1": "22f0a1af771f65c40ebebab154e13f6184f86d60"
+    },
+    "script": "scripts/psx/Tony Hawk's Pro Skater 2.load.txt",
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "loads",
+        "detail": "Options > Memory Card > Load Data lists the careers NEVERSOFT SK8RS 1, NEVERSOFT SK8RS 2, NEVERSOFT SK8RS 3, NEVERSOFT SK8RS 4, NEVERSOFT SK8RS 5, NEVERSOFT SK8RS 6"
+      },
+      "beetle-psx-hw": {
+        "result": "loads",
+        "detail": "Options > Memory Card > Load Data lists the careers NEVERSOFT SK8RS 1, NEVERSOFT SK8RS 2, NEVERSOFT SK8RS 3, NEVERSOFT SK8RS 4, NEVERSOFT SK8RS 5, NEVERSOFT SK8RS 6 (the same screen as on beetle-psx)"
+      },
+      "pcsx-rearmed": {
+        "result": "loads",
+        "detail": "Options > Memory Card > Load Data lists the careers NEVERSOFT SK8RS 1, NEVERSOFT SK8RS 2, NEVERSOFT SK8RS 3, NEVERSOFT SK8RS 4, NEVERSOFT SK8RS 5, NEVERSOFT SK8RS 6 (the same screen as on beetle-psx)"
+      },
+      "swanstation": {
+        "result": "loads",
+        "detail": "Options > Memory Card > Load Data lists the careers NEVERSOFT SK8RS 1, NEVERSOFT SK8RS 2, NEVERSOFT SK8RS 3, NEVERSOFT SK8RS 4, NEVERSOFT SK8RS 5, NEVERSOFT SK8RS 6 (the same screen as on beetle-psx)"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": [
+      "beetle-psx",
+      "beetle-psx-hw",
+      "pcsx-rearmed",
+      "swanstation"
+    ]
+  },
+  "note": null
+}

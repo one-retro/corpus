@@ -1,0 +1,64 @@
+{
+  "method": "downloaded",
+  "system": "n64",
+  "core": "_wii-vc",
+  "url": "https://gamefaqs.gamespot.com/n64/198854-super-smash-bros/saves/35242",
+  "source_page": "https://gamefaqs.gamespot.com/n64/198854-super-smash-bros/saves",
+  "source": "GameFAQs (section 'Wii VC Game Save File (Japan)')",
+  "author": "ThePokemonGamer",
+  "licence": null,
+  "posted": "2026-07-24",
+  "fetched": "2026-11-05",
+  "what_it_is": "All characters (Luigi/Captain Falcon/Ness/Purin) and Mushroom Kingdom stage unlocked",
+  "gamefaqs": {
+    "id": 35242,
+    "product": "Super Smash Bros.",
+    "section": "Wii VC Game Save File (Japan)",
+    "region": "Japan",
+    "served_as": "super-smash-bros.35242.bin",
+    "listed_size": "93KB"
+  },
+  "format": "Wii data.bin (an SD-card export; header AES-128-CBC with the SD key, header MD5 valid): title 00010001-NALJ \"大乱闘スマッシュブラザーズ\", 1 file: RAM_NALJ 32768 bytes - RAM_NALJ is the N64 cartridge save in console byte order",
+  "files": {
+    "super-smash-bros.35242.bin": {
+      "size": 95488,
+      "sha1": "65df57ec48e717618fd0a5f06de7aa8248977b20"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "converted_with": "tools/gamefaqs/wiivc-convert.py convert super-smash-bros.35242.bin OUT: decrypts the data.bin (AES-128-CBC, SD key, per-file IVs) and takes RAM_NALJ (32768 bytes, SRAM): first 0x8000 bytes, 32-bit words reversed, at 0x20800",
+    "converted": {
+      "size": 296960,
+      "sha1": "de90c9904cfb34a0bba054aeb4af43f44c8ecf1c"
+    },
+    "converted_standalone": {
+      "files": {
+        "save.sra": {
+          "size": 32768,
+          "sha1": "8af9202bb7fe7f32933d16d784c6e5bbf7a845c9"
+        }
+      },
+      "how": "the same bytes as the .srm regions, as standalone Mupen64Plus keeps them: <GoodName (32 chars)>-<MD5 8>.eep/.sra/.fla/.mpk in its save folder"
+    },
+    "rom": null,
+    "script": null,
+    "cores": {
+      "mupen64plus-next": {
+        "result": "not-run",
+        "detail": "no image of Nintendo All-Star! Dairantou Smash Brothers (Japan) in the library"
+      },
+      "parallel-n64": {
+        "result": "not-run",
+        "detail": "no image of Nintendo All-Star! Dairantou Smash Brothers (Japan) in the library"
+      },
+      "mupen64plus": {
+        "result": "not-run",
+        "detail": "no image of Nintendo All-Star! Dairantou Smash Brothers (Japan) in the library"
+      }
+    },
+    "core_versions": {},
+    "proof_order": []
+  },
+  "note": "The Japanese VC release (NALJ, RAM_NALJ: the SRAM). The library has no image of the Japanese cartridge, so no core ran it; the conversion is the same as for the European file."
+}

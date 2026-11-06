@@ -1,0 +1,79 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_ps3",
+  "url": "https://gamefaqs.gamespot.com/ps/197468-gran-turismo/saves/24614",
+  "source_page": "https://gamefaqs.gamespot.com/ps/197468-gran-turismo/saves",
+  "source": "GameFAQs (section 'PlayStation PS3 Virtual Memory Card Save (ZIP) (Europe)')",
+  "author": "MelRiperton91",
+  "licence": null,
+  "posted": "2016-04-05",
+  "fetched": "2026-11-05",
+  "what_it_is": "Gran Turismo 1 Pal Complete (SCES-00984)",
+  "gamefaqs": {
+    "id": 24614,
+    "product": "Gran Turismo",
+    "section": "PlayStation PS3 Virtual Memory Card Save (ZIP) (Europe)",
+    "region": "Europe",
+    "served_as": "gran-turismo.24614.zip",
+    "listed_size": "5KB",
+    "served_zip": {
+      "size": 5985,
+      "sha1": "84ce6e8b5e6b6f0202779d8ec6518086f4e8ceaa"
+    }
+  },
+  "format": "zip of 1 PS3 export(s) (.PSV): '\\0VSP' header (signature, save name at 0x64), the save's blocks from 0x84 (41092 bytes); it holds 1 save(s), 1 for this game (BESCES-00984GT)",
+  "release": "Gran Turismo (Europe) (En,Fr,De,Es,It)",
+  "game_saves": [
+    {
+      "name": "BESCES-00984GT",
+      "blocks": 5,
+      "title": "GT game data"
+    }
+  ],
+  "files": {
+    "BESCES-009844754.PSV": {
+      "size": 41092,
+      "sha1": "801122ee8c0bcd50022490408af9eeb8c86cb15f"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": null,
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr BESCES-009844754.PSV: puts the save(s) on a freshly formatted card, as MemcardRex imports a single save",
+    "converted": {
+      "size": 131072,
+      "sha1": "355521a340c09632d44e8ccba9a0c5ef47061061"
+    },
+    "script": null,
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "not-run",
+        "detail": "no image of Gran Turismo (Europe) (En,Fr,De,Es,It) in the library"
+      },
+      "beetle-psx-hw": {
+        "result": "not-run",
+        "detail": "no image of Gran Turismo (Europe) (En,Fr,De,Es,It) in the library"
+      },
+      "pcsx-rearmed": {
+        "result": "not-run",
+        "detail": "no image of Gran Turismo (Europe) (En,Fr,De,Es,It) in the library"
+      },
+      "swanstation": {
+        "result": "not-run",
+        "detail": "no image of Gran Turismo (Europe) (En,Fr,De,Es,It) in the library"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": []
+  },
+  "note": null
+}

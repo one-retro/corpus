@@ -1,0 +1,32 @@
+# Diablo: two kinds of save. A game (BASLUS-00619-DIAB-01..) is named on Load Game > Select Memory
+# Card (shot `load`); a "saved characters" file (-DIAB-88) is listed by New Game > One player >
+# Load Character > slot 1 (shot `character`).
+wait 1500           # BIOS logos
+repeat 7            # skip the intros to the title menu
+press start 6
+wait 250
+end
+press down 6        # LOAD GAME
+wait 30
+press b 6
+wait 400
+shot load
+press x 6           # back
+wait 200
+press up 6          # NEW GAME
+wait 30
+press b 6
+wait 300
+press b 6           # ONE player
+wait 300
+press down 6
+wait 30
+press down 6
+wait 30
+press down 6        # LOAD CHARACTER
+wait 30
+press b 6
+wait 400
+press b 6           # memory card slot 1
+wait 400
+shot character

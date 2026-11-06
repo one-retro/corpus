@@ -1,0 +1,51 @@
+{
+  "method": "downloaded",
+  "system": "gc",
+  "core": "_max-drive",
+  "url": "https://gamefaqs.gamespot.com/gamecube/516710-mario-kart-double-dash/saves/5922",
+  "source_page": "https://gamefaqs.gamespot.com/gamecube/516710-mario-kart-double-dash/saves",
+  "source": "GameFAQs (section 'GameCube MaxDrive Save (Europe)')",
+  "author": "Nathanmg",
+  "licence": null,
+  "posted": "2005-01-17",
+  "fetched": "2026-11-05",
+  "what_it_is": "All complete except time trials - PAL",
+  "gamefaqs": {
+    "id": 5922,
+    "product": "Mario Kart: Double Dash!!",
+    "section": "GameCube MaxDrive Save (Europe)",
+    "region": "Europe",
+    "served_as": "mario-kart-double-dash.5922.sav",
+    "listed_size": "24KB"
+  },
+  "format": "MaxDrive .sav: a 0x80-byte header ('DATELGC_SAVE', title 'Mario Kart: Double Dash!!', description 'Mario Kart: Double Dash!! - complete'), the card directory entry with bytes 0x06/0x07 and the pairs 0x2C-0x3F byte-swapped (GM4P01, file 'MarioKart Double Dash!!', 3 blocks, comment 'Mario Kart: Double Dash!! / Game Data 02/09/04'), then 3 x 8 KiB blocks = 24768 bytes",
+  "files": {
+    "mario-kart-double-dash.5922.sav": {
+      "size": 24768,
+      "sha1": "fb078208d0889a627b32e8e8c4a95a25f247d3e0"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": null,
+    "converted_with": "tools/gamefaqs/gc-gci.py place <file> <GC/USA/Card A>: drops the 0x80-byte MaxDrive header, swaps the directory entry's bytes back (as Dolphin's GCMemcardUtils reads .sav) and writes the plain GCI under Dolphin's own name for it",
+    "converted": {
+      "size": 24640,
+      "sha1": "8647db786bc0104a64d641f01debcd65b8feb704",
+      "name": "01-GM4P-MarioKart Double Dash!!.gci"
+    },
+    "script": null,
+    "cores": {
+      "dolphin-emu": {
+        "result": "not-run",
+        "detail": "no Mario Kart - Double Dash!! (Europe, Australia) (En,Fr,De,Es,It) disc image in the library (only the USA release)"
+      },
+      "dolphin-emu@dolphin": {
+        "result": "not-run",
+        "detail": "no Mario Kart - Double Dash!! (Europe, Australia) (En,Fr,De,Es,It) disc image in the library (only the USA release)"
+      }
+    },
+    "proof_order": []
+  },
+  "note": "The directory entry's modified time reads 2039-09-21 10:48:41, which matches nothing (the comment says Game Data 02/09/04); Dolphin does not swap that field in a .sav and neither does the converter. 1saves (0.4.0 and 0.7.0) takes this file for an unidentified flat cartridge save."
+}

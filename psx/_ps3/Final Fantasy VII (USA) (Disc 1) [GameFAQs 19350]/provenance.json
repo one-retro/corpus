@@ -1,0 +1,97 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_ps3",
+  "url": "https://gamefaqs.gamespot.com/ps/197341-final-fantasy-vii/saves/19350",
+  "source_page": "https://gamefaqs.gamespot.com/ps/197341-final-fantasy-vii/saves",
+  "source": "GameFAQs (section 'PlayStation PS3 Virtual Memory Card Save (ZIP) (Europe)')",
+  "author": "kieryn2",
+  "licence": null,
+  "posted": "2009-06-24",
+  "fetched": "2026-11-05",
+  "what_it_is": "Debug room. You can teleport to most places in the game see the scenes. Lvl up fast get loads of materia and get 99 of most items in the right rooms. (Try reading the debug room faq)",
+  "gamefaqs": {
+    "id": 19350,
+    "product": "Final Fantasy VII",
+    "section": "PlayStation PS3 Virtual Memory Card Save (ZIP) (Europe)",
+    "region": "Europe",
+    "served_as": "final-fantasy-vii.19350.zip",
+    "listed_size": "3KB",
+    "served_zip": {
+      "size": 3264,
+      "sha1": "b1aeb5089074dff26e2debaf4da4ffa9e92c2775"
+    }
+  },
+  "format": "zip of 2 PS3 export(s) (.PSV): '\\0VSP' header (signature, save name at 0x64), the save's blocks from 0x84 (8324 bytes); together they hold 2 save(s), 2 for this game (BASCUS-94163FF7-S01, BESCES-00867FF7-S03)",
+  "release": "Final Fantasy VII (USA) (Disc 1)",
+  "game_saves": [
+    {
+      "name": "BASCUS-94163FF7-S01",
+      "blocks": 1,
+      "title": "FF7/SAVE01/23:20"
+    },
+    {
+      "name": "BESCES-00867FF7-S03",
+      "blocks": 1,
+      "title": "FF7/SAVE03/00:00"
+    }
+  ],
+  "files": {
+    "EXPORT/PSV/BASCUS-941634646372D533031.PSV": {
+      "size": 8324,
+      "sha1": "e052d7ad4745e2a3be9fa06401625e0fe6fc0ccf"
+    },
+    "EXPORT/PSV/BESCES-008674646372D533033.PSV": {
+      "size": 8324,
+      "sha1": "0cc0ccc36f2902faa94dd983e75a6fc5928050ad"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Final Fantasy VII (USA) (Disc 1).cue",
+      "sha1": "c8df949f13d990d325ac3b8d6eb835c440380e52",
+      "size": 98
+    },
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr EXPORT/PSV/BASCUS-941634646372D533031.PSV EXPORT/PSV/BESCES-008674646372D533033.PSV: puts the save(s) on a freshly formatted card, as MemcardRex imports a single save",
+    "converted": {
+      "size": 131072,
+      "sha1": "6fa3f57b448b5357ff427fde249405d2c05c6bcb"
+    },
+    "script": "scripts/psx/Final Fantasy VII.load.txt",
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "loads",
+        "detail": "Slot 1 lists file 1: Cloud, Level 99, 23:20, Bottom of Nothern Cave (the US save; the European one is not listed by the US disc)"
+      },
+      "beetle-psx-hw": {
+        "result": "loads",
+        "detail": "Slot 1 lists file 1: Cloud, Level 99, 23:20, Bottom of Nothern Cave (the US save; the European one is not listed by the US disc) (the same screen as on beetle-psx)"
+      },
+      "pcsx-rearmed": {
+        "result": "loads",
+        "detail": "Slot 1 lists file 1: Cloud, Level 99, 23:20, Bottom of Nothern Cave (the US save; the European one is not listed by the US disc) (the same screen as on beetle-psx)"
+      },
+      "swanstation": {
+        "result": "loads",
+        "detail": "Slot 1 lists file 1: Cloud, Level 99, 23:20, Bottom of Nothern Cave (the US save; the European one is not listed by the US disc) (the same screen as on beetle-psx)"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": [
+      "beetle-psx",
+      "beetle-psx-hw",
+      "pcsx-rearmed",
+      "swanstation"
+    ]
+  },
+  "note": "Two saves for two releases: BASCUS-94163FF7-S01 (USA, verified here) and BESCES-00867FF7-S03 (Europe)."
+}

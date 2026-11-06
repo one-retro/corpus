@@ -1,0 +1,14 @@
+# R4 - Ridge Racer Type 4: Grand Prix > Continue > the saved files (team, maker, heat).
+wait 1500           # BIOS logos
+repeat 4            # skip the intros to the title menu
+press start 6
+wait 250
+end
+press start 6       # Grand Prix
+wait 250
+press start 6
+wait 250
+shot gp
+press start 6       # Continue (the cursor starts on it when a save is found)
+wait 300
+shot load

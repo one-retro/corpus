@@ -1,0 +1,7 @@
+# Kirby Super Star / Kirby's Fun Pak, load check: Start once the title is
+# up (it is from about frame 800; the attract mode starts at about 1050):
+# the file select, each file's completion.
+wait 900
+press start 6       # title -> file select
+wait 250
+shot files

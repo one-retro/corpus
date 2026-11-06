@@ -1,0 +1,88 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_ps3",
+  "url": "https://gamefaqs.gamespot.com/ps/199365-xenogears/saves/18952",
+  "source_page": "https://gamefaqs.gamespot.com/ps/199365-xenogears/saves",
+  "source": "GameFAQs (section 'PlayStation PS3 Virtual Memory Card Save (ZIP) (North America)')",
+  "author": "unleadedlogic",
+  "licence": null,
+  "posted": "2009-04-16",
+  "fetched": "2026-11-05",
+  "what_it_is": "At first save in mountains near Citan's House. Fei is at max stats! 999 Health, full attack stats, ect. Finished game with save.",
+  "gamefaqs": {
+    "id": 18952,
+    "product": "Xenogears",
+    "section": "PlayStation PS3 Virtual Memory Card Save (ZIP) (North America)",
+    "region": "North America",
+    "served_as": "xenogears.18952.zip",
+    "listed_size": "2KB",
+    "served_zip": {
+      "size": 2150,
+      "sha1": "123d3fd24fe8b32731599e9832a204851bf32ee5"
+    }
+  },
+  "format": "zip of 1 PS3 export(s) (.PSV): '\\0VSP' header (signature, save name at 0x64), the save's blocks from 0x84 (8324 bytes); it holds 1 save(s), 1 for this game (BASLUS-006641)",
+  "release": "Xenogears (USA) (Disc 1)",
+  "game_saves": [
+    {
+      "name": "BASLUS-006641",
+      "blocks": 1,
+      "title": "XENOGEARS/No.02 Lahan Village"
+    }
+  ],
+  "files": {
+    "PS3/EXPORT/PSV/BASLUS-0066431.PSV": {
+      "size": 8324,
+      "sha1": "936c7f0cb5c1b9605992c3b6f90d181c0f3f7028"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Xenogears (USA) (Disc 1).cue",
+      "sha1": "90ba9637f68f839fde92ca18b0346ae349ba0be2",
+      "size": 90
+    },
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr PS3/EXPORT/PSV/BASLUS-0066431.PSV: puts the save(s) on a freshly formatted card, as MemcardRex imports a single save",
+    "converted": {
+      "size": 131072,
+      "sha1": "7ea557a242a3c4e603ad3f01505662dd968aacc6"
+    },
+    "script": "scripts/psx/Xenogears.load.txt",
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "loads",
+        "detail": "Continue > Load shows save No. 02: Fei Lv 60, 001:34:11, Lahan Village"
+      },
+      "beetle-psx-hw": {
+        "result": "loads",
+        "detail": "Continue > Load shows save No. 02: Fei Lv 60, 001:34:11, Lahan Village (the same screen as on beetle-psx)"
+      },
+      "pcsx-rearmed": {
+        "result": "loads",
+        "detail": "Continue > Load shows save No. 02: Fei Lv 60, 001:34:11, Lahan Village (the same screen as on beetle-psx)"
+      },
+      "swanstation": {
+        "result": "loads",
+        "detail": "Continue > Load shows save No. 02: Fei Lv 60, 001:34:11, Lahan Village (the same screen as on beetle-psx)"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": [
+      "beetle-psx",
+      "beetle-psx-hw",
+      "pcsx-rearmed",
+      "swanstation"
+    ]
+  },
+  "note": null
+}

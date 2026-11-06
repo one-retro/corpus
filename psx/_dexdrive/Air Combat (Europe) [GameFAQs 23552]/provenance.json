@@ -1,0 +1,75 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_dexdrive",
+  "url": "https://gamefaqs.gamespot.com/ps/572387-air-combat/saves/23552",
+  "source_page": "https://gamefaqs.gamespot.com/ps/572387-air-combat/saves",
+  "source": "GameFAQs (section 'PlayStation DexDrive Save (Europe)')",
+  "author": "SNKXT",
+  "licence": null,
+  "posted": "2013-12-16",
+  "fetched": "2026-11-05",
+  "what_it_is": "Normal difficulty. Last mission unlocked. Fair amount of money. F-22, F-15 and F-14 in hangar.",
+  "gamefaqs": {
+    "id": 23552,
+    "product": "Air Combat (1995)",
+    "section": "PlayStation DexDrive Save (Europe)",
+    "region": "Europe",
+    "served_as": "air-combat-1995.23552.gme",
+    "listed_size": "131KB"
+  },
+  "format": "DexDrive .gme: '123-456-STD' 3904-byte header (per-block comments) + 131072-byte raw card; the card holds 1 save(s), 1 for this game (BESCES-00007AIRCOMB)",
+  "release": "Air Combat (Europe)",
+  "game_saves": [
+    {
+      "name": "BESCES-00007AIRCOMB",
+      "blocks": 1,
+      "title": "AIRCOMBAT"
+    }
+  ],
+  "files": {
+    "air-combat-1995.23552.gme": {
+      "size": 134976,
+      "sha1": "6733ec2f4701278f9d7f8b7f11705a413d383599"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": null,
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr air-combat-1995.23552.gme: unwraps the card (DexDrive .gme: 3904-byte header + card)",
+    "converted": {
+      "size": 131072,
+      "sha1": "b6ba9653084730ea9a3604b4a94c2cbc00d533b9"
+    },
+    "script": null,
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "not-run",
+        "detail": "no image of Air Combat (Europe) in the library"
+      },
+      "beetle-psx-hw": {
+        "result": "not-run",
+        "detail": "no image of Air Combat (Europe) in the library"
+      },
+      "pcsx-rearmed": {
+        "result": "not-run",
+        "detail": "no image of Air Combat (Europe) in the library"
+      },
+      "swanstation": {
+        "result": "not-run",
+        "detail": "no image of Air Combat (Europe) in the library"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": []
+  },
+  "note": null
+}

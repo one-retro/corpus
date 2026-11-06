@@ -1,0 +1,25 @@
+# 007 - The World Is Not Enough, load check: power on, Start at the title,
+# Main Menu, Load/Save Game: the notes the game finds on the Controller Pak
+# in port 1 (name and pages). Then A on Load, A on note 1: "Game Loaded
+# Successfully" (one more A, ignored once the game has loaded, covers a
+# press the menu drops). The logos and menus take a different time on every
+# boot (the title came up between frames 1400 and 1700 in tests), so Start
+# waits until 2300; the title stays up. The loaded message did not go away
+# with Start, A or B in this core, so the script ends there.
+# N64 buttons on the RetroPad: A = b, B = y, Z = l2, Start = start.
+wait 2300
+press start 6       # title -> Main Menu
+wait 400
+shot menu
+press down 10       # Load/Save Game
+wait 60
+press b 6
+wait 300
+shot loadsave
+press b 6           # Load -> note 1
+wait 300
+press b 6           # load it
+wait 300
+press b 6
+wait 300
+shot loaded

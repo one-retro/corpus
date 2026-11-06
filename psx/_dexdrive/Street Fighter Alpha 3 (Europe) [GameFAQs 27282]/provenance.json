@@ -1,0 +1,75 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_dexdrive",
+  "url": "https://gamefaqs.gamespot.com/arcade/564869-street-fighter-alpha-3/saves/27282",
+  "source_page": "https://gamefaqs.gamespot.com/arcade/564869-street-fighter-alpha-3/saves",
+  "source": "GameFAQs (section 'PlayStation DexDrive Save (Europe)')",
+  "author": "Siegfried1086",
+  "licence": null,
+  "posted": "2020-12-02",
+  "fetched": "2026-11-05",
+  "what_it_is": "Everything Unlocked.",
+  "gamefaqs": {
+    "id": 27282,
+    "product": "Street Fighter Alpha 3",
+    "section": "PlayStation DexDrive Save (Europe)",
+    "region": "Europe",
+    "served_as": "street-fighter-alpha-3.27282.gme",
+    "listed_size": "131KB"
+  },
+  "format": "DexDrive .gme: '123-456-STD' 3904-byte header (per-block comments) + 131072-byte raw card; the card holds 1 save(s), 1 for this game (BESLESP01863-ZERO3D)",
+  "release": "Street Fighter Alpha 3 (Europe)",
+  "game_saves": [
+    {
+      "name": "BESLESP01863-ZERO3D",
+      "blocks": 1,
+      "title": "ALPHA3 SAVE DATA"
+    }
+  ],
+  "files": {
+    "street-fighter-alpha-3.27282.gme": {
+      "size": 134976,
+      "sha1": "25080ff79028deb0ae52f832b34eb5b94b1bf187"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": null,
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr street-fighter-alpha-3.27282.gme: unwraps the card (DexDrive .gme: 3904-byte header + card)",
+    "converted": {
+      "size": 131072,
+      "sha1": "9f385d7d6a45cbba899e1175205654cf6e2ec9eb"
+    },
+    "script": null,
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "not-run",
+        "detail": "no image of Street Fighter Alpha 3 (Europe) in the library"
+      },
+      "beetle-psx-hw": {
+        "result": "not-run",
+        "detail": "no image of Street Fighter Alpha 3 (Europe) in the library"
+      },
+      "pcsx-rearmed": {
+        "result": "not-run",
+        "detail": "no image of Street Fighter Alpha 3 (Europe) in the library"
+      },
+      "swanstation": {
+        "result": "not-run",
+        "detail": "no image of Street Fighter Alpha 3 (Europe) in the library"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": []
+  },
+  "note": null
+}

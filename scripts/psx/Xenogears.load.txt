@@ -1,0 +1,17 @@
+# Xenogears: title > Continue > Load > the first save's details.
+wait 1500           # BIOS logos
+repeat 3            # skip the intros to the title menu
+press start 6
+wait 250
+end
+wait 300
+press b 6           # opens New Game / Continue / Sound
+wait 300
+press b 6           # Continue: "Checking Memory Cards", then the block grid
+wait 700            # PCSX-ReARMed checks both card slots and takes longer
+press b 6           # Load
+wait 200
+shot grid
+press b 6           # the save under the cursor
+wait 300
+shot load

@@ -1,0 +1,119 @@
+{
+  "method": "downloaded",
+  "system": "gba",
+  "core": "_raw",
+  "url": "https://gamefaqs.gamespot.com/gba/589655-boktai-the-sun-is-in-your-hand/saves/26505",
+  "source_page": "https://gamefaqs.gamespot.com/gba/589655-boktai-the-sun-is-in-your-hand/saves",
+  "source": "GameFAQs (section 'GameBoy Advance Pro Action Replay Save (North America)')",
+  "author": "Home_Rowed",
+  "licence": null,
+  "posted": "2019-08-15",
+  "fetched": "2026-11-05",
+  "what_it_is": "EEPROM sav file. Slot 1: Flame Emblem Slot 2: Frost Emblem Legitimately played through both files to the Azure Sky Tower's location. Then used the All Lenses AR Code to get in, & reset for Emblem.",
+  "gamefaqs": {
+    "id": 26505,
+    "product": "Boktai: The Sun Is in Your Hand",
+    "section": "GameBoy Advance Pro Action Replay Save (North America)",
+    "region": "North America",
+    "served_as": "boktai-the-sun-is-in-your-hand.26505.xps",
+    "listed_size": "8KB"
+  },
+  "format": "raw 8192-byte save image, no header",
+  "files": {
+    "boktai-the-sun-is-in-your-hand.26505.xps": {
+      "size": 8192,
+      "sha1": "ef33e9d6a5db90a142f9af265917c1c9ffe91589"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Boktai - The Sun Is in Your Hand (USA).gba",
+      "sha1": "7164326283df46a3941ec7b6ceca889cbc40e660",
+      "size": 16777216
+    },
+    "converted_with": "tools/gamefaqs/gba-layout.py boktai-the-sun-is-in-your-hand.26505.xps --rom ROM --core CORE --outdir DIR: takes the raw image as the chip (cut or padded with 0xFF to the chip size, as mGBA maps a .sav) and lays it out as the core keeps it",
+    "converted": {
+      "size": 8192,
+      "sha1": "ef33e9d6a5db90a142f9af265917c1c9ffe91589"
+    },
+    "script": "scripts/gba/Boktai - The Sun Is in Your Hand.load.txt",
+    "cores": {
+      "mgba": {
+        "result": "loads",
+        "detail": "GAME START: 1.Django 01:54, Byroad of the Beasts, EASY",
+        "core_version": "mGBA 0.11-212-7a12d6d",
+        "file": {
+          "name": "Boktai - The Sun Is in Your Hand (USA).srm",
+          "size": 8192,
+          "sha1": "ef33e9d6a5db90a142f9af265917c1c9ffe91589"
+        },
+        "frame": "data"
+      },
+      "vba-m": {
+        "result": "loads",
+        "detail": "GAME START: 1.Django 01:54, Byroad of the Beasts, EASY",
+        "core_version": "VBA-M 115defb",
+        "file": {
+          "name": "Boktai - The Sun Is in Your Hand (USA).srm",
+          "size": 8192,
+          "sha1": "ef33e9d6a5db90a142f9af265917c1c9ffe91589"
+        },
+        "frame": "data"
+      },
+      "gpsp": {
+        "result": "loads",
+        "detail": "GAME START: 1.Django 01:54, Byroad of the Beasts, EASY",
+        "core_version": "gpSP v1.1.0-5819380",
+        "file": {
+          "name": "Boktai - The Sun Is in Your Hand (USA).srm",
+          "size": 131072,
+          "sha1": "4cf976cf3e0f98c6f1e3dd047fb1b066c42b8db8"
+        },
+        "frame": "data"
+      },
+      "vba-next": {
+        "result": "loads",
+        "detail": "GAME START: 1.Django 01:54, Byroad of the Beasts, EASY",
+        "core_version": "VBA Next v1.0.2",
+        "file": {
+          "name": "Boktai - The Sun Is in Your Hand (USA).srm",
+          "size": 139264,
+          "sha1": "4c4e50277ddd69a516b0dfe8f8b0811aeef1cde4"
+        },
+        "frame": "data"
+      },
+      "beetle-gba": {
+        "result": "loads",
+        "detail": "GAME START: 1.Django 01:54, Byroad of the Beasts, EASY",
+        "core_version": "Beetle GBA v0.9.36 b158166",
+        "file": {
+          "name": "Boktai - The Sun Is in Your Hand (USA).ff75c62ab690410cc8fca24204d783e9.eep",
+          "size": 8192,
+          "sha1": "ef33e9d6a5db90a142f9af265917c1c9ffe91589"
+        },
+        "frame": "data"
+      },
+      "skyemu": {
+        "result": "loads",
+        "detail": "GAME START: 1.Django 01:54, Byroad of the Beasts, EASY",
+        "core_version": "SkyEmu adacd0788964ed89f5c43dcbc1f3cc26deec996c",
+        "file": {
+          "name": "Boktai - The Sun Is in Your Hand (USA).srm",
+          "size": 131072,
+          "sha1": "9349c85231cd61940c9fb9591fd5858503c0e38c"
+        },
+        "frame": "data"
+      }
+    },
+    "proof_order": [
+      "mgba",
+      "vba-m",
+      "gpsp",
+      "vba-next",
+      "beetle-gba",
+      "skyemu"
+    ]
+  },
+  "note": "No container: a bare save image uploaded as .xps, so the writer (an emulator, a flash cart, the GameShark software) cannot be told from the bytes. Uploaded as .xps in the 'GameBoy Advance Pro Action Replay Save (North America)' section, but it has no SharkPort header."
+}

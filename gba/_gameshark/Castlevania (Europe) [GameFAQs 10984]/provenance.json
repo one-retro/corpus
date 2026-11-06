@@ -1,0 +1,119 @@
+{
+  "method": "downloaded",
+  "system": "gba",
+  "core": "_gameshark",
+  "url": "https://gamefaqs.gamespot.com/gba/449471-castlevania-circle-of-the-moon/saves/10984",
+  "source_page": "https://gamefaqs.gamespot.com/gba/449471-castlevania-circle-of-the-moon/saves",
+  "source": "GameFAQs (section 'GameBoy Advance GameShark Save (Europe)')",
+  "author": "supernovamoogle",
+  "licence": null,
+  "posted": "2006-03-03",
+  "fetched": "2026-11-05",
+  "what_it_is": "Magician mode unlocked, all most all cards, bet arena",
+  "gamefaqs": {
+    "id": 10984,
+    "product": "Castlevania: Circle of the Moon",
+    "section": "GameBoy Advance GameShark Save (Europe)",
+    "region": "Europe",
+    "served_as": "castlevania-circle-of-the-moon.10984.sps",
+    "listed_size": "64KB"
+  },
+  "format": "SharkPort save (\"SharkPortSave\", kind 0x000F0000): title \"DRACULA AGB1\", date \"03/03/2006 16:26:22\", notes \"\"; cart header \"DRACULA AGB1\" / 'AAMP' (complement 0xa6); payload 65536 bytes; checksum: signed",
+  "files": {
+    "castlevania-circle-of-the-moon.10984.sps": {
+      "size": 65636,
+      "sha1": "37fe0b52b9f79931c65e59ce2a1195bcac22ae74"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Castlevania (Europe).gba",
+      "sha1": "a127e0c62ce61cd72661a1af6f0bda18bcad26b3",
+      "size": 8388608
+    },
+    "converted_with": "tools/gamefaqs/gba-sharkport.py castlevania-circle-of-the-moon.10984.sps --rom ROM --core CORE --outdir DIR: reads the SharkPort container as mGBA does and imports the payload as mGBA's _importSavedata does (cut to the chip, EEPROM 8-byte blocks reversed, the rest of the chip erased), then lays the chip out as the core keeps it",
+    "converted": {
+      "size": 32768,
+      "sha1": "ede9c63d5696be2ec8c27178e24cdfe331572e05"
+    },
+    "script": "scripts/gba/Castlevania - Circle of the Moon.load.txt",
+    "cores": {
+      "mgba": {
+        "result": "loads",
+        "detail": "DATA SELECT: MIKE, Audience Room, LV 53, 98.4%, 10:02:52",
+        "core_version": "mGBA 0.11-212-7a12d6d",
+        "file": {
+          "name": "Castlevania (Europe).srm",
+          "size": 32768,
+          "sha1": "ede9c63d5696be2ec8c27178e24cdfe331572e05"
+        },
+        "frame": "files"
+      },
+      "vba-m": {
+        "result": "loads",
+        "detail": "DATA SELECT: MIKE, Audience Room, LV 53, 98.4%, 10:02:52",
+        "core_version": "VBA-M 115defb",
+        "file": {
+          "name": "Castlevania (Europe).srm",
+          "size": 32768,
+          "sha1": "ede9c63d5696be2ec8c27178e24cdfe331572e05"
+        },
+        "frame": "files"
+      },
+      "gpsp": {
+        "result": "loads",
+        "detail": "DATA SELECT: MIKE, Audience Room, LV 53, 98.4%, 10:02:52",
+        "core_version": "gpSP v1.1.0-5819380",
+        "file": {
+          "name": "Castlevania (Europe).srm",
+          "size": 131072,
+          "sha1": "8acbb5f553891b3affa9dc23259a8b50fa4a9e0e"
+        },
+        "frame": "files"
+      },
+      "vba-next": {
+        "result": "loads",
+        "detail": "DATA SELECT: MIKE, Audience Room, LV 53, 98.4%, 10:02:52",
+        "core_version": "VBA Next v1.0.2",
+        "file": {
+          "name": "Castlevania (Europe).srm",
+          "size": 139264,
+          "sha1": "42e2ea23994255bcc31a133b64e98a90486bdab7"
+        },
+        "frame": "files"
+      },
+      "beetle-gba": {
+        "result": "loads",
+        "detail": "DATA SELECT: MIKE, Audience Room, LV 53, 98.4%, 10:02:52",
+        "core_version": "Beetle GBA v0.9.36 b158166",
+        "file": {
+          "name": "Castlevania (Europe).b7b0e7a5f8e8bd22ac9f5766d1acef56.sav",
+          "size": 65536,
+          "sha1": "8331368315a593c83d03a2c74ad6287600a2055f"
+        },
+        "frame": "files"
+      },
+      "skyemu": {
+        "result": "loads",
+        "detail": "DATA SELECT: MIKE, Audience Room, LV 53, 98.4%, 10:02:52",
+        "core_version": "SkyEmu adacd0788964ed89f5c43dcbc1f3cc26deec996c",
+        "file": {
+          "name": "Castlevania (Europe).srm",
+          "size": 131072,
+          "sha1": "8acbb5f553891b3affa9dc23259a8b50fa4a9e0e"
+        },
+        "frame": "files"
+      }
+    },
+    "proof_order": [
+      "mgba",
+      "vba-m",
+      "gpsp",
+      "vba-next",
+      "beetle-gba",
+      "skyemu"
+    ]
+  },
+  "note": null
+}

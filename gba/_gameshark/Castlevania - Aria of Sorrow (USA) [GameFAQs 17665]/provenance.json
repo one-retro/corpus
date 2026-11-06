@@ -1,0 +1,119 @@
+{
+  "method": "downloaded",
+  "system": "gba",
+  "core": "_gameshark",
+  "url": "https://gamefaqs.gamespot.com/gba/589456-castlevania-aria-of-sorrow/saves/17665",
+  "source_page": "https://gamefaqs.gamespot.com/gba/589456-castlevania-aria-of-sorrow/saves",
+  "source": "GameFAQs (section 'GameBoy Advance GameShark Save (North America)')",
+  "author": "Aether_Knight",
+  "licence": null,
+  "posted": "2008-08-09",
+  "fetched": "2026-11-05",
+  "what_it_is": "Sv2-Start game at Top Floor with max. map,(301.8%) level,(99) & gold. ALL Souls x30, ALL Equip/Items(x99)& ALL abilities. Sv3-Same as Sv2, but with Julius.",
+  "gamefaqs": {
+    "id": 17665,
+    "product": "Castlevania: Aria of Sorrow",
+    "section": "GameBoy Advance GameShark Save (North America)",
+    "region": "North America",
+    "served_as": "castlevania-aria-of-sorrow.17665.sps",
+    "listed_size": "64KB"
+  },
+  "format": "SharkPort save (\"SharkPortSave\", kind 0x000F0000): title \"CASTLEVANIA2\", date \"8/5/2008 11:36:52 AM\", notes \"Sv2-Start game at Top Floor w/max.\r\nmap,(301.8%) level,(9...\"; cart header \"CASTLEVANIA2\" / 'A2CE' (complement 0x84); payload 65536 bytes; checksum: signed",
+  "files": {
+    "castlevania-aria-of-sorrow.17665.sps": {
+      "size": 65824,
+      "sha1": "a233af3e10b1b9a63eb179ded81f1232e1bfdf73"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Castlevania - Aria of Sorrow (USA).gba",
+      "sha1": "abd71fe01ebb201bcc133074db1dd8c5253776c7",
+      "size": 8388608
+    },
+    "converted_with": "tools/gamefaqs/gba-sharkport.py castlevania-aria-of-sorrow.17665.sps --rom ROM --core CORE --outdir DIR: reads the SharkPort container as mGBA does and imports the payload as mGBA's _importSavedata does (cut to the chip, EEPROM 8-byte blocks reversed, the rest of the chip erased), then lays the chip out as the core keeps it",
+    "converted": {
+      "size": 32768,
+      "sha1": "3e1b4c302e5ad8e836c15e49fbcca1b40e3a09d4"
+    },
+    "script": "scripts/gba/Castlevania - Aria of Sorrow.load.txt",
+    "cores": {
+      "mgba": {
+        "result": "loads",
+        "detail": "Select Data: file 1 empty, files 2 and 3 present, and the Julius mode prompt (\"Enter JULIUS\") that a cleared game unlocks",
+        "core_version": "mGBA 0.11-212-7a12d6d",
+        "file": {
+          "name": "Castlevania - Aria of Sorrow (USA).srm",
+          "size": 32768,
+          "sha1": "3e1b4c302e5ad8e836c15e49fbcca1b40e3a09d4"
+        },
+        "frame": "files"
+      },
+      "vba-m": {
+        "result": "loads",
+        "detail": "Select Data: file 1 empty, files 2 and 3 present, and the Julius mode prompt (\"Enter JULIUS\") that a cleared game unlocks",
+        "core_version": "VBA-M 115defb",
+        "file": {
+          "name": "Castlevania - Aria of Sorrow (USA).srm",
+          "size": 32768,
+          "sha1": "3e1b4c302e5ad8e836c15e49fbcca1b40e3a09d4"
+        },
+        "frame": "files"
+      },
+      "gpsp": {
+        "result": "loads",
+        "detail": "Select Data: file 1 empty, files 2 and 3 present, and the Julius mode prompt (\"Enter JULIUS\") that a cleared game unlocks",
+        "core_version": "gpSP v1.1.0-5819380",
+        "file": {
+          "name": "Castlevania - Aria of Sorrow (USA).srm",
+          "size": 131072,
+          "sha1": "608f935c68c8c4eb966a6d1e764acf475f338999"
+        },
+        "frame": "files"
+      },
+      "vba-next": {
+        "result": "loads",
+        "detail": "Select Data: file 1 empty, files 2 and 3 present, and the Julius mode prompt (\"Enter JULIUS\") that a cleared game unlocks",
+        "core_version": "VBA Next v1.0.2",
+        "file": {
+          "name": "Castlevania - Aria of Sorrow (USA).srm",
+          "size": 139264,
+          "sha1": "c70c8b240ed008a170f621f1e2aaa9631583600f"
+        },
+        "frame": "files"
+      },
+      "beetle-gba": {
+        "result": "loads",
+        "detail": "Select Data: file 1 empty, files 2 and 3 present, and the Julius mode prompt (\"Enter JULIUS\") that a cleared game unlocks",
+        "core_version": "Beetle GBA v0.9.36 b158166",
+        "file": {
+          "name": "Castlevania - Aria of Sorrow (USA).e7470df4d241f73060d14437011b90ce.sav",
+          "size": 65536,
+          "sha1": "96c70b25bb50ef52ee957780831c955d2c298e13"
+        },
+        "frame": "files"
+      },
+      "skyemu": {
+        "result": "loads",
+        "detail": "Select Data: file 1 empty, files 2 and 3 present, and the Julius mode prompt (\"Enter JULIUS\") that a cleared game unlocks",
+        "core_version": "SkyEmu adacd0788964ed89f5c43dcbc1f3cc26deec996c",
+        "file": {
+          "name": "Castlevania - Aria of Sorrow (USA).srm",
+          "size": 131072,
+          "sha1": "608f935c68c8c4eb966a6d1e764acf475f338999"
+        },
+        "frame": "files"
+      }
+    },
+    "proof_order": [
+      "mgba",
+      "vba-m",
+      "gpsp",
+      "vba-next",
+      "beetle-gba",
+      "skyemu"
+    ]
+  },
+  "note": null
+}

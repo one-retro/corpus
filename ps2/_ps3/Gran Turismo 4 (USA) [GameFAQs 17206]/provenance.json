@@ -1,0 +1,131 @@
+{
+  "method": "downloaded",
+  "system": "ps2",
+  "core": "_ps3",
+  "url": "https://gamefaqs.gamespot.com/ps2/561066-gran-turismo-4/saves/17206",
+  "source_page": "https://gamefaqs.gamespot.com/ps2/561066-gran-turismo-4/saves",
+  "source": "GameFAQs (section 'PlayStation 2 PS3 Virtual Memory Card Save (ZIP) (North America)')",
+  "author": "Tsuruke",
+  "licence": null,
+  "posted": "2008-05-30",
+  "fetched": "2026-11-05",
+  "what_it_is": "9,385,004 money, 100%, all cars, all lisence.",
+  "gamefaqs": {
+    "id": 17206,
+    "product": "Gran Turismo 4",
+    "section": "PlayStation 2 PS3 Virtual Memory Card Save (ZIP) (North America)",
+    "region": "North America",
+    "served_as": "gran-turismo-4.17206.zip",
+    "listed_size": "1487KB"
+  },
+  "format": "PS3 Virtual Memory Card export (.PSV): '\\0VSP' header, PS2 save type 2, 1528984 bytes, folder BASCUS-97328GAMEDATA, 4 files, 1528584 bytes of file data",
+  "files": {
+    "PS3/EXPORT/PSV/BASCUS-9732847414D4544415441.PSV": {
+      "size": 1528984,
+      "sha1": "de850a7d541da5cc6699d836abebd2343a1fd5b5"
+    }
+  },
+  "save": {
+    "folder": "BASCUS-97328GAMEDATA",
+    "title": [
+      "GRAN TURISMO 4",
+      "Game data"
+    ],
+    "times": "as the file stores them (PS2 card times, JST)",
+    "files": [
+      {
+        "name": "garage",
+        "size": 1280064,
+        "sha1": "527e7e084c07a80d70b076130f15fc8c443892b2",
+        "created": "2007-05-18 11:16:16",
+        "modified": "2007-05-18 11:16:29"
+      },
+      {
+        "name": "BASCUS-97328GAMEDATA",
+        "size": 237760,
+        "sha1": "5e607b5b1fff1c0b5f1ec84151adb8a7f228a86e",
+        "created": "2007-05-18 11:16:29",
+        "modified": "2007-05-18 11:16:32"
+      },
+      {
+        "name": "icon0.ico",
+        "size": 9796,
+        "sha1": "5c55e0ea3f302b6ce15d03fb247039d41b83f032",
+        "created": "2007-05-18 11:16:32",
+        "modified": "2007-05-18 11:16:32"
+      },
+      {
+        "name": "icon.sys",
+        "size": 964,
+        "sha1": "cce82f67a0f89c70731af7b0fb0b9c752fd05e5e",
+        "created": "2007-05-18 11:16:32",
+        "modified": "2007-05-18 11:16:32"
+      }
+    ]
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Gran Turismo 4 (USA).iso",
+      "sha1": "5b1dbf056f45f8023e8e4958e6d7deb31fc64a47",
+      "size": 5314478080
+    },
+    "converted_with": "tools/gamefaqs/ps2-card.py 'PS3/EXPORT/PSV/BASCUS-9732847414D4544415441.PSV' -o OUT: reads the save with mymcplus 3.0.5 and writes OUT/Mcd001.ps2 (an 8 MiB card with ECC, formatted and filled by mymcplus) for lrps2/pcee2/pcsx2, and OUT/mc0/<folder>/ for Play!",
+    "converted": {
+      "Mcd001.ps2": {
+        "size": 8650752,
+        "sha1": "835a1342b623ad9a4cb733e26ea05442a79648aa"
+      },
+      "mc0/BASCUS-97328GAMEDATA/": {
+        "garage": {
+          "size": 1280064,
+          "sha1": "527e7e084c07a80d70b076130f15fc8c443892b2"
+        },
+        "BASCUS-97328GAMEDATA": {
+          "size": 237760,
+          "sha1": "5e607b5b1fff1c0b5f1ec84151adb8a7f228a86e"
+        },
+        "icon0.ico": {
+          "size": 9796,
+          "sha1": "5c55e0ea3f302b6ce15d03fb247039d41b83f032"
+        },
+        "icon.sys": {
+          "size": 964,
+          "sha1": "cce82f67a0f89c70731af7b0fb0b9c752fd05e5e"
+        }
+      },
+      "read_back": "work/ps2/tools/mcfs.py lists every file with the size and SHA-1 put on the card; one-saves (1saves convert + inspect) reads the card and finds BASCUS-97328GAMEDATA",
+      "timestamps": "what the save does not date is 2000-01-01 00:00:00 (JST, as a card stores it); the card's own root entries too"
+    },
+    "script": "scripts/ps2/Gran Turismo 4 (USA).load.txt",
+    "cores": {
+      "pcee2": {
+        "detail": "no 'create game data' prompt; GT Mode map: Formula Gran Turismo, Cr 9,385,004, 29 OCT; John's Home: Complete 100.0%, A-spec 22838 points, B-spec 4818, Days 1307",
+        "result": "loads"
+      },
+      "lrps2": {
+        "detail": "no 'create game data' prompt; GT Mode map: Formula Gran Turismo, Cr 9,385,004, 29 OCT; John's Home: Complete 100.0%, A-spec 22838 points, B-spec 4818, Days 1307",
+        "result": "loads"
+      },
+      "play": {
+        "detail": "John's Home: Complete 100.0%, A-spec 22838, B-spec 4818, Days 1307; Formula Gran Turismo, Cr 9,385,004, 29 OCT (as PCEE2)",
+        "result": "loads"
+      },
+      "pcsx2": {
+        "detail": "no 'create game data' prompt; GT Mode map: Formula Gran Turismo, Cr 9,385,004, 29 OCT; John's Home: Complete 100.0%, A-spec 22838 points, B-spec 4818, Days 1307",
+        "result": "loads"
+      },
+      "armsx2": {
+        "result": "not-run",
+        "detail": "ARMSX2 renders only through Vulkan here and falls back to a null GS (no picture), so nothing shows what the game read (ps2/NOTES.md)"
+      }
+    },
+    "proof_order": [
+      "pcee2",
+      "lrps2",
+      "play",
+      "pcsx2"
+    ]
+  },
+  "note": null
+}

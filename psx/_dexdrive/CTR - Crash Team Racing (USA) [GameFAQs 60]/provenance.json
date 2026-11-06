@@ -1,0 +1,84 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_dexdrive",
+  "url": "https://gamefaqs.gamespot.com/ps/196989-ctr-crash-team-racing/saves/60",
+  "source_page": "https://gamefaqs.gamespot.com/ps/196989-ctr-crash-team-racing/saves",
+  "source": "GameFAQs (section 'PlayStation DexDrive Save (North America)')",
+  "author": "MTsuboi",
+  "licence": null,
+  "posted": "2000-06-06",
+  "fetched": "2026-11-05",
+  "what_it_is": "Have 100% in the Adventure mode and all tracks (include the battle's hidden), and all characters.",
+  "gamefaqs": {
+    "id": 60,
+    "product": "CTR: Crash Team Racing",
+    "section": "PlayStation DexDrive Save (North America)",
+    "region": "North America",
+    "served_as": "ctr-crash-team-racing.60.gme",
+    "listed_size": "131KB"
+  },
+  "format": "DexDrive .gme: '123-456-STD' 3904-byte header (per-block comments) + 131072-byte raw card; the card holds 1 save(s), 1 for this game (BASCUS-94426-SLOTS)",
+  "release": "CTR - Crash Team Racing (USA)",
+  "game_saves": [
+    {
+      "name": "BASCUS-94426-SLOTS",
+      "blocks": 1,
+      "title": "CTR:Saved Games and Scores"
+    }
+  ],
+  "files": {
+    "ctr-crash-team-racing.60.gme": {
+      "size": 134976,
+      "sha1": "d6124fdc74979647ac7d6e9ccebee0a7d705ec15"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "CTR - Crash Team Racing (USA).cue",
+      "sha1": "2ff60f30b7f068b9c79adb5311004a940d72de07",
+      "size": 95
+    },
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr ctr-crash-team-racing.60.gme: unwraps the card (DexDrive .gme: 3904-byte header + card)",
+    "converted": {
+      "size": 131072,
+      "sha1": "dcd17e257cc8e205beacd4ac17ed9b8bd0870e1d"
+    },
+    "script": "scripts/psx/CTR - Crash Team Racing.load.txt",
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "loads",
+        "detail": "Choose a Game to Load shows SUPER: 16 trophies, 100%, 4 keys, 18 relics"
+      },
+      "beetle-psx-hw": {
+        "result": "loads",
+        "detail": "Choose a Game to Load shows SUPER: 16 trophies, 100%, 4 keys, 18 relics (the same screen as on beetle-psx)"
+      },
+      "pcsx-rearmed": {
+        "result": "loads",
+        "detail": "Choose a Game to Load shows SUPER: 16 trophies, 100%, 4 keys, 18 relics (the same screen as on beetle-psx)"
+      },
+      "swanstation": {
+        "result": "loads",
+        "detail": "Choose a Game to Load shows SUPER: 16 trophies, 100%, 4 keys, 18 relics (the same screen as on beetle-psx)"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": [
+      "beetle-psx",
+      "beetle-psx-hw",
+      "pcsx-rearmed",
+      "swanstation"
+    ]
+  },
+  "note": null
+}

@@ -1,0 +1,12 @@
+# Silent Hill, SwanStation variant: title > Load > the memory card's file list (data, time, saves).
+wait 1500           # BIOS logos
+repeat 5            # SwanStation: the title shows after four presses and, left alone, soon
+                    # gives way to the intro movie; the fifth press keeps it up
+press start 6
+wait 250
+end
+press up 6          # LOAD (the cursor starts on CONTINUE when a save is found)
+wait 30
+press start 6
+wait 300
+shot load

@@ -1,0 +1,84 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_dexdrive",
+  "url": "https://gamefaqs.gamespot.com/ps/572481-loaded/saves/1579",
+  "source_page": "https://gamefaqs.gamespot.com/ps/572481-loaded/saves",
+  "source": "GameFAQs (section 'PlayStation DexDrive Save (North America)')",
+  "author": "NeoGamer",
+  "licence": null,
+  "posted": "2002-03-14",
+  "fetched": "2026-11-05",
+  "what_it_is": "Final level with character: Bounca.",
+  "gamefaqs": {
+    "id": 1579,
+    "product": "Loaded",
+    "section": "PlayStation DexDrive Save (North America)",
+    "region": "North America",
+    "served_as": "loaded.1579.gme",
+    "listed_size": "131KB"
+  },
+  "format": "DexDrive .gme: '123-456-STD' 3904-byte header (per-block comments) + 131072-byte raw card; the card holds 1 save(s), 1 for this game (BASLUS-00076LOADED00)",
+  "release": "Loaded (USA) (En,Fr)",
+  "game_saves": [
+    {
+      "name": "BASLUS-00076LOADED00",
+      "blocks": 1,
+      "title": "LOADED Save 1"
+    }
+  ],
+  "files": {
+    "loaded.1579.gme": {
+      "size": 134976,
+      "sha1": "6d35add5bb4c17eaf39fe662a42291d88de5bbed"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Loaded (USA) (En,Fr).cue",
+      "sha1": "717181be7b88fa175e413c105a661b010d5ecff5",
+      "size": 3432
+    },
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr loaded.1579.gme: unwraps the card (DexDrive .gme: 3904-byte header + card)",
+    "converted": {
+      "size": 131072,
+      "sha1": "5ac8df703a4072cdf0097a25c22447ba31f2d3eb"
+    },
+    "script": "scripts/psx/Loaded.load.txt",
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "loads",
+        "detail": "Load Game shows slot 1: a character portrait, LEVEL 15"
+      },
+      "beetle-psx-hw": {
+        "result": "loads",
+        "detail": "Load Game shows slot 1: a character portrait, LEVEL 15 (the same screen as on beetle-psx)"
+      },
+      "pcsx-rearmed": {
+        "result": "loads",
+        "detail": "Load Game shows slot 1: a character portrait, LEVEL 15 (the same screen as on beetle-psx)"
+      },
+      "swanstation": {
+        "result": "loads",
+        "detail": "Load Game shows slot 1: a character portrait, LEVEL 15 (the same screen as on beetle-psx)"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": [
+      "beetle-psx",
+      "beetle-psx-hw",
+      "pcsx-rearmed",
+      "swanstation"
+    ]
+  },
+  "note": null
+}

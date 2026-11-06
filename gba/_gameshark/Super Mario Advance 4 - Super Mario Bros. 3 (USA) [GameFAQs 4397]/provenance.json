@@ -1,0 +1,119 @@
+{
+  "method": "downloaded",
+  "system": "gba",
+  "core": "_gameshark",
+  "url": "https://gamefaqs.gamespot.com/gba/589393-super-mario-advance-4-super-mario-bros-3/saves/4397",
+  "source_page": "https://gamefaqs.gamespot.com/gba/589393-super-mario-advance-4-super-mario-bros-3/saves",
+  "source": "GameFAQs (section 'GameBoy Advance GameShark Save (North America)')",
+  "author": "kenb215",
+  "licence": null,
+  "posted": "2004-06-25",
+  "fetched": "2026-11-05",
+  "what_it_is": "1 game save, world 8, all levels beaten, full inventory, can play any level",
+  "gamefaqs": {
+    "id": 4397,
+    "product": "Super Mario Advance 4: Super Mario Bros. 3",
+    "section": "GameBoy Advance GameShark Save (North America)",
+    "region": "North America",
+    "served_as": "super-mario-advance-4-super-mario-bros-3.4397.sps",
+    "listed_size": "64KB"
+  },
+  "format": "SharkPort save (\"SharkPortSave\", kind 0x000F0000): title \"SUPER MARIO 3\", date \"1 File, all levels beat, items box full\", notes \"SUPERMARSave6252646700\"; cart header \"SUPER MARIOD\" / 'AX4E' (complement 0x73); payload 65536 bytes; checksum: unsigned",
+  "files": {
+    "super-mario-advance-4-super-mario-bros-3.4397.sps": {
+      "size": 65679,
+      "sha1": "a9caebd2f513832e58d156e4534553f347d7b3f0"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Super Mario Advance 4 - Super Mario Bros. 3 (USA).gba",
+      "sha1": "69e81f41394f02d64cad206adb26b3cd43690770",
+      "size": 4194304
+    },
+    "converted_with": "tools/gamefaqs/gba-sharkport.py super-mario-advance-4-super-mario-bros-3.4397.sps --rom ROM --core CORE --outdir DIR: reads the SharkPort container as mGBA does and imports the payload as mGBA's _importSavedata does (cut to the chip, EEPROM 8-byte blocks reversed, the rest of the chip erased), then lays the chip out as the core keeps it",
+    "converted": {
+      "size": 131072,
+      "sha1": "54fed08a86542211e386ceb15e95e09c99c370fc"
+    },
+    "script": "scripts/gba/Super Mario Advance 4 - Super Mario Bros. 3.load.txt",
+    "cores": {
+      "mgba": {
+        "result": "loads",
+        "detail": "the power-on read takes about 1100 frames longer than for a whole save; Select a File: File 1 WORLD 1",
+        "core_version": "mGBA 0.11-212-7a12d6d",
+        "file": {
+          "name": "Super Mario Advance 4 - Super Mario Bros. 3 (USA).srm",
+          "size": 131072,
+          "sha1": "54fed08a86542211e386ceb15e95e09c99c370fc"
+        },
+        "frame": "files"
+      },
+      "vba-m": {
+        "result": "loads",
+        "detail": "the power-on read takes about 1100 frames longer than for a whole save; Select a File: File 1 WORLD 1",
+        "core_version": "VBA-M 115defb",
+        "file": {
+          "name": "Super Mario Advance 4 - Super Mario Bros. 3 (USA).srm",
+          "size": 131072,
+          "sha1": "54fed08a86542211e386ceb15e95e09c99c370fc"
+        },
+        "frame": "files"
+      },
+      "gpsp": {
+        "result": "loads",
+        "detail": "the power-on read takes about 1100 frames longer than for a whole save; Select a File: File 1 WORLD 1",
+        "core_version": "gpSP v1.1.0-5819380",
+        "file": {
+          "name": "Super Mario Advance 4 - Super Mario Bros. 3 (USA).srm",
+          "size": 131072,
+          "sha1": "54fed08a86542211e386ceb15e95e09c99c370fc"
+        },
+        "frame": "files"
+      },
+      "vba-next": {
+        "result": "loads",
+        "detail": "the power-on read takes about 1100 frames longer than for a whole save; Select a File: File 1 WORLD 1",
+        "core_version": "VBA Next v1.0.2",
+        "file": {
+          "name": "Super Mario Advance 4 - Super Mario Bros. 3 (USA).srm",
+          "size": 139264,
+          "sha1": "3ea2f9fc56701d56307878bde61c3ff82e68ab98"
+        },
+        "frame": "files"
+      },
+      "beetle-gba": {
+        "result": "loads",
+        "detail": "the power-on read takes about 1100 frames longer than for a whole save; Select a File: File 1 WORLD 1",
+        "core_version": "Beetle GBA v0.9.36 b158166",
+        "file": {
+          "name": "Super Mario Advance 4 - Super Mario Bros. 3 (USA).4e5fde12dbd0441150a9c177e545f56f.sav",
+          "size": 131072,
+          "sha1": "54fed08a86542211e386ceb15e95e09c99c370fc"
+        },
+        "frame": "files"
+      },
+      "skyemu": {
+        "result": "loads",
+        "detail": "the power-on read takes about 1100 frames longer than for a whole save; Select a File: File 1 WORLD 1",
+        "core_version": "SkyEmu adacd0788964ed89f5c43dcbc1f3cc26deec996c",
+        "file": {
+          "name": "Super Mario Advance 4 - Super Mario Bros. 3 (USA).srm",
+          "size": 131072,
+          "sha1": "54fed08a86542211e386ceb15e95e09c99c370fc"
+        },
+        "frame": "files"
+      }
+    },
+    "proof_order": [
+      "mgba",
+      "vba-m",
+      "gpsp",
+      "vba-next",
+      "beetle-gba",
+      "skyemu"
+    ]
+  },
+  "note": "The GameShark copied only the first 64 KiB of the 128 KiB flash; imported as mGBA does, the second half of the chip stays erased."
+}

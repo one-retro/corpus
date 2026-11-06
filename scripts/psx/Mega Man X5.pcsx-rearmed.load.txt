@@ -1,0 +1,14 @@
+# Mega Man X5, PCSX-ReARMed variant: title > Continue > memory card slot 1 > the file select.
+wait 1500           # BIOS logos
+repeat 2            # PCSX-ReARMed shows the title menu after two presses; a third starts a game
+press start 6
+wait 250
+end
+press down 6        # CONTINUE
+wait 30
+press start 6
+wait 300
+shot card
+press b 6           # slot 1
+wait 400
+shot load

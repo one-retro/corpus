@@ -1,0 +1,75 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_dexdrive",
+  "url": "https://gamefaqs.gamespot.com/ps/198641-silent-hill/saves/27076",
+  "source_page": "https://gamefaqs.gamespot.com/ps/198641-silent-hill/saves",
+  "source": "GameFAQs (section 'PlayStation DexDrive Save (Japan)')",
+  "author": "Siegfried1086",
+  "licence": null,
+  "posted": "2020-07-14",
+  "fetched": "2026-11-05",
+  "what_it_is": "Hard Mode - Bullet Adjust x6, Katana, Channeling Stone, Chainsaw, Rock Drill, Gasoline Container and Hyperblaster with Red, Orange & Green Beam Unlocked.",
+  "gamefaqs": {
+    "id": 27076,
+    "product": "Silent Hill (1999)",
+    "section": "PlayStation DexDrive Save (Japan)",
+    "region": "Japan",
+    "served_as": "silent-hill-1999.27076.gme",
+    "listed_size": "131KB"
+  },
+  "format": "DexDrive .gme: '123-456-STD' 3904-byte header (per-block comments) + 131072-byte raw card; the card holds 1 save(s), 1 for this game (BISLPM-86192SILENT00)",
+  "release": "Silent Hill (Japan)",
+  "game_saves": [
+    {
+      "name": "BISLPM-86192SILENT00",
+      "blocks": 1,
+      "title": "サイレントヒル ファイル01"
+    }
+  ],
+  "files": {
+    "silent-hill-1999.27076.gme": {
+      "size": 134976,
+      "sha1": "254e5ca74be6da2a7bcac1a7377a564e645285f2"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": null,
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr silent-hill-1999.27076.gme: unwraps the card (DexDrive .gme: 3904-byte header + card)",
+    "converted": {
+      "size": 131072,
+      "sha1": "4b87c3e561024c1d2f174db15b9f1b6508818f0a"
+    },
+    "script": null,
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "not-run",
+        "detail": "no image of Silent Hill (Japan) in the library"
+      },
+      "beetle-psx-hw": {
+        "result": "not-run",
+        "detail": "no image of Silent Hill (Japan) in the library"
+      },
+      "pcsx-rearmed": {
+        "result": "not-run",
+        "detail": "no image of Silent Hill (Japan) in the library"
+      },
+      "swanstation": {
+        "result": "not-run",
+        "detail": "no image of Silent Hill (Japan) in the library"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": []
+  },
+  "note": null
+}

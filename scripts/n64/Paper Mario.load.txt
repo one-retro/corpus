@@ -1,0 +1,9 @@
+# Paper Mario, load check: power on, title, the file select (each file's
+# name, play time and star spirits).
+# N64 buttons on the RetroPad: A = b, B = y, Z = l2, Start = start.
+wait 900
+press start 6       # title (after the logos)
+wait 200
+press start 6       # -> Select file to start
+wait 300
+shot select

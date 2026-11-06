@@ -1,0 +1,119 @@
+{
+  "method": "downloaded",
+  "system": "gba",
+  "core": "_gameshark-sp",
+  "url": "https://gamefaqs.gamespot.com/gba/918915-pokemon-firered-version/saves/7741",
+  "source_page": "https://gamefaqs.gamespot.com/gba/918915-pokemon-firered-version/saves",
+  "source": "GameFAQs (section 'GameBoy Advance GameShark SP Save File (North America)')",
+  "author": "sleep_mode",
+  "licence": null,
+  "posted": "2005-05-16",
+  "fetched": "2026-11-05",
+  "what_it_is": "Full Pokedex, All Badges, Name: Max, Money: 342,750",
+  "gamefaqs": {
+    "id": 7741,
+    "product": "Pokemon FireRed / LeafGreen Version",
+    "section": "GameBoy Advance GameShark SP Save File (North America)",
+    "region": "North America",
+    "served_as": "pokemon-firered-leafgreen-version.7741.gsv",
+    "listed_size": "33KB"
+  },
+  "format": "GameShark SP save (\"ADVSAVEG\"): cart title \"POKEMON FIRE\", type 2 (SRAM 32 KiB), payload 32768 bytes at 0x430",
+  "files": {
+    "pokemon-firered-leafgreen-version.7741.gsv": {
+      "size": 33840,
+      "sha1": "8ec4f2355ad0fb9b6b07c4ebe95ec90483a5a04d"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Pokemon - FireRed Version (USA, Europe) (Rev 1).gba",
+      "sha1": "dd5945db9b930750cb39d00c84da8571feebf417",
+      "size": 16777216
+    },
+    "converted_with": "tools/gamefaqs/gba-gsv.py pokemon-firered-leafgreen-version.7741.gsv --rom ROM --core CORE --outdir DIR: reads the GameShark SP container as mGBA does and imports the payload as mGBA's _importSavedata does, then lays the chip out as the core keeps it",
+    "converted": {
+      "size": 131072,
+      "sha1": "ff9ecfe72eb4f085741cadbf049d37ac3351e8ab"
+    },
+    "script": "scripts/gba/Pokemon - FireRed Version.load.txt",
+    "cores": {
+      "mgba": {
+        "result": "rejected",
+        "detail": "no save found: the game starts a new one (CONTROLS)",
+        "core_version": "mGBA 0.11-212-7a12d6d",
+        "file": {
+          "name": "Pokemon - FireRed Version (USA, Europe) (Rev 1).srm",
+          "size": 131072,
+          "sha1": "ff9ecfe72eb4f085741cadbf049d37ac3351e8ab"
+        },
+        "frame": "menu"
+      },
+      "vba-m": {
+        "result": "rejected",
+        "detail": "no save found: the game starts a new one (CONTROLS)",
+        "core_version": "VBA-M 115defb",
+        "file": {
+          "name": "Pokemon - FireRed Version (USA, Europe) (Rev 1).srm",
+          "size": 131072,
+          "sha1": "ff9ecfe72eb4f085741cadbf049d37ac3351e8ab"
+        },
+        "frame": "menu"
+      },
+      "gpsp": {
+        "result": "rejected",
+        "detail": "no save found: the game starts a new one (CONTROLS)",
+        "core_version": "gpSP v1.1.0-5819380",
+        "file": {
+          "name": "Pokemon - FireRed Version (USA, Europe) (Rev 1).srm",
+          "size": 131072,
+          "sha1": "ff9ecfe72eb4f085741cadbf049d37ac3351e8ab"
+        },
+        "frame": "menu"
+      },
+      "vba-next": {
+        "result": "rejected",
+        "detail": "no save found: the game starts a new one (CONTROLS)",
+        "core_version": "VBA Next v1.0.2",
+        "file": {
+          "name": "Pokemon - FireRed Version (USA, Europe) (Rev 1).srm",
+          "size": 139264,
+          "sha1": "363111255a55bbac61730b77c989d8bdd2f3bfb0"
+        },
+        "frame": "menu"
+      },
+      "beetle-gba": {
+        "result": "rejected",
+        "detail": "no save found: the game starts a new one (CONTROLS)",
+        "core_version": "Beetle GBA v0.9.36 b158166",
+        "file": {
+          "name": "Pokemon - FireRed Version (USA, Europe) (Rev 1).51901a6e40661b3914aa333c802e24e8.sav",
+          "size": 131072,
+          "sha1": "ff9ecfe72eb4f085741cadbf049d37ac3351e8ab"
+        },
+        "frame": "menu"
+      },
+      "skyemu": {
+        "result": "rejected",
+        "detail": "no save found: the game starts a new one (CONTROLS)",
+        "core_version": "SkyEmu adacd0788964ed89f5c43dcbc1f3cc26deec996c",
+        "file": {
+          "name": "Pokemon - FireRed Version (USA, Europe) (Rev 1).srm",
+          "size": 131072,
+          "sha1": "ff9ecfe72eb4f085741cadbf049d37ac3351e8ab"
+        },
+        "frame": "menu"
+      }
+    },
+    "proof_order": [
+      "mgba",
+      "vba-m",
+      "gpsp",
+      "vba-next",
+      "beetle-gba",
+      "skyemu"
+    ]
+  },
+  "note": "The file does not say which revision it is for; it was booted in the revision the corpus uses. The 32 KiB payload is the bytes 62 13 00 00 repeated: the flash chip's ID (Sanyo, 0x62 0x13) as read while the chip was in ID mode, not the save. The GameShark SP marked it type 2 (SRAM), and only 32 KiB of the 128 KiB flash were read."
+}

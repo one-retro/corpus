@@ -1,0 +1,119 @@
+{
+  "method": "downloaded",
+  "system": "gba",
+  "core": "_gameshark",
+  "url": "https://gamefaqs.gamespot.com/gba/928398-drill-dozer/saves/10825",
+  "source_page": "https://gamefaqs.gamespot.com/gba/928398-drill-dozer/saves",
+  "source": "GameFAQs (section 'GameBoy Advance GameShark Save (North America)')",
+  "author": "CharlieF",
+  "licence": null,
+  "posted": "2006-02-08",
+  "fetched": "2026-11-05",
+  "what_it_is": "Game beat on normal with all unlockables and hard mode available.",
+  "gamefaqs": {
+    "id": 10825,
+    "product": "Drill Dozer",
+    "section": "GameBoy Advance GameShark Save (North America)",
+    "region": "North America",
+    "served_as": "drill-dozer.10825.sps",
+    "listed_size": "64KB"
+  },
+  "format": "SharkPort save (\"SharkPortSave\", kind 0x000F0000): title \"DRILL DOZER\", date \"2/8/2006 3:07:59 PM\", notes \"Beat with all collectibles and hard mode available.\"; cart header \"DRILL DOZER\" / 'V49E' (complement 0xcd); payload 65536 bytes; checksum: signed",
+  "files": {
+    "drill-dozer.10825.sps": {
+      "size": 65686,
+      "sha1": "ac9b0f5bf29f8fe098cff170f9f3449cf887fe1f"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Drill Dozer (USA).gba",
+      "sha1": "c1058cc2482b91204100cc8515da99aeb06773f5",
+      "size": 8388608
+    },
+    "converted_with": "tools/gamefaqs/gba-sharkport.py drill-dozer.10825.sps --rom ROM --core CORE --outdir DIR: reads the SharkPort container as mGBA does and imports the payload as mGBA's _importSavedata does (cut to the chip, EEPROM 8-byte blocks reversed, the rest of the chip erased), then lays the chip out as the core keeps it",
+    "converted": {
+      "size": 32768,
+      "sha1": "6a44b638bf342f98854482088da1b530642eb1e6"
+    },
+    "script": "scripts/gba/Drill Dozer.load.txt",
+    "cores": {
+      "mgba": {
+        "result": "loads",
+        "detail": "file select: File 1 Trailer, File 2 Hard, Area 1 Tunnel 2",
+        "core_version": "mGBA 0.11-212-7a12d6d",
+        "file": {
+          "name": "Drill Dozer (USA).srm",
+          "size": 32768,
+          "sha1": "6a44b638bf342f98854482088da1b530642eb1e6"
+        },
+        "frame": "files"
+      },
+      "vba-m": {
+        "result": "loads",
+        "detail": "file select: File 1 Trailer, File 2 Hard, Area 1 Tunnel 2",
+        "core_version": "VBA-M 115defb",
+        "file": {
+          "name": "Drill Dozer (USA).srm",
+          "size": 32768,
+          "sha1": "6a44b638bf342f98854482088da1b530642eb1e6"
+        },
+        "frame": "files"
+      },
+      "gpsp": {
+        "result": "loads",
+        "detail": "file select: File 1 Trailer, File 2 Hard, Area 1 Tunnel 2",
+        "core_version": "gpSP v1.1.0-5819380",
+        "file": {
+          "name": "Drill Dozer (USA).srm",
+          "size": 131072,
+          "sha1": "df4afc9b6d784a6a1b1edc0b869f5eb47bbda0cf"
+        },
+        "frame": "files"
+      },
+      "vba-next": {
+        "result": "loads",
+        "detail": "file select: File 1 Trailer, File 2 Hard, Area 1 Tunnel 2",
+        "core_version": "VBA Next v1.0.2",
+        "file": {
+          "name": "Drill Dozer (USA).srm",
+          "size": 139264,
+          "sha1": "fb30b114cc033610624d21c73bac8163cc5d9a44"
+        },
+        "frame": "files"
+      },
+      "beetle-gba": {
+        "result": "loads",
+        "detail": "file select: File 1 Trailer, File 2 Hard, Area 1 Tunnel 2",
+        "core_version": "Beetle GBA v0.9.36 b158166",
+        "file": {
+          "name": "Drill Dozer (USA).14dab12e795098988d46b96885170538.sav",
+          "size": 65536,
+          "sha1": "cff36b442788c1c7392c61fe5679283a59a6ffae"
+        },
+        "frame": "files"
+      },
+      "skyemu": {
+        "result": "core-error",
+        "detail": "the game never starts in SkyEmu: a white screen from power-on to the end of the script, with or without a save (the baseline too)",
+        "core_version": "SkyEmu adacd0788964ed89f5c43dcbc1f3cc26deec996c",
+        "file": {
+          "name": "Drill Dozer (USA).srm",
+          "size": 131072,
+          "sha1": "df4afc9b6d784a6a1b1edc0b869f5eb47bbda0cf"
+        },
+        "frame": "files"
+      }
+    },
+    "proof_order": [
+      "mgba",
+      "vba-m",
+      "gpsp",
+      "vba-next",
+      "beetle-gba",
+      "skyemu"
+    ]
+  },
+  "note": null
+}

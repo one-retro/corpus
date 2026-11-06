@@ -1,0 +1,119 @@
+{
+  "method": "downloaded",
+  "system": "gba",
+  "core": "_gameshark",
+  "url": "https://gamefaqs.gamespot.com/gba/914980-mario-and-luigi-superstar-saga/saves/28903",
+  "source_page": "https://gamefaqs.gamespot.com/gba/914980-mario-and-luigi-superstar-saga/saves",
+  "source": "GameFAQs (section 'GameBoy Advance GameShark Save (Europe)')",
+  "author": "JCRA",
+  "licence": null,
+  "posted": "2023-09-15",
+  "fetched": "2026-11-05",
+  "what_it_is": "Mario & Luigi Lv. 46, In Bowser´s Castle final door, All Advanced techniques, All accessories, some equipment, some badges, some beans.",
+  "gamefaqs": {
+    "id": 28903,
+    "product": "Mario & Luigi: Superstar Saga",
+    "section": "GameBoy Advance GameShark Save (Europe)",
+    "region": "Europe",
+    "served_as": "mario-and-luigi-superstar-saga.28903.sps",
+    "listed_size": "8KB"
+  },
+  "format": "SharkPort save (\"SharkPortSave\", kind 0x000F0000): title \"Mario & Luigi - Superstar Saga (E)\", date \"15/09/2023 02:22:48 pm\", notes \"Created with savefileconverter.com\"; cart header \"MARIO&LUIGIP\" / 'A88P' (complement 0x87); payload 8192 bytes; checksum: neither; written by savefileconverter.com (notes field), whose checksum matches neither variant",
+  "files": {
+    "mario-and-luigi-superstar-saga.28903.sps": {
+      "size": 8351,
+      "sha1": "19311a10c2ac7bfe10f127d626658b77d22d0003"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Mario & Luigi - Superstar Saga (Europe) (En,Fr,De,Es,It).gba",
+      "sha1": "fa2314c2fbe0db1ab17175f8be7cceb0ab084efc",
+      "size": 16777216
+    },
+    "converted_with": "tools/gamefaqs/gba-sharkport.py mario-and-luigi-superstar-saga.28903.sps --rom ROM --core CORE --outdir DIR: reads the SharkPort container as mGBA does and imports the payload as mGBA's _importSavedata does (cut to the chip, EEPROM 8-byte blocks reversed, the rest of the chip erased), then lays the chip out as the core keeps it",
+    "converted": {
+      "size": 8192,
+      "sha1": "4b8983b06d04e579bf21ca578f262862988dd61f"
+    },
+    "script": "scripts/gba/Mario & Luigi - Superstar Saga.load.txt",
+    "cores": {
+      "mgba": {
+        "result": "rejected",
+        "detail": "the language prompt the European release shows only when it finds no save: payload in emulator byte order",
+        "core_version": "mGBA 0.11-212-7a12d6d",
+        "file": {
+          "name": "Mario & Luigi - Superstar Saga (Europe) (En,Fr,De,Es,It).srm",
+          "size": 8192,
+          "sha1": "4b8983b06d04e579bf21ca578f262862988dd61f"
+        },
+        "frame": "files"
+      },
+      "vba-m": {
+        "result": "rejected",
+        "detail": "the language prompt the European release shows only when it finds no save: payload in emulator byte order",
+        "core_version": "VBA-M 115defb",
+        "file": {
+          "name": "Mario & Luigi - Superstar Saga (Europe) (En,Fr,De,Es,It).srm",
+          "size": 8192,
+          "sha1": "4b8983b06d04e579bf21ca578f262862988dd61f"
+        },
+        "frame": "files"
+      },
+      "gpsp": {
+        "result": "rejected",
+        "detail": "the language prompt the European release shows only when it finds no save: payload in emulator byte order",
+        "core_version": "gpSP v1.1.0-5819380",
+        "file": {
+          "name": "Mario & Luigi - Superstar Saga (Europe) (En,Fr,De,Es,It).srm",
+          "size": 131072,
+          "sha1": "644b04cfcbeb530c39b004daae3a563e132e44a8"
+        },
+        "frame": "files"
+      },
+      "vba-next": {
+        "result": "rejected",
+        "detail": "the language prompt the European release shows only when it finds no save: payload in emulator byte order",
+        "core_version": "VBA Next v1.0.2",
+        "file": {
+          "name": "Mario & Luigi - Superstar Saga (Europe) (En,Fr,De,Es,It).srm",
+          "size": 139264,
+          "sha1": "a87c429723214c9ed6f1782e184169977a37043f"
+        },
+        "frame": "files"
+      },
+      "beetle-gba": {
+        "result": "rejected",
+        "detail": "the language prompt the European release shows only when it finds no save: payload in emulator byte order",
+        "core_version": "Beetle GBA v0.9.36 b158166",
+        "file": {
+          "name": "Mario & Luigi - Superstar Saga (Europe) (En,Fr,De,Es,It).3b50b9f9e13e271ead33ee5a234650a9.eep",
+          "size": 8192,
+          "sha1": "4b8983b06d04e579bf21ca578f262862988dd61f"
+        },
+        "frame": "files"
+      },
+      "skyemu": {
+        "result": "rejected",
+        "detail": "the language prompt the European release shows only when it finds no save: payload in emulator byte order",
+        "core_version": "SkyEmu adacd0788964ed89f5c43dcbc1f3cc26deec996c",
+        "file": {
+          "name": "Mario & Luigi - Superstar Saga (Europe) (En,Fr,De,Es,It).srm",
+          "size": 131072,
+          "sha1": "c43dd869e99cdae6027c320249799e48d5dcf4a9"
+        },
+        "frame": "files"
+      }
+    },
+    "proof_order": [
+      "mgba",
+      "vba-m",
+      "gpsp",
+      "vba-next",
+      "beetle-gba",
+      "skyemu"
+    ]
+  },
+  "note": "The EEPROM payload is in emulator byte order (the order mGBA, VBA-M and a raw .sav use; text such as \"ADLEZBGA\" reads backwards per 8 bytes), not the GameShark order, so mGBA's import (which reverses each 8-byte block) scrambles it; taken as is instead, mGBA shows it: 3982 coins, 28:32, levels 46/46, Bowser's Castle Great Door."
+}

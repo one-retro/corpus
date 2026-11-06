@@ -1,0 +1,247 @@
+{
+  "method": "downloaded",
+  "system": "ps2",
+  "core": "_folder",
+  "url": "https://gamefaqs.gamespot.com/ps2/919672-obscure/saves/28898",
+  "source_page": "https://gamefaqs.gamespot.com/ps2/919672-obscure/saves",
+  "source": "GameFAQs (section 'PlayStation 2 PS3 Virtual Memory Card Save (ZIP) (North America)')",
+  "author": "Victor_Leal",
+  "licence": null,
+  "posted": "2023-09-12",
+  "fetched": "2026-11-05",
+  "what_it_is": "Obscure (ps2) save game zerado no modo normal sem morrer tudo desbloqueadoObscure (ps2) save game reset in normal mode without dying everything unlocked",
+  "gamefaqs": {
+    "id": 28898,
+    "product": "Obscure",
+    "section": "PlayStation 2 PS3 Virtual Memory Card Save (ZIP) (North America)",
+    "region": "North America",
+    "served_as": "obscure.28898.zip",
+    "listed_size": "148KB"
+  },
+  "format": "a plain folder of one save's 13 files (277660 bytes) with no container, as a PC copies a save off a card; no file names the tool",
+  "files": {
+    "important.txt": {
+      "size": 157,
+      "sha1": "4449e7c547b4953c2ee2d833b6f72728047eb737"
+    },
+    "BASLUS-20777/BASLUS-20777": {
+      "size": 1024,
+      "sha1": "7beb02c9a55ddb2274dba6538829e8436eeeab67"
+    },
+    "BASLUS-20777/game0.sav": {
+      "size": 22528,
+      "sha1": "d6334e6a2ad711fc2ba8f8f86de2bf0794067108"
+    },
+    "BASLUS-20777/game1.sav": {
+      "size": 22528,
+      "sha1": "3e68bca539bf07bd5091801643a173bd0bc0446a"
+    },
+    "BASLUS-20777/game2.sav": {
+      "size": 22528,
+      "sha1": "c7e43114858542f8d90237570adae1cb79fc647a"
+    },
+    "BASLUS-20777/game3.sav": {
+      "size": 22528,
+      "sha1": "af70a5f8c9cbab56e34363495b3ec793ab54c7b1"
+    },
+    "BASLUS-20777/game4.sav": {
+      "size": 22528,
+      "sha1": "568b039961660f0d6f701b425d50bce9e42b4756"
+    },
+    "BASLUS-20777/game5.sav": {
+      "size": 22528,
+      "sha1": "356fcc1ef82e117d3ebcfff0c4ef4a572f25c7c3"
+    },
+    "BASLUS-20777/game6.sav": {
+      "size": 22528,
+      "sha1": "943f7f8b8e8ef02784a4fdb357c783ea072dc43b"
+    },
+    "BASLUS-20777/game7.sav": {
+      "size": 22528,
+      "sha1": "2673123794bb11cd8b1a29f4e8db1a37cf7fc622"
+    },
+    "BASLUS-20777/game8.sav": {
+      "size": 22528,
+      "sha1": "094ceb4e3f4e0a45a9562fcd9548a898cdb345ea"
+    },
+    "BASLUS-20777/game9.sav": {
+      "size": 22528,
+      "sha1": "230b89ada1a8528fa8b13b2f87c4cea0b036a413"
+    },
+    "BASLUS-20777/icon.sys": {
+      "size": 964,
+      "sha1": "4d0cae04feae7bd5b1d1bc24a96e0766000147fe"
+    },
+    "BASLUS-20777/obscure.ico": {
+      "size": 50392,
+      "sha1": "d695f9336d64a4e261ce724d3654f1d7cf20e5b6"
+    }
+  },
+  "save": {
+    "folder": "BASLUS-20777",
+    "title": [
+      "Obscure",
+      ""
+    ],
+    "times": "none: a dir file stores no file times",
+    "files": [
+      {
+        "name": "BASLUS-20777",
+        "size": 1024,
+        "sha1": "7beb02c9a55ddb2274dba6538829e8436eeeab67"
+      },
+      {
+        "name": "game0.sav",
+        "size": 22528,
+        "sha1": "d6334e6a2ad711fc2ba8f8f86de2bf0794067108"
+      },
+      {
+        "name": "game1.sav",
+        "size": 22528,
+        "sha1": "3e68bca539bf07bd5091801643a173bd0bc0446a"
+      },
+      {
+        "name": "game2.sav",
+        "size": 22528,
+        "sha1": "c7e43114858542f8d90237570adae1cb79fc647a"
+      },
+      {
+        "name": "game3.sav",
+        "size": 22528,
+        "sha1": "af70a5f8c9cbab56e34363495b3ec793ab54c7b1"
+      },
+      {
+        "name": "game4.sav",
+        "size": 22528,
+        "sha1": "568b039961660f0d6f701b425d50bce9e42b4756"
+      },
+      {
+        "name": "game5.sav",
+        "size": 22528,
+        "sha1": "356fcc1ef82e117d3ebcfff0c4ef4a572f25c7c3"
+      },
+      {
+        "name": "game6.sav",
+        "size": 22528,
+        "sha1": "943f7f8b8e8ef02784a4fdb357c783ea072dc43b"
+      },
+      {
+        "name": "game7.sav",
+        "size": 22528,
+        "sha1": "2673123794bb11cd8b1a29f4e8db1a37cf7fc622"
+      },
+      {
+        "name": "game8.sav",
+        "size": 22528,
+        "sha1": "094ceb4e3f4e0a45a9562fcd9548a898cdb345ea"
+      },
+      {
+        "name": "game9.sav",
+        "size": 22528,
+        "sha1": "230b89ada1a8528fa8b13b2f87c4cea0b036a413"
+      },
+      {
+        "name": "icon.sys",
+        "size": 964,
+        "sha1": "4d0cae04feae7bd5b1d1bc24a96e0766000147fe"
+      },
+      {
+        "name": "obscure.ico",
+        "size": 50392,
+        "sha1": "d695f9336d64a4e261ce724d3654f1d7cf20e5b6"
+      }
+    ]
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": null,
+    "converted_with": "tools/gamefaqs/ps2-card.py 'BASLUS-20777' -o OUT: reads the save with mymcplus 3.0.5 and writes OUT/Mcd001.ps2 (an 8 MiB card with ECC, formatted and filled by mymcplus) for lrps2/pcee2/pcsx2, and OUT/mc0/<folder>/ for Play!",
+    "converted": {
+      "Mcd001.ps2": {
+        "size": 8650752,
+        "sha1": "8935c189243a893e0134275418ad3242a79e5763"
+      },
+      "mc0/BASLUS-20777/": {
+        "BASLUS-20777": {
+          "size": 1024,
+          "sha1": "7beb02c9a55ddb2274dba6538829e8436eeeab67"
+        },
+        "game0.sav": {
+          "size": 22528,
+          "sha1": "d6334e6a2ad711fc2ba8f8f86de2bf0794067108"
+        },
+        "game1.sav": {
+          "size": 22528,
+          "sha1": "3e68bca539bf07bd5091801643a173bd0bc0446a"
+        },
+        "game2.sav": {
+          "size": 22528,
+          "sha1": "c7e43114858542f8d90237570adae1cb79fc647a"
+        },
+        "game3.sav": {
+          "size": 22528,
+          "sha1": "af70a5f8c9cbab56e34363495b3ec793ab54c7b1"
+        },
+        "game4.sav": {
+          "size": 22528,
+          "sha1": "568b039961660f0d6f701b425d50bce9e42b4756"
+        },
+        "game5.sav": {
+          "size": 22528,
+          "sha1": "356fcc1ef82e117d3ebcfff0c4ef4a572f25c7c3"
+        },
+        "game6.sav": {
+          "size": 22528,
+          "sha1": "943f7f8b8e8ef02784a4fdb357c783ea072dc43b"
+        },
+        "game7.sav": {
+          "size": 22528,
+          "sha1": "2673123794bb11cd8b1a29f4e8db1a37cf7fc622"
+        },
+        "game8.sav": {
+          "size": 22528,
+          "sha1": "094ceb4e3f4e0a45a9562fcd9548a898cdb345ea"
+        },
+        "game9.sav": {
+          "size": 22528,
+          "sha1": "230b89ada1a8528fa8b13b2f87c4cea0b036a413"
+        },
+        "icon.sys": {
+          "size": 964,
+          "sha1": "4d0cae04feae7bd5b1d1bc24a96e0766000147fe"
+        },
+        "obscure.ico": {
+          "size": 50392,
+          "sha1": "d695f9336d64a4e261ce724d3654f1d7cf20e5b6"
+        }
+      },
+      "read_back": "work/ps2/tools/mcfs.py lists every file with the size and SHA-1 put on the card; one-saves (1saves convert + inspect) reads the card and finds BASLUS-20777",
+      "timestamps": "what the save does not date is 2000-01-01 00:00:00 (JST, as a card stores it); the card's own root entries too"
+    },
+    "script": null,
+    "cores": {
+      "pcee2": {
+        "result": "not-run",
+        "detail": "no image of Obscure (USA) (En,Fr,Es) in the library"
+      },
+      "lrps2": {
+        "result": "not-run",
+        "detail": "no image of Obscure (USA) (En,Fr,Es) in the library"
+      },
+      "play": {
+        "result": "not-run",
+        "detail": "no image of Obscure (USA) (En,Fr,Es) in the library"
+      },
+      "pcsx2": {
+        "result": "not-run",
+        "detail": "no image of Obscure (USA) (En,Fr,Es) in the library"
+      },
+      "armsx2": {
+        "result": "not-run",
+        "detail": "ARMSX2 renders only through Vulkan here and falls back to a null GS (no picture), so nothing shows what the game read (ps2/NOTES.md)"
+      }
+    },
+    "proof_order": []
+  },
+  "note": "Mislabelled section: GameFAQs files it as 'PlayStation 2 PS3 Virtual Memory Card Save (ZIP)', the file is a loose save folder, not a .psv."
+}

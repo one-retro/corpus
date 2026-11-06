@@ -1,0 +1,114 @@
+{
+  "method": "downloaded",
+  "system": "ps2",
+  "core": "_max-drive",
+  "url": "https://gamefaqs.gamespot.com/ps2/561066-gran-turismo-4/saves/21249",
+  "source_page": "https://gamefaqs.gamespot.com/ps2/561066-gran-turismo-4/saves",
+  "source": "GameFAQs (section 'PlayStation2 Max Drive Save (Europe)')",
+  "author": "lsoyal",
+  "licence": null,
+  "posted": "2010-11-09",
+  "fetched": "2026-11-05",
+  "what_it_is": "All Licenses Gold, All Enabled, All Cars",
+  "gamefaqs": {
+    "id": 21249,
+    "product": "Gran Turismo 4",
+    "section": "PlayStation2 Max Drive Save (Europe)",
+    "region": "Europe",
+    "served_as": "gran-turismo-4.21249.max",
+    "listed_size": "15KB"
+  },
+  "format": "Max Drive / PowerSave save: 'Ps2PowerSave' header (CRC32 88b98eb1, matches), folder BESCES-52438GAMEDATA, 4 files, LZARI stream 15417 bytes unpacking to 147528 bytes (147347 bytes of file data)",
+  "files": {
+    "gran-turismo-4.21249.max": {
+      "size": 15509,
+      "sha1": "611f7d69826b2c4bef7caea1eb6b29ecceb2898e"
+    }
+  },
+  "save": {
+    "folder": "BESCES-52438GAMEDATA",
+    "title": [
+      "Dati di gioco",
+      "GT4P"
+    ],
+    "times": "none: a max file stores no file times",
+    "files": [
+      {
+        "name": "BESCES-52438GAMEDATA",
+        "size": 124880,
+        "sha1": "19d6cd30c586994d3b0d86052ac4e9d75ce1a376"
+      },
+      {
+        "name": "thumbnail",
+        "size": 1,
+        "sha1": "3eb416223e9e69e6bb8ee19793911ad1ad2027d8"
+      },
+      {
+        "name": "icon0.ico",
+        "size": 21502,
+        "sha1": "9da5541828ec7186f40055ff354582c6bf2f807c"
+      },
+      {
+        "name": "icon.sys",
+        "size": 964,
+        "sha1": "452a6d26fd6f2ce948a4056ba035ce2f109b121a"
+      }
+    ]
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": null,
+    "converted_with": "tools/gamefaqs/ps2-card.py 'gran-turismo-4.21249.max' -o OUT: reads the save with mymcplus 3.0.5 and writes OUT/Mcd001.ps2 (an 8 MiB card with ECC, formatted and filled by mymcplus) for lrps2/pcee2/pcsx2, and OUT/mc0/<folder>/ for Play!",
+    "converted": {
+      "Mcd001.ps2": {
+        "size": 8650752,
+        "sha1": "b72eb31c9af1f5935d58eadcd05c236f47f2295b"
+      },
+      "mc0/BESCES-52438GAMEDATA/": {
+        "BESCES-52438GAMEDATA": {
+          "size": 124880,
+          "sha1": "19d6cd30c586994d3b0d86052ac4e9d75ce1a376"
+        },
+        "thumbnail": {
+          "size": 1,
+          "sha1": "3eb416223e9e69e6bb8ee19793911ad1ad2027d8"
+        },
+        "icon0.ico": {
+          "size": 21502,
+          "sha1": "9da5541828ec7186f40055ff354582c6bf2f807c"
+        },
+        "icon.sys": {
+          "size": 964,
+          "sha1": "452a6d26fd6f2ce948a4056ba035ce2f109b121a"
+        }
+      },
+      "read_back": "work/ps2/tools/mcfs.py lists every file with the size and SHA-1 put on the card; one-saves (1saves convert + inspect) reads the card and finds BESCES-52438GAMEDATA",
+      "timestamps": "what the save does not date is 2000-01-01 00:00:00 (JST, as a card stores it); the card's own root entries too"
+    },
+    "script": null,
+    "cores": {
+      "pcee2": {
+        "result": "not-run",
+        "detail": "no image of Gran Turismo 4 - Prologue (Europe) (En,Fr,De,Es,It) in the library"
+      },
+      "lrps2": {
+        "result": "not-run",
+        "detail": "no image of Gran Turismo 4 - Prologue (Europe) (En,Fr,De,Es,It) in the library"
+      },
+      "play": {
+        "result": "not-run",
+        "detail": "no image of Gran Turismo 4 - Prologue (Europe) (En,Fr,De,Es,It) in the library"
+      },
+      "pcsx2": {
+        "result": "not-run",
+        "detail": "no image of Gran Turismo 4 - Prologue (Europe) (En,Fr,De,Es,It) in the library"
+      },
+      "armsx2": {
+        "result": "not-run",
+        "detail": "ARMSX2 renders only through Vulkan here and falls back to a null GS (no picture), so nothing shows what the game read (ps2/NOTES.md)"
+      }
+    },
+    "proof_order": []
+  },
+  "note": "A Gran Turismo 4 Prologue save (icon.sys subtitle 'GT4P'), on GameFAQs' Gran Turismo 4 page. Byte-identical to GameFAQs 17441 (uploaded again)."
+}

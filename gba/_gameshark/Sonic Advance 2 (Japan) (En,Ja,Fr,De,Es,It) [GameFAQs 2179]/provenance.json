@@ -1,0 +1,119 @@
+{
+  "method": "downloaded",
+  "system": "gba",
+  "core": "_gameshark",
+  "url": "https://gamefaqs.gamespot.com/gba/561898-sonic-advance-2/saves/2179",
+  "source_page": "https://gamefaqs.gamespot.com/gba/561898-sonic-advance-2/saves",
+  "source": "GameFAQs (section 'GameBoy Advance GameShark Save (Japan)')",
+  "author": "ss3growntrunks",
+  "licence": null,
+  "posted": "2003-02-08",
+  "fetched": "2026-11-05",
+  "what_it_is": "Knucles unlocked: Area 7 Egg Utopia, Act 1; Sonic: Area 6 Techno Base, Act 1; Cream: Area 2 Hot Crater, Act 1; Tails: Area 1 Leaf Forest, Act 1",
+  "gamefaqs": {
+    "id": 2179,
+    "product": "Sonic Advance 2",
+    "section": "GameBoy Advance GameShark Save (Japan)",
+    "region": "Japan",
+    "served_as": "sonic-advance-2.2179.sps",
+    "listed_size": "64KB"
+  },
+  "format": "SharkPort save (\"SharkPortSave\", kind 0x000F0000): title \"SONICADVANC2\", date \"2/8/2003 7:30:31 AM\", notes \"\"; cart header \"SONICADVANC2\" / 'A2NJ' (complement 0x63); payload 65536 bytes; checksum: signed",
+  "files": {
+    "sonic-advance-2.2179.sps": {
+      "size": 65636,
+      "sha1": "615a205f0b03a8e27061d94dff92a531fce901c1"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Sonic Advance 2 (Japan) (En,Ja,Fr,De,Es,It).gba",
+      "sha1": "dffd0188fc78154b42b401398a224ae0713edf23",
+      "size": 16777216
+    },
+    "converted_with": "tools/gamefaqs/gba-sharkport.py sonic-advance-2.2179.sps --rom ROM --core CORE --outdir DIR: reads the SharkPort container as mGBA does and imports the payload as mGBA's _importSavedata does (cut to the chip, EEPROM 8-byte blocks reversed, the rest of the chip erased), then lays the chip out as the core keeps it",
+    "converted": {
+      "size": 65536,
+      "sha1": "bcd7397b2168ded26a0790168d809b0ea039f7c1"
+    },
+    "script": "scripts/gba/Sonic Advance 2.load.txt",
+    "cores": {
+      "mgba": {
+        "result": "loads",
+        "detail": "OPTIONS: PLAYER DATA \"FERMIN\" (with no save the game asks for a name first)",
+        "core_version": "mGBA 0.11-212-7a12d6d",
+        "file": {
+          "name": "Sonic Advance 2 (Japan) (En,Ja,Fr,De,Es,It).srm",
+          "size": 65536,
+          "sha1": "bcd7397b2168ded26a0790168d809b0ea039f7c1"
+        },
+        "frame": "options"
+      },
+      "vba-m": {
+        "result": "loads",
+        "detail": "OPTIONS: PLAYER DATA \"FERMIN\" (with no save the game asks for a name first)",
+        "core_version": "VBA-M 115defb",
+        "file": {
+          "name": "Sonic Advance 2 (Japan) (En,Ja,Fr,De,Es,It).srm",
+          "size": 65536,
+          "sha1": "bcd7397b2168ded26a0790168d809b0ea039f7c1"
+        },
+        "frame": "options"
+      },
+      "gpsp": {
+        "result": "loads",
+        "detail": "OPTIONS: PLAYER DATA \"FERMIN\" (with no save the game asks for a name first)",
+        "core_version": "gpSP v1.1.0-5819380",
+        "file": {
+          "name": "Sonic Advance 2 (Japan) (En,Ja,Fr,De,Es,It).srm",
+          "size": 131072,
+          "sha1": "d4cde9774a2d517f549b2ba1f5a36e6b1c521c79"
+        },
+        "frame": "options"
+      },
+      "vba-next": {
+        "result": "loads",
+        "detail": "OPTIONS: PLAYER DATA \"FERMIN\" (with no save the game asks for a name first)",
+        "core_version": "VBA Next v1.0.2",
+        "file": {
+          "name": "Sonic Advance 2 (Japan) (En,Ja,Fr,De,Es,It).srm",
+          "size": 139264,
+          "sha1": "cf265f6270cea28f62512f90edce9e1be0736bde"
+        },
+        "frame": "options"
+      },
+      "beetle-gba": {
+        "result": "loads",
+        "detail": "OPTIONS: PLAYER DATA \"FERMIN\" (with no save the game asks for a name first)",
+        "core_version": "Beetle GBA v0.9.36 b158166",
+        "file": {
+          "name": "Sonic Advance 2 (Japan) (En,Ja,Fr,De,Es,It).a219b3042eb65899baafa5143c53560c.sav",
+          "size": 65536,
+          "sha1": "bcd7397b2168ded26a0790168d809b0ea039f7c1"
+        },
+        "frame": "options"
+      },
+      "skyemu": {
+        "result": "loads",
+        "detail": "OPTIONS: PLAYER DATA \"FERMIN\" (with no save the game asks for a name first)",
+        "core_version": "SkyEmu adacd0788964ed89f5c43dcbc1f3cc26deec996c",
+        "file": {
+          "name": "Sonic Advance 2 (Japan) (En,Ja,Fr,De,Es,It).srm",
+          "size": 131072,
+          "sha1": "d4cde9774a2d517f549b2ba1f5a36e6b1c521c79"
+        },
+        "frame": "options"
+      }
+    },
+    "proof_order": [
+      "mgba",
+      "vba-m",
+      "gpsp",
+      "vba-next",
+      "beetle-gba",
+      "skyemu"
+    ]
+  },
+  "note": null
+}

@@ -1,0 +1,88 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_ps3",
+  "url": "https://gamefaqs.gamespot.com/ps/197468-gran-turismo/saves/16449",
+  "source_page": "https://gamefaqs.gamespot.com/ps/197468-gran-turismo/saves",
+  "source": "GameFAQs (section 'PlayStation PS3 Virtual Memory Card Save (ZIP) (North America)')",
+  "author": "nwitt7",
+  "licence": null,
+  "posted": "2008-01-07",
+  "fetched": "2026-11-05",
+  "what_it_is": "100% complete, verified several times.",
+  "gamefaqs": {
+    "id": 16449,
+    "product": "Gran Turismo",
+    "section": "PlayStation PS3 Virtual Memory Card Save (ZIP) (North America)",
+    "region": "North America",
+    "served_as": "gran-turismo.16449.zip",
+    "listed_size": "5KB",
+    "served_zip": {
+      "size": 5791,
+      "sha1": "e0fe879c7c7a9f770d9f3402e9021cead01262bd"
+    }
+  },
+  "format": "zip of 1 PS3 export(s) (.PSV): '\\0VSP' header (signature, save name at 0x64), the save's blocks from 0x84 (41092 bytes); it holds 1 save(s), 1 for this game (BASCUS-94194GT)",
+  "release": "Gran Turismo (USA) (Rev 1)",
+  "game_saves": [
+    {
+      "name": "BASCUS-94194GT",
+      "blocks": 5,
+      "title": "GT game data"
+    }
+  ],
+  "files": {
+    "BASCUS-941944754.PSV": {
+      "size": 41092,
+      "sha1": "080b01fbe3917eb4b4c0d15b1176e04838732fed"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Gran Turismo (USA) (Rev 1).cue",
+      "sha1": "ad114ef1312b81c7ee9995df1217cc1a089e381e",
+      "size": 92
+    },
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr BASCUS-941944754.PSV: puts the save(s) on a freshly formatted card, as MemcardRex imports a single save",
+    "converted": {
+      "size": 131072,
+      "sha1": "489dac94edb9a9f860a2fcd8960862dddf06d43e"
+    },
+    "script": "scripts/psx/Gran Turismo.load.txt",
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "loads",
+        "detail": "the game loads the card at boot; Simulation Mode > My Home shows Day 44, Cr 1,962,588,042, car IMPREZA '96"
+      },
+      "beetle-psx-hw": {
+        "result": "loads",
+        "detail": "the game loads the card at boot; Simulation Mode > My Home shows Day 44, Cr 1,962,588,042, car IMPREZA '96 (the same screen as on beetle-psx)"
+      },
+      "pcsx-rearmed": {
+        "result": "loads",
+        "detail": "the game loads the card at boot; Simulation Mode > My Home shows Day 44, Cr 1,962,588,042, car IMPREZA '96 (the same screen as on beetle-psx)"
+      },
+      "swanstation": {
+        "result": "loads",
+        "detail": "the game loads the card at boot; Simulation Mode > My Home shows Day 44, Cr 1,962,588,042, car IMPREZA '96 (the same screen as on beetle-psx)"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": [
+      "beetle-psx",
+      "beetle-psx-hw",
+      "pcsx-rearmed",
+      "swanstation"
+    ]
+  },
+  "note": null
+}

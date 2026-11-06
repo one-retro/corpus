@@ -1,0 +1,63 @@
+{
+  "method": "downloaded",
+  "system": "gba",
+  "core": "_visualboyadvance",
+  "url": "https://gamefaqs.gamespot.com/gba/920670-the-legend-of-zelda-the-minish-cap/saves/17387",
+  "source_page": "https://gamefaqs.gamespot.com/gba/920670-the-legend-of-zelda-the-minish-cap/saves",
+  "source": "GameFAQs (section 'GameBoy Advance GameShark USB Connector Save (North America)')",
+  "author": "PFSquad",
+  "licence": null,
+  "posted": "2008-07-02",
+  "fetched": "2026-11-05",
+  "what_it_is": "ALL CLEAR!!!",
+  "gamefaqs": {
+    "id": 17387,
+    "product": "The Legend of Zelda: The Minish Cap",
+    "section": "GameBoy Advance GameShark USB Connector Save (North America)",
+    "region": "North America",
+    "served_as": "the-legend-of-zelda-the-minish-cap.17387.gsb",
+    "listed_size": "94KB"
+  },
+  "format": "gzip-compressed VisualBoyAdvance save state (.sgm), state version 8, ROM header \"GBAZELDA MC\" / 'BZMP', 739838 bytes inflated; not a battery save",
+  "files": {
+    "the-legend-of-zelda-the-minish-cap.17387.gsb": {
+      "size": 96828,
+      "sha1": "d9c4d69844cf5ff7385e1326b0b8e6ed1643008e"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": null,
+    "converted_with": null,
+    "converted": null,
+    "script": null,
+    "cores": {
+      "mgba": {
+        "result": "not-run",
+        "detail": "not a battery save: a VisualBoyAdvance save state, which no core here loads"
+      },
+      "vba-m": {
+        "result": "not-run",
+        "detail": "not a battery save: a VisualBoyAdvance save state, which no core here loads"
+      },
+      "gpsp": {
+        "result": "not-run",
+        "detail": "not a battery save: a VisualBoyAdvance save state, which no core here loads"
+      },
+      "vba-next": {
+        "result": "not-run",
+        "detail": "not a battery save: a VisualBoyAdvance save state, which no core here loads"
+      },
+      "beetle-gba": {
+        "result": "not-run",
+        "detail": "not a battery save: a VisualBoyAdvance save state, which no core here loads"
+      },
+      "skyemu": {
+        "result": "not-run",
+        "detail": "not a battery save: a VisualBoyAdvance save state, which no core here loads"
+      }
+    },
+    "proof_order": []
+  },
+  "note": "A VisualBoyAdvance desktop save state, not a save: VBA keeps the battery memory inside it, but getting it out means following VBA-M's whole state reader (CPUReadState), which was not done here. No libretro core loads VBA's desktop states."
+}

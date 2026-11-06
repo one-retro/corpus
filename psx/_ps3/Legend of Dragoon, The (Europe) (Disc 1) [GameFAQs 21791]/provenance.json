@@ -1,0 +1,79 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_ps3",
+  "url": "https://gamefaqs.gamespot.com/ps/197765-the-legend-of-dragoon/saves/21791",
+  "source_page": "https://gamefaqs.gamespot.com/ps/197765-the-legend-of-dragoon/saves",
+  "source": "GameFAQs (section 'PlayStation PS3 Virtual Memory Card Save (ZIP) (Europe)')",
+  "author": "Valkyreo",
+  "licence": null,
+  "posted": "2011-05-06",
+  "fetched": "2026-11-05",
+  "what_it_is": "( 141:22:35 ) Before Final Battle - Perfect Game - all items, all additions, best possible setup's on all character's, everything possible done",
+  "gamefaqs": {
+    "id": 21791,
+    "product": "The Legend of Dragoon",
+    "section": "PlayStation PS3 Virtual Memory Card Save (ZIP) (Europe)",
+    "region": "Europe",
+    "served_as": "the-legend-of-dragoon.21791.zip",
+    "listed_size": "2KB",
+    "served_zip": {
+      "size": 2233,
+      "sha1": "3ebec0b20c00dc49d38c4e9a9143cb24383f7198"
+    }
+  },
+  "format": "zip of 1 PS3 export(s) (.PSV): '\\0VSP' header (signature, save name at 0x64), the save's blocks from 0x84 (8324 bytes); it holds 1 save(s), 1 for this game (BESCESP03043drgn0000)",
+  "release": "Legend of Dragoon, The (Europe) (Disc 1)",
+  "game_saves": [
+    {
+      "name": "BESCESP03043drgn0000",
+      "blocks": 1,
+      "title": "LOD FILE01 LV60 TIME 141:22:35"
+    }
+  ],
+  "files": {
+    "PS3/EXPORT/PSV/BESCESP030436472676E30303030.PSV": {
+      "size": 8324,
+      "sha1": "56eaf5114fe7de33aa071c004e83b1655218b4ff"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": null,
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr PS3/EXPORT/PSV/BESCESP030436472676E30303030.PSV: puts the save(s) on a freshly formatted card, as MemcardRex imports a single save",
+    "converted": {
+      "size": 131072,
+      "sha1": "347de0b269eff305b6326a6667d28de62e923ea3"
+    },
+    "script": null,
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "not-run",
+        "detail": "no image of Legend of Dragoon, The (Europe) (Disc 1) in the library"
+      },
+      "beetle-psx-hw": {
+        "result": "not-run",
+        "detail": "no image of Legend of Dragoon, The (Europe) (Disc 1) in the library"
+      },
+      "pcsx-rearmed": {
+        "result": "not-run",
+        "detail": "no image of Legend of Dragoon, The (Europe) (Disc 1) in the library"
+      },
+      "swanstation": {
+        "result": "not-run",
+        "detail": "no image of Legend of Dragoon, The (Europe) (Disc 1) in the library"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": []
+  },
+  "note": null
+}

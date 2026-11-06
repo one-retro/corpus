@@ -1,0 +1,75 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_vgs",
+  "url": "https://gamefaqs.gamespot.com/ps/198641-silent-hill/saves/18747",
+  "source_page": "https://gamefaqs.gamespot.com/ps/198641-silent-hill/saves",
+  "source": "GameFAQs (section 'PlayStation DexDrive Save (Europe)')",
+  "author": "darkzero2835",
+  "licence": null,
+  "posted": "2009-03-04",
+  "fetched": "2026-11-05",
+  "what_it_is": "Completed six, arma lazer unlocked, Hard difficulty, ovni engine,end engine, next team",
+  "gamefaqs": {
+    "id": 18747,
+    "product": "Silent Hill (1999)",
+    "section": "PlayStation DexDrive Save (Europe)",
+    "region": "Europe",
+    "served_as": "silent-hill-1999.18747.gme",
+    "listed_size": "128KB"
+  },
+  "format": "Connectix Virtual Game Station card: 'VgsM' 64-byte header + 131072-byte raw card, served as .gme; the card holds 1 save(s), 1 for this game (BESLES-01514SILENT00)",
+  "release": "Silent Hill (Europe) (En,Fr,De,Es,It)",
+  "game_saves": [
+    {
+      "name": "BESLES-01514SILENT00",
+      "blocks": 1,
+      "title": "SILENT HILL FILE01"
+    }
+  ],
+  "files": {
+    "silent-hill-1999.18747.gme": {
+      "size": 131136,
+      "sha1": "63e7ace96db2e4c90353e6963704bae4a18e7d50"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": null,
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr silent-hill-1999.18747.gme: unwraps the card (VGS (Connectix): 64-byte header + card)",
+    "converted": {
+      "size": 131072,
+      "sha1": "8698ba7326d80d19f77083dba84902de55f8f0f6"
+    },
+    "script": null,
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "not-run",
+        "detail": "no image of Silent Hill (Europe) (En,Fr,De,Es,It) in the library"
+      },
+      "beetle-psx-hw": {
+        "result": "not-run",
+        "detail": "no image of Silent Hill (Europe) (En,Fr,De,Es,It) in the library"
+      },
+      "pcsx-rearmed": {
+        "result": "not-run",
+        "detail": "no image of Silent Hill (Europe) (En,Fr,De,Es,It) in the library"
+      },
+      "swanstation": {
+        "result": "not-run",
+        "detail": "no image of Silent Hill (Europe) (En,Fr,De,Es,It) in the library"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": []
+  },
+  "note": "Filed under GameFAQs' 'PlayStation DexDrive Save (Europe)' section, but it is not a DexDrive .gme: Connectix Virtual Game Station card: 'VgsM' 64-byte header + 131072-byte raw card, served as .gme."
+}

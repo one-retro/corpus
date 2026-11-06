@@ -1,0 +1,119 @@
+{
+  "method": "downloaded",
+  "system": "gba",
+  "core": "_gameshark",
+  "url": "https://gamefaqs.gamespot.com/gba/561898-sonic-advance-2/saves/2514",
+  "source_page": "https://gamefaqs.gamespot.com/gba/561898-sonic-advance-2/saves",
+  "source": "GameFAQs (section 'GameBoy Advance GameShark Save (North America)')",
+  "author": "_MrFunsocks",
+  "licence": null,
+  "posted": "2003-04-03",
+  "fetched": "2026-11-05",
+  "what_it_is": "Game beaten with everyone, but Amy. Everything unlocked.",
+  "gamefaqs": {
+    "id": 2514,
+    "product": "Sonic Advance 2",
+    "section": "GameBoy Advance GameShark Save (North America)",
+    "region": "North America",
+    "served_as": "sonic-advance-2.2514.sps",
+    "listed_size": "64KB"
+  },
+  "format": "SharkPort save (\"SharkPortSave\", kind 0x000F0000): title \"SONICADVANC2\", date \"Save3/28/2003 7:39:54 AM 41\", notes \"\"; cart header \"SONICADVANC2\" / 'A2NE' (complement 0x81); payload 65536 bytes; checksum: unsigned",
+  "files": {
+    "sonic-advance-2.2514.sps": {
+      "size": 65644,
+      "sha1": "60a668d5bac1b656599582d6eb33a4851b8f81b4"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Sonic Advance 2 (USA) (En,Ja,Fr,De,Es,It).gba",
+      "sha1": "7bcd6a07af7c894746fa28073fe0c0e34408022d",
+      "size": 16777216
+    },
+    "converted_with": "tools/gamefaqs/gba-sharkport.py sonic-advance-2.2514.sps --rom ROM --core CORE --outdir DIR: reads the SharkPort container as mGBA does and imports the payload as mGBA's _importSavedata does (cut to the chip, EEPROM 8-byte blocks reversed, the rest of the chip erased), then lays the chip out as the core keeps it",
+    "converted": {
+      "size": 65536,
+      "sha1": "84271744d414e8fd2adb386df901666b58a5bdd3"
+    },
+    "script": "scripts/gba/Sonic Advance 2.load.txt",
+    "cores": {
+      "mgba": {
+        "result": "loads",
+        "detail": "OPTIONS with an empty PLAYER DATA name; no name prompt, so the save is read",
+        "core_version": "mGBA 0.11-212-7a12d6d",
+        "file": {
+          "name": "Sonic Advance 2 (USA) (En,Ja,Fr,De,Es,It).srm",
+          "size": 65536,
+          "sha1": "84271744d414e8fd2adb386df901666b58a5bdd3"
+        },
+        "frame": "options"
+      },
+      "vba-m": {
+        "result": "loads",
+        "detail": "OPTIONS with an empty PLAYER DATA name; no name prompt, so the save is read",
+        "core_version": "VBA-M 115defb",
+        "file": {
+          "name": "Sonic Advance 2 (USA) (En,Ja,Fr,De,Es,It).srm",
+          "size": 65536,
+          "sha1": "84271744d414e8fd2adb386df901666b58a5bdd3"
+        },
+        "frame": "options"
+      },
+      "gpsp": {
+        "result": "loads",
+        "detail": "OPTIONS with an empty PLAYER DATA name; no name prompt, so the save is read",
+        "core_version": "gpSP v1.1.0-5819380",
+        "file": {
+          "name": "Sonic Advance 2 (USA) (En,Ja,Fr,De,Es,It).srm",
+          "size": 131072,
+          "sha1": "9aca61fb362f1d2b249c3b28b4280a7c1c383083"
+        },
+        "frame": "options"
+      },
+      "vba-next": {
+        "result": "loads",
+        "detail": "OPTIONS with an empty PLAYER DATA name; no name prompt, so the save is read",
+        "core_version": "VBA Next v1.0.2",
+        "file": {
+          "name": "Sonic Advance 2 (USA) (En,Ja,Fr,De,Es,It).srm",
+          "size": 139264,
+          "sha1": "669a944cfda957235c5bde94b3c91f57e16e725d"
+        },
+        "frame": "options"
+      },
+      "beetle-gba": {
+        "result": "loads",
+        "detail": "OPTIONS with an empty PLAYER DATA name; no name prompt, so the save is read",
+        "core_version": "Beetle GBA v0.9.36 b158166",
+        "file": {
+          "name": "Sonic Advance 2 (USA) (En,Ja,Fr,De,Es,It).3fb865c5f142a8fc1f82105bfc6b8935.sav",
+          "size": 65536,
+          "sha1": "84271744d414e8fd2adb386df901666b58a5bdd3"
+        },
+        "frame": "options"
+      },
+      "skyemu": {
+        "result": "loads",
+        "detail": "OPTIONS with an empty PLAYER DATA name; no name prompt, so the save is read",
+        "core_version": "SkyEmu adacd0788964ed89f5c43dcbc1f3cc26deec996c",
+        "file": {
+          "name": "Sonic Advance 2 (USA) (En,Ja,Fr,De,Es,It).srm",
+          "size": 131072,
+          "sha1": "9aca61fb362f1d2b249c3b28b4280a7c1c383083"
+        },
+        "frame": "options"
+      }
+    },
+    "proof_order": [
+      "mgba",
+      "vba-m",
+      "gpsp",
+      "vba-next",
+      "beetle-gba",
+      "skyemu"
+    ]
+  },
+  "note": null
+}

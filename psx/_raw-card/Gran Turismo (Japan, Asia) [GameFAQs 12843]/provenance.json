@@ -1,0 +1,75 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_raw-card",
+  "url": "https://gamefaqs.gamespot.com/ps/197468-gran-turismo/saves/12843",
+  "source_page": "https://gamefaqs.gamespot.com/ps/197468-gran-turismo/saves",
+  "source": "GameFAQs (section 'PlayStation DexDrive Save (Japan)')",
+  "author": "DIX_coltd",
+  "licence": null,
+  "posted": "2006-08-22",
+  "fetched": "2026-11-05",
+  "what_it_is": "All license & 501,088,800 Cr.",
+  "gamefaqs": {
+    "id": 12843,
+    "product": "Gran Turismo",
+    "section": "PlayStation DexDrive Save (Japan)",
+    "region": "Japan",
+    "served_as": "gran-turismo.12843.gme",
+    "listed_size": "128KB"
+  },
+  "format": "raw 131072-byte PS1 memory card ('MC' header frame), served as .gme; the card holds 1 save(s), 1 for this game (BISCPS-10045GT)",
+  "release": "Gran Turismo (Japan, Asia)",
+  "game_saves": [
+    {
+      "name": "BISCPS-10045GT",
+      "blocks": 5,
+      "title": "GTゲームデータ"
+    }
+  ],
+  "files": {
+    "gran-turismo.12843.gme": {
+      "size": 131072,
+      "sha1": "808cff503a01e47dd90387b53b5221d76b3cb39d"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": null,
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr gran-turismo.12843.gme: unwraps the card (raw card)",
+    "converted": {
+      "size": 131072,
+      "sha1": "808cff503a01e47dd90387b53b5221d76b3cb39d"
+    },
+    "script": null,
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "not-run",
+        "detail": "no image of Gran Turismo (Japan, Asia) in the library"
+      },
+      "beetle-psx-hw": {
+        "result": "not-run",
+        "detail": "no image of Gran Turismo (Japan, Asia) in the library"
+      },
+      "pcsx-rearmed": {
+        "result": "not-run",
+        "detail": "no image of Gran Turismo (Japan, Asia) in the library"
+      },
+      "swanstation": {
+        "result": "not-run",
+        "detail": "no image of Gran Turismo (Japan, Asia) in the library"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": []
+  },
+  "note": "Filed under GameFAQs' 'PlayStation DexDrive Save (Japan)' section, but it is not a DexDrive .gme: raw 131072-byte PS1 memory card ('MC' header frame), served as .gme."
+}

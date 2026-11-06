@@ -1,0 +1,119 @@
+{
+  "method": "downloaded",
+  "system": "gba",
+  "core": "_gameshark",
+  "url": "https://gamefaqs.gamespot.com/gba/468480-fire-emblem/saves/4859",
+  "source_page": "https://gamefaqs.gamespot.com/gba/468480-fire-emblem/saves",
+  "source": "GameFAQs (section 'GameBoy Advance GameShark Save (Europe)')",
+  "author": "Tails07",
+  "licence": null,
+  "posted": "2004-09-01",
+  "fetched": "2026-11-05",
+  "what_it_is": "3 files 1.Hector ~ CH16 2.Final chapter 3.Epilogue",
+  "gamefaqs": {
+    "id": 4859,
+    "product": "Fire Emblem",
+    "section": "GameBoy Advance GameShark Save (Europe)",
+    "region": "Europe",
+    "served_as": "fire-emblem.4859.sps",
+    "listed_size": "64KB"
+  },
+  "format": "SharkPort save (\"SharkPortSave\", kind 0x000F0000): title \"FIREEMBLEMX\", date \"9/1/2004 5:39:30 PM\", notes \"\"; cart header \"FIREEMBLEMX\" / 'AE7X' (complement 0xab); payload 65536 bytes; checksum: signed",
+  "files": {
+    "fire-emblem.4859.sps": {
+      "size": 65635,
+      "sha1": "4096f4f34bb529c60e9569156bbb7f95900aae71"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Fire Emblem (Europe) (En,Fr,De).gba",
+      "sha1": "c37e3bae84b53e6972ed7608541a62896fa5d6a3",
+      "size": 16777216
+    },
+    "converted_with": "tools/gamefaqs/gba-sharkport.py fire-emblem.4859.sps --rom ROM --core CORE --outdir DIR: reads the SharkPort container as mGBA does and imports the payload as mGBA's _importSavedata does (cut to the chip, EEPROM 8-byte blocks reversed, the rest of the chip erased), then lays the chip out as the core keeps it",
+    "converted": {
+      "size": 32768,
+      "sha1": "8c8fbef9f387d7233b251aa6507a10ef4f3361e3"
+    },
+    "script": "scripts/gba/Fire Emblem (Europe).load.txt",
+    "cores": {
+      "mgba": {
+        "result": "loads",
+        "detail": "title menu with Resume Chapter and Restart Chapter: a suspended chapter and a file exist (with no save only New Game shows)",
+        "core_version": "mGBA 0.11-212-7a12d6d",
+        "file": {
+          "name": "Fire Emblem (Europe) (En,Fr,De).srm",
+          "size": 32768,
+          "sha1": "8c8fbef9f387d7233b251aa6507a10ef4f3361e3"
+        },
+        "frame": "menu"
+      },
+      "vba-m": {
+        "result": "loads",
+        "detail": "title menu with Resume Chapter and Restart Chapter: a suspended chapter and a file exist (with no save only New Game shows) (same menu in this core; the background animates)",
+        "core_version": "VBA-M 115defb",
+        "file": {
+          "name": "Fire Emblem (Europe) (En,Fr,De).srm",
+          "size": 32768,
+          "sha1": "8c8fbef9f387d7233b251aa6507a10ef4f3361e3"
+        },
+        "frame": "menu"
+      },
+      "gpsp": {
+        "result": "loads",
+        "detail": "title menu with Resume Chapter and Restart Chapter: a suspended chapter and a file exist (with no save only New Game shows)",
+        "core_version": "gpSP v1.1.0-5819380",
+        "file": {
+          "name": "Fire Emblem (Europe) (En,Fr,De).srm",
+          "size": 131072,
+          "sha1": "9283f54323dcb57972c844cc4657c1db3fe68fab"
+        },
+        "frame": "menu"
+      },
+      "vba-next": {
+        "result": "loads",
+        "detail": "title menu with Resume Chapter and Restart Chapter: a suspended chapter and a file exist (with no save only New Game shows) (same menu in this core; the background animates)",
+        "core_version": "VBA Next v1.0.2",
+        "file": {
+          "name": "Fire Emblem (Europe) (En,Fr,De).srm",
+          "size": 139264,
+          "sha1": "bd930e239e7b44344f804ba93b8c16b07b0289bd"
+        },
+        "frame": "menu"
+      },
+      "beetle-gba": {
+        "result": "loads",
+        "detail": "title menu with Resume Chapter and Restart Chapter: a suspended chapter and a file exist (with no save only New Game shows) (same menu in this core; the background animates)",
+        "core_version": "Beetle GBA v0.9.36 b158166",
+        "file": {
+          "name": "Fire Emblem (Europe) (En,Fr,De).7b7a43f3ac4a3facc65aa6b616c0b887.sav",
+          "size": 65536,
+          "sha1": "07da69852ee353ee52d137e34f19c53c1f4f6f08"
+        },
+        "frame": "menu"
+      },
+      "skyemu": {
+        "result": "loads",
+        "detail": "title menu with Resume Chapter and Restart Chapter: a suspended chapter and a file exist (with no save only New Game shows)",
+        "core_version": "SkyEmu adacd0788964ed89f5c43dcbc1f3cc26deec996c",
+        "file": {
+          "name": "Fire Emblem (Europe) (En,Fr,De).srm",
+          "size": 131072,
+          "sha1": "9283f54323dcb57972c844cc4657c1db3fe68fab"
+        },
+        "frame": "menu"
+      }
+    },
+    "proof_order": [
+      "mgba",
+      "vba-m",
+      "gpsp",
+      "vba-next",
+      "beetle-gba",
+      "skyemu"
+    ]
+  },
+  "note": null
+}

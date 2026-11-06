@@ -1,0 +1,119 @@
+{
+  "method": "downloaded",
+  "system": "gba",
+  "core": "_gameshark",
+  "url": "https://gamefaqs.gamespot.com/gba/914978-pokemon-pinball-ruby-and-sapphire/saves/3407",
+  "source_page": "https://gamefaqs.gamespot.com/gba/914978-pokemon-pinball-ruby-and-sapphire/saves",
+  "source": "GameFAQs (section 'GameBoy Advance GameShark Save (North America)')",
+  "author": "great_link",
+  "licence": null,
+  "posted": "2004-01-31",
+  "fetched": "2026-11-05",
+  "what_it_is": "Full Pokedex including Chikorita, Cyndaquil and Totodile",
+  "gamefaqs": {
+    "id": 3407,
+    "product": "Pokemon Pinball: Ruby & Sapphire",
+    "section": "GameBoy Advance GameShark Save (North America)",
+    "region": "North America",
+    "served_as": "pokemon-pinball-ruby-and-sapphire.3407.sps",
+    "listed_size": "64KB"
+  },
+  "format": "SharkPort save (\"SharkPortSave\", kind 0x000F0000): title \"POKEPIN R/S\", date \"31-1-2004 9:44:07\", notes \"\"; cart header \"POKEPIN R/S\" / 'BPPE' (complement 0xbf); payload 65536 bytes; checksum: signed",
+  "files": {
+    "pokemon-pinball-ruby-and-sapphire.3407.sps": {
+      "size": 65633,
+      "sha1": "7952e4e053309c9ce6c0b25462f8bc0984df72d9"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Pokemon Pinball - Ruby & Sapphire (USA).gba",
+      "sha1": "9fec81ce2c5df589e0371a0bf2f92a5fe8db730b",
+      "size": 8388608
+    },
+    "converted_with": "tools/gamefaqs/gba-sharkport.py pokemon-pinball-ruby-and-sapphire.3407.sps --rom ROM --core CORE --outdir DIR: reads the SharkPort container as mGBA does and imports the payload as mGBA's _importSavedata does (cut to the chip, EEPROM 8-byte blocks reversed, the rest of the chip erased), then lays the chip out as the core keeps it",
+    "converted": {
+      "size": 32768,
+      "sha1": "2885d58eb91d1c7353bee640b066631ecfbb2461"
+    },
+    "script": "scripts/gba/Pokemon Pinball - Ruby & Sapphire.load.txt",
+    "cores": {
+      "mgba": {
+        "result": "loads",
+        "detail": "menu with CONTINUE (a game saved mid-play); POKeDEX Seen 204, Own 204",
+        "core_version": "mGBA 0.11-212-7a12d6d",
+        "file": {
+          "name": "Pokemon Pinball - Ruby & Sapphire (USA).srm",
+          "size": 32768,
+          "sha1": "2885d58eb91d1c7353bee640b066631ecfbb2461"
+        },
+        "frame": "dex"
+      },
+      "vba-m": {
+        "result": "loads",
+        "detail": "menu with CONTINUE (a game saved mid-play); POKeDEX Seen 204, Own 204",
+        "core_version": "VBA-M 115defb",
+        "file": {
+          "name": "Pokemon Pinball - Ruby & Sapphire (USA).srm",
+          "size": 32768,
+          "sha1": "2885d58eb91d1c7353bee640b066631ecfbb2461"
+        },
+        "frame": "dex"
+      },
+      "gpsp": {
+        "result": "loads",
+        "detail": "menu with CONTINUE (a game saved mid-play); POKeDEX Seen 204, Own 204",
+        "core_version": "gpSP v1.1.0-5819380",
+        "file": {
+          "name": "Pokemon Pinball - Ruby & Sapphire (USA).srm",
+          "size": 131072,
+          "sha1": "ecbe3c88af97b737141afaf3aa8b33a755e21bdf"
+        },
+        "frame": "dex"
+      },
+      "vba-next": {
+        "result": "loads",
+        "detail": "menu with CONTINUE (a game saved mid-play); POKeDEX Seen 204, Own 204",
+        "core_version": "VBA Next v1.0.2",
+        "file": {
+          "name": "Pokemon Pinball - Ruby & Sapphire (USA).srm",
+          "size": 139264,
+          "sha1": "bd909aed8c35d139591f94336d6ba7546a493040"
+        },
+        "frame": "dex"
+      },
+      "beetle-gba": {
+        "result": "loads",
+        "detail": "menu with CONTINUE (a game saved mid-play); POKeDEX Seen 204, Own 204",
+        "core_version": "Beetle GBA v0.9.36 b158166",
+        "file": {
+          "name": "Pokemon Pinball - Ruby & Sapphire (USA).ba6d0fbff297b8937d3c8e7f2c25fa0f.sav",
+          "size": 65536,
+          "sha1": "e1b6b8724be2fe7a7c7a5b42f69fdd7eea3974e1"
+        },
+        "frame": "dex"
+      },
+      "skyemu": {
+        "result": "loads",
+        "detail": "menu with CONTINUE (a game saved mid-play); POKeDEX Seen 204, Own 204",
+        "core_version": "SkyEmu adacd0788964ed89f5c43dcbc1f3cc26deec996c",
+        "file": {
+          "name": "Pokemon Pinball - Ruby & Sapphire (USA).srm",
+          "size": 131072,
+          "sha1": "ecbe3c88af97b737141afaf3aa8b33a755e21bdf"
+        },
+        "frame": "dex"
+      }
+    },
+    "proof_order": [
+      "mgba",
+      "vba-m",
+      "gpsp",
+      "vba-next",
+      "beetle-gba",
+      "skyemu"
+    ]
+  },
+  "note": null
+}

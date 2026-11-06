@@ -1,0 +1,119 @@
+{
+  "method": "downloaded",
+  "system": "gba",
+  "core": "_gameshark",
+  "url": "https://gamefaqs.gamespot.com/gba/918915-pokemon-firered-version/saves/3375",
+  "source_page": "https://gamefaqs.gamespot.com/gba/918915-pokemon-firered-version/saves",
+  "source": "GameFAQs (section 'GameBoy Advance GameShark Save (Japan)')",
+  "author": "great_link",
+  "licence": null,
+  "posted": "2004-01-31",
+  "fetched": "2026-11-05",
+  "what_it_is": "On 6th island, lots of rare candys and master balls, 132 pokemon caught",
+  "gamefaqs": {
+    "id": 3375,
+    "product": "Pokemon FireRed / LeafGreen Version",
+    "section": "GameBoy Advance GameShark Save (Japan)",
+    "region": "Japan",
+    "served_as": "pokemon-firered-leafgreen-version.3375.sps",
+    "listed_size": "128KB"
+  },
+  "format": "SharkPort save (\"SharkPortSave\", kind 0x000F0000): title \"POKEMON FIRE\", date \"31-1-2004 9:36:47\", notes \"\"; cart header \"POKEMON FIRE\" / 'BPRJ' (complement 0x63); payload 131072 bytes; checksum: signed",
+  "files": {
+    "pokemon-firered-leafgreen-version.3375.sps": {
+      "size": 131170,
+      "sha1": "f2e0b9cdd490c14afbba3e76ba27fd8be7a3fcb7"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Pocket Monsters - FireRed (Japan).gba",
+      "sha1": "04139887b6cd8f53269aca098295b006ddba6cfe",
+      "size": 16777216
+    },
+    "converted_with": "tools/gamefaqs/gba-sharkport.py pokemon-firered-leafgreen-version.3375.sps --rom ROM --core CORE --outdir DIR: reads the SharkPort container as mGBA does and imports the payload as mGBA's _importSavedata does (cut to the chip, EEPROM 8-byte blocks reversed, the rest of the chip erased), then lays the chip out as the core keeps it",
+    "converted": {
+      "size": 131072,
+      "sha1": "4929322c517df7103bb4345074a559ef7f61c892"
+    },
+    "script": "scripts/gba/Pokemon - FireRed Version.load.txt",
+    "cores": {
+      "mgba": {
+        "result": "loads",
+        "detail": "CONTINUE: Kanto, 15:39",
+        "core_version": "mGBA 0.11-212-7a12d6d",
+        "file": {
+          "name": "Pocket Monsters - FireRed (Japan).srm",
+          "size": 131072,
+          "sha1": "4929322c517df7103bb4345074a559ef7f61c892"
+        },
+        "frame": "menu"
+      },
+      "vba-m": {
+        "result": "loads",
+        "detail": "CONTINUE: Kanto, 15:39",
+        "core_version": "VBA-M 115defb",
+        "file": {
+          "name": "Pocket Monsters - FireRed (Japan).srm",
+          "size": 131072,
+          "sha1": "4929322c517df7103bb4345074a559ef7f61c892"
+        },
+        "frame": "menu"
+      },
+      "gpsp": {
+        "result": "loads",
+        "detail": "CONTINUE: Kanto, 15:39",
+        "core_version": "gpSP v1.1.0-5819380",
+        "file": {
+          "name": "Pocket Monsters - FireRed (Japan).srm",
+          "size": 131072,
+          "sha1": "4929322c517df7103bb4345074a559ef7f61c892"
+        },
+        "frame": "menu"
+      },
+      "vba-next": {
+        "result": "loads",
+        "detail": "CONTINUE: Kanto, 15:39",
+        "core_version": "VBA Next v1.0.2",
+        "file": {
+          "name": "Pocket Monsters - FireRed (Japan).srm",
+          "size": 139264,
+          "sha1": "c501b144566517be09721f548783c19169bde78c"
+        },
+        "frame": "menu"
+      },
+      "beetle-gba": {
+        "result": "loads",
+        "detail": "CONTINUE: Kanto, 15:39",
+        "core_version": "Beetle GBA v0.9.36 b158166",
+        "file": {
+          "name": "Pocket Monsters - FireRed (Japan).47596db5a16556c60027e7bf372ec917.sav",
+          "size": 131072,
+          "sha1": "4929322c517df7103bb4345074a559ef7f61c892"
+        },
+        "frame": "menu"
+      },
+      "skyemu": {
+        "result": "loads",
+        "detail": "CONTINUE: Kanto, 15:39",
+        "core_version": "SkyEmu adacd0788964ed89f5c43dcbc1f3cc26deec996c",
+        "file": {
+          "name": "Pocket Monsters - FireRed (Japan).srm",
+          "size": 131072,
+          "sha1": "4929322c517df7103bb4345074a559ef7f61c892"
+        },
+        "frame": "menu"
+      }
+    },
+    "proof_order": [
+      "mgba",
+      "vba-m",
+      "gpsp",
+      "vba-next",
+      "beetle-gba",
+      "skyemu"
+    ]
+  },
+  "note": null
+}

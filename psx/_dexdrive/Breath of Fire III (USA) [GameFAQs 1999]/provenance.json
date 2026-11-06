@@ -1,0 +1,84 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_dexdrive",
+  "url": "https://gamefaqs.gamespot.com/ps/196817-breath-of-fire-iii/saves/1999",
+  "source_page": "https://gamefaqs.gamespot.com/ps/196817-breath-of-fire-iii/saves",
+  "source": "GameFAQs (section 'PlayStation DexDrive Save (North America)')",
+  "author": "hoppi420",
+  "licence": null,
+  "posted": "2002-11-22",
+  "fetched": "2026-11-05",
+  "what_it_is": "Saved game at level 2 just before intering Mt. Glaus. All dragon genes, all items/weapons/armor, master rod and Ryu's agility at 999 with best equipment equiped",
+  "gamefaqs": {
+    "id": 1999,
+    "product": "Breath of Fire III",
+    "section": "PlayStation DexDrive Save (North America)",
+    "region": "North America",
+    "served_as": "breath-of-fire-iii.1999.gme",
+    "listed_size": "131KB"
+  },
+  "format": "DexDrive .gme: '123-456-STD' 3904-byte header (per-block comments) + 131072-byte raw card; the card holds 3 save(s), 1 for this game (BASLUS-00422BOF300)",
+  "release": "Breath of Fire III (USA)",
+  "game_saves": [
+    {
+      "name": "BASLUS-00422BOF300",
+      "blocks": 1,
+      "title": "Breath of Fire 3(1) 00h36m Lv.03"
+    }
+  ],
+  "files": {
+    "breath-of-fire-iii.1999.gme": {
+      "size": 134976,
+      "sha1": "b0775d6ebd165b78befda2eceb953d7ec34a6c1e"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Breath of Fire III (USA).cue",
+      "sha1": "046ea122a7720d758492ddc2545eb9e78d788461",
+      "size": 218
+    },
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr breath-of-fire-iii.1999.gme: unwraps the card (DexDrive .gme: 3904-byte header + card)",
+    "converted": {
+      "size": 131072,
+      "sha1": "f3483e433472f76df5d86227827bde1e050ce1a4"
+    },
+    "script": "scripts/psx/Breath of Fire III.load.txt",
+    "script_variants": null,
+    "cores": {
+      "beetle-psx": {
+        "result": "loads",
+        "detail": "Load Which File? shows file 1: Ryu, LV 3, 00:36"
+      },
+      "beetle-psx-hw": {
+        "result": "loads",
+        "detail": "Load Which File? shows file 1: Ryu, LV 3, 00:36 (the same screen as on beetle-psx)"
+      },
+      "pcsx-rearmed": {
+        "result": "loads",
+        "detail": "Load Which File? shows file 1: Ryu, LV 3, 00:36 (the same screen as on beetle-psx)"
+      },
+      "swanstation": {
+        "result": "loads",
+        "detail": "Load Which File? shows file 1: Ryu, LV 3, 00:36 (the same screen as on beetle-psx)"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": [
+      "beetle-psx",
+      "beetle-psx-hw",
+      "pcsx-rearmed",
+      "swanstation"
+    ]
+  },
+  "note": null
+}

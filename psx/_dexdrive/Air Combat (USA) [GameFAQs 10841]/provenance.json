@@ -1,0 +1,87 @@
+{
+  "method": "downloaded",
+  "system": "psx",
+  "core": "_dexdrive",
+  "url": "https://gamefaqs.gamespot.com/ps/572387-air-combat/saves/10841",
+  "source_page": "https://gamefaqs.gamespot.com/ps/572387-air-combat/saves",
+  "source": "GameFAQs (section 'PlayStation DexDrive Save (North America)')",
+  "author": "Asfan42069",
+  "licence": null,
+  "posted": "2006-02-10",
+  "fetched": "2026-11-05",
+  "what_it_is": "All planes are unlocked!!!",
+  "gamefaqs": {
+    "id": 10841,
+    "product": "Air Combat (1995)",
+    "section": "PlayStation DexDrive Save (North America)",
+    "region": "North America",
+    "served_as": "air-combat-1995.10841.gme",
+    "listed_size": "132KB"
+  },
+  "format": "DexDrive .gme: '123-456-STD' 3904-byte header + 131072-byte raw card + 345 stray bytes; the card holds 1 save(s), 1 for this game (BASLUS-00001AIRCOMB)",
+  "release": "Air Combat (USA)",
+  "game_saves": [
+    {
+      "name": "BASLUS-00001AIRCOMB",
+      "blocks": 1,
+      "title": "AIRCOMBAT"
+    }
+  ],
+  "files": {
+    "air-combat-1995.10841.gme": {
+      "size": 135321,
+      "sha1": "27d0b84eff370185cef731f39e815a06abfb81f5"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Air Combat (USA).cue",
+      "sha1": "6bb0056c230defaa52bc56e86c0f3c00e114b7d6",
+      "size": 6975
+    },
+    "converted_with": "tools/gamefaqs/psx-card.py card.mcr air-combat-1995.10841.gme: unwraps the card (DexDrive .gme: 3904-byte header + card (+345 trailing bytes, ignored))",
+    "converted": {
+      "size": 131072,
+      "sha1": "f1c4f3d8d0dc32f60260545b37f7e08c5fd2e159"
+    },
+    "script": "scripts/psx/Air Combat.load.txt",
+    "script_variants": {
+      "pcsx-rearmed": "scripts/psx/Air Combat.pcsx-rearmed.load.txt",
+      "swanstation": "scripts/psx/Air Combat.swanstation.load.txt"
+    },
+    "cores": {
+      "beetle-psx": {
+        "result": "rejected",
+        "detail": "Load your squadron lists no squadron, as with no card: the file was corrupted by a text-mode transfer (see note), so the save's block is shifted"
+      },
+      "beetle-psx-hw": {
+        "result": "rejected",
+        "detail": "Load your squadron lists no squadron, as with no card: the file was corrupted by a text-mode transfer (see note), so the save's block is shifted"
+      },
+      "pcsx-rearmed": {
+        "result": "rejected",
+        "detail": "Load your squadron lists no squadron, as with no card: the file was corrupted by a text-mode transfer (see note), so the save's block is shifted"
+      },
+      "swanstation": {
+        "result": "rejected",
+        "detail": "Load your squadron lists no squadron, as with no card: the file was corrupted by a text-mode transfer (see note), so the save's block is shifted"
+      },
+      "duckstation": {
+        "result": "not-run",
+        "detail": "not runnable here: no macOS build of the DuckStation libretro core"
+      },
+      "psx-mister": {
+        "result": "not-run",
+        "detail": "not runnable here: a MiSTer FPGA core"
+      }
+    },
+    "proof_order": [
+      "beetle-psx",
+      "beetle-psx-hw",
+      "pcsx-rearmed",
+      "swanstation"
+    ]
+  },
+  "note": "The file is 345 bytes longer than a .gme because every 0x0A byte in it is preceded by 0x0D (345 of each): a text-mode (LF to CRLF) transfer corrupted it at some point. The converter, like DuckStation and MemcardRex, ignores the excess, so the card's save block is shifted and the game finds no squadron. Removing the 0x0D before each 0x0A gives exactly 134976 bytes, and that repaired card (made by hand, not by the converter) lists eight squadrons on Beetle PSX, F-4 to F-22, missions up to 16, as the description says. one-saves (1saves convert) does not read this file: a PS1 memory card is 131072 bytes, or that behind a DexDrive, VGS or PSP header, but this file is 135321 bytes"
+}

@@ -1,0 +1,122 @@
+{
+  "method": "downloaded",
+  "system": "ps2",
+  "core": "_ps3",
+  "url": "https://gamefaqs.gamespot.com/ps2/920196-the-spongebob-squarepants-movie/saves/26294",
+  "source_page": "https://gamefaqs.gamespot.com/ps2/920196-the-spongebob-squarepants-movie/saves",
+  "source": "GameFAQs (section 'PlayStation 2 PS3 Virtual Memory Card Save (ZIP) (North America)')",
+  "author": "EmoneyWains",
+  "licence": null,
+  "posted": "2019-05-04",
+  "fetched": "2026-11-05",
+  "what_it_is": "All Levels Unlocked",
+  "gamefaqs": {
+    "id": 26294,
+    "product": "The SpongeBob SquarePants Movie",
+    "section": "PlayStation 2 PS3 Virtual Memory Card Save (ZIP) (North America)",
+    "region": "North America",
+    "served_as": "the-spongebob-squarepants-movie.26294.zip",
+    "listed_size": "17KB"
+  },
+  "format": "PS3 Virtual Memory Card export (.PSV): '\\0VSP' header, PS2 save type 2, 137844 bytes, folder BASLUS-20904SBMovie , 4 files, 137444 bytes of file data",
+  "files": {
+    "BASLUS-2090453424D6F76696520.PSV": {
+      "size": 137844,
+      "sha1": "623efadb9c2daabd9d8ae2aabedfbec818de060e"
+    }
+  },
+  "save": {
+    "folder": "BASLUS-20904SBMovie ",
+    "title": [
+      "SpongeBob −",
+      "The Movie"
+    ],
+    "times": "as the file stores them (PS2 card times, JST)",
+    "files": [
+      {
+        "name": "BASLUS-20904SBMovie ",
+        "size": 992,
+        "sha1": "777e5b36e180b96d0c78d3e476f5d17bea04d075",
+        "created": "2019-04-19 08:23:25",
+        "modified": "2019-04-19 08:23:26"
+      },
+      {
+        "name": "icon.sys",
+        "size": 964,
+        "sha1": "18b7b40ecfcadf88ad0be76bdd7c96a3b400439f",
+        "created": "2019-04-19 08:23:26",
+        "modified": "2019-04-19 08:23:26"
+      },
+      {
+        "name": "SpongeIcon01.ico",
+        "size": 83544,
+        "sha1": "acf339f406af10e1cc9d87fa7b9d91090d552791",
+        "created": "2019-04-19 08:23:27",
+        "modified": "2019-04-19 08:23:28"
+      },
+      {
+        "name": "SpongeBobMovie01",
+        "size": 51944,
+        "sha1": "c542d1459b4f4c98f94939cafa89de1a7cee363b",
+        "created": "2019-04-19 17:31:32",
+        "modified": "2019-04-19 17:31:33"
+      }
+    ]
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": null,
+    "converted_with": "tools/gamefaqs/ps2-card.py 'BASLUS-2090453424D6F76696520.PSV' -o OUT: reads the save with mymcplus 3.0.5 and writes OUT/Mcd001.ps2 (an 8 MiB card with ECC, formatted and filled by mymcplus) for lrps2/pcee2/pcsx2, and OUT/mc0/<folder>/ for Play!",
+    "converted": {
+      "Mcd001.ps2": {
+        "size": 8650752,
+        "sha1": "fc3596b4b569243bc8fe6dd887671a3b36f4b268"
+      },
+      "mc0/BASLUS-20904SBMovie /": {
+        "BASLUS-20904SBMovie ": {
+          "size": 992,
+          "sha1": "777e5b36e180b96d0c78d3e476f5d17bea04d075"
+        },
+        "icon.sys": {
+          "size": 964,
+          "sha1": "18b7b40ecfcadf88ad0be76bdd7c96a3b400439f"
+        },
+        "SpongeIcon01.ico": {
+          "size": 83544,
+          "sha1": "acf339f406af10e1cc9d87fa7b9d91090d552791"
+        },
+        "SpongeBobMovie01": {
+          "size": 51944,
+          "sha1": "c542d1459b4f4c98f94939cafa89de1a7cee363b"
+        }
+      },
+      "read_back": "work/ps2/tools/mcfs.py lists every file with the size and SHA-1 put on the card; one-saves (1saves convert + inspect) reads the card and finds BASLUS-20904SBMovie",
+      "timestamps": "what the save does not date is 2000-01-01 00:00:00 (JST, as a card stores it); the card's own root entries too"
+    },
+    "script": null,
+    "cores": {
+      "pcee2": {
+        "result": "not-run",
+        "detail": "no image of Nickelodeon The SpongeBob SquarePants Movie (USA) in the library"
+      },
+      "lrps2": {
+        "result": "not-run",
+        "detail": "no image of Nickelodeon The SpongeBob SquarePants Movie (USA) in the library"
+      },
+      "play": {
+        "result": "not-run",
+        "detail": "no image of Nickelodeon The SpongeBob SquarePants Movie (USA) in the library"
+      },
+      "pcsx2": {
+        "result": "not-run",
+        "detail": "no image of Nickelodeon The SpongeBob SquarePants Movie (USA) in the library"
+      },
+      "armsx2": {
+        "result": "not-run",
+        "detail": "ARMSX2 renders only through Vulkan here and falls back to a null GS (no picture), so nothing shows what the game read (ps2/NOTES.md)"
+      }
+    },
+    "proof_order": []
+  },
+  "note": null
+}

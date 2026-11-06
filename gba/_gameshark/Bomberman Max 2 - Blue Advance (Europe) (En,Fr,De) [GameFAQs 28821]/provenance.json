@@ -1,0 +1,119 @@
+{
+  "method": "downloaded",
+  "system": "gba",
+  "core": "_gameshark",
+  "url": "https://gamefaqs.gamespot.com/gba/919430-bomberman-max-2-blue-advance/saves/28821",
+  "source_page": "https://gamefaqs.gamespot.com/gba/919430-bomberman-max-2-blue-advance/saves",
+  "source": "GameFAQs (section 'GameBoy Advance GameShark Save (Europe)')",
+  "author": "MrShiruba",
+  "licence": null,
+  "posted": "2023-08-25",
+  "fetched": "2026-11-05",
+  "what_it_is": "File 1 : 80%. Every level possible completed.",
+  "gamefaqs": {
+    "id": 28821,
+    "product": "Bomberman Max 2",
+    "section": "GameBoy Advance GameShark Save (Europe)",
+    "region": "Europe",
+    "served_as": "bomberman-max-2.28821.sps",
+    "listed_size": "8KB"
+  },
+  "format": "SharkPort save (\"SharkPortSave\", kind 0x000F0000): title \"BOMBERMAN MA\", date \"08/24/2023 08:35:36 PM\", notes \"\"; cart header \"BOMBERMAN MA\" / 'AMHP' (complement 0x6f); payload 8192 bytes; checksum: signed",
+  "files": {
+    "bomberman-max-2.28821.sps": {
+      "size": 8295,
+      "sha1": "667e654c0e7f09d0bf2f43f2e4ddbd28914ce969"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Bomberman Max 2 - Blue Advance (Europe) (En,Fr,De).gba",
+      "sha1": "eb25e28ae1047145fd2cbcc3ecbb63330fbc8fe0",
+      "size": 16777216
+    },
+    "converted_with": "tools/gamefaqs/gba-sharkport.py bomberman-max-2.28821.sps --rom ROM --core CORE --outdir DIR: reads the SharkPort container as mGBA does and imports the payload as mGBA's _importSavedata does (cut to the chip, EEPROM 8-byte blocks reversed, the rest of the chip erased), then lays the chip out as the core keeps it",
+    "converted": {
+      "size": 8192,
+      "sha1": "ad0e24a4e2baa32dfbf593fc086b85b8cd748598"
+    },
+    "script": "scripts/gba/Bomberman Max 2.load.txt",
+    "cores": {
+      "mgba": {
+        "result": "loads",
+        "detail": "Jeu Normal -> Continuer: Fich 1 80%, Fich 2 0%, Fich 3 0%; French preselected on the language screen",
+        "core_version": "mGBA 0.11-212-7a12d6d",
+        "file": {
+          "name": "Bomberman Max 2 - Blue Advance (Europe) (En,Fr,De).srm",
+          "size": 8192,
+          "sha1": "ad0e24a4e2baa32dfbf593fc086b85b8cd748598"
+        },
+        "frame": "files"
+      },
+      "vba-m": {
+        "result": "loads",
+        "detail": "Jeu Normal -> Continuer: Fich 1 80%, Fich 2 0%, Fich 3 0%; French preselected on the language screen",
+        "core_version": "VBA-M 115defb",
+        "file": {
+          "name": "Bomberman Max 2 - Blue Advance (Europe) (En,Fr,De).srm",
+          "size": 8192,
+          "sha1": "ad0e24a4e2baa32dfbf593fc086b85b8cd748598"
+        },
+        "frame": "files"
+      },
+      "gpsp": {
+        "result": "loads",
+        "detail": "Jeu Normal -> Continuer: Fich 1 80%, Fich 2 0%, Fich 3 0%; French preselected on the language screen",
+        "core_version": "gpSP v1.1.0-5819380",
+        "file": {
+          "name": "Bomberman Max 2 - Blue Advance (Europe) (En,Fr,De).srm",
+          "size": 131072,
+          "sha1": "65090177247e5c6030ee5115903f1d4e2ea1f3cf"
+        },
+        "frame": "files"
+      },
+      "vba-next": {
+        "result": "loads",
+        "detail": "Jeu Normal -> Continuer: Fich 1 80%, Fich 2 0%, Fich 3 0%; French preselected on the language screen",
+        "core_version": "VBA Next v1.0.2",
+        "file": {
+          "name": "Bomberman Max 2 - Blue Advance (Europe) (En,Fr,De).srm",
+          "size": 139264,
+          "sha1": "2a6d5a9f110341019f2775f74a6416246c6dc555"
+        },
+        "frame": "files"
+      },
+      "beetle-gba": {
+        "result": "loads",
+        "detail": "Jeu Normal -> Continuer: Fich 1 80%, Fich 2 0%, Fich 3 0%; French preselected on the language screen",
+        "core_version": "Beetle GBA v0.9.36 b158166",
+        "file": {
+          "name": "Bomberman Max 2 - Blue Advance (Europe) (En,Fr,De).723ee616e311bd9f8584405637d9128c.eep",
+          "size": 8192,
+          "sha1": "ad0e24a4e2baa32dfbf593fc086b85b8cd748598"
+        },
+        "frame": "files"
+      },
+      "skyemu": {
+        "result": "loads",
+        "detail": "Jeu Normal -> Continuer: Fich 1 80%, Fich 2 0%, Fich 3 0%; French preselected on the language screen",
+        "core_version": "SkyEmu adacd0788964ed89f5c43dcbc1f3cc26deec996c",
+        "file": {
+          "name": "Bomberman Max 2 - Blue Advance (Europe) (En,Fr,De).srm",
+          "size": 131072,
+          "sha1": "aecd649f5fb26d4d719c006981db1aa902ccacc0"
+        },
+        "frame": "files"
+      }
+    },
+    "proof_order": [
+      "mgba",
+      "vba-m",
+      "gpsp",
+      "vba-next",
+      "beetle-gba",
+      "skyemu"
+    ]
+  },
+  "note": null
+}

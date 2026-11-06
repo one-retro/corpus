@@ -1,0 +1,105 @@
+{
+  "method": "downloaded",
+  "system": "ps2",
+  "core": "_max-drive",
+  "url": "https://gamefaqs.gamespot.com/ps2/950768-thunder-force-vi/saves/27303",
+  "source_page": "https://gamefaqs.gamespot.com/ps2/950768-thunder-force-vi/saves",
+  "source": "GameFAQs (section 'PlayStation2 Max Drive Save (Japan)')",
+  "author": "abdillah0608",
+  "licence": null,
+  "posted": "2020-12-11",
+  "fetched": "2026-11-05",
+  "what_it_is": "All Aircrafts Unlocked",
+  "gamefaqs": {
+    "id": 27303,
+    "product": "Thunder Force VI",
+    "section": "PlayStation2 Max Drive Save (Japan)",
+    "region": "Japan",
+    "served_as": "thunder-force-vi.27303.max",
+    "listed_size": "20KB"
+  },
+  "format": "Max Drive / PowerSave save: 'Ps2PowerSave' header (CRC32 24ce0f4c, matches), folder BISLPM-55096, 3 files, LZARI stream 20927 bytes unpacking to 95032 bytes (94908 bytes of file data)",
+  "files": {
+    "thunder-force-vi.27303.max": {
+      "size": 21019,
+      "sha1": "4d705d8baf3b076772859fffdfcc4aae1097896e"
+    }
+  },
+  "save": {
+    "folder": "BISLPM-55096",
+    "title": [
+      "THUNDER FORCE VI",
+      ""
+    ],
+    "times": "none: a max file stores no file times",
+    "files": [
+      {
+        "name": "icon.sys",
+        "size": 964,
+        "sha1": "e5a69d28137bd9a74d2943c861f81245d7e3381a"
+      },
+      {
+        "name": "static.ico",
+        "size": 54424,
+        "sha1": "17f17f7280d541f25cf09f03c9edc037a8f648c2"
+      },
+      {
+        "name": "BISLPM-55096",
+        "size": 39520,
+        "sha1": "ee2ed8014fbaee9d64f5fd0002a55c3fae33fe02"
+      }
+    ]
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": null,
+    "converted_with": "tools/gamefaqs/ps2-card.py 'thunder-force-vi.27303.max' -o OUT: reads the save with mymcplus 3.0.5 and writes OUT/Mcd001.ps2 (an 8 MiB card with ECC, formatted and filled by mymcplus) for lrps2/pcee2/pcsx2, and OUT/mc0/<folder>/ for Play!",
+    "converted": {
+      "Mcd001.ps2": {
+        "size": 8650752,
+        "sha1": "9f106c2b19fce6e6cf03f18383f143b8f7cfdd49"
+      },
+      "mc0/BISLPM-55096/": {
+        "icon.sys": {
+          "size": 964,
+          "sha1": "e5a69d28137bd9a74d2943c861f81245d7e3381a"
+        },
+        "static.ico": {
+          "size": 54424,
+          "sha1": "17f17f7280d541f25cf09f03c9edc037a8f648c2"
+        },
+        "BISLPM-55096": {
+          "size": 39520,
+          "sha1": "ee2ed8014fbaee9d64f5fd0002a55c3fae33fe02"
+        }
+      },
+      "read_back": "work/ps2/tools/mcfs.py lists every file with the size and SHA-1 put on the card; one-saves (1saves convert + inspect) reads the card and finds BISLPM-55096",
+      "timestamps": "what the save does not date is 2000-01-01 00:00:00 (JST, as a card stores it); the card's own root entries too"
+    },
+    "script": null,
+    "cores": {
+      "pcee2": {
+        "result": "not-run",
+        "detail": "no image of Thunder Force VI (Japan) (En,Ja) in the library"
+      },
+      "lrps2": {
+        "result": "not-run",
+        "detail": "no image of Thunder Force VI (Japan) (En,Ja) in the library"
+      },
+      "play": {
+        "result": "not-run",
+        "detail": "no image of Thunder Force VI (Japan) (En,Ja) in the library"
+      },
+      "pcsx2": {
+        "result": "not-run",
+        "detail": "no image of Thunder Force VI (Japan) (En,Ja) in the library"
+      },
+      "armsx2": {
+        "result": "not-run",
+        "detail": "ARMSX2 renders only through Vulkan here and falls back to a null GS (no picture), so nothing shows what the game read (ps2/NOTES.md)"
+      }
+    },
+    "proof_order": []
+  },
+  "note": null
+}

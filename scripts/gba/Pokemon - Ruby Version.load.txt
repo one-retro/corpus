@@ -1,0 +1,17 @@
+# Load check for a save made elsewhere (tools/GAMEFAQS.md): power on with the
+# save in place and go to the main menu, whose CONTINUE box shows the
+# player's name, play time, Pokedex count and badges. Also used for
+# Sapphire, Emerald and their other releases.
+# shot menu: the main menu, or the game's message about the save first
+#   ("The save file is corrupt. The previous save file will be loaded.").
+# shot next: after one A: the main menu if a message was showing,
+#   otherwise CONTINUE was chosen and the game resumes where it was saved.
+wait 900
+press start 6       # skip the intro
+wait 900
+press start 6       # title -> main menu
+wait 600
+shot menu
+press a 6
+wait 400
+shot next

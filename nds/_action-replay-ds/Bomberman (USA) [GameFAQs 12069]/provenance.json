@@ -1,0 +1,109 @@
+{
+  "method": "downloaded",
+  "system": "nds",
+  "core": "_action-replay-ds",
+  "url": "https://gamefaqs.gamespot.com/ds/920766-bomberman/saves/12069",
+  "source_page": "https://gamefaqs.gamespot.com/ds/920766-bomberman/saves",
+  "source": "GameFAQs (section 'Action Replay Max DS (.duc) Game Save (North America)')",
+  "author": "ROFLMAOMAN",
+  "licence": null,
+  "posted": "2006-06-07",
+  "fetched": "2026-11-05",
+  "what_it_is": "Level 10-6",
+  "gamefaqs": {
+    "id": 12069,
+    "product": "Bomberman (2005)",
+    "section": "Action Replay Max DS (.duc) Game Save (North America)",
+    "region": "North America",
+    "served_as": "bomberman-2005.12069.duc",
+    "listed_size": "0KB"
+  },
+  "format": "Action Replay DS save: the 500-byte 'ARDS000000000001' header (game 'Bomberman', name 'Level 10-6'), then 512 bytes raw for the 512 B EEPROM (exact size)",
+  "files": {
+    "bomberman-2005.12069.duc": {
+      "size": 1012,
+      "sha1": "8dff1889ea9c81b37bcfa4bffe577a31c2afd73e"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Bomberman (USA).nds",
+      "sha1": "c88a441cf460a8a863fc31719ef0f56ee86b4e05",
+      "size": 8388608
+    },
+    "converted_with": "tools/gamefaqs/nds-ards.py IN step0.bin, then tools/gamefaqs/nds-cores.py step0.bin --chip 512 --stem 'Bomberman (USA)' --out DIR: drops the Action Replay header; fits it to the 512-byte chip (exact size) and writes each core's file",
+    "converted": {
+      "size": 512,
+      "sha1": "d975231596ec1ecde900a96ad945bab4e6c7ccf6"
+    },
+    "core_files": {
+      "desmume": {
+        "name": "Bomberman (USA).dsv",
+        "size": 634,
+        "sha1": "15c2eea949c99481e249f25c5f2af4fbc4c696d1"
+      },
+      "desmume-2015": {
+        "name": "Bomberman (USA).dsv",
+        "size": 634,
+        "sha1": "15c2eea949c99481e249f25c5f2af4fbc4c696d1"
+      },
+      "melonds": {
+        "name": "Bomberman (USA).sav",
+        "size": 512,
+        "sha1": "d975231596ec1ecde900a96ad945bab4e6c7ccf6"
+      },
+      "melonds-ds": {
+        "name": "Bomberman (USA).srm",
+        "size": 512,
+        "sha1": "d975231596ec1ecde900a96ad945bab4e6c7ccf6"
+      },
+      "noods": {
+        "name": "Bomberman (USA).sav",
+        "size": 512,
+        "sha1": "d975231596ec1ecde900a96ad945bab4e6c7ccf6"
+      },
+      "skyemu": {
+        "name": "Bomberman (USA).srm",
+        "size": 8388608,
+        "sha1": "e678ebda4c8ed3546e3a5e2171915942545d591c"
+      }
+    },
+    "script": "scripts/nds/Bomberman.load.txt",
+    "cores": {
+      "desmume": {
+        "result": "loads",
+        "detail": "File Select: File A \"Sam747\" AREA 10-06 CLEAR 095% TIME 003:57, File B \"Sam747\" AREA 02-01, File C \"Lee\" AREA 01-01; \"You have a quick save!\""
+      },
+      "desmume-2015": {
+        "result": "loads",
+        "detail": "File Select: File A \"Sam747\" AREA 10-06 CLEAR 095% TIME 003:57, File B \"Sam747\" AREA 02-01, File C \"Lee\" AREA 01-01; \"You have a quick save!\""
+      },
+      "melonds": {
+        "result": "loads",
+        "detail": "File Select: File A \"Sam747\" AREA 10-06 CLEAR 095% TIME 003:57, File B \"Sam747\" AREA 02-01, File C \"Lee\" AREA 01-01; \"You have a quick save!\""
+      },
+      "melonds-ds": {
+        "result": "loads",
+        "detail": "File Select: File A \"Sam747\" AREA 10-06 CLEAR 095% TIME 003:57, File B \"Sam747\" AREA 02-01, File C \"Lee\" AREA 01-01; \"You have a quick save!\""
+      },
+      "noods": {
+        "result": "loads",
+        "detail": "File Select: File A \"Sam747\" AREA 10-06 CLEAR 095% TIME 003:57, File B \"Sam747\" AREA 02-01, File C \"Lee\" AREA 01-01; \"You have a quick save!\""
+      },
+      "skyemu": {
+        "result": "loads",
+        "detail": "File Select: File A \"Sam747\" AREA 10-06 CLEAR 095% TIME 003:57, File B \"Sam747\" AREA 02-01, File C \"Lee\" AREA 01-01; \"You have a quick save!\""
+      }
+    },
+    "proof_order": [
+      "desmume",
+      "desmume-2015",
+      "melonds",
+      "melonds-ds",
+      "noods",
+      "skyemu"
+    ]
+  },
+  "note": null
+}

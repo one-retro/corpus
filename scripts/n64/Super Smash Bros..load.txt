@@ -1,0 +1,16 @@
+# Super Smash Bros., load check: power on, title, Mode Select, VS Mode,
+# the character select: 8 fighters, or 12 with the four unlocked ones.
+# N64 buttons on the RetroPad: A = b, B = y, Z = l2, Start = start.
+wait 1200
+press start 6       # skip the intro
+wait 150
+press start 6       # title -> Mode Select
+wait 150
+shot modes
+press down 6        # VS MODE
+wait 30
+press b 6
+wait 150
+press b 6           # VS START -> character select
+wait 200
+shot fighters

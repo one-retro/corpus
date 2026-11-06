@@ -1,0 +1,164 @@
+{
+  "method": "downloaded",
+  "system": "ps2",
+  "core": "_sharkport",
+  "url": "https://gamefaqs.gamespot.com/ps2/914659-ratchet-and-clank-going-commando/saves/4929",
+  "source_page": "https://gamefaqs.gamespot.com/ps2/914659-ratchet-and-clank-going-commando/saves",
+  "source": "GameFAQs (section 'PlayStation2 SharkPort 2 Save (North America)')",
+  "author": "Warhawk",
+  "licence": null,
+  "posted": "2004-09-09",
+  "fetched": "2026-11-05",
+  "what_it_is": "All 30 Skill Points, All Weapons (all of them up to their final form), 40 Platinum Bolts Found, Beat 4 times, Nanotech fully upgraded, All cheats unlocked, All Unlockables unlocked",
+  "gamefaqs": {
+    "id": 4929,
+    "product": "Ratchet & Clank: Going Commando",
+    "section": "PlayStation2 SharkPort 2 Save (North America)",
+    "region": "North America",
+    "served_as": "ratchet-and-clank-going-commando.4929.sps",
+    "listed_size": "470KB"
+  },
+  "format": "SharkPort / X-Port save: 'SharkPortSave' header (title 'Ratchet t Clank Going Commando', date 'Save9/9/2004 10:04:28 PM 41', comment ''), folder BASCUS-97268RATCHET, 7 files, 479454 bytes of file data, 4-byte checksum at the end",
+  "files": {
+    "ratchet-and-clank-going-commando.4929.sps": {
+      "size": 481552,
+      "sha1": "0e503e31a4f1042c2e6ed50ebcf7972b66e01d2c"
+    }
+  },
+  "save": {
+    "folder": "BASCUS-97268RATCHET",
+    "title": [
+      "Ratchet & Clank",
+      "Going Commando"
+    ],
+    "times": "as the file stores them (PS2 card times, JST)",
+    "files": [
+      {
+        "name": "icon.sys",
+        "size": 964,
+        "sha1": "f48a7a991b3d2783a6d825c7e4ec0da3cae660c7",
+        "created": "2004-04-28 14:47:38",
+        "modified": "2004-04-28 14:47:39"
+      },
+      {
+        "name": "static.ico",
+        "size": 26134,
+        "sha1": "06e41244b9160968220d0088cedf1ae406ac72f3",
+        "created": "2004-04-28 14:47:39",
+        "modified": "2004-04-28 14:47:40"
+      },
+      {
+        "name": "save0.bin",
+        "size": 99264,
+        "sha1": "e78432c563c2e287aa6ca0f3e0c0dd9791f4363e",
+        "created": "2004-04-28 14:47:40",
+        "modified": "2004-08-04 11:15:38"
+      },
+      {
+        "name": "save1.bin",
+        "size": 99264,
+        "sha1": "6de30277c7713cb0ab12ded0298423f68efbb05b",
+        "created": "2004-04-28 14:47:42",
+        "modified": "2004-04-28 14:47:44"
+      },
+      {
+        "name": "save2.bin",
+        "size": 99264,
+        "sha1": "6de30277c7713cb0ab12ded0298423f68efbb05b",
+        "created": "2004-04-28 14:47:44",
+        "modified": "2004-04-28 14:47:46"
+      },
+      {
+        "name": "save3.bin",
+        "size": 99264,
+        "sha1": "6de30277c7713cb0ab12ded0298423f68efbb05b",
+        "created": "2004-04-28 14:47:46",
+        "modified": "2004-04-28 14:47:48"
+      },
+      {
+        "name": "BASCUS-97268RATCHET",
+        "size": 55300,
+        "sha1": "83aba61efcf124541c172b40804760563019ba72",
+        "created": "2004-04-28 14:47:48",
+        "modified": "2004-04-28 14:47:49"
+      }
+    ]
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Ratchet & Clank - Going Commando (USA).iso",
+      "sha1": "f2cfaf0eb12b3c0d8fd6db7aa49ce032e8a6020b",
+      "size": 3828350976
+    },
+    "converted_with": "tools/gamefaqs/ps2-card.py 'ratchet-and-clank-going-commando.4929.sps' -o OUT: reads the save with mymcplus 3.0.5 and writes OUT/Mcd001.ps2 (an 8 MiB card with ECC, formatted and filled by mymcplus) for lrps2/pcee2/pcsx2, and OUT/mc0/<folder>/ for Play!",
+    "converted": {
+      "Mcd001.ps2": {
+        "size": 8650752,
+        "sha1": "85417e512bf73ad86a377e20296ec70a6b687654"
+      },
+      "mc0/BASCUS-97268RATCHET/": {
+        "icon.sys": {
+          "size": 964,
+          "sha1": "f48a7a991b3d2783a6d825c7e4ec0da3cae660c7"
+        },
+        "static.ico": {
+          "size": 26134,
+          "sha1": "06e41244b9160968220d0088cedf1ae406ac72f3"
+        },
+        "save0.bin": {
+          "size": 99264,
+          "sha1": "e78432c563c2e287aa6ca0f3e0c0dd9791f4363e"
+        },
+        "save1.bin": {
+          "size": 99264,
+          "sha1": "6de30277c7713cb0ab12ded0298423f68efbb05b"
+        },
+        "save2.bin": {
+          "size": 99264,
+          "sha1": "6de30277c7713cb0ab12ded0298423f68efbb05b"
+        },
+        "save3.bin": {
+          "size": 99264,
+          "sha1": "6de30277c7713cb0ab12ded0298423f68efbb05b"
+        },
+        "BASCUS-97268RATCHET": {
+          "size": 55300,
+          "sha1": "83aba61efcf124541c172b40804760563019ba72"
+        }
+      },
+      "read_back": "work/ps2/tools/mcfs.py lists every file with the size and SHA-1 put on the card; one-saves (1saves convert + inspect) reads the card and finds BASCUS-97268RATCHET",
+      "timestamps": "what the save does not date is 2000-01-01 00:00:00 (JST, as a card stores it); the card's own root entries too"
+    },
+    "script": "scripts/ps2/Ratchet & Clank - Going Commando (USA).load.txt",
+    "cores": {
+      "pcee2": {
+        "detail": "Load Game: 00:00 (challenge 4) 9,999,999 bolts, date 00/00/00; Planet Aranos, Flying Lab",
+        "result": "loads"
+      },
+      "lrps2": {
+        "detail": "Load Game: 00:00 (challenge 4) 9,999,999 bolts, date 00/00/00; Planet Aranos, Flying Lab",
+        "result": "loads"
+      },
+      "play": {
+        "detail": "Load Game: 00:00 (challenge 4) 9,999,999 bolts, date 00/00/00; Planet Aranos, Flying Lab",
+        "result": "loads"
+      },
+      "pcsx2": {
+        "detail": "Load Game: 00:00 (challenge 4) 9,999,999 bolts, date 00/00/00; Planet Aranos, Flying Lab",
+        "result": "loads"
+      },
+      "armsx2": {
+        "result": "not-run",
+        "detail": "ARMSX2 renders only through Vulkan here and falls back to a null GS (no picture), so nothing shows what the game read (ps2/NOTES.md)"
+      }
+    },
+    "proof_order": [
+      "pcee2",
+      "lrps2",
+      "play",
+      "pcsx2"
+    ]
+  },
+  "note": null
+}

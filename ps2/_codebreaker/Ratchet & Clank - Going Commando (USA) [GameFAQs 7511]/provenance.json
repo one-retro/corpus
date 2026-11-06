@@ -1,0 +1,164 @@
+{
+  "method": "downloaded",
+  "system": "ps2",
+  "core": "_codebreaker",
+  "url": "https://gamefaqs.gamespot.com/ps2/914659-ratchet-and-clank-going-commando/saves/7511",
+  "source_page": "https://gamefaqs.gamespot.com/ps2/914659-ratchet-and-clank-going-commando/saves",
+  "source": "GameFAQs (section 'PlayStation2 CodeBreaker Save (North America)')",
+  "author": "iNtHEmIND",
+  "licence": null,
+  "posted": "2005-04-20",
+  "fetched": "2026-11-05",
+  "what_it_is": "All Weapons Upgraded",
+  "gamefaqs": {
+    "id": 7511,
+    "product": "Ratchet & Clank: Going Commando",
+    "section": "PlayStation2 CodeBreaker Save (North America)",
+    "region": "North America",
+    "served_as": "ratchet-and-clank-going-commando.7511.cbs",
+    "listed_size": "25KB"
+  },
+  "format": "CodeBreaker save: 'CFU\\0' header of 296 bytes (folder field 'BASCUS-97268RATCHET', title 'Ratchet : Clank  Going Commando'), RC4-encrypted zlib body of 25744 bytes unpacking to 487456 bytes: 7 files, 487008 bytes of file data",
+  "files": {
+    "ratchet-and-clank-going-commando.7511.cbs": {
+      "size": 26040,
+      "sha1": "e04bd1018370998536aa872e2b13a514c4d70542"
+    }
+  },
+  "save": {
+    "folder": "BASCUS-97268RATCHET",
+    "title": [
+      "Ratchet & Clank",
+      "Going Commando"
+    ],
+    "times": "as the file stores them (PS2 card times, JST)",
+    "files": [
+      {
+        "name": "BASCUS-97268RATCHET",
+        "size": 55300,
+        "sha1": "dc1e5d212f808429cec257281b44410b734ebd67",
+        "created": "2004-03-31 01:05:49",
+        "modified": "2004-03-31 01:05:50"
+      },
+      {
+        "name": "icon.sys",
+        "size": 964,
+        "sha1": "f48a7a991b3d2783a6d825c7e4ec0da3cae660c7",
+        "created": "2004-03-31 01:05:40",
+        "modified": "2004-03-31 01:05:41"
+      },
+      {
+        "name": "save0.bin",
+        "size": 99264,
+        "sha1": "ad53cce4a7948f3d8c44127b469ab48d764f02ca",
+        "created": "2004-03-31 01:05:42",
+        "modified": "2004-03-31 01:10:34"
+      },
+      {
+        "name": "save1.bin",
+        "size": 99264,
+        "sha1": "6de30277c7713cb0ab12ded0298423f68efbb05b",
+        "created": "2004-03-31 01:05:44",
+        "modified": "2004-03-31 01:05:45"
+      },
+      {
+        "name": "save2.bin",
+        "size": 99264,
+        "sha1": "6de30277c7713cb0ab12ded0298423f68efbb05b",
+        "created": "2004-03-31 01:05:46",
+        "modified": "2004-03-31 01:05:47"
+      },
+      {
+        "name": "save3.bin",
+        "size": 99264,
+        "sha1": "6de30277c7713cb0ab12ded0298423f68efbb05b",
+        "created": "2004-03-31 01:05:47",
+        "modified": "2004-03-31 01:05:49"
+      },
+      {
+        "name": "static.ico",
+        "size": 33688,
+        "sha1": "851a453925e06eea83635553ab95a2dcb333515d",
+        "created": "2004-01-31 04:08:19",
+        "modified": "2004-01-31 04:08:19"
+      }
+    ]
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": {
+      "name": "Ratchet & Clank - Going Commando (USA).iso",
+      "sha1": "f2cfaf0eb12b3c0d8fd6db7aa49ce032e8a6020b",
+      "size": 3828350976
+    },
+    "converted_with": "tools/gamefaqs/ps2-card.py 'ratchet-and-clank-going-commando.7511.cbs' -o OUT: reads the save with mymcplus 3.0.5 and writes OUT/Mcd001.ps2 (an 8 MiB card with ECC, formatted and filled by mymcplus) for lrps2/pcee2/pcsx2, and OUT/mc0/<folder>/ for Play!",
+    "converted": {
+      "Mcd001.ps2": {
+        "size": 8650752,
+        "sha1": "01fb1803b38281fb292c628ed255e43ee331d8b9"
+      },
+      "mc0/BASCUS-97268RATCHET/": {
+        "BASCUS-97268RATCHET": {
+          "size": 55300,
+          "sha1": "dc1e5d212f808429cec257281b44410b734ebd67"
+        },
+        "icon.sys": {
+          "size": 964,
+          "sha1": "f48a7a991b3d2783a6d825c7e4ec0da3cae660c7"
+        },
+        "save0.bin": {
+          "size": 99264,
+          "sha1": "ad53cce4a7948f3d8c44127b469ab48d764f02ca"
+        },
+        "save1.bin": {
+          "size": 99264,
+          "sha1": "6de30277c7713cb0ab12ded0298423f68efbb05b"
+        },
+        "save2.bin": {
+          "size": 99264,
+          "sha1": "6de30277c7713cb0ab12ded0298423f68efbb05b"
+        },
+        "save3.bin": {
+          "size": 99264,
+          "sha1": "6de30277c7713cb0ab12ded0298423f68efbb05b"
+        },
+        "static.ico": {
+          "size": 33688,
+          "sha1": "851a453925e06eea83635553ab95a2dcb333515d"
+        }
+      },
+      "read_back": "work/ps2/tools/mcfs.py lists every file with the size and SHA-1 put on the card; one-saves (1saves convert + inspect) reads the card and finds BASCUS-97268RATCHET",
+      "timestamps": "what the save does not date is 2000-01-01 00:00:00 (JST, as a card stores it); the card's own root entries too"
+    },
+    "script": "scripts/ps2/Ratchet & Clank - Going Commando (USA).load.txt",
+    "cores": {
+      "pcee2": {
+        "detail": "'Please insert a Memory Card (PS2) in MEMORY CARD slot 1 that contains Ratchet and Clank: Going Commando game data', as with no save. The card reads back file for file; this save differs from the six that load in its static.ico (33688 bytes, mode 8417, dated two months before the other files; theirs is 26134 bytes, 8497) and in its save0.bin, modified 5 minutes after the rest",
+        "result": "rejected"
+      },
+      "lrps2": {
+        "detail": "'Please insert a Memory Card (PS2) in MEMORY CARD slot 1 that contains Ratchet and Clank: Going Commando game data', as with no save. The card reads back file for file; this save differs from the six that load in its static.ico (33688 bytes, mode 8417, dated two months before the other files; theirs is 26134 bytes, 8497) and in its save0.bin, modified 5 minutes after the rest",
+        "result": "rejected"
+      },
+      "play": {
+        "detail": "'Please insert a Memory Card (PS2) in MEMORY CARD slot 1 that contains Ratchet and Clank: Going Commando game data', as with no save. The card reads back file for file; this save differs from the six that load in its static.ico (33688 bytes, mode 8417, dated two months before the other files; theirs is 26134 bytes, 8497) and in its save0.bin, modified 5 minutes after the rest",
+        "result": "rejected"
+      },
+      "pcsx2": {
+        "detail": "'Please insert a Memory Card (PS2) in MEMORY CARD slot 1 that contains Ratchet and Clank: Going Commando game data', as with no save. The card reads back file for file; this save differs from the six that load in its static.ico (33688 bytes, mode 8417, dated two months before the other files; theirs is 26134 bytes, 8497) and in its save0.bin, modified 5 minutes after the rest",
+        "result": "rejected"
+      },
+      "armsx2": {
+        "result": "not-run",
+        "detail": "ARMSX2 renders only through Vulkan here and falls back to a null GS (no picture), so nothing shows what the game read (ps2/NOTES.md)"
+      }
+    },
+    "proof_order": [
+      "pcee2",
+      "lrps2",
+      "play",
+      "pcsx2"
+    ]
+  },
+  "note": null
+}

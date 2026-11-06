@@ -1,0 +1,51 @@
+{
+  "method": "downloaded",
+  "system": "gc",
+  "core": "_usb-memory-adapter",
+  "url": "https://gamefaqs.gamespot.com/gamecube/516710-mario-kart-double-dash/saves/3315",
+  "source_page": "https://gamefaqs.gamespot.com/gamecube/516710-mario-kart-double-dash/saves",
+  "source": "GameFAQs (section 'GameCube USB Memory Adapter Save (Japan)')",
+  "author": "MentholMoose",
+  "licence": null,
+  "posted": "2004-01-18",
+  "fetched": "2026-11-05",
+  "what_it_is": "All gold trophies, 100% of bonuses unlocked.",
+  "gamefaqs": {
+    "id": 3315,
+    "product": "Mario Kart: Double Dash!!",
+    "section": "GameCube USB Memory Adapter Save (Japan)",
+    "region": "Japan",
+    "served_as": "mario-kart-double-dash.3315.gci",
+    "listed_size": "24KB"
+  },
+  "format": "GCI: the 64-byte card directory entry (GM4J01, file 'MarioKart Double Dash!!', 3 blocks, modified 2045-07-27 08:52:29, comment 'マリオカート ダブルダッシュ!! / ゲームデータ 45/07/27') then 3 x 8 KiB blocks = 24640 bytes",
+  "files": {
+    "mario-kart-double-dash.3315.gci": {
+      "size": 24640,
+      "sha1": "105fc5f0068b0c70be554ea5df206b9c3e3828b6"
+    }
+  },
+  "verified": {
+    "date": "2026-11-05",
+    "rom": null,
+    "converted_with": "tools/gamefaqs/gc-gci.py place <file> <GC/USA/Card A>: copies the GCI unchanged into the GCI folder under Dolphin's own name for it",
+    "converted": {
+      "size": 24640,
+      "sha1": "105fc5f0068b0c70be554ea5df206b9c3e3828b6",
+      "name": "01-GM4J-MarioKart Double Dash!!.gci"
+    },
+    "script": null,
+    "cores": {
+      "dolphin-emu": {
+        "result": "not-run",
+        "detail": "no Mario Kart - Double Dash!! (Japan) disc image in the library (only the USA release)"
+      },
+      "dolphin-emu@dolphin": {
+        "result": "not-run",
+        "detail": "no Mario Kart - Double Dash!! (Japan) disc image in the library (only the USA release)"
+      }
+    },
+    "proof_order": []
+  },
+  "note": "The directory entry and the comment are dated 2045-07-27: the console's clock was set to 2045. 1saves reads it from a card but gives it no label (the Shift-JIS comment is not decoded)."
+}

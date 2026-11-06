@@ -1,0 +1,10 @@
+# The Legend of Dragoon: title > Continue > the memory card's file list.
+wait 1500           # BIOS logos
+repeat 7            # skip the intros to the title menu
+press start 6
+wait 250
+end
+shot title
+press b 6           # Continue (the cursor starts on it when a save is found)
+wait 700            # "Checking MEMORY CARD", then the list
+shot load
