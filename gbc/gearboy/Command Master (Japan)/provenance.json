@@ -1,0 +1,31 @@
+{
+  "method": "played",
+  "system": "gbc",
+  "core": "gearboy",
+  "core_file": "gearboy_libretro.dylib",
+  "core_name": "Gearboy",
+  "core_version": "3.8.20-8-g37d0bf3",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Command Master (Japan).gbc",
+    "sha1": "f1d3a1ff7a76c49ce3e094ca994d488dbdadf9a2",
+    "size": 2097152
+  },
+  "rom_source": null,
+  "subsystem": null,
+  "device": null,
+  "accelerometer": "offered through the libretro sensor interface; the script's `tilt` sets its readings",
+  "script": "scripts/gbc/Command Master.gearboy.txt",
+  "frames": 22238,
+  "options": "# MBC7 tilt from the libretro sensor interface (retro-run --accelerometer).\n# Gearboy reads the sensor's X and Z axes.\ngearboy_tilt_source = Sensor\n",
+  "started_from": null,
+  "files": {
+    "Command Master (Japan).srm": {
+      "size": 256,
+      "sha1": "0a96da3db8dd03c422b41140727d86445ab92675"
+    }
+  },
+  "created": "2026-11-12",
+  "note": null
+}

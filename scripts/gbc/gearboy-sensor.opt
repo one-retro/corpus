@@ -1,0 +1,3 @@
+# MBC7 tilt from the libretro sensor interface (retro-run --accelerometer).
+# Gearboy reads the sensor's X and Z axes.
+gearboy_tilt_source = Sensor

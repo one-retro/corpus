@@ -1,0 +1,136 @@
+# Command Master (Japan): MBC7 (93LC56 EEPROM + accelerometer), CGB only.
+# The tutorial cannot be passed without tilting, so this needs make-save.py
+# --accelerometer (retro-run's sensor interface; `tilt X Y Z` sets it, in g).
+# The mgba variant: its accelerometer axes and the A taps each text stretch
+# takes in it (cores reach the same box after different numbers of taps). See
+# gbc/NOTES.md. Ends on the MAIN MENU after its セーブ (the game shows no message).
+wait 120
+press a 6                # CAUTION: hold the Game Boy level, press A (calibration)
+wait 1900
+press start 6            # skip the opening
+wait 700
+press start 10           # title: PUSH ANY KEY
+wait 120
+tap down 1 16            # name entry: け
+tap right 3 16
+tap a 1 30
+tap down 2 16            # and き
+tap right 4 16
+tap a 1 30
+press start 6            # cursor to おわる
+wait 30
+press a 6
+wait 90
+press a 6                # けきくんですね! これでいいですか? はい
+wait 60
+tap a 395 12            # the story, up to the V-change practice
+wait 60
+press a 6                # V-CHANGE START
+wait 160
+tilt 1 0 0            # R
+wait 20
+press a 4
+wait 8
+tilt 0 0 0
+wait 49
+tilt 1 0 0            # R
+wait 20
+press a 4
+wait 8
+tilt 0 0 0
+wait 48
+tilt 0 -1 0            # D
+wait 20
+press a 4
+wait 8
+tilt 0 0 0
+wait 209
+tilt 1 0 0            # R
+wait 20
+press a 4
+wait 8
+tilt 0 0 0
+wait 48
+tilt 1 0 0            # R
+wait 20
+press a 4
+wait 8
+tilt 0 0 0
+wait 48
+tilt -1 0 0            # L
+wait 20
+press a 4
+wait 8
+tilt 0 0 0
+wait 300
+shot vchange
+tap a 100 12
+tap a 71 20             # to the ゲイル (G) practice: ◁▽
+wait 197
+tilt -1 0 0            # L
+wait 16
+tilt 0 0 0
+wait 8
+tilt 0 -1 0            # D
+wait 16
+tilt 0 0 0
+wait 8
+press a 4                # enter the command
+wait 240
+tap a 22 20             # to the アーツ (A) practice: ▷▽
+wait 245
+tilt 1 0 0            # R
+wait 16
+tilt 0 0 0
+wait 8
+tilt 0 -1 0            # D
+wait 16
+tilt 0 0 0
+wait 8
+press a 4                # enter the command
+wait 240
+tap a 29 20             # to the エナジー (E) practice: ▷◁
+wait 245
+tilt 1 0 0            # R
+wait 16
+tilt 0 0 0
+wait 8
+tilt -1 0 0            # L
+wait 16
+tilt 0 0 0
+wait 8
+press a 4                # enter the command
+wait 240
+tap a 124 20            # to the ひっさつわざ practice (waits for ✚+A)
+wait 30
+press up+a 10            # hold the D-pad and A: input starts
+repeat 16                # shake left-right
+  tilt 1 0 0
+  press up+a 6
+  tilt -1 0 0
+  press up+a 6
+end
+repeat 24                # shake front-back
+  tilt 0 1 0
+  press up+a 6
+  tilt 0 -1 0
+  press up+a 6
+end
+tilt 0 0 0
+wait 200
+tap a 17 20             # to the review menu
+wait 20
+tap down 3 16            # れんしゅうをおわる
+tap a 1 30
+tap a 37 20             # out of the lab to the town map
+wait 60
+press select 6           # MAIN MENU
+wait 60
+tap down 3 16            # セーブ
+wait 30
+press a 6
+wait 90
+shot confirm
+press a 6                # セーブしてもよろしいですか? はい
+wait 180
+shot saved

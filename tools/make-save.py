@@ -151,6 +151,8 @@ def main():
     ap.add_argument("--slot", action="append", default=[], help="a further subsystem slot file (- for empty)")
     ap.add_argument("--ports", help="controller ports to plug a pad into (retro-run default 2)")
     ap.add_argument("--pace", help="frames per wall-clock second (cores with their own real-time thread)")
+    ap.add_argument("--accelerometer", action="store_true",
+                    help="offer the core an accelerometer (sensor interface), driven by the script's `tilt`")
     ap.add_argument("--rom-source", help="URL a freely distributed homebrew ROM came from")
     a = ap.parse_args()
 
@@ -192,6 +194,8 @@ def main():
         cmd += ["--ports", a.ports]
     if a.pace:
         cmd += ["--pace", a.pace]
+    if a.accelerometer:
+        cmd += ["--accelerometer"]
     env = dict(os.environ, HOME=home, CFFIXED_USER_HOME=home) if a.home else None
     try:
         run = subprocess.run(cmd, capture_output=True, text=True, timeout=a.timeout, cwd=work, env=env)
@@ -273,6 +277,8 @@ def main():
                            "loaded_with": "retro_load_game_special, as RetroArch loads a subsystem (retro-run --subsystem)"}
                           if a.subsystem else None),
             "device": a.device,
+            **({"accelerometer": "offered through the libretro sensor interface; the script's `tilt` sets its readings"}
+               if a.accelerometer else {}),
             "script": os.path.relpath(script, ROOT),
             "frames": info.get("frames"),
             "options": open(a.options).read() if a.options else None,

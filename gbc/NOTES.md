@@ -92,6 +92,9 @@ Filed by this pass (`"method": "downloaded"`, files under `.cache/downloads/gbc/
   MiSTer core. 33280 = 32768 + 512: the footer starts with the same 48-byte record mGBA and VBA-M
   write as `.rtc` (5 x u32 registers `26 1a 16 10 be`, the same 5 latched, u64 LE Unix time
   2024-09-09), then 464 bytes of 0xFF. Revision not stated; the folder uses the Rev 0 name.
+- `gameboy-mister/Robopon - Sun Version (USA) (SGB Enhanced) (GB Compatible) (played)/`: made on the
+  owner's MiSTer with the corpus script on 2026-11-10 (MISTER.md, third session): 33280 bytes, the
+  same packed HuC-3 footer, its timestamp the MiSTer's local standard time.
 - `gameboy-mister/Robopon - Sun Version (USA) (SGB Enhanced) (GB Compatible)/`: from the zip on
   budude2/openfpga-GBC issue #38. 33280 = 32768 + 512, but the HuC-3 footer is packed differently:
   `f7 98 d0 65` (u32 LE Unix time, 2024-02-17) then `72 8e 00 40 00 00`, then 0xFF.
@@ -151,3 +154,69 @@ Both filed cores reload their own file (checked from a fresh run). The files:
 - The first 8 KiB are byte-identical between the two. The untouched 24 KiB after it are 0xFF in
   Gearboy and 0x00 in IroGB (the usual fill difference). So a converter between the two must cut or
   add the 1 MiB + 257-byte tail.
+
+### Command Master (Japan): MBC7 whose save lies behind a tilt tutorial (added 2026-11-12)
+
+The owner's ROM, which is the No-Intro "Command Master (Japan)" (sha1 f1d3a1ff..., verified).
+Header: cartridge type 0x22 (MBC7: 93LC56 EEPROM, 128 words of 16 bits, plus a two-axis
+accelerometer), RAM size 0, CGB only (0xC0), 2 MiB. Unlike Kirby Tilt 'n' Tumble, which writes its
+EEPROM at power-on, this game writes nothing until the player saves, and the save is only on
+the MAIN MENU (SELECT on the town map), which the game opens only after a tutorial that cannot
+be passed without tilting:
+
+1. V-change: six timing points scroll onto a green bar; at each one, tilt in the command's
+   direction and press A (Shine Water: ▷▷▽▷▷◁). They cross the bar 182, 263, 343, 584, 664 and
+   744 frames after the A that starts the bar, in every core (the game's own clock).
+2. Three battle commands, each tilted in during one turn and closed with A: ゲイル ◁▽, アーツ
+   ▷▽, エナジー ▷◁. The turn opens 220-240 frames after the A that closes the instructions and
+   lasts about 130.
+3. A special move: hold ✚ and A and shake left-right, then front-back from the gauge's halfway
+   mark (16 + 24 shakes of 12 frames scored best).
+4. The review menu, れんしゅうをおわる, the town map, SELECT, セーブ, "セーブしてもよろしいですか?" はい.
+   The game says nothing; the MAIN MENU comes back (the proof).
+
+retro-run got an accelerometer for this (the libretro sensor interface, offered only with
+`--accelerometer`, which make-save.py passes on and records in provenance; the script's
+`tilt X Y Z` sets the readings in g) and a held stick (`stickhold X Y`). The script exists per
+core, `scripts/gbc/Command Master.txt` (mGBA), `.gearboy.txt`, `.doublecherrygb.txt`, generated
+from one template: the inputs are the same, but the cores disagree on two things.
+
+- **Axes.** mGBA: right = X +1, down = Y −1. Gearboy (option `gearboy_tilt_source = Sensor`,
+  `scripts/gbc/gearboy-sensor.opt`) reads X and Z: right = X −1, down = Z −1. DoubleCherry:
+  right = X −1, down = Y +1 (it mirrors both axes against mGBA). Its MBC7 scale is 0x70 per g,
+  mGBA's about 143.
+- **Taps.** The same text box comes after different numbers of A presses: mGBA reaches the
+  V-change after 395 taps of 16 frames, Gearboy after 383, DoubleCherry after 384, and the later
+  stretches differ by one tap (Gale 100+71 / 100+68 / 100+68, Arts 22 / 23 / 22, Energy 29 / 28 /
+  29). Even with A only every 60 frames, Gearboy gets a box ahead of mGBA a few scenes into the
+  opening and several boxes ahead by the lab: the cores disagree on how many frames some of the
+  game's scene changes take. Taps that land in a fade are ignored, so each count has some
+  slack, but a shared script would start the V-change too early in one core or never in another.
+
+| core | result | file |
+| --- | --- | --- |
+| mgba | **F** | `.srm` 256 bytes |
+| gearboy | **F** | `.srm` 256 bytes |
+| gameboy-mister | **F** on the owner's MiSTer (MISTER.md, fourth session): the stick tilts | `.sav` 1024 bytes |
+| doublecherrygb | passes the whole tutorial, then hangs at the save prompt (no input answers) | `.srm` 8192 bytes of 0x00 and an 8-byte `.rtc` of zeros: not filed |
+| sameboy | boots and plays, but its libretro port has no accelerometer at all, so the V-change cannot be passed | `.srm` 256 x 0xFF |
+| tgb-dual | the same (no accelerometer) | `.srm` 8192 x 0xFF, `.rtc` 4 bytes |
+| vba-m | its right stick tilts (centre 2047, not 0x81D0; the game calibrates to it), but the core keeps the MBC7 EEPROM in its CPU memory map (`gbMemory[0xa000…]`) and saves `gbRam`, so no save could reach its `.srm` (its Kirby file is blank too); not played | `.srm` 512 x 0xFF |
+| gambatte | refuses the ROM | |
+| fixgb, irogb | segfault at load | |
+| boytacean | panics: "No MBC controller available for MBC6 + SENSOR + RUMBLE + RAM + BATTERY" (it misreads type 0x22) | |
+| emux-gb | refuses: "Cart type 34 is not supported!" | |
+
+DoubleCherry's MBC7 code (TGB Dual's, `gb_core/mbc.cpp`) takes 16 data bits after an ERASE
+command, which a 93LC56 does not; the game's write sequence then likely never sees the chip
+ready. Mednafen's gb module has the same state machine (from VBA), so it was not tried.
+
+**The file.** mGBA, Gearboy and the MiSTer wrote the same 256 bytes, laid out two ways: Gearboy's
+file is mGBA's with every 16-bit word byte-swapped (the game sees the same words in both), and
+the MiSTer's 1024-byte `.sav` is mGBA's 256 bytes four times over (two 512-byte sectors of
+mirrors; `mister.py` already sizes MBC7 like MBC2). In mGBA's order: word 2 is `c0 00`, bytes 0xA0-0xF9 hold 90 values 0-3, one per Neo (the game has 90),
+and everything else is 0x00, including where the RAM copy of the block holds the play time (the
+name, "けき", is not in the EEPROM at all). At power-on the game reads only word 0 (into WRAM bank
+7 at 0xD050 when the name is confirmed) and starts a new game either way: this save, made right
+after the tutorial, is not offered as a continue, so the proof is the MAIN MENU returning after
+セーブ, and the EEPROM going from all 0xFF to the block above.

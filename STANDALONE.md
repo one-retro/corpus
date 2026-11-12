@@ -347,11 +347,46 @@ Other defaults seen: `savefiles_in_content_dir = false`, `save_file_compression 
 `savestate_file_compression = true`, `block_sram_overwrite = false`. RetroArch also writes its
 core options file and creates `states/<core>/` and `cheats/<core>/` folders; no other save files.
 
+## OpenEmu's Gambatte core (2026-11-10)
+
+OpenEmu itself was not run, but its Game Boy core was: a harness (`clang` over
+`work/standalone/openemu/oerun.m`, kept there) loads an ad-hoc-signed copy of
+`Gambatte.oecoreplugin` 0.5.1 from OpenEmu 2.4.1 against the app's own `OpenEmuBase.framework`,
+points `batterySavesDirectoryPath` at a directory of its own, and calls the core's own
+`-[GBGameCore loadFileAtPath:error:]`, `executeFrame` and `stopEmulation`, which is when the core
+writes its battery files. The installed plugin was not touched (sha1 ca29aecd...).
+
+- **Robopon Sun (HuC-3, cartridge type 0xFE): refused.** `loadFileAtPath:` answers NO. The plugin
+  holds HuC-1 code and no HuC-3 at all, so OpenEmu cannot run a HuC-3 game, and there is no HuC-3
+  clock of OpenEmu's to sample.
+- **Pokemon Crystal (MBC3): loads**, and after 300 frames writes `<rom>.sav` (32768) and
+  `<rom>.rtc`, **4 bytes big-endian**, the instant the clock counts from (here `6af3f394`,
+  the moment of the run): sinamas' Gambatte's own file layout, not the libretro core's 8 bytes
+  little-endian.
+
+## Command Master (MBC7) in the apps (2026-11-12)
+
+The game saves only after a tutorial that needs tilting (see `gbc/NOTES.md`), so an app has to
+take tilt input or be handed a state from a core that had it.
+
+- **mGBA.app 0.10.5: no file.** The game starts writing its 256-byte EEPROM on the very frame A
+  is pressed at "セーブしてもよろしいですか? はい" and is done 4-5 frames later, so the handoff could only
+  start after the first frame (libretro mGBA with `--accelerometer` had written 28 of the 256
+  bytes). mGBA.app loaded the state and the EEPROM (`<rom>.sav`, 256 bytes, beside the ROM) but
+  the game wrote nothing more in 10 or 25 seconds: the `.sav` stayed byte-identical to what was
+  handed over (`work/gbc/cm/handoff_cm.py`). The EEPROM's mid-command state evidently does not
+  carry from 0.11's state into 0.10.5. The app takes no input here (no Accessibility), so it
+  cannot play the tutorial itself.
+- **Mednafen 1.32.1: not run.** Its gb module knows MBC7 and has a tilt device, but its EEPROM
+  code is the VBA/TGB state machine with which DoubleCherry hangs at this game's save.
+- **OpenEmu: not run.** Its Game Boy core is Gambatte, which has no MBC7 (the libretro build
+  refuses this ROM).
+
 ## Apps not run, and why
 
 | App / core | Status | What it would take |
 | --- | --- | --- |
-| OpenEmu | **not run** (owner's instruction: it imports into the owner's library, no isolated mode) | A separate macOS user account, or a copy of OpenEmu's data folder swapped in and out while OpenEmu is closed; input needs Accessibility (OpenEmu has no scripting). OpenEmu keeps battery saves per core, `Library/Application Support/OpenEmu/<Core>/Battery Saves/` in the home folder. |
+| OpenEmu | **app not run** (owner's instruction: it imports into the owner's library, no isolated mode); its Gambatte core was, see below | A separate macOS user account, or a copy of OpenEmu's data folder swapped in and out while OpenEmu is closed; input needs Accessibility (OpenEmu has no scripting). OpenEmu keeps battery saves per core, `Library/Application Support/OpenEmu/<Core>/Battery Saves/` in the home folder. |
 | DuckStation (`duckstation@duckstation`) | not installed: no Homebrew cask exists any more | Download the official macOS release; its hardened runtime rules out injection, it has no scripting, so input needs Accessibility. A "last resort" run would not help: DuckStation only writes a card that the game changed. Per-game cards are `memcards/<title>_1.mcd` by default. |
 | melonDS (`melonds@melonds`) | not installed: the cask is disabled (fails Gatekeeper since 2026-09-01) | Same as DuckStation: no scripting; needs Accessibility. |
 | Azahar (`azahar@azahar`) | not installed: no cask | Same; also decrypted 3DS dumps. |

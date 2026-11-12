@@ -1,0 +1,31 @@
+{
+  "method": "played",
+  "system": "gbc",
+  "core": "mgba",
+  "core_file": "mgba_libretro.dylib",
+  "core_name": "mGBA",
+  "core_version": "0.11-212-7a12d6d",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Command Master (Japan).gbc",
+    "sha1": "f1d3a1ff7a76c49ce3e094ca994d488dbdadf9a2",
+    "size": 2097152
+  },
+  "rom_source": null,
+  "subsystem": null,
+  "device": null,
+  "accelerometer": "offered through the libretro sensor interface; the script's `tilt` sets its readings",
+  "script": "scripts/gbc/Command Master.txt",
+  "frames": 22463,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Command Master (Japan).srm": {
+      "size": 256,
+      "sha1": "53814c9fb38166b661bcb5f48a668ef57b0b9e6b"
+    }
+  },
+  "created": "2026-11-12",
+  "note": null
+}

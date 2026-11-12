@@ -228,6 +228,7 @@ struct retro_keyboard_callback {
 #define ENV_SET_VARIABLE 70
 #define ENV_GET_THROTTLE_STATE 71
 #define ENV_GET_JIT_CAPABLE 74
+#define ENV_GET_SENSOR_INTERFACE 25
 
 #define MEM_SAVE_RAM 0
 #define MEM_RTC 1
@@ -285,6 +286,11 @@ static bool fb_is_hw = false;   // the last frame is in the GL framebuffer
 static uint32_t held = 0;       // bitmask over BTN for port 0
 static uint32_t held2 = 0;      // and for port 1
 static int16_t analog[2][2][2]; // [port][stick][axis]
+static int16_t analog_hold[2][2]; // [stick][axis] of port 0, held between commands
+// An accelerometer, offered through the sensor interface only with
+// --accelerometer: readings in g on X, Y and Z, set by `tilt`.
+static bool accel_offered = false, accel_on = false;
+static float accel[3];
 static bool keys_down[512];
 static int16_t ptr_x, ptr_y; // pointer position, libretro's -0x7fff..0x7fff
 static bool ptr_down = false;
@@ -523,6 +529,23 @@ static void declare_v2(const struct retro_core_option_v2_definition *d) {
     for (; d && d->key; d++) declare_option(d->key, d->default_value, d->values);
 }
 
+// RETRO_SENSOR_ACCELEROMETER_ENABLE/DISABLE are 0/1, the axes 0..2.
+static bool cb_sensor_state(unsigned port, unsigned action, unsigned rate) {
+    (void)rate;
+    if (port != 0 || !accel_offered) return false;
+    if (action == 0) { accel_on = true; return true; }
+    if (action == 1) { accel_on = false; return true; }
+    return false; // no gyroscope, no light sensor
+}
+static float cb_sensor_input(unsigned port, unsigned id) {
+    if (port != 0 || !accel_offered || id > 2) return 0.0f;
+    return accel[id];
+}
+struct retro_sensor_interface {
+    bool (*set_sensor_state)(unsigned port, unsigned action, unsigned rate);
+    float (*get_sensor_input)(unsigned port, unsigned id);
+};
+
 static bool cb_env(unsigned cmd, void *data) {
     switch (cmd & ~EXPERIMENTAL) {
     case ENV_GET_CAN_DUPE:
@@ -632,6 +655,13 @@ static bool cb_env(unsigned cmd, void *data) {
     case ENV_GET_FASTFORWARDING:
         *(bool *)data = false;
         return true;
+    case ENV_GET_SENSOR_INTERFACE: {
+        if (!accel_offered) return false;
+        struct retro_sensor_interface *si = data;
+        si->set_sensor_state = cb_sensor_state;
+        si->get_sensor_input = cb_sensor_input;
+        return true;
+    }
     case ENV_GET_JIT_CAPABLE:
         *(bool *)data = true;
         return true;
@@ -738,7 +768,10 @@ static int16_t cb_input_state(unsigned port, unsigned dev, unsigned idx, unsigne
         if (id == JOYPAD_MASK) return (int16_t)(mask & 0xFFFF);
         return id < NBTN ? (mask >> id) & 1 : 0;
     case DEV_ANALOG:
-        if (idx < 2 && id < 2) return analog[port][idx][id];
+        if (idx < 2 && id < 2) {
+            if (analog[port][idx][id] || port != 0) return analog[port][idx][id];
+            return analog_hold[idx][id];
+        }
         return 0;
     case DEV_KEYBOARD:
         return port == 0 && id < 512 ? keys_down[id] : 0;
@@ -1180,6 +1213,22 @@ static void run_lines(int from, int to) {
             analog[0][s][1] = axis_value(a2);
             run_frames(*a3 ? atol(a3) : 4);
             analog[0][s][0] = analog[0][s][1] = 0;
+        } else if (!strcmp(cmd, "stickhold") || !strcmp(cmd, "rstickhold")) {
+            // stickhold X Y: leave the left (or right) stick there across later
+            // commands, buttons included, until `stickhold 0 0`. Runs no frames.
+            int s = cmd[0] == 'r';
+            analog_hold[s][0] = axis_value(a1);
+            analog_hold[s][1] = axis_value(a2);
+        } else if (!strcmp(cmd, "tilt")) {
+            // tilt X Y [Z]: the accelerometer reads X, Y, Z (in g) from now on.
+            // Runs no frames. Needs --accelerometer.
+            if (!accel_offered) {
+                fprintf(stderr, "line %d: tilt needs --accelerometer\n", lineno);
+                exit(2);
+            }
+            accel[0] = (float)atof(a1);
+            accel[1] = (float)atof(a2);
+            accel[2] = *a3 ? (float)atof(a3) : 0.0f;
         } else if (!strcmp(cmd, "touch")) {
             // touch X Y [N]: press the touchscreen at frame pixel (X, Y) for N
             // frames. Coordinates are in the whole frame as `shot` writes it, so
@@ -1350,6 +1399,8 @@ static void usage(const char *argv0) {
             "  --list-subsystems  print the core's subsystems and exit\n"
             "  --device ID      libretro device for the pads (default 1, joypad; a\n"
             "                   DualShock is usually 0x305, analog subclass 2)\n"
+            "  --accelerometer  offer the core an accelerometer (the sensor interface);\n"
+            "                   `tilt` sets what it reads\n"
             "  --quiet          only report errors\n"
             "\n"
             "script commands:\n"
@@ -1360,6 +1411,9 @@ static void usage(const char *argv0) {
             "  tap BTN [COUNT] [GAP]  press 4 frames then wait GAP (default 12), COUNT times\n"
             "  stick X Y [N]          hold the left stick (min/max/-32767..32767) N frames\n"
             "  rstick X Y [N]         the same for the right stick\n"
+            "  stickhold X Y          leave the left stick at X,Y across later commands\n"
+            "                         (buttons too) until stickhold 0 0; rstickhold: right\n"
+            "  tilt X Y [Z]           accelerometer reading in g from now on (--accelerometer)\n"
             "  key KEY[+KEY] [N]      hold keyboard keys N frames (a-z 0-9 return space f1..,\n"
             "                         kcN for raw libretro keycode N)\n"
             "  touch X Y [N]          touch the screen at frame pixel X,Y for N frames (6)\n"
@@ -1410,6 +1464,7 @@ int main(int argc, char **argv) {
         else if (!strcmp(argv[i], "--no-hw")) want_hw = false;
         else if (!strcmp(argv[i], "--pace") && i + 1 < argc) pace_fps = atof(argv[++i]);
         else if (!strcmp(argv[i], "--pad2")) pad2 = true;
+        else if (!strcmp(argv[i], "--accelerometer")) accel_offered = true;
         else if (!strcmp(argv[i], "--ports") && i + 1 < argc) ports = (unsigned)strtoul(argv[++i], NULL, 0);
         else if (!strcmp(argv[i], "--device") && i + 1 < argc) device = (unsigned)strtoul(argv[++i], NULL, 0);
         else if (!strcmp(argv[i], "--quiet")) quiet = true;

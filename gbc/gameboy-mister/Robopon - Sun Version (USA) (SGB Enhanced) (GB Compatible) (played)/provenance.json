@@ -1,0 +1,34 @@
+{
+  "method": "played",
+  "system": "gbc",
+  "core": "gameboy-mister",
+  "core_file": "Gameboy_20260603.rbf",
+  "core_name": "Gameboy_MiSTer",
+  "core_version": "20260603",
+  "frontend": "mister",
+  "device": "the owner's MiSTer (DE10-Nano), Main_MiSTer binary of 2026-10-19",
+  "loaded_with": "MGL via /dev/MiSTer_cmd load_core (_Console/Gameboy, setname CORPUSGBC, file type f index 1)",
+  "save_folder": "saves/CORPUSGBC",
+  "rom": {
+    "name": "Robopon - Sun Version (USA) (SGB Enhanced) (GB Compatible).gbc",
+    "sha1": "399c928a38a3901b7a1093bd61f5a4d8c05b9771",
+    "size": 1048576
+  },
+  "script": "scripts/gbc/Robopon Sun.txt",
+  "mister_script": "scripts/mister/gbc/Robopon Sun.gbcx.txt",
+  "frames": 16034,
+  "timing": "real time: script frames played as wall-clock 1/60 s by work/mister/mrun.py",
+  "options": {
+    "config/CORPUSGBC.CFG": "Autosave On (status bit 13), every other option at its default; written for the run and removed after"
+  },
+  "save_trigger": "OSD opened (F12 from a uinput keyboard) with Autosave on: the core writes its backup RAM to the SD card",
+  "started_from": null,
+  "files": {
+    "Robopon - Sun Version (USA) (SGB Enhanced) (GB Compatible).sav": {
+      "size": 33280,
+      "sha1": "af208182f4bf6efab3cb0dce8ab4ecc145ef0815"
+    }
+  },
+  "created": "2026-11-10",
+  "note": "HuC-3. Made from no save file, as a new player's would be: Main hands a missing save to the core as FF, so the clock started from an FF footer. Loaded under setname CORPUSGBC so the save went to a folder no sync tool on the device watches (saves/CORPUSGBC/ rather than saves/GBC/); Main tells cores apart by their own name, not the setname, and names only the folder after it. Screenshots read from the scaler's frame buffer (as Main's own screenshot does) into corpus-tmp/, not screenshots/. Footer: 3b85f36a = 1794344251, the save written 2026-11-10 20:57:31 PST, i.e. local standard time counted as though it were UTC (UTC 1794373051), then the HuC-3 state 05 01 00 00 00 00, then FF to 512 bytes."
+}

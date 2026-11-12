@@ -6,6 +6,94 @@ way `tools/retro-run` plays libretro cores. Entries sit beside the libretro ones
 Paths on the MiSTer are given relative to its SD card; `<sd>` stands for the card's mount point
 where a full path is needed.
 
+## Fourth session (2026-11-12): Command Master, tilt and a script that watches the screen
+
+**Filed.** `gbc/gameboy-mister/Command Master (Japan)/`: the owner's Command Master (Japan), an MBC7
+cartridge (93LC56 EEPROM + accelerometer) whose only save, MAIN MENU > セーブ, comes after a
+tutorial that has to be tilted through (`gbc/NOTES.md`). The Gameboy core's MBC7 reads the
+accelerometer as 0x81D0 minus player 1's left analog stick (`rtl/mappers/mbc7.v`), so the rig's
+virtual pad tilts: stick right = ▷, up = △. The file is 1024 bytes: the 256-byte EEPROM four
+times, in the same word order as mGBA's `.srm` (Gearboy's is word-swapped).
+
+The 1Retro watcher was running again, so the run used `gbcx` (setname CORPUSGBC) and grabbed
+frames itself, as in the third session. Afterwards `saves/`, `savestates/`, `screenshots/` and
+`config/` matched this session's snapshot line for line (sizes, mtimes, sha1), `corpus-tmp/` was
+removed, and the watcher (same process) had been left alone.
+
+**Why the MiSTer script watches the screen.** The libretro scripts are per core because cores
+reach the same text box after different numbers of A presses (395 taps to the V-change in mGBA,
+383 in Gearboy, about 402 here). On the MiSTer it is worse: two calibration runs of the very same
+fixed taps were five taps apart at the same box, since real-time input lands a frame earlier or
+later now and then and that adds up over hundreds of boxes. So the MiSTer script taps A until the
+screen shows the box a stretch ends on, then goes on with fixed timing, which is all relative to a
+press from there (the V-change's six timing points, the battle commands). Every stretch matched on
+the first full run (23446 frames, under 7 minutes).
+
+**Rig changes, fourth session** (`work/mister/mrun.py`): `stickhold X Y` leaves the left stick
+deflected across later presses until the next `stickhold`; `refs FILE` loads screen references;
+`tapuntil BTN GAP REF MAX` presses BTN (4 frames, then GAP) until the screen matches REF, at most
+MAX times; `waituntil REF MAX` polls every 2 frames. A reference is a region thresholded at its own
+mean brightness (`work/gbc/cm/mkref.py`, made from mGBA frames), so it matches the same screen in a
+core whose colours differ: the MiSTer's frames matched mGBA's at 0.000. A region with too little
+contrast never matches (a white fade would otherwise pass for some). Not reaching a reference ends
+the script. The references used are in `scripts/mister/gbc/Command Master.refs`; the run used
+`--fps 59.7275`, the Game Boy's frame rate, rather than 60.
+
+## Third session (2026-11-10): Robopon, and what the cores read
+
+The owner's 1Retro watcher (`1retro-mister watch`) was running and stayed running, so this session
+wrote nothing a sync tool reads: every game ran under a setname no tool watches (`CORPUSGBC`,
+`CORPUSGB`, `CORPUSGBA`, `CORPUSMD`, so `saves/CORPUS*/` and `config/CORPUS*.CFG`), and the
+screen was read from the scaler's frame buffer rather than through `screenshot`, which always
+writes into `screenshots/`. Main tells cores apart by their own name (`user_io.cpp` `orig_name`),
+not the setname, which only names the folders. Afterwards `saves/`, `savestates/`,
+`screenshots/` and `config/` matched the snapshot taken before, and the watcher had uploaded
+nothing.
+
+**Filed.** `gbc/gameboy-mister/Robopon - Sun Version (USA) (SGB Enhanced) (GB Compatible) (played)/`:
+the corpus script, from no save file (Main hands a missing save to the Gameboy core as FF, so the
+HuC-3 clock starts from an FF footer, which the core takes as a clock at zero). "Saved!" after
+16034 frames. 33280 bytes; the footer is `3b85f36a` (1794344251, the save written at 20:57:31 PST
+counted as though it were UTC, eight hours behind the instant), the HuC-3 state `05 01 00 00 00 00`
+(day 0, 00:04 and 5 seconds), then FF. The `(played)` suffix keeps it apart from the downloaded
+entry of the same release. Unlike Pocket Family GB, Robopon never announces elapsed days at the
+title, so the libretro script needed no change.
+
+**Main's clock.** `send_rtc` (`user_io.cpp`) hands cores `t + (t - mktime(gmtime(t)))`: `mktime` reads
+`gmtime`'s fields with `tm_isdst = 0`, so the offset added is the zone's standard one, summer and
+winter alike. Every MiSTer core that keeps a clock anchor gets that scale.
+
+**What the cores read** (the save put in place, the game loaded, the screen read; no save written):
+
+| core | save given | read? |
+| ---- | ---------- | ----- |
+| Gameboy (FFA, MBC2) | Gambatte's 8192-byte file (512 nibbles, then FF) | yes, slot 1 as the MiSTer's own |
+| Gameboy (FFA, MBC2) | SameBoy's 512-byte file | yes |
+| GBA (Klonoa, 4 Kbit EEPROM) | mGBA's 512-byte file | **no**: every slot NO DATA |
+| GBA (Klonoa) | the same bytes padded with FF to 8192 | yes, the Prologue file |
+| GBA (Klonoa) | gpSP's 131072-byte file | yes |
+| MegaDrive (WSB '95, odd-lane SRAM) | Genesis Plus GX's 63804-byte file (byte-expanded) | **no**: EXHIBITION only |
+| MegaDrive (WSB '95) | BlastEm's 32768-byte file (packed) | yes, CONTINUE LEAGUE |
+| MegaDrive (WSB '95) | Genesis Plus GX's bytes packed by hand, padded to 65536 | yes |
+| MegaDrive (Evander, 24C01 EEPROM) | Genesis Plus GX's 128-byte file | yes, RESUME OLD CAREER |
+| MegaDrive (WSB '95) | one-saves' `extract --to mister` of Genesis Plus GX's save | yes |
+| GBA (Klonoa) | one-saves' `extract --to mister` of mGBA's save | yes |
+
+So a MiSTer needs a 4 Kbit EEPROM at 8 KiB and Mega Drive SRAM packed, and takes every MBC2
+length. The reverse was checked in libretro Genesis Plus GX (`tools/make-save.py --dry --srm`):
+the MiSTer's WSB '95 file as it is shows EXHIBITION only, and one-saves' layout of it for Genesis
+Plus GX shows CONTINUE LEAGUE.
+
+**Rig changes, third session.** `MISTER_SSH_OPTS` (extra ssh options, here a session's own
+`ControlPath`), `MISTER_CREATED` and `MISTER_BEFORE` (this session's lists) are read from the
+environment. Cores `gbcx`, `gbx`, `gbax`, `mdx` are the Gameboy, GBA and MegaDrive cores under a
+`CORPUS*` setname; for those the daemon guard lets the run share the device with a watcher, and
+`mrun.py` grabs frames itself (`MRUN_SHOT_DIR`, `grab_frame`: the scaler's RGB frame at
+0x20000000 through `/dev/mem`, as `scaler.cpp` reads it) into `corpus-tmp/shots/` as PPM, which
+`mister.py` turns into PNG. `work/mister/robopon/view.py NAME CORE ROM SAVE SCRIPT` puts a save in
+place, loads the game, plays SCRIPT, fetches the frames and removes the save again; its scripts are
+in `work/mister/robopon/vs/`.
+
 ## What was made, second session (2026-11-04)
 
 The same rig, extended (see "Rig changes, second session"), for the cores the first session had

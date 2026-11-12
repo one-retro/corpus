@@ -1,0 +1,156 @@
+load corpus-tmp/mgl/cmfull1.mgl 8
+# Command Master (Japan) on the MiSTer Gameboy core (tilt = left analog stick).
+# tapuntil/waituntil compare a screen region with a reference in corpus-tmp/refs/cm.refs.
+refs corpus-tmp/refs/cm.refs
+wait 120
+press a 6                # CAUTION: hold the Game Boy level, press A (calibration)
+wait 1900
+press start 6            # skip the opening
+wait 600
+waituntil title 600
+wait 30
+press start 10           # title: PUSH ANY KEY
+wait 120
+tap down 1 16            # name entry: け
+tap right 3 16
+tap a 1 30
+tap down 2 16            # and き
+tap right 4 16
+tap a 1 30
+press start 6            # cursor to おわる
+wait 30
+press a 6
+wait 90
+press a 6                # けきくんですね! これでいいですか? はい
+wait 60
+tapuntil a 12 introend 700   # the story, up to タイミングポイントにあわせて にゅうりょくしてみい!
+wait 30
+tap a 1 12               # the last box away
+wait 240
+press a 6                # V-CHANGE START
+wait 160
+stickhold max 0            # R
+wait 20
+press a 4
+wait 8
+stickhold 0 0
+wait 49
+stickhold max 0            # R
+wait 20
+press a 4
+wait 8
+stickhold 0 0
+wait 48
+stickhold 0 max            # D
+wait 20
+press a 4
+wait 8
+stickhold 0 0
+wait 209
+stickhold max 0            # R
+wait 20
+press a 4
+wait 8
+stickhold 0 0
+wait 48
+stickhold max 0            # R
+wait 20
+press a 4
+wait 8
+stickhold 0 0
+wait 48
+stickhold min 0            # L
+wait 20
+press a 4
+wait 8
+stickhold 0 0
+wait 300
+shot vchange
+tapuntil a 20 exend 300   # to the end of the ゲイル instructions
+wait 40
+tap a 1 20               # the last box away
+waituntil window 900     # コマンドを いれろ!!
+wait 20
+stickhold min 0            # L
+wait 16
+stickhold 0 0
+wait 8
+stickhold 0 max            # D
+wait 16
+stickhold 0 0
+wait 8
+press a 4                # enter the command
+wait 240
+shot gale
+tapuntil a 20 exend 300   # to the end of the アーツ instructions
+wait 40
+tap a 1 20               # the last box away
+waituntil window 900     # コマンドを いれろ!!
+wait 20
+stickhold max 0            # R
+wait 16
+stickhold 0 0
+wait 8
+stickhold 0 max            # D
+wait 16
+stickhold 0 0
+wait 8
+press a 4                # enter the command
+wait 240
+shot arts
+tapuntil a 20 exend 300   # to the end of the エナジー instructions
+wait 40
+tap a 1 20               # the last box away
+waituntil window 900     # コマンドを いれろ!!
+wait 20
+stickhold max 0            # R
+wait 16
+stickhold 0 0
+wait 8
+stickhold min 0            # L
+wait 16
+stickhold 0 0
+wait 8
+press a 4                # enter the command
+wait 240
+shot energy
+tapuntil a 20 special 300   # to the ひっさつわざ practice (✚とⒶで入力開始!)
+wait 30
+press up+a 10            # hold the D-pad and A: input starts
+repeat 16                # shake left-right
+  stickhold max 0
+  press up+a 6
+  stickhold min 0
+  press up+a 6
+end
+repeat 24                # shake front-back
+  stickhold 0 min
+  press up+a 6
+  stickhold 0 max
+  press up+a 6
+end
+stickhold 0 0
+wait 200
+tapuntil a 20 menu 100   # the review menu
+wait 20
+tap down 3 16            # れんしゅうをおわる
+tap a 1 30
+tapuntil a 20 map 200    # out of the lab to the town map
+wait 60
+press select 6           # MAIN MENU
+waituntil mainmenu 300
+wait 20
+tap down 3 16            # セーブ
+wait 30
+press a 6
+waituntil confirm 300
+wait 30
+shot confirm
+press a 6                # セーブしてもよろしいですか? はい
+waituntil mainmenu 600
+wait 60
+shot saved
+wait 30
+save
+wait 60
+shot final

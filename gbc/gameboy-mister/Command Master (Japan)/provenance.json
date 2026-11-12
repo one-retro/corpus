@@ -1,0 +1,34 @@
+{
+  "method": "played",
+  "system": "gbc",
+  "core": "gameboy-mister",
+  "core_file": "Gameboy_20260603.rbf",
+  "core_name": "Gameboy_MiSTer",
+  "core_version": "20260603",
+  "frontend": "mister",
+  "device": "the owner's MiSTer (DE10-Nano), Main_MiSTer binary of 2026-10-19",
+  "loaded_with": "MGL via /dev/MiSTer_cmd load_core (_Console/Gameboy, setname CORPUSGBC, file type f index 1)",
+  "save_folder": "saves/CORPUSGBC",
+  "rom": {
+    "name": "Command Master (Japan).gbc",
+    "sha1": "f1d3a1ff7a76c49ce3e094ca994d488dbdadf9a2",
+    "size": 2097152
+  },
+  "script": "scripts/gbc/Command Master.txt",
+  "mister_script": "scripts/mister/gbc/Command Master.gbcx.txt",
+  "frames": 23446,
+  "timing": "real time: script frames played as wall-clock 1/59.7275 s (the Game Boy frame rate) by the MiSTer rig",
+  "options": {
+    "config/CORPUSGBC.CFG": "Autosave On (status bit 13), every other option at its default; written for the run and removed after"
+  },
+  "save_trigger": "OSD opened (F12 from a uinput keyboard) with Autosave on: the core writes its backup RAM to the SD card",
+  "started_from": null,
+  "files": {
+    "Command Master (Japan).sav": {
+      "size": 1024,
+      "sha1": "006f22c381080a2bd4c929fe8feb22e189447157"
+    }
+  },
+  "created": "2026-11-12",
+  "note": "The MiSTer variant of the corpus script: the same inputs, with the analog stick held for tilt (the core's MBC7 reads accelerometer = 0x81D0 - left stick), and each text stretch tapped until the screen shows the box it ends on (tapuntil/waituntil against scripts/mister/gbc/Command Master.refs), because two real-time runs of the same fixed taps drift several boxes apart. Saved with the game's MAIN MENU > セーブ after the tutorial, then the OSD opened. The 1024-byte file is the 256-byte EEPROM four times over, in mGBA's byte order."
+}

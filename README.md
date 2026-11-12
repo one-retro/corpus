@@ -89,7 +89,7 @@ All Python runs with `-I`.
 | `tools/rom.py list SYSTEM [FILTER]` | Games a No-Intro 1G1R set has for a cartridge system. `$ROMS` names the folder of its zips. |
 | `tools/rom.py get SYSTEM "NAME"` | Extracts one into `.cache/roms/SYSTEM/`, prints its path. |
 | `tools/retro-run/retro-run` | The harness. `--help` lists the script commands. `retro-run-x86_64` is the same for Intel-only cores (Rosetta). |
-| `tools/make-save.py SYSTEM CORE ROM SCRIPT` | Runs a script in a core in a fresh directory and files what it saved, with provenance and proof. `--dry` to develop a script without filing. Also files what the core wrote into its working directory (`cwd/`), its system directory with `--keep-sysdir` (`system/`), or its own HOME with `--home` (`home/`); `--subsystem ID --slot FILE` loads a subsystem (Sufami Turbo); `--rom-source URL` records a homebrew ROM's origin. |
+| `tools/make-save.py SYSTEM CORE ROM SCRIPT` | Runs a script in a core in a fresh directory and files what it saved, with provenance and proof. `--dry` to develop a script without filing. Also files what the core wrote into its working directory (`cwd/`), its system directory with `--keep-sysdir` (`system/`), or its own HOME with `--home` (`home/`); `--subsystem ID --slot FILE` loads a subsystem (Sufami Turbo); `--rom-source URL` records a homebrew ROM's origin; `--accelerometer` offers the core an accelerometer through the libretro sensor interface (MBC7 tilt, see `gbc/NOTES.md`), which the script's `tilt` drives and provenance records. |
 | `tools/ps2-save.py CORE ROM SCRIPT` | make-save for PS2: a real system directory and HOME per run, filing the memory cards the cores keep there (`ps2/NOTES.md`). |
 | `tools/gamefaqs/*.py` | Converters from save-device and emulator formats (DexDrive, Max Drive, CodeBreaker, SharkPort, GameShark, Action Replay, Wii VC, ...) to what each core loads; `summary.py` writes `GAMEFAQS.md`. |
 | `tools/retro-run/crop.py` | `crop` magnifies part of a frame, `tile` puts many frames on one sheet. |
@@ -101,6 +101,8 @@ wait N                 run N frames
 press BTN[+BTN] [N]    hold for N frames (default 4)
 tap BTN [COUNT] [GAP]  press, then wait GAP frames, COUNT times (mashing through text)
 stick X Y [N]          left analog stick, -32767..32767 or min/max
+stickhold X Y          leave the left stick there, buttons included, until stickhold 0 0
+tilt X Y [Z]           accelerometer reading in g from now on (needs --accelerometer)
 key KEY [N] / type TXT keyboard, for computers
 repeat N ... end       loop
 shot NAME              screenshot (the last one becomes proof.png)
