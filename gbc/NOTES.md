@@ -59,10 +59,13 @@ the day, goes 1 -> 2 in every filed core).
 **Sizes.** All eight write the cartridge's RAM size, 8 KiB to 128 KiB, except MBC7: mGBA, SameBoy
 and Gearboy write the EEPROM's 256 bytes, VBA-M 512 (blank), TGB Dual 8192.
 
-**MBC7 byte order.** The 93LC56 holds 16-bit words. mGBA stores them little-endian
-(`54 41 4D 41` = "TAMA", calibration `1D 00 1D 00`); SameBoy and Gearboy store them big-endian
-(`41 54 41 4D` = "ATAM", `00 1D 00 1D`); TGB Dual like mGBA. The same EEPROM, two byte orders: a
-converter has to swap every word.
+**MBC7 byte order.** The 93LC56 holds 16-bit words and shifts each one out most significant
+byte first. mGBA stores them big-endian, in the chip's order (`54 41 4D 41` = "TAMA",
+calibration `1D 00 1D 00`), and so do TGB Dual and the MiSTer (see Command Master below);
+SameBoy and Gearboy store them little-endian (`41 54 41 4D` = "ATAM", `00 1D 00 1D`), the
+host order of a 16-bit store. The same EEPROM, two byte orders: a converter has to swap every
+word. Until 2026-11-13 this note called mGBA's order little-endian and SameBoy's big-endian,
+reading "TAMA" as the CPU sees it rather than as the chip holds it; the bytes were right.
 
 **Fill.** Gambatte, mGBA, SameBoy, VBA-M, Gearboy and TGB Dual start battery RAM at 0xFF, fixGB
 and IroGB at 0x00 (LADX: 29945 bytes differ; Gold: ~5000; Tetris DX: none, the game clears its RAM
