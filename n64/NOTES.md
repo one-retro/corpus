@@ -81,7 +81,7 @@ unchanged, on the same frame counts: no per-core variants were needed.
 | --- | --- |
 | mupen64plus (standalone) | Not runnable here. 2 downloaded: Banjo-Tooie (USA), Mischief Makers (USA) |
 | n64-mister (MiSTer) | Not runnable here. 7 downloaded (2 are Mario Kart 64 ghosts, below): Ocarina of Time (USA), Majora's Mask (USA), Banjo-Kazooie (USA), Donkey Kong 64 (USA), 007 - The World Is Not Enough (USA) (a `.cpk`). 11 played on the owner's MiSTer: see "n64-mister, played on the owner's MiSTer" below |
-| project64 (standalone, Windows) | Not runnable here. 4 downloaded from Project64's own issue tracker: Bomberman 64 - The Second Attack! (USA), Mickey's Speedway USA (USA), Pokemon Stadium 2 (USA), Aidyn Chronicles - The First Mage (USA) (Rev 1). See "Project64" below |
+| project64 (standalone, Windows) | Runs under Wine (below). 1 played: Tony Hawk's Pro Skater (USA) (Rev 1). 4 downloaded from Project64's own issue tracker: Bomberman 64 - The Second Attack! (USA), Mickey's Speedway USA (USA), Pokemon Stadium 2 (USA), Aidyn Chronicles - The First Mage (USA) (Rev 1). See "Project64" below |
 
 ## The libretro `.srm`
 
@@ -278,6 +278,27 @@ explains it:
   32 KiB at once, formatted with `CMempak::Format`'s template: the classic ID block `FF FF FF FF
   05 1A 5F 13 ... 01 FF 66 25 99 CD`, also found in the MiSTer TWINE `.cpk`. So a pak with no notes
   (Bomberman's) is still a 32768-byte file. Writes are 32-byte blocks in place.
+
+### Played in Project64 (2026-11-20)
+
+The owner keeps Project64 4.0.0.6807-777fbdf (Win32 dev build) under Wine 11.21 in
+`~/Wine/project64` (its README there has the setup: interpreter core for the test games, the
+debugger's script `harness.js` autorun). `tools/project64/harness.js` (a copy) answers controller 1's
+PIF reads from a plan, takes framebuffer screenshots and closes the emulator;
+`tools/project64/plan.py` turns a retro-run script into a plan, one controller poll per frame. The
+`Save/` folder was emptied before each run (the earlier contents were set aside in
+`~/Wine/project64/Save-before-corpus-*`). The run is about 15 polls a second.
+
+- **Tony Hawk's Pro Skater (USA) (Rev 1)**: `scripts/n64/Tony Hawk's Pro Skater.project64.json`,
+  from the libretro script. The A that accepts the name in Mupen64Plus-Next fell on the letter grid
+  here; START accepted it: "SAVE SUCCESSFUL." A first run without it left a note with status byte
+  0x00 instead of 0x02 and only part of its data: the game creates the note before the name is
+  accepted. Filed: `TONY HAWK PRO SKATER_Cont_1.mpk`, 32768 bytes; no file for ports 2-4.
+  - Its note (NTFE "52" "TH-AA") and data are byte-identical to the libretro, standalone
+    Mupen64Plus and MiSTer entries' pak 1. Only two places differ: bytes 0x00-0x1F, which Project64
+    formats as `81 01 02 ... 1F`, and the ID block (0x20-0xFF).
+  - It is also byte-identical to pak 2 of the owner's OpenEmu fixture `Mario Kart 64 (U) [!].mpk`
+    (`~/Wine/project64/fixtures/mupen/`), which holds the same TH-AA save.
 
 Not filed: the `.sra` in [#2092](https://github.com/project64/project64/issues/2092) is a 1080
 Snowboarding save attached to compare with the Wii VC, from another emulator. The GameFAQs Smash

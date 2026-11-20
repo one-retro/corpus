@@ -1,0 +1,26 @@
+{
+  "method": "played",
+  "system": "n64",
+  "core": "project64",
+  "core_name": "Project64",
+  "core_version": "4.0.0.6807-777fbdf (Win32 dev build)",
+  "frontend": "Project64 under Wine 11.21 (Wine Devel.app) on macOS, input from a JavaScript harness (tools/project64/harness.js) that answers controller 1's PIF reads",
+  "rom": {
+    "name": "Tony Hawk's Pro Skater (USA) (Rev 1).z64",
+    "sha1": "4900b6c92fb8df1765e91e891dccc525bb102fe1",
+    "size": 12582912
+  },
+  "script": "scripts/n64/Tony Hawk's Pro Skater.project64.json",
+  "source_script": "scripts/n64/Tony Hawk's Pro Skater.txt",
+  "polls": 12550,
+  "options": "CPU core: interpreter (Config/Project64.rdb); Unique Game Dir on (default); Controller Pak in port 1 (default)",
+  "save_dir": "Save/TONY HAWK PRO SKATER-32C6AB386E3A94745F893CF989B47310/",
+  "files": {
+    "TONY HAWK PRO SKATER_Cont_1.mpk": {
+      "size": 32768,
+      "sha1": "8d99e292df53cc7ac959c56325198a2459e1c576"
+    }
+  },
+  "created": "2026-11-20",
+  "note": "The libretro script converted by tools/project64/plan.py at one controller poll per frame, plus START to accept the name (the A that accepts it in Mupen64Plus-Next landed on the letter grid here), then A on OK. The game wrote note NTFE '52' 'TH-AA' on Controller Pak 1; only port 1 got a file. proof.png is the 'SAVE SUCCESSFUL.' screen (shot n3); the plan's last shot is the menu after OK."
+}
