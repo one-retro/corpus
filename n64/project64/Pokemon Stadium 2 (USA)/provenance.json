@@ -1,0 +1,19 @@
+{
+  "method": "downloaded",
+  "system": "n64",
+  "core": "project64",
+  "url": "https://github.com/project64/project64/files/135900/POKEMON.STADIUM.2.zip",
+  "source_page": "https://github.com/project64/project64/issues/964",
+  "source": "GitHub (project64/project64 issue #964, 'Pokemon Stadium 2 GB tower bad recompiler performance')",
+  "author": "purplemarshmallow (a Project64 contributor), comment of 2016-02-18: \"Here's my save. It unlocks the speedup feature.\"",
+  "licence": "none stated (a file attached to a public GitHub issue)",
+  "fetched": "2026-11-20",
+  "what_it_is": "The commenter's own game, far enough to unlock the GB Tower speed-up: Please Select shows STADIUM ROUND 2. A 1 Mbit FlashRAM written as 130816 bytes (0x1FF00), word-swapped. Zip entry dated 2016-02-07 14:00.",
+  "files": {
+    "POKEMON STADIUM 2.fla": {
+      "size": 130816,
+      "sha1": "9053c0a67564efb18e351524a8396c308a5dc00f"
+    }
+  },
+  "note": "Project64 version not stated; early 2016 means a 2.2/2.3 development build. 130816 is short of the chip's 131072: Project64 writes FlashRAM only as far as the game has written it, here to a 128-byte page boundary. Each 32-bit word is byte-reversed, as in the libretro .srm and MiSTer files: copied unchanged into the FlashRAM region (0x28800) of a Mupen64Plus-Next .srm, the game reads it. proof.png is that check (angrylion), not the author's screenshot. The region is not stated; it loads with the USA ROM."
+}

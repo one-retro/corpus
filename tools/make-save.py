@@ -171,9 +171,18 @@ def main():
     bios = list(a.bios)
     if not bios and os.path.isdir(bios_dir):
         bios = [os.path.join(bios_dir, f) for f in sorted(os.listdir(bios_dir))]
+    # A directory is recreated with its files linked one by one, so what the core
+    # writes there (NeoCD's neocd/neocd.srm) stays in this run, not in the cache.
+    def link(src, dst):
+        if os.path.isdir(src):
+            os.makedirs(dst)
+            for f in sorted(os.listdir(src)):
+                link(os.path.join(src, f), os.path.join(dst, f))
+        else:
+            os.symlink(src, dst)
     for b in bios:
         b = os.path.abspath(b)
-        os.symlink(b, os.path.join(system, os.path.basename(b)))
+        link(b, os.path.join(system, os.path.basename(b)))
 
     info_path = os.path.join(work, "info.json")
     cmd = [exe, "--core", core, "--rom", rom, "--savedir", saves, "--sysdir", system,

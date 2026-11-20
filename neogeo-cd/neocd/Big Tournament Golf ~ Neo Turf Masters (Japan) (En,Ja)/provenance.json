@@ -1,0 +1,34 @@
+{
+  "method": "played",
+  "system": "neogeo-cd",
+  "core": "neocd",
+  "core_file": "neocd_libretro.dylib",
+  "core_name": "NeoCD",
+  "core_version": "2022 b1e04c7",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Big Tournament Golf ~ Neo Turf Masters (Japan) (En,Ja).chd",
+    "sha1": "5532960a35dcf5423ff2f30080533080904496d8",
+    "size": 220976108
+  },
+  "rom_source": null,
+  "subsystem": null,
+  "device": null,
+  "script": "scripts/neogeo-cd/Neo Turf Masters.txt",
+  "frames": 3384,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Big Tournament Golf ~ Neo Turf Masters (Japan) (En,Ja).srm": {
+      "size": 8192,
+      "sha1": "cb11bccaee6150345ee9f08148d80fce12bd0b16"
+    },
+    "system/neocd/neocd.srm": {
+      "size": 8192,
+      "sha1": "cb11bccaee6150345ee9f08148d80fce12bd0b16"
+    }
+  },
+  "created": "2026-11-20",
+  "note": null
+}

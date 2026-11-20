@@ -1,0 +1,19 @@
+{
+  "method": "downloaded",
+  "system": "n64",
+  "core": "n64-mister",
+  "url": "https://github.com/bryc/mpkedit/files/13465350/N64_20231125.Saves.zip",
+  "source_page": "https://github.com/bryc/mpkedit/issues/20",
+  "source": "GitHub (bryc/mpkedit issue #20, 'Support for MiSTer N64 saves?')",
+  "author": "KingKannibal, comment of 2023-11-25: 'Here are the save files produced with the latest core [as of posting]. Includes a clean save, and a save with ghost data.' (core build N64_20231125, made on request for MPKEdit and save-file-converter)",
+  "licence": "none stated (a file attached to a public GitHub issue)",
+  "fetched": "2026-11-20",
+  "what_it_is": "The uploader's Time Trial with a ghost saved: one 131584-byte .sav = the 4 Kbit EEPROM (512 bytes) then four 32 KiB Controller Paks. Pak 1 holds the MARIOKART64 note (game code NKTJ, publisher 01), 121 pages. Zip entry dated 2023-11-25 14:07.",
+  "files": {
+    "Mario Kart 64 (USA) [with Ghost].sav": {
+      "size": 131584,
+      "sha1": "1f1e68c9dee3d13d33b7f3506e3e2ca3f7067307"
+    }
+  },
+  "note": "The single-file format of the MiSTer N64 core's first months (late 2023), before Main split saves into .eep/.sra/.fla and _N.cpk. Cart save first, then paks 1-4, as euan-forrester describes in the thread. The paks are stored with every 32-bit word reversed (the note reads 'JTKN' as stored); the EEPROM is in console order. The uploader renamed the file: the core wrote 'Mario Kart 64 (USA).sav'; the served name is kept. The zip's other file, '[Plain Save].sav', is the same game before the ghost and was not kept. Copied into a Mupen64Plus-Next .srm (EEPROM as is, each pak word-reversed back to console order) and booted holding START, the game's Controller Pak screen lists MARIOKART64, 121 pages: proof.png is that check (angrylion)."
+}

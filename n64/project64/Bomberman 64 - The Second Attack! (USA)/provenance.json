@@ -1,0 +1,23 @@
+{
+  "method": "downloaded",
+  "system": "n64",
+  "core": "project64",
+  "url": "https://github.com/user-attachments/files/22800075/BOMBERMAN64U2.zip",
+  "source_page": "https://github.com/project64/project64/issues/2502",
+  "source": "GitHub (project64/project64 issue #2502, 'Bomberman 64 - The Second Attack! (USA) loses left/right control stick input randomly')",
+  "author": "hugojmaia (issue reporter), 2025-10-09, attached in the issue form's 'Save type' field; Project64 3.0.1.5664-2df3434 (32 bit), N-Rage input plugin",
+  "licence": "none stated (a file attached to a public GitHub issue)",
+  "fetched": "2026-11-20",
+  "what_it_is": "The reporter's own game: File1 showing 01620, reaching World Select (Lost Planet Alcatraz). A 4 Kbit EEPROM, 512 bytes, plus Controller Pak 1 as Project64 keeps it, 32768 bytes, formatted and holding no notes. Zip entries dated 2025-10-08 20:16.",
+  "files": {
+    "BOMBERMAN64U2.eep": {
+      "size": 512,
+      "sha1": "c20743ab79820aecb2ddf7f1a8ebe7b178b60db0"
+    },
+    "BOMBERMAN64U2_Cont_1.mpk": {
+      "size": 32768,
+      "sha1": "e6ab54d8191094e7f152af55b5025fd905fae406"
+    }
+  },
+  "note": "Project64 names its saves after the ROM header's internal name (BOMBERMAN64U2) and each pak '<name>_Cont_<port>.mpk'. The issue gives the ROM MD5 as AECCA6AC..., which is not the No-Intro .z64's (aec1fdb0...); Project64 hashes the file as loaded, so the reporter's copy may be byte-swapped or another dump. The pak's ID block is the classic mupen64plus-core template (FF FF FF FF 05 1A 5F 13 ... 01 FF 66 25 99 CD), the same one Project64 formats new paks with. Copied unchanged into a Mupen64Plus-Next .srm (EEPROM at 0, pak at 0x800) and booted with the No-Intro ROM, Select File shows File1 01620: proof.png is that check (angrylion), not the author's screenshot."
+}

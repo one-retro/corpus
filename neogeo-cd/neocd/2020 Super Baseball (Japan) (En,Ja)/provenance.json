@@ -1,0 +1,34 @@
+{
+  "method": "played",
+  "system": "neogeo-cd",
+  "core": "neocd",
+  "core_file": "neocd_libretro.dylib",
+  "core_name": "NeoCD",
+  "core_version": "2022 b1e04c7",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "2020 Super Baseball (Japan) (En,Ja).chd",
+    "sha1": "cd271b29db726c5b628c6a7ffafb5ba90e8c214d",
+    "size": 183507604
+  },
+  "rom_source": null,
+  "subsystem": null,
+  "device": null,
+  "script": "scripts/neogeo-cd/2020 Super Baseball.txt",
+  "frames": 16026,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "2020 Super Baseball (Japan) (En,Ja).srm": {
+      "size": 8192,
+      "sha1": "5d80abecf15cd2f8b61033f98c0d68eefa2e4b58"
+    },
+    "system/neocd/neocd.srm": {
+      "size": 8192,
+      "sha1": "5d80abecf15cd2f8b61033f98c0d68eefa2e4b58"
+    }
+  },
+  "created": "2026-11-20",
+  "note": null
+}

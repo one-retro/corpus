@@ -1,0 +1,19 @@
+{
+  "method": "downloaded",
+  "system": "n64",
+  "core": "project64",
+  "url": "https://github.com/project64/project64/files/10524424/MICKEY.USA.zip",
+  "source_page": "https://github.com/project64/project64/issues/2335",
+  "source": "GitHub (project64/project64 issue #2335, \"Mickey's Speedway USA: Unknown memory action\")",
+  "author": "RocketRobz (issue reporter), 2023-01-28, attached in the 'Save type' field; Project64 Dev-4.0.0.6061-fb6bda3",
+  "licence": "none stated (a file attached to a public GitHub issue)",
+  "fetched": "2026-11-20",
+  "what_it_is": "What the game writes at its first boot and nothing more: a 16 Kbit EEPROM written as 456 bytes, all 0x00 except 00 00 00 0F 12 34 56 78 at 0x1C0. The reporter's game crashed in the attract-mode demo, so no records or progress. Zip entry dated 2023-01-27 19:40.",
+  "files": {
+    "MICKEY USA.eep": {
+      "size": 456,
+      "sha1": "b62d485284017b7429630cae0feb879103cf10a2"
+    }
+  },
+  "note": "Project64 writes an EEPROM only as far as the game has written it: 456 bytes = 57 eight-byte blocks. Booting the No-Intro ROM in Mupen64Plus-Next with no save writes the same 456 bytes at 0x000-0x1C7 of its .srm, byte for byte, then 0xFF. The issue says every region's ROM crashes and the internal name 'MICKEY USA' does not say the region, so (USA) is a guess. proof.png is Mupen64Plus-Next (angrylion) booted with this file copied to the EEPROM region, reaching Select Character with no error. The file has nothing the game would show."
+}

@@ -1,52 +1,79 @@
 # Neo Geo CD
 
-Nothing was filed. The library has no Neo Geo CD games, and no save written by the MiSTer core
-or by NeoCD turned up online.
+Seven games played in NeoCD (2026-11-20), from the Redump set in
+`/Volumes/Games/ROMS Library/snk-neo-geo-cd-redump-collection` (`.chd`). The copy of that set had
+reached "Magical Drop 2" (55 discs, A to M) when this was done; the rest of the set has not been
+tried.
 
-## What was looked for
+| Entry | Data name on the card (BIOS list) | When the game writes |
+| --- | --- | --- |
+| 2020 Super Baseball (Japan) (En,Ja) | SUPER BASEBALL 1P | during play (two writes) |
+| ADK World (Japan) | ADK-WORLD | asks to format the card, then saves as the town is played |
+| Baseball Stars 2 (Japan) (En,Ja) | BASEBALL STARS 2 COM | "GAME DATA SAVE" during play |
+| Baseball Stars Professional (Japan) (En,Ja) | BASEBALL STARS 1P VS | asks to format the card, then saves after the first innings |
+| Big Tournament Golf ~ Neo Turf Masters (Japan) (En,Ja) | BIG TOURNAMENT GOLF | at boot |
+| Galaxy Fight - Universal Warriors (Japan) (En,Ja,Es) | GALAXY FIGHT RANKING | at boot |
+| League Bowling (Japan) (En,Ja) | BOWLING 1P | "GAME DATA SAVE: YES" after the first game |
 
-- The Neo Geo CD folders hold only `systeminfo.txt`.
-- I searched the whole drive (except 1Retro and the save and backup folders) for `.cue`, `.chd`,
-  `.ccd` and `.iso` files and for names containing "neo geo cd" / "neogeocd". Every image found
-  belongs to another system. Samurai Shodown, Metal Slug, KOF and Garou titles turned up only in
-  PS2, Dreamcast, Saturn and SNES sets.
-- The BIOS is present ( `front-sp1.bin`, `top-sp1.bin`,
-  `neocd_f.rom`, `neocd_z.rom`, `000-lo.lo`, `uni-bioscd.rom`, ...), so NeoCD could run as soon as
-  a disc image is added. No disc image was downloaded.
+## Scripts
+
+`scripts/neogeo-cd/<game>.txt`. Neo Geo A is the RetroPad `b` (`a` is Neo Geo B; a first scan
+pressing `a` reached no save in any game). Each script presses START, A, A in a fixed cycle that
+goes through the title and menus into play. The number of cycles comes from a trace that dumped the
+card after every cycle; it stops one cycle after the game's last write. Then it resets, and on the
+BIOS CD player it opens MEMORY: the **backup memory utility** (1 format, 2 data name list, 3 erase,
+4 user name, 5 exit). "2" lists the card's data names. That list is each proof.png.
+
+The utility's cursor starts on 1 (format). An extra A there asks whether to erase a card that holds
+data, so the scripts press A once to open the utility and move down before the next A.
+
+## What NeoCD writes
+
+NeoCD 2022 b1e04c7 (libretro buildbot, arm64), default options. BIOS from the owner's library in
+`.cache/bios/neogeo-cd/neocd/` (`front-sp1.bin`, `neocd_*.rom`, `000-lo.lo`, ...). The front-loader
+BIOS shows its CD player at boot.
+
+- **Two identical files.** The frontend writes the 8 KiB backup RAM (`RETRO_MEMORY_SAVE_RAM`) as
+  `<content stem>.srm`. The core also keeps the card itself in `<system>/neocd/neocd.srm`
+  (`neocd_per_content_saves` off, the default), and loads it at start. In all seven entries the two
+  files are byte-identical. Both are filed: the second under `system/neocd/` (`--keep-sysdir`).
+- **One card for every game.** With the default option `neocd.srm` is shared, so a user's real
+  file holds every game's data. Each entry here started from no card, so each holds one game.
+- **An unused card is all zeros**, not formatted. Booting the BIOS and playing games that never
+  save leaves it at zeros. A game that saves formats it first (ADK World and Baseball Stars
+  Professional ask, "このバックアップメモリーはフォーマットされていません"; the others do it
+  silently). The BIOS utility's "1" formats it too: a formatted, empty card has 7866 non-zero bytes.
+- **Layout seen in the files.** A header with `NEO-GEO` at 0x20 (in the even bytes; the odd bytes
+  hold a table of pointers 0x40, 0x44, ...), a block table from 0x40, and the first data name at
+  0x340 in plain ASCII, padded with spaces to 20 bytes ("BOWLING 1P"). one-saves' two reference
+  files (Metal Slug, Garou Densetsu 2) have the same header, and both hold "METAL SLUG" at 0x340:
+  the shared card again.
+
+## Games that saved nothing
+
+With the A mapping fixed and a formatted card, the same START/A/A cycle (60 cycles, about 15000
+frames) left the card unchanged in the other discs of the copy: all KOF ('94 to '99, '96 NeoGeo
+Collection), Fatal Fury 1/2/3/Special, Art of Fighting 3, Last Blade 1 and 2, Savage Reign,
+Windjammers, Crossed Swords I and II, Far East of Eden, Joy Joy Kid, and the rest. King of Fighters
+'95 and Art of Fighting 3 were also tried changing their options: no write. Some of these may save
+deeper in play (a ranking after a high score, an unlock); not pursued. Double Dragon (Export)
+crashed NeoCD (segfault); Magical Drop 2 may have been a partial copy.
 
 ## Cores
 
 | Core | Status |
 | --- | --- |
-| neocd | runnable (fetched, `neocd_libretro.dylib`), but no game to run |
-| neogeo-mister | not runnable here; nothing found online (see below) |
+| neocd | 7 played |
+| neogeo-mister | not runnable here; nothing found online (searches of 2026-11-04: MiSTer-devel/NeoGeo_MiSTer issues, libretro/neocd_libretro, web) |
 
-Geolith 0.5.0 also runs Neo Geo CD (`.cue`/`.chd`, `geolith_cd_system_type`, BIOS `neocd.zip` /
-`neocdz.zip`), but the registry does not list it for neogeo-cd. Its source writes the CD backup
-RAM as `<stem>.brm` (8 KiB).
+From source, unverified here: the MiSTer core writes CD games the same 73728-byte `.sav` as
+cartridges, 64 KiB of unused backup RAM and then the 8 KiB card with every 16-bit word
+byte-swapped, one save per CD since July 2023 (issue #192). Geolith 0.5.0 also runs Neo Geo CD and
+writes `<stem>.brm` (8 KiB), but the registry does not list it for neogeo-cd.
 
-## What the cores write (from source; unverified here)
+## Harness change
 
-- **NeoCD** exposes the 8 KiB backup RAM as RETRO_MEMORY_SAVE_RAM, so RetroArch writes
-  `<content stem>.srm` (8192 bytes). The core also manages a file of its own (`src/path.cpp`
-  `make_srm_path`):
-  - by default, `neocd.srm` under the **system** directory (one card for every game);
-  - with `neocd_per_content_saves = On`, `<content filename>.srm` in the save directory.
-
-  one-saves' two reference files (`data/saves/retroarch/neocd/*.srm`, Metal Slug and Garou
-  Densetsu 2) are 8192 bytes. They hold an 8 KiB card in 68000 byte order: size word 0x4000 at
-  0x0A, `NEO-GEO` signature, the first save at block 13.
-- **neogeo-mister** (from `neogeo.sv` / `rtl/mem/memcard.v`, read by a helper):
-  - CD games get the same 73728-byte `.sav` as cartridges: 64 KiB of (unused) backup RAM, then
-    the 8 KiB card region with every 16-bit word byte-swapped. The code comment reads "64KB + 8KB
-    regardless the selected system".
-  - In CD mode the whole 8 KiB is the console's backup RAM. Since July 2023 there is one save
-    per CD ("I've pushed commit into Main repository to make save per CD", issue #192).
-
-## Searches with no result
-
-- MiSTer-devel/NeoGeo_MiSTer: all 262 issues and 993 comments. The attachments are core builds
-  and audio test zips only.
-- libretro/neocd_libretro: no `.srm` attachments.
-- misterfpga.org is closed to guests. Reddit blocks both the search tool and curl. Web searches
-  turned up no attached Neo Geo CD saves.
+`tools/make-save.py` linked each entry of `.cache/bios/<system>/` into the system directory as is,
+so the `neocd/` folder was a link to the cache and NeoCD wrote `neocd.srm` into the cache, where it
+would carry into the next run. A directory is now recreated in each run with its files linked one
+by one; what the core writes stays in the run. (The stray file was all zeros and was removed.)

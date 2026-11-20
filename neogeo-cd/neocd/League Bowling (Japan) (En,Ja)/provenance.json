@@ -1,0 +1,34 @@
+{
+  "method": "played",
+  "system": "neogeo-cd",
+  "core": "neocd",
+  "core_file": "neocd_libretro.dylib",
+  "core_name": "NeoCD",
+  "core_version": "2022 b1e04c7",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "League Bowling (Japan) (En,Ja).chd",
+    "sha1": "91f4b03f5639fcaf65a8b990c7fad070320817ed",
+    "size": 2718603
+  },
+  "rom_source": null,
+  "subsystem": null,
+  "device": null,
+  "script": "scripts/neogeo-cd/League Bowling.txt",
+  "frames": 4158,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "League Bowling (Japan) (En,Ja).srm": {
+      "size": 8192,
+      "sha1": "4581586f248a28c7803907506056789fc4aca704"
+    },
+    "system/neocd/neocd.srm": {
+      "size": 8192,
+      "sha1": "4581586f248a28c7803907506056789fc4aca704"
+    }
+  },
+  "created": "2026-11-20",
+  "note": null
+}

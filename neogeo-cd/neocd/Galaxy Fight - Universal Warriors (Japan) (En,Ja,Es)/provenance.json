@@ -1,0 +1,34 @@
+{
+  "method": "played",
+  "system": "neogeo-cd",
+  "core": "neocd",
+  "core_file": "neocd_libretro.dylib",
+  "core_name": "NeoCD",
+  "core_version": "2022 b1e04c7",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Galaxy Fight - Universal Warriors (Japan) (En,Ja,Es).chd",
+    "sha1": "31daef2eaf0d7c3c7cd7d11c84e4280300ab9d37",
+    "size": 419787425
+  },
+  "rom_source": null,
+  "subsystem": null,
+  "device": null,
+  "script": "scripts/neogeo-cd/Galaxy Fight.txt",
+  "frames": 3384,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Galaxy Fight - Universal Warriors (Japan) (En,Ja,Es).srm": {
+      "size": 8192,
+      "sha1": "4ea9450999d05a9e7b334fc5fdb478382f85f240"
+    },
+    "system/neocd/neocd.srm": {
+      "size": 8192,
+      "sha1": "4ea9450999d05a9e7b334fc5fdb478382f85f240"
+    }
+  },
+  "created": "2026-11-20",
+  "note": null
+}

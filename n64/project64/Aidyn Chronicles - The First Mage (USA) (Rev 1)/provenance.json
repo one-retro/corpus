@@ -1,0 +1,19 @@
+{
+  "method": "downloaded",
+  "system": "n64",
+  "core": "project64",
+  "url": "https://github.com/project64/project64/files/417100/AIDYN_CHRONICLES_Cont_1.mpk.zip",
+  "source_page": "https://github.com/project64/project64/issues/954",
+  "source": "GitHub (project64/project64 issue #954, 'break point errors')",
+  "author": "MelchiorGaspar (issue reporter), comment of 2016-08-14: 'Ingame Save memory-pack(Extract from zip file)'; Project64 v2.3.0.208 (from the reporter's screenshot in the same thread)",
+  "licence": "none stated (a file attached to a public GitHub issue)",
+  "fetched": "2026-11-20",
+  "what_it_is": "The reporter's own game on Controller Pak 1: Load Game shows Alaron, Hours 28:6:30, a party of four. Three NAYE notes (publisher '78'). 32768 bytes, one pak. Zip entry dated 2016-08-12 15:20.",
+  "files": {
+    "AIDYN_CHRONICLES_Cont_1.mpk": {
+      "size": 32768,
+      "sha1": "600b86baeba2c11ac626fdf536745a9b8e7cabe4"
+    }
+  },
+  "note": "The game saves only to the Controller Pak. The reporter names the ROM 'Aidyn Chronicles - The First Mage (U)(v1.1).z64', which is No-Intro's (USA) (Rev 1). The pak's ID block is the classic mupen64plus-core template, as Project64 formats paks. Copied unchanged into pak 1 (0x800) of a Mupen64Plus-Next .srm, the game lists the save: proof.png is that check (angrylion), not the author's screenshot."
+}

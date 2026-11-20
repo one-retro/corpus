@@ -1,0 +1,34 @@
+{
+  "method": "played",
+  "system": "neogeo-cd",
+  "core": "neocd",
+  "core_file": "neocd_libretro.dylib",
+  "core_name": "NeoCD",
+  "core_version": "2022 b1e04c7",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "ADK World (Japan).chd",
+    "sha1": "dd93ffa3d7716ff0b4e9cd3babeceffcc36bdfb8",
+    "size": 359837564
+  },
+  "rom_source": null,
+  "subsystem": null,
+  "device": null,
+  "script": "scripts/neogeo-cd/ADK World.txt",
+  "frames": 17574,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "ADK World (Japan).srm": {
+      "size": 8192,
+      "sha1": "8f5e6a4510bb2fcce474b9c7ed15c11b1a5f8722"
+    },
+    "system/neocd/neocd.srm": {
+      "size": 8192,
+      "sha1": "8f5e6a4510bb2fcce474b9c7ed15c11b1a5f8722"
+    }
+  },
+  "created": "2026-11-20",
+  "note": null
+}

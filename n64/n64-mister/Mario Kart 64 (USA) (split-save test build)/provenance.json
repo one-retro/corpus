@@ -1,0 +1,35 @@
+{
+  "method": "downloaded",
+  "system": "n64",
+  "core": "n64-mister",
+  "url": "https://github.com/bryc/mpkedit/files/13465386/N64_20231125.Split.Saves.zip",
+  "source_page": "https://github.com/bryc/mpkedit/issues/20",
+  "source": "GitHub (bryc/mpkedit issue #20, 'Support for MiSTer N64 saves?')",
+  "author": "KingKannibal, comment of 2023-11-25: 'Here is what the split saves look like in the current test build of MiSTer Main where they are experimenting with split saves.'",
+  "licence": "none stated (a file attached to a public GitHub issue)",
+  "fetched": "2026-11-20",
+  "what_it_is": "A separate Time Trial with a ghost, saved by a MiSTer Main test build that split the save: '<stem>.eep' (512 bytes) and '<stem>_1.mpk' to '_4.mpk' (32 KiB each). Pak 1 holds the MARIOKART64 note, 121 pages. Zip entries dated 2023-11-25 14:29.",
+  "files": {
+    "Mario Kart 64 (USA).eep": {
+      "size": 512,
+      "sha1": "a7766bdeea9c3b53bb6fa64fda6428d3c5145bd3"
+    },
+    "Mario Kart 64 (USA)_1.mpk": {
+      "size": 32768,
+      "sha1": "8d76b722c4c59f8f5f85e449449ed5efd48c36bf"
+    },
+    "Mario Kart 64 (USA)_2.mpk": {
+      "size": 32768,
+      "sha1": "4a530f22385f50584fbb4861bce2bdc68915dbf6"
+    },
+    "Mario Kart 64 (USA)_3.mpk": {
+      "size": 32768,
+      "sha1": "1d1c01a79625c66d60b632588869ba77bb9bb03c"
+    },
+    "Mario Kart 64 (USA)_4.mpk": {
+      "size": 32768,
+      "sha1": "35ea809c7955e2316517695bbacb026ddbcab585"
+    }
+  },
+  "note": "A format that did not ship: released Main names the paks '_N.cpk', not '_N.mpk' (see the other n64-mister entries). Here the paks are in console order (the note reads 'NKTJ'), unlike the single .sav of the same day. The EEPROM differs from the single-file entry's (another run). Copied unchanged into a Mupen64Plus-Next .srm, the game's Controller Pak screen lists MARIOKART64, 121 pages: proof.png is that check (angrylion)."
+}

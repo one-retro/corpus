@@ -1,0 +1,36 @@
+# League Bowling: answers YES to GAME DATA SAVE after the first game.
+# Neo Geo A is the RetroPad b. The script presses START and A over and over,
+# which goes through the title, the menus and into play, until the game has
+# saved (cycle 5 of the mashing; found by dumping the card after every cycle).
+# A new card is unformatted: the game formats it itself before its first save.
+# Then a reset brings up the BIOS CD player; its MEMORY button opens the
+# backup memory utility, and "2" lists the data names on the card (the proof).
+wait 900
+repeat 5
+press start 6
+wait 60
+press b 6
+wait 90
+press b 6
+wait 90
+end
+wait 300
+reset
+wait 1000
+press down 6        # CD player: the cursor starts on the eject button
+wait 30
+press down 6
+wait 30
+press right 6
+wait 30
+press right 6
+wait 30
+press down 6        # MEMORY
+wait 30
+press b 6           # -> backup memory utility, cursor on 1 (format)
+wait 240
+press down 6        # 2: data name list
+wait 30
+press b 6
+wait 200
+shot memory

@@ -1,0 +1,34 @@
+{
+  "method": "played",
+  "system": "neogeo-cd",
+  "core": "neocd",
+  "core_file": "neocd_libretro.dylib",
+  "core_name": "NeoCD",
+  "core_version": "2022 b1e04c7",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Baseball Stars 2 (Japan) (En,Ja).chd",
+    "sha1": "c5ee0b99e35fab5d8fb784ba47d20e89945df14c",
+    "size": 144659058
+  },
+  "rom_source": null,
+  "subsystem": null,
+  "device": null,
+  "script": "scripts/neogeo-cd/Baseball Stars 2.txt",
+  "frames": 14478,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Baseball Stars 2 (Japan) (En,Ja).srm": {
+      "size": 8192,
+      "sha1": "a05a00a942737c6d5ff44e9a726f766f729eeda4"
+    },
+    "system/neocd/neocd.srm": {
+      "size": 8192,
+      "sha1": "a05a00a942737c6d5ff44e9a726f766f729eeda4"
+    }
+  },
+  "created": "2026-11-20",
+  "note": null
+}

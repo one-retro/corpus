@@ -3,7 +3,8 @@
 I picked ten games that cover every N64 save type the libretro cores support: 4 Kbit EEPROM, 16 Kbit
 EEPROM, 256 Kbit SRAM, 1 Mbit FlashRAM, and a Controller Pak note from a game with no cartridge save.
 I ran them in the two runnable cores, and all 20 (game, core) pairs were filed. Online I found 7 more
-saves: 2 written by standalone mupen64plus and 5 written by the MiSTer core.
+saves: 2 written by standalone mupen64plus and 5 written by the MiSTer core. Later, 4 written by
+Project64 (2026-11-20, see "Project64" below).
 
 Both libretro cores write one 296960-byte `.srm` holding a whole console's storage. In every game,
 the cartridge regions of the two cores' files are byte-identical, with one exception: Majora's Mask
@@ -79,7 +80,8 @@ unchanged, on the same frame counts: no per-core variants were needed.
 | Core | Status |
 | --- | --- |
 | mupen64plus (standalone) | Not runnable here. 2 downloaded: Banjo-Tooie (USA), Mischief Makers (USA) |
-| n64-mister (MiSTer) | Not runnable here. 5 downloaded: Ocarina of Time (USA), Majora's Mask (USA), Banjo-Kazooie (USA), Donkey Kong 64 (USA), 007 - The World Is Not Enough (USA) (a `.cpk`). 11 played on the owner's MiSTer: see "n64-mister, played on the owner's MiSTer" below |
+| n64-mister (MiSTer) | Not runnable here. 7 downloaded (2 are Mario Kart 64 ghosts, below): Ocarina of Time (USA), Majora's Mask (USA), Banjo-Kazooie (USA), Donkey Kong 64 (USA), 007 - The World Is Not Enough (USA) (a `.cpk`). 11 played on the owner's MiSTer: see "n64-mister, played on the owner's MiSTer" below |
+| project64 (standalone, Windows) | Not runnable here. 4 downloaded from Project64's own issue tracker: Bomberman 64 - The Second Attack! (USA), Mickey's Speedway USA (USA), Pokemon Stadium 2 (USA), Aidyn Chronicles - The First Mage (USA) (Rev 1). See "Project64" below |
 
 ## The libretro `.srm`
 
@@ -219,6 +221,68 @@ chip.
   - **Possible clash:** the MiSTer worker may file a played Majora's Mask (USA) under
     `n64/n64-mister/`. make-save.py replaces an existing directory, so a played run there would
     replace the downloaded entry.
+
+## Mario Kart 64 ghosts from the MiSTer (downloaded, 2026-11-20)
+
+Mario Kart 64 writes a ghost to the Controller Pak (note `NKTJ`, publisher `01`, "MARIOKART64", 121
+of 123 pages) and its times to a 4 Kbit EEPROM. In [mpkedit #20](https://github.com/bryc/mpkedit/issues/20)
+a MiSTer user made ghost saves on request in November 2023, for MPKEdit and save-file-converter.
+Two are filed under `n64-mister/`:
+
+- **`Mario Kart 64 (USA)/Mario Kart 64 (USA) [with Ghost].sav`**: the core's first save format, one
+  `.sav` per game: the cartridge save (here 512 bytes), then four 32 KiB paks, 131584 bytes. **Each
+  pak's 32-bit words are reversed** (the note's code reads `JTKN` as stored); the EEPROM is in console
+  order. The uploader added " [with Ghost]" to the core's name.
+- **`Mario Kart 64 (USA) (split-save test build)/`**: a Main test build of the same day that split the
+  save: `<stem>.eep` and `<stem>_1.mpk` to `_4.mpk`, **paks in console order**. Main shipped the split
+  with `_N.cpk` names instead (see the five 2024 entries), so these `.mpk` names are from a build that
+  was not released.
+
+Both load in Mupen64Plus-Next once copied into a `.srm` (the single file's paks word-reversed back).
+Holding START at power-on opens the game's Controller Pak screen, which lists MARIOKART64, 121 pages.
+That screen is each proof.png.
+
+## Project64 (downloaded, 2026-11-20)
+
+Project64 runs only on Windows, and this Mac has no Wine. All 2363 issues and 11084 comments of
+[project64/project64](https://github.com/project64/project64/issues) were read through the API and
+every attached archive was listed. Almost all of them are save states (`.pj`, `.pj1`...), configs
+or ROM hacks. Four hold a game save that Project64 wrote, and all four are filed under
+`project64/`:
+
+| Entry | Files | Issue, Project64 version | What it holds |
+| --- | --- | --- | --- |
+| Bomberman 64 - The Second Attack! (USA) | `BOMBERMAN64U2.eep` 512, `BOMBERMAN64U2_Cont_1.mpk` 32768 | [#2502](https://github.com/project64/project64/issues/2502), 3.0.1.5664 (2025) | File1, 01620; the pak is formatted and empty |
+| Mickey's Speedway USA (USA) | `MICKEY USA.eep` **456** | [#2335](https://github.com/project64/project64/issues/2335), Dev-4.0.0.6061 (2023) | only what the game writes at its first boot |
+| Pokemon Stadium 2 (USA) | `POKEMON STADIUM 2.fla` **130816** | [#964](https://github.com/project64/project64/issues/964), a 2016 dev build | a contributor's game, STADIUM ROUND 2 |
+| Aidyn Chronicles - The First Mage (USA) (Rev 1) | `AIDYN_CHRONICLES_Cont_1.mpk` 32768 | [#954](https://github.com/project64/project64/issues/954), 2.3.0.208 (2016) | three NAYE notes; Alaron, 28:6:30 |
+
+What the files show, with the Project64 source (`develop`, `Source/Project64-core/N64System/`) that
+explains it:
+
+- **Names.** `<internal name>.eep/.sra/.fla` and `<internal name>_Cont_<port>.mpk`, port from 1.
+  `Game_GameName` is the ROM header's name with its trailing spaces removed, so `MICKEY USA.eep`
+  has a space and no region. With `UniqueSaveDir` on, the files go in a per-game subfolder of the
+  save folder.
+- **Chips are written only as far as the game has written them.** The file is opened without
+  truncation and each write seeks to its own offset: EEPROM in 8-byte blocks (`line * 8`), FlashRAM
+  in 128-byte pages, SRAM a byte at a time. Mickey's 456 bytes are 57 EEPROM blocks. Booted with no
+  save, Mupen64Plus-Next writes the same 456 bytes at 0x000-0x1C7, byte for byte, then 0xFF.
+  Stadium 2's `.fla` stops at 0x1FF00, a page boundary. one-saves' `normalize` pads these files
+  with the erased value.
+- **Byte order** is the libretro `.srm`'s: SRAM and FlashRAM words reversed (`Sram.cpp` seeks to
+  `(offset + i) ^ 3`), EEPROM and paks in console order. Every file loads after being copied
+  unchanged into its region of a Mupen64Plus-Next `.srm`. The proof.png files are those checks
+  (angrylion).
+- **Paks.** Project64 creates a pak file the first time the game uses the pak, and writes all
+  32 KiB at once, formatted with `CMempak::Format`'s template: the classic ID block `FF FF FF FF
+  05 1A 5F 13 ... 01 FF 66 25 99 CD`, also found in the MiSTer TWINE `.cpk`. So a pak with no notes
+  (Bomberman's) is still a 32768-byte file. Writes are 32-byte blocks in place.
+
+Not filed: the `.sra` in [#2092](https://github.com/project64/project64/issues/2092) is a 1080
+Snowboarding save attached to compare with the Wii VC, from another emulator. The GameFAQs Smash
+Bros. `.sra` that looks like Project64's is under `_project64/` (see "GameFAQs saves"). The Jet
+Force Gemini lead above may also have been last written by Project64.
 
 ## Leads, not filed
 
