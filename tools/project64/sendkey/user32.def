@@ -1,0 +1,6 @@
+LIBRARY user32.dll
+EXPORTS
+EnumWindows@8
+GetWindowTextA@12
+GetMenu@4
+PostMessageA@16

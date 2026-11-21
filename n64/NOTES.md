@@ -299,6 +299,25 @@ PIF reads from a plan, takes framebuffer screenshots and closes the emulator;
     formats as `81 01 02 ... 1F`, and the ID block (0x20-0xFF).
   - It is also byte-identical to pak 2 of the owner's OpenEmu fixture `Mario Kart 64 (U) [!].mpk`
     (`~/Wine/project64/fixtures/mupen/`), which holds the same TH-AA save.
+- **Mario Kart 64 (USA), a ghost: not done.** Saving a ghost needs a Time Trials race finished
+  under 3:53, so the harness was given an autopilot (`"autopilot"` in the plan): each poll it reads
+  player 1's position and heading from RAM (struct at 0x800F6990: x float +0x14, z +0x1C, yaw s16
+  +0x2E) and steers at a point a few places ahead on Luigi Raceway's path from the mk64 decomp
+  (`d_course_luigi_raceway_track_path`, 631 points, taken one in four), easing off before bends
+  and reversing (B and stick down) off walls. It drives the first straight, but at the first
+  hairpin it hits the outer wall, and from there it went back and forth between the wall and
+  reversing until time ran out. Not pursued further.
+  - Wine crashes Project64 every minute or two of play, so a long run rarely ends. For that,
+    `{"at": n, "key": "74"}` makes the harness press F5 (save state) through
+    `tools/project64/sendkey/` (a 2.5 KB Win32 program that posts a key to Project64's window;
+    the script API has no save state call, but it has `exec`), and keeps a copy of each state.
+    `tools/project64/drive-retry.sh` then resumes a crashed run from the last state saved before
+    the crash (F7, and the plan from that poll on). States saved during the race reloaded
+    cleanly. One saved at the race's start (during the countdown) crashed within about 30 polls in
+    all 12 tries.
+  - The menu presses are timed in polls, and the timing changes with what is in `Save/`: with an
+    empty folder the title screen comes one screen earlier, and the same plan started a Grand
+    Prix. Check the race start's screenshot (a Time Trials start shows the time and no position).
 
 Not filed: the `.sra` in [#2092](https://github.com/project64/project64/issues/2092) is a 1080
 Snowboarding save attached to compare with the Wii VC, from another emulator. The GameFAQs Smash

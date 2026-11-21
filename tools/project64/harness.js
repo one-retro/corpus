@@ -30,6 +30,19 @@ function shot(name) {
   note("shot " + name + " " + width + "x" + height + " at " + origin.hex());
 }
 
+// The save state Project64 writes (F5): Save\<game folder>\<name>.pj.zip. Each one is copied to the
+// output folder as state<poll>.pj.zip 30 polls after F5, so a later save does not replace it.
+var keepAt = 0;
+function stateFile() {
+  var root = pj64.installDirectory + "Save\\";
+  var found = null;
+  fs.readdir(root).forEach(function (d) {
+    if (!fs.stat(root + d).isDirectory()) return;
+    fs.readdir(root + d).forEach(function (f) { if (/\.pj\.zip$/.test(f)) found = root + d + "\\" + f; });
+  });
+  return found;
+}
+
 function run(step) {
   if (step.press) {
     var b = 0, x = 0, y = 0;
@@ -47,12 +60,27 @@ function run(step) {
     fs.writefile(out + step.dump[2] + ".bin", mem.getblock(step.dump[0], step.dump[1]));
     note("dump " + step.dump[2]);
   }
+  if (step.key) { // a key to Project64's window (sendkey.exe, hex virtual key): 74 = F5 save state, 76 = F7 load
+    exec('"' + dir + 'sendkey.exe" ' + step.key, { hidden: true });
+    note("key " + step.key);
+    if (step.key == "74") keepAt = frame + 30;
+  }
+  if (step.setframe) { // after loading a state saved at that poll: carry on from there
+    frame = step.setframe; held = [];
+    if (plan.autopilot) { plan.autopilot.idx = undefined; plan.autopilot.lastx = undefined; plan.autopilot.going = false; plan.autopilot.rev = 0; }
+    note("frame set");
+  }
   if (step.quit) { note("quit"); pj64.close(); }
 }
 
 events.onpifread(function () {
   frame++;
   if (frame == 1) note("first controller poll");
+  if (keepAt && frame == keepAt) {
+    keepAt = 0;
+    try { var sf = stateFile(); fs.writefile(out + "state" + (frame - 30) + ".pj.zip", fs.readfile(sf)); note("kept " + sf); }
+    catch (e) { note("keep failed: " + e); }
+  }
   plan.steps.forEach(function (s) {
     if (s.at != frame) return;
     try { run(s); } catch (e) { note("step failed: " + e); }
@@ -65,7 +93,7 @@ events.onpifread(function () {
     // Steer toward a point a few path points ahead; the game state is read from RAM each poll.
     var px = mem.f32[ap.base + 0x14], pz = mem.f32[ap.base + 0x1C], yaw = mem.s16[ap.base + 0x2E];
     var n = ap.path.length, best = ap.idx || 0, bd = 1e18;
-    for (var k = -3; k < 12; k++) {
+    for (var k = ap.idx === undefined ? 0 : -3; k < (ap.idx === undefined ? n : 12); k++) {
       var j = ((best + k) % n + n) % n, dx = ap.path[j][0] - px, dz = ap.path[j][1] - pz;
       if (dx * dx + dz * dz < bd) { bd = dx * dx + dz * dz; ap.cand = j; }
     }
@@ -75,7 +103,26 @@ events.onpifread(function () {
     var err = ((want - ap.sign * yaw + ap.offset) % 65536 + 65536 + 32768) % 65536 - 32768;
     x = Math.max(-80, Math.min(80, Math.round(err * ap.gain * ap.steer)));
     y = 0;
-    ap.buttons.split(" ").forEach(function (k) { if (BUTTONS[k] !== undefined) b |= BUTTONS[k]; });
+    // Ease off before a bend: compare the heading to the near target with the heading to a far one.
+    var gas = !ap.slowerr || Math.abs(err) < ap.slowerr || (px == 0 && pz == 0);
+    if (ap.far && gas && !(px == 0 && pz == 0)) {
+      var f = ap.path[(ap.idx + ap.far) % n];
+      var wfar = Math.atan2(f[0] - px, f[1] - pz) * 32768 / Math.PI;
+      var bend = ((wfar - want) % 65536 + 65536 + 32768) % 65536 - 32768;
+      if (Math.abs(bend) > ap.curv && frame % 3 != 0) gas = false;
+    }
+    // Stuck against a wall: back off with the wheel turned the other way, then go on.
+    if (ap.stuck) {
+      if (ap.lastx === undefined || frame % 20 == 0) {
+        var moved = ap.lastx === undefined ? 999 : Math.abs(px - ap.lastx) + Math.abs(pz - ap.lastz);
+        if (moved > 40 && moved < 999) ap.going = true;
+        ap.lastx = px; ap.lastz = pz;
+        if (ap.going && moved < 6 && !(px == 0 && pz == 0) && !(ap.rev > frame)) { ap.rev = frame + ap.stuck; note("stuck at " + px.toFixed(0) + "," + pz.toFixed(0) + ": reversing"); }
+      }
+      if (ap.rev > frame) { gas = false; b |= BUTTONS.B; x = -x; y = -80; }
+    }
+    if (gas)
+      ap.buttons.split(" ").forEach(function (k) { if (BUTTONS[k] !== undefined) b |= BUTTONS[k]; });
     if (ap.log && frame % ap.log == 0) note("ap pos " + px.toFixed(0) + "," + pz.toFixed(0) + " yaw " + yaw + " idx " + ap.idx + " err " + err.toFixed(0) + " x " + x);
     held.push({ until: frame + 1, buttons: 0, x: 0, y: 0 }); // make the write below happen
   }
