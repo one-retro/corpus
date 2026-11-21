@@ -1,0 +1,34 @@
+{
+  "method": "played",
+  "system": "neogeo-cd",
+  "core": "neocd",
+  "core_file": "neocd_libretro.dylib",
+  "core_name": "NeoCD",
+  "core_version": "2022 b1e04c7",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Stakes Winner - GI Kanzen Seiha e no Michi (Japan).chd",
+    "sha1": "4f568f9f907bd28024c38cdb012304d9a79a505f",
+    "size": 228311639
+  },
+  "rom_source": null,
+  "subsystem": null,
+  "device": null,
+  "script": "scripts/neogeo-cd/Stakes Winner.txt",
+  "frames": 17720,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Stakes Winner - GI Kanzen Seiha e no Michi (Japan).srm": {
+      "size": 8192,
+      "sha1": "44398a2a700a7abe124e072904c53dab722ca8d9"
+    },
+    "system/neocd/neocd.srm": {
+      "size": 8192,
+      "sha1": "44398a2a700a7abe124e072904c53dab722ca8d9"
+    }
+  },
+  "created": "2026-11-21",
+  "note": null
+}

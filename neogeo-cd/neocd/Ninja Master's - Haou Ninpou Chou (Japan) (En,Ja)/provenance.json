@@ -1,0 +1,34 @@
+{
+  "method": "played",
+  "system": "neogeo-cd",
+  "core": "neocd",
+  "core_file": "neocd_libretro.dylib",
+  "core_name": "NeoCD",
+  "core_version": "2022 b1e04c7",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Ninja Master's - Haou Ninpou Chou (Japan) (En,Ja).chd",
+    "sha1": "d5f082a00a825076b4bf1787067c7e393ff27298",
+    "size": 337008247
+  },
+  "rom_source": null,
+  "subsystem": null,
+  "device": null,
+  "script": "scripts/neogeo-cd/Ninja Master's.txt",
+  "frames": 7770,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Ninja Master's - Haou Ninpou Chou (Japan) (En,Ja).srm": {
+      "size": 8192,
+      "sha1": "c82a0cfd9561c6612db1a30d1769228c89fb8182"
+    },
+    "system/neocd/neocd.srm": {
+      "size": 8192,
+      "sha1": "c82a0cfd9561c6612db1a30d1769228c89fb8182"
+    }
+  },
+  "created": "2026-11-21",
+  "note": null
+}

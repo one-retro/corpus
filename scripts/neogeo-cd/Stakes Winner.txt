@@ -1,0 +1,61 @@
+# Stakes Winner: does not format a new card (an unformatted card stayed all zeros through 60
+# cycles), so the card is formatted first in the BIOS. At power-on the front-loader BIOS shows its
+# CD player; MEMORY opens the backup memory utility, whose "1" formats the card. "5" exits, and
+# START on the CD player boots the disc. Then the script presses START and A over and over, which
+# goes through the title, the menus and into play; the game writes its data in cycle 1 and keeps
+# adding to it (cycles 3, 11, 24, 37, 50; found by dumping the card after every cycle).
+# Neo Geo A is the RetroPad b. At the end a reset brings back the CD player, and the utility's "2"
+# lists the data names on the card (the proof).
+wait 1000
+press down 6        # CD player: the cursor starts on the eject button
+wait 30
+press down 6
+wait 30
+press right 6
+wait 30
+press right 6
+wait 30
+press down 6        # MEMORY
+wait 30
+press b 6           # -> backup memory utility, cursor on 1 (format)
+wait 120
+press b 6           # format
+wait 120
+press b 6           # confirm
+wait 200
+repeat 4            # down to 5 (exit)
+press down 6
+wait 30
+end
+press b 6
+wait 200
+press start 6       # CD player: play the disc
+wait 600
+repeat 51
+press start 6
+wait 60
+press b 6
+wait 90
+press b 6
+wait 90
+end
+wait 300
+reset
+wait 1000
+press down 6        # CD player: the cursor starts on the eject button
+wait 30
+press down 6
+wait 30
+press right 6
+wait 30
+press right 6
+wait 30
+press down 6        # MEMORY
+wait 30
+press b 6           # -> backup memory utility, cursor on 1 (format)
+wait 240
+press down 6        # 2: data name list
+wait 30
+press b 6
+wait 200
+shot memory

@@ -1,9 +1,9 @@
 # Neo Geo CD
 
-Seven games played in NeoCD (2026-11-20), from the Redump set in
-`/Volumes/Games/ROMS Library/snk-neo-geo-cd-redump-collection` (`.chd`). The copy of that set had
-reached "Magical Drop 2" (55 discs, A to M) when this was done; the rest of the set has not been
-tried.
+Eleven games played in NeoCD (2026-11-20 and 21), from the owner's Redump set in
+`/Volumes/Games/ROMS Library/snk-neo-geo-cd-redump-collection` (111 `.chd` discs). Seven were found
+while the set was still being copied (A to M); the other four after it was complete, when every
+disc was tried again.
 
 | Entry | Data name on the card (BIOS list) | When the game writes |
 | --- | --- | --- |
@@ -14,6 +14,10 @@ tried.
 | Big Tournament Golf ~ Neo Turf Masters (Japan) (En,Ja) | BIG TOURNAMENT GOLF | at boot |
 | Galaxy Fight - Universal Warriors (Japan) (En,Ja,Es) | GALAXY FIGHT RANKING | at boot |
 | League Bowling (Japan) (En,Ja) | BOWLING 1P | "GAME DATA SAVE: YES" after the first game |
+| Neo-Geo CD Special (Japan) | NEO GEO CD SPECIAL | at boot |
+| Ninja Master's - Haou Ninpou Chou (Japan) (En,Ja) | NINJA MASTER'S  RANK | during play (cycle 18) |
+| Stakes Winner - GI Kanzen Seiha e no Michi (Japan) | STAKES WINNER | right away, and adds to it as it is played; only on a formatted card |
+| Top Player's Golf (Japan) (En,Ja) | GOLF STROKE 1P | during play (cycles 6 and 32) |
 
 ## Scripts
 
@@ -23,6 +27,10 @@ goes through the title and menus into play. The number of cycles comes from a tr
 card after every cycle; it stops one cycle after the game's last write. Then it resets, and on the
 BIOS CD player it opens MEMORY: the **backup memory utility** (1 format, 2 data name list, 3 erase,
 4 user name, 5 exit). "2" lists the card's data names. That list is each proof.png.
+
+Stakes Winner is the exception: it never formats a card, and an unformatted one stayed all zeros
+through 60 cycles. Its script formats the card in the utility first ("1", confirm, "5" exit), then
+starts the disc from the CD player.
 
 The utility's cursor starts on 1 (format). An extra A there asks whether to erase a card that holds
 data, so the scripts press A once to open the utility and move down before the next A.
@@ -52,18 +60,21 @@ BIOS shows its CD player at boot.
 ## Games that saved nothing
 
 With the A mapping fixed and a formatted card, the same START/A/A cycle (60 cycles, about 15000
-frames) left the card unchanged in the other discs of the copy: all KOF ('94 to '99, '96 NeoGeo
+frames) left the card unchanged in the other 99 discs of the set: all KOF ('94 to '99, '96 NeoGeo
 Collection), Fatal Fury 1/2/3/Special, Art of Fighting 3, Last Blade 1 and 2, Savage Reign,
-Windjammers, Crossed Swords I and II, Far East of Eden, Joy Joy Kid, and the rest. King of Fighters
+Windjammers, Crossed Swords I and II, Far East of Eden, Joy Joy Kid, Metal Slug 1 and 2, the
+Samurai Shodown games, Real Bout Fatal Fury 1/2/Special, World Heroes 1/2/2 Jet/Perfect, Super
+Sidekicks 1-3, Puzzle Bobble, Twinkle Star Sprites, Pulstar, and the rest. King of Fighters
 '95 and Art of Fighting 3 were also tried changing their options: no write. Some of these may save
 deeper in play (a ranking after a high score, an unlock); not pursued. Double Dragon (Export)
-crashed NeoCD (segfault); Magical Drop 2 may have been a partial copy.
+crashed NeoCD (segfault), on the complete set too. Metal Slug does save (one-saves' reference
+files hold "METAL SLUG"), but not within this cycle.
 
 ## Cores
 
 | Core | Status |
 | --- | --- |
-| neocd | 7 played |
+| neocd | 11 played |
 | neogeo-mister | not runnable here; nothing found online (searches of 2026-11-04: MiSTer-devel/NeoGeo_MiSTer issues, libretro/neocd_libretro, web) |
 
 From source, unverified here: the MiSTer core writes CD games the same 73728-byte `.sav` as

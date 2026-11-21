@@ -1,0 +1,34 @@
+{
+  "method": "played",
+  "system": "neogeo-cd",
+  "core": "neocd",
+  "core_file": "neocd_libretro.dylib",
+  "core_name": "NeoCD",
+  "core_version": "2022 b1e04c7",
+  "frontend": "retro-run (writes saves as RetroArch does)",
+  "renderer": "software",
+  "rom": {
+    "name": "Neo-Geo CD Special (Japan).chd",
+    "sha1": "0a587821966308aa5c199b491716676df15e66f0",
+    "size": 352724562
+  },
+  "rom_source": null,
+  "subsystem": null,
+  "device": null,
+  "script": "scripts/neogeo-cd/Neo-Geo CD Special.txt",
+  "frames": 3384,
+  "options": null,
+  "started_from": null,
+  "files": {
+    "Neo-Geo CD Special (Japan).srm": {
+      "size": 8192,
+      "sha1": "f64213e567c8895f5e10db9e31b032b9c6fef0dd"
+    },
+    "system/neocd/neocd.srm": {
+      "size": 8192,
+      "sha1": "f64213e567c8895f5e10db9e31b032b9c6fef0dd"
+    }
+  },
+  "created": "2026-11-21",
+  "note": null
+}
